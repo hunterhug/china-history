@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -188,8 +215,9 @@
 </p><p>						亶关系已疏远，便说：“卿你是个粗野之人，不认宗族的远近。”夏侯亶对道：“臣听说服属易疏远，所以不愿谈论宗族。”世人都认为夏侯
 </p><p>						亶善于对答。<BR><BR>　　夏侯亶历六郡三州之长，不置产业，所得的俸禄赐物，随时分送给亲朋。节俭率直，居住吃用，充足即可，不求豪华奢侈。晚年颇好音乐，有妓妾数人，并无被服姿容。每当有客人来，常常隔着帘子向他通告，当时人们都说帘子是夏侯
 </p><p>						亶的妓衣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='裴邃传-白话.html'>裴邃传</a></p><p class='next'>下一节：<a href='韦放传-白话.html'>韦放传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='裴邃传-白话.html'>裴邃传</a></p><p class='next'>下一节：<a href='韦放传-白话.html'>韦放传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

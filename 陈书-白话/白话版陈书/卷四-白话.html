@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -210,8 +237,9 @@
 </p><p>当日，废帝出居私第。太建二年(570)四月薨，时年十九岁。
 </p><p>废帝仁弱无人君之气量，世祖总担心他不能承继大业，只是已立为太子，要废立事关重大，所以迁延多年。等到世祖病危，便召见高宗说：“我想依照太伯之旧例。”高宗起先未能理解，后来醒悟，便拜伏于地痛哭流涕，坚决推辞。其后宣太后依诏废贬废帝。
 </p><p>史臣曰：堕渔王虽然继位权重，但是仁厚懦弱，混淆是非，不经动乱就丧失帝位，大概属于帝垫、漠惠帝一类的人。堂担明白国家权力重大，料想他难以承担，深深理解帝壹的意思，不传宝位给儿子。</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷三-白话.html'>卷三</a></p><p class='next'>下一节：<a href='卷五-白话.html'>卷五</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='卷三-白话.html'>卷三</a></p><p class='next'>下一节：<a href='卷五-白话.html'>卷五</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

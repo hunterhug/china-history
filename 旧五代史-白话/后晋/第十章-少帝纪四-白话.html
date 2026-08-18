@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -185,8 +212,9 @@
 </p><p>开运三年(946)春一月一日，少帝下诏改铸天下合同印、书诏印、御前印，全用黄金铸造。七日，贝州梁汉璋上奏，北蕃贼寇聚集，将要图谋入侵。十五日，赐刑部员外王涓在私邸自尽，是因为他犯了用公款经商获取利润之罪的缘故。二十三日，定州上奏，契丹入侵。二十七日，二王后守太仆少卿、继袭餋国公杨延寿除去功名，发配流放威州，终身不得为官。杨延寿奉命到磁州巡检苗情，接受赃物布帛二百多匹，按照法律当处绞刑，主管官吏因二王后入宫求情，所以宽免了他的死罪。
 </p><p>夏天四月一日，李守贞从北方班师回朝。太原上奏，吐谷浑白可久投奔契丹，诸侯都有背叛朝廷的打算。十五日，宰臣到佛寺道观祈祷下雨。曹州上奏，所辖州民相继饿死了三千人。当时黄河南、北碰上大饥荒，饿死的人很多，沂、密、兖、郓等州贼寇强盗群起，聚集一起，剽劫县城乡邑，官吏不能禁止。兖州节度使安审琦出兵搜捕，反被贼兵打败。
 </p><p>秋九月十二日，张彦泽上奏，在定州境内，攻破蕃兵贼寇，斩杀敌兵二千多，追击袭杀了一百多里，活捉蕃将四人，取得金耳环二副进呈少帝。十六日，太原上奏，在杨武谷击败契丹，杀死七千多贼寇。这个月，河南、河北、关西各州上奏，大暴雨不停，沟河泛滥，洪水涌进城廓，毁坏秋季庄稼。这月，契丹瀛州刺史写信给乐寿将军王峦，谎称愿将他所辖城池归顺晋朝，并且说城中蕃军不到千人，请求朝廷派兵袭取，他自己作为内应。又说“：今秋苦雨，山川河泽上涨溢出，从瓦桥以北，水势漫无边际，契丹国主已经回归本国，如果听到南方有变，路途遥远并且阻隔山水，即使打算奔救，也来不及了。”另外，王峦接连上密奏，苦陈瀛、莫阝可以攻取的形势。此前，前年御驾到达黄河岸边，曾派边将送信给幽州赵延寿，劝他回归晋国，赵延寿立即有回信，模棱两可。这年三月，又派邺都杜威写信给赵延寿，叙述朝中心意，许以厚利，又派氵名州军将赵行实带信前往，暗中表白心迹。赵行实曾在赵延寿手下做过事，所以派他去。七月，赵行实从燕地回来，带回赵延寿的信，说：“我久陷契丹，愿回到中原，请发大军接应。我当脱身南归。”辞意恳切，当时朝廷很高兴地相信了他，又派赵行实前往合计接应赵延寿的地方。又有瀛州大将派亲信携带密信到京城，说想反叛契丹，献城归顺晋朝。不久，有人向契丹告密，事情未成功。到这时，瀛州守将刘延祚受契丹国主的命令，诈称前来讲和，以此诱骗朝廷军队，朝廷深深地相信了，于是有出兵的计划。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章-少帝纪三-白话.html'>第九章-少帝纪三</a></p><p class='next'>下一节：<a href='第十一章-少帝纪五-白话.html'>第十一章-少帝纪五</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第九章-少帝纪三-白话.html'>第九章-少帝纪三</a></p><p class='next'>下一节：<a href='第十一章-少帝纪五-白话.html'>第十一章-少帝纪五</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -197,8 +224,9 @@
 <p>　　元和十三年，入为宗正卿。道古在鄂州日，以贪暴闻，惧终得罪，乃荐山人柳 泌以媚于上。后又为左金吾卫将军。宪宗季年颇信方士，锐于服食，诏天下搜访奇 士。宰相皇甫镈方谀媚固宠，道古言柳泌有道术，镈得进之，待诏翰林。宪宗服饵 过当，暴成狂躁之疾，以至弃代。穆宗在东宫，扼腕于其事，及居丧，皆窜逐诛之。 镈既贬责，授道古循州司马，终以服丹药，欧血而卒。 </p>
 <p>　　史臣曰：李勉、李皋，禀性端庄，处身廉洁，临民莅事，动有美声，可谓宗臣 之英也。若夫治军旅，御寇戎，谋必臧，战必胜，则又勉不及皋远矣。道古便佞， 奸以事君，何父子之不相类也。 </p>
 <p>　　赞曰：我宗之英，曰皋与勉，才虽不同，道岂相远。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十章-卷八十-原文.html'>第八十章-卷八十</a></p><p class='next'>下一节：<a href='第八十二章-卷八十二-原文.html'>第八十二章-卷八十二</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第八十章-卷八十-原文.html'>第八十章-卷八十</a></p><p class='next'>下一节：<a href='第八十二章-卷八十二-原文.html'>第八十二章-卷八十二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

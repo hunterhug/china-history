@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -258,8 +285,9 @@
 </p><p>凡帝后有疾危殆，度不可愈，亦移居外毡帐房。有不讳，则就殡殓其中。葬后，每日用羊二次烧饭以为祭，至四十九日而后已。其帐房亦以赐近臣云。
 </p><p>凡宫车晏驾，棺用香楠木，中分为二，刳肖人形，其广狭长短，仅足容身而已。殓用貂皮袄、皮帽，其靴袜、系腰、盒钵，俱用白粉皮为之。殉以金壶瓶二，盏一，碗碟匙箸各一。殓讫，用黄金为箍四条以束之。舆车用白毡青缘纳失失为帘，覆棺亦以纳失失为之。前行，用蒙古巫媪一人，衣新衣，骑马，牵马一匹，以黄金饰鞍辔，笼以纳失失，谓之金灵马。日三次，用羊奠祭。至所葬陵地，其开穴所起之土成块，依次排列之。棺既下，复依次掩覆之。其有剩土，则远置他所，送葬官三员，居五里外。日一次烧饭致祭，三年然后返。
 </p><p>世祖至元七年，以帝师八思巴之言，于大明殿御座上置白伞盖一，顶用素段，泥金书梵字于其上，谓镇伏邪魔获安国刹。自后每岁二月十五日，于大明殿启建白伞盖佛事，用诸色仪仗社直，迎引伞盖，周游皇城内外，云与众生祓除不祥，导迎福祉。岁正月十五日，宣政院同中书省奏，请先期中书奉旨移文枢密院，八卫拨伞鼓手一百二十人，殿后军甲马五百人，抬舁监坛汉关羽神轿军及杂用五百人。宣政院所辖官寺三百六十所，掌供应佛像、坛面、幢幡、宝盖、车鼓、头旗三百六十坛，每坛擎执抬舁二十六人，钹鼓僧一十二人。大都路掌供各色金门大社一百二十队，教坊司云和署掌大乐鼓、板杖鼓、筚篥、龙笛、琵琶、筝、緌七色，凡四百人。兴和署掌妓女杂扮队戏一百五十人，祥和署掌杂把戏男女一百五十人，仪凤司掌汉人、回回、河西三色细乐，每色各三队，凡三百二十四人。凡执役者，皆官给铠甲袍服器仗，俱以鲜丽整齐为尚，珠玉金绣，装束奇巧，首尾排列三十余里。都城士女，闾阎聚观。礼部官点视诸色队仗，刑部官巡绰喧闹，枢密院官分守城门，而中书省官一员总督视之。先二日，于西镇国寺迎太子游四门，舁高塑像，具仪仗入城。十四日，帝师率梵僧五百人，于大明殿内建佛事。至十五日，恭请伞盖于御座，奉置宝舆，诸仪卫队仗列于殿前，诸色社直暨诸坛面列于崇天门外，迎引出宫。至庆寿寺，具素食，食罢起行，从西宫门外垣海子南岸，入厚载红门，由东华门过延春门而西。帝及后妃公主，于玉德殿门外，搭金脊吾殿彩楼而观览焉。及诸队仗社直送金伞还宫，复恭置御榻上。帝师僧众作佛事，至十六日罢散。岁以为常，谓之游皇城。或有因事而辍，寻复举行。夏六月中，上京亦如之。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p><p class='next'>下一节：<a href='第三十一章-卷三十一-原文.html'>第三十一章-卷三十一</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p><p class='next'>下一节：<a href='第三十一章-卷三十一-原文.html'>第三十一章-卷三十一</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

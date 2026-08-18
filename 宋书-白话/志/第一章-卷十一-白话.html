@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -219,8 +246,9 @@
 </p><p>晋基壶时因为：堑鱼的音律规定与周代、汉代的古器相合，就使用了它。散骑侍郎阮咸说它的声音太高，不是使国家兴旺的声音．阮咸去世后在挖地时得到一把古铜尺，果然要比荀勖的尺长四分，当时大家都佩服苟勖的高明。
 </p><p>亘堡年间，寻逝认为医生的处方是救百姓性命之急的，而重量单位与古代不同，产生了严重的坏影响，需要对重量制度进行改革整治。这一意见未能上报．
 </p><p>黄钟箱笛，置伐时长三尺八寸，元嘉九年时太乐令钟宗之将其减为三尺七寸。元嘉十四年．治书令史奚纵又减短了五分，成为三尺六寸五分。列和说：“束箱长笛长四”太蔟箱笛，晋代时长三尺七寸，钟宗之减为三尺三寸七分，奚纵又减去一寸一分，为三尺二寸六分。姑洗箱笛，晋代时长三尺五寸，钟宗之减为二尺九寸七分，奚纵又将其减去五分，为二尺九寸二分。蕤宾箱笛，晋代时长二尺九寸，钟宗之减为二尺六寸，奚纵又将其减去两分，为二尺五寸八分。</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-卷十二-白话.html'>第二章-卷十二</a></p></div><footer>
+<div class='pn'><p class='next'>下一节：<a href='第二章-卷十二-白话.html'>第二章-卷十二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

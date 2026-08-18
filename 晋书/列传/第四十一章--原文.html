@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -220,8 +247,9 @@
 </p><p>崧累迁侍中。是时谢万为豫州都督，疲于亲宾相送，方卧在室。崧径造之，谓曰：“卿令疆理西籓，何以为政？”万粗陈其意。崧便为叙刑政之要数百言。万遂起坐，呼崧小字曰：“阿酃！故有才具邪！”哀帝雅好服食，崧谏以为“非万乘所宜。陛下此事，实日月之一食也”。后以公事免，卒于家。子耆，官至散骑常侍。
 </p><p>史臣曰：昔张良拙说项氏，巧谋于沛公；孙惠沮计齐王，耀奇于东海，终而誓甘之旅炎运载昌，称狩之师金行不竞。岂遭时之会斯蹇，将谋国之道未通？迷于委质之贞，暗于所修之虑，本既颠矣，何以能终！熊远、王鉴有毗济之道，比之大厦，其榱桷之佐乎！崧之诋温，頵之距结，挫其劳役之策，申其汝颍之论，采郭嘉之风旨，挹硃育之余波，故桓温辍许攸之谋，解结钦王朗之迹。缉之时典，用此道欤！
 </p><p>赞曰：临湘游艺，才识英发。诡名违颖，陈书干越。孝文忠謇，嘉言斯践。茂高器鉴，雕章尤善。侯爵崧传，高门頵显。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十章--原文.html'>第四十章-</a></p><p class='next'>下一节：<a href='第四十二章--原文.html'>第四十二章-</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第四十章--原文.html'>第四十章-</a></p><p class='next'>下一节：<a href='第四十二章--原文.html'>第四十二章-</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -230,8 +257,9 @@
 </p><p>马汝骥，字仲房，绥德人。正德十二年进士。改庶吉士。偕芬等谏南巡，罚跪受杖。教习期满，当授编修，特调泽州知州。惩王府人虐小民。比王有所属，辄投其书椟中不视。陵川知县贪，汝骥欲黜之。巡按御史为曲解，汝骥不听，竟褫其官。世宗立，召复编修，寻录直谏功，增秩一等。预修《武宗实录》，进修撰。历两京国子司业，擢南京右通政，就改国子祭酒，召拜礼部右侍郎。尚书严嵩爱重汝骥，入阁称之，帝特加侍读学士。汝骥行己峭厉，然性故和易，人望归焉。卒赠尚书，谥文简。
 </p><p>应轸等自有传。
 </p><p>赞曰：词臣以文学侍从为职，非有言责也。激于名义，侃侃廷诤，抵罪谪而不悔，岂非皎然志节之士欤？夺情之典不始李贤，然自罗伦疏传诵天下，而朝臣不敢以起复为故事，于伦理所裨，岂浅鲜哉。章懋等引宣宗箴，明国家设官意，不为彰君之过。邹智指列贤奸，矫拂媮末。舒芬危言耸切，有爰盎揽辔之风。况夫清修峻节，行无瑕尤，若诸子者，洵足以矫文士浮夸之习矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十六章-卷六十六-原文.html'>第六十六章-卷六十六</a></p><p class='next'>下一节：<a href='第六十八章-卷六十八-原文.html'>第六十八章-卷六十八</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第六十六章-卷六十六-原文.html'>第六十六章-卷六十六</a></p><p class='next'>下一节：<a href='第六十八章-卷六十八-原文.html'>第六十八章-卷六十八</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -239,8 +266,9 @@
 </p><p>业兴爱好坟籍，鸠集不已，手自补治，躬加题帖，其家所有，垂将万卷。览读不息，多有异闻，诸儒服其渊博。性豪侠，重意气。人有急难，委之归命，便能容匿。与其好合，倾身无吝。若有相乖忤，便即疵毁，乃至声色，加以谤骂。性又躁隘，至于论难之际，高声攘振，无儒者之风。每语人云“但道我好，虽知妄言，故胜道恶。务进忌前，不顾后患，时人以此恶之。至于学术精微，当时莫及。
 </p><p>子崇祖，武定中，太尉外兵参军。崇祖弟遵祖，太昌中，业兴传其长子伯以授之。齐受禅，例降。
 </p><p>史臣曰：古语云：容体不足观，勇力不足恃，族姓不足道，先祖不足称，然而显闻四方，流声后裔者，其惟学乎。信哉斯言也。梁越之徒，笃志不倦，自求诸己，遂能闻道下风，称珍席上，或聚徒千百，或服冕乘轩，咸稽古之力也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十一章-卷七十一-原文.html'>第七十一章-卷七十一</a></p><p class='next'>下一节：<a href='第七十三章-卷七十三-原文.html'>第七十三章-卷七十三</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第七十一章-卷七十一-原文.html'>第七十一章-卷七十一</a></p><p class='next'>下一节：<a href='第七十三章-卷七十三-原文.html'>第七十三章-卷七十三</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

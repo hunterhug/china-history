@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -236,8 +263,9 @@
 </p><p>永和十一年，彭城国为李太妃求谥。博士曹耽之议：“夫妇行不必同，不得以夫谥谥妇。《春秋》妇人有谥甚多，经无讥文，知礼得谥也。”胡讷云：“礼，妇人生以夫爵，死以夫谥。《春秋》夫人有谥，不复依礼耳。安平献王李妃、琅邪武王诸葛妃，太傅东海王裴妃并无谥，今宜率旧典。”王彪之云：“妇人有谥，礼坏故耳。声子为谥，服虔诸儒以为非。杜预亦云‘礼，妇人无谥’。《春秋》无讥之文，所谓不待贬绝自明者也。近世惟后乃有谥耳。”
 </p><p>太尉荀顗上谥法云：“若赐谥而道远不及葬者，皆封策下属，遣所承长吏奉策即冢祭赐谥。”
 </p><p>太元十三年，召孔安国为侍中。安国表以黄门郎王愉名犯私讳，不得连署，求解。有司议云：“名终讳之，有心所同，闻名心瞿，亦明前诰。而《礼》复云‘君所无私讳，大夫之所有公讳’，无私讳。又云‘诗书不讳，临文不讳’。岂非公义夺私情，王制屈家礼哉！尚书安众男臣先表中兵曹郎王祐名犯父讳，求解职，明诏爰发，听许换曹，盖是恩出制外耳。而顷者互相瞻式，源流既启，莫知其极。夫皇朝礼大，百僚备职，编官列署，动相经涉。若以私讳，人遂其心，则移官易职，迁流莫已，既违典法，有亏政体。请一断之。”从之。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章--原文.html'>第九章-</a></p><p class='next'>下一节：<a href='第十一章--原文.html'>第十一章-</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第九章--原文.html'>第九章-</a></p><p class='next'>下一节：<a href='第十一章--原文.html'>第十一章-</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

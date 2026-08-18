@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -230,8 +257,9 @@
 </p><p>后为吏部令史，迁齐王攸司空主簿，转太常丞、司徒左西曹掾、尚书郎，所历皆称职。累迁散骑侍郎，除并州刺史，入为左卫率，知贾后废太子之谋，甚忧之。以计干张华而不见用，益以不平。贾后亲党微服听察外间，颇闻卞言，乃迁卞为轻车将军、雍州刺史，卞知言泄，恐为贾后所诛，乃饮药卒。初，卞之并州，昔同时为须昌小吏者十余人祖饯之，其一人轻卞，卞遣扶出之，人以此少之。
 </p><p>史臣曰：夫忠为令德，学乃国华，譬众星之有礼义，人伦之有冠冕也。卫瓘抚武帝之床，张华距赵伦之命，进谏则伯玉居多，临危则茂先为美。遵乎险辙，理有可言：昏乱方凝，则事睽其趣；松筠无改，则死胜于生，固以赴蹈为期，而不辞乎倾覆者也。俱陷淫网，同嗟承剑，邦家殄瘁，不亦伤哉！
 </p><p>赞曰：贤人委质，道映陵寒。尸禄观败，吾生未安。卫以贾灭，张由赵残。忠于乱世，自古为难。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章--原文.html'>第五章-</a></p><p class='next'>下一节：<a href='第七章--原文.html'>第七章-</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第五章--原文.html'>第五章-</a></p><p class='next'>下一节：<a href='第七章--原文.html'>第七章-</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

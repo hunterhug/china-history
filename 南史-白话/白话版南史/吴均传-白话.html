@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>吴均传<span style='font-size:small'> 白话</span></h1>
 <p>吴均字叔庠，吴兴故鄣人。家世寒贱，吴均好学有才气，沈约曾见到吴均的文章，很是赞赏。梁天监初年，柳恽作吴兴太守，召吴均任主簿，每天带他一块儿赋诗。吴均文体清新超拔，有古人气韵，一些好事的人就模仿他，称之为“吴均体”。吴均曾感到不满，就对柳恽赠诗告辞，过些日子又回来，柳恽还像以前那样待他，并不记在心上。把他推荐给临川靖惠王萧宏，萧宏在武帝面前称赞他，当天武帝就把他召入宫内赋诗，对他很满意，让他作待诏著作，后来逐步升迁为奉朝请。<BR><BR>　　先前，吴均想通过著史书成名，打算撰写齐代史书，向朝廷求借齐朝帝王的起居注和关于群臣的记录材料，武帝不答应。于是就私自撰写《齐春秋》进呈朝廷，书中称武帝曾为齐明帝辅佐，武帝恼恨他如实记录，便说此书不符合事实，派中书舍人刘之遴责问他数十条，他竟支支吾吾答不上来。于是武帝下令把他的书交有关部门烧了。吴均也因此被免职。不久又下令召见他，让他撰写《通史》，起自三皇，止于齐代。吴均已经草拟出本纪、世家，只有列传还未写成，便去世了。<BR><BR>　　吴均注范晔《后汉书》九十卷，著《齐春秋》三十卷，《庙记》十卷，《十二州记》十六卷，《钱塘先贤传》五卷，《续文释》五卷，文集二十卷。</p>
-<div class='pn'><p class='pre'>上一节：<a href='钟嵘传-白话.html'>钟嵘传</a></p><p class='next'>下一节：<a href='刘勰传-白话.html'>刘勰传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='钟嵘传-白话.html'>钟嵘传</a></p><p class='next'>下一节：<a href='刘勰传-白话.html'>刘勰传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

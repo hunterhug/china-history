@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -222,8 +249,9 @@
 </p><p>亚献武舞，《肃宁之曲》，无射宫一成。始听三鼓，一鼓稍前，开手立；二鼓合手，退后，按腰立；三鼓相顾蹲。三鼓毕，间声作，一鼓稍前，左右扬干戚；二鼓退后，相顾蹲；三鼓高呈手；四鼓左右扬干戚；五鼓呈干戚；六鼓复位，按腰立；七鼓刺干戚；八鼓两两相向，开手，正蹲；九鼓复位，举左手，收；十鼓举右手，收；十一鼓稍前，开手立；十二鼓退后，按腰立；十三鼓左右扬干戚，相向立；十四鼓复位，按腰，相顾蹲；十五鼓躬身，受。终听三鼓。（止。）
 </p><p>终献武舞，《肃宁之曲》，无射宫一成。始听三鼓，一鼓稍前，开手立；二鼓合手，退后，按腰立；三鼓相顾蹲。三鼓毕，间声作，一鼓稍前，左右扬干戚；二鼓退后，高呈手；三鼓举左手，收；四鼓举右手，收；五鼓面向西，开手，正蹲；六鼓复位，左右扬干戚；七鼓躬身，受；八鼓呈干戚；九鼓复位，按腰立；十鼓刺干戚；十一鼓两两相向立；十二鼓复位，按腰立；十三鼓退后，相顾蹲；十四鼓三叩头，拜舞；十五鼓躬身，受。终听三鼓。（止。）
 </p><p>天历三年新制乐舞。明宗酌献武舞，《永成之曲》，无射宫一成。始听三鼓，一鼓合手稍前，开手立；二鼓退后立；三鼓相顾蹲。三鼓毕，间声作，一鼓向前，舞蹈，相向立；二鼓复位，三叩头，拜舞；三鼓两两开手，正蹲；四鼓复位，俯伏；五鼓交籥，正蹲；六鼓伏，兴，仰视；七鼓躬身；八鼓稍前，开手立；九鼓复位，正揖，高呈手；十鼓举左手，收，左揖；十一鼓举右手，收，右揖；十二鼓正揖；十三鼓两两交籥，相揖；十四鼓复位；十五鼓躬身，受。终听三鼓。（止。）</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p><p class='next'>下一节：<a href='第二十四章-卷二十四-原文.html'>第二十四章-卷二十四</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p><p class='next'>下一节：<a href='第二十四章-卷二十四-原文.html'>第二十四章-卷二十四</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

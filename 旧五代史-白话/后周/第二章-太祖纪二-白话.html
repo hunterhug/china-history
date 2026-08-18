@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -185,8 +212,9 @@
 </p><p>秋七月一日，太祖穿上礼服带上礼帽，到崇元殿，将太庙四室宝册授与中书令冯道等人，使赴西京行礼。三日，将户部尚书张昭贬任太子宾客，因为他儿子张秉做阳翟县文官时，犯了法判了罪，张昭到官署等待处罚，诏令释放了他，于是降级授予这一官职。十二日，史官贾纬等人将他们撰写的《晋高祖实录》三十卷、《少帝实录》二十卷奉上。十六日，驾临宰臣王峻家中。二十九日，镇州报告，在平山县西部击破河东贼军，杀死五百人。
 </p><p>八月二日，汉隐帝灵柩下葬，太祖到太平宫亲临祭奠，诏令所有臣子送行到西郊。这一年，幽州闹饥荒，逃荒的人陆续进入沧州境内。诏令逃荒而来的人，每人供给一斗粟米，又给以没有主人的田地，让他们按时节耕作，罢免差役税收。四日，老虎跑进西京修行寺咬伤了人，市民杀死了老虎。六日，驾临班荆馆。十三日，契丹派幽州牙将曹继筠来归还已故晋朝中书令赵莹的遗体，诏令追赠赵莹为太傅，又赐给他儿子五百匹绢布，以准备丧事，将赵莹埋葬在华阴老家。十六日，驾临西庄。二十九日，已故夫人柴氏被追立为皇后，并令有关部门议定谥号，具备礼仪册封她。
 </p><p>九月一日，太祖到太平宫问候汉太后。二日，追赠已故夫人杨氏为淑妃，并令有关部门选择日期准备礼仪册封。太祖已故第五个女儿追封为永宁公主。四日，定州报告，契丹永康王兀欲被部下杀害。十七日，各道兵马都元帅、两浙节度使、检校太师、尚书令、中书令、吴越国王钱亻叔担任天下兵马都元帅。十八日，中书舍人刘涛因过授以少府少监，分管西京，因为他叫儿子刘顼代替他起草诏令。监察御史刘顼因过授以复州司户，因为他代替父亲刘涛起草诏令。中书舍人杨昭俭罢官放逐让其自便，因为他多报告虚假情况，不克尽职守。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-太祖纪一-白话.html'>第一章-太祖纪一</a></p><p class='next'>下一节：<a href='第三章-太祖纪三-白话.html'>第三章-太祖纪三</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-太祖纪一-白话.html'>第一章-太祖纪一</a></p><p class='next'>下一节：<a href='第三章-太祖纪三-白话.html'>第三章-太祖纪三</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

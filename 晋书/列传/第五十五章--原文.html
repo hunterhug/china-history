@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -203,8 +230,9 @@
 </p><p>初为州主簿，尝见桓玄。既出，玄鄙其精神不隽，谓坐客曰：“庸神而宅伟干，不成令器。”竟不调而遣之。咏之早与刘裕游款，及玄篡位，协赞义谋。玄败，授建威将军、豫州刺史。桓歆寇历阳，咏之率众击走之。义熙初，进征虏将军、吴国内史，寻转荆州刺史、持节、都督六州，领南蛮校尉。咏之初在布衣，不以贫贱为耻；及居显位，亦不以富贵骄人。始为殷仲堪之客，未几竟践其位，论者称之。寻卒于官。诏曰：“魏咏之器宇弘劭，识局贞隐，同奖之诚，实铭王府；敷绩之效，垂惠在人。奄致陨丧，恻怆于心。可赠太常，加散骑常侍。”其后录其赞义之功，追封江陵县公，食邑二千五百户，谥曰桓。弟顺之至琅邪内史。
 </p><p>史臣曰：臣观自古承平之化，必杖正人：非常之业，莫先奇士。当衰晋陵夷之际，逆玄僭擅之秋，外乏桓文，内无平勃，不有雄杰，安能济之哉！此数子者，气足以冠时，才足以经世，属大亨数穷之运，乘义熙天启之资，建大功若转圜，翦群凶如拉朽，势倾百辟，禄极万钟，斯亦丈夫之盛也。然希乐陵傲而速祸，诸葛骄淫以成衅，造宋而乖同德，复晋而异纯臣，谋之不臧，自取夷灭。无忌挟功名之大志，挺文武之良才，追旧而恸感时人，率义而响震勍敌，因机效捷，处死不懦，比乎向时之辈，岂同日而言欤！
 </p><p>赞曰：刘生刚愎，葛侯凶恣。患结满盈，祸生疑贰。安成英武，体兹忠烈。舍家殉义，忘生存节。檀实棱威，身陨名飞。魏终协契，效绩扬辉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十四章--原文.html'>第五十四章-</a></p><p class='next'>下一节：<a href='第五十六章--原文.html'>第五十六章-</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第五十四章--原文.html'>第五十四章-</a></p><p class='next'>下一节：<a href='第五十六章--原文.html'>第五十六章-</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

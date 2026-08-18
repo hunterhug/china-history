@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -188,8 +215,9 @@
 </p><p>开运三年(946)冬天，契丹向南侵犯，杜重威率兵驻扎瀛州，张彦泽被契丹利诱，私下叛变了，于是与契丹国主通好言和，请求让他做前导，马上派快骑游说杜重威，带兵沿着滹沱河向西援助常山。接着和杜重威勾结密谋。到朝廷军队在中渡投降时，契丹国主派张彦泽率领二千骑兵直奔京城以控制少帝，并且将爱护抚慰之意向公卿百姓昭示。张彦泽在这一年的十二月十六日，从封丘门斩关进城，派兵围困皇宫。第二天，将少帝迁到开封居住，凡内府金帛珍货，全部用车运到自己私人宅邸里，再放纵士兵大肆抢掠，两天后才停。当时桑维翰担任开封府尹，张彦泽召他到自己帐下，不用礼仪接待他。桑维翰斥责说“：以前我从罪人之中提拔你，又统领大镇，给予你兵权，为什么忘恩负义竟到如此地步呢？”张彦泽无言对答。这天夜里，杀掉了桑维翰，全部掠取了他的家庭财产。
 </p><p>张彦泽认为自己对契丹有功，白天黑夜饮酒作乐以自娱。当他在京城巡检时，随他出入的骑兵常常是几百人，旗帜题写着“赤心为主”，看到的人没有不私下耻笑的。另外，他所居住的宅第，财帛钱货堆积如山。楚国夫人丁氏，是少帝的弟弟曹州节度使石延煦的母亲，容貌姿色漂亮，张彦泽派人去迎娶她。太后迟疑不予答复。张彦泽马上派人用车载着她离去，他背叛国家欺侮国君达到如此地步。几天之内，恣意放纵杀害，有时，军队士兵抓获罪人到他跟前，张彦泽不分清红皂白，只是瞪着眼睛，伸出一只手竖起三个指头，士兵按他的意旨，就拉到外面把犯人腰斩为三段。
 </p><p>张彦泽与伪阁门使高勋不协和，便乘着酒醉到高勋的门第，杀害了他的二叔、三弟，并暴尸在门外。到契丹大帐驻扎到城北的郊外，高勋就向契丹国主申诉了冤屈，这时契丹国主已憎恨张彦泽剽劫抢掠都城，便下令拘捕他。又把张彦泽的罪恶宣告于文武百官和京都士人与百姓，又问：“张彦泽的罪过，该杀不该杀？”百官连名上诉，都说其罪不可赦免。商人百姓也争相投诉，分条陈述张彦泽的罪过，契丹国主知道张彦泽犯了众怒，于是下令在闹市处死，暴尸街头。又让高勋监督处决，斩断他的手腕取下手械，然后处死了他。高勋派人剖开他的心脏来祭祀屈死的人，市民百姓都争着吃他的肉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十三章-列传十二-白话.html'>第二十三章-列传十二</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十三章-列传十二-白话.html'>第二十三章-列传十二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

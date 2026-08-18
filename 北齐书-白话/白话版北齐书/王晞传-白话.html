@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -207,8 +234,9 @@
 </p><p>						晞，晞未按时抵达。第二天，丞相西晞祭酒卢思道对晞说：“昨天被召已是面红耳赤，不会让鱼鸟见怪吧？”晞缓缓地笑着说：“昨晚十分惬意，多因酒水受罚，你辈也是我留连的一种物体，岂只是鱼鸟呀！”晋阳陷落，
 </p><p>						晞与同伴躲避周兵向东北逃跑。山路险阻，又担心遇上土贼，但晞暖酒服食膏脂，却没有中断过一次，也常常不肯马上动身上路，惹得同伴怨恨。
 </p><p>						晞说：“不要怨恨我嘛！我做事如果后悔，好早之前就是三公啦。”<BR><BR>　　齐亡，周武帝拜晞为仪同大将军、太子谏议大夫。隋开皇元年(581)，死于洛阳，七十一岁。赠仪同三司、曹州刺史。</p>
-<div class='pn'><p class='pre'>上一节：<a href='王昕传-白话.html'>王昕传</a></p><p class='next'>下一节：<a href='陆法和传-白话.html'>陆法和传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='王昕传-白话.html'>王昕传</a></p><p class='next'>下一节：<a href='陆法和传-白话.html'>陆法和传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

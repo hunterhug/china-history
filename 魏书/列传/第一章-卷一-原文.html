@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -227,8 +254,9 @@
 </p><p>孝明皇后胡氏，灵太后从兄冀州刺史盛之女。灵太后欲荣重门族，故立为皇后。肃宗颇有酒德，专嬖充华潘氏，后及嫔御并无过宠。太后为肃宗选纳，抑屈人流。时博陵崔孝芬、范阳卢道约、陇西李瓚等女，但为世妇。诸人诉讼，咸见忿责。武泰初，后既入道遂居于瑶光寺。
 </p><p>孝静皇后高氏，齐献武王之第二女也。天平四年，娉以为皇后。王前后固辞，帝不许。兴和初，诏侍中、司徒公孙腾，司空公、襄城王旭，兼尚书令、司州牧、西河王忭，兼太常卿及宗正卿元孝友等奉诏致礼，并备宫官侍卫，以后驾迎于晋阳之丞相第。五月，立为皇后，大赦天下。齐受禅，降为中山王妃。后降于尚书左仆射杨遵彦。
 </p><p>史臣曰：始祖生自天女，克昌后叶。灵后淫恣，卒亡天下。倾城之戒，其在兹乎？钩弋年稚子幼，汉武所以行权，魏世遂为常制。子贵母死，矫枉之义不亦过哉！高祖终革其失，良有以也。</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p></div><footer>
+<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

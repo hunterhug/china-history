@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -201,8 +228,9 @@
 </p><p>族人奴真领部来附。奴真兄犍，先居贺兰部。至是，奴真请召犍而让部焉。太祖义而许之。犍既领部，自以久托贺讷，德之，乃使弟去斤遗之金马。讷弟染干因谓之曰：“我待汝兄弟厚，汝今领部，宜来从我。”去斤请之奴真。奴真曰：“父为国家附臣，世效忠贞。我志全名节，是故推让。今汝等无状，乃欲叛主怀贰。”于是杀犍及去斤。染干闻其杀兄，率骑讨之，奴真惧，徙部来奔太祖。太祖自迎之，遣使责止染干。奴真感恩，请奉妹充后宫，太祖纳之。
 </p><p>后太祖讨显于马邑，追至弥泽，大破之。卫辰与慕容垂通好，送马三千匹于垂。垂遣慕容良迎之。显击败良军，掠马而去。垂怒，遣子麟、兄子楷讨之，显奔马邑西山。麟轻骑追之，遂奔慕容永于长子。部众悉降于麟，麟徙之中山。显弟亢泥，事在《皇后传》。
 </p><p>史臣曰：始祖及桓、穆之世也，王迹初基，风德未展。操、含托身驰骤之秋，自立功名之地，可谓志识之士矣。刘库仁兄弟，忠以为心，盛衰不二，纯节所存，其意盖远，而并贻非命，惜乎！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p><p class='next'>下一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p><p class='next'>下一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

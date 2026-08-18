@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -226,8 +253,9 @@
 </p><p>哀宗初即位，召为补阙，俄迁左司谏，言事稍不及昔时。未几，致仕，居伊阳，郡守为起伊川亭。古性嗜酒，老而未衰，每乘舟出村落间，留饮或十数日不归，及溯流而上，老稚争为挽舟，数十里不绝，其为时人爱慕如此。正大七年卒，年七十四。古平生好为诗及书，然不为士大夫所重，时论但称其直云。
 </p><p>天兴间，有右司谏陈岢者，遇事辄言无少隐，上尝面奖。及汴京被兵，屡上封事言得失，请战一书尤为剀切，其略云：“今日之事，皆出陛下不断，将相怯懦，若因循不决，一旦无如之何，恐君臣相对涕泣而已。”可谓切中时病，而时相赤盏合喜等沮之，策为不行，识者惜焉。岢字和之，沧州人，大安元年进士。
 </p><p>赞曰：宣宗即位，孜孜焉以继述世宗为志，而其所为一切反之。大定讲和，南北称治，贞祐用兵，生民涂炭。石琚为相，君臣之间务行宽厚。高琪秉政，恶儒喜吏，上下苛察。完颜素兰首攻琪恶，谓琪必乱纪纲。陈规力言刀笔吏残虐，恐坏风俗。许古请与宋和，辞极忠爱。三人所言皆切中时病，有古诤臣之风焉。宣宗知其为直，而不用其言，如是而欲比隆世宗，难矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十六章-卷四十六-原文.html'>第四十六章-卷四十六</a></p><p class='next'>下一节：<a href='第四十八章-卷四十八-原文.html'>第四十八章-卷四十八</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第四十六章-卷四十六-原文.html'>第四十六章-卷四十六</a></p><p class='next'>下一节：<a href='第四十八章-卷四十八-原文.html'>第四十八章-卷四十八</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

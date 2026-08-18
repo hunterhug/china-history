@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -199,8 +226,9 @@
 </p><p>孔公恂，字宗文，先圣五十八世孙。景泰五年(1454)，他考取会试，听说母亲有病，不参加殿试。皇上向礼部询问此事，礼部说明了原因，于是派使者去召他。当时已将近中午，公恂来不及备试卷，皇上命翰林院给他笔纸。他登第之后，即因遭母丧回家。
 </p><p>衍圣公孔彦缙去世，孙子弘绪幼弱，诏令派礼部郎去治丧，公恂料理其家事。天顺初年，他被授予礼科给事中。弘绪已经袭封衍圣公，大学士李贤把女儿嫁给他为妻，公恂因而得以交上了李贤。李贤说“：公恂是大圣人的后代，赞善司马恂，是宋朝大贤温国公司马光的后代，宜用他们辅导太子。”皇上很高兴。同一天超拜公恂为少詹事，侍奉东宫太子讲读。皇上入宫对孝肃皇后说“：我今天得到圣贤的子孙做你儿子的师傅。”孝肃皇后是宪宗的生母，她这时是皇贵妃，正受皇上宠爱。皇后于是穿戴冠服拜谢，宫中传为盛事。
 </p><p>宪宗继位后，改任公恂为大理寺左少卿。公恂说自己不通法律，于是让他仍任少詹事。成化二年(1466)，他上书谈军事，武臣们都哗然，给事中和御史纷纷上书驳斥他。公恂被投入监狱，贬为汉阳知府。不久，遭父丧。守孝期满后，商辂请求给因提建议而得罪的人复官，公恂于是得以恢复原职，到南京詹事府上任。不久，他去世。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十九章-卷三十九-白话.html'>第三十九章-卷三十九</a></p><p class='next'>下一节：<a href='第四十一章-卷四十一-白话.html'>第四十一章-卷四十一</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三十九章-卷三十九-白话.html'>第三十九章-卷三十九</a></p><p class='next'>下一节：<a href='第四十一章-卷四十一-白话.html'>第四十一章-卷四十一</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

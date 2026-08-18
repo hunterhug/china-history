@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>厍狄伏连传<span style='font-size:small'> 白话</span></h1>
 <p>厍狄伏连，字仲山，本名伏怜，讹音连，代人。他归附..朱荣，官至直阁将军。后来跟随神武帝高欢，被赐爵为蛇丘男。天保初年，被封为仪同三司，不久加封为开府。他性情质朴，勤于公事。守卫宫殿，朝夕不离开皇帝的住所，因此很被天子知遇。然而，却贪婪愚蠢凶狠。任郑州刺史时，喜欢聚敛财富。对人十分严酷，苍蝇如飞进他的住室，他就用棍棒打看门人，问：“为什么放它们进来？”他的妻子有病，用一百钱买药治疗，都心疼钱财。他不赏识读书人，开府参军一职大多由官绅士族担任，但他照样鞭扑拷打，逼迫他们去修筑城墙。武平年间，他被封为宜都郡王，任领军大将军。不久，与琅邪王高俨假传诏命杀死和士开，被朝廷诛杀，肢解。<BR><BR>　　他家有一百多口人。盛夏，每人给米二升，不发给盐和菜，因而，家人脸上常有饥色。冬至这一天，亲友们都向他庆贺，他的妻子用豆饼招待大家。他问豆饼从哪里弄到的，妻子说是从马料中逐渐省减出来的。他听说后十分恼怒，典马和掌管马料的人都受到他的杖罚。朝廷每年赐给他的东西，都藏在一个仓库里，派一名婢女专门掌管钥匙。他每次入库检查，都一定告诫妻子，说这是朝廷的东西，不能轻易取用。到死的时候，他只穿着一条破裤子，而积攒的丝绢竟有两万匹，登记后又都归还给朝廷。</p>
-<div class='pn'><p class='pre'>上一节：<a href='慕容俨传-白话.html'>慕容俨传</a></p><p class='next'>下一节：<a href='潘乐传-白话.html'>潘乐传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='慕容俨传-白话.html'>慕容俨传</a></p><p class='next'>下一节：<a href='潘乐传-白话.html'>潘乐传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

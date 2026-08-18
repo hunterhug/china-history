@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -224,8 +251,9 @@
 <p>　　与凤翔将野诗良辅、泾原将郝玼各以名雄边上。吐蕃尝谓汉使曰：“唐国既与 吐蕃和好，何妄语也！”问曰：“何谓？”曰：“若不妄语，何因遣野诗良辅作陇 州刺史？”其畏惮如此。 </p>
 <p>　　史臣曰：自盗起中原，河、陇陷虏，犬戎作梗，屡犯郊畿。谋臣运策以竭精， 武士荷戈而不暇。如璘、昌之材力，扼腕奋命，欲吞虏于胸中；郝、史骁雄，斩将 搴旗，将申威于塞外。而竟不能北逾白道，西出萧关，俾十九郡生民，竟沦左衤任， 仅能自保，功何取焉！虽运使时然，亦将略有所未至。栖曜、万福之节概，景略之 负气，壮哉！ </p>
 <p>　　赞曰：马、刘、史、郝，气雄边朔。力扞獯虏，终惭卫、霍。万福义勇，景略 气豪。为人所忌，慷慨徒劳。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百零一章-卷一百零一-原文.html'>第一百零一章-卷一百零一</a></p><p class='next'>下一节：<a href='第一百零三章-卷一百零三-原文.html'>第一百零三章-卷一百零三</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第一百零一章-卷一百零一-原文.html'>第一百零一章-卷一百零一</a></p><p class='next'>下一节：<a href='第一百零三章-卷一百零三-原文.html'>第一百零三章-卷一百零三</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

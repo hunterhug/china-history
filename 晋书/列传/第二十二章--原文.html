@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -217,8 +244,9 @@
 </p><p>淮南袁甫，字公胄，亦好学，与谭齐名，以词辩称。尝诣中领军何勖，自言能为剧县。勖曰：“唯欲宰县，不为台阁职，何也？”甫曰：“人各有能有不能。譬缯中之好莫过锦，锦不可以为；谷中之美莫过稻，稻不可以为赟。是以圣王使人，必先以器，苟非周材，何能悉长！黄霸驰名于州郡，而息誉于京邑。廷尉之材，不为三公，自昔然也。”勖善之，除松滋令。转淮南国大农、郎中令。石珩问甫曰：“卿名能辩，岂知寿阳已西何以恆旱？寿阳已东何以恆水？”甫曰：“寿阳已东皆是吴人，夫亡国之音哀以思，鼎足强邦，一朝失职，愤叹甚积，积忧成阴，阴积成雨，雨久成水，故其域恆涝也。寿阳已西皆是中国，新平强吴，美宝皆入，志盈心满，用长欢娱。《公羊》有言，鲁僖甚悦，故致旱京师。若能抑强扶弱，先疏后亲，则天下和平，灾害不生矣。”观者叹其敏捷。年八十余，卒于家。
 </p><p>史臣曰：夫缉政厘俗，拔群才以成务；振景观光，俟明主而宣绩。武皇之世，天下乂安，朝廷属意于求贤，轴有怀于干禄。郤诜等并韫价州里，裒然应召，对扬天问，高步云衢，求之前哲，亦足称矣。令思行己徇义，志笃周、甘，仁者必通，抑斯之谓！虽才行夙章，而待终秘阁，积薪之恨，岂独古人乎！
 </p><p>赞曰：郤、阮洽闻，含章体政。华生毓德，褫巾应命。鸟路曾飞，龙津派泳。素业可久，高芬斯盛。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十一章--原文.html'>第二十一章-</a></p><p class='next'>下一节：<a href='第二十三章--原文.html'>第二十三章-</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十一章--原文.html'>第二十一章-</a></p><p class='next'>下一节：<a href='第二十三章--原文.html'>第二十三章-</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

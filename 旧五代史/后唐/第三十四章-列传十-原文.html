@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -203,8 +230,9 @@
 </p><p>琪虽博学多才，拙于遵养时晦，知时不可为，然犹多岐取进，动而见排，由己不能镇靖也。以太子太傅致仕。长兴中，卒于福善里第，时年六十。子贞，官至邑宰。琪以在内署时所为制诏，编为十卷，目曰《金门集》，大行于世。
 </p><p>萧顷，字子澄，京兆万年人。故相仿之孙，京兆尹廪之子。顷聪悟善属文，昭宗朝擢进士第，历度支巡官、太常博士、右补阙。时国步艰难，连帅倔强，率多奏请，欲立家庙于本镇，顷上章论奏，乃止。累迁吏部员外郎。先是，张浚自中书出为右仆射，梁祖判官高劭使梁祖廕求一子出身官，省寺皆称无例，浚曲为行之，指挥甚急，吏徒惶恐。顷判云：“仆射未集郎官，赴省上指挥公事，且非南宫旧仪。”浚闻之，惭悚致谢，顷由是知名，梁祖亦奖之。顷入梁，历给谏、御史中丞、礼部侍郎、知贡举，咸有能名。自吏部侍郎拜中书门下平章事，与李琪同辅梁室，事多矛盾。庄宗入汴，顷坐贬登州司户，量移濮州司马。数年，迁太子宾客。天成初，为礼部尚书、太常卿、太子少保致仕。卒时年六十九。辍朝一日，赠太子少师。
 </p><p>史臣曰：夫相辅之才，从古难得，盖文学政事，履行谋猷，不可缺一故也。如数君子者，皆互有所长，亦近代之良相也。如齐公之明节，李琪之文章，足以圭表搢绅，笙簧典诰，陟之廊庙，宜无愧焉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十三章-列传九-原文.html'>第三十三章-列传九</a></p><p class='next'>下一节：<a href='第三十五章-列传十一-原文.html'>第三十五章-列传十一</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三十三章-列传九-原文.html'>第三十三章-列传九</a></p><p class='next'>下一节：<a href='第三十五章-列传十一-原文.html'>第三十五章-列传十一</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

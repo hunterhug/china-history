@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -205,8 +232,9 @@
 </p><p>阿邻，聪颖灵悟，机敏善辩，通晓女真、契丹大小文字以及汉字。他年幼时曾经入宫，熙宗见了很惊奇，说“：这孩子日后必能为国出力。”阿邻十八岁时，受职定远大将军，任顺天军节度使。天德二年(1150)，因为政廉明而升迁益都尹，并兼山东东路兵马都总管，历任泰宁、定海、镇西、安国等军节度使。
 </p><p>海陵王南下征战，任用阿邻为神勇、武平等军都总管，从寿州取道渡淮水，与劝农使移剌元宜合兵共三万人作为先锋。这年十月，到达卢州，与宋将王权的十万多军队在柘皋镇、渭子桥交战，打败宋军。行军到和州南边，再次与王权的八万多军兵会战，又打败了他，追杀到江上，斩得首级数千颗。
 </p><p>皇上在辽阳即位，海陵死去，大军返回北方。要渡淮水时船只太少，军士争抢船只，不能迅速渡过。阿邻抓到俘虏，得知可以涉水的地方，用柳枝做记号，命令本部人马涉水过去。上了北岸，而其他各路争渡的军队被宋兵截去。阿邻入朝进见圣上，圣上听说阿邻在淮水上的战功，又带了全部军兵回归，就提升他做兵部尚书，监督筹划向窝斡各军征讨粮饷，并授与他一块金牌、四块银牌。窝斡被打败，阿邻回兵到达懿州，因病去世。丧讯传到京师，皇上命令在永安寺祭奠，让百官赶去吊唁，并赏赐丧葬所用的白银五百两、深色绸缎三十端、绢一百匹。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十章-卷十-白话.html'>第十章-卷十</a></p><p class='next'>下一节：<a href='第十二章-卷十二-白话.html'>第十二章-卷十二</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十章-卷十-白话.html'>第十章-卷十</a></p><p class='next'>下一节：<a href='第十二章-卷十二-白话.html'>第十二章-卷十二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

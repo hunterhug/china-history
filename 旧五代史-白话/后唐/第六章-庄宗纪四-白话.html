@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -197,8 +224,9 @@
 </p><p>十一日，御史台上言：“请使用本朝律令格式，今查访只有定州有本朝法书，望下诏令该州写副本进献上来。”庄宗答应了。十二日，下诏贬安义军节度使李继韬为登州长史，随之在天津桥杀掉，因他再次谋反。十五日，淮南杨溥、奚族首领李绍威一起派使者来朝庆贺。
 </p><p>十八日，泽州刺史董璋奏称：潞州军叛变，李继达领兵出城，自杀而死，节度副使李继珂已安抚全城军民。二十日，有关官员进言“：皇上向上帝祈求五谷丰收，请奉高祖神尧皇帝配享；夏天求雨，请奉太宗文皇帝配享；秋天在明堂上供时，请奉太祖武皇帝配享；冬至祭祀圜丘，请奉献祖文皇帝配享；冬天祭神州地祗，请奉懿祖昭圣皇帝配享。”庄宗允准了。
 </p><p>二十二日，亳州太清宫道士进言，圣祖玄元皇帝殿前枯死的桧树重新长出新枝，画了图献上。下诏说：“圣祖旧殿前枯桧生出新枝，符合皇家再造之期，显示大国中兴之运。和汉朝上林苑的倒仆柳树那样，祥瑞与汉宣帝时相合；可比于南顿县嘉禾的吉兆，吉庆更超过汉光武帝时期。应该在史册上记载，向天下显明。”二十三日，庄宗到伊阙。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章-庄宗纪三-白话.html'>第五章-庄宗纪三</a></p><p class='next'>下一节：<a href='第七章-庄宗纪五-白话.html'>第七章-庄宗纪五</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第五章-庄宗纪三-白话.html'>第五章-庄宗纪三</a></p><p class='next'>下一节：<a href='第七章-庄宗纪五-白话.html'>第七章-庄宗纪五</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

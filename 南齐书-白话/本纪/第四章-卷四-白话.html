@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -193,8 +220,9 @@
 </p><p>二十二日壬辰，高宗派萧谌、坦之等在官署杀死曹道刚、朱隆之等人，率兵自尚书省进入云龙门，在军服外面套上红色公服。等到进入宫门，多次失掉鞋子。王晏、徐孝嗣、萧坦之、陈显达、王广之、沈文季随后跟进。皇帝在寿昌殿，听到外边发生事变，让人关闭殿内各房门，命令宦官登上兴光楼了望，回来报告说：“看见一个人穿着军服，跟着数百人，全副武装，在西钟楼下面。”不一会儿，萧谌率兵首先入宫，阻截寿昌合，皇帝走向爱妾徐氏的住房，拔剑自杀没有刺进，拿帛缠住脖子，用车接出延德殿。萧谌刚进入宫殿时，守卫将士都拿起弓盾要抵抗，萧谌对他们说：“要抓的自有其人，你们不许动手!”守卫相信了他，等看到皇帝出来，众人都要拼命，可是皇帝竟没说一句话。走出西弄，杀掉了皇帝，时年二十二岁。用车装载尸首从徐龙驹宅第出来，按照王的礼节殡葬。皇帝的余党也被杀死。
 </p><p>史臣曰：郁林王风华正茂外表优美，众人都被迷惑，藏匿真情隐瞒奸诈，可见难以凭貌取人。立嫡长子继位，不知道其遇错恶行，世祖的本心，是不改变周的治国之道。不久罪恶在内部发生，征兆来自宫廷，虽然为害还未深远，但也足以颠覆国家。《春秋》记述梁伯的过错，说他是自取灭亡。
 </p><p>赞曰：十项罪过中有一项，就没有国家不会灭亡。郁林王承担的罪名，是毁弃礼制取消法规。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三-白话.html'>第三章-卷三</a></p><p class='next'>下一节：<a href='第五章-卷五-白话.html'>第五章-卷五</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三-白话.html'>第三章-卷三</a></p><p class='next'>下一节：<a href='第五章-卷五-白话.html'>第五章-卷五</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

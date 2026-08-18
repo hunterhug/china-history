@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -178,8 +205,9 @@
 
 <h1>第七章-惠景间侯者年表<span style='font-size:small'> 译文</span><span style='font-size:small;padding-left:5px'> <a href='第七章-惠景间侯者年表-段译.html'>段译</a></span><span style='font-size:small;padding-left:5px'> <a href='第七章-惠景间侯者年表-原文.html'>原文</a></span></h1>
 <p>太史公读有关列侯分封的档案资料，读到便侯（便侯：即吴浅，于孝惠帝元年受封为便侯。便，县名，在今湖南永兴。）时，说道：真是事出有因啊！长沙王被封为诸侯王，著录在法令（令甲：汉代法令以甲、乙、丙、丁的次序编排。令甲就是法令中的第一篇。）的第一篇，他的忠诚受到称赞。当初高祖平定天下，功臣之中不是皇室同姓宗亲而分疆裂土受封为诸侯王的一共有八个。到孝惠帝时，只剩下长沙王能够保全自己的封国，接连传承五世，最后因为没有后嗣才绝封，自始至终没有犯什么过错，作为国家的藩守，尽心尽职，事情果真就是这样。所以他的德业能使旁系子孙也沾受恩惠，未立功勋而受封为列侯的就有数人。从孝惠帝之初以至孝景帝之末，其间五十多年，追录高祖时遗漏未封的功臣，以及追随孝文帝从代国入继大统的旧臣，孝景帝时在平定吴楚七国之乱的战事中功劳卓著的将相官员，身为皇室骨肉至亲的诸侯王子弟，前来投顺归化的外邦异族的首领等等，先后受封为列侯的有九十多人。现在把他们受封传承等情况列表记载如下，这些都是当代有仁义、建大功的人物中比较突出的。</p><p>在汉惠帝和景帝时期，天下已经太平。吕后的亲信吕产、吕禄等制造了祸乱，吴楚两地联兵叛乱。条侯周亚夫出兵讨伐，人们都热切恭迎。薄太后和窦婴施恩泽，张释之和赵谈忠贞不二。新市兵败，建陵将领功勋荣显。他们都加入了新市的阵营，并接受了朝廷的表彰。随后朝廷又颁布了法令，吴国便有了名声。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章-高祖功臣侯者年表-译文.html'>第六章-高祖功臣侯者年表</a></p><p class='next'>下一节：<a href='第八章-建元以来侯者年表-译文.html'>第八章-建元以来侯者年表</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第六章-高祖功臣侯者年表-译文.html'>第六章-高祖功臣侯者年表</a></p><p class='next'>下一节：<a href='第八章-建元以来侯者年表-译文.html'>第八章-建元以来侯者年表</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

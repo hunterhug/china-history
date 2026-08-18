@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -191,8 +218,9 @@
 </p><p>十一年春二月丙寅，释喜隐。辛亥，司徒乌里只子迭剌哥诬告其父谋反，复诈乘传及杀行人，以其父请，杖而释之。三月丙辰，萧思温奏老人星见，乞行赦宥。闰月甲子朔，如潢河。夏四月癸巳朔，日有食之。是月，射鹿，不视朝。五月乙亥，司天王白、李正等进历。六月甲午，赦。冬十一月，岁星犯月。
 </p><p>十二年春正月甲戌，夜观灯。二月己丑朔，以御史大夫萧护思为北院枢密使，赐对衣、鞍马。夏五月庚午，以旱，命左右以水相沃，顷之，果雨。六月甲午，祠木叶山及潢河。秋，如黑山、赤山射鹿。
 </p><p>十三年春正月，自丁巳昼夜酣饮者九日。丙寅，宋欲城益津关，命南京留守高勋、统军使崔廷勋以兵扰之。癸酉，杀兽人海里。二月庚寅，汉遣使来告，欲巡边徼，乞张声援。壬辰，如潢河。癸巳，观群臣射，赐物有差。乙巳，老人星见。三月癸丑朔，杀鹿人弥里吉，枭其首以示掌鹿者。夏四月壬寅，猎于潢河。五月壬戌，视斡朗改国所进花鹿生麛。六月癸未，近侍伤獐，杖杀之。甲申，杀獐人霞马。壬辰，诏诸路录囚。秋七月辛亥朔，汉以宋侵来告。乙丑，荐时羞于庙。八月甲申，以生日，纵五坊鹰鹘。戊戌，幸近山，呼鹿射之，旬有七日而后返。九月庚戌朔，以青牛白马祭天地。饮于野次，终夕乃罢。辛亥，以酒脯祭天地，复终夜酣饮。冬十月丙申，汉以宋侵来告。十一月庚午，猎，饮于虞人之家，凡四日。十一月戊子，射野鹿，赐虞人物有差。庚寅，杀彘人曷主。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p><p class='next'>下一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p><p class='next'>下一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

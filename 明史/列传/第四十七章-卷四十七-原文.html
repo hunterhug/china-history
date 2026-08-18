@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -254,8 +281,9 @@
 </p><p>孝宗立，迁湖广按察使。既至，命汲水百斛，洗涤厅事而后视事，曰：“吾以除秽也。”居无何，复以佥都御史巡抚云南。三司多旧僚，相见欢然。既而出位揖之曰：“明日有公事，诸君幸相谅。”遂劾罢不职者八人。未几卒。
 </p><p>继宗力持风节，而居心慈厚，自处必以礼。为知府，谒上官必衣绣服，朝觐谒吏部亦然。或言不可，笑曰：“此朝廷法服也，此而不服，将安用之？”为浙江按察时，仓官十余人坐缺粮系狱，至鬻子女以偿。继宗欲宽之而无由。一日，送月俸至，命量之，则溢原数。较他司亦然。因悟仓吏缺粮之由，将具实以闻。众惧，请于继宗，愿捐俸代偿。由是十人者获释。尝监乡试得二卷，具朝服再拜曰：“二子当大魁天下，吾为朝廷得人贺耳。”及拆卷，王华、李旻也，后果相继为状元。人服其鉴。天启初，谥贞肃。
 </p><p>赞曰：明初以十五布政司分治天下，诸边要害则遣侯伯勋臣镇扼之。永乐之季，敕蹇义等二十六人巡行天下，安抚军民，事竣还朝，不为经制。宣德初，始命熊概巡抚苏、松、两浙。越数年，而江西、河南诸省以次专设巡抚官。天顺初，暂罢复设，诸边亦稍用廷臣出镇或参赞军务。盖以地大物众，法令滋章，三司谨奉教条，修其常职；而兴利除弊，均赋税，击贪浊，安善良，惟巡抚得以便宜从事。熊概以下诸人，强干者立声威，恺悌者流惠爱，政绩均有可纪。于谦、周忱巡抚最为有名，而勋业尤盛，故别著焉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十六章-卷四十六-原文.html'>第四十六章-卷四十六</a></p><p class='next'>下一节：<a href='第四十八章-卷四十八-原文.html'>第四十八章-卷四十八</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第四十六章-卷四十六-原文.html'>第四十六章-卷四十六</a></p><p class='next'>下一节：<a href='第四十八章-卷四十八-原文.html'>第四十八章-卷四十八</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

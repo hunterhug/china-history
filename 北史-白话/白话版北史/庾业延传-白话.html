@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>庾业延传<span style='font-size:small'> 白话</span></h1>
 <p>庾业延，代郡人，后皇帝赐名为岳。他的父亲和哥哥和辰世代掌管畜牧，稍后转任中部大人。昭成帝去世后，苻坚内侵，在危险之际，他们大肆收藏各种畜产品，富裕得可以和国君相比。刘显谋反叛乱，道武帝外逃，和辰侍奉献明皇后并送归道武帝，又得到他所送来的资财，道武帝任命和辰当内侍长。和辰把公家和私人过去积蓄的东西分开来，很不能领会道武帝的意图，道武帝因此而恼恨他。庾岳却格外谦恭谨慎自重，善于处理危险之时发生的事情，道武帝十分赞赏他。他和王建等都担任外朝大人，参预军国大事。跟从平定中原，被任命为安远将军。<BR><BR>　　当道武帝的军队在柏肆受惊扰时，贺兰部主帅附力眷、纥突邻部主帅匿物尼、纥奚部主帅叱奴根等得知以后，在阴馆反叛。南安公元顺进行讨伐，不能得胜，诏令庾岳前往。庾岳打败了离石叛胡主帅呼延铁、西河叛胡主帅张崇等部，以功勋赐爵为西昌公，改任邺郡行台。庾岳当将领有谋略，士兵们都佩服他的智谋和勇武，名冠众将之上。当废除邺行台时，将原来统辖的六郡设置相州，并当即任命庾岳为刺史。他执法公正恰当，百姓们都颂扬他。邺郡有旧园池，当时水果初熟，丞吏们送来给他吃，庾岳不肯接受，并说：“果品还没有送给皇上，我怎么能够先食用！”他就这样严谨。改任司空。<BR><BR>　　庾岳的哥哥的儿子庾路，犯了罪，他的父辈和兄弟都被杀，皇帝特别赦免庾岳父子。纠察官员上告说庾岳衣服穿得很华丽，举止风度都模拟国君礼仪。这时正遇道武帝有病，特别喜欢猜疑和嫉妒别人，便杀了他。当时人觉得他冤枉并为之惋惜。庾岳被埋葬在代郡西面的善无境内，后来太武帝征伐赫连氏，路过他的墓地，心酸地改变了脸色，便下诏给他立庙，让这个地方的人四时加以祭祀。又找他的子孙能够担任将领的人，找到了他的儿子庾陵。庾陵跟随皇帝出征立功，便让他承袭父亲的封爵。</p>
-<div class='pn'><p class='pre'>上一节：<a href='安颉传-白话.html'>安颉传</a></p><p class='next'>下一节：<a href='王建传-白话.html'>王建传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='安颉传-白话.html'>安颉传</a></p><p class='next'>下一节：<a href='王建传-白话.html'>王建传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

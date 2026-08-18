@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>萧颖达传<span style='font-size:small'> 白话</span></h1>
 <p>萧颖胄的弟弟萧颖达，少年时好勇任气。萧颖胄在齐朝建武末年负责荆州事务，萧颖达也做西中郎外兵参军，都在西府。齐朝末年国家多难，颇不能自安，于是便与哥哥萧颖胄起兵。<BR><BR>　　萧颖达的弟弟萧颖孚从建邺被庐陵人..景智暗中引荐，与他一齐南归。萧颖孚顺着山翻越障碍，才侥幸逃脱。路上断了粮食，后来因为吃得过饱而死。<BR><BR>　　建康平定，梁武帝任命萧颖达为前将军、丹阳尹。等接受禅让，赠萧颖孚为右卫将军，封萧颖达为作唐侯，担任侍中、卫尉卿。后出京为豫章内史，他心里十分气愤。没有出发以前，参加了华林宴，酒后在座席上说话不高兴。沈约于是劝酒，想趁机让他消消气。萧颖达却大骂沈约说：“我今天的形貌，正是您这老鼠所造成的，为什么又来劝我喝酒！”整个座席上都很惊愕。梁武帝对他说：“你是我家阿五，沈公一向享有厚望，你怎么能轻慢无礼。如果以法治你的罪，你有什么理说！”萧颖达到底没有一句话，只是大声哭泣，武帝心里很愧疚。不久，调任江州刺史。时间不长，悬瓠归附，萧颖达的长史沈蠫等被盗贼残酷地杀害，众人很怀疑是萧颖达，有人还传言他谋反。梁武帝派遣直阁将军张豹子声称到江中讨伐盗贼，实际上是让他防备萧颖达。萧颖达知道了朝廷的意思，只是饮酒不问州里的事情。后来死在左卫将军任上，谥号康侯。</p>
-<div class='pn'><p class='pre'>上一节：<a href='曲江公萧遥欣传-白话.html'>曲江公萧遥欣传</a></p><p class='next'>下一节：<a href='豫章文献王萧嶷传-白话.html'>豫章文献王萧嶷传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='曲江公萧遥欣传-白话.html'>曲江公萧遥欣传</a></p><p class='next'>下一节：<a href='豫章文献王萧嶷传-白话.html'>豫章文献王萧嶷传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

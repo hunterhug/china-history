@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>欧阳澈传<span style='font-size:small'> 白话</span></h1>
 <p>欧阳澈字德明，抚州崇仁人。年轻时是个美男子，善于谈论世事，崇尚气节和正大的言论，意气激昂不为屈服，而忧国悯时，出于他的天性。靖康初年，应对制策条陈弊政，上陈安边御敌十策，州官府不准传送，欧阳澈退下州府而又搜集朝廷的阙失，时政的乖违，可以用来保卫国家抵御恶俗的办法、除去蠹国害民的贼臣十件事，再次写成奏章，并且被传送给皇帝。不久又论列十事，说：“我所进献的三个奏章确实是切中要害，但是有的是触犯当权大臣，有的是违背陛下的听闻，或者结怨于富贵人家，或者遗怒于御史台、谏院的官员，我不是不知道，却敢于向陛下直言不讳的原因，是希望用自身而使天下安定。”欧阳澈所上奏书为三个巨轴，驿站的士兵推辞拿不动，州将为此挑选力士扛在肩上行走。<BR><BR>　　适逢金人大举入侵，胁迫宋朝廷在汴京城下缔结盟约而离去，欧阳澈听说此事，就告诉他人：“我能够用口讨伐金人，比百万军队要强，愿意杀身以安定社稷国家。如果皇帝不信任我，请把我的子女放在朝廷作为人质，自身出使金国，奉亲王返回。”同乡人每每笑他狂妄，阻止他而不能，欧阳澈就徒步走到皇帝临时居住的地方。宋高宗在南京即皇帝位，欧阳澈拜伏在宫阙上上书奏事，极力诋骂当权的大臣，于是被杀害，见《陈东传》。死时年纪三十七岁。<BR><BR>　　许翰在政事堂，退朝后，他问黄潜善处分什么人，黄潜善说：“斩陈东、欧阳澈。”许翰大惊失色，因而查究诏书为什么没有送政事堂的原因，黄潜善说：“只送给我黄潜善，所以你不能看到。”许翰于是极力要求解除职务。他替陈东、欧阳澈撰写哀词。欧阳澈所著《飘然集》六卷，会稽胡衍已把它刻印，丰城人范应钫在学校中为欧阳澈建立祀祠。</p>
-<div class='pn'><p class='pre'>上一节：<a href='陈东传-白话.html'>陈东传</a></p><p class='next'>下一节：<a href='马伸传-白话.html'>马伸传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='陈东传-白话.html'>陈东传</a></p><p class='next'>下一节：<a href='马伸传-白话.html'>马伸传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

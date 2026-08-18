@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -199,8 +226,9 @@
 </p><p>初时因为是皇上亲近族人得以入宫侍卫，每次随从征伐都立有战功。保宁初，升任为右龙虎卫上将军。因为宋军多次骚扰边境，拜为涿州刺史，西南兵马都监、招安、巡检等使，赐号为推忠奉国功臣。
 </p><p>合住长期任事于边境防务，尽管有战胜掳获之功，然而力求平定安静，不妄自生事以求取短期内之功劳，邻国敬重畏服，辖境安定。宋多次派人来交好，希望能传达和好之意，合住上表奏闻其事，景宗准予议和。安定边疆、安抚敌国，合住立了不少功。拜为左金吾卫上将军。任期满，遥摄镇国军节度使，不久去世。
 </p><p>合住富于智慧，又有文采，通晓军旅之事。镇守范阳时，曾率领数骑人马直抵雄州北门，与郡将在马上陈说两国利害，以及周军侵犯我边境之始末。语气慷慨，左右都觉得雄壮。从此，边境数年没有战事。有见识者因此说，合住一番话，强似数十万兵马。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十四章-卷十四-白话.html'>第十四章-卷十四</a></p><p class='next'>下一节：<a href='第十六章-卷十六-白话.html'>第十六章-卷十六</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十四章-卷十四-白话.html'>第十四章-卷十四</a></p><p class='next'>下一节：<a href='第十六章-卷十六-白话.html'>第十六章-卷十六</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

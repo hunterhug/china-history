@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -204,8 +231,9 @@
 <p>　　马嘉运者，魏州繁水人也。少出家为沙门，明于《三论》。后更还俗，专精儒 业，尤善论难。贞观初，累除越王东阁祭酒。顷之，罢归，隐居白鹿山。十一年， 召拜太学博士，兼弘文馆学士，预修《文思博要》。嘉运以颖达所撰《正义》颇多 繁杂，每掎摭之，诸儒亦称为允当。高宗居春宫，引为崇贤馆学士。数与洗马秦暐 侍讲殿中，甚蒙礼异。十九年，迁国子博士卒。 </p>
 <p>　　史臣曰：唐德勃兴，英儒间出，佐命协力，实有其人。薛收左右厥猷，经谋雅 道，不幸短命，歼我良士。上言“恨不图形，若在，当以中书令处之”，才可知矣。 元敬藻翰明敏，而畏权势，竟不狎房、杜，深沉至慎，不亦优哉！元超藉父风望， 弼亮宏略，谅非其罪，而再迁流。及登大任，益有嘉谋，汲引多才，以隆弘纳，其 感恩之重，时其闻诸？有始有卒，其殆庶几乎！稷出自名家，涉于大用，及自贻谋 衅，如贞亮何？姚思廉笃学寡欲，受汉史于家尊，果执明义，临大节而不可夺。及 笔削成书，箴规翊圣，言其命世，亦当仁乎！师古家籍儒风，该博经义，至于详注 史策，探测典礼，清明在躬，天有才格。然而三黜之负，竟在时讥，孔子曰“才难”， 不其然乎？令狐德棻贞度应时，待问平直。征旧史，修新礼，以暢国风；辨治乱， 谈王霸，以资帝业。“元首明哉，股肱良哉”，其斯之谓欤！邓世隆国史时誉，固 有谅直。其复书不逊，何不知之甚也！上疏请编御集，其弼直乎！顾胤清芬，可观 彝范，积善余庆，其有子哉！李延寿研考史学，修撰删补，克成大典，方之班、马， 何代无人？仁实据摭，抑又次焉。孔颖达风格高爽，幼而有闻，探赜明敏，辨析应 对，天有通才。人道恶盈，必有毁讦，及《正义》炳焕，乃异人也，虽其掎摭，亦 何损于明？司马才章藉时崇儒，明核致业；王恭弘阐声教，礼学研详；马嘉运达识 自通，克成典雅。并符才用，润色丹青，其掎摭繁杂，盖求备者也。 </p>
 <p>　　赞曰：河东三凤，俱瑞黄图。棻为良史，颖实名儒。解经不穷，希颜之徒。登 瀛入馆，不其盛乎！ </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p><p class='next'>下一节：<a href='第二十四章-卷二十四-原文.html'>第二十四章-卷二十四</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p><p class='next'>下一节：<a href='第二十四章-卷二十四-原文.html'>第二十四章-卷二十四</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

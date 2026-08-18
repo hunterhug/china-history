@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>文学传论<span style='font-size:small'> 白话</span></h1>
 <p>评论：文章，可说是情感的标志，精神的乐律。潜藏的思绪，蕴含的萌想，在内心酝酿激荡，纵情挥发写在纸上，格调意境便自然生成。它们无不带有灵性，各自好尚不同，技巧各异，见解感悟也多种多样，心灵感应没有外象表露，但却变化无穷。弹奏五声的音响，而出言语句相异，描绘万物的情貌，而下笔形状不同。从心灵奔畅而出，宣示在书帛上。或许它不能穷尽所有的要言妙道，然而它使人心解脱束缚的特性，始终养育着勤奋好学之士，因此古代的贤明之人，都爱在这项上下功夫。至于像丘灵鞠等人，有的能够承传文学事业，有的对此矢志追求，虽然在仕途上有得意有不得意，但他们的名字却能流传下来不被磨灭。</p>
-<div class='pn'><p class='pre'>上一节：<a href='刘勰传-白话.html'>刘勰传</a></p><p class='next'>下一节：<a href='郭世通传-白话.html'>郭世通传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='刘勰传-白话.html'>刘勰传</a></p><p class='next'>下一节：<a href='郭世通传-白话.html'>郭世通传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>陆睿传<span style='font-size:small'> 白话</span></h1>
 <p>陆睿，字思弼，十几岁时，袭爵为抚军大将军、平原王。他生性沉静高雅好学，对地位低的文士很有礼。年龄未到二十，当时的人们就说他能当辅国重臣。他娶了东徐州刺史博陵崔鉴的女儿为妻，当时孝文帝还没有改去北人的姓氏，崔鉴对亲熟的人道“：平原王才干和气度都不错，就是姓名太复杂很讨厌。”陆睿成婚后，从东徐州返回时经过邺，拜访了李彪，很欣赏他，和他一起赴京，留他为馆客。后来陆睿被任命为北征都督，征讨蠕蠕，大败敌军。升任为侍中、都曹尚书。不久蠕蠕又来侵犯边塞，下诏令陆睿出兵征讨，他把敌兵追杀到石碛，擒获了敌兵元帅赤阿突等数百人，回兵后加封散骑常侍，升任尚书左仆射，兼任北部尚书。<BR><BR>　　大和十六年，降五种爵位的等级，因为陆丽曾为前朝建立过奇勋，所以封陆睿为巨鹿郡公。不久被任命为使持节、镇北大将军、尚书令、卫将军，率兵征讨蠕蠕，大败敌军而回。后来因为母亲去世而辞职奔丧。孝文帝想要出兵南伐，任命他官复原职，授为征南将军。陆睿坚持推辞，请求尽完孝礼，皇上敕令有关部门劝谕，不准他推辞。再次被任命为使持节、都督恒州刺史、行尚书令。当时皇帝想御驾亲自南征，陆睿上表劝谏，皇上不听。陆睿又上表奏请御驾回代都，亲临太师冯熙的葬礼，坐罪被免除都督三州诸军事。不久，又晋封他为征北大将军。由于他曾上表赞同迁都，加封食邑四百户。当时穆泰被任命为定州刺史，因为身患疾病，请求改到恒州效力，于是任命陆睿为定州刺史。尚未到任，就和穆泰密谋反叛，被赐死在狱中。赦免了全家的死罪，将他妻子儿女发配辽西。</p>
-<div class='pn'><p class='pre'>上一节：<a href='陆瞫传-白话.html'>陆瞫传</a></p><p class='next'>下一节：<a href='源贺传-白话.html'>源贺传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='陆瞫传-白话.html'>陆瞫传</a></p><p class='next'>下一节：<a href='源贺传-白话.html'>源贺传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

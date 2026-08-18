@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>熊昙朗传<span style='font-size:small'> 白话</span></h1>
 <p>熊昙朗，豫章南昌人。世代为本郡显姓。熊昙朗放荡不羁，体力过人，容貌非常壮美。侯景之乱时，他极力聚集年轻人，占据丰城县立栅，凶暴狡猾之人与强夺盗窃之徒大多归附他。梁元帝任命他为巴山太守。荆州陷落，熊昙朗兵力很强，劫掠邻县，把居民捆起来出售，在山谷之中，是最大的祸患。<BR><BR>　　等到侯王真镇守豫章，熊昙朗表面上表示服从，暗地里打算图谋侯王真。侯方儿背叛侯王真，熊昙朗是他的主谋，侯王真失败，熊昙朗掠获了侯王真的很多马匹器械和女子。等到萧勃越过大庾岭，欧阳危页为前军，熊昙朗欺骗欧阳危页一同去巴山袭击黄法..，又报告黄法..希望联合打败欧阳危页，相约说：“事情成功后给我马匹器械。”到出兵时，与欧阳危页成犄角之势前进，又欺骗欧阳危页说：“余孝顷打算突袭我，要分出奇兵留下，马匹器械太少，恐怕无济于事。”欧阳危页于是送去三百件铠甲援助他。等到抵达城下，即将开战，熊昙朗假装败退，黄法..追逐，欧阳危页失去援助，狼狈退败，熊昙朗取了他的马匹器械后退回。当时巴山陈定也拥兵立寨，熊昙朗假装把女儿许配给陈定的儿子为妻。又对陈定说：“周迪、余孝顷都不希望这桩婚事，你必须派强兵来迎娶。”陈定于是派精锐的披甲将士三百人和土豪二十人去迎亲，已经到了，熊昙朗把他们捉起来，缴了他们的马匹武器，都出价责令他们赎买。<BR><BR>　　绍泰二年(556)，熊昙朗因为是南川的土豪首领，按例被任命为游骑将军。不久任持节、飙猛将军、桂州刺史资，兼丰城令。历任宜新、豫章二郡太守。王琳派李孝钦等人跟随余孝顷在临川攻打周迪，熊昙朗率所领人马赴援。这一年，按功劳被任命为持节、通直散骑常侍、宁远将军，封为永化县侯，封邑一千户，送给一部鼓吹。又因为抵御王琳之功，被任命为平西将军、开府仪同三司，其他职务不变。等到周文育在豫章攻打余孝劢，熊昙朗出兵和周文育会合，周文育失利，熊昙朗于是杀害周文育，以响应王琳，此事见《周文育传》。到这时把周文育手下诸将全部捉住，占据新淦县，环江立城。<BR><BR>　　王琳东下，世祖征召南川的部队，江州刺史周迪、高州刺史黄法..打算沿流应赴，熊昙朗于是占据城池排列战舰阻断道路，周迪等人和黄法..于是带领南中军队筑城围住他，隔断他与王琳的信使往来。等到王琳败逃，熊昙朗的党羽和援手与他心离德，周迪攻陷其城，俘获城中男女一万多人。熊昙朗逃入村中，村民把他杀死，首级传到京师，悬挂在朱雀观。于是把他的宗族全部拘捕，不论长幼，全部斩杀，弃尸街头。</p>
-<div class='pn'><p class='pre'>上一节：<a href='阮卓传-白话.html'>阮卓传</a></p><p class='next'>下一节：<a href='周迪传-白话.html'>周迪传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='阮卓传-白话.html'>阮卓传</a></p><p class='next'>下一节：<a href='周迪传-白话.html'>周迪传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

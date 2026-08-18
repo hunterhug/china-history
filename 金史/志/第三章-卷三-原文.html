@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -408,8 +435,9 @@
 </p><p>金既取汴，皆辇致于燕，天轮赤道牙距拨轮悬象钟鼓司辰刻报天池水壶等器久皆弃毁，惟铜浑仪置之太史局候台。但自汴至燕相去一千余里，地势高下不同，望筒中取极星稍差，移下四度才得窥之。明昌六年秋八月，风雨大作，雷电震击，龙起浑仪鳌云水趺下，台忽中裂而摧，浑仪仆落台下，旋命有司营葺之，复置台上。贞祐南渡，以浑仪熔铸成物，不忍毁拆，若全体以运则艰于辇载，遂委而去。
 </p><p>兴定中，司天台官以台中不置浑仪及测候人数不足，言之于朝，宜铸仪象，多补生员，庶得尽占考之实。宣宗召礼部尚书杨云翼问之，云翼对曰：“国家自来铜禁甚严，虽罄公私所有，恐不能给。今调度方殷，财用不足，实未可行。”他日，上又言之，于是止添测候之人数员，铸仪之议遂寝。
 </p><p>初，张行简为礼部尚书提点司天监时，尝制莲花、星丸二漏以进，章宗命置莲花漏二禁中，星丸漏遇车驾巡幸则用之。贞祐南渡，二漏皆迁于汴，汴亡废毁，无所稽其制矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p><p class='next'>下一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p><p class='next'>下一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

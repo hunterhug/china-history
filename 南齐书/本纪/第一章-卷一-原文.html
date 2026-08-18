@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -239,8 +266,9 @@
 </p><p>昔金德既沦，而传祚于我有宋，历数告终，实在兹日，亦以水德而传于齐。式遵前典，广询群议，王公卿士，咸曰惟宜。今遣使持节、兼太保、侍中、中书监、司空、卫将军、雩都县侯渊，兼太尉、守尚书令僧虔奉皇帝玺绶，受终之礼，一依唐虞故事。王其允副幽明，时登元后，宠绥八表，以酬昊天之休命。
 </p><p>太祖三辞，宋帝王公以下固请。兼太史令、将作匠陈文建奏符命曰：“六，亢位也。后汉自建武至建安二十五年，一百九十六年而禅魏；魏自黄初至咸熙二年，四十六年而禅晋；晋自太始至元熙二年，一百五十六年而禅宋；宋自永初元年至升明三年，凡六十年。咸以六终六受。六，亢位也。验往揆今，若斯昭著。敢以职任，备陈管穴。伏愿顺天时，应符瑞。”二朝百辟又固请。尚书右仆射王俭奏：“被宋诏逊位，臣等参议，宜克日舆驾受禅，撰立仪注。”太祖乃许焉。
 </p><p>史臣曰：案《太一九宫占》推汉高五年，太一在四宫，主人与客俱得吉，计先举事者胜，是岁高祖破楚。晋元兴二年，太一在七宫，太一为帝，天目为辅佐，迫胁太一，是年安帝为桓玄所逼出宫。大将在一宫，参相在三宫，格太一。经言，格者，已立政事，上下格之，不利有为，安居之世，不利举动。元兴三年，太一在七宫，宋武破桓玄。元嘉元年，太一在六宫，不利有为，徐、傅废营阳王。七年，太一在八宫，关囚恶岁，大小将皆不得立，其年到彦之北伐，初胜后败，客主俱不利。十八年，太一在二宫，客主俱不利，是岁氐杨难当寇梁、益，来年仇池破。十九年，大小将皆见关不立，凶，其年裴方明伐仇池，克百顷，明年失之。泰始元年，太一在二宫，为大小将奄击之，其年景和废。二年，太一在三宫，不利先起，主人胜，其年晋安王子勋反。元徽二年，太一在六宫，先起败，是岁桂阳王休范反，并伏诛。四年，太一在七宫，先起者客，西北走，其年建平王景素败。升明元年，太一在七宫，不利为客，安居之世，举事为主人，应发为客，袁粲、沈攸之等反，伏诛。是岁太一在杜门，临八宫，宋帝禅位，不利为客，安居之世，举事为主人，禅代之应也。</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p></div><footer>
+<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>第六章-卷六<span style='font-size:small'> 原文</span></h1>
 <p>昔者，帝王之有天下，莫不眾建同姓，以樹蕃屏，其不得以有國者，則亦授之土田，使帥其宗氏，輯其分族。故繼別之宗百世不遷，豈惟賴其崇獎維持以成不拔之基哉。蓋親親之仁，為國大經，理固然也。周官宗伯掌三族之別以辨親疏，於是敍昭穆而禮法之隆殺行焉。此世系之所以不可不謹也。後世封建廢而宗法壞，帝王之裔，至或雜於民伍，淪為皂隸，甚可歎也。宋太祖、太宗、魏王之子孫可謂蕃衍盛大矣，支子而下，各以一字別其昭穆，而宗正所掌，有牒、有籍、有錄、有圖、有譜，以敘其系，而第其服屬之遠近，列其男女昏因及官爵敘遷，而著其功罪生死歲月，雖封國之制不可以復古，而宗法之嚴，恩禮之厚，亦可概見。然靖康之變，往往淪徙死亡於兵難，南渡所存十無二三，而國之枝葉日以悴矣。<BR><BR> </p><p>　　今因載籍之舊，考其源委，作宗室世系表。<BR><BR> </p><p>　　太祖四子：長滕王德秀，次燕王德昭，次舒王德林，次秦王德芳。德秀、德林無後。<BR><BR> </p><p>　　表格製作中</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p><p class='next'>下一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p><p class='next'>下一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

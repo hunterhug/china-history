@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -203,8 +230,9 @@
 </p><p>初，宾出，皇子东面见，诸亲拜之，皇子答拜。皇子入见内外诸尊于别所。
 </p><p>宾、主既释服，改设席，讫，宾、赞俱出次，立于门西。主人出揖宾，宾报揖。主人先入，宾、赞从之。至阶，一揖一让，升坐，俱坐。会讫，宾立于西阶上，赞冠者在北，少退，俱东面。主人立于东阶上，西面。掌事者奉束帛之篚升，授主人于序端。主人执篚少进，西面立。又掌事者奉币篚升，立于主人后。币篚升，牵马者牵两马入，陈于门内，三分庭一在南，北首西上。宾还西阶上，北面再拜。主人进，立于楹间，赞冠者立于宾左，少退，俱北面再拜。主人南面，宾、赞进，立于主人之右，俱南面东上。主人授币，宾受之，退，复位。于主人授币，掌事者又以币篚授赞冠者。主人还阼阶上，北面拜送，宾、赞降自西阶，从者讶受币。宾当庭实，东面揖，出，牵马者从出，从者讶受马于门外。宾降，主人降。送宾于大门，西面再拜。
 </p><p>若诸臣之嫡子三加，皆祝而冠，又祝而酌，又祝而字。庶子三加，既加，然后酌而祝之，又祝而字。其始冠皆缁布；再加皆进贤；其三加，一品之子以衮冕，二品之子以惊冕，三品之子以毳冕，四品之子以絺冕，五品之子以玄冕，六品至于九品之子以爵弁。其服从之。其即席而冠也，嫡子西面，庶子南面。其筮日，筮宾、赞，遂戒之，及其所以冠之礼，皆如亲王。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章-卷六·礼乐六-原文.html'>第六章-卷六·礼乐六</a></p><p class='next'>下一节：<a href='第八章-卷八·礼乐八-原文.html'>第八章-卷八·礼乐八</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第六章-卷六·礼乐六-原文.html'>第六章-卷六·礼乐六</a></p><p class='next'>下一节：<a href='第八章-卷八·礼乐八-原文.html'>第八章-卷八·礼乐八</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

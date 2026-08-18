@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -218,8 +245,9 @@
 </p><p>十一月，上御通化门，观作毗沙门神，因赐绢五百匹。停浙东贡甜菜、海蚶。十二月，浙西观察使李德裕奏去管内淫祠一千一十五所。
 </p><p>四年正月辛亥朔，上御殿受朝如常仪。上饵金石之药，处士张皋上疏切谏，上悦，召之，求皋不获。泽、潞判官贾直言新授谏议大夫，刘悟上表乞留，从之。礼部尚书致仕孔戣卒。辛未，上大渐，诏皇太子监国。壬申，上崩于寝殿，时年三十。群臣上谥曰睿圣文惠孝皇帝，庙号穆宗。十一月庚申，葬于光陵。
 </p><p>史臣曰：臣观五运之推迁，百王之隆替，亦无常治，亦无常乱，在人而已，匪降自天。当轩黄御宇之秋，则百年无事；及商辛握图之日，则四海横流。昔章武皇帝国命之不行，惜朝纲之将坠，乃求贤俊，总揽英雄，果能扼大盗之喉，制奸臣之命。五十载已终之土，复入提封；百万户受弊之氓，重苏景化。元和之政，几致升平。鸱枭方革于好音，龙鼎俄伤于短祚。苟或时有平、勃之佐，继以文、景之才，则延凑、克融，自缩螳螂之臂；智兴、李，敢萌狗鼠之谋？强盗宁窥孟贲之金，饿隶不拾婴兒之饵。观夫孱主，可谓痛心，不知创业之艰难，不恤黎元之疾苦。谓威权在手，可以力制万方；谓旒冕在躬，可以坐驰九有。曾不知聚则万乘，散则独夫，朝作股肱，暮为仇敌。仲长子所谓“至于运徙势去，独不觉悟者，岂非富贵生不仁，沉溺致愚疾。存亡以之迭代，治乱从此周复。”诚哉是言也！赞曰：惠王不令，败度乱政。骄僻偶全，实赖遗庆。皇皇上帝，为民立正。此何人哉，遽主鼎命。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p><p class='next'>下一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p><p class='next'>下一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -244,8 +271,9 @@
 </p><p>有樊吉人者，元城人。由进士知滋阳，累擢山东兵备佥事。未行遇变，自刎死。淑泰自有传。
 </p><p>张焜芳，会稽人。崇祯元年进士。历南京户科给事中。十一年春，疏荐黄道周、惠世扬、陈子壮、金光辰，而为旧抚文震孟请恤。帝以沽名市恩，切责之。又纠太仆少卿史涘，为涘所讦，遂罢职，事具《薛国观传》。十六年正月，焜芳北上，抵临清，遇大清兵，与诸生马之騆，之駉俱被执死之。其妻妾闻之，赴井死。
 </p><p>时又有天津参将贺秉钺者，泰宁左卫人。崇祯四年第武科一甲第三，亦以扶父柩至临清，巷战终日，矢尽，被执死。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百七十八章-卷一百七十八-原文.html'>第一百七十八章-卷一百七十八</a></p><p class='next'>下一节：<a href='第一百八十章-卷一百八十-原文.html'>第一百八十章-卷一百八十</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第一百七十八章-卷一百七十八-原文.html'>第一百七十八章-卷一百七十八</a></p><p class='next'>下一节：<a href='第一百八十章-卷一百八十-原文.html'>第一百八十章-卷一百八十</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

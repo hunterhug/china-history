@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -214,8 +241,9 @@
 </p><p>后赞，兗州瑕丘人。其母，倡也。赞幼善讴，事张延朗。延朗死，赞更事汉高祖，高祖爱之，以为牙将。高祖即位，拜飞龙使，隐帝尤爱幸之。杨邠等执政，赞久不得迁，乃共谋杀邠等。邠等死，隐帝悔之，赞与允明等番休侍帝，不欲左右言已短。隐帝兵败北郊，赞奔兗州，慕容彦超执送京师，枭首于市。
 </p><p>○郭允明
 </p><p>郭允明，少为汉高祖厮养，高祖爱之，以为翰林茶酒使。隐帝尤狎爱之，允明益骄横无顾避，大臣不能禁。允明使荆南高保融，车服导从如节度使，保融待之甚厚。允明乃阴使人步测其城池高下，若为攻取之计者以动之。荆人皆恐，保融厚赂以遗之。迁飞龙使。已而李业与允明谋杀杨邠等，是日无云而昏，雾雨如泣，日中，载邠等十余尸暴之市中。允明手杀邠等诸子于朝堂西庑，王章婿张贻肃血流逆注。隐帝败于北郊，还至封丘门，不得入，帝走赵村，允明从后追之，弑帝于民舍，乃自杀。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十七章-晋臣传第十七-原文.html'>第十七章-晋臣传第十七</a></p><p class='next'>下一节：<a href='第十九章-周臣传第十九-原文.html'>第十九章-周臣传第十九</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十七章-晋臣传第十七-原文.html'>第十七章-晋臣传第十七</a></p><p class='next'>下一节：<a href='第十九章-周臣传第十九-原文.html'>第十九章-周臣传第十九</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

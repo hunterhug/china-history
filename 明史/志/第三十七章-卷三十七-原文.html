@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -226,8 +253,9 @@
 </p><p>十八年巡狩兴都，帝亲制乐章，享上帝于飞龙殿，奉皇考配。其后，七庙火，复同堂之制，四时岁祫，乐章器物仍如旧制。初增七庙乐官及乐舞生，自四郊九庙暨太岁神祇诸坛，乐舞人数至二千一百名。后稍裁革，存其半。
 </p><p>张鹗迁太常卿，复申前说，建白三事：一请设特钟、特磬以为乐节；一请复宫县以备古制；一请候元气以定钟律。事下礼官，言：“特钟、特磬宜造乐悬，在庙廷中，周旋未便，不得更制。惟黄钟为声气之元，候气之法，实求中气以定中声，最为作乐本原。其说，若重室墐户，截管实灰，覆缇，按历气至灰飞，证以累黍，具有成法可依。其法，筑室于圜丘外垣隙地，选知历候者往相其役，待稍有次第，然后委官考验。”从之。仍诏取山西长子县羊头山黍，大小中三等各五斗，以备候气定律。
 </p><p>明自太祖、世宗，乐章屡易，然钟律为制作之要，未能有所讲明。吕怀、刘濂、韩邦奇、黄佐、王邦直之徒著书甚备，职不与典乐，托之空言而已。张鹗虽因知乐得官，候气终属渺茫，不能准以定律。弘治中，莆人李教授文利，著《律吕元声》，独宗《吕览》黄钟三寸九分之说。世宗初年，御史范永銮上其书，其说与古背，不可用。嘉靖十七年六月，辽州同知李文察进所著乐书四种，礼官谓于乐理乐书多前人所未发者。乃授文察为太常典簿，以奖劝之。而其所云：“按人声以考定五音”者，不能行也。神宗时，郑世子载堉著《律吕精义》、《律学新说》、《乐舞全谱》共若干卷，具表进献。崇祯六年，礼部尚书黄汝良进《昭代乐律志》。宣付史馆，以备稽考，未及施行。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十六章-卷三十六-原文.html'>第三十六章-卷三十六</a></p><p class='next'>下一节：<a href='第三十八章-卷三十八-原文.html'>第三十八章-卷三十八</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三十六章-卷三十六-原文.html'>第三十六章-卷三十六</a></p><p class='next'>下一节：<a href='第三十八章-卷三十八-原文.html'>第三十八章-卷三十八</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

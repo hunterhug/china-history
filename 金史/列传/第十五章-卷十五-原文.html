@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -222,8 +249,9 @@
 </p><p>久子，宗磐跋扈尤甚，宗隽亦为丞相，挞懒持兵柄，谋反有状。宗磐、宗隽皆伏诛，诏以挞懒属尊，有大功，因释不问，出为行台尚书左丞相，手诏慰遣。挞懒至燕京，愈骄肆不法，复与翼王鹘懒谋反，而朝议渐知其初与宋交通而倡议割河南、陕西之地。宗弼请复取河南、陕西。会有上变告挞懒者，熙宗乃下诏诛之。挞懒自燕京南走，追而杀之于祁州，并杀翼王及宗人活离胡土、挞懒二子斡带、乌达补，而赦其党与。
 </p><p>宗弼为都元帅，再定河南、陕西。伐宋渡淮，宋康王乞和，遂称臣，画淮为界，乃罢兵。
 </p><p>赞曰：君臣之位，如冠屦定分，不可顷刻易也。五季乱极，纲常斁坏。辽之太宗，慢亵神器，倒置冠屦，援立石晋，以臣易君，宇宙以来之一大变也。金人效尤，而张邦昌、刘豫之事出焉。邦昌虽非本心，以死辞之，孰曰不可。豫乘时徼利，金人欲倚以为功，岂有是理哉。挞懒初荐刘豫，后以陕西、河南归宋，视犹傥来，初无固志以处此也。积其轻躁，终陷逆图，事败南奔，适足以实通宋之事尔，哀哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十四章-卷十四-原文.html'>第十四章-卷十四</a></p><p class='next'>下一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十四章-卷十四-原文.html'>第十四章-卷十四</a></p><p class='next'>下一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

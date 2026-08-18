@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>徐謇传<span style='font-size:small'> 白话</span></h1>
 <p>徐謇字成伯，丹阳人，家本住东莞，与兄长文伯等都擅长治病配药。徐謇因到青州，慕容白曜平定东阳，被抓住送到京城。献文帝想检验他的能力，把病人放在帷幕里面，让徐謇隔着帷幕把脉。非常清楚病状，又知道病人面色症候，于是被宠幸。做了中散。不久升为内侍长。文明太后时常询问医药方书，但比不上李修那样被重用。徐謇配药治病的方法，比李修精妙。但性情古怪，应接往往不合他意，即使贵为王公大人，也不去为他们治疗。<BR><BR>　　孝文帝迁都洛阳后，稍得眷顾接待，身材矮小不如常人，皇帝宠爱的冯昭仪有病时，都让他去治疗。又任命为中散大夫，转任侍御师。徐謇想替孝文帝配制金丹，得到延年益寿的方法，便到嵩山居住，采集物品，历经一年没有什么成就，便告停止。太和二十二年(498)，皇帝驾临悬瓠，得了重病，就急速召引徐謇，让他从水路到行宫，一天一夜走了几百里。到行宫，诊断治疗很有效果。九月，皇帝车驾驻汝水边，于是替徐謇摆下太官珍膳。集合百官，特意让徐謇坐在上席，把各种美肴名酒摆放在他面前，让身边侍卫宣讲徐謇拯救病危周济人伦的功劳，应该给予酬谢，便下达诏书褒扬赞美，让徐謇做了大鸿胪卿、金乡县伯，又赏赐钱绢、各种物品、奴婢、牛马，赏赐丰厚，都经内省呈报诸位亲王，咸阳王禧等人也各有酬赠，都达到千匹。随皇上到邺城，皇帝还不断发病，徐謇早晚侍奉在身边。第二年，跟随皇上到马圈，皇上病情加重，性情暴躁不和悦，常对他尖刻讽刺，还想用鞭捶惩罚，幸而得免。皇帝死后，徐謇随着棺木回到洛阳。<BR><BR>　　徐謇有一种饮食调养吞服的方法，年近八十，但鬓发不白，体力不减。正始元年(504)，因年老，做了光禄大夫。下世后，追封安东将军、齐州刺史，谥号靖。儿子徐践，字景癉，袭承爵位，官职建兴太守。<BR><BR>　　兄文伯在南齐做官，是东莞、太山、兰陵三郡的太守。<BR><BR>　　儿子徐雄，是员外散骑侍郎，医道在长江下游以东地区被人称赞，事迹都见于《南史》。</p>
-<div class='pn'><p class='pre'>上一节：<a href='张胄玄传-白话.html'>张胄玄传</a></p><p class='next'>下一节：<a href='姚僧垣传-白话.html'>姚僧垣传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='张胄玄传-白话.html'>张胄玄传</a></p><p class='next'>下一节：<a href='姚僧垣传-白话.html'>姚僧垣传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

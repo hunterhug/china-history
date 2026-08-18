@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -268,8 +295,9 @@
 </p><p>每县都设置四名方略吏。洛阳县设置六部尉。以后，建尘也设置六部尉，其余的大的县设置二名，次县、小县各一名。邺、长安设置吏员和三千户以上的制度一样。
 </p><p>四中郎将，都是后漠设置的，经魏到晋，都有遣一官职，江左时期更加被看重。
 </p><p>护羌、夷、蛮等校尉，考武帝时在襄阳设置南蛮校尉，在垦室设西戎校尉，在空业设置南夷校尉。元康年间，护羌校尉是凉州刺史，西戎校尉是雍州刺史，南蛮校尉是荆州刺史。到江左初期，撤销南蛮校尉，不久又在江陵设置，将南夷校尉改为镇蛮校尉。到安帝时期，在襄阳设置宁蛮校尉。护匈奴、羌、戎、蛮、夷、越中郎将，案武帝时设置四中郎将，有的兼任刺史，有的持节担任。武帝又设置平越中郎将，居守在广州，主管守护南越。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十三章--白话.html'>第十三章-</a></p><p class='next'>下一节：<a href='第十五章--白话.html'>第十五章-</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十三章--白话.html'>第十三章-</a></p><p class='next'>下一节：<a href='第十五章--白话.html'>第十五章-</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>元赞传<span style='font-size:small'> 白话</span></h1>
 <p>元赞是元德的弟弟，他颇有声誉，喜欢陈奏有关军国事务的处理意见。刚设置司州时，任命赞为司州刺史，赐爵位为上谷侯。孝文帝告诫元赞要以教化来改变畿甸的风俗，可以宣扬孝道，一定要使风俗教化相互和谐，礼乐之道大备。从今以后，如果有不守孝悌之道的人，可以在他家门前设立标志，刻字在屋柱上。又下诏说“：司州刺史，官职尊贵，地位重要，总管京畿，应从皇室至亲中选任，以合为众人瞻仰的声望。但诸王年幼，不熟悉政务。所以授职给赞，希望有助于弘扬教化。如今司州初立，郡县新建，公卿以下都有属官，可各人带好自家子弟，以相敬重。”于是赐名为“赞”。下诏让赞乘坐步挽进入殿门，加封为太子少师，又升为左仆射。孝文帝打算迁都洛阳，各公卿大多持有不同意见，惟独元赞赞成这一重要决策。皇帝每次南征，都握着他的手委托他处置后事。死后，追赠卫将军，左仆射照旧。后来又因他有辅助的大功，晋封晋阳县伯。</p>
-<div class='pn'><p class='pre'>上一节：<a href='元晖传-白话.html'>元晖传</a></p><p class='next'>下一节：<a href='元淑传-白话.html'>元淑传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='元晖传-白话.html'>元晖传</a></p><p class='next'>下一节：<a href='元淑传-白话.html'>元淑传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

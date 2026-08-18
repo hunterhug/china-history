@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -232,8 +259,9 @@
 </p><p>十一年，奉诏巡边。六月，至军中，将战，有疾，诏以右丞相纥石烈志宁代，宗叙还。七月，病甚，遗表朝政得失，及边防利害，力疾，使其子上之。薨，年四十六。上见其遗表，伤悼不已，辍朝，遣宣徽使敬嗣晖致祭，赙银千两、彩四十端、绢四百匹。上谓宰臣曰：“宗叙勤劳国家，他人不能及也。”
 </p><p>初，宗叙尝请募贫民戍边屯田，给以廪粟，既贫者无艰食之患，而富家免更代之劳，得专农业。上善其言，而未行也。十七年，上谓宰臣曰：“戍边之卒，岁冒寒暑，往来番休，以马牛往戍，往往皆死。且夺其农时，败其生业，朕甚闵之。朕欲使百姓安于田里，而边圉强固，卿等何术可以致死。”左丞相良弼曰：“边地不堪耕种，不能久戍，所以番代耳。”上曰：“卿等以此急务为未事耶。往岁，参政宗叙尝为朕言此事。若宗叙，可谓尽心于国者矣。今以两路招讨司、乌古里石垒部族、临潢、泰州等路，分置堡戍，详定以闻，朕将亲览。”
 </p><p>上追念宗叙，闻其子孙家用不给，诏赐钱三千贯。明昌五年，配享世宗庙廷。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p><p class='next'>下一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p><p class='next'>下一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -215,8 +242,9 @@
 </p><p>大和七年十二月，刑部奏：“先奉敕详定前大理丞谢登《新编格后敕》六十卷者。臣等据谢登所进，详诸理例，参以格式，或事非久要，恩出一时，或前后差殊，或书写错误，并已落下及改正讫。去繁举要，列司分门，都为五十卷。伏请宣下施行。”可之。八年四月，诏应犯轻罪人，除情状巨蠹，法所难原者，其他过误罪愆，及寻常公事违犯，不得鞭背。遵太宗之故事也。俄而京兆尹韦长奏：“京师浩穰，奸豪所聚。终日惩罚，抵犯犹多，小有宽容，即难禁戢。若恭守敕旨，则无以肃清；若临事用刑，则有违诏使。伏望许依前据轻重处置。”从之。
 </p><p>开成四年，两省详定《刑法格》一十卷，敕令施行。
 </p><p>会昌元年九月，库部郎中、知制诰纥干泉等奏：“准刑部奏，犯赃官五品已上，合抵死刑，请准狱官令死于家者，伏请永为定格。”从之。大中五年四月，刑部侍郎刘彖等奉敕修《大中刑法总要格后敕》六十卷，起贞观二年六月二十日，至大中五年四月十三日，凡二百二十四年杂敕，都计六百四十六门，二千一百六十五条。七年五月，左卫率仓曹参军张戣进《大中刑法统类》一十二卷，敕刑部详定奏行之。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -203,8 +230,9 @@
 <p>　　上官仪，本陕州陕人也。父弘，隋江都宫副监，因家于江都。大业末，弘为将 军陈稜所杀，仪时幼，藏匿获免。因私度为沙门，游情释典，尤精《三论》，兼涉 猎经史，善属文。贞观初，杨仁恭为都督，深礼待之。举进士。太宗闻其名，召授 弘文馆直学士。累迁秘书郎。时太宗雅好属文，每遣仪视草，又多令继和，凡有宴 集，仪尝预焉。俄又预撰《晋书》成，转起居郎，加级赐帛。高宗嗣位，迁秘书少 监。龙朔二年，加银青光禄大夫、西台侍郎、同东西台三品，兼弘文馆学士如故。 本以词彩自达，工于五言诗，好以绮错婉媚为本。仪既贵显，故当时多有效其体者， 时人谓为上官体。仪颇恃才任势，故为当代所嫉。麟德元年，宦者王伏胜与梁王忠 抵罪，许敬宗乃构仪与忠通谋，遂下狱而死，家口籍没。子庭芝，历位周王府属。 与仪俱被杀。庭芝有女，中宗时为昭容，每侍帝草制诰，以故追赠仪为中书令、秦 州都督、楚国公；庭芝黄门侍郎、岐州刺史、天水郡公，仍令以礼改葬。 </p>
 <p>　　史臣曰：褚河南上书言事，亹癖有经世远略。魏徵、王珪之后，骨鲠风彩，落 落负王佐器者，殆难其人。名臣事业，河南有焉。昔齐人馈乐而仲尼去，戎王溺妓 而由余奔，妇人之言，圣哲惧罹其祸，况二佞据衡轴之地，为正人之魑魅乎！古之 志士仁人，一言相期，死不之悔，况于君臣之间，受托孤之寄，而以利害祸福，忘 平生之言哉！而韩、来诸公，可谓守死善道，求福不回者焉。 </p>
 <p>　　赞曰：褚公之言，和乐愔愔，钟石在虡，动成雅音。二猘双吠，三贤一心。人 皆观望，我不浮沉。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p><p class='next'>下一节：<a href='第三十一章-卷三十一-原文.html'>第三十一章-卷三十一</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p><p class='next'>下一节：<a href='第三十一章-卷三十一-原文.html'>第三十一章-卷三十一</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

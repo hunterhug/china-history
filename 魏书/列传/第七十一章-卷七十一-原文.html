@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -257,8 +284,9 @@
 </p><p>李延实，字禧，陇西人，尚书仆射冲之长子。性温良，少为太子舍人。世宗初，袭父爵清泉县侯。累迁左将军、光州刺史，庄帝即位，以元舅之尊，超授侍中、太保，封濮阳郡王。延实以太保犯祖讳，又以王爵非庶姓所宜，抗表固辞。徒封濮阳郡公，改授太傅。寻转司徒公，出为使持节、侍中、太傅、录尚书事、青州刺史。尔朱兆入洛，乘舆幽絷，以延实外戚，见害于州馆。出帝初，归葬洛阳。赠使持节、侍中、太师、太尉公、录尚书事、都督、雍州刺史、谥曰孝懿。
 </p><p>长子彧，字子文，尚庄帝姊丰亭公主。封东平郡公，位侍中、左光禄大夫、中书监、骠骑大将军、开府仪同三司、广州刺史。彧任侠交游，轻薄无行。尔朱荣之死也，武毅之士皆彧所进。孝静初，以罪弃市。
 </p><p>史臣曰：三五哲王，深防远虑。舅甥之国。罕执钧衡；母后之家，无闻倾败。爱及后世，颠覆继轨。盖由进不以礼，故其毙亦速。其间或不泯旧基，弗亏先构者，盖处之以道，远权之所致也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十章-卷七十-原文.html'>第七十章-卷七十</a></p><p class='next'>下一节：<a href='第七十二章-卷七十二-原文.html'>第七十二章-卷七十二</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第七十章-卷七十-原文.html'>第七十章-卷七十</a></p><p class='next'>下一节：<a href='第七十二章-卷七十二-原文.html'>第七十二章-卷七十二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

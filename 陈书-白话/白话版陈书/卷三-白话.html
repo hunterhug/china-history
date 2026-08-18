@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -247,8 +274,9 @@
 </p><p>六月甲子日，群臣上书请谧为文皇帝，庙号世祖。丙寅日，葬在永宁陵。
 </p><p>世祖从艰难中发迹，了解百姓的疾苦。国家的用费，定依俭约的原则。平常征调赋役这些事，事情如果没能办好的，他定会嗟叹失色，好像自身的事一样。主持奏表的裁决，善辨真假，不容臣下奸巧，使得人人知道自励。每一夜投报内宫有政务要处理的，前后相接。每当伺时的人送更签到殿内，就吩咐送签人把签扔到石阶上，让签发出声响，说：“我即使睡着了，也要让我惊醒。”始终是这样。类似的事很多。
 </p><p>陈吏部尚书姚察曰：世上流传的继承守业，宗族枝脉承位，得失的事，也算详细的了。大多以承接而不坠声名的视为贤能，承位而改政的视为不肖；那些能使前王事业发扬光大的，能扩大基业的，原本就少。世祖自从当初发迹，功劳显赫，平定寇乱，辅佐大业。等到国家突生祸患，入承实位，兢兢业业，就像用朽绳驭马一样小心。加上崇尚儒术，重视文治，见善行就怕做不到，任用人就像用自己，以恭俭要求自己，以勤劳对待外物。自古又文又武的君王，柬征西讨的入主，他们的声名与事功，可算是一类的人。至于说到依靠聪明，运用鉴识，这是永平的政治，前史中自有论述。</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷二-白话.html'>卷二</a></p><p class='next'>下一节：<a href='卷四-白话.html'>卷四</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='卷二-白话.html'>卷二</a></p><p class='next'>下一节：<a href='卷四-白话.html'>卷四</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -212,8 +239,9 @@
 </p><p>世或谓魏氏不用钱久，积累巨万，故欲行之，利公富国，斯殆不然。晋文后舅犯之谋，而先成季之信，以为虽有一时之勋，不如万世之益。于时名贤在列，君子盈朝，大谋天下之利害，将定经国之要术。若谷实便钱，义不昧当时之近利，而废永用之通业，断可知矣。斯实由困而思革，改而更张耳。近孝武之末，天下无事，时和年丰，百姓乐业，谷帛殷阜，几乎家给人足，验之实事，钱又不妨人也。
 </p><p>顷兵革屡兴，荒馑荐及，饥寒未振，实此之由。公既援而拯之，大革视听，弘敦本之教，明广农之科，敬授人时，各从其业，游荡知反，务末自休，同以南亩竞力，野无遗壤矣。于此以往，将升平必至，何衣食之足恤！愚谓救弊之术，无取于废钱。
 </p><p>朝议多同琳之，故玄议不行。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十五章--原文.html'>第十五章-</a></p><p class='next'>下一节：<a href='第十七章--原文.html'>第十七章-</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十五章--原文.html'>第十五章-</a></p><p class='next'>下一节：<a href='第十七章--原文.html'>第十七章-</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

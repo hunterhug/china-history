@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -244,8 +271,9 @@
 </p><p>议奏，元帝犹欲从展所上。大将军王敦以为：“百姓习俗日久，忽复肉刑，必骇远近。且逆寇未殄，不宜有惨酷之声，以闻天下。”于是乃止。
 </p><p>咸康之世，庾冰好为纠察，近于繁细，后益矫违，复存宽纵，疏密自由，律令无用矣。
 </p><p>至安帝元兴末，桓玄辅政，又议欲复肉刑斩左右趾之法，以轻死刑，命百官议。蔡廓上议曰：“建邦立法，弘教穆化，必随时置制，德刑兼施。长贞一以闲其邪，教禁以检其慢，洒湛露以流润，厉严霜以肃威，虽复质文迭用，而斯道莫革。肉刑之设，肇自哲王。盖由曩世风淳，人多惇谨，图像既陈，则机心直戢，刑人在涂，则不逞改操，故能胜残去杀，化隆无为。季末浇伪，设网弥密，利巧之怀日滋，耻畏之情转寡。终身剧役，不足止其奸，况乎黥劓，岂能反于善。徒有酸惨之声，而无济俗之益。至于弃市之条，实非不赦之罪，事非手杀，考律同归，轻重均科，减降路塞，钟陈以之抗言，元皇所为留愍。今英辅翼赞，道邈伊周，诚宜明慎用刑，爱人弘育，申哀矜以革滥，移大辟于支体，全性命之至重，恢繁息于将来。”而孔琳之议不同，用王朗、夏侯玄之旨。时论多与琳之同，故遂不行。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十九章--原文.html'>第十九章-</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十九章--原文.html'>第十九章-</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

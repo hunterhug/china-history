@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -218,8 +245,9 @@
 <p>　　孝女王和子者，徐州人。其父及兄为防秋卒，戍泾州。元和中，吐蕃寇边，父 兄战死，无子，母先亡。和子时年十七，闻父兄殁于边上，被发徒跣缞裳，独往泾 州。行丐取父兄之丧，归徐营葬。手植松柏，剪发坏形，庐于墓所。节度使王智兴 以状闻，诏旌表之。 </p>
 <p>　　又大中五年，兗州瑕丘县人郑神佐女，年二十四，先许适驰雄牙官李玄庆。神 佐亦为官健，戍庆州。时党项叛，神佐战死，其母先亡，无子。女以父战殁边城， 无由得还，乃剪发坏形，自往庆州护父丧还，至瑕丘县进贤乡马青村，与母合葬。 便庐于坟所，手植松桧，誓不适人。节度使萧椒以状奏之曰：“伏以闾里之中，罕 知礼教，女子之性，尤昧义方。郑氏女痛结穷泉，哀深《陟岵》，投身沙碛，归父 遗骸，远自边陲，得还闾里。感《蓼莪》以积恨，守丘墓以誓心。克彰孝理之仁， 足厉贞方之节。”诏旌表门闾。 </p>
 <p>　　赞曰：政教隆平，男忠女贞。礼以自防，义不苟生。彤管有炜，兰闺振声。 《关雎》合《雅》，始号文明。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百四十二章-卷一百四十二-原文.html'>第一百四十二章-卷一百四十二</a></p><p class='next'>下一节：<a href='第一百四十四章-卷一百四十四-原文.html'>第一百四十四章-卷一百四十四</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第一百四十二章-卷一百四十二-原文.html'>第一百四十二章-卷一百四十二</a></p><p class='next'>下一节：<a href='第一百四十四章-卷一百四十四-原文.html'>第一百四十四章-卷一百四十四</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

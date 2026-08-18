@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -194,8 +221,9 @@
 </p><p>耶律和尚，字特末，世系出于季父房。生性滑稽。
 </p><p>重熙初，补为祗候郎君。当时兴宗皇上正沉迷于笃爱亲属之中，凡是三父房之后，都列于父兄之列，对耶律和尚尤其宠爱。然而每次侍奉皇上宴饮，尽管诙谐之语不断，不曾有一句话的过失，因此皇上更加看重他。历任积庆、永兴宫使，累迁至同知南院宣徽使事、南面林牙。十六年(1047)，出京任怀化军节度使，不久征召为御史大夫。二十三年(1054)，因逢大册礼，升为天平军节度使、检校太师，改任中京路按问使，不久去世。
 </p><p>和尚又颇有高尚之德行，多次用财物来存恤亲友。然而嗜酒不治事，因此未能因信任而掌权。有人提到此事，他回答说“：我并非不知道，只是人生犹如风中之灯、石迸之火，不饮酒取乐又将去干些什么呢？”晚年尤其沉溺于酒中，人称“酒仙”。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十八章-卷十八-白话.html'>第十八章-卷十八</a></p><p class='next'>下一节：<a href='第二十章-卷二十-白话.html'>第二十章-卷二十</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十八章-卷十八-白话.html'>第十八章-卷十八</a></p><p class='next'>下一节：<a href='第二十章-卷二十-白话.html'>第二十章-卷二十</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

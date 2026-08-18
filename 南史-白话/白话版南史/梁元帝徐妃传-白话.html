@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>梁元帝徐妃传<span style='font-size:small'> 白话</span></h1>
 <p>梁元帝徐妃名叫昭佩，东海郯人。祖父徐孝嗣，是齐朝的太尉、枝江文忠公。父亲徐绲，是侍中、信武将军。徐妃于天监十六年(517)十二月封为湘东王妃，生了世子萧方等、益昌公主萧含贞。徐妃没有姿容，不被礼遇，元帝二三年进她的房间一次。徐妃因为元帝有一只眼瞎，每当知道元帝将要来到的时候，必定要半边脸化妆来等待他，元帝见了则大怒而出。徐妃生性喜欢喝酒，常常大醉，元帝回到房间，一定会吐在他的衣服里。徐妃和荆州后堂瑶光寺的和尚智远道人私通。她酷好妒忌，见到不被宠幸的妾，便并坐一起交杯共饮。刚刚觉得有孕的，她就动刀杀人。元帝的随从暨季江有姿容，徐妃又和他淫通。暨季江常常感叹说：“柏直的狗虽老仍能狩猎，萧溧阳的马虽老仍能驰骋，徐娘虽老仍尚多情。”当时有个贺徽脸蛋漂亮，徐妃就把他邀到普贤尼寺，在白角枕上写诗互相赠答。<BR><BR>　　稍后贞惠世子萧方诸的母亲王氏得宠，不久死去，元帝归咎于徐妃；及至萧方等死去，她越发被痛恨。太清三年(549)，便逼着让她自杀。徐妃知道不能免除，于是投井而死。元帝把尸体还给徐家，说是出妻。葬在了江陵瓦官寺。元帝写了一首《金楼子》描述她的淫秽行为。起初，徐妃出嫁的那天晚上，车子行到西州，而疾风大起，掀起房屋，折断树木。不大一会儿，雪霰并下，帘幕都变成了白色。等长大还家的时候，又打起了大雷，震得西州的府衙两根大柱都破碎了。元帝认为很不吉祥，后来果然没有恪守妇道。</p>
-<div class='pn'><p class='pre'>上一节：<a href='梁武丁贵嫔传-白话.html'>梁武丁贵嫔传</a></p><p class='next'>下一节：<a href='陈武宣章皇后传-白话.html'>陈武宣章皇后传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='梁武丁贵嫔传-白话.html'>梁武丁贵嫔传</a></p><p class='next'>下一节：<a href='陈武宣章皇后传-白话.html'>陈武宣章皇后传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

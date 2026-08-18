@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -182,8 +209,9 @@
 </p><p>曹王宗让，世宗子，显德六年封。
 </p><p>纪王熙谨，世宗子，显德六年封，皇朝乾德二年卒。
 </p><p>蕲王熙诲，世宗子，显德六年封。《欧阳史·家人传》云：世宗子七人，长曰宜哥，次二皆未名，次曰恭皇帝，次曰熙让，次曰熙谨，次曰熙诲，皆不知其母为谁氏，宜哥与其二皆为汉诛。太祖即位，诏赐皇孙名，谊赠左骁卫大将军，诚左武卫大将军，諴左屯卫大将军。显德三年，君臣请封宗室，世宗以谓为国日浅，恩信未及于人，须功德大成，庆流于世，而后议之可也。明年夏四月癸未，先封太祖诸子。又诏曰：“父子之道，圣贤不忘，再思夭阙之端，愈动悲伤之抱。故皇子左骁卫大将军谊、左武卫大将军诚、左屯卫大将军諴等，载惟往事，有足伤怀，宜增一字之封，仍赠三台之秩。谊可赠太尉，追封越王；诚太傅，吴王；諴太保，韩王。”而皇子在者皆不封。六年，北复三关，遇疾还京师。六月癸未，皇子宗训特进左卫上将军，封梁王，而宗让亦拜左骁卫上将军，封燕国公。后十日而世宗崩，梁王即位，是为恭皇帝。其年八月，宗让更名熙让，封曹王。熙谨、熙诲皆前未封爵，遂拜熙谨右武卫大将军，封纪王；熙诲左领军卫大将军，封蕲王。乾德二年十月，熙谨卒，熙让、熙诲不知其所终。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十二章-列传一-原文.html'>第十二章-列传一</a></p><p class='next'>下一节：<a href='第十四章-列传三-原文.html'>第十四章-列传三</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十二章-列传一-原文.html'>第十二章-列传一</a></p><p class='next'>下一节：<a href='第十四章-列传三-原文.html'>第十四章-列传三</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

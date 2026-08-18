@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -189,8 +216,9 @@
 </p><p>思立本出阴山诸部，性纯厚，善抚将士，明宗素重之，故即位之始，以应州所生之地授焉。其后历三郡三镇，皆得百姓之誉。末帝以其年高，征居环卫。及出幸怀州，以北师不利，乃命思立统驾下骑军赴团柏谷以益军势，俄而杨光远以大军降于太原，思立因愤激，疾作而卒焉。晋高祖即位，追其宿旧，为辍朝一日，赠太子少师。
 </p><p>张敬达，字志通，代州人，小字生铁。父审，素有勇，事武皇为列校，历直军使，同光初，卒于军。敬达少以骑射著名，庄宗知之，召令继父职；平河南有功，继加检校工部尚书。明宗即位，历捧圣指挥使、检校尚书左仆射。长兴中，改河东马步军都指挥使，超授检校司徒，领钦州刺史。三年，加检校太保、应州节度使。四年，迁云州。时以契丹率族帐自黑榆林至，云借汉界水草，敬达每聚兵塞下，以遏其冲。契丹竟不敢南牧，边人赖之。清泰中，自彭门移镇平阳，加检校太傅，从石敬瑭为北面兵马副总管，仍屯兵雁门。未几，晋高祖建义，末帝诏以敬达为北面行营都招讨使，仍使悉引部下兵围太原，以定州节度使杨光远副焉。寻统兵三万，营于晋安乡。末帝自六月继有诏促令攻取，敬达设长城连栅、云梯飞砲，使工者运其巧思，穷土木之力。时督事者每有所构，则暴风大雨，平地水深数尺，而城栅崩堕，竟不能合其围。九月，契丹至，敬达大败，寻为所围。晋高祖及蕃众自晋安寨南门外，长百余里，阔五十里，布以氈帐，用毛索挂铃，而部伍多犬，以备警急。营中尝有夜遁者，出则犬吠铃动，跬步不能行焉。自是敬达与麾下部曲五万人，马万匹，无由四奔，但见穹庐如岗阜相属，诸军相顾失色。始则削木筛粪，以饲其马，日望朝廷救军，及渐羸死，则与将士分食之，马尽食殚。副将杨光远、次将安审琦知不济，劝敬达宜早降以求自安。敬达曰：“吾受恩于明宗，位历方镇，主上授我大柄，而失律如此，已有愧于心也。今救军在近，旦暮雪耻有期，诸公何相迫耶！待势穷，则请杀吾，携首以降，亦未为晚。”光远、审琦知敬达意未决，恐坐成鱼肉，遂斩敬达以降。《契丹国志》：杨光远谋害张敬达，诸将高行周阴为之备，敬达疏于防御，推远行周等。清晨，光远上谒，见敬达左右无人，遂杀之。
 </p><p>末帝闻其殁也，怆恸久之。契丹主告其部曲及汉之降者曰：“为臣当如此人！”令部人收葬之。晋高祖即位后，所有田宅，咸赐其妻子焉。时议者以敬达尝事数帝，亟立军功，及领籓郡，不闻其滥，继屯守塞垣，复能抚下，而临难固执，不求苟免，乃近代之忠臣也。晋有天下，不能追懋官封，赏其事迹，非激忠之道也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十五章-列传二十一-原文.html'>第四十五章-列传二十一</a></p><p class='next'>下一节：<a href='第四十七章-列传二十三-原文.html'>第四十七章-列传二十三</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第四十五章-列传二十一-原文.html'>第四十五章-列传二十一</a></p><p class='next'>下一节：<a href='第四十七章-列传二十三-原文.html'>第四十七章-列传二十三</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

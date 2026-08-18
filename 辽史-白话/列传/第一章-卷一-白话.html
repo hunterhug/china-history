@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -209,8 +236,9 @@
 </p><p>天祚文妃萧氏，乳名瑟瑟，国舅大父房之女。乾统初年，皇上行幸耶律挞葛府第，见到她，很是喜爱，藏在宫中几个月。皇太叔和鲁斡劝皇上依礼制选聘，三年(1103)冬，立为文妃。生蜀国公主、晋王敖卢斡，格外受宠于皇上。因为行柴册礼，加号承翼。
 </p><p>她擅长咏唱诗篇。女真之乱发生，我国一天天遭到侵犯凌逼。皇上田猎游幸，不恤国情民情，忠臣大多遭到疏远罢斥。文妃做歌讽谏，其词为：“不要嗟叹北方的阴云啊迷漫了原本清亮的天空，不要枉自伤情于多灾多难啊，畏惧夷人之侵迫；不如堵塞奸佞升迁之路啊，选取贤臣辅国。正该卧薪尝胆啊，激励壮士们为国捐躯；如此我们便可早晨廓清漠北的妖雾，傍晚荡平燕、云而安枕于寝宫。”又咏唱道：“丞相来上朝啊，宝剑和垂佩叮当作响，群臣束手侧目啊噤口无声。养成外患坐大啊到今日嗟叹何及！忠臣尽被残害啊刑罚如此不明。他的亲戚啊都占据着那么多的要塞，私家门里啊暗地畜养着爪牙之兵。可怜我们的幻想如往古之秦皇那样一统山河的天子啊，还在面对宫门啊，想望着那遥遥无期的太平！”天祚见了，记恨于心。
 </p><p>天子流亡以来，郡县几乎失陷了一半，皇上颇有些厌倦于政事的辛劳，有传位之意。诸皇子中以敖卢斡最贤明，一向得人心。元后(寺里懒)兄萧奉先十分忌恨于他，便诬告南军都统余睹阴谋扶立晋王，诬称文妃也知情，赐死。</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-白话.html'>第二章-卷二</a></p></div><footer>
+<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-白话.html'>第二章-卷二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

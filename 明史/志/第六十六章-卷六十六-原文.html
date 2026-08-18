@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -393,8 +420,9 @@
 </p><p>后二十九年，帝以班军多老弱雇倩，令严饬之。职方主事沈朝焕给班军饷，皆佣诸丐，因言：“班军本处有大粮，到京有行粮，又有盐斤银，所费十余万金，今皆虚冒。请解大粮贮库，有警可召募，有工可雇役。”部议请先申饬，俟大工竣行之。是时专以班军为役夫，番上之初意尽失矣。
 </p><p>又五年，内庭有小营缮，中官陈永寿请仍用班军，可节省。给事中宋一韩争之，谓：“班军输操即三大营军，所系甚重。今边鄙多事，万一关吏不谨，而京师团练之军多召募，游徼之役多役占，皇城宿卫多白徒，四卫扈从多厮役。即得三都司健卒三万，犹不能无恐，况动以兴作朘削，名存实亡，缓急何赖哉？”不听。四十年，给事中麻僖请恤班操之苦。后六年，顺天巡抚都御史刘曰梧言班军无济实用，因陈募兵十利。是时，法益弛，军不营操，皆居京师为商贩、工艺，以钱入班将。
 </p><p>启、祯时，边事汹汹，乃移班军于边。筑垣、负米无休期，而糗粮缺，军多死，班将往往逮革。特敕兵部右侍郎专督理，铸印给之，然已无及。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十五章-卷六十五-原文.html'>第六十五章-卷六十五</a></p><p class='next'>下一节：<a href='第六十七章-卷六十七-原文.html'>第六十七章-卷六十七</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第六十五章-卷六十五-原文.html'>第六十五章-卷六十五</a></p><p class='next'>下一节：<a href='第六十七章-卷六十七-原文.html'>第六十七章-卷六十七</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

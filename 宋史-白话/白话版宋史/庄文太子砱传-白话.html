@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>庄文太子砱传<span style='font-size:small'> 白话</span></h1>
 <p>庄文太子名忄耆，是孝宗的嫡亲长子，母亲是郭皇后。开始名愉，补官任右内率府副率，不久赐名忄耆，任命为右监门卫大将军、荣州刺史。孝宗做皇子时，忄耆任蕲州防御使。到孝宗受禅即位后，任忄耆为少保、永兴军节度使，封为邓王。惯例：皇子出宫，封为王，兼任两镇节度使，然后加任司空。忄耆从防御使跳级升任少保，典章变化如此。<BR><BR>　　乾道元年(1165)，立为皇太子，册封广国夫人钱氏为太子妃。诏令增加东宫侍卫人员，太子谦让。太子上奏捐献每月应领杂物，皇帝表示同意。乾道三年秋，太子生病，医生误用药，病情加剧。太上皇与皇帝亲自探望他的病情，为此大赦天下。过三天后去世，终年二十四岁，谥号庄文。<BR><BR>　　太子贤惠厚道，太上皇与皇帝都喜欢他。皇帝听从礼官关于太子丧服的建议，以日计月；文武百官服衰服，服一天就除服；东宫臣僚服齐衰三个月，到七天后除服。到下葬时，皇帝又到东宫，命令大臣呈奉谥册，大小礼仪都以执政官丧礼对待。<BR><BR>　　太子的儿子名..，钱氏所生，成年后，授任福州观察使，封为荣国公。乾道九年去世，追赠武当军节度使，追封为豫国公。<BR><BR>　　宁宗时，命令宗子希王基过继为太子后代。希王基是艺祖九世孙，赐名扌晋，补任右千牛卫将军，在主府里设置教授。开禧三年(1207)，任忠州防御使。嘉定八年(1215)，更名为思正。</p>
-<div class='pn'><p class='pre'>上一节：<a href='益王君页传-白话.html'>益王君页传</a></p><p class='next'>下一节：<a href='镇王竑传-白话.html'>镇王竑传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='益王君页传-白话.html'>益王君页传</a></p><p class='next'>下一节：<a href='镇王竑传-白话.html'>镇王竑传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

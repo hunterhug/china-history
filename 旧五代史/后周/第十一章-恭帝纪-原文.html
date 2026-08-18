@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -185,8 +212,9 @@
 </p><p>十二月壬申朔，史馆奏，请差官修撰世宗实录，从之。甲戌，改万岁殿为紫宸殿。甲午，西京奏，左屯卫上将军致仕李萼卒。乙未，大霖，昼昏，凡四日而止，分命使臣赈给诸州遭水人户。
 </p><p>显德七年春正月辛丑朔，文武百僚进名奉贺。镇、定二州驰奏，契丹入寇，河东贼军自土门东下与蕃寇合势。诏今上率兵北征。癸卯，发京师，是夕宿于陈桥驿。未曙，军变，将士大噪呼万岁，擐甲将刃，推戴今上升大位，扶策升马，拥迫南行。是日，诏曰：“天生蒸民，树之司牧，二帝推公而禅位，三王乘时以革命，其极一也。予末小子，遭家不造，人心已去，国命有归。咨尔归德军节度使、殿前都点检赵，案：此下原本空二字。禀上圣之姿，有神武之略，佐我高祖，格于皇天，逮事世宗，功存纳麓，东征西怨，厥绩懋焉。天地鬼神享于有德，讴谣狱讼附于至仁，应天顺民，法尧禅舜，如释重负，予其作宾，呜呼钦哉！祗畏天命。”今上于是诣崇元殿受命，百官朝贺而退。制封周帝为郑王，以奉周祀，正朔服色一如旧制，奉皇太后为周太后。《续通鉴长编》：建隆三年，周郑王出居房州。皇朝开宝六年春，崩于房陵。今上闻之震恸，发哀成服于便殿，百僚进名奉慰，寻遣中使监护其丧。《续通鉴长编》：开宝六年三月乙卯，房州上言，周郑王殂，上素服发哀，辍视朝十日。以其年十月，归葬于世宗庆陵之侧。诏有司定谥曰恭皇帝，陵曰顺陵。《续通鉴长编》：仁宗嘉祐四年，诏有司取柴氏谱系，于诸房中推最长一人，令岁时奉周祀。
 </p><p>史臣曰：夫四序之气，寒往则暑来；五行之数，金销则火盛。故尧、舜之揖让，汉、魏之传禅，皆知其数而顺乎人也。况恭帝当纨绮之冲年，会笙镛之变响，听讴歌之所属，知命历之有在，能逊其位，不亦善乎。终谥为恭，固其宜矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十章-世宗纪六-原文.html'>第十章-世宗纪六</a></p><p class='next'>下一节：<a href='第十二章-列传一-原文.html'>第十二章-列传一</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十章-世宗纪六-原文.html'>第十章-世宗纪六</a></p><p class='next'>下一节：<a href='第十二章-列传一-原文.html'>第十二章-列传一</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

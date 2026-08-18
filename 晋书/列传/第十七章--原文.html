@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -219,8 +246,9 @@
 </p><p>暢字世道。年五岁，父友见而戏之，解暢衣，取其金环与侍者，暢不之惜，以此赏之。年未弱冠，甚有重名。以选入侍讲东宫，为秘书丞。寻没于石勒，勒以为大将军右司马。谙识朝仪，恆居机密，勒甚重之。作《晋诸公叙赞》二十二卷，又为《公卿故事》九卷。咸和五年卒。子咏，过江为交州刺史、太子右率。
 </p><p>史臣曰：武帝览观四方，平章百姓，永言启沃，任切争臣。傅玄体强直之姿，怀匪躬之操，抗辞正色，补阙弼违，谔谔当朝，不忝其职者矣。及乎位居三独，弹击是司，遂能使台阁生风，贵戚敛手。虽前代鲍、葛，何以加之！然而惟此褊心，乏弘雅之度，骤闻竞爽，为物议所讥，惜哉！古人取戒于韦弦，良有以也。长虞风格凝峻，弗坠家声。及其纳谏汝南，献书临晋，居谅直之地，有先见之明矣。傅祗名父之子，早树风猷，崎岖危乱之朝，匡救君臣之际，卒能保全禄位，可谓有道存焉。
 </p><p>赞曰：鹑觚贞谅，实惟朝望。志厉强直，性乖夷旷。长虞刚简，无亏风尚。子庄才识，爰膺衮职。忠绩未申，泉途遽逼。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十六章--原文.html'>第十六章-</a></p><p class='next'>下一节：<a href='第十八章--原文.html'>第十八章-</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十六章--原文.html'>第十六章-</a></p><p class='next'>下一节：<a href='第十八章--原文.html'>第十八章-</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

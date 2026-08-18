@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -222,8 +249,9 @@
 </p><p>宪宗嗣位，改公恂大理左少卿。公恂言不通法律，乃复少詹事。成化二年上章言兵事，诸武臣哗然，给事御史交章驳之。下狱，谪汉阳知府。未至，丁父忧。服阕，商辂请复建言得罪者官，乃还故秩，涖南京詹事府。久之，卒。
 </p><p>司马恂，字恂如，浙江山阴人。正统末，由举人擢刑科给事中，累迁少詹事。宪宗立，命兼国子祭酒。卒，赠礼部左侍郎。恂强记、敦厚，与物无忤，居官无所表见。
 </p><p>赞曰：“建文之初，修尊贤敬老之节。董伦以宿儒见重，虽寡所表见，当非苟焉已也。仪智父子仍世以儒术进，从容辅导，盖其贤哉。邹济诸人，以宫僚被遇而谗构不免。陈济辈起布衣，列禁近而善始终，固有幸不幸欤。二周、王英、钱习礼、周叙、柯潜谦和直谅，各著其美，盖皆异于浮华博习之徒矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十九章-卷三十九-原文.html'>第三十九章-卷三十九</a></p><p class='next'>下一节：<a href='第四十一章-卷四十一-原文.html'>第四十一章-卷四十一</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三十九章-卷三十九-原文.html'>第三十九章-卷三十九</a></p><p class='next'>下一节：<a href='第四十一章-卷四十一-原文.html'>第四十一章-卷四十一</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

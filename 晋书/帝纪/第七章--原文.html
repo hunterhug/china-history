@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -201,8 +228,9 @@
 </p><p>初，成帝有疾，中书令庾冰自以舅氏当朝，权侔人主，恐异世之后，戚属将疏，乃言国有强敌，宜立长君，遂以帝为嗣。制度年号，再兴中朝，因改元曰建元。或谓冰曰：“郭璞谶云‘立始之际丘山倾’，立者，建也；始者，元也；丘山，讳也。”冰瞿然，既而叹曰：“如有吉凶，岂改易所能救乎？”至是果验云。
 </p><p>史臣曰：肆虐滔天，岂伊朝夕。若乃详刑不怨，庶情犹仰，又可以见逆顺之机焉。成帝因削弱之资，守江淮之地，政出渭阳，声乖威服。凶徒既纵，神器阽危，京华元敖之资，宫室类咸阳之火。桀犬吠尧。封狐嗣乱，方诸后羿，曷若斯之甚也。反我皇驾，不有晋文之师，系于苞桑，且赖陶公之力。古之侯服，不幸臣家，天子宣游，则避宫北面，闻诸遗策，用为恆范。显宗于王导之门，敛衣前拜，岂鲁公受玉之卑乎！帝亦克俭于躬，庶能激扬流弊者也。
 </p><p>赞曰：惟皇夙表，余舅为毗。勤于致寇，拙于行师。火及君屋，兵缠帝帷。石头之驾，海内含悲。康后天资，居哀礼缛。坠典方兴，降龄奚促。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章--原文.html'>第六章-</a></p><p class='next'>下一节：<a href='第八章--原文.html'>第八章-</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第六章--原文.html'>第六章-</a></p><p class='next'>下一节：<a href='第八章--原文.html'>第八章-</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

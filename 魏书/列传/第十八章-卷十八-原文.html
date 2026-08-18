@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -255,8 +282,9 @@
 </p><p>吕洛拔，代人也。曾祖渴侯，昭成时率户五千归国。祖肥，濮阳太守。父匹知，世祖时为西部长，荥阳公。洛拔以壮勇知名，高宗末为平原镇都将。刘彧徐州刺史薜安都归诚，请援。诏遣尉元率众救之，洛拔随元入彭城。彧将张永遣将王茂之领兵五千向武原，援其运车。元遣洛拔率骑诣武原击之。格战二日，手杀九人，夺贼运车二百余乘，牛二百五十头。仍共击张永，大败之。赐爵成武侯，加建义将军。年五十六，卒。
 </p><p>长子文祖，显祖以其勋臣子，补龙牧曹奏事中散。以牧产不滋，坐徙于武川镇。后文祖以旧语译注皇诰，辞义通辩，超授阳平太守。未拜，转为外都曹奏事中散。后坐事伏法。
 </p><p>史臣曰：仁人之言，必有博利。参合之役，威罚实行，盖王建之罪欤？安同异类之人，智识入用，任等时俊，当有由哉！颉擒赫连昌，摧义隆众，遂为名将，未易轻也。楼伏连，丘堆，娥清，俱以壮勇，征伐四克。刘尼忠国翼主，岂徒骁猛之用乎？奚眷将略致位，不能以功名自终。车伊洛自远宅心，异凡戎矣。宿石等并忠勤勇略，有将帅之才，自致青云，岂徒然也？</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p><p class='next'>下一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p><p class='next'>下一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

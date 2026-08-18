@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -201,8 +228,9 @@
 <p>　　李守素者，赵州人，代为山东名族。太宗平王世充，征为文学馆学士，署天策 府仓曹参军。守素尤工谱学，自晋宋已降，四海士流及诸勋贵华戎阀阅，莫不详究， 当时号为“行谱”。尝与虞世南共谈人物，言江左、山东，世南犹相酬对；及言北 地诸侯，次第如流，显其世业，皆有援证，世南但抚掌而笑，不复能答，叹曰： “行谱定可畏。”许敬宗因谓世南曰：“李仓曹以善谈人物，乃得此名，虽为美事， 然非雅目。公既言成准的，宜当有以改之。”世南曰：“昔任彦升美谈经籍，梁代 称为‘五经笥’；今目仓曹为‘人物志’可矣。”贞观初卒。 </p>
 <p>　　史臣曰：刘并州有言：“和氏之璧，不独耀于郢握；夜光之珠，何专玩于隋掌？ 天下之宝，固当与天下共之。”虞永兴之从建德，李安平之佐公祏，褚阳翟之依薛 举，盖大渴不能择泉而饮，大暑不能择廕而息耳，非不识其饮憩之所。及文皇帝揭 三辰而烛天下，群贤雾集，人之所奉，方得跃鳞天池，擅价春山，为一代之至宝， 则所托之势异也。隋掌郢握，曷有常哉！二虞昆仲，文章炳蔚于隋、唐之际；褚河 南父子，箴规献替，洋溢于贞观、永徽之间。所谓代有人焉，而三家尤盛。 </p>
 <p>　　赞曰：猗与文皇，荡涤苍昊。十八文星，连辉炳耀。虞、褚之笔，动若有神。 安平之什，老而弥新。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p><p class='next'>下一节：<a href='第二十三章-卷二十三-原文.html'>第二十三章-卷二十三</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p><p class='next'>下一节：<a href='第二十三章-卷二十三-原文.html'>第二十三章-卷二十三</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>朱百年传<span style='font-size:small'> 白话</span></h1>
 <p>朱百年是会稽山阴人。祖父朱凯之，是晋朝的左卫将军。父亲朱涛，作扬州主簿。<BR><BR>　　百年从小就有高尚的情操。父死丧服期满后，带妻子孔氏进会稽南山，以砍柴伐竹为业。常把柴草放在路口，总被行人拿走，第二天又有柴草放在那儿，人们渐渐感到奇怪，时间长了才知道是朱隐士放在那里卖的，需要多少拿多少，留下钱把柴草拿走就是了。有时遇上天寒下雪，柴草卖不出去，没有钱度日，就自己撑船把妻子送回娘家去，天晴再把她接回来；有时候到山阴县给妻子买几尺丝绸，好喝酒，碰上喝醉就弄丢了。爱谈玄理，有时还赋诗，往往有高于常人的言论。隐遁形迹，避免与人来往，只和同县孔觊友善。孔觊也好喝酒，在一起谈得投机了就相对喝个痛快。<BR><BR>　　百年家历来贫穷，母亲死在冬天，衣服里没一点儿棉絮，于是百年也就不穿棉衣。曾在天冷时在孔觊家过夜，穿的都是夹衣，喝醉酒睡下，孔觊用被子给他盖上，百年没有察觉。醒了以后，把被子从身上掀下去，对孔觊说：“丝绵真是特别暖和。”于是悲痛下泪，孔觊也因此伤感。朝廷征召他为太子舍人，不去赴任。颜竣作东扬州刺史，下指示发给百年粮食五百斛，百年不收。<BR><BR>　　当时山阴还有一位贫寒人士姚吟也有高雅志趣，被上流社会看重。颜竣送给姚吟米二百斛，姚吟也不要。<BR><BR>　　百年死在山里。蔡兴宗作会稽太守，救济百年妻子米一百斛。百年妻派婢女到郡衙门上言坚决不收，当时人们都称颂她，把她比作梁鸿的妻子。</p>
-<div class='pn'><p class='pre'>上一节：<a href='刘凝之传-白话.html'>刘凝之传</a></p><p class='next'>下一节：<a href='沈麟士传-白话.html'>沈麟士传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='刘凝之传-白话.html'>刘凝之传</a></p><p class='next'>下一节：<a href='沈麟士传-白话.html'>沈麟士传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

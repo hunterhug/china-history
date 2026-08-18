@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -206,8 +233,9 @@
 </p><p>瑶质笃好读书，清廉耿介，有整顿乾坤之志向。统和十年(992)，累迁至积庆宫使。圣宗曾经晓谕瑶质说“：我听说你为人正直，所以选拔和任用你。什么事于国家有利或有害，你尽管直言，不要有所隐讳。”因此所陈奏之事大多受到嘉许和采纳。
 </p><p>皇上征讨高丽，攻破康肇军于铜州时，得力于瑶质之功甚多。王询请降，群臣商议都认为应该受降。瑶质说“：王询刚刚交战一次失败，便赶紧请求降服，此乃是诈降；纳降，恐怕正堕入其奸计之中。待等他势穷力屈，再纳降也不为晚。”不久王询果然逃走，临走时坚壁清野，我军无所获。其众依仗险阻修筑工事，攻之不下，瑶质用计让他们投降。提升拜为四蕃部详稳。
 </p><p>当时招讨使耶律颇的任总管，瑶质耻于官位居其下，上表说：“臣乃先朝旧臣，现在既已年老，请求让我归还新被任命之职，所望只是能够常时陪侍于皇上左右。”皇上说“：朕必定不会让你长期呆在这个位子上。”并且下令瑶质不再隶属于招讨，得以自行上奏折到部省。瑶质制止残暴，心怀仁善，政绩显著，卒于任上。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十七章-卷十七-白话.html'>第十七章-卷十七</a></p><p class='next'>下一节：<a href='第十九章-卷十九-白话.html'>第十九章-卷十九</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十七章-卷十七-白话.html'>第十七章-卷十七</a></p><p class='next'>下一节：<a href='第十九章-卷十九-白话.html'>第十九章-卷十九</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

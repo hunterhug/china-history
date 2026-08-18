@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -179,8 +206,9 @@
 <p>阎宝，字琼美，郓州人。父亲阎佐，任海州刺史。阎宝年轻时在朱瑾手下当牙将，朱瑾失守兖州后，阎宝和朱瑾的将军胡规、康怀英投奔汴梁，都受到提拔。自从梁太祖在河朔用兵，到关西争霸，阎宝和葛从周、丁会、贺德伦、李思安都是大将，带兵四面出击，所到之地立功受奖，历任氵名、随、宿、郑四州刺史。天祐六年(909)，梁太祖任阎宝为邢氵名节度使、检校太傅。唐庄宗平定魏博，天祐十三年(916)，又进攻相、卫、氵名、磁等州，都被攻下了，只有阎宝独自保住邢州，孤城失去援助。八月，阎宝献邢州投降，庄宗嘉奖了他，任检校太尉、同平章事，遥任天平军节度使、东南面招讨等使，以宾客之礼相待，地位在各将之上，每当有要事谋划，总与他一起商量决定。
 </p><p>契丹侵犯幽州时，周德威的情况危急，阎宝和李存审跟随明宗在幽州西北攻打契丹，解除幽州之围后回师。胡柳一战，各军逗留不前，梁军登上无石山，军势很盛大。庄宗看了，担心抵挡不住，想保住营地。阎宝进言说“：您已深入敌境，偏师不利，敌军王彦章的骑兵已进入濮州，山下只剩下步兵，到晚上都有回营的想法，我们用精锐兵力攻击，敌人必然败走。现在如果撤退，必然会被敌人乘势进攻，我军还没有集合，若再听说敌人胜了，就会不战而自己溃散。凡是决定胜利要料定军势，决定作战要料定军情，情势已料定了，就应毫不迟疑的做出决断。现在大王您的成败就在这一战，如不决胜，假如使剩下的兵力渡过黄河，河朔一带就不归您所有了，您要努力而为呀。”庄宗听了一惊，说：“没有您就几乎失去战机了。”立即带骑兵大声呼喊，挥动长矛攻山，大败梁军。
 </p><p>天祐十八年(921)，张文礼杀害王..反叛，阎宝率领军队前去讨伐。八月，收复赵州，渡过滹水，抓获贼党张友顺。九月，逼近真定，在西南隅扎营，挖沟环绕城墙，决开大悲寺漕渠中的水淹浸外城墙。十九年正月，契丹三十万人来救援镇州，前锋到了新乐，众人很忧虑。阎宝见庄宗，陈述作战方略，军情才安定。敌人退走，加授检校侍中。三月，城中饥荒，王处瑾的很多士兵出城找食物，阎宝放他们出来，埋伏士兵想截住他们。饥饿的敌兵大量来到，而阎宝各军还没集合，被敌人乘势击散，阎宝便收拢军队退保赵州，因此羞惭忧愤，积成疾病，背上长痈疽而死，死时六十岁。同光初年，追赠太师，晋天福年中，追封太原郡王。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十四章-列传十-白话.html'>第三十四章-列传十</a></p><p class='next'>下一节：<a href='第三十六章-列传十二-白话.html'>第三十六章-列传十二</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三十四章-列传十-白话.html'>第三十四章-列传十</a></p><p class='next'>下一节：<a href='第三十六章-列传十二-白话.html'>第三十六章-列传十二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

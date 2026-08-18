@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -201,8 +228,9 @@
 <p>　　大历二年正月，密诏关内河东副元帅、中书令郭子仪率兵讨智光，许以便宜从 事。时同、华路绝，上召子仪女婿工部侍郎赵纵受口诏付子仪，纵裂帛写诏置蜡丸 中，遣家童间道达焉。子仪奉诏将出师，华州将士相顾携贰。智光大将李汉惠自同 州以其所管降子仪。贬智光为澧州刺史，散官勋封如故。乃听将一百人随身，便路 赴任，其所部将士官吏，一无所问。乃以兵部侍郎张仲光为华州刺史、兼御史大夫、 潼关防御使；又以大理卿敬括为同州刺史、兼御史大夫、长春宫等使。是日，智光 为帐下将斩首，并子元耀、元干等二人来献。丁卯，枭智光首于皇城之南街，二子 腰斩以示众。判官监察御史邵贲、都虞候蒋罗汉并伏诛，余党各以亲疏准法定罪。 命有司具仪奏告太清宫、太庙、七陵。时淮西节度使李忠臣入观，次潼关，闻智光 阻兵，驻所部将往御之。及智光死，忠臣进兵入华州大掠，自赤水至潼关二百里间， 畜产财物殆尽，官吏至有著纸衣或数日不食者。 </p>
 <p>　　史臣曰：尝读《李陵传》，战败不能死，屈节降虏庭，君不得为忠臣，母不得 为孝子，每长叹久之。炅收滍水败众，守南阳孤城，每蹈危机，竟效死节，料敌虽 非其良将，事君不失为忠臣。浮躁无行，狂悖用兵，宜其死矣。瑱善军政，得士 心，庶几干城御侮者哉！始固名位，为裴巧言；终归朝廷，遭元振诬构。赐死之 辜匪辨，用刑之道不明。致旧将立祠，门吏偷葬，出将入相，一至于斯，惜哉！智 光狂悖，不足与论。 </p>
 <p>　　赞曰：鲁炅竭节，来瑱枉死。裴凶人，智光逆子。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十三章-卷六十三-原文.html'>第六十三章-卷六十三</a></p><p class='next'>下一节：<a href='第六十五章-卷六十五-原文.html'>第六十五章-卷六十五</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第六十三章-卷六十三-原文.html'>第六十三章-卷六十三</a></p><p class='next'>下一节：<a href='第六十五章-卷六十五-原文.html'>第六十五章-卷六十五</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

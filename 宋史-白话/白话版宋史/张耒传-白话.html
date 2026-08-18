@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>张耒传<span style='font-size:small'> 白话</span></h1>
 <p>张耒，字文潜，楚州淮阴人。幼时即显得聪颖奇异，十三岁便能写作文章，十七岁所做《函关赋》，已为众人传诵。张耒游学于陈州时，受到学官苏辙的钟爱，因而，能够结识苏轼，苏轼也赏识张耒，称其文章恣意洒脱，淡雅情真，有一唱三叹之声。<BR><BR>　　张耒于弱冠之年考中进士，历任临淮主簿、寿安县尉、咸平县丞等官职。后入朝为太学录，得范纯仁举荐，迁秘书省正字、著作佐郎、秘书丞、著作郎、史馆检讨。张耒任馆阁之职达八年之久，始终重义自律，淡泊行事。后擢升为起居舍人。绍圣初年(1094)，以直龙图阁知润州。因坐党籍之罪徙往宣州，再遭贬谪而监黄州酒税，徙复州。徽宗即位后，张耒被起用为黄州通判，知兖州，既而被召为太常少卿，数月后，再次出知颍、汝二州。崇宁初年(1102)，张耒又坐党籍之罪，被削夺官职，主管明道宫。起初，张耒在颍州时，闻知苏轼去世，便为苏轼举哀行服，遭到言官攻击，因而被贬为房州别驾，安置于黄州。崇宁五年(1106)，张耒得以自便迁居陈州。<BR><BR>　　张耒仪表堂堂，有雄才大略，笔锋强健，长于诗词。在苏辙、苏轼、黄庭坚、晁补之等人相继去世后，只有张耒独生于世，因此，许多士人争相师从于他，并且分日载酒菜与之饮食。张耒教人做文强调以理为主，曾著文阐发说：“从六经以下，到诸子百家及诗人辩士的论述来看，其大概都遵循着文以载理、文以载道的原则。因此学做文章，首先要注意明了事理。如果只知做文，不知求理，或者只求做文的技巧，这是前人所不曾有过的。放水于江、河、淮、海，水顺道而行，浩浩荡荡，日夜不停，冲击砥柱，越过高山，到达江湖，归于大海。水流平缓，荡起涟漪；水势汹涌，骤起波涛、风飙、雷霆，致使蛟龙鱼鳖，翻腾出没，这都展示了水的变幻魔力。然而，最初之细水，并不如此，尽管用心开导，但终因其势不足而难遂人愿。沟渠之中，此处有水，彼处又干竭，即便你日夜激水，也不能见到奇异水势，水之所至处，不过是为蛙蛭提供了玩游的天地。江、河、淮、海之水，犹如载理之文，不求奇而奇至。激沟渠之水而求水之奇，是不知理之所在。做文如想以词句见奇，纵然你反复推敲，终究也不会有好效果。这也是做文的一大陋习。”学者认为张耒所讲乃至理名言。张耒晚年做诗崇求平淡，喜欢仿效白居易诗体，而在做词方面，主要仿效张籍。<BR><BR>　　张耒一生长期闲居，家境清贫，郡守翟汝文打算为他购买公田，却被他谢绝了。张耒晚年监南岳庙，主管崇福宫，去世时，享年六十一岁。建炎初年(1127)，张耒被追赠为集英殿修撰。</p>
-<div class='pn'><p class='pre'>上一节：<a href='秦观传-白话.html'>秦观传</a></p><p class='next'>下一节：<a href='陈师道传-白话.html'>陈师道传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='秦观传-白话.html'>秦观传</a></p><p class='next'>下一节：<a href='陈师道传-白话.html'>陈师道传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

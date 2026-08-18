@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>张纂传<span style='font-size:small'> 白话</span></h1>
 <p>张纂，字徽纂，代郡平城人氏。父烈，桑乾太守。纂初事尔朱荣，又任尔朱兆都督长史。为兆使者出使到高祖处，因此而被高祖认识。高祖在山东举起义旗，刘诞占据相州抵御，这时纂在相州城中。高祖攻拔相州城后，请纂任参丞相军事。<BR><BR>　　纂善于迎奉，皇帝身边的人，也慢慢地受到了他的礼遇，因此被补为行台郎中。高祖上书朝廷，请求减损自己的食邑封国，而分赏给文武官员，纂依例被封为寿张伯。魏武帝末年，高祖前往洛阳，让赵郡公琛为行台，镇守晋阳，以纂为右丞。转相府功曹参军事，除右光禄大夫。出使蠕蠕，领受命令而称旨。历职中外、丞相二府从事中郎。邙山之役，掳获了许多俘虏，高祖命令纂解送京师，魏帝赐绢五百匹，封其为武安县伯。<BR><BR>　　再为高祖行台右丞，随从征讨玉壁。大军准备返回山东，抵达晋州时，突然碰到了寒雨，士卒又冷又饿，以至出现了死人。州刺史依照朝廷边禁之令，不准进城。这样，纂作使者，拜见刺史，谈判后才下令开门接纳，分别寄住民宅，给其火食，士兵欢悦。高祖听报后连声说好。<BR><BR>　　纂事奉高祖二十多年，传布教令，极受恩宠。世宗嗣位，侯景在颍川作乱，招引西魏军入境。朝廷拜纂为南道行台，会同诸将征讨。还，除瀛州刺史。拜谒世宗。入朝为太子少傅。后与平原王段孝先、行台尚书辛术等围攻东楚，夺得广陵、泾州数城，杀死贼帅东方白额。授仪同三司、监筑长城大使，又率步骑数千镇防北境。还，迁护军将军，不久去世。</p>
-<div class='pn'><p class='pre'>上一节：<a href='杜弼传-白话.html'>杜弼传</a></p><p class='next'>下一节：<a href='张亮传-白话.html'>张亮传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='杜弼传-白话.html'>杜弼传</a></p><p class='next'>下一节：<a href='张亮传-白话.html'>张亮传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

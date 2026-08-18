@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>和跋传<span style='font-size:small'> 白话</span></h1>
 <p>和跋，代郡人。世代为部落首领，归附魏国称臣。到和跋时，他以有才识和善机变而著名。道武帝提拔他出任外朝大人，参预国家和军事上的重大谋略，很有智谋，赐封爵为日南公。跟从皇帝平定中原，因功晋位尚书，镇守邺郡。又因打败慕容德的军队，改封为定陵公。和常山王遵进攻贺兰部的别帅木易干，大破该军，出任平原太守。<BR><BR>　　道武帝对和跋宠信过于众将。群臣都注重谦恭俭朴，而和跋却喜欢沽名钓誉，炫耀自己，性情尤其讲求奢侈，过分淫乱，皇帝多次告诫而不改。后来皇帝的车驾北巡至豺山时，拘留了和跋，在路旁处死刑，他的妻子刘氏自杀以殉夫。起初准备处刑时，道武帝让他的弟弟和毗前去看望并诀别。和跋对毗说“：飈北土地贫瘠，可以移居南面有水的地方，耕种良田，广置产业，你们各自努力，相互勉励。”他让和毗等人离开自己，对他们说“：你们怎么忍心看着我死去？”和毗等懂得他话中的隐意，便诈称是朝廷派出的使者，投奔长安。道武帝杀了他们全家人。<BR><BR>　　后来，太武帝前往豺山打猎时，突然大雾弥漫，他很奇怪地询问是什么原因。所有百官都说和跋世代居住在这里，他的祠庙和坟墓也都还在，说不定是他的变幻引起的。太武帝派建兴公古弼以三牲之礼加以祭祀，雾气立即散失了。后来，太武帝每当到这里狩猎时，总是先派人祭祀。</p>
-<div class='pn'><p class='pre'>上一节：<a href='楼宝传-白话.html'>楼宝传</a></p><p class='next'>下一节：<a href='燕凤传-白话.html'>燕凤传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='楼宝传-白话.html'>楼宝传</a></p><p class='next'>下一节：<a href='燕凤传-白话.html'>燕凤传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

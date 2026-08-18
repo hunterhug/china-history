@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -226,8 +253,9 @@
 </p><p>岳清望冠一时，禔躬严整。尚书马森言平生见廉节士二人，岳与谭大初耳。岳知庐州时，王廷守苏州，以公事遇京口。岳召为金山游，携酒一缶，肉一斤，菜数束。廷笑曰：“止是乎？”岳亦笑曰：“足供我两人食矣。”欢竟日而还。去庐日，假一盖御雨，至即命还之。
 </p><p>谭大初，字宗元，始兴人。嘉靖十七年进士。授工部主事。忧归。起补户部，改户科给事中。数论事。历兵科左给事中，出为江西副使。清军，多所释。御史孙慎以失额为疑，大初曰：“失额罪小，殃民罪大。”严嵩亲党夺民田，治之不少贷。迁广西右参政，投劾归。久之，起故官河南。未上，擢南京右通政。俄迁应天府尹。将赴南都，而穆宗即位，乞以参政致仕，不许。隆庆元年召拜工部右侍郎，寻迁户部左侍郎，督仓场。海瑞为佥都御史，大初力荐瑞。已而屡疏乞休，不允。拜南京户部尚书，引疾去。家居，田不及百亩。卒年七十五。谥庄懿。
 </p><p>赞曰：当正、嘉之际，士大夫刓方为圆，贬其素履，羔羊素丝之节浸以微矣。陶琰诸人清操峻特，卓然可风。南都列卿，后先相望，不其贤乎。琰之督漕，充嗣之守御，良永之遏钱宁，周金之弭乱卒，所竖立甚伟。至琰子之直节，廷弼、邦靖之笃行，尤无忝其父兄云。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十八章-卷八十八-原文.html'>第八十八章-卷八十八</a></p><p class='next'>下一节：<a href='第九十章-卷九十-原文.html'>第九十章-卷九十</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第八十八章-卷八十八-原文.html'>第八十八章-卷八十八</a></p><p class='next'>下一节：<a href='第九十章-卷九十-原文.html'>第九十章-卷九十</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

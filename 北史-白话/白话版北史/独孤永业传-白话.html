@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>独孤永业传<span style='font-size:small'> 白话</span></h1>
 <p>独孤永业，字世基。原来姓刘，中山人。母亲改嫁独孤氏，他因年幼跟随母亲，被独孤氏家收养，便从了他们家的姓。天保初年，他被任命为中书舍人，他精于文字和筹算，又能歌善舞，很被文宣帝所赏识。<BR><BR>　　后来，他任济州刺史、河阳行台左丞，很有威信。又迁任行台尚书。他长久驻守河阳，善于招抚百姓，北周人很害怕他。他性情耿直，不结交权力势要之家。斛律光向他要两个婢子，没有得到，因而在朝廷诋毁他。河清末年，朝廷调任他为太仆卿，让乞伏贵和接替他原来的职务，因此，西部边境的力量变得穷蹙微弱，河洛一带百姓情绪骚动。武平三年，朝廷派他取代斛律丰洛，因而命他为北道行台仆射、幽州刺史。河洛一带的士农工商大多怀念他，朝廷又命他任河阳道行台、洛州刺史。<BR><BR>　　周武帝宇文邕亲自进攻金墉，永业率兵抵御，问周军：“来的是什么达官显贵，准备作何打算？”周人回答：“我们的天子亲自到来，你这个主人为何不来看看客人？”他答道：“客人来得太匆忙，所以不出来看望。”他便连夜置办马槽二千个，周人听说后，认为北齐的大队人马就要来到，便不战而退。他被晋封为开府、临川王。手中有将士三万。听说晋州失败，他请求率兵向北救援，宫廷中的官员说天子白天在睡觉，不给他通报，他十分愤慨。他又听说并州也被周军攻破，便派儿子独孤须达代替他向北周请降。北周朝廷封他为上柱国、应公，宣政末年，他被任命为襄州总管，大象二年(580)，被行台军总管崔彦睦杀害。</p>
-<div class='pn'><p class='pre'>上一节：<a href='元景安传-白话.html'>元景安传</a></p><p class='next'>下一节：<a href='傅伏传-白话.html'>傅伏传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='元景安传-白话.html'>元景安传</a></p><p class='next'>下一节：<a href='傅伏传-白话.html'>傅伏传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

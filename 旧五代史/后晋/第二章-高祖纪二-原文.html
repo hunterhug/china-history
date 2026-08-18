@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -193,8 +220,9 @@
 </p><p>十月壬午，以宣徽南院使、左监门卫上将军杨彦询为邓州威胜军节度使。诏选人试判两道。以左司郎中张彖为右谏议大夫；以刑部侍郎、盐铁转运副使史圭为吏部侍郎；以曹州刺史宋光业为宣徽北院使；以左金吾卫大将军高汉筠为左骁卫大将军，充内客省使；以宣徽北院使、左骁卫大将军刘处让为左监门卫上将军，充宣徽南院使。丙戌，遣使祀五岳四渎。故天平军节度使阎宝追封太原郡王，故大同军节度使李存璋赠太师，故瀛州刺史李嗣頵赠太尉，故相州刺史史建瑭、故代州刺史王建及并赠太保，故幽州节度使周德威追封燕王。
 </p><p>十一月庚戌，赐杨光远空名官告，自司空至常侍凡四十道，将士立功者，得补之而后奏。中书上言：“准唐贞元二年九月五日敕，文官充翰林学士及皇太子诸王侍读，武官充禁军职事，并不常朝参。其在三馆等诸职事者，并朝参讫各归所务。自累朝以来，文武在内廷充职兼判三司，或带职额及六军判官等，例不赴常朝，元无正敕。准近敕，文武职事官未升朝者，按旧制并赴朔望朝参。其翰林学士、侍读、三馆职事，望准元敕处分。其诸在内廷诸司使等，每受正官之时，来赴正衙，谢后不赴常朝，大朝会不离禁廷位次。三司职官免常朝，唯赴大朝会。其京师未升朝官员，只赴朔望朝参，带诸司职掌者不在此例。文官除端明殿翰林学士、枢密院学士、中书省知制诰外，有兼官兼职者，仍各发遣本司公事。”从之。丙辰，太子宾客王岯卒。改洛京潜龙宅为广德宫，北京潜龙宅为兴义宫。戊午，中书奏：“准杂令，车驾巡幸所祇承者，赐会并同京官。”从之。戊辰，镇海镇东节度使、吴越王钱元瓘加天下兵马副元帅，封吴越国王。庚午，以右拾遗李浣充翰林学士。甲戌，命太常卿程逊、兵部员外郎韦棁充吴越国王加恩使。丙子，以户部侍郎张昭远守本官，充翰林学士，仍知制诰。丁丑，湖南马希范贡宝装龙凤器用、结银花果子等物。帝览之，谓侍臣曰：“奇巧荡心，斯何用耳！但以来远之道，不欲阻其意。”闻者服之。壬午，安州李金全上言：“奉诏抽臣元随左都押衙胡汉筠，其人染重病，候损日赴阙。”汉筠本滑吏也，从金全历数镇，而滥声喧闻。帝知之，欲授以他职，免陷功臣。汉筠惧其罪，遂托疾。由是劝金全贰于朝廷，自此始也。
 </p><p>十二月，以监察御史徐台符为尚书膳部员外郎、知制诰，以右补阙史官修撰吴承范为尚书屯田员外郎、知制诰。左谏议大夫薛融改中书舍人，辞而不拜。尚书水部郎中、知制诰王易简改中书舍人，故陇西郡王李嗣昭追封韩王，故横海军节度使安审通赠太师。辛丑，湖南节度使、兼中书令、楚王马希范加食邑实封，改赐扶天佐运同德致理功臣。甲辰，车驾幸相国寺祈雪。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-高祖纪一-原文.html'>第一章-高祖纪一</a></p><p class='next'>下一节：<a href='第三章-高祖纪三-原文.html'>第三章-高祖纪三</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-高祖纪一-原文.html'>第一章-高祖纪一</a></p><p class='next'>下一节：<a href='第三章-高祖纪三-原文.html'>第三章-高祖纪三</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

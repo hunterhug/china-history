@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -214,8 +241,9 @@
 </p><p>十一月初四，大军与阿里不哥部在昔木土脑儿地方遭遇，诸侯王合丹等杀死他的部将合丹火儿赤及其兵卒三千人，塔察儿和合必赤等又分兵奋力攻击，将他打得大败，追赶了五十多里。皇上亲自统率各军在他后面追赶，其部将阿脱等投降，阿里不哥向北逃走。十二日，太阴星干犯昴宿。十四日，诏令免除今年的赋税。十五日，皇上驻跸于帖买和来地方。任命尚书怯烈门、平章赵璧兼任大都督，率领各军从塔察儿北上。将蒙古军分成两路：一部由怯烈门率领，从麦肖出居庸口，驻扎在宣德德兴府；一路由纳怀率领，从阿忽带出古北口，驻扎在兴州。皇上亲自率领汉军及武卫军的万户们，经由檀州、顺州驻扎在潮河川。敕令“：由官府供给粮草，不得滋扰居民。撤销十路宣抚司，只保留开元路宣抚司。命令各路购置战马二万五千多匹交给蒙古军中无马的士兵。十九日，征召各路宣抚司官员前来中都。”皇上移驻于速木合打地方。诏令汉军屯驻在怀来、缙山。鹰坊的阿里沙及阿散兄弟二人因为擅自离开宿卫的队伍而被处死。
 </p><p>十二月初二，诏令晋封皇子真金为燕王，管理中书省事务。初三，荧惑星(火星)干犯房宿。初四，荧惑星干犯钩、钤二星。初五，因昌州、抚州、盖利泊等处连遭兵乱，免除今年租税。初六，部队返回，诏令撤去居所的守军，放还民间新征集的签押士兵。命令太常少卿王镛教练演习大乐。十四日，因天气严寒，命令诸侯王合必赤部下没有行军帐幕的士兵，可以听任其住入民房。命令陕蜀行中书省供给绥德州等处的屯田军队耕牛、谷种、农具。开始建立宫殿府，俸禄为正四品，专管营造、修缮的事务。建立尚食局、尚药局。初设宿卫近侍五百零四人，任命刘德为军使统辖他们。建立异样局总管(达鲁花赤)，掌管宫廷御用纺织品的制造，俸禄为正三品，授予银印。赏赐给诸侯王的金银绢帛同于往年旧例。
 </p><p>这一年，全国有民户一百四十一万八千四百九十九户，处以死刑的四十六人。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三-白话.html'>第三章-卷三</a></p><p class='next'>下一节：<a href='第五章-卷五-白话.html'>第五章-卷五</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三-白话.html'>第三章-卷三</a></p><p class='next'>下一节：<a href='第五章-卷五-白话.html'>第五章-卷五</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

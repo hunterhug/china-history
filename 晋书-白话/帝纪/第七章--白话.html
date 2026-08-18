@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -207,8 +234,9 @@
 </p><p>当初，成帝身患疾病，中书令庾冰自以娘舅的身份执掌大权，权势与皇帝不相上下，担心更换朝代之后，亲戚关系将会疏远，便称国家面临强敌，应立年龄稍大的君主，于是立康帝为继承人。想改年号，以国中兴，因而改年号为建元。有人对庚冰说：“郭璞谶书预言‘立始之际丘山倾’，立是‘建’；始是‘元’；丘山是名。”庚冰很惊讶，接着感叹道：“如果有吉凶，岂是改年号所能挽救的？”至此果然应验。
 </p><p>史臣曰：肆虐滔天，岂在朝夕。如若断狱审慎而无人怨恨，众心尚存敬仰，又可以由此窥见逆顺的重要。成帝凭着已削弱的力量，守江淮之地，政令出自舅氏，不能以威力慑服海内。歹徒纵恣，社稷濒危，京城没有敖庾那样的财富，宫室遭到咸阳似的大火。桀犬吠尧，恶人如封狐作乱，与后羿时相比，那时岂有如此之甚。皇舆归返，没有晋文似的军队，使王朝根深蒂固，还须仰赖陶公之力。古代王侯，不临臣家，天子出游四方，则避开正殿北面而坐，听从前人遗留的方略，用作长久的典范。显宗于王导门下，整衣前拜，岂不如鲁公受玉般谦卑!皇帝如能躬行俭约，才能整治时弊。
 </p><p>赞曰：皇帝经常表示，舅氏为我之佐。勤于招致寇虏，拙于出师反击。烈火殃及皇宫，兵戈危及帝位。石头成帝去世，海内同含悲心。康帝以天之助，居哀犹以繁礼。遣业方将再兴，辞世何其仓促。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章--白话.html'>第六章-</a></p><p class='next'>下一节：<a href='第八章--白话.html'>第八章-</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第六章--白话.html'>第六章-</a></p><p class='next'>下一节：<a href='第八章--白话.html'>第八章-</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -247,8 +274,9 @@
 </p><p>正光中，起除右将军、南秦州刺史，因辞不免。先是，州人杨松柏、杨洛德兄弟数为反叛，游至州，深加招慰。松柏归款，引为主簿，稍以辞色诱之，兄弟俱至。松柏既州之豪帅，感游恩遇，奖谕群氐，咸来归款，且以过在前政，不复自疑。游乃因宴会，一时俱斩，于是外人以其不信，合境皆反。正光五年夏，秦州城人杀刺史李彦，据州为逆。数日之后，游知必不安，谋欲出外，寻为城人韩祖香、孙礻攻于州馆。游事窘，登楼慷慨悲叹，乃推下小女而杀之，义不为群小所辱也。寻为祖香等所执害，时年五十二。永安中，赠散骑侍郎、镇北将军、定州刺史。
 </p><p>子伏护，开府参军。
 </p><p>史臣曰：高祐学业优通，知名前世，儒俊之风，门旧不陨。诸子经传之器，加有舍生之节。崔挺兄弟，风操高亮，怀文抱质，历事著称，见重于朝野，继世承家，门族并著，盖所谓彼有人焉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十四章-卷四十四-原文.html'>第四十四章-卷四十四</a></p><p class='next'>下一节：<a href='第四十六章-卷四十六-原文.html'>第四十六章-卷四十六</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第四十四章-卷四十四-原文.html'>第四十四章-卷四十四</a></p><p class='next'>下一节：<a href='第四十六章-卷四十六-原文.html'>第四十六章-卷四十六</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

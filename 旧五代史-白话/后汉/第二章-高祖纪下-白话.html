@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -186,8 +213,9 @@
 </p><p>十二月六日，御驾离开邺都返回京城，十三日，从邺都到达京城。十四日，因为皇太子、开封府尹刘承训去世停止上朝三天，追封为魏王。十七日，高祖在太平宫举行哀悼。二十日，司徒李钅..去世。二十八日，宿州报告，宿州被饿死的有八百六十七人。
 </p><p>乾祐元年(948)正月一日，高祖没接受朝拜祝贺。五日，颁布诏令说：“太赦天下，改天福十三年为乾..元年，在正月五日黎明以前，犯了罪的除了十恶五逆外，无论罪行的轻重，全部赦免释放。”九日，高祖将御名改为詗。十一日，以前邓州节度使、燕国公冯道担任主太师，进封为齐国公。十四日，高祖生病。二十日，高祖在万岁殿驾崩，这时年龄五十四岁，封闭消息不发布讣告。三十日，太傅杜重威被诛杀。
 </p><p>二月一日，朝廷下达高祖遗令，皇子、周王刘承..可在高祖灵柩前登皇帝位。同日发布讣告。同年三月，太常卿张昭进上高祖谥号叫睿文圣武昭肃孝皇帝，庙号叫高祖。十一月二十七日，葬在睿陵，宰臣禹王圭在迁葬时撰写了赞扬高祖功德的韵文。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-高祖纪上-白话.html'>第一章-高祖纪上</a></p><p class='next'>下一节：<a href='第三章-隐帝纪上-白话.html'>第三章-隐帝纪上</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-高祖纪上-白话.html'>第一章-高祖纪上</a></p><p class='next'>下一节：<a href='第三章-隐帝纪上-白话.html'>第三章-隐帝纪上</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

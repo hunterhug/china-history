@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -197,8 +224,9 @@
 </p><p>楷，同光中为尚书员外郎。明宗即位，大臣欲理其驳谥之罪，以忧死。
 </p><p>当唐之亡也，又有杜晓者，字明远。祖审权，父让能，皆为唐相。昭宗时，王行瑜、李茂贞兵犯京师，昭宗杀让能于临皋以自解。晓以父死无罪，居丧哀毁；服除，布衣幅巾，自废十馀年。崔胤判盐铁，辟巡官，除畿县尉，直昭文馆，皆不起。崔远判户部，又辟巡官，或谓晓曰：“嵇康死，子绍自废不出仕，山涛以物理责之，乃仕。吾子忍令杜氏岁时铺席祭其先人同匹庶乎？”晓乃为之起。累迁膳部郎中、翰林学士。梁太祖即位，迁工部侍郎奉旨。开平二年，拜中书侍郎、同中书门下平章事。友珪立，迁礼部尚书、集贤殿大学士。袁象先等讨贼，兵大掠，晓为乱兵所杀，赠右仆射。
 </p><p>呜呼！始为朋党之论者谁欤？甚乎作俑者也，真可谓不仁之人哉！予尝至繁城，读《魏受禅碑》，见汉之群臣称魏功德，而大书深刻，自列其姓名，以夸耀于世。又读《梁实录》，见文蔚等所为如此，未尝不为之流涕也。夫以国予人而自夸耀，及遂相之，此非小人，孰能为也？汉、唐之末，举其朝皆小人也，而其君子者何在哉！当汉之亡也，先以朋党禁锢天下贤人君子，而立其朝者，皆小人也，然后汉从而亡。及唐之亡也，又先以朋党尽杀朝廷之士，而其馀存者，皆庸懦不肖倾险之人也，然后唐从而亡。夫欲空人之国而去其君子者，必进朋党之说；欲孤人主之势而蔽其耳目者，必进朋党之说；欲夺国而与人者，必进朋党之说。夫为君子者，故尝寡过，小人欲加之罪，则有可诬者，有不可诬者，不能遍及也。至欲举天下之善，求其类而尽去之，惟指以为朋党耳。故其亲戚故旧，谓之朋党可也；交游执友，谓之朋党可也；宦学相同，谓之朋党可也；门生故吏，谓之朋党可也。是数者，皆其类也，皆善人也。故曰：欲空人之国而去其君子者，惟以朋党罪之，则无免者矣。夫善善之相乐，以其类同，此自然之理也。故闻善者必相称誉，称誉则谓之朋党，得善者必相荐引，荐引则谓之朋党，使人闻善不敢称誉，人主之耳不闻有善于下矣，见善不敢荐引，则人主之目不得见善人矣。善人日远，而小人日进，则为人主者，伥伥然谁与之图治安之计哉？故曰：欲孤人主之势而蔽其耳目者，必用朋党之说也。一君子存，群小人虽众，必有所忌，而有所不敢为，惟空国而无君子，然后小人得肆志于无所不为，则汉魏、唐梁之际是也。故曰：可夺国而予人者，由其国无君子，空国而无君子，由以朋党而去之也。呜呼，朋党之说，人主可不察哉！《传》曰“一言可以丧邦”者，其是之谓与！可不鉴哉！可不戒哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十二章-一行传第二十二-原文.html'>第二十二章-一行传第二十二</a></p><p class='next'>下一节：<a href='第二十四章-义兒传第二十四-原文.html'>第二十四章-义兒传第二十四</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十二章-一行传第二十二-原文.html'>第二十二章-一行传第二十二</a></p><p class='next'>下一节：<a href='第二十四章-义兒传第二十四-原文.html'>第二十四章-义兒传第二十四</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

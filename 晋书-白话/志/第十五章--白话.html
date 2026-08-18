@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -270,8 +297,9 @@
 </p><p>从公主、封君以上都带绶，用彩丝织成束带，分别和绶带的颜色保持一致，用黄金的辟邪兽头做带块。
 </p><p>郡公侯或县公侯的太夫人、夫人用银印青绶，佩的是水苍玉，如果有特别加授称号的就用金印紫绶。公和特进侯卿校的世妇、中二千石和二千石的夫人戴绀色的缯制的帼，黄金龙头衔着白色珍珠，鱼须拢长达一尺做簪珥。入宗庙辅佐祭祀的穿皂色绢制的上下裳，协助祭蚕神的穿缥色绢制的上下裳，都是深衣的式样和边饰。
 </p><p>自二千石夫人以上到皇后，都把祭蚕神时穿的衣服作为上朝时穿的朝服。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十四章--白话.html'>第十四章-</a></p><p class='next'>下一节：<a href='第十六章--白话.html'>第十六章-</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十四章--白话.html'>第十四章-</a></p><p class='next'>下一节：<a href='第十六章--白话.html'>第十六章-</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

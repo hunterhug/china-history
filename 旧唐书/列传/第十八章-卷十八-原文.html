@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -190,8 +217,9 @@
 <p>　　转襄州都督，甚有惠政。卒官，年三十九。太宗闻而嗟悼，出次发哀，有司奏 言：“准《阴阳书》，日子在辰，不可哭泣，又为流俗所忌。”太宗曰：“君臣之 义，同于父子，情发于衷，安避辰日？”遂哭之。赠左骁卫大将军，谥曰襄。十三 年，追思旧功，改封郯国公。十七年，图形于凌烟阁。永徽中，又赠荆州都督。长 子大象嗣，官至户部侍郎。次子大素、大安，并知名。大素，龙朔中历位东台舍人， 兼修国史，卒于怀州长史，撰《后魏书》一百卷、《隋书》三十卷。大安，上元中 历太子庶子、同中书门下三品。时章怀太子在春宫，令大安与太子洗马刘讷言等注 范晔《后汉书》。宫废，左授普州刺史。光宅中，卒于横州司马。大安子涚，开元 中为国子祭酒。 </p>
 <p>　　史臣曰：敬德夺槊陷阵，鼓勇王师，却赂报恩，竭忠霸主。然而奋拳负气，非 自全之道；文皇告诫之言，可为功臣药石。叔宝善用马槊，拔贼垒则以寡敌众，可 谓勇矣。知节志平国难，拜隼籞则致命辅君，可谓忠矣。而并晓世充之猜贰，识唐 代之霸图，可谓见几君子矣。志玄中镝不言，竟安师旅。公谨投龟定议，志助储君。 皆所谓猛将谋臣，知机识变。有唐之盛，斯实赖焉。 </p>
 <p>　　赞曰：太宗经纶，实赖虎臣。胡、鄂诸将，奋不顾身。图形凌烟，配食严禋。 光诸简册，为报君亲。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p><p class='next'>下一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p><p class='next'>下一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>南安王元桢传<span style='font-size:small'> 白话</span></h1>
 <p>南安王元桢，是皇兴二年(468)所封的。孝文帝时，累迁任长安镇都大将、雍州刺史。元桢性情忠厚谨慎。他母亲病危时，他悲伤异常，于是有白雉来停歇在门前。皇帝知道以后十分感动，赐给他千匹帛加以奖赏。召他前往讲习武艺，在皇信堂接见他，并告诫他说：“你的孝行闻名于民间，美誉显彰于邦国，既是宗室至亲，终不必担心会贫贱。所应当注意的有三件事：一是自恃宗室至亲而骄傲自大，违反礼节和超越常度；二是傲慢贪婪奢侈，不认真处理政务；三是饮酒游乐，不加选择交结朋友。这三方面不除去，将会产生祸患。”可是，元桢未能遵从皇帝的劝诫，后来更加肆意聚敛钱财。孝文帝因为他曾以孝养母亲而闻名于朝廷内外，特地宽恕了他，只削除封爵，以平民回家闲居，软禁终身。<BR><BR>　　后因议定迁都事，又被封为南安王，任镇北大将军、相州刺史，皇帝在华林都亭给元桢饯行，下令所有人都要赋诗，不会写诗的，可以让他们射箭，一定要让武士弯弓射箭，文人下笔赋诗。皇帝送元桢走下台阶时，流着泪和他告别。太和二十年(496)五月，元桢到达邺城。到达的前一天，下暴雨刮大风，冻死了几十人。元桢后因旱情，向群神祈祷求雨。邺城有石季龙的庙，民间祭祀他。元桢对神像说：“三天之内不下雨，我就要鞭打惩罚你。”求雨没有灵验，他就鞭打神像一百鞭。当月，因长了背疽而死去，谥为“惠”。当时恒州刺史穆泰谋反，元桢知情却不举报，虽然已经死去，仍然被追夺了封爵，除去封国。</p>
-<div class='pn'><p class='pre'>上一节：<a href='元嵩传-白话.html'>元嵩传</a></p><p class='next'>下一节：<a href='中山王元英传-白话.html'>中山王元英传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='元嵩传-白话.html'>元嵩传</a></p><p class='next'>下一节：<a href='中山王元英传-白话.html'>中山王元英传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

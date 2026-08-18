@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>循吏传论<span style='font-size:small'> 白话</span></h1>
 <p>评论：善政对于民众，好比优秀的陶工和陶土的关系一样，用的工夫少而制成的器物多。汉代人口繁盛，刑罚宽简，作郡县长官的，没有外部干扰，奖赏刑罚，都可按自己的意志行事，朝廷也很少下诏干涉下面事务。由于社会稳定，有些官员在一个地方任职往往已生子生孙还未调离，都能普及德政促使人民和睦，提倡仁义礼让使淳朴之风不变。因此汉代龚遂、黄霸那样的政绩，就容易达到。等到了末代，各种伪诈滋生，人口少于以前，而赋税劳役却比从前繁重。想做出政绩，树立风范，要比从前难上百倍。若用上古时的教化来治理当世之民，那么今天优秀的官吏，在古代那样淳厚的风俗中，像子游治武城、汲黯治淮阳那样的成就，都是可以做出来的。未必是今天的人才不如古人，只是世风有淳厚与浇薄之分啊。</p>
-<div class='pn'><p class='pre'>上一节：<a href='郭祖深传-白话.html'>郭祖深传</a></p><p class='next'>下一节：<a href='儒林传序-白话.html'>儒林传序</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='郭祖深传-白话.html'>郭祖深传</a></p><p class='next'>下一节：<a href='儒林传序-白话.html'>儒林传序</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

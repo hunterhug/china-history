@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -246,8 +273,9 @@
 </p><p>建泰以宰辅督师，兵食并绌，所携止五百人。甫出都，闻曲沃已破，家赀尽没，惊怛而病。日行三十里，士卒多道亡。至定兴，城门闭不纳。留三日，攻破之，笞其长吏。抵保定，贼锋已逼，不敢前，入屯城中。已而城陷，知府何复、乡官张罗彦等并死之。建泰自刎不殊，为贼将刘方亮所执，送贼所。
 </p><p>贼既败，大清召为内院大学士。未几，罢归。姜瓖反大同，建泰遥应之。兵败被擒，伏诛。
 </p><p>赞曰：天下治乱，系于宰辅。自温体仁导帝以刻深，治尚操切，由是接踵一迹。应熊刚很，至发险忮。国观阴鸷，一效体仁之所为，而国家之元气已索然殆尽矣。至于演、藻德之徒，机智弗如，而庸庸益甚，祸中于国，旋及其身，悲夫！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百四十章-卷一百四十-原文.html'>第一百四十章-卷一百四十</a></p><p class='next'>下一节：<a href='第一百四十二章-卷一百四十二-原文.html'>第一百四十二章-卷一百四十二</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第一百四十章-卷一百四十-原文.html'>第一百四十章-卷一百四十</a></p><p class='next'>下一节：<a href='第一百四十二章-卷一百四十二-原文.html'>第一百四十二章-卷一百四十二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

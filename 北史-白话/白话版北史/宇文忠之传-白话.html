@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>宇文忠之传<span style='font-size:small'> 白话</span></h1>
 <p>宇文忠之，河南洛阳人。他的祖先是南单于的远支，世代居住东部，后来移居到代都。父亲宇文侃，死在书侍御史任上。<BR><BR>　　他广泛涉猎文史经典，颇有文采。脱去布衣进入仕途，任太学博士。天平初年，任中书侍郎。裴伯茂与他同在中书省供职，常常轻侮他，因他的皮肤颜色黑，所以喊他“黑宇”。后来，奉命修撰国史。元象初年，任兼通直散骑常侍，作为郑伯猷的副手，出使梁国。武定初年，任尚书右丞，仍修撰国史。不久，因犯罪被免官。<BR><BR>　　宇文忠之喜好名利，他任了六七年中书郎，遇上尚书省选拔右丞，参与预选的人都要抽题应试，他参加了考试，被选取任右丞的职务后，大为欣喜意满，志气嚣然逼人，有傲物蔑世的神色，认识他的人都嘲笑他。丢失官爵后，却怏怏不快，疾病发作，因而去世。</p>
-<div class='pn'><p class='pre'>上一节：<a href='山伟传-白话.html'>山伟传</a></p><p class='next'>下一节：<a href='费穆传-白话.html'>费穆传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='山伟传-白话.html'>山伟传</a></p><p class='next'>下一节：<a href='费穆传-白话.html'>费穆传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

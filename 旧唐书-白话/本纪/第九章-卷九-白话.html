@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -218,8 +245,9 @@
 </p><p>至德三年(758)二月，肃宗与群臣奉上皇尊号曰太上至道圣皇帝。乾元三年(760)七月十九日，移上皇到西内之甘露殿。当时宦官李辅国离间肃宗，所以将上皇移居西内。高力士、陈玄礼等人贬官到远地，上皇渐渐不愉快。
 </p><p>上元二年(761)三月二十九日，上皇在神龙殿去世，时年七十八岁。群臣上谥号曰：至道大圣大明孝皇帝，庙号玄宗。
 </p><p>当初，上皇亲自拜五陵，到桥陵，见金粟山岗有龙盘凤飞之形势，又靠近先皇之陵墓，上皇对侍臣曰：“吾死后应葬此地，得以侍奉先人陵墓，不忘孝敬了。”至此，追奉先帝玄宗旨意以创建陵园，于广德元年(763)三月十八日葬在泰陵。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八-白话.html'>第八章-卷八</a></p><p class='next'>下一节：<a href='第十章-卷十-白话.html'>第十章-卷十</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八-白话.html'>第八章-卷八</a></p><p class='next'>下一节：<a href='第十章-卷十-白话.html'>第十章-卷十</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

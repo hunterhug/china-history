@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -227,8 +254,9 @@
 </p><p>昂在官，日市少肉供母，而自食菜茹。子弟学书，不听用官纸笔，家居室不蔽风雨。
 </p><p>子龙，字梦宾，正德三年进士。历礼部郎中。武宗南巡，率同官谏。罚跪五日，杖几死。出为建宁同知，寻迁云南副使，备兵澜沧、姚安。滇故盗薮，龙让土酋曰：“尔世官，纵盗宁非贿乎？”酋惧，抚谕群盗，悉听命。巨盗方定者，既降而贫，为妻妾所诟，卒不忍负龙，竟仰药死。南安大盗千人，御史欲征兵，龙檄三日散尽。四川盐井剌马仁、云南晒江和歌仲雠杀数十年，龙抚谕，遂解。大候州土官猛国恃险肆暴，龙擒之。在滇四年，番、汉大治。邓川州立三正人祠，祀袁州郭绅、莆田林俊及龙。
 </p><p>赞曰：陶成、陈敏诸人，以监司守令著征剿功，而成及毛吉、叶祯身死王事，劳烈显著，亦可以愧戎帅之畏懦戚蹜者矣。林锦威能临制，材足绥怀，边疆皆得斯人，何忧不治？郭绪单骑入险，谕服两酋，令当洪、永间亦何至尚淹常调哉。平世秉国者，多抑边功，谓恐生事。然大帅倚内援，叙禄又多逾等，适足以长武夫玩寇之心，而无以奖劳臣致死之节。国家以赏罚驭世，曷可不公乎！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十二章-卷五十二-原文.html'>第五十二章-卷五十二</a></p><p class='next'>下一节：<a href='第五十四章-卷五十四-原文.html'>第五十四章-卷五十四</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第五十二章-卷五十二-原文.html'>第五十二章-卷五十二</a></p><p class='next'>下一节：<a href='第五十四章-卷五十四-原文.html'>第五十四章-卷五十四</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

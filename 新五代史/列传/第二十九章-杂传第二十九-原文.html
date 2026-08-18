@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -192,8 +219,9 @@
 </p><p>赵匡凝，字光仪，蔡州人也。其父德諲事秦宗权，为申州刺史。宗权反，德諲攻下襄阳。梁太祖攻蔡州，宗权屡败，德諲乃以山南东道七州降。梁太祖初镇宣武，尝为宗权所困，闻德諲降，大喜，表为行营副都统，河阳、保义、义昌三节度行军司马。会其兵以攻蔡州，破之，德諲功多。德諲卒，子匡凝自立。是时，成汭死，雷彦恭袭取荆南，匡凝遣其弟匡明逐彦恭，太祖表匡凝荆襄节度使，以匡明为荆南留后。是时，唐衰，籓镇不复奉朝廷，独匡凝兄弟贡赋不绝。
 </p><p>匡凝为人气貌甚伟，性方严，喜自修饰，颇好学问，聚书数千卷，为政有威惠。太祖攻兗州，硃瑾求救于晋，晋遣史俨等将兵数千救瑾，瑾败，与俨等奔于淮南。晋王李克用遣人以书币假道于匡凝，以聘于杨行密，求归俨等。晋王使者为梁得，太祖大怒。是时，梁已破兗、郓，遣氏叔琮、康怀英等攻匡凝，叔琮取泌、随二州，怀英取邓州，匡凝惧，请盟，乃止。
 </p><p>太祖弑昭宗，将谋代唐，畏匡凝兄弟不从，遣使告之，匡凝对使者流涕答曰：“受唐恩深，不敢妄有佗志。”太祖遣杨师厚攻之，太祖以兵殿汉北，匡凝战败，以轻舟奔于杨行密。师厚进攻荆南，匡明奔于蜀。匡凝至广陵，行密见之，戏曰：“君在镇时，轻车重马，岁输于梁，今败乃归我乎？”匡凝曰：“仆世为唐臣，岁时职贡，非输贼也。今以不从贼之故，力屈归公，惟公生死之耳！”行密厚遇之。其后行密死，杨渥稍不礼之。渥方宴，食青梅，匡凝顾渥曰：“勿多食，发小兒热。”诸将以为慢，渥迁匡凝海陵，后为徐温所杀。匡明卒于蜀。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十八章-杂传第二十八-原文.html'>第二十八章-杂传第二十八</a></p><p class='next'>下一节：<a href='第三十章-杂传第三十-原文.html'>第三十章-杂传第三十</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十八章-杂传第二十八-原文.html'>第二十八章-杂传第二十八</a></p><p class='next'>下一节：<a href='第三十章-杂传第三十-原文.html'>第三十章-杂传第三十</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

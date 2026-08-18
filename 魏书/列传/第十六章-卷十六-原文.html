@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -219,8 +246,9 @@
 </p><p>世祖以其功旧，任以辅弼，除大司农卿。军国大议，黎常与焉。加镇北将军。以征赫连定功，进号征北大将军。与乐安王范、济南公崔徽镇长安，清约公平，甚著声称。代下之日，家无余财。世祖诏黎领兵一万二千人，通莎泉道。车驾征凉州，蠕蠕吴提乘虚入寇，黎与司空道生拒击之。恭宗初总百揆，黎与东郡公崔浩等辅政，忠于奉上，非公事不言。诏曰：“侍中广平公黎、东郡公浩等，保傅东宫，有老成之勤，朕甚嘉焉。其赐布帛各千匹，以褒旧勋。”恭宗薨于东宫，黎兼太尉，持节奉策谥焉。
 </p><p>吴王余立，以黎为太尉。后以议不合旨，免。仍与古弼并诛。
 </p><p>史臣曰：和跋、奚牧、莫题、贺狄干、李栗、刘洁等，并有忠勤征伐之效，任遇仍优，俱至诛灭。岳身犯危难之中，受事草创之际，智勇既申，功名尤举，乃良将之材。弼谋军辅国，远略正情，有柱石之量。张黎诚谨兼方，功旧见重。纤介之间，一朝殒覆，宥及十世，乃徒言尔，惜乎！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p><p class='next'>下一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p><p class='next'>下一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

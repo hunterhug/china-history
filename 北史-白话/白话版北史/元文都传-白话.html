@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>元文都传<span style='font-size:small'> 白话</span></h1>
 <p>元文都是元则的儿子。他性情耿直，在北周时任右侍上士。隋开皇初年，被任命为内史舍人。炀帝即位后，屡迁至御史大夫，因事而被免职。不久，又被任命为太府卿，在当时很有声誉。大业十二年(616)，炀帝前往江都，下诏让文都和段达、皇甫无逸、韦津等人同任东都留守。炀帝驾崩时，文都和段达、韦津等共同拥戴越王侗当皇帝。越王侗任命文都为内史令、开府仪同三司、光禄大夫、左骁卫大将军、摄右翊卫将军、鲁国公。<BR><BR>　　不久宇文化及立秦王浩为帝，领兵到达彭城，各地纷纷响应。文都便劝越王侗派使者和李密交通。李密便请求投降，于是，授给李密官爵，以礼接待使者，十分隆重。王世充知道后很不高兴，文都听说后，便暗暗定下杀王世充的计策。越王侗又委任文都为御史大夫，因王世充坚决反对而作罢。卢楚劝文都赶快杀了王世充，文都便带奏书进殿。有人把这件事报告王世充，王世充奔回含嘉城。到夜间，王世充发难，攻进了东太阳门，在紫微观下拜见越王侗，说：“请斩文都，归罪于司寇。”越王侗见王世充兵势兴盛，便派他所任命的将军黄桃树将文都抓出去。文都望着越王侗说“：臣下今晨亡故，陛下也当在晚间及难。”越王侗大哭让人把他带走，身边的人无不十分同情与怜悯，默默无言。当走到兴教门时，王世充传令左右人员用乱刀斩了他，他的几个儿子也同时被害。</p>
-<div class='pn'><p class='pre'>上一节：<a href='元修义传-白话.html'>元修义传</a></p><p class='next'>下一节：<a href='元褒传-白话.html'>元褒传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='元修义传-白话.html'>元修义传</a></p><p class='next'>下一节：<a href='元褒传-白话.html'>元褒传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>贾思同传<span style='font-size:small'> 白话</span></h1>
 <p>贾思同，字仕明。从小就能勉励自己的志向和行为，十分喜好学习经典史籍，与兄长贾思伯，年少时都被乡亲们看重。入仕后多次升迁，官至襄州刺史。在任上虽无明察秋毫的美誉，百姓们却也安居乐业。元颢叛乱，他与广州刺史郑先护都不投降。孝庄帝出逃后回到京城，封他为营陵县男。后来，与国子祭酒韩子熙都充任侍讲，给孝静帝讲授《杜氏春秋》。加封为散骑常侍，兼任七兵尚书，不久拜授为侍中。死后，赠封为尚书右仆射、司徒公，谥号文献。<BR><BR>　　开初，思同任青州别驾。清河人崔光韶先被任命为中从事，自认为资历比思同深，而职位却比思同低，因而耻居其下。听说思同回来了，他便辞去官职，青州的人都为思同受辱而恼恨他。光韶去世后，曾告诫自己的子侄，不要向朝廷请求封赠。思同却上表陈奏光韶的操行政绩，特蒙朝廷赠给官职和谥号，人们议论起来都很感叹佩服。<BR><BR>　　思同任侍讲，国子博士、辽西人卫冀隆精于服氏的学说，上书对《杜氏春秋》提出六十三处疑问。思同又批驳冀隆错误的地方十多条。两人互相论辩问难，积累成十卷论著。朝廷下诏给国学，命召集儒生们考证比较。事情没进行完，思同就去世了。后来，魏郡的姚文安、乐陵的秦道静又重述思同的意见。冀隆不久也辞别人世，浮阳的刘休和又坚持冀隆的说法，竟也没有能够裁判公正。</p>
-<div class='pn'><p class='pre'>上一节：<a href='贾思伯传-白话.html'>贾思伯传</a></p><p class='next'>下一节：<a href='祖莹传-白话.html'>祖莹传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='贾思伯传-白话.html'>贾思伯传</a></p><p class='next'>下一节：<a href='祖莹传-白话.html'>祖莹传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

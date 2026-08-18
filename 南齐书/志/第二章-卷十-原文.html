@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -198,8 +225,9 @@
 </p><p>祠部郎何佟之议曰：“《春秋》之旨，臣子继君亲，虽恩义有殊，而其礼则一，所以敦资敬之情，笃方丧之义。主上虽仰嗣高皇，尝经北面，方今圣历御宇，垂训无穷，在三之恩，理不容替。窃谓世宗祥忌，至尊宜吊服升殿，群臣同致哀感，事毕，百官诣宣德宫拜表，仍致哀陵园，以弘追远之慕。”尚事令王晏等十九人同佟之议。诏“可。”
 </p><p>海陵王薨，百官会哀。时纂严，朝议疑戎服临会。祠部郎何佟之议：“羔裘玄冠不以吊，理不容以兵服临丧。宋泰始二年，孝武大祥之日，于时百寮入临，皆于宫门变戎服，著衣夹，入临毕，出外，还袭戎衣。”从之。
 </p><p>赞曰：姬制孔作，训范百王。三千有数，四维是张。损益彝典，废举宪章。戎祀军国，社庙郊庠。冠婚朝会，服纪凶丧。存为盛德，戒在先亡。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-卷九-原文.html'>第一章-卷九</a></p><p class='next'>下一节：<a href='第三章-卷十一-原文.html'>第三章-卷十一</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-卷九-原文.html'>第一章-卷九</a></p><p class='next'>下一节：<a href='第三章-卷十一-原文.html'>第三章-卷十一</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

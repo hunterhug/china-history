@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -206,8 +233,9 @@
 </p><p>隆庆六年(1572)正月十四日，修筑徐州至宿迁堤防三百七十里。二月九日，倭寇侵犯广东，攻陷神屯卫，大肆抢劫。山寇又趁机兴起。闰二月十一日，穆宗到皇极门，疾病发作，便匆匆回到宫中。十九日，倭寇侵犯高、雷等州，被官军击败。
 </p><p>四月十三日，礼部尚书高仪兼文渊阁大学士，参与机要事务。五月八日，减免广东用兵各郡欠交赋税。二十五日，病危，召大学士高拱、张居正、高仪接受遗命。二十六日穆宗死于乾清宫，享年三十六岁。七月三日，上尊谥，庙号穆宗，葬于昭陵。
 </p><p>评论：穆宗在位六年，无为而治，少兴营造，励行勤俭节约，饮食方面每年节省数万开支。同意俺答加封进贡，减免赋税平息民众，边境宁静无事。他即位遵守先代成法，可称为是一个好君主。只是权臣相互间争权夺利，派别之分逐渐兴起，而穆宗并没能挽救并整治朝纲，革除弊习。大概是因为宽恕有余而使朝纲不明罢了。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十八章-卷十八-白话.html'>第十八章-卷十八</a></p><p class='next'>下一节：<a href='第二十章-卷二十-白话.html'>第二十章-卷二十</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十八章-卷十八-白话.html'>第十八章-卷十八</a></p><p class='next'>下一节：<a href='第二十章-卷二十-白话.html'>第二十章-卷二十</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

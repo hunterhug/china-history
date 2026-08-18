@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>拓跋窟咄传<span style='font-size:small'> 白话</span></h1>
 <p>拓跋窟咄在昭成皇帝去世以后，苻洛因为他年长，逼他迁往长安。苻坚以礼相待，教他读书。因内乱，便跟着慕容永东迁，慕容永委任他当新兴太守。刘显失败以后，派他的弟弟亢瞛等前来迎接窟咄，进而入侵南部边界，于是各部落发生骚动。道武帝身边的人于桓等准备策应他，同谋人单乌干把这个阴谋报告道武帝。道武帝担心会引起人心更加惊骇，考虑了很久还没有采取行动。过了三天，于桓又将这一阴谋告诉了他的舅舅穆崇，穆崇又来告诉道武帝，道武帝便杀掉了于桓等五人，其余莫题等七姓人一概不追究。道武帝担心有内乱，便北越阴山，前往贺兰部，同时派安同和长孙漫到慕容垂那里求援兵。贺曼逃奔窟咄，安同从小道前行，因而到达中山。慕容垂派儿子贺..带领步骑兵六千人随安同前来。安同和慕容垂的使者兰纥同回，到达牛川时，窟咄哥哥的儿子意烈出来阻挡。安同便隐藏在商贩们的行囊中，到天黑时，进空井躲避才免于被杀。他依旧去找贺..。援军没有到达，而敌人向前进逼。贺染干暗中怀有异心，替窟咄来进犯北部。人心惶惶，没有坚守的决心。于是，北部大人叔孙普洛节和各乌丸人都逃亡投奔卫辰。贺..得知消息，立即派安同、朱谭等前来。当得知贺..军队已离这里很近时，众人这才稍微安定下来。道武帝从弩山到金川，窟咄进驻高柳。道武帝又让安同去见贺..，约定会兵的日期。安同回来以后，道武帝越过参合，出兵代地，和贺..兵会高柳。窟咄势孤力单，望见旗子就逃奔，于是被卫辰杀死。道武帝全部接收了他的部众，贺..和道武帝告别，回归中山。</p>
-<div class='pn'><p class='pre'>上一节：<a href='毗陵王拓跋顺传-白话.html'>毗陵王拓跋顺传</a></p><p class='next'>下一节：<a href='清河王拓跋绍传-白话.html'>清河王拓跋绍传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='毗陵王拓跋顺传-白话.html'>毗陵王拓跋顺传</a></p><p class='next'>下一节：<a href='清河王拓跋绍传-白话.html'>清河王拓跋绍传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

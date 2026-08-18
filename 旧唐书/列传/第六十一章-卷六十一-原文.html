@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -209,8 +236,9 @@
 <p>　　璀廓落有口才，好谈王霸之略，居职责成属吏。龊龊无过而已。 </p>
 <p>　　史臣曰：禄山寇陷两京，儒生士子，被胁从、怀苟且者多矣；去逆效顺，毁家 为国者少焉。如光远勇决任气，会权变以立功；房琯文学致身，全节义以避寇。阽 危之时，颠沛之际，有足称者。然光远居重籓，掌军政，琯登相位，夺将权，聚浮 薄之徒，败军旅之事，不知机而固位，竟无德以自危。孺复凶狂，式之便佞，获令 终者幸焉。镐直躬居位，重德镇时，其为人也鲜矣。适以诗人为戎帅，险难之际， 名节不亏，君子哉！璀擢第居官，守分无过，又何咎焉。 </p>
 <p>　　赞曰：光远、房琯，有始有终。张镐国器，适、璀儒风。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十章-卷六十-原文.html'>第六十章-卷六十</a></p><p class='next'>下一节：<a href='第六十二章-卷六十二-原文.html'>第六十二章-卷六十二</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第六十章-卷六十-原文.html'>第六十章-卷六十</a></p><p class='next'>下一节：<a href='第六十二章-卷六十二-原文.html'>第六十二章-卷六十二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

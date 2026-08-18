@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -188,8 +215,9 @@
 </p><p>太宗聪睿过人，神彩秀发，多闻博达，富赡词藻。然文艳用寡，华而不实，体穷淫丽，义罕疏通，哀思之音，遂移风俗，以此而贞万国，异乎周诵、汉庄矣。我生不辰，载离多难，桀逆构扇，巨猾滔天，始自牖里之拘，终类望夷之祸。悠悠苍天，其可问哉！
 </p><p>昔国步初屯，兵缠魏阙，群后释位，投袂勤王。元帝以盘石之宗，受分陕之任，属君亲之难，居连率之长，不能抚剑尝胆，枕戈泣血，躬先士卒，致命前驱；遂乃拥众逡巡，内怀觖望，坐观时变，以为身幸。不急莽、卓之诛，先行昆弟之戮。又沉猜忌酷，多行无礼。骋智辩以饰非，肆忿戾以害物。爪牙重将，心膂谋臣，或顾眄以就拘囚，或一言而及菹醢。朝之君子，相顾懔然。自谓安若泰山，举无遗策，怵于邪说，即安荆楚。虽元恶克剪，社稷未宁，而西邻责言，祸败旋及。上天降鉴，此焉假手，天道人事，其可诬乎！其笃志艺文，采浮淫而弃忠信；戎昭果毅，先骨肉而后寇仇。虽口诵《六经》，心通百氏，有仲尼之学，有公旦之才，适足以益其骄矜，增其祸患，何补金陵之覆没，何救江陵之灭亡哉！
 </p><p>敬帝遭家不造，绍兹屯运，征伐有所自出，政刑不由于己，时无伊、霍之辅，焉得不为高让欤？”</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷五-原文.html'>卷五</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='卷五-原文.html'>卷五</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

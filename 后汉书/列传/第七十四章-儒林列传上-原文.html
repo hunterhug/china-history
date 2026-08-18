@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -239,8 +266,9 @@
 </p><p>阳嘉二年，征拜太中大夫。大将军梁商以为长史。谏诤不合，出补常山王傅，病不之官。诏书敕司隶催促发遣，伦乃留河内朝歌，以疾自上，曰：“有留死一尺，无北行一寸。刎颈不易，九裂不恨。匹夫所执，强于三军。固敢有辞。”帝乃下诏曰：“伦出幽升高，宠以籓傅，稽留王命，擅止道路，托疾自从，苟肆狷志。”遂征诣廷尉，有诏原罪。
 </p><p>伦前后三征，皆以直谏不合。既归，闭门讲授，自绝人事。公车复征，逊遁不行，卒于家。
 </p><p>中兴，北海牟融习《大夏侯尚书》，东海王良习《小夏侯尚书》，沛国桓荣习《欧阳尚书》。荣世习相传授，东京最盛。扶风杜林传《古文尚书》，林同郡贾逵为之作训，马融作传，郑玄注解，由是《古文尚书》遂显于世。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十三章-宦者列传-原文.html'>第七十三章-宦者列传</a></p><p class='next'>下一节：<a href='第七十五章-儒林列传下-原文.html'>第七十五章-儒林列传下</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第七十三章-宦者列传-原文.html'>第七十三章-宦者列传</a></p><p class='next'>下一节：<a href='第七十五章-儒林列传下-原文.html'>第七十五章-儒林列传下</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

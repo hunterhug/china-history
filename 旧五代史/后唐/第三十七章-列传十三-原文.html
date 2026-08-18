@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -194,8 +221,9 @@
 </p><p>张遵诲，魏州人也。父为宗城令，罗绍威杀牙军之岁，为梁军所害。遵诲奔太原，武皇以为牙门将。庄宗定山东，遵诲以典客从，历幽、镇二府马步都虞候。同光中，为金吾大将军。明宗即位，任圜保荐，授西都副留守，知留守事、京兆尹。天成四年，入为客省使、守卫尉卿。及将有事于南郊，为修仪仗法物使。初，遵诲自以历位尹正，与安重诲素亦相款，衷心有望于节钺。及郊禋毕，止为绛州刺史，郁郁不乐。离京之日，白衣乘马于隼■之下，至郡无疾，翌日而卒。
 </p><p>孙璋，齐州历城人。出身行间，隶梁将杨师厚麾下，稍补奉化军使。庄宗入鄴，累迁澶州都指挥使。明宗镇常山，擢为裨校。鄴兵之变，从明宗赴难京师。天成初，历赵、登二州刺史，齐州防御使。王都之据中山，璋为定州行营都虞候，贼平，加检校太保。长兴初，授鄜州节度使，罢镇，卒于洛阳，年六十一。赠太尉。
 </p><p>史臣曰：夫天地斯晦，则帝王于是龙飞；云雷构屯，则王侯以之蝉蜕。良以适遭乱世，得奋雄图，故金全而下，咸以军旅之功，坐登籓阃之位，垂名简册，亦可贵焉。惟重霸以奸险而仗旄钺，盖非数子之俦也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十六章-列传十二-原文.html'>第三十六章-列传十二</a></p><p class='next'>下一节：<a href='第三十八章-列传十四-原文.html'>第三十八章-列传十四</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三十六章-列传十二-原文.html'>第三十六章-列传十二</a></p><p class='next'>下一节：<a href='第三十八章-列传十四-原文.html'>第三十八章-列传十四</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

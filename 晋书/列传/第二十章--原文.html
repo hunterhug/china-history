@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -221,8 +248,9 @@
 </p><p>后与刘暾等同议齐王攸事，忤旨，除名。寻复起为博士。秀性悻直，与物多忤。为博士前后垂二十年，卒于官。
 </p><p>史臣曰：齐献王以明德茂亲，经邦论道，允厘庶绩，式叙彝伦。武帝纳奸谄之邪谋，怀绍终之远虑，遂乃君兹青土，作牧东籓。远迩惊嗟，朝野失望。曹志等服膺教义，方轨儒门，蹇蹇匪躬，慺慺体国。故能抗言凤阙，忤犯龙鳞，身虽暂屈，道亦弘矣！庾氏世载清德，见称于世，汝颍之多奇士，斯焉取斯。谋甫素疾佞邪，而发因醉饱，投鼠忌器，岂易由言。窃人之财，犹谓之盗，子玄假誉攘善，将非盗乎！
 </p><p>赞曰：魏氏维城，济北知名。颍川多士，峻亦飞英。长岑徇义，祭酒遗荣。谋甫三爵，酗[QBDM]斯作。象既攘善，秀惟瘅恶。旉献嘉谋，几趋鼎镬。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十九章--原文.html'>第十九章-</a></p><p class='next'>下一节：<a href='第二十一章--原文.html'>第二十一章-</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十九章--原文.html'>第十九章-</a></p><p class='next'>下一节：<a href='第二十一章--原文.html'>第二十一章-</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>源师传<span style='font-size:small'> 白话</span></h1>
 <p>源师，源彪之子，字践言。年轻时就很知名，聪明善辩，有学识、悟性强，尤其得意于自己处理政事的能力。齐时，被任命为尚书左外兵郎中，还负责祠部。有一年初夏，他因为龙星初现请求举办一次雩祭(求雨的祭祀仪式)。当时高阿那肱为录尚书事，还以为是真龙出现，十分惊喜，问龙在哪里，并问道“：龙出现时是什么情形？”源师满脸严肃地说道“：那只是星的初次出现，依照礼法应该在郊庙的神坛上举行雩祭，而不是所谓另有条真龙下降人间。”高阿那肱忿然翻脸道“：汉儿多事，牵强去解释星辰。”这次祭事就没有举行，源师出了官署，私下里叹息道“：国家大事，主要就是祭祀和军事，礼法既然已经废了，国运还能长久吗？齐亡国之日不远了。”不久周武帝灭齐，他被授为司赋上士。<BR><BR>　　隋文帝接受禅让后，他升任为尚书右丞，以精明干练著称。当时蜀王杨秀经常违反国法约束，于是让源师出任为益州总管司马，不久秀被征召回京，秀怕回京后有变故，想推病不去。源师多次劝说他，不可违逆圣命。杨秀动怒道：“这是我的家事，和卿有什么相关？”源师流着泪苦谏，杨秀才应召回京。秀出事后，州中官员大多被牵连，只有源师因为这件事被敕免。后来又加官为仪同三司。<BR><BR>　　隋炀帝即位后，源师官拜大理少卿。皇帝住在显仁宫，命令宫外的卫士，不准擅离职守。有一名主帅，私自命卫士外出，炀帝命交付大理寺审问定罪。源师按照法典奏称应将他发配。炀帝要将他问斩。源师奏道：“如果陛下当初就杀他，自然用不着浪费文墨，既然交给有关部门处理，就应当遵照法典行事，何况卫兵和近侍再有犯这种罪的，又将如何处置呢？”炀帝便不再坚持。源师任职虽然精明能干，有口才，却没有清廉公平的称誉，死时官至刑部侍郎。</p>
-<div class='pn'><p class='pre'>上一节：<a href='源彪传-白话.html'>源彪传</a></p><p class='next'>下一节：<a href='源雄传-白话.html'>源雄传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='源彪传-白话.html'>源彪传</a></p><p class='next'>下一节：<a href='源雄传-白话.html'>源雄传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

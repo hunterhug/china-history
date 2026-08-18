@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -185,8 +212,9 @@
 </p><p>耶律敌鲁，字撒不碗。其先本五院之族，始置宫分，隶焉。敌鲁精于医，察形色即知病原。虽不诊候，有十全功。统和初，为大丞相韩德让所荐，官至节度使。初，枢密使耶律斜轸妻有沉疴，易数医不能治。敌鲁视之曰：“心有蓄热，非药石所及，当以意疗。因其聩，聒之使狂，用泄其毒则可。”于是令大击钲鼓于前。翌日果狂，叫呼怒骂，力极而止，遂愈。治法多此类，人莫能测。年八十卒。
 </p><p>耶律乙不哥，字习然，六院郎君褭古直之后。幼好学，尤长于卜筮，不乐仕进。尝为人择葬地曰：“后三日，有牛乘人逐牛过者，即启土。”至期，果一人负乳犊，引牸牛而过。其人曰：“所谓‘牛乘人’者，此也。”遂启土。既葬，吉凶尽如其言。又为失鹰者占曰：“鹰在汝家东北三十里泺西榆上。”往求之，果得。当时占候无不验。
 </p><p>论曰：方技，术者也。苟精其业而不畔于道，君子必取焉。直鲁古、王白、耶律敌鲁无大得失，录之宜矣。魏璘为察割卜谋逆，为罨撒葛卜僣立，罪在不贳，虽有寸长，亦奚足取哉。存而弗削，为来者戒。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十七章-卷三十七-原文.html'>第三十七章-卷三十七</a></p><p class='next'>下一节：<a href='第三十九章-卷三十九-原文.html'>第三十九章-卷三十九</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三十七章-卷三十七-原文.html'>第三十七章-卷三十七</a></p><p class='next'>下一节：<a href='第三十九章-卷三十九-原文.html'>第三十九章-卷三十九</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -235,8 +262,9 @@
 </p><p>永初三年，太尉张禹荐朗为博士，征诣公车，会卒，时年八十四。
 </p><p>论曰：左丘明有言：“仁人之言，其利博哉！”晏子一言，齐侯省刑。若钟离意之就格请过，寒朗之廷争冤狱，笃矣乎，仁者之情也！夫正直本于忠诚则不诡，本于谏争则绞切。彼二子之所本得乎天，故言信而志行也。
 </p><p>赞曰：伯鱼、子阿，矫急去苛。临官以洁，匡帝以奢。宋均达政，禁此妖禜。禽虫畏德，子民请病。意明尊尊，割恩蕃屏。C928C928楚黎，寒君为命。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十三章-班彪列传下-原文.html'>第三十三章-班彪列传下</a></p><p class='next'>下一节：<a href='第三十五章-光武十王列传-原文.html'>第三十五章-光武十王列传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三十三章-班彪列传下-原文.html'>第三十三章-班彪列传下</a></p><p class='next'>下一节：<a href='第三十五章-光武十王列传-原文.html'>第三十五章-光武十王列传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

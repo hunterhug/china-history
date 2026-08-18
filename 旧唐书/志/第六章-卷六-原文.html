@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -241,8 +268,9 @@
 </p><p>会昌六年十月，太常礼院奏：“禘祫祝文称号，穆宗皇帝、宣懿皇后韦氏、敬宗皇帝、文宗皇帝、武宗皇帝，缘从前序亲亲，以穆宗皇帝室称为皇兄，未合礼文。得修撰官硃俦等状称：‘礼叙尊尊，不叙亲亲。陛下于穆宗、敬宗、武宗三室祝文，恐须但称嗣皇帝臣某昭告于某宗。’臣等同考礼经，于义为允。”从之。贞元十二年，祫祭太庙。近例，祫祭及亲拜郊，皆令中使一人引伐国宝至坛所，所以昭示武功。至是上以伐国大事，中使引之非宜，乃令礼官一人，就内库监领至太庙焉。
 </p><p>旧仪，高祖之庙，则开府仪同三司淮安王神通、礼部尚书河间王孝恭、陕东道大行台右仆射郧国公殷开山、吏部尚书渝国公刘政会配飨。太宗之庙，则司空梁国公房玄龄、尚书右仆射莱国公杜如晦、尚书左仆射申国公高士廉配飨。高宗之庙，则司空英国公李勣、尚书左仆射北平县公张行成、中书令高唐县公马周配飨。中宗之庙，则侍中平阳郡王敬晖、侍中扶阳郡王桓彦范、中书令南阳郡王袁恕己配享。睿宗之庙，则太子太傅许国公苏瑰、尚书左丞相徐国公刘幽求配飨。
 </p><p>天宝六载正月，诏：京城章怀、节愍、惠庄、惠文、惠宣太子，与隐太子、懿德太子同为一庙，呼为七太子庙，以便于祀享。太庙配飨功臣，高祖室加裴寂、刘文静，太宗室加长孙无忌、李靖、杜如晦，高宗室加褚遂良、高季辅、刘仁轨，中宗室加狄仁杰、魏元忠、王同皎等十一人。大祭祀，骍犊减数。十载，太庙置内官。十一载闰三月，制：“自今已后，每月朔望日，宜令尚食造食，荐太庙，每室一牙盘，内官享荐。仍五日一开室门洒扫。”其后又有玄宗子静德太子庙，肃宗子恭懿太子庙。孝敬庙在东京太庙院内，贞顺皇后、让皇帝庙在京中。余皆四时致祭。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p><p class='next'>下一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p><p class='next'>下一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

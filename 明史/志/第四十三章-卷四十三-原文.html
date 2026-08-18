@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -217,8 +244,9 @@
 </p><p>皂隶公人冠服：洪武三年定，皂隶，圆顶巾，皂衣。四年定，皂隶公使人，皂盘领衫，平顶巾，白褡愬，带锡牌。十四年，令各卫门祗禁，原服皂衣改用淡青。二十五年，皂隶伴当不许着靴，止用皮札〈革翁〉。
 </p><p>外国君臣冠服：洪武二年，高丽入朝，请祭服制度，命制给之。二十七年，定蕃国朝贡仪，国王来朝，如赏赐朝服者，服之以朝。三十一年，赐琉球国王并其臣下冠服。永乐中，赐琉球中山王皮弁、玉圭，麟袍、犀带，视二品秩。宣德三年，朝鲜国王李濩言：“洪武中，蒙赐国王冕服九章，陪臣冠服比朝廷递降二等，故陪臣一等比朝臣第三等，得五梁冠服。永乐初，先臣芳远遣世子禔入朝，蒙赐五梁冠服。臣窃惟世子冠服，何止同陪臣一等，乞为定制。”乃命制六梁冠赐之。嘉靖六年，令外国朝贡入，不许擅用违制衣服。如违，卖者、买者同罪。
 </p><p>僧道服：洪武十四年定，禅僧，茶褐常服，青绦玉色袈裟。讲僧，玉色常服，绿绦浅红袈裟。教僧，皂常服，黑绦浅红袈裟。僧官如之。惟僧录司官袈裟，绿文及环皆饰以金。道士，常服青法服，朝衣皆赤，道官亦如之。惟道录司官法服、朝服，绿文饰金。凡在京道官，红道衣，金襕，木简。在外道官，红道衣，木简，不用金襕。道士，青道服，木简。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十二章-卷四十二-原文.html'>第四十二章-卷四十二</a></p><p class='next'>下一节：<a href='第四十四章-卷四十四-原文.html'>第四十四章-卷四十四</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第四十二章-卷四十二-原文.html'>第四十二章-卷四十二</a></p><p class='next'>下一节：<a href='第四十四章-卷四十四-原文.html'>第四十四章-卷四十四</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

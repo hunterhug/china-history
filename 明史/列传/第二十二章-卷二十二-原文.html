@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -217,8 +244,9 @@
 </p><p>溥，安仁人。仕陈友谅为平章，守建昌。太祖命将攻之，不克。朱亮祖击于饶之安仁港，亦失利。友谅将李明道之寇信州也，溥弟汉二在军，俱为胡大海擒，归于行省李文忠，文忠命二人招溥。是岁，太祖拔江州，友谅走武昌，溥乃遣使降，命仍守建昌。明年，太祖次龙兴，帅其众来见，数慰劳。从归建康，赐第聚宝门外，号其街曰“宰相街”，以宠异之。寻遣取抚州及江西未附郡县。从克武昌，进中书右丞。洪武元年，命兼詹事府副詹事。从大将军北征，屡有功。赐文币，擢河南行省平章，不署事。岁禄视李伯升、潘元明。
 </p><p>初，溥未仕时，奉母叶氏避兵贵溪。遇乱，与母相失，凡十八年。尝梦母若告以所在，至是从容言于帝，请归省坟墓。许之，且命礼官具祭物。溥率士卒之贵溪，求不得，昼夜号泣。居人吴海言：“夫人为贼逼，投井中死矣。”溥求得井，有鼠自井出，投溥怀中，旋复入井。汲井索之，母尸在焉。哀呼不自胜，乃具棺敛，即其地以葬。溥卒，子孙世袭指挥同知。
 </p><p>赞曰：文辉、司马任寄股肱，叶旺、马云效著边域；大亨以端直见思，郭云以政绩蒙宠。他如蔡迁、王铭、甯正、金兴旺辈，或善战，或善守，或善抚绥，要皆一时良将也。盖明运初兴，人材蔚起，铁券、丹符之外，其可称者犹如此。以视诗人《兔罝》之咏，何多让哉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p><p class='next'>下一节：<a href='第二十三章-卷二十三-原文.html'>第二十三章-卷二十三</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p><p class='next'>下一节：<a href='第二十三章-卷二十三-原文.html'>第二十三章-卷二十三</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>萧正则传<span style='font-size:small'> 白话</span></h1>
 <p>萧正则，字公衡，天监初年，因是王子被封为乐山侯。他多次升迁，任太子洗马、舍人。他经常在家私自拘留百姓，让他们养马，又偷偷地铸钱币。大通二年(528)，因藏匿抢劫盗窃犯人而获罪，被削去爵位流放到郁林。皇帝命令广州地方官府每天供给萧正则酒肉，南方官衙中人仍以王侯的礼节来对待他。<BR><BR>　　萧正则对他的父辈产生了怨恨，与西江督护靳山顾串通，引诱并招来一些亡命之徒，准备攻打番禺。还未到预定的日期，他们的阴谋就暴露了，于是他们便鸣鼓聚集起来准备攻打州城。刺史元景仲命令长史元孝深讨伐萧正则，萧正则被打败，逃入厕所，被村民抓获，绑起来送往官府。诏令将萧正则在南海斩首，有关部门上表请求将他从宗族的名册中除去，将他的妻子关押。下诏同意把他从宗族的名册中去除，对他的妻子宽大处理。萧正则的弟弟名萧正立。</p>
-<div class='pn'><p class='pre'>上一节：<a href='萧正德传-白话.html'>萧正德传</a></p><p class='next'>下一节：<a href='萧范传-白话.html'>萧范传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='萧正德传-白话.html'>萧正德传</a></p><p class='next'>下一节：<a href='萧范传-白话.html'>萧范传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

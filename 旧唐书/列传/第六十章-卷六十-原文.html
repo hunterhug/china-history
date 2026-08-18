@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -199,8 +226,9 @@
 <p>　　大历三年八月庚午薨，上追悼发哀，为之流涕，册赠太尉，辍朝三日，谥曰忠 献。后宰臣子仪、元载等见上，言及云京，泫然久之。十一月葬，命中使吊祭。时 宰相及诸道节度使祭者凡七十余幄。 </p>
 <p>　　史臣曰：凡言将者，以孙、吴、韩、白为首。如光弼至性居丧，人子之情显矣； 雄才出将，军旅之政肃然。以奇用兵，以少败众，将今比古，询事考言，彼四子者， 或有惭德。邙山之败，阃外之权不专；徐州之留，郡侧之人伺隙。失律之尤虽免， 匪躬之义或亏，令名不全，良可惜也。然阃外之事，君侧之人，得不慎诸？思礼法 令严整，储廪丰盈，节制之才，固不易得。景山始以文吏，或有虚名。仗钺扬州， 召匪人而劫掠士庶；分茅并部，持小法而全昧机权。贵马贱人，众怒身死，宜哉！ 云京赏善惩恶，静乱安边，功著军中，宠加身后，不亦美欤！ </p>
 <p>　　赞曰：光弼雄名，思礼刑清。始致乱者邓景山，何以救之辛云京。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十九章-卷五十九-原文.html'>第五十九章-卷五十九</a></p><p class='next'>下一节：<a href='第六十一章-卷六十一-原文.html'>第六十一章-卷六十一</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第五十九章-卷五十九-原文.html'>第五十九章-卷五十九</a></p><p class='next'>下一节：<a href='第六十一章-卷六十一-原文.html'>第六十一章-卷六十一</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

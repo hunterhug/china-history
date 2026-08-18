@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>陆山才传<span style='font-size:small'> 白话</span></h1>
 <p>陆山才字孔章，吴郡吴人。祖父陆翁宝，曾任梁尚书水部郎。父亲陆氵凡，曾任散骑常侍。<BR><BR>　　陆山才年轻时风流倜傥，爱好崇尚文史，范阳的张缵及其弟张绾，都很钦佩敬重他。初任王国常侍，迁任外兵参军。不久因父亲生病，回家侍奉赡养老父。承圣元年(552)，王僧辩任命陆山才为仪同府西曹掾。高祖翦除王僧辩后，陆山才跑到会稽依附张彪。张彪失败，陆山才才归附高祖。<BR><BR>　　绍泰年间，都督周文育出镇南豫州，不懂上书、奏、疏之类文书，就以陆山才为长史，政事全部委托他来办。周文育向南付伐，打败萧勃、生擒欧阳危页，计谋筹划多出自陆山才。等到周文育向西征伐王琳时，留下陆山才代理江州事务，又镇守豫章。周文育和侯安都在沌口战败，余孝顷从新林进犯豫章，陆山才收拢剩下的人马，依附周迪。活捉了余孝顷、李孝钦等人，派陆山才把他们从都阳的乐安岭送到京师。任中书侍郎。后又经乐安岭平定安抚南川各部。<BR><BR>　　周文育重新镇守豫章、京口，陆山才又任贞威将军、镇南长史、豫章太守。周文育被熊昙朗杀害后，熊昙朗将陆山才等人囚禁起来，送到王琳处。尚未到达，侯安都在宫亭湖打败王琳的将领常众爱，因此陆山才得以返回，任贞威将军、新安太守。因王琳尚未平定，陆山才留镇富阳，以保卫东边道路。后入朝任散骑常侍，又晋升为宣惠始兴王长史，主管东扬州事务。<BR><BR>　　侯安都讨伐留异，陆山才率领王府的兵马跟随他。留异被平定后，任明威将军、东阳太守。入朝任镇东始兴王长史，兼会稽郡丞，主持东扬州事务。没有就任，改任散骑常侍，兼度支尚书，一年之后成为真职。<BR><BR>　　高宗向南征伐周迪，以陆山才为军司。平周迪后，官复原职。余孝顷取道海上袭击晋安，陆山才又以原职去会稽，指挥授意方针谋略。回到朝廷后，因在侍宴上和蔡景历说话时言语有失，被有司弹劾，免去官职。不久任散骑常侍，迁任云旗将军，西阳、武昌二郡太守。天康元年(566)去世，时年五十八岁。追赠为右卫将军。谥号简子。</p>
-<div class='pn'><p class='pre'>上一节：<a href='刘仲威传-白话.html'>刘仲威传</a></p><p class='next'>下一节：<a href='王质传-白话.html'>王质传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='刘仲威传-白话.html'>刘仲威传</a></p><p class='next'>下一节：<a href='王质传-白话.html'>王质传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

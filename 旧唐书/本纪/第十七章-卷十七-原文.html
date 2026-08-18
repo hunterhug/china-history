@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -337,8 +364,9 @@
 </p><p>五年春正月戊寅朔，上不康，不受朝贺。己卯，诏立亲弟颍王瀍为皇太弟，权勾当军国事。皇太子成美复为陈王。辛巳，上崩于大明宫之太和殿，寿享三十三。群臣谥曰元圣昭献皇帝，庙号文宗。其年八月十七日，葬于章陵。
 </p><p>史臣曰：昭献皇帝恭俭儒雅，出于自然，承父兄奢弊之余，当阍寺挠权之际，而能以治易乱，代危为安。大和之初，可谓明矣。初，帝在籓时，喜读《贞观政要》，每见太宗孜孜政道，有意于兹。洎即位之后，每延英对宰臣，率漏下十一刻。故事，天子双日视事，帝谓宰辅曰：“朕欲与卿等每日相见，其辍朝、放朝、用双日可也。”时宪宗郭后居兴庆宫，曰太皇太后，敬宗宝历太后及上母萧太后，时呼“三宫太后”。帝性仁孝，三宫问安，其情如一。尝内园进樱桃，所司启曰：“别赐三宫太后。”帝曰：“太后宫送物，焉得为赐。”遽取笔改赐为奉。宗正寺以祭器杇败，请易之，及有司呈进，命陈于别殿，具冠带面阅之，容色凄然。尤勒于政理凡选内外群官，府进名，帝必面讯其行能，然后补除。中书用鸿胪卿张贾为衢州刺史，贾好博，朝辞日，帝谓之曰：“闻卿善长行。”对曰：“政事之余，聊与宾客为戏，非有所妨。”帝曰：“岂有好之而无妨也！”内外闻之悚息。而帝以累世变起禁闱，尤侧目于中官，欲尽除之。然训、注狂狡之流，制御无术，矢谋既误，几致颠危。所谓“有帝王之道，而无帝王之才”，虽旰食焦忧，不能弭患，异哉！
 </p><p>赞曰：昭献统天，洪惟令德。心愤仇耻，志除凶慝。未殄夔魖，又生鬼蜮。天未好治，乱何由息。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p><p class='next'>下一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p><p class='next'>下一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

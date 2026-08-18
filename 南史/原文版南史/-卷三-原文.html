@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -287,8 +314,9 @@
 </p><p>二月丙子，南豫州刺史邵陵王友薨。丙申，地震建阳门。
 </p><p>三月癸卯朔，日有蚀之。甲辰，加萧道成相国，总百揆，封十郡爲齐公，备九锡之礼。庚戌，诛临川王绰。
 </p><p>夏四月壬申，进齐公萧道成爵爲王。壬午，安西将军武陵王赞薨。辛卯，帝禅位于齐。壬辰，逊于东邸。是日，王敬则以兵陈于殿庭，帝犹居内，闻之，逃于佛盖下。太后惧，自帅阉竖索，扶幸板舆。黄门或促之，帝怒，抽刀投之，中项而殒。帝既出，宫人行哭，俱迁。备羽仪，乘画轮车，出东掖门。封帝爲汝阴王，居丹徒宫，齐兵卫之。建元元年五月己未，帝闻外有驰马者，惧乱作；监人杀王而以疾赴，齐人德之，赏之以邑。六月乙酉，葬于遂宁陵，諡曰顺帝。宋之王侯无少长皆幽死矣。论曰：文帝负扆南面，实有人君之美，经国之义虽弘，而隆家之道不足。彭城照不窥古，本无卓尔之资，徒见昆弟之义深，未识君臣之礼异。以此家情，行之国道，主忌而犹犯，恩离而未悟。致以陵逼之愆，遂成灭亲之祸。开端树隙，垂之后人。明帝因猜忍之情，据已行之典，翦落洪枝，愿不待虑。既而本根莫庇，幼主孤立，下无磐石之托，上有累卵之危。方复藏玺怀绂，鱼服忘反，危冠短制，匹马孤征，以至覆亡，理固然矣。神器以势弱倾移，灵命随乐推回改。斯盖履霜有渐，夫岂一夕，何止区区汝阴揖让而已。</p>
-<div class='pn'><p class='pre'>上一节：<a href='-卷二-原文.html'>-卷二</a></p><p class='next'>下一节：<a href='-卷四-原文.html'>-卷四</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='-卷二-原文.html'>-卷二</a></p><p class='next'>下一节：<a href='-卷四-原文.html'>-卷四</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

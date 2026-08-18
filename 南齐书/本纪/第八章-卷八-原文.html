@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -188,8 +215,9 @@
 </p><p>二月，壬戌，湘东王宝晊伏诛。戊辰，诏进梁公爵为梁王，增封十郡。三月，乙未，皇太后令给梁国钱五百万，布五千匹，绢千匹。辛丑，鄱阳王宝寅奔虏，邵陵王宝攸、晋熙王宝嵩、桂阳王宝贞伏诛。甲午，命梁王冕十有二旒，建天子旌旗，出警入跸，乘金根，驾六马，备五时副车，置旄头云罕，乐舞八佾，设钟歔宫悬。王子王女爵命一如旧仪。庚戌，以冠军长史萧秀为南徐州刺史，新除中领军蔡道恭为司州刺史。车驾东归至姑熟。丙辰，禅位梁王。丁巳，庐陵王宝源薨。夏，四月，辛酉，禅诏至，皇太后逊外宫。丁卯，梁王奉帝为巴陵王，宫于姑熟，行齐正朔，一如故事。戊辰，薨，年十五。追尊为齐和帝，葬恭安陵。
 </p><p>史臣曰：夏以桀亡，殷随纣灭，郊天改朔，理无延世。而皇符所集，重兴西楚，神器暂来，虽有冥数，徽名大号，斯为幸矣。
 </p><p>赞曰：和帝晚隆，扫难清宫。达机睹运，高颂永终。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

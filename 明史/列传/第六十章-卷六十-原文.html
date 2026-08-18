@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -278,8 +305,9 @@
 </p><p>正德六年以右副都御史巡抚湖广。所部镇溪千户所、筸子坪长官司与贵州铜仁，四川酉阳、梅桐诸土司，犬牙相错。弘治中，错溪苗龙麻阳与铜仁苗龙童保聚众攻剽，土官李〈木舂〉等实纵之，而筸子百夫长龙真与通谋。后遂四出劫掠，远近骚然，先后守臣莫能制。丙将讨之，贼入连山深箐，为拒守计。丙率师破其数寨。贼走据天生崖及六龙山。贵州巡抚沈林兵继至，连攻破之。前后擒童保等二百人，斩首八百九十余级。都指挥潘勋又破镇、筸诸寨，擒麻阳等百六十人，斩首级如前，余贼远遁。玺书奖励。
 </p><p>丙操履清介，敢任事。所至严明，法令修举。迁工部右侍郎，采木入山。越二载，犯风痹得疾，卒。诏赠尚书，谥恭襄。
 </p><p>赞曰：英、景间，瓦剌逼西陲，边圉孔棘；而黄萧养、叶宗留之徒劫掠岭南、浙、闽境上。其后荆、襄流民啸聚，则以刘通、石龙为之魁。他若都匀、松、茂、黔、楚诸苗、瑶叛者数起。罗亨信、侯琎诸人，保固封圻，诛虓禁乱，讨则有功，抚则信著，宣力封疆，无忝厥任矣。孔镛以知府服叛瑶，其才力有过人者。韩愈言柳中丞行事适机宜，风采可畏爱。不如是，恶能以有为哉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十九章-卷五十九-原文.html'>第五十九章-卷五十九</a></p><p class='next'>下一节：<a href='第六十一章-卷六十一-原文.html'>第六十一章-卷六十一</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第五十九章-卷五十九-原文.html'>第五十九章-卷五十九</a></p><p class='next'>下一节：<a href='第六十一章-卷六十一-原文.html'>第六十一章-卷六十一</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

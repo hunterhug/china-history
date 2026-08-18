@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>元景山传<span style='font-size:small'> 白话</span></h1>
 <p>元景山是宋安王元琰的儿子，字宝岳，从小就有度量，才干谋略过人。周闵帝时，因军功累迁任开府仪同三司。他随从周武帝讨平齐国，因功被任命为大将军、平原郡公、亳州总管。为政法令严明，盗贼也不见踪迹，辖区内部大为清平。朝廷召回担任候正。宣帝继位，他随从上柱国韦孝宽攻打淮南。郧州总管宇文亮反叛，用轻骑兵突袭韦孝宽。韦孝宽被宇文亮的军队所逼迫，元景山出兵打败了宇文亮。他因功又被任命为亳州总管。<BR><BR>　　隋文帝当丞相时，尉迟迥作乱，荥州刺史宇文胄和尉迟迥勾结合谋，秘密写信劝告元景山。元景山把使者抓起来，封了书信，送到丞相府，被加封为上大将军。由于军功，改任安州总管，晋位柱国。隋文帝受禅后，封为上柱国。第二年，隋大举攻陈，任命元景山为行军元帅，从汉口出兵。正准备渡江时，正好陈宣帝死去，朝廷有诏书让他回师。元景山威名大振，敌人对他十分害怕。几年后，因事被免职。他死在家中，追赠为梁州总管，谥为“襄”。他的儿子成寿承袭了他的封爵。</p>
-<div class='pn'><p class='pre'>上一节：<a href='安定王拓跋休传-白话.html'>安定王拓跋休传</a></p><p class='next'>下一节：<a href='元琛传-白话.html'>元琛传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='安定王拓跋休传-白话.html'>安定王拓跋休传</a></p><p class='next'>下一节：<a href='元琛传-白话.html'>元琛传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

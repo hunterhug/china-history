@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -237,8 +264,9 @@
 </p><p>太康七年，紞疾，诏以紞为散骑常侍，赐钱二十万、床帐一具。寻卒。二子：播、熊。播，大长秋。熊字文罴，中书郎。紞兄恢，自有传。
 </p><p>史臣曰：夫立身之道，曰仁与义。动静既形，悔吝斯及。有莘之媵，殊《北门》之情；渭滨之叟，匪西山之节。汤武有以济其功，夏殷不能讥其志。王沈才经文武，早尸人爵，在魏参席上之珍，居晋为幄中之士，桐宫之谋遽泄，武闱之祸遂臻。是知田光之口，岂燕丹之可绝；豫让之形，非智氏之能变。动静之际，有据蒺藜，仁义之方，求之弥远矣。彭祖谒由捧雉，孕本贸丝，因家乏主，遂登显秩。拥北州之士马，偶东京之糜沸，自可感召诸侯，宣力王室。而乘间伺隙，潜图不轨，放肆獯虏，迁播乘舆。遂使漳滏萧然，黎元涂地。纵贪夫于藏户，戮高士于燕垂，阻越石之内难，邀世龙之外府。恶稔毒{疒甫}，坐致焚燎，假手仇敌，方申凶犷，庆封之戮，慢骂何补哉！公曾，慈明之孙；景倩，文若之子，践隆堂而高视，齐逸轨而长骛。孝敬足以承亲，周慎足以事主，刊姬公之旧典，采萧相之遗法。然而援硃均以贰极，煽褒阎而偶震。虽废兴有在，隆替靡常，稽之人事，乃二荀之力也。至于斗粟兴谣，逾里成咏，勖之阶祸，又已甚焉。冯紞外骋戚施，内穷狙诈，毙攸安贾，交勖仇张，心滔楚费，过逾晋伍。爰丝献寿，空取慰于仁心，紞之陈说，幸收哀于迷虑，投畀之罚无闻，《青蝇》之诗不作矣。
 </p><p>赞曰：处道文林，胡贰尔心？彭祖凶孽，自贻伊戚。临淮翼翼，孝形于色。安阳英英，匪懈其职。倾齐附鲁，是为蝥贼。紞之不臧，交乱罔极。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八章--原文.html'>第八章-</a></p><p class='next'>下一节：<a href='第十章--原文.html'>第十章-</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第八章--原文.html'>第八章-</a></p><p class='next'>下一节：<a href='第十章--原文.html'>第十章-</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

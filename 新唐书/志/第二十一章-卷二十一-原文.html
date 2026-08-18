@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -217,8 +244,9 @@
 </p><p>氐、房、心，大火也。初，氐二度，余千四百一十九，秒五太。中，房二度。终，尾六度。自雍丘、襄邑、小黄而东，循济阴，界于齐、鲁，右泗水，达于吕梁，乃东南接太昊之墟，尽汉济阴、山阳、楚国、丰、沛之地，古宋、曹、郕、滕、茅、郜、萧、葛、向城、逼阳、申父之国。商、亳负北河，阳气之所升也，为心分、丰、沛负南河，阳气之所布也，为房分。其下流与尾同占，西接陈、郑为氐分。
 </p><p>尾、箕，析木津也。初，尾七度，余二千七百五十，秒二十一少，中，箕五度，终，南斗八度。自渤海、九河之北，得汉河间、涿郡、广阳及上谷、渔阳、右北平、辽西、辽东、乐浪、玄菟，古北燕、孤竹、无终、九夷之国。尾得云汉之末派，龟、鱼丽焉，当九河之下流，滨于渤碣，皆北纪之所穷也。箕与南斗相近，为辽水之阳，尽朝鲜三韩之地，在吴、越东。
 </p><p>南斗、牵牛，星纪也。初，南斗九度，余千四十二，秒十二太。中，南斗二十四度。终，女四度。自庐江、九江，负淮水，南尽临淮、广陵，至于东海，又逾南河，得汉丹杨、会稽、豫章，西滨彭蠡，南涉越门，迄苍梧、南海，逾岭表，自韶、广以西，珠崖以东，为星纪之分也。古吴、越、群舒、庐、桐、六、蓼及东南百越之国。南斗在云汉下流，当淮、海间，为吴分。牵牛去南河浸远，自豫章迄会稽，南逾岭徼，为越分。岛夷蛮貊之人，声教所不暨，皆系于狗国云。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p><p class='next'>下一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p><p class='next'>下一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

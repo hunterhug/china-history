@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -313,8 +340,9 @@
 </p><p>○衡权
 </p><p>衡者，平也；权者，重也。衡所以任权而钧物平轻重也。其道如底，以见准之正，绳之直。左旋见规，右折见矩。其在天也，佐助璇玑，斟酌建指，以齐七政，故曰玉衡。权者，铢、两、斤、钧、石也，以秤物平施，知轻重也。古有黍、Ｒ、锤、锱、镮、钩、锊、镒之目，历代差变，其详未闻。《前志》曰：权本起于黄钟之重。一龠容千二百黍，重十二铢。两之为两，二十四铢为两。十六两为斤。三十斤为钧。四钧为石。五权谨矣。其制以义立之，以物钧之。其余大小之差，以轻重为宜。圜而环之，令之肉倍好者，周旋亡端，终而复始，亡穷已也。权与物钧而生衡，衡运生规，规圆生矩，矩方生绳，绳直生准。准正则衡平而钧权矣。是为五则，备于钧器，以为大范。案《赵书》，石勒十八年七月，造建德殿，得圆石，状如水碓。其铭曰：“律权石，重四钧，同律度量衡。有辛氏造。”续咸议是王莽时物。后魏景明中，并州人王显达献古铜权一枚，上铭八十一字。其铭云：律权石，重四钧。”又云：“黄帝初祖，德匝于虞。虞帝始祖，德匝于新。岁在大梁，龙集戊辰。戊辰直定，天命有人。据土德受，正号即真。改正建丑，长寿隆崇。同律度量衡，稽当前人。龙在己巳，岁次实沈，初班天下，万国永遵。子子孙孙，享传亿年。”此亦王莽所制也。其时太乐令公孙崇依《汉志》先修称尺，及见此权，以新称称之，重一百二十斤。新称与权，合若符契。于是付崇调乐。孝文时，一依《汉志》作斗尺。
 </p><p>梁、陈依古称。齐以古称一斤八两为一斤。周玉称四两，当古称四两半。开皇以古称三斤为一斤，大业中，依复古秤。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p><p class='next'>下一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p><p class='next'>下一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

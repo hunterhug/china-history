@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -200,8 +227,9 @@
 </p><p>○药彦稠
 </p><p>药彦稠，沙陀三部落人也。初为骑将，明宗即位，拜澄州刺史。从王晏球破王都定州，迁侍卫步军都虞候，领寿州节度使。安重诲矫诏遣河中指挥使杨彦温逐其节度使潞王从珂。以彦稠为招讨使，明宗疑彦温有所说，戒彦稠得彦温毋杀，将讯之。彦稠希重诲旨，杀彦温以灭口，明宗大怒，然不之罪也。长兴中，为静难军节度使，党项阿埋、屈悉保等族抄掠方渠，邀杀回鹘使者，明宗遣彦稠与灵武康福会兵击之，阿埋等亡窜山谷。明宗以谓党项知惧，可加约束而绥抚之。使者未至，彦稠等自牛兒族入白鱼谷，尽诛其族，获其大首领连香等，遣人上捷。明宗谓其使者曰：“吾诛党项，非有所利也。凡军中所获，悉与士卒分之，毋以进奉为名，重敛军士也。”已而彦稠以党项所掠回鹘进奉玉两团及遗秦王金装胡录等来献，明宗曰：“吾已语彦稠矣，不可失信。”因悉以赐彦稠。又逐盐州诸戎，取其所掠男女千余人。
 </p><p>潞王从珂反，彦稠为招讨副使。王思同兵溃，彦稠与思同俱东走，为潞王兵所得，囚之华州狱，已而杀之。晋高祖立，赠侍中。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十四章-唐臣传第十四-原文.html'>第十四章-唐臣传第十四</a></p><p class='next'>下一节：<a href='第十六章-唐臣传第十六-原文.html'>第十六章-唐臣传第十六</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十四章-唐臣传第十四-原文.html'>第十四章-唐臣传第十四</a></p><p class='next'>下一节：<a href='第十六章-唐臣传第十六-原文.html'>第十六章-唐臣传第十六</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

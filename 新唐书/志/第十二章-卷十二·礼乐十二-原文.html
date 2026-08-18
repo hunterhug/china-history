@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -201,8 +228,9 @@
 </p><p>扶南乐，舞者二人，以朝霞为衣，赤皮鞋。天竺伎能自断手足，刺肠胃，高宗恶其惊俗，诏不令入中国。睿宗时，婆罗门国献人倒行以足舞，仰植铦刀，俯身就锋，历脸下，复植于背，觱篥者立腹上，终曲而不伤。又伏伸其手，二人蹑之，周旋百转。开元初，其乐犹与四夷乐同列。
 </p><p>贞元中，南诏异牟寻遗使诣剑南西川节度使韦皋，言欲献夷中歌曲，且令骠国进乐。皋乃作《南诏奉圣乐》，用黄钟之均，舞六成，工六十四人，赞引二人，序曲二十八叠，执羽而舞“南诏奉圣乐”字，曲将终，雷鼓作于四隅，舞者皆拜，金声作而起，执羽稽首，以象朝觐。每拜跪，节以钲鼓。又为五均：一曰黄钟，宫之宫；二曰太蔟，商之宫；三曰姑洗，角之宫；四曰林钟，徵之宫；五曰南吕，羽之宫。其文义繁杂，不足复纪。德宗阅于麟德殿，以授太常工人，自是殿庭宴则立奏，宫中则坐奏。
 </p><p>十七年，骠国王雍羌遣弟悉利移、城主舒难陀献其国乐，至成都，韦皋复谱次其声，又图其舞容、乐器以献。凡工器二十有二，其音八：金、贝、丝、竹、匏、革、牙、角，大抵皆夷狄之器，其声曲不隶于有司，故无足采云。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十一章-卷十一·礼乐十一-原文.html'>第十一章-卷十一·礼乐十一</a></p><p class='next'>下一节：<a href='第十三章-卷十三·仪卫-原文.html'>第十三章-卷十三·仪卫</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十一章-卷十一·礼乐十一-原文.html'>第十一章-卷十一·礼乐十一</a></p><p class='next'>下一节：<a href='第十三章-卷十三·仪卫-原文.html'>第十三章-卷十三·仪卫</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

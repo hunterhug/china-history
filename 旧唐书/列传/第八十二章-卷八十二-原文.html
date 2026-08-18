@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -207,8 +234,9 @@
 <p>　　元素少孤，奉长姊友敬加于人，及其姊殁，沉悲遘疾，上疏恳辞，从之。数月， 以出妻免官。初，元素再娶妻王氏，石泉公方庆之孙，性柔弱，元素为郎官时娶之， 甚礼重，及贵，溺情仆妾，遂薄之。且又无子，而前妻之子已长，无良，元素寝疾 昏惑，听谮遂出之，给与非厚。妻族上诉，乃诏曰：“李元素病中上表，恳切披陈， 云‘妻王氏，礼义殊乖，愿与离绝’。初谓素有丑行，不能显言，以其大官之家， 所以令自处置。访闻不曾告报妻族，亦无明过可书，盖是中情不和，遂至于此。胁 以王命，当日遣归，给送之间，又至单薄。不唯王氏受辱，实亦朝情悉惊。如此理 家，合当惩责。宜停官，仍令与王氏钱物，通所奏数满五千贯。”元和五年卒，赠 陕州大都督。 </p>
 <p>　　史臣曰：李抱玉、李抱真，以武勇之材，兼忠义之行，有唐之良将也。且如农 隙教潞人之射，数骑入武俊之营，非有奇谋，孰能如是。惜乎服食求仙，为药所误。 王虔休不党僭命，有足可嘉；卢从史动多怀奸，自贻伊戚。芃则老也知足，澄则过 而改图。元素为御史时，执德不回；居大夫日，其心甚短。因缘七出，益露丑声， 善少恶多，又何足算。 </p>
 <p>　　赞曰：抱玉、抱真，我朝良将。虔休之心，亦多可尚。史怀奸谋，芃将禄让。 澄迷却行，素贪一响。吾谁与欺，岂如忠谅。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十一章-卷八十一-原文.html'>第八十一章-卷八十一</a></p><p class='next'>下一节：<a href='第八十三章-卷八十三-原文.html'>第八十三章-卷八十三</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第八十一章-卷八十一-原文.html'>第八十一章-卷八十一</a></p><p class='next'>下一节：<a href='第八十三章-卷八十三-原文.html'>第八十三章-卷八十三</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

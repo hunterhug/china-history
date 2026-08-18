@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -189,8 +216,9 @@
 </p><p>夏四月壬寅，帝闻山东及淮、徐民乏食，有司徵夏税方急，乃御西角门诏大学士杨士奇草诏，免今年夏税及科粮之半。士奇言：“上恩至矣，但须户、工二部预闻。”帝曰：“救民之穷当如救焚拯溺，不可迟疑。有司虑国用不足，必持不决之意。”趣命中官具楮笔，令士奇就门楼书诏。帝览毕，即用玺付外行之。顾士奇曰：“今可语部臣矣。”设北京行都察院。壬子，命皇太子谒孝陵，遂居守南京。戊午，如天寿山，谒长陵。己未，还宫。是月，振河南及大名饥。南京地屡震。五月己卯，侍读李时勉、侍讲罗汝敬以言事改御史，寻下狱。庚辰，帝不豫，遣使召皇太子于南京。辛巳，大渐，遗诏传位皇太子。是日，崩于饮安殿，年四十有八。
 </p><p>秋七月己巳，上尊谥，庙号仁宗，葬献陵。
 </p><p>赞曰：“当靖难师起，仁宗以世子居守，全城济师。其后成祖乘舆，岁出北征，东宫监国，朝无废事。然中遘媒孽，濒于危疑者屡矣，而终以诚敬获全。善乎其告人曰“吾知尽子职而已，不知有谗人也”，是可为万世子臣之法矣。在位一载。用人行政，善不胜书。使天假之年，涵濡休养，德化之盛，岂不与文、景比隆哉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -371,8 +398,9 @@
 </p><p>李悍，京兆人。年轻时好学，十分擅长文辞。唐末考中进士，任秘书省校书郎、集贤校理。唐灭亡，奉事梁任监察御史，经多次升任为中书舍人、翰林学士。梁灭亡，贬为怀州司马，遇上大赦酌情调到别处，逐渐升任卫尉少卿。天成年间，又任中书舍人、翰林学士，几次升任尚书右丞承旨。当时右散骑常侍张文宝管理贡举，发榜考中的进士，有的被中书省审察落选，于是请求下令学士院作诗赋作为贡举用的范文，学士窦梦征、张砺等人作的诗赋不好，于是让李怿作，李悍笑着说：“我年轻时考中进士，不过是出自偶然而已。
 </p><p>后生可畏，后来的人不可估量，假使让我又参加礼部考试，未必不落选，怎能给英俊少年做范文呢？”听说的人赞赏他说话得体。
 </p><p>后来升任刑部尚书，分司洛阳。去世，享年七十多岁。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十二章-杂传第四十二-白话.html'>第四十二章-杂传第四十二</a></p><p class='next'>下一节：<a href='第四十四章-杂传第四十四-白话.html'>第四十四章-杂传第四十四</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第四十二章-杂传第四十二-白话.html'>第四十二章-杂传第四十二</a></p><p class='next'>下一节：<a href='第四十四章-杂传第四十四-白话.html'>第四十四章-杂传第四十四</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

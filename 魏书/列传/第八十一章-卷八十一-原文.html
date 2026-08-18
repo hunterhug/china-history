@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -244,8 +271,9 @@
 </p><p>纥机辩有智数。当公断决，终日不以为劳。长直禁中，略无休息。时复与沙门讲论，或分宵达曙，而心力无怠，道俗叹服之。然性浮动，慕权利，外似謇正，内实谄谀。时豪胜己，必相陵驾；书生贫士，矫意礼之。其诡态若此，有识鄙薄焉。
 </p><p>纥既处腹心，参断机密，势倾一时，远近填凑。与郑俨、李神轨宠任相亚，时称徐郑焉。然无经国大体，好行小数，说灵太后以铁券间尔朱荣左右，荣知，深以为憾，启求诛之。荣将入洛，既克河梁，纥矫诏夜开殿门，取骅骝御马十匹，东走兗州。纥弟献伯为北海太守，献伯弟季彦先为青州长史，纥使人告之，亦将家南走。羊侃时为太山太守，纥往投之，说侃令举兵。侃从之，遂聚兵反，共纥围兗州。孝庄初，遣侍中于晖为行台，与齐献武王督诸军讨之。纥虑不免，说侃请乞师于萧衍。侃信之，遂奔衍。文笔驳论数十卷，多人遗落，时或存于世焉。
 </p><p>史臣曰。阙</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十章-卷八十-原文.html'>第八十章-卷八十</a></p><p class='next'>下一节：<a href='第八十二章-卷八十二-原文.html'>第八十二章-卷八十二</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第八十章-卷八十-原文.html'>第八十章-卷八十</a></p><p class='next'>下一节：<a href='第八十二章-卷八十二-原文.html'>第八十二章-卷八十二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

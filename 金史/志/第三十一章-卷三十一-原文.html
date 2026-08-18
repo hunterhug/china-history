@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -207,8 +234,9 @@
 </p><p>熙宗皇统三年三月，陕西旱饥，诏许富民入粟补官。世宗大定元年，以兵兴岁歉，下令听民进纳补官。又募能济饥民者，视其人数为补官格。五年，上谓宰臣曰：“顷以边事未定，财用阙乏，自东、南两京外，命民进纳补官，及卖僧、道、尼、女冠度牒，紫、褐衣师号，寺观名额。今边鄙已宁，其悉罢之。庆寿寺、天长观岁给度牒，每道折钱二十万以赐之。”明昌二年，敕山东、河北阙食之地，纳粟补官有差。承安二年，卖度牒、师号、寺观额，复令人入粟补官。三年，西京饥，诏卖度牒以济之。
 </p><p>宣宗贞祐二年，从知大兴府事胥鼎所请，定权宜鬻恩例格，进宫升职、丁忧人许应举求仕、监户从良之类，入粟草各有数。三年，制无问官民，有能劝率诸人纳物入官者，米百五十石迁官一阶，正班任使。七百石两阶，除诸司。千石三阶，除丞簿。过此数则请于朝廷议赏。推司县官有能劝二千石迁一阶，三千石两阶，以济军储。又定制，司县官能劝率进粮至五千石以上者减一资考，万石以上迁一官，减二等考，二万石以上迁一官、升一等，皆注见阙。四年，河东行省胥鼎言：“河东兵多民少，仓空岁饥。窃见潞州元帅府虽设鬻爵恩例，然条目至少，未尽劝率之术。今拟凡补买正班，依格止荫一名。若愿输许增荫一名。僧道已具师号者，许补买本司官。职官愿纳粟或不愿给俸及券粮者，宜量数迁加。三举终场人年五十以上，四举年四十五以上，并许入粟，该恩大小官及承应人。令译史吏员，虽未系班，亦许进纳迁官。其有品官应注诸司者，听献物借注丞簿。丞簿注县令，差使免一差。掌军官能自备刍粮者，依职官例迁官如旧。”四年，耀州僧广惠言：“军储不足，凡京府节镇以上僧道官，乞令纳粟百石。防刺郡副纲、威仪等，七十石者乃充，三十月满替。诸监寺十石，周年一代，愿复买者听。”诏从之。
 </p><p>兴定元年，潞州行元帅府事粘割贞言：“近承奏格，凡去岁覃恩之官，以品从差等听其入粟，委帅府书空宣敕授之，则人无陈诉之劳，而官有储蓄矣。比年屡降覃恩，凡羁縻军职者多未暇授，若止许迁新覃，则将隔越矣。乞令计前后所该输粟积迁。”诏从之。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十章-卷三十-原文.html'>第三十章-卷三十</a></p><p class='next'>下一节：<a href='第三十二章-卷三十二-原文.html'>第三十二章-卷三十二</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三十章-卷三十-原文.html'>第三十章-卷三十</a></p><p class='next'>下一节：<a href='第三十二章-卷三十二-原文.html'>第三十二章-卷三十二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

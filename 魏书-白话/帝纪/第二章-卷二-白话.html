@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -306,8 +333,9 @@
 </p><p>秋七月，慕容氏的亲属一百多家，策谋要投奔国外，被发现，受死刑，死亡的三百多人。八月，卫王元仪策谋反叛，赐他自杀。
 </p><p>冬十月戊辰，皇帝在天安殿逝世，时年三十九岁。永兴二年九月甲寅卜谧号为宣武皇帝，安葬在盛乐金陵，庙号为太祖。泰常五年，改谧号为道武。
 </p><p>史臣日：晋氏分崩离析，戎羯利用缝隙，僭越称王纷纷而起，豺狼争竞奔驰。太祖在安危之中显迹隐晦，在潜伏腾跃之时弯曲伸展，率领民众，发挥他的英武，剪除艰难，于是开拓中原，朝见天入神明，登上皇位。虽然冠履来不及修饰，颠沛于外地，但是制定经世长策，都保存到后世。所谓有德之人利于出现，百姓协助他的才能，是多少代才产生的神明英武。然而艰难厄运有定期，祸乱产生于意料之外。是人事不足，还是上天导致如此！呜呼！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-卷一-白话.html'>第一章-卷一</a></p><p class='next'>下一节：<a href='第三章-卷三-白话.html'>第三章-卷三</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-卷一-白话.html'>第一章-卷一</a></p><p class='next'>下一节：<a href='第三章-卷三-白话.html'>第三章-卷三</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

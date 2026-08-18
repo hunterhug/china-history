@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -257,8 +284,9 @@
 </p><p>成化二年十二月，以本官入直文渊阁，进工部右侍郎，兼翰林学士。江西、湖广灾，有司方征民赋。定之言国储充积，仓庾至不能容。而此张口待哺之氓，乃责其租课，非圣主恤下意。帝感其言，即命停征。四年进礼部左侍郎。万贵妃专宠，皇后希得见，储嗣未兆。郕王女及笄未下嫁。定之因久旱，并论及之。且请经筵兼讲太祖御制诸书，斥异端邪教，勿令害政耗财。帝留其疏不下。五年卒官。赠礼部尚书，谥文安。
 </p><p>定之谦恭质直，以文学名一时。尝有中旨命制元宵诗，内使却立以俟。据案伸纸，立成七言绝句百首。又尝一日草九制，笔不停书。有质宋人名字者，就列其世次，若谱系然，人服其敏博。
 </p><p>赞曰：英宗之复辟也，当师旅饥馑之余，民气未复，权奸内讧，柱石倾移，朝野多故，时事亦孔棘矣。李贤以一身搘拄其间，沛然若有余。奖厉人材，振饬纲纪。迨宪、孝之世，名臣相望，犹多贤所识拔。伟哉宰相才也。彭时、商辂侃侃守义，尽忠献纳，粹然一出于正。其于慈懿典礼，非所谓善成君德者欤？辂科名与宋王曾、宋庠埒，德望亦无愧焉。吕原、岳正、刘定之虽相业未优，而原之行谊，正之气概，定之之建白，咸有可称，故以时次，并列于篇。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十三章-卷六十三-原文.html'>第六十三章-卷六十三</a></p><p class='next'>下一节：<a href='第六十五章-卷六十五-原文.html'>第六十五章-卷六十五</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第六十三章-卷六十三-原文.html'>第六十三章-卷六十三</a></p><p class='next'>下一节：<a href='第六十五章-卷六十五-原文.html'>第六十五章-卷六十五</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

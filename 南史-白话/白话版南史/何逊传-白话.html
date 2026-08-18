@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>何逊传<span style='font-size:small'> 白话</span></h1>
 <p>何逊字仲言，八岁就能作诗，二十岁时，州中选为秀才。南乡人范云看见何逊对皇上策问的回答，大加赞赏，因而与他结为忘年交。范云对关系亲近的人说：“近来我观察文人，质朴的过于柔弱，华丽的又失于庸俗，那种能够清而不浊，适合古今标准的，可以在何逊身上看到。”沈约曾经对何逊说：“我每次读您的诗，一日三遍，还是放不下。”何逊就是这样受到名流人士的称赞。<BR><BR>　　梁朝天监年间(502～519)，何逊兼任尚书水部郎，南平王把他引为宾客，掌管记室事务，后来推荐给武帝，和吴均一起受到宠幸。后来逐渐失意，武帝说：“吴均不均，何逊不逊。不如我有朱异，确实很异的。”从此疏远隔膜，很少能再见到。死在仁威庐陵王记室的职位上。<BR><BR>　　起初，何逊被南平王所赏识，深深地受到恩泽和礼遇，等到听说何逊去世，便命令迎来他的灵柩而加以埋葬，并且给他的妻子儿女赠送食物。东海人王僧儒收集他的文章编为八卷。<BR><BR>　　起初，何逊的文章与刘孝绰一齐被推重，当时称作何、刘。梁元帝写文章评论说：“诗写得多而且擅长的是沈约，写得少而且擅长的是谢緿、何逊。”<BR><BR>　　何逊的堂叔何亻间字彦夷，也以文才著名，官路不够通达，便作了一篇《拍张赋》来寄托自己的心意。末尾说：“东方曼倩从少年时代就发愤努力，结果与掌管炊事的火头、奉祭祀的供养者待遇相同。”他的职位达到台郎。<BR><BR>　　当时会稽有个虞骞善于作五言诗，名气与何逊相同，官做到王国侍郎。后来又有会稽人孔翁归、济阳人江避，都是南平王大司马的记室。孔翁归善于作诗，江避博学富有思考能力，注了《论语》、《孝经》。二人都有文集。</p>
-<div class='pn'><p class='pre'>上一节：<a href='何承天传-白话.html'>何承天传</a></p><p class='next'>下一节：<a href='颜延之传-白话.html'>颜延之传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='何承天传-白话.html'>何承天传</a></p><p class='next'>下一节：<a href='颜延之传-白话.html'>颜延之传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>王质传<span style='font-size:small'> 白话</span></h1>
 <p>王质字子贞，右光禄大夫王通的弟弟。年轻时很慷慨，浏览书史。梁代因为是武帝的外甥被封为甲口亭侯，征补为国子《周易》生，考试名列前茅。初任秘书郎、太子舍人、尚书殿中郎。母亲去世后，服丧时以孝道闻名。服丧期满，任太子洗马、东宫领直。多次迁任中舍人、庶子。<BR><BR>　　太清元年(547)，任假节、宁远将军，统领东宫兵士，跟随贞阳侯北伐。等到贞阳侯战败，王质脱身逃回。侯景在寿阳叛乱，王质又带领舟师跟随众军抵御侯景。侯景军队渡过长江，王质便退走了。不久率领步兵、骑兵驻扎在宣阳门外。侯景的军队抵达京师，王质不战而逃，于是削发为僧，藏匿于人间。等到柳仲礼等人会援京都，大军占据长江南岸，王质又收合余众跟随大军平乱。<BR><BR>　　京城陷落后，王质西奔荆州，元帝秉承帝旨，任王质为右长史，兼河东太守。很快迁任侍中。不久出任持节、都督吴州诸军事、宁远将军、吴州刺史，兼鄱阳内史。<BR><BR>　　荆州陷落，侯王真镇守在湓城，和王质不和，派偏将羊亮代替王质，并兵临城下，王质率领所部人马，越过信安岭，依附留异。文帝镇守会稽，分兵帮助王质，命令王质镇守信安县。<BR><BR>　　永定二年(558)，高祖命令王质率领所部人马越岭出于豫章，随都督周文育讨伐王琳，王质与王琳一向友善，有时在军中散布谣言，并与王琳秘密书信往来，高祖命令周文育处死王质，周文育启奏请求救他，得以免去一死。不久任散骑常侍、晋陵太守。<BR><BR>　　文帝继位，征召他兼领五兵尚书之职。高宗为扬州刺史，任王质为仁威将军、骠骑府长史。天嘉二年(561)，任晋安太守。高宗辅佐朝政，任王质为司徒左长史，司徒之职不变。因为公事免职。不久任通直散骑常侍，迁任太府卿、都官尚书。太建二年(570)去世，时年六十岁。追赠为原来的官职，谥号安子。</p>
-<div class='pn'><p class='pre'>上一节：<a href='陆山才传-白话.html'>陆山才传</a></p><p class='next'>下一节：<a href='韦载传(附韦岁羽传)-白话.html'>韦载传(附韦岁羽传)</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='陆山才传-白话.html'>陆山才传</a></p><p class='next'>下一节：<a href='韦载传(附韦岁羽传)-白话.html'>韦载传(附韦岁羽传)</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

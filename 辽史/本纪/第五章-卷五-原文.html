@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -184,8 +211,9 @@
 </p><p>四年春二月辛未，泰宁王察割来朝，留侍。是月，建政事省。三月戊戌朔，南唐遣赵延嗣、张福等来贺南征捷。秋九月乙丑朔，如山西。冬十月，自将南伐，攻下安平、内丘、束鹿等城，大获而还。是岁，册皇后萧氏。
 </p><p>五年春正月癸亥朔，如百泉湖。汉郭威弑其主自立，国号周，遣朱宪来告。即遣使致良马。汉刘崇自立于太原。二月，周遣姚汉英、华昭胤来，以书辞抗礼，留汉英等。夏五月壬戌朔，太子太傅赵莹薨，辍朝一日，命归葬于汴。诏州县录事参军、主簿委政事省铨注。六月辛卯朔，刘崇为周所攻，遣使称，乞援，且求封册。即遣燕王牒〈虫葛〉、枢密使高勋册为大汉神武皇帝。南唐遣蒋洪来，乞举兵应援。是夏，清暑百泉岭。九月庚申朔，自将南伐。壬戌，次归化州祥古山。癸亥，祭让国皇帝于行宫。群臣皆醉，察割反，帝遇弑，年三十四。应历元年，葬于显州西山，陵曰显陵。二年，谥孝和皇帝，庙号世宗。统和二十六年七月，加谥孝和庄宪皇帝。
 </p><p>赞曰：世宗中才之主也，入继大统，曾未三年，纳唐丸书，即议南伐，即乏持重，宜乖周防，盖有致祸之道矣。然而孝友宽慈，亦有君人之度焉。未及师还，变起沉湎，岂不可哀也哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

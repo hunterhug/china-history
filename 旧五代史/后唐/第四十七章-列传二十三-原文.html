@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -191,8 +218,9 @@
 </p><p>许寂，字闲闲。祖秘，名闻会稽。寂少有山水之好，泛览经史，穷三式，尤明《易》象。《太平广记》云：寂学《易》于晋征徵。久栖四明山，不干时誉。昭宗闻其名，征赴阙，召对于内殿。会昭宗方与伶人调品筚篥，事讫，方命坐赐果，问《易》义。既退，寂谓人曰：“君淫在声，不在政矣。寂闻君人者，将昭德塞违，以临照百官，百官或象之。今不厌贱事，自求其工，君道替矣。”寻请还山，寓居于江陵，以茹芝绝粒，自适其性。天祐末，节度使赵匡凝昆季深礼遇之，师授保养之道。唐末，除谏官，不起，汉南谓之徵君。梁攻襄阳，匡凝兄弟弃镇奔蜀，寂偕行。岁余，蜀主王建待以师礼，位至蜀相。同光末，平蜀，与王衍俱从于东，授工部尚书致仕，卜居于洛。时寂已年高，精彩犹健，冲漠寡言，时蜀语云“可怪可怪”，人莫知其际。清泰三年六月卒，时年八十余。子孙位至省郎。
 </p><p>同光时，以方术著者，又有僧诚惠。诚惠初于五台山出家，能修戒律，称通皮、骨、肉三命，人初归向，声名渐远，四方供馈，不远千里而至者众矣。自云能役使毒龙，可致风雨，其徒号曰降龙大师。京师旱，庄宗迎至洛下，亲拜之，六宫参礼，士庶瞻仰，谓朝夕可致甘泽。祷祝数旬，略无征应。或谓官以祈雨无验，将加焚燎，诚惠惧而遁去。及卒，赐号法雨大师，塔曰“慈云之塔。”
 </p><p>周元豹者，本燕人，世为从事。元豹少为僧，其师有知人之鉴，从游十年余，苦辛无惮，师知其可教，遂以袁、许之术授之。大略状人形貌，比诸龟鱼禽兽，目视臆断，咸造其理。及还乡，遂归俗。初，卢程寄褐游燕，与同志二人谒焉。元豹谓乡人张殷衮曰：“适二君子，明年花发，俱为故人。惟彼道士，他年甚贵。”至来岁，二子果卒。又二十年，卢程登庸于鄴下。元豹归晋阳，张承业信重之，言事数中。承业俾明宗易衣列于诸校之下，以他人诈之，而元豹指明宗于末缀言曰：“骨法非内衙太保欤！”咸伏其异。或问明宗之福寿，惟云末后为镇州节度使，时明宗为内衙都校，才兼州牧而已。昭懿皇后夏氏方侍巾栉，偶忤旨，大为明宗槚楚。元豹见之曰：“此人有籓侯夫人之位，当生贵子。”明宗赫怒因解，后其言果验。太原判官司马揆谒元豹，谓揆曰：“公五日之中，奉使万里，未见回期。”揆数日后，因酒酣，为衣领扼之而卒。庄宗署元豹北京巡官。明宗即位之明年，一日，谓侍臣曰：“方士周元豹，昔曾言朕诸事有征，可诏北京津置赴阙。”赵凤奏曰：“袁、许之事，元豹所长者，以陛下贵不可言，今既验矣，余无可问。若诏赴阙下，则奔竞之徒，争问吉凶，恐近于妖惑。”乃止。令以金帛厚赐之，授光禄卿致仕。寻卒于太原，年八十余。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十六章-列传二十二-原文.html'>第四十六章-列传二十二</a></p><p class='next'>下一节：<a href='第四十八章-列传二十四-原文.html'>第四十八章-列传二十四</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第四十六章-列传二十二-原文.html'>第四十六章-列传二十二</a></p><p class='next'>下一节：<a href='第四十八章-列传二十四-原文.html'>第四十八章-列传二十四</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

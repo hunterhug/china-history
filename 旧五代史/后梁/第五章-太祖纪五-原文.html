@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -192,8 +219,9 @@
 </p><p>九月丁亥朔，命宰臣于兢赴西都，祀昊天上帝于圆丘。甲午，至西京。下诏曰：
 </p><p>朕闻历代帝王，首推尧、舜；为人父母，孰比禹、汤。睿谋高出于古先，圣德普闻于天下，尚或卑躬待士，屈己求贤。俯仰星云，虑一民之遗逸；网罗岩穴，恐片善之韬藏。延爵禄以征求，设丹青而访召，使其为政，乐在进贤，盖由国有万几，朝称百揆，非才不治，得士则昌。自朕光宅中区，迄今三载，宵分辍寐，日旰忘餐，思共力于庙谋，庶永清于王道。而乃朝廷之内，或未尽于昌言；军旅之间，亦罕闻于奇策。眷言方岳，下及山林，岂无英奇，副我延伫。诸道都督、观察防御使等，或勋高翊世，或才号知人，必于途巷之贤，备察刍荛之士。诏到，可精搜郡邑，博访贤良，喻之以千载一时，约之以高官美秩，谅无求备，惟在得人。如有卓荦不羁，沉潜自负，通霸王之上略，达文武之大纲，究古今刑政之源，识礼乐质文之变，朕则待之不次，委以非常，用佐经纶，岂劳阶级。如或一言拔俗，一事出群，亦当舍短从长，随才授任。大小方圆之器，宁限九流，温良恭俭之人，难诬十室。勉思荐举，勿至因循，俟尔发扬，慰予翘渴。仍从别敕处分。
 </p><p>辛丑，以久雨，命宰臣薛贻矩抃定鼎门，赵光逢祠嵩岳。敕：“魏博管内刺史，比来州务，并委督邮。遂使曹官擅其威权，州牧同于闲冗，俾循通制，宜塞异端。并依河南诸州例，刺史得以专达。”壬寅，颁夺马令。先是，王师击贼，获马多上献，至是尽止之，盖欲邀其奋击之功也。乙巳，王师败蕃寇于夏州。初，刘知俊诱沙陀振武贼帅周德威、泾原贼帅李继鸾合步骑五万大举，欲俯拾夏台，节度使李仁福兵力俱乏，以急来告。先是，供奉官张汉玫宣谕在壁，国礼使杜廷隐赐币于夏，及石堡寨，闻贼至，以防卒三百人驰入州。既而大兵围合，廷隐、汉玫与指挥使张初、李君用率州民防卒，与仁福部分固守，昼夜戮力逾月。及鄜、延援至，大军奋击，败之。河东、邠、岐贼分路逃遁，夏州围解。《通鉴》：甲申，遣夹马指挥使李遇、刘绾自鄜、延趋银、夏。李遇等至夏州，岐、晋兵皆解去。丙午，诏曰：“刘知俊贵为方伯，尊极郡王，而乃背诞朝恩，窜投贼垒，固神人之共怒，谅天地所不容。虽命讨除，尚稽擒戮，宜悬爵赏，以大功名，必有忠贞，咸思愤发。有生擒刘知俊者，赏钱千万，授节度使，首级次之；得孟审登者，钱百万，除刺史；得孙亢、卓环、刘儒、张邻等，赏有差。”乙卯，宴会群臣于宣威殿。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章-太祖纪四-原文.html'>第四章-太祖纪四</a></p><p class='next'>下一节：<a href='第六章-太祖纪六-原文.html'>第六章-太祖纪六</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第四章-太祖纪四-原文.html'>第四章-太祖纪四</a></p><p class='next'>下一节：<a href='第六章-太祖纪六-原文.html'>第六章-太祖纪六</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

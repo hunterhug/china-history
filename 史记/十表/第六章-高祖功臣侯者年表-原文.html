@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -178,8 +205,9 @@
 
 <h1>第六章-高祖功臣侯者年表<span style='font-size:small'> 原文</span><span style='font-size:small;padding-left:5px'> <a href='第六章-高祖功臣侯者年表-段译.html'>段译</a></span><span style='font-size:small;padding-left:5px'> <a href='第六章-高祖功臣侯者年表-译文.html'>译文</a></span></h1>
 <p>太史公曰：古者人臣功有五品，以德立宗庙定社稷曰“勋”，以言曰“劳”，用力曰“功”，明其等曰“伐”，积日曰“阅”。封爵之誓曰：“使河如带，泰山若厉，国以永宁，爰及苗裔。”始未尝不欲固其根本，而枝叶稍陵夷衰微也。</p><p>余读高祖侯功臣，察其首封，所以失之者，曰：异哉所闻！《书》曰“协和万国”，迁于夏商，或数千岁。盖周封八百，幽厉之后，见于《春秋》。《尚书》有唐虞之侯伯，历三代千有余载，自全以蕃卫天子，岂非笃于仁义，奉上法哉？汉兴，功臣受封者百有余人。天下初定，故大城名都散亡，户口可得而数者十二三。是以大侯不过万家，小者五六百户。后数世，民咸归乡里，户益息，萧、曹、绛、灌之属或至四万，小侯自倍，富厚如之。子孙骄溢，忘其先，淫嬖。至太初百年之间，见侯五，余皆坐法陨命亡国，秏矣。罔亦少密焉，然皆身无兢兢于当世之禁云。</p><p>居今之世，志古之道，所以自镜也，未必尽同。帝王者各殊礼而异务，要以成功为统纪，岂可绲乎？观所以得尊宠及所以废辱，亦当世得失之林也，何必旧闻？于是谨其终始，表其文，颇有所不尽本末。着其明，疑者阙之。后有君子，欲推而列之，得以览焉。</p><p>圣贤影响，风云潜契。高祖应箓，功臣命世。起沛入秦，凭谋仗计。纪勋书爵，河盟山誓。萧曹轻重，绛灌权势。咸就封国，或萌罪戾。仁贤者祀，昏虐者替。永监前修，良惭固蒂。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章-汉兴以来诸侯王年表-原文.html'>第五章-汉兴以来诸侯王年表</a></p><p class='next'>下一节：<a href='第七章-惠景间侯者年表-原文.html'>第七章-惠景间侯者年表</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第五章-汉兴以来诸侯王年表-原文.html'>第五章-汉兴以来诸侯王年表</a></p><p class='next'>下一节：<a href='第七章-惠景间侯者年表-原文.html'>第七章-惠景间侯者年表</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

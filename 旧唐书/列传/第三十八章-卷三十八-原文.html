@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -226,8 +253,9 @@
 <p>　　瑰四代孙翔，文宗太和四年，释褐文学参军。 </p>
 <p>　　史臣曰：韦思谦始以州县，奋于烟霄，持纲不避于权豪，报国能忘于妻子。自 强不息，刚毅近仁，信有之矣！高季辅、皇甫公义，可谓知人矣！且福善余庆，不 谓无徵，二子构堂，俱列相辅，文皆经济，政尽明能。加以承庆方危，染翰而曾非 恐悚；嗣立见用，袭封而罔坠逍遥。无忝父风，宁惭祖德，谥温谥孝，何愧易名？ 陆元方博学大度，再践钧衡，当则天时，非有忠贞，应无黜责，绥州之任，抑又何 惭！观其济海无私，狂风自止，临终焚藁，温树始彰。故知正可以动神明，德可以 延家代。象先益高人品，尤著相才，全济有名，孤立无祸。景倩、景融、景献、景 裔等咸居清列，得非有后于鲁乎？苏瑰，孔子云：“居其室，出其言善，则千里之 外应之，况其迩者乎！”又“言行君子之枢机，枢机之发，荣辱之主也”。当中宗 弃代，韦氏夺权，预谋者十有九人，咸生异议，瑰志存大节，独发谠言。其后善恶 显彰，黜陟明著。圣人之言，验于斯矣。颋唯公是相，以俭承家，李峤许之涌泉， 宋璟称其过父。艰难之际，节操不回，善始令终，先后无愧。 </p>
 <p>　　赞曰：善人君子，怀忠秉正。尽富文章，咸推谏诤。岂愧明廷，无惭重柄。子 子孙孙，演承余庆。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十七章-卷三十七-原文.html'>第三十七章-卷三十七</a></p><p class='next'>下一节：<a href='第三十九章-卷三十九-原文.html'>第三十九章-卷三十九</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三十七章-卷三十七-原文.html'>第三十七章-卷三十七</a></p><p class='next'>下一节：<a href='第三十九章-卷三十九-原文.html'>第三十九章-卷三十九</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -247,8 +274,9 @@
 </p><p>悲夫，久生亦复何卿！盖忠臣杀身以解君怒，孝子殒命以宁亲怨，故大舜不避涂廪浚井之难，甲生不辞姬氏谗邪之谤。臣敢忘斯议，不自毙以解明朝之忿哉！乞以身塞重责。愿陛下丐兄弟死命，使臣一门颇有遗类，以崇陛下宽饶之惠。先死陈情，临章涕泣，泣血涟如。
 </p><p>帝省章愈怒，遂诛荣。寇氏由是衰废。
 </p><p>赞曰：元侯渊谟，乃作司徒。明启帝略，肇定秦都。勋成智隐，静其如愚。子翼守温，萧公是埒。系兵转食，以集鸿烈。诛文屈贾，有刚有折。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章-李王邓来列传-原文.html'>第五章-李王邓来列传</a></p><p class='next'>下一节：<a href='第七章-冯岑贾列传-原文.html'>第七章-冯岑贾列传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第五章-李王邓来列传-原文.html'>第五章-李王邓来列传</a></p><p class='next'>下一节：<a href='第七章-冯岑贾列传-原文.html'>第七章-冯岑贾列传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -193,8 +220,9 @@
 </p><p>十月六日，末帝到崇道宫、甘泉亭。八日，任右卫上将军李顷为左领军上将军。北面行营总管石敬瑭报告说从代州回到驻地。九日，因为晋州节度使张温去世而停止上朝。十三日，末帝到赵延寿、刘延朗家中。十六日，任端明殿学士、兵部侍郎李专美为秘书监，充宣徽北院使。二十九日，任左谏仪大夫唐氵内为左散骑常侍。
 </p><p>十一月九日，任左骁卫上将军赤阝琼为左金吾上将军，任光禄卿王玟为太子宾客。
 </p><p>十二月七日，禁止使用铅钱。十一日，任中书侍郎兼兵部尚书、充枢密使韩昭裔为检校司空、同平章事，兼河中节度使。十三日，任宗正少卿李延祚为将作监后退休。十六日，赠已故武安军州节度使、累赠太傅刘建峰为太尉，这是听从湖南的请求而做的。十七日，太常上奏：“明年一月一日上辛，到圆丘祭祀昊天上帝，依据礼仪大祠时不上朝。”下诏说：“祭祀是在天亮前，仪仗在太阳出来之后，互相不妨碍，应该依照常年所做的受朝贺。”二十一日，任翰林学士承旨、户部侍郎程遂为兵部侍郎，任翰林学士、工部侍郎崔木兑为户部侍郎，任翰林学士、中书舍人和凝为工部侍郎，并兼任以前的职务。二十八日，任前同州节度冯道为司空。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十二章-末帝纪上-白话.html'>第二十二章-末帝纪上</a></p><p class='next'>下一节：<a href='第二十四章-末帝纪下-白话.html'>第二十四章-末帝纪下</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十二章-末帝纪上-白话.html'>第二十二章-末帝纪上</a></p><p class='next'>下一节：<a href='第二十四章-末帝纪下-白话.html'>第二十四章-末帝纪下</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

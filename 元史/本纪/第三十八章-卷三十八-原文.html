@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -213,8 +240,9 @@
 </p><p>立常平仓。丁未，赐知枢密院事彻里帖木儿三珠虎符。
 </p><p>十二月己酉朔，荆门州献紫芝。以廪给司属通政院。加知枢密院事阔里吉思银青荣禄大夫，兼左翊蒙古侍卫亲军都指挥使。壬子，太阴犯垒壁阵。乙卯，命云南行省造军士钱粮新旧之籍。丙辰，制省诸王、公主、驸马饮膳之费。诏征高丽王阿剌忒纳失里入朝。丁巳，诏伯颜领宫相府。戊午，日赤如赭。辛酉，太白犯垒壁阵。壬戌，拨庐州、饶州牧地一百顷，赐宣让王帖木儿不花。命四川、云南、江西行省保选蛮夷官以俟铨注。乙丑，奉玉册、玉宝，上太皇太后尊号曰赞天开圣徽懿宣昭贞文慈佑储善衍庆福元太皇太后，诏曰：“钦惟太皇太后，承九庙之托，启两朝之业，亲以大宝，付之眇躬。尚依拥佑之慈，恪遵仁让之训，爰极尊崇之典，以昭报本之忱。庸上徽称，宣告中外。”命宣政使末吉以司徒就第。太白犯轩辕夫人星。丙寅，太白经天，丁卯，复如之。夜，太阴犯右执法。庚午，太白经天，壬申，复如之。癸酉，岁星昼见。乙亥，太白、岁星皆昼见。丙子，安庆、蕲、黄地震。丁丑，西番贼起，遣兵击之。戊寅，蒙古国子监成。是日，太白经天，岁星昼见。是月，宝庆路饥，赈粜米三千石。
 </p><p>闰月乙酉，诏：“四川盐运司于盐井仍旧造盐，余井听民煮造，收其课十之三。”荧惑犯垒壁阵。丁亥，日赤如赭，凡三日。戊子，复以宗正府为大宗正府。壬辰，诏宗室脱脱木儿袭封荆王，赐金印，命掌忙来诸军，设立王府官属。丁酉，御史大夫撒的加银青荣禄大夫，领奎章阁，知经筵事。戊戌，御史台臣复劾奏中书平章政事彻里帖木儿罪，罢之。庚子，太阴犯心星。壬寅，流彻里帖木儿于南安。太阴犯箕宿。癸卯，太阴犯南斗。丙午，诏平章政事塔失海牙领都水、度支二监。是年，江西大水，民饥，赈粜米七万七千石。赐天下田租之半。凡有妻室之僧，令还俗为民，既而复听为僧。移犍为县还旧治。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十七章-卷三十七-原文.html'>第三十七章-卷三十七</a></p><p class='next'>下一节：<a href='第三十九章-卷三十九-原文.html'>第三十九章-卷三十九</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三十七章-卷三十七-原文.html'>第三十七章-卷三十七</a></p><p class='next'>下一节：<a href='第三十九章-卷三十九-原文.html'>第三十九章-卷三十九</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

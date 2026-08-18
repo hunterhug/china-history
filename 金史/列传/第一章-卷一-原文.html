@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -237,8 +264,9 @@
 </p><p>蒲察阿虎迭女叉察，海陵姊庆宜公主所生，嫁秉德之弟特里。秉德诛，当连坐，太后使梧桐请于海陵，由是得免。海陵白太后欲纳叉察。太后曰：“是儿始生，先帝亲抱至吾家养之，至于成人。帝虽舅，犹父也，不可。”其后，嫁宗至安达海之子乙刺补。海陵数使人讽乙刺补出之，因而纳之。叉察与完颜守诚有奸，守诚本名遏里来，事觉，海陵杀守诚，太后为叉察求哀，乃释之。叉察家奴告叉察语涉不道，海陵自临问，责叉察曰：“汝以守诚死詈我邪？”遂杀之。
 </p><p>同判大宗正阿虎里妻浦速碗，元妃之妹，因入见元妃，海陵逼淫之。浦速碗自是不复入宫。
 </p><p>世宗为济南尹，海陵召夫人乌林荅氏。夫人谓世宗曰：“我不行，上必杀王。我当自勉，不以相累也。”夫人行至良乡自杀，是以世宗在位二十九年，不复立后焉。</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p></div><footer>
+<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

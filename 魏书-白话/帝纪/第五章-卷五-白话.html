@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -230,8 +257,9 @@
 </p><p>六年春正月丙申，大赦天下。二月丁丑，前往楼烦宫。高丽、蓰王、对曼各国各遣使者入朝献纳。三月戊戌，相州刺史、西平郡王吐谷浑权逝世。乙巳，皇帝回宫。
 </p><p>夏四月，破洛那国献汗血马，普岚国献宝剑。五月癸卯，皇帝在叁茎毖逝世，时年二十六岁。六月丙寅，奉上谧号为文成皇帝，庙号为直塞。八月，安葬在云主的金堕。
 </p><p>史臣曰：世祖治理四方，内部颇为空虚。不久国家内乱时事艰辛，朝野凄苦。高宗顺时而变，以平静加以镇抚，培养声威布下恩德，怀柔和睦内外的人。除非机敏善悟深情宽厚，以怜悯济民为心胸，又怎能如此可以说是有治理人的气度了。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-白话.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-白话.html'>第六章-卷六</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-白话.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-白话.html'>第六章-卷六</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

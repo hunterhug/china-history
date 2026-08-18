@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -229,8 +256,9 @@
 </p><p>我开元之有天下也，纠之以典刑，明之以礼乐，爱之以慈俭，律之以轨仪。黜前朝徼幸之臣，杜其奸也；焚后庭珠翠之玩，戒其奢也；禁女乐而出宫嫔，明其教也；赐酺赏而放哇淫，惧其荒也；叙友于而敦骨肉，厚其俗也；蒐兵而责帅，明军法也；朝集而计最，校吏能也。庙堂之上，无非经济之才；表著之中，皆得论思之士。而又旁求宏硕，讲道艺文。昌言嘉谟，日闻于献纳；长辔远驭，志在于升平。贞观之风，一朝复振。于斯时也，烽燧不惊，华戎同轨。西蕃君长，越绳桥而竞款玉关；北狄酋渠，捐毳幕而争趋雁塞。象郡、炎州之玩，鸡林、鳀海之珍，莫不结辙于象胥，骈罗于典属。膜拜丹墀之下，夷歌立仗之前，可谓冠带百蛮，车书万里。天子乃览云台之义，草泥金之札，然后封日观，禅云亭，访道于穆清，怡神于玄牝，与民休息，比屋可封。于时垂髫之倪，皆知礼让；戴白之老，不识兵戈。虏不敢乘月犯边，士不敢弯弓报怨。“康哉”之颂，溢于八纮。所谓“世而后仁”，见于开元者矣。年逾三纪，可谓太平。
 </p><p>於戏！国无贤臣，圣亦难理；山有猛虎，兽不敢窥。得人者昌，信不虚语。昔齐桓公行同禽兽，不失霸主之名；梁武帝静比桑门，竟被台城之酷。盖得管仲则淫不害霸，任硃异则善不救亡。开元之初，贤臣当国，四门俱穆，百度唯贞，而释、老之流，颇以无为请见。上乃务清净，事薰修，留连轩后之文，舞咏伯阳之说，虽稍移于勤倦，亦未至于怠荒。俄而朝野怨咨，政刑纰缪，何哉？用人之失也。自天宝已还，小人道长。如山有朽坏，虽大必亏；木有蠹虫，其荣易落。以百口百心之谗谄，蔽两目两耳之聪明，苟非铁肠石心，安得不惑！而献可替否，靡闻姚、宋之言；妒贤害功，但有甫、忠之奏。豪猾因兹而睥睨，明哲于是乎卷怀，故禄山之徒，得行其伪。厉阶之作，匪降自天，谋之不臧，前功并弃。惜哉！
 </p><p>赞曰：开元握图，永鉴前车。景气融朗，昏氛涤除。政才勤倦，妖集廷除。先民之言，“靡不有初”。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p><p class='next'>下一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p><p class='next'>下一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -227,8 +254,9 @@
 </p><p>袁式，字季祖，陈郡阳夏人，汉司徒滂之后。父渊，司马昌明侍中。式在南，历武陵王遵谘议参军。与司马文思等归姚兴。泰常二年归国，为上客，赐爵阳夏子。与司徒崔浩一面，便尽国士之交。是时，朝仪典章，悉出于浩。浩以式博于古事，每所草创，恆顾访之。性长者，虽羁旅飘泊，而清贫守度，不失士节，时人甚敬重之，皆呼曰袁谘议。延和二年，卫大将军、乐安王范为雍州刺史，诏式与中书侍郎高允俱为从事中郎，辞而获免。式沉靖乐道，周览书传，至于诂训、《仓》、《雅》、偏所留怀。作《字释》，未就。以天安二年卒。赠豫州刺史，谥肃侯。
 </p><p>子济，袭。位魏郡太守，政有清称，加宁远将军。子侄遂居颍川之阳夏。
 </p><p>史臣曰：刁雍才识恢远，著声立事，礼遇优隆，世有人爵堂构之义也。王慧龙援难自归，颇历夷险，抚从督众，见惮严敌。世珍宝有令子，克播家声。韩延之报书刘裕，国体在焉。袁式赞礼仪崔浩，时称长者，一时有称，信为美哉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十五章-卷二十五-原文.html'>第二十五章-卷二十五</a></p><p class='next'>下一节：<a href='第二十七章-卷二十七-原文.html'>第二十七章-卷二十七</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十五章-卷二十五-原文.html'>第二十五章-卷二十五</a></p><p class='next'>下一节：<a href='第二十七章-卷二十七-原文.html'>第二十七章-卷二十七</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -232,8 +259,9 @@
 </p><p>乐平王延祚字大思，小时有重病，不胜任封爵。太康初年，诏书说：“弟司马延祚早年丧父尚幼小无知，令人哀伤同情。小时患重病，每天盼着病好，如今竟成了残废，不再有治好的指望，心中很是哀伤。封他为乐平王，使他有个名号，来安慰我的心。”不久死去，没有儿子。
 </p><p>史臣曰：平原王情绪理智不稳定，世上没人能猜度他。说到他处在动乱离散的年代，生活在交兵争斗的时期，却能远离灾害保全自身，享受大福，他的愚昧别人是达不到的!琅邪王武功既好，再加上温和恭敬，扶风王文采教化出众，再加上孝行，或者是宗室中可以称道的人吧。齐王以文帝、景帝的宗亲身份，弘扬《周南》、《召南》的教化，道德光照雅俗，名望在宰辅中重大，百官景仰，万方归心。后来地位高而遭疑惑逼迫，文采儒雅而被挑毛病，冯鱿、荀勖拿出如同蔓草的奸邪计谋，武帝深深地维护着对儿子难解的爱心。于是剥夺了齐王在朝中的权力，迁徙到千里外的封国，没等到筹备登程，就死于愤恨，可惜啊!假如上天给他年寿而且除掉他的政敌，奉命作心腹之臣，接受治国的重托，辅佐继位的皇帝，确实能治理国家政治，那么从阴间的征兆测算，或许废兴自有时，从人世间的事态证明，可能胜败可以推求，八王哪敢力争，五胡怎能争逐!《诗》说“没有贤人，国家就衰败了”，司马攸实在可以证实逭话；“奸臣说人坏话没有止境，扰乱四面八方”，说的大概是荀勖、冯统一类人吧。
 </p><p>赞曰：文帝、宣帝的子孙，有的贤明有的鄙下。扶风王留下爱心，琅邪王约束克制自身。司马澹谄媚凶虐数第一，司马肜参与了公报私仇。司马干虽然清虚退让，但性情理智不稳定。那美好的齐献王，出类拔萃。自己治理国家，文武双全。树木因高大而被砍伐，兰花因能熏香而被烧掉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章--白话.html'>第七章-</a></p><p class='next'>下一节：<a href='第九章--白话.html'>第九章-</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第七章--白话.html'>第七章-</a></p><p class='next'>下一节：<a href='第九章--白话.html'>第九章-</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -208,8 +235,9 @@
 </p><p>八月初一，邳州从宜经略使纳合六哥等率都统金山颜俊带领沂州的一百多人，早晨进入省府，杀了行尚书省蒙古纲后反叛。九月初，宋朝军进入寿州，女奚烈蒲乃奋力作战打退了他们。
 </p><p>冬十月初四，把晋阳公郭文振的兵调到卫州。初八，宣宗皇帝在近郊打猎。十一月初八，邳州红袄贼寇三千人来降，开始拟把他们放到陈、许两地间。宣宗皇帝说：他们虽然投降了，而家属还在河朔，其余的党徒一定会杀他们，而我们所得到的人少而被杀人多，于心何忍？不如命使者安抚告谕，加以官职、奖赏而送他们回去。如果一定要忠于我，即使身处河朔也不会负我。而且其余的党徒将感恩，将会有更多的人来归顺。
 </p><p>十二月初一，把淮河边的巡检边军调到内地。十九日，宣宗皇帝不舒服免朝。二十日，皇太子率百官及王妃、公主入朝问皇帝安。二十一日，又入朝问安。二十二日，宣宗皇帝死于宁德殿，终年六十一岁。宣宗皇帝病重的当夜，近臣都离开了，只有前朝资明夫人郑氏年老侍立床边，宣宗皇帝知道她可托嘱，诏她说“：速召皇太子主持后事。”说完就死了。郑夫人把遗旨密封起来，当夜，皇后及贵妃庞氏在寝..中问安。庞氏阴险狡诈机谋聪明，常认为其子完颜守纯年长而没能立为皇太子，心里不满意。郑夫人怕她叛乱，即哄骗她说：“皇帝正换衣服，后妃可在其他室里稍作休息。”等到后妃进到屋中，她赶快锁上门，急忙召集大臣，传遗诏立皇太子为皇帝，尔后放出后妃并发丧。皇太子刚入宫，英王完颜守纯已先进去。皇太子知道了，分别派枢密院官及东宫亲卫军官移剌蒲阿在东华门街召集三万多军队。部署完毕，命令四个护卫在近侍局监禁完颜守纯，于是在灵柩前即皇帝位。二十四日，宣布遗诏。当日，诏赦中外。第二年正月初一，改元正大，先帝谥号继天兴统述道勤仁英武圣孝皇帝，庙号宣宗。三月二十三日，葬于德陵。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷十五-白话.html'>第十五章-卷十五</a></p><p class='next'>下一节：<a href='第十七章-卷十七-白话.html'>第十七章-卷十七</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷十五-白话.html'>第十五章-卷十五</a></p><p class='next'>下一节：<a href='第十七章-卷十七-白话.html'>第十七章-卷十七</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

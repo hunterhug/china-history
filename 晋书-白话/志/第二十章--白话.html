@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -240,8 +267,9 @@
 </p><p>商议的结果上奏皇帝，元帝还打算听从卫展奏上的意见，大将军王敦认为：“老百姓习惯现在的风俗很久了，突然间恢复肉刑，一定会使远远近近的人吃惊。而且逆寇还没有消灭，不应该有惨酷的叫声，让天下人都听到。”于是才作罢。
 </p><p>咸康的时候，庾冰喜欢举发检察，近于琐细，后来更加违背正道，又采用宽松的刑罚，是疏是密随心所欲，律令已经没用了。
 </p><p>到了安帝元兴末年，桓玄辅佐国政，又商议打算恢复肉刑斩断左右脚趾的刑法，用来减轻死刑，皇帝命令百官讨论。蔡廓奏上意见说：“建国立法，弘扬教化，一定要根据不同的时候制定政策，仁德刑罚同时施行。崇尚忠贞用以防备奸邪，教知禁令用以检察怠慢，布洒恩惠来润泽天下，加重刑罚严肃天威，虽然还是质、文更迭起作用，但是这种方法是不会被取代的。肉刑的设立，源于圣哲的君王。大概因为前代风俗淳厚，人们大多敦厚谨慎，图像既已陈列，就机心收敛，受刑罚的人走在路上，就不放纵和改变操守，因此能不用刑罚诛杀，无为而教化隆盛。衰落的末世风俗浮薄诈伪，法纲设立更加繁密，机巧的思想一天天滋长，羞耻、畏惧的心理变得少了。终身繁重的劳役，不足以制止奸邪，何况刺字和割鼻子，岂能使罪犯返归善道。空有悲惨的叫声，却没有匡济时俗的益处。至于弃市的条文，若实在不是不赦的罪过，事情不是亲手杀人，刑讯和法律一致，轻刑和重刑判决相同，减降刑罚的道路堵塞，钟陈因此高声抗议，元皇为之怜悯。现在英才们辅佐国政，行道超越伊尹周，确实应该谨慎用刑，爱惜人民大力繁育，申明哀怜之心用以革除滥刑，改变对人体的大辟之刑，保全至为重要的生命，使将来增加繁殖生息。”但是孔卫旺意见不同，用型目、夏堡直的意见。当时的舆论大多和孔琳之相同，因此肉刑没有施行。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十九章--白话.html'>第十九章-</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十九章--白话.html'>第十九章-</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

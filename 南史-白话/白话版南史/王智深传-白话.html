@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>王智深传<span style='font-size:small'> 白话</span></h1>
 <p>王智深字云才，琅笽临沂人。小时候跟陈郡谢超宗学写文章。爱饮酒，笨拙迟顿缺少风度。在齐朝官作豫章王大司马参军，兼记室。<BR><BR>　　齐武帝让太子家令沈约撰《宋书》，沈约想立袁粲传，请示武帝。武帝说：“袁粲本是宋家忠臣。”沈约又记载很多宋孝武帝、宋明帝不光彩的事。武帝派人告诉沈约说：“孝武帝的事迹不许这样败坏，我从前也曾在宋明帝手下做事，你要考虑一下为尊者讳恶的道理。”于是很多都被删除。又下诏让智深撰《宋纪》，在芙蓉堂召见他。赏赐衣服，提供住处。智深向豫章王哭穷，豫章王说：“你得把书写成，就会论功行赏。”书写成三十卷。武帝后来在睿明殿召见智深，令他写成章表奏上，表还未奏上武帝驾崩。隆昌元年(494)，朝廷下诏索要他的书。智深转任竟陵王司徒参军。后免官。<BR><BR>　　家贫无人馈赠，曾挨饿五天没有饭吃，挖苋菜根充饥。司空王僧虔和他儿子王志分给他衣食。死在家中。</p>
-<div class='pn'><p class='pre'>上一节：<a href='卞彬传-白话.html'>卞彬传</a></p><p class='next'>下一节：<a href='祖冲之传-白话.html'>祖冲之传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='卞彬传-白话.html'>卞彬传</a></p><p class='next'>下一节：<a href='祖冲之传-白话.html'>祖冲之传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -207,8 +234,9 @@
 <p>　　先是每年吏部选人试判，别奏官考覆，第其上下；既考，中书门下复奏择官覆 定，浸以为便。抗乃奏曰：“吏部尚书、侍郎，已是朝廷精选，不宜别差考官重覆。” 其年他官考判讫，俾吏部侍郎自覆，一岁遂除考判官，盖抗所论奏也。故事，礼部 侍郎掌贡举，其亲故即试于考功。谓之“别头举人”，抗亦奏罢之。寻奏省诸州府 别驾、田曹、司田官及判司之双曹者，复省中书省驱使官及诸胥吏。寻加修国史。 抗虽读书，无远智大略，凡为官，必求至精，末乃滋彰，物论薄其隘刻。遇疾，上 表请罢，改太子宾客，竟不任朝谢。贞元二十年卒，时年六十五，赠户部尚书，又 赐其家绢二百匹。 </p>
 <p>　　史臣曰：窦参朋党，不顾君上之诫，斯为悖矣。齐映曲贡希用甚谬，而爱君莅 事，往往有长者之言。滋、迈家行修谨，临事可称，器虽龌龊，无废为君子矣。而 损、抗之比，夫何足云，遽汙台槐，盖时主之容易耳。 </p>
 <p>　　赞曰：物之同器，贵于弘通。窦阿齐佞，偏诐斯同。滋、迈之行，可以饰躬。 康济蒸民，胡为厥中。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十五章-卷八十五-原文.html'>第八十五章-卷八十五</a></p><p class='next'>下一节：<a href='第八十七章-卷八十七-原文.html'>第八十七章-卷八十七</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第八十五章-卷八十五-原文.html'>第八十五章-卷八十五</a></p><p class='next'>下一节：<a href='第八十七章-卷八十七-原文.html'>第八十七章-卷八十七</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -206,8 +233,9 @@
 </p><p>秋七月丁未，帝御军沿河而南，梁军弃邹家口夜遁，委弃锅甲刍粮千计。戊午，遣骑将李绍贻直抵梁军垒，梁益恐。又闻李嗣源自郓州引大军将至，己未夜，梁军拔营而遁，复保于杨村。帝军屯于德胜。甲子，帝幸杨刘城，巡视梁军故垒。
 </p><p>八月壬申朔，帝遣李绍斌以甲士五千援泽州。初，李继韬之叛也，潞之旧将裴约以兵戍泽州，不徇韬之逆。既而梁遣董璋率众攻其城，约拒守久之，告急于帝，故遣绍斌救之。未至而城已陷，裴约被害，帝闻之，嗟痛不已。甲戌，帝自杨刘归鄴。梁以段凝代王彦章为帅。戊子，凝帅众五万结营于王村，自高陵渡河。帝军遇之，生擒梁前锋军士二百人，戮于都市。庚寅，帝御军至朝城。戊戌，梁左右先锋指挥使康延孝领百骑来奔，帝虚怀引见，赐御衣玉带，屏人问之。对曰：“臣窃观汴人兵众不少，论其君臣将校，则终见败亡。赵岩、赵鹄、张汉杰居中专政，缔结宫掖，贿赂公行。段凝素无武略，一朝便见大用；霍彦威、王彦章皆宿将有名，翻出其下。自彦章获德胜南城，梁主亦稍奖使。彦章立性刚暴，不耐凌制，梁主每一发军，即令近臣监护，进止可否，悉取监军处分，彦章悒悒，形于颜色。自河津失利，段凝、彦章又献谋，欲数道举军，合董璋以陕虢、泽潞之众，趋石会关以寇太原。霍彦威统关西、汝、洛之众自相卫以寇镇定，段凝、杜晏球领大军以当陛下，令王彦章、张汉杰统禁军以攻郓州，决取十月内大举。又自滑州南决破河堤，使水东注曹、濮之间，至于汶阳，弥漫不绝，以陷北军。臣在军侧闻此议。臣惟汴人兵力，聚则不少，分则无余。陛下但待分兵，领铁骑五千，自郓州兼程直抵于汴，不旬日，天下事定矣。”帝怿然壮之。
 </p><p>九月壬寅朔，帝在朝城，凝兵至临河南，与帝之骑军接战。是时泽潞叛，卫州、黎阳为梁人所据，州以西、相以南，寇钞日至，编户流亡，计其军赋，不支半年。又王郁、卢文进召契丹南侵瀛、涿。及闻梁人将图大举，帝深忧之，召将吏谋其大计，或曰：“自我得汶阳以来，须大将固守，城门之外，元是贼疆，细而料之，得不如失。今若驰檄告谕梁人，却卫州、黎阳以为郓州，指河为界，约且休兵。我国力稍集，则议改图。”帝曰：“嘻，行此谋则无葬地矣！”时郭崇韬劝帝亲御六军，直趋汴州，半月之间，天下可定。帝曰：“正合朕意。大丈夫得则为王，失则为寇，予行计决矣！”又问司天监，对曰：“今岁时不利，深入必无成功。”帝弗听。戊辰，梁将王彦章率众至汶河，李嗣源遣骑军侦视，至递公镇，梁军来挑战，嗣源以精骑击而败之，生擒梁将任钊、田章等三百人，俘斩二百级，彦章引众保于中都。嗣源飞驿告捷，帝置酒大悦，曰：“是当决行渡河之策。”己巳，下令军中将士家属并令归鄴。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章-庄宗纪二-原文.html'>第四章-庄宗纪二</a></p><p class='next'>下一节：<a href='第六章-庄宗纪四-原文.html'>第六章-庄宗纪四</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第四章-庄宗纪二-原文.html'>第四章-庄宗纪二</a></p><p class='next'>下一节：<a href='第六章-庄宗纪四-原文.html'>第六章-庄宗纪四</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

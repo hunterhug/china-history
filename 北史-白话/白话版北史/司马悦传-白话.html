@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>司马悦传<span style='font-size:small'> 白话</span></h1>
 <p>司马悦，字庆宗，历任豫州刺史。当时汝南上蔡有个叫董毛奴的人，带了五千钱外出，死在路途中。郡县的人怀疑是张堤杀了董毛奴，抢了钱，而且在张堤家得了五千钱。张堤害怕受拷打，便自己承认杀了人。案子报到州上，司马悦观察张堤以后，怀疑这事不真实。他引见了董毛奴的哥哥董灵之，对他说：“杀人抢钱，当时一定很狼狈，应当会丢下些东西，不知你们发现什么没有？”董灵之说“：只得到一把刀鞘。”司马悦取刀鞘来看，说：“这不是小街小巷制作的。”他召集了州内的刀匠，将刀..给他们看。有个叫郭门的说：“这刀鞘是我亲手制作的，去年卖给了城里人董及祖。”司马悦收捕了董及祖并审问了他，董及祖从实招认了，董灵之又在罪犯的身上找到了毛奴穿的黑色衣服。董及祖伏法。司马悦断案明察，类似这样的事很多。<BR><BR>　　不久，司马悦与镇南将军元英一起攻克义阳，皇帝下诏将梁司州改为郢州，司马悦任郢州刺史。后来他又改任豫州刺史。根据他的功勋，他被封为渔阳子。永平元年(508)，城中人白早生谋反，斩了司马悦，将他的首级送到了梁。皇帝下诏到扬州，让人买回了司马悦的首级，追赠青州刺史，谥号“庄子”。他的儿子司马月出继承了爵位。</p>
-<div class='pn'><p class='pre'>上一节：<a href='司马楚之传-白话.html'>司马楚之传</a></p><p class='next'>下一节：<a href='萧宝夤传-白话.html'>萧宝夤传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='司马楚之传-白话.html'>司马楚之传</a></p><p class='next'>下一节：<a href='萧宝夤传-白话.html'>萧宝夤传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

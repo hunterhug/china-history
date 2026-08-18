@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -219,8 +246,9 @@
 </p><p>玄子羽，官至任城相。
 </p><p>论曰：任棠、姜岐，世著其清。结甕牖而辞三命，殆汉阳之幽人乎？庞参躬求贤之礼，故民悦其政；桥玄厉邦君之威，而众失其情。夫岂力不足欤？将有道在焉。如令其道可忘，则强梁胜矣。语曰：“三军可夺帅，匹夫不可夺志。”子贡曰：“宁丧千金，不失士心。”昔段干木逾墙而避文侯之命，泄柳闭门不纳穆公之请。贵必有所屈，贱亦有所申矣。
 </p><p>赞曰：李叟勤身，甘饥辞馈。禅为君隐，之死靡贰。龟习边功，参起徒中。桥公识运，先觉时雄。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十三章-孝明八王列传-原文.html'>第四十三章-孝明八王列传</a></p><p class='next'>下一节：<a href='第四十五章-崔骃列传-原文.html'>第四十五章-崔骃列传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第四十三章-孝明八王列传-原文.html'>第四十三章-孝明八王列传</a></p><p class='next'>下一节：<a href='第四十五章-崔骃列传-原文.html'>第四十五章-崔骃列传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

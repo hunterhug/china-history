@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -317,8 +344,9 @@
 </p><p>余濂，字宗周，都昌人。弘治六年进士。武宗时，终云南副使。
 </p><p>孝宗励精图治，委任大臣，中官势稍绌。而张天祥及满仓儿事皆发自东厂，廷议犹为所挠云。满仓儿事，具《孙磐传》。
 </p><p>赞曰：御史为朝廷耳目，而给事中典章奏，得争是非于廷陛间，皆号称“言路”。天顺以后居其职者，振风裁而耻缄默。自天子、大臣、左右近习无不指斥极言。南北交章，连名列署。或遭谴谪，则大臣抗疏论救，以为美谈。顾其时门户未开，名节自励，未尝有承意指于政府，效搏噬于权珰，如末季所为者。故其言有当有不当，而其心则公。上者爱国，次亦爱名。然论国事而至于爱名，则将惟其名之可取，而事之得失有所不顾，于匡弼之道或者其未善乎。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十七章-卷六十七-原文.html'>第六十七章-卷六十七</a></p><p class='next'>下一节：<a href='第六十九章-卷六十九-原文.html'>第六十九章-卷六十九</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第六十七章-卷六十七-原文.html'>第六十七章-卷六十七</a></p><p class='next'>下一节：<a href='第六十九章-卷六十九-原文.html'>第六十九章-卷六十九</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

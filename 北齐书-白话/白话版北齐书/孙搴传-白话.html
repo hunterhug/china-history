@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>孙搴传<span style='font-size:small'> 白话</span></h1>
 <p>孙搴，字彦举，乐安人氏。少时厉志好学，从检校御史迁为国子助教。太保崔光推荐其撰修国史，后又做过行台郎，因文才而被世人称许。由于参与过崔祖螭的反叛活动，被迫逃到王元景家中躲藏，得大赦令才出门。孙腾看在宗族的情份上向朝廷举荐，但没有得到任用。<BR><BR>　　高祖西讨，登风陵，请中外府司马李义深、相府城局李士略同作檄文，二人推辞，要求搴帮忙代作。高祖带搴进入军帐，亲自为他生火取暖，催促他快些动笔。搴提笔后一气呵成，且文辞极其华美。高祖十分高兴，马上任命他为相府主簿，专掌文笔。搴通晓鲜卑语，加之宣传号令，十分称职，大得高祖敬重。赐给妻子韦氏，韦氏是士人的女儿，而且十分漂亮，因此时人都很钦佩。寻除左光禄大夫，常掌领主簿。<BR><BR>　　世宗最初想去邺城，总揽朝政，高祖认为年纪太小，没有同意。搴就为世宗游说，高祖才同意放行。凭借此事，搴向朝廷请求特进，世宗却只给了他一个散骑常侍。此时朝廷又大括燕、恒、云、朔、显、蔚、二夏州、高平、平凉的民众充任军士，逃亡、隐身者牵涉到主人、三长、守令，并处以大辟之刑，还没收其家人财产。这样征到了许多兵士，这是孙搴的主意。<BR><BR>　　搴学问浅显、德行鄙薄。邢邵曾对他说：“你必须好好读书。”搴说：“我精骑三千，抵御你几万老弱病残的士卒绰绰有余。”搴曾服食棘刺丸，李谐等人调笑他说：“你身上的棘刺多得很，何必再补充？”满座人大笑。司马子如和高季式请他喝酒，由于喝得太多，醉死了。死时只有五十二岁。高祖亲自来向遗体告别。子如叩头，向高祖请罪。高祖说：“你折断了我的右臂，必须找一个来还给我。”子如推举魏收，季式荐引陈元康，以接替孙搴。朝廷赠搴仪同三司、吏部尚书、青州刺史。</p>
-<div class='pn'><p class='pre'>上一节：<a href='魏兰根传-白话.html'>魏兰根传</a></p><p class='next'>下一节：<a href='陈元康传-白话.html'>陈元康传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='魏兰根传-白话.html'>魏兰根传</a></p><p class='next'>下一节：<a href='陈元康传-白话.html'>陈元康传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

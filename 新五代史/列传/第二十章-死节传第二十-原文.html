@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -192,8 +219,9 @@
 </p><p>三月，仁赡病甚，已不知人，其副使孙羽诈为仁赡书，以城降。世宗命舁仁赡至帐前，叹嗟久之，赐以玉带、御马，复使入城养疾，是日卒。制曰：“刘仁赡尽忠所事，抗节无亏，前代名臣，几人可比！予之南伐，得尔为多。”乃拜仁赡检校太尉兼中书令、天平军节度使。仁赡不能受命而卒，年五十八。
 </p><p>世宗遣使吊祭，丧事官给，追封彭城郡王，以其子崇赞为怀州刺史，赐庄宅各一区。李景闻仁赡卒，亦赠太师。寿州故治寿春，世宗以其难克，遂徙城下蔡，而复其军曰忠正军，曰：“吾以旌仁赡之节也。”
 </p><p>呜呼，天下恶梁久矣！然士之不幸而生其时者，不为之臣可也，其食人之禄者，必死人之事，如彦章者，可谓得其死哉！仁赡既杀其子以自明矣，岂有垂死而变节者乎？今《周世宗实录》载仁赡降书，盖其副使孙羽等所为也。当世宗时，王环为蜀守秦州，攻之久不下，其力屈而降，世宗颇嗟其忠，然止于为大将军。视世宗待二人之薄厚而考其制书，乃知仁赡非降者也。自古忠臣义士之难得也！五代之乱，三人者，或出于军卒，或出于伪国之臣，可胜叹哉！可胜叹哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十九章-周臣传第十九-原文.html'>第十九章-周臣传第十九</a></p><p class='next'>下一节：<a href='第二十一章-死事传第二十一-原文.html'>第二十一章-死事传第二十一</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十九章-周臣传第十九-原文.html'>第十九章-周臣传第十九</a></p><p class='next'>下一节：<a href='第二十一章-死事传第二十一-原文.html'>第二十一章-死事传第二十一</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

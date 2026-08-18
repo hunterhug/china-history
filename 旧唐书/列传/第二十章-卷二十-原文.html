@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -201,8 +228,9 @@
 <p>　　四年，累迁中书侍郎。六年，正伦与御史大夫韦挺、秘书少监虞世南、著作郎 姚思廉等咸上封事称旨，太宗为之设宴，因谓曰：“朕历观自古人臣立忠之事，若 值明王，便得尽诚规谏，至如龙逢、比干，竟不免孥戮。为君不易，为臣极难。我 又闻龙可扰而驯，然喉下有逆鳞，触之则杀人。人主亦有逆鳞，卿等遂不避犯触， 各进封事。常能如此，朕岂虑有危亡哉！我思卿等此意，岂能暂忘？故聊设宴乐也。” 仍并赐帛有差。寻加散骑常侍，行太子右庶子，兼崇贤馆学士。太宗谓曰：“国之 储副，自古所重，必择善人为之辅佐。今太子年在幼冲，志意未定，朕若朝夕见之， 可得随事诫约。今既委以监国，不在目前，知卿志怀贞悫，能敦直道，故辄辍卿于 朕，以匡太子，宜知委任轻重也。”十年，复授中书侍郎，赐爵南阳县侯，仍兼太 子左庶子。正伦出入两宫，参典机密，甚以干理称。时太子承乾有足疾，不能朝谒， 好昵近群小。太宗谓正伦曰：“我兒疾病，乃可事也。但全无令誉，不闻爱贤好善， 私所引接，多是小人，卿可察之。若教示不得，须来告我。”正伦数谏不纳，乃以 太宗语告之，承乾抗表闻奏。太宗谓正伦曰：“何故漏泄我语？”对曰：“开导不 入，故以陛下语吓之，冀其有惧，或当反善。”帝怒，出为谷州刺史，又左授交州 都督。后承乾构逆，事与侯君集相连，称遣君集将金带遗正伦，由是配流驩州。显 庆元年，累授黄门侍郎，兼崇贤馆学士，寻同中书门下三品。二年，兼度支尚书， 仍依旧知政事。俄拜中书令，兼太子宾客、弘文馆学士，进封襄阳县公。三年，坐 与中书令李义府不协，出为横州刺史，仍削其封邑。寻卒。有集十卷行于代。 </p>
 <p>　　史臣曰：王珪履正不回，忠谠无比，君臣时命，胥会于兹。《易》曰：“自天 祐之，吉无不利。”叔玠有焉。戴胄两朝仕官，一乃心力，刑无僭滥，事有箴规。 虽学术不能求备，而匡益自可济时，亦所谓巧于任大矣。文本文倾江海，忠贯雪霜， 申慈父之冤，匡明主之业，及委繁剧，俄致暴终。《书》曰：“小心翼翼，昭事上 帝。”所谓忧能伤人，不复永年矣。洎羲而下，登清要者数十人。积善之道，焉可 忽诸？正伦以能文被举，以直道见委，参典机密，出入两宫，斯谓得时。然被承乾 金带之讥，孰与夫薏苡之谤，士大夫慎之。 </p>
 <p>　　赞曰：五灵嘉瑞，出系汙隆。人中麟凤，王、戴诸公。动必由礼，言皆匡躬。 献规纳谏，贞观之风。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p><p class='next'>下一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p><p class='next'>下一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

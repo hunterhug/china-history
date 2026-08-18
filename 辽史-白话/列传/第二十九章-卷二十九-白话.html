@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -181,8 +208,9 @@
 </p><p>大康元年(1075)，任同知南院宣徽使，迁北面林牙。秘密上奏称乙辛因为皇太子主持国政，心中不安，与张孝杰多次来来往往，恐怕会有阴谋，危害太子。皇上领悟，出贬乙辛为中京留守。适逢乙辛生日，皇上派近臣耶律白斯本赐给物品祝寿，乙辛于是私下嘱托他向皇上表白“：我发现奸臣在朝中当权，皇上孤立危急。我人虽在外，私下里非常担心。”白斯本回京，如实奏闻。皇上派人赐给乙辛车子，晓谕他说：“不必担心不受重用，很快就会召你回京了。”从此反而疑心岩寿，将他出贬为顺义军节度使。
 </p><p>乙辛再度入京任枢密使，将岩寿流放到乌隗路，终身服劳役。岩寿尽管遭到斥逐，心中总是忧虑国家大局，时人对他说：“以狼牧羊，何能久长！”三年(1077)，乙辛诬陷岩寿参与谋划废父立子之事，将他抓回来杀掉了，年四十九岁。
 </p><p>乾统年间，天祚帝追赠他为同中书门下平章事，在宜福殿为他绘制画像。岩寿清廉正直，在朝廷上犯颜直谏，据理力争，经常触犯乙辛，因此遭了杀身之祸。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十八章-卷二十八-白话.html'>第二十八章-卷二十八</a></p><p class='next'>下一节：<a href='第三十章-卷三十-白话.html'>第三十章-卷三十</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十八章-卷二十八-白话.html'>第二十八章-卷二十八</a></p><p class='next'>下一节：<a href='第三十章-卷三十-白话.html'>第三十章-卷三十</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

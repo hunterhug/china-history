@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -263,8 +290,9 @@
 </p><p>四月，宇文泰北巡。七月，渡北河。魏恭帝封宇文泰儿子宇文直为秦郡公，宇文招为正平公。
 </p><p>九月，宇文泰有病，回兵至云阳，命令中山公宇文护受遗命辅助嗣子。十月初四，宇文泰死于云阳宫，送回长安发丧，享年五十。十二月十四日，葬于成陵，谥号“文公”。当孝闵帝受禅继皇帝位后，追尊号为文王，建庙号称太祖。武成元年(559)，追尊号为文皇帝。
 </p><p>周文帝宇文泰知人善任，从谏如流，崇尚儒术，善于处理政事，他的恩德和信誉都为众人所深知。他能够驾驭英雄豪杰，凡是见到他的人，都愿意为他效命。沙苑之战时所俘虏的敌军，他释放后加以重用，在河桥之战中，把他们作为战士，他们都死力作战。众将出征时，他都教给作战方略，无不克敌制胜。他生性朴素，不喜欢虚假浮夸，常常以反对当时习俗提倡复古作为自己的初衷。</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷八-白话.html'>卷八</a></p><p class='next'>下一节：<a href='卷十-白话.html'>卷十</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='卷八-白话.html'>卷八</a></p><p class='next'>下一节：<a href='卷十-白话.html'>卷十</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

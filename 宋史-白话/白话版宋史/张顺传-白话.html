@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>张顺传<span style='font-size:small'> 白话</span></h1>
 <p>张顺，是民兵部将。襄阳被围困五年，宋朝探知襄阳西北一条河叫清泥河，发源于均州、房州，就地制造轻便船一百艘，把三艘船连起来成为一舫，中间一艘船装载货物，左右两船则空底而掩盖。出重赏招募不怕死的人，得到三千人。求访将领，得到张顺和张贵，俗称张贵叫“矮张”，称张顺叫“竹园张”，都智勇双全，一向为诸将所折服，使他们任都统。发出命令说：“这次行动只有死而已，你们有人不是自己的本心，应当赶快离去，不要败了我的大事。”人人感动奋发。<BR><BR>　　汉水刚涨，发船一百艘，悄悄进入团山下。过了两天，进入高头港口，结成方阵，各船配置火枪、火炮、炽炭、巨斧、劲弩。晚上漏下三刻，船启碇出江，以红灯作为信号。张贵先登船，张顺殿后，乘风破浪，直抵重围之中。到磨洪滩以后，北军战船水军布满江面，无隙可入。众人乘着锐气共砍断铁索和聚集的木桩几百，转战一百二十里，黎明时抵达襄阳城下。城中断绝援助很久，听见救兵到来，人们争先恐后勇气百倍。等到停止战斗，惟独失去张顺。过了几天，有浮起的尸体溯流而上，披甲戴盔，手持弓箭，一直抵达浮梁，一看正是张顺，身中四枪六箭，怒气勃勃像活着一样。诸军惊异地把他看作神仙，构造坟墓殓尸埋葬，建立庙宇祭祀他。</p>
-<div class='pn'><p class='pre'>上一节：<a href='滕茂实传-白话.html'>滕茂实传</a></p><p class='next'>下一节：<a href='张贵传-白话.html'>张贵传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='滕茂实传-白话.html'>滕茂实传</a></p><p class='next'>下一节：<a href='张贵传-白话.html'>张贵传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

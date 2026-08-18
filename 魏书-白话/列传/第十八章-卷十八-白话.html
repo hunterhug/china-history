@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -247,8 +274,9 @@
 </p><p>吕洛拔，是代郡人。曾祖渴侯，昭成帝时率领五千产人归顺本朝。祖父吕肥，是濮阳太守。父亲匹知，世祖时任西部长、封荣阳公。洛拔以刚勇闻名，高宗末年任平原镇都将。刘或的徐州刺史薛安都归顺，请求援助。有韶令派遣尉元率领军队救援他，洛拔跟随尉元进入彭城。刘或的将领张永派遣部将王茂之率领五千士卒前往武原，救助他的运输车辆。尉元派遣洛拔率领骑兵前往武原攻打他。搏斗两天，亲手杀敌九人，夺取贼军运输车辆二百余辆，牛二百五十头。于是共同攻打张永，大败他。赐爵成武侯，加授建义将军。五十六岁时去世。
 </p><p>长子文祖，显祖因他是功臣的儿子，选补为龙牧曹奏事中散。因饲养的牲畜没有增长，被判刑流放到武川镇。后来文祖用旧语翻译注解《皇诰》，辞义流畅，被越级任命为阳平太守。还未就任，改任外都曹奏事中散。后来因事获罪伏法。
 </p><p>史臣曰：仁者之言，必然利于众人。参金堕之战，大量杀戮俘虏，是鱼叁的罪过吗?塞回是外族人，因有智力见识而得到重用，官职等同于当时本族的俊杰，必定是有理由的。安颉俘获赫连昌，挫败义隆的军队，成为名将，是不容易的。楼伏连、丘堆、娥清，都因为壮健勇猛，征战讨伐处处获胜。刘尼忠于国家、辅佐君主，岂衹是勇猛?奚眷凭用兵的谋略获得官位，可惜不能善终。车伊洛从远方诚心归顺朝廷，与普通的西方少数民族不同啊。宿石等人都忠诚、勇敢有谋略，有将帅的才能，凭个人努力获得显要的地位，哪裹是无缘无故的呢。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十七章-卷十七-白话.html'>第十七章-卷十七</a></p><p class='next'>下一节：<a href='第十九章-卷十九-白话.html'>第十九章-卷十九</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十七章-卷十七-白话.html'>第十七章-卷十七</a></p><p class='next'>下一节：<a href='第十九章-卷十九-白话.html'>第十九章-卷十九</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>柴通玄传<span style='font-size:small'> 白话</span></h1>
 <p>柴通玄，字又玄，陕州阌乡人。在承天观做道士。年纪有一百多岁，善长辟谷长啸的修养功夫，只饮酒。说唐末的事，历历可听。太宗召他入朝，他恳求回到承天观。真宗即位后，他多次到京城。召他去奏对，他所说的话没有修饰，很多是修身慎行的道理。真宗到汾阴祭祀，召他到行宫，让他坐着，问他无为之治的要领。他所住的道观是唐的轩游宫，有唐明皇的诗石和所写的《道德经》二座碑。真宗做两首韵诗赐给他，并赏给他茶、药、束帛。下诏为他修道院，免去他的田租，给他的两个弟子度牒。第二年春，柴通玄写遗表，自称是罗山太一洞主，派弟子张守元、李守一到朝中，献上龟、鹤；又召来官僚、士大夫、百姓谈生死的关键。半夜，他洗漱完毕，在庭院中点上香，望着皇宫的方向坐着，将近天亮时去世。<BR><BR>　　当时真宗又召河中平民刘异、华山隐士郑隐、敷水隐士李宁。刘异七十多岁，讲授经传，亲自耕田以自给自足。皇上任命他为大理评事，他辞官，皇上赐给他绿袍、笏、银带。郑隐以经术为业，遇到一位道士传给他辟谷炼气的修养方法，他修炼的十分灵验，在华山王刁岩住了二十多年，冬夏常穿皮裘。李宁精通药术，老而不衰，常把药施舍给人，人们用金、帛回报他，他拒绝接受。景德中期，万安太后患病，用驿传召他入朝给太后治病，他还没到而太后去世。大中祥符四年(1011)，皇上赐号李宁为正晦先生。皇上还做诗赐给刘异、郑隐、李宁，赏给他们茶、药、缯帛。只有郑隐没接受赏赐的物品。</p>
-<div class='pn'><p class='pre'>上一节：<a href='刘翰传-白话.html'>刘翰传</a></p><p class='next'>下一节：<a href='庞安时传-白话.html'>庞安时传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='刘翰传-白话.html'>刘翰传</a></p><p class='next'>下一节：<a href='庞安时传-白话.html'>庞安时传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

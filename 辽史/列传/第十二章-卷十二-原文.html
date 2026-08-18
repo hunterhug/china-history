@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -193,8 +220,9 @@
 </p><p>耶律虎古，字海邻，六院夷离堇觌烈之孙。少颖悟，重然诺。保宁初，补御盏郎君。十年，使宋还，以宋取河东之意闻于上。燕王韩匡嗣曰：“何以知之？”虎古曰：“诸僣号之国，宋皆并收，惟河东未下。今宋讲武习战，意必在汉。”匡嗣力沮，乃止。明年，宋果伐汉。帝以虎古能料事，器之，乃曰：“吾与匡嗣虑不及此。”授涿州刺史。统和初，皇太后称制，召赴京师。与韩德让以事相忤，德让怒，取护卫所执戎仗击其脑，卒。子磨鲁古。
 </p><p>磨鲁古，字遥隐，有智识，善射。统和初，拜南面林牙。四年，宋侵燕，太后亲征。磨鲁古为前锋，手中流矢，拔而复进。太后既至，磨鲁古以创不能战，与北府宰相萧继先巡逻境上。累迁北院大王。六年，伐宋，为先锋，与耶律奴瓜破其将李忠吉于定州。以疾卒于军。
 </p><p>论曰：德让在统和间，位兼将相，其克敌制胜，进贤辅国，功业茂矣。至赐姓名，王齐、晋，抑有宠于太后而致然欤？宗族如德威平党项，涤鲁完宗祀，制心不苟合，家声益振，岂无所自哉！若勃古之忠，阳阿之孝，武白之直，亦彬彬乎一代之良臣矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十一章-卷十一-原文.html'>第十一章-卷十一</a></p><p class='next'>下一节：<a href='第十三章-卷十三-原文.html'>第十三章-卷十三</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十一章-卷十一-原文.html'>第十一章-卷十一</a></p><p class='next'>下一节：<a href='第十三章-卷十三-原文.html'>第十三章-卷十三</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

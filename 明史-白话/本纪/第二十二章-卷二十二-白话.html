@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -211,8 +238,9 @@
 </p><p>七月一日，皇帝生病。二日，罢免袁崇焕。十五日，封魏忠贤之孙魏鹏翼为安平伯。十八日，将孙慎行充军。二十三日，海盗进攻广东。当月，浙江发生大水灾。八月三日，加封魏良卿为太师，魏鹏翼为少师。五日，中极殿和建极殿完工。十二日，在乾清宫召见阁部、科道诸臣说魏忠贤、王体乾十分忠贞，一切大事都可以与他们商量。封魏忠贤之侄魏良栋为东安侯。二十日，皇帝病情加重。二十一日，在乾清宫死去。年仅二十三岁。在遗诏中说明由第五个弟弟信王朱由检继承皇位。
 </p><p>十月七日，奉上尊谥，庙号熹宗，葬在德陵。
 </p><p>评论：明自从世宗以后，纲纪逐渐衰颓，到神宗末年，已经废弛到极点了。虽有刚明英武之君，也难以振肃。又加上皇帝的庸懦，妇寺窃其根本，滥施淫刑，忠良惨遭横祸，万民离心，即使不想亡国，可又怎么办呢！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十一章-卷二十一-白话.html'>第二十一章-卷二十一</a></p><p class='next'>下一节：<a href='第二十三章-卷二十三-白话.html'>第二十三章-卷二十三</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十一章-卷二十一-白话.html'>第二十一章-卷二十一</a></p><p class='next'>下一节：<a href='第二十三章-卷二十三-白话.html'>第二十三章-卷二十三</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

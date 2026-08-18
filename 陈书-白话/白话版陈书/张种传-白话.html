@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>张种传<span style='font-size:small'> 白话</span></h1>
 <p>张种字士苗，吴郡人。其祖父张辩，为宋司空右长史、广州刺史。父亲张略，为梁太子中庶子、临海太守。<BR><BR>　　张种年少时性情恬静，居所高雅不俗，不随便与人交往，没有人登门拜访他，当时的人议论说：“宋朝称赞敷、演，梁朝嘉许卷、充，清淡无为学风高尚，种有他们的风格。”他任梁王府法曹，迁外兵参军，因父亲去世离职。服丧期满，任中军宣城王府主簿。张种四十多岁时，家境贫寒，要求任始丰县令，入任中卫西昌侯府西曹掾。那时武陵王任益州刺史，重新选拔府僚，以张种为征西东曹掾，张种以母老推辞，上表直言陈情，为有司上奏，因而免职。<BR><BR>　　侯景之乱时，张种侍奉其母东逃，好久才得以到达故里。不久母亲去世，当时张种五十岁，因哀伤过度瘦弱不堪，又加上年成不好，未能举办正式葬礼，服丧期虽满，但张种的衣食住行，还和丧期一样。侯景乱平，司徒王僧辩写状启奏皇上，起为贞威将军、治中从事史，并为其母加备葬礼，葬礼结束后，张种方才入仕。僧辩又以他年老，又无继承人，赐给他妾以及日常用具。<BR><BR>　　贞阳侯僭位，授任廷尉卿、太子中庶子。敬帝即位，任散骑常侍，迁御史中丞，兼前军将军。高祖受禅称帝，任他为太府卿。天嘉元年(560)，授职左民尚书。二年临时代管吴郡，不久征辟恢复原职。迁任侍中、兼步兵校尉，因公事免职，无职兼太常卿，不久正式担任太常卿。废帝即位，加兼右军将军，未正式拜官，改为兼弘善宫卫尉，又兼扬、东扬二州大中正。高宗即位，再任都官尚书，兼左骁骑将军，迁任中书令，骁骑、中正职务不变。因患病授任金紫光禄大夫。<BR><BR>　　张种深沉谦恭，气度不凡，时人皆认为他有宰相的气量。仆射徐陵曾上表直言让位于张种，说：“大臣张种心胸开阔情性沉密，精通文史，为东南显达英秀之人，朝廷视贤为亲，他心怀宏略，应居在臣上。”当时之人是如此推重他。太建五年(573)去世，时年七十岁，追赠特进，谥曰元子。<BR><BR>　　张种仁慈厚道清心寡欲，虽历居显位，而毫无家产，终日安闲自得，不以为忧。太建初年，其女封为始兴王妃，因他居所简陋，特赐一幢住宅，又多次赐给无锡、嘉兴县侯的俸禄。他曾到无锡看见一重囚关在狱内，当时天气寒冷，张种喊重囚出来晒太阳，便放了他，世祖大笑，而不追究责任。有诗文集十四卷。</p>
-<div class='pn'><p class='pre'>上一节：<a href='萧乾传-白话.html'>萧乾传</a></p><p class='next'>下一节：<a href='王固传-白话.html'>王固传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='萧乾传-白话.html'>萧乾传</a></p><p class='next'>下一节：<a href='王固传-白话.html'>王固传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

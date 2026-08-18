@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -208,8 +235,9 @@
 </p><p>三年春正月辛亥，契丹渠帅来朝。戊午，谒太庙。癸亥，亲耕籍田。辛未，司空、魏国公裴寂坐事免。二月戊寅，中书令、邢国公房玄龄为尚书左仆射，兵部尚书、检校侍中、蔡国公杜如晦为尚书右仆射，刑部尚书、检校中书令、永康县公李靖为兵部尚书，右丞魏徵为守秘书监，参预朝政。
 </p><p>夏四月辛巳，太上皇徙居大安宫。甲子，太宗始于太极殿听政。五月，周王元方薨。六月戊寅，以旱，亲录囚徒。遣长孙无忌、房玄龄等祈雨于名山大川，中书舍人杜正伦等往关内诸州慰抚。又令文武官各上封事，极言得失。已卯，大风折木。秋八月己巳朔，日有蚀之。薛延陀遣使朝贡。
 </p><p>九月癸丑，诸州置医学。冬十一月丙午，西突厥、高昌遣使朝贡。庚申，以并州都督李世勣为通汉道行军总管，兵部尚书李靖为定襄道行军总管，以击突厥。十二月戊辰，突利可汗来奔。癸未，杜如晦以疾辞位，许之。癸丑，诏建义以来交兵之处，为义士勇夫殒身戎阵者各立一寺，命虞世南、李伯药、褚亮、颜师古、岑文本、许敬宗、硃子奢等为之碑铭，以纪功业。是岁，户部奏言：中国人自塞外来归及突厥前后内附、开四夷为州县者，男女一百二十余万口。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-卷一-原文.html'>第一章-卷一</a></p><p class='next'>下一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-卷一-原文.html'>第一章-卷一</a></p><p class='next'>下一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

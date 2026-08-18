@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -241,8 +268,9 @@
 </p><p>“听说天造百姓，立君治理，皇帝治世，四海为公，兴衰系于功德，升降存乎其人。国家将亡，上天先降征兆，代谢无常，圣贤哲人知其变。我祖顺乘天命人心，登上了王位。但国运不常兴，夷族进犯中原，陷我洛地，占我江表。到了元兴年间，宗庙倾覆。你圣德钦明，神武照天下，宏扬大义，匡复我社稷，保我王室，重造我国家。内除国贼，外展宏图，诛巨奸于汉阳，斩逆臣于沂诸。平定西岷，肃清南越，安定江、湘，拓平樊、沔。你大军所指，伊、洛平定，树威于崤，敌猷归附，咸阳收复。青铜铭文所载，《诗》、《书》所咏，功劳之大，不能与你相比。于是偃武修文，实施德政，信用传天下，仁义播四方。周边夷族莫不颂你仁德，欢喜来朝。
 </p><p>“我观察符运，天之命数委实在你。五纬升度，除旧之象屡次出现；三光历数，昭示布新之吉祥。图谶预言，已很明白，加上上天赐你英姿龙颜和人君仪表，耀如日月，传称‘惟天为大，惟尧则之’。诗云：‘有命自天，命此文王’，‘或跃在渊者’，终享皇位；‘勋格天地’者，必创大业。昔日曹魏亡传位于我晋；今天命已改，晋朝气数已尽，该从金德传位于宋王。今派使府节、兼太保、散骑常侍、光禄大夫澹，兼太尉、尚书宣范送来皇帝印绶。禅让之礼，遵循唐舜、汉魏旧例。望你允答人神，君临天下，不负上天之厚望。”
 </p><p>刘裕上表推辞，晋帝已退位去了琅玡王府第，上书未到晋帝手中。于是陈留王虔嗣等二百七十人和宋府群臣，都上表劝进。刘裕不同意。太史令骆达陈上天文符瑞数十条，群臣又再三劝请，刘裕只好同意，正式称帝。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-卷一-白话.html'>第一章-卷一</a></p><p class='next'>下一节：<a href='第三章-卷三-白话.html'>第三章-卷三</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-卷一-白话.html'>第一章-卷一</a></p><p class='next'>下一节：<a href='第三章-卷三-白话.html'>第三章-卷三</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

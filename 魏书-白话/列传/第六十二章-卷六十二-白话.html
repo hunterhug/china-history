@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -204,8 +231,9 @@
 </p><p>文畅弟文略，袭爵梁郡王。武定末年，为抚军将军、光禄大夫。
 </p><p>史臣有言：魏太祖乘时而起，开创大魏王业。魏世祖以武功统一海内，魏高祖以文德革新天下。魏世宗以后，政道日亏一日。到了魏明皇时代，明皇幼小，女主掌权。开始于忠专横恣肆，接着元叉权重一时，手握赏罚大权，操纵生杀威势，大臣们的荣耀忧伤视其与他们关系的亲疏远近，高贵贫贱看其与他们的远离近合，以致出现附会他们的以子女姻亲为筹码，逢迎的以金银丝帛为门票。而且奸佞谄谀者把持朝政，以致为官忠诚勤勉者与赏嘉无缘，为官的只管大肆聚敛财物，得势者任意胡作非为。此时，四海之内，群情激愤，已大有人心思变的危险了。等到灵后拂逆朝政，在朝中大泄淫威。郑俨手运天机、口吐王制，李轨、徐纥忙迫以求先，元略、元徽鼓噪以争入。私利尽出，公道全亡，远近怨愤，天下鼎沸。国运倾覆的征兆，开始出现了。
 </p><p>尔朱荣处将帅之列，借手中兵力，恰遇肃宗猝死，民怨神怒，便产生匡颓拯弊的意图，帮助君主驱逐邪恶的想法，这是老天的旨意呀。当时，上下离心，文武解体，大家都企求忠义的声音，都听从齐桓、晋文之举措。劳不汗马，朝野心服，扶戴皇室，宗社有主，祀魏配天，不坏旧制。等到擒获葛荣，诛杀元颢，戮除邢杲，翦灭韩娄，丑奴、宝夤都在马市斩首。这众多贼魁，或据大魏一方，或僭立称号旗幡，人们说他们手握大魏皇符，暗自各谋帝业，并不是那些鼠窃狗盗之徒，干的是一城一聚的勾当。假如不是尔朱荣竭尽全力，扑杀大难，那就不知有几人称帝，几人称王了。这样，尔朱荣功勋勇烈，也已盛极一时了。而开始尔朱荣则静观时局，斜眼帝位；终而灵后、少帝沉流不反。河阴之下，朝廷官员，尽数被诛。这就是他得罪神人，终于被杀的原因。如果尔朱荣无奸忍之心，杀戮之失，修好德操仁义的风仪，那么彭、韦、伊、霍哪能与他的功劳相比。至于行迹被猜疑，终被杀戮，这就与蒯通献说于韩王的结局相类同了。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十一章-卷六十一-白话.html'>第六十一章-卷六十一</a></p><p class='next'>下一节：<a href='第六十三章-卷六十三-白话.html'>第六十三章-卷六十三</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第六十一章-卷六十一-白话.html'>第六十一章-卷六十一</a></p><p class='next'>下一节：<a href='第六十三章-卷六十三-白话.html'>第六十三章-卷六十三</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

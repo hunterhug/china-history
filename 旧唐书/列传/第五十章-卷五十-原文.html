@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -249,8 +276,9 @@
 <p>　　丘虽历要职，固守清俭，未尝受人馈遗，第宅舆马，称为敝陋。致仕之后，药 饵殆将不给。上闻而嘉叹，下制曰：“王丘夙负良材，累升茂秩，比缘疾疹，假以 优闲。闻其家道屡空，医药靡给，久此从宦，遂无余资。持操若斯，古人何远！且 优贤之义，方册所先，周急之宜，沮劝攸在。其俸禄一事已上，并宜全给，式表殊 常之泽，用旌贞白之吏。”天宝二年卒，赠荆州大都督。 </p>
 <p>　　史臣曰：有唐之兴，绵历年所，骨鲠清廉之士，怀忠抱义之臣，台省之间，驾 肩接武。但时有夷险，道有污隆，用与不用而已。睿、玄之世，若李杰、毕构、苏 珦、郑惟忠、王志愔、卢从愿、裴漼、王丘并位历亚台，名德兼著。如尹思贞、李 朝隐折李承嘉、窦怀贞，辱闾兴贵、赵常奴，诗人所谓不畏强御者也。解琬总兵朔 野，料敌如神，功遂身退，深知止足，兹亦有足多也。 </p>
 <p>　　赞曰：尚书亚台，京尹方伯。我朝重官，云谁称职？杰、构、珦、忠，能竭其 力。愔、愿、漼、丘，聿修厥德。贞蔑大僚，隐绳贵戚。琬驰令名，燕、蜀之北。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十九章-卷四十九-原文.html'>第四十九章-卷四十九</a></p><p class='next'>下一节：<a href='第五十一章-卷五十一-原文.html'>第五十一章-卷五十一</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第四十九章-卷四十九-原文.html'>第四十九章-卷四十九</a></p><p class='next'>下一节：<a href='第五十一章-卷五十一-原文.html'>第五十一章-卷五十一</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

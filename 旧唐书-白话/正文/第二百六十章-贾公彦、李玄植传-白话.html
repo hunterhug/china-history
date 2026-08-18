@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>第二百六十章-贾公彦、李玄植传<span style='font-size:small'> 白话</span></h1>
 <p>贾公彦，洛州永年县人。永徽年间，官做到太学博士。撰有《周礼义疏》五十卷、《仪礼义疏》四十卷。儿子贾大隐，官至礼部侍郎。<BR><BR>　　当时有赵州的李玄植，又向贾公彦学习《三礼》，撰有《三礼音义》流传于当世。玄植同时向王德韶研习《春秋左氏传》，而由齐威讲授《毛诗》，广博地涉猎汉代的历史以及老庄诸子的学说。贞观年间，升任太子文学、弘文馆直学士。高宗时，屡次被召见，与道士、和尚在皇帝面前讲解经书义理。玄植辩论很漂亮，申叙了规劝讽谏之意，高宗对他很是礼重。后来因事被牵累获罪，被贬为汜水县令，逝世于任上。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二百五十九章-张士衡传-白话.html'>第二百五十九章-张士衡传</a></p><p class='next'>下一节：<a href='第二百六十一章-张后胤传-白话.html'>第二百六十一章-张后胤传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二百五十九章-张士衡传-白话.html'>第二百五十九章-张士衡传</a></p><p class='next'>下一节：<a href='第二百六十一章-张后胤传-白话.html'>第二百六十一章-张后胤传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

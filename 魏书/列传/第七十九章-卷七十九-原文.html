@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -328,8 +355,9 @@
 </p><p>世宗、肃宗时，豫州人柳俭、殿中将军关文备、郭安兴并机巧。洛中制永宁寺九层佛图，字兴为匠也。
 </p><p>高祖时，有范宁兒者善围棋。曾与李彪使萧赜，赜令江南上品王抗与宁兒。制胜而还。又有浮阳高光宗善樗蒲。赵国李幼序、洛阳丘何奴并工握槊。此盖胡戏，近入中国，云胡王有弟一人遇罪，将杀之，弟从狱中为此戏以上之，意言孤则易死也。世宗以后，大盛于时。
 </p><p>史臣曰：阴阳卜祝之事，圣哲之教存焉。虽不可以专，亦不可得而废也。徇于是者不能无非，厚于利者必有其害。诗书礼乐，所失也鲜，故先王重其德；方术伎巧，所失也深，故往哲轻其艺。夫能通方术而不诡于俗，习伎巧而必蹈于礼者，几于大雅君子。故昔之通贤，所以戒乎妄作。晁崇、张渊、王早、殷绍、耿玄、刘灵助皆术艺之士也。观其占候卜筮，推步盈虚，通幽洞微，近知鬼神之情状。周澹、李脩、徐謇、王显、崔彧方药特妙，各一时之美也。蒋少游以剞劂见知，没其学思，艺成为下，其近是乎？</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十八章-卷七十八-原文.html'>第七十八章-卷七十八</a></p><p class='next'>下一节：<a href='第八十章-卷八十-原文.html'>第八十章-卷八十</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第七十八章-卷七十八-原文.html'>第七十八章-卷七十八</a></p><p class='next'>下一节：<a href='第八十章-卷八十-原文.html'>第八十章-卷八十</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

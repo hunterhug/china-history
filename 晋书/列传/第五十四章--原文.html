@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -224,8 +251,9 @@
 </p><p>孜敬为人剽锐，果于行事。昔与佺期劝殷仲堪杀殷顗，仲堪不从，孜敬拔刃而起，欲自己出取之，仲堪苦禁乃止。及为梁州刺史，常怏怏不满其志。经襄阳，见鲁宗之侍卫皆佺期之旧也，孜敬愈愤，见于辞色。宗之参军刘千期于座面折之，因大发怒，抽剑刺千期立死。宗之表而斩之。思平、尚保后亦以罪诛，杨氏遂灭。
 </p><p>史臣曰：生灵道断，忠贞路绝，弃彼弊冠，崇兹新履。牢之事非其主，抑亦不臣，功多见疑，势陵难信，而投兵散地，二三之甚。若夫司牧居愆，方隅作戾，口顺勤王，心乖抗节。王恭鲠言时政，有昔贤之风。国宝就诛，而晋阳犹起。是以仲堪侥幸，佺期无状，雅志多隙，佳兵不和，足以亡身，不足以静乱也。
 </p><p>赞曰：孝伯怀功，牢之总戎。王因起衅，刘亦惭忠。殷杨乃武，抽旆争雄。庾君含怨，交斗其中。猗欤群采，道睽心异。是曰乱阶，非关臣事。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十三章--原文.html'>第五十三章-</a></p><p class='next'>下一节：<a href='第五十五章--原文.html'>第五十五章-</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第五十三章--原文.html'>第五十三章-</a></p><p class='next'>下一节：<a href='第五十五章--原文.html'>第五十五章-</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

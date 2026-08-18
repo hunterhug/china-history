@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>蠕蠕公主郁久闾氏传<span style='font-size:small'> 白话</span></h1>
 <p>蠕蠕公主，是蠕蠕国君郁久闾阿那瞔的女儿。当时蠕蠕强大，和西魏通婚和好，准备联合出兵攻打东魏。神武帝高欢很担心，便让杜弼出使蠕蠕，替大儿子向蠕蠕公主求婚。阿那瞔说“：如果高王爷自己娶亲我就答应。”神武帝犹豫不决。尉景和武明皇后以及文襄帝都一起劝他答应，他便听从了。武定三年(545)，派慕容俨前去致聘礼，号称“蠕蠕公主”。八月，神武帝把她迎接到下馆。阿那瞔让他的弟弟秃突佳去送女儿，并且进行酬答，阿那瞔还特意关照他：“等见到外孙出世，然后再回国。”公主性格严肃刚毅，一生中不肯讲汉人语言。神武帝曾经因为有病，没有住到公主的卧房，秃突佳便十分抱怨并生气，神武帝只得从大殿上带病来和公主同住。他对公主护卫得这样严紧。神武帝死后，文襄帝依照蠕蠕国的规矩，把公主作为妻子，和她生了一个女孩。</p>
-<div class='pn'><p class='pre'>上一节：<a href='齐武明皇后娄氏传-白话.html'>齐武明皇后娄氏传</a></p><p class='next'>下一节：<a href='彭城太妃尔朱氏传-白话.html'>彭城太妃尔朱氏传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='齐武明皇后娄氏传-白话.html'>齐武明皇后娄氏传</a></p><p class='next'>下一节：<a href='彭城太妃尔朱氏传-白话.html'>彭城太妃尔朱氏传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

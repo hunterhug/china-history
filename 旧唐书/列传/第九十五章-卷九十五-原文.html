@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -231,8 +258,9 @@
 <p>　　元济至京，宪宗御兴安门受浮，百僚楼前称贺，乃献庙社，徇于两京，斩之于 独柳，时年三十五。其夜失其首。妻沈氏，没入掖庭；弟二人、子三人，流于江陵 诛之；判官刘协庶七人皆斩。光、蔡等州平，始复为王土矣。 </p>
 <p>　　史臣曰：治乱，势也，势乱不能卒治。长源以法绳骄军，祸不旋踵；则董公之 宽柔不无谓。古之名将，以阴谋怨望，鲜全其族者。董秦始奋忠义，多长者言，宜 其显赫，及失意挟邪，俄被淮阴之戮，惜哉！吴少诚为希烈之乱胎，虽谋夺其军， 及嗣而灭。而元济效希烈之狂悖，谓无天地，人之凶险，一至于斯！是知王者御治 之道，其可忽诸！ </p>
 <p>　　赞曰：圣哲之君，慎名与器。不轨之臣，得宠则戾。董怨而族，吴悖而菹。好 乱乐祸，可监前车。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第九十四章-卷九十四-原文.html'>第九十四章-卷九十四</a></p><p class='next'>下一节：<a href='第九十六章-卷九十六-原文.html'>第九十六章-卷九十六</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第九十四章-卷九十四-原文.html'>第九十四章-卷九十四</a></p><p class='next'>下一节：<a href='第九十六章-卷九十六-原文.html'>第九十六章-卷九十六</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

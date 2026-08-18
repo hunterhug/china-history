@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -185,8 +212,9 @@
 </p><p>五年春，如春州。夏六月甲子朔，驻跸纳葛泺。己丑，以南院枢密使萧阿速为北府宰相，枢密副使耶律乙辛南院枢密使，惕隐查葛辽兴军节度使，鲁王谢家奴武定军节度使，东京留守吴王贴不西京留守。秋七月丁酉，以乌古敌烈详稳萧谟鲁为左夷离毕。冬十月壬子朔，幸南京，祭兴宗于嘉宁殿。十一月，禁猎。十二月壬戌，以北院林牙奚马六为右夷离毕，参知政事吴湛以弟洵冒入仕籍，削爵为民。是年，上御百福殿，放进士梁援等百一十五人。
 </p><p>六年春，如鸳鸯泺。夏五月戊子朔，监修国史耶律白请编次御制诗赋，仍命白为序。己酉，驻跸纳葛泺。六月戊午朔，以东北路女直详稳高家奴为惕隐。壬戌，遣使录囚。丙寅，中京置国子监，命以时祭先圣先师，癸未，以隋王仁先为北院大王，赐御制诰。冬十月甲子，驻跸藕丝淀。
 </p><p>七年春三月庚戌，如春州。以耶律乙辛知北院枢密使事。夏四月辛未，禁吏民畜海东青鹘。五月丙戌，清暑永安山。丙午，谒庆陵。辛亥，杀东京留守陈王萧阿剌。六月壬子朔，日有食之。甲子，以萧谟鲁为顺义军节度使。丁卯，幸弘义、永兴、崇德三宫致祭。射柳，赐宴，赏赉有差。戊辰，行再生礼，复命群臣分朋射柳。丁丑，以楚国王涅鲁古知南院枢密使事。秋九月丁丑，驻跸藕丝淀。冬十二月壬午，以知黄龙府事耶律阿里只为南院大王。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p><p class='next'>下一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p><p class='next'>下一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -213,8 +240,9 @@
 <p>　　陇西王博乂，高祖兄子也。高祖长兄曰澄，次曰湛，次曰洪，并早卒。武德初， 追封澄为梁王，湛为蜀王，洪为郑王。澄、洪并无后，博乂即湛第二子也。武德元 年受封。高祖时，历宗正卿、礼部尚书，加特进。博乂有妓妾数百人，皆衣罗绮， 食必粱肉，朝夕纟玄歌自娱，骄侈无比。与其弟渤海王奉慈俱为高祖所鄙，帝谓曰： “我怨仇有善，犹擢以不次，况于亲戚而不委任？闻汝等唯昵近小人，好为不轨， 先王坟典，不闻习学。今赐绢二百匹，可各买经史习读，务为善事。”咸亨二年薨， 赠开府仪同三司、荆州都督，谥曰恭。奉慈，武德初，封渤海王。显庆中，累迁原 州都督，薨，谥曰敬。 </p>
 <p>　　史臣曰：无私于物，物亦公焉。高祖才定中原，先封疏属，致庐江为叛，神通 争功，封德彝论之于前，房玄龄讥之于后。若河间机谋深沉，识度弘远，纵虚舟而 降萧铣，饮妖血而平公祏，入朝定君臣之分，卖第为子孙之谋，善始令终，论功行 赏，即无私矣。或问曰：“水变为血，信妖矣；竟成功而无咎者，何也？”答曰： 河间节贯神明，志匡宗社，故妖不胜德明矣。道宗军谋武勇，好学下贤，于群从之 中，称一时之杰。无忌、遂良衔不协之素，致千载之冤。永徽中，无忌、遂良忠而 获罪，人皆哀之。殊不知诬陷刘洎、吴王恪于前，枉害道宗于后，天网不漏，不得 其死也宜哉！ </p>
 <p>　　赞曰：疏属尽封，启乱害公。河间孝恭，独称军功。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p><p class='next'>下一节：<a href='第十一章-卷十一-原文.html'>第十一章-卷十一</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p><p class='next'>下一节：<a href='第十一章-卷十一-原文.html'>第十一章-卷十一</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

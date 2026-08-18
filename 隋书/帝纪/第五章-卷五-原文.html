@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -184,8 +211,9 @@
 </p><p>天祸隋国，大行太上皇遇盗江都，酷甚望夷，衅深骊北。悯予小子，奄逮丕愆，哀号承感，心情糜溃，仰惟荼毒，仇复靡申，形影相吊，罔知启处。相国唐王，膺期命世，扶危拯溺，自北徂南，东征西怨，总九合于一匡，决百胜于千里，纠率夷夏，大庇氓黎，保乂朕躬，繄王是赖。德侔造化，功格苍旻，兆庶归心，历数斯在，屈为人臣，载违天命。在昔虞夏，揖让相推，苟非重华，谁堪命禹！当今九服崩离，三灵改卜，大运去矣，请避贤路，兆谋布德，顾己莫能，私僮命驾，须归籓国。予本代王，及予而代，天之所废，岂期如是！庶凭稽古之圣，以诛四凶，幸值惟新之恩，预充三恪。雪冤耻于皇祖，守禋祀为孝孙，朝闻夕殒，及泉无恨，今遵故事，逊于旧邸。庶官群辟，改事唐朝，宜依前典，趣上尊号。若释重负，感泰兼怀，假手真人，俾除丑逆。济济多士，明知朕意。
 </p><p>仍敕有司，凡有表奏，皆不得以闻。是日，上逊位于大唐，以为酅国公。武德二年夏五月崩，时年十五。
 </p><p>史臣曰：恭帝年在幼冲，遭家多难，一人失德，四海土崩。群盗蜂起，豺狼塞路，南巢遂往，流彘不归。既钟百六之期，躬践数终之运，讴歌有属，笙钟变响，虽欲不遵尧舜之迹，其庸可得乎！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

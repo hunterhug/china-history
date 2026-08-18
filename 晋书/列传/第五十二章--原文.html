@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -248,8 +275,9 @@
 </p><p>初，桓玄篡位，帝出宫，广陪列，悲动左右。及刘裕受禅，恭帝逊位，广独哀感，涕泗交流。谢晦见之，谓曰：“徐公将无小过也。”广收泪而言曰：“君为宋朝佐命，吾乃晋室遗老，忧喜之事固不同时。”乃更歔欷。因辞衰老，乞归桑梓。性好读书，老犹不倦。年七十四，卒于家。广《答礼问》行于世。
 </p><p>史臣曰：古之王者咸建史臣，昭法立训，莫近于此。若夫原始要终，纪情括性，其言微而显，其义皎而明，然后可以茵蔼缇油，作程遐世者也。丘明即没，班马迭兴，奋鸿笔于西京，骋直词于东观。自斯已降，分明竞爽，可以继明先典者，陈寿得之乎！江汉英灵，信有之矣。允源将率之子，笃志典坟；绍统戚籓之胤，研机载籍。咸能综缉文，垂诸不朽，岂必克传门业，方擅箕裘者哉！处叔区区，励精著述，混淆芜舛，良不足观。叔宁寡闻，穿窬王氏，虽勒成一家，未足多尚。令升、安国有良史之才，而所著之书惜非正典。悠悠晋室，斯文将坠。邓粲、谢沉祖述前史，葺宇重轩之下，施床连榻之上，奇词异义，罕见称焉。习氏、徐公俱云笔削，彰善瘅恶，以为惩劝。夫蹈忠履正，贞士之心；背义图荣，君子不敢。而彦威迹沦寇壤，逡巡于伪国；野民运遭革命，流涟于旧朝。行不违言，广得之矣。
 </p><p>赞曰：陈寿含章，岩岩孤峙。彪溥励节，摛辞综理。王恧雅才，虞惭惇史。干孙抚翰，前良可拟。邓谢怀铅，异闻无纪。习亦研思，徐非绚美，咸被简册，共传遥祀。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十一章--原文.html'>第五十一章-</a></p><p class='next'>下一节：<a href='第五十三章--原文.html'>第五十三章-</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第五十一章--原文.html'>第五十一章-</a></p><p class='next'>下一节：<a href='第五十三章--原文.html'>第五十三章-</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

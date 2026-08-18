@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -204,8 +231,9 @@
 </p><p>耶律淳在天祚之世，历封大国之王，受赐金券，参拜皇上时赞礼之人不直呼其名。所享受的恩遇，一时无与伦比。当天祚帝流亡之时，耶律淳作为都元帅留守南京，难道就不能愤激大义以激励燕京百姓及众大臣，兴勤王之师，东拒金人从而迎回天祚吗？竟然自取帝位，是之谓篡。何况忍心贬天祚为王呢？
 </p><p>大石既已立耶律淳为帝而贬天祚为王，后又回归天祚身边。天祚以大义责备他，他竟自立为王而出走了。有幸凭借祖宗之余威及余智，在万里之外建号立国。尽管是寡母弱子，互相更迭继承，将近九十年，也实在是难能可贵了。
 </p><p>然而耶律淳与雅里、大石之自立为帝，均在天祚之时。有君王而又自立为君，怎么可行呢？诸葛武侯为汉献帝发丧，然后再立先主为帝，此举比起三人所为，真是不可同日而语了。故此记下他们的行事以为鉴戒。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十九章-卷二十九-白话.html'>第二十九章-卷二十九</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十九章-卷二十九-白话.html'>第二十九章-卷二十九</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

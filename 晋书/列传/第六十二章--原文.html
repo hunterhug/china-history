@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -298,8 +325,9 @@
 </p><p>澄之位至裕相国从事中郎，封南丰侯，卒于官，所著文集行于世。
 </p><p>史臣曰：夫赏好生于情，刚柔本于性，情之所适，发乎咏歌，而感召无象，风律殊制。至于应贞宴射之文，极形言之美，华林群藻罕或畴之。子安幼标明敏，少蓄清思，怀天地之寥廓，赋辞人之所遗，特构新情，岂常均之所企！太冲含豪历载，以赋《三都》，士安见而称善，平原睹而韬翰，匪惟高步当年，故以腾华终古。邹湛之持论，枣据之缘情，实南阳之人杰，盖颍川之时秀。季雅摛属遒迈，夙备成德，称为泉岱之珍，固其然矣。彦伯未能混迹光尘，而屈乎卑位，《释时》宏论，亦足见其志耳。季鹰纵诞一时，不邀名爵，《黄花》之什，浚发神府。仲初之文，风流可尚，擢秀士林，《扬都》之美，尤重时彦。曹毗沈研秘籍，踠足下僚，绮靡降神之歌，朗暢《对儒》之论。李充之《学箴》，信清壮也。袁宏《东征》、《名臣》之作，抑潘陆之亚。玄度学艺优瞻，笔削擅奇，降帝问于西堂，故其荣观也。君章耀湘中之宝，挺荆楚之材，梦鸟发乎精诚，岂独日者之蛟凤！长康矜能过实，谭谐取容，而才多逸气，故有三绝之目。仲静机思通敏，延誉清流，德舆西伐之计，取定于微指者矣。
 </p><p>赞曰：爻彖垂法，宫征流音。美哉群彦，扬蕤翰林。俱谐振玉，各擅锵金。子安、太冲，遒文绮烂。袁、庾、充、恺，缛藻霞焕。架彼辞人，共超清贯。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十一章--原文.html'>第六十一章-</a></p><p class='next'>下一节：<a href='第六十三章--原文.html'>第六十三章-</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第六十一章--原文.html'>第六十一章-</a></p><p class='next'>下一节：<a href='第六十三章--原文.html'>第六十三章-</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -214,8 +241,9 @@
 </p><p>庶人冠礼
 </p><p>古冠礼之存者惟士礼，后世皆推而用之。明洪武元年诏定冠礼，下及庶人，纤悉备具。然自品官而降，鲜有能行之者，载之礼官，备故事而已。
 </p><p>凡男子年十五至二十，皆可冠。将冠，筮日，筮宾，戒宾，俱如品官仪。是日，夙兴，张幄为房于厅事东，皆盛服。设盥于阼阶下东南，陈服于房中西牖下。席二在南，酒在服北次。幞头巾帽，各盛以盘，三人捧之，立于堂下西阶之西，南向东上。主人立于阼阶下，诸亲立于盥东，傧者立于门外以俟宾。冠者双紒袍，勒帛素履待于房。宾至，主人出迎，揖而入。坐定，冠者出于房，执事者请行事。宾之赞者取栉总篦幧头，置于席南端。宾揖冠者，即席西向坐。赞者为之栉，合紒施总，加幧头。宾降，主亦降，立于阼阶下。宾盥，主人揖让，升自西阶，复位。执事者进巾，宾降一等受之，诣冠者席前，东向。祝词同品官。祝讫，跪著巾。兴，复位。冠者兴，宾揖之入房，易服，深衣大带，出就冠席。宾盥如初。执事者进帽，宾降二等受之。进祝，跪，冠讫，兴，复位。揖冠者入房，易服，襕衫要带，出就冠席。宾盥如初。执事者进幞头，宾降三等受之。进祝，跪，冠讫，兴，复位。揖冠者入房，易公服出。执事者彻冠席，设醴席于西阶，南向。赞者酌醴出房，立于冠者之南。宾揖冠者即席，西向立。宾受醴，诣席前北面祝。冠者拜受，宾答拜。执事者进馔，冠者即席坐，饮食讫，再拜。宾答拜。冠者离席，立于西阶之东，南向。宾字之，如品官词。冠者拜，宾答拜。冠者拜父母，父母为之起。拜诸父之尊者，遂出见乡先生及父之执友。先生执友皆答拜。宾退，主人请礼宾，固请，乃入，设酒馔。宾退，主人酬宾赞，侑以币。礼毕，主人以冠者见于祠堂，再拜出。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p><p class='next'>下一节：<a href='第三十一章-卷三十一-原文.html'>第三十一章-卷三十一</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p><p class='next'>下一节：<a href='第三十一章-卷三十一-原文.html'>第三十一章-卷三十一</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

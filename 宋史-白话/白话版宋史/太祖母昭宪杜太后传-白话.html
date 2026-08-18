@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>太祖母昭宪杜太后传<span style='font-size:small'> 白话</span></h1>
 <p>太祖的母亲昭宪杜太后，是定州安喜人。杜太后的父亲杜爽，赠封为太师。杜太后的母亲范氏，生了五个儿子三个女儿，杜太后排行老大。成年后，嫁给宣祖。杜太后治家严谨果毅有礼法。生邕王光济、太祖、太宗、秦王廷美、夔王光赞、燕国公主、陈国公主。<BR><BR>　　后周显德年间，太祖任定国军节度使，杜太后被后周封为南阳郡太夫人。当太祖从陈桥回到京都时，有人跑来报告太后说“：点检已经做了皇帝。”杜太后说“：我儿一向胸怀大志，现在果然如此。”太祖即皇帝位，尊母亲为皇太后。太祖在朝堂上礼拜太后，大臣们都向太后表示恭贺。太后郁郁不乐，有个文臣劝她说“：臣听说过‘母以子贵’，现在您的儿子做了皇帝，您为什么不高兴呢？”太后说“：我听说‘为君难’，皇帝位在亿万兆民之上，如果治国有方，则皇位可尊；一旦国家失去驾驭，即使想当匹夫也不可能，这是我所忧虑的啊！”太祖再次向太后拜道“：我一定听从您的教导。”<BR><BR>　　建隆二年(961)，太后生病，太祖服侍太后用药进食不离左右。病情加重时，太后召赵普来听取遗命。太后问太祖说“：你知道你得到天下的原因吗？”太祖悲泣不能回答。太后再次问他，太祖说“：我所以能得天下，完全是父母积德所致啊！”太后说：“不对，只是由于周世宗让小孩子主宰天下之故啊！如果周氏有年长德高的皇帝，天下难道会成为你的吗？你去世后应把皇位传给你的弟弟。天下太大，头绪太多，如能立长者为君，真是国家的福气啊！”太祖叩头悲泣说“：我不敢不听你的教导。”太后对赵普说“：你一起记住我的话，不可违背。”命赵普在床榻前写下誓书，赵普在纸尾写上“臣普书”。把它藏在金匣里，命令谨慎小心的宫人掌管。<BR><BR>　　太后死于滋德殿，终年六十岁，谥号为明宪。葬于安陵，神位放在太庙附祭。乾德二年(964)，重赠谥号为昭宪，合葬于安陵。</p>
-<div class='pn'><p class='pre'>上一节：<a href='瀛国公纪(附二王纪)-白话.html'>瀛国公纪(附二王纪)</a></p><p class='next'>下一节：<a href='章献明肃刘皇后传-白话.html'>章献明肃刘皇后传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='瀛国公纪(附二王纪)-白话.html'>瀛国公纪(附二王纪)</a></p><p class='next'>下一节：<a href='章献明肃刘皇后传-白话.html'>章献明肃刘皇后传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -231,8 +258,9 @@
 </p><p>十四年正月丙午，田弘正及李师道战于阳谷，败之。二月戊午，师道伏诛。四月辛未，程异薨。丙子，裴度罢。七月戊寅，韩弘以汴、宋、毫、颍四州归于有司，弘朝于京师。己丑，群臣上尊号曰元和圣文神武法天应道皇帝。大赦，赐文武官阶、勋、爵。遣黜陟使于天下。辛卯，沂海将王弁杀其观察使王遂，处称留后。丁酉，河阳节度使令狐楚为中书侍郎、同中书门下平章事。八月己酉，韩弘为中书令。九月戊寅，王弁伏诛。十月壬戌，安南将杨清杀其都护李象古以反。癸酉，吐蕃寇盐州。十一月辛卯，朔方将史敬奉及吐蕃战于瓠芦河，败之。十二月乙卯，崔群罢。
 </p><p>十五年正月，宦者陈弘志等反。庚子，皇帝崩，年四十三，谥曰圣神章武孝皇帝。大中三年，加谥昭文章武大圣至神孝皇帝。
 </p><p>赞曰：德宗猜忌刻薄，以强明自任，耻见屈于正论，而忘受欺于奸谀。故其疑萧复之轻己，谓姜公辅为卖直，而不能容；用卢杞、赵赞，则至于败乱，而终不悔。及奉天之难，深自惩艾，遂行姑息之政。由是朝廷益弱，而方镇愈强，至于唐亡，其患以此。宪宗刚明果断，自初即位，慨然发慎，志平僭叛，能用忠谋，不惑群议，卒收成功。自吴元济诛，强籓悍将皆欲悔过而效顺。当此之时，唐之威令，几于复振，则其为优劣，不待较而可知也。及其晚节，信用非人，不终其业，而身罹不测之祸，则尤甚于德宗。鸣呼！小人之能败国也，不必愚君暗主，虽聪明圣智，苟有惑焉，未有不为患者也。昔韩愈言，顺宗在东宫二十年，天下阴受其赐。然享国日浅，不幸疾病，莫克有为，亦可以悲夫！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章-卷六·肃宗 代宗-原文.html'>第六章-卷六·肃宗 代宗</a></p><p class='next'>下一节：<a href='第八章-卷八·穆宗 敬宗 文-原文.html'>第八章-卷八·穆宗 敬宗 文</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第六章-卷六·肃宗 代宗-原文.html'>第六章-卷六·肃宗 代宗</a></p><p class='next'>下一节：<a href='第八章-卷八·穆宗 敬宗 文-原文.html'>第八章-卷八·穆宗 敬宗 文</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

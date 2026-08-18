@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>第一百一十章-邓景山传<span style='font-size:small'> 白话</span></h1>
 <p>邓景山，曹州人。以文吏见称。天宝年中(742)，邓景山从大理评事任至监察御史。至德初年(756)，被提升为青齐节度使，转为扬州长史，淮南节度。邓景山执政严谨干练，在朝廷闻名。任职四年，逢刘展作乱，招引平庐副大使田神功带兵马讨伐敌贼。田神功到达扬州，大肆掠夺百姓的物资财产，鞭笞发掘殆尽，商胡大食、波斯等地商人死去的达数千人。<BR><BR>　　上元二年(761)十月，邓景山进入朝廷，授予尚书左丞。太原尹、北京留守王思礼军中储藏丰实，其外又储备粮食万石，上奏请分割一部分送给京师。王思礼去世，让管崇嗣代替他。管崇嗣委任左右，为政失于宽松，数日之间，积蓄花费殆尽，只留存陈烂粮食万余石。皇上听说了这件事，当日诏令邓景山代替管崇嗣。邓景山到达太原，以整顿纲纪为己任，追查军吏中隐没财产者，众人畏惧。有一偏将抵赖罪过应当处以死刑，诸位将领都请求赎其罪过，邓景山不允许；偏将的弟弟请求自己代替哥哥去死，又不允许；弟弟请邓景山收纳一匹马用以抵消哥哥的罪行，邓景山准许偏将免去死罪。众人都很愤怒，对邓景山说：“我等人的命轻如一马吗？”军中众人愤怒，于是杀了邓景山。皇上认为邓景山领导失策，不再追究杀他的人的罪行，派使者抚谕士卒。军中人士于是奏请让都知兵马使、代州刺史辛云京为节度，皇上同意了。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百零九章-王思礼传-白话.html'>第一百零九章-王思礼传</a></p><p class='next'>下一节：<a href='第一百一十一章-张镐传-白话.html'>第一百一十一章-张镐传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第一百零九章-王思礼传-白话.html'>第一百零九章-王思礼传</a></p><p class='next'>下一节：<a href='第一百一十一章-张镐传-白话.html'>第一百一十一章-张镐传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

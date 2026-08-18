@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -224,8 +251,9 @@
 </p><p>事闻，武宗大喜，擢锐参将，分守安徽池、太、宁国及九江、铙、黄。锐荐郑岳、胡世宁，帝即召用。世宗立，论功，擢都督佥事，荫子世千户。再迁佥书左府，改南京右府。充总兵官，镇辽东。改督漕运，镇淮安。嘉靖十年为巡按御史李循义劾罢，逾年卒。
 </p><p>崔文，世为安庆卫指挥使，守城劳亚于锐。世宗录其功，超三阶为都指挥使，荫子世百户。江、淮多盗，廷议设总兵官，督上下江防，擢文都督佥事任之。改莅南京前府，专督操江、久之，卒。
 </p><p>赞曰：卫青等当承平时，不逞窃发，列城扰攘，赖其戡定。虽所敌非坚，然勇敢力战，功多可纪。或遂身膏原野，若何洪、刘雄、冯祯辈，壮节有足惜者。钺以心计定乱，锐以城守摧逆，干城之寄，克称庙谟。神英、曹雄亦有劳绩，而以附阉损名，且获罪。为将者其以跅弛为戒哉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十二章-卷六十二-原文.html'>第六十二章-卷六十二</a></p><p class='next'>下一节：<a href='第六十四章-卷六十四-原文.html'>第六十四章-卷六十四</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第六十二章-卷六十二-原文.html'>第六十二章-卷六十二</a></p><p class='next'>下一节：<a href='第六十四章-卷六十四-原文.html'>第六十四章-卷六十四</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

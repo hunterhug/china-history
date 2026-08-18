@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -213,8 +240,9 @@
 </p><p>齐神武霸政之初，承魏犹用永安五铢。迁鄴已后，百姓私铸，体制渐别，遂各以为名。有雍州青赤，梁州生厚、紧钱、吉钱，河阳生涩、天柱、赤牵之称。冀州之北，钱皆不行，交贸者皆以绢布。神武帝乃收境内之铜及钱，仍依旧文更铸，流之四境。未几之间，渐复细薄，奸伪竞起。文宣受禅，除永安之钱，改铸常平五铢，重如其文。其钱甚贵，且制造甚精。至乾明、皇建之间，往往私铸。鄴中用钱，有赤熟、青熟、细眉、赤生之异。河南所用，有青薄铅锡之别。青、齐、徐、兗、梁、豫州，辈类各殊。武平已后，私铸转甚，或以生铁和铜。至于齐亡，卒不能禁。
 </p><p>后周之初，尚用魏钱。及武帝保定元年七月，及更铸布泉之钱，以一当五，与五铢并行。时梁、益之境，又杂用古钱交易。河西诸郡，或用西域金银之钱，而官不禁。建德三年六月，更铸五行大布钱，以一当十，大收商估之利，与布泉钱并行。四年七月，又以边境之上，人多盗铸，乃禁五行大布，不得出入四关，布泉之钱，听入而不听出。五年正月，以布泉渐贱而人不用，遂废之。初令私铸者绞，从者远配为户。齐平已后，山东之人，犹杂用齐氏旧钱。至宣帝大象元年十一月，又铸永通万国钱。以一当十，与五行大布及五铢，凡三品并用。
 </p><p>高祖既受周禅，以天下钱货轻重不等，乃更铸新钱。背面肉好，皆有周郭，文曰“五铢”，而重如其文。每钱一千重四斤二两。是时钱既新出，百姓或私有熔铸。三年四月，诏四面诸关，各付百钱为样。从关外来，勘样相似，然后得过。样不同者，即坏以为铜，入官。诏行新钱已后，前代旧钱，有五行大布、永通万国及齐常平，所在用以贸易不止。四年，诏仍依旧不禁者，县令夺半年禄。然百姓习用既久，尚犹不绝。五年正月，诏又严其制。自是钱货始一，所在流布，百姓便之。是时见用之钱，皆须和以锡镴。锡镴既贱，求利者多，私铸之钱，不可禁约。其年，诏乃禁出锡镴之处，并不得私有采取。十年，诏晋王广听于扬州立五炉铸钱。其后奸狡稍渐磨鑢钱郭，取铜私铸，又杂以锡钱。递相放效，钱遂轻薄。乃下恶钱之禁。京师及诸州邸肆之上，皆令立榜，置样为准。不中样者，不入于市。十八年，诏汉王谅听于并州立五炉铸钱。是时江南人间钱少，晋王广又听于鄂州白纻山有铜筼处，锢铜铸钱。于是诏听置十炉铸钱。又诏蜀王秀听于益州立五炉铸钱。是时钱益滥恶，乃令有司，括天下邸肆见钱，非官铸者皆毁之，其铜入官。而京师以恶钱贸易，为吏所执，有死者。数年之间，私铸颇息。大业已后，王纲弛紊，巨奸大猾，遂多私铸，钱转薄恶。初每千犹重二斤，后渐轻至一斤。或翦铁鍱，裁皮糊纸以为钱，相杂用之。货贱物贵，以至于亡。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p><p class='next'>下一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p><p class='next'>下一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

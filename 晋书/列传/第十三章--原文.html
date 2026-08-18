@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -248,8 +275,9 @@
 </p><p>凯字弘绪，大司马齐王掾，参骠骑军事。肇字弘茂，太傅东海王掾。洛阳陷，兄弟相携南渡江。谟字弘范，征虏将军、吴郡内史。
 </p><p>史臣曰：汉相清静，见机于旷务；周史清虚，不嫌于尸禄。岂台揆之任，有异于常班者欤！濬冲善发谈端，夷甫仰希方外，登槐庭之显列，顾漆圆而高视。彼既凭虚，朝章已乱。戎则取容于世，旁委货财；衍则自保其身，宁论宗稷？及三方构乱，六戎藉手，犬羊之侣，锋镝如云。夷甫区区焉，佞彼凶渠，以求容贷，颓墙之陨，犹有礼也。平子肆情傲物，对镜难堪，终失厥生，自贻伊败。且夫衣服表容，珪璋范德，声移宫羽，采照山华，布武有章，立言成训。澄之箕踞，不已甚矣。若乃解衵登枝，裸形扪鹊，以此为达，谓之高致，轻薄是效，风流讵及。道睽将圣，事乖跰指，操情独往，自夭其生者焉。昔晏婴哭庄公之尸，乐令解愍怀之客，岂闻伯夷之风欤，懦夫能立志者也。
 </p><p>赞曰：晋家求士，乃构仙台，陵云切汉，山叟知材。濬冲居鼎，谈优务劣。夷甫两顾，退求三穴。神乱当年，忠乖曩列。平子陵侮，多于用拙。乐令披云，高天澄彻。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十二章--原文.html'>第十二章-</a></p><p class='next'>下一节：<a href='第十四章--原文.html'>第十四章-</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十二章--原文.html'>第十二章-</a></p><p class='next'>下一节：<a href='第十四章--原文.html'>第十四章-</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

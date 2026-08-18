@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>卫剌王宇文直传<span style='font-size:small'> 白话</span></h1>
 <p>卫剌王宇文直，字豆罗突。周文帝宇文泰的儿子，文宣叱奴皇后所生。魏恭帝三年，被封为秦郡公。武成初年(559)，晋封为卫国公，历任雍州牧、大司马、襄州总管。他是武帝宇文邕的同母兄弟，性情浮躁诡谲。因晋公宇文护掌握大权，他疏远武帝亲近宇文护。他南讨失败后，因恼怒宇文护对他的处罚，又劝说武帝除掉宇文护。武帝早有诛杀宇文护的想法，便与宇文直一起密谋这件事。宇文护被处死，武帝让齐王宇文宪任大冢宰。宇文直原来的希望破灭，又请求任大司马，想专擅大权，武帝了解他的心思，对他说：“你和齐王长幼有序，何必反而位居他之下呢？”任命他为大司徒。建德三年，他晋爵为王。<BR><BR>　　当初，武帝把宇文直的府第辟为东宫储君住的地方，让他自己再挑选住所。他看遍所有的官署府衙，没有称心满意的地方。到废除的陟屺佛寺，他想住在那里。齐王宇文宪对他说“：你的儿女已经长大，这座寺庙狭小，怎么能合适？”他说“：一身还不能自容，还顾得上什么儿女呢？”宇文宪听了感到奇怪而又生疑。他曾跟从武帝打猎，却任意胡来，武帝恼怒，当着众人的面责打他。从此，他的积怨越来越大。武帝到云阳宫，他在京谋反，攻打肃章门。司武尉迟运关闭宫门，他无法进入，退出京城。朝廷派兵到荆州将他擒获，免为庶人，囚禁在宫中，不久他又生异志，连同他的儿子十人都被诛杀，他的封国也被撤掉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='宇文庆传-白话.html'>宇文庆传</a></p><p class='next'>下一节：<a href='齐炀王宇文宪传-白话.html'>齐炀王宇文宪传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='宇文庆传-白话.html'>宇文庆传</a></p><p class='next'>下一节：<a href='齐炀王宇文宪传-白话.html'>齐炀王宇文宪传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

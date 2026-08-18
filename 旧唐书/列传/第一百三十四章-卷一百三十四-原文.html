@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -263,8 +290,9 @@
 <p>　　帝王之为治也，内有宰辅卿士，外有籓翰大臣，岂可令刑余之人，参预大政？ 况此辈皆朕之家臣也，比于人臣之家，则奴隶之流。恣横如此，罪恶贯盈，天命诛 之，罪岂能舍？横尸伏法，固不足矜，含容久之，亦所多愧。其第五可范已下，并 宜赐死。其在畿甸同华、河中，并尽底处置讫。诸道监军使已下，及管内经过并居 停内使，敕到并仰随处诛夷讫闻奏。已令准国朝故事，量留三十人，各赐黄绢衫一 领，以备宫内指使，仍不得辄有养男。其左右神策军，并令停废。 </p>
 <p>　　是日，诸司宦官百余人，及随驾凤翔群小又二百余人，一时斩首于内侍省，血 流涂地。及宫人宋柔等十一人，两街僧道与内官相善者二十余人，并笞死于京兆府。 内诸司一切罢之，皆归省寺。自是京城并无宦宫，天子每宣传诏命，即令宫人出入。 崔胤虽复仇快志，国祚旋亦覆亡，悲夫！ </p>
 <p>　　赞曰：崇墉大厦，壮其楹磶。殿邦御侮，亦俟明德。宵人意褊，动不量力。投 鼠败器，良堪太息。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百三十三章-卷一百三十三-原文.html'>第一百三十三章-卷一百三十三</a></p><p class='next'>下一节：<a href='第一百三十五章-卷一百三十五-原文.html'>第一百三十五章-卷一百三十五</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第一百三十三章-卷一百三十三-原文.html'>第一百三十三章-卷一百三十三</a></p><p class='next'>下一节：<a href='第一百三十五章-卷一百三十五-原文.html'>第一百三十五章-卷一百三十五</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

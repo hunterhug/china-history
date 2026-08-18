@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -213,8 +240,9 @@
 </p><p>光和中，檀石槐死，时年四十五，子和连代立。和连才力不及父，亦数为寇抄，性贪淫，断法不平，众畔者半。后出攻北地，廉人善弩射者射中和连，即死。其子骞曼年小，兄子魁头立。后骞曼长大，与魁头争国，众遂离散。魁头死，弟步度根立。自檀石槐后，诸大人遂世相传袭。
 </p><p>论曰：四夷之暴，其势互强矣。匈奴炽于隆汉，西羌猛于中兴。而灵、献之间，二虏迭盛。石槐骁猛，尽有单于之地；蹋顿凶桀，公据辽西之土。其陵跨中国，结患生人者，靡世而宁焉。然制御上略，历世无闻；周、汉之策，仅得中下。将天之冥数，以至于是乎？
 </p><p>赞曰：二虏首施，鲠我北垂。道暢则驯，时薄先离。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十七章-南匈奴列传-原文.html'>第八十七章-南匈奴列传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第八十七章-南匈奴列传-原文.html'>第八十七章-南匈奴列传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

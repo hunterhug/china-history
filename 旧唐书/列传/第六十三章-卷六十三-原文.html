@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -200,8 +227,9 @@
 <p>　　哀帝初嗣位，柳璨用事，全忠尝奏用牙将张廷范为太常卿，诸相议，枢曰： “廷范勋臣，幸有方镇节钺之命，何藉乐卿？恐非元帅梁王之旨。”乃持之不下。 俄而全忠闻枢言，谓宾佐曰：“吾常以裴十四器识真纯，不入浮薄之伍，观此议论， 本态露矣。”切齿含怒。柳璨闻全忠言，寻希旨罢枢相位，和陵祔享，拜尚书左仆 射。五月，责授朝散大夫、登州刺史，寻再贬泷州司户。六月十一日，行及滑州， 全忠遣人杀之于白马驿，投尸于河，时年六十五。 </p>
 <p>　　史臣曰：晋卿谨身莅事，足为纯臣，避寇全忠，固彰大节。然博达精审，岂不 知宽猛之道哉！奉林甫之旨，顺胥吏之意，悦附张倚，欺罔时君。生为重臣，谄林 甫之势也；殁改美谥，引元载之恩焉。或言晋卿不为巧宦者，诚不信也。冕力赞中 兴，名居大位，奉公抱义，可以致身；卖官度僧，是何为政？及其老也，贪冒尤深。 遵庆学术贞明，为国忠所出；恭俭谨密，遇萧华素知。位重行纯，老而弥笃，彼二 公固有惭德。向克荷堂构，不坠门风。枢因盗而振，盗憎而亡，宜哉！君子守道远 刑，盖虑此也。 </p>
 <p>　　赞曰：奥矣晋卿，贪哉裴冕。遵庆父子，及之者鲜。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十二章-卷六十二-原文.html'>第六十二章-卷六十二</a></p><p class='next'>下一节：<a href='第六十四章-卷六十四-原文.html'>第六十四章-卷六十四</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第六十二章-卷六十二-原文.html'>第六十二章-卷六十二</a></p><p class='next'>下一节：<a href='第六十四章-卷六十四-原文.html'>第六十四章-卷六十四</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

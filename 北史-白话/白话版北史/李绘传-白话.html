@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>李绘传<span style='font-size:small'> 白话</span></h1>
 <p>李绘，字敬文。六岁时就要求上学，家里人因为偶数的年龄按风俗为忌年，所以不允许，他就偷用他姐姐的笔墨书籍，一天不到，就学完了《急就章》，家人及外人都认为他是个非同寻常的孩子。长大后，相貌端庄魁伟，神情俊朗。他的五舅河间邢晏每次和他谈话，都感叹他的谈吐高雅深远，说道：“同他交谈如同罩着烟雾，像面对着珠宝，当宰相的希望就在这外甥身上了。”后来皇帝下敕令撰写五礼，李绘与太原人王瞴一起负责撰写军礼。魏静帝在显阳殿讲解《孝经》、《礼记》。李绘和堂弟李骞、裴伯茂、魏收、卢元明等都负责记录，他的记录简明扼要。他历任中书侍郎、丞相司马。每次满朝文武群集，在朝廷向皇帝上奏时，总是令李绘最先发言，为群官之首。他的声音言词动听，风度仪态优雅，听者都肃然起敬，文襄帝对他更加敬重，后来他又掌管礼仪制度。<BR><BR>　　武帝初年，他兼任散骑常侍，领队出使梁。梁武帝询问他高相现在在哪里？黑獭是什么样子？高相要做何打算？李绘对答清晰，梁武帝很满意。他和梁人漫谈氏族的问题，袁狎道：“都不如我为黄帝之后，是黄帝的十四姓子孙之一。”李绘道“：老兄的祖宗渊源流长，应可和车千秋分一个字吧！”举座大笑。前后出使的人都带货物请求交易，李绘独自清高，梁人敬重他的廉洁。<BR><BR>　　出使回来后，他官拜高阳内史。高阳郡境内原来有三头猛兽，经常危害百姓，李绘正准备修造关押它们的栅栏，它们就因为互相斗殴一起死在郡西。手下人都认为这是感化所致，劝他申奏皇上。李绘道“：猛兽因为互斗而死，出于偶然，把这件事据为自己的功劳，别人将看不起我。”终究没有答应，高阳过去有很多池塘湖泊，李绘到任后，湖水都干涸了。于是他设置了掌管农事的官员，专门负责鼓励劝种农桑的工作，开垦的耕田较过去增加了数倍，家家生活富裕，人人衣食丰足。瀛州三个郡的百姓都到州府，请求在郡街上为李绘立碑，神武帝往东巡视各郡县，在瀛州城西停马站了很久，派郎中陈元康去告知并慰问他。<BR><BR>　　河间太守崔谌，倚仗他弟弟崔暹有权势，向李绘索要麋鹿的角和鸽子羽毛。李绘写信答复道：“鸽子有六扇翅膀，飞起来能直上云霄；麋鹿有四条腿，跑起来能直到海里。下官肌肤松弛、身体虚弱，手脚迟钝，近不能追猎飞鸟走兽，远不能逢迎佞臣小人。”当时文襄帝派崔暹选拔司徒左长史，崔暹推荐李绘，以后却没有回音，都认为是因为这封信的缘故。<BR><BR>　　文襄帝即位后，普遍更换了山东各郡官员，专门下书被征召入朝的官员，只有李绘与清河太守辛术两个人。到了朝中，补任大将军从事中郎，升任为司马。文襄帝将以前司徒侯景的进贤冠赐给李绘道“：卿只要一心一意辅佐我，将任用卿为三公重臣，不要效仿侯景叛乱。”后来文宣嗣位，李绘仍被任命为丞相司马。天保初年，任命为司徒右长史。李绘品行端正持重，从不趋炎附势于当权之人，因此长期得不到提升。去世后，追赠为青州刺史，谥号“景”。</p>
-<div class='pn'><p class='pre'>上一节：<a href='崔仲方传-白话.html'>崔仲方传</a></p><p class='next'>下一节：<a href='李子雄传-白话.html'>李子雄传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='崔仲方传-白话.html'>崔仲方传</a></p><p class='next'>下一节：<a href='李子雄传-白话.html'>李子雄传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

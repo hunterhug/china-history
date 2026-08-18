@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -188,8 +215,9 @@
 </p><p>臣前为奸臣所陷，斥窜边郡。幸蒙召用，不敢隐默。恩赏明则贤者劝，刑罚当则奸人沮。二者既举，天下不劳而治。臣见耶律乙辛身出寒微，位居枢要，窃权肆恶，不胜名状。蔽先帝之明，诬陷顺圣，构害忠谠，败国罔上，自古所无。赖庙社之休，陛下获纂成业，积年之冤，一旦洗雪。正陛下英断，克成孝道之秋。如萧得里特实乙辛之党，耶律合鲁亦不为早辨，赖陛下之明，遂正其事。臣见陛下多疑，故有司顾望，不切推问。乙辛在先帝朝，权宠无比。先帝若以顺考为实，则乙辛为功臣，陛下岂得立耶？先帝黜逐嬖后，诏陛下在左右，是亦悔前非也。陛下讵可忘父雠不报，宽逆党不诛？今灵骨未获，而求之不切。《传》曰，圣人之德，无加于孝。昔唐德宗因乱失母，思慕悲伤，孝道益著。周公诛飞廉、恶来，天下大悦。今逆党未除，大冤不报，上无以慰顺考之灵，下无以释天下之愤。怨气上结，水旱为沴。臣愿陛下下明诏，求顺考之瘗所，尽收逆党以正邦宪，快四方忠义之心，昭国家赏罚之用，然后致治之道可得而举矣。谨别录顺圣升遐及乙辛等事，昧死以闻。
 </p><p>书奏不报，闻者莫不叹惋。乾统中，遥授静江军节度使，卒。子马哥，同中书门下平章事。
 </p><p>论曰：《易》言“履霜，坚冰至”，谨始也。使道宗能从岩寿、撒剌之谏，后何得而诬，太子何得而废哉？速撒、挞不也以忠言见杀，国欲无乱，得乎？石柳之书，亦幸出于乙辛即败之后，获行其说。有国家者，可不知人哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十八章-卷二十八-原文.html'>第二十八章-卷二十八</a></p><p class='next'>下一节：<a href='第三十章-卷三十-原文.html'>第三十章-卷三十</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十八章-卷二十八-原文.html'>第二十八章-卷二十八</a></p><p class='next'>下一节：<a href='第三十章-卷三十-原文.html'>第三十章-卷三十</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

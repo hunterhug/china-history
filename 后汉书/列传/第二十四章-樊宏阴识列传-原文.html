@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -212,8 +239,9 @@
 </p><p>兴弟就，嗣父封宣恩侯，后改封为新阳侯。就善谈论，朝臣莫及，然性刚傲，不得众誉。显宗即位，以就为少府，位特进。就子丰尚郦邑公主。公主娇妒，丰亦狷急。永平二年，遂杀主，被诛，父母当坐，皆自杀，国除。帝以舅氏故，不极其刑。
 </p><p>阴氏侯者凡四人。初，阴氏世奉管仲之祀，谓为“相君”。宣帝时，阴子方者，至孝有仁恩，腊日晨炊而灶神形见，子方再拜受庆。家有黄羊，因以祀之。自是已后，暴至巨富，田有七百余顷，舆马仆隶，比于邦君。子方常言“我子孙必将强大”，至识三世而遂繁昌，故后常以腊日祀灶，而荐黄羊焉。
 </p><p>赞曰：权族好倾，后门多毁。樊氏世笃，阴亦戒侈。恂恂苗胤，传龟袭紫。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十三章-郭杜孔张廉王苏羊贾陆-原文.html'>第二十三章-郭杜孔张廉王苏羊贾陆</a></p><p class='next'>下一节：<a href='第二十五章-朱冯虞郑周列传-原文.html'>第二十五章-朱冯虞郑周列传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十三章-郭杜孔张廉王苏羊贾陆-原文.html'>第二十三章-郭杜孔张廉王苏羊贾陆</a></p><p class='next'>下一节：<a href='第二十五章-朱冯虞郑周列传-原文.html'>第二十五章-朱冯虞郑周列传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

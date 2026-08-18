@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>元苌传<span style='font-size:small'> 白话</span></h1>
 <p>元苌是元平的儿子。孝文帝时，袭父亲的爵位为松滋侯。按照规定降爵，赐封为艾陵伯。元苌性情刚毅，哪怕遇到吉庆的大喜事，他也从未开口笑过。孝文帝迁都时，元苌为代尹而留守，并被委任为怀朔镇都大将。临别时，孝文帝赐酒给元苌，元苌虽然拜谢后饮下，但面色依然没有一点高兴的样子。皇帝说：“听人说您一生都没有笑过，今天准备离别了，应当给我笑一次。”可是，元苌依然不笑。文帝说：“五行之气，偏偏有的地方不入，六合之间，什么怪事没有！”他身边看到的人，无不把着手大笑。<BR><BR>　　宣武帝时，任北中郎将，兼河内太守。因为黄河上的河桥是由船只连接起来的，路很狭窄，过往行旅很不方便，加上秋水大涨时，每年时常被毁坏，元苌便建造船路。广为招募，凡空车从京城出来的，全部让运载两块石头，累砌起来作为桥岸。这样，桥面宽阔，来往十分方便，近桥的各郡，也不再年年派劳役和受打扰。公家和私人都依赖它。后来他历任度支尚书、侍中、雍州刺史。死时，谥号为“成”。元苌中年之后，官位比较通显，便自尊自傲，闺房中又没有礼节，兄弟之间不和睦，本性贪婪暴虐，评论者因而鄙视他。</p>
-<div class='pn'><p class='pre'>上一节：<a href='华山王元鸷传-白话.html'>华山王元鸷传</a></p><p class='next'>下一节：<a href='元子华传-白话.html'>元子华传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='华山王元鸷传-白话.html'>华山王元鸷传</a></p><p class='next'>下一节：<a href='元子华传-白话.html'>元子华传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

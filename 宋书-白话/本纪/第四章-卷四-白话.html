@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -192,8 +219,9 @@
 </p><p>夏五月，江州刺史王弘、南兖州刺史檀道济入朝。皇帝过失很多。二十五日，皇太后下诏说：
 </p><p>“王室命运不济，天降灾祸却不知悔改，先帝创业不久，就离世升天。义符作为长子，理当继承帝位，想不到穷凶极恶倒行逆施，到达如此地步。先帝停灵期间，举国悲哀，义符却幸灾乐祸溢于言词，表面悲伤内心欢喜。甚至征召乐队，召集乐人，拨弄管弦，尽情玩乐。每餐美味佳肴，比平日更严重。奸污婢女，生下了私生子，却毫无愧色，坏名声传得很远。懿后仙逝，义符又犯了不可饶恕的罪过，拿着丝带与左右欢歌，送葬时，击掌嘻戏，大兴土木，耗费巨大，造成国库空虚，百姓力竭。刑罚苛严，囚徒日增。身为帝王，却好做差役之事。亲自执鞭，殴打无辜，以此为乐，挖池塘建庙观，朝成暮毁，征发大批工匠，百姓疲惫不堪。远近哀叹，人神怒怨，社稷将毁，岂能再守祖业，君临天下。现废为营阳王，依照汉昌邑、晋海西旧例。镇西将军宜都王，自幼仁义孝悌，道德高尚功业卓著，心地善良明达公允。宜即帝位，君临天下。主事人要认真依照旧例，及时迎接宜都王回京。”
 </p><p>当初徐羡之、傅亮图谋废少帝，委婉劝说王弘，檀道济回京奔丧。王弘等回朝。派中书舍人刑安泰、潘盛做内应。这天早晨，檀道济、谢晦领兵打先锋，徐羡之等随后，乘东掖门开着，从云龙门入皇宫。潘盛等先告诉了侍卫，因此没遇到抵抗。当时少帝正在华林园做买卖，亲自卖酒。又开沟垒土，以象征破冈棣，与左右乘船歌唱作乐。傍晚游天渊池，在龙舟上就寝。次日早晨少帝还未起床，士兵进来了，杀了少帝身旁的两个侍者，伤了少帝的手指。扶少帝出东阁，收了玉玺丝带，群臣与少帝辞白，送少帝到东宫，遂被幽禁在吴都。这天，赦免除死罪以外的犯人。太后下令奉还玉玺丝带。檀道济入主朝政。六月二十四日，徐羡之等派中书舍人刑安泰在金昌刺杀少帝。少帝有力气，不甘心受制，从昌门逃跑，邢安泰追赶，用门闩使他仆倒，少帝毙命。时年十九岁。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三-白话.html'>第三章-卷三</a></p><p class='next'>下一节：<a href='第五章-卷五-白话.html'>第五章-卷五</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三-白话.html'>第三章-卷三</a></p><p class='next'>下一节：<a href='第五章-卷五-白话.html'>第五章-卷五</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

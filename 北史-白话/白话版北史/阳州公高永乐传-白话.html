@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>阳州公高永乐传<span style='font-size:small'> 白话</span></h1>
 <p>高永乐，神武帝高欢从祖兄的儿子。太昌初年，被封为阳州县伯，又晋爵为公，多次升迁，官至北豫州刺史。河桥之役，司徒高昂作战失利，败退奔逃。他把守河阳南城，高昂奔向城南，西魏的军队将要追来，他不打开城门接纳败军，高昂便被敌兵抓去。神武帝非常恼怒，打了他二百军棍。<BR><BR>　　后来，他被罢免了豫州刺史的职务，离任时却没有什么家产。神武帝问他原因，他答道：“裴监任我的长史，辛公正任我的别驾，他们两人受您的指派，弄得我一杯酒一只鸡都不敢要。”神武帝又命他任济州刺史，仍让裴监、辛公正分别任他的长史和别驾。神武帝对他说“：你不要太贪心，多少收取一点也不要害怕。”他到任以后果然贪取财货，裴监、辛公正劝阻，他又不采纳，二人便把情况奏报给神武帝。神武帝拿着二人的奏书让他看，然后知道这两个人果然清廉正直，都被提拔使用。<BR><BR>　　高永乐在济州刺史任上去世，朝廷追赠他为太师、太尉、录尚书事，谥号武昭。</p>
-<div class='pn'><p class='pre'>上一节：<a href='高劢传-白话.html'>高劢传</a></p><p class='next'>下一节：<a href='高元海传-白话.html'>高元海传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='高劢传-白话.html'>高劢传</a></p><p class='next'>下一节：<a href='高元海传-白话.html'>高元海传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

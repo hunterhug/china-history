@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -227,8 +254,9 @@
 </p><p>天兴二年，哀宗迁蔡州，虑孤城不能保，拟迁巩昌，以粘葛完展为巩昌行省。三年春正月，完展闻蔡已破，欲安众心，城守以待嗣立者，乃遣人称使者至自蔡，有旨宣谕。绥德州帅汪世显者亦知蔡凶问，且嫉完展制己，欲发矫诏事，因以兵图之，然惧虾蟆威望，乃遣使约虾蟆并力破巩昌。使者至，虾蟆谓之曰：“粘葛公奉诏为行省，号令孰敢不从。今主上受围于蔡，拟迁巩昌。国家危急之际，我辈既不能致死赴援，又不能叶众奉迎，乃欲攻粘葛公，先废迁幸之地，上至何所归乎。汝帅若欲背国家，任自为之，何及于我。”世显即攻巩昌破之，劫杀完展，送款于大元，复遣使者二十余辈谕虾蟆以祸福，不从。
 </p><p>甲午春，金国已亡，西州无不归顺者，独虾蟆坚守孤城。丙申岁冬十月，大兵并力攻之。虾蟆度不能支，集州中所有金银铜铁，杂铸为炮以击攻者，杀牛马以食战士，又自焚卢舍积聚，曰：“无至资兵。”日与血战，而大兵亦不能卒拔。及军士死伤者众，乃命积薪于州廨，呼集家人及城中将校妻女，闭诸一室，将自焚之。虾蟆之妾欲有所诉，立斩以徇。火既炽，率将士于火前持满以待。城破，兵填委以入，鏖战既久，士卒有弓尽矢绝者，挺身入火中。虾蟆独上大草积，以门扉自蔽，发二三百矢无不中者，矢尽，投弓剑于火自焚。城中无一人肯降者。虾蟆死时年四十五。土人为立祠。
 </p><p>完展字世昌。泰和三年策论进士。初为行省，以蜡丸为诏，期以天兴二年九月集大军与上会于饶峰关，出宋不意取兴元。既而不果云。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十一章-卷六十一-原文.html'>第六十一章-卷六十一</a></p><p class='next'>下一节：<a href='第六十三章-卷六十三-原文.html'>第六十三章-卷六十三</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第六十一章-卷六十一-原文.html'>第六十一章-卷六十一</a></p><p class='next'>下一节：<a href='第六十三章-卷六十三-原文.html'>第六十三章-卷六十三</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

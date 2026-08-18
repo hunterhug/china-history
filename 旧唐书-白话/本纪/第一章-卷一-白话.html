@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -261,8 +288,9 @@
 </p><p>贞观九年(635)五月六日，高祖病危，下诏：“已经殡葬以后，皇帝应该在别的地方临朝掌管军国大事。丧服的轻重，完全按照汉朝的制度，日夜守丧。坟墓园陵的修建务必从节俭的立场进行。”这一日，高祖在太安宫之垂拱前殿逝世，享年七十。群臣上谥号曰大武皇帝，庙号高祖。十月二十七日，葬在献陵。高宗上元元年(674)八月，改上尊号曰“神尧皇帝”。天宝十三年(754)二月，上尊号为神尧大圣大光孝皇帝。
 </p><p>史臣曰：隋朝末年，国家混乱，荒淫的隋炀帝燃起了燎原的大火，群盗发起了争夺天下的先兆！隋朝灭绝残害没有满足，放纵泛滥而不挽救。高祖确实知道独夫民贼隋炀帝命运已去，知道新的天子将勃然兴起，秘密地施展雄图大略，然而没有伸展出众的才华。而且委曲求全取得可汗的援助，用低下的言辞回答李密的来信，但决断神机却迅速得像迅雷，驱使豪杰们顺从就像倒下的小草。等到歌谣恰当属实，隋朝灭亡拱手禅让，这是由于刑法比繁法苛政还大，爵位赏赐却不能超过脱离饥饿和疾病。从此以后偷取金子者感到耻辱，做草莽强盗知道是错误，人们怀念汉朝的宽大平和，不苛责刘邦对人的轻视侮辱。然而高祖李渊做事犹豫而失去决断，谗言得以畅行；杀刘文静则是议定的法律而不遵从；酬劳裴寂又曲意加恩大为过分。奸邪谄媚之人从此进诬陷之谗言，宠爱狎昵的小人得以离间骨肉，像晋献公那样在儿子申生身上被离间，又像齐桓公小白那样宁可怀念忠于公子纠的忠臣召忽。有这么一天兵权交给宠爱之子，弓箭便集射在兄弟身上。匈奴不久向便桥进犯，京城又都担忧少数民族的入侵。没有圣贤的儿子太宗，帝王大业可就危险了啊！
 </p><p>赞曰：高祖创业国家，其势像摧毁枯木一样。治国运用英明威武，治家却难于用圣明的谋划。吟咏《诗经·鸱号鸟》，对我大唐无损也。</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-白话.html'>第二章-卷二</a></p></div><footer>
+<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-白话.html'>第二章-卷二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

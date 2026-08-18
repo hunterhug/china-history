@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>崔纵传<span style='font-size:small'> 白话</span></h1>
 <p>崔纵字元矩，抚州临川人。登政和五年(1115)进士第。历任确山县主簿、仙居县丞，累升任承议郎、干办审计司。徽、钦二帝被金人掳向北行，高宗派遣使臣往来问候，朝廷大臣因前使臣相继被金人拘系，都不肯前往。崔纵毅然请行，于是授予他朝议大夫、右文殿修撰、试工部尚书以前行。等到达后，崔纵首先用大义责斥金人，请金人送回二帝，又多次致送书信。金人愤怒，把他迁徙到穷困荒凉的地方，崔纵没有少受委屈。过了很久，金人允许南朝使臣自我陈述而听任其返回，崔纵因帝王大事没有完成不忍心说回去。金人又以官禄爵位引诱他，崔纵因愤怒怨恨成疾，终于持节而死。洪皓、张邵返回宋朝，于是把崔纵的尸骨带回。下诏以他兄长的儿子延年作为他的后嗣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='王忠植传-白话.html'>王忠植传</a></p><p class='next'>下一节：<a href='吴安国传-白话.html'>吴安国传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='王忠植传-白话.html'>王忠植传</a></p><p class='next'>下一节：<a href='吴安国传-白话.html'>吴安国传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

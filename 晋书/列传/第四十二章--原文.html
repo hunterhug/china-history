@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -217,8 +244,9 @@
 </p><p>洪博闻深洽，江左绝伦。著述篇章富于班马，又精辩玄赜，析理入微。后忽与岳疏云：“当远行寻师，克期便发。”岳得疏，狼狈往别。而洪坐至日中，兀然若睡而卒，岳至，遂不及见。时年八十一。视其颜色如生，体亦柔软，举尸入棺，甚轻，如空衣，世以为尸解得仙云。
 </p><p>史臣曰：景纯笃志绨缃，洽闻强记，在异书而毕综，瞻往滞而咸释；情源秀逸，思业高奇；袭文雅于西朝，振辞锋于南夏，为中兴才学之宗矣。夫语怪征神，伎成则贱，前修贻训，鄙乎兹道。景纯之探策定数，考往知来，迈京管于前图，轶梓窀于遐篆。而宦微于世，礼薄于时，区区然寄《客傲》以申怀，斯亦伎成之累也。若乃大塊流形，玄天赋命，吉凶修短，定乎自然。虽稽象或通，而厌胜难恃，禀之有在，必也无差，自可居常待终，颓心委运，何至衔刀被发，遑遑于秽向之间哉！晚抗忠言，无救王敦之逆；初惭智免，竟毙“山宗”之谋。仲尼所谓攻乎异端，斯害也已，悲夫！稚川束发从师，老而忘倦。奇册府，总百代之遗编；纪化仙都，穷九丹之秘术。谢浮荣而捐杂艺，贱尺宝而贵分阴，游德栖真，超然事外。全生之道，其最优乎！
 </p><p>赞曰：景纯通秀，夙振宏材。沈研鸟册，洞晓龟枚。匪宁国衅，坐致身灾。稚川优洽，贫而乐道。载范斯文，永传洪藻。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十一章--原文.html'>第四十一章-</a></p><p class='next'>下一节：<a href='第四十三章--原文.html'>第四十三章-</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第四十一章--原文.html'>第四十一章-</a></p><p class='next'>下一节：<a href='第四十三章--原文.html'>第四十三章-</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

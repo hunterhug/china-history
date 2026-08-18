@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>河间公拓跋齐传<span style='font-size:small'> 白话</span></h1>
 <p>河间公拓跋齐，是烈帝的五世孙。年青时就勇猛魁梧。太武帝征讨赫连昌时，马失前蹄，贼人逼近皇帝，齐以身掩护遮挡，和敌人拚死决战，才把敌人打退，太武帝得以上马。当时要是没有齐的话，太武帝就差点没命。太武帝换成常人衣服要进入敌城，齐坚决劝谏不听，便跟几个人一起随皇帝入城。城中的人发觉了，把所有城门关闭，太武帝和齐等趁势进入敌人宫中，找到一些妇女穿的裙子，把槊捆扎起来，太武帝沿着槊爬上城去，因而把城攻下了。齐立了大功，被赐为浮阳侯。他跟从出征和龙，因功又被任命为尚书，晋爵位为公爵。后来他跟新兴王俊讨伐秃发保周，因事被免去官爵。<BR><BR>　　宋将裴方明攻占了仇池后，太武帝又任命齐为前将军，跟建兴公古弼前往讨伐。于是，攻克仇池，威震羌、氐。重新被赐爵为河间公。他和武都王杨保宗共同镇守骆谷。当时，保宗的弟弟文德劝保宗闭险自守，已有些时间了。秦州主簿边因知道以后，暗暗地密报齐。齐一大早来找保宗，大声喊叫说：“古弼到，要宣读诏书。”保宗出城，齐立即命令左右扶着保宗上马，飞奔送往京城。诸氐族人便推举文德当主帅，向宋朝求援。宋派将军房亮之、苻昭、啖龙等领兵前来帮助文德。齐出击，斩了啖龙，活捉房亮之，氐于是被平定了。他因功被任命为内都大官。死后，谥号为“敬王”。</p>
-<div class='pn'><p class='pre'>上一节：<a href='东阳王元丕传-白话.html'>东阳王元丕传</a></p><p class='next'>下一节：<a href='元志传-白话.html'>元志传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='东阳王元丕传-白话.html'>东阳王元丕传</a></p><p class='next'>下一节：<a href='元志传-白话.html'>元志传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

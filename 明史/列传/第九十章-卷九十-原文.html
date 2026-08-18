@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -241,8 +268,9 @@
 </p><p>给事中辛自修劾罢戎政都御史李鐩，请择素知兵者代之。乃召炳然为兵部尚书，协理戎政。逾年，诏兼右都御史，总督宣、大、山西军务。新平、平远、保平三堡密迩宣府，旧属大同。天城相去六十里，孤悬塞外，隔崇山，寇骑时出没。炳然奏添设参将，别为一营，报可。寻以总兵官马芳等却敌功，被赉。已，召还部，代杨博为尚书。考满，加太子少保。
 </p><p>炳然清勤练达，所至有声绩。隆庆初，以病乞休去。卒，赠太子太保，谥恭襄。
 </p><p>赞曰：世宗朝，璁、萼、言、嵩相继用事，六卿之长不得其职。大都波流茅靡，淟，忍取容。廖纪以下诸人，其矫矫者与！应奎司邦计，不能节以制度，顾务加赋以病民。豹也碌碌，弥无足观矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十九章-卷八十九-原文.html'>第八十九章-卷八十九</a></p><p class='next'>下一节：<a href='第九十一章-卷九十一-原文.html'>第九十一章-卷九十一</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第八十九章-卷八十九-原文.html'>第八十九章-卷八十九</a></p><p class='next'>下一节：<a href='第九十一章-卷九十一-原文.html'>第九十一章-卷九十一</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

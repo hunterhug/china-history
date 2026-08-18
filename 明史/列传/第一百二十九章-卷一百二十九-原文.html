@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -231,8 +258,9 @@
 </p><p>道亨贞亮有守。自参政至尚书，不以家累自随，一苍头执爨而已。崇祯初，赠太子少保，谥清襄。
 </p><p>子弘绪，字士业。为晋州知州，以文名。
 </p><p>赞曰：光、熹之际，朝廷多故，又承神宗颓废之余，政体怠弛，六曹罔修厥职。周嘉谟、张问达诸人，恳恳奉公，《诗》所称“不懈于位”者，盖庶几焉。汪应蛟持国计，谨出纳，水田之议，凿凿可见施行。孙玮请登用善类，钟羽正请禁馈遗，韪哉，救时之良规也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百二十八章-卷一百二十八-原文.html'>第一百二十八章-卷一百二十八</a></p><p class='next'>下一节：<a href='第一百三十章-卷一百三十-原文.html'>第一百三十章-卷一百三十</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第一百二十八章-卷一百二十八-原文.html'>第一百二十八章-卷一百二十八</a></p><p class='next'>下一节：<a href='第一百三十章-卷一百三十-原文.html'>第一百三十章-卷一百三十</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

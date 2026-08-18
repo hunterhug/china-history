@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -269,8 +296,9 @@
 </p><p>刘思逸，平原人。父直，武邑太守。与元愉又于信都，伏诛。思逸少充腐刑。初为中小史，转寺人。久之，除小黄门，拜奉朝请，坐事免。后除东莞太守。思逸虽身在阉寺，而性颇豪率，轻薄无行，好结朋游。又除左将军、大长秋卿，迁中侍中、平东将军。武定中，与元瑾等谋反，伏诛。
 </p><p>又有张景嵩、毛暢者，咸以阍寺在肃宗左右，而并黠了，甚见知遇。俱为小黄门，每承间陈元义之恶于肃宗。元义之出，景嵩、暢颇有力焉。灵太后反政，未即戮义。时内外喧喧，云“义还入知政事。”暢等恐祸及己，及启肃宗，欲诏右卫将军杨津密往杀义。诏书已成，未及出。义妻知之，告太后云：“景嵩、暢与清河王息邵欲废太后。”太后信之，责暢，暢出诏书草，以呈太后。太后读之，知无废己状，意为小解。然义妻构之不已，遂致疑惑。未几，出暢为顿丘太守。后复出景嵩为鲁君太守。乃密令御史掩暢，暢走免，寻捕杀之。景嵩因入都，太后数其与暢同计之事，大致嫌责。后为阳城、荥阳二郡太守。孝静时，位至中侍中，坐事死。
 </p><p>史臣曰。阙</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十一章-卷八十一-原文.html'>第八十一章-卷八十一</a></p><p class='next'>下一节：<a href='第八十三章-卷八十三-原文.html'>第八十三章-卷八十三</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第八十一章-卷八十一-原文.html'>第八十一章-卷八十一</a></p><p class='next'>下一节：<a href='第八十三章-卷八十三-原文.html'>第八十三章-卷八十三</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

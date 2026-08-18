@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -228,8 +255,9 @@
 </p><p>及董卓秉政，以琬名臣，征为司徒，迁太仆，更封阳泉乡侯。卓议迁都长安，琬与司徒杨彪同谏不从。琬退而驳议之曰：“昔周公营洛邑以宁姬，光武卜东郡以隆汉，天之所启，神之所安。大业既定，岂宜妄有迁动，以亏四海之望？”时人惧卓暴怒，琬必及害，固谏之。琬对曰：“昔白公作乱于楚，屈庐冒刃而前；崔杼弑君于齐，晏婴不惧其盟。吾虽不德，诚慕古人之节。”琬竟坐免。卓犹敬其名德旧族，不敢害。后与杨彪同拜光禄大夫，及徙西都，转司隶校尉，与司徒王允同谋诛卓。及卓将李C765、郭汜攻破长安，遂收琬下狱死，时年五十二。
 </p><p>论曰：古者诸侯岁贡士，进贤受上赏，非贤贬爵士。升之司马，辩论其才，论定然后官之。任官然后禄之。故王者得其人，进仕劝其行，经邦弘务，所由久矣。汉初诏举贤良、方正，州郡察孝廉、秀才，斯亦贡士之方也。中兴以后，复增敦朴、有道、贤能、直言、独行、高节、质直、清白、敦厚之属。荣路既广，觖望难裁，自是窃名伪服，浸以流竞。权门贵仕，请谒繁兴。自左雄任事，限年试才，虽颇有不密，固亦因识时宜。而黄琼、胡广、张衡、崔瑗之徒，泥滞旧方，互相诡驳，循名者屈其短，算实者挺其效。故雄在尚书，天下不敢妄选，十余年间，称为得人，斯亦效实之征乎？顺帝始以童弱反政，而号令自出，知能任使，故士得用情，天下喁喁仰其风采。遂乃备玄纁玉帛，以聘南阳樊英，天子降寝殿，设坛席，尚书奉引，延问失得。急登贤之举，虚降己之礼，于是处士鄙生，忘其拘儒，拂巾衽褐，以企旌车之招矣。至乃英能承风，俊B06C咸事，若李固、周举之渊谟弘深，左雄、黄琼之政事贞固，桓焉，杨厚以儒学进，崔瑗、马融以文章显，吴祐、苏章、种暠、栾巴牧民之良干，庞参、虞诩将帅之宏规，王龚、张皓虚心以推士，张纲、杜乔直道以纠违，郎顗阴阳详密，张衡机术特妙，东京之士，于兹盛焉。向使庙堂纳其高谋，疆场宣其智力，帷幄容其謇辞，举厝禀其成式，则武、宣之轨，岂其远而？《诗》云：“靡不有初，鲜克有终。”可为恨哉！及孝桓之时，硕德继兴，陈蕃、杨秉处称贤宰，皇甫、张、段出号名将，王暢、李膺弥缝衮阙，朱穆、刘陶献替匡时，郭有道奖鉴人伦，陈仲弓弘道下邑。其余宏儒远智，高心洁行，激扬风流者，不可胜言。而斯道莫振，文武陵队，在朝者以正议婴戮，谢事者以党锢致灾。往车虽折，而来轸方遒。所以倾而未颠，决而未溃，岂非仁人君子心力之为乎？呜呼！
 </p><p>赞曰：雄作纳言，古之八元。举升以汇，越自下蕃。登朝理政，并纾灾昏。琼名夙知，累章国疵。琬亦早秀，位及志差。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十四章-蔡邕列传下-原文.html'>第五十四章-蔡邕列传下</a></p><p class='next'>下一节：<a href='第五十六章-荀韩钟陈列传-原文.html'>第五十六章-荀韩钟陈列传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第五十四章-蔡邕列传下-原文.html'>第五十四章-蔡邕列传下</a></p><p class='next'>下一节：<a href='第五十六章-荀韩钟陈列传-原文.html'>第五十六章-荀韩钟陈列传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

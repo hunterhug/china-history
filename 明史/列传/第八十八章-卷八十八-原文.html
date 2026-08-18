@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -243,8 +270,9 @@
 </p><p>三十二年，擢佥都御史，巡抚山西。时春慷慨负奇气，善骑射。慨寇纵横，将帅不任职，数谓人：“使吾领选卒五千，俺答、邱福不足平也。”作《御寇论》，论战守甚悉。既秉节钺，益思以武功自奋。其年九月，寇入神池、利民诸堡，时春率马步兵往御之。至广武，诸将毕会。谋报寇骑二千余，去两舍。时春擐甲欲驰，大将李涞固止之。时春大言曰：“贼知吾来必遁，缓追即不及。”遂策马前。及于大虫岭，伏兵四起，败绩。仓皇投一墩，守卒缒之上乃得免，涞军竟覆。被论，解官听调。时春喜谈兵，至是一战而败。然当是时将帅率避寇不击。为督抚者安居坚城，遥领军事，无躬搏寇者。时春功虽不就，天下皆壮其气。
 </p><p>时春读书善强记，文章豪肆，与唐顺之、王慎中齐名。诗，伉浪自喜类其为人。
 </p><p>赞曰：姚镆等封疆宣其擘画，军务畅其机谋，勋绩咸有可纪。伍文定从王守仁平宸濠之难，厥功最懋。赵时春将略自命，一出辄踬。夫危事而易言之，固知兵者所弗取乎。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十七章-卷八十七-原文.html'>第八十七章-卷八十七</a></p><p class='next'>下一节：<a href='第八十九章-卷八十九-原文.html'>第八十九章-卷八十九</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第八十七章-卷八十七-原文.html'>第八十七章-卷八十七</a></p><p class='next'>下一节：<a href='第八十九章-卷八十九-原文.html'>第八十九章-卷八十九</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -195,8 +222,9 @@
 </p><p>开泰年间，任本班郎君。有捕获盗贼之功，枢密使萧朴荐举他，迁为率府率。太平年间，同知南院宣徽事，累迁至彰圣军节度使。
 </p><p>重熙十六年(1047)，知兴中府，因为治内监狱中空无一人而闻名。十八年(1049)，讨伐夏国，摄西南面招讨使。十九年(1050)，夏人侵犯金肃军，击败之，斩首万余级，加为右武卫上将军。当时边境附近群牧多次遭到侵扰劫掠，迁仆里笃为倒塌岭都监以治理之，战鼓为之不鸣。二十年(1051)，知金肃军事。宰相赵惟节总领边城桥道刍粟，请求派个副手，兴宗皇上命令仆里笃担任副职，在任内以称职著称。
 </p><p>清宁初，历任长宁、匡义二军节度使，辞官。咸雍年间去世。子阿固质，官至倒塌岭都监。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十章-卷二十-白话.html'>第二十章-卷二十</a></p><p class='next'>下一节：<a href='第二十二章-卷二十二-白话.html'>第二十二章-卷二十二</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十章-卷二十-白话.html'>第二十章-卷二十</a></p><p class='next'>下一节：<a href='第二十二章-卷二十二-白话.html'>第二十二章-卷二十二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

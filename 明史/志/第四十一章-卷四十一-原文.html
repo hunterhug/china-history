@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -206,8 +233,9 @@
 </p><p>百官乘车之制：洪武元年令，凡车不得雕饰龙凤文。职官一品至三品，用间金饰银螭绣带，青缦。四品五品，素狮头绣带，青缦。六品至九品，用素云头青带，青缦。轿同车制。庶民车及轿，并用黑油，齐头平顶，皂缦，禁用云头。六年令，凡车轿禁丹漆，五品以上车止用青缦。妇女许坐轿，官民老疾者亦得乘之。景泰四年令，在京三品以上得乘轿。弘治七年令，文武官例应乘轿者，以四人舁之。其五府管事，内外镇守、守备及公、侯、伯、都督等，不问老少，皆不得乘轿，违例乘轿及擅用八人者，奏闻。盖自太祖不欲勋臣废骑射，虽上公，出必乘马。永乐元年，驸马都尉胡观越制乘晋王济熹朱〈车尞〉棕轿，为给事中周景所劾。有诏宥观而赐济熹书，切责之。惟文职大臣乘轿，庶官亦乘马。又文臣皆许乘车，大臣得乘安车。后久废不用。正德四年，礼部侍郎刘机言，《大明集礼》，公卿大臣得乘安车，因请定轿扇伞盖品级等差。帝以京城内安车伞盖久不行，却其请，而命轿扇俱如例行。嘉靖十五年，礼部尚书霍韬言：“礼仪定式，京官三品以上乘轿，迩者文官皆用肩舆，或乘女轿。乞申明礼制，俾臣下有所遵守。”乃定四品下不许乘轿，亦毋得用肩舆。隆庆二年，给事中徐尚劾应城伯孙文栋等乘轿出入，骄僣无状。帝命夺文栋等俸。乃谕两京武职非奉特恩不许乘轿，文官四品以下用帷轿者，禁如例。万历三年奏定勋戚及武臣不许用帷轿、肩舆并交床上马。至若破格殊典，则宣德中少保黄淮陪游西苑，尝乘肩舆入禁中。嘉靖间，严嵩奉诏苑直，年及八旬，出入得乘肩舆。武臣则郭勋、朱希忠特命乘肩舆扈南巡跸，后遂赐常乘焉。皆非制也。
 </p><p>伞盖之制：洪武元年，令庶民不得用罗绢凉伞，但许用油纸雨伞。三年，令京城内一品二品用伞盖，其余用雨伞。十六年，令尚书、侍郎、左右都御史、通政使、太常卿、应天府尹、国子祭酒、翰林学士许张伞盖。二十六年定一品、二品伞用银浮屠顶，三品、四品用红浮屠顶，俱用黑色茶褐罗表，红绢裹，三檐；雨伞用红油绢。五品红浮屠顶，青罗表，红绢裹，两檐；雨伞同。四品、六品至九品，用红浮屠顶，青绢表，红绢裹，两檐；雨伞俱用油纸。三十五年，官员伞盖不许用金绣，朱丹装饰。公、侯、驸马、伯与一品、二品同。成化九年，令两京官遇雨任用油伞，其凉伞不许张于京城。
 </p><p>鞍辔之制：洪武六年，令庶民不得描金，惟铜铁装饰。二十六年，定公、侯、一品、二品用银，铁事件，〈革占〉用描银。三品至五品，用银，铁事件，〈革占〉用油画。六品至九品，用摆锡，铁事件，〈革占〉用油画。三十五年，官民人等马颔下缨并鞦辔俱用黑色，不许红缨及描金、嵌金、天青、朱红装饰。军民用铁事件，黑绿油〈革占〉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十章-卷四十-原文.html'>第四十章-卷四十</a></p><p class='next'>下一节：<a href='第四十二章-卷四十二-原文.html'>第四十二章-卷四十二</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第四十章-卷四十-原文.html'>第四十章-卷四十</a></p><p class='next'>下一节：<a href='第四十二章-卷四十二-原文.html'>第四十二章-卷四十二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

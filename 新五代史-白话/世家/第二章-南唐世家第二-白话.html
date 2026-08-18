@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -438,8 +465,9 @@
 </p><p>唉，了不起啊，他的话多么简练！帝王的兴起，天下必定归于统一。
 </p><p>那些可以招徕的，就招徕他们；不能招徕的，就攻伐他们；对于僭位称帝称王的，必定扫荡平定而后作罢。
 </p><p>我读周世宗的《征淮南诏》，怪他斤斤计较以前的事情，务必要比较是非曲直作为借口，气量多么狭小！但周世宗的英雄勇武有值得人喜爱的地方，难道是替他写诏书的人的过错吗？</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-吴世家第一-白话.html'>第一章-吴世家第一</a></p><p class='next'>下一节：<a href='第三章-前蜀世家第三-白话.html'>第三章-前蜀世家第三</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-吴世家第一-白话.html'>第一章-吴世家第一</a></p><p class='next'>下一节：<a href='第三章-前蜀世家第三-白话.html'>第三章-前蜀世家第三</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

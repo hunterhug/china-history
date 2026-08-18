@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -189,8 +216,9 @@
 </p><p>冬十月戊午，以前北京留守、太原尹冯赟为许州节度使。辛酉，左补阙李详上疏：“以北京地震多日，请遣使臣往彼慰抚，察问疾苦，祭祀山川。”从之。先是，太原留后密奏，无敢言者，及详有是奏，帝甚嘉之，改赐章服。丙寅，诏：“应在朝臣僚、籓侯、郡守，准例合得追赠者，新授命后，便于所司投状，旋与施行。封妻廕子，准格合得者，亦与施行。外官曾任朝班，据在朝品秩格例，合得封赠叙封者，并与施行。其补廕，据资廕合得者，先受官者先与收补，后受官者据月日次第施行。”从之。
 </p><p>十一月甲申朔，日有食之。己丑，日南至，帝御文明殿受贺。丁酉，以翰林学士、起居郎张历为兵部员外郎、知制诰充职；以汝州防御使张希崇为灵州两使留后。庚子，以左威卫上将军华温琪为华州节度使。福州节度使王延钧奏，诛建州节度使王延禀及其子继雄。壬寅，诏今后诸道两使判官罢任一年与比拟，书记、支使、防御团练判官二年，推巡、军事判官并三年后与比拟。仍每遇除授，量与改转官资或阶勋、职次云。以御史中丞刘赞为刑部侍郎，以凤州节度使孙岳充西面阁道使。壬子，郓州奏，黄河暴涨，漂溺四千余户。癸丑，以给事中崔衍为御史中丞。
 </p><p>十二月甲寅朔，诏开铁禁，许百姓自铸农器、什器之属，于夏秋田亩上，每亩输农器钱一钱五分。乙卯，畋于西郊。丁巳，以彰武军节度使刘训卒废朝。庚午，以前利州节度使康思立为陕州节度使。秦州地震。丁丑，诏三司，所过西川兵士家属，常令赡给。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十七章-明宗纪七-原文.html'>第十七章-明宗纪七</a></p><p class='next'>下一节：<a href='第十九章-明宗纪九-原文.html'>第十九章-明宗纪九</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十七章-明宗纪七-原文.html'>第十七章-明宗纪七</a></p><p class='next'>下一节：<a href='第十九章-明宗纪九-原文.html'>第十九章-明宗纪九</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

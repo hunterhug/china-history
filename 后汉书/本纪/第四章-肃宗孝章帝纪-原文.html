@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -287,8 +314,9 @@
 </p><p>二年春正月，济南王康、阜陵王延、中山王焉来朝。二月壬辰，帝崩于章德前殿，年三十三。遗诏无起寝庙，一如先帝法制。
 </p><p>论曰：魏文帝称&quot;明帝察察，章帝长者&quot;。章帝素知人厌明帝苛切，事从宽厚。感陈宠之义，除惨狱之科。深元元之爱，著胎养之令。奉承明德太后，尽心孝道。割裂名都，以崇建周亲。平徭简赋，而人赖其庆。又体之以忠恕，文之以礼乐。故乃蕃辅克谐，群后德让。谓之长者，不亦宜乎！在位十三年，郡国所上符瑞，合于图书者数百千所。乌呼懋哉！
 </p><p>赞曰：肃宗济济，天性恺悌。于穆后德，谅惟渊体。左右艺文，斟酌律礼。思服帝道，弘此长懋。儒馆献歌，戎亭虚候。气调时豫，宪平人富。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章-显宗孝明帝纪-原文.html'>第三章-显宗孝明帝纪</a></p><p class='next'>下一节：<a href='第五章-孝和孝殇帝纪-原文.html'>第五章-孝和孝殇帝纪</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三章-显宗孝明帝纪-原文.html'>第三章-显宗孝明帝纪</a></p><p class='next'>下一节：<a href='第五章-孝和孝殇帝纪-原文.html'>第五章-孝和孝殇帝纪</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

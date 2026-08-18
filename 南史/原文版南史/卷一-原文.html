@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -279,8 +306,9 @@
 </p><p>夏五月乙酉，皇太后令暴帝过恶，废爲营阳王。一依汉昌邑、晋海西故事。奉迎镇西将军宜都王义隆入纂皇统。
 </p><p>始徐羡之、傅亮将废帝，讽王弘、檀道济求赴国讣，弘等来朝，使中书舍人邢安泰、潘盛爲内应。是旦，道济、谢晦领兵居前，羡之等随后，因东掖门开，入自云龙门，盛等先戒宿卫，莫有御者。时帝于华林园爲列肆，亲自酤卖，又开渎聚土，以象破冈埭，与左右引船唱呼，以爲欢乐。夕游天泉池，即龙舟而寝。其朝未兴，兵士进，杀二侍者于帝侧，伤帝指，扶出东合，就收玺绂。群臣拜辞送于东宫，遂幽于吴郡。是日，赦死罪以下。太后令奉还玺绂，檀道济入守朝堂。六月癸丑，徐羡之等使中书舍人邢安泰弑帝于金昌亭。帝有勇力，不即受制，突走出昌门，追以门关踣之致殒，时年十九。
 </p><p>论曰：晋自社稷南迁，王纲弛紊，朝权国命，递回台辅，君道虽存，主威久谢。桓温雄才盖世，勋高一时，移鼎之业已成，天人之望将改。自斯以后，帝道弥昏，道子开其祸端，元显成其衅末。桓玄乘时藉运，加以先资，革命受终，人无异望。宋武地非齐、晋，衆无一旅，曾不浃旬，夷凶翦暴，诛内清外，功格上下。若夫乐推所归，讴歌所集，校之魏、晋，可谓收其实矣。然武皇将涉知命，弱嗣方育，顾有慈顔，前无严训。少帝体易染之质，禀可下之姿，外物莫犯其心，所欲必从其志，嶮纵非学而能，危亡不期而集，其至颠沛，非不幸也。悲哉！</p>
-<div class='pn'><p class='next'>下一节：<a href='卷二-原文.html'>卷二</a></p></div><footer>
+<div class='pn'><p class='next'>下一节：<a href='卷二-原文.html'>卷二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

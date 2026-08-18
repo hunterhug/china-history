@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -229,8 +256,9 @@
 </p><p>先是，洪遣司马二人出，求救于吕布。比还，城已陷，皆赴敌死。
 </p><p>论曰：雍丘之围，臧洪之感愤壮矣！想其行跣且号，束甲请举，诚足怜也。夫豪雄之所趣舍，其与守义之心异乎？若乃缔谋连衡，怀诈算以相尚者，盖惟利势所在而已。况偏城既危，曹、袁方穆，洪徒指外敌之衡，以纾倒县之会。忿BE7B之师，兵家所忌。可谓怀哭秦之节，存荆则未闻也。
 </p><p>赞曰：先零扰疆，邓、崔弃凉。诩、燮令图，再全金方。盖勋抗董，终然允刚。洪怀偏节，力屈志扬。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十章-杜栾刘李刘谢列传-原文.html'>第五十章-杜栾刘李刘谢列传</a></p><p class='next'>下一节：<a href='第五十二章-张衡列传-原文.html'>第五十二章-张衡列传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第五十章-杜栾刘李刘谢列传-原文.html'>第五十章-杜栾刘李刘谢列传</a></p><p class='next'>下一节：<a href='第五十二章-张衡列传-原文.html'>第五十二章-张衡列传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

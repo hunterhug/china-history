@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -229,8 +256,9 @@
 </p><p>诸狱囚，必轻重异处，男女异室，毋或参杂。司狱致其慎，狱卒去其虐，提牢官尽其诚。诸在禁囚徒，无亲属供给，或有亲属而贫不能给者，日给仓米一升，三升之中，给粟一升，以食有疾者。凡油炭席荐之属，各以时具。其饥寒而衣粮不继，疾患而医疗不时，致非理死损者，坐有司罪。诸各处司狱司看守囚徒，夜支清油一斤。诸路府州县，但停囚去处，于鼠耗粮内放支囚粮。诸在禁无家属囚徒，岁十二月至于正月，给羊皮为披盖，袴袜及薪草为暖匣熏炕之用。诸狱讼，有必听候归对之人，召保知在，如无保识，有司给粮养济，勿寄养于民家。诸流囚在路，有司日给米一升，有疾命良医治之，疾愈随时发遣。诸狱医，囚之司命，必试而后用之，若有弗称，坐掌医及提调官之罪。诸狱囚病至二分，申报渐增至九分，为死证，若以重为轻，以急为缓，误伤人命者，究之。诸狱囚有病，主司验实，给医药，病重者去枷锁杻，听家人入侍。职事散官五品以上，听二人入侍。犯恶逆以上，及强盗至死，奴婢杀主者，给医药而已。诸有司，在禁囚徒饥寒，衣食不时，病不督医看候，不脱枷杻，不令亲人入侍，一岁之内死至十人以上者，正官笞二十七，次官三十七，还职；首领官四十七，罢职别叙，记过。诸孕妇有罪，产后百日决遣，临产之月，听令召保，产后二十日，复追入禁。无保及犯死罪者，产时令妇人入侍。诸犯死罪，有亲年七十以上，无兼丁侍养者，许陈请奏裁。诸有罪年七十以上、十五以下，及笃废残疾罚赎者，每笞杖一，罚中统钞一贯。诸疑狱，在禁五年之上不能明者，遇赦释免。
 </p><p>平反
 </p><p>诸官吏平反冤狱，应赏者，从有司保勘，廉访司体覆，而后议之。其有冒滥不实者，罪及保勘体覆官吏。诸路府军民长官，因收捕反叛，辄罗织平民，强奸室女，杀虏人口财产，并覆人之家，其同僚能理平民之冤，正犯人之罪，归其俘虏，活其死命者，于本官上优升一等迁用。凡职官能平反重刑一起以上，升等同。诸职官能平反冤狱一起之上，与减一资。诸路府曹吏，能平反冤狱者，于各道宣慰司部令史补用。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十七章-卷五十七-原文.html'>第五十七章-卷五十七</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第五十七章-卷五十七-原文.html'>第五十七章-卷五十七</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -188,8 +215,9 @@
 </p><p>雷满，《新唐书》：满字秉仁。武陵洞蛮也。始为朗州小校，唐广明初，王仙芝焚劫江陵。是时，朝廷以高骈为节度使，骈擢满为裨将，以领蛮军。骈移镇淮南，复隶部曲，以悍犷趫健知名。中和初，擅率部兵自广陵逃归于朗，沿江恣残暴，始为荆人大患矣。率一岁中三四移，兵入其郛，焚荡驱掠而去。唐朝姑务息兵，即以澧朗节度使授之。累官至检校太傅、同平章事。满贪秽惨毒，盖非人类。又尝于府署浚一深潭，构大亭于其上，每邻道使车经由，必召宴于中，且言：“此水府也，中有蛟龙，奇怪万态，惟余能游焉。”或酒酣对客，即取筵中宝器乱掷于潭中，因自褫其衣，裸露其文身，遽跃入水底，遍取所掷宝器，戏弄于水面，久之方出，复整衣就坐，其诡诞如此。
 </p><p>及死，子彦恭继之。《新唐书》：满以天复元年卒，子彦威自立，弟彦恭结忠义节度使赵匡凝以逐彦威。蛮蜒狡狯，深有父风，烬墟落，榜舟楫，上下于南郡、武昌之间，殆无人矣。又与淮、蜀结连，阻绝王命。太祖诏湖南节度使马殷、荆南节度使高季昌练精兵五千，遣将倪可福统之，下澧州，与潭兵合。先是，满堑沅江，以周其垒，门临长桥，势不可入。殷极其兵力，攻围周岁，彦恭食尽兵败，间使求救于淮夷。及淮军来援，高季昌逆战于治津马头岸，大破之，俄而攻陷朗州，彦恭单棹遁去。马殷擒其弟彦雄及逆党七人，械送至阙，皆斩于汴桥下，时开平二年十一月也。
 </p><p>史臣曰：成汭、钟、杜、田、硃之流，皆因否运，雄据大籓，虽无济代之劳，且有勤王之节，功虽不就，志亦可嘉，若较其诚明，则田頵、延寿斯为优矣。匡凝一门昆仲，千里江山，失守籓垣，不克负荷，斯乃刘景升之子之徒欤！张佶有让帅之贤，雷满辱俾侯之寄，优劣可知矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十六章-列传六-原文.html'>第十六章-列传六</a></p><p class='next'>下一节：<a href='第十八章-列传八-原文.html'>第十八章-列传八</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十六章-列传六-原文.html'>第十六章-列传六</a></p><p class='next'>下一节：<a href='第十八章-列传八-原文.html'>第十八章-列传八</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

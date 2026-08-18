@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -194,8 +221,9 @@
 </p><p>延明既博极群书，兼有文藻，鸠集图籍万有余卷。性清俭，不营产业。与中山王熙及弟临淮王彧等，并以才学令望有名于世。虽风流造次不及熙、彧，而稽古淳笃过之。寻迁侍中。诏与侍中崔光撰定服制。后兼尚书右仆射。以延明博识多闻，敕监金石事。
 </p><p>及元法僧反，诏为东道行台、徐州大都督，节度诸军事，与都督临淮王彧、尚书李宪等讨法僧。萧衍遣其豫章王综镇徐州。延明先牧徐方，甚得民誉，招怀旧土，远近归之。综既降，因以军乘之，复东南之境，至宿豫而还。迁都督、徐州刺史。频经师旅，人物凋弊，延明招携新故，人悉安业，百姓咸附。
 </p><p>庄帝时，兼尚书令、大司马。及元颢入洛，延明受颢委寄，率众守河桥。颢败，遂将妻子奔萧衍，死于江南。庄帝末，丧还。出帝初，赠太保，王如故，谥曰文宣。所著诗赋赞颂铭诔三百余篇，又撰《五经宗略》、《诗礼别义》，注《帝王世纪》及《列仙传》。又以河间人信都芳工算术，引之在馆。其撰《古今乐事》，《九章》十二图，又集《器准》九篇，芳别为之注，皆行于世。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

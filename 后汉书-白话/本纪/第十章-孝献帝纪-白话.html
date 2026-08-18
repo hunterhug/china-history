@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -214,8 +241,9 @@
 </p><p>魏青龙二年(234)三月初六，山阳公———退位汉献帝刘协逝世，自逊位至逝世共十四年，年五十四，谥孝献皇帝。八月二十日，以汉天子礼仪葬于怀州修武县禅陵，设置守护陵园的居民区，委派管理陵园的官吏。献帝的太子即长子早卒，孙刘康立五十一年，晋武帝太康六年(285)逝世。刘康子刘瑾立四年，太康十年(289)逝世。刘瑾子刘秋立二十一年，晋怀帝永嘉中被胡人所杀，封国撤销。
 </p><p>史家评论说：《左氏传》称，鼎为传国之神器，虽小而重，神灵所宝，不可夺移。如果王室不造，昏凶肆虐，神鼎虽大亦轻，以至被人背着它奔走，这也就是国运穷尽，不可复振的时候了。汉自和帝以来，政教渐失，天下厌恶汉德由来已久，怎么能把这个祸患完全推到献帝山阳公身上，责怪他一个人呢！
 </p><p>史家赞：献帝生不逢时，颠沛流离，国家遭难。汉家四百年天下，终于断送在他手里，自己也只能像尧帝儿子丹朱为舜帝之宾一样，作为魏帝曹丕之宾了。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章-孝灵帝纪-白话.html'>第九章-孝灵帝纪</a></p><p class='next'>下一节：<a href='第十一章-皇后纪上-白话.html'>第十一章-皇后纪上</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第九章-孝灵帝纪-白话.html'>第九章-孝灵帝纪</a></p><p class='next'>下一节：<a href='第十一章-皇后纪上-白话.html'>第十一章-皇后纪上</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

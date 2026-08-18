@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>李涓传<span style='font-size:small'> 白话</span></h1>
 <p>李涓字浩然，是驸马都尉李遵勖的曾孙。以荫补任殿直，被中书省召见考试，改成文官官阶，升到通直郎，任鄂州崇阳知县。靖康元年(1126)，京城开封被围困，朝廷用羽书召天下军队。鄂州下属七县，应当征发二千九百人，都没有集中，李涓独身以所招募的六百人迅速请求出发。有人认为：“何不缓一缓，以等待其他县呢？”李涓说：“事情很危急了，应当持一封信报告天子，作为东南地区的倡导。”但招募的士兵大多为街市之人，不能成军，李涓拿出家钱买牛和酒激励犒赏他们。下令说“：我本知道这样做没有益处，但世代受到国家的恩惠，只有为国而死。你们知道这样的法令吗？‘失去将军的士兵死’，同样是一死，为国而死留名百世，这是男子汉不朽的事业。”众人都哭了。<BR><BR>　　当天，李涓率领大家向东而去，北过淮河，蒲圻、嘉鱼二个县的军队才到，于是合兵前进。到达蔡州，天上下着大雪，蔡人忽然鼓噪奔逃，说：“敌人到了。”李涓马上结阵以待。不久，敌人游骑果然到了。李涓驰马率先抵御敌人先锋，所部都是步兵，蒙着大盾径直前进，杀敌骑甚多，敌人将要逃走。李涓乘胜向北追击十多里，与敌人大军相遇，飞箭猬集，蒲圻、嘉鱼二县军队马上舍而离去。李涓受伤很重，仍坚持血战，大声叱责左右之人辜负了自己，于是牺牲在战场上，享年五十三岁。有十之六七的士兵死去。上级官员有人忌妒李涓，胁迫逃跑的士兵诬蔑李涓已经逃遁。第二年，金兵离去，蔡人把李涓的尸体运回朝廷。朝廷省察记录李涓的忠义情状，赠为朝奉郎，让他的三个儿子做官。</p>
-<div class='pn'><p class='pre'>上一节：<a href='杨震传-白话.html'>杨震传</a></p><p class='next'>下一节：<a href='向子韶传-白话.html'>向子韶传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='杨震传-白话.html'>杨震传</a></p><p class='next'>下一节：<a href='向子韶传-白话.html'>向子韶传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -210,8 +237,9 @@
 </p><p>乾元元年三月，改太史监为司天台，于永宁坊张守珪故宅置。敕曰：“建邦设都，必稽玄象；分列曹局，皆应物宜。灵台三星，主观察云物；天文正位，在太微西南。今兴庆宫，上帝廷也，考符之所，合置灵台。宜令所司量事修理。”旧台在秘书省之南。仍置五官正五人。司天台内别置一院，曰通玄院。应有术艺之士，征辟至京，于崇玄院安置。其官员：大监一员，正三品。少监二人，正四品。丞三人，正六品。主簿三人，主事二人，五官正五人，五官副正五人，灵台郎一人，五官保章正五人，五官挈壶正五人，五官司历五人，五官司辰十五人，观生、历生七百二十六人。凡官员六十六人。宝应元年，司天少监瞿昙譔奏曰：“司天丞请减两员，主簿减两员，主事减一员，保章正减三员，挈壶正减三员，监候减两员，司辰减七员，五陵司辰减五员。”从之。
 </p><p>天宝十三载三月十四日，敕太史监官除朔望朝外，非别有公事，一切不须入朝，及充保识，仍不在点检之限。
 </p><p>开成五年十二月，敕：“司天台占候灾祥，理宜秘密。如闻近日监司官吏及所由等，多与朝官并杂色人交游，既乖慎守，须明制约。自今已后，监司官吏不得更与朝官及诸色人等交通往来，委御史台察访。”</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p><p class='next'>下一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p><p class='next'>下一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

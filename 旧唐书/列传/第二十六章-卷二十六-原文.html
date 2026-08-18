@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -211,8 +238,9 @@
 <p>　　曹王明，太宗第十四子。贞观二十一年受封。二十三年，赐实封八百户，寻加 满千户。显庆中，授梁州都督，后历虢、蔡、苏三州刺史。诏令继巢剌王元吉后。 永崇中，坐与庶人贤通谋，降封零陵王，徙于黔州。都督谢祐希旨，逼胁令自杀， 帝深悼之，黔府官僚咸坐免职。景云元年，明丧柩归于京师，陪葬昭陵。有二子， 南州别驾零陵王俊、黎国公杰，垂拱中并遇害。中兴初，封杰子胤为嗣曹王。胤叔 父备自南州还，又封备为嗣曹王、卫尉少卿、同正员，胤遂停封。后备招慰忠州叛 獠，没于贼，又封胤为王、银青光禄大夫、右武卫将军。卒，子戢嗣，左卫率府中 郎将。卒，子皋嗣。皋自有传。 </p>
 <p>　　史臣曰：太宗诸子，吴王恪、濮王泰最贤。皆以才高辩悟，为长孙无忌忌嫉， 离间父子，遽为豺狼，而无忌破家，非阴祸之报欤？武后斫丧王室，潜移龟鼎，越 王贞父子痛愤，义不图全。毁室之悲，《鸱鸮》之诗，伤矣！比齐祐之妄作，岂同 年而语哉！ </p>
 <p>　　赞曰：子弟作籓，磐石维城。骄侈取败，身无令名。冲、譔愤发，视死如生。 承乾、齐祐,愚弟庸兄。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十五章-卷二十五-原文.html'>第二十五章-卷二十五</a></p><p class='next'>下一节：<a href='第二十七章-卷二十七-原文.html'>第二十七章-卷二十七</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十五章-卷二十五-原文.html'>第二十五章-卷二十五</a></p><p class='next'>下一节：<a href='第二十七章-卷二十七-原文.html'>第二十七章-卷二十七</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

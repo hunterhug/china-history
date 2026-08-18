@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -185,8 +212,9 @@
 </p><p>四月三日，皇太子监国。四日，从北京出发。二十五日，临时住隰宁。侦察的情报说阿鲁台向答兰纳木儿河逃跑，于是率师前进。五月五日，暂住开平，派使臣招谕阿鲁台各部。十一日，掩埋道路上尸骨。二十三日，在应昌大宴群臣，命中官唱《太祖》御制词五章，说：“这就是先帝所以警诫后人，虽在军中也不敢忘记。”二十五日，临时住威远州。又宴请群臣，成祖亲自作词五章，命中官歌唱。皇太子命令免去广平、顺德、扬州及湖广、河南郡县水灾后所欠田租。六月十七日，前锋到达答兰纳木儿河，不见敌人，命张辅等搜尽三百余里山谷均无所得，便进军驻扎河上。二十日，陈懋等引兵抵达白邙山，因军粮已尽而回。二十一日，回师，命郑亨等以步兵向西会合于开平。二十九日夜晚，南京地震。
 </p><p>七月七日，刻石于清水源崖壁上。十五日，派吕震告诉皇太子随即回师，诏告天下。十六日，临时住苍崖戍，觉身体不适。十七日，到榆木川，病情突然加重。留遗诏传位皇太子，丧礼尊从高皇帝遗制。十八日，成祖死，终年六十五岁。太监马云与大学士杨荣、金幼孜秘密商量，保守秘密不发驾崩消息，用锡熔化后制成内棺装殓成祖遗体，用龙车运载，所到之处早晚饮食同往常一样。十九日，杨荣和御马监少监海寿一起骑马赶路向皇太子报丧。二十九日，暂住武平镇，郑亨步军会合于此。八月二日，杨荣等赶到北京，皇太子当天派皇太孙奉迎于开平。七日，住雕鹗谷，皇太孙到军中发丧。十日，到北京近郊，皇太子迎入仁智殿，加棺材后殓入灵柩。九月十日，加上尊敬谥号叫体天弘道高明广运圣武神功纯仁至孝文皇帝，庙号太宗，葬于长陵。嘉靖十七年(1538)九月，改上尊谥叫启天弘道高明肇运圣武神功纯仁至孝文皇帝，庙号成祖。
 </p><p>赞美道：文皇帝从小擅长练兵，据有幽、燕地形较好之地，乘建文帝幼弱，长驱向内进攻，才有四海。即位以后，亲自带头节俭，遇水旱灾情早上报告傍晚立即赈济，从来没有阻拦和掩盖。他知人善任，表里通达如一，雄武之略，同高祖一样。经常率六师出征，漠北如尘土一样被扫清。晚年时期，威德盖世，四方诚服。受朝之命入贡的约有三十国。幅员辽阔，远远超过汉、唐。成功之快，功绩之显赫，算卓绝昌盛了。然而，变革修整之际，倒行逆施，欺诈品行也是不可掩饰的。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章-卷六-白话.html'>第六章-卷六</a></p><p class='next'>下一节：<a href='第八章-卷八-白话.html'>第八章-卷八</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第六章-卷六-白话.html'>第六章-卷六</a></p><p class='next'>下一节：<a href='第八章-卷八-白话.html'>第八章-卷八</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

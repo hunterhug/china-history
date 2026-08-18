@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>元暹传<span style='font-size:small'> 白话</span></h1>
 <p>元仲景的弟弟元暹，字叔照。孝庄帝初年，被任命为南兖州刺史。他在州任职期间，十分残暴凶狠，经常杀人。元颢进入洛阳时，元暹据守本州，不肯屈从。庄帝回宫后，封他为汝阳王，累迁至秦州刺史。以前秦州人多次翻来覆去叛乱，元暹把他们都杀掉，留存下来的人不过原来的十分之一二。普泰元年(531)，任凉州刺史，贪婪残忍至极。他想夺府中人和经商胡人中富有者的财物，便假传一道命令，诳骗那些富豪们，说是准备给他们奖赏。那些人去后，他全部屠杀光，所有家财人口，全部没收归他自己所有。孝静帝时，任侍中、录尚书事。死后，赠封为太师、录尚书事。他的儿子元冲袭封爵。元冲没有儿子，封国废除。</p>
-<div class='pn'><p class='pre'>上一节：<a href='元仲景传-白话.html'>元仲景传</a></p><p class='next'>下一节：<a href='元遥传-白话.html'>元遥传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='元仲景传-白话.html'>元仲景传</a></p><p class='next'>下一节：<a href='元遥传-白话.html'>元遥传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>江子一传(附江子四、江子五传)<span style='font-size:small'> 白话</span></h1>
 <p>江子一字元贞，济阳考城人，晋朝散骑常侍江统的第七世孙。父亲江法成，天监年间任奉朝请。<BR><BR>　　江子一年少时好学，有志向，操行好，因家里穷困缺少给养，故一生素食。起初任王国侍郎、奉朝请。上书请求到皇家书院看书、管理图书，高祖同意了他的请求，下令让他在华林省值班。他的姑父右卫将军朱异，当朝权要，休闲时，宾客满门，江子一从不进姑父的门，清高如此。后迁尚书仪曹郎，出任遂昌、曲阿两县县令，政绩名声很好。任通直散骑常侍郎。出任戎昭将军、南津校尉。<BR><BR>　　江子一的弟弟江子四，历任尚书金部郎，大同初年，迁右丞。兄弟俩性情都很刚烈。江子四任右丞时上封事，极言得与失，高祖很欣赏，下诏让尚书仔细选择施行。左民郎沈炯、少府丞顾王与曾奏书不同意，高祖厉色呵斥他们，江子四便上前代替沈炯等回对，言辞激烈，高祖气愤不已，下令把江子四捆起来，江子四蹲在地上反抗，高祖怒气消失，便放了他，但因此被免去官职。<BR><BR>　　侯景叛乱时，贼军攻下历阳，从横江将要渡江。江子一率水兵千余人，想在下游发起攻击，副帅董桃生家居江北，因而与其部下逃跑，江子一便退还南州，收回余兵，步行至京城。贼兵不久也到了京城，江子一启告太宗说：“敌军对京城的包围圈尚未形成，现在还可以出击，如果敌军营垒建立起来便无用武之地。”请求与其弟江子四、江子五率所领的百余人，打开承明门向贼军挑战。太宗同意了他的请求。江子一身先士卒，一人冲向敌阵，挥戈斩敌，群贼夹攻他，跟随的人不敢前去救助，江子四、江子五见情况危急，相继冲入敌阵，兄弟三人都被杀害。太宗下诏说：“已故戎昭将军、通直散骑常侍郎、南津校尉江子一，前尚书右丞江子四，东宫直殿主帅江子五，遭敌杀害的消息我知道，实在让人哀伤，以身报国功加一等，这也是过去的规章典制。可赠江子一给事黄门侍郎，江子四中书侍郎，江子五散骑侍郎。”侯景叛乱平定后，世祖又追赠江子一为侍中，谥号义子；江子四为黄门侍郎，谥号毅子；江子五中书侍郎，谥号烈子。<BR><BR>　　江子一续写《黄图》及班固的“九品”，辞赋文稿几十篇，都流传在世。</p>
-<div class='pn'><p class='pre'>上一节：<a href='韦粲传-白话.html'>韦粲传</a></p><p class='next'>下一节：<a href='张嵊传-白话.html'>张嵊传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='韦粲传-白话.html'>韦粲传</a></p><p class='next'>下一节：<a href='张嵊传-白话.html'>张嵊传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

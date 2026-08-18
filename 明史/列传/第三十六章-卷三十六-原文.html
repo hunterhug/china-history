@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -217,8 +244,9 @@
 </p><p>马愉，字性和，临朐人。宣德二年进士第一。授翰林修撰。九年秋，特简史官及庶吉士三十七人进学文渊阁，以愉为首。正统元年充经筵讲官，再迁至侍读学士。时王振用事，一日，语杨士奇、荣曰：“朝廷事久劳公等，公等皆高年，倦矣。”士奇曰：“老臣尽瘁报国，死而后已。”荣曰：“吾辈衰残，无以效力，当择后生可任者，报圣恩耳。”振喜而退。士奇咎荣失言。荣曰：“彼厌吾辈矣，一旦内中出片纸令某人入阁，且奈何？及此时进一二贤者，同心协力，尚可为也。”士奇以为然。翼日，遂列侍读学士苗衷、侍讲曹鼐及愉名以进。由是愉被擢用。五年诏以本官入内阁，参预机务，寻进礼部右侍郎。十二年卒。赠尚书兼学士。赠官兼职，自愉始。
 </p><p>愉端重简默，门无私谒。论事务宽厚。尝奏天下狱久者多瘐死，宜简使者分道决遣。帝纳焉。边警，方命将，而别部使至，众议执之。愉言：“赏善罚恶，为治之本。波及于善，非法。乘人之来执之，不武。”帝然之，厚遣其使。
 </p><p>赞曰：成祖时，士奇、荣与解缙等同直内阁，溥亦同为仁宗宫僚，而三人逮事四朝，为时耆硕。溥入阁虽后，德望相亚，是以明称贤相，必首三杨。均能原本儒术，通达事几，协力相资，靖共匪懈。史称房、杜持众美效之君，辅赞弥缝而藏诸用。又称姚崇善应变，以成天下之务；宋璟善守文，以持天下之正。三杨其庶几乎。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十五章-卷三十五-原文.html'>第三十五章-卷三十五</a></p><p class='next'>下一节：<a href='第三十七章-卷三十七-原文.html'>第三十七章-卷三十七</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三十五章-卷三十五-原文.html'>第三十五章-卷三十五</a></p><p class='next'>下一节：<a href='第三十七章-卷三十七-原文.html'>第三十七章-卷三十七</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

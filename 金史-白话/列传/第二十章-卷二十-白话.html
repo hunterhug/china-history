@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -198,8 +225,9 @@
 </p><p>高松原名高檀朵，澄州析木人。十九岁时从军做蒲辇，他有力善战。完颜宗弼听说他的事后，召他跟随左右，高松从此跟随宗弼大破汴京及和尚原，官到咸平总管府判官。世宗即金朝皇帝位后，高松任充管押东京路渤海万户。
 </p><p>兵部尚书可喜谋反，先前的同知延安尹李老僧说：“我与万户高松计谋此事，他一定会跟从我们。”他军中很多人说“：若得此军，我们的起义是很容易的。”李老僧前去会见高松，游说高松说：“你对以前的皇帝有功，到现在没有给你大官做，什么原因？”高松回答说：“我是一个县令，每每念及皇上圣恩，我这一生都报答不完，还敢有奢望吗？”李老僧于是不敢劝说高松谋反。可喜、布辉、阿琐知道谋反不能成功，于是他们改变谋反意图，共同逮捕了斡论到有司去自首。
 </p><p>高松跟从完颜窝斡出征，因为有功升为咸平少尹，四次荣升崇义军节度使。高松四十七岁时死去。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-白话.html'>第十九章-卷十九</a></p><p class='next'>下一节：<a href='第二十一章-卷二十一-白话.html'>第二十一章-卷二十一</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-白话.html'>第十九章-卷十九</a></p><p class='next'>下一节：<a href='第二十一章-卷二十一-白话.html'>第二十一章-卷二十一</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

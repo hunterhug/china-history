@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>元修义传<span style='font-size:small'> 白话</span></h1>
 <p>元..的弟弟修义，字寿安，很有文才。开始时由士人逐步迁升至齐州刺史。因原齐州刺史不断死去，元修义便几次上表推辞，皇帝下诏不许，让他可以随意另建州衙。元修义便把州衙移到东城。他为政宽和。后又改任秦州刺史。明帝初年，曾上表朝廷陈述庶人禧和庶人愉等人的情况，请求宽恕他们的罪责，赐葬于陵园之地。灵太后下诏说“：收葬的恩典，应当由朝廷的旨意决定，地方官员怎么可以越职干预这种事情？”<BR><BR>　　他在州里受许多贿赂。累迁至吏部尚书。他到吏部选用官员，一味接受贿赂，授给官职的大小，都有固定的价格。当时有位中散大夫叫高居的，朝廷已有意让他优先补用。这时上党郡缺郡守，高居请求授给他。可是，元修义私下已把这个职务答应给别人了，所以压住高居，不让他得到。高居大声喊叫起来，出言不逊。元修义让左右的人去拉他。高居对着众人呼天叫地骂贼。有人问他：“青天白日，又在公堂之上，哪里有贼？”高居指着元修义说：“这位高坐公堂的人，违抗天子的明诏，送给他东西多的就能当官，在京城公然劫掠，难道他不是大贼吗？”元修义被骂得变了脸色。高居骂不绝口地走出门去。后来，高居想要拦住皇帝车驾告元修义的罪状，被左仆射萧宝夤劝阻以后才算停止。<BR><BR>　　二秦地反叛时，朝廷任命元修义代兼尚书右仆射、西道行台、行秦州事，管辖各军。元修义特别爱喝酒，每次一喝就连日不断，因而得了风病，成天昏头昏脑的。他虽然到了长安，却没有干出什么好事。元志失败阵亡后，贼兵已东至黑水，朝廷另派萧宝夤征讨，任命元修义为雍州刺史。元修义死在雍州，追赠为司空，谥为“文”。</p>
-<div class='pn'><p class='pre'>上一节：<a href='元诞传-白话.html'>元诞传</a></p><p class='next'>下一节：<a href='元文都传-白话.html'>元文都传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='元诞传-白话.html'>元诞传</a></p><p class='next'>下一节：<a href='元文都传-白话.html'>元文都传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

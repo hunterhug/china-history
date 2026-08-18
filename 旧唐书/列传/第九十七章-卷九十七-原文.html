@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -223,8 +250,9 @@
 <p>　　牧从兄忭隆盛于时，牧居下位，心常不乐。将及知命，得病，自为墓志、祭文。 又尝梦人告曰：“尔改名毕。”逾月，奴自家来，告曰：“炊将熟而甑裂。”牧曰： “皆不祥也。”俄又梦书行纸曰：“皎皎白驹，在彼空谷。”寤寝而叹曰：“此过 隙也。吾生于角，徵还于角，为第八宫，吾之甚厄也。予自湖守迁舍人，木还角， 足矣。”其年，以疾终于安仁里，年五十。有集二十卷，曰《杜氏樊川集》，行于 代。子德祥，官至丞郎。 </p>
 <p>　　史臣曰：黄裳以道致君，持诚奉主；辨怀光之诈，罢全义之征。讨贼辟之凶， 举无遗算；葬执谊之柩，岂曰不仁。郢天纵之性，总丱之年，代父命于临刑，孝也； 怀光之乱，王人被伤，抚巢父于贼庭，义也；抑浮滥之流，考艺文之士，尽搜幽滞， 大变时风，正也；保止足之名，辞荣辱之路，高避世利，遐躅昔贤，智也。忠孝全 矣，仁智备矣！此二子者，皆临大节而不可夺也。佑承廕入仕，谳狱受知，博古该 今，输忠效用；位居极品，荣逮子孙，操修之报，不亦宜哉！及其宾僚紊法，嬖妾 受封，事重因循，难乎语于正矣！牧之文章，忭之长厚，能否既异，才位不伦，命 矣夫！ </p>
 <p>　　赞曰：贞公壮节，临难奋发。言行无玷，斯为明哲。戡乱阜俗，时泰位隆。国 之名臣，郑公、岐公。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第九十六章-卷九十六-原文.html'>第九十六章-卷九十六</a></p><p class='next'>下一节：<a href='第九十八章-卷九十八-原文.html'>第九十八章-卷九十八</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第九十六章-卷九十六-原文.html'>第九十六章-卷九十六</a></p><p class='next'>下一节：<a href='第九十八章-卷九十八-原文.html'>第九十八章-卷九十八</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

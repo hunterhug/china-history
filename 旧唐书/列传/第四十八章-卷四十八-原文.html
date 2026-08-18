@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -239,8 +266,9 @@
 <p>　　天宝元年，改为尚书右仆射，寻转左仆射。一岁薨，年六十三，赠太子太傅， 谥曰文献。子综，吏部郎中。综子佶。佶，字弘正，幼能属文。弱冠举进士，补校 书郎，判入高等，授蓝田尉。时有诏命畿内诸县城奉天，时严郢为京兆，政尚峻暴， 加以朝旨甚迫，尹正之命，急如风霆。本曹尉韦重规其室方娠而疾，畏郢之暴，不 敢以事故免。佶因请代，役无愆程，当时义之。德宗南狩，佶诣行在，拜拾遗，转 补阙。李怀光以河中叛，朝廷欲以含垢为意，佶抗议请讨，上深器之，前席慰勉。 三迁吏部员外，历驾部兵部郎中，迁谏议大夫。会黔中观察使韦士宗惨酷驭下，为 夷獠所逐，俾佶代之，酋渠自化。其后为瘴毒所侵，坚请入觐，拜同州刺史。征入 为中书舍人，迁尚征入为中舍人，迁尚书右丞。时兵部尚书李巽兼盐铁使，将以使 局置于本行，经构已半，会佶拜命，坚执以为不可，遂令彻之。巽恃恩而强，时重 佶之有守，就拜吏部侍郎。以疾除国子祭酒，寻迁工部尚书致仕。元和八年卒，年 六十二，赠吏部尚书。佶清劲温敏，凡所定交，时称为第一流。与郑余庆特相友善， 佶殁后，余庆行朋友之服，搢绅美之。 </p>
 <p>　　史臣曰：魏知古、卢怀慎、源乾曜、李元纮、杜暹、韩休、裴耀卿，悉蕴器能， 咸居宰辅。或心存启沃，或志在荐贤，或出爱子为外官，或止屯田于关辅，或不受 蕃人之赂，或坚劾伯献之奸，或广漕渠以充国用：此皆立事立功，有足嘉尚者也。 卢、李、杜三君子，又以清白垂美简书，公孙弘之流也。乾曜职当机密，无所是非， 持禄保身，焉用彼相？ </p>
 <p>　　赞曰：卢、魏、乾曜，弼违进贤。裴、韩、李、杜，远财劾奸。汗简书事，清 风肃然。万岁之后，其名不刊。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十七章-卷四十七-原文.html'>第四十七章-卷四十七</a></p><p class='next'>下一节：<a href='第四十九章-卷四十九-原文.html'>第四十九章-卷四十九</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第四十七章-卷四十七-原文.html'>第四十七章-卷四十七</a></p><p class='next'>下一节：<a href='第四十九章-卷四十九-原文.html'>第四十九章-卷四十九</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

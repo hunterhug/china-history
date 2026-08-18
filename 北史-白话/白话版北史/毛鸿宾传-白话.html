@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>毛鸿宾传<span style='font-size:small'> 白话</span></h1>
 <p>毛鸿宾，长得大鼻子大眼睛，满脸的络腮胡须，又黑又胖，面貌形状十分怪异，氐族和羌族的人看见他都很害怕。他很有胆略，又善于骑马射箭；倜傥洒脱，不拘小节。在兄弟当中，他最为轻财好施。他的哥哥毛遐虽说较早出来做官，但名望却在他之下。盗贼突起，他被乡亲们推为盟主，常与毛遐配合，一个坚守后方，一个出击作战。后来，他被朝廷封为岐州刺史、散骑常侍、开国县侯。毛遐笑着对他说：“讨伐敌寇的功劳，我不在你的后面。至于朝廷的封赏，你却比我的重。这大概是依靠道德帮助别人方面我不如你的缘故。”孝明帝因鸿宾平定的地方很多，便改北地郡为北雍州，命他为刺史。朝廷下诏说“：用这种方法使你锦上添花，增加荣耀啊。”又改三原县为建中郡，以表彰他们兄弟的功劳。<BR><BR>　　后来，..朱天光从关中返回洛阳，夷族和华夏族心有疑虑的人，都跟着天光至洛阳。鸿宾也带着乡里的勇壮二千人相随。京城中的人平素都听说过他的大名，不管是达官显贵还是穷儒寒士，都争相与他交往。不久，被封为西兖州刺史。那些郁郁不得其志的人不断求见，他家常座无虚席。他送给他们的衣服和饮食，和自己的完全一样。自己家里的东西不够送，就动用公费。又转任南青州刺史。不久，被朝廷调回，他被有司纠劾，便躲了起来。过了一个多月，朝廷下特诏将他赦免。<BR><BR>　　孝武帝与高欢有矛盾，命他镇守潼关，作西部道路的寄托。孝武帝西奔长安，沿途吃的东西断绝，侍从的官吏常常三两天只靠喝山涧的水过日子。鸿宾奉献酒肉食品，将孝武帝迎到稠桑，跟随的文武官员才解除了饥渴。孝武帝拉着他的手说“：岁寒识松柏，疾风知劲草，这是我所希望你能做到的。天下太平之后，我怎么能忘掉你呢！”仍命他留守潼关。后来高欢前来进攻，他被抓获，解送到并州，忧虑愤恨，因而死去。</p>
-<div class='pn'><p class='pre'>上一节：<a href='雷绍传-白话.html'>雷绍传</a></p><p class='next'>下一节：<a href='辛雄传-白话.html'>辛雄传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='雷绍传-白话.html'>雷绍传</a></p><p class='next'>下一节：<a href='辛雄传-白话.html'>辛雄传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

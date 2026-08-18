@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -229,8 +256,9 @@
 </p><p>六月庚戌朔，诏百官举大将，众举刘益，不能用。癸丑，飞虎军二百人夺封丘门出奔。甲寅，以出师锢门禁。乙卯，白撒开渠于私第东。丙辰，阅官马，择瘠者杀以食。丁巳，封仙据徐州，徒单益都走宿州，推张兴行省事。庚申，塞京城四门，以便守御。壬戌，国安用入徐州，杀张兴，推封仙为元帅，以主州事。己巳，诏赠御侮中郎将完颜陈和尚镇南军节度使。立褒忠庙碑。权参知政事杨纟廷罢。辛未，复修汴城。以疫后，园户、僧道、医师、鬻棺者擅厚利，命有司倍征之，以助其用。甲戌，宿州镇防千户高腊哥、李宣杀节度使纥石烈阿虎父子，请行省徒单益都主帅事，益都不从，率其将吏西走，至谷熟遇大元军，死之。乙亥，左丞李蹊送曹王与其子仝俱还。丁丑，恒山公武仙杀士人李汾。
 </p><p>七月庚辰朔，兵刃有火。辛巳，军士挝登闻鼓乞将刘益。癸未，尚书右丞颜盏世鲁罢。吏部尚书完颜奴申为参知政事。甲申，飞虎军士申福、蔡元擅杀北使唐庆等三十余人于馆，诏贳其罪，和议遂绝。乙酉，都人扬言欲杀白撒，密诏遣卫士护其家。丙戌，军士毁白撒别墅。斜捻阿不妄杀市人之过其门者以靖乱。丁亥，拜天于承天门下，出内府及两宫物赐军士。戊子，下令招军。辛卯，签民为兵。巩昌民百二十人赴援。乙未，宿州帅众僧奴称国安用降，遣近侍直长因世英等持诏封安用为兖王，行京东等路尚书省事，赐姓完颜，改名用安。新军有挝登闻鼓者，杖杀之。乙巳，金、木、火、太阴会于轸、翼。丙午，参知政事完颜思烈、恒山公武仙、巩昌总帅完颜忽斜虎率诸将兵自汝州入援，以合喜为枢密使，将兵一万应之，命左丞李蹊劝谕出师，乃行。
 </p><p>八月己酉朔，合喜屯杏花营，又益兵五千人，始进屯中牟故城。庚戌，发丁壮五千人运粮，饷合喜军。辛亥，完颜思烈遇大元兵于京水，遂溃，武仙退保留山，思烈走御寨，中京元帅左监军任守贞死之。合喜弃辎重奔至郑门，聚兵乃入。甲寅，免合喜为庶人，籍其家以赐军士。降监军长东为符宝郎。丁巳，释奠孔子。戊午，括民间粟，己未，籍徒单兀典、完颜重喜、纳合合闰家赀。前仪封令魏璠上言，“巩昌帅完颜仲德沉毅有远谋，臣请奉命往召。”不报。戊辰，免府试。起复前大司农侯挚为平章政事，进封萧国公，行京东路尚书省事。己巳，挚帅兵行至封丘，将士将溃，挚止之，乃与众还汴。壬申，听无军家口戍京。甲戌，金木星交。乙亥，卖官，及许买进士第。丙子，诏罢括粟，复以进献取之。丁丑，京城民杨兴入赀，授延州刺史。戊寅，刘仲温入赀，授许州刺史。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p><p class='next'>下一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p><p class='next'>下一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

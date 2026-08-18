@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>马枢传<span style='font-size:small'> 白话</span></h1>
 <p>马枢字要理，扶风..人。其祖父马灵庆，为齐竟陵王录事参军。马枢几岁时父母俱丧，其姑收养了他。六岁时，他能背诵《孝经》、《论语》、《老子》。长大后，他博览经文史籍，尤其善解佛经及《周易》、《老子》义。<BR><BR>　　梁邵陵王萧纶任南徐州刺史，久闻其名，荐引为学士。萧纶当时自己讲授《大品经》，令马枢讲授《维摩》、《老子》、《周易》，同一日阐发题解，道俗听者二千人。邵陵王想弄清讲授的优劣，便对众人说：“与马学士论义，必使屈服，不能空立主客之席。”于是数家学者齐起发问，马枢便一一剖析，先阐发其宗旨，然后条分缕析，论述千变万化，与他论者都顶礼膜拜默默聆听而已。萧纶十分赞赏他，想把他向朝廷推荐。不久遭遇侯景之乱，萧纶带兵援助台城，便留下二万卷书给马枢。马枢潜心阅览，几乎全部通读，便喟然叹息说：“我听说看重爵位的人把巢父、许由当作羁绊，喜好隐居者以伊尹、吕望为低贱，为名利所束缚者则把道家之言视为草芥不值。习玩于清淡者则把儒家学说当作糠米比，公正的考察，他们是各取所好。然而支父有辞让帝位之品格，庄子有傲视帝王之美德，千载传为美谈，沿袭不废。想一想那些孜孜以求的人们，我只有为他们叹息。难道是上天不愿施惠给高尚之人，以至于隐居之人是这样的少！”便隐居茅山，有终身之志。<BR><BR>　　天嘉元年(560)，文帝征辟为度支尚书，他辞不应命。那时马枢的亲人故友都住在京口，每年秋冬之际，按时去游玩。鄱阳王任南徐州刺史，钦慕其品德高尚，担心不能招致，于是卑辞厚意，让使者去邀请他，前后数次，马枢称病推辞。有门客规劝说：“鄱阳王以师友相待，与爵位无关，身处闹市，于静心修养又有何妨。”马枢不得已，才前往。鄱阳王另外筑室让他住，马枢不喜欢住所高贵华丽，便在竹林间自造茅茨庐居住。每次王公的馈赠，他再三推辞，自己所要的只是十分之一。<BR><BR>　　马枢少时逢乱世，他的居所，连盗贼都不进，依托在他家的人常有数百家。他目光敏锐富有洞察力，能看见暗中物品。常有一只白燕，在他家庭院的树上筑巢，栖戏于檐庑之下，时而停集几案，春去陈书秋来，差不多三十多年。太建十三年(581)去世，时年六十岁。他撰写的二十卷《道觉论》流行于世。</p>
-<div class='pn'><p class='pre'>上一节：<a href='虞寄传-白话.html'>虞寄传</a></p><p class='next'>下一节：<a href='到仲举传-白话.html'>到仲举传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='虞寄传-白话.html'>虞寄传</a></p><p class='next'>下一节：<a href='到仲举传-白话.html'>到仲举传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

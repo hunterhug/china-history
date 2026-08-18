@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -184,8 +211,9 @@
 </p><p>陈昭衮，小字王九，云州人。工译鞮，勇而善射。统和中，补祗候郎君，为奚拽剌详稳，累迁敦睦宫太保，兼掌围场事。开泰五年秋，大猎，帝射虎，以马驰太速，矢不及发。虎怒，奋势将犯跸。左右辟易，昭衮舍马，捉虎两耳骑之。虎骇，且逸。上命卫士追射，昭衮大呼止之。虎虽轶山，昭衮终不堕地。伺便，拔佩刀杀之。辇至上前，慰劳良久。即日设燕，悉以席上金银器赐之，特加节钺，迁围场都太师，赐国姓，命张俭、吕德懋赋以美之。迁归义军节度使，同知上京留守，历西南面招讨都监，卒。
 </p><p>萧合卓，字合鲁隐，突吕不部人。始为本部吏。统和初，以谨恪，补南院侍郎。十八年，北院枢密使韩德让举合卓为中丞，以太后遗物使宋。还，迁北院枢密副使。开泰三年，为左夷离毕。合卓久居近职，明习典故，善占对。以是尤被宠渥，升北院枢密使。时议以为无完行，不可大用；南院枢密使王继忠侍宴，又讥其短。帝颇不悦。六年，遣合卓伐高丽，还，时求进者多附之；然其服食、仆马不加于旧。帝知其廉，以族属女妻其子，诏许亲友馈献，豪贵奔趋于门。太平五年，有疾，帝欲临视，合卓辞曰：“臣无状，猥蒙重任。今形容毁瘁，恐陛下见而动心。”帝从之。会北府宰相萧朴问疾，合卓执其手曰：“吾死，君必为枢密使，慎勿举胜己者。”朴出而鄙之。是日卒。子乌古，终本部节度使。
 </p><p>论曰：统和诸臣，名昭王室者多矣。室鲁拜枢密使，朝野相庆，必有得民心者。继忠既不能死国，虽通南北之和，有知人之鉴，奚足尚哉！孝忠、昭衮，皆有可称者。合卓临终，教萧朴毋举胜己者任枢密，其误国之罪大矣！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p><p class='next'>下一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p><p class='next'>下一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

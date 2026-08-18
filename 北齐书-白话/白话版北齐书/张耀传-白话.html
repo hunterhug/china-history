@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>张耀传<span style='font-size:small'> 白话</span></h1>
 <p>张耀，字灵光，上谷昌平人氏。父凤，晋州长史。耀年轻时坚贞谨慎，颇通吏事。解褐给事中，转司徒水曹行参军。义旗建起，高祖擢耀为中军大都督韩轨府长史。韩轨任瀛、冀二州刺史时，又让耀做了自己的咨议参军。后遭御史弹劾，州府僚佐以及轨左右因赃罪受牵连的一百多人，惟独耀由于清白未被审查。征为丞相府仓曹。<BR><BR>　　显祖嗣位，迁耀相府掾。天保初，赐爵都亭乡男，摄仓、库二曹事，所有的奖赏赐给，常让耀主管出纳。转秘书丞，迁尚书右丞。显祖曾因外出，令耀居守中殿。显祖夜还，耀不开门，并提醒士兵加强戒备。帝在门外等候许久，催促十分急迫。因为夜深，真伪难分，须等火把取来后面识，门才能开。于是耀独自出门相见。显祖笑道：“你想学郅君章呀！”便让耀打开大门，然后进来。显祖为此事感叹了好长时间，还赏赐给他锦彩。出朝为南青州刺史，未赴任。肃宗辅政，迁为秘书监。<BR><BR>　　耀历事高祖、显祖、肃宗等帝，奉职恪勤，未尝出现差错。每得禄赐，便散发给宗族。节俭朴素，车服饮食，从未超出制度。好读《春秋》，每月一遍，时人将他同贾梁道相比。赵彦深曾对耀说：“你研讨《左氏》，是想找出服虔、杜预的纰缪吗？”耀说：“并非如此。《左氏》之书，言事详尽，恶人可以自戒，善人可以庶几。所以努力温习，不是想诋诃古人的得失。”天统元年(565)，世祖临朝，耀奏事，疾病暴发，倒在御座前面。帝跑下御座探视，呼喊数声没有反应。帝哭着说：“老天呀，你为什么要弄走我的良臣？”只十天时间，就辞世了，时年六十三岁。诏书说耀忠贞正直，温恭廉慎。赠开府仪同三司、尚书右仆射、燕州刺史，谥号贞简。</p>
-<div class='pn'><p class='pre'>上一节：<a href='张亮传-白话.html'>张亮传</a></p><p class='next'>下一节：<a href='赵起传-白话.html'>赵起传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='张亮传-白话.html'>张亮传</a></p><p class='next'>下一节：<a href='赵起传-白话.html'>赵起传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

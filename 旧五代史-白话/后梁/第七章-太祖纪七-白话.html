@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -181,8 +208,9 @@
 </p><p>三月一日，到达枣强县的西城。七日，镇定各军招讨使杨师厚报告攻下枣强县，车驾当天疾驰南还。八日，又到贝州。十五日，到贝州外城重门阅兵。十六日，太祖又到东外城重门检阅骑兵。二十七日，到济源县。
 </p><p>四月一日，到魏州金波亭，赐宴宰臣、文武官员及六学士。十一日，到黎阳县。二十一日，回到东都。二十三日，太祖泛舟于九曲池，不慎翻了船，太祖掉进池中，宫女和侍从官员扶着他爬上岸，惊悸良久。三十日，车驾从东京出发，晚上住在中牟县。
 </p><p>五月二日，从郑州出发，到达荥阳，河南尹魏王张宗..望尘迎拜，河阳留后邵赞、怀州刺史段明远等陆续前来迎接。晚上太祖住在汜水县，太祖召魏王张宗..进来问答，就在御座前赐给食物，数刻才退。五日，太祖从汜水出发。回到东都，文武臣僚到东郊奉迎。宰臣薛贻矩抱病告假，不能随从，太祖慰问再三，又命他暂驻东京以待病愈。当薛贻矩去世后，太祖震惊伤悼很久，命洛苑使曹守..前往吊祭他，又命停止六日、七日、八日的朝参，丞相、文武官员均到上门合门慰问。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章-太祖纪六-白话.html'>第六章-太祖纪六</a></p><p class='next'>下一节：<a href='第八章-末帝纪上-白话.html'>第八章-末帝纪上</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第六章-太祖纪六-白话.html'>第六章-太祖纪六</a></p><p class='next'>下一节：<a href='第八章-末帝纪上-白话.html'>第八章-末帝纪上</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

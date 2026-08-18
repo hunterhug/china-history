@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -195,8 +222,9 @@
 <p>　　李君羡者，洺州武安人也。初为王世充骠骑，恶世充之为人，乃与其党叛而来 归，太宗引为左右。从讨刘武周及王世充等，每战必单骑先锋陷阵，前后赐以宫女、 马牛、黄金、杂彩，不可胜数。太宗即位，累迁华州刺史，封武连郡公。贞观初， 太白频昼见，太史占曰：“女三昌。”又有谣言：“当有女武王者。”太宗恶之。 时君羡为左武卫将军，在玄武门。太宗因武官内宴，作酒令，各言小名。君羡自称 小名“五娘子”，太宗愕然，因大笑曰：“何物女子，如此勇猛！”又以君羡封邑 及属县皆有“武”字，深恶之。会御史奏君羡与妖人员道信潜相谋结，将为不轨， 遂下诏诛之。天授二年，其家属诣阙称冤，则天乃追复其官爵，以礼改葬。 </p>
 <p>　　史臣曰：侯君集摧凶克敌，效用居多；恃宠矜功，粗率无检，弃前功而罹后患， 贪愚之将明矣。张亮听公颖之妖言，恃弓长之邪谶，义兒斯畜，恶迹遂彰，虽道裕 云反状未形，而诡诈之性，于斯验矣。万彻筹深行阵，勇冠戎夷，不能保其首领， 以至诛戮。夫二三子，非慎始而保终也。 </p>
 <p>　　赞曰：君子立功，守以谦冲。小人得位，足为身害。侯、张凶险，望窥圣代。 雄若韩、彭，难逃菹醢。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p><p class='next'>下一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p><p class='next'>下一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

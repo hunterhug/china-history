@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>鲍宏传<span style='font-size:small'> 白话</span></h1>
 <p>鲍宏字润身，东海剡人。父亲鲍机，因才能学问而知名。仕于梁朝，官至书侍御史。<BR><BR>　　鲍宏七岁时死了父亲，由兄长泉之爱护抚育。年满十二岁，就能作文章，曾经奉和湘东王萧绎诗，萧绎嗟叹赞赏不已，引荐为中记室。多次升迁至通直散骑常侍。江陵被平定，归顺周朝，周明帝待他很有礼仪，任命为麟趾殿学士。多次升迁至遂伯下大夫。和杜子晖出使陈国，谋划讨伐齐国。陈国就出兵渡江侵略齐国，周武帝曾经向鲍宏询问夺取齐国的策略，鲍宏认为：“先皇以往攻齐，从洛阳出兵，他们有防备，每次都不能取胜。按照臣的计谋，进兵汾、潞，直袭晋阳，出其不意，才是上策。”周武帝听从鲍宏的建议。等到齐国被平定，任命鲍宏为小御正，赐爵平遥县伯，加授仪同。<BR><BR>　　隋文帝为丞相时，鲍宏奉命出使山南。适逢王谦在蜀举兵反叛，鲍宏路经潼州，被王谦的部将达奚..抓获，强行送往成都，鲍宏终于不能屈服。王谦失败后，鲍宏被迅速传入京城。文帝嘉奖鲍宏宁死不屈，赐给他金带。文帝受禅即位，加授鲍宏为开府，晋封爵位为公。历任利、邛二州刺史，任满回京。当时有一个名叫尉义臣的人，其父尉迟崇不跟从尉迟迥造反，后来在与突厥军队作战中战死。文帝嘉奖他，准备赐给他姓刘金氏，向群臣询问。鲍宏说：“当初项伯不同于项羽，汉高祖赐其姓刘；秦贞的父亲能为国死难，魏武帝赐其姓曹。请求把皇族之姓赐予尉义臣。”文帝说“：好。”因此就赐义臣姓杨。<BR><BR>　　后来又授任为均州刺史，因生眼病免官。死于家中。<BR><BR>　　当初，周武帝敕令鲍宏修撰《皇室谱》一部，分作《帝绪》、《疏属》、《赐姓》三篇。有文集十卷行于世。</p>
-<div class='pn'><p class='pre'>上一节：<a href='李谔传-白话.html'>李谔传</a></p><p class='next'>下一节：<a href='赵绰传-白话.html'>赵绰传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='李谔传-白话.html'>李谔传</a></p><p class='next'>下一节：<a href='赵绰传-白话.html'>赵绰传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

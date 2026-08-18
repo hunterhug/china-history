@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -355,8 +382,9 @@
 </p><p>唉，厚葬的弊病，自从秦、汉以来，很多聪明英伟的君主，即使有高谈阔论善于游说的士人，极力陈说厚葬的祸福利害，也有不能消除君主的迷惑的！难道不是富贵的欲望，沉溺在自己偏爱的事情中很深，而还没有显现的灾祸，难以在无形中描述，不足以震动君主的心吗？但听到温韬的事的人．可稍引以为戒了！五代的君主，常常死于非命，哪有时间顾及他们死后的事呢！祇有周太祖能从温韬的灾祸中引以为鉴，他临终时，留书给周世宗，让他用瓦棺、纸衣为自己殓尸。
 </p><p>要安葬时，打开瓦棺给人看，安葬后，刻石告诉后代，不建地下宫殿，不设守陵妾，反复叮咛他的意思，十分恳切，但实录没有记载他安葬的厚薄。
 </p><p>又以他活着时穿戴的衮冕、通天冠、绛纱袍各两套随葬，一套埋在京师，一套埋在澶州；又以他的剑、镗甲各两件随葬，一件埋在河中，一件埋在大名，没有人能推知他的用意。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十七章-杂传第二十七-白话.html'>第二十七章-杂传第二十七</a></p><p class='next'>下一节：<a href='第二十九章-杂传第二十九-白话.html'>第二十九章-杂传第二十九</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十七章-杂传第二十七-白话.html'>第二十七章-杂传第二十七</a></p><p class='next'>下一节：<a href='第二十九章-杂传第二十九-白话.html'>第二十九章-杂传第二十九</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

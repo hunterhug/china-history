@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -223,8 +250,9 @@
 </p><p>苏淑，字仲和，武邑人也。立性敦谨，颇涉经传。兄寿兴，坐事为阉官。寿兴后为河间太守。赐爵晋阳男。及寿兴将卒，遂冒养淑为子。淑，熙平中袭其爵，除司空士曹参军。寻转太学博士、厉威将军、员外散骑侍郎。转奉车都尉，领殿中侍御史。因使于冀州，会高干邕执刺史元嶷据城起义，淑赞成其事。干邕以淑行武邑郡。未几，尔朱汝归疑率兵将至，淑于郡逃还京师。后除左将军、太中大夫、行河阴令。出除乐陵内史。淑在郡绥抚，其有民誉。始迳二周，谢病乞解，有诏听之，民吏老幼诉乞淑者甚众。后历荥阳太守，亦有能名。加中军将军、司徒从事中郎。兴和二年，拜中山太守。三年，卒于郡。淑清心爱下，所历三郡，皆为吏民所思，当时称为良二千石。武定初，赠卫大将军、都官尚书、瀛州刺史，谥曰懿。齐献武王追美清操，与羊敦同见优赏。
 </p><p>子子且，袭。武定中，齐献武王庙丞。
 </p><p>史臣曰阙。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十五章-卷七十五-原文.html'>第七十五章-卷七十五</a></p><p class='next'>下一节：<a href='第七十七章-卷七十七-原文.html'>第七十七章-卷七十七</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第七十五章-卷七十五-原文.html'>第七十五章-卷七十五</a></p><p class='next'>下一节：<a href='第七十七章-卷七十七-原文.html'>第七十七章-卷七十七</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

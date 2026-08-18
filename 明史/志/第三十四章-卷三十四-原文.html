@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -192,8 +219,9 @@
 </p><p>孝宗崩，工部言：“大行遗诏，惓惓以节用爱民为本。乞敕内府诸司，凡葬仪冥器并山陵殿宇，务从减省。”礼部言：“百日例应变服，但梓宫未入山陵，请仍素翼善冠、麻布袍服、腰绖，御西角门视事，不鸣钟鼓，百官仍素服朝参。”从之。自辞灵至虞祔，荣王俱在陪列。既而王以疾奏免。礼部请以驸马等官捧帛朝祖，帝曰：“朝祖捧帛，朕自行。”发引，亲王止送至大明门外。其在途及至陵临奠，俱护丧官行礼。后遂为例。
 </p><p>世宗崩，令旨免命妇哭临。隆庆元年正月，未及二十七日，帝衰服御宣治门，百官素服、腰绖奉慰。发引，帝行遣奠礼。至朝祖，则遣官捧帛行礼。梓宫至顺天府，皇亲命妇及三品以上命妇祭，余如旧制。光宗即位，礼部言：“丧服列代皆有制度，而断自孝宗。盖孝宗笃于亲，丧礼详且备，故武、世、穆三庙皆宗之。今遵旧制，以衰服御文华门视事，百官素服朝参，候梓宫发引除。”从之。
 </p><p>明自仁宗献陵以后，规制俭约。世宗葬永陵，其制始侈。及神宗葬定陵，给事中惠世扬、御史薛贞巡视陵工，费至八百余万云。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十三章-卷三十三-原文.html'>第三十三章-卷三十三</a></p><p class='next'>下一节：<a href='第三十五章-卷三十五-原文.html'>第三十五章-卷三十五</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三十三章-卷三十三-原文.html'>第三十三章-卷三十三</a></p><p class='next'>下一节：<a href='第三十五章-卷三十五-原文.html'>第三十五章-卷三十五</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

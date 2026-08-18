@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -193,8 +220,9 @@
 </p><p>广顺元年二月丁巳，岁犯咸池。己未，荧惑犯五诸侯。三月甲子，岁守心。己卯，荧惑犯鬼；壬午，荧惑犯天尸。四月甲午，岁犯钩钤。二年二月庚寅，太白经天。四月丙戌朔，日有食之。七月乙丑，荧惑犯井钺；八月乙未，荧惑犯天鐏。九月辛酉，荧惑犯鬼。庚辰，太白掩右执法。十月壬辰，太白犯进贤。三年四月乙丑，荧惑犯灵台；五月辛巳，荧惑犯上将；丙申，荧惑犯右执法。七月乙酉，月犯房。十二月戊申，雨木冰。
 </p><p>显德元年正月庚寅，有大星坠，有声如雷，牛马皆逸，京城以为晓鼓，皆伐鼓以应之。三年正月壬戌，有星孛于参。十二月庚午，白虹贯日。癸酉，月有食之。
 </p><p>五代乱世，文字不完，而史官所记亦有详略，其日、月、五星之变，大者如此。至于气祲之象，出没销散不常，尤难占据。而五代之际，日有冠珥、环晕、缨纽、负抱、戴履、背气，十日之中常七八，其繁不可以胜书，而背气尤多。天福八年正月丙戌，黄雾四塞。九年正月乙未，大雾中二白虹相偶。四月庚戌，大雾中有苍白二虹。广顺元年十一月甲子，白虹竟天。此其尤异者也。至于吴火出杨林江水中、闽天雨豆之类，皆非中国耳目所及者，不可得而悉书矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-司天考第一-原文.html'>第一章-司天考第一</a></p><p class='next'>下一节：<a href='第三章-职方考第三-原文.html'>第三章-职方考第三</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-司天考第一-原文.html'>第一章-司天考第一</a></p><p class='next'>下一节：<a href='第三章-职方考第三-原文.html'>第三章-职方考第三</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

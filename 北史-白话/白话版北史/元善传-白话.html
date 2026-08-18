@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>元善传<span style='font-size:small'> 白话</span></h1>
 <p>元善是元舒的儿子，又名善住。从小跟随父亲到江南，本性好学，通晓《五经》，尤其精通《春秋左氏传》。侯景之乱时，元善回到北周，周武帝对他很礼遇，任命他为太子宫尹，赐爵位为江阳县公，经常拿着经书教授太子。<BR><BR>　　隋开皇初年，被任命为内史侍郎，凡有陈奏，文辞抑扬顿挫，令听的人深感兴趣。陈国使者袁雅前来问聘，皇帝让元善到馆舍去接受国书。袁雅出门不拜，元善同他论起旧事，说明应当有礼拜的仪式，袁雅无言可答，于是拜见，成礼以后才离开。后来转任国子祭酒。皇帝曾亲临国子学校祭奠先圣先师，让元善讲解《孝经》，元善便详论义理，兼以讽谏，皇帝大喜，说：“听了江阳的讲解，更使我动心。”赏给他绢一百匹，衣物一套。元善的学问在通博方面，比不上何妥，可是他风雅而有器度，举止仪容可观，声音清亮明朗，所以被后起的人所仰慕。何妥经常心怀不满，成心想要贬低他。有一次讲解《春秋》，所有儒生全来到，元善私下对何妥说：“名望已经有了公论，不要相互为难。”何妥也答应了。可是到讲台以后，何妥便引用许多古今争议不清的问题来为难他，元善大多回答不出，两人由此产生了仇隙。<BR><BR>　　元善认为高赹是当宰相的合适人选。他曾经对皇帝说：“杨素过于粗俗，苏威为人懦弱，元胄、元..正像鸭子一样。可以托付社稷的，只有高赹。”皇帝起初也赞同他的说法。当高赹得罪之后，皇帝认为元善的说法是替高赹进行游说的，便深加责备。元善忧惧交加，开始得了消渴病，后来病重而死去。</p>
-<div class='pn'><p class='pre'>上一节：<a href='元叉传-白话.html'>元叉传</a></p><p class='next'>下一节：<a href='乐平王拓跋丕传-白话.html'>乐平王拓跋丕传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='元叉传-白话.html'>元叉传</a></p><p class='next'>下一节：<a href='乐平王拓跋丕传-白话.html'>乐平王拓跋丕传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

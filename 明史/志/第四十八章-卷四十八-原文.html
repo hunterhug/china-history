@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -232,8 +259,9 @@
 </p><p>屯田，典屯种、抽分、薪炭、夫役、坟茔之事。凡军马守镇之处，其有转运不给，则设屯以益军储。其规办营造、木植、城砖、军营、官屋及战衣、器械、耕牛、农具之属。凡抽分征诸商，视其财物各有差。凡薪炭，南取洲汀，北取山麓，或征诸民，有本、折色，酌其多寡而撙节之。夫役伐薪、转薪，皆雇役。凡坟茔及堂碑、碣兽之制，第宗室、勋戚、文武官之等而定其差。(坟茔制度，详《礼志》。)
 </p><p>洪武初，置工部及官属，以将作司隶焉。(吴元年置将作司，卿，正三品，少卿，正四品，丞，正五品。左、右提举司提举，正六品，同提举，从六品，司程、典簿、副提举，正七品。军需库大使，从八品，副使，正九品。洪武元年，以将作司隶工部。)六年，增尚书、侍郎各一人，设总部、虞部、水部并屯田为四属部。总部设郎中、员外郎各二人，馀各一人。总部主事八人，馀各四人。又置营造提举司。(洪武六年，改将作司为正六品，所属提举司，改正七品。寻更置营造提举司及营造提举分司，每司设正提举一人，副提举二人，隶将作司。)八年，增立四科，科设尚书、侍郎、郎中各一人，员外郎二人，主事五人，照磨二人。十年，罢将作司。十三年定官制，设尚书一人，侍郎一人，四属部，(以屯田部为屯部，)各郎中、员外郎一人，主事二人。十五年增侍郎一人。二十二年，改总部为营部。二十五年，置营缮所。(改将作司为营缮所，秩正七品，设所正、所副、所丞各二人，以诸匠之精艺者为之。)二十九年，又改四属部为营缮、虞衡、都水、屯田四清吏司。嘉靖后添设尚书一人，专督大工。
 </p><p>提督易州山厂一人，掌督御用柴炭之事。明初，于沿江芦洲并龙江、瓦屑二场，取用柴炭。永乐间，迁都于北，则于白羊口、黄花镇、红螺山等处采办。宣德四年始设易州山厂，专官总理。景泰间，移于平山，又移于满城，相继以本部尚书或侍郎督厂事。天顺元年仍移于易州。嘉靖八年罢革，改设主事管理。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十七章-卷四十七-原文.html'>第四十七章-卷四十七</a></p><p class='next'>下一节：<a href='第四十九章-卷四十九-原文.html'>第四十九章-卷四十九</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第四十七章-卷四十七-原文.html'>第四十七章-卷四十七</a></p><p class='next'>下一节：<a href='第四十九章-卷四十九-原文.html'>第四十九章-卷四十九</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

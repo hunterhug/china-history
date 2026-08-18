@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -216,8 +243,9 @@
 </p><p>二十六年正月戊戌，太阴犯太微西垣上将。辛丑，太阴犯亢宿距星。二月戊午，太阴犯毕宿大星。丁丑，岁星退行，犯房宿北第一星。岁星守钩钤。三月甲午，太阴犯左执法。四月己未，太阴犯轩辕大星。乙丑，太阴犯西咸西第一星。丙子，太白入犯鬼宿积尸气。六月癸酉，流星如酒杯大，色青白，尾迹约长尺余，起自心宿之侧，东南行，光明烛地，没于近浊。七月丁酉，荧惑犯鬼宿积尸气。甲辰，太白昼见。丙午、丁未、戊申，皆如之。八月辛亥，太白昼见。己未，太阴掩牛宿南三星。庚午，岁星犯钩钤。乙亥，太阴掩轩辕大星。九月壬辰，太白犯太微垣右执法。庚子，孛星见于紫微垣北斗权星之侧，色如粉絮，约斗大，往东南行，过犯天棓星。辛丑，孛星测在尾十八度五十分。壬寅，孛星测在女二度五十分。癸卯，孛星测在女九度九十分。甲辰，孛星测在虚初度八十分。太阴犯太微西垣上将。乙巳，孛星出紫微垣北斗权星、玉衡之间，在于轸宿，东南行，过犯天棓，经渐台、辇道，去虚宿、垒壁阵西方星，始消灭焉。丙午，荧惑犯太微西垣上将。十一月乙酉，太白犯填星。丁亥，太白犯房宿北第一星。戊子，荧惑犯太微东垣上相，太白犯键闭。己丑，流星如酒杯大，分为三星，紧相随，前星色青明，后二星色赤，尾迹约长二丈余，起自东北，缓缓往西南行，没于近浊。庚寅，太阴犯毕宿右股北第四星。丙申，太白、岁星、辰星聚于尾宿。庚子，太阴犯太微东垣上相。辛丑，填星犯房宿北第一星。甲辰，太白犯岁星。十二月戊午，太阴犯毕宿大星。庚申，太阴犯井宿西扇北第二星。乙丑，太阴犯轩辕左角。丙寅，太阴犯太微西垣上将。辛未，太阴犯西咸西第一星。甲戌，太阴犯建星西第三星。
 </p><p>二十七年正月癸巳，太阴犯太微西垣上将。二月乙卯，太阴犯井宿西扇北第二星。三月辛巳，填星退犯键闭星。四月丙寅，太阴犯垒壁阵西方第四星。六月乙卯，太阴犯氐宿东北星。辛未，太阴犯井宿西扇北第二星。七月壬辰，荧惑犯氐宿东南星。丙申，太阴犯毕宿大星。己亥，太阴犯井宿东扇南第二星。八月庚戌，荧惑犯房宿北第二星。癸丑，太阴犯建星西第二星。九月丁丑，填星犯房宿北第一星，荧惑犯天江南第二星。乙酉，太阴犯垒壁阵东方第六星。辛卯，填星犯键闭，太阴犯毕大星。癸巳，太阴犯井宿西扇北第二星。丁酉，荧惑犯斗宿西第二星。十月戊午，太阴犯毕宿右股西第二星。辛酉，太阴犯井宿东扇南第三星。癸亥，太阴犯鬼宿西南星。丁卯，岁星、太白、荧惑聚于斗宿。十一月戊寅，太白昼见。庚辰，太阴犯垒壁阵东方南东第一星。
 </p><p>余见本纪。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-卷一-原文.html'>第一章-卷一</a></p><p class='next'>下一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-卷一-原文.html'>第一章-卷一</a></p><p class='next'>下一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -230,8 +257,9 @@
 </p><p>初，赞闻秦王败，即白衣驾驴以俟，人有告赞夺官而已，赞曰：“岂有天子冢嗣见杀，而宾僚夺官者乎，不死幸矣！”已而赞长流岚州百姓。清泰二年，诏归田里，行至石会关，病卒。
 </p><p>○何瓚
 </p><p>何瓚，闽人也，唐末举进士及第。庄宗为太原节度使，辟为判官。庄宗每出征伐，留张承业守太原，承业卒，瓚代知留守事。瓚为人明敏，通于吏事，外若疏简而内颇周密。庄宗建大号于鄴都，拜瓚谏议大夫，瓚虑庄宗事不成，求留守北京。瓚与明宗有旧，明宗即位，召还，见于内殿，劳问久之，已而以瓚为西川节度副使。是时，孟知祥已有二志，方以副使赵季良为心腹，闻瓚代之，亟奏留季良，遂改瓚行军司马。瓚耻于自辞，不得已而往，明宗赐予甚厚。初，知祥在北京为马步军都虞候，而瓚留守太原，知祥以军礼事瓚，瓚常绳以法，知祥初不乐，及瓚为司马，犹勉待之甚厚。知祥反，罢瓚司马，置之私第，瓚饮恨而卒。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十五章-唐臣传第十五-原文.html'>第十五章-唐臣传第十五</a></p><p class='next'>下一节：<a href='第十七章-晋臣传第十七-原文.html'>第十七章-晋臣传第十七</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十五章-唐臣传第十五-原文.html'>第十五章-唐臣传第十五</a></p><p class='next'>下一节：<a href='第十七章-晋臣传第十七-原文.html'>第十七章-晋臣传第十七</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

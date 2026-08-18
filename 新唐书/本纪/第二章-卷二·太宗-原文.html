@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -213,8 +240,9 @@
 </p><p>二十二年正月庚寅，马周薨。戊戌，幸温汤。己亥，中书舍人崔仁师为中书侍郎，参知机务。丙午，左武卫大将军薛万彻为青丘道行军大总管，以伐高丽。长孙无忌检校中书令，知尚书、门下省事。戊申，至自温汤。二月褚遂良起复。乙卯，见京城父老，劳之，蠲今岁半租，畿县三之一。丁卯，诏度辽水有功未酬勋而犯罪者与成官同。乙亥，幸玉华宫。己卯，猎于华原。流崔仁师于连州。三月丁亥，赦宜君给复县人自玉华宫苑中迁者三年。四月丁巳，松州蛮叛，右武候将军梁建方败之。六月丙寅，张行成存问河北从军者家，令州县为营农。丙子，薛万彻及高丽战于泊灼城，败之。七月甲申，太白昼见。壬辰，杀华州刺史李君羡。癸卯，房玄龄薨。八月己酉朔，日有食之。辛未，执失思力伐薛延陀余部于金山。九月庚辰，昆丘道行军总管阿史那社尔及薛延陀余部处月、处蜜战，败之。己亥，褚遂良为中书令。壬寅，眉、邛、雅三州獠反，茂州都督张士贵讨之。十月癸丑，至自玉华宫。己巳，阿史那社尔及龟兹战，败之。十二月辛未，降长安、万年徒罪以下。闰月癸巳，虑囚。
 </p><p>二十三年正月辛亥，阿史那社尔俘龟兹王以献。三月己未，自冬旱，至是雨。辛酉，大赦。丁卯，不豫，命皇太子听政于金液门。四月巳亥，幸翠微宫。五月戊午，贬李世勣为叠州都督。己巳，皇帝崩于含风殿，年五十三。庚午，奉大行御马舆还京师。礼部尚书于志宁为侍中，太子少詹事张行成兼侍中，高季辅兼中书令。壬申，发丧，谥曰文。上元元年，改谥文武圣皇帝；天宝八载，谥文武大圣皇帝；十三载，增谥文武大圣大广孝皇帝。
 </p><p>赞曰：甚矣，至治之君不世出也！禹有天下，传十有六王，而少康有中兴之业。汤有天下，传二十八王，而其甚盛者，号称三宗。武王有天下，传三十六王，而成、康之治与宣之功，其余无所称焉。虽《诗》、《书》所载，时有阙略，然三代千有七百余年，传七十余君，其卓然著见于后世者，此六七君而已。呜呼，可谓难得也！唐有天下，传世二十，其可称者三君，玄宗、宪宗皆不克其终，盛哉，太宗之烈也！其除隋之乱，比迹汤、武；致治之美，庶几成、康。自古功德兼隆，由汉以来未之有也。至其牵于多爱，复立浮图，好大喜功，勤兵于远，此中材庸主之所常为。然《春秋》之法，常责备于贤者，是以后世君子之欲成人之美者，莫不叹息于斯焉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-卷一·高祖-原文.html'>第一章-卷一·高祖</a></p><p class='next'>下一节：<a href='第三章-卷三·高宗-原文.html'>第三章-卷三·高宗</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-卷一·高祖-原文.html'>第一章-卷一·高祖</a></p><p class='next'>下一节：<a href='第三章-卷三·高宗-原文.html'>第三章-卷三·高宗</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

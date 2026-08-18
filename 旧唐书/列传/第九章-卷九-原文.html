@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -211,8 +238,9 @@
 <p>　　天宝六载，授皎男庆初等官。七载，赠皎吏部尚书，仍赠实封二百户以充享祀。 庆初袭封楚国公。庆初生未晬，玄宗许尚公主，后沦落二十余年。李林甫为相，当 轴用事，林甫即皎之甥，从容奏之，故骤加恩命。天宝十载，诏庆初尚新平公主， 授驸马都尉。永泰元年，拜太常卿。 </p>
 <p>　　史臣曰：或问屈突通尽忠于隋而功立于唐，事两国而名愈彰者，何也？答云， 若立纯诚，遇明主，一心可事百君，宁限于两国尔！被稠桑之擒，临难无苟免；破 仁杲之众，临财无苟得，君子哉！任瑰、丘和、许绍、李袭志咸遇真主，得为故人， 或叙旧立功，或率众归国。寻其履迹，皆有可称。袭志为政，袭誉训子，庶几弘远 矣。姜抃恩信，有能官之誉；行本勤济，多克敌之功。皎虽故旧，恩幸不伦，虽嘉 贞致冤，亦冒宠自掇，岂非无德而禄，福过灾生之验欤！任瑰纵妒妻无礼，任亲戚 求财，丘和进食邀幸，皆无取焉。 </p>
 <p>　　赞曰：屈突守节，求仁得仁。诸君遇主，不足拟伦。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p><p class='next'>下一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p><p class='next'>下一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

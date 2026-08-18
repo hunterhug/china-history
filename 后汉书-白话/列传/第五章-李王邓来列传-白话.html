@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -210,8 +237,9 @@
 </p><p>建武十一年(35)，来歙与盖延、马成进攻公孙述将领王元、环安于河池、下辨，攻陷了。乘胜前进。蜀人大惧，派遣刺客刺杀来歙，未死，驰召盖延。盖延见到来歙，俯伏悲哀，不能仰视。来歙叱责盖延说“：虎牙大将军怎敢这样！现在我被刺客刺杀，不能再报效国家，所以叫你来，想嘱以军事，你反而仿效儿女子痛哭涕泣吗！我虽刺刃在身，难道不能举刀杀你吗？”盖延收泪强行起身，接受来歙告诫。来歙自书写表章说“：臣在夜深人静后，不知为何人所刺伤，刺中臣的要害。臣不敢自惜己身，只恨奉职没有完成，以为朝廷羞耻。治理国家以得贤人为根本，太中大夫段襄，正直可以任用，愿陛下裁定省察。又臣的兄弟不贤明，最终恐怕会犯罪，请陛下哀怜，多赐教示督察。”写完后丢下笔抽出扎在身上的刀就死了。光武闻讯大惊，看了表章揩干眼泪，就赐策书说“：中郎将来歙，攻战连年，平定羌、陇，忧国忘家，忠孝显著，遇刺身亡，呜呼哀哉！”派太中大夫赠来歙中郎将、征羌侯印绶，谥封为节侯，派谒者护理丧事。灵柩回到洛阳，帝身着白色丧服临吊送葬。以来歙有平羌、陇之功，所以改汝南郡的当乡县为征羌国。子来褒嗣位。
 </p><p>建武十三年(37)，帝嘉奖来歙忠节，又封来歙弟来由为宜西侯。来褒子来眣，匹配显宗女武安公主。来眣早死，来褒死后，以来眣子来历嗣位。
 </p><p>史官评论：世间称来君叔为天下信士。他作为两国之间的专使，难道还厌诈谋吗？而他独能以诚信著称于世，是由于他的诚心在于使两边都得其所安，而他自己却不自私谋功哩！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章-宗室四王三侯列传-白话.html'>第四章-宗室四王三侯列传</a></p><p class='next'>下一节：<a href='第六章-邓寇列传-白话.html'>第六章-邓寇列传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第四章-宗室四王三侯列传-白话.html'>第四章-宗室四王三侯列传</a></p><p class='next'>下一节：<a href='第六章-邓寇列传-白话.html'>第六章-邓寇列传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

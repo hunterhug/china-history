@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -227,8 +254,9 @@
 </p><p>张易之为母阿臧为七宝帐，有鱼龙鸾凤之形，仍为象床、犀簟。则天令凤阁侍郎李迥秀妻之，迥秀不获已，然心恶其老，薄之。阿臧怒，出迥秀为定州刺史。
 </p><p>中宗女安乐公主，有尚方织成毛裙，合百鸟毛，正看为一色，旁看为一色，日中为一色，影中为一色，百鸟之状，并见裙中。凡造两腰，一献韦氏，计价百万。又令尚方取百兽毛为鞯面，视之各见本兽形。韦后又集鸟毛为鞯面。安乐初出降武延秀，蜀川献单丝碧罗笼裙，缕金为花鸟，细如丝发，鸟子大如黍米，眼鼻嘴甲俱成，明目者方见之。自安乐公主作毛裙，百官之家多效之。江岭奇禽异兽毛羽，采之殆尽。开元初，姚、宋执政，屡以奢靡为谏，玄宗悉命宫中出奇服，焚之于殿廷，不许士庶服锦绣珠翠之服。自是采捕渐息，风教日淳。
 </p><p>韦庶人妹七姨，嫁将军冯太和，权倾人主，尝为豹头枕以辟邪，白泽枕以辟魅，伏熊枕以宜男。太和死。再嫁嗣虢王。及玄宗诛韦后，虢王斩七姨首以献。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p><p class='next'>下一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p><p class='next'>下一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -306,8 +333,9 @@
 </p><p>五年，诏尚书左丞刘平、仪曹郎张崖定南北郊及明堂仪注。改天嘉中所用齐乐，尽以韶为名。工就位定，协律校尉举麾，太乐令跪赞云：“奏《懋韶》之乐。”降神，奏《通韶》；牲入出，奏《洁韶》；帝入坛及还便殿，奏《穆韶》。帝初再拜，舞《七德》，工执干楯，曲终复缀。出就悬东，继舞《九序》，工执羽籥。献爵于天神及太祖之座，奏登歌。帝饮福酒，奏《嘉韶》；就望燎，奏《报韶》。
 </p><p>至六年十一月，侍中尚书左仆射、建昌侯徐陵，仪曹郎中沈罕奏来年元会仪注，称舍人蔡景历奉敕，先会一日，太乐展宫悬、高纟亘、五案于殿庭。客入，奏《相和》五引。帝出，黄门侍郎举麾于殿上，掌故应之，举于阶下，奏《康韶》之乐。诏延王公登，奏《变韶》。奉珪璧讫，初引下殿，奏亦如之。帝兴，入便殿，奏《穆韶》。更衣又出，奏亦如之。帝举酒，奏《绥韶》。进膳，奏《侑韶》。帝御茶果，太常丞跪请进舞《七德》，继之《九序》。其鼓吹杂伎，取晋、宋之旧，微更附益。旧元会有黄龙变、文鹿、师子之类，太建初定制，皆除之。至是蔡景历奏，悉复设焉。其制，鼓吹一部十六人，则箫十三人，笳二人，鼓一人。东宫一部，降三人，箫减二人，笳减一人。诸王一部，又降一人，减箫一。庶姓一部，又降一人，复减箫一。
 </p><p>及后主嗣位，耽荒于酒，视朝之外，多在宴筵。尤重声乐，遣宫女习北方箫鼓，谓之《代北》，酒酣则奏之。又于清乐中造《黄鹂留》及《玉树后庭花》、《金钗两臂垂》等曲，与幸臣等制其歌词，绮艳相高，极于轻薄。男女唱和，其音甚哀。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

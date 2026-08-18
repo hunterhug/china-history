@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -220,8 +247,9 @@
 </p><p>九年七月，大清兵攻定兴。善继家在江村，白太公请入捍城，太公许之。与里居知州薛一鹗等共守。守六日而城破，善继死。家人奔告太公，太公曰：“嗟乎，吾儿素以身许国，今果死，吾复何憾！”事闻，赠善继大理卿，谥忠节，敕有司建祠。子化麟，举天启元年乡试第一，伏阙讼父忠。逾年亦卒。
 </p><p>薛一鹗，字百当，由贡生为黄州通判。荆王姬诬他姬鸩世子，一鹗白其诬。奄人传太妃命，欲竟其狱，卒直之。迁兰州知州。州北有田没于番，吏派其赋于他户，后田复归，为卫卒所据，而民出赋三十年，一鹗核除其害。至是佐善继城守，遂同死。
 </p><p>赞曰：士大夫致政里居，无封疆民社之责，可逊迹自全，非以必死为勇也。然而慷慨捐躯，冒白刃而不悔，湛宗覆族，君子哀之。岂非名义所在，有重于生者乎！气节凛然，要于自遂其志。其英风义烈，固不可泯没于宇宙间矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百五十四章-卷一百五十四-原文.html'>第一百五十四章-卷一百五十四</a></p><p class='next'>下一节：<a href='第一百五十六章-卷一百五十六-原文.html'>第一百五十六章-卷一百五十六</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第一百五十四章-卷一百五十四-原文.html'>第一百五十四章-卷一百五十四</a></p><p class='next'>下一节：<a href='第一百五十六章-卷一百五十六-原文.html'>第一百五十六章-卷一百五十六</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

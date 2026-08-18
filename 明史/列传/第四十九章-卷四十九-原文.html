@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -262,8 +289,9 @@
 </p><p>初在国学，为祭酒丘濬所知。及濬柄政，未尝一造其门。广东提学缺，部以端仪名上，濬竟沮之。濬卒，始以按察佥事督广东学校。卒官。
 </p><p>端仪慨建文朝忠臣湮没，乃搜辑遗事，为《革除录》。建文忠臣之有录，自端仪始也。
 </p><p>赞曰：明初重监司守牧之任。尚书有出为布政使，而侍郎为参政者，监司之入为卿贰者，比比也。守牧称职，增秩或至二品。天顺而后，巡抚之寄专，而监司守牧不得自展布，重内轻外之势成矣。夫赋政于外，于民最亲。李昌祺、陈本深之属，静以爱民，况钟、张昺能于其职。所谓承宣德化，为天子分忧者，非耶？周新、陈选，冤死为可哀。读张褧书，又以见公正之服人者至，而直道之终不泯也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十八章-卷四十八-原文.html'>第四十八章-卷四十八</a></p><p class='next'>下一节：<a href='第五十章-卷五十-原文.html'>第五十章-卷五十</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第四十八章-卷四十八-原文.html'>第四十八章-卷四十八</a></p><p class='next'>下一节：<a href='第五十章-卷五十-原文.html'>第五十章-卷五十</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

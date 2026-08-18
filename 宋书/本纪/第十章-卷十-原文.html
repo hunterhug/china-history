@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -183,8 +210,9 @@
 </p><p>三年春正月甲辰，以江州刺史萧嶷为镇西将军、荆州刺史，尚书左仆射王延之为安南将军、江州刺史。安西长史萧顺之为郢州刺史。乙卯，太傅齐王表诸负官物质役者，悉原除。辛亥，以骁骑将军王玄邈为梁、南秦二州刺史。领军将军、抚军将军齐王世子加尚书仆射，进号中军大将军、开府仪同三司。丙辰，加太傅齐王前部羽葆、鼓吹。丁巳，诏太傅府依旧辟召。以征西将军、雍州刺史张敬兒为护军将军，新除给事黄门侍郎萧讳为雍州刺史。二月丙子，安南将军、南豫州刺史邵陵王友薨。三月癸卯朔，日有蚀之。甲辰，崇太傅为相国，总百揆，封十郡，为齐公，备九锡之礼，加玺绂远游冠，位在诸王上；加相国绿綟绶，其骠骑大将军、扬州牧、南徐州刺史如故。丙午，以中军大将军萧讳为南豫州刺史、齐公世子，副贰相国，绿綟绶。庚戌，临川王绰谋反，绰及党与皆伏诛。丁巳，以齐国初建，给钱五百万，布五千匹，绢千匹。夏四月壬申，进齐公爵为齐王，增封十郡。甲戌，安西将军武陵王赞薨。丙戌，命齐王冕十有二旒，建天子旌旗，出警入跸，乘金根车，驾六马，备五时副车，置旄头云罕，乐舞八佾，设钟虡宫县。进世子为太子，王子、王女、王孙爵命之号，壹如旧仪。辛卯，天禄永终，禅位于齐，壬辰，帝逊位于东邸。既而迁居丹阳宫。齐王践阼，封帝为汝阴王，待以不臣之礼。行宋正朔，上书不为表，答表不为诏。
 </p><p>建元元年五月己未，殂于丹阳宫，时年十三。谥曰顺帝。六月乙酉，葬于遂宁陵。
 </p><p>史臣曰：圣王膺录，自非接乱承微，则天历不至也。自三、五以来，受命之主，莫不乘沦亡之极，然后符乐推之运。水德迁谢，其来久矣。岂止于区区汝阴揖禅而已哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

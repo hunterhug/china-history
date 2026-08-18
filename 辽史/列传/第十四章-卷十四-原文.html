@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -184,8 +211,9 @@
 </p><p>耶律善补，字瑶升，孟父楚国王之后。纯谨有才智。景宗即位，授千牛卫大将军，迁大同军节度使。及伐宋，韩匡嗣与耶律沙将兵由东路进，善补以南京统军使由西路进。善补闻匡嗣失利，敛兵还。乾亨末，与宋军战于满城，为伏兵所围，斜轸救之获免。以失备，大杖决之。统和初，为惕隐。会宋来侵，善补为都元帅逆之，不敢战，故岭西州郡多陷，罢惕隐。以其叔安端有匡辅世宗功，上愍之，征善补为南府宰相，迁南院大王。会再举伐宋，欲攻魏府，召众集议。将士以魏城无备，皆言可攻。善补曰：“攻固易，然城大叵量，若克其城，士卒贪俘掠，势必不可遏。且傍多巨镇，各出援兵，内有重敌，何以当之？”上乃止。善补性懦，守静。凡征讨，惮攻战，急还，以故战多不利。年七十四卒。
 </p><p>耶律海里，字留隐，令稳拔里得之长子。察割之乱，其母的鲁与焉。遣人召海里，海里拒之。乱平，的鲁以子故获免。海里俭素，不喜声利，以射猎自娱。虽居闲，人敬之若贵官然。保宁初，拜彰国军节度使，迁惕隐。秩满，称疾不仕。久之，复为南院大王。及曹彬、米信等来侵，海里有却敌功，赐资忠保义匡国功臣。帝屡亲征，海里在南院十余年，镇以宽静，户口增给，时议重之。封漆水郡王，迁上京留守，薨。诏以家贫，给葬具。
 </p><p>论曰：当高梁、朔州之捷，偏裨之将如沙与抹只，既因休哥、斜轸类见其功，所谓失之东隅，收之桑榆。若萧干、海里拒察割之招，讨古告海思之变，则不止有战功而已。其视善补畏懦，岂不优哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十三章-卷十三-原文.html'>第十三章-卷十三</a></p><p class='next'>下一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十三章-卷十三-原文.html'>第十三章-卷十三</a></p><p class='next'>下一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -200,8 +227,9 @@
 <p>　　璡，字之推，抗季弟也。大业末，为扶风太守。高祖定京师，以郡归国，历礼 部、民部二尚书。从太宗平薛仁杲。寻镇益州，时蜀中尚多寇贼，璡屡讨平之。时 皇甫无逸在蜀，与之不协，璡屡请入朝。高祖征之，中路诏令还镇。璡不得志，遂 于路左题山，以申郁积。有使者至其所，璡宴之卧内，遗以绫绮。无逸奏其事，坐 免官。未几，拜秘书监，封邓国公。贞观初，授太子詹事。后为将作大匠，修葺洛 阳宫。璡于宫中凿池起山，崇饰雕丽，虚费功力，太宗怒，遽令毁之。坐事免。会 纳其女为酆王妃，俄而复位，加右光禄大夫。七年卒，赠礼部尚书，谥曰安。璡颇 晓音律，武德中，与太常少卿祖孝孙受诏定正声雅乐，璡讨论故实，撰《正声调》 一卷，行于代。 </p>
 <p>　　史臣曰：得人者昌，如诸温儒雅清显，为一时之称；叔达才学明辩，中二国之 选。皆抱廊庙之器，俱为社稷之臣。威守道，轨临戎，抗居丧，静经略，璡音律， 仍以懿亲，俱至显位；才能门第，辉映数朝，岂非得人欤？唐之昌也，不亦宜乎！ 然彦博之褊，窦轨之酷，亦非全器焉。 </p>
 <p>　　赞曰：温、陈才位，文蔚典礼。诸窦戚里，荣盛无比。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p><p class='next'>下一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p><p class='next'>下一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

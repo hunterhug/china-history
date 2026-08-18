@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -228,8 +255,9 @@
 </p><p>三月，破洮、河、西宁二州。遣斡陈那颜攻信都府，拔之。夏四月，帝次龙德，拔德顺等州，德顺节度使爱申、进士马肩龙死焉。五月，遣唐庆等使金。闰月，避暑六盘山。六月，金遣完颜合周、奥屯阿虎来请和。帝谓群臣曰：“朕自去冬五星聚时，已尝许不杀掠，遽忘下诏耶。今可布告中外，令彼行人亦知朕意。”是月，夏主李晛降。帝次清水县西江。秋七月壬午，不豫。己丑，崩于萨里川哈老徒之行宫。临崩谓左右曰：“金精兵在潼关，南据连山，北限大河，难以遽破。若假道于宋，宋、金世仇，必能许我，则下兵唐、邓，直捣大梁。金急，必征兵潼关。然以数万之众，千里赴援，人马疲弊，虽至弗能战，破之必矣。”言讫而崩，寿六十六，葬起辇谷。至元三年冬十月，追谥圣武皇帝。至大二年冬十一月庚辰，加谥法天启运圣武皇帝，庙号太祖。在位二十二年。
 </p><p>帝深沉有大略，用兵如神，故能灭国四十，遂平西夏。其奇勋伟迹甚众，惜乎当时史官不备，或多失于纪载云。
 </p><p>戊子年。是岁，皇子拖雷监国。</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p></div><footer>
+<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

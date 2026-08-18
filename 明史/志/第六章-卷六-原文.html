@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -256,8 +283,9 @@
 </p><p>崇祯元年，陕西饥，延、巩民相聚为盗。二年，山西、陕西饥。五年，淮、扬诸府饥，流殍载道。六年，陕西、山西大饥。淮、扬洊饥，有夫妻雉经于树及投河者。盐城教官王明佐至自缢于官署。七年，京师饥，御史龚廷献绘《饥民图》以进。太原大饥，人相食。九年，南阳大饥，有母烹其女者。江西亦饥。十年，浙江大饥，父子、兄弟、夫妻相食。十二年，两畿、山东、山西、陕西、江西饥。河南大饥，人相食，卢氏、嵩、伊阳三县尤甚。十三年，北畿、山东、河南、陕西、山西、浙江、三吴皆饥。自淮而北至畿南，树皮食尽，发瘗胔以食。十四年，南畿饥。金坛民于延庆寺近山见人云，此地深入尺余，其土可食。如言取之，淘磨为粉粥而食，取者日众。又长山十里亦出土，堪食，其色青白类茯苓。又石子涧土黄赤，状如猪肝，俗呼“观音粉”，食之多腹痛陨坠，卒枕藉以死。是岁，畿南、山东洊饥。德州斗米千钱，父子相食，行人断绝。大盗滋矣。
 </p><p>▲黄眚黄祥
 </p><p>正统十一年二月辛酉，有异气现华盖殿金顶及奉天殿鸱吻之上。成化九年四月乙亥，两京雨土。十三年四月戊戌，陕西、甘肃冰厚五尺，间以杂沙，有青红黄黑四色。弘治十年三月己酉，雨土。十一年四月辛巳，雨土。十七年二月甲辰，郧阳、均州雨沙。嘉靖元年正月丁卯，雨黄沙。十三年二月己未，雨微土。二十一年，象山雨黄雾，行人口耳皆塞。隆庆元年三月甲寅，南郑雨土。万历二十五年二月癸亥，湖州雨黄沙。四十六年三月庚午，暮刻，雨土，濛濛如雾如霰，入夜不止。四十七年二月甲戌，从未至酉，尘沙涨天，其色赤黄。四十八年，山东省城及泰安、肥城皆雨土。崇祯十二年二月壬申，浚县有黑黄云起，旋分为二。顷之四塞。狂风大作，黄埃涨天，间以青白气。五步之外，不辨人踪，至昏始定。十四年正月壬寅，黄埃涨天。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p><p class='next'>下一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p><p class='next'>下一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

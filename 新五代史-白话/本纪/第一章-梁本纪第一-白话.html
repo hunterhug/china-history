@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -193,8 +220,9 @@
 </p><p>自唐天子逃奔华州，王请求迁都洛阳，虽未能许，但王命令张全义修洛阳宫等待。天..元年(904)正月，王到河中，派牙将寇彦卿到京城，请求迁都洛阳，并迁徙长安居民东行。唐天子行至陕州，王来朝见，然后先往东都。当时，六军诸卫兵早已逃散，跟随唐天子东下的只有小黄门十几人，供奉、内园小儿等二百余人。行至谷水，王叫医官许昭远报告随行者谋乱，完全杀掉后派人代替，然后向唐天子报知。于是唐天子左右都成了梁王的人。闰四月十日，唐天子从西都到达洛阳。当时，晋王李克用、岐王李茂贞、楚王赵匡凝、蜀王王建、吴王杨行密听到梁王迁唐天子到洛阳的消息，都想兴兵讨伐梁王，王很害怕。六月，杨崇本重新归附岐王。于是王乘机引兵到河中打杨崇本，派朱友恭、氏叔琮、蒋玄晖等杀死唐昭宗。十月，王到京城，杀掉朱友恭、氏叔琮。十一月，攻打淮南，夺取光州，又攻打寿州，未攻下而还。天..二年(905)二月，派蒋玄晖在九曲池杀德王裕等九王。六月，杀司空裴贽等百余人。七月，唐哀帝派使臣来，赐王“迎銮纪功碑”。
 </p><p>王想代唐称帝，派人传话给各镇，襄州赵匡凝反对。王派杨师厚去攻打，夺取唐、邓、复、郢、随、均、房七州。王往襄州，驻军于汉北。九月，杨师厚破襄州，赵匡凝逃奔淮南。杨师厚攻取荆南，荆南留后赵匡明逃到蜀。于是王出兵光州，进攻寿州未下。唐天子要到南郊祭天，王大怒，以为蒋玄晖等人想祈祷上天延续唐朝统治。唐天子恐惧，改为到南郊占卜。十一月二十七日，唐天子封王为魏王、相国，总揽政事。以宣武、宣义、天平、护国、天雄、武顺、佑国、河阳、义武、昭义、武宁、保义、忠义、武昭、武定、泰宁、平卢、匡国、镇国、荆南、忠武二十一军为魏国，备九锡。王大怒，不肯接受。十二月，天子任命王为天下兵马元帅。王更加大怒，派人报告枢密使蒋玄晖与何太后私通，杀掉蒋玄晖并焚尸，弑太后于积善宫。又杀宰相柳璨，车裂太常卿张延范。唐天子下诏因太后死而停止南郊祭天。
 </p><p>天祐三年(906)春，魏州罗绍威计谋杀掉他的牙军。其他在外地的兵都背叛了他，占据贝、卫、澶、博州，王派兵将他们杀尽。进攻沧州，驻军长芦。刘仁恭向晋求救。晋军取潞州，王只得回师。</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-梁本纪第二-白话.html'>第二章-梁本纪第二</a></p></div><footer>
+<div class='pn'><p class='next'>下一节：<a href='第二章-梁本纪第二-白话.html'>第二章-梁本纪第二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

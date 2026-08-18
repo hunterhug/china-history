@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -222,8 +249,9 @@
 </p><p>王朴，同州人。洪武十八年进士。本名权，帝为改焉。除吏科给事中，以直谏忤旨罢。旋起御史。陈时事千余言。性鲠直，数与帝辨是非，不肯屈。一日，遇事争之强。帝怒，命戮之。及市，召还，谕之曰：“汝其改乎？”朴对曰：“陛下不以臣为不肖，擢官御史，奈何摧辱至此！使臣无罪，安得戮之？有罪，又安用生之？臣今日愿速死耳。”帝大怒，趣命行刑。过史馆，大呼曰：“学士刘三吾志之：某年月日，皇帝杀无罪御史朴也！”竟戮死。帝撰《大诰》，谓朴诽谤，犹列其名。
 </p><p>有张衡者，万安人，朴同年进士。授礼科给事中。奏疏剀切。擢礼部侍郎。以清慎见褒，载于《大诰》。后亦以言事坐死。
 </p><p>赞曰：太祖英武威断，廷臣奏对，往往失辞。而钱唐、韩宜可、李仕鲁辈，抱其朴诚，力诤于堂陛间，可谓古之遗直矣。伯巨、敬心以缝掖诸生，言天下至计，虽违于信而后谏之义，然原厥本心，由于忠爱。以视末季沽名卖直之流，有不可同日而语者也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十六章-卷二十六-原文.html'>第二十六章-卷二十六</a></p><p class='next'>下一节：<a href='第二十八章-卷二十八-原文.html'>第二十八章-卷二十八</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十六章-卷二十六-原文.html'>第二十六章-卷二十六</a></p><p class='next'>下一节：<a href='第二十八章-卷二十八-原文.html'>第二十八章-卷二十八</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

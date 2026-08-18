@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -224,8 +251,9 @@
 </p><p>这月，黄河以西人纥豆陵步蕃、破落韩常在秀容大败尔朱兆。齐州市民趟洛周占据西城反叛，响应尔朱兆，刺史、丹阳王萧赞放弃城池逃跑。南阳太守赵脩延捉住荆州刺史李琰之，自己代行州中事务。
 </p><p>中兴二年追谧皇帝为武怀皇帝，太昌元年又谧为孝庄皇帝，庙号为塑塞。十一月，安葬在盏堕。
 </p><p>史臣曰：魏国自从孝昌的末年，天下骚动，外侵内乱，帝位就将没有主人。庄帝暗中思念改变，招收接纳为王事尽力者，虽然形势艰难，而终于拥有天下。狡黠的叛逆剪灭后，权臣强族专擅朝政，遣或许正足产生谋略运用智慧的岁月，勤谨谦虚警惕戒备的时日。没有听到长久控御的策略，仓猝进入遭受刺击的危险区域，策划没有法术，委任违背方略，猜忌嫌疑加以杀戮，祸患随即到来。呜呼胡人贼寇造成的裂痕，哪衹是周朝末年和晋朝末年可比呢以致高祖不获祭祀，武宣合祭庙庭，三后俯察，福禄当然不长。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九-白话.html'>第九章-卷九</a></p><p class='next'>下一节：<a href='第十一章-卷十一-白话.html'>第十一章-卷十一</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九-白话.html'>第九章-卷九</a></p><p class='next'>下一节：<a href='第十一章-卷十一-白话.html'>第十一章-卷十一</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

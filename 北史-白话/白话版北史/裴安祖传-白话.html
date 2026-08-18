@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>裴安祖传<span style='font-size:small'> 白话</span></h1>
 <p>裴安祖，少年时就很聪慧。八九岁时听老师讲《诗经》，对兄长们说：“鹿得到吃的还鸣叫着呼唤同类，更何况人呢！”从此，他不单独吃东西。二十岁那年，州府征辟他任主簿。有兄弟两个人争夺财产，到州里打官司。裴安祖召见他们兄弟，用兄弟间的礼义责备他们。这两兄弟第二天就到州府找到他承认错误。州内的人都很佩服他。后来有人劝他去做官，他说：“高尚的道德我不敢说自己差不多全部都有，实在是害怕京城遥远，政务琐碎。”于是，他在家中闲居以颐养性情，从不离开城市。天气炎热，他曾在树下乘凉，一只苍鹰追赶雉鸡，雉鸡急忙逃命，碰在树上昏死过去。裴安祖很可怜它，便把它放在阴凉的地方，认真照看，过了很久它才苏醒过来。他很高兴，将它放掉。后来他晚上忽然梦见一个年轻的男子，衣服和帽子都十分讲究，上面绣着花纹，向他一再拜谢。他感到奇怪，便询问是怎么一回事，这人答道：“感谢你前天放了我，所以来报答你的恩德。”听的人都感到惊异。<BR><BR>　　后来，孝文帝到长安，路过河东，访问旧臣故吏，裴安祖在蒲坂拜见了孝文帝。孝文帝与他谈话后十分高兴，封他为安邑县县令，他以年老多病坚决辞绝。孝文帝下诏发给他俸禄以供他买药用。八十三岁在家中去世。</p>
-<div class='pn'><p class='pre'>上一节：<a href='杨大眼传-白话.html'>杨大眼传</a></p><p class='next'>下一节：<a href='裴伯茂传-白话.html'>裴伯茂传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='杨大眼传-白话.html'>杨大眼传</a></p><p class='next'>下一节：<a href='裴伯茂传-白话.html'>裴伯茂传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

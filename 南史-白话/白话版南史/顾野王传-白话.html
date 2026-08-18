@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>顾野王传<span style='font-size:small'> 白话</span></h1>
 <p>顾野王，字希冯，吴郡吴人。祖父顾子乔，曾任梁东中郎将武陵王府参军事。父亲顾火亘，是信威将军临贺王的记室，兼本郡五官掾，以通儒学而知名于世。<BR><BR>　　顾野王幼时便很好学，七岁读五经，便能读懂大致意思。九岁能写文章。他曾写了一篇《日赋》，领军朱异见后认为他是奇才。十二岁，野王随父亲到建安，撰写了《建安地记》两篇。长大后，他遍读经史，精心记识，天文地理、卜筮、观天相、虫篆奇字，无所不通。他曾任临贺王府记室。后来宣城王任扬州刺史，顾野王与琅笽人王褒一起为宾客，宣城王很爱顾野王的才华。顾野王还很擅长画画，宣城王在东府建书斋，让野王画古代贤人，让王褒写赞颂之辞，当时人称此为“二绝”。<BR><BR>　　侯景之乱时，顾野王因父丧回到家乡吴郡守丧。他在乡里招募民众，随义军救援都城。顾野王一向清瘦体弱，身高只有六尺，又因居丧过于悲痛，身体像是禁不住这样的哀伤；可是当他手持兵器，身披盔甲上阵，陈述君臣之义、逆与顺的道理时，慷慨陈词，正言厉色，见到的人都觉得他十分气壮。后来京城被攻破，他逃回了会稽。<BR><BR>　　陈天嘉年间(560～566)，皇帝下令补顾野王为撰史学士。太建年间(569～582)，顾野王为太子率更令，不久任大著作，掌管国史，知梁史事。后来他又任黄门侍郎，光禄卿，知五礼事。死后，追赠为秘书监，右卫将军。<BR><BR>　　顾野王年轻时以勤奋好学、性情淳厚而闻名，对各种事物没有过分溢美之辞而失其本色。看他的模样，好像不善言辞，但他振奋精神，尽力去干事时，却是别人所比不上的。他的著作有《玉篇》三十卷，《舆地志》三十卷，《符瑞图》十卷，《顾氏谱传》十卷，《分野枢要》一卷，《续洞冥记》一卷，《玄象表》一卷，在当时都很流行。他还撰写了《通史要略》一百卷，《国史纪传》二百卷，但未写完就去世了。他有文集二十卷。</p>
-<div class='pn'><p class='pre'>上一节：<a href='任忠传-白话.html'>任忠传</a></p><p class='next'>下一节：<a href='姚察传-白话.html'>姚察传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='任忠传-白话.html'>任忠传</a></p><p class='next'>下一节：<a href='姚察传-白话.html'>姚察传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

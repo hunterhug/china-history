@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -203,8 +230,9 @@
 </p><p>九月，汴将葛从周弃潞州而遁，武皇以康君立为潞州节度使，以李存孝为汾州刺史。十月，张浚之师入晋州，游军至汾、隰。武皇遣薛铁山、李承嗣将骑三千出阴地关，营于洪洞，遣李存孝将兵五千，营于赵城。华州韩建以壮士三百人冒犯存孝之营，存孝追击，直压晋州西门，张浚之师出战，为存孝所败，自是闭壁不出。存孝引军攻绛州。十二月，晋州刺史张行恭弃城而奔，韩建、张浚由含山路遁去。
 </p><p>大顺二年春正月，武皇上章申理，其略曰：“臣今身无官爵，名是罪人，不敢归陛下籓方，且欲于河中寄寓，进退行止，伏候圣裁。”天子寻就加守中书令。《欧阳史》：二月，复拜克用河东节度使、陇西郡王，加检校太师、兼中书令。是月，魏博为汴将葛从周所寇，节度使罗宏信遣使来求援，武皇出师以赴之。
 </p><p>三月，邢州节度使安知建叛，奔青州。天子以知建为神武统军，自棣州溯河归朝。郓州硃瑄邀斩于河上，传首晋阳。以李存孝为邢州节度使。四月，武皇大举兵讨赫连铎于云州，遣骑将薛阿檀率前军以进攻，武皇设伏兵于御河之上，大破之，因堑守其城。七月，武皇进军柳会，赫连铎力屈食尽，奔于吐浑部，遂归幽州，云州平。武皇表石善友为大同军防御使。邢州节度使李存孝以镇州王熔托附汴人，谋乱河朔，北连燕寇，请乘云、代之捷，平定燕、赵，武皇然之。八月，大搜于晋阳，遂南巡泽、潞，略地怀、孟，河阳赵克裕望风送款，请修邻好。九月，蒐于邢州。十月，李存孝董前军攻临城，镇人五万营于临城西北龙尾岗。武皇令李存审、李存贤以步军攻之，镇人大败，杀获万计，拔临城，进攻元氏。幽州李匡威以步骑五万营于鄗邑，以援镇州，武皇分兵大掠，旋军邢州。</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-皇纪下-原文.html'>第二章-皇纪下</a></p></div><footer>
+<div class='pn'><p class='next'>下一节：<a href='第二章-皇纪下-原文.html'>第二章-皇纪下</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

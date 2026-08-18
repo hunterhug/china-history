@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -322,8 +349,9 @@
 </p><p>秋七月四日，封皇孙重福为唐昌郡王。十九日，相王轮改封为豫王，更名为旦。令唐昌郡王重福为京师留守，刘仁轨为副留守。皇上召皇太子到东都。黄河水猛涨，冲坏河阳城，水面比城内高五尺，往北一直淹到盐坎，平民房屋全被淹没冲走，南北两面土地全被破坏。
 </p><p>十一月，皇太子前来朝见。皇上驾到奉天宫，当时天后从封泰山以后，劝皇上封中岳。每次皇上下诏书草拟礼节制度，就马上发生荒年，发生边境警急事件而后终止。现在又再次行分封嵩山之礼，皇上又患病而终止。皇上苦于头痛不可忍耐，侍医秦鸣鹤道：“刺头微微出血，可以治愈。”天后在帷帐中说道：“此医可斩首，想要在皇上头上刺出血来吗！”皇上道：“我苦于头痛，出血未必不好！”侍医就用针刺百会，皇上道：“我的眼睛明亮了。”九日，命令将军程务挺为单于道安抚大使，凭借招讨总管的身份讨伐山贼元珍、骨笃禄、贺鲁等人。诏命皇太子代理国政，裴炎、刘齐贤、郭正一等人在东宫任同平章事。十八日，皇上从奉天宫回东都。皇上病得很厉害，宰相以下大臣都不能晋见皇上。
 </p><p>十二月，诏令改永淳二年为弘道元年。将要宣布赦免之书，皇上想要亲自到则天门楼，由于气不顺而不能上马，于是召百姓在殿前宣读赦免书。礼毕，皇上问侍臣道“：百姓喜欢吗？”侍臣道“：百姓承蒙皇上赦免，没有一个人不感动喜悦。”皇上道：“百姓虽喜，但我的性命危险。天神地神若延长我一两个月的命，能够回长安，死也无遗憾了。”当晚，皇上在贞观殿去世，当时年纪五十六岁。宣布遗诏“：七天装在灵柩内，皇太子在灵柩前即皇帝位。园陵制度，务以节俭。军国大事有不能决断者，请天后处理决断。”群臣上谥号曰天皇大帝，庙号高宗。文明元年(684)八月十一日，安葬在乾陵。天宝十三年(754)，改谥曰天皇大弘孝皇帝.</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-白话.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-白话.html'>第六章-卷六</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-白话.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-白话.html'>第六章-卷六</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

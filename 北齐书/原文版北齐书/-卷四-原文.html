@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -214,8 +241,9 @@
 </p><p>帝少有大度，志识沉敏，外柔内刚，果敢能断。雅好吏事，测始知终，理剧处繁，终日不倦。初践大位，留心政术，以法驭下，公道为先。或有违犯宪章，虽密戚旧勋，必无容舍，内外清靖，莫不祗肃。至于军国几策，独决怀抱，规模宏远，有人君大略。又以三方鼎跱，诸夷未宾，修缮甲兵，简练士卒，左右宿卫置百保军士。每临行阵，亲当矢石，锋刃交接，唯恐前敌之不多，屡犯艰危，常致克捷。尝于东山游宴，以关陇未平，投杯震怒，召魏收于御前，立为诏书，宣示远近，将事西伐。是岁，周文帝殂，西人震恐，常为度陇之计。既征伐四克，威振戎夏，六七年后，以功业自矜，遂留连耽湎，肆行淫暴。或躬自鼓舞，歌讴不息，从旦通宵，以夜继昼。或袒露形体，涂傅粉黛，散发胡服，杂衣锦彩。拔刃张弓，游于市肆，勋戚之第，朝夕临幸。时乘馲驼牛驴，不施鞍勒，盛暑炎赫，隆冬酷寒，或日中暴身，去衣驰骋，从者不堪，帝居之自若。亲戚贵臣，左右近习，侍从错杂，无复差等。征集淫妪，分付从官，朝夕临视，以为娱乐。凡诸杀害，多令支解，或焚之于火，或投之于河。沉酗既久，弥以狂惑，至于末年，每言见诸鬼物，亦云闻异音声。情有蒂芥，必在诛戮，诸元宗室咸加屠剿，永安、上党并致冤酷，高隆之、高德政、杜弼、王元景、李蒨之等皆以非罪加害。尝在晋阳以槊戏刺都督尉子耀，应手即殒。又在三台大光殿上，以锯锯都督穆嵩，遂至于死。又尝幸开府暴显家，有都督韩悊无罪，忽于众中唤出斩之。自余酷滥，不可胜纪。朝野惨憎，各怀怨毒。而素以严断临下，加之默识强记，百僚战栗，不敢为非，文武近臣，朝不谋夕。又多所营缮，百役繁兴，举国骚扰，公私劳弊。凡诸赏赉，无复节限，府藏之积，遂至空虚。自皇太后诸王及内外勋旧，愁惧危悚，计无所出。暨于末年，不能进食，唯数饮酒，曲蘖成灾，因而致毙。
 </p><p>论曰：高祖平定四胡，威权延世。迁邺之后，虽主器有人，号令所加，政皆自出。显祖因循鸿业，内外协从，自朝及野，群心属望。东魏之地，举世乐推，曾未期月，玄运集己。始则存心政事，风化肃然，数年之间，翕斯致治。其后纵酒肆欲，事极猖狂，昏邪残暴，近世未有。飨国弗永，实由斯疾，胤嗣殄绝，固亦余殃者也。
 </p><p>赞曰：天保定位，受终攸属。奄宅区夏，爰膺帝箓。势叶讴歌，情毁龟玉。始存政术，闻斯德音。罔遵克念，乃肆其心。穷理残虐，尽性荒淫。</p>
-<div class='pn'><p class='pre'>上一节：<a href='-卷三-原文.html'>-卷三</a></p><p class='next'>下一节：<a href='-卷五-原文.html'>-卷五</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='-卷三-原文.html'>-卷三</a></p><p class='next'>下一节：<a href='-卷五-原文.html'>-卷五</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

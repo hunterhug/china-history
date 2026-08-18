@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -213,8 +240,9 @@
 </p><p>正晦泛舟，则皇帝乘舆，鼓吹至行殿。升御坐，乘版舆，以与王公登舟，置酒。非预泛者，坐于便幕。
 </p><p>仲春令辰，陈养老礼。先一日，三老五更斋于国学。皇帝进贤冠、玄纱袍，至璧雍，入总章堂。列宫悬。王公已下及国老庶老各定位。司徒以羽仪武贲安车，迎三老五更于国学。并进贤冠、玄服、黑舄、素带。国子生黑介帻、青衿、单衣，乘马从以至。皇帝释剑，执珽，迎于门内。三老至门，五更去门十步，则降车以入。皇帝拜，三老五更摄齐答拜。皇帝揖进，三老在前，五更在后，升自右阶，就筵。三老坐，五更立。皇帝升堂，北面。公卿升自左阶，北面。三公授几杖，卿正履，国老庶老各就位。皇帝拜三老，群臣皆拜。不拜五更。乃坐，皇帝西向，肃拜五更。进珍羞酒食，亲袒割，执酱以馈，执爵以酳。以次进五更。又设酒酏于国老庶老。皇帝升御坐，三老乃论五孝六顺，典训大纲。皇帝虚躬请受，礼毕而还。又都下及外州人年七十已上，赐鸠杖黄帽。有敕即给，不为常也。
 </p><p>后周保定三年，陈养老之礼。以太傅、燕国公于谨为三老。有司具礼择日，高祖幸太学以食之。事见谨传。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p><p class='next'>下一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p><p class='next'>下一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

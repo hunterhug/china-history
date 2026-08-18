@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -193,8 +220,9 @@
 </p><p>延明博览群书，加上有文才，搜集图书一万多卷，性格清廉节俭，不经营家产。和中山王元熙以及弟弟临淮王元或等人，都以才学声望闻名于当代。虽然风度霞敏赶不卜元熙、元或，而研习古事淳朴笃实超过他们。不久升为侍中。诏令他和侍中崔光撰作服饰车马制度。后来兼任尚书右仆射。因延明学识广见闻多，命令他监察钟鼎碑碣事务。
 </p><p>等到元法僧反叛，诏令延明担任束道行台、徐州大都督，指挥各军事务，和都督临淮王元或、尚书李宪等人讨伐法僧。萧衍派遣他的豫章干萧综镇守徐州。延明原来在徐州为刺史，很得民众拥戴，招集怀柔旧辖地，远近的人归附他。萧综投降后，延明就率军队乘胜出击，收复东南的疆域，到达宿豫而返回。调任都督、徐州刺史。徐州接连经受战事，人口稀少，延明招集新旧民众，人们都安居乐业，百姓都归附。
 </p><p>庄帝时，延明任兼尚书令、大司马。等到元颢进入洛阳，延明接受元颢的委任，率领军队守卫河桥。元颢失败，延明于是带领妻子儿女投奔萧衍，死在长江以南。庄帝末年，灵柩被运回。出帝初年，追赠延明为太保，王爵照旧，谧号为文宣。延明所写作的诗赋赞颂碑铭谏文有三百多篇，又撰写《五经宗略》、《诗礼别义》，注释《帝王世纪》和《列仙传》。又因河间人信都芳盖精于计算方法，招他在馆舍中。呈缨所撰写的古今音乐之事，《九章算术》十二图解，又收集《器准》九篇，信都芳另外为它们作注，都流传于世间。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-白话.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-白话.html'>第九章-卷九</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-白话.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-白话.html'>第九章-卷九</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

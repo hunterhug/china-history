@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>王延之传<span style='font-size:small'> 白话</span></h1>
 <p>王延之字希季，是王升之的儿子。少年时候很静默，不交结人事关系。在宋朝做官担任司徒左长史。家中清贫，居住的房子破漏，褚彦回把这个情况报告了宋明帝，明帝便下令让材官为他盖了三间斋屋。他历任过吏部尚书、尚书左仆射。<BR><BR>　　宋朝的气运衰落，齐高帝辅政，朝野中的心理，人人都是非此即彼，倾向一方。王延之和尚书令王僧虔则是中立，没有偏向取舍。当时人们的谚语说：“二王居平，不送不迎。”高帝因此认为他们很好。升明三年(479)，出京担任江州刺史，做都督。齐朝建元元年(479)，晋升封号为镇南将军。<BR><BR>　　王延之和金紫光禄大夫阮韬都是宋朝的领军将军刘湛的外甥，同样都是很早就有了声誉，刘湛十分喜爱他们，说：“阮韬以后应当为第一，延之为第二。”王延之非常不平。每次给建业进行馈赠，阮韬与朝士同例，高帝听说了，给王延之写信说：“阮韬说您并没有另外的意思，当是由于刘家品评的缘故。”阮韬字长明，陈留人，是晋朝金紫光禄大夫阮裕的玄孙。担任南兖州别驾，刺史江夏王刘义恭违章要求消费用钱，阮韬说：“这是朝廷的财物。”坚持不给。宋孝武帝选拔侍中四人，都依据风貌，王..、谢庄为一双，阮韬与何偃为一双。常常充任兼职和暂署官员，到了始兴王的军中，去世。<BR><BR>　　王延之生活简单朴素，清静寡欲，凡是他所曾任职的地方，务求不搅扰百姓。在江州，于俸禄以外一无收取。他独自住在斋房内，不曾出门，吏人很少能见到他，即使是子弟也不随意往他跟前去。他时时见到亲戚朋友，不曾说及政治时事，只是从容闲谈吟咏罢了。后来担任尚书左仆射，不久兼任竟陵王军师，去世后谥号简子。</p>
-<div class='pn'><p class='pre'>上一节：<a href='王秀之传-白话.html'>王秀之传</a></p><p class='next'>下一节：<a href='王晏传-白话.html'>王晏传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='王秀之传-白话.html'>王秀之传</a></p><p class='next'>下一节：<a href='王晏传-白话.html'>王晏传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -220,8 +247,9 @@
 </p><p>初，太祖与崔胤谋，欲迁都洛阳，而昭宗不许。其后昭宗奔于凤翔，太祖以兵围之，昭宗既出，明年，太祖以兵至河中，遣彦卿奉表迫请迁都。彦卿因悉驱徙长安居人以东，人皆拆屋为筏，浮渭而下，道路号哭，仰天大骂曰：“国贼崔胤、硃温使我至此！”昭宗亦顾瞻陵庙，傍徨不忍去，谓其左右为俚语云：“纥干山头冻死雀，何不飞去生处乐。”相与泣下沾襟。昭宗行至华州，遣人告太祖以何皇后有娠，愿留华州待冬而行。太祖大怒，顾彦卿曰：“汝往趣官家来，不可一日留也。”彦卿复驰至华，即日迫昭宗上道。
 </p><p>太祖即位，拜彦卿感化军节度使。岁余，召为左金吾卫大将军，充金吾衙仗使。彦卿晨朝至天津桥，民梁现不避道，前驱捽现投桥上石栏以死。彦卿见太祖自首，太祖惜之，诏彦卿以钱偿现家以赎罪。御史司宪崔沂劾奏彦卿，请论如法，太祖不得已，责授彦卿左卫中郎将。复拜相州防御使，迁河阳节度使。
 </p><p>太祖遇弑，彦卿出太祖画像事之如生，尝对客语先朝，必涕泗交下。末帝即位，徙镇威胜。彦卿明敏善事人，而怙宠作威，好诛杀，多猜忌。卒于镇，年五十七。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八章-周家人传第八-原文.html'>第八章-周家人传第八</a></p><p class='next'>下一节：<a href='第十章-梁臣传第十-原文.html'>第十章-梁臣传第十</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第八章-周家人传第八-原文.html'>第八章-周家人传第八</a></p><p class='next'>下一节：<a href='第十章-梁臣传第十-原文.html'>第十章-梁臣传第十</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

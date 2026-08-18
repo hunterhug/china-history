@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -212,8 +239,9 @@
 </p><p>咸安二年正月，降封帝为海西县公。四月，徙居吴县，敕吴国内史刁彝防卫，又遣御史顾允监察之。十一月，妖贼卢悚遣弟子殿中监许龙晨到其门，称太后密诏，奉迎兴复。帝初欲从之，纳保母谏而止。龙曰：“大事将捷，焉用兒女子言乎？”帝曰：“我得罪于此，幸蒙宽宥，岂敢妄动哉！且太后有诏，便应官属来，何独使汝也？汝必为乱。”因叱左右缚之，龙惧而走。帝知天命不可再，深虑横祸，乃杜塞聪明，无思无虑，终日酣暢，耽于内宠，有子不育，庶保天年。时人怜之，为作歌焉。朝廷以帝安于屈辱，不复为虞。太元十一年十月甲申，薨于吴，时年四十五。
 </p><p>史臣曰：孝宗因繦抱之姿，用母氏之化，中外无事，十有余年。以武安之才，启之疆埸；以文王之风，被乎江汉，则孔子所谓吾无间然矣。哀皇宽惠，可以为君，而鸿祀禳天，用尘其德。东海违许龙之驾，屈放命之臣，所谓柔弱胜刚强，得尽于天年者也。
 </p><p>赞曰：委裘称化，大孝为宗，遵彼圣善，成兹允恭。西旌玉垒，北旆金墉。迁殷旧僰，莫不来从。哀后宽仁，惟灵既集。海西多故，时灾见及。彼异阿衡，我非昌邑。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章--原文.html'>第七章-</a></p><p class='next'>下一节：<a href='第九章--原文.html'>第九章-</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第七章--原文.html'>第七章-</a></p><p class='next'>下一节：<a href='第九章--原文.html'>第九章-</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

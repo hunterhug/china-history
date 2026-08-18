@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -268,8 +295,9 @@
 </p><p>十一月初一是壬辰。初二日，新任华州刺史李藩去世。十四日，命令工部尚书赵昌任检校兵部尚书，兼任华州刺史，担任潼关防御、镇国军等使。
 </p><p>十二月初一是壬戌。十一日，下诏委托宗正卿选择有才干品德门阀地位的人把十六宅各位亲王的女儿嫁出去，亲王的女儿们按照惯例封为县主。二十三日，京兆府尹元义方、户部侍郎判度支卢坦因违反朝廷制度在府第门前树立戟枪表示显贵，受到扣除一个月薪俸的处罚，强行收回他们请求朝廷赐给的门前树立的戟枪。二十八日，诏令朝义郎、守尚书户部侍郎、骁骑尉、赐紫金鱼袋李绛任朝议大夫、守中书侍郎、同中书门下平章事。
 </p><p>闰十二月初一日，右卫上将军伊慎去世。二十一日，皇太子李宁逝世，谥号为惠昭，宪宗停止临朝理事三天。在本朝的典章中没有为皇太子举行丧礼的现成礼仪制度，国子司业裴羅精通礼学，特地诏赐他到西内制定皇太子的丧礼制度。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十三章-卷十三-白话.html'>第十三章-卷十三</a></p><p class='next'>下一节：<a href='第十五章-卷十五-白话.html'>第十五章-卷十五</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十三章-卷十三-白话.html'>第十三章-卷十三</a></p><p class='next'>下一节：<a href='第十五章-卷十五-白话.html'>第十五章-卷十五</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

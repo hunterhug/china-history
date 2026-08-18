@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>谢良佐传<span style='font-size:small'> 白话</span></h1>
 <p>谢良佐，字显道，寿春上蔡县人。与游酢、吕大临、杨时拜师在程颐门下，号称“四先生”。考中录为进士第。建中靖国初年，在京师任官，被召入对，违背圣旨而离职。担任西京竹木场监，因口语招致狱事，诏令废为民。谢良佐记问对答准确详细，和人谈话引用前代史文，以致不差一个字。事有未清楚的，则额上流汗。与程颐分别一年，又来拜见，问他有什么进步，说：“只是去掉了一个‘矜’字。”程颐很高兴，对朱光庭说：“这个学子发奋学习，好问而近思。”所写的著作有《论语说》行于世。</p>
-<div class='pn'><p class='pre'>上一节：<a href='邵雍传-白话.html'>邵雍传</a></p><p class='next'>下一节：<a href='尹火享传-白话.html'>尹火享传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='邵雍传-白话.html'>邵雍传</a></p><p class='next'>下一节：<a href='尹火享传-白话.html'>尹火享传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -210,8 +237,9 @@
 </p><p>陈亨，寿州人，元末扬州万户。在濠州跟随太祖，为铁甲长，后提升为千户。他随大将军北征，驻守东昌。数万敌军突至，陈亨固守，派出奇兵引诱敌军，将其击败。又随军攻夺，未下诸城。洪武二年(1369)，陈亨驻守大同。积功升至燕山左卫指挥佥事。他多次随军出塞。升为北平都指挥使。惠帝即位后，陈亨被提升为都督佥事。
 </p><p>燕王起兵时，陈亨与刘真、卜万驻守大宁。他移兵出松亭关，驻扎沙河，谋攻遵化。燕兵到后，陈亨退兵保关。当时，李景隆率五十万大军将攻北平。北平兵力虚弱，而大宁行都司所统领的兴州、营州二十余卫，都是西北精锐。朵颜、泰宁、福馀三卫，元降将所统的番骑弓广卒，尤其骁勇。卜万将与李景隆军会合，成祖很担心，便设计哄骗陈亨拘禁卜万，然后从刘家口抄小路进攻大宁。陈亨及刘真自松亭回救，途中获悉大宁已陷，便与指挥徐理、陈文等商量投降燕军。夜里二更时分，袭击刘真营垒。刘真独自骑马逃往广宁，陈亨等率众投降。成祖尽拔诸军及三卫骑兵，挟持宁王而归。从此为成祖冲锋陷阵的大多是三卫兵。成祖获取天下，即自大宁开始。
 </p><p>陈亨、徐理投降后，屡屡随军击败南军。白沟河之战，陈亨受伤，几乎丧命，不久进攻济南，陈亨与平安战于铧山，大败。他伤势极重，乘车返回北平。进升为都督同知。成祖率军返回后，亲自到陈亨的府邸慰劳问候。这年十月，陈亨去世。成祖亲自写文章祭祀。即位之后，追封他为泾国公，谥号襄敏。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十二章-卷三十二-白话.html'>第三十二章-卷三十二</a></p><p class='next'>下一节：<a href='第三十四章-卷三十四-白话.html'>第三十四章-卷三十四</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三十二章-卷三十二-白话.html'>第三十二章-卷三十二</a></p><p class='next'>下一节：<a href='第三十四章-卷三十四-白话.html'>第三十四章-卷三十四</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

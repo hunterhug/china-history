@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -230,8 +257,9 @@
 </p><p>夏四月戊申，皇太子监国。己酉，发京师。庚午，次隰宁，谍报阿鲁台走答兰纳木儿河，遂趋进师。五月己卯，次开平，使使招谕阿鲁台诸部。乙酉，瘗道中遗骸。丁酉，宴群臣于应昌，命中官歌太祖御制词五章，曰：“此先帝所以戒后嗣也，虽在军旅何敢忘。”己亥，次威远州。复宴群臣，自制词五章，命中官歌之。皇太子令兔广平、顺德、扬州及湖广、河南郡县水灾田租。六月庚申，前锋至答兰纳木儿河，不见敌，命张辅等穷搜山谷三百里无所得，进驻河上。癸亥，陈懋等引兵抵白邙山，以粮尽还。甲子，班师，命郑亨等以步卒西会于开平。壬申夜，南京地震。
 </p><p>秋七月庚辰，勒石于清水源之崖。戊子，遣吕震以旋师谕太子，诏告天下。己丑，次苍崖戍，不豫。庚寅，至榆木川，大渐。遗诏传位皇太子，丧礼一如高皇帝遗制。辛卯，崩，年六十有五。太监马云密与大学士杨荣、金幼孜谋，以六军在外，秘不发丧，熔锡为椑以敛，载以龙举，所至朝夕上膳如常仪。壬辰，杨荣偕御马监少监海寿驰讣皇太子。壬寅，次武平镇，郑亨步军来会。八月甲辰，杨荣等至京师，皇太子即日遣太孙奉迎于开平。己酉，次雕鹗谷，皇太孙至军中发丧。壬子，及郊，皇太子迎入仁智殿，加殓纳梓宫。九月壬午，上尊谥曰体天弘道高明广运圣武神功纯仁至孝文皇帝，庙号太宗，葬长陵。嘉靖十七年九月，改上尊谥曰启天弘道高明肇运圣武神功纯仁至孝文皇帝，庙号成祖。
 </p><p>赞曰：“文皇少长习兵，据幽燕形胜之地，乘建文孱弱，长驱内向，奄有四海。即位以后，躬行节俭，水旱朝告夕振，无有壅蔽。知人善任，表里洞达，雄武之略，同符高祖。六师屡出，漠北尘清。至其季年，威德遐被，四方宾服，明命而入贡者殆三十国。幅陨之广，远迈汉、唐。成功骏烈，卓乎盛矣。然而革除之际，倒行逆施，惭德亦曷可掩哉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p><p class='next'>下一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p><p class='next'>下一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

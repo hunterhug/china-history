@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -239,8 +266,9 @@
 </p><p>及魏文帝受禅，欲以彪为太尉，先遣使示旨。彪辞曰：“彪备汉三公，遭世倾乱，不能有所补益。耄年被病，岂可赞惟新之朝？”遂固辞。乃授光禄大夫，赐几杖衣袍，因朝会引见，令彪着布单衣，鹿皮冠，杖而入，待以宾客之礼。年八十四，黄初六年卒于家。自震至彪，四世太尉，德业相继，与袁氏俱为东京名族云。
 </p><p>论曰：孔子称“危而不持，颠而不扶，则将焉用彼相矣”。诚以负荷之寄，不可以虚冒，崇高之位，忧重责深也。延、光之间，震为上相，抗直方以临权枉，先公道而后身名，可谓怀王臣之节，识所任之体矣。遂累叶载德，继踵宰相。信哉，“积善之家，必有余庆”。先世韦、平，方之蔑矣。
 </p><p>赞曰：“杨氏载德，仍世柱国。震畏四知，秉去三惑。赐亦无讳，彪诚匪忒。脩虽才子，渝我淳则。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十六章-周黄徐姜申屠列传-原文.html'>第四十六章-周黄徐姜申屠列传</a></p><p class='next'>下一节：<a href='第四十八章-章帝八王列传-原文.html'>第四十八章-章帝八王列传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第四十六章-周黄徐姜申屠列传-原文.html'>第四十六章-周黄徐姜申屠列传</a></p><p class='next'>下一节：<a href='第四十八章-章帝八王列传-原文.html'>第四十八章-章帝八王列传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -201,8 +228,9 @@
 </p><p>夏四月，西部敕勒叛，诏汝阴王天赐、给事中罗云讨之。云为敕勒所袭杀，死者十五六。北平王长孙敦薨。六月丁未，行幸河西。秋七月丙寅，遂至阴山。八月丁亥，车驾还宫。
 </p><p>帝雅薄时务，常有遗世之心，欲禅位于叔父京兆王子推，语在《任城王云传》。群臣固请，帝乃止。丙午，册命太子曰：“昔尧舜之禅天下也，皆由其子不肖。若丹朱、商均能负荷者，岂搜扬仄陋而授之哉？尔虽冲弱，有君人之表，必能恢隆王道，以济兆民。今使太保、建安王陆馛，太尉源贺持节奉皇帝玺绶，致位于尔躬。其践升帝位，克广洪业，以光祖宗之烈，使朕优游履道，颐神养性，可不善欤？”丁未，诏曰：“朕承洪业，运属太平，淮岱率从，四海清晏。是以希心玄古，志存澹泊。躬览万务，则损颐神之和；一日或旷，政有淹滞之失。但子有天下，归尊于父；父有天下，传之于子。今稽协灵运，考会群心，爰命储宫，践升大位。朕方优游恭己，栖心浩然，社稷乂安，克广其业，不亦善乎？百官有司，其祗奉胤子，以答天休。宣布宇内，咸使闻悉。”于是群公奏曰：“昔三皇之世，澹泊无为，故称皇。是以汉高祖既称皇帝，尊其父为太上皇，明不统天下。今皇帝幼冲，万机大政，犹宜陛下总之。谨上尊号太上皇帝。”乃从之。己酉，太上皇帝徙御崇光宫，采椽不斫，土阶而已。国之大事咸以闻。承明元年，年二十三，崩于永安殿，上尊谥曰献文皇帝，庙号显祖，葬云中金陵。
 </p><p>史臣曰：聪睿夙成，兼资能断，其显祖之谓乎？故能更清漠野，大启南服。而早怀厌世之心，终致宫闱之变，将天意哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p><p class='next'>下一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p><p class='next'>下一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

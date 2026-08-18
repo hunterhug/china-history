@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>拓跋瞜君传<span style='font-size:small'> 白话</span></h1>
 <p>昭成皇帝有九个儿子，庶长子是萛君，次为献明帝，其次为秦王翰，其次为阏婆，其次为寿鸠，其次为纥根，其次为地干，其次为力真，其次为窟咄。<BR><BR>　　萛君性情愚昧，经常干些不仁义的事情。昭成帝晚年，苻坚派他的行唐公苻洛等前来进犯南部边境，昭成皇帝派刘库仁迎战于石子岭。昭成皇帝当时身体不好，不能亲自指挥众军，便带领各部人马到阴山避难，度过漠北。因高车在四面进攻包围，又返回漠南。苻洛退军以后，才回到云中。<BR><BR>　　起初，昭成皇帝因为弟弟孤让出国家继承权，他便将一半部众交给孤。孤的儿子斤因为失去职位而怀恨在心，想寻找机会作乱。献明皇帝和秦王翰都已先去世，而道武帝只有五岁。慕容皇后的儿子阏婆等人虽然年纪长大，但没有定下继承人。斤便对萛君说“：皇帝准备要立慕容氏所生的儿子为帝，要先把你杀掉。所以近来几位皇子都身穿戎服，夜间带着兵器绕着屋子巡逻，打算找机会把你杀掉。”当时，苻洛等军队还留在君子津，夜间时常警戒，几位皇子因此带着兵器在屋外来回巡逻，而萛君却相信斤所说的话，把所有的皇子都杀掉了，昭成帝也因此突然死去。当晚，诸皇子的妻子和宫中人跑去报告苻洛的军队。苻坚的部将李柔、张蚝立即带兵进逼，部众们一时四分五裂，离散而去。苻坚得知情况后，召燕凤前来，问他是什么缘故？燕凤如实把情况告诉他。苻坚说“：天下的大恶都在他们身上了。”于是，便抓了萛君和斤，将他们在长安处以车裂的刑罚。</p>
-<div class='pn'><p class='pre'>上一节：<a href='拓跋屈传-白话.html'>拓跋屈传</a></p><p class='next'>下一节：<a href='卫王拓跋仪传-白话.html'>卫王拓跋仪传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='拓跋屈传-白话.html'>拓跋屈传</a></p><p class='next'>下一节：<a href='卫王拓跋仪传-白话.html'>卫王拓跋仪传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -205,8 +232,9 @@
 </p><p>百官第宅：明初，禁官民房屋不许雕刻古帝后、圣贤人物及日月、龙凤、狻猊、麒麟、犀象之形。凡官员任满致仕，与见任同。其父祖有官，身殁，子孙许居父祖房舍。洪武二十六年定制，官员营造房屋，不许歇山转角，重檐重栱，及绘藻井，惟楼居重檐不禁。公侯，前厅七间、两厦，九架。中堂七间，九架。后堂七间，七架。门三间，五架，用金漆及兽面锡环。家庙三间，五架。覆以黑板瓦，脊用花样瓦兽，梁、栋、斗栱、檐桷彩绘饰。门窗、枋柱金漆饰。廊、庑、庖、库从屋，不得过五间，七架。一品、二品，厅堂五间，九架，屋脊用瓦兽，梁、栋、斗栱、檐桷青碧绘饰。门三间，五架，绿油，兽面锡环。三品至五品，厅堂五间，七架，屋脊用瓦兽，梁、栋、檐桷青碧绘饰。门三间，三架，黑油，锡环。六品至九品，厅堂三间，七架，梁、栋饰以土黄。门一间，三架，黑门，铁环。品官房舍，门窗、户牖不得用丹漆。功臣宅舍之后，留空地十丈，左右皆五丈。不许那移军民居止，更不许于宅前后左右多占地，构亭馆，开池塘，以资游眺。三十五年，申明禁制，一品、三品厅堂各七间，六品至九品厅堂梁栋祗用粉青饰之。
 </p><p>庶民庐舍：洪武二十六年定制，不过三间，五架，不许用斗栱，饰彩色。三十五年复申禁饬，不许造九五间数，房屋虽至一二十所，随基物力，但不许过三间。正统十二年令稍变通之，庶民房屋架多而间少者，不在禁限。
 </p><p>器用之禁：洪武二十六年定，公侯、一品、二品，酒注、酒盏金，馀用银。三品至五品，酒注银，酒盏金，六品至九品，酒注、酒盏银，馀皆磁、漆。木器不许用朱红及抹金、描金、雕琢龙凤文。庶民，酒注锡，酒盏银，馀用磁、漆。百官，床面、屏风、槅子，杂色漆饰，不许雕刻龙文，并金饰朱漆。军官、军士，弓矢黑漆，弓袋、箭囊，不许用朱漆描金装饰。建文四年申饬官民，不许僣用金酒爵，其椅棹木器亦不许朱红金饰。正德十六年定，一品、二品，器皿不用玉，止许用金。商贾、技艺家器皿不许用银。馀与庶民同。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十三章-卷四十三-原文.html'>第四十三章-卷四十三</a></p><p class='next'>下一节：<a href='第四十五章-卷四十五-原文.html'>第四十五章-卷四十五</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第四十三章-卷四十三-原文.html'>第四十三章-卷四十三</a></p><p class='next'>下一节：<a href='第四十五章-卷四十五-原文.html'>第四十五章-卷四十五</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -223,8 +250,9 @@
 </p><p>叶升，合肥人。左君弼据庐，升自拔来归。以右翼元帅从征江州，以指挥佥事从取吴，以府军卫指挥使从定明州。洪武三年论功，佥大都督府事。明年从征西将军汤和以舟师取蜀。越二年，出为都指挥使，镇守西安，讨平庆阳叛寇。十二年复佥大都督府事。西番叛，与都督王弼征之，降乞失迦，平其部落。复讨平延安伯颜帖木儿，擒洮州番酋。论功，封靖宁侯，岁禄二千石，世指挥使。镇辽东，修海、盖、复三城。在镇六年，边备修举，外寇不敢犯。发高丽赂遗，帝屡赐敕，与唐胜宗同褒。
 </p><p>二十年，命同普定侯陈桓总制诸军于云南定边、姚安，立营、屯田，经理毕节卫。明年，东川、龙海诸蛮叛，升以参将从沐英讨平之。已而湖广安福所千户夏德忠诱九溪洞蛮为寇，升同胡海等讨之。潜兵出贼后，掩击，擒德忠。立永定、九溪二卫，因留屯襄阳。赣州山贼复结湖广峒蛮为寇。升为副将军，同胡海等讨平之，俘获万七千人。升凡三平叛蛮。再出练兵甘肃、河南。二十五年八月，坐交通胡惟庸事觉，诛死。凉国公蓝玉，升姻也，玉败，复连及升，以故名隶两党云。
 </p><p>赞曰：诸将当草昧之际，上观天命，委心明主，战胜攻取，克建殊勋，皆一时之智勇也。及海内宁谧，乃名隶党籍，或追论，或身坐，鲜有能自全者。圭裳之锡固足酬功，而砺带之盟不克再世，亦可慨矣夫。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p><p class='next'>下一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p><p class='next'>下一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

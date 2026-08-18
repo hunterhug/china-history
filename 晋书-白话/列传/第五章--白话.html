@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -237,8 +264,9 @@
 </p><p>当初，裴、王两个家族在魏晋时代很兴旺，那时的人认为八个姓裴的正好比拟八个姓王的：裴徽比王祥，裴楷比王衍，裴康比王绥，裴绰比王澄，裴瓒比王敦，裴遐比王导，裴愿比王戎，裴邈比王玄。
 </p><p>史臣曰：周朝被认为士子众多，汉朝称为得到贤人，用星象类比，与符命相应。当时缺乏名流，多用骨干一辞相赞许，自家光耀国家，难道说的是陈骞吗?裴秀的名声超过同僚，称为领袖。裴楷年少时就机智神奇，清远通达。都是晋代名臣，确实如此啊!
 </p><p>赞曰：乱世出英才，英才集而世安。高平公沉着聪明，终成大器。钜鹿郡公裴秀自然，博通经学。娲皇炼石补天，晋代图籍揭开奥秘。裴颠有清规，继承家业受到爱戴。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章--白话.html'>第四章-</a></p><p class='next'>下一节：<a href='第六章--白话.html'>第六章-</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第四章--白话.html'>第四章-</a></p><p class='next'>下一节：<a href='第六章--白话.html'>第六章-</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>眭夸传<span style='font-size:small'> 白话</span></h1>
 <p>眭夸名旭，赵郡高邑人。祖父眭迈，是晋朝东海王司马越的军谋掾，后来消灭石勒，做了徐州刺史。父亲眭邃，字怀道，是慕容宝的中书令。<BR><BR>　　眭夸年轻时胸怀大度，不拘泥小节，爱好书传，沉浸其中，不曾留心当世事务。好喝酒，超然物外。三十岁时，遭逢父亲亡故，以致须鬓变白，每当悲伤痛苦，听者为之流泪。性情高洁不愿仕宦，寄情山丘沟壑。同郡人李顺希望与他结交，眭夸拒不答应。郡中长幼没有不惧怕他的。<BR><BR>　　年轻时与崔浩是莫逆之交，崔浩为司徒，曾上奏皇上征召他为中郎，眭夸推托有病不去赴任。州郡长官逼迫上路，不得已到了京都，同崔浩相见。一直停留好多天，只是饮酒叙谈往事，不涉及世俗私利。崔浩每次想通过谈道理让他屈服，竟不能开口，对眭夸的敬畏就是这样子。崔浩后来便将皇上诏书扔在眭夸怀中，也没有开口。眭夸说：“桃简，你已经做了司徒，为什么还要以此烦劳国中人士呢？我准备和你告别。”桃简，是崔浩的小名。崔浩担心眭夸随即还乡，当时只乘一头骡子，再没有别的坐骑，就把眭夸的骡子牵入马棚中，希望用这种办法挽留他。眭夸于是托付同乡交租的人，假称为他驾车，于是得以出关。崔浩知道后感叹说：“眭夸是个独来独往的人，本来不应该用这种小职务羞辱他，又让他拿鞭上路，我应该用什么话来向他谢罪呢？”当时朝廷法令非常严厉，眭夸既然私自回乡，就将有私自回乡的罪过。崔浩便左右周旋，才得以无罪。过了一年，送还眭夸原来那头骡子，同时送给他自己乘的马，写信谢罪。眭夸再不接受他的骡马，也不回信。崔浩下世时，眭夸为他穿了白色丧服，接受乡人吊唁，历经一年才停止。眭夸叹息说“：崔浩公已经死了，还有谁能容纳眭夸？”<BR><BR>　　妻子的父亲钜鹿人魏攀，是当时名声显达的人。不曾尽女婿的礼节，情义如同朋友。有人对眭夸说“：我听说有大才能的人一定官居显贵之位，你为何偏偏在桑榆之间呢？”于是写《知命论》来解释原因。等到死时，埋葬那天前去参加葬礼的如同街市一样热闹。没有儿子。</p>
-<div class='pn'><p class='pre'>上一节：<a href='隐逸传序-白话.html'>隐逸传序</a></p><p class='next'>下一节：<a href='冯亮传-白话.html'>冯亮传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='隐逸传序-白话.html'>隐逸传序</a></p><p class='next'>下一节：<a href='冯亮传-白话.html'>冯亮传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

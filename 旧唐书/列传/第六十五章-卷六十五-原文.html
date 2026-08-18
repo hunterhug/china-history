@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -195,8 +222,9 @@
 <p>　　初，希烈虽归蔡州，留将校等于襄州守当时所掠得财帛什物等，后使襄、汉， 往来不绝。承亦使腹心臧叔雅往来许、蔡，厚结希烈腹心周曾、王玢、姚憺等。及 曾等谋杀希烈，以众归朝，多承首建谋也。累赐密诏褒美之。承寻改检校工部尚书， 兼潭州刺史、湖南都团练观察使。建中四年七月，卒于位，年六十二，赠吏部尚书。 承少有雅望，至其从官，颇以贞廉才术见称于时。 </p>
 <p>　　史臣曰：自古酷吏滥刑，幸免者多矣，苟无强魂为祟，沮议者惑焉。器深文乐 祸，居官令终，非达奚诉冤，无以显其阴责矣。国珍守黔溪，瓘修礼法，括推诚驭 下，元甫为政宽简，少游规检集事，皆可称者。伯玉破敌立功，足为猛士，丁忧冒 宠，终是武夫。承忠悫谋议，勤劳尽瘁，方之者鲜矣。 </p>
 <p>　　赞曰：崔器深文，达奚作祟。七子伊何？李承为最。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十四章-卷六十四-原文.html'>第六十四章-卷六十四</a></p><p class='next'>下一节：<a href='第六十六章-卷六十六-原文.html'>第六十六章-卷六十六</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第六十四章-卷六十四-原文.html'>第六十四章-卷六十四</a></p><p class='next'>下一节：<a href='第六十六章-卷六十六-原文.html'>第六十六章-卷六十六</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

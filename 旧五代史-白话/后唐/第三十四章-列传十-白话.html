@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -193,8 +220,9 @@
 </p><p>庄宗很重视这个建议，立即任命李琪为国计使，又将任他为宰相，不久因内乱而作罢。
 </p><p>到明宗即位，豆卢革、韦说获罪，任圜上奏，请任命李琪为宰相，被孔循、郑珏阻止，便任崔协为宰相。李琪这时是御史大夫，安重诲在御史台门前擅自杀殿直马延，虽然曾经弹劾过他，但言词模棱两可，不敢直言安重诲的罪行，因为这件事李琪推托有病，三次上书请求退休，朝廷不允许，任命为尚书左仆射。从这以后，更受宰相猜忌，凡是上奏言事，无不受到排挤拦阻。天成末年，明宗从汴州返回洛阳，李琪为东都留司官班首，请求到偃师迎接，他的上奏中有“打败契丹的凶党，攻破真定这个逆城”的句子，诏书说：契丹是凶党，真定不是逆城，李琪罚款一个月的俸禄。又曾奉皇帝命令撰写《霍彦威神道碑》一文。李琪是梁朝过去的宰相，叙述霍彦威在梁时历任官职，不说是任伪官，中书上奏说：“不分真伪，混淆功名，请命令他改写。”皇上同意中书的意见。还有不少这类事。
 </p><p>李琪虽然博学多才，但不懂韬晦养性，明知事情不可办好，还要走各种路子求取功名，动不动受排挤，是他自己不能镇静的缘故。以太子太傅退休。长兴年中，死于福善里家中，六十岁。儿子李贞，当官当到邑宰一类。李琪把他在内署时所写的制诏编成十卷，取名叫《金门集》，流行于世间。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十三章-列传九-白话.html'>第三十三章-列传九</a></p><p class='next'>下一节：<a href='第三十五章-列传十一-白话.html'>第三十五章-列传十一</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三十三章-列传九-白话.html'>第三十三章-列传九</a></p><p class='next'>下一节：<a href='第三十五章-列传十一-白话.html'>第三十五章-列传十一</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

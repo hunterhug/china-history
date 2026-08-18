@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -217,8 +244,9 @@
 </p><p>五月，梁太祖朱温派其将军康怀英率兵十万包围潞州，康怀英驱使士卒，修筑堡垒环绕潞州州城，城中音信断绝。武皇派周德威带兵援救潞州，周德威在余吾驻军，率领先锋挑战，每天都有俘获，康怀英不敢接战。梁太祖因康怀英没有战果，便以李思安代替他，李思安引军准备在潞城扎营，周德威领五千骑兵攻击他，梁军大败，斩首一千多。李思安退守坚壁，另外筑外垒，称之为“夹寨”，以抵抗武皇的援军。梁太祖调发山东百姓运输粮饷，周德威每天领轻骑袭击他们，运路艰险，众心更加恐慌。李思安便从东南山口修筑夹道，连接夹寨，以保证运输，从此梁军坚守夹寨。
 </p><p>十月，武皇生病。这时晋阳城无故崩坏，占卜者认为不祥。
 </p><p>天祐五年(908)一月一日，武皇病情加重。四月，在晋阳去世，时年五十三岁。遗令薄葬，发丧后二十七日除去丧服。庄宗即位后，追谥为武皇帝，庙号太祖，陵墓在雁门。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-皇纪上-白话.html'>第一章-皇纪上</a></p><p class='next'>下一节：<a href='第三章-庄宗纪一-白话.html'>第三章-庄宗纪一</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-皇纪上-白话.html'>第一章-皇纪上</a></p><p class='next'>下一节：<a href='第三章-庄宗纪一-白话.html'>第三章-庄宗纪一</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

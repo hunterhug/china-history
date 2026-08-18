@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>吴遵世传<span style='font-size:small'> 白话</span></h1>
 <p>吴遵世字季绪，是渤海人。幼时学习《易经》，入恒山，忽然看见一个老头，送给他开心符，吴遵世跪在地上，用水吞下开心符，于是通晓占卜术。后来游历京洛，以卜筮而闻名。魏孝武帝准备即位时，让他占卜，碰到《否》卦中的《萃》爻，说：“开始不顺后来高兴。”孝武帝说：“高兴在什么时间。”吴遵世说：“刚排去柔，那么当在春末夏初。”又筮卜，碰到《明夷》卦中的《贲》爻，说：“开始登上天，后来入地中。如果能严肃开始谨慎结束，不失去法则，就不用担心入地了。”结果正像他说的那样。<BR><BR>　　后来齐文襄引荐他做了大将军墨曹参军。跟随皇上游东山，有云雾涌起，担心下雨会使打猎活动停止，就开玩笑地让吴遵世占卜。碰上《剥》卦，李兴业说：“坤在上艮在下，是《剥》卦。艮是山，山起云雾。所以知道有雨。”吴遵世说“：坤是地，土能控制水，所以知道无雨。”齐文襄让崔暹记录说：“遵世如果卜中，赏赐绢十匹；不中，罚杖打十下。李兴业如果卜中，没有赏赐；不中，罚杖打十下。”李兴业说“：同样是卜中，为何惟独我不得赏？”文襄说“：吴遵世卜中，正合我意，所以赏赐。”不一会云雾散去，两个人分别受到了赏罚。<BR><BR>　　皇建年间，武成帝因丞相带兵守卫邺下，导致对丞相的猜疑。内心非常忧虑恐惧，打算起兵，每晚休息时就令吴遵世卜筮。吴遵世说“：当有大的喜庆。”因此武成不敢决定。不久赵郡王等奉太后之命，以遗诏给武成加冠冕。又让吴遵世卜筮。遵世说“：近来已占卜了十多次卦。卦中当然有您享有天下的征兆。”武成即帝位后，任命他为中书舍人，吴遵世推称自己年老多病，改任中散大夫。和士开被加封为王，妻子元氏没有儿子，让偏房长孙氏为妃子，让吴遵世卜筮。遵世说“：这种卦偶尔与占卜吻合。”于是拿出占卜书说：“元氏没有儿子，长孙做妃子。”和士开很信这种巧妙的占卜，于是站起来边喊边舞。<BR><BR>　　吴遵世著有《易林杂占》百余卷。后来预言尉迟迥叛乱。死去。</p>
-<div class='pn'><p class='pre'>上一节：<a href='信都芳传-白话.html'>信都芳传</a></p><p class='next'>下一节：<a href='皇甫玉传-白话.html'>皇甫玉传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='信都芳传-白话.html'>信都芳传</a></p><p class='next'>下一节：<a href='皇甫玉传-白话.html'>皇甫玉传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

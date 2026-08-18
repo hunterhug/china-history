@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -205,8 +232,9 @@
 </p><p>又乐平奸民亦诣阙诉大姓五十余家谋逆，饶州知州郎敏力为奏辨。诏诛奸民，而被诬者得尽释。
 </p><p>青文胜，字质夫，夔州人。仕为龙阳典史。龙阳濒洞庭，岁罹水患，逋赋数十万，敲扑死者相踵。文胜慨然诣阙上疏，为民请命。再上，皆不报。叹曰：“何面目归见父老！”复具疏，击登闻鼓以进，遂自经于鼓下。帝闻大惊，悯其为民杀身，诏宽龙阳租二万四千余石，定为额。邑人建祠祀之。妻子贫不能归，养以公田百亩。万历十四年，诏有司春秋致祭，名其祠曰“惠烈”。
 </p><p>赞曰：太祖起闾右，稔墨吏为民害，尝以极刑处之。然每旌举贤能，以示劝勉，不专任法也。尝遣行人赍敕并钞三十锭、内酒一尊，赐平阳知县张〈石楚〉。又建阳知县郭伯泰、丞陆镒，为政不避权势，遣使劳以酒醴，迁其官。丹徒知县胡梦通、丞郭伯高，金坛丞李思进，坐事当逮，民诣阙，言多善政。帝并赐内尊，降敕褒劳。永州守余彦诚、齐东令郑敏等十人坐事下狱，部民列政绩以请，皆复官。宜春令沈昌等四人更擢郡守。其自下僚不次擢用者，宁远尉王尚贤为广西参政，祥符丞邹俊为大理卿，静宁州判元善为佥都御史，芝阳令李行素为刑部侍郎。至如怀宁丞陈希文、宜兴簿王复春，先以善政擢，已知其贪肆，旋置重典。所以风厉激劝者甚至，以故其时吏治多可纪述云。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十七章-卷二十七-原文.html'>第二十七章-卷二十七</a></p><p class='next'>下一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十七章-卷二十七-原文.html'>第二十七章-卷二十七</a></p><p class='next'>下一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>裴佗传<span style='font-size:small'> 白话</span></h1>
 <p>裴佗，字元化，河东闻喜人。他的六世祖裴诜，曾任晋朝的太常卿，因为晋朝动乱，避居到凉州。<BR><BR>　　裴佗容貌魁伟，俨然很有器识威望。被举荐为秀才，因成绩优异被任为中书博士。一再升迁，任赵郡太守。为政有方，威信和政绩都很卓著。狡猾的官吏，奸恶的小人，无不改恶从善。他领得的俸禄，分别救济贫穷的百姓。转任前将军、荆州刺史。赵郡人留恋景仰，全境的人出动为他送行。蛮族首领田盘石、田敬宗等部落约一万余家，依恃人多，凭险设守，不遵守王命。前后几任刺史，都不能使他们归顺向化。裴佗到了荆州，轻装简从，前去慰问，告诉他们归顺和抗拒的利害关系，田敬宗听后立即表示归附。于是，全境清静平安，倾家来归顺的有一千多户。后来，朝廷加任他为中军将军，因年老乞请还家。死前，有遗言不让家人向朝廷请求封谥，不接受别人馈赠的奠仪。子孙们都一一遵行。<BR><BR>　　裴佗性格刚烈正直，不愿与世俗的人交游，和他交谊深厚的必定是当时的名流。他处世清白认真。不置买家业田产，宅院不过三十步见方，没有田园地亩。热天不撑伞，寒天不穿皮衣，他就是这样节俭和独持操守。</p>
-<div class='pn'><p class='pre'>上一节：<a href='裴伯茂传-白话.html'>裴伯茂传</a></p><p class='next'>下一节：<a href='裴让之传-白话.html'>裴让之传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='裴伯茂传-白话.html'>裴伯茂传</a></p><p class='next'>下一节：<a href='裴让之传-白话.html'>裴让之传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

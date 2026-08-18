@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -187,8 +214,9 @@
 </p><p>萧塔剌葛，字陶哂，六院部人。素刚直。太祖时，坐叔祖台哂谋杀于越释鲁，没入弘义宫。世宗即位，以舅氏故，出其籍，补国舅别部敞史。或言泰宁王察割有无君心。塔剌葛曰：“彼纵忍行不义，人孰肯从！”他日侍宴，酒酣，塔剌葛捉察割耳，强饮之曰：“上固知汝傲狠，然以国属，曲加矜悯，使汝在左右，且度汝才何能为。若长恶不悛，徒自取赤族之祸！”察割不能答，强笑曰：“何戏之虐也！”天禄末，塔剌葛为北府宰相，及察割作乱，塔剌葛醉詈曰：“吾悔不杀此逆贼！”寻为察割所害。
 </p><p>耶律敌禄，字阳隐，孟父楚国王之后。性质直，多膂力。察割作乱，敌禄闻之，入见寿安王，慷慨言曰：“愿得精兵数百，破贼党。”王嘉其忠。穆宗即位，为北院宣徽使。上以飞狐道狭，诏敌禄广之。明年，将兵援河东，至太原，与汉王会于高平，击周军，败之，仍降其众。忻、代二州叛，将兵讨之。会耶律挞烈至，败周师于忻口。师还，卒。
 </p><p>论曰：忠臣惟知有国，而不知有身，故恶恶不避其患。阿剌以谄谀不法折萧革，陶隗以用必基祸言阿思，塔剌葛以忍行不义徒自取赤族之罪责察割，其心可谓忠矣。言一出而祸辄随之。吁，邪正既不辨，国焉得无乱哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p><p class='next'>下一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p><p class='next'>下一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -219,8 +246,9 @@
 </p><p>八年春正月戊辰，免江西被灾税粮。丁丑，帝舆疾宿南郊斋宫。己卯，群臣请建太子，不听。壬午，武清侯石亨、副都御史徐有贞等迎上皇复位。二月乙未，废帝为郕王，迁西内。皇太后吴氏以下悉仍旧号。癸丑，王薨于西宫，年三十。谥曰戾。毁所营寿陵，以亲王礼葬西山，给武成中卫军二百户守护。
 </p><p>成化十一年十二月戊子，制曰：“朕叔郕王践阼，戡难保邦，奠安宗社，殆将八载。弥留之际，奸臣贪功，妄兴谗构，请削帝号。先帝旋知其枉，每用悔恨，以次抵诸奸于法，不幸上宾，未及举正。朕敦念亲亲，用成先志，可仍皇帝之号，其议谥以闻。”遂上尊谥。敕有司缮陵寝，祭飨视诸陵。
 </p><p>赞曰：景帝当倥偬之时，奉命居摄，旋王大位以系人心，事之权而得其正者也。笃任贤能，励精政治，强寇深入而宗社乂安，再造之绩良云伟矣。而乃汲汲易储，南内深锢，朝谒不许，恩谊恝然。终于舆疾斋宫，小人乘间窃发，事起仓猝，不克以令名终，惜夫！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p><p class='next'>下一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p><p class='next'>下一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

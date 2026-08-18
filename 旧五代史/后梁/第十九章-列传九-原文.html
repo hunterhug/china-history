@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -192,8 +219,9 @@
 </p><p>李重允，宋州下邑人。状貌雄武，初在黄巢党中，推为刚鸷。唐中和四年五月，同尚让、李谠等率众至繁台，与太祖之军相拒。及巢寇渐衰，乃率众来降。太祖素识之，拔用不次，署为先锋步军都头。与胡真援河阳，逼怀州。重允以部下兵突之，射中蕃将安休休。又令与李谠率骑军至陕，应接郭言，回次渑池，破贼帅黄花子之众，改滑州夹马指挥使。蔡贼围汴，重允以步兵攻下三寨，掳获甚多。太祖大举伐宗权，俾重允以滑兵为先锋。及东讨徐州，下丰、萧二邑，转右厢马步军指挥使。大顺元年秋，从郴王友裕收泽州，与晋军战于马牢川，王师败绩，回守河阳。太祖谓诸将曰：“李谠、重允违我节度，不能立功，颇辜任使。”于是与李谠并戮于河桥。
 </p><p>范居实，绛州翼城人。事太祖，初为队将，从讨巢、蔡有功。又从硃珍收滑州，改左厢都虞候。预破兗、郓功。迁感义都头、郑州马军指挥使。幽州刘仁恭举众南下，寇魏郡北闉，居实与葛从周、张存敬率兵救魏，大破幽、沧之众于内黄。太祖迎昭宗于岐下，以居实为河中马军都指挥使。及昭宗还京，赐迎銮毅勇功臣，遥领锦州刺史，又迁左龙骧马军都指挥使。从征淮南回，改登州刺史，转左神勇军使。开平元年，用军于潞州，命居实统军以解泽州之围。授耀州刺史，令以郡兵屯固镇，寻除泽州刺史。居实拳勇善战，颇立军功，在郡以戎备不理，诏追赴阙，暴其玩寇之罪而斩之。
 </p><p>史臣曰：叔琮而下，咸以鹰犬之才，适遇云龙之会，勤劳王室，践履将坛，然俱不得其死，岂不惜哉！得非鸟尽弓藏，理当如是耶？将梁祖之雄猜，无汉高之大度欤？乃知自古帝王，能保全功臣者，唯光武一人而已矣。语曰：“弑父与君，亦不从也”，而叔琮、友恭从之，何也？既为盗跖所嗾，岂免成济之诛，临终之言，益彰其丑也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十八章-列传八-原文.html'>第十八章-列传八</a></p><p class='next'>下一节：<a href='第二十章-列传十-原文.html'>第二十章-列传十</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十八章-列传八-原文.html'>第十八章-列传八</a></p><p class='next'>下一节：<a href='第二十章-列传十-原文.html'>第二十章-列传十</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

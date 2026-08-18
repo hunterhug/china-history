@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -178,8 +205,9 @@
 <h1>第六章-列传一<span style='font-size:small'> 白话</span></h1>
 <p>高祖皇后李氏，晋阳人。高祖卑微时，曾在晋阳的别墅放马，乘机在夜间闯入她家，将她抢来与她成亲。到高祖掌管藩镇时，封她为魏国夫人。高祖在太原立国，想对军士颁行赏赐，因国家资财不足，准备向民间征敛，以促成此事。皇后听到后劝谏说：“自高祖立国之初，到国运兴盛，虽是天意所定，也是托土地人民的福庇协同的结果，不能对人民施恩还想剥夺他们的财产，不合新的天子应抚恤同情的道理。现在后宫的积蓄，当全部用来花费，即使不丰厚，也可使人无怨言。”高祖正色说“：谨听吩咐。”于是停止征敛的计划，皇后竭尽内府资财帮助高祖，朝廷内外听说后没有不感动高兴的。天福十二年(947)册封为皇后。隐帝即位，尊为皇太后。
 </p><p>郭威入据京城，凡军国大事，都请太后颁发诰令以便执行。这年，议立徐州节度使刘斌贝为帝，因迎奉还未到，郭威乃率领群臣拜见太后呈上奏章，请太后暂时临朝听政，太后于是发布诰令。到郭威被六军推戴为君王，呈上奏章细述这件事，并说愿像待慈母一样侍奉太后。太后下诰令说：“郭侍中功烈崇高，德声昭著，翦除祸乱，安定乾坤，天命所归，所以军民拥戴，普天同庆。老身未终残年，逢此多难之世，只想善终天年。阅侍中来奏，把我当作母亲对待，对于他的好意，不胜感激。”又将戎衣、玉带赐给郭威。郭威即帝位后，上尊号为德圣皇太后，住在太平宫。后周显德元年(954)春去世。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章-隐帝纪下-白话.html'>第五章-隐帝纪下</a></p><p class='next'>下一节：<a href='第七章-列传二-白话.html'>第七章-列传二</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第五章-隐帝纪下-白话.html'>第五章-隐帝纪下</a></p><p class='next'>下一节：<a href='第七章-列传二-白话.html'>第七章-列传二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

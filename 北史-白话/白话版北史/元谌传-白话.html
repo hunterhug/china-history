@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>元谌传<span style='font-size:small'> 白话</span></h1>
 <p>元谧的哥哥元谌，字兴伯，他性情平和，任都官尚书。尔朱荣进洛阳后，上奏庄帝准备迁都到晋阳。皇帝便将这件事询问元谌，元谌坚决争辩说不能这样。尔朱荣大怒，说：“关你什么事，这样固执！况且河阴那次事，本来应当轮到你的。”元谌说：“天下大事天下人论说，何必用河阴那样残酷的事情来恐吓我！我是宗室至亲，位居常伯，活着没有什么益处，死了又有什么要紧？你就是今天把我打碎头颅流下肠子，我也不害怕。”尔朱荣大怒，准备将他治罪。尔朱荣的堂弟尔朱世隆力谏，这才算了。见到这情景的人无不心惊胆战，而元谌神色自若。<BR><BR>　　过了几天，皇帝和尔朱荣一起，见到宫殿十分壮丽，绿树排列成行，尔朱荣便感叹说“：我前些天怎么那么傻，产生了迁都的想法。如今见到皇宫壮丽可观，又何必离开河洛前往晋阳呢？我仔细考虑了元尚书所说的话，确实有道理，不能改变。”于是停止了迁都的争议。<BR><BR>　　永安元年(528)，元谌被任命为尚书左仆射，封为魏郡王。元谌年长，按照道理应当承袭王爵的，但因为他的父亲灵王特别宠爱他的弟弟元谧，立了元谧为世子。庄帝下诏，重新封元谌为赵郡王。他历任司空、太保、太尉、录尚书事。孝静帝初年，任大司马。死去以后，谥为“孝懿”。元谌并没有其他才识，所以虽然多次担任要职，当时人并不重视他。<BR><BR>　　元谌的弟弟元谭，很发奋自强自立，从小就受到宗族的推重，死于秦州刺史的任上。<BR><BR>　　元谭的弟弟元谳，贪暴无礼。任太中大夫，封为平乡男爵。在河阴被害。</p>
-<div class='pn'><p class='pre'>上一节：<a href='元谧传-白话.html'>元谧传</a></p><p class='next'>下一节：<a href='广陵王元羽传-白话.html'>广陵王元羽传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='元谧传-白话.html'>元谧传</a></p><p class='next'>下一节：<a href='广陵王元羽传-白话.html'>广陵王元羽传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

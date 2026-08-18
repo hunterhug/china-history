@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -214,8 +241,9 @@
 </p><p>凡祭之在庙、在寝，既毕，皆亲宾子孙慰，主人以常服见。若宗子有故，庶子摄祭，则祝曰：“孝子某使介子某执其常事。”通祭三代，而宗子卑，则以上牲祭宗子家，祝曰：“孝子某为其介子某荐其常事。”庶子官尊而立庙，其主祭则以支庶封官依大宗主祭，兄陪于位。以庙由弟立，已不得延神也。或兄弟分官，则各祭考妣于正寝。
 </p><p>古殇及无后皆祔食于祖，无祝而不拜，设坐祖左而西向。亚献者奠，祝乃奠之，一献而止。其后庙制设幄，当中南向，祔坐无所施，皆祭室户外之东而西向。亲伯叔之无后者礻付曾祖，亲昆弟及从父昆弟祔于祖，亲子侄祔于祢。寝祭之位西上，祖东向而昭穆南北，则伯叔之祔者居祢下之穆位北向，昆弟、从父昆弟居祖下之昭位南向，子侄居伯叔之下穆位北向，以序尊卑。凡殇、无后，以周亲及大功为断。
 </p><p>古者庙于大门内，秦出寝于陵侧，故王公亦建庙于墓。既庙与居异，则宫中有丧而祭。三年之丧，齐衰、大功皆废祭；外丧，齐衰以下行之。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二·礼乐二-原文.html'>第二章-卷二·礼乐二</a></p><p class='next'>下一节：<a href='第四章-卷四·礼乐四-原文.html'>第四章-卷四·礼乐四</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二·礼乐二-原文.html'>第二章-卷二·礼乐二</a></p><p class='next'>下一节：<a href='第四章-卷四·礼乐四-原文.html'>第四章-卷四·礼乐四</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

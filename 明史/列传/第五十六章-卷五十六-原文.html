@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -241,8 +268,9 @@
 </p><p>直明敏博学，练习朝章，而躁于进取。性矜忌，不自检饬，与吏部尚书尹旻相恶。直初觊礼部侍郎，而旻荐他人。直以中旨得之。次日遇旻于朝，举笏谢。旻曰：“公所谓简在帝心者。”自是怨益深。后在南部八年，郁郁不得志，属其党万安、彭华谋内召，旻辄持不可。诸朝臣亦皆畏直，幸其在南。及推兵部左、右侍郎，吏部列何琮等八人。诏用琮，而直以安、华及李孜省力，中旨召还。至是修怨，与孜省等比。陷旻父子得罪，又构罢江西巡抚闵珪，物论喧然不平。刑部郎袁清者，安私人，又幸于内侍郭闰。勘事浙江，輘轹诸大吏，吏部尚书李裕恶之。比还，即除绍兴知府。清惧，累章求改，裕极论其罪，下诏狱。安、闰以属直，为言于孜省，取中旨赦之，改知郧阳。
 </p><p>孝宗立，进士李文祥，御史汤鼐、姜洪、缪樗，庶吉士邹智等连章劾直。给事中宋琮及御史许斌言直自初为侍郎以至入阁，夤缘攀附，皆取中旨。帝于是薄其为人，令致仕。弘治九年表贺万寿，并以太子年当出閤，上《承华箴》，引先朝少保黄淮事，冀召对。帝却之。正德中卒，谥文和。
 </p><p>赞曰：《易》称内君子外小人，为泰；外君子内小人，为否。况端揆之寄，百僚具瞻者乎！陈循以下诸人，虽不为大奸慝，而居心刻忮，务逞己私。同己者比，异己者忌；比则相援，忌则相轧。至万安、刘吉要结近幸，蒙耻固位。犹幸同列多贤，相与弥缝匡救，而秽迹昭彰，小人之归，何可掩哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十五章-卷五十五-原文.html'>第五十五章-卷五十五</a></p><p class='next'>下一节：<a href='第五十七章-卷五十七-原文.html'>第五十七章-卷五十七</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第五十五章-卷五十五-原文.html'>第五十五章-卷五十五</a></p><p class='next'>下一节：<a href='第五十七章-卷五十七-原文.html'>第五十七章-卷五十七</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

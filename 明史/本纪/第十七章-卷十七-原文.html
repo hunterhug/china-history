@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -200,8 +227,9 @@
 </p><p>十九年春正月丙午，召翟銮复入阁。辛亥，吉囊寇大同，杀指挥周岐。三月戊戌，诏修仁寿宫。夏六月辛巳，瓦剌部长款塞。秋七月癸卯，吉囊入万全右卫，总兵官白爵逆战于宣平，败之。壬子，又败之于桑乾河。戊午，振江西灾。八月丁丑，太仆卿杨最谏服丹药，予杖死。九月，吉囊犯固原，周尚文败之于黑水苑。延绥总兵官任杰追击于铁柱泉，又败之。己酉，召仇鸾还。冬十月庚申，罢矿场。甲子，顾鼎臣卒。十一月丙辰，慈庆宫成。是年，琉球、日本入贡。
 </p><p>二十年春正月，免南畿被灾税粮。二月乙丑，显陵成，给复承天三年。丙寅，御史杨爵言时政，下锦衣卫狱。三月乙巳，赐沈坤等进士及第、出身有差。是春，吉囊寇兰州，参将郑东战死。夏四月己未，莫登庸纳款，改安南国为安南都统使司，以登庸为都统使。辛酉，九庙灾，毁成祖、仁宗主。丙子，诏行宽恤之政。五月戊子，采木于湖广、四川。甲寅，振辽东饥。六月，振畿内、山西饥。秋七月丁酉，俺答、阿不孩遣使款塞求贡，诏却之。是月，免河南、陕西、山东被灾税粮。八月辛酉，昭圣皇太后崩。庚辰，夏言罢。是月，俺答、阿不孩、吉囊分道入寇，总兵官赵卿帅京营兵，都御史翟鹏理军务，御之。九月乙未，翊国公郭勋有罪，下狱死。辛亥，俺答犯山西，入石州。冬十月癸丑，振山西被寇者，复徭役二年。丁卯，召夏言复入阁。十一月辛卯，葬敬皇后于泰陵。丙申，免四川被灾税粮。是年，琉球入贡。
 </p><p>二十一年夏四月庚申，大高玄殿成。闰五月戊辰，俺答、阿不孩遣使款大同塞，巡抚都御史龙大有诱杀之。六月辛卯，俺答寇朔州。壬寅，入雁门关。丁未，犯太原。秋七月己酉朔，日有食之。夏言罢。己未，俺答寇潞安，掠沁、汾、襄垣、长子，参将张世忠战死。八月辛巳，募兵于直隶、山东、河南。壬午，振山西被兵州县，免田租。癸巳，礼部尚书严嵩兼武英殿大学士，预机务。九月癸亥，员外郎刘魁谏营雷殿，予杖下狱。冬十月丁酉，宫人谋逆伏诛，磔端妃曹氏、宁嫔王氏于市。是年，免畿内、陕西、河南、福建被灾税粮。安南入贡。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p><p class='next'>下一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p><p class='next'>下一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

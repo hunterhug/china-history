@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -208,8 +235,9 @@
 </p><p>蔚幼孤，笃学，有乡里誉，从交辟，历晋、陕、华三府从事。唐庄宗之伐蜀，大军出于华下，时属华方阙帅，蔚为记室，诏令权领军府事，供亿军储，甚有干济之称。及明宗入洛，遣李冲赍诏于关右，尽诛阉官。冲性深刻，而华人有为阉官所累者，冲欲尽戮之，蔚以理救护，获免者甚众。毛璋之镇邠宁，奏为廉判。时璋为麾下所惑，有跋扈之意。蔚因乘间极言，谕以逆顺之理，璋即时遣其子入贡。朝廷以蔚有赞画之效，锡以金紫，改许州戎判。晋天福初，自泾州戎幕征拜虞部员外郎、盐铁判官，历开封、广晋少尹。晋少帝嗣位，拜左散骑常侍，判广晋府事，转工部左右侍郎，再知开封府事。开运初，出为亳州防御使，为政清肃，亳民感之。岁余，入为户部侍郎。汉初，拜御史中丞，转兵部侍郎。太祖受命，复知开封府事，迁太常卿，后以足疾辞位。显德二年冬，卒于家，时年七十有一。
 </p><p>子玕、珝，俱仕皇朝为省郎。
 </p><p>王敏，字待问，单州金乡人。性纯直，少力学攻文，登进士第。后依杜重威，凡历数镇从事。汉初，重威叛于鄴，时敏为留守判官，尝泣谏重威，恳请归顺，重威始虽不从，及其穷也，纳敏之言，以其城降。时魏之饥民十犹四五，咸保其余生者，敏之力也。入朝，拜侍御史。世宗镇澶渊，太祖以敏谨厚，遂命为澶州节度判官。及世宗尹正王畿，改开封少尹。世宗嗣位，权知府事，旋拜左谏议大夫、给事中，迁刑部侍郎。敏尝以子婿陈南金荐于曹州节度使李继勋，表为记室，其后继勋偾军于寿春，及归阙而无待罪之礼，世宗以继勋武臣，不之责也，因迁怒南金，谓其裨赞无状，乃黜之。敏由是连坐，遂免其官。岁余，复拜司农卿。显德四年秋，以疾卒。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十八章-列传七-原文.html'>第十八章-列传七</a></p><p class='next'>下一节：<a href='第二十章-列传九-原文.html'>第二十章-列传九</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十八章-列传七-原文.html'>第十八章-列传七</a></p><p class='next'>下一节：<a href='第二十章-列传九-原文.html'>第二十章-列传九</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

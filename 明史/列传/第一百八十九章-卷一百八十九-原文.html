@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -238,8 +265,9 @@
 </p><p>孙氏，吴县卫廷珪妻。随夫商贩，寓浔阳小江口。宁王陷九江，廷珪适他往，所亲急邀孙共逃。孙谓两女金莲、玉莲曰：“我辈异乡人，汝父不在，逃将安之？今贼已劫邻家矣，奈何？”女曰：“生死不相离，要当为父全此身耳。”于是母子共一长绳自束，赴河死。
 </p><p>江氏，余干夏璞妻。正德间，贼至，抱方晬弟走，不得脱。贼将缚之，曰：“诚愿与将军俱，顾吾父年老，惟一弟，幸得全之。”贼以为信，纵令置所抱儿，出遂大声骂贼，投桥下死。
 </p><p>后隆庆中，有高明严氏，贼掠其境，随兄出避，遇贼，刃及其兄。女跪泣曰：“父早丧，孀母坚守，恃此一兄，杀之则祀殄矣，请以身代。”贼悯然为纳刃。既而欲污之，则曰：“请释吾兄即配汝。”及兄去，执不从，竟剖腹而死。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百八十八章-卷一百八十八-原文.html'>第一百八十八章-卷一百八十八</a></p><p class='next'>下一节：<a href='第一百九十章-卷一百九十-原文.html'>第一百九十章-卷一百九十</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第一百八十八章-卷一百八十八-原文.html'>第一百八十八章-卷一百八十八</a></p><p class='next'>下一节：<a href='第一百九十章-卷一百九十-原文.html'>第一百九十章-卷一百九十</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

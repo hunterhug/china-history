@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>裴植传<span style='font-size:small'> 白话</span></h1>
 <p>裴植，字文远，叔业的兄长叔宝的儿子。少小酷好读书，博览经史，尤长于佛教经典，善于谈论佛家义理。跟随裴叔业在寿春任上。叔业病卒，席法友、柳玄达等共同推举裴植监理州事。封锁叔业丧事的消息，下达命令，处理政事，都出于裴植的主张。然后打开城门迎纳前来接管的魏军。宣武帝下诏命裴植为兖州刺史、崇义县侯，又入朝为大鸿胪卿。后来，因为他的长子裴昕叛投南朝，有司给他大辟的处置。昭武帝特意下诏免去他的罪过，以表示不忘他过去的功勋。不久，授他为扬州大中正，又命他为瀛州刺史。再升任为度支尚书，加金紫光禄大夫衔。<BR><BR>　　裴植的性情品格并非是柱石人物，所作所为很不稳定。从兖州刺史任上回来后，上表请求解除官职，到嵩山隐居。宣武帝不允许，对他的做法很是奇怪。然而，在各种场合他与人们议论，却说自己并不比先前由南齐归顺的王肃差，从而埋怨朝廷对待他不优厚。等到当上尚书，志得意满，想把政事当作自己的神圣职责，对别人说：“不是我一定要当尚书，尚书也必须由我来当。”言词激扬慷慨，见形于色。等到入朝参与政事的讨论，不断对众官讥讽诋毁。又上表攻击征南将军田益宗，说：华夏人和蛮人不是同类，他的地位不应该在累世为官的人上面。对人的轻慢污辱，都与此相同。侍中于忠、黄门元昭看了他的奏疏十分反感，压下来没有送给宣武帝。韦伯昕告发裴植阴谋废黜明帝，尚书又奏报羊祉告裴植姑母的儿子皇甫仲达，说仲达受裴植的指使，诈称有皇帝诏书，率领部队，想图谋领军于忠。当时于忠擅权，便构成罪状，又假借诏命，将裴植杀害，朝野上下为之称冤。临终时，他神色自若，嘱告子弟：被害之后，剪掉他的头发胡须，给他穿上和尚的衣服，用佛门礼仪将他埋葬在嵩山之阴。<BR><BR>　　最初，裴植与仆射郭祚、都水使者韦俊等人同时遇害，后来，郭祚、韦俊的事情得以昭雪，并加赠职衔，而裴植只是追封原来的封爵而已。他的部下渤海人刁冲上疏辩争，于是，朝廷赠封为尚书仆射、扬州刺史，又重新改葬。<BR><BR>　　裴植的母亲是夏侯道迁的姐姐，性情刚毅，对待孩子尤如严父。孩子长大后，如不穿戴整齐，就不见他们。他们如小有过失，也必须穿戴整齐，跪伏在门外，经三五日后才让人引见，用严词督责。惟有小儿子裴衍可以穿寻常衣服见她，早晚侍奉左右。裴植在瀛州时，他的母亲年逾七十，到寺院舍身为婢，每天布衣麻裙，拿着扫帚簸箕到沙门寺洒扫庭院。裴植的弟弟裴瑜、裴粲、裴衍也穿着奴仆的衣服，流着眼泪跟从，僧道凡俗都很受感动。她的儿子们各以布帛数百匹赎回母亲，后来她出家为尼，入嵩山好几年才回来。裴植既为长子，母亲又年纪高迈，他在数处任职，只让妻子跟自己生活。虽然也送禄米奉养母亲及各个兄弟，却家产有别，同居而分炊。一家数灶，也是江南的习俗，但论者多借此讥笑他。</p>
-<div class='pn'><p class='pre'>上一节：<a href='裴叔业传-白话.html'>裴叔业传</a></p><p class='next'>下一节：<a href='裴粲传-白话.html'>裴粲传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='裴叔业传-白话.html'>裴叔业传</a></p><p class='next'>下一节：<a href='裴粲传-白话.html'>裴粲传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

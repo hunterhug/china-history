@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -201,8 +228,9 @@
 </p><p>秋季八月甲午，群臣奉上谧号为武皇帝，庙号为高祖。丙申，葬在万安陵。
 </p><p>产担用智慧安抚万物，用武功平定叛乱，独自运用英明的谋略，人们都赶不上他，所以能够征伐战胜四方，平定叛乱削除凶逆。到了登上皇位之日，担当国家朝政的重任，常推崇宽大之政，以仁爱抚恤为本。如果需要征发调用军需物资，都是出于事情不能平息。加上以节俭朴素自作表率，平常饮食不过几个品种，宫中的私宴，都用粗陋的食器，各种食品和美味，削减至充足而已，不能白白浪费。起初平定侯景，到拥立梁敬帝，美女玉帛，都分发给将士。他充用于后宫的，衣服没有华美的色彩，饰物不用黄金翠玉，编钟女乐，他也不列于面前。等到他登基，更加严格恭俭。所以他建立了伟大的功勋美好的恩德，广阔地拥有天下。
 </p><p>陈朝吏部尚书姚察曰：高祖英明而有谋略度量宽宏，随机应变不拘一格，大概舆漠高祖、魏武帝相当。等到西都动荡颠覆，确实能会通天和人。王僧辩缺少伊尹之才，白白结下桐宫的怨恨，贞阳假藉秦军队的送行，却不考虑穆赢的哭泣。高祖于是遵循天意抚平末世运数，乘着形势机会拯救动乱的局面，帝王功业的基础，从此开始，为什么要到戡定黎登上陌的胜利才可以呢。所以在恭敬宣美政务之世，改朝换代之时，百姓诅歌他来归附，前朝离去如释重负，和前代相比，这是多么美好啊!</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷一-白话.html'>卷一</a></p><p class='next'>下一节：<a href='卷三-白话.html'>卷三</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='卷一-白话.html'>卷一</a></p><p class='next'>下一节：<a href='卷三-白话.html'>卷三</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

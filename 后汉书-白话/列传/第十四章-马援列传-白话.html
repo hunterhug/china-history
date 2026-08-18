@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -203,8 +230,9 @@
 </p><p>到永平十七年，马援夫人去世，就更为其聚土为坟，植树为标记，建筑祠堂。
 </p><p>建初二年(78)，肃宗派五官中郎将持节追加策封，谥封马援为忠成侯。四子：马廖、马防、马光、马客卿。马客卿幼年聪慧，年六岁，能应接诸公长者，独立酬宾客。曾有犯了死罪的亡命徒来看他，客卿躲避起来不让人知道。外表看来不善于言辞而内质沉着机敏。马援很赞赏他，以为是将相的材料，所以取名为客卿。马援去世后，客卿也夭折早死。
 </p><p>史官评论道：马援腾声名于三辅，周旋于二帝，至定计立谋，以辅佐天子，怀着为国效劳的愿望累立战功，这是千载一时的机遇啊。然马援戒人之祸，是很明智的。但他却不能自免于谗隙。难道功名之际，就是这么一条规律吗？由于利不关己，为人谋事就明智；考虑事情不私于己，断义必定严厉。如真正能回观事物的智慧而为自己反躬自问的省察，这样对人就能宽恕对己就有自知之明了。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十三章-窦融列传-白话.html'>第十三章-窦融列传</a></p><p class='next'>下一节：<a href='第十五章-卓鲁魏刘列传-白话.html'>第十五章-卓鲁魏刘列传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十三章-窦融列传-白话.html'>第十三章-窦融列传</a></p><p class='next'>下一节：<a href='第十五章-卓鲁魏刘列传-白话.html'>第十五章-卓鲁魏刘列传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

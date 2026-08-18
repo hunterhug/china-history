@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>陈详传<span style='font-size:small'> 白话</span></h1>
 <p>陈详字文几，年少时出家为僧。爱好写记事之文，谈论清雅。高祖讨伐侯景，征召陈详，吩咐他还俗，配给他兵马，跟随高祖前去平定京都。高祖东征杜龛，陈详另外攻克安吉、原乡、故鄣三县。杜龛被平定，按功授陈详为散骑侍郎、假节、雄信将军、青州刺史，割故鄣、广德置广梁郡，以陈详为太守。高祖称帝，改广梁郡为陈留郡，又以陈详为陈留太守。永定二年(558)，受封为遂兴县侯，封邑五百户。同年任明威将军，通直散骑常侍。三年，随侯安都在宫亭湖打败王琳的部将常众爱。世祖继位，任宣城太守，将军如故。王琳占据栅口，陈详跟随吴明彻袭击湓城，去取王琳的家口，没有攻克，于是去到南湖，从鄱阳步行回来。王琳被平定，陈详和吴明彻都没有功劳。天嘉元年(560)，按例增加封邑至一千五百户。又任通直散骑常侍，兼右卫将军。三年，出任假节、都督吴州诸军事、仁威将军、吴州刺史。<BR><BR>　　周迪占据临川举兵反叛，陈详从吴州经别道在濡城周迪的别营袭击周迪，虏获了他的妻儿。周迪败走，陈详返回又镇守吴州。五年(564)，周迪在临川复出，于是以陈详为都督，率领水军、步军讨伐周迪。大军抵达南城，与敌军相遇，战败，死于疆场，时年四十二岁。因为他所统率的兵马行军无纪律，没有赠谥，其子陈正理袭封。</p>
-<div class='pn'><p class='pre'>上一节：<a href='陈拟传-白话.html'>陈拟传</a></p><p class='next'>下一节：<a href='陈慧纪传-白话.html'>陈慧纪传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='陈拟传-白话.html'>陈拟传</a></p><p class='next'>下一节：<a href='陈慧纪传-白话.html'>陈慧纪传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>河南王高孝瑜传<span style='font-size:small'> 白话</span></h1>
 <p>河南康献王高孝瑜，字正德，文襄帝高澄的长子。最初封为河南郡公，北齐受禅代替东魏，他又被晋爵为王。历任中书令、司州牧。早先，他被养在神武帝的宫中，与武成帝高湛同岁，两人相亲相爱。将要诛杀杨忄音等人，他参与了预谋。武成帝即帝位，对他的礼遇特别优隆。武成帝在晋阳亲手写信给他，说：“我饮汾河的清水两杯，劝你在邺城也饮上两杯。”其亲密友爱就像这样。<BR><BR>　　他长得容貌魁伟，神采焕发，沉雄刚毅。待人谦虚谨慎，宽厚大度，加之喜爱文学，读书敏捷迅速，一目十行，重新审查，竟毫无差错。当初，文襄帝在邺城东面起山造池以供游览观赏，世俗的人对此迷惑不解。孝瑜便在家中制作水堂龙舟，在船上设置旗帜长矛，多次召集兄弟们来宴饮射箭以寻找快乐。武成帝到他家里，看见后很是高兴，从此盛行在后园玩乐，处处都营造起水堂龙舟。<BR><BR>　　武成帝曾让和士开与胡皇后相对而坐，进行握槊的游戏。孝瑜劝谏说：“皇后是天下的母亲，不可以与臣下的手接触。”武成帝完全采纳了他的意见。后来，他又说赵郡王高琛的父亲死得不正常，不可以与他们亲近。因此，赵郡王的儿子高睿以及和士开都对他侧目而视。和士开偷偷向武成帝告发他奢侈得超出了身份，高睿又在武成帝面前说：“在山东人们只知道有河南王，不知道还有陛下您。”武成帝因此嫉恨他。..朱御女名叫摩女，本来侍奉太后，孝瑜先与她通奸。后来，因为太子要与摩女共寝，孝瑜偷偷地告诉了太子。武成帝因此大发雷霆。孝瑜忧惧，一下喝了三十七杯酒。他的身体肥胖高大，腰带有十围那样长。武成帝派娄子彦用车载着他出去，他醉倒在车上，心中烦闷躁热，跳到水里淹死了。</p>
-<div class='pn'><p class='pre'>上一节：<a href='冯翊王高润传-白话.html'>冯翊王高润传</a></p><p class='next'>下一节：<a href='广宁王高孝珩传-白话.html'>广宁王高孝珩传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='冯翊王高润传-白话.html'>冯翊王高润传</a></p><p class='next'>下一节：<a href='广宁王高孝珩传-白话.html'>广宁王高孝珩传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -401,8 +428,9 @@
 </p><p>当页谊的时代，说法就如此，那么把它当成野兽，这种说法大概出在近代吧？破除人们的迷信，难以在他们深信不疑的时候和他们争辩，等他们产生怀疑的时候，随之攻破就行了。
 </p><p>麒麟、凤凰、龟、龙，这些帝王吉祥的征兆，出现在五代的时候，又都集中在蜀，这就使得即使喜好吉祥之说的人也感到可疑。
 </p><p>藉着这可疑之处攻破它，大概可以使迷信者对此事进行深刻反省吧。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二章-南唐世家第二-白话.html'>第二章-南唐世家第二</a></p><p class='next'>下一节：<a href='第四章-后蜀世家第四-白话.html'>第四章-后蜀世家第四</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二章-南唐世家第二-白话.html'>第二章-南唐世家第二</a></p><p class='next'>下一节：<a href='第四章-后蜀世家第四-白话.html'>第四章-后蜀世家第四</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

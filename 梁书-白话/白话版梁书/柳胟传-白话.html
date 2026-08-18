@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>柳胟传<span style='font-size:small'> 白话</span></h1>
 <p>柳胟字文通，河东解县人。父亲世隆，齐朝司空。<BR><BR>　　柳胟十七岁时，齐武帝尚为中军，任用他为参军，转任主簿。齐朝初年，获任尚书三公郎，累迁太子中舍人，成为巴东王子响的朋友。子响管理荆州时，柳胟跟随前往。子响喜欢亲近小人，柳胟料知这样要成为灾难，称病返京。等到灾难发作，柳胟因先返京而得以免罪。历任中书侍郎、中护军长史。出任新安太守，居郡，以无政绩为由，被罢免归家。一段时间后，任为右军咨议参军事。<BR><BR>　　建武末年，任西戎校尉、梁南秦二州刺史。等到高祖举兵起事时，柳胟率汉中兵响应。和帝即位，任之为侍中，领前军将军。高祖为帝时，征为护军将军，未拜任，仍迁任太子詹事，加散骑常侍，论功封曲江县侯，食邑千户。高祖在宴会上作诗赠给柳胟，诗云：“尔宴(实在)冠群后，惟余实念功。”又曾陪高祖闲谈，高祖说；“徐元瑜在岑南违命，《周书》罪不相及，我已赦免其诸子，怎么样？”柳胟回答说：“惩罚不加于其后代，赏赐延续至后世，今再次见到圣朝。”当时人们称之为智言。不久迁任尚书右仆射。<BR><BR>　　天监四年(505)，大举北伐，临川王梁宏都督众军，以柳胟为副手。军队返回后，仍任仆射。因久病，转任金紫光禄大夫，加散骑常侍，配亲信二十人。未拜官，出任使持节、安南将军、湘州刺史。六年(507)十月死于任上，时年四十六岁。高祖着素服举哀。赠侍中、抚军将军，给鼓吹一部，谥号曰穆。柳胟著有《仁政传》及许多诗赋，粗有辞义。儿子柳照继承。<BR><BR>　　柳胟的第四弟柳忄登，亦有美誉，历任侍中、镇西长史。天监十二年(513)卒，赠宁远将军、豫州刺史。</p>
-<div class='pn'><p class='pre'>上一节：<a href='吕僧珍传-白话.html'>吕僧珍传</a></p><p class='next'>下一节：<a href='席阐文传-白话.html'>席阐文传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='吕僧珍传-白话.html'>吕僧珍传</a></p><p class='next'>下一节：<a href='席阐文传-白话.html'>席阐文传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>义宁公元晖传<span style='font-size:small'> 白话</span></h1>
 <p>义宁公元晖字叔平，须眉长得就像画的一样，举止文雅可观。喜欢阅读书、记，自幼在京城得到赞誉。周文帝以礼相待，让他和儿子们一起游玩相处，经常同用砚台，同坐一席，情谊深厚。被任命为武伯下大夫。当时突厥经常入侵，朝廷打算结交和亲，让元晖购买十万锦纟采，出使突厥。元晖向突厥陈说利害关系，可汗大为高兴，便派手下的名王随元晖进贡地方特产。不久，元晖被任命为仪同三司。周武帝聘突厥皇后时，让元晖前去送聘礼。又被任命为开府，转司宪大夫。当讨平关东后，让元晖安定河北，封为义宁子。隋文帝又任命他总百揆，加封开府，晋为公爵。开皇初年，任都官尚书，兼任太仆。他奉诏令去挖杜阳水浇灌三..原，灌溉低洼盐碱地几千顷，民众因而得到好处。再升任兵部尚书，监督河渠各种工程。不久，因事免官。很快又被任命为魏州刺史，很有仁政。后来因疾病而离职，死在京城。皇帝追悼他，叹息了许久，传旨由鸿胪寺处理丧事，谥为“元”。他的儿子名肃，继承他爵位，任光禄少卿。肃的弟弟名仁，本性聪明机敏，任日南郡丞。</p>
-<div class='pn'><p class='pre'>上一节：<a href='拓跋崇传-白话.html'>拓跋崇传</a></p><p class='next'>下一节：<a href='拓跋瞝传-白话.html'>拓跋瞝传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='拓跋崇传-白话.html'>拓跋崇传</a></p><p class='next'>下一节：<a href='拓跋瞝传-白话.html'>拓跋瞝传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

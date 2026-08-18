@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -227,8 +254,9 @@
 </p><p>十月丁卯，辛爱与把都儿等大举自墙子岭、磨刀峪溃墙入犯，京师戒严。帝大惊，谕阁臣徐阶曰：“朕东见火光，此贼去京不远，其令兵部谕诸军并力剿逐。”明日，选以寇东遁闻，为将士祈赏。帝疑，以问阶。对曰：“寇营尚在平谷，选等往通州矣，谓追杀者，妄也。”帝衔之。寇稍东，大掠三河、顺义，围诸将傅津等于郑官屯。选遣副将胡镇偕总兵官孙膑、游击赵溱击之。膑、溱战殁，镇力战得脱。寇留内地八日不退。给事中李瑜遂劾选、绅与副使卢镒，参将冯诏、胡粲，游击严瞻等，俱逮下诏狱。又二日，寇始北去，京师解严。
 </p><p>初，谍者言寇将窥墙子岭，部檄严待之，而三卫为寇导者绐选赴潘家口。寇已入，选、绅惧得罪，径趋都城，屯东直门外，旋还通州。及遣镇等御，又不胜。内侍家蓟西者，哗言通汉父子实召寇。帝入其言，益怒。法司坐选、绅、诏守备不设律斩，镒等戍。帝谕锦衣朱希孝坐以纵通汉勾贼罪，复下选诏狱。选不承，止承质通汉父子事，且言事已上闻。希孝录其语上，刑部如帝指论选死。即戳于市，枭其首示边，妻子流二千里。绅论死系狱，诏及镒等戍边。帝虽怒选甚，但欲诛其身，法司乃并坐其妻子。隆庆初，始释还。
 </p><p>赞曰：世宗威柄自操，用重典以绳臣下，而弄权者借以行其私。于是赐阘冗废职之徒事败伏辜，而出力任事之臣亦中危法受戮，边臣不得自展布，而武备綍矣。陈九畴、翟鹏、孙继鲁、曾铣皆可用之才，或谪或死，不以其罪。铣复套之议甚伟。然权臣当轴，而敌势方强，虽颇、牧乌能有为？丁汝夔之戮，于法诚不为过。然戎律之弛，有由来矣，而汝夔独蒙其咎。王忬、杨选于边备甚疏，宜不免云。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九十一章-卷九十一-原文.html'>第九十一章-卷九十一</a></p><p class='next'>下一节：<a href='第九十三章-卷九十三-原文.html'>第九十三章-卷九十三</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第九十一章-卷九十一-原文.html'>第九十一章-卷九十一</a></p><p class='next'>下一节：<a href='第九十三章-卷九十三-原文.html'>第九十三章-卷九十三</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

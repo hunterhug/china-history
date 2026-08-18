@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -346,8 +373,9 @@
 </p><p>文帝为人严肃有威仪，外表木讷而内心明白，机敏有大谋略。刚掌握政权时，人心不肯归附，几个儿子又都年幼势弱，朝廷内部有六王图谋不轨，外部则有三方面的叛乱。当时手握重兵、掌管重镇的，都是北周的旧臣。文帝以诚心相待，让各人都能尽量发挥才能，不到一月时间，便平定了三边，不到十年，统一天下。他薄征赋税，减轻刑罚，对内明修法度，对外安抚戎夷。每天早晨上朝听政，直到太阳西斜仍不知疲倦。居住的地方服饰玩物，务求节俭，令行禁止，上下同风。开皇、仁寿年间，男子不穿绫罗也不用金玉作为饰品。日常衣服大多是布帛制作的，装饰衣带等也不过用铜铁骨角之类物品而已。他虽然吝惜用钱，但赏赐有功的人时，却并不小气。
 </p><p>每当他乘车外出，在路中遇到有人上表时，他便停下马来亲自询问。有时他暗中派遣使者，到各地采风，听知民间风气和官吏政绩得失。对民间疾苦，无不留心。曾有一次关中饥荒，他派身边人去观察百姓的食物，有人拿来豆屑和糠混杂在一起的食物上奏，皇帝流着泪展示给群臣，对自己深加责备。并为此而减少膳食，将近一个月不吃酒肉。当他东祭泰山时，关中民众到洛阳就食的，络绎不绝。文帝下令将士们，不能随意驱赶。许多男女民众夹杂在文帝的仪仗和侍卫人员之中同行。遇到有扶老携幼的百姓，他便带着马避开他们，并加以安慰和勉励后才离开。走到难以行走和危险的地段，看见有挑担的人，立即命令身边侍从加以扶助。凡是将士们阵亡，他必定重加奖赏，派出使者，到他们家中慰问。他从早到晚勤勤恳恳，自强不息。民众因而逐渐富裕，人口也越加兴盛，府库中内藏充实，虽然没有达到极盛，也足以称为近代以来的好皇帝了。
 </p><p>可是他本性多疑，向来又不学无术，喜欢雕虫小技和旁门左道的方术。例如说神烛和圣杖都能够治病。又相信王劭随意编解的石头上的那些文字，认为确是自己的祥瑞之兆，像这样不明大道理，因此，忠臣义士，就难以尽心和尽言劝谏了。那些开国元勋以及有功劳的众将，或被杀被夷族以及因罪被免，很少有存留下来的。他又不喜欢诗书，杨素便投其所好，上奏请求废除学校。他只听妇人之言，废黜几个儿子。到他晚年时，执法尤其严峻，喜怒无常，动辄杀戮。他曾经让身边随从送西域前来朝贡的使者出关，那些随从在所经过的地方，接受了牧宰们送给的鹦鹉、麋皮、马鞭之类杂物，文帝知道以后大为恼怒；他又到武库中，见管理人员屋里杂乱不堪，没有整理。于是，他就抓了这个管理武库的小官和那些接受馈赠的人员，把他们押到开远门外，亲自主持处决，被杀死的有几十人。他又常常让人暗地贿赂令史们，府史凡是接受的一定被处死，毫不留情。议论者认为这些是他的不足之处。</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷十-白话.html'>卷十</a></p><p class='next'>下一节：<a href='卷十二-白话.html'>卷十二</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='卷十-白话.html'>卷十</a></p><p class='next'>下一节：<a href='卷十二-白话.html'>卷十二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

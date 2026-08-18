@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -183,8 +210,9 @@
 </p><p>乾化元年(911)正月初二，王景仁与晋军在柏乡交战失败。五日，大赦流放罪以下的囚犯，要求群臣大胆提出意见和建议。八日，任命天雄军节度使杨师厚为北面行营招讨使。四月十八日，契丹阿保机派使者来。五月一日，大赦，改元乾化。十日，到张宗..家。八月十七日，到榆林巡视农民庄稼。渤海王派使者来。二十七日，在兴安鞠场进行大规模阅兵。九月一日，太祖坐文明殿，群臣入阁议事。二十日，往魏州。命张宗..留守西都。十月二十六日，在魏州东郊进行大规模阅兵。十一月，高万兴攻取盐州。十二日，从魏州回到京城。十五日，回鹘、吐蕃派使者来。
 </p><p>乾化二年(912)二月八日，派光禄卿卢王比出使后蜀。十五日，往魏州，命张宗..留守西都。到白马，杀左散骑常侍孙陟马、右谏议大夫张衍、兵部郎中张俊。二十九日，往贝州。三月七日，在枣强进行大屠杀。二十八日，复往魏州。四月二十一日，从魏州回到东都。三十日，又往西都。五月九日，下诏死罪以下囚犯减刑。免徭役，禁乱捕乱杀。渤海王派使者来。同月，薛贻矩去世。六月，梁太祖病重，子郢王友皀造反。二日，皇帝崩。
 </p><p>唉！天下人对梁的罪恶统治不满已很久了！自后唐以来，都把它称为伪朝。我写五代史，不以伪朝论，有人讥笑我失掉《春秋》的宗旨，说什么“梁罪大恶极，应当口诛笔伐，却反而加以肯定，是奖励篡夺，不符合孔子《春秋》的大义”。我回答说“：什么是《春秋》的大义呢？鲁桓公弑隐公而自立，宣公弑子赤而自立，郑厉公赶走世子忽而自立，卫公孙剽赶走国君絗而自立，孔圣人在《春秋》一书里都称他们为君。这就是我之所以不称伪梁的原因了，是依照《春秋》的惯例而这样做的。”“那么《春秋》也奖励臣下篡权吗？”我的答复是“：只要看到称前四者为君，就可知孔子《春秋》用意之深了，《春秋》之所以能起劝诫作用，说的是事实，才能使后人善恶分明。要书其罪于后世，也要尊重事实。其事实是伪君，就写其伪君。其事实是篡，就书其篡。尊重事实，才能使后人相信，那么四君之罪，就不可能掩盖了。使为国君的人不能掩盖罪恶，然后使后人知道恶名不可逃，那么为恶的人就会改正恶习了。这就是《春秋》用意之深而劝诫真切，为的是尊重事实使善恶自明啊。桀、纣，用不着贬他们的王位，然而万世都知其是恶人。《春秋》对于罪恶的君主照实写出，并不影响其褒善贬恶的宗旨，只要将其罪恶事实写出来，史实传之后世，即使国君也不掩盖其罪恶，这样就可劝诫恶人改正错误。知道了《春秋》的这种用意，也就知道我写书不称伪梁的用意了。”</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-梁本纪第一-白话.html'>第一章-梁本纪第一</a></p><p class='next'>下一节：<a href='第三章-梁本纪第三-白话.html'>第三章-梁本纪第三</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-梁本纪第一-白话.html'>第一章-梁本纪第一</a></p><p class='next'>下一节：<a href='第三章-梁本纪第三-白话.html'>第三章-梁本纪第三</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

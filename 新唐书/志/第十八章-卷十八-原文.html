@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -386,8 +413,9 @@
 </p><p>若先定度数而返求日者，以辰法乘所求行度。有分者，从之。八之，如每日差而一，为积。倍初日行分，以每日差加、减之，益迟者加之，益疾者减之。如每日差而一，为率。令自乘，以积加、减之。益迟者以积减之，益疾者以积加之。开方除之，所得以率加、减之。益迟者以率加之，益疾者以率减之。乃半之，得所求日数。开方除者，置所开之数为实。借一算于实之下，名曰下法。步之，超一位。置商于上方，副商于下法之上，名曰方法。命上商以除实。毕，倍方法一折，下法再折。乃置后商于下法之上，名曰隅法。副隅并方。命后商以除实。毕，隅从方法折下，就除如前开之。
 </p><p>五星前变，入阳爻，为黄道北；入阴爻，为黄道南。后变，入阳爻，为黄道南；入阴爻，为黄道北。其金、水二星，以夕为前变，晨为后变。各计其变行，起初日入爻之算，尽老象上爻未算之数。不满变行度常率者，因置其数以变行日定率乘之，如变行度常率而一，为日。其入变日数与此日数已下者，星在道南北依本所入阴阳爻为定。过此日数之外者，南北返之。
 </p><p>《九执历》者，出于西域。开元六年，诏太史监瞿坛悉达译之。断取近距，以开元二年二月朔为历首。度法六十。月有二十九日，余七百三分日之三百七十三。历首有朔虚分百二十六。周天三百六十度，无余分。日去没分九百分度之十三。二月为时，六时为岁。三十度为相，十二相而周天。望前曰白博义；望后曰黑博义。其算皆以字书，不用筹策。其术繁碎，或幸而中，不可以为法。名数诡异，初莫之辩也。陈玄景等持以惑当时，谓一行写其术未尽，妄矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p><p class='next'>下一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p><p class='next'>下一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

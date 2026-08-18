@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -253,8 +280,9 @@
 </p><p>曰小功五月者：为伯叔祖父母，为同堂伯叔父母，为再从兄弟及再从姊妹在室者，为同堂兄弟之子，为祖姑在室者，为从祖姑在室者，为同堂兄弟之女在室者，为兄弟之妻；为人后者为其姑姊妹适人者；为嫡孙妇，为同堂姊妹之出嫁者，为孙女适人者，为兄弟之孙及兄弟之女孙在室者，为外祖父母，为母之兄弟姊妹，为同母异父之兄弟姊妹，为姊妹之子；妇人为夫之姑及夫之姊妹，为夫之兄弟及夫兄弟之妻，为夫兄弟之孙及夫兄弟之女孙在室者，为夫同堂兄弟之子及同堂兄弟之女在室者。
 </p><p>曰緦麻三月者：为族曾祖父母，为族伯叔祖父母，为族父母，为族兄弟及族姊妹在室者，为族曾祖姑在室者，为族祖姑及族姑在室者，为兄弟之曾孙，女在室同，为曾孙玄孙，为同堂兄弟之孙，女在室同，为再从兄弟之子，女在室同，为祖姑、从祖姑及从祖姊妹之出嫁者，为兄弟之孙女出嫁者，为同堂兄弟之女出嫁者，为乳母，为舅之子，为姑之子，为姨之子，为外孙，为婿，为妻之父母，为兄弟孙之妇，为同堂兄弟子之妇，为同堂兄弟之妻，为外孙妇，为甥妇；妇人为夫之曾祖、高祖父母，为夫之叔伯祖父母，为夫之同堂伯叔父母，为夫兄弟之曾孙，为夫之同堂兄弟，为夫同堂兄弟之孙，孙女同，为夫再从兄弟之子，为夫兄弟之孙妇，为夫同堂兄弟子之妇，为夫同堂兄弟之妻，为夫同堂姊妹，为夫之外祖父母，为夫之舅及姨，为夫之祖姑及从祖姑在室者；女出嫁为本宗叔伯祖父母，为本宗同堂叔伯父母，为本宗同堂兄弟之子女，为本宗祖姑及从祖姑在室者，为本宗同堂姊妹之出嫁者；为人后者为本生外祖父母。
 </p><p>嘉靖十八年正月，谕辅臣：“昨居丧理疾，阅《礼记·檀弓》等篇，其所著礼仪制度俱不归一，又不载天子全仪。虽曰‘三年之丧，通乎上下’，而今昔亦有大不同者。皇祖所定，未有全文，每遇帝后之丧，亦未免因仍为礼。至于冠裳衰绖，所司之制不一，其与礼官考定之。自初丧至除服，冠裳轻重之制具为仪节，俾归至当。”于是礼部议丧服诸制奏之。帝令更加考订，画图注释，并祭葬全仪，编辑成书备览。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十五章-卷三十五-原文.html'>第三十五章-卷三十五</a></p><p class='next'>下一节：<a href='第三十七章-卷三十七-原文.html'>第三十七章-卷三十七</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三十五章-卷三十五-原文.html'>第三十五章-卷三十五</a></p><p class='next'>下一节：<a href='第三十七章-卷三十七-原文.html'>第三十七章-卷三十七</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>薛修义传<span style='font-size:small'> 白话</span></h1>
 <p>薛修义，字公让，河东汾阳人。他年纪小却狡诈豪侠，轻财好义。北魏正光年末，天下动乱，烽火四起，朝廷下特诏招募，能得到三千兵马的，封为别将。修义召集了七千多人，被封为安北将军、西道别将。因建立军功，拜受龙门镇将。<BR><BR>　　后来，北魏皇帝宗族的元凤贤等人作乱，攻城略地。修义看到天下纷乱扰攘，也举兵反叛，自称为黄钺大将军。朝廷命都督宗正珍率兵讨伐他，大军还未到来，他惭愧悔恨，上表请求给一大将的职衔就接受招安。凤贤等人仍然占据显要，不肯投降。修义写信劝谕，他才投降。朝廷授凤贤为龙骧将军、阳夏子，又改封为汾阴县侯。..朱荣认为薛修义反复无常，将他送到晋阳，与高昂等人一起被拘禁。..朱荣率兵进入洛阳，让修义等人随军出发，被安置在驼牛署。<BR><BR>　　..朱荣被处死，魏孝庄帝命修义为弘农、河北、河东、正平四郡大都督。这时，神武帝高欢任晋州刺史，见他到后，对他招待得十分优厚。高欢在韩陵打败..朱氏的军队，取得大捷，命修义代行并州的政务。孝武帝入关西逃，高欢命他为关右行台，他从龙门渡过黄河，招降西魏北华州刺史薛崇礼。<BR><BR>　　当初，神武帝高欢想大修晋州城，中外府司马房毓劝谏“：假如敌兵到了这个地方，虽然有城又有什么用处？”便停止不修。北魏军在沙苑失败后，迁移秦、南汾、东雍三州的百姓到并州，又想放弃晋州，把家属迁向英雄城。修义进谏：“如果晋州失败，定州也不能保全。”神武帝发怒，说：“你们都想背叛我，前些时候不让我修建并州城，使我无处安身。”修义说“：如果晋州失守，就请您杀死我。”斛律金也劝说道“：还要依靠这个汉族的小子守晋州，收留他的家口作人质，不要给他兵马。”神武帝听从了他的建议，命修义掌管晋州的事务。西魏的仪同长孙子彦率兵逼至晋州城下，修义打开城门，埋伏好人马在等待他。长孙子彦无法揣测城中虚实，于是撤兵。神武帝很是赞许他，封他为晋州刺史。<BR><BR>　　后来又任齐州刺史，因贪取财货被免去官职。追念他守晋州的功劳，又恢复了他原来的官爵。不久因立军功，晋封为正平郡公，加封为开府。天保时，死在太子太保的官职上，被追赠为司空。</p>
-<div class='pn'><p class='pre'>上一节：<a href='慕容绍宗传-白话.html'>慕容绍宗传</a></p><p class='next'>下一节：<a href='慕容俨传-白话.html'>慕容俨传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='慕容绍宗传-白话.html'>慕容绍宗传</a></p><p class='next'>下一节：<a href='慕容俨传-白话.html'>慕容俨传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

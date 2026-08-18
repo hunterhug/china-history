@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -313,8 +340,9 @@
 </p><p>行宫所在，皆立总监以司之。上宫正五品，中宫从五品，下宫正七品。陇右诸牧，置左、右牧监各一人，以司统之。
 </p><p>罢州置郡，郡置太守。上郡从三品，中郡正四品，下郡从四品。京兆、河南则俱为尹，并正三品。罢长史、司马，置赞务一人以贰之。京兆、河南从四品，上郡正五品，中郡从五品，下郡正六品。次置东西曹掾，京兆、河南从五品，上郡正六品，中郡从六品，下郡正七品。主簿，司功、仓、户、兵、法、士曹等书佐，各因郡之大小而为增减。改行参军为行书佐。旧有兵处，则刺史带诸军事以统之，至是别置都尉，副都尉。都尉正四品，领兵，与郡不相知。副都尉正五品。又置京辅都尉，从三品，立府于潼关，主兵领遏。并置副都尉，从四品。又置诸防主、副官，掌同诸镇。大兴、长安、河南、洛阳四县令，并增为正五品。诸县皆以所管闲剧及冲要以为等级。丞、主簿如故。其后诸郡各加置通守一人，位次太守，京兆、河南，则谓之内史。又改郡赞务为丞，位在通守下，县尉为县正，寻改正为户曹、法曹，分司以承郡之六司。河南、洛阳、长安、大兴，则加置功曹，而为三司，司各二人。郡县佛寺，改为道场，道观改为玄坛，各置监、丞。京都诸坊改为里，皆省除里司，官以主其事。
 </p><p>帝自三年定令之后，骤有制置，制置未久，随复改易。其余不可备知者，盖史之阙文云。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p><p class='next'>下一节：<a href='第二十四章-卷二十四-原文.html'>第二十四章-卷二十四</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p><p class='next'>下一节：<a href='第二十四章-卷二十四-原文.html'>第二十四章-卷二十四</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

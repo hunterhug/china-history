@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -212,8 +239,9 @@
 </p><p>五月甲午，追谥体弘仁英文睿德光孝皇帝，庙号显宗。丁酉，祔于太庙，陵曰裕陵。
 </p><p>帝天性仁厚，不忍刑杀。梁檀儿盗金银叶，怜其母老，李福兴盗段匹，值坤厚陵礼成，家令本把盗银器，值万春节，皆委曲全活之。亡失物者，责其偿而不加罪。闻四方饥馑，辄先奏，加赈赡。因田猎出巡，所过问民间疾苦。敬礼大臣，友爱兄弟。葬明德皇后于坤厚陵，诸妃皆祔，自磐宁宫发引，赵王惟中以其母挽车先发，令张黄盖者前行，帝呼执盖者不应，少府监张仅言欲奏其事，帝止之。尝作《重光座铭》，及刻座右铭于小玉碑，并刻其碑阴，皆深有理致。最善射而不殚物，尝奉诏拜陵，先猎，射一鹿获之，即命罢猎，曰：“足奉祀事，焉用多杀？”好生盖其天性云。
 </p><p>赞曰：辽王杲取中京，宗翰、宗望皆从，景宣别领合紥猛安。合紥猛安者，太祖之猛安也。宗翰请立熙宗，宗干不敢违，太宗不能拒，其义正，其理直矣。旧史称睿宗宽恕好施惠，熙宗不终，海陵陨毙，自时厥后，得大位者皆其子孙，有以夫。显宗孝友惇睦，在东宫二十五年，不闻有过。承意开导，四方阴受其赐。天下不假之年，惜哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

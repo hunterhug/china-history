@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -190,8 +217,9 @@
 <p>　　义府少子湛，年六岁时，以父贵授周王文学。神龙初，累迁右散骑常侍，袭封 河间郡公。时凤阁侍郎张柬之将诛张易之兄弟，遂引湛为左羽林将军，令与敬晖等 启请皇太子，备陈将诛易之兄弟意，太子许之。及兵发，湛与右羽林大将军李多祚 等诣东宫迎皇太子，拒而不时出，湛进启曰：“逆竖反道乱常，将图不轨，宗社危 败，实在须臾。湛等诸将与南衙执事克期诛翦，伏愿殿下暂至玄武门，以副众望。” 太子曰：“凶竖悖乱，诚合诛夷，然圣躬不豫，虑有惊动。公等且止，以俟后图。” 湛曰：“诸将弃家族，共宰相同心戮力，匡辅社稷，殿下奈何不哀其恳诚而欲陷之 鼎镬？湛等微命，虽不足惜，殿下速出自止遏。”太子乃驰马就路。湛从至玄武门， 斩关而入，率所部兵直至则天所寝长生殿，环绕侍卫。因奏：“臣等奉令诛逆贼易 之、昌宗，恐有漏泄，遂不获预奏，辄陈兵禁掖，是臣等死罪。”则天谓湛曰： “卿亦是诛易之军将耶？我于汝父子恩不少，何至是也！”则天移就上阳宫，因留 湛宿卫。中宗即位，拜右羽林大将军，进封赵国公，加实封通前满五百户。顷之， 复授左散骑常侍，累转左领军卫大将军。开元初卒。崔义玄别有传。 </p>
 <p>　　史臣曰：许高阳武德之际，已为文皇入馆之宾，垂三十年，位不过列曹尹；而 马周、刘洎起羁旅徒步，六七年间，皆登宰执。考其行实，则高阳之文学宏奥，周、 洎无以过之，然而太宗任遇相殊者，良以高阳才优而行薄故也。及属嗣君冲暗，嬖 妾奸邪，阿附豺狼，窥图权轴，人之凶险，一至于斯。仲尼所谓“虽有周公之才， 不足观也。”义府才思精密，所谓“猩猩能言”，鄙哉！ </p>
 <p>　　赞曰：贞观文士，高阳、河间。图形学馆，染翰书山。进身以笔，得位由奸。 为虎傅翼，即又胡颜。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十一章-卷三十一-原文.html'>第三十一章-卷三十一</a></p><p class='next'>下一节：<a href='第三十三章-卷三十三-原文.html'>第三十三章-卷三十三</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三十一章-卷三十一-原文.html'>第三十一章-卷三十一</a></p><p class='next'>下一节：<a href='第三十三章-卷三十三-原文.html'>第三十三章-卷三十三</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -193,8 +220,9 @@
 </p><p>致仕，不逾月复旧职。丁家艰，起复，兼中书令。上问古今儒士优劣，占对称旨，知兴中府，改朔方军节度使。大康初，徙镇辽兴。以上京多滞狱，命为留守，不数月，以狱空闻。累乞致政，不从。复请，许之，加守太师。卒，遣使吊祭，追封柳城郡王，谥文宪。寿隆五年，诏为立祠。
 </p><p>耶律阿思，字撒班。清宁初，补祗候郎君。以善射，掌猎事，进渤海近侍详稳。重元之乱，与护卫苏射杀涅鲁古，赐号靖乱功臣，徙契丹行宫都部署。大安初，为北院大王，封漆水郡王。寿隆元年，为北院枢密使，监修国史。道宗崩，受顾命，加于越。录乙辛党人，罪重者当籍其家，阿思受赂，多所宽贳。萧合鲁尝言当修边备，阿思力沮其事，或讥其以金卖国。后以风疾失音，致仕，加尚父，封赵王。薨，年八十，追封齐国王。
 </p><p>论曰：滦河之变，重元拥兵行幄，微仁先等，道宗其危乎！当其止幸北、南院，召塔剌兵以靖大难，功宜居首。良以反谋白太后，韩家奴以逆顺降奚人，德与阿思杀涅鲁古，皆有讨贼之力焉。仁先齐名休哥，勋德兼备，此其一节欤！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十五章-卷二十五-原文.html'>第二十五章-卷二十五</a></p><p class='next'>下一节：<a href='第二十七章-卷二十七-原文.html'>第二十七章-卷二十七</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十五章-卷二十五-原文.html'>第二十五章-卷二十五</a></p><p class='next'>下一节：<a href='第二十七章-卷二十七-原文.html'>第二十七章-卷二十七</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -192,8 +219,9 @@
 </p><p>呜呼！予既悲湘阴公赟之事，又嘉庭美、杨温之所为。赟于汉非嫡长，特以周氏移国，畏天下而难之，故假赟以伺间尔。当是之时，天下皆知赟之必不立也，然庭美、温之区区为赟守孤城以死，其始终之迹，何愧于死节之士哉！然予考于实录，二人之死状不明。夫二人之事，固知其无所成，其所重者死尔，然史氏不著，不知其何以死也。当王彦超之攻徐州也，周尝遣人招庭美等，予得其诏书四，皆言庭美等尝已送款于周，后惧罪而复叛，然庭美等款状亦不见，是皆不可知也。夫史之阙文，要不慎哉。其疑以传疑，则信者信矣。予固嘉二人之忠而悲其志，然不得列于死节之士者，惜哉！
 </p><p>○高祖从弟信
 </p><p>蔡王信，高祖之从弟也。高祖镇太原，以信为兴捷军都指挥使领义成军节度使，徙领许州。高祖寝疾，隐帝当立为嗣，杨邠等受顾命，不欲信在京师，乃遣信就镇，信涕泣而去。信所至黩货，好行杀戮。军士有犯法者，信召其妻子，对之刲剔支解，使自食其肉，血流盈前，信命乐饮酒自如也。杨邠等死，信大喜，谓其寮佐曰：“吾尝为天无眼，而使我郁郁于此者三年矣！主上孤立，几落贼手。诸公可以劝我一杯矣。”已而闻难作，信忧不能食。周太祖军变于澶州，王峻遣前申州刺史马鐸以兵巡检许州，信乃自杀。周太祖即位，追封蔡王。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章-晋家人传第五-原文.html'>第五章-晋家人传第五</a></p><p class='next'>下一节：<a href='第七章-周家人传第七-原文.html'>第七章-周家人传第七</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第五章-晋家人传第五-原文.html'>第五章-晋家人传第五</a></p><p class='next'>下一节：<a href='第七章-周家人传第七-原文.html'>第七章-周家人传第七</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

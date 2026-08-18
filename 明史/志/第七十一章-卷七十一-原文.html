@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -198,8 +225,9 @@
 </p><p>锦衣旧例有功赏，惟缉不轨者当之。其后冒滥无纪，所报百无一实。吏民重困，而厂卫题请辄从。隆庆初，给事中欧阳一敬极言其弊，言：“缉事员役，其势易逞，而又各类计所获功次，以为升授。则凭可逞之势，邀必获之功，枉人利己，何所不至。有盗经出首幸免，故令多引平民以充数者；有括家囊为盗赃，挟市豪以为证者；有潜构图书，怀挟伪批，用妖言假印之律相诬陷者；或姓名相类，朦胧见收；父诉子孝，坐以忤逆。所以被访之家，谚称为刬，毒害可知矣。乞自今定制，机密重情，事干宪典者，厂卫如故题请。其情罪不明，未经谳审，必待法司详拟成狱之后，方与纪功。仍敕兵、刑二部勘问明白，请旨升赏。或经缉拿未成狱者，不得虚冒比拟，及他词讼不得概涉，以侵有司之事。如狱未成，而官校及镇抚司拷打伤重，或至死者，许法司参治。法司容隐扶同，则听科臣并参。如此则功必覆实，访必当事，而刑无冤滥。”时不能用也。
 </p><p>内官同法司录囚，始于正统六年，命何文渊、王文审行在疑狱，敕同内官兴安。周忱、郭瑾往南京，敕亦如之。时虽未定五年大审之制，而南北内官得与三法司刑狱矣。景泰六年，命太监王诚会三法司审录在京刑狱，不及南京者，因灾创举也。成化八年，命司礼太监王高、少监宋文毅两京会审，而各省恤刑之差，亦以是岁而定。十七年辛卯，命太监怀恩同法司录囚。其后审录必以丙辛之岁。弘治九年不遣内官。十三年，以给事中丘俊言，复命会审。凡大审录，赍敕张黄盖于大理寺，为三尺坛，中坐，三法司左右坐，御史、郎中以下捧牍立，唯诺趋走惟谨。三法司视成案，有所出入轻重，俱视中官意，不敢忤也。成化时，会审有弟助兄斗，因殴杀人者，太监黄赐欲从末减。尚书陆瑜等持不可，赐曰：“同室斗者，尚被发缨冠救之，况其兄乎？”瑜等不敢难，卒为屈法。万历三十四年大审，御史曹学程以建言久系，群臣请宥，皆不听。刑部侍郎沈应文署尚书事，合院寺之长，以书抵太监陈矩，请宽学程罪。然后会审，狱具，署名同奏。矩复密启，言学程母老可念。帝意解，释之。其事甚美，而监权之重如此。锦衣卫使亦得与法司午门外鞫囚，及秋后承天门外会审，而大审不与也。每岁决囚后，图诸囚罪状于卫之外垣，令人观省。内臣曾奉命审录者，死则于墓寝画壁，南面坐，旁列法司堂上官，及御史、刑部郎引囚鞠躬听命状，示后世为荣观焉。
 </p><p>成化二年，命内官临斩强盗宋全。嘉靖中，内臣犯法，诏免逮问，唯下司礼监治。刑部尚书林俊言：“宫府一体，内臣所犯，宜下法司，明正其罪，不当废祖宗法。”不听。按太祖之制，内官不得识字、预政，备扫除之役而已。末年焚锦衣刑具，盖示永不复用。而成祖违之，卒贻子孙之患，君子惜焉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十章-卷七十-原文.html'>第七十章-卷七十</a></p><p class='next'>下一节：<a href='第七十二章-卷七十二-原文.html'>第七十二章-卷七十二</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第七十章-卷七十-原文.html'>第七十章-卷七十</a></p><p class='next'>下一节：<a href='第七十二章-卷七十二-原文.html'>第七十二章-卷七十二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

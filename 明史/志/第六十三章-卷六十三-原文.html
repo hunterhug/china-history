@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -235,8 +262,9 @@
 </p><p>万历三年，南京工部尚书刘应节、侍郎徐栻复议海运，言：“难海运者以放洋之险，覆溺之患。今欲去此二患，惟自胶州以北，杨家圈以南，浚地百里，无高山长坂之隔，杨家圈北悉通海潮矣。综而计之，开创者什五，通浚者什三，量浚者什二。以锥探之，上下皆无石，可开无疑。”乃命〈木式〉任其事。应节议主通海。而栻往相度，则胶州旁地高峻，不能通潮。惟引泉源可成河，然其道二百五十馀里，凿山引水，筑堤建闸，估费百万。诏切责栻，谓其以难词沮成事。会给事中光懋疏论之，且请令应节往勘。应节至，谓南北海口水俱深阔，舟可乘潮，条悉其便以闻。
 </p><p>山东巡抚李世达上言：“南海麻湾以北，应节谓沙积难除，徙古路沟十三里以避之。又虑南接鸭绿港，东连龙家屯，沙积甚高，渠口一开，沙随潮入，故复有建闸障沙之议。臣以为闸闭则潮安从入？闸启则沙又安从障也？北海仓口以南至新河闸，大率沙淤潮浅。应节挑东岸二里，仅去沙二尺，大潮一来，沙壅如故，故复有筑堤约水障沙之议。臣以为障两岸之沙则可耳，若潮自中流冲激，安能障也？分水岭高峻，一工止二十丈，而费千五百金。下多碙〈石句〉石，掣水甚难。故复有改挑王家丘之议。臣以为吴家口至亭口高峻者共五十里，大概多碙〈石句〉石，费当若何？而舍此则又无河可行也。夫潮信有常，大潮稍远，亦止及陈村闸、杨家圈，不能更进。况日止二潮乎？此潮水之难恃也。河道纡曲二百里，张鲁、白、胶三水微细，都泊行潦，业已干涸。设遇亢旱，何泉可引？引泉亦难恃也。元人开浚此河，史臣谓其劳费不赀，终无成功，足为前鉴。”巡按御史商为正亦言：“挑分水岭下，方广十丈，用夫千名。才下数尺为碙〈石句〉石，又下皆沙，又下尽黑沙，又下水泉涌出，甫挑即淤，止深丈二尺。必欲通海行舟，更须挑深一丈。虽二百馀万，未足了此。”给事中王道成亦论其失。工部尚书郭朝宾覆请停罢。遂召应节、栻还说，罢其役。嗣是中书程守训，御史高举、颜思忠，尚书杨一魁相继议及之，皆不果行。
 </p><p>崇祯十四年，山东巡抚曾樱、户部主事邢国玺复申王献、刘应节之说。给内帑十万金，工未举，樱去官。十六年夏，尚书倪元璐请截渍粮由胶莱河转饷，自胶河口用小船抵分水岭，车盘岭脊四十里达於莱河，复用小船出海，可无岛礁漂损之患。山东副总兵黄荫恩献议略同。皆未及行。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十二章-卷六十二-原文.html'>第六十二章-卷六十二</a></p><p class='next'>下一节：<a href='第六十四章-卷六十四-原文.html'>第六十四章-卷六十四</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第六十二章-卷六十二-原文.html'>第六十二章-卷六十二</a></p><p class='next'>下一节：<a href='第六十四章-卷六十四-原文.html'>第六十四章-卷六十四</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>抱嶷传<span style='font-size:small'> 白话</span></h1>
 <p>抱嶷字道德，安定石唐人。居住在直谷。自称先祖姓杞，汉灵帝时，杞匡做安定太守。董卓大乱时，害怕被杀更改姓氏，就在那里安家，不得而知。幼时，陇东人张乾王叛乱，他家人牵连在内，张乾王失败后，抱嶷的父亲抱睹生逃脱幸免。抱嶷却与母亲沦落内宫，处以宫刑，于是成了宦官。细心谨慎，接连升职为中常侍、中曹侍御尚书，赐封爵位安定公。亲自总管纳言，职居机要之位，所有奏章议折，处理时一定坦率耿直。孝文帝、文明太后赞许他，任命为殿中侍御尚书。太后既然宠幸他，就征召他的父亲抱睹生，授官太中大夫。准备回乡时，在皇信堂相见，孝文帝拉着他的手说：“老年人回乡，几天可以到达？安稳谨慎地赶路！”他就是这样被宠幸。抱睹生死去后，追赠秦州刺史，谥号靖。赏赐黄金八十斤，缯纟采及绢八百疋，以供丧事使用。另外派使臣尉问。抱嶷升任大长秋卿。抱嶷年老多病，请求外官的俸禄，于是离京做了泾州刺史，特升迁为右光禄大夫。将赴州所，孝文帝在西郊乐阳殿饯行，把御用白羽扇赏赐给他。太和十九年(495)，以刺史身份随皇上南征，因是年老旧臣，常被劳慰探问。多次称赞抱嶷的正直。诏命骑马出入宫中禁地，与司徒冯诞同等。军队回来，他也回州府。自认为是老辈官僚，处理政事多遵照以前法令，不能使用新定法规。侮辱傲视士族，不注重礼节应酬。生情残酷刻薄，即使是弟侄甥婿，一点也不接济。在州所去世。</p>
-<div class='pn'><p class='pre'>上一节：<a href='仇洛齐传-白话.html'>仇洛齐传</a></p><p class='next'>下一节：<a href='刘腾传-白话.html'>刘腾传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='仇洛齐传-白话.html'>仇洛齐传</a></p><p class='next'>下一节：<a href='刘腾传-白话.html'>刘腾传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

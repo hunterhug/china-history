@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -259,8 +286,9 @@
 </p><p>太和四年二月，客星出现在紫宫西垣，到七月才消失。占辞说：“客星守紫宫预示臣杀君。”闰月乙亥，月晕于轸宿，再有白晕贯月，向北晕斗柄三星。占辞说：“这天象对王者不利。”六年，桓温废黜晋帝。
 </p><p>太和四年十月壬申，有大流星向西落下，有声如雷。考查占书可知：“流星代表贵使，星大则使命也大。”第二年，派遣使者黜免袁真为百姓。但担征伐画画，．童真病死而其子直瑾继位，求救于苻坚，但苻坚救援部队被桓温所破。六年，画画城被攻陷，声如雷，表示将士愤怒的预兆。
 </p><p>太和六年闰月，火星守太微垣端门。占辞说：“这表示天子亡国。”又说：“诸侯三公固谋皇上。”又一说：“有臣被斩杀。”辛卯，月犯心宿大星。占辞说：“造天象对王者不利。”十一月，担湿废黜置童，并奏请诛杀逮陵王，因简文童不同意，所以但温把武陵王迁徙至新安。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十三章-卷二十三-白话.html'>第十三章-卷二十三</a></p><p class='next'>下一节：<a href='第十五章-卷二十五-白话.html'>第十五章-卷二十五</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十三章-卷二十三-白话.html'>第十三章-卷二十三</a></p><p class='next'>下一节：<a href='第十五章-卷二十五-白话.html'>第十五章-卷二十五</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

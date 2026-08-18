@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>李先传<span style='font-size:small'> 白话</span></h1>
 <p>李先，字容仁，中山卢奴人。年少时喜爱读书，并擅长占相之术。慕容永请他当首席谋士，他劝慕容永占据长子城。在慕容永属下，他官拜秘书监。慕容永被消灭后，他又迁往中山。皇始初年，李先在井陉投奔道武帝，道武帝问李先道：“卿是哪里人氏？祖父、父亲和卿自己曾担任过何等官职？”李先道“：臣本是赵郡平棘人，祖父李重，为晋平阳太守、大将军右司马。父亲李懋，为石季龙乐安太守、左中郎将。臣为苻丕左主客郎，慕容永秘书监、高密侯。”道武帝的车驾回到代都，任命李先为尚书右中兵郎。后来又升为博士、定州大中正。皇帝问李先道“：什么对人的聪明才智最有补益？”李先道“：只有经书、三皇五帝政事、教化的典籍，才对王者的聪明才智大有裨益。”皇帝又问道：“朕想要收集天下的书籍，是否可行？”李先答道：“皇上喜好的，收集起来不会困难。”皇帝于是颁布诏书于天下，经史典籍有所汇集。<BR><BR>　　道武在柴壁讨伐姚兴，向李先问计，李先答道：“以正合兵，以奇制胜。听说姚兴想在天渡屯兵，能方便自己运粮。我们在敌军未到之前，派一支奇兵先攻占天渡，并在柴壁附近严密设下伏兵，以防备敌人里应外合，姚兴欲进不能，驻守又缺粮。被敌人占据高处，或被敌人围困在深处，都是兵法所忌，而姚兴正处在这种情况，我们不用出战就能取胜。”皇帝采用了他的计策，姚兴果然败退。<BR><BR>　　明元帝即位后，问左右大臣道：“先朝的老臣中有谁为先帝所亲信？”新息公王洛儿道“：李先为先帝所器重。”皇帝立刻召来李先，李先诵读了韩非子《连珠论》二十二篇，《太公兵法》十一事。皇帝下诏有关部门道“：李先了解的都是军队和国家的大事，从今天起让他一直住在宫内。”赏赐李先绢彩及御马一匹，拜为安东将军、寿春侯，赐隶属户二十二家。李先死时官至内都大官，享年九十五。皇帝下诏赐金绣官服一套，追赠定州刺史、中山公，谥号“文懿”。</p>
-<div class='pn'><p class='pre'>上一节：<a href='公孙轨传-白话.html'>公孙轨传</a></p><p class='next'>下一节：<a href='窦瑾传-白话.html'>窦瑾传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='公孙轨传-白话.html'>公孙轨传</a></p><p class='next'>下一节：<a href='窦瑾传-白话.html'>窦瑾传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -200,8 +227,9 @@
 </p><p>贞祐五年，进士未历任者，亦得充补，一考者除上县令，再任上县令升正七品，如已历一任任丞簿者，旧制除六品，乃更为正七品，一任回降从七品，再任正七品升六品，如历两任丞簿者，一考旧除六品，乃更为正七品，一任回免降，复免正七品一任，即升六品。曾历令一任者，依旧格六品，再任降除七品，还升从五品。兴定二年，敕初任未满及历任者，考满升等为从七品。初任未满者尔两任、未历任者四任、回升正七品，两任正七皆免回降。凡不依榜次勾取者同随朝升除，俟榜次所及日听再就补。兴定五年，定进士令史与右职令史同格，考满未应得从七者与正七品，回降从七一任。所勾诸府令史不及三考出职者除从七品，回降除八品。若一任应得从七品者除六品，回降正七品，若一任应得正七品者免降。
 </p><p>女直进士令史，二十七年格，一考注正七品，两考注正六品。二十八年，敕枢密院等处转省者，并用进士。明昌元年，敕至三考者与汉人两考者同除。明昌三年，罢契丹令史，其阙内增女直令史五人。五年，以与进士令史辛苦既同，资考难异，遂定与汉进士一考与从六品，两考与从五品。
 </p><p>宰执子弟省令史，大定十二年，制凡承荫者，呈省引见，除特恩任用外，并内奉班收，仍于国史院署书写、太常署检讨、秘书监置校勘、尚书省准备差使，每三十月迁一重，百五十月出职。如承应一考以上，许试补省令译史，则以百二十月出职，其已历月日皆不纽折，如系终场举人，即听尚书省试补。十七年，定制，以三品职事官之子，试补枢密院令史。遂命吏部定制，宰执之子、并在省宗室郎君，如愿就试令译史，每年一就试，令译史考试院试补外，緦麻袒免宗室郎君密院收补。大定二十八年，制以宗室第二从亲并宰相之子，出职与六品外，宗室第三从亲并执政之子，出职与正七品。其出职皆以百五十月，若见已转省之余人，则至两考止与正七品。二十九年，四从亲亦许试补。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十二章-卷三十二-原文.html'>第三十二章-卷三十二</a></p><p class='next'>下一节：<a href='第三十四章-卷三十四-原文.html'>第三十四章-卷三十四</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三十二章-卷三十二-原文.html'>第三十二章-卷三十二</a></p><p class='next'>下一节：<a href='第三十四章-卷三十四-原文.html'>第三十四章-卷三十四</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

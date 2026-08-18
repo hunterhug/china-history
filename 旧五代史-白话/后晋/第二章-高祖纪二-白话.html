@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -195,8 +222,9 @@
 </p><p>十六日，邓州节度使李从璋去世，追赠太师。兴唐府改称广晋府，兴唐县改称广晋县。二十六日，贝、卫两州上奏朝廷，江河暴涨，溢出堤外，冲毁了庄稼。
 </p><p>十一月七日，洛京高宗未登帝位住过的潜龙宅改称广德宫，北京的潜龙宅改名兴义宫。九日，中书上奏：“根据杂令，恭敬承办皇上巡视驾临事宜的人，赏赐封赠一切都与在京都任职的一样。”高祖准允。十九日，镇海镇东节度使、吴越王钱元馞提拔担任天下兵马副元帅，封为吴越国王。二十五日，任命太常卿程逊、兵部员外郎韦木兑担任吴越国王加恩使。二十八日，湖南马希范进贡宝装龙凤器具、结银花果子等物品，高祖看后，对侍臣说：“奇巧而荡惑人心，有什么用呢！但是根据怀柔远方的方法，不想阻挠他的美意。”听到的人，都佩服高祖的为人。壬午日，安州李金全上表称：“奉诏抽调的原跟随臣下的左总押衙胡汉筠，身患重病，等些时日再行赴京。”胡汉筠本来就是狡猾的官吏，跟随李金全历任几镇的官职，而坏的名声无人不知，高祖知道后，打算让他担任其他官职，以免陷害有功大臣。胡汉筠为他的罪过担忧，于是假托有病，因此劝说李金全不忠于朝廷，就是从这里开始的。
 </p><p>十二月二十三日，湖南节度使、兼中书令楚王马希范增加食邑实封，改赐扶天佐运同德致理功臣名号。二十六日，高祖驾临相国寺祷告上天祈求下雪。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-高祖纪一-白话.html'>第一章-高祖纪一</a></p><p class='next'>下一节：<a href='第三章-高祖纪三-白话.html'>第三章-高祖纪三</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-高祖纪一-白话.html'>第一章-高祖纪一</a></p><p class='next'>下一节：<a href='第三章-高祖纪三-白话.html'>第三章-高祖纪三</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

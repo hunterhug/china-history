@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -216,8 +243,9 @@
 </p><p>七月二十六日，少詹事文震孟、刑部侍郎张至发同为礼部侍郎兼东阁大学士，参与军国大事。这月，张献忠突袭朱阳关，总兵官尤世威惨遭失败。张献忠遂进入河南。八月，李自成攻克咸阳，将领高杰投降。十五日，下诏撤回监视总理内臣，只有京师营兵及关、宁保持原来一样。二十四日，卢象升总理直隶、河南、山东、湖广、四川军务。九月四日，洪承畴监督副将曹变蛟等在关山镇打败李自成。李自成向东逃去，与张献忠会合。十五日，官军在沈丘瓦店失败，总兵官张全昌被捉。二十五日，王应熊辞官退职。
 </p><p>十月三日，下诏责罚自己，避居武英殿，减少膳食，不兴音乐，表示与将士同甘共苦。九日，户部尚书侯恂请求严格征收新旧欠交赋税，皇帝采纳了他的建议。十四日，李自成攻克陕州。十一月四日，何吾驺、文震孟辞官退职。十四日，祭祀天于京师南郊。总兵官祖宽在汝州攻破流贼。十二月二日，驻兵于凤阳。九日，卢象升、祖宽在确山打败李自成。十二日，左良玉在阌乡打败流贼。十七日，流贼侵犯长江北岸，围攻滁州。二十九日，老回回诸贼从河南侵犯陕西，被洪承畴打败于临潼。
 </p><p>这年，安南、暹罗、琉球来朝进贡。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十二章-卷二十二-白话.html'>第二十二章-卷二十二</a></p><p class='next'>下一节：<a href='第二十四章-卷二十四-白话.html'>第二十四章-卷二十四</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十二章-卷二十二-白话.html'>第二十二章-卷二十二</a></p><p class='next'>下一节：<a href='第二十四章-卷二十四-白话.html'>第二十四章-卷二十四</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

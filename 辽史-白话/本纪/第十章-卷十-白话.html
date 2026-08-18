@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -217,8 +244,9 @@
 </p><p>八月初一，因为辽东沼泽低湿，停止征伐高丽。任命枢密使耶律斜轸为都统、驸马都尉萧恳德为监军，率军讨伐女真。初五，皇上驻于稿城。初八，到达显州，拜谒凝神殿。初九，临幸乾州，观看新筑宫殿。十一日，拜谒乾陵。十二日，命令南、北面僚佐分别巡查山陵林木，并命令乾、显二州呈报所辖里社的数目。十四日，北皮室详稳进献七名勇士。十六日，已故南院大王谐领已里婉之妻萧氏称其丈夫死后没有能力安葬，皇上诏令有司资助她。十八日，东征都统奏称道路仍然十分泥泞，不能进行东征，诏令他们待沼泽干燥之后再行征讨。二十一日，皇太后拜谒显陵。二十八日，皇上拜谒乾陵。二十九日，西幸。
 </p><p>闰九月初二，命令邢抱朴考核检查显陵。初五，出行至海上。初九，时逢重阳节，登高于骆驼山，赐给群臣菊花酒。初十，下诏晓谕东征将帅，乘枯水季节进讨。二十五日，女真宰相术不里前来进贡。二十七日，歇驾于东古山。二十八日，速撒奏报术不姑诸部到了近淀，夷离堇曷鲁姑等请求俘掠他们，皇上说：“这些部落于国无害，为什么要去俘掠他们？这只是徒生事端而已。”没有答应曷鲁姑的要求。
 </p><p>冬十一月初四，诏令吴王耶律稍负责秦王韩匡嗣丧葬祭奠之事。初七，下诏让东北路兵马监军之妻婆底里慰问抚恤边民。初八，赐给公主胡古典金帛、工匠作为她葬夫之用。二十一日，以韩德让为兼政事令。二十三日，禁止在市场上交易不符合尺寸的布帛。二十六日，东征女真，都统萧闼览、菩萨奴呈上行军所经之处的环境形势及当地物产。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九-白话.html'>第九章-卷九</a></p><p class='next'>下一节：<a href='第十一章-卷十一-白话.html'>第十一章-卷十一</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九-白话.html'>第九章-卷九</a></p><p class='next'>下一节：<a href='第十一章-卷十一-白话.html'>第十一章-卷十一</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

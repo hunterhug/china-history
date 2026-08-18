@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -251,8 +278,9 @@
 </p><p>七月甲寅，浑瑊自盟所来，素服待罪，释之。乙卯，诏：“朕顷缘兴师备边，资用不给，遂权议减官，以务集事。近闻授官者皆已随牒之任，扶老携幼，尽室而行。俸禄未请，归还无所，衣冠之弊，流寓何依？其先敕所减官员，并宜仍旧。”初既减员，内外咨怨张延赏。李泌初入相，乃讽官论之，乃下此诏。丙辰，平凉陷蕃官员崔汉衡已下各与一子正员官。以左羽林大将军韩潭为夏州刺史、夏绥银等州节度使。壬申，赐骆元光姓曰李元谅。尚书左仆射、同中书门下平章事张延赏薨，赠太保。癸酉，复置吏部小选。
 </p><p>八月辛巳朔，日有蚀之。丁亥，陷蕃兵部尚书崔汉衡得还。己丑，以兵部侍郎、平章事柳浑为散骑常侍，罢知政事。壬申，以给事中王纬为润州刺史、浙西观察使，常州刺史刘赞为宣州刺史、宣歙池观察使。戊戌，贬前门下侍郎、平章事萧复为太子左庶子，饶州安置，坐宗人位、佩、儒、偲、鼎等连郜国长公主奸蛊事也。戊辰，吐蕃犯寒，诸军戒严。九月丁巳，吐蕃大掠汧阳、吴山、华亭界民庶，徙于安化峡西。庚申，左庶子崔造卒。癸亥，回纥可汗遣使合阙将军请婚于我，许以咸安公主降之。丙寅，吐蕃陷华亭，又陷泾州之连云堡。甲戌，吐蕃退，俘掠邠、泾、陇等州民户殆尽。自是蕃寇常至泾、陇。
 </p><p>冬十月，吐蕃修原州城，屯据之。丁亥，太子太傅李叔明卒。丙戌，神策将魏循上言：“射生将韩钦绪等十余人与资敬寺妖僧李广弘同谋不轨，广弘自言当为人主，约十月十日大举，已署置将相名目。”诏捕劾之，连坐死者百余人；钦绪游瑰之子，特赦之。是月，复降鱼书停刺史务。十一月丁丑，以湖南观察使赵憬为给事中。是夜，京师地震者三，鸟巢散落。壬申，禁商人不得以口马兵械市于党项。辛丑，鄜坊节度使论惟明卒。是岁，作玄英观于大明宫北垣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十一章-卷十一-原文.html'>第十一章-卷十一</a></p><p class='next'>下一节：<a href='第十三章-卷十三-原文.html'>第十三章-卷十三</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十一章-卷十一-原文.html'>第十一章-卷十一</a></p><p class='next'>下一节：<a href='第十三章-卷十三-原文.html'>第十三章-卷十三</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

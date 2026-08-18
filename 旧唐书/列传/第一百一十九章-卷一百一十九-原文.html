@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -227,8 +254,9 @@
 <p>　　李孝本者，宗室之子也。累官至刑部郎中，而依于训、注以求进。舒元舆作相， 训用孝本知台杂，权知中丞事，最预训谋。窃发之日，孝本从人杀内官十余人于殿 廷。知事不济，单骑走投郑注。至咸阳西原，为追骑所捕，族诛之。坐训、注而族 者，凡十一家，人以为冤。 </p>
 <p>　　史臣曰：王者之政以德，霸者之政以权。古先后王，率由兹道，而遂能息人靖 乱，垂统作则者。如梓人共柯而殊工，良奕同枰而独胜，盖在得其术，则事无后艰。 昭献皇帝端冕深帷，愤其厮养，欲铲宫居之弊，载澄刑政之源。当宜礼一代正人， 访先朝耆德，修文教而厚风俗，设武备以服要荒。俾西被东渐，皆陶于景化；柔祗 苍昊，必降于阙祥，自然怀德以宁，无思不服。况区区宦者，独能悖化哉？故竖刁、 易牙，不废齐桓之霸；韩嫣、籍孺，何妨汉帝之明。盖有管仲、亚夫之贤，属之以 大政故也。此二君者，制御阍寺，得其道也。而昭献忽君人之大体，惑纤狡之庸儒。 虽终日横经，连篇属思，但得好文之誉，庸非致治之先。且李训者，狙诈百端，阴 险万状，背守澄而劝鸩，出郑注以擅权。只如尽陨四星，兼权八校，小人方寸，即 又难知。但虑为蚤虱而采溪荪，翻获螾蜓之患也。呜呼明主！夫何不思，遽致血溅 黄门，兵交青琐。苟无籓后之势，黄屋危哉！涯、餗绰有士风，晚为利丧，致身鬼 蜮之伍，何逃瞰室之灾。非天不仁，子失道也！ </p>
 <p>　　赞曰：奭、旦兴周，斯、高亡秦。祸福非天，治乱由人。训、注奸伪，血颓象 魏。非时乏贤，君迷倒置。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百一十八章-卷一百一十八-原文.html'>第一百一十八章-卷一百一十八</a></p><p class='next'>下一节：<a href='第一百二十章-卷一百二十-原文.html'>第一百二十章-卷一百二十</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第一百一十八章-卷一百一十八-原文.html'>第一百一十八章-卷一百一十八</a></p><p class='next'>下一节：<a href='第一百二十章-卷一百二十-原文.html'>第一百二十章-卷一百二十</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

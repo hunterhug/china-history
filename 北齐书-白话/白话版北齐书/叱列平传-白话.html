@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>叱列平传<span style='font-size:small'> 白话</span></h1>
 <p>叱列平，字杀鬼，代郡西部地方的人氏，其家世代为酋帅。平有容貌，须髯漂亮，善骑马射箭。袭职第一领民酋长、临江伯。孝昌末年，拔陵反叛，蠕蠕的部分人众寇掠马邑，平由于统领其部众反击，立军功，补为别将。后来牧子作乱，同时，刘胡仑、斛律可那律也一齐反叛，朝廷拜平为都督，打垮了胡仑等人。魏孝庄初年，除武卫将军。随从尔朱荣破葛荣，平元颢，迁中军都督、右卫将军，封鞼陶县伯，食邑七百户。尔朱荣死，平护卫着荣的妻子和尔朱世隆逃往北地。长广王晔为帝，授平右卫将军，加京畿大都督。<BR><BR>　　此时，尔朱氏为所欲为，平常常担忧灾祸降临头上，适逢高祖举起义旗，平便投奔而来。从高祖平邺，于韩陵大破四胡。仲远亡逃，拜平为东郡大行台。军还，又随高祖打垮了尔朱兆。还在领军娄昭的指挥下大败樊子鹄。授使持节、华州刺史。高仲密叛乱，平从高祖在邙山打败了周文帝。武定初年，除廓州刺史。五年(547)，加仪同三司，镇守河阳。八年，晋爵为侯。天保初年，授兖州刺史，不久，加开府，别封临洮县子。三年(552)，与诸将南讨江淮，夺取了阳平郡。陈人进攻围逼广陵，帝令平统领河南诸军赶赴增授，陈人退兵，他才返归。五年夏，死在兖州刺史任上，时年五十一岁。赠瀛沧幽三州军事、瀛州刺史、中书监，谥号庄惠。子孝中嗣继。</p>
-<div class='pn'><p class='pre'>上一节：<a href='薛修义传-白话.html'>薛修义传</a></p><p class='next'>下一节：<a href='步大汗萨传-白话.html'>步大汗萨传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='薛修义传-白话.html'>薛修义传</a></p><p class='next'>下一节：<a href='步大汗萨传-白话.html'>步大汗萨传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

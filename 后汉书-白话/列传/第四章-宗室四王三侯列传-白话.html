@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -225,8 +252,9 @@
 </p><p>建武二年(26)，延岑复反，进攻汉中，围攻南郑，刘嘉败走。延岑于是平定汉中，进兵武都，被更始柱功侯李宝所破。延岑败走天水，公孙述遣将侯丹攻取南郑。刘嘉收拾散卒，得数万人，以李宝为相，从武都南击侯丹，不利，还军河池、下辨。再与延岑连战，延岑引军北入散关，到陈仓，刘嘉追击攻破延岑。更始邓王廖湛率领赤眉军十八万攻刘嘉，刘嘉与廖湛战于谷口，大破廖湛军。刘嘉亲手杀了廖湛，于是到云阳就地取得粮食。李宝等听说邓禹西征，就拥兵自守，劝刘嘉暂时坐观成败。光武听到后，告邓禹说“：孝孙素来谨慎善良，而且与我从小就相亲相爱，当是长安的轻薄儿误了他哩。”邓禹就宣告光武的旨意，刘嘉就依来歙在云阳会见邓禹。
 </p><p>建武三年(27)，到洛阳，跟从征伐，拜为千乘太守。
 </p><p>建武六年(30)，患病，上书请求退职，被征召到京师。建武十三年(37)，封为顺阳侯。秋，又封刘嘉儿子刘参为黄李侯。建武十五年(39)，刘嘉去世。子刘参继承爵位，刘参犯罪，被削为南乡侯。永平中，刘参为城门校尉。刘参死，子刘循继位。刘循死，子刘章继位。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章-隗嚣公孙述列传-白话.html'>第三章-隗嚣公孙述列传</a></p><p class='next'>下一节：<a href='第五章-李王邓来列传-白话.html'>第五章-李王邓来列传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三章-隗嚣公孙述列传-白话.html'>第三章-隗嚣公孙述列传</a></p><p class='next'>下一节：<a href='第五章-李王邓来列传-白话.html'>第五章-李王邓来列传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

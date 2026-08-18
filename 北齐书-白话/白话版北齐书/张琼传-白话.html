@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>张琼传<span style='font-size:small'> 白话</span></h1>
 <p>张琼，字连德，代地人氏。年轻时强壮健康，有武艺，魏朝时从荡寇将军升为朔州征虏府外兵参军。随葛荣作乱，荣败，尔朱荣拜他做了都督。因征讨元颢有功，除汲郡太守。建明初，为东道慰劳大使，封行唐县子，食邑三百户。转太尉长史，出为河内太守，除济州刺史。尔朱兆败，投奔高祖，迁汾州刺史。天平中，高祖偷袭夏州成功，以琼为慰劳大使，并留他镇守夏州。不久，琼因周文帝攻城，战死。赠使持节、燕恒云朔四州诸军事、大将军、司徒公、恒州刺史。琼有二子，长曰忻，次曰遵业。<BR><BR>　　忻，普泰中为都督，是尔朱世隆的麾下。因军功娶魏平阳公主，拜驸马都尉、大将军、开府仪同三司、建州刺史、南郑县伯。琼经常担忧忻的官位显赫，对亲近熟识的人说：“凡人做官得爵，不如不高不低，忻位秩过高，这是我最大的忧虑。”忻豪险放纵，又与公主感情不和，很快遭到武帝的迫害，时人认为琼有先见之明。<BR><BR>　　遵业，征讨元颢立下军功，封固安县开国子，拜宁远将军、云州大中正。天平中，除清河太守，不久加安西将军、建州刺史。武定中，随仪同刘丰讨伐侯景，被景掳获。侯景败，在涡阳杀死了遵业。遵业尸体运回来时，世宗亲自吊唁，赠其并肆幽安四州军事、开府仪同三司、并州刺史。</p>
-<div class='pn'><p class='pre'>上一节：<a href='司马子如传-白话.html'>司马子如传</a></p><p class='next'>下一节：<a href='斛律羌举传-白话.html'>斛律羌举传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='司马子如传-白话.html'>司马子如传</a></p><p class='next'>下一节：<a href='斛律羌举传-白话.html'>斛律羌举传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

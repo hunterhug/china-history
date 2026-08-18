@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -200,8 +227,9 @@
 </p><p>刘晞者，涿州人也。父济雍，累为本郡诸邑令长。晞少以儒学称于乡里，尝为唐将周德威从事，后陷于契丹，契丹以汉职縻之。天福中，契丹命晞为燕京留守，尝于契丹三知贡举，历官至同平章事、兼侍中。随契丹入汴，授洛京留守。会河阳军乱，晞走许州，又奔东京，萧翰遣兵援晞至洛下。契丹主死，晞自洛复至东京，随萧翰北归，遂留镇州。汉初，与满达勒同奔定州，后卒于北蕃。《契丹国志》：刘珂，晞之子也，尚世宗妹燕国公主。
 </p><p>崔廷勋，不知何许人也。《通鉴注》引宋白曰：廷勋本河内人。形貌魁伟，美须髯。幼陷北庭，历仕至云州节度使，官至侍中。契丹入汴，迁少帝于封禅寺，遣廷勋以兵防守，寻授河阳节度使，甚得民情。契丹北行，武行德率军趋河阳，廷勋为行德所逐，乃与奚王伊喇保怀州，寻以兵反攻行德，行德出战，为廷勋所败。及契丹主死，遂归镇州。汉初，与满达勒同奔定州，后没于北蕃。
 </p><p>史臣曰：帝王之尊，必由天命。虽韩信、彭越之勇，吴濞、淮南之势，犹不可以妄冀，而况二安之庸昧，相辅为乱，固宜其自取灭亡也。后之拥强兵莅重镇者，得不以为鉴乎！彦泽狼子野心，盈贯而死，晚矣！德钧诸人，与晋事相终始，故附见于兹焉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十三章-列传十二-原文.html'>第二十三章-列传十二</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十三章-列传十二-原文.html'>第二十三章-列传十二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

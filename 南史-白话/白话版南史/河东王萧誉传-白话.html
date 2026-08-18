@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>河东王萧誉传<span style='font-size:small'> 白话</span></h1>
 <p>河东王萧誉字重孙，普通二年(521)被封为枝江县公。中大通三年(531)，改封为河东郡王。累迁任南中郎将、湘州刺史。不久，侯景入侵建邺，萧誉领兵入京救援，到达青草湖时，台城陷落，皇帝下诏书让他回兵。萧誉回到湘州镇守。<BR><BR>　　当时，梁元帝驻军于武城，新任命的雍州刺史张缵密报梁元帝说：“河东王起兵，在岳阳存积了许多大米，准备要来攻打江陵。”梁元帝十分恐惧，便把大米沉入水中，割断船缆以后回兵。于是，梁元帝派谘议官周弘直到萧誉那时去要粮食。萧誉说：“各自管辖军府，怎么突然跑来役使别人呢！”使者连续派去三次，萧誉都不肯听从。梁元帝大怒，便派世子萧方等前去讨伐，结果反被萧誉打败而死。梁元帝又让信州刺史鲍泉来攻打萧誉，并且向他陈述利害关系。萧誉说：“要打就上前来，不必多说。”鲍泉的军队驻扎在石木郭寺，萧誉迎击不胜而回。鲍泉进军至橘洲，萧誉再次发动进攻，又被打败了。于是，鲍泉带军队围住湘州。萧誉自幼便十分勇敢，在马上使用弓弩作战，又很有胆量，他善于安抚士卒，很得人心。梁元帝又派领军王僧辩代替鲍泉攻打萧誉。萧誉正准备突围而去，正值他的部将慕容华领着王僧辩进城，于是他被活捉了。萧誉对看守他的人说：“不要杀我，让我去见七官(萧绎)，申说一下谗贼的罪状，死而无恨！”主将说：“奉命不许领见。”于是将萧誉斩首，首级送往荆州。梁元帝又把首级送回湘州埋葬。<BR><BR>　　起先，萧誉将失败时，取来镜子照脸，却看不见头。又见有位长人遮住屋子，两手撑在地上咬他的肚脐。又见到有白狗大得像驴，从城内走出，不知到哪儿去。萧誉心里十分厌恶，不久城被攻破。</p>
-<div class='pn'><p class='pre'>上一节：<a href='萧栋传-白话.html'>萧栋传</a></p><p class='next'>下一节：<a href='豫章王萧综传-白话.html'>豫章王萧综传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='萧栋传-白话.html'>萧栋传</a></p><p class='next'>下一节：<a href='豫章王萧综传-白话.html'>豫章王萧综传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -230,8 +257,9 @@
 </p><p>祗字敬齐，太傅西曹掾。允字敬咸，太子舍人。裕字敬嗣，尚武安长公主，官至左光禄大夫。
 </p><p>史臣曰：晋氏中朝，承累世之资，建兼并之业，衣冠斯盛，英彦如林。此数公者，或以雅望处台槐，或以高名居保傅，自非一时之秀，亦曷能至于斯。惜其参缄于论道之辰，独善于兼济之日，良图鲠议，无足多谈。然退已进贤，林叔弘推让之美；自家刑国，宣伯协恭孝之规。子若之儒素为基，伟容之苦节流誉，庆垂来叶，不亦宜哉！石鉴以公亮升，温羡以明寤显，属于危乱，不陨其名。岁寒见松柏之后凋，斯人之谓矣。
 </p><p>赞曰：让矣密陵，孝哉广陆。钦既博雅，表亦贞肃。鉴绩克宣，温声载穆。同锵玉振，争芬兰郁。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十三章--原文.html'>第十三章-</a></p><p class='next'>下一节：<a href='第十五章--原文.html'>第十五章-</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十三章--原文.html'>第十三章-</a></p><p class='next'>下一节：<a href='第十五章--原文.html'>第十五章-</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -439,8 +466,9 @@
 </p><p>金星：晚上舆太阳会合，伏，顺行，四十一天五万六千九百五十四分运行五十度五万九千九百五十四(应为五万六千九百五十四，转而晚上在西方出现，在太阳之前。顺行，快，每天运行一又九十一分之二十二度，九十一天运行一百一十三度。再顺行，变慢，每天运行一度十五分，九十一天运行一百零六度。慢，每天运行四十六分之三十三度，四十六天运行三十三度。留，八天不动。转向，逆行，每天运行五分之三度，十天退行六度，在太阳之前。晚上伏于西方，逆行，快，五天退行四度，与太阳会合。总计二次会合一终，五百八十四天十一万三千九百零八分，运行敷量亦为五百八十四度十一万三千九百零八分。
 </p><p>水星：早晨与太阳会合，伏，逆行，九天退行七度，早晨在东方出现，在太阳之后。继续逆行，快，一天退行一度。留，二天不动。转向，顺行，慢，每天运行九分之八度，九天运行八度。快，每天运行一又四分之一度，二十天运行二十五度，在太阳之后。早晨伏于东方，顺行，十六天六百四十一万零九百六十七分运行三十二度六百四十一万零九百六十七分，与太阳会合。一合，共五十七天六百四十一万零九百六十七分，运行数量也为五十七度六百四十一万零九百六十七分。
 </p><p>水星：晚上舆太阳会合，伏，顺行，十六天六百四十一万零九百六十七分运行三十二度六百四十一万零九百六十七分，晚上在西方出现。在太阳之前。顺行，快，每天运行一又四分之一度，二十天运行二十五度。慢，每天运行九分之八度，九天运行八度。留，二天不动。转向，逆行，一天退行一度，在太阳之前，晚上伏于西方。逆行，慢，九天退行七度，舆太阳会合。总计二次会合一终，一百一十五天六百零一万二千五百零五分，运行一百一十五度六百零一万二千五百零五分。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章--白话.html'>第六章-</a></p><p class='next'>下一节：<a href='第八章--白话.html'>第八章-</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第六章--白话.html'>第六章-</a></p><p class='next'>下一节：<a href='第八章--白话.html'>第八章-</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

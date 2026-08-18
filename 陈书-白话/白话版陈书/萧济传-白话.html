@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>萧济传<span style='font-size:small'> 白话</span></h1>
 <p>萧济字孝康，东海兰陵人。少时好学，通晓经史，为梁武帝咨询《左氏》之疑难义项三十余条，尚书仆射范阳张缵、太常卿南阳刘之遴和萧济一道寻究讨论，张缵等不能与他抗衡。初官梁秘书郎，迁太子舍人。以参与平定侯景之功受封为松阳县侯，食邑五百户。<BR><BR>　　等到高祖镇守徐州一方，以萧济为明威将军、征北长史。承圣二年(553)，征辟为中书侍郎，转任通直散骑常侍。世祖为会稽太守时，又以萧济为宣毅府长史，迁官司徒左长史。世祖即位后，授职为侍中。不久迁任太府卿。因母丧而未就任。萧济辅助两位皇上，恩宠尤其深厚，赏赐超过一般人。历任兰陵、阳羡、临津、临安等郡太守，所到之处以声誉和政绩著称。<BR><BR>　　太建初年(569)，入京任为五兵尚书，与左仆射徐陵、特进周弘正、度支尚书王..、散骑常侍袁宪一同侍奉太子。再任为司徒长史。不久授职度支尚书，领羽林监。迁官国子祭酒，领羽林职如故。晋升金紫光禄大夫，兼安德宫卫尉。不久迁任仁威将军、扬州长史。高宗曾下令取扬州曹务亲自审阅，见萧济有条有理，详尽细致，行文流畅，一无阻滞，便回头对左右大臣说：“我本来以为萧长史擅长的是经传，没想到他会对繁重的事务处理得如此精明干练，竟至于到了这等程度。”迁任祠部尚书，晋升给事中，复官为金紫光禄大夫。未就任陈书而卒，时年六十六岁。诏赠本官，由官府出资办理丧事。</p>
-<div class='pn'><p class='pre'>上一节：<a href='姚察传-白话.html'>姚察传</a></p><p class='next'>下一节：<a href='陆琼传-白话.html'>陆琼传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='姚察传-白话.html'>姚察传</a></p><p class='next'>下一节：<a href='陆琼传-白话.html'>陆琼传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

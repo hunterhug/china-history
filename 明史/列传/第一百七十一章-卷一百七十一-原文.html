@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -261,8 +288,9 @@
 </p><p>元锡之学，渊源王守仁，不尽宗其说。时心学盛行，谓学惟无觉，一觉即无余蕴，九容、九思、四教、六艺皆桎梏也。元锡力排之，故生平博极群书，而要归于《六经》。所著《五经绎》、《函史上下编》、《皇明书》，并行于世。
 </p><p>元卿，字调父，安福人。举隆庆四年乡试，明年会试，对策极陈时弊，主者不敢录。张居正闻而大怒，下所司申饬，且令人密诇之，其人反以情告，乃获免。既归，师同邑刘阳，王守仁弟子也。万历二年，会试不第，遂绝意科名，务以求道为事。既累被荐，乃召为国子博士。擢礼部主事，疏请早朝勤政，又请从祀邹守益、王艮于文庙，厘正外蕃朝贡旧仪。寻引疾归，肆力撰述，有《山居草》、《还山续草》、《诸儒学案》、《贤弈编》、《思问编》、《礼律类要》、《大学新编》诸书。
 </p><p>潢，字本清，南昌人。居父丧，哀毁血溢。构此洗堂，联同志讲学。辑群书百二十七卷，曰《图书编》。又著《周易象义》、《时经原体》、《书经原始》、《春秋窃义》、《礼记劄言》、《论语约言》诸书。从游者甚众。数被荐，从吏部侍郎杨时乔请，遥授顺天训导，如陈献章、来知德故事，有司月给米三石赡其家。卒于万历三十六年，年八十二。其乡人称潢自少迄老，口无非礼之言，身无非礼之行，交无非礼之友，目无非礼之书，乃私谥文德先生。自吴与弼后，元锡、元卿、潢并蒙荐辟，号“江右四君子”。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百七十章-卷一百七十-原文.html'>第一百七十章-卷一百七十</a></p><p class='next'>下一节：<a href='第一百七十二章-卷一百七十二-原文.html'>第一百七十二章-卷一百七十二</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第一百七十章-卷一百七十-原文.html'>第一百七十章-卷一百七十</a></p><p class='next'>下一节：<a href='第一百七十二章-卷一百七十二-原文.html'>第一百七十二章-卷一百七十二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

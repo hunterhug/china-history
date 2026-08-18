@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>许智藏传<span style='font-size:small'> 白话</span></h1>
 <p>许智藏，高阳人。祖父许道幼，常常因母亲患病，四处寻觅医方，因而深究医理，当时号称名医。告诫他的几个孩子说“：做晚辈的，父母吃饭吃药前，先尝后进。不知医术，能够称为孝顺吗？”因此，便世代相传。出仕梁朝，官职员外散骑侍郎。父亲许景，是武陵王谘议参军。<BR><BR>　　许智藏年轻时以通晓医术而得志，在陈朝做官，是散骑侍郎。陈朝灭亡后，隋文帝让他做了员外散骑侍郎，派他到扬州去。恰巧秦王杨俊有病，皇上派人驱马疾行召他。秦王俊夜间梦见已故妃子崔氏哭着说：“本应迎接你，但听到许智藏将要来到。这个人如果到，势必被他害苦，怎么办呢？”第二天夜里，秦王俊又梦见崔氏说：“我找到办法了，可以入心中躲避。”等到许智藏到来，给他诊脉说“：病已进入心中。很快就会发疯。不能医救。”果然如他所说，秦王俊几天后死去。皇上惊奇他医术奇妙，送给物品百段。炀帝即位后，许智藏辞官在家，皇帝每次有病，就令中使到他府中询问请教，或者用皇帝车驾迎进宫中，扶到皇帝床上。许智藏开药方呈奏，用后没有不起作用的。死在家中。年八十岁。</p>
-<div class='pn'><p class='pre'>上一节：<a href='姚僧垣传-白话.html'>姚僧垣传</a></p><p class='next'>下一节：<a href='何稠传-白话.html'>何稠传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='姚僧垣传-白话.html'>姚僧垣传</a></p><p class='next'>下一节：<a href='何稠传-白话.html'>何稠传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

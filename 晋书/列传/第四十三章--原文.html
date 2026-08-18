@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -240,8 +267,9 @@
 </p><p>爰之有翼风，寻为桓温所废。温既废爰之，又以征虏将军刘惔监沔中军事，领义成太守，代方之。而方之。而方之、爰之并迁徙于豫章。
 </p><p>史臣曰：外戚之家，连辉椒掖，舅氏之族，同气兰闺，靡不凭藉宠私，阶缘险谒。门藏金穴，地使其骄；马控龙媒，势成其逼。古者右贤左戚，用杜溺私之路，爱而知恶，深慎满覆之灾，是以厚赠琼瑰，罕升津要。涂山在夏，靡与禼稷同驱；姒氏居周，不预燕齐等列。圣人虑远，殊有旨哉！搢昵元规，参闻顾命。然其笔敷华藻，吻纵涛波，方驾搢绅，足为翘楚。而智小谋大，昧经邦之远图；才高识寡，阙安国之长算。璇萼见诛，物议称其拔本；牙尺垂训，帝念深于负芒。是使苏祖寻戈，宗祧殆覆。已而猜嫌上宰，谋黜负图。向使郗鉴协从，必且戎车犯顺，则与夫台、产、安、桀，亦何以异哉！幸漏吞舟，免沦昭宪，是庾宗之大福，非晋政之不纲明矣。怿恣凶怀，鸩加连率，再世之后，三阳存仅，余殃所及，盖其宜也。
 </p><p>赞曰：元规矫迹，宠阶椒掖。识暗厘道，乱由乘隙。下拜长沙，有惭忠益。季坚清贞，毓德驰名。处泰逾约，居权戒盈。稚恭慷慨，亦擅雄声。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十二章--原文.html'>第四十二章-</a></p><p class='next'>下一节：<a href='第四十四章--原文.html'>第四十四章-</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第四十二章--原文.html'>第四十二章-</a></p><p class='next'>下一节：<a href='第四十四章--原文.html'>第四十四章-</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

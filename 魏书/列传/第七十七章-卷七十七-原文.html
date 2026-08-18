@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -206,8 +233,9 @@
 </p><p>道元好学，历览奇书。撰注《水经》四十卷、《本志》十三篇，又为《七聘》及诸文，皆行于世。然兄弟不能笃穆，又多嫌忌，时论薄之。
 </p><p>谷楷，昌黎人，濮阳公浑曾孙。稍迁奉车都尉。时沙门法庆反于冀州，虽大军讨破，而妖帅尚未枭除。诏楷诣冀州追捕，皆擒获之。楷眇一目而性甚严忍，前后奉使皆以酷暴为名。时人号曰“瞎虎”。寻为城门校尉，卒。
 </p><p>史臣曰：士之立名，其途不一，或以循良进，或以严酷显。故宽猛相资，德刑互设，然不严而化，君子所先。于洛侯等为恶不同，同归于酷。肆其毒螫，多行残忍。贱人肌肤，同诸木石；轻人性命，甚于刍狗。长恶不悛，鲜有不及。故或身婴罪戮，或忧恚值陨，异途皆毙，各其宜焉。凡百君子，以为有天道矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十六章-卷七十六-原文.html'>第七十六章-卷七十六</a></p><p class='next'>下一节：<a href='第七十八章-卷七十八-原文.html'>第七十八章-卷七十八</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第七十六章-卷七十六-原文.html'>第七十六章-卷七十六</a></p><p class='next'>下一节：<a href='第七十八章-卷七十八-原文.html'>第七十八章-卷七十八</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

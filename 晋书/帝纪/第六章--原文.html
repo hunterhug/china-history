@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -199,8 +226,9 @@
 </p><p>帝聪明有机断，尤精物理。于时兵凶岁饥，死疫过半，虚弊既甚，事极艰虞。属王敦挟震主之威，将移神器。帝骑驱遵养，以弱制强，潜谋独断，廓清大昆。改授荆、湘等四州，以分上流之势，拨乱反正，强本弱枝。虽享国日浅，而规模弘远矣。
 </p><p>史臣曰：维扬作宇，凭带洪流，楚江恆战，方城对敌，不得不推诚将相，以总戎麾。楼船万计，兵倍王室，处其利而无心者，周公其人也。威权外假，嫌隙内兴，彼有顺流之师，此无强籓之援。商逢九乱，尧止八音，明皇负图，属在兹日。运龙韬于掌握，起天旆于江靡，燎其余烬，有若秋原。去缞绖而践戎场，斩鲸鲵而拜园阙。镇削威权，州分江汉，覆车不践。贻厥孙谋。其后七十余年，终罹敬道之害。或曰：“兴亡在运，非止上流。”岂创制不殊，而弘之者异也。
 </p><p>赞曰：倾天起害，猛兽呈灾。琅邪之子，仁义归来，龚行赵璧，命箠荆台。云瞻北晦，江望南开。晋阳御敌，河西全壤。胡寇虽艰，灵心弗爽。三方驰骛，百蛮从响。宝命还昌，金辉载明。明后岐嶷，军书接要。莽首晨悬，董脐昏燎。厥德不回，余风可劭。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章--原文.html'>第五章-</a></p><p class='next'>下一节：<a href='第七章--原文.html'>第七章-</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第五章--原文.html'>第五章-</a></p><p class='next'>下一节：<a href='第七章--原文.html'>第七章-</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

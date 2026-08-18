@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -185,8 +212,9 @@
 </p><p>十年春正月乙卯朔，宋遣王夷简、窦处约、张易、张士宜来贺。二月，幸龙化州。三月甲寅朔，详稳萧匹敌至自辽东，言都统萧孝穆去城四面各五里许，筑城堡以围之。驸马延宁与其妹穴地遁去，惟公主崔八在后，为守陴者觉而止。夏四月，如乾陵。以耶律行平为广平军节度使，夏行美为忠顺军节度使，李延弘知易州，萧从顺加太子太师。五月戊申，清暑柏坡。秋七月壬午，诏来岁行贡举法。八月丙午，东京贼将杨详世密送款，夜开南门纳辽军。擒延琳，渤海平。冬十月，驻跸长宁淀。十一月辛亥，南京留守燕王萧孝穆以东征将士凯还，戎服见上，上大加宴劳。翌日，以孝穆为东平王、东京留守，国舅详稳、驸马都尉萧匹敌封兰陵郡王，奚王蒲奴加侍中；以权燕京留守兼侍中萧惠为燕京统军使，前统军委窊大将军、节度使，宰相兼枢密使马保忠权知燕京留守，奚王府都监萧阿古轸东京统军使。诏渤海旧族有勋劳材力者叙用，馀分居来、隰、迁、润等州。十二月乙巳，宋遣梅询、王令杰来贺千龄节。漆水郡王耶律敌烈加尚父，乌古部节度使萧普达为乙室部大王，尚书左仆射萧琳为临海军节度使。
 </p><p>十一年春正月己酉朔，如混同江。二月，如长春河。三月，上不豫。夏五月，大雨水，诸河横流，皆失故道。六月丁丑朔，驻跸大福河之北。己卯，帝崩于行宫，年六十一，在位四十九年。景福元年闰十月壬申，上尊谥曰文武大孝宣皇帝，庙号圣宗。
 </p><p>赞曰：圣宗幼冲嗣位，政出慈闱。及宋人二道来攻，亲御甲胄，一举而复燕、云，破信、彬，再举而躏河、朔，不亦伟欤！既而侈心一启，佳兵不祥，东有茶、陀之败，西有甘州之丧，此狃于常胜之过也。然其践阼四十九年，理冤滞，举才行，察贪残，抑奢僣，录死事之子孙，振诸部之贫乏，责迎合不忠之罪，却高丽女乐之归。辽之诸帝，在位长久，令名无穷，其唯圣宗乎！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p><p class='next'>下一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p><p class='next'>下一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

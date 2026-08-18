@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -235,8 +262,9 @@
 </p><p>乌虎里部人迪烈、划沙率部族降，朝廷以挞仆野为本部节度使，乌虎为都监。习古乃封还挞仆野等宣诰，以便宜加挞仆野散官，填空名告身授之，及录上降附有劳故官八百九十三人，朝廷从之。于是，迪烈加防御使，为本部节度使。划沙加诸司使，为节度副使，知迪烈底部事。挞离答加左金吾卫上将军，节度副使，知突鞠部事。阿枲加观察使，为本部节度使。其余迁授有差。以厖葛城地分赐乌虎里、迪烈底二部及契丹人，其未垦者听任力占射。
 </p><p>久之，领咸州烟火事。天会六年，完颜慎思所部及其余未置猛安谋克户口，命习古乃通阅具籍以上。天会十年，改南京路军帅司为东南路都统司，习古乃为都统，移治东京，镇高丽。
 </p><p>赞曰：金启疆土，斡鲁、斡鲁古方面功最先著，婆卢火、娄室最先封，泰州之边圉，黄龙之冲要，寄亦重矣。若阇母之勤劳南路，娄室之经营陕西，银术可之围守太原，劳亦至矣。斡鲁古之不治，阇母之败，谴罚之亟，诸将慴焉。夫能以弱小终制强大，其效验与。银术可、习古乃观人之国而知其可伐，古语云“国有八观”，善矣夫。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p><p class='next'>下一节：<a href='第十一章-卷十一-原文.html'>第十一章-卷十一</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p><p class='next'>下一节：<a href='第十一章-卷十一-原文.html'>第十一章-卷十一</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

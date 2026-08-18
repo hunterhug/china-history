@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>陈宝应传<span style='font-size:small'> 白话</span></h1>
 <p>陈宝应是晋安侯官人，世代都是闽中四大姓之一。父亲陈羽，很有才干，是郡内豪杰，宝应的性格反复多变，诡计很多。梁朝时晋安郡屡次背叛朝廷，杀害郡守，陈羽都是先煽动造反，后来又领着官兵来镇压，靠这样逐渐总揽了一郡兵权。侯景作乱时，晋安太守宾化侯萧云把郡守位置让给陈羽，陈羽年老，便只主持日常事务，让宝应领兵。当时东部闹饥荒，会稽更厉害，十有七八都被饿死，而只有晋安衣食丰足，兵力强盛。<BR><BR>　　侯景被平定后，元帝便委任陈羽为晋安太守。武帝陈霸先辅政，陈羽请求告老还乡，把郡守传给宝应，武帝答应。绍泰二年(556)，封宝应为侯官县侯。陈武帝代梁后，委任他为闽州刺史，兼任会稽太守。文帝即位，加封他父亲为光禄大夫，又命宗正记录他家世系，编入皇帝宗室。<BR><BR>　　宝应娶留异女儿为妻，侯安都讨伐留异时，宝应派兵帮助留异，又资助周迪兵士和粮食，出兵侵犯临川。都督章昭达破周迪之后，文帝又命他讨伐宝应，下诏让宗正把他的家族从皇室除名。宝应盘据建安湖边抗拒昭达，昭达深沟高垒不与他交战，只让人造筏子，不久河里涨水，昭达借助水势放排，突破宝应水栅。宝应军溃败。他被抓到建康，在大街上斩首。</p>
-<div class='pn'><p class='pre'>上一节：<a href='周迪传-白话.html'>周迪传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='周迪传-白话.html'>周迪传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

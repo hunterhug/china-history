@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>李顺兴传<span style='font-size:small'> 白话</span></h1>
 <p>李顺兴，京兆杜陵人。年十多岁时，忽愚忽智，当时人们都不了解他。他预言未来事情，也时而相符。隆冬季节穿着单薄布衣，光脚在冰上行走，到水中洗澡，一点也不患风寒。家中曾经设置斋饭，器具不够。李顺兴说：“昆明池中有一枝大荷花叶，可以取来放盛饼食。”他的住处距昆明池有十多里，太阳没有移动影子，李顺兴背着荷叶回来了，脚上还有泥，满座的人都很惊奇。后来逐渐出入城市，常戴道士冠，有想念他的，不几天，就到他家。号称李练。好喝酒，但不会喝醉。富贵贫贱都很尊重他。得到别人的施舍，便散发给乞丐、穷人。<BR><BR>　　萧宝夤造反，召李顺兴询问道：“我做王能有多少年？”李顺兴回答说“：做天子的有百天者，有十年者，有一年者，有统治百年的。事由可以明白。”到萧宝夤失败，才有百天。有个叫侯终德的，是萧宝夤的同党，萧宝夤兵败后，他召集叛贼。李顺兴说他一定会败，侯终德就用木棒打死李顺兴，扔在城隍庙中，过了一会儿，李顺兴又活过来像当初一样。后来贺拔岳北伐时，李顺兴给魏收写信。上面列出的毛鸿宾等九个人的姓名全部放回。李顺兴跟在后面，提一个河东酒缶亢，用绳子系住，在城中街巷中拉着走，很快蒲板投降。又过了不久，到太傅梁览家中躺下，用布衫倒盖在身上。后来梁览与赵崔反叛，与东魏往通使节，事情败露后被杀，梁览用衣服倒盖在身上，果然像李顺兴那个样子。周文帝曾经到温泉，李顺兴请求得到温泉东间骊山脚下的二亩地。周文帝说“：李练用这二亩地干什么？”回答说：“有用。”没有多时，到温水中遇难，死在那个地方。<BR><BR>　　当年，大统十三年(547)，李顺兴对周文帝说“：可在沙苑北边建一太上老君像，面朝北作出笑的样子。”周文说：“有什么用？”回答说“：让它笑败蠕蠕国。”周文帝当时很迷惑，不理解什么意思。等到蠕蠕国灭亡，周文帝想起他的话，于是在老君像旁建上李顺兴的像。</p>
-<div class='pn'><p class='pre'>上一节：<a href='张深传-白话.html'>张深传</a></p><p class='next'>下一节：<a href='信都芳传-白话.html'>信都芳传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='张深传-白话.html'>张深传</a></p><p class='next'>下一节：<a href='信都芳传-白话.html'>信都芳传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

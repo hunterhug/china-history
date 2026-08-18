@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -192,8 +219,9 @@
 </p><p>李金全，本唐明宗之小竖也。其先出于吐谷浑。金全骁勇，善骑射，少从明宗征伐，以力战有功，明宗即位，连典大郡。天成中，授泾州节度使，在镇数年，以掊敛为务。长兴中，受代归阙，始进马数十匹，不数日又进之。明宗召而谓之曰：“卿患马多耶，何进贡之数也？”又谓曰：“卿在泾州日，为理如何，无乃以马为事否？”金全惭谢而退。四年夏，授沧州节度使，累官至检校太傅。清泰中，罢镇归阙，久留于京师。高祖即位之明年，安州屯将王晖杀节度使周瑰，诏遣金全以骑兵千人镇抚其地。未及境，而晖为部下所杀。金全至，乱军数百人皆不安，金全说遣赴阙，密伏兵于野，尽杀之，又擒其军校武彦和等数十人，斩之。初，金全之将行也，高祖戒之曰：“王晖之乱，罪莫大焉，但虑封守不宁，则民受其弊。”因折矢飞诏，约以不戮一人，仍许以晖为唐州刺史。又谓金全曰：“卿之此行，无失吾信。”及金全至，闻彦和等当为乱之日，劫掠郡城，所获财货，悉在其第，遂杀而夺之。《通鉴》：彦和且死，呼曰：“王晖首恶，天子犹赦之；我辈胁从，何罪乎！”高祖闻之，以姑息金全故，不究其事，寻授以旄节。
 </p><p>金全有亲吏胡汉筠者，勇谲啬褊，贪诈残忍，军府之政，一以委之。高祖闻其事，遣吏贾仁绍往代其职，且召汉筠。汉筠内疚惶怖，金全乃列状称疾以闻。及仁绍至，汉筠鸩而杀之。马令《南唐书》：胡汉荣所为多不法，晋高祖患之，不欲因汉荣以累功臣，为选廉吏贾仁沼代之，且召汉荣。汉荣教金全留己而不遣。金全客庞令图谏曰：“仁沼昔事王晏球，有大功，晏球欲厚赏之，仁沼退而不言，此天下之忠臣也。及颁赐所俘物，仁沼悉以分故人亲戚之贫者，此天下之廉士也。宜纳仁沼而遣汉荣。”汉荣闻之，夜使人杀令图而鸩仁沼。天福五年夏，高祖命马全节为安州节度使，以代金全。汉筠自以昔尝拒命，复闻仁绍二子将诉置毒之事，居不自安，乃绐谓金全曰：“邸吏刘珂使健步倍道兼行，密传其意，云受代之后，朝廷将以仁绍之事诘公之罪。”金全大骇，命从事张纬函表送款于淮夷。淮人遣伪将李承裕以代金全，金全即日南窜，其妓乐、车马、珍奇、帑藏，皆为承裕所夺。与其党数百人束身夜出，晓至氵义州，引领北望，泣下而去。及至金陵，李棨授以节镇。马令《南唐书》云：烈祖以金全为天威统军，迁润州节度使。后卒于江南。
 </p><p>史臣曰：延光昔为唐臣，绰有令誉，洎逢晋祚，显恣狂谋，既力屈以来降，尚靦颜而惜死，孟津之殁，乃取笑于千载也。从宾而下，俱怙乱以灭身，亦何足与议也。文进惧强敌之威，金全为舆台所卖，事虽弗类，叛则攸同，咸附岛夷，皆可丑也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十二章-列传十一-原文.html'>第二十二章-列传十一</a></p><p class='next'>下一节：<a href='第二十四章-列传十三-原文.html'>第二十四章-列传十三</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十二章-列传十一-原文.html'>第二十二章-列传十一</a></p><p class='next'>下一节：<a href='第二十四章-列传十三-原文.html'>第二十四章-列传十三</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

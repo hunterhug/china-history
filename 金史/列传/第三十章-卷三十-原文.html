@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -217,8 +244,9 @@
 </p><p>尚书省奏猛安谋克愿试进士者听之，上曰：“其应袭猛安谋克者学于太学可乎？”克宁曰：“承平日久，今之猛安谋克其材武已不及前辈，万一有警，使谁御之？习辞艺，忘武备，于国弗便。”上曰：“太傅言是也。”章宗初即位，颇好辞章，而疆埸方有事，故克宁言及之。
 </p><p>明昌二年，克宁属疾，章宗往视之。克宁顿首谢曰：“臣无似，尝蒙先帝任使，陛下即位，属以上相，今臣老病，将先犬马填沟壑，无以辅明主绥四方。陛下念臣驽怯，亲枉车驾临幸，死有余罪矣。”是日，即榻前拜太师，封淄王，加赐甚厚。是岁二月，薨，遗表，其大概言：“人君往往重君子而反疏之，轻小人而终昵之。愿陛下慎终如始，安不忘危，而言不及私。”诏有司护丧事，归葬于莱州，谥曰忠烈。明昌五年，配享世宗庙廷，图像衍庆宫。大安元年，改配享章宗庙廷。
 </p><p>赞曰：徒单克宁可谓大臣矣，功高而身愈下，位盛而心愈劳。《经》曰：“在上不骄，高而不危，制节谨度，满而不溢”，所以长守富贵。故曰忠信匪懈，不施其功，履盛满而不忘，德之上也。孜孜勉勉，恪守职业，不居不可成，不事不可行，人主知之，次也。谏期必行，言期必听，为其事必有其功者，又其次也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p><p class='next'>下一节：<a href='第三十一章-卷三十一-原文.html'>第三十一章-卷三十一</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p><p class='next'>下一节：<a href='第三十一章-卷三十一-原文.html'>第三十一章-卷三十一</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

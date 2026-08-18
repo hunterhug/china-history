@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>益王君页传<span style='font-size:small'> 白话</span></h1>
 <p>益端献王君页，初名仲恪，封为大宁郡公，进封为..国公、乐安郡王、嘉王。他所经历的官赐，大略与其兄颢相同。历任武胜、山南西、保信、保静、武昌、武安、武宁、镇海、成德、荆南十节度使，徙任曹王、荆王，官至太尉。元..三年(1088)七月去世，终年三十三岁，追赠太师、尚书令、荆徐二州牧、魏王，谥号端献。徽宗时改封为益王。<BR><BR>　　君页为人端重明粹，年幼时好学，成年后博通群书，擅长飞白书体、篆砯书体。对待宫僚像宾客一样，岁满应当离任的，他都奏请留用，时间长的达十余年。非常喜爱医书，亲手写成《普惠集效方》一书，并且储积药材救治病人。<BR><BR>　　有九个儿子：孝哲，任右骁卫将军，早亡；孝奕，任彰化军节度观察留后，追赠司空、平原郡王；孝参，任奉国军节度使，改任宁武节度使、武胜节度使，封为豫章郡王；孝永，任邢州观察使，赠司空、广陵郡王；孝诒、孝骘、孝悦、孝愿，都官至节度使。</p>
-<div class='pn'><p class='pre'>上一节：<a href='昭成太子元僖传-白话.html'>昭成太子元僖传</a></p><p class='next'>下一节：<a href='庄文太子砱传-白话.html'>庄文太子砱传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='昭成太子元僖传-白话.html'>昭成太子元僖传</a></p><p class='next'>下一节：<a href='庄文太子砱传-白话.html'>庄文太子砱传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

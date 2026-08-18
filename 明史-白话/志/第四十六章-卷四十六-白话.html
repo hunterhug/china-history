@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -517,8 +544,9 @@
 </p><p>武官爵止六品，其职死者袭，老疾者替，世久而绝，以旁支继。年六十者子替。明初定例，嫡子袭替，长幼次及之。绝者，嫡子庶子孙次及之；又绝者，以弟继。永乐后，取官舍旗军馀丁曾历战功者，令原带俸及管事袭替，悉因之。其降级子孙仍替见降职事。弘治时，令旁支减级承袭。正德中，令旁支入总旗。嘉靖间，旁支无功者，不得保送。凡升职官舍，如父职。其阵亡保袭者，流官一等。凡袭替官舍，以骑射试之。大抵世职难核，故例特详，而长弊丛奸，亦复不少。
 </p><p>官之大者，必会推。五军都督府掌印缺，于见任公、侯、伯取一人。佥书缺，于带俸公、侯、伯及在京都指挥，在外正副总兵官，推二人。锦衣卫堂上官及前卫掌印缺，视五府例推二人。都指挥、留守以下，上一人。正德十六年，令五府及锦衣卫必由都指挥屡著勋猷者升授。诸卫官不世，独锦衣以世。
 </p><p>武之军政，犹文之考察也。成化二年，令五年一行，以见任掌印、带俸、差操及初袭官一体考核。十三年令两京通考以为常。五府大臣及锦衣卫堂上官自陈候旨，直省总兵官如之。在内五府所属并直省卫所官，悉由巡视官及部官注送；在外都司、卫所官，由抚、按造册缴部。副参以下，千户以上，由都、布、按三司察注送抚，咨部考举题奏。锦衣卫管戎务者倍加严考，南、北镇抚次之。各卫所及地方守御并各都司隶巡抚者，例同。惟管漕运者不与考。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十五章-卷四十五-白话.html'>第四十五章-卷四十五</a></p><p class='next'>下一节：<a href='第四十七章-卷四十七-白话.html'>第四十七章-卷四十七</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第四十五章-卷四十五-白话.html'>第四十五章-卷四十五</a></p><p class='next'>下一节：<a href='第四十七章-卷四十七-白话.html'>第四十七章-卷四十七</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -236,8 +263,9 @@
 </p><p>世祖至元二十八年夏六月，始置诸路阴阳学。其在腹里、江南，若有通晓阴阳之人，各路官司详加取勘，依儒学、医学之例，每路设教授以训诲之。其有术数精通者，每岁录呈省府，赴都试验，果有异能，则于司天台内许令近侍。延祐初，令阴阳人依儒、医例，于路府州设教授一员，凡阴阳人皆管辖之，而上属于太史焉。
 </p><p>举遗逸以求隐迹之士，擢茂异以待非常之人。世祖中统间，征许衡，授怀孟路教官，诏于怀孟等处选子弟之俊秀者教育之。是年，又诏征金进士李冶，授翰林学士。征刘因为集贤学士，不至。又用平章咸宁王野仙荐，征萧不起，即授陕西儒学提举。至元十八年，诏求前代圣贤之后，儒医卜筮，通晓天文历数，并山林隐逸之士。二十年，复召拜刘因右赞善大夫，辞，不允。未几以抛老，乞终养，俸给一无所受。后遣使授命于家，辞疾不起。二十八年，复诏求隐晦之士，俾有司具以名闻。成宗大德六年，征临川布衣吴澂，擢应奉翰林文字，拜命即归。九年，诏求山林间有德行文学、识治道者，遣使征萧渼，且曰：“或不乐于仕，可试一来，与朕语而遣归。”至大三年，复召吴澄，拜国子司业，以病还；延祐三年，召拜集贤直学士，以疾不赴；至治三年，召拜翰林学士。武宗、仁宗累征萧渼，授集贤学士、国子司业，未赴，改集贤侍讲学士。又以太子右谕德征，始至京师，授集贤学士、国子祭酒，谕德如故。仁宗延祐七年十一月，诏曰：“比岁设立科举，以取人材，尚虑高尚之士，晦迹丘园，无从可致。各处其有隐居行义、才德高迈、深明治道、不求闻达者，所在官司具姓名，牒报本道廉访司，覆奏察闻，以备录用。”又屡诏求言于下，使得进言于上，虽指斥时政，并无谴责，往往采择其言，任用其人，列诸庶位，以图治功。其他著书立言、裨益教化、启迪后人者，亦斟酌录用，著为常式云。
 </p><p>童子举，唐、宋始著于科，然亦无常员。成宗大德三年，举童子杨山童、海童。五年，大都提举学校所举安西路张秦山，江浙行省举张升甫。武宗至大元年，举武福安。仁宗延祐三年，江浙行省举俞傅孙、冯怙哥。六年，河南路举张答罕，学士完者不花举丁顽顽。七年，河间县举杜山童，大兴县举陈聃。英宗至治元年，福州路连江县举陈元麟。至治三年，河南行省举张英。泰定四年，福州举叶留畊。文宗天历二年，举杜夙灵。至顺二年，制举答不歹子买来的。皆以其天资颖悟，超出儿辈，或能默诵经文，书写大字，或能缀缉辞章，讲说经史，并令入国子学教育之。惟张秦山尤精篆涘，陈元麟能通性理，叶留畊问以《四书》大义，则对曰：“无过事父母能竭其力，事君能致其身。”时人以远大期之。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十三章-卷三十三-原文.html'>第三十三章-卷三十三</a></p><p class='next'>下一节：<a href='第三十五章-卷三十五-原文.html'>第三十五章-卷三十五</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三十三章-卷三十三-原文.html'>第三十三章-卷三十三</a></p><p class='next'>下一节：<a href='第三十五章-卷三十五-原文.html'>第三十五章-卷三十五</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

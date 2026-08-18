@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -203,8 +230,9 @@
 </p><p>会同年间，任边部令稳。应历初年，升任南院大王，平均赋税徭役，劝导百姓耕织，部人得到化育，户口大量增殖。时逢周人侵犯汉国，由挞烈总率西南道军马前往援救。周已攻下太原等数城，汉人不敢交战。及至得悉挞烈兵马前来，周主派郭从义、尚钧等率精骑拒战于忻口。挞烈击败之，擒获其将史彦超，周军逃回，挞烈收复了失陷的城池，汉主到挞烈处致谢。及至汉主崩驾，宋军前来攻讨，皇上命挞烈担任行军都统，派出诸道兵马前往援救。大军出雁门关后，宋人谍报得知消息，宋军退兵。
 </p><p>保宁元年(969)，升任兼政事令，辞官。乾亨初年，皇上召见他。见他须发俱白，精力却仍然强健，向他请问政事，对他深加礼遇。后因病去世，年七十九岁。
 </p><p>挞烈用兵之时，赏罚严明，言出必信，深得士卒欢心。河东势力单弱，之所以长时间内未被周、宋并吞，与挞烈的援助不无关系。他在治所内不大兴土木，百姓无不称道其惠政，粮食也屡屡丰收。当时耶律屋质在北院，挞烈统领南院，均政绩赫赫，朝议称他们为“富民大王”。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章-卷六-白话.html'>第六章-卷六</a></p><p class='next'>下一节：<a href='第八章-卷八-白话.html'>第八章-卷八</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第六章-卷六-白话.html'>第六章-卷六</a></p><p class='next'>下一节：<a href='第八章-卷八-白话.html'>第八章-卷八</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

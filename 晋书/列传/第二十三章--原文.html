@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -190,8 +217,9 @@
 </p><p>尚字敬仁。永康元年四月，封为襄阳王。永宁元年八月，立为皇太孙。太安元年三月癸卯，薨，帝服齐衰期，谥曰冲太孙。
 </p><p>史臣曰：愍怀挺岐嶷之姿，表夙成之质。武皇钟爱，既深诒厥之谋；天下归心，颇有后来之望。及于继明宸极，守器春坊，四教不勤，三朝或阙，豹姿未变，凤德已衰，信惑奸邪，疏斥正士，好屠酤之贱役，耽苑囿之佚游，可谓靡不有初，鲜克有终者也。既而中宫凶忍，久怀危害之心，外戚谄谀，竞进谗邪之说；坎牲之谋已构，毙犬之谮遂行；一人乏探隐之聪，百辟无争臣之节。遂使冤逾楚建，酷甚戾园。虽复礼备哀荣，情深悯恸，亦何补于荼毒者哉！
 </p><p>赞曰：愍怀聪颖，谅惟天挺。皇祖钟心，庶僚引领。震宫肇建，储德不恢。掇蜂构隙，归胙生灾。既罹凶忍，徒望归来。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十二章--原文.html'>第二十二章-</a></p><p class='next'>下一节：<a href='第二十四章--原文.html'>第二十四章-</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十二章--原文.html'>第二十二章-</a></p><p class='next'>下一节：<a href='第二十四章--原文.html'>第二十四章-</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

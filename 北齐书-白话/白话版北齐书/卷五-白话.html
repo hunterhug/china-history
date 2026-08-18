@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -187,8 +214,9 @@
 </p><p>五月壬子，任命开府仪同三司刘洪徽为尚书右仆射。
 </p><p>秋八月壬午，太皇太后下令废帝为济南王，让他食邑一郡，由大丞相、常山王高演继承帝位。当天，济南王住到别的宫殿。皇建二年九月，死在晋阳，年纪十七岁。
 </p><p>皇帝聪明早熟，宽容厚道仁爱机智，天保年间素有很好的名声。等到继承帝位，杨情、燕子献、宋钦道等人共同辅佐。常山王属地接近都城名望很高，朝廷内外都害怕并服从他，加上文宣帝刚刚去世时，太后本来就想立他为帝，所以杨情等人都怀有猜忌。常山王忧愁，于是告诉太后杀掉他的党羽，当时平秦王高归彦也参预了谋划。皇建二年秋天，天象预告变异，高归彦担心有后患，一再禀告孝昭，要济南王承担罪过。于是派遣高归彦快马赶到晋阳宫杀了他。济南王死后，孝昭患病，看见文宣显灵作怪。孝昭十分厌恶，镇邪的办法用尽了也没有用处。济南王死了三十天后孝昭驾崩。大宁二年，下葬在武宁的西北，谧号称闵悼王。当初文宣帝命令邢邵给皇帝起名字，名殷字正道，文宣帝于是责怪说：“殷家是弟弟即位，‘正’字是一止，我死后儿子得不到啊。”邢邵恐惧，请求改名字。文宣帝不答应说：“天意啊。”于是对孝昭帝说：“帝位夺祇管夺，小心不要杀了他。”</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷四-白话.html'>卷四</a></p><p class='next'>下一节：<a href='卷六-白话.html'>卷六</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='卷四-白话.html'>卷四</a></p><p class='next'>下一节：<a href='卷六-白话.html'>卷六</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

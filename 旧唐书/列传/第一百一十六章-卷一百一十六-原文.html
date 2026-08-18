@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -280,8 +307,9 @@
 <p>　　武宗皇帝素闻居易之名，及即位，欲征用之。宰相李德裕言居易衰病，不任朝 谒，因言从弟敏中辞艺类居易，即日知制诰，召入翰林充学士，迁中书舍人。累至 兵部侍郎、学士承旨。会昌末，同平章事，兼刑部尚书、集贤史馆大学士。宣宗即 位，加右仆射、金紫光禄大夫、太清宫使、太原郡开国公、食邑二千户。及李德裕 再贬岭南，敏中居四辅之首，雷同毁誉，无一言伸理，特论罪之。五年，罢相，检 校司空，出为邠州刺史、邠宁节度、招抚党项都制置等使。七年，进位特进、成都 尹、剑南西川节度副大使、知节度等事。十一年二月，检校司徒、平章事、江陵尹、 荆南节度使。懿宗即位，征拜司徒、门下侍郎、平章事，复辅政。寻加侍中。三年 罢相，为河中尹、河中晋绛节度使。累迁中书令。太子太师致仕，卒。 </p>
 <p>　　史臣曰：举才选士之法，尚矣！自汉策贤良，隋加诗赋，罢中正之法，委铨举 之司。由是争务雕虫，罕趋函丈，矫首皆希于屈、宋，驾肩并拟于《风》、《骚》。 或侔箴阙之篇，或敩补亡之句。咸欲锱铢《采葛》，糠秕《怀沙》，较丽藻于碧鸡， 斗新奇于白凤。暨编之简牍，播在管弦，未逃季绪之诋诃，孰望《子虚》之称赏？ 迨今千载，不乏辞人，统论六义之源，较其三变之体，如二班者盖寡，类七子者几 何？至潘、陆情致之文，鲍、谢清便之作，迨于徐、庾，踵丽增华，纂组成而耀以 珠玑，瑶台构而间之金碧。国初开文馆，高宗礼茂才，虞、许擅价于前，苏、李驰 声于后。或位升台鼎，学际天人，润色之文，咸布编集。然而向古者伤于太僻，徇 华者或至不经，龌龊者局于宫商，放纵者流于郑、卫。若品调律度，扬搉古今，贤 不肖皆赏其文，未如元、白之盛也。昔建安才子，始定霸于曹、刘；永明辞宗，先 让功于沈、谢。元和主盟，微之、乐天而已。臣观元之制策，白之奏议，极文章之 壶奥，尽治乱之根荄。非徒谣颂之片言，盘盂之小说。就文观行，居易为优，放心 于自得之场，置器于必安之地，优游卒岁，不亦贤乎。 </p>
 <p>　　赞曰：文章新体，建安、永明。沈、谢既往，元、白挺生。但留金石，长有 《茎英》。不习孙、吴，焉知用兵？</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百一十五章-卷一百一十五-原文.html'>第一百一十五章-卷一百一十五</a></p><p class='next'>下一节：<a href='第一百一十七章-卷一百一十七-原文.html'>第一百一十七章-卷一百一十七</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第一百一十五章-卷一百一十五-原文.html'>第一百一十五章-卷一百一十五</a></p><p class='next'>下一节：<a href='第一百一十七章-卷一百一十七-原文.html'>第一百一十七章-卷一百一十七</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

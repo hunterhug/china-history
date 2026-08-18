@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>张裕传<span style='font-size:small'> 白话</span></h1>
 <p>张裕字茂度，吴郡吴县人，名字与宋武帝的忌讳相同，所以以字来称呼。曾祖张澄，是晋朝的光禄大夫。祖父张彭祖，是广州刺史。父亲张敞，是侍御史、度支尚书、吴国内史。<BR><BR>　　张茂度做官担任宋武帝的太尉主簿、扬州中从事，逐步升为别驾。武帝西上讨伐刘毅，北出讨伐关中、洛阳，他都留守担任州中事务。后来出京担任都督、广州刺史、平越中郎将，绥靖百越，岭外得以安定。<BR><BR>　　元嘉元年(424)，他做侍中、都督、益州刺史。文帝讨伐荆州刺史谢晦，诏令益州派兵袭击江陵。谢晦平定，西军才到达白帝。张茂度与谢晦平时很要好，议论的人怀疑他是故意出兵迟缓。弟弟张邵当时担任湘州刺史，起兵响应皇帝大驾。皇上因为张邵忠诚，所以没有对他加罪。逐渐调任太常，因为脚病调出京城任义兴太守。皇上从容地告诉他说：“不要老把西蜀的事挂在心里。”他回答道：“臣如果不是遇上陛下英明，墓上的树该有一把粗了。”<BR><BR>　　后来担任都官尚书，因为疾病做了光禄大夫，加金章紫绶。张茂度家内财产丰足，自动断绝人事来往，开始营建本县的华山为居住地。悠闲地游历山野湖泽，这样过了七年。元嘉十八年，任命为会稽太守。他一向很有做官的能力，职务内的事情都做得很好。死在官任上，谥号为恭子。<BR><BR>　　他的儿子叫张演，位居太子中舍人。张演的四个弟弟是张镜、张永、张辩、张岱，都很有名，当时称为张氏五龙。</p>
-<div class='pn'><p class='pre'>上一节：<a href='何胤传-白话.html'>何胤传</a></p><p class='next'>下一节：<a href='张绪传-白话.html'>张绪传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='何胤传-白话.html'>何胤传</a></p><p class='next'>下一节：<a href='张绪传-白话.html'>张绪传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

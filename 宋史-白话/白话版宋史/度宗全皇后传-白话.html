@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>度宗全皇后传<span style='font-size:small'> 白话</span></h1>
 <p>度宗全皇后，会稽人，是理宗的母亲慈宪夫人的侄孙女。略通书史，年幼时跟随父亲全昭孙任岳州知州。开庆初年，任期已满回朝，过潭州。当时元兵从罗鬼进入攻破全州、衡州、永州、桂州，围攻潭州，有人看见神人保卫此城，后来只有潭州未被攻下。一年后，战事平息，到了临安。<BR><BR>　　正遇忠王打算纳妃。当初，丁大全请求选临安府顾砮的女儿，已经举行聘礼了；丁大全事败，顾砮也被罢官。台臣们认为顾砮是丁大全一党，应当另选名门女儿来配婚太子。大臣们于是说全氏侍奉其父亲全昭孙，往返江湖，备尝艰难险阻；如果身处富贵，一定能警戒事业成功之道。理宗因为母亲慈宪夫人的缘故，就诏她入宫，问道：“你的父亲昭孙，过去在宝..年间死于王事，每念及此，令人哀痛。”皇后回答说“：我的父亲固然可怜，淮、湖的人民尤其可怜。”皇帝深感惊异，对大臣们说：“全氏女言语非常得体，应当配婚太子，承接祭祀。”<BR><BR>　　景定二年(1261)十一月，诏令封为永嘉郡夫人。十二月，册封为皇太子妃。其弟全永坚等人补任承信郎、直秘阁。<BR><BR>　　度宗立为皇帝后，咸淳三年(1267)正月，册封她为皇后。追赠三代官职，赐家庙、第宅。其弟全清夫、全庭辉等一十五人，各任一官。咸淳五年三月，皇后回家探亲，推加恩泽给亲戚五十六人，升官一级。咸平郡夫人全氏三十二人，各分等特别封赏。<BR><BR>　　皇后生子不育，后又生下瀛国公。咸淳十年，度宗死后，瀛国公立为皇帝，册封皇后为皇太后。宋代灭亡，跟从瀛国公入朝元朝于燕京，后来在正智寺当尼姑而终。</p>
-<div class='pn'><p class='pre'>上一节：<a href='理宗谢皇后传-白话.html'>理宗谢皇后传</a></p><p class='next'>下一节：<a href='燕王德昭传-白话.html'>燕王德昭传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='理宗谢皇后传-白话.html'>理宗谢皇后传</a></p><p class='next'>下一节：<a href='燕王德昭传-白话.html'>燕王德昭传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

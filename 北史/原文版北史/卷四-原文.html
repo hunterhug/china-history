@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -210,8 +237,9 @@
 </p><p>三年春正月甲戌，以司空皇甫度为司徒，仪同三司萧宝夤为司空。辛巳，葛荣陷殷州，刺史崔楷固节死之。甲申，诏峻铸钱之制。萧宝夤大败于泾州，北海王颢寻亦败走。曲赦关西及正平、平阳、建兴。戊子，以司徒皇甫度为太尉。己丑，以四方未平，诏内外戒严，将亲征。二月丁酉，诏开输赏格。输粟入瀛、定、岐、雍四州者，官斗二百斛赏一阶；入二华州者，五百石赏一阶。不限多少，粟毕授官。虏贼据潼关。三月甲子，诏将西讨，中外戒严。虏贼走，复潼关。秋七月，相州刺史、安乐王鉴据州反。己丑，大赦。八月，都督源子邕、李神轨、裴衍攻鄴。丁未，斩鉴，相州平。九月己未，东豫州刺史元庆和以城南叛。秦州城人杜粲杀莫折念生，自行州事。冬十月戊申，曲赦恆农已西河北、正平、平阳、邵郡及关西诸州。甲寅，雍州刺史萧宝夤据州反，自号齐，年称隆绪。十一月己丑，葛荣攻陷冀州，执刺史元孚，逐出居人，冻死者十六七。十二月戊申，都督源子邕、裴衍与荣战，败于阳平东北，并殁。是月，杜粲为骆超所杀。超遣使归罪。是岁，蠕蠕遣使朝贡。
 </p><p>武泰元年春正月乙丑，生皇女，秘言皇子。丙寅，大赦，改元。丁丑，雍州人侯终德相率攻萧宝夤。宝夤度渭走，雍州平。二月癸丑，帝崩于显阳殿，时年十九。甲寅，皇子即位，大赦。皇太后诏曰：“皇家握历受图，年将二百，祖宗累圣，社稷载安。高祖以文思先天，世宗以下武继世。大行在御，重以宽仁奉养，率由温明恭顺。实望穹灵降祐，麟趾众繁。自潘充华有孕椒宫，冀诞储两，而熊罴无兆，唯虺遂彰。于时直以国步未康，假称统胤。欲以底定物情，系仰宸极。何图一旦弓剑莫追！皇曾孙故临洮王宝晖世子钊，体自高祖，天表卓异。大行平日养爱特深，义齐若子，事符当璧，允膺大宝。即日践祚。可班宣远迩，咸使知之。”乙卯，幼主即位。仪同三司、大都督尔硃荣抗表请入奔赴，勒兵而南。是月，杜洛周为葛荣所并。三月甲申，上尊谥曰孝明皇帝。乙酉，葬于定陵，庙号肃宗。四月戊戌，尔硃荣济河。庚子，皇太后、幼主崩。
 </p><p>论曰：宣武承圣考德业，天下想望风化，垂拱无为，边徼稽服。而宽以摄下，从容不断，太和之风替矣。比之汉世，元、成、安、顺之俦欤。宣武之后，继以元成，孝明冲龄统业，灵后妇人专制，任用非人，赏罚乖舛。于是衅起宇内，祸延邦畿。卒于享国不长，抑亦沦胥之始也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷三-原文.html'>卷三</a></p><p class='next'>下一节：<a href='卷五-原文.html'>卷五</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='卷三-原文.html'>卷三</a></p><p class='next'>下一节：<a href='卷五-原文.html'>卷五</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

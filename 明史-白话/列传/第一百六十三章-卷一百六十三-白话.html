@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -217,8 +244,9 @@
 </p><p>十六年秋天，懋第外出视察长江防线。第二年五月，福王即位，任用他为兵科都给事中，不久提升为右佥都御史，巡抚应天、徽州等府。当时大清兵接连打败李自成，朝廷决定派遣使节跟大清和好，难于选择这样的人选。懋第的母亲陈氏死于河北，懋第想借此机会安葬母亲，便主动要求前往。朝廷于是任用懋第为兵部右侍郎兼右佥都御史，与左都督陈弘范、太仆少卿马绍愉一起去，同时让懋第经营黄河以北，联络关东各部队。马绍愉原来是兵部的郎官，过去曾经为陈新甲议和一事出使到义州而回。新甲被处死以后，绍愉因为督战而导致失败被懋第弹劾罢官。到这时绍愉已经起任郎中，朝廷就此提升他为少卿，给懋第当副职。懋第上书说“：我这次出使要祭奠先帝、先后的灵柩，查访东宫二王的踪迹。我既然当了使臣，势必不能兼领封疆事宜。并且绍愉是被我弹劾罢掉的官，不该再让他和我共事。一定要用我经营黄河以北的话，就请让弘范和绍愉出使，给我一支队伍，我和山东抚臣一道收拾山东等候命令，不敢再说北行的事了。如果用我和弘范北行，就拿掉我经理的官衔，只让我奉命前去就是了，请停下对绍愉的派遣吧！”阁部讨论停派绍愉，改派原蓟镇总督王永吉。福王传令仍旧照原先的指示办理。
 </p><p>懋第临行之前上书说“：我这次出使生死难料。请让我以告别京城的身份说一句话吧。我希望陛下把先帝的深仇大耻记在心上，看到高皇帝的弓箭时，就想想看成祖以下各位圣主的陵墓今在何方；招抚长江沿线残存的黎民时，就想想看黄河以北、山东的赤子谁来抚恤？更希望朝廷时时整顿兵马，一定要能渡过黄河作战才能把住黄河防卫；一定要能把住黄河防卫，才能划江而安呢。”大家都同意他的话。福王命令给他白银十万两，布帛几万匹，派兵三千人为他护行。八月，他乘船渡过淮河。十月初一驻张家湾，本朝传令给他只许一百人跟着他来。
 </p><p>懋第身穿孝服进入都城，来后我朝让他住在鸿胪寺。他请求祭告各皇陵并改葬先帝，没得到批准，就把祭品摆在住所里，哭并且祭奠了他们。然后就在这个月二十八日那天被遣送出都城。可是弘范向我朝请求让他亲自到江南招刘泽清等大将降附，留下懋第等不要放回。于是我朝从沧州追回了懋第，让他改住在太医院里。顺治二年(1645)六月，他听说南京失守，悲恸地哭了。他的弟弟懋泰以前做过吏部员外郎，投降过贼寇，后来投降本朝做了官，来探望懋第。懋第说“：这种人不是我弟弟。”把他给喝斥出去了。到闰月十二日，懋第和随行的兵部司务陈用极，游击王一斌，都司张良佐、刘统、王廷佐都因为不投降被处死了，而绍愉得以免死。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百六十二章-卷一百六十二-白话.html'>第一百六十二章-卷一百六十二</a></p><p class='next'>下一节：<a href='第一百六十四章-卷一百六十四-白话.html'>第一百六十四章-卷一百六十四</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第一百六十二章-卷一百六十二-白话.html'>第一百六十二章-卷一百六十二</a></p><p class='next'>下一节：<a href='第一百六十四章-卷一百六十四-白话.html'>第一百六十四章-卷一百六十四</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

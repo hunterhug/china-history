@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>王老志传<span style='font-size:small'> 白话</span></h1>
 <p>王老志，濮州临泉人，因孝顺父母而闻名。做转运小吏，不接受贿赂。在乞丐中遇到一位奇人，自称我就是所说的钟离先生，给王老志丹药，他吃后就发狂。于是就丢弃妻子，在田间盖一草房，时常替人算吉凶。<BR><BR>　　政和三年(1113)，太仆卿王..把他推荐给朝廷。他被召到京城，安排在蔡京府中。他曾给皇上写了一封信，徽宗打开一读，是去年中秋时同乔、刘二妃的燕好之语。由此，徽宗才稍微相信他的奇异，封他为洞微先生。朝官都向他求卜，开始像是无法解释，后来应验的有十分之八九，故此他的门庭若市。蔡京担心他做的太过分，就告诫他；王老志也很谨慎，就奏请禁止。王老志曾献乾坤鉴法，皇上命令铸造它。乾坤鉴铸成后，他说皇上与皇后以后都有灾难，让他们经常坐在鉴下，想那些应该警惕戒备能消灾的事。<BR><BR>　　第二年，他见到师父，师父责怪他擅居富贵，于是他向朝廷请求归家，还没得到批准，就得了重病，才允许他归去。他步行出朝，到住处，病就好了。回到濮州就去世了。皇上下诏赐金安葬他，赠官为正议大夫。<BR><BR>　　当初，王黼没任宰相时，王黼的父亲是临泉县令，问他王黼能做多大官，他就写了“太平宰相”四个字。很快又用墨涂去，说：“恐怕泄漏天机。”王黼遭贬后，人们才明白其中的缘故。</p>
-<div class='pn'><p class='pre'>上一节：<a href='魏汉津传-白话.html'>魏汉津传</a></p><p class='next'>下一节：<a href='王仔昔传-白话.html'>王仔昔传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='魏汉津传-白话.html'>魏汉津传</a></p><p class='next'>下一节：<a href='王仔昔传-白话.html'>王仔昔传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

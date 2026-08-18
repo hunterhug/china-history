@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -199,8 +226,9 @@
 <p>　　叔瑜子华，开元初太子右庶子。 </p>
 <p>　　史臣曰：臣尝读汉史《刘更生传》，见其上书论王氏擅权，恐移运祚，汉成不 悟，更生徘徊伊郁，极言而不顾祸患，何匡益忠尽也如此！当更生时，谏者甚多。 如谷永、杨兴之上言，图为奸利，与贼臣为乡导，梅福、王吉之言，虽近古道，未 切事情。则纳谏任贤，讵宜容易！臣尝阅《魏公故事》，与文皇讨论政术，往复应 对，凡数十万言。其匡过弼违，能近取譬，博约连类，皆前代诤臣之不至者。其实 根于道义，发为律度，身正而心劲，上不负时主，下不阿权幸，中不侈亲族，外不 为朋党，不以逢时改节，不以图位卖忠。所载章疏四篇，可为万代王者法。虽汉之 刘向、魏之徐邈、晋之山涛、宋之谢朏，才则才矣，比文贞之雅道，不有遗行乎？ 前代诤臣，一人而已。 </p>
 <p>　　赞曰：智者不谏，谏或不智。智者尽言，国家之利。郑公达节，才周经济。太 宗用之，子孙长世。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p><p class='next'>下一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p><p class='next'>下一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

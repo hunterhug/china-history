@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -322,8 +349,9 @@
 </p><p>提举南京榷货司。(贞祐四年置。)提举，从五品。同提举，从六品。勾当官三员，正九品。
 </p><p>提举仓场司。(贞祐五年置，先吏部辟举，从省拟。)使，从五品。副使，从六品。掌出纳公平及毋致亏败。监支纳官，八品，十六员。(以年六十以下廉干人充，女直、汉人各一。广盈仓、丰盈仓、永丰仓、广储仓、富国仓、广衍仓、三登仓、常盈仓、西一场、西二场、西三场、东一场、东二场、南一场、北一场、北二场。通济仓与在京仓，置监支纳使副各一员。丰备仓、丰赡仓、广济仓、潼关仓，兴定五年创置潼关仓监支纳一员，兼枢密院弹压。陈州仓四员。洧川仓二员。)
 </p><p>八作左右院。设官同上，掌收军须、军器。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十六章-卷三十六-原文.html'>第三十六章-卷三十六</a></p><p class='next'>下一节：<a href='第三十八章-卷三十八-原文.html'>第三十八章-卷三十八</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三十六章-卷三十六-原文.html'>第三十六章-卷三十六</a></p><p class='next'>下一节：<a href='第三十八章-卷三十八-原文.html'>第三十八章-卷三十八</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

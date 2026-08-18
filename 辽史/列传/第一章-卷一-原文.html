@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -201,8 +228,9 @@
 </p><p>天祚文妃萧氏，小字瑟瑟，国舅大父房之女。乾统初，帝幸耶律挞葛第，见而悦之，匿宫中数月。皇太叔和鲁斡劝帝以礼选纳，三年冬，立为文妃。生蜀国公主、晋王敖卢斡，尤被宠幸。以柴册，加号承翼。善歌诗。女直乱作，日见侵迫。帝畋游不恤，忠臣多被疏斥。妃作歌讽谏，其词曰：“勿嗟塞上兮暗红尘，勿伤多难兮畏夷人。不如塞奸邪之路兮，选取贤臣。直须卧薪尝胆兮，激壮士之捐身。可以朝清漠北兮，夕枕燕云。”又歌曰：“丞相来朝兮剑佩鸣，千官侧目兮寂无声。养成外患兮嗟何及，祸尽忠臣兮罚不明。亲戚并居兮藩屏位，私门潜畜兮爪牙兵。可怜往代兮秦天子，犹向宫中兮望太平！”天祚见而衔之。播迁以来，郡县所失几半，上颇有倦勤之意。诸皇子敖卢斡最贤，素有人望。元妃兄萧奉先深忌之，诬南军都统余睹谋立晋王，以妃与闻，赐死。
 </p><p>天祚元妃萧氏，小字贵哥，燕国妃之妹。年十七，册为元妃。性沉静。尝昼寝，近侍盗貂裀，妃觉而不言，宫掖称其宽厚。从天祚西狩，以疾薨。
 </p><p>论曰：辽以鞍马为家，后妃往往长于射御，军旅田猎，未尝不从。如应天之奋击室韦，承天之御戎澶渊，仁懿之亲破重元，古所未有，亦其俗也。靖安无毁无誉；齐天巧思，乃奢侈之渐；宣懿度曲知音，岂致诬蔑之阶乎？文妃能歌诗讽谏，而谓谋私其子，非矣。若简宪之艰危保孤，怀节之从容就义，虽烈丈夫何以过之。钦哀狠桀，贼杀嫡后，而兴宗不能防闲其母，惜哉！</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p></div><footer>
+<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

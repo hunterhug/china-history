@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -204,8 +231,9 @@
 <p>　　中宗即位，制曰：“忠正之臣，自昔攸尚；褒赠之典，旧章所重。故赠大理卿 徐有功，节操贞劲，器怀亮直，徇古人之志业，实一代之贤良，司彼刑书，深存敬 慎。周兴、来俊臣等性惟残酷，务在诛夷，不顺其情，立加诬害。有功卓然守法， 虽死不移，无屈挠之心，有忠烈之议。当其执断，并遇平反，定国、释之，何以加 此。朕惟新庶政，追想前迹，其人既殁，其德可称。追往赠终，慰兹泉壤。可赠越 州刺史，仍遣使就家吊祭，赐物百段，授一子官。”今上践祚，窦孝谌之子希瑊等 请以身之官爵让有功子惀，以报旧恩。惀由是自太子司议郎、恭陵令累迁申王府司 马，卒。 </p>
 <p>　　史臣曰：文法，理具之大者，故舜命皋陶为士，昌言诫敕，勤亦至焉。盖人命 所悬，一失其平，冤不可复，圣王所以疚心也。如临之守法，文瓘之议刑，时属哲 王，可以理夺。当贼后迁鼎之际，酷吏罗织之辰，徐有功独抗群邪，持平不挠，此 所以为难也。比释之、定国，徐又过之。希瑊让爵酬恩，可知遗爱。 </p>
 <p>　　赞曰：听讼惟明，持法惟平。二者或爽，人何以生？猗欤徐公，獬豸之精。世 皆纷浊，不改吾清。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十四章-卷三十四-原文.html'>第三十四章-卷三十四</a></p><p class='next'>下一节：<a href='第三十六章-卷三十六-原文.html'>第三十六章-卷三十六</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三十四章-卷三十四-原文.html'>第三十四章-卷三十四</a></p><p class='next'>下一节：<a href='第三十六章-卷三十六-原文.html'>第三十六章-卷三十六</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -219,8 +246,9 @@
 </p><p>熹平六年，灵帝思感旧德，乃图画广及太尉黄琼于省内，诏议郎蔡邕为其颂云。
 </p><p>论曰：爵任之于人重矣，全丧之于生大矣。怀禄以图存者，仕子之桓情；审能而就列者，出身之常体。大纡于物则非己，直于志则犯俗，辞其艰则乖义，徇其节则失身。统之，方轨易因，险涂难御。故昔人明慎于所受之分，迟迟于岐路之间也。如令志行无牵于物，临生不先其存，后世何贬焉？古人以宴安为戒，岂数公之谓乎？
 </p><p>赞曰：邓、张作傅，无咎无誉。敏正疑律，防议章句，胡公庸庸，饰情恭貌。朝章虽理，据正或桡。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十六章-朱乐何列传-原文.html'>第三十六章-朱乐何列传</a></p><p class='next'>下一节：<a href='第三十八章-袁张韩周列传-原文.html'>第三十八章-袁张韩周列传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三十六章-朱乐何列传-原文.html'>第三十六章-朱乐何列传</a></p><p class='next'>下一节：<a href='第三十八章-袁张韩周列传-原文.html'>第三十八章-袁张韩周列传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -216,8 +243,9 @@
 </p><p>当是时，海内混一，垂五十年。帝方内兴礼乐，外怀要荒，公卿大夫彬彬多文学之士。俨馆阁宿儒，朝廷大著作多出其手，重修《太祖实录》、《永乐大典》、《天下图志》皆充总裁官。居国学二十余年，以身率教，动有师法。洪熙改元，以疾乞休，仁宗赐敕奖劳，进太子宾客，仍兼祭酒。致仕，复其子孙。
 </p><p>宣宗即位，以礼部侍郎召，辞归。家居二十年，方岳重臣咸待以师礼。俨与言，未尝及私。自处淡泊，岁时衣食才给。初为湖广考官，得杨溥文，大异之，题其上曰：“必能为董子之正言，而不为公孙之阿曲。”世以为知人。正统八年八月卒，年八十三。
 </p><p>赞曰：明初罢丞相，分事权于六部。成祖始命儒臣直文渊阁，预机务。沿及仁、宣，而阁权日重，实行丞相事。解缙以下五人，则词林之最初入阁者也。夫处禁密之地，必以公正自持，而尤贵于厚重不泄。缙少年高才，自负匡济大略，太祖俾十年进学，爱之深矣。彼其动辄得谤，不克令终，夫岂尽嫉贤害能者力固使之然欤。黄淮功在辅导，胡广、金幼孜劳著扈从，胡俨久于国学。观诸臣从容密勿，随事纳忠，固非仅以文字翰墨为勋绩已也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十四章-卷三十四-原文.html'>第三十四章-卷三十四</a></p><p class='next'>下一节：<a href='第三十六章-卷三十六-原文.html'>第三十六章-卷三十六</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三十四章-卷三十四-原文.html'>第三十四章-卷三十四</a></p><p class='next'>下一节：<a href='第三十六章-卷三十六-原文.html'>第三十六章-卷三十六</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -253,8 +280,9 @@
 </p><p>《周礼》记载：“栗氏制成的嘉量，包括黼，其高一尺，体积为圆柱体内接一尺见方的正方体，其容量为一黼；嘉量底部称臀，高一寸，容量为一豆；嘉量两旁有耳，高三寸，容量为一升。容量的总重为一钧，其尺寸标准来源于黄钟律管。度量时以刮平嘉量各部表面，不使实物遇量溢出为准。它的铭文是：‘这是时代文明的思考与探求，诚信其臻于完美。嘉量既已制成，即可考察各地的度量标准，并永远以它的法度昭示后人。”’《春秋左氏传》记载：“从前齐国有四种容量单位，豆、区、辅、钟。四升为一豆，以下各以四进，升晋到黼。”即四豆为区，一区合一斗六升。四区为黼，一脯合六斗四升。十鯆为一钟，一钟合六十四斗。郑玄认为黼内一尺见方的容器容积为一千立方寸，比《九章．粟米法》少二又八十一分之二十二升。用算术来考察，古斛的容积为一千五百六十二又二分之一立方寸，圆内接一尺见方正方形的对角线，还需减旁一厘八毫，其直径应为一尺四寸一分四毫七秒二忽之多，而高为一尺，造就是古斛的形制。
 </p><p>《九章．商功法》认为，容粟一斛，体积为二千七百立方寸；容米一斛，体积为一千六百二十七立方寸；容豆类、芝麻、麦子一斛，体积为二千四百三十立方寸。这是根据容受物质密度不同而设立的不同标准，不同的容受物质容量单位虽同，但其实际价值却不等。斛的容受积寸，以米斛为标准，这是与《汉志》相同的。魏陈留王：匡五四年，塑隧注释《九章。商功》说：“如今大司农斛，圆径为一尺三寸五分五厘，高一尺，容积为一千四百四十一又十分之三立方寸。王茎铜斛，高等于今尺九寸五分五厘，直径一尺三寸六分八厘七毫，以刘徽的计算法，等于今斛容量的九斗七升四合挂零。”逭说明魏斛大而且尺长，王莽斛小而且尺短。
 </p><p>对衡权的解释是，衡，为平的意思；权，为重的意思。衡就是由权来称量物质的轻重数量。古代有黍、累、锤、锱、缳、钩、锷、溢等不同单位，历代单位标准不一。《漠志》讲到衡权的名义、道理十分详备，以后制度的变化，没有详细听说。五尘年间，墓题认为医生的处方人命关天，而称量单位与古制不同，为害严重，应当改治权衡制度，但不见省察。赵石勒十八年七月，建造建垄殿时，得一圆石，如水碓形状，上面刻有铭文：“律权石，重四钩，使律度量衡统一标准。由辛氏制作。”说是王莽时的东西。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章--白话.html'>第五章-</a></p><p class='next'>下一节：<a href='第七章--白话.html'>第七章-</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第五章--白话.html'>第五章-</a></p><p class='next'>下一节：<a href='第七章--白话.html'>第七章-</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

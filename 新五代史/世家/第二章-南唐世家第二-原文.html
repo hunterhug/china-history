@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -223,8 +250,9 @@
 </p><p>七年，太祖皇帝遣使诏煜赴阙，煜称疾不行，王师南征，煜遣徐铉、周惟简等奉表朝廷求缓师，不答。八年十二月，王师克金陵。九年，煜俘至京师，太祖赦之，封煜违命侯，拜左千牛卫将军。其后事具国史。
 </p><p>予世家江南，其故老多能言李氏时事，云太祖皇帝之出师南征也，煜遣其臣徐铉朝于京师。铉居江南，以名臣自负，其来也，欲以口舌驰说存其国，其日夜计谋思虑言语应对之际详矣。及其将见也，大臣亦先入请，言铉博学有材辩，宜有以待之。太祖笑曰：“第去，非尔所知也。”明日，铉朝于廷，仰而言曰：“李煜无罪，陛下师出无名。”太祖徐召之升，使毕其说。铉曰：“煜以小事大，如子事父，未有过失，奈何见伐？”其说累数百言。太祖曰：“尔谓父子者为两家可乎？”铉无以对而退。呜呼，大哉，何其言之简也！盖王者之兴，天下必归于一统。其可来者来之，不可者伐之；僭伪假窃，期于扫荡一平而后已。予读周世宗《征淮南诏》，怪其区区攈摭前事，务较曲直以为辞，何其小也！然世宗之英武有足喜者，岂为其辞者之过欤？
 </p><p>据汤悦所撰《江南录》云：“景以保大十五年正月，改元交泰，是岁尽献淮南十四州，画江为界。”保大十五年，乃周显德四年也。案《五代旧史》及《世宗实录》，显德四年十月壬申，世宗方复南征，五年正月丙午，始克楚州。二月己亥，景始尽献淮南诸州，画江为界，当是保大十六年也。悦等南唐故臣，记其目见之事，何其差缪？而《九国志》、《纪年通谱》之类，但以悦书为正，不复参校，遂皆差一年。至于景灭闽国，是保大四年，《江南录》书于三年，亦差一年，已具《闽世家》注。或疑景立逾年而改元，则灭闽国当为三年，周取淮南当为十五年不差，但《江南录》误于景立之年改元保大，所以常差一年也。今知不然者，以诸书参校，闽人杀王延羲，当晋开运元年，周师始伐南唐当显德二年。据景以初立之年即改元，则开运元年为保大二年，显德二年为保大十三年。今《江南录》书延羲被杀于二年，周师始伐于十三年，则是景立之年改元，不误，而悦等书灭王氏、割淮南自各差一年尔。昪自晋天福二年建国，至皇朝开宝八年国灭，凡三十九年。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-吴世家第一-原文.html'>第一章-吴世家第一</a></p><p class='next'>下一节：<a href='第三章-前蜀世家第三-原文.html'>第三章-前蜀世家第三</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-吴世家第一-原文.html'>第一章-吴世家第一</a></p><p class='next'>下一节：<a href='第三章-前蜀世家第三-原文.html'>第三章-前蜀世家第三</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

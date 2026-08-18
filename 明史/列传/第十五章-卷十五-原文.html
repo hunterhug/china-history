@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -189,8 +216,9 @@
 </p><p>洪武元年，山东平，以广洋廉明持重，命理行省，抚纳新附，民甚安之。是年召入为中书省参政。明年出参政陕西。三年，李善长病，中书无官，召广洋为左丞。时右丞杨宪专决事。广洋依违之，犹为所忌，嗾御史劾广洋奉母无状。帝切责，放还乡。宪再奏，徙海南。宪诛，召还。其冬，封忠勤伯，食禄三百六十石。诰词称其专刂繁治剧，屡献忠谋，比之子房、孔明。及善长以病去位，遂以广洋为右丞相，参政胡惟庸为左丞。广洋无所建白，久之，左迁广东行省参政，而帝心终善广洋，复召为左御史大夫。十年复拜右丞相。广洋颇耽酒，与惟庸同相，浮沉守位而已。帝数诫谕之。
 </p><p>十二年十二月，中丞涂节言刘基为惟庸毒死，广洋宜知状。帝问之，对曰：“无有。”帝怒，责广洋朋欺，贬广南。舟次太平，帝追怒其在江西曲庇文正，在中书不发杨宪奸，赐敕诛之。
 </p><p>广洋少师余阙，淹通经史，善篆隶，工为歌诗。为人宽和自守，与奸人同位而不能去，故及于祸。赞曰：明初设中书省，置左右丞相，管领枢要，率以勋臣领其事。然徐达、李文忠等数受命征讨，未尝专理省事。其从容丞弼之任者，李善长、汪广洋、胡惟庸三人而已。惟庸败后，丞相之官遂废不设。故终明之世，惟善长、广洋得称丞相。独惜善长以布衣徒步，能择主于草昧之初，委身戮力，赞成鸿业，遂得剖符开国，列爵上公，乃至富极贵溢，于衰暮之年自取覆灭。广洋谨厚自守，亦不能发奸远祸。俱致重谴，不亦大负爰立之初心，而有愧置诸左右之职业也夫？</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十四章-卷十四-原文.html'>第十四章-卷十四</a></p><p class='next'>下一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十四章-卷十四-原文.html'>第十四章-卷十四</a></p><p class='next'>下一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

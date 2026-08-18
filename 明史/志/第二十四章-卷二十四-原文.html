@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -211,8 +238,9 @@
 </p><p>二十一年，敕谕礼部：“季秋大享明堂，成周礼典，与郊祀并行。曩以享地未定，特祭于玄极宝殿，朕诚未尽。南郊旧殿，原为大祀所，昨岁已令有司撤之。朕自作制象，立为殿，恭荐名曰泰享，用昭寅奉上帝之意。”乃定岁以秋季大享上帝，奉皇考睿宗配享。行礼如南郊，陈设如祈谷。明年，礼部尚书费寀以大享殿工将竣，请帝定殿门名，门曰大享，殿曰皇乾。及殿成，而大享仍于玄极宝殿，遣官行礼以为常。隆庆元年，礼臣言：“我朝大享之礼，自皇考举行，追崇睿宗，以昭严父配天之孝。自皇上视之，则睿宗为皇祖，非周人宗祀文王于明堂之义。”于是帝从其请，罢大享礼，命玄极宝殿仍为钦安殿。
 </p><p>令节拜天
 </p><p>嘉靖初，沿先朝旧仪，每日宫中行拜天礼。后以为渎，罢之。遇正旦、冬至、圣诞节，于奉天殿丹陛上行礼。既定郊祀，遂罢冬至之礼。惟正旦、圣诞节行礼于玄极宝殿。隆庆元年正旦，命宫中拜天，不用在外执事，祭品亦不取供于太常。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十三章-卷二十三-原文.html'>第二十三章-卷二十三</a></p><p class='next'>下一节：<a href='第二十五章-卷二十五-原文.html'>第二十五章-卷二十五</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十三章-卷二十三-原文.html'>第二十三章-卷二十三</a></p><p class='next'>下一节：<a href='第二十五章-卷二十五-原文.html'>第二十五章-卷二十五</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

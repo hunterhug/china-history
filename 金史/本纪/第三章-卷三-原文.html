@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -253,8 +280,9 @@
 </p><p>十二年正月辛亥朔，齐、高丽、夏遣使来贺。甲子，初改定制度，诏中外。丙寅，如东京。二月丁酉，撒离喝败宋吴玠军于固镇。四月，至自东京。六月甲午，以阿卢补为元帅右都监。十月庚寅，天清节，齐、高丽、夏遣使来贺。
 </p><p>十三年正月丙午朔，日有食之。己巳，上崩于明德宫，年六十一。庚午，谙班勃极烈即皇帝位于柩前。三月庚辰，上尊谥曰文烈皇帝，庙号太宗。乙酉，葬和陵。皇统四年，改号恭陵。五年，增上尊谥曰体元应运世德昭功哲惠仁圣文烈皇帝。贞元三年十一月戊申，改葬于大房山，仍号恭陵。
 </p><p>赞曰：天辅草创，未遑礼乐之事。太宗以斜也、宗干知国政，以宗翰、宗望总戎事。既灭辽举宋，即议礼制度，治历明时，缵以武功，述以文事，经国规摹，至是始定。在位十三年，宫室苑瑽无所增益。末听大臣计，传位熙宗，使太祖世嗣不失正绪，可谓行其所甚难矣！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p><p class='next'>下一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p><p class='next'>下一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

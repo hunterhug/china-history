@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -216,8 +243,9 @@
 </p><p>子龚，与诱俱死。元帝为晋王，下令赠新昌太守。龚弟胤，字伯舒。王敦使周访击杜曾，胤请从行。访惮曾之强，欲先以胤饵曾，使其众疲而后击之。胤多枭首级。王导引为从事中郎。南顿王宗反，胤杀宗。于是王导、庾亮并倚仗之。转冠军将军，迁西豫州刺史，卒于官。
 </p><p>史臣曰：忠为令德，贞曰事君，徇国家而竭身，历夷险而一节。罗宪、滕修，濯缨入仕，指巴东而受脤，出岭峤而扬麾。属鼎命沦胥，本朝失守，郕巴丘而流涕，集都亭而大临。古之忠烈，罕辈子兹！孝兴之智勇，玄威之武艺，灭丑虏于河西，制凶酋于硜北，审杨欣之必败，讥杨骏之速祸。陶璜、吾彦，逸足齐驱，毛炅屈其深谋，陆抗奇其茂略。薪楢之任，清规自远；鼙鼓之臣，厥声弥劭。景武，南楚秀士；元孙，累叶将门，赴死喻于登仙。效诚陈于上策，竟而俱毙，贞则斯存。
 </p><p>赞曰：宪居玉叠，才博流誉。修赴石门，惠政攸著。孝兴、玄威，操履无违。愚坟毕礼，杨门致讥。璜谋超绝，彦材雄杰。潜师袭董，观兵叹薛。惟赵与张，神略多方。作尉北地，立功西湘。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十六章--原文.html'>第二十六章-</a></p><p class='next'>下一节：<a href='第二十八章--原文.html'>第二十八章-</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十六章--原文.html'>第二十六章-</a></p><p class='next'>下一节：<a href='第二十八章--原文.html'>第二十八章-</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

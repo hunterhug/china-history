@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -193,8 +220,9 @@
 </p><p>夏四月一日，日蚀。二十二日，中书门下上奏“：请定六月二十七日皇上诞生日为启圣节。”少帝采纳了。这个月，河南、河北、关西各州发生旱灾和蝗灾，少帝分命使臣捕杀蝗虫。
 </p><p>五月十六日，命令宰臣等分别到各佛寺道观祈求下雨。二十二日，飞蝗从北面遮天盖日向南飞去。太子宾客李..去世。二十七日，少帝下诏：“各道州府被囚禁的罪犯，除十恶五逆、行劫杀人、伪造玺印符信、合制毒药、官员贪赃各减一等外，其余全部释放。”这时旱灾、蝗灾到处发生，所以下了这个诏令。二十八日，少帝幸临相国寺祈雨。
 </p><p>六月四日，因螟蝗为害，诏令侍卫马步军都指挥使李守贞到皋门祭祀祷告，又派诸司使梁抱超等七人分别前往开封府界捕杀螟蝗。九日，任命左羽林统军安审晖为潞州节度使。宿州上奏，飞蝗抱草干死。十日，贝州上奏，逃亡民户总计三千七百户。派供奉官卫延韬到嵩山投龙祈雨。十二日，开封府境内飞蝗自灭。十四日，河南府上奏，飞蝗猛降，遍及山野，草、苗、树叶都被吃光，人多饿死。礼部侍郎吴承范去世。二十日，因将要册封皇太后，派尚书左丞王易简祷告天地。陕州上奏，飞蝗入境内，噬食五谷及竹木枝叶，逃亡的人达八千一百户。二十五日，派朝廷内外官员二十八人分别前往各道州府收借粟麦。当时使臣迎合圣旨，立法很严，民间的石碓石磨都用泥封存起来，隐瞒粟麦数的人都予杀死，因此，民不聊生，百姓怨声载道。这个月，各州郡发生大蝗灾，蝗虫所经之地，草木都被吃尽。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章-高祖纪六-白话.html'>第六章-高祖纪六</a></p><p class='next'>下一节：<a href='第八章-少帝纪二-白话.html'>第八章-少帝纪二</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第六章-高祖纪六-白话.html'>第六章-高祖纪六</a></p><p class='next'>下一节：<a href='第八章-少帝纪二-白话.html'>第八章-少帝纪二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

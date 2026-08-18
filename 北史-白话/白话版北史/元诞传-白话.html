@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>元诞传<span style='font-size:small'> 白话</span></h1>
 <p>元郁的弟弟元偃，任太中大夫。元偃的儿子元诞，字昙首。起初，元诞的伯父元郁因贪污被赐死，除去王爵。皇帝下诏说，由于元诞是元偃正妻所生的儿子，立为嫡孙，继承王爵。累迁至齐州刺史。元诞在齐州贪婪残暴，百姓们都将他视为祸患。牛马骡驴，他无不强夺，他家里的奴隶们，也都强娶平民的妇女来当妻子。有位和尚替元诞采药，回来见元诞时，元诞问他外面人有些什么议论。回答说“：只听老百姓都在说王爷贪婪，希望你早些被换走。”元诞说：“齐州人有七万家，我到这里以后，一家才拿不到三十钱，怎么能说我贪婪？”后来被御史中尉元纂所弹劾，因正好遇到大赦而免受处分。死后，谥为“静王”。</p>
-<div class='pn'><p class='pre'>上一节：<a href='元弼、元晖业传-白话.html'>元弼、元晖业传</a></p><p class='next'>下一节：<a href='元修义传-白话.html'>元修义传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='元弼、元晖业传-白话.html'>元弼、元晖业传</a></p><p class='next'>下一节：<a href='元修义传-白话.html'>元修义传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

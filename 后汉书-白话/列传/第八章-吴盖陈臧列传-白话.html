@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -233,8 +260,9 @@
 </p><p>元初四年(117)，与母另居，封国被废。
 </p><p>永宁元年(120)，邓太后继封臧松弟臧由为朗陵侯。
 </p><p>史官评论道：中兴的事业，真是很艰难的。然敌人没有秦皇、项羽那样强大，人们还怀抱着归附汉朝的思想，虽怀玉玺官印，跨越州县，假托各种名义或伪号，千队为群，还不足以为与显贵高官比功劳哩。等到山西平定，威临天下，戎羯丧其精胆，群帅贾其余勇，这真是雄心尚武之良机，乘胜习兵之时哩。臧宫、马武之徒，抚剑抵掌，其志驰于伊吾的北面了。光武审识《黄石公记》，常自危惧而不安，关闭玉门以谢西域的人质，词币礼以答匈奴的使者，他的防御意识已经很宏大深远了，难道他是担心像高祖一样颠沛于平城之围，不忍像高祖一样亲击黥布时在阵上负伤吗？</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-冯岑贾列传-白话.html'>第七章-冯岑贾列传</a></p><p class='next'>下一节：<a href='第九章-耿弇列传-白话.html'>第九章-耿弇列传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第七章-冯岑贾列传-白话.html'>第七章-冯岑贾列传</a></p><p class='next'>下一节：<a href='第九章-耿弇列传-白话.html'>第九章-耿弇列传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

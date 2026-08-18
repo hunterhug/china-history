@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -217,8 +244,9 @@
 </p><p>蒲鲜万奴在咸平，忌铁哥兵强，牒取所部骑兵二千，又召泰州军三千及户口迁咸平。铁哥察其有异志，不遣。宣抚使承充召铁哥赴上京，命伐蒲与路。既还，适万奴代承充为宣抚使，摭前不发军罪，下狱被害。谥勇毅。
 </p><p>纳兰胡鲁剌，大名路怕鲁欢猛安人。性淳直，寡言笑，好读书，博通今古。承安二年，进士第一，除应奉翰林文字。被诏括牛于临潢、上京等路。丞相襄有田在肇州，家奴匿牛不以实闻，即械系正其罪而尽括之。于是豪民皆惧，无敢匿者。使还，襄称其能。居父丧尽礼，御史举其清节。服除，转修撰。平章政事仆散端举廉能有文采，迁同知顺天军节度使事，从伐宋。以劳加朝请大夫，改礼部员外郎、曹州刺史。豪民仆散扫合立私渡于定陶间，逃兵盗劫，皆籍为囊橐，累政莫敢问。胡鲁剌捕治之，穷竟其党，阖郡肃然。改沃州。改南京路按察副使。贞佑二年，改泗州防御使。召为吏部侍郎，迁绛阳军节度使，权河东南路宣抚副使。是时兵兴，胡鲁剌完城郭，缮器械，料丁壮为乡兵。延问耆老，招致儒士，咨以备御之策。盐米储偫，劝富民出粟，郡赖以完。赐诏褒谕，加资善大夫，官其次子吾申。改权经略使，被召，以疾不能行，卒于绛州。
 </p><p>赞曰：泰和、贞祐，其间相去五年耳，故将遗老往往在焉。高琪得君，宿将皆斥外矣。高汝砺任职，旧臣皆守藩矣。假以重任，其实疏之。故石抹仲温以下，以见当时之将校焉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十章-卷四十-原文.html'>第四十章-卷四十</a></p><p class='next'>下一节：<a href='第四十二章-卷四十二-原文.html'>第四十二章-卷四十二</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第四十章-卷四十-原文.html'>第四十章-卷四十</a></p><p class='next'>下一节：<a href='第四十二章-卷四十二-原文.html'>第四十二章-卷四十二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

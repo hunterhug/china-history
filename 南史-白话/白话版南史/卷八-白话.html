@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -255,8 +282,9 @@
 </p><p>元帝对于各种技艺方术无所不通。他曾经很久得不到南方的消息，就进行占卜，遇到了《剥》卦转为《艮》卦，他说：“南方的消息已经到了，现在应当派身边像汉代季心那样的勇士前去观看。”事实果然和他说的一样，宾客们都对他的妙算感到惊诧。凡是他所占卜判断的事情都是这样。起初他跟随刘景学相面术，便询问自己的年命，刘景回答说：“不到五十的时候，会有一次小灾，举行祭祀加以禳除，即可避免。”元帝自我勉励说：“如果真有命定的遭遇，进行禳除又有什么用处？”他到这时已经四十七岁了，禁忌特别多，墙壁倒塌，房屋毁坏，如果年月的吉凶不方便，他就到底也不肯修理。院子里的杂草荒芜，就让人像神农氏那样鞭击辨味，他就是这样地谨慎护卫。
 </p><p>他著有《孝德传》、《忠臣传》各三十卷、《丹阳尹传》十卷、注《汉书》一百一十五卷，《周易讲疏》十卷、《内典博要》一百卷、《连山》三十卷、《词林》三卷、《玉韬》、《金楼子》、《补阙子》各十卷，《老子讲疏》四卷，《怀旧传》二卷、《古今全德志》、《荆南地记》、《贡职图》、《古今同姓名录》一卷，《筮经》十二卷，《式赞》三卷，文集五十卷。
 </p><p>起初，承圣二年三月，有两条龙从南郡城西升天，百姓聚集观看，五彩分明。江陵的元老旧臣私下互相哭着说：“从前有龙出于建康秦淮河，而天下大乱，现在重又出现，灾祸很快就要到来了。”元帝听说后十分厌恶，过了一年便遇上了祸患。又江陵先前曾有九十九个沙洲，自古相传说：“洲满一百，当出天子。”桓玄曾当荆州刺史，心内曾有篡逆的企图，便派人凿破了一个洲，以应合一百这个数目。随后就崩毁了，结果无所成就。宋文帝做宜都王，是一个藩国，一个沙洲自己出现了，不久文帝篡夺了皇位。后来遇到了元凶劭之祸，这个洲又沉没了。太清末年，枝江的杨之阁浦又生了一个沙洲，众僚友上书庆贺，第二年就即了皇位。承圣末年，那个洲与大岸相通，还是九十九个。</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷七-白话.html'>卷七</a></p><p class='next'>下一节：<a href='卷九-白话.html'>卷九</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='卷七-白话.html'>卷七</a></p><p class='next'>下一节：<a href='卷九-白话.html'>卷九</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

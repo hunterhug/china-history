@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -217,8 +244,9 @@
 </p><p>其撰集汉事，未见录以继后史。适作《灵纪》及十意，又补诸列传四十二篇，因李C765之乱，湮没多不存。所著诗、赋、碑、诔、铭、赞、连珠、箴、吊、论议、《独断》、《劝学》、《释诲》、《叙乐》、《女训》、《篆艺》、祝文、章表、书记，凡百四篇，传于世。
 </p><p>论曰：意气之感，士所不能忘也。流极之运，有生所共深悲也。当伯喈抱钳扭，徙幽裔，仰日月而不见照烛，临风尘而不得经过，其意岂及语平日幸全人哉！及解刑衣，窜欧越，潜舟江壑，不知其远，捷步深林，尚苦不密，但愿北首旧丘，归骸先垄，又可得乎？董卓一旦入朝，辟书先下，分明枉结，信宿三迁。匡导既申，狂僭屡革，资《同人》之先号，得北叟之后福。屡其庆者，夫岂无怀？君子断刑，尚或为之不举，况国宪仓卒，虑不先图，矜情变容，而罚同邪党？执政乃追怨子长谤书流后，放此为戮，未或闻之典刑。
 </p><p>赞曰：季长戚氏，才通情侈。苑囿典文，流悦音伎。邕实慕静，心精辞绮。斥言金商，南徂北徒，籍梁怀董，名浇身毁。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十三章-马融列传上-原文.html'>第五十三章-马融列传上</a></p><p class='next'>下一节：<a href='第五十五章-左周黄列传-原文.html'>第五十五章-左周黄列传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第五十三章-马融列传上-原文.html'>第五十三章-马融列传上</a></p><p class='next'>下一节：<a href='第五十五章-左周黄列传-原文.html'>第五十五章-左周黄列传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

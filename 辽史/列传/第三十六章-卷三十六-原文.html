@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -183,8 +210,9 @@
 </p><p>耶律官奴，字奚隐，林牙斡鲁之孙。沉厚多学，详于本朝世系。嗜酒好佚。初，征为宿直将军。重熙九年，以疾去官。上以官奴属尊，欲成其志，乃许自择一路节度使。官奴辞曰：“臣愚钝，不任官使。”加归义军节度使，辄请致政。官奴与欧里部人萧哇友善，哇谓官奴曰：“仕不能致主泽民，成大功烈，何屑屑为也！吾与若居林下，以枕簟自随，觞咏自乐，虽不官，无慊焉。”官奴然之。时称“二逸”。乾统间，官奴卒。
 </p><p>萧蒲离不，字桵懒，魏国王惠之四世孙。父母蚤丧，鞠于祖父兀古匿。性孝悌。年十三，兀古匿卒，自以早失怙恃，复遭祖丧，哀毁逾礼，族里嘉叹。尝谓人曰：“我于亲不得终养，今谁为训者？苟不自勉，何以报鞠育恩！”自是力学，于文艺无不精。乾统间，以兀古匿之故召之，不应。常与亲识游猎山水，奉养无长物仆隶，欣欣如也。或曰：“公胡不念以嗣先世功名？”答曰：“自度不足以继先业，年逾强仕，安能益主庇民！”累征，皆以疾辞。晚年，谢绝人事，卜居抹古山，屏远荤茹，潜心佛书，延有道者谈论弥日。人问所得何如，但曰：“有深乐！惟觉六凿不相攘，余无知者。”一日，易服，无疾而逝。
 </p><p>论曰：隐固未易为也，而亦未可轻以与人。若札剌谢职不谈时务，官奴两辞节镇，蒲离不召而不赴，虽未足谓之隐，然在当时能知内外之分，甘于肥遯，不犹愈于求富贵利达而为妻妾羞者哉？故称卓行可也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十五章-卷三十五-原文.html'>第三十五章-卷三十五</a></p><p class='next'>下一节：<a href='第三十七章-卷三十七-原文.html'>第三十七章-卷三十七</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三十五章-卷三十五-原文.html'>第三十五章-卷三十五</a></p><p class='next'>下一节：<a href='第三十七章-卷三十七-原文.html'>第三十七章-卷三十七</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

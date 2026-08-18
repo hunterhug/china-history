@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -343,8 +370,9 @@
 </p><p>十一月二十六日，以监察御史李程、秘书正字张聿、蓝田县尉王涯都为翰林学士。
 </p><p>十二月，吐蕃、南诏、日本国都派遣使者朝贡。二十九日，以桂管防御使颜证为桂州刺史、桂管观察使。
 </p><p>贞元二十一年(805)春正月一日朔，皇上驾到含元殿接受朝贺。这天，皇上身体不适。六日，以浙东观察判官凌准为翰林学士。二十三日，在宣政殿会见群臣，宣读遗诏：皇太子应在灵柩前即皇帝位。这天，皇上在会宁殿去世，享年六十四岁。二十四日，把皇帝的灵柩迁到太极殿。二十六日，发布丧事，群臣全部穿素衣戴孝。皇太子即皇帝位。永贞元年(805)九月一日，群臣上谥号曰神武孝文，庙号德宗。十月十四日，安葬在崇陵，昭德皇后王氏在崇陵附祭。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十二章-卷十二-白话.html'>第十二章-卷十二</a></p><p class='next'>下一节：<a href='第十四章-卷十四-白话.html'>第十四章-卷十四</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十二章-卷十二-白话.html'>第十二章-卷十二</a></p><p class='next'>下一节：<a href='第十四章-卷十四-白话.html'>第十四章-卷十四</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

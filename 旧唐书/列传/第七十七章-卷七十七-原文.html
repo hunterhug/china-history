@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -201,8 +228,9 @@
 <p>　　偃以才地当掌文诰，以躁求为时论所抑，郁郁不得志。泾师之乱，从驾不及， 匿于田家，为贼所得。硃泚素知之，得偃甚喜，伪署中书舍人，僭号辞令，皆偃为 之。贼败，与伪中丞崔宣、贼将杜如江、吴希光等十三人，李晟收之，俱斩于安国 寺前。 </p>
 <p>　　史臣曰：肇分阴阳，爰有生死，修短二事，贤愚一途。故君子遇夷险之机，不 易其节；小人昧逆顺之道，而陷于刑。鸿毛泰山，斯为至论。令言远总师徒，首为 叛逆；光晟初当委任，危输款诚；源休虽曰士流，甚于元恶；乔琳巧辞真主，俯就 伪官；蒋镇贪禄隳节，皆曰小人。经纶之徒，不足言尔。 </p>
 <p>　　赞曰：时争逆顺，命击死生。君子守节，小人正刑。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十六章-卷七十六-原文.html'>第七十六章-卷七十六</a></p><p class='next'>下一节：<a href='第七十八章-卷七十八-原文.html'>第七十八章-卷七十八</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第七十六章-卷七十六-原文.html'>第七十六章-卷七十六</a></p><p class='next'>下一节：<a href='第七十八章-卷七十八-原文.html'>第七十八章-卷七十八</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

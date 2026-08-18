@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>侯莫陈崇传<span style='font-size:small'> 白话</span></h1>
 <p>侯莫陈崇，字尚乐，代地武川人。他的祖先是北魏的别部，居住在库斛真水。祖父侯莫陈元，以清白人家子弟的身份镇守武川，因而在那里安家。他的父亲侯莫陈兴任殿中将军、羽林监，后来因为侯莫陈崇功勋卓著，被朝廷追赠为柱国、太保、清河郡公。<BR><BR>　　侯莫陈崇从小骁勇善战，工于骑马射箭。十五岁时，随贺拔岳与..朱荣征讨葛荣。后来跟随贺拔岳西入潼关，攻破赤水蜀。又跟贺拔岳拼力作战，打败万俟丑奴。他率轻骑向北追赶敌兵，到泾州长坑赶上，敌兵没有来得及布阵，他单人独骑冲入敌群，在马上将万俟丑奴生擒活拿，把敌兵彻底消灭。因功被封为泾县侯。<BR><BR>　　贺拔岳被侯莫陈悦谋害，他与诸将共同商议迎接周文帝宇文泰。宇文泰来到军中，原州刺史史归仍为侯莫陈悦守卫州城。宇文泰派他攻打州城。他直接来到城下，立即占据城门。这时，李远兄弟也在城内，预先知道他要到来，里应外合，一起呐喊，伏兵四处突起，便活捉史归，并将他斩首。朝廷命侯莫陈崇代理原州刺史，仍跟随宇文泰攻打侯莫陈悦，被封为广武县伯。多次升迁，官至仪同三司，改封为彭城郡公。他随大军活捉窦泰，收复弘农，克复沙苑，争夺河桥，又讨平稽胡，屡立战功，晋位为柱国大将军。文官制度建立，他被封为大司空。孝闵帝登基立周，封他为梁国公，加太保衔。又历任大宗伯，大司徒。<BR><BR>　　保定三年(563)，他跟随武帝到原州。这时武帝夜晚赶回京师，人们都私下议论，感到很奇怪。侯莫陈崇对他所亲近的人常升说“：我前几日听占卜的人说，晋公宇文护今年有灾殃。天子今天忽然连夜回京，不过是处死宇文护罢了。”于是，人们纷纷互相传说。有人告发其事，武帝在大德殿召集所有的公卿大臣斥责他，他惶恐畏惧，连声谢罪。这天夜里，宇文护派兵到他家里，逼迫他自杀。葬礼按照正常的礼仪，谥号为躁。宇文护被诛杀，又给他改谥号为庄闵。</p>
-<div class='pn'><p class='pre'>上一节：<a href='宇文忻传-白话.html'>宇文忻传</a></p><p class='next'>下一节：<a href='王谦传-白话.html'>王谦传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='宇文忻传-白话.html'>宇文忻传</a></p><p class='next'>下一节：<a href='王谦传-白话.html'>王谦传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

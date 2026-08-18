@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -219,8 +246,9 @@
 </p><p>世宗谓景仁曰：“卿博学老儒，求如古之御史大夫，然后行之，期为称矣。不能如古之人，众人不独诮卿，亦谓朕不能知人。卿醉中颇轻脱失言，当以酒为戒。”初，朝臣言景仁有文艺而颇率易，不可任台察。景仁被诏，就台中治监察罪，辄以便服视决罚。上闻之，责景仁曰：“朕初用卿为大夫，或言卿不可居此官，今果不用故事，率易如此。卿自慎，不然黜罚及矣！”景仁顿首谢。
 </p><p>未几，诏葬元妃李氏于海王庄。平章政事乌古论元忠提控葬事，都水监丞高杲寿治道路不如式，元忠不奏，决之四十。景仁劾奏元忠辄断六品官，无人臣礼。上曰：“卿劾奏甚当。”使左宣徽使蒲察鼎寿传诏戒敕元忠曰：“监丞六品，有罪闻奏，今乃一切趋办，擅决六品官，法当如是耶？御史在尊朝廷，汝当自咎，勿复再！”元忠尚豫国公主，怙宠自任，倨慢朝士。景仁劾之，朝廷肃然。是岁，薨。
 </p><p>赞曰：高桢以旧劳为御史大夫，刚明自任，绳治无所避，几不免于怨憎之荼毒。直己而行，自古难之。白彦敬不受大定之诏而世宗贤之。向使久在此位，其深谋谠论，必有竦动人者。张景仁儒者之勇，廷论元忠，正矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p><p class='next'>下一节：<a href='第二十三章-卷二十三-原文.html'>第二十三章-卷二十三</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p><p class='next'>下一节：<a href='第二十三章-卷二十三-原文.html'>第二十三章-卷二十三</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

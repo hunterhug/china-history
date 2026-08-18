@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -364,8 +391,9 @@
 <p>　　苹历三镇，凡十余年，家无声乐，俸禄悉以散诸亲族故人子弟。除左散骑常侍 致仕。时有年过悬车而不知止者，唯苹年至而无疾请告，角巾东洛，时甚高之。卒， 年七十四，赠工部尚书。 </p>
 <p>　　阎济美，登进士第。累历台省，有长者之誉。自婺州刺史为福建观察使，复为 润州刺史、浙西观察使。所至以简淡为理，两地之人，常赋之外，不知其他。入拜 右散骑常侍。华州刺史、潼关防御、镇国军使，入为秘书监。以年及悬车，上表乞 骸骨，以工部尚书致仕。后以恩例，累有进改。及殁于家，年九十余。 </p>
 <p>　　赞曰：圣人造世，才杰济时。在理致治，无为而为。坑鹔非议，简易从规。乐 只君子，邦家之基。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百三十四章-卷一百三十四-原文.html'>第一百三十四章-卷一百三十四</a></p><p class='next'>下一节：<a href='第一百三十六章-卷一百三十六-原文.html'>第一百三十六章-卷一百三十六</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第一百三十四章-卷一百三十四-原文.html'>第一百三十四章-卷一百三十四</a></p><p class='next'>下一节：<a href='第一百三十六章-卷一百三十六-原文.html'>第一百三十六章-卷一百三十六</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

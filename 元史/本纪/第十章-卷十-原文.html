@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -201,8 +228,9 @@
 </p><p>冬十月己卯，享于太庙。辛巳，叙州、夔府至江陵界立水驿。乙酉，帝御香阁。命大乐署令完颜椿等肄文武乐。戊子，张融诉西京军户和买和雇，有司匿所给价钞计万八千余锭；官吏坐罪，以融为侍卫军总把。千户脱略、总把忽带擅引军入婺州永康县界，杀掠吏民，事觉，自陈扈从先帝出征有功，乞贷死。敕没入其家赀之半，杖遣之。辛卯，赈和州贫民钞。乙未，纳碧玉爵于太庙。丙申，太阴犯太微西垣上将。辛丑，以月直元辰，命五祖真人李居寿作醮事，奏赤章，凡五昼夜。毕事，居寿请间言：“皇太子春秋鼎盛，宜预国政。”帝喜曰：“寻将及之。”明日，下诏皇太子燕王参决朝政，凡中书省、枢密院、御史台及百司之事，皆先启后闻。甲辰，赐高丽国王至元十七年历日。
 </p><p>十一月戊申，敕诸路所捕盗，初犯赃多者死，再犯赃少者从轻罪论。阿合马言：“有盗以旧钞易官库新钞百四十锭者，议者谓罪不应死，且盗者之父执役臣家，不论如法，宁不自畏。”诏处死。壬子，遣礼部尚书柴椿偕安南国使村中赞赍诏往谕安南国世子陈日烜，责其来朝。癸丑，太阴犯荧惑。乙卯，罢太原、平阳、西京、延安路新签军还籍。罢招讨使刘万奴所管无籍军愿从大军征讨者。赵炳言陕西运司郭同知、王相府郎中令郭叔云盗用官钱，敕尚书秃速忽、侍御史郭祐检核之。戊辰，命湖北道宣慰使刘深教练鄂州、汉阳新附水军。诏谕四川宣慰司括军民户数。己巳，以梧州妖民吴法受扇惑藤州、德庆府泷水徭蛮为乱，获其父，诛之。并教坊司入拱卫司。
 </p><p>十二月戊寅，发粟钞赈盐司灶户之贫者。括甘州户。庚辰，安南国贡药材。甲申，祀太阳。丙申，敕枢密、翰林院官，就中书省与唆都议招收海外诸番事。丁酉，八里灰贡海青。回回等所过供食，羊非自杀者不食，百姓苦之。帝曰：“彼吾奴也，饮食敢不随我朝乎？”诏禁之。诏谕海内海外诸番国主。赐右丞张惠银五千四百两。敕自明年正月朔日，建醮于长春宫，凡七日，岁以为例。命李居寿告祭新岁。诏谕占城国主，使亲自来朝。唆都所遣阇婆国使臣治中赵玉还。改单州、兖州隶济宁路；复置万泉县，隶河中府；改垣曲县隶绛州；降归州路为州；升沔阳、安陆各为府；改京兆为安西路；改惠州、建宁、梧州、柳州、象州、邕州、庆远、宾州、横州、容州、浔州并为路。建圣寿万安寺于京城。帝师亦怜吉卒。敕诸国教师禅师百有八人，即大都万安寺设斋圆戒，赐衣。是岁，断死罪百三十二人。保定等二十余路水旱风雹害稼。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p><p class='next'>下一节：<a href='第十一章-卷十一-原文.html'>第十一章-卷十一</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p><p class='next'>下一节：<a href='第十一章-卷十一-原文.html'>第十一章-卷十一</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

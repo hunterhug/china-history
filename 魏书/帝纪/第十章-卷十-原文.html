@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -200,8 +227,9 @@
 </p><p>十有二月壬寅朔，尔朱兆寇丹谷，都督崔伯凤战殁，都督羊文义、史五龙降兆，大都督源子恭奔退。甲辰，尔朱兆、尔朱度律自富平津上，率骑涉渡，以袭京城。事出仓卒，禁卫不守。帝出云龙门。兆逼帝幸永宁佛寺，杀皇子，并杀司徒公、临淮王彧，左仆射、范阳王诲。戊申，元晔大赦天下。尔朱度律自镇京师。甲寅，尔朱兆迁帝于晋阳；甲子，崩于城内三级佛寺，时年二十四。并害陈留王宽。
 </p><p>是月，河西人纥豆陵步蕃、破落韩常大败尔朱兆于秀容。齐州城人赵洛周据西城反，应尔朱兆。刺史、丹阳王萧赞弃城走。南阳太守赵脩延执荆州刺史李琰之，自行州事。中兴二年谥为武怀皇帝，太昌元年又谥孝庄皇帝，庙号敬宗。十一月，葬于静陵。
 </p><p>史臣曰：魏自孝昌之末，天下淆然，外侮内乱，神器固将无主。庄帝潜思变化，招纳勤王，虽时事孔棘，而卒有四海。猾逆既翦，权强擅命，抑是兆谋运智之秋，劳谦夕惕之日也。未闻长辔之策，遽深负刺之恐，谋谟罕术，授任乖方，猜嫌行戮，祸不旋踵。鸣呼！胡丑之为衅也，岂周衰晋末而已哉！至于高祖不祀，武宣享庙，三后降鉴，福禄固不永矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p><p class='next'>下一节：<a href='第十一章-卷十一-原文.html'>第十一章-卷十一</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p><p class='next'>下一节：<a href='第十一章-卷十一-原文.html'>第十一章-卷十一</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

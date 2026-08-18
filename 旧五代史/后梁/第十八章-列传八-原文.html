@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -195,8 +222,9 @@
 </p><p>天祐二年春正月，太祖召振，谓曰：“王师范来降，易岁尚处故籓，今将奏请徙授方面，其为我驰骑，以兹意达之。”振至青州，师范即日出公府，以节度、观察二印及文簿管钥授于振。师范虽已受代，而疑挠特甚，屡挥泣求贷其族，振因以切理谕之曰：“公不念张绣事耶！汉末，绣屡与曹公立敌，岂德之耶，及袁绍遣使招绣，贾诩曰：‘袁家父子自不相容，何能主天下英士，曹公挟天子令诸侯，其志大，不以私仇为意，不宜疑之。’今梁王亦岂以私怨害忠贤耶！”师范洒然大悟，翼日，以其族迁。太祖乃表振为青州留后，未几，征还。
 </p><p>唐自昭宗迁都之后，王室微弱，朝廷班行，备员而已。振皆颐指气使，旁若无人，朋附者非次奖升，私晋者沈弃。振每自汴入洛，朝中必有贬窜，故唐朝人士目为“鸱鸮”。天祐中，唐宰相柳璨希太祖旨，谮杀大臣裴枢、陆扆等七人于滑州白马驿。时振自以咸通、乾符中尝应进士举，累上不第，尤愤愤，乃谓太祖曰：“此辈自谓清流，宜投于黄河，永为浊流。”太祖笑而从之。洎太祖受禅，自宣义军节度副使、检校司徒授殿中监，累迁户部尚书。庶人友珪篡立，代敬翔为崇政院使。末帝即位，赵、张二族用事，遂为所间，谋猷献替，多不见从，振每称疾避事。龙德末，闲居私第将期矣，晋主入汴，振谒见首罪，郭崇韬指振谓人曰：“人言李振乃一代奇才，吾今见之，乃常人耳！”会段凝等疏梁氏权要之臣，振与敬翔等同日族诛。
 </p><p>史臣曰：文蔚、贻矩，皆唐朝之旧臣，遇梁室之强禅，奉君命以来使，狎神器以授之，逢时若斯，亦为臣者之不幸也。抑不为其相，不亦善乎！杜晓著文雅之称，张策有冲淡之量，咸登台席，无忝士林。敬翔、李振，始辅霸图，终成帝业。及国之亡也，一则殒命以明节，一则视息以偷生，以此较之，翔为优矣。振始有浊流之言，终取赤族之祸，报应之事，固以昭然。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十七章-列传七-原文.html'>第十七章-列传七</a></p><p class='next'>下一节：<a href='第十九章-列传九-原文.html'>第十九章-列传九</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十七章-列传七-原文.html'>第十七章-列传七</a></p><p class='next'>下一节：<a href='第十九章-列传九-原文.html'>第十九章-列传九</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

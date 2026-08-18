@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -390,8 +417,9 @@
 </p><p>皇后、妃子等人，虽受宠爱，也大多曾被杖击背部。
 </p><p>于是内外恐惧，人人不安，都希望暂且免祸，没有坚定的志向，叠足而立，屏息而望，直到皇帝驾崩。
 </p><p>史臣曰：直担知道自己的长子没有什么才德，但考虑到宗室的大法，对宣童的溺爱就像置!造对待他的儿子一样，但他又没有宋宣公那样明哲。高祖想通过鞭挞的手段来震慑宣帝，希望对他有所惩戒，但是教他做人的正确方法，难道会足像这样的吗。最后终于使得昏庸残暴的君主统治天下，使奸佞邪恶的人恣行毒祸，好的东西不论多小都一定要抛弃，坏的事情不管多大没有不去做的。那怕就是穷尽了南山的竹简，也不足以写完他的过错；即使是用尽丁东观的笔墨，也不能记录完他的罪行。然而仍能保全自己的性命，直到他的儿子在位时国家才灭亡，真是幸运啊。</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷六-白话.html'>卷六</a></p><p class='next'>下一节：<a href='卷八-白话.html'>卷八</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='卷六-白话.html'>卷六</a></p><p class='next'>下一节：<a href='卷八-白话.html'>卷八</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

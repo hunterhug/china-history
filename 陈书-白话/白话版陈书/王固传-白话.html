@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>王固传<span style='font-size:small'> 白话</span></h1>
 <p>王固字子坚，是左光禄大夫王通的弟弟。他年少时高洁雅正，广泛涉猎经文史籍，因他为梁武帝的外甥，封为莫口亭侯。推举为秀才。初任梁秘书郎，迁太子洗马，掌东宫管记，生母去世离职。服丧期满，任丹阳尹丞。侯景之乱时，逃奔荆州，梁元帝承应制令任他为相国户曹属，掌管记。不久出使西魏，魏人因他是梁氏外戚，以厚礼相待。承圣元年(552)，迁任太子中庶子，不久任贞威将军、安南长史、浔阳太守。荆州陷落，王固到鄱阳，随兄王质越过东岭，寄居信安县。绍泰元年(555)，征辟为侍中，未就任。永定年间，移居吴郡。世祖认为王固清淡谦恭，想结为亲家。天嘉二年(561)，王固到京都，拜官国子祭酒。三年迁中书令。四年又任散骑常侍、国子祭酒。同年，立王固女为皇太子妃，礼遇甚重。<BR><BR>　　废帝即位，任侍中、金紫光禄大夫。当时高宗辅佐朝政，王固因是废帝外戚，乳母常来往宫中，稍稍泄漏了密旨，事情发觉后，跟他亲近的将领都被杀，高宗因王固本身无兵权，且居处俭朴，只免所居官，软禁。<BR><BR>　　太建二年(570)，按照旧例任招远将军、宣惠豫章王谘议参军。迁任太中大夫、太常卿、南徐州大中正。七年居官去世，时年六十三岁。追赠金紫光禄大夫。丧事所陈书需财物，随其所需加以供给。至德二年(584)迁葬，谥曰恭子。<BR><BR>　　王固清心寡欲，居丧期间以孝道闻名。他又崇拜佛法，自从生母去世后，便终身吃素食，晚上坐禅，白天诵读佛经，同时研习《成实论》义，然而玄谈非其所长。王固曾出使西魏，在皇上宴享大臣时，他请求停下来杀一只羊，羊在王固面前跪拜。后又在昆明池设宴，魏人知道南方人爱吃鱼，便撒大网捕鱼，王固念佛咒，于是一条鱼也未捕到。<BR><BR>　　其子王宽，官至司徒长史、侍中。</p>
-<div class='pn'><p class='pre'>上一节：<a href='张种传-白话.html'>张种传</a></p><p class='next'>下一节：<a href='孔奂传-白话.html'>孔奂传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='张种传-白话.html'>张种传</a></p><p class='next'>下一节：<a href='孔奂传-白话.html'>孔奂传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

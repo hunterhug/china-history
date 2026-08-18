@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>第八十一章-宗楚客传<span style='font-size:small'> 白话</span></h1>
 <p>宗楚客，蒲州河东人，是武则天姑母的儿子，他的哥哥宗秦客，在垂拱初年(685)暗中劝武则天改制称帝，因此累任内史。后来与宗楚客和宗晋卿两个弟弟一起奸赃事发，流配岭外。宗秦客死，宗楚客、宗晋卿不久又召回京师，宗楚客累任夏官侍郎，代理宰相。神龙初年(705)，宗楚客任太仆卿。武三思得宠专权时，引荐宗楚客为兵部尚书，代宰相，宗晋卿任将作大匠。节愍太子杀了武三思，兵败，逃到..县，宗楚客派人追赶而杀掉了他。并以节愍太子的头来祭奠武三思和武崇训的灵柩。韦庶人和安乐公主对他特别亲信。未过多久，任他为中书令。宗楚客虽然依附韦庶人，但是心怀异图，与侍中纪处讷共为朋党，所以当时人们喊他们为宗纪。<BR><BR>　　景龙年中，西突厥娑葛与阿史那忠节不和，经常互相侵扰，西边的领土很不安宁。安西都护郭元振奏请役使阿史那忠节到内地，宗楚客与宗晋卿、纪处讷等都接收了阿史那忠节的重赂，奏请朝廷发兵来讨伐娑葛，不采纳郭元振的建议。娑葛知道了此情大怒，举兵入侵，造成严重的边患。在这种情况下，监察御史崔琬劾奏宗楚客等。按原有的制度，大臣中有被御史弹劾的，就要低头弯腰站在朝堂待罪。宗楚客却发怒作色而进，自己说自己执法忠鲠，遭到了崔琬的诬陷。中宗竟不能查清是非，就要崔琬与宗楚客等结为义兄弟来让他们和解。韦庶人事败露，宗楚客和宗晋卿都被诛杀。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十章-萧至忠传-白话.html'>第八十章-萧至忠传</a></p><p class='next'>下一节：<a href='第八十二章-苏味道传-白话.html'>第八十二章-苏味道传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第八十章-萧至忠传-白话.html'>第八十章-萧至忠传</a></p><p class='next'>下一节：<a href='第八十二章-苏味道传-白话.html'>第八十二章-苏味道传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

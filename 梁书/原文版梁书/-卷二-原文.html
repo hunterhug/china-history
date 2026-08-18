@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -213,8 +240,9 @@
 </p><p>十六年春正月辛未，舆驾亲祠南郊，诏曰：“朕当扆思治，政道未明，昧旦劬劳，亟移星纪。今太皞御气，句芒首节，升中就阳，禋敬克展，务承天休，布兹和泽。尤贫之家，勿收今年三调。其无田业者，所在量宜赋给。若民有产子，即依格优蠲。孤老鳏寡不能自存，咸加赈恤。班下四方。诸州郡县，时理狱讼，勿使冤滞，并若亲览。”二月庚戌，老人星见，甲寅，以安前将军豫章王综为南徐州刺史。三月丙子，河南王遣使献方物。夏四月甲子，初去宗庙牲。潮沟获白雀一。六月戊申，以庐陵王绩为江州刺史。七月丁丑，以郢州刺史安成王秀为镇北将军、雍州刺史。八月辛丑，老人星见。扶南、婆利国各遣使献方物。冬十月，去宗庙荐修，始用蔬果。
 </p><p>十七年春正月丁巳朔，诏曰：“夫乐所自生，含识之常性；厚下安宅，驭世之通规。朕矜此庶氓，无忘待旦，亟弘生聚之略，每布宽恤之恩；而编户未滋，迁徙尚有，轻去故乡，岂其本志？资业殆阙，自返莫由，巢南之心，亦何能弭。今开元发岁，品物惟新，思俾黔黎，各安旧所。将使郡无旷土，邑靡游民，鸡犬相闻，桑柘交畛。凡天下之民，有流移他境，在天监十七年正月一日以前，可开恩半岁，悉听还本，蠲课三年。其流寓过远者，量加程日。若有不乐还者，即使著土籍为民，准旧课输。若流移之后，本乡无复居宅者，村司三老及余亲属，即为诣县，占请村内官地官宅，令相容受，使恋本者还有所托。凡坐为市埭诸职，割盗衰灭，应被封籍者，其田宅车牛，是民生之具，不得悉以没入，皆优量分留，使得自止。其商贾富室，亦不得顿相兼并。遁叛之身，罪无轻重，并许首出，还复民伍。若有拘限，自还本役。并为条格，咸使知闻。”二月癸巳，镇北将军、雍州刺史安成王秀薨。甲辰，大赦天下。乙卯，以领石头戍事南康王绩为南兗州刺史。三月甲申，老人星见。丙申，改封建安王伟为南平王。夏五月戊寅，骠骑大将军、扬州刺史临川王宏免。己卯、干利国遣使献方物。以领军将军萧景为安右将军，监扬州。辛巳，以临川王宏为中军将军、中书监。六月乙酉，以益州刺史鄱阳王恢为领军将军。中军将军，中书监临川王宏以本号行司徒。癸卯，以国子祭酒蔡撙为吏部尚书。秋八月壬寅，老人星见。诏以兵驺奴婢，男年登六十，女年登五十，免为平民。冬十月乙亥，以中军将军、行司徒临川王宏为中书监、司徒。十一月辛亥，以南平王伟为左光禄大夫、开府仪同三司。
 </p><p>十八年春正月甲申，以领军将军鄱阳王恢为征西将军、开府仪同三司、荆州刺史，荆州刺史始兴王憺为中抚将军、开府仪同三司、领军。以尚书左仆射袁昂为尚书令，尚书右仆射王暕为尚书左仆射，太子詹事徐勉为尚书右仆射。辛卯，舆驾亲祠南郊，孝悌力田赐爵一级。二月戊午，老人星见。四月丁巳，大赦天下。秋七月甲申，老人星见。于阗、扶南国各遣使献方物。</p>
-<div class='pn'><p class='pre'>上一节：<a href='-卷一-原文.html'>-卷一</a></p><p class='next'>下一节：<a href='-卷三-原文.html'>-卷三</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='-卷一-原文.html'>-卷一</a></p><p class='next'>下一节：<a href='-卷三-原文.html'>-卷三</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

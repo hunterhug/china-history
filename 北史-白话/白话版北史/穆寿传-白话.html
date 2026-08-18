@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>穆寿传<span style='font-size:small'> 白话</span></h1>
 <p>穆观的儿子穆寿承袭父亲的爵位，娶乐陵公主为妻，被任命为驸马都尉。他办事明快机敏，有父亲的风范。太武帝很喜爱和器重他，提升为下大夫。他奏事有机智，善于应变，朝廷内外都有声名。升任侍中、中书监、领南部尚书，晋爵为宜都王，加征东大将军。穆寿辞谢，并说“：我的祖父穆崇，在先皇时代，多次遇到危难。幸亏天助梁眷，诚心先来告知，所以效力于前朝，传福于后代。过去陈平受奖赏，归功于无知。如今梁眷的大功未赏，臣下惟独世世受荣幸，岂不是愧对古代贤人，也有损于国家大典？”太武帝大为赞美，便寻找梁眷的孙子，赐爵为郡公。<BR><BR>　　皇帝亲征凉州时，让穆寿辅佐景穆帝，总管机要大事，内外都听命于他。到达云中，准备渡河时，皇帝来到另外一间静室，召见穆寿和司徒崔浩、尚书李顺。并对穆寿说“：蠕蠕的吴提跟牧犍联和结盟，如今听说我出征凉州，必定会来侵犯边塞。如果埋伏军队在漠南，歼灭敌人是很容易的。田地收获之后，可以分兵埋伏在要害的地方，以等待敌人到达。引诱敌军深入，然后攻击他。如果违背了我的部署，被敌人所侵害，我回京时就斩了你。崔浩、李顺作证，我不是讲假话的。”可是穆寿相信卜筮的人说的话，认为敌人不会来，竟然毫不防备，吴提果然前来，京城大惊。穆寿也不知怎么办好，想修建西郭门，请景穆帝退避到南山以保全，惠保太后不听他的主意，这才停止。派司空长孙道生等攻打敌人。太武帝回京以后，因为没有受到大的损伤，所以也没有追究他。<BR><BR>　　景穆皇帝临国，穆寿和崔浩等辅佐朝政。人们都很敬重崔浩，穆寿却总是欺负他。他又自恃职务和地位，没有人能够比得上他。他对儿子穆师说“：只要我儿子能像我这样，也就足以胜过别人了，不需要苦苦教他。”他对待亲叔父伯父和兄弟们都像对待奴仆一样，夫妻并肩而坐吃饭，让叔父伯父吃剩下的饭菜，被当时人所鄙视和嘲笑。死后，赠为太尉，谥为“文宣”。</p>
-<div class='pn'><p class='pre'>上一节：<a href='穆崇传-白话.html'>穆崇传</a></p><p class='next'>下一节：<a href='穆亮传-白话.html'>穆亮传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='穆崇传-白话.html'>穆崇传</a></p><p class='next'>下一节：<a href='穆亮传-白话.html'>穆亮传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

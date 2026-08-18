@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>张元传<span style='font-size:small'> 白话</span></h1>
 <p>张元字孝始，河北芮城人。祖父张成，代理平原郡太守。父亲张延亻隽，在州郡做官。逐步升迁功曹主簿。都因非常淳朴受到乡里的推崇。<BR><BR>　　张元生性谦虚谨慎，孝顺父母，稍稍涉猎经史，但是却精通佛家经典。六岁那年，他的祖父因为夏日中午炎热，想把张元放到井中沐浴。张元坚决不肯听从。祖父说他贪玩，就用手杖敲打他的头说：“你为什么不肯洗浴？”张元回答说“：衣服是用来遮盖形体的，是为了覆盖轻慢之处。我不能轻慢地把身体显露在光天化日之下。”祖父感到惊异就放了他。<BR><BR>　　南边的邻居有两棵杏树，杏子熟后有许多落在张元家园中。其他许多小孩争着拾取杏子吃。张元拾到杏子，就送还给杏树的主人。村头小路上有一只被人丢弃的狗仔，张元就把它拾回家养育。他的叔父愤怒地说：“养这个东西干什么？”抓起狗仔想再次扔掉。张元回答说“：凡是有生命的东西，无不重视其性命。如果是上天所生，上天所灭，那是自然的法则。如今被人丢弃而死，不符合法则。如果看见了而不收养，就是没有仁爱之心。因此把它捡回来养育。”叔父被他的话感动，就准许他收养。不久，就有一条母狗衔着一只野兔放到张元面前而后离去。<BR><BR>　　到了张元十六岁，他的祖父已经失明三年了。张元一直忧愁哭泣，昼夜诵读佛经，做礼拜以祈求福祉。后来诵读《药师经》，见有“盲人得以复明”的话，就请来七个僧人，点燃七只灯，七天七夜诵《药师经》做道场。每人都说：“天人师啊！张元作为孙子不孝顺，使祖父失明。如今用灯光普照法界，希望祖父的眼睛能够见到光明，张元请求代替祖父失明。”像这样经过了七天，张元夜里梦见一个老翁，用金钗治疗祖父的眼睛。梦中欢喜跳跃，于是就惊醒了，张元就一个一个地告诉家里的人。过了三天，祖父的眼睛果然复明了。<BR><BR>　　后来，祖父卧病两年，张元随祖父的饭量大小进食，不脱衣去冠，日夜服侍。祖父死后，张元悲号气绝而后复苏。随着他的父亲，三天水汤不进。乡里都感叹不已，认为张元很是奇异。县里的博士杨轨等二百多人把张元的事情上报，诏令表彰其家族。</p>
-<div class='pn'><p class='pre'>上一节：<a href='孝行传序-白话.html'>孝行传序</a></p><p class='next'>下一节：<a href='王颁传-白话.html'>王颁传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='孝行传序-白话.html'>孝行传序</a></p><p class='next'>下一节：<a href='王颁传-白话.html'>王颁传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

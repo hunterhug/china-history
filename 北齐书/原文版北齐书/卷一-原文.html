@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -189,8 +216,9 @@
 </p><p>七月壬寅，神武帅师北伐尔朱兆。封隆之言：“侍中斛斯椿、贺拔胜、贾显智等往事尔朱，普皆反噬，今在京师，宠任，必构祸隙。”神武深以为然，乃归天光、度律于京师，斩之。遂自滏口入。尔朱兆大掠晋阳，北保秀容。并州平。神武以晋阳四塞，乃建大丞相府而定居焉。尔朱兆既至秀容，分兵守险，出入寇抄。神武扬声讨之，师出止者数四，兆意怠。神武揣其岁首当宴会，遣窦泰以精骑驰之，一日一夜行三百里，神武以大军继之。二年正月，窦泰奄至尔朱兆庭。军人因宴休惰，忽见泰军，惊走。追破之于赤洪岭。兆自缢，神武亲临厚葬之。慕容绍宗以尔朱荣妻子及余众自保乌突城，降，神武以义故，待之甚厚。
 </p><p>神武之入洛也，尔朱仲远部下都督桥宁、张子期自滑台归命，神武以其助乱，且数反覆，皆斩之。斛斯椿由是内不自安，乃与南阳王宝炬及武卫将军元毗、魏光、王思政构神武于魏帝。舍人元士弼又奏神武受敕大不敬。故魏帝心贰于贺拔岳。初，孝明之时，洛下以两拔相击，谣言曰：“铜拔打铁拔，元家世将末。”好事者以二拔谓拓拔、贺拔，言俱将衰败之兆。时司空高乾密启神武，言魏帝之贰，神武封呈。魏帝杀之，又遣东徐州刺史潘绍业密敕长乐太守庞苍鹰令杀其弟昂。昂先闻其兄死，以槊刺柱，伏壮士执绍业于路，得敕书于袍领，来奔。神武抱其首，哭曰：“天子枉害司空！”遽使以白武幡劳其家属。时乾次弟慎在光州，为政严猛，又从部下取纳，魏帝使代之。慎闻难，将奔梁。其属曰：“公家勋重，必不兄弟相及。”乃弊衣推鹿车归渤海。逢使者，亦来奔。于是魏帝与神武隙矣。
 </p><p>阿至罗虏正光以前常称藩，自魏朝多事，皆叛。神武遣使招纳，便附款。先是，诏以寇贼平，罢行台。至是，以殊俗归降，复授神武大行台，随机处分。神武常赉其粟帛，议者以为徒费无益，神武不从，抚慰如初。其酋帅吐陈等感恩，皆从指麾，救曹泥，取万俟受洛干，大收其用。河西费也头虏纥豆陵伊利居河池，恃险拥众，神武遣长史侯景屡招不从。</p>
-<div class='pn'><p class='next'>下一节：<a href='卷二-原文.html'>卷二</a></p></div><footer>
+<div class='pn'><p class='next'>下一节：<a href='卷二-原文.html'>卷二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

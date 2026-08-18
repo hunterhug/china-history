@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -252,8 +279,9 @@
 </p><p>五月丁酉，群臣上谥曰圣神章武孝皇帝，庙号宪宗。庚申，葬于景陵。
 </p><p>史臣蒋系曰：宪宗嗣位之初，读列圣实录，见贞观、开元故事，竦慕不能释卷，顾谓丞相曰：“太宗之创业如此，玄宗之致理如此，既览国史，乃知万倍不如先圣。当先圣之代，犹须宰执臣僚同心辅助，岂朕今日独为理哉！”自是延英议政，昼漏率下五六刻方退。自贞元十年已后，朝廷威福日削，方镇权重。德宗不委政宰相，人间细务，多自临决，奸佞之臣，如裴延龄辈数人，得以钱谷数术进，宰相备位而已。及上自籓邸监国，以至临御，讫于元和，军国枢机，尽归之于宰相。由是中外咸理，纪律再张，果能剪削乱阶，诛除群盗。睿谋英断，近古罕俦，唐室中兴，章武而已。任异、镈之聚敛，逐群、度于籓方，政道国经，未至衰紊。惜乎服食过当，阉竖窃发，苟天假之年，庶几于理矣！
 </p><p>赞曰：贞元失驭，群盗箕踞。章武赫斯，削平啸聚。我有宰衡，耀德观兵。元和之政，闻于颂声。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十四章-卷十四-原文.html'>第十四章-卷十四</a></p><p class='next'>下一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十四章-卷十四-原文.html'>第十四章-卷十四</a></p><p class='next'>下一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

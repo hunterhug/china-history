@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -244,8 +271,9 @@
 <p>　　镈弟镛，端士也。亦进士擢第，累历宣歙、凤翔使府从事，入为殿中侍御史， 转比部员外郎、河南县令、都官郎中、河南少尹。时镈为宰相，领度支，恩宠殊异。 镛恶其太盛，每弟兄宴语，即极言之，镈颇不悦。乃求为分司，除右庶子。及镈获 罪，朝廷素知镛有先见之明，不之罪，征为国子祭酒，改太子宾客、秘书监。开成 初，除太子少保分司，卒年四十九。镛能文，尤工诗什，乐道自怡，不屑世务，当 时名士皆与之交。有集十八卷，著《性言》十四篇。 </p>
 <p>　　史臣曰：奸邪害正，自古有之；而矫诞无忌，妒贤伤善，未有如延龄、皇甫之 甚也。臣每读陆丞相论延龄疏，未尝不泣下沾衿，其守正效忠，为宗社大计，非端 士益友，安能感激犯难如此？异哉德宗之为人主也，忠良不用，谗慝是崇，乃至身 播国屯，几将覆灭，尚独保延龄之是，不悟卢杞之非，悲夫！执谊、叔文，乘时多 僻，而欲斡运六合，斟酌万几；刘、柳诸生，逐臭市利，何狂妄之甚也！章武雄材 睿断，翦削厉阶；洎逐群、度而相异、镈，盖季年之妖惑也，夫何言哉！ </p>
 <p>　　赞曰：贞元之风，好佞恶忠。龄、镈害善，为国蠹虫。裴、陆献替，嫉恶如风。 天听匪谌，吾道斯穷。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十四章-卷八十四-原文.html'>第八十四章-卷八十四</a></p><p class='next'>下一节：<a href='第八十六章-卷八十六-原文.html'>第八十六章-卷八十六</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第八十四章-卷八十四-原文.html'>第八十四章-卷八十四</a></p><p class='next'>下一节：<a href='第八十六章-卷八十六-原文.html'>第八十六章-卷八十六</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

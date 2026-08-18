@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -384,8 +411,9 @@
 </p><p>各置其星定见定伏泛积日及分秒，晨加夕减九十一日三十一分六秒，如在半岁周已下，自相乘，已上，反减岁周，余亦自相乘，满七十五，除之为分，满百为度，不满，退除为秒；以其星见伏度乘之，一十五除之；所得，以其段行差除之，为日，不满，退除为分秒；见加伏减泛积，为其星定见伏定积日及分秒；加命如前，即得定见定伏日辰及分秒。
 </p><p>求金水二星定见伏定积日
 </p><p>各以伏见日行差，除其段初日太阳盈缩积，为日，不满，退除为分秒；若夕见晨伏，盈加缩减；如晨见夕伏，盈减缩加；以加减其星定见定伏泛积日及分秒，为常积。如在半岁周已下，为冬至后；已上，去之，余为夏至后。各在九十一日三十一分六秒已下，自相乘，已上，反减半岁周，亦自相乘。冬至后晨，夏至后夕，一十八而一，为分；冬至后夕，夏至后晨，七十五而一，为分；又以其星见伏度乘之，一十五除之；所得，满行差，除之，为日，不满，退除为分秒，加减常积，为定积。在晨见夕伏者，冬至后加之，夏至后减之；夕见晨伏者，冬至后减之，夏至后加之；为其星定见定伏定积日及分秒；加命如前，即得定见定伏日晨及分秒。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

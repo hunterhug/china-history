@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -257,8 +284,9 @@
 </p><p>李德，字仲修，番禺人。洪武三年以明经荐授洛阳典史，历南阳、西安二府幕官，并能其职。以年衰乞改汉阳教谕，秩满，调义宁。义宁在粤西，荒陋甚，德为振举，文教渐兴，解官归卒。德初好为诗，晚究洛、闽之学，谓诚意为古圣喆心要，故岭南人称理学，必曰李仲修云。黄哲，亦番禺人。历仕州郡，以治行称。
 </p><p>王蒙，字叔明，湖州人，赵孟頫之甥也。敏于文，不尚榘度。工画山水，兼善人物。少时赋宫词，仁和俞友仁见之，曰“此唐人佳句也”，遂以妹妻焉。元末官理问，遇乱，隐居黄鹤山，自称黄鹤山樵。洪武初，知泰安州事。蒙尝谒胡惟庸于私第，与会稽郭传、僧知聪观画。惟庸伏法，蒙坐事被逮，瘐死狱中。
 </p><p>郭传，一名正传，字文远。洪武七年，帝御武楼，赐学士宋濂坐，谓曰：“天下既定，朕方垂意宿学之士，卿知其人乎？”对曰：“会稽有郭传者，学有渊源，其文雄赡新丽，其议论根据《六经》，异才也。”既而濂持其文以进，帝召见于谨身殿，授翰林应奉，直起居注。迁兵部主事，再迁考功监丞，进监令，出署湖广布政司参政。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百七十二章-卷一百七十二-原文.html'>第一百七十二章-卷一百七十二</a></p><p class='next'>下一节：<a href='第一百七十四章-卷一百七十四-原文.html'>第一百七十四章-卷一百七十四</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第一百七十二章-卷一百七十二-原文.html'>第一百七十二章-卷一百七十二</a></p><p class='next'>下一节：<a href='第一百七十四章-卷一百七十四-原文.html'>第一百七十四章-卷一百七十四</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

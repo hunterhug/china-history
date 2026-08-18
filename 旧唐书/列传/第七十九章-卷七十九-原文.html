@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -210,8 +237,9 @@
 <p>　　文规子彦远，大中初由左补阙为尚书祠部员外郎。景初子天保，嗣庆子彦修， 次宗子曼容。延赏东都旧第在思顺里，亭馆之丽，甲于都城，子孙五代，无所加工， 时号“三相张氏”云。 </p>
 <p>　　史臣曰：君民足则国富，将相和则国安，反是道焉非得人者。滉杀元琇，奏瑞 盐，逞斡运之能，非贞纯之士，刻下罔上，以为己功。幸逢多事之朝，例在姑息之 地，幸而获免，余无可称。延赏以私害公，罢李晟兵柄，使武臣不陈其力矣；恶直 丑正，挤柳浑相位，致贤者不进其才矣。象恭僝功，皆四凶之迹也，虽以廕继世， 以才进身，蹈非道者，实小人哉！延赏历典名籓，皆称善政，及登大位，乃彰饰情。 皋迭处大僚，徒称旧德；弘靖轻傲边事，欺减军资；洄附元载、杨炎，继及累贬， 俱非守正中立者也。《书》云：“世禄之家，鲜克由礼。”不其是欤！ </p>
 <p>　　赞曰：韩滉刻下，延赏害公。皋、洄继世，弘靖兴戎。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十八章-卷七十八-原文.html'>第七十八章-卷七十八</a></p><p class='next'>下一节：<a href='第八十章-卷八十-原文.html'>第八十章-卷八十</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第七十八章-卷七十八-原文.html'>第七十八章-卷七十八</a></p><p class='next'>下一节：<a href='第八十章-卷八十-原文.html'>第八十章-卷八十</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

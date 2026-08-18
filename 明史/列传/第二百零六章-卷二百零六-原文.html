@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -256,8 +283,9 @@
 </p><p>恩城州，唐置，宋、元仍旧。明初因之，隶广西布政司，朝贡如例。成化十九年，知州岑钦，田州土官岑溥叔也，相仇杀。溥败，钦入田州，焚府治，大肆杀掠。溥诉于制府，下三司官鞫理。弘治三年，钦复入田州，与泗城土官岑应分据其地。巡抚秦纮请调兵剿之。兵部言兵不可轻动，惟令守臣谕令应缚钦自赎。五年，钦走岑应所借兵，总镇檄应捕之，钦遂杀应父子。已而应弟接佯以兵送钦，亦杀钦父子。有司以恩城宜裁革，从之，州遂废。
 </p><p>上隆州，宋置，隶横山寨。元属田州路，明因之。后改隶布政司。洪武十九年，上隆知州岑永通遣从子岑安来贡，赐绮帛钞锭。洪熙元年，土官知州岑琼母陈氏来朝，贡马，赐钞币。宣德四年以陈氏为知州。时琼已卒，无子，土人诉于朝，愿得陈氏袭职，故有是命。
 </p><p>都康州，宋置，隶横山寨。元属田州路。洪武间，为蛮僚所据。三十二年复置，隶布政司。土官冯姓。其界东南抵龙英，西至镇安，北至向武。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二百零五章-卷二百零五-原文.html'>第二百零五章-卷二百零五</a></p><p class='next'>下一节：<a href='第二百零七章-卷二百零七-原文.html'>第二百零七章-卷二百零七</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二百零五章-卷二百零五-原文.html'>第二百零五章-卷二百零五</a></p><p class='next'>下一节：<a href='第二百零七章-卷二百零七-原文.html'>第二百零七章-卷二百零七</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

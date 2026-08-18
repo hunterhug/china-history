@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -186,8 +213,9 @@
 </p><p>五年春二月甲午，廷臣及朝觐官谒皇太子于文华左门。己未，封皇子翊镠为潞王。三月己卯，赐张元忭等进士及第、出身有差。己丑，封俺答为顺义王。夏四月甲午，河复决邳州。五月壬戌，古田僮贼平。戊寅，李春芳致仕。六月辛卯，京师地震者三，敕修省。甲辰，授河套部长吉能为都督同知。甲寅，顺义王俺答贡马，告庙受贺。丙辰，俺答执赵全余党十三人来献。秋八月癸卯，许河套部互市。九月癸未，三镇贡市成。冬十月己亥，河南、山东大水，申饬河防。十一月己巳，殷士儋致仕。是年，琉球、土鲁番入贡。
 </p><p>六年春正月辛未，筑徐州至宿迁堤三百七十里。二月丙申，倭寇广东，陷神电卫，大掠。山寇复起。闰月丁卯，御皇极殿门，疾作，遽还宫。乙亥，倭寇高、雷，官军击败之。夏四月戊辰，礼部尚书高仪兼文渊阁大学士，预机务。五月壬辰，免广东用兵诸郡逋赋。己酉，大渐，召大学士高拱、张居正、高仪受顾命。庚戌，崩于乾清宫，年三十有六。七月丙戌，上尊谥，庙号穆宗，葬昭陵。
 </p><p>赞曰：穆宗在位六载，端拱寡营，躬行俭约，尚食岁省巨万。许俺答封贡，减赋息民，边陲宁谧。继体守文，可称令主矣。第柄臣相轧，门户渐开，而帝未能振肃乾纲，矫除积习，盖亦宽恕有余，而刚明不足者欤！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p><p class='next'>下一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p><p class='next'>下一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

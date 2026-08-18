@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -186,8 +213,9 @@
 </p><p>九月五日，枢密使郭威加封检校太师、兼侍中，宋州节度使兼侍卫亲军都指挥史弘肇加封兼中书令。先前，郭威平定河中回来，朝廷商议给他施加恩惠，郭威上奏说“：臣出兵以来，京城之中，无鸡鸣狗叫之忧，使臣得以专心战事，军旅之中，资粮不缺，这都是朝中大臣镇抚谋画的功劳，臣哪敢一人独占功劳啊！”隐帝认为说得对，于是史弘肇与宰相、枢密使、三司使，依次加恩。不久各大臣因为皇恩所加，都是朝廷亲近之臣，而宗室刘信以及青州刘铢等人都是国家元勋，必有不平之意，又担心诸侯认为朝廷对亲近之臣偏爱，于是建议对各地诸侯，普加恩惠。十九日，湖南马希广上奏，于八月十八日大破朗州马希萼部众。二十一日，右武卫将军石懿、左武卫将军石训均被停职。石懿等人在八月中秋祭享晋室五代先祖之时，命娼女在斋宫留宿，被鸿胪寺弹劾，所以有此惩罚。二十二日，邺都、磁、相、邢、氵名等州上奏，大雨毁坏禾稼。西京上奏，洛水溢出堤岸。
 </p><p>冬十月一日，契丹人入寇。十四日，监修国史的苏逢吉、史官贾纬将所撰《高祖实录》二十卷呈上。契丹攻陷贝州高老镇，南到邺都北境，又西北到南宫、堂阳，杀掠官吏百姓。数州大地，深受其苦，藩郡守将，闭关自守。隐帝派枢密使郭威领军巡视边境，仍令宣徽使王峻参预军事。
 </p><p>十二月一日，湖南上奏，静江军节度使马希赡在今年十月十八日去世，隐帝停止上朝两天。二日，日晕三重。九日，司徒、门下侍郎、平章事窦贞固上奏，请修撰晋朝实录，诏令史官贾纬、窦俨、王伸等人修撰。十三日，隐帝的二十一姐永宁公主进封为秦国长公主。颍州上奏，在正阳打败南唐贼寇。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章-隐帝纪上-白话.html'>第三章-隐帝纪上</a></p><p class='next'>下一节：<a href='第五章-隐帝纪下-白话.html'>第五章-隐帝纪下</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三章-隐帝纪上-白话.html'>第三章-隐帝纪上</a></p><p class='next'>下一节：<a href='第五章-隐帝纪下-白话.html'>第五章-隐帝纪下</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -412,8 +439,9 @@
 </p><p>四月二十五日，太宗亲临翠微宫。
 </p><p>五月十五日，将李世责力贬为叠州都督。二十六日，太宗李世民在含风殿逝世，终年五十三岁。二十七日，将太宗遗体用皇家马车运回京城。礼部尚书于志宁任侍中，太子少詹事张行成兼任侍中，高季辅兼任中书令。二十九日，发布太宗逝世讣告，谥号文。高宗上元元年(674)改赠太宗谥号为文武圣皇帝；玄宗天宝八载(749)，改封太宗谥号为文武大圣皇帝；天宝十三载(754)，增封太宗谥号为文武大圣大广孝皇帝。
 </p><p>赞语：政治最完美的盛世君主不出现，已经很久了！夏禹据有天下，传了十六代君王，仅只少康有复兴王朝的功业。商汤拥有天下，下传二十八个君王，其中最兴盛的，仅号称“三宗”的三人。周武王拥有天下，传位三十六任君王，只有成王、康王的文治与宣王的武功，其他的君主均无可称道。尽管《诗经》、《尚书》的记载，不时有缺略之处，但夏、商、周三代占有天下一千七百余年，传承七十多位君主，其中卓绝显见于后世的，也就这六、七位君王罢了。呵，盛世君主可谓难得呀！唐朝拥有天下，传位二十人，其中值得称许的三个君主，玄宗、宪宗都不能善始善终；太宗的功业，显赫呵！他消除隋朝的乱世，业绩可与商汤王、周武王并列；达到太平盛世的伟业，与西周的成王、康王相近。自古以来功高德厚的君主，至少从汉朝以后未曾有过。至于他受制于爱欲失度，再兴佛徒，好大喜功，勤于出兵远方，这是中等材质、平庸君主常干的事。但《春秋》褒贬的准则，每每求全责备贤明有才的人，因此后世想成人之美的有德之士，没有不对此叹息的。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-卷一·高祖-白话.html'>第一章-卷一·高祖</a></p><p class='next'>下一节：<a href='第三章-卷三·高宗-白话.html'>第三章-卷三·高宗</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-卷一·高祖-白话.html'>第一章-卷一·高祖</a></p><p class='next'>下一节：<a href='第三章-卷三·高宗-白话.html'>第三章-卷三·高宗</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

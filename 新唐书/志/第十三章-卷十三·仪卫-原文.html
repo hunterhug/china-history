@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -272,8 +299,9 @@
 </p><p>小横吹部有角、笛、箫、笳、觱篥、桃皮觱篥六种，曲名失传。
 </p><p>伶工谓夜警为严。凡大驾严，夜警十二曲，中警三曲，五更严三遍。天子谒郊庙，夜五鼓过半，奏四严；车驾至桥，复奏一严。元和初，礼仪使高郢建议罢之。
 </p><p>历代献捷必有凯歌，太宗平东都，破宋金刚，执贺鲁，克高丽，皆备军容，凯歌入京都，然其礼仪不传。太和初，有司奏：“命将征讨，有大功，献俘馘，则神策兵卫于门外，如献俘仪。凯乐用铙吹二部，笛、觱篥、箫、笳、铙鼓，皆工二人，歌工二十四人，乘马执乐，阿列如卤簿。鼓吹令、丞前导，分行俘馘之前。将入都门，鼓吹振作，奏《破阵乐》、《应圣期》、《贺朝欢》、《君臣同庆乐》等四曲。至太社、太庙门外，陈而不作。吉献礼毕，乐作。至御楼前，陈兵仗于旌门外二十步，乐工步行，兵部尚书介胃执钺，于旌门中路前导，协律郎二人执麾，门外分导，太常卿跪请奏凯乐。乐阕，太常卿跪奏‘乐毕’。兵部尚书、太常卿退，乐工立于旌门外，引俘馘入献，及称贺，俘囚出，乃退。”</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十二章-卷十二·礼乐十二-原文.html'>第十二章-卷十二·礼乐十二</a></p><p class='next'>下一节：<a href='第十四章-卷十四·车服-原文.html'>第十四章-卷十四·车服</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第十二章-卷十二·礼乐十二-原文.html'>第十二章-卷十二·礼乐十二</a></p><p class='next'>下一节：<a href='第十四章-卷十四·车服-原文.html'>第十四章-卷十四·车服</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

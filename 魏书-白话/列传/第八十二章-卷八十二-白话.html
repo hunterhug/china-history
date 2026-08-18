@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -195,8 +222,9 @@
 </p><p>正光四年(523)三月，刘腾死于职上，时年六十岁。殡葬所费的物财有帛七百匹、钱四十万贯、蜡二百斤。一切丧事都由鸿胪少卿承办。宦官没有子息，而为他穿丧服的却有四十余人。
 </p><p>刘腾当初建造官宅，奉车都尉周特替他卜卦，认为不吉利，极力劝他停止，他大怒而不从。周特告诉别人说：“刘腾在三月、四月之交必有厄运。”果然他在这个时候死去，官邸刚刚建成，他的尸首便陈放在这里。皇上追赠刘腾为使持节、骠骑大将军、太尉公、冀州刺史。刘腾出葬那一天，太监们当他的义子，执丧杖穿丧衣的数以百计，朝中权贵都相随送葬，他们乘坐的车马填塞大路，前后连接直达郊野。自魏初到当时，宦官权贵死后礼仪的盛大，没有能赶得上刘腾的。
 </p><p>后来，灵太后再次临朝执政，把刘腾所封的一切爵位统统取消，并挖开他的坟墓，将尸骨都散在野外，没收他的全部财产。后刘腾所收养的一个儿子叛变投向萧衍，灵太后大怒，就把刘腾收养的其他义子都迁到北方边境，不久又派密使往汲郡将其追杀。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十一章-卷八十一-白话.html'>第八十一章-卷八十一</a></p><p class='next'>下一节：<a href='第八十三章-卷八十三-白话.html'>第八十三章-卷八十三</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第八十一章-卷八十一-白话.html'>第八十一章-卷八十一</a></p><p class='next'>下一节：<a href='第八十三章-卷八十三-白话.html'>第八十三章-卷八十三</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

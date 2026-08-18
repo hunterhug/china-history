@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -204,8 +231,9 @@
 </p><p>建文初年，卓敬秘密上疏说：“燕王智谋绝伦，并有雄才大略，酷似高皇帝。北平地势优越，兵精马壮，金、元即由此兴起。现在应当将他改封南昌，万一有变，也容易控制。事情即将萌发而未行动，那是由于时机未到，而考虑可以行动的时间则要依据形势。形势还未成熟时便不能做出决断，而时机还未明朗便不能给予明察。”上奏到达朝廷，第二天皇上召问卓敬。卓敬叩首道“：微臣所言乃天下至计，愿陛下明察。”但是此事最终就此而止。
 </p><p>燕王即位，卓敬被捕，明成祖指责他曾建议改封一事，离间骨肉之情。卓敬厉声说道：“可惜先帝没有采纳我的建议。”皇上十分生气，但仍怜惜其才，下令将他下狱，派人以管仲、魏征之事相劝。卓敬流着泪说：“身为人臣，只有以死相报。先皇帝曾无过失，忽然被横行篡夺，我恨不得立即死去，到地下去见先皇，你还想让我为你效力吗？”皇上还是不忍杀他。姚广孝以前与卓敬有隔阂，便进劝皇上“：卓敬之言如果真的被采用，皇上难道还会有今日吗？”皇上这才处死卓敬，并灭其三族。
 </p><p>卓敬言行慷慨，风流倜傥，善于谈论，凡天官、舆地、律历、兵刑诸家无不广泛研究。成祖曾叹道“：国家培养人才三十年，唯得一卓敬。”万历年初，朝廷采纳御史屠叔方的建议，为卓敬修墓建祠。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十八章-卷二十八-白话.html'>第二十八章-卷二十八</a></p><p class='next'>下一节：<a href='第三十章-卷三十-白话.html'>第三十章-卷三十</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二十八章-卷二十八-白话.html'>第二十八章-卷二十八</a></p><p class='next'>下一节：<a href='第三十章-卷三十-白话.html'>第三十章-卷三十</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

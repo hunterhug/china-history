@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>朱提王拓跋悦传<span style='font-size:small'> 白话</span></h1>
 <p>朱提王拓跋悦，外表温顺，内心凶狠。道武帝常常想起陈留桓王死于王事，对他格外亲近和宠爱，任命他为左将军，继承父亲的爵位，后来又被任命为宗师。拓跋悦恃宠而骄傲，经常和他所亲近的王洛生等人说：“一旦皇帝去世，我只让着卫公。除此之外，谁敢在我前头！”卫王仪长着美须髯，被朝廷内外所敬重，所以拓跋悦这样说。<BR><BR>　　起初，姚兴赎回狄伯支时，拓跋悦送他，路过雁门时，拓跋悦背地里诱骗了一批奸滑的豪强，让他们为己所用。后来因有事被责罪而逃亡在外，他又投奔雁门，打算招收一批豪杰之士，图谋不轨，结果被当地人抓起来送到京城。皇帝饶恕了他的罪过没有处罚他。明元帝即位，让拓跋悦当朝廷的侍臣，他仍然怀有奸计，对明元帝说：“京城人过于杂乱，难以相信，应当杀掉一些和我们不一类的人。”又说“：雁门人非常奸诈，应当把他们全杀光。”他想以此来泄私愤，皇帝没有听从。拓跋悦心怀疑忄瞿，便带着利刃入宫侍候皇帝，准备干大逆不道的事情。叔孙俊对拓跋悦产生怀疑，暗暗注意到他怀中有利刃，就将他抓起来并赐死。</p>
-<div class='pn'><p class='pre'>上一节：<a href='陈留王拓跋虔传-白话.html'>陈留王拓跋虔传</a></p><p class='next'>下一节：<a href='拓跋崇传-白话.html'>拓跋崇传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='陈留王拓跋虔传-白话.html'>陈留王拓跋虔传</a></p><p class='next'>下一节：<a href='拓跋崇传-白话.html'>拓跋崇传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

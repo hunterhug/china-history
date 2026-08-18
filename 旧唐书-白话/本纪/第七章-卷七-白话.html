@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -230,8 +257,9 @@
 </p><p>秋七月三日，太平公主与仆射窦怀贞、侍中岑羲、中书令萧至忠、左羽林大将军常元楷等阴谋造反，事被发觉，皇帝李隆基率兵将他们杀死。然后穷究他们的党羽，太子少保薛稷、左散骑常侍贾膺福、右羽林将军李慈、李钦、中书舍人李猷、中书令崔氵是、尚书左丞卢藏用、太史令傅孝忠、和尚惠范等人都被杀。兵部尚书郭元振跟从皇上驾到承天门楼，大赦天下，从死刑罪以下，不论轻重都加以赦免。第二天，太上皇下诰曰：“朕将高居安乐不再主持政事，从今以后的军国刑律政令一切大事，都由皇帝处理。”
 </p><p>开元四年(716)夏六月二十日，太上皇在白福殿去世，时年五十五岁。秋七月二十五日，上尊显的谥号曰大圣贞皇帝，庙号曰睿宗。冬十月二十八日，安葬在桥陵。天宝十三年二月，改谥号曰玄真大圣大兴孝皇帝。
 </p><p>赞曰：孝和皇帝、玄真皇帝，都像他们的先人高宗皇帝一样，为了本身取乐，却任性而违背礼法。平坦的大道不走，却循着倾覆的道路前进。幸亏有贤能之臣，扶持辅助圣明的皇位继承人。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章-卷六-白话.html'>第六章-卷六</a></p><p class='next'>下一节：<a href='第八章-卷八-白话.html'>第八章-卷八</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第六章-卷六-白话.html'>第六章-卷六</a></p><p class='next'>下一节：<a href='第八章-卷八-白话.html'>第八章-卷八</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

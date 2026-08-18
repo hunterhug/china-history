@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -245,8 +272,9 @@
 </p><p>魏故事，天子为次殿于庙殿之北东，天子入自北门。新礼，设次殿于南门中门外之右，天子入自南门。挚虞以为：“次殿所以为解息之处，凡适尊以不显为恭，以由隐为顺，而设之于上位，入自南门，非谦厌之义。宜定新礼，皆如旧说。”从之。
 </p><p>礼，大事则告祖祢，小事则特告祢，秦汉久废。魏文帝黄初四年七月，将东巡，以大军当出，使太常以特牛告南郊。及文帝崩，又使太尉告谥策于南郊。自是迄晋相承，告郊之后仍以告庙，至江左其礼废。至成帝咸和三年，苏峻覆乱京都，温峤等立行庙于白石，复行其典。告先君及后曰：“逆臣苏峻，倾覆社稷，毁弃三正。污辱海内。臣侃、臣峤、臣亮等手刃戎首，龚行天罚。惟中宗元皇帝、肃祖明皇帝、明穆皇后之灵，降鉴有罪，剿绝其命，翦此群凶，以安宗庙。臣等虽陨首摧躯，犹生之年。”
 </p><p>魏明帝太和三年，诏曰：“礼，王后无嗣，择建支子，以继大宗，则当纂正统而奉公义，何得复顾私亲哉！汉宣继昭帝后，加悼考以皇号。哀帝以外籓援立，而董宏等称引亡秦，惑误朝议，遂尊恭皇，立庙京师。又宠籓妾，使比长信，僭差无礼，人神弗佑。非罪师丹忠正之谏，用致丁傅焚如之祸。自是之后，相踵行之。其令公卿有司，深以前世为戒。后嗣万一有由诸侯入奉大统，则当明为人后之义。敢为佞邪导谀君上，妄建非正之号，谓考为皇，称妣为后，则股肱大臣诛之无赦。其书之金策，藏之宗庙。”是后高贵、常道援立，皆不外尊。及愍帝建兴四年，司徒梁芬议追尊之礼，帝既不从，而左仆射索綝等亦称引魏制，以为不可，故追赠吴王为太保而已。元帝太兴二年，有司言琅邪恭王宜称皇考。贺循议云：“礼典之义，子不敢以己爵加其父号。”帝又从之。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八章--原文.html'>第八章-</a></p><p class='next'>下一节：<a href='第十章--原文.html'>第十章-</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第八章--原文.html'>第八章-</a></p><p class='next'>下一节：<a href='第十章--原文.html'>第十章-</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

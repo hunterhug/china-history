@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -220,8 +247,9 @@
 <p>　　蕲王缉，顺宗第二十二子。咸通八年封。 </p>
 <p>　　史臣曰：夫圣人君临宇县，肇启邦基，莫不受命上玄，膺名帝箓。自太昊已降， 五运相推，迄于殷汤，历数绵永。但设均平之化，未闻封建之名。洎乎周、汉，始 以子弟建侯树屏，以作维城。及王室浸微，遂有莽、卓之乱。唐室自艰难已后，两 河兵革屡兴，诸王虽封，竟不出阁，夫帝王居寰宇之尊，抚亿兆之众，但能平一理 道，夙夜严恭，任贤使能，设官分职，自然四海乐推。天命所祐，纵无封建，亦鸿 基永固，安俟婴孺镇重哉？ </p>
 <p>　　赞曰：孝文秉礼，道弘籓邸。睦族展亲，仪刑戚里。自阁临籓，所谓周爰。无 如恶鸟，终怀笼樊。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第九十九章-卷九十九-原文.html'>第九十九章-卷九十九</a></p><p class='next'>下一节：<a href='第一百零一章-卷一百零一-原文.html'>第一百零一章-卷一百零一</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第九十九章-卷九十九-原文.html'>第九十九章-卷九十九</a></p><p class='next'>下一节：<a href='第一百零一章-卷一百零一-原文.html'>第一百零一章-卷一百零一</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

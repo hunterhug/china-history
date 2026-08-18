@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -230,8 +257,9 @@
 </p><p>六月己未，以都元帅宗敏为太保、领三省事兼左副元帅，左丞相宗贤兼都元帅。八月庚申，以刘筈为司空，行台右丞相如故。宰臣议徙辽阳、勃海之民于燕南，从之。侍从高寿星等当迁，诉於后，后以白上，上怒议者，杖平章政事秉德，杀左司郎中三合。九月丙申，以领行台尚书省事亮复为平章政事。戊戌，以右丞相宗本为太保、领三省事，左副元帅宗敏领行台尚书省事，平章政事秉德为尚书左丞相兼中书令，司空刘筈为平章政事。庚子，以御史大夫宗甫为参知政事。
 </p><p>十月乙丑，杀北京留守胙王元及弟安武军节度使查剌、左卫将军特思。大赦。癸酉，以翰林学士京为御史大夫。十一月癸未，杀皇后裴满氏。召胙王妃撒卯入宫。戊子，杀故邓王子阿懒、达懒。癸巳，上猎于忽剌浑土温。遣使杀德妃乌古论氏及夹谷氏、张氏。十二月己酉朔，上至自猎所。丙辰，杀妃裴满氏于寝殿。而平章政事亮因群臣震恐，与所亲驸马唐括辩、寝殿小底大兴国、护卫十人长忽土、阿里出虎等谋为乱。丁巳，以忽土、阿里出虎当内直，命省令史李老僧语兴国。夜二鼓，兴国窃符，矫诏开宫门，召辩等。亮怀刀与其妹夫特厮随辩入至宫门，守者以辩驸马，不疑，内之。及殿门，卫士觉，抽刃劫之，莫敢动。忽土、阿亮出虎至帝前，帝求榻上常所置佩刀，不知已为兴国易置其处，忽土、阿里出虎遂进弑帝，亮复前手刃之，血溅满其面与衣。帝崩，时年三十一。左丞相秉德等遂奉亮坐，罗拜呼万岁，立以为帝。降帝为东昏王，葬于皇后裴满氏墓中。贞元三年，改葬于大房山蓼香甸，诸王同兆域。大定初，追谥武灵皇帝，庙号闵宗，陵曰思陵。别立庙。十九年，升祔于太庙，增谥弘基缵武庄靖孝成皇帝。二十七年，改庙号熙宗。二十八年，以思陵狭小，改葬于峨眉谷，仍号思陵。诏中外。
 </p><p>赞曰：熙宗之时，四方无事，敬礼宗室大臣，委以国政，其继体守文之治，有足观者。末年酗酒妄杀，人怀危惧。所谓前有谗而不见，后有贼而不知。驯致其祸，非一朝一夕故也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p><p class='next'>下一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p><p class='next'>下一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

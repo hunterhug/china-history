@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -246,8 +273,9 @@
 </p><p>惟王崇高则天，博厚仪地，熔铸六合，陶甄万有。锋驲交驰，振灵武以遐略；云雷方扇，鞠义旅以勤王。扬旍旆于远路，戮奸宄于魏阙。德冠往初，功无与二。弘济艰难，缉熙王道。怀柔万姓，经营四方。举直措枉，较如画一。待旦同乎殷后，日昃过于周文。风化肃穆，礼乐交畅。加以赦过宥罪，神武不杀，盛德昭于景纬，至义感于鬼神。若夫纳彼大麓，膺此归运，烈风不迷，乐推攸在。治五韪于已乱，重九鼎于既轻。自声教所及，车书所至，革面回首，讴吟德泽。九山灭祲，四渎安流。祥风扇起，淫雨静息。玄甲游于芳荃，素文驯于郊苑。跃九川于清汉，鸣六象于高岗。灵瑞杂沓，玄符昭著。至于星孛紫宫，水效孟月，飞鸿满野，长彗横天，取新之应既昭，革故之征必显。加以天表秀特，轩状尧姿；君临之符，谅非一揆。《书》云：“天鉴厥德，用集大命。”《诗》云：“文王在上，於昭于天。”所以二仪乃眷，幽明允叶，岂惟宅是万邦，缉兹讴讼而已哉！
 </p><p>朕是用拥璇沉首，属怀圣哲。昔水行告厌，我太祖既受命代终；在日天禄云谢，亦以木德而传于梁。远寻前典，降惟近代，百辟遐迩，莫违朕心。今遣使持节、兼太保、侍中、中书监、兼尚书令汝南县开国侯亮，兼太尉、散骑常侍、中书令新吴县开国侯志，奉皇帝玺绂。受终之礼，一依唐虞故事。王其陟兹元后，君临万方，式传洪烈，以答上天之休命！
 </p><p>高祖抗表陈让，表不获通。于是，齐百官豫章王元琳等八百一十九人，及梁台侍中臣云等一百一十七人，并上表劝进，高祖谦让不受。是日，太史令蒋道秀陈天文符谶六十四条，事并明著。群臣重表固请，乃从之。</p>
-<div class='pn'><p class='next'>下一节：<a href='-卷二-原文.html'>-卷二</a></p></div><footer>
+<div class='pn'><p class='next'>下一节：<a href='-卷二-原文.html'>-卷二</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

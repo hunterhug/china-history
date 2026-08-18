@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -222,8 +249,9 @@
 </p><p>北中郎将刘遐卒，遐部曲作乱，诏郭默讨之，以雅监征讨军事、假节。事平，拜骁骑将军。苏峻之难，诏雅为前锋监军、假节，领精勇千人以距峻。雅以兵少，不敢击，退还。拜侍中。寻王师败绩，雅与刘超并侍卫天子。或谓雅曰：“见可而进，知难而退，古之道也。君性亮直，必不容于寇仇，何不随时之宜而坐待其毙。”雅曰：“国乱不能匡，君危不能济，各逊遁以求免，吾惧董狐执简而至矣。”庾亮临去，顾谓雅曰：“后事深以相委。”雅曰：“栋折榱崩，谁之责也。”亮曰：“今日之事，不容复言，卿当期克复之效耳。”雅曰：“想足下不愧荀林父耳。”及峻逼迁车驾幸石头，雅、超流涕步从。明年，并为贼所害。贼平，追赠光禄勋。其后以家贫，诏赐布帛百匹。子诞，位至中军参军，早卒。
 </p><p>史臣曰：应詹行业聿修，文史足用，入居列位，则嘉谋屡陈；出抚籓条，则惠政斯洽。甘卓伐暴宁乱，庸绩克宣，作镇扞城，威略具举。及凶渠犯顺，志在勤王。既而人挠其谋，天夺其鉴，疑留不断，自取诛夷。卞壸束带立朝，以匡正为己任；褰裳卫主，蹈忠义以成名。遂使臣死于君，子死于父，惟忠与孝，萃其一门。古称社稷之臣，忠贞之谓矣。刘超勤肃奉上，钟雅正直当官。属臣猾滔天，幼君危逼，乃崎岖寇难，契阔艰虞，匪石为心，寒松比操，贞轨皆没，亮迹双升。虽高赫在难弥恭，荀息继之以死，方之二子，曾何足云！
 </p><p>赞曰：卓临南服，詹莅西州。政刑克举，威惠兼修。应嗟运促，甘毙疑留。望之徇义，处死为易。惟子惟臣，名节斯寄。钟刘入仕，忠贞攸履。竭其股肱，继之以死。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十九章--原文.html'>第三十九章-</a></p><p class='next'>下一节：<a href='第四十一章--原文.html'>第四十一章-</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第三十九章--原文.html'>第三十九章-</a></p><p class='next'>下一节：<a href='第四十一章--原文.html'>第四十一章-</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

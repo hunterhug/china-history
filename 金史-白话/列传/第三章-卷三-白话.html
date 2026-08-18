@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -197,8 +224,9 @@
 </p><p>皇上召用璋为御史大夫。璋启奏道“：我暗中观察到文武百官中有相互结为朋党的。现在御史台中，除我以外没有一个女真人，请您不限制出身，依据才能取用。”皇上说：“结朋党的人，要纠察整治。朕选拔女真人，没选到，哪里是以出身为限制，还是论人的才能罢了。”不久，璋上奏说：“太祖武元皇帝接受上天命令，太宗皇帝安定宋国，自古以来帝王起兵，必定声称奉受天命，应当制作‘大金受命之宝’，以便公开向万世昭示。”皇上说“：你的话正合朕意。”于是派人到夏国买玉，大定十八年(1178)，受命之宝制成，皇上奏告天地宗庙社稷，在正殿处理朝政。
 </p><p>大定十三年(1173)，璋改做大兴尹，出任向宋国庆贺元旦的使臣。他奉命出使宋国，已经出发了，皇上派人骑马来告诉璋说：“宋人如果不遵守以前的礼法，就不要把信给他们。如果不让你们入朝进见，就带信回来。如果他们强行索取，也不要去赴宴，他们的回信和回送的礼物一律不要接受。”璋来到临安，宋人请求让太子接信，璋不同意。宋人到驿馆里强行索要书信，璋就给了他们，而且还去赴宴，接受了很多礼物。有司报告给皇上，皇上发怒，要把璋处以极刑。左丞相良弼上奏道“：璋作为将帅，大破宋军，宋人仇视他很久了，说不定要因此把他陷于死地。现在如果杀了璋，也许正落进他们的诡计中。”皇上认为是这样，就打了璋一百五十杖，除去官名，把副使客省使高翊打了一百杖，没收他们所接收的礼物。
 </p><p>几年之后，皇上感念璋征战有功，起用他为景州刺史，又提升为武定军节度使，授予山东西路蒲底山籋兀鲁河谋克，又改任临洮尹。大定十九年(1179)，璋逝世。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二-白话.html'>第二章-卷二</a></p><p class='next'>下一节：<a href='第四章-卷四-白话.html'>第四章-卷四</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二-白话.html'>第二章-卷二</a></p><p class='next'>下一节：<a href='第四章-卷四-白话.html'>第四章-卷四</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

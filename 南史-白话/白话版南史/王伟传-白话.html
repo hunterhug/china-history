@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -177,8 +204,9 @@
 
 <h1>王伟传<span style='font-size:small'> 白话</span></h1>
 <p>王伟，祖上是略阳人。父亲王略，在魏国作许昌县令，于是家居颍川。王伟通晓《周易》，文章华美，在魏国作行台郎。侯景叛乱后，高澄写信让侯景回去，王伟替侯景给高澄复信，文辞很漂亮。高澄看后问：“是谁写的？”左右便都称赞王伟的文章。高澄说：“这样的才干，你们为什么不早告诉我？”王伟帮助侯景出谋划策，侯景的文告也都出自王伟之手，一直到篡位弑君，都是王伟出的主意。<BR><BR>　　侯景败逃，王伟和侯子鉴都跑散了，藏在草丛里，被直渎守军头领黄公喜抓获送交荆州军。见王僧辩时，长揖不拜。两边抓他的人要他下拜，王伟说：“我们各为人臣，为什么要行此大礼。”僧辩对他说：“先生身为贼相，不能殉节而死，却藏在草里逃活命。主人要摔倒了你不去扶持，还要你这搀扶者干什么呢？”王伟回答：“失败成功要看时运，事情做得好坏在于当家人。如果以前侯氏早听我的话，您哪儿会有今天的形势。”僧辩大笑，感到他很不一般，让把他拉出去示众。王伟说：“昨天和今天早上跑了八十里，希望能给头驴代步。”僧辩说：“你的头就要行万里之外了，岂止八十里。”王伟笑道：“今天这结果，正合我意。”前尚书左丞虞骘曾被王伟侮辱过，这时碰到王伟，把唾沫吐在他脸上，骂道：“死囚，看你还能再作恶吗！”王伟答道：“君不读书，不值得和你说话。”虞骘羞惭而去。等到和吕季略、周石珍、严..一起被押送江陵，王伟还指望能活命，在狱中给元帝手下的显要人物赠诗说：“赵壹能为赋，邹阳解献书，何惜西江水，不救辙中鱼。”又向元帝上五百字诗，元帝爱他的才干打算赦免他，但朝臣们多数人都忌恨他，便告诉元帝说：“以前王伟作檄文，里边有很不中听的话。”元帝让把檄文拿来看，上说：“项羽重瞳，尚有乌江之败，湘东一目，宁为赤县所归。”元帝大怒，让人用钉把王伟的舌头钉在柱子上，用刀剜出他的肠子，王伟面不改色。他的仇人用刀零割他的肉，他低头观看，一直割到骨头才把他杀了。周石珍和严..都被诛灭三族。</p>
-<div class='pn'><p class='pre'>上一节：<a href='侯景传-白话.html'>侯景传</a></p><p class='next'>下一节：<a href='周迪传-白话.html'>周迪传</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='侯景传-白话.html'>侯景传</a></p><p class='next'>下一节：<a href='周迪传-白话.html'>周迪传</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

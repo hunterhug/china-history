@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -201,8 +228,9 @@
 </p><p>世宗初，命给事中夏言等清核皇庄田。言极言皇庄为厉於民。自是正德以来投献侵牟之地，颇有给还民者，而宦戚辈复中挠之。户部尚书孙交造皇庄新册，额减於旧。帝命核先年顷亩数以闻，改称官地，不复名皇庄，诏所司徵银解部。然多为宦寺中饱，积逋至数十万以为常。是时，禁勋戚奏讨、奸民投献者，又革王府所请山场湖陂。德王请齐、汉二庶人所遗东昌、兖州闲田，又请白云等湖，山东巡抚邵锡按新令却之，语甚切。德王争之数四，帝仍从部议，但存藩封初请庄田。其后有奏请者不听。
 </p><p>又定，凡公主、国公庄田，世远者存什三。嘉靖三十九年遣御史沈阳清夺隐冒庄田万六千馀顷。穆宗从御史王廷瞻言，复定世次递减之限：勋臣五世限田二百顷，戚畹七百顷至七十顷有差。初，世宗时，承天六庄二湖地八千三百馀顷，领以中官，又听校舍兼并，增八百八十顷，分为十二庄。至是始领之有司，兼并者还民。又著令宗室买田不输役者没官，皇亲田俱令有司徵之，如勋臣例。虽请乞不乏，而赐额有定，徵收有制，民害少衰止。
 </p><p>神宗赉予过侈，求无不获。潞王、寿阳公主恩最渥。而福王分封，括河南、山东、湖广田为王庄，至四万顷。群臣力争，乃减其半。王府官及诸阉丈地徵税，旁午於道，扈养厮役廪食以万计，渔敛惨毒不忍闻。驾帖捕民，格杀庄佃，所在骚然。给事中官应震、姚宗文等屡疏谏，皆不报。时复更定勋戚庄田世次递减法，视旧制稍宽。其后应议减者，辄奉诏姑留，不能革也。熹宗时，桂、惠、瑞三王及遂平、宁德二公主庄田，动以万计，而魏忠贤一门，横赐尤甚。盖中叶以后，庄田侵夺民业，与国相终云。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十二章-卷五十二-原文.html'>第五十二章-卷五十二</a></p><p class='next'>下一节：<a href='第五十四章-卷五十四-原文.html'>第五十四章-卷五十四</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第五十二章-卷五十二-原文.html'>第五十二章-卷五十二</a></p><p class='next'>下一节：<a href='第五十四章-卷五十四-原文.html'>第五十四章-卷五十四</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -192,8 +219,9 @@
 </p><p>崇祯十二年(1639)正月二日，济南被清军攻陷，秉文率兵巷战，不幸中箭阵亡。其妻妾均投大明湖自尽。宋学朱、周之训、邓谦、唐世熊及济南知府苟好善、同知陈虞胤、通判熊烈献、历城知县韩承宣等人，皆殉国难，德王朱由枢被俘。秉文赠太常寺卿，之训、谦赠光禄寺卿，承宣赠光禄寺少卿，为他们建祠祭祀。学朱死，但未见尸，翁鸿业及推官陆灿不知下落。
 </p><p>邓藩锡，字晋伯，金坛人。崇祯七年(1634)进士，曾任南京兵部主事，十五年，调任兖州知府。刚到任就闻清军入关，忙准备防守。不久，清军四万骑进抵城下，藩锡去对鲁王说：“郡有吏，国有王，同舟共济。诸城失守，都是由于贵族之家吝惜金钱，让贫民饿夫上城捍御。城郭是我们的生命，钱财是百姓的生命。如果我们不给他们生命，又怎能期望他们给我们生命？王真能以所积蓄的金钱粮食来激励士气，城就可保，不然大势一去，悔之不及了。”鲁王不听从他的意见。
 </p><p>藩锡与监军参议王维新，同知谭丝、曾文蔚，通判阎鼎，推官李昌期，滋阳知县郝芳声，副将丁文明，长史俞起蛟及还乡闲住的给事中范淑泰等，分门死守。至十二月八日，城被攻破，维新力战，受伤二十一处阵亡。藩锡不降，被杀。朝廷赠维新光禄卿，藩锡太仆少卿。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百七十八章-卷一百七十八-白话.html'>第一百七十八章-卷一百七十八</a></p><p class='next'>下一节：<a href='第一百八十章-卷一百八十-白话.html'>第一百八十章-卷一百八十</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第一百七十八章-卷一百七十八-白话.html'>第一百七十八章-卷一百七十八</a></p><p class='next'>下一节：<a href='第一百八十章-卷一百八十-白话.html'>第一百八十章-卷一百八十</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {

@@ -22,6 +22,7 @@
         padding: 28px 16px 64px;
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
         text-align: center;
+        -webkit-text-size-adjust: 100%;
     }
 
     h1, h2 {
@@ -66,7 +67,7 @@
     }
 
     #author {
-        color: #8a8177;
+        color: #6e675c;
         font-size: 16px;
         text-align: center;
     }
@@ -80,7 +81,9 @@
     }
 
     .top a {
-        color: #8a8177;
+        display: inline-block;
+        color: #6e675c;
+        padding: 8px 6px;
     }
 
     .top a:hover {
@@ -100,7 +103,7 @@
 
     .pn p {
         margin: 0;
-        padding: 8px 16px;
+        padding: 10px 18px;
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
@@ -120,6 +123,12 @@
         text-align: left;
     }
 
+    table p {
+        margin: 0;
+        max-width: none;
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -136,9 +145,17 @@
     footer p {
         max-width: 720px;
         margin: 0;
-        color: #8a8177;
+        color: #6e675c;
         font-size: 14px;
         text-align: center;
+    }
+
+    .backtop {
+        margin-top: 6px;
+    }
+
+    .backtop a {
+        color: #6e675c;
     }
 
     @media (max-width: 600px) {
@@ -150,10 +167,12 @@
 
         h1 {
             font-size: 26px;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 22px;
+            letter-spacing: 1px;
         }
 
         #title {
@@ -162,6 +181,14 @@
 
         p {
             margin: 12px auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            width: max-content;
+            max-width: 100%;
+            white-space: nowrap;
         }
     }
 </style>
@@ -201,8 +228,9 @@
 </p><p>耶律图鲁窘，字阿鲁隐，肃祖之子洽礝之孙，勇敢而有谋略。
 </p><p>太宗扶立晋的战役中，图鲁窘之父敌鲁古为五院夷离堇，战死，皇上便将其官职授给图鲁窘。会同元年(938)，改任为北院大王，皇上曾经屏退左右而与他商议军国大事，应对合于皇上之意。
 </p><p>随皇上讨伐石重贵，杜重威拥十万余众拒战于滹沱桥，奋力作战数日，没法前进。皇上说：“两军争一渡口，人与马都疲劳了，有什么计策吗？”诸将请求延缓进军，以图今后之计，皇上觉得有理。图鲁窘满面怒容，进言说：“愚臣私下里以为陛下如果喜欢安逸，那么小心把守四境就行了；既然想要扩大疆域，出兵远攻，又怎么可能不劳烦圣虑呢？如果中途作罢，正好是敌军之利，那么他们一定会攻陷南京，夷平我们的属邑。要这样，就将争战不已，我国百姓就没有安枕之日了。何况敌人用步兵我方用骑兵，又何必担心不能战胜。况且汉人脚上功夫差，走得慢，如果选派轻骑先行阻断其粮道，那么事情就没有不成功的了！”皇上高兴地说：“国强则其人贤，海巨则其鱼大。”于是堵塞晋军粮道，多次出兵牵制和扰乱其兵势，重威果然像图鲁窘所说那样投降了。因功获得赏赐十分丰厚。次年(939)春天，在军中去世。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-白话.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-白话.html'>第六章-卷六</a></p></div><footer>
+<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-白话.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-白话.html'>第六章-卷六</a></p></div><footer data-v="2">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
