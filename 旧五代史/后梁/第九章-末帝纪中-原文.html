@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后梁<a href='../旧五代史.html#后梁'>：目录</a></p>
@@ -174,5 +201,18 @@
 </p><p>秋七月，晋王自魏州还太原。八月乙未朔，滑州节度使贺瑰卒，辍视朝三日，诏赠侍中。是月，命开封尹王瓚为北面行营招讨使。瓚乃与许州留后王彦章等率大军自黎阳济，营于杨村，造浮梁以通津路。九月丙寅，制削夺广州节度使、南平王刘岩在身官爵，以其将谋僭号故也。仍诏天下兵马元帅钱镠指挥攻讨。
 </p><p>冬十月，晋王复至魏州。是月，刘鄩攻下兗州，擒张守进，夷其族。十一月丁丑，以兗州安抚制置使、特进、检校太傅、大彭郡开国公刘鄩为兗州节度使、开府仪同三司、检校太尉、同平章事，赏平兗之功也。辛卯，王瓚帅师至戚城，遇晋军。交绥而退。
 </p><p>十二月戊戌，晋王领军迫河南寨，王瓚率师御之，获晋将石家才。既而瓚军不利，瓚退保杨村寨，晋人陷濮阳。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八章-末帝纪上-原文.html'>第八章-末帝纪上</a></p><p class='next'>下一节：<a href='第十章-末帝纪下-原文.html'>第十章-末帝纪下</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八章-末帝纪上-原文.html'>第八章-末帝纪上</a></p><p class='next'>下一节：<a href='第十章-末帝纪下-原文.html'>第十章-末帝纪下</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

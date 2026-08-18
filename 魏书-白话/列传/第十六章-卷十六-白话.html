@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#魏书'>：目录</a></p>
@@ -196,5 +223,18 @@
 </p><p>世祖因他是有功旧臣，委以辅佐重任，授任大司农卿，军队国家大事的商议，张黎时常参与。加授镇北将军。以征伐赫连定的功劳，升军号为征北大将军。和乐安王元范、济南公崔徽镇守长安，清廉简约公正平实，很有名声。被接替的时候，家中没有多余的财产。世祖诏令张黎率领兵士一万二千人，打通莎泉道。世祖征伐凉州，蠕蠕吴提乘虚入侵，张黎和司空道生抵御出击他。恭宗初掌朝政，张黎和束郡公崔浩等人辅佐政事，忠心侍奉主上，不是公事不谈论。诏书说：“侍中广平公张黎、柬郡公崔浩等人，在束宫为师傅，有老练成熟的辛勤，我很赞许。现赐布帛各自一千匹，来表彰旧Et的功勋。”恭宗在束宫逝世，张黎兼任太尉，秉持符节册封上谧号。
 </p><p>吴王余立继位，任命张黎为太尉。后来因议论不合乎旨意，被免职。不久和古弼一同被杀。
 </p><p>史臣曰：和跋、奚牧、莫题、贺狄干、李栗、刘洁等人，都有忠诚勤恳征战攻伐之功，职任待遇又优厚，都被诛杀。庾岳受任于危难之中。在初创的阶段接受重任，表现出机智勇敢，功名格外突出，是良将之材。古弼谋划军事辅助国家，计策长远情怀正大，有国家柱石的器量。张黎诚实谨慎兼备，以功劳旧臣受到重用。以细微的过失，一时之间命丧黄泉，宽恕延及十代，是句空话。可惜啊!</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷十五-白话.html'>第十五章-卷十五</a></p><p class='next'>下一节：<a href='第十七章-卷十七-白话.html'>第十七章-卷十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷十五-白话.html'>第十五章-卷十五</a></p><p class='next'>下一节：<a href='第十七章-卷十七-白话.html'>第十七章-卷十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

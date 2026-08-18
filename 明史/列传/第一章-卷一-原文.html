@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -209,5 +236,18 @@
 </p><p>恭肃贵妃万氏，诸城人。四岁选入掖廷，为孙太后宫女。及长，侍宪宗于东宫。宪宗年十六即位，妃已三十有五，机警，善迎帝意，遂谗废皇后吴氏，六宫希得进御。帝每游幸，妃戎服前驱。成化二年正月生皇第一子，帝大喜，遣中使祀诸山川，遂封贵妃。皇子未期薨，妃亦自是不复娠矣。
 </p><p>当是时，帝未有子，中外以为忧，言者每请溥恩泽以广继嗣。给事中李森、魏元，御史康永韶等先后言尤切。四年秋，彗星屡见。大学士彭时、尚书姚夔亦以为言。帝曰：“内事也，朕自主之。”然不能用。妃益骄。中官用事者，一忤意，立见斥逐。掖廷御幸有身，饮药伤坠者无数。孝宗之生，顶寸许无发，或曰药所中也。纪淑妃之死，实妃为之。佞幸钱能、覃勤、汪直、梁芳、韦兴辈皆假贡献，苛敛民财，倾竭府库，以结贵妃欢。奇技淫巧，祷祠宫观，糜费无算。久之，帝后宫生子渐多，芳等惧太子年长，他日立，将治己罪，同导妃劝帝易储。会泰山震，占者谓应在东宫。帝心惧，事乃寝。
 </p><p>二十三年春，暴疾薨，帝辍朝七日。谥曰恭肃端慎荣靖皇贵妃，葬天寿山。弘治初，御史曹璘请削妃谥号；鱼台县丞徐顼请逮治诊视纪太后诸医，捕万氏家属，究问当时薨状。孝宗以重违先帝意，已之。</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p></div></body>
+<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

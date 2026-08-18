@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -185,5 +212,18 @@
 </p><p>时桂林殉难者光禄少卿汪皞投水死。其破平乐也，守将镇西将军朱旻如自刭。
 </p><p>有周震者，官中书舍人，居全州，慷慨尚气节，武冈失，全州危，震邀文武将吏盟于神，誓死拒守。条城守事宜，上之留守瞿式耜。式耜即题为御史，监全州军。无何，郝永忠、卢鼎自全州撤兵还桂林。守全诸将议举城降，震力争不可，众怒杀之，全州遂失。
 </p><p>赞曰：何腾蛟、瞿式耜崎岖危难之中，介然以艰贞自守。虽其设施经画，未能一睹厥效，要亦时势使然。其于鞠躬尽瘁之操，无少亏损，固未可以是为訾议也。夫节义必穷而后见，如二人之竭力致死，靡有二心，所谓百折不回者矣。明代二百七十余年养士之报，其在斯乎！其在斯乎！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百六十七章-卷一百六十七-原文.html'>第一百六十七章-卷一百六十七</a></p><p class='next'>下一节：<a href='第一百六十九章-卷一百六十九-原文.html'>第一百六十九章-卷一百六十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百六十七章-卷一百六十七-原文.html'>第一百六十七章-卷一百六十七</a></p><p class='next'>下一节：<a href='第一百六十九章-卷一百六十九-原文.html'>第一百六十九章-卷一百六十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

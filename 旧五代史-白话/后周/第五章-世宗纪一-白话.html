@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后周<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -163,5 +190,18 @@
 </p><p>八月八日，前泽州刺史李彦崇贬任右司御副率。在高平战役中，世宗与贼军相遇，就令李彦崇领兵守住江猪岭，以切断贼寇的退路。李彦崇开头看见朝廷军队受挫，马上退走，到刘崇兵败时，果然从江猪岭逃走。
 </p><p>九月十五日，右屯卫将军薛训被除名，流放沙门岛，因犯监守雍州兵库时放纵官吏盘剥人民聚敛财富之罪。三十日，在宁陵县诛杀宋州巡检供奉官、副都知竹奉王..，因犯不能捕获劫掠商船的强盗之罪。
 </p><p>冬十月三日，左羽林大将军孟汉卿赐死，因犯监收赋税时多收耗余之罪。十七日，监修国史李谷等人上奏说：“自古以来的王者，全都设立史官。群臣所出的谋略，都要全面记载，国家安危的缘由，得以秉笔直书。历代以来，名称不一。记载人君的言语行动，则历代都有起居注；记载将相治理国家，则自古就有时政记。然后从中摘录事实，编成史书。这是因为史书的见闻，须有出处；编撰之时，要求详审。现在的左右起居郎，就是古代的左右史。唐文宗时，命史官拿着笔，站立在大殿台阶螭龙的头下，以记载政事。后到后唐明宗时，命端明殿以及枢密直学士，都轮流撰写日历，立即送给史官，以备纂修史书。到近朝，这事都废止了，史官仅凭各部门公文，史馆只取两省的制书，此外虽有采访询问，照例都不真实可靠。自从本朝先帝开创国家鸿运，以至皇帝陛下继承大业，那圣德武功，神谋智略，都是隐密不显，宫廷深奥森严，外臣不可得知，众官不能询访。以后希望将咨询之事，裁制之规，另命身边臣子，立时详细抄录，每当修撰日历，就让封好交付史臣，以期国家大事没有遗漏地记载，职责部门免除疏忽的过错。”世宗听从，因而命枢密直学士，今后在枢密使所在地，每月抄录国家大事，送付史馆。十八日，供奉官郝光庭被杀弃市，因犯在叶城巡察时，挟私愤妄杀平民之罪。这天大阅兵，世宗亲临。世宗自高平战役之中，见各军不很威严整齐，以至于有败退之事。现在命令今后一律检阅，挑选武艺超群的士兵，充任殿前诸班，因此有散员、散指挥使、内殿直、散都头、铁骑、控鹤的名号。又命领兵之将，从龙捷、虎捷以下，一一精选，老弱瘦小的去掉，各军士卒行伍，无不精锐允当。从此兵力的强盛，近代无比，而且减少了冗员的生活消费。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章-太祖纪四-白话.html'>第四章-太祖纪四</a></p><p class='next'>下一节：<a href='第六章-世宗纪二-白话.html'>第六章-世宗纪二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四章-太祖纪四-白话.html'>第四章-太祖纪四</a></p><p class='next'>下一节：<a href='第六章-世宗纪二-白话.html'>第六章-世宗纪二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

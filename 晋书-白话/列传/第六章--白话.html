@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#晋书'>：目录</a></p>
@@ -206,5 +233,18 @@
 </p><p>后来任吏部令史，改任齐王司马攸司空主簿，转任太常丞、司徒左西曹掾、尚书郎，在所任的位置上都称职。逐渐升任散骑侍郎，做并州刺史。入朝任左卫率，知道贾后废太子的阴谋，很忧虑。为张华出计谋而不被采用，更觉不平。买后的亲信党羽暗中监视外界，对刘卞的言论有所耳闻，于是改任刘卞为轻车将军、雍州刺史。刘卞知道言辞泄露，怕被贾后杀害，便喝药而死。当初，刘卞去并州，过去同时在须昌做小官的十多人为他饯行，其中一人轻视刘卞，刘卞派人把他扶出屋外，人们因此轻视刘卞。
 </p><p>史臣曰：忠诚为美德，才学是国之精华，譬如众星有礼义，人伦有冠冕。卫瓘抚摸武帝的床，张华抗拒赵王司马伦的命令，进谏则伯玉较多，临危不惧则茂先做得好。在危险的路途上，有这样的道理：昏乱形成，则要看事情的发展趋向；固执不改，则死比活着强，坚持去赴汤蹈火，是不避颠覆者。都落入淫纲，同遭杀害，国家困危，不也令人伤感吗!
 </p><p>赞曰：贤人献身，陵墓的寒气映到道上。空受俸禄者观望失败，我心中不安。街因为夏被灭绝，强因为赵被残杀。忠于乱世，自古以来就难。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章--白话.html'>第五章-</a></p><p class='next'>下一节：<a href='第七章--白话.html'>第七章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五章--白话.html'>第五章-</a></p><p class='next'>下一节：<a href='第七章--白话.html'>第七章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

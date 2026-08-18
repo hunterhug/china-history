@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -183,5 +210,18 @@
 </p><p>夹谷查剌，隆州失撒古河人也。祖不剌速，国初授世袭曷懒兀主猛安、曷懒路总管。父谢奴，官至工部尚书。查剌状貌魁伟，善女直、契丹书。天德初，以功臣子充护卫。二年，授武义将军。未几，擢符宝郎，凡再考，出为泺州刺史，改知平定军事。海陵南征，为武威军副都总管。军还，大定二年，授景州刺史，迁同知京兆尹。时彰化军节度使宗室璋等与宋将吴璘相拒于德顺州，元帅左都监徒单合喜遣查剌与诸将议破敌策。璋等议曰：“我兵虽屡胜，而敌兵不退者，知我军少故也。须都监亲至，方可破敌。”于是合喜领兵四万至，遂下德顺州。入为殿前右卫将军，袭父猛安，改左卫将军，迁右副点检。有疾，丞相良弼视之，谓所亲曰：“此人国器也。他人有疾，吾未尝往焉。”九年，出为东北路招讨使兼德昌军节度使，乃赐金带。到官，治有勤绩，边境以安。其断狱公平，道不拾遗。迁临潢尹兼本路兵马都总管，蕃部畏服。改西北路招讨使。上遣使宣谕曰：“今诸部初附，命汝抚绥，当使治声达于朕听。”大定十二年卒。
 </p><p>查剌性忠实，内明敏，每论大事，超越伦辈。太师勖尝曰：“查剌不学而知，方之古人，如此者鲜矣。”
 </p><p>赞曰：陷泉之捷，震电烨烨。符离之克，我势攸赫。陇、坻扌雹扌暴，淮、濄钩鈲，成矣。故列叙诸将之功焉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十三章-卷二十三-原文.html'>第二十三章-卷二十三</a></p><p class='next'>下一节：<a href='第二十五章-卷二十五-原文.html'>第二十五章-卷二十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十三章-卷二十三-原文.html'>第二十三章-卷二十三</a></p><p class='next'>下一节：<a href='第二十五章-卷二十五-原文.html'>第二十五章-卷二十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

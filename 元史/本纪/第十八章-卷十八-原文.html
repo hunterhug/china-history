@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>元史-本纪<a href='../元史.html#本纪'>：目录</a></p>
@@ -176,5 +203,18 @@
 </p><p>冬十月癸卯，有事于太庙。中书省臣言：“去岁世祖、皇后、裕宗祔庙，以绫代玉册。今玉册、玉宝成，请纳诸各室。”帝曰：“亲享之礼，祖宗未尝行之，其奉册以来，朕躬祝之。”命献官迎导入庙。给江浙、河南巡逻私盐南军兵仗。癸丑，以西北叛王将入自土蕃，命平章军国重事答失蛮往征之，仍敕便宜总帅发兵千人从行，听其节度。甲寅，中书省、御史台臣言：“江浙行省平章明里不花陈台宪非便事，臣等议，乞自今监察御史廉访司有所按核，州县官与本路同鞫，路官与宣慰司同鞫，宣慰司官与行省同鞫。”制曰：“可。”诏诸王、驸马部民既隶军籍者，毋夺回本部。己未，赐各卫士贫乏者钞二万九千三百余锭。辛酉，辰星犯房。壬戌，辰星犯键闭。癸亥，赐诸王巴撒而、火而忽答孙、秃剌三部钞四万八千五百余锭。丁卯，以博而赤、答剌赤等贫乏，赐钞二万九千余锭。戊辰，太白昼见，太阴犯房。遣安南朝贡使陈利用等还其国，降诏谕陈日燇。
 </p><p>十一月甲戌，太白经天及犯垒壁阵。辛巳，置江浙行省检校官二员，立江浙金银洞冶转运使司。乙酉，太阴犯井。丙戌，毯阳酋长之兄脱杭捧于、法而剌酋长之弟密剌八都、阿鲁酋长之弟脱杭忽先等，各奉金表来觐。丁亥，太阴犯鬼。戊子，赐阿鲁酋长虎符。癸巳，赐安西王甲胄、枪挝、弓矢、橐鞬等十五万八千二百余事。戊戌，升赣州路之宁都、会昌二县为州，以石城县隶宁都，瑞金县隶会昌。诏江浙行省括隐漏官田及检劾富强避役之户。
 </p><p>十二月庚子朔，遣集贤院使阿里浑撒里等祭星于司天台。癸卯，以驸马阿不花所部民贫，赐钞万锭。赐诸王押忽秃、忽剌出、阿失罕等金各二百五十两、钞五百锭。丙辰，太阴犯轩辕。荆南僧普昭等伪撰佛书，有不道语，伏诛。己未，诏大都路，凡和顾和买及一切差役，以诸色户与民均当。赐诸王不颜铁木而、阿八也不干金各五百两、银五千两、钞二千锭、币帛各二百匹，其幼王减五分之一。以各道廉访司官八员，员一印，命收其三。甲子，太阴犯天江。赐帝师双龙纽玉印。也速带而之军因李璮乱去山东，其元驻之地为人所垦，岁久成业，争讼不已；命别以境内荒田给之，正军五顷，余丁二顷，已满数者不给。减海运脚价钞一贯，计每石六贯五百文，著为令。徙缙山所居乞里乞思等民于山东，以田与牛、种给之。丁卯，禁诸王辄召有司官吏。己巳，诏免军器匠门徭。是岁，断大辟三十人。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p><p class='next'>下一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p><p class='next'>下一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

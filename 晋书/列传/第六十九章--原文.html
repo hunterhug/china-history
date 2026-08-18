@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -194,5 +221,18 @@
 </p><p>仲文善属文，为世所重，谢灵运尝云：“若殷仲文读书半袁豹，则文才不减班固。”言其文多而见书少也。
 </p><p>史臣曰：桓玄纂凶，父之余基。挟奸回之本性，含怒于失职；苞藏其豕心，抗表以称冤。登高以发愤，观衅而动，窃图非望。始则假宠于仲堪，俄而戮殷以逞欲，遂得据全楚之地，驱劲勇之兵，因晋政之陵迟，乘会稽之酗ＪＴ，纵其狙诈之计，扇其陵暴之心，敢率犬羊，称兵内侮。天长丧乱，凶力实繁，逾年之间，奄倾晋祚，自谓法尧禅舜，改物君临，鼎业方隆，卜年惟永。俄而义旗电发，忠勇雷奔，半辰而都邑廓清，逾月而凶渠即戮，更延坠历，复振颓纲。是知神器不可以暗干，天禄不可以妄处者也。夫帝王者，功高宇内，道济含灵，龙宫凤历表其祥，彤云玄石呈其瑞，然后光临大宝，克享鸿名，允彳奚后之心，副乐推之望。若桓玄之么麽，岂足数哉！适所以干纪乱常，倾宗绝嗣，肇金行之祸难，成宋氏之驱除者乎！
 </p><p>赞曰：灵宝隐贼，世载凶德。信顺未孚，奸回是则。肆逆迁鼎，凭威纵慝。违天虐人，覆宗殄国。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十八章--原文.html'>第六十八章-</a></p><p class='next'>下一节：<a href='第七十章--原文.html'>第七十章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十八章--原文.html'>第六十八章-</a></p><p class='next'>下一节：<a href='第七十章--原文.html'>第七十章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>元史-本纪<a href='../元史.html#本纪'>：目录</a></p>
@@ -181,5 +208,18 @@
 </p><p>冬十月戊戌朔，享于太庙。辛丑，弛北京、义、锦等处猎禁。癸丑，太阴犯毕。
 </p><p>十一月丁卯，阿里海牙以军攻潭州。乙亥，伯颜分军为三，趣临安；阿剌罕率步骑自建康、四安、广德以出独松岭；董文炳率舟师循海趣许浦、澉浦，以至浙江；伯颜、阿塔海由中道节度诸军，期并会于临安。丙子，宋权融、宜、钦三州总管岑从毅，沿边巡检使、广西节制军马李维屏等，诣云南行中书省降。丁丑，阿合马奏立诸路转运司凡十一所。己卯，宋都带等军次隆兴府，宋江西转运使、知府刘槃以城降。都元帅府檄谕江西诸郡相继归附，得府州六、军四、县五十六，户一百五万一千八百二十九，口二百七万六千四百。壬午，伯颜大军至常州，督诸军登城，四面并进，拔其城。刘师勇变服单骑南走。改顺天府为保定府。枢密院言：“两都、平滦猎户新签军二千，皆贫无力者，宜存恤其家。又新附郡县有既降复叛，及纠众为盗犯罪至死者，既已款伏，乞听权宜处决。”皆从之。中书省臣议断死罪，诏：“今后杀人者死，问罪状已白，不必待时，宜即行刑。其奴婢杀主者，具五刑论。”乙酉，阿剌罕克广德，趣独松关。丙戌，太阴犯轩辕大星。己丑，遣太常卿合丹以所获涂金爵三，献于太庙。庚寅，伯颜遣降人游介实奉玺书副本使于宋，仍以书谕宋大臣。甲午，以高丽国官制僣滥，遣使谕旨，凡省、院、台、部官名爵号，与朝廷相类者改正之。
 </p><p>十二月戊戌，填星犯亢。己亥，签书四川行枢密院事昝顺言：“绍庆府、施州、南平及诸蛮吕告、马蒙、阿永等，有向化之心。又播州安抚杨邦宪、思州安抚田景贤，未知逆顺，乞降诏使之自新，并许世绍封爵。”从之。辛丑，董文炳军次许浦，宋都统制祁安以本军降。宋主为书，介国信副使严忠范侄焕请和。甲辰，伯颜次平江府，宋都统王邦杰以城降。乙巳，免江陵等处今岁田租。丁未，改诸站提领司为通政院。戊申，中书左丞相忽都带儿与内外文武百寮及缁黄耆庶，请上皇帝尊号曰宪天述道仁文义武大光孝皇帝，皇后曰贞懿顺圣昭天睿文光应皇后，不许。太阴犯毕。庚子，宋主复遣尚书夏士林、右史陆秀夫奉书，称侄乞和。西川沧溪知县赵龙遣间使入宋，敕流远方，籍其家。癸亥，敕枢密院：“靖州既降复叛，今已平定，其遣张通判、李信家属并同叛者赴都。”甲子，答宋国主书，令其来降。丙寅，阿剌罕军次安吉州，宋安抚使赵与可以城降。升高丽东宁府为路，割江东南康路隶江西省，置马湖路总管府。省重庆路隆化县入南川，滦州海山县入昌黎县。复华州郑县。是岁，卫辉、太原等路旱，河间霖雨伤稼，凡赈米三千七百四十八石、粟二万四千二百六石。天下户四百七十六万四千七十七，断死罪六十八人。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

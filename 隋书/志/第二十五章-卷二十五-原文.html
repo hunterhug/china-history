@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>隋书-志<a href='../隋书.html#志'>：目录</a></p>
@@ -268,5 +295,18 @@
 </p><p>高密郡旧置胶州，开皇五年改为密州。统县七，户七万一千九百二十。
 </p><p>诸城旧曰东武，置高密郡。开皇初郡废，十八年县改名焉。大业初复置郡。有烽火山。东莞后齐并姑幕县入焉。有箕山、潍水。郚城旧置平昌郡。后齐废郡，置琅邪县，废硃虚入焉。大业初改名郚城。安丘开皇十六年置，曰牟山。大业初改名，并省安昌入焉。高密后齐废淳于县入焉。胶西旧曰黔陬，置平昌郡。开皇初郡废。十六年置县，曰胶西。大业初又以黔陬入焉。琅邪开皇十六年置，曰丰泉。大业初改焉。有徐山、卢山、鄣日山、胶水。
 </p><p>《周礼·职方氏》：“正东曰青州。”其在天官，自须女八度至危十五度，为玄枵，于辰在子，齐之分野。吴札观乐，闻齐之歌曰：“泱泱乎大风也哉，国未可量也。”在汉之时，俗弥侈泰，织作冰纨绮绣纯丽之物，号为冠带衣履天下。始太公以尊贤尚智为教，故士庶传习其风，莫不矜于功名，依于经术，阔达多智，志度舒缓。其为失也，夸奢朋党，言与行谬。齐郡旧曰济南，其俗好教饰子女淫哇之音，能使骨腾肉飞，倾诡人目。俗云“齐倡”，本出此也。祝阿县俗，宾婚大会，肴馔虽丰，至于蒸脍，尝之而已，多则谓之不敬，共相诮责，此其异也。大抵数郡风俗，与古不殊，男子多务农桑，崇尚学业，其归于俭约，则颇变旧风。东莱人尤朴鲁，故特少文义。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十四章-卷二十四-原文.html'>第二十四章-卷二十四</a></p><p class='next'>下一节：<a href='第二十六章-卷二十六-原文.html'>第二十六章-卷二十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十四章-卷二十四-原文.html'>第二十四章-卷二十四</a></p><p class='next'>下一节：<a href='第二十六章-卷二十六-原文.html'>第二十六章-卷二十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

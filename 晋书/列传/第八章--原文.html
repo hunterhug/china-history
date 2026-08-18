@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -203,5 +230,18 @@
 </p><p>乐平王延祚，字大思，少有笃疾，不任封爵。太康初，诏曰：“弟祚早孤无识，情所哀愍。幼得笃疾，日冀其差，今遂废痼，无复后望，意甚伤之。其封为乐平王，使有名号，以慰吾心。”寻薨，无子。
 </p><p>史臣曰：平原性理不恆，世莫之测。及其处乱离之际，属交争之秋，而能远害全身，享兹介福，其愚不可及已！琅邪武功既暢，饰之以温恭，扶风文教克宣，加之以孝行，抑宗室之可称者也。齐王以两献之亲，弘二南之化，道光雅俗，望重台衡，百辟具瞻，万方属意。既而地疑致逼，文雅见疵，紞勖陈蔓草之邪谋，武皇深翼子之滞爱。遂乃褫龙章于衮职，徙侯服于下籓，未及戒涂，终于愤恚，惜哉！若使天假之年而除其害，奉缀衣之命，膺负图之托，光辅嗣君，允厘邦政，求诸冥兆，或废兴之有期，徵之人事，庶胜残之可及，何八王之敢力争，五胡之能竞逐哉！《诗》云“人之云亡，邦国殄瘁，”攸实有之；“谗人罔极，交乱四国，”其荀冯之谓也。
 </p><p>赞曰：文宣孙子，或贤或鄙。扶风遗爱，琅邪克己。澹谄凶魁，肜参衅始。干虽静退，性乖恆理。彼美齐献，卓尔不群。自家刑国，纬武经文。木摧于秀，兰烧以薰。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章--原文.html'>第七章-</a></p><p class='next'>下一节：<a href='第九章--原文.html'>第九章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七章--原文.html'>第七章-</a></p><p class='next'>下一节：<a href='第九章--原文.html'>第九章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

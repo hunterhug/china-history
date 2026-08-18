@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新唐书-志<a href='../新唐书.html#志'>：目录</a></p>
@@ -318,5 +345,18 @@
 </p><p>镇将、镇副，戍主、戍副，掌捍防守御。凡上镇二十，中镇九十，下镇一百三十五；上戍十一，中戍八十六，下戍二百四十五。仓曹参军事，掌仪式、仓库、饮膳、医药、付事、句稽、省署钞目、监印、给纸笔、市易、公廨。中镇则兵曹兼掌。兵曹参军事，掌防人名帐、戎器、管钥、马驴、土木、谪罚之事。上镇：有录事一人，史一人，仓曹佐一人、史二人，兵曹佐、史各二人，仓督一人、史二人；中镇：录事一人，兵曹佐一人、史四人，仓督一人、史二人；下镇：录事一人，兵曹佐一人、史二人，仓督一人、史一人。凡军镇，五百人有押官一人，千人有子总管一人，五千人又有府三人、史四人。上戍：佐一人、史二人；中戍：史二人；下戍：史一人。唐废戍子，每防人五百人为上镇，三百人为中镇，不及者为下镇；五十人为上戍，三十人为中戍，不及者为下戍。开元十五年，朔方五城各置田曹参军事一人，品同诸军判司，专莅营田。永泰后，诸镇官颇增减开元之旧。
 </p><p>五岳、四渎，令各一人，正九品上，掌祭祀。有祝史三人，赍郎各三十人。
 </p><p>上关：令一人，从八品下；丞二人，正九品下。中关：令一人，正九品下；丞一人，从九品下。下关：令一人，亦从九品下。掌禁末游，察奸慝。凡行人车马出入，据过所为往来之节。凡关二十有六，京四面关有驿道者为上关，元驿道者为中关，余为下关。丞掌付事、句稽、监印、省署钞目，通判关事。上关：录事一人，府二人，史四人，典事六人；中关：录事一人，府二人，史二人，典事四人；下关：府一人，史、典事各二人。典事掌巡雉及杂当。初，诸关置都尉，亦有它官奉敕监者。上津置尉一人，掌舟梁之事；府一人，史二人，津长四人。下津尉一人，府一人，史二人，津长二人。永徽中，废津尉，上关置津吏八人。永泰元年，中关置津吏六人，下关四人，无津者不置。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十八章-卷三十八-原文.html'>第三十八章-卷三十八</a></p><p class='next'>下一节：<a href='第四十章-卷四十-原文.html'>第四十章-卷四十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十八章-卷三十八-原文.html'>第三十八章-卷三十八</a></p><p class='next'>下一节：<a href='第四十章-卷四十-原文.html'>第四十章-卷四十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-帝纪<a href='../魏书.html#帝纪'>：目录</a></p>
@@ -193,5 +220,18 @@
 </p><p>六年春正月丙申，大赦天下。二月丁丑，行幸楼烦宫。高丽、蓰王、对曼诸国各遣使朝献。三月戊戌，相州刺史、西平郡王吐谷浑权薨。乙巳，车驾还宫。
 </p><p>夏四月，破洛那国献汗血马，普岚国献宝剑。五月癸卯，帝崩于太华殿，时年二十六。六月丙寅，上尊谥曰文成皇帝，庙号高宗。八月，葬云中之金陵。
 </p><p>史臣曰：世祖经略四方，内颇虚耗。既而国衅时艰，朝野楚楚。高宗兴时消息，静以镇之，养威布德，怀缉中外。自非机悟深裕，矜济为心，亦何能若此！可谓有君人之度矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

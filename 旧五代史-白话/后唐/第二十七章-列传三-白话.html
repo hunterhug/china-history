@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后唐<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -154,5 +181,18 @@
 </p><p>李从荣写诗，和从事高辇等人互相唱和，自以为章句在当时超群出众，有一千多首诗，号为《紫府集》。
 </p><p>长兴年中，李从荣以秦王身份兼任天下兵马大元帅。李从荣便请以严卫、捧圣步骑两指挥为秦王府衙兵，每次上朝，以数百骑兵随行，出行就张弓挟箭，满街奔驰。接受元帅一职后，便令其府属僚佐以及四方游士，各写《檄淮南书》一篇，陈述自己将扫清天下之意。起初，有言事的人请为亲王设立一名师傅，明宗向近臣询问，管事的人因李从荣名声势力日益隆盛，不敢违抗旨意，便上奏说“：王官适宜委任。”李从荣乃奏请刑部侍郎刘赞为秦王师傅，又奏请翰林学士崔..为元帅府判官。明宗说“：学士代我拟诏令，不可拟议。”李从荣不高兴，退下后对身边的人说：“既然委任元帅一职，却又阻止我请僚佐，又不明白制旨。”再奏请刑部侍郎任赞，明宗同意了。后来发兵侵犯皇室，失败而死，废为庶人。
 </p><p>许王李从益是明宗的幼子。是宫嫔所生，明宗命王淑妃抚养他。曾对身边人说“：只有这个儿子出生在皇宫，所以我特别喜爱他。”长兴末年，封为许王。晋高祖即位后，因为皇后就是他的姐姐，便把李从益养在宫中。晋天福中，因为李从益是二王之后，改封郇国公，食邑三千户。后来与母亲回洛阳看守陵墓。开运末年，契丹国主到汴州，以李从益遥任曹州节度使，再次封为许王，不久与王妃回西京。遇上契丹主去世，契丹任命的汴州节度使萧翰打算回北方，但担心中原无主，军民大乱，不能安心平稳地回去，于是诈称契丹主的命令，派人到洛阳迎接李从益，令他掌管南方军国事务。李从益和王妃逃到徽陵以避开此事，使者赶到，不得已才赴任。李从益在崇元殿会见众官，萧翰率部众在殿上排列朝拜，众官在殿下趋拜，于是伪任王松为左丞相，赵上交为右丞相，李式、翟光邺为枢密使，王景崇为宣徽使，其余官员各有安置。又任北方来的燕将刘祚为临时侍卫使，兼在京巡检。萧翰回到北方时，李从益在北郊为他饯行。到汉高祖将离开太原时，李从益召见高行周、武行德准备抗拒汉高祖，高行周等人不同意，又上奏这件事。汉高祖发怒，车驾将到京城，李从益与王妃都被赐死在家中，年仅十七岁，当时人都哀悼他。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十六章-列传二-白话.html'>第二十六章-列传二</a></p><p class='next'>下一节：<a href='第二十八章-列传四-白话.html'>第二十八章-列传四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十六章-列传二-白话.html'>第二十六章-列传二</a></p><p class='next'>下一节：<a href='第二十八章-列传四-白话.html'>第二十八章-列传四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

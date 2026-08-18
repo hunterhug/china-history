@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#列传'>：目录</a></p>
@@ -183,5 +210,18 @@
 </p><p>性平正柔和，未尝有喜怒之色。忠笃爱厚，不谄上抑下。每奉诏宣外，必告示殷勤，受事者皆饱之而退，事密者倍至蒸仍。是以上下嘉叹。泰常元年卒，时年二十八。太宗甚痛悼之，亲临哀恸。朝野无不追惜。赠侍中、司空、安城王，谥孝元。赐温明秘器，载以辒辌车，卫士导从，陪葬金陵。子蒲，袭爵。后有大功，及宠幸贵臣薨，赙送终礼，皆依俊故事，无得逾之者。初，俊既卒，太宗命其妻桓氏曰：“夫生既共荣，没宜同穴，能殉葬者可任意。”桓氏乃缢而死，遂合葬焉。
 </p><p>俊既为安城王，俊弟邻袭父爵，降为丹阳公。少聪慧知名。稍迁北部尚书，有当官之称。转尚书令。出为凉州镇大将，加镇西将军。邻与镇副将奚牧，并以贵戚子弟，竞贪财货，专作威福。遂相纠发，坐伏诛。
 </p><p>史臣曰：奚斤世称忠孝，征伐有克。平凉之役，师歼身虏。虽败崤之责已赦，封尸之效靡立，而恩礼隆渥，没祀庙庭。叔孙建少展诚勤，终著庸伐。治边有术，威震夷楚。俊委节太宗，义彰颠沛，察朱提之变，有日磾之风。加以柔而有正，见美朝野，可谓世不乏贤矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p><p class='next'>下一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p><p class='next'>下一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

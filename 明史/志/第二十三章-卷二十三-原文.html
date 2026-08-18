@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-志<a href='../明史.html#志'>：目录</a></p>
@@ -213,5 +240,18 @@
 </p><p>分献陪祀
 </p><p>凡分献官，太常寺豫请旨。洪武七年，太祖谓学士詹同曰：“大祀，终献方行分献礼，未当。”同乃与学士宋濂议以上，初献奠玉帛将毕，分献官即行初献礼。亚献、终献皆如之。嘉靖九年，四郊工成，帝谕太常寺曰：“大祀分献官豫定，方可习仪。”乃用大学士张璁等于大明、夜明、星辰、风云雷雨四坛。旧制，分献用文武大臣及近侍官共二十四人，今定四人，法司官仍旧例不兴。
 </p><p>凡陪祀，洪武四年，太常寺引《周礼》及唐制，拟用武官四品、文官五品以上，其老疾疮疥刑馀丧过体气者不与。从之。后定郊祀，六科都给事中皆与陪祀，馀祭不与。又定凡南北郊，先期赐陪祀执事官明衣布，乐舞生各给新衣。制陪祀官入坛牙牌，凡天子亲祀，则佩以入。其制有二，圆者与祭官佩之，方者执事人佩之。俱藏内府，遇祭则给，无者不得入坛。洪武二十九年，初祀山川诸神，流官祭服，未入流官公服。洪武二十九年，从礼臣言，未入流官，凡祭皆用祭服，与九品同。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p><p class='next'>下一节：<a href='第二十四章-卷二十四-原文.html'>第二十四章-卷二十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p><p class='next'>下一节：<a href='第二十四章-卷二十四-原文.html'>第二十四章-卷二十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

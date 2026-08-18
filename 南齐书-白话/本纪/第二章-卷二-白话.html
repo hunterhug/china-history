@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>南齐书-本纪<a href='../南齐书.html#南齐书'>：目录</a></p>
@@ -182,5 +209,18 @@
 </p><p>皇上的姓名、骨相以及气运历数，都对应上数十百条预言图符，是历代帝王所没有的，臣下记录，而皇上压下没有公开，美德啊。
 </p><p>史臣曰：孙卿有句话：“圣人之所以拥有天下，是受予的，不是夺取来的。”汉高祖神勇、杰出、圣明，观秦始皇束游时，也衹是喜欢说大话，并非自己知晓天命；光武帝听少公谈论谶语，也衹是一时的说笑；魏武帝最初起兵举义，所期望的是“征西”的墓地；晋宣帝没有内逼曹爽，岂能确立霸位于浮桥；宋代刘氏出身于匹夫，仗义起兵，都是称雄一世，最终开启国运。宋代在位八个国君，根据占卜传位六十年，四次嫡长子断绝，三次号称中兴，内忧外患，年年有战争。太祖受命奠定国基之初，武装深藏不用，叁盘年间国运开启，拯救了当时的危难，龙在田野上显示德行，呈现兴云作雨的迹象。等到苍梧王暴虐，与朝野结怨，百姓惶恐不已，性命朝不保夕。既然当权，就要兼而救助天下。大的功绩会威胁君主地位，国家权力不应假藉给别人，众位人才合力，实际是怀有建功立业的愿望。岂衹是上天厌弃五德中之水德，人们希求木德的愿望也很强烈。把功绩归还贤能，事情至此达到极点。虽然极为公正于天下，可确实时来运转，上大无意于皇帝，天道随着事物变易。应验而不是去争取，这就是皇齐会集天命的原因。
 </p><p>赞曰：呜呼太祖，承受天命。共同测度宇宙，一起计量山渊。宋代的德业不能继续，国家祭器空白流传。以武力平定动乱，凭藉贤才废黜暴虐。功在开发西疆，兴盛北部国土。偏师独自攻克，孤旅猛烈击断。举旗束夏，掌管平定作乱。刀斧指向徐方，当时衹是讨伐叛乱。扬威京城，安坐乎定江漠地区。亲自赋诗作文，到处都是好名声。依据才能任用下属，凭藉德业统治百姓。端正自己，雄武而温和，治理天下，保持尊严沉静。囊括四海，大造家国。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-卷一-白话.html'>第一章-卷一</a></p><p class='next'>下一节：<a href='第三章-卷三-白话.html'>第三章-卷三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-卷一-白话.html'>第一章-卷一</a></p><p class='next'>下一节：<a href='第三章-卷三-白话.html'>第三章-卷三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

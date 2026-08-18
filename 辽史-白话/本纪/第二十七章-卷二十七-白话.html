@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-本纪<a href='../辽史.html#辽史'>：目录</a></p>
@@ -265,5 +292,18 @@
 </p><p>冬十月初一，以守司空萧嗣先为东北路都统，静江军节度使萧挞不也为副统，征发契丹奚军三千人，中京禁兵及土豪两千人，另外选派诸路武勇两千余人，以虞候崔公义为都押官，控鹤指挥邢颖为副押官，率军屯驻于出河店。两军对垒，女真军暗渡混同江，突然袭击辽军。萧嗣先军溃散，崔公义、邢颖、耶律佛留、萧葛十等人战死，得免性命的只有十七人。萧奉先害怕其弟萧嗣先因战败获罪，便奏称东征溃败之军沿路抢劫，如果不赦免其罪，恐怕聚众成为祸患。皇上听从，萧嗣先只不过被免官而已。诸军互相传言说：“力战的会死去且没有功劳，退却的则获得生路，又没有罪。”所以士兵没有斗志，见到敌军便奔逃溃散。
 </p><p>十一月二十一日，都统萧敌里(即萧嗣先)等人安营于斡邻泊以东，又为女真所袭击，士卒大量死亡。二十三日，萧敌里也因兵败免官。三十日，以西北路招讨使耶律斡里朵为行军都统，以副点检萧乙薛、同知南院枢密使事耶律章奴为副统。
 </p><p>十二月，咸、宾、祥三州及铁骊、兀惹均反叛附于女真。萧乙薛前往增援宾州，南军诸将实娄、特烈等前往增援咸州，均为女真击败。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十六章-卷二十六-白话.html'>第二十六章-卷二十六</a></p><p class='next'>下一节：<a href='第二十八章-卷二十八-白话.html'>第二十八章-卷二十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十六章-卷二十六-白话.html'>第二十六章-卷二十六</a></p><p class='next'>下一节：<a href='第二十八章-卷二十八-白话.html'>第二十八章-卷二十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

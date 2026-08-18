@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#辽史'>：目录</a></p>
@@ -154,5 +181,18 @@
 </p><p>清宁初，累迁为右夷离毕。适逢道宗皇上与燕国王射鹿均射中了，燕国王时年九岁，皇上大喜，陈家奴应制命进献了诗篇。皇上高兴，解下衣服赐给他。后来皇太子被废，皇上怀疑陈家奴党附于太子，罢免其职。
 </p><p>当时西北诸部侵扰边境，皇上任命陈家奴为乌古部节度使行军都监，赐给甲一属、马二匹，讨伐诸部，擒获其酋长送至朝廷。侦候人员见到马的踪迹，认为是敌人来了，陈家奴派人报告元帅，耶律爱奴看了看说：“此乃野马！”准备出猎，敌人来了，爱奴战死。有司查究讯问，陈家奴不伏罪，诏令释免之。因此感动愤激，凡事都尽心竭力。后来诸部再度进犯，陈家奴率兵三次前往讨伐，都获得胜利，边境因此得到了安宁。
 </p><p>因年老告辞返乡，皇上不从。道宗皇上崩逝，陈家奴担任山陵使。辞官，年八十去世。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十四章-卷二十四-白话.html'>第二十四章-卷二十四</a></p><p class='next'>下一节：<a href='第二十六章-卷二十六-白话.html'>第二十六章-卷二十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十四章-卷二十四-白话.html'>第二十四章-卷二十四</a></p><p class='next'>下一节：<a href='第二十六章-卷二十六-白话.html'>第二十六章-卷二十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

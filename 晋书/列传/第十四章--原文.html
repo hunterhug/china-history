@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -203,5 +230,18 @@
 </p><p>祗字敬齐，太傅西曹掾。允字敬咸，太子舍人。裕字敬嗣，尚武安长公主，官至左光禄大夫。
 </p><p>史臣曰：晋氏中朝，承累世之资，建兼并之业，衣冠斯盛，英彦如林。此数公者，或以雅望处台槐，或以高名居保傅，自非一时之秀，亦曷能至于斯。惜其参缄于论道之辰，独善于兼济之日，良图鲠议，无足多谈。然退已进贤，林叔弘推让之美；自家刑国，宣伯协恭孝之规。子若之儒素为基，伟容之苦节流誉，庆垂来叶，不亦宜哉！石鉴以公亮升，温羡以明寤显，属于危乱，不陨其名。岁寒见松柏之后凋，斯人之谓矣。
 </p><p>赞曰：让矣密陵，孝哉广陆。钦既博雅，表亦贞肃。鉴绩克宣，温声载穆。同锵玉振，争芬兰郁。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十三章--原文.html'>第十三章-</a></p><p class='next'>下一节：<a href='第十五章--原文.html'>第十五章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十三章--原文.html'>第十三章-</a></p><p class='next'>下一节：<a href='第十五章--原文.html'>第十五章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

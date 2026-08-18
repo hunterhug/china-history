@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新唐书-志<a href='../新唐书.html#志'>：目录</a></p>
@@ -172,5 +199,18 @@
 </p><p>广德元年，诏一户三丁者免一丁，凡亩税二升，男子二十五为成丁，五十五为老，以优民。而强寇未夷，民耗敛重。及吐蕃逼京师，近甸屯兵数万，百官进俸钱，又率户以给军粮。至大历元年，诏流民还者，给复二年，田园尽，则授以逃田。天下苗一亩税钱十五，市轻货给百官手力课。以国用急，不及秋，方苗青即征之，号“青苗钱”又有“地头钱”，每亩二十，通名为青苗钱。又诏上都秋税分二等，上等亩税一斗，下等六升，荒田亩税二升。五年，始定法：夏，上田亩税六升，下田亩四升；秋，上田亩税五升，下田亩三升；荒田如故；青苗钱亩加一倍，而地头钱不在焉。
 </p><p>初，转运使掌外，度支使掌内。永泰二年，分天下财赋、铸钱、常平、转运、盐铁，置二使。东都畿内、河南、淮南、江东西、湖南、荆南、山南东道，以转运使刘晏领之；京畿、关内、河东、剑南、山南西道，以京兆尹、判度支第五琦领之。及琦贬，以户部侍郎、判度支韩滉与晏分治。
 </p><p>时回纥有助收西京功，代宗厚遇之，与中国婚姻，岁送马十万匹，酬以缣帛百余万匹。而中国财力屈竭，岁负马价。河、湟六镇既陷，岁发防秋兵三万戍京西，资粮百五十余万缗。而中官鱼朝恩方恃恩擅权，代宗与宰相元载日夜图之。及朝恩诛，帝复与载贰，君臣猜间不协，边计兵食，置而不议者几十年。而诸镇擅地，结为表里，日治兵缮垒，天子不能绳以法，颛留意祠祷、焚币玉、写浮屠书，度支禀赐僧巫，岁以钜万计。然帝性俭约，身所御衣，必浣染至再三，欲以先天下。然生日、端午，四方贡献至数千万者，加以恩泽，而诸道尚侈丽以自媚。朝多留事，经岁不能遣，置客省以居，上封事不足采者、蕃夷贡献未报及失职未叙者，食度支数千百人。德宗即位，用宰相崔祐甫，拘客省者出之，食度支者遣之，岁省费万计。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十章-卷四十-原文.html'>第四十章-卷四十</a></p><p class='next'>下一节：<a href='第四十二章-卷四十二-原文.html'>第四十二章-卷四十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十章-卷四十-原文.html'>第四十章-卷四十</a></p><p class='next'>下一节：<a href='第四十二章-卷四十二-原文.html'>第四十二章-卷四十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

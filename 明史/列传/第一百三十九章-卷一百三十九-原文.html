@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -228,5 +255,18 @@
 </p><p>邱瑜，宜城人。天启五年进士。由庶吉士授检讨。崇祯中，屡迁少詹事。襄阳陷，瑜上恤难宗、择才吏、旌死节、停催征、苏邮困、禁劳役六事。帝采纳焉。历礼部左右侍郎。因召对，言：“督师孙传庭出关，安危所系，慎勿促之轻出。俾镇定关中，犹可号召诸将，相机进剿。”帝不能从。十七年正月以本官兼东阁大学士，同范景文入阁。都城陷，受拷掠者再，搜获止二千金，既而被害。
 </p><p>瑜子之陶，年少有干略。李自成陷宜城，瑜父民忠骂贼而死。之陶被获，用为兵政府从事，寻以本府侍郎守襄阳。襄阳尹牛佺，贼相金星子，其倚任不如也。之陶以蜡丸书贻传庭曰：“督师与之战，吾诡言左镇兵大至，摇其心，彼必返顾。督师击其后，吾从中起，贼可灭也。”传庭大喜，报书如其言，为贼逻者所得。传庭恃内应，连营前进，之陶果举火，报左兵大至。自成验得其诈，召而示以传庭书，责其负己。之陶大骂曰：“吾恨不斩汝万段，岂从汝反耶！”贼怒，支解之。
 </p><p>赞曰：庄烈帝在位仅十七年，辅相至五十余人。其克保令名者，数人而已，若标等是也。基命能推毂旧辅以定危难，震孟以风节显，德璟谙悉旧章。以陆喜之论薛莹者观之，所谓侃然体国，执正不惧，斟酌时宜，时献微益者乎。至于扶危定倾，殆非易言也。呜呼，国步方艰，人材亦与俱尽，其所由来者渐矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百三十八章-卷一百三十八-原文.html'>第一百三十八章-卷一百三十八</a></p><p class='next'>下一节：<a href='第一百四十章-卷一百四十-原文.html'>第一百四十章-卷一百四十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百三十八章-卷一百三十八-原文.html'>第一百三十八章-卷一百三十八</a></p><p class='next'>下一节：<a href='第一百四十章-卷一百四十-原文.html'>第一百四十章-卷一百四十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新唐书-志<a href='../新唐书.html#志'>：目录</a></p>
@@ -170,5 +197,18 @@
 </p><p>元和中，振武军饥，宰相李绛请开营田，可省度支漕运及绝和籴欺隐。宪宗称善，乃以韩重华为振武、京西营田、和籴、水运使，起代北，垦田三百顷，出赃罪吏九百余人，给以耒耜、耕牛，假种粮，使偿所负粟，二岁大熟。因募人为十五屯，每屯百三十人，人耕百亩，就高为堡，东起振武，西逾云州，极于中受降城，凡六百余里，列栅二十，垦田三千八百余顷，岁收粟二十万石，省度支钱二千余万缗。重华入朝，奏请益开田五千顷，法用人七千，可以尽给五城。会李绛已罢，后宰相持其议而止。宪宗末，天下营田皆雇民或借庸以耕，又以瘠地易上地，民间苦之。穆宗即位，诏还所易地，而耕以官兵。耕官地者，给三之一以终身。灵武、邠宁，土广肥而民不知耕。大和末，王起奏立营田。后党项大扰河西，邠宁节度使毕諴亦募士开营田，岁收三十万斛，省度支钱数百万缗。
 </p><p>贞观、开元后，边土西举高昌、龟兹、焉耆、小勃律，北抵薛延陀故地，缘边数十州戍重兵，营田及地租不足以供军，于是初有和籴。牛仙客为相，有彭果者献策广关辅之籴，京师粮禀益羡，自是玄宗不复幸东都。天宝中，岁以钱六十万缗赋诸道和籴，斗增三钱，每岁短递输京仓者百余万斛。米贱则少府加估而籴，贵则贱价而粜。
 </p><p>贞元初，吐蕃劫盟，召诸道兵十七万戍边。关中为吐蕃蹂躏者二十年矣，北至河曲，人户无几，诸道戍兵月给粟十七万斛，皆籴于关中。宰相陆贽以“关中谷贱，请和籴，可至百余万斛。计诸县船车至太仓，谷价四十有余，米价七十，则一年和籴之数当转运之二年，一斗转运之资当和籴之五斗。减转运以实边，存转运以备时要。江淮米至河阴者罢八十万斛，河阴米至太原仓者罢五十万，太原米至东渭桥者罢二十万。以所减米粜江淮水菑州县，斗减时五十以救乏。京城东渭桥之籴，斗增时三十以利农。以江淮粜米及减运直市绢帛送上都。”帝乃命度支增估籴粟三十三万斛，然不能尽用贽议。宪宗即位之初，有司以岁丰熟，请畿内和籴。当时府、县配户督限，有稽违则迫蹙鞭挞，甚于税赋，号为和籴，其实害民。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十二章-卷四十二-原文.html'>第四十二章-卷四十二</a></p><p class='next'>下一节：<a href='第四十四章-卷四十四-原文.html'>第四十四章-卷四十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十二章-卷四十二-原文.html'>第四十二章-卷四十二</a></p><p class='next'>下一节：<a href='第四十四章-卷四十四-原文.html'>第四十四章-卷四十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

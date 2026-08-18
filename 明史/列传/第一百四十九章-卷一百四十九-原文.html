@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -189,5 +216,18 @@
 </p><p>新抚琏已至，禾嘉犹在锦州，会廷议山海别设巡抚。诏罢琏，令方一藻抚宁远，禾嘉仍以佥都御史巡抚山海、永平。寻论筑城召衅罪，贬二秩，巡抚如故。禾嘉请为监视中官设标兵。御史宋贤诋其谄附中人，帝怒，贬贤三秩。禾嘉持论每与承宗异，不为所喜，时有诋諆。既遭丧败，廷论益不容，遂坚以疾请。五年四月，诏许还京，以杨嗣昌代。令其妻代陈病状。乃命归田，未出都卒。
 </p><p>明世举于乡而仕至巡抚者，隆庆朝止海瑞，万历朝张守中、艾穆。庄烈帝破格求才，得十人：邱民仰、宋一鹤、何腾蛟、张亮以忠义著，刘可训以武功闻，刘应遇、孙元化、徐起元皆以勤劳致位，而陈新甲官最显。
 </p><p>赞曰：危乱之世，未尝乏才，顾往往不尽其用。用矣，或掣其肘而驱之必死。若是者，人实为之，要之亦天意也。卢象升在庄烈帝时，岂非不世之才，乃困抑之以至死，何耶！至忠义激发，危不顾身，若刘之纶、邱民仰之徒，又相与俱尽，则天意可知矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百四十八章-卷一百四十八-原文.html'>第一百四十八章-卷一百四十八</a></p><p class='next'>下一节：<a href='第一百五十章-卷一百五十-原文.html'>第一百五十章-卷一百五十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百四十八章-卷一百四十八-原文.html'>第一百四十八章-卷一百四十八</a></p><p class='next'>下一节：<a href='第一百五十章-卷一百五十-原文.html'>第一百五十章-卷一百五十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

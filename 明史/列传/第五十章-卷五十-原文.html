@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -237,5 +264,18 @@
 </p><p>颙累迁陕西左布政使。时三边多警，岁复洊饥。颙经画馈饷无缺，军民悉安。成化十七年召为刑部右侍郎。居二年，山东旱饥，盗起，改颙左副都御史往巡抚。颙至露祷，大雨霑溉，稿禾复苏。举救荒之政，既振，余粟尚百余万石。又推行九则法于诸府，黜暴除苛，民甚德之。居三年，以老致仕。弘治中卒。
 </p><p>斌，历广东右布政使。初去江阴，民立生祠。及自开封迁去，民亦涕泣追送焉。鉴，初为御史，尝于左顺门面斥中官非礼。中官怒甚，因考察属都御史萧维祯去之，维祯不可而止。文博，终巡抚河南右副都御史。烈，广东左布政使。费广等无考。
 </p><p>赞曰：直言敢谏之士，激于事变，奋不顾身，获罪固其所甘心耳。然观尹昌隆死于吕震；耿通陷于高煦；刘球之毙，陈鉴之系，由于王振；杨瑄之戍，厄于石亨、曹吉祥；乃至戴纶谏游猎，陈祚请勤学，钟同、章纶、廖庄倡复储，倪敬等直言时事，皆用贾祸。忠臣之志抑而不伸，亦可悲夫。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十九章-卷四十九-原文.html'>第四十九章-卷四十九</a></p><p class='next'>下一节：<a href='第五十一章-卷五十一-原文.html'>第五十一章-卷五十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十九章-卷四十九-原文.html'>第四十九章-卷四十九</a></p><p class='next'>下一节：<a href='第五十一章-卷五十一-原文.html'>第五十一章-卷五十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

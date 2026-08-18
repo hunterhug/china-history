@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-列传<a href='../新五代史.html#列传'>：目录</a></p>
@@ -193,5 +220,18 @@
 </p><p>契丹已北，出帝复遣守贞、符彦卿东讨，光远婴城固守，自夏至冬，城中人相食几尽。光远北望契丹，稽首以呼德光曰：“皇帝误光远耶！”其子承勋等劝光远出降，光远曰：“我在代北时，尝以纸钱祭天池，投之辄没，人言我当作天子，宜且待时，毋轻议也。”承勋知不可，乃杀节度判官丘涛、亲将杜延寿、杨瞻、白延祚等，劫光远幽之，遣人奉表待罪。承信、承祚皆诣阙自归，而光远亦上章请死。出帝以其二子为侍卫将军，赐光远昭书，许以不死，群臣皆以为不可，乃敕李守贞便宜处置。守贞遣客省副使何延祚杀之于其家。延祚至其第，光远方阅马于厩，延祚使一都将入谓之曰：“天使在门，欲归报天子，未有以藉手。”光远曰：“何谓也？”曰：“愿得大王头尔！”光远骂曰：“我有何罪？昔我以晋安寨降契丹，使尔家世世为天子，我亦望以富贵终身，而反负心若此！”遂见杀，以病卒闻。
 </p><p>承勋事晋为郑州防御使，德光灭晋，使人召承勋至京师，责其劫父，脔而食之，乃以承信为平卢节度使。汉高祖赠光远尚书令，封齐王，命中书舍人张正撰光远碑铭文赐承信，使刻石于青州。碑石既立，天大雷电，击折之。
 </p><p>阿噔啜初非姓氏，其后改名瑊而姓杨氏。光远初名檀，清泰二年，有司言明宗庙讳犯偏傍者皆易之，乃赐名光远云。光远既病秃，而妻又跛其足也，人为之语曰：“自古岂有秃疮天子、跛脚皇后邪？”相传以为笑。然而召夷狄为天下首祸，卒灭晋氏，疮痍中国者三十馀年，皆光远为之也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十八章-杂传第三十八-原文.html'>第三十八章-杂传第三十八</a></p><p class='next'>下一节：<a href='第四十章-杂传第四十-原文.html'>第四十章-杂传第四十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十八章-杂传第三十八-原文.html'>第三十八章-杂传第三十八</a></p><p class='next'>下一节：<a href='第四十章-杂传第四十-原文.html'>第四十章-杂传第四十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

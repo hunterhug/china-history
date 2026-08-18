@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后唐<a href='../旧五代史.html#后唐'>：目录</a></p>
@@ -170,5 +197,18 @@
 </p><p>延朗有心计，善理繁剧。晋高祖在太原，朝廷猜忌，不欲令有积聚，系官财货留使之外，延朗悉遣取之，晋高祖深衔其事。及晋阳起兵，末帝议亲征，然亦采浮论，不能果决；延朗独排众议，请末帝北行，识者韪之。晋高祖入洛，送台狱以诛之。其后以选求计使，难得其人，甚追悔焉。
 </p><p>刘延皓，应州浑元人。祖建立，父茂成，皆以军功推为边将。延皓即刘后之弟也。末帝镇凤翔，署延皓元随都校，奏加检校户部尚书。清泰元年，除宫苑使，加检校司空。俄改宣徽南院使、检校司徒。二年，迁枢密使、太保，出为鄴都留守、检校太傅。延皓御军失政，为屯将张令昭所逐，出奔相州，寻诏停所任。及晋高祖入洛，延皓逃匿龙门广化寺，数日，自经而死。延皓始以后戚自籓邸出入左右，甚以温厚见称，故末帝嗣位之后，委居近密。及出镇大名，而所执一变，掠人财贿，纳人园宅，聚歌僮为长夜之饮，而三军所给不时，内外怨之，因为令昭所逐。时执政以延皓失守，请举旧章，末帝以刘后内政之故，止从罢免而已，由是清泰之政弊矣。
 </p><p>刘延朗，宋州虞城人也。末帝镇河中时，为郓城马步都虞候，后纳为腹心。及镇凤翔，署为孔目吏。末帝将图起义，为捍御之备，延朗计公私粟帛，以赡其急。及西师纳降，末帝赴洛，皆无所阙焉，末帝甚赏之。清泰初，除宣徽北院使，俄以刘延皓守鄴，改副枢密使，累官至检校太傅。时房皓为枢密使，但高枕闲眠，启奏除授，一归延朗，由是得志。凡籓侯郡牧，自外入者，必先赂延朗，后议进贡，赂厚者先居内地，赂薄者晚出边籓，故诸将屡有怨讪，末帝不能察之。及晋高祖入洛，延朗将窜于南山，与从者数辈，过其私第，指而叹曰：“我有钱三十万贯聚于此，不知为何人所得。”其愚暗如此。寻捕而杀之。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十四章-列传二十-原文.html'>第四十四章-列传二十</a></p><p class='next'>下一节：<a href='第四十六章-列传二十二-原文.html'>第四十六章-列传二十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十四章-列传二十-原文.html'>第四十四章-列传二十</a></p><p class='next'>下一节：<a href='第四十六章-列传二十二-原文.html'>第四十六章-列传二十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

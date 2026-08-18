@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-本纪<a href='../明史.html#明史'>：目录</a></p>
@@ -218,5 +245,18 @@
 </p><p>秋八月二十四日，诏求明经老成之士，官府司礼送京师。二十八日，黄河在原武、祥符、中牟决口。二十九日，徐达还京。九月一日，傅友德为征南将军，蓝玉、沐英为左、右副将军，率师征云南。徐达镇守北平。二十五日，周德兴率军讨伐平定施州蛮。
 </p><p>冬十月一日，日食。二日，命令法司审录囚犯，会同翰林院给事中和春坊官一起讨论平衡公允，然后报告。三日，免应天、太平、广德、镇江、宁国田租。十日，分别派遣御史审录囚犯。二十八日，延安侯唐胜宗率师讨平浙东山寇。十一月一日，吉安侯陆仲亨镇守成都。二十九日，赵庸讨伐广州海寇，大破之。十二月七日，命令翰林春坊官考评各司奏章。十八日，傅友德大败元兵于白石江，于是下曲靖。二十二日，元梁王把匝剌瓦尔密逃走普宁自杀。
 </p><p>这年，暹罗、安南、爪哇、朵甘、乌斯藏入朝进贡。因安南侵犯思明，不予接纳。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-卷一-白话.html'>第一章-卷一</a></p><p class='next'>下一节：<a href='第三章-卷三-白话.html'>第三章-卷三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-卷一-白话.html'>第一章-卷一</a></p><p class='next'>下一节：<a href='第三章-卷三-白话.html'>第三章-卷三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

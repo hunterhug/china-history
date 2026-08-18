@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新唐书-本纪<a href='../新唐书.html#新唐书'>：目录</a></p>
@@ -459,5 +486,18 @@
 </p><p>八月初九，左神策军护军中尉王忠实立郓王李温为皇太子，暂行处理军国政事。初十，宣宗在咸宁殿逝世，终年五十岁。谥号是圣武献文孝皇帝。懿宗咸通十三年(872)，将宣宗的谥号增为“元圣至明成武献文睿智章仁神聪懿道大孝皇帝”。
 </p><p>评说：按《春秋》的褒贬准则，君主被乱臣逆子杀害而不公开谴责逆贼，就严厉地向这个国家问罪，认为它没有为臣为子之道。宪宗被杀害，经历三任皇帝而谋杀宪宗的逆贼仍然安在。到了文宗，不能彰明陈弘志等逆贼的罪恶，按国家的常法治他们的罪，仅仅只是杀了他们而已，这实在是可叹。穆宗、敬宗昏昧无德，由于他们在位时间不长，因此尚未达到使天下败毁混乱的地步，但敬宗终于祸及自身，这哪里有声讨逆贼的意念呢？文宗的恭顺克己温文尔雅，出自禀性；曾阅读辑录太宗与魏征等大臣问答议政、施政举措等内容的《贞观政要》，慨叹仰慕贞观之治。到他登上帝位，专心一意治国，每在延英殿与宰辅大臣策问应对，通常都将近一个半时辰。唐朝制度规定：天子每逢单日临朝处理政务，而命令停止上朝听政，或遇酷暑、大雨雪免掉群臣入朝参见都用双日。凡授予官职，文宗必定召见询问，亲自考察他是否有才能。因此太和初期，政事得到整顿，政治号称清明。但文宗为人仁厚而少决断，承接了父兄酿成的积弊，宦官又从中乱政枉法，他却禁制不得其法，所以终于因此而陷入困境。太和九年十一月的“甘露之变”，李训、郑注等诛除宦官的计谋败露，致使十余家大臣遭受诛族，祸及忠良，冤愤无尽，也只能抱恨含冤而已。以此来说，文宗能杀掉陈弘志，也算伸展其心志了。
 </p><p>古时殷王武丁得到傅说一人，振兴国势由弱而强，他就是在位五十九年的商高宗。唐武宗重用李德裕一人，终于成就了他的功业。然而，他奋力除去佛教十分急切，却又亲自禀承道教秘文，祈求服药以获长生。由此可见他并不是明智而不受蛊惑的人，只是所好所恶不同罢了。宣宗精于据事决断，却以能辨察真伪为贤明，从而不再有仁爱恩德的情意。唉，从此以后，唐朝就衰落了！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七·德宗 顺宗 宪-白话.html'>第七章-卷七·德宗 顺宗 宪</a></p><p class='next'>下一节：<a href='第九章-卷九·懿宗 僖宗-白话.html'>第九章-卷九·懿宗 僖宗</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七·德宗 顺宗 宪-白话.html'>第七章-卷七·德宗 顺宗 宪</a></p><p class='next'>下一节：<a href='第九章-卷九·懿宗 僖宗-白话.html'>第九章-卷九·懿宗 僖宗</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

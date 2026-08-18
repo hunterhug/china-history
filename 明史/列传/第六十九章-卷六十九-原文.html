@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -225,5 +252,18 @@
 </p><p>五年二月改吏部尚书兼翰林学士，专典制诏。两疏乞休，不报。瑾诛，以本官兼文渊阁大学士，入阁预机务。甫数日，以平宁夏功，加少傅兼太子太傅。故事，阁臣加官无遽至三孤者。忠无功骤得，不自安，连疏固辞，不许。瑾虽诛，张永、魏彬辈擅政，大臣复争与交欢，忠独无所顾。永尝遣廖鹏谒忠，忠仆隶遇之，又却其馈，由是与永辈左。前后乞休疏七八上，皆慰留。明年命典会试。甫毕，帝以试录文义多舛，召李东阳示之。忠知为中官所掎，乞省墓。诏乘传还。抵家，再上章乞致仕，报许。给月廪、岁隶终其身。
 </p><p>世宗即位，屡荐不起。遣行人存问，忠奏谢，因有所献纳，帝褒其忠爱。嘉靖二年卒，年七十二。赠太保，谥文肃。
 </p><p>赞曰：徐溥以宽厚著，邱浚以博综闻。观其指事陈言，恳恳焉为忧盛危明之计，可谓勤矣。刘健、谢迁正色直道，蹇蹇匪躬。阉竖乱政，秉义固诤。志虽不就，而刚严之节始终不渝。有明贤宰辅，自三杨外，前有彭、商，后称刘、谢，庶乎以道事君者欤。李东阳以依违蒙诟，然善类赖以扶持，所全不少。大臣同国休戚，非可以决去为高，远蹈为洁，顾其志何如耳。王鏊、刘忠持正不阿，奉身早退。此诚明去就之节，乌能委蛇俯仰以为容悦哉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十八章-卷六十八-原文.html'>第六十八章-卷六十八</a></p><p class='next'>下一节：<a href='第七十章-卷七十-原文.html'>第七十章-卷七十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十八章-卷六十八-原文.html'>第六十八章-卷六十八</a></p><p class='next'>下一节：<a href='第七十章-卷七十-原文.html'>第七十章-卷七十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -192,5 +219,18 @@
 </p><p>徐宁者，东海郯人也。少知名，为舆县令。时廷尉桓彝称有人伦鉴识，彝尝去职，至广陵寻亲旧，还遇风，停浦中，累日忧悒，因上岸，见一室宇，有似廨署，访之，云是舆县。彝乃造之。宁清惠博涉，相遇欣然，因留数夕。彝大赏之，结交而别。至都，谓庾亮曰：“吾为卿得一佳吏部郎。”语在彝传。即迁吏部郎、左将军、江州刺史，卒官。
 </p><p>史臣曰：醨风潜煽，醇源浸竭，遗道德于情性，显忠信于名教。首阳高节，求仁而得仁；泗上微言，朝闻而夕死。原轸免胄，懔然于往策；季路绝缨，邈矣于前志。况交霜雪于杪岁，晦风雨于将晨，喈响或以变其音，贞柯罕能全其性。桓茂伦抱中和之气，怀不挠之节，迈周庾之清尘，遵许郭之遐轨。惧临危于取免，知处死之为易，扬芬千载之上，沦骨九泉之下。仁者之勇，不其然乎！至夫基构迭污隆，龙蛇俱山泽，冲逡巡于内辅，豁陵厉于上游，虔振北门之威，秀坦西阳之务，外有捍城之用，里无末大之嫌，求之名臣，抑亦可算。而温为亢极之资，玄遂履霜之业，是知敬仲之美不息檀台之乱，宁俞之忠无救弈棋之祸。子文之不血食，悲夫！
 </p><p>赞曰：矫矫宣城，贞心莫陵。身随露夭，名与云兴。虔豁重世，冲秀双美。国赖忠臣，家推才子。振武谦文，寻邑为群。归之篡乱，曷足以云。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十三章--原文.html'>第四十三章-</a></p><p class='next'>下一节：<a href='第四十五章--原文.html'>第四十五章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十三章--原文.html'>第四十三章-</a></p><p class='next'>下一节：<a href='第四十五章--原文.html'>第四十五章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

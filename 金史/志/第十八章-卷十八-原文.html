@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-志<a href='../金史.html#志'>：目录</a></p>
@@ -168,5 +195,18 @@
 </p><p>若皇太子生日，则公服，左上露台栏子外。先再拜，二阁使齐揖入栏子内，拜跪，祝毕，就拜，兴，复位，再拜，又再拜，栖台进酒，退跪。候饮毕，接盏，复位，转台与执事者，再拜。宣徽使以酒进，皇帝亲赐酒，接盏稍退跪饮，毕，宣徽使接盏，复位再拜。复揖入栏子内，跪搢笏，受赐物毕，出笏，兴，复位，再拜，退更衣，入殿稍东，西向立。皇妃等进劝生日酒，皇太子跪，皇妃等亦跪，饮毕，各再拜。群官致贺，则其日质明，皆公服集于门外，少詹事奏：“请内严。”又奏：“外备。”典仪引升座，文武宫臣入，就庭下重行北向立，典仪曰：“再拜。”在位官皆再拜，班首稍前跪奏：“元正首祚。”生日则云：“庆诞令辰，伏惟皇太子殿下福寿千秋。”贺毕复位，典仪曰：“再拜。”宫臣皆再拜，坐受，分东西序立。次引东宫三师于殿上，三少于殿柱外，北向东上立。皇太子诣南向褥位，典仪曰：“再拜。”师、少皆再拜，班首同前称贺，复位。执事者酌酒一卮，班首奉进，乐作，饮讫，乐止。回劝师、少毕，各复位。典仪赞师，少再拜，皇太子答拜。师、少出，皇太子就坐。次引亲王入栏子内，一品宗室于栏子外，余宗室序班庭下，拜致贺、进酒如上仪。皇太子答拜毕，就坐。复引随朝三师三公宰执于殿上，三品以上职事官于露阶上，四品以下于庭下，北向，每等重行以东为上，立。皇太子诣褥位。典仪曰：“再拜。”上下皆再拜，毕，班首少前致贺，复位，执事者酌酒一卮，班首奉进，乐作，饮毕，乐止。如有进献如常仪。回劝三师三公，余殿上群官则令执事者以盘行酒，饮毕，典仪曰：“再拜。”上下皆再拜，乃答拜，引群官以次出。少詹事跪奏：“礼毕。”自是岁贺为定制。
 </p><p>皇太子与百官相见仪
 </p><p>三师三公栏子内北向躬揖，班首稍前问侯，皇太子离位稍前，正南立，答揖。宰执及一品职事官扣栏子北向躬揖，答揖如前。二品职事官栏子外向南躬揖，皇太子起揖。三品职事官露阶稍南躬揖，皇太子坐揖。四品以下职事官庭下躬揖，跪问候，皇太子坐受。太子太师、太傅、太保与随朝三师同。东宫三少与随朝二品同。詹事已下，并在庭下面北，每品重行以东为上，再拜，稍前问候，又再拜，皇太子坐受。大定二年所定也。七年，定制，皇太子赴朝，许与亲王宰执相见，余官宗室并回避。后亦许与枢密使副、御史大夫、判宗正、东宫三师相见。九年，定制，凡皇太子出，于都门三里外设褥位，三公宰执以下公服重行立，皇太子便服，三公宰执以下鞠躬，班首致辞云：“青宫万福。”再拜，皇太子答拜，退。迎、送皆同。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p><p class='next'>下一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p><p class='next'>下一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

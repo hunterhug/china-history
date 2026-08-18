@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>宋书-本纪<a href='../宋书.html#宋书'>：目录</a></p>
@@ -232,5 +259,18 @@
 </p><p>夏四月五日，任命抚军司马蔡那为益州刺史。六日，任命右卫将军张兴世为雍州刺史。七日，皇上病加重。骠骑大将军、江州刺史桂阳王休范晋升为司空，尚书右仆射褚渊任护军将军，中领军刘面力加封为尚书右仆射，镇东将军蔡兴宗任征西将军，郢州刺史沈攸之晋升为安西将军。下诏说：“我君临天下以来，战祸接连不断，虽然想弘扬教化，但总不能如偿，国家凋敝，诉讼不断。如今病重，深感愧疚。可轻徭薄赋，去繁就简。早就打算这样改革一番。一定要以爱民为本，以合乎我的遗愿。”袁粲、褚渊、刘面力、蔡兴宗、沈攸之一起被授遗命。同日，皇上驾崩于景福殿，时年三十四岁。五月十日，葬在临沂县莫府山高宁陵。
 </p><p>明帝少时仁和伶俐，风姿端正雅丽。早年丧母，在太后宫内抚养。大明年间，兄弟们多被猜忌，只有他被亲信，经常侍候跻太后端汤喂药。好读诗书，爱好文学，在做藩王时，撰写了《江左以来文章志》，续注过卫王襄注释的《论语》二卷本，流行于世。即皇帝位后，四方反叛，皇上宽厚待人，有父兄子弟参加叛逆的各将帅，都授给兵权，委任的官职不变，因此将士为他效劳，莫不尽力。平定天下后，叛逆者多被保全性命，有才能的还被录用，如老臣一样看待。饱学之士，多被启用，整理书籍，咨询于左右。华林园会芳堂讲《周易》时，常亲自去听。末年迷信鬼神，忌讳很多，言谈文书中，与祸败凶丧和怀疑同祸败凶丧有关的都要回避，有几百上千种之多，如有违犯必加处罚。改“马呙”字为马边瓜，也是因为“马呙”字像“祸”。从南苑调来张永，说“暂且给三百年，期限到了再开始”。很多事情都像这样。宣阳门，民间称做白门，皇上认为白门名字不吉祥，很是忌讳。尚书右丞江谧曾出过错误，皇上脸色都变了说：“白你家门！”江谧叩头谢罪，过了好久才作罢。太后的尸体先停放在东宫的漆榻上，皇上到东宫，见到了大怒，撤了中庶子官的职务，职局因为这件事被杀的几十人。宫内宫外常常担心犯忌，人人感到性命不保。宫内禁忌更多，移床修壁，都要先祭土地神，叫文士写祭词，像举行大的祭礼仪式一样。泰始、泰豫相交之际，更是肆虐好杀，左右违背旨意，往往被砍手削足。当时开发淮、泗地区，战事不断，长时间天灾，府库空虚。宫廷内外百官，每天算着日子用禄俸；而皇上花费无度，更显示奢靡。每次制造器物，必做正御(皇上亲自用的)三十件，不亲自用的(御次、副)、备用的各三十件，需要一件器物而造九十件，天下舆论哗然，民不堪重负，其他事迹，详见列传篇。亲近小人谗臣，翦除皇亲，宋朝基业，就是从此开始衰落的。
 </p><p>史臣说：圣人制定法律规章，之所以遵照先王，是因为先王留传下来的遗训，能造福后世，太祖称帝，确实有为人君的德行，在治国上虽然有建树，但在富国上则不足。彭城王不师古训，本无出众之才，只见兄弟之义，不识君臣之礼，想把家里的情义，推广到全国，导致了兄弟残杀的灾祸。前人栽树，后人乘凉。太宗因为些小事情，根据已经实行的规章，翦除皇亲，本指望少些忧虑。由于不少皇亲翦除，幼主孤立无援，神器危弱，天命也随之更改。冰冻三尺，非一日之寒，由来远矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-白话.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-白话.html'>第九章-卷九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-白话.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-白话.html'>第九章-卷九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

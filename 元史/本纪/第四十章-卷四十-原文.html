@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>元史-本纪<a href='../元史.html#本纪'>：目录</a></p>
@@ -197,5 +224,18 @@
 </p><p>冬十月己亥朔，日有食之。癸卯，太阴犯建星。陕西行省平章政事朵朵辞职侍亲，不允。丁未，享于太庙。甲寅，太阴犯天关。壬戌，诏遣官致祭孔子于曲阜。罢织染提举司。甲子，杭州、嘉兴、绍兴、温州、台州等路各立检校批验盐引所，权免两浙额盐十万引，福建余盐三万引。
 </p><p>十一月甲申，诏免云南明年差税。辛卯，岁星、荧惑、太白聚于尾宿。
 </p><p>十二月壬寅，申服色之禁。丙午，命中书右丞太平、枢密副使姚庸、御史中丞张起岩知经筵事。己酉，京师地震。辛亥，封晃火帖木儿之子彻里帖木儿为抚宁王。丙辰，赐云南行省参知政事不老三珠虎符，以兵讨死可伐。癸亥，阿鲁、秃满等以谋害宰臣，图为叛逆，伏诛。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十九章-卷三十九-原文.html'>第三十九章-卷三十九</a></p><p class='next'>下一节：<a href='第四十一章-卷四十一-原文.html'>第四十一章-卷四十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十九章-卷三十九-原文.html'>第三十九章-卷三十九</a></p><p class='next'>下一节：<a href='第四十一章-卷四十一-原文.html'>第四十一章-卷四十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

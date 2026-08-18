@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#列传'>：目录</a></p>
@@ -195,5 +222,18 @@
 </p><p>其二章曰：
 </p><p>嗟薄祐兮遭世患，宗族殄兮门户单。身执略兮入西关，历险阻兮之羌蛮。山谷眇兮路曼曼，眷东顾兮但悲叹。冥当寝兮不能安，饥当食兮不能餐，常流涕兮C55B不干，薄志节兮念死难，虽苟活兮无形颜。惟彼方兮远阳精，阴气凝兮雪夏零。沙漠壅兮尘冥冥，有草木兮春不荣。人似禽兮食臭腥，言兜离兮状窈停。岁聿幕兮时迈征，夜悠长兮禁门扃。不能寐兮起屏菅，登胡殿兮临广庭。玄云合兮翳月星，北风厉兮肃泠泠。胡笳动兮边马鸣，孤雁归兮声嘤嘤。乐人兴兮弹琴筝，音相和兮悲且清。心吐思兮匈愤盈，欲舒气兮恐彼惊，含哀咽兮涕沾颈。家既迎兮当归宁，临长路兮捐所生。兒呼母兮号失声，我掩耳兮不忍听。追持我兮走茕茕，顿复起兮毁颜形。还顾之兮破人情，心怛绝兮死复生。
 </p><p>赞曰：端操有踪，幽闲有容。区明风烈，昭我管彤。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十一章-逸民列传-原文.html'>第八十一章-逸民列传</a></p><p class='next'>下一节：<a href='第八十三章-东夷列传-原文.html'>第八十三章-东夷列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八十一章-逸民列传-原文.html'>第八十一章-逸民列传</a></p><p class='next'>下一节：<a href='第八十三章-东夷列传-原文.html'>第八十三章-东夷列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

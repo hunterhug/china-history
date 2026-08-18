@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#魏书'>：目录</a></p>
@@ -161,5 +188,18 @@
 </p><p>延兴年间，勿吉国派遣使者乙力支前来朝廷进贡。太和初年(477)，又来进贡马五百匹。乙力支自称：当初从勿吉国出发，乘船从难河溯水西上，到了太氵尔河，就把船沉入河底，改从陆路往南行走，渡过洛孤水，然后从契丹国西部边境到达和龙城。乙力支说他们勿吉国早先打败高句丽国的十个部落，又秘密地同百济国谋划，打算从水路合力攻取高句丽，特地派遣乙力支奉使大魏国，向朝廷请示这样做是否妥当。皇帝诏敕认为勿吉、百济和高句丽三国同样都是大魏的藩属，应当和顺共处，不要互相侵犯骚扰。于是乙力支就回国去了。他们还是从原路走到太氵尔河，从水里打捞起原来的船只，乘船从水路到达国中。太和九年(485)，勿吉国又派使者侯尼支来大魏朝贡进献。第二年再次前来朝贡。
 </p><p>勿吉国的四周有大莫卢国、覆钟国、莫多回国、库娄国、素和国、具伏弗国、匹黎尔国、拔大何国、郁羽陵国、库伏真国、鲁娄国、羽真侯国，这些部族先后都曾派遣使者向大魏国朝贡进献。
 </p><p>太和十二年(488)，勿吉又派使者来京师进贡用木苦木做杆的箭以及各种土特产。十七年(493)，又派使者婆非等五百多人前来朝拜纳贡。景明四年(503)，再次派使者俟力归等人来朝贡。从这时一直到正光年间为止，进贡的使者相继而来。尔后，由于中国动乱纷扰，很有一段时间没有派使者前来。兴和二年(540)六月，勿吉又派遣使者石久云等人来进贡当地土产，一直到武定年间都没有断绝。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十七章-卷八十七-白话.html'>第八十七章-卷八十七</a></p><p class='next'>下一节：<a href='第八十九章-卷八十九-白话.html'>第八十九章-卷八十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八十七章-卷八十七-白话.html'>第八十七章-卷八十七</a></p><p class='next'>下一节：<a href='第八十九章-卷八十九-白话.html'>第八十九章-卷八十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

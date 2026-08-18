@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -189,5 +216,18 @@
 </p><p>“五、任用忠良正直的人。近年进谏的人，或者因为辅佐政务，或者因为节约开支，或者因为推荐贤良摒弃不肖之人，这些都是无自身好处却勇于提议的事；不像望风承旨，大肆攻击以便替他人泄愤，迎合权贵，相互举荐提拔结成朋党之徒所能比拟。希望陛下宽恕他们狂愚的罪过，嘉奖触怒陛下的人的忠诚，给予相应的职位，以便形成士气，则每天听到正直的规劝，裨益不少。”
 </p><p>奏疏呈入宫中，皇帝只答复知道了，却没有发怒。攀附高拱的人说刘奋庸很久得不到提升，不满而讥讽，因此交相诋毁他。给事中涂梦桂弹劾刘奋庸动摇国策。遇上给事中曹大聎也弹劾高拱的十条罪状，皇帝贬责了他。于是给事中程文奏称高拱尽忠报国，是万世的依托，刘奋庸与曹大聎渐渐捏造奸谋，陷害元辅，诛杀他们都不够抵罪。奏章一起下达吏部。高拱刚刚掌管吏部事务，表面上请求对两人从宽处置。皇帝不答应，最后将曹大聎贬为乾州判官，刘奋庸贬为兴国知州。涂梦桂、程文都是高拱的门生。涂梦桂极力诋毁刘奋庸，程文则极力称颂高拱，他们又详尽列举曹大聎奏章中的话代高拱剖析，士人在议论中都鄙视他们。
 </p><p>刘奋庸被贬官两个月后，神宗即位，于是被提升为山西提学佥事。再晋升为陕西提学副使。因病请求退休，而后去世。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百零二章-卷一百零二-白话.html'>第一百零二章-卷一百零二</a></p><p class='next'>下一节：<a href='第一百零四章-卷一百零四-白话.html'>第一百零四章-卷一百零四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百零二章-卷一百零二-白话.html'>第一百零二章-卷一百零二</a></p><p class='next'>下一节：<a href='第一百零四章-卷一百零四-白话.html'>第一百零四章-卷一百零四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

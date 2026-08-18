@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#晋书'>：目录</a></p>
@@ -208,5 +235,18 @@
 </p><p>湿祗字敬齐，任太傅西曹掾。湿允字敬咸，任太子舍人。湿裕字敬嗣，娶武安长公主，官至左光禄大夫。
 </p><p>史臣曰：晋朝中期，继承了几代的功业，建立了统一大业，人才济济，贤士如林。这几个人，或以名望处台省，或以名高而为太子师傅，不是一时之秀，何以能至于此。可惜他们在论道之时保持沉默，在济世救国时独善其身，良谋直言，无可称道。然而退己进贤，林叔弘扬推让的美德；以国治家，宣伯理顺孝敬的规则。子若的儒者德行，伟容的守志不渝，福传来世，不也很好吗!石鉴以公正亮直晋升，温羡以贤明显赫，正值危乱，不失其名。岁寒知松柏之挺拔，说的就是这些人。
 </p><p>赞曰：让矣密陵，孝哉广陆。钦既博雅，表亦贞肃。互鉴好胜，过董肃穆。共振玉声，竞相芬芳。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十三章--白话.html'>第十三章-</a></p><p class='next'>下一节：<a href='第十五章--白话.html'>第十五章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十三章--白话.html'>第十三章-</a></p><p class='next'>下一节：<a href='第十五章--白话.html'>第十五章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>元史-本纪<a href='../元史.html#本纪'>：目录</a></p>
@@ -211,5 +238,18 @@
 </p><p>八月丙子，太阴犯垒壁阵。己卯，山东雨雹。是月，车驾还自上都。九月己未，太阴犯灵台。
 </p><p>冬十月丁亥，广西蛮掠道州。
 </p><p>十一月辛亥，徭贼吴天保率众六万掠全州。是岁，诏赐高年帛，设分元帅府于沂州，以买列的为元帅，备山东寇。台州方国珍为乱，聚众海上，命江浙行省参知政事朵儿只班讨之。监察御史张桢劾太尉阿乞剌欺罔之罪，又言：“明里董阿、也里牙、月鲁不花，皆陛下不共戴天之仇，伯颜贼杀宗室嘉王、郯王一十二口，稽之古法，当伏门诛，而其子、兄弟尚仕于朝，宜急诛窜。别儿怯不花阿附权奸，亦宜远贬。今灾异迭见，盗贼蜂起，海寇敢于要君，阃帅敢于玩寇，若不振举，恐有唐末藩镇噬脐之祸。”不听。监察御史李泌言：“世祖誓不与高丽共事，陛下践世祖之位，何忍忘世祖之言，乃以高丽奇氏亦位皇后。今灾异屡起，河决地震，盗贼滋蔓，皆阴盛阳微之象，乞仍降为妃，庶几三辰奠位，灾异可息。”不听。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十章-卷四十-原文.html'>第四十章-卷四十</a></p><p class='next'>下一节：<a href='第四十二章-卷四十二-原文.html'>第四十二章-卷四十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十章-卷四十-原文.html'>第四十章-卷四十</a></p><p class='next'>下一节：<a href='第四十二章-卷四十二-原文.html'>第四十二章-卷四十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

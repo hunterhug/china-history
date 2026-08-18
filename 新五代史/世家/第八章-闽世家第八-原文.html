@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-世家<a href='../新五代史.html#世家'>：目录</a></p>
@@ -177,5 +204,18 @@
 </p><p>是时，南唐李景闻闽乱，发兵攻之，延政遣其从子继昌守福州，而南唐兵方急攻延政，福州将李仁达谓其徒曰：“唐兵攻建州，富沙王不能自保，其能有此土也？”乃擒继昌杀之。欲自立，惧众不附，以雪峰寺僧卓俨明示众曰：“此非常人也。”被以衮冕，率诸将吏北面而臣之。已而又杀俨明，乃自立，送款于李景，景以仁达为威武军节度使，更其名曰弘义。而景兵攻破建州，迁延政族于金陵，封鄱阳王。是岁，景保大四年也。
 </p><p>留从效闻延政降唐，执王继勋送于金陵，李景以泉州为清源军，以从效为节度使。景已破延政，遣人召李仁达入朝，仁达不从，遂降于吴越。而留从效亦逐景守兵，据泉、漳二州，景犹封从效晋江王。周世宗时，从效遣牙将蔡仲兴为商人，间道至京师，求置邸内属。是时，世宗与李景画江为界，遂不纳，从效仍臣于南唐。其后事具国史。
 </p><p>晋开运三年丙午，南唐保大四年也。是岁，李景兵破建州，王氏灭。《江南录》云：“保大三年，虏王氏之族，迁于金陵。”谬也。据王潮实以唐景福元年入福州，拜观察使，而后人纪录者，乃用“骑马来、骑马去”之谶以为据，遂以王潮光启二年岁在丙午拜泉州刺史为始年，至保大四年，岁复在丙午而灭，故为六十一年。然其奄有闽国，则当自景福元年为始，实五十五年也。今诸家记其国灭丙午是也。其始年则牵于谶书，谬矣。惟《江南录》又差其末年也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-越世家第七-原文.html'>第七章-越世家第七</a></p><p class='next'>下一节：<a href='第九章-南平世家第九-原文.html'>第九章-南平世家第九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七章-越世家第七-原文.html'>第七章-越世家第七</a></p><p class='next'>下一节：<a href='第九章-南平世家第九-原文.html'>第九章-南平世家第九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

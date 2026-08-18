@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -186,5 +213,18 @@
 <p>　　周允元者，豫州人也。弱冠举进士。延戴初，累转左肃政御史中丞，俄除凤阁 鸾台平章事。尝与诸宰臣侍宴，则天令各述书传中善言。允元曰：“耻其君不如尧、 舜。”武三思以为语有指斥，纠而驳之。则天曰：“闻此言足以为诫，岂特将为过 耶？”证圣元年卒，赠贝州刺史。则天为七言诗以伤之，又自缮写，时以为荣。 </p>
 <p>　　史官曰：王及善在孝敬东宫，诚能奉职。当俊臣下狱，力谏除凶，是忧滥及贤 良，而欲明彰羽翼，兴复之志，不谓无心。杜景俭五刑有滥，济活为心，四气不和， 归罪在己，则天谓曰“真宰相。”然奈柔顺李昭德，不无吐刚之过也。硃敬则文学 有称，节行无愧，谏诤果决，推择精真，苟非洞鉴古今，深识王霸，何由立其高论 哉？惜乎相不得时矣！杨再思佞而取贵，苟以全身，掩不善而自欺，谓无十目十手 也。李怀远名不苟于假廕，贵不衒于故乡，无改陋居，常乘劣驷，亦一时之善矣。 然匪躬之道，未之闻也。豆卢钦望、张光辅、史务滋、崔元综、周允元等，或有片 言，非无小善，登于大用，可谓具臣。 </p>
 <p>　　赞曰：及善奉职，非无智力。景俭当权，不谓不贤。雄文高节，少连为绝。守 道安贫，怀远当仁。钦望之属，片善何足。蹈媚再思，祇宜遄速。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十九章-卷三十九-原文.html'>第三十九章-卷三十九</a></p><p class='next'>下一节：<a href='第四十一章-卷四十一-原文.html'>第四十一章-卷四十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十九章-卷三十九-原文.html'>第三十九章-卷三十九</a></p><p class='next'>下一节：<a href='第四十一章-卷四十一-原文.html'>第四十一章-卷四十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

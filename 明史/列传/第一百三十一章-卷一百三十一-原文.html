@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -200,5 +227,18 @@
 </p><p>已，与邹元标共建首善书院，集同志讲学其中，给事中朱童蒙遂疏诋之。从吾言：“宋之不竞，以禁讲学故，非以讲学故也。我二祖表章《六经》，天子经筵，皇太子出阁，皆讲学也。臣子以此望君，而己则不为，可乎？先臣守仁，当兵事倥偬，不废讲学，卒成大功。此臣等所以不恤毁誉，而为此也。”因再称疾求罢，帝温诏慰留。而给事中郭允厚、郭兴治复相继诋元标甚力。从吾又上言：“臣壮岁登朝，即与杨起元、孟化鲤、陶望龄辈立讲学会，自臣告归乃废。京师讲学，昔已有之，何至今日遂为诟厉？”因再疏引归。
 </p><p>四年春，起南京右都御史，累辞未上，召拜工部尚书。会赵南星、高攀龙相继去国，连疏力辞，予致仕。明年秋，魏忠贤党张讷疏诋从吾，削籍。乡人王绍徽素衔从吾，及为吏部，使乔应甲抚陕，捃摭百方，无所得。乃毁书院，曳先圣像，掷之城隅。从吾不胜愤悒，得疾卒。崇祯初，复官，赠太子太保，谥恭定。
 </p><p>赞曰：赵南星诸人，持名检，励风节，严气正性，侃侃立朝，天下望之如泰山乔岳。《诗》有之，“邦之司直”，其斯人谓欤？权枉盈廷，谴谪相继，“人之云亡，邦国殄瘁”，悲夫！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百三十章-卷一百三十-原文.html'>第一百三十章-卷一百三十</a></p><p class='next'>下一节：<a href='第一百三十二章-卷一百三十二-原文.html'>第一百三十二章-卷一百三十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百三十章-卷一百三十-原文.html'>第一百三十章-卷一百三十</a></p><p class='next'>下一节：<a href='第一百三十二章-卷一百三十二-原文.html'>第一百三十二章-卷一百三十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

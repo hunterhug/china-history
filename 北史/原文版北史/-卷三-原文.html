@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>北史-原文版北史<a href='../北史.html#原文版北史'>：目录</a></p>
@@ -181,5 +208,18 @@
 </p><p>帝幼有至性。年四岁时，献文患痈，帝亲自吮脓。五岁受禅，悲泣不自胜。献文问其故，对曰：“代亲之感，内切于心。”献文甚叹异之。文明太后以帝聪圣，后或不利冯氏，将谋废帝。乃于寒月，单衣闭室，绝食三朝，召咸阳王禧将立之。元丕、穆泰、李冲固谏乃止。帝初不有憾，唯深德丕等。抚念诸弟，始终曾无纤介。惇睦九族，礼敬俱深。虽于大臣，持法不纵。然性宽慈，进食者曾以热羹覆帝手，又曾于食中得虫秽物，并笑而恕之。宦者先有谮帝于太后，太后杖帝数十，帝默受，不自申明。太后崩后，亦不以介意。
 </p><p>听览政事，从善如流。哀矜百姓，恆思所以济益。天地、五郊、宗庙、二分之礼，帝必躬亲，不以寒暑为倦。尚书奏案，多自寻省；百官大小，无不留心。务于周洽，每言：凡为人君，患于不均，不能推诚遇物；苟能均诚，胡越之人，亦可亲如兄弟。常从容谓史官曰：“直书时事，无讳国恶。人君威福自己，史复不书，将何所惧！”南北征巡，有司奏请修道，帝曰：“粗修桥梁，通舆马便止，不须去草剷令平也。”凡所修造，不得已而为之，不为不急之事，重损人力。巡幸淮南，如在内地。军事须伐人树者，必留绢以酬其直。人苗稼无所伤践。诸有禁忌禳厌之方非典籍所载者，一皆除罢。雅好读书，手不释卷。《五经》之义，览之便讲。学不师受，探其精奥；史传百家，无不该涉。善谈庄、老，尤精释义。才藻富赡，好为文章；诗赋铭颂，在兴而作。有大文笔，马上口授；及其成也，不改一字。自太和十年已后，诏册皆帝文也。自余文章，百有余篇。爱奇好士，情如饥渴。待纳朝贤，随才轻重。常寄以布素之意。，悠然玄迈，不以世务婴心。又少善射，有膂力：年十余，能以指弹碎羊膊骨；射禽兽，莫不随行所至而毙之。至十五，便不复杀生，射猎之事悉止。性俭素，常服浣濯之衣，鞍勒铁木而已。帝之雅志，皆此类也。
 </p><p>论曰：有魏始基代朔，廓平南夏；辟土经世，咸以威武为业。文教之事，所未遑也。孝文纂承洪绪，早著睿圣之风。时以文明摄事，优游恭己；玄览独得，著自不言；神契所标，固以符于冥化。及躬总大政，一日万机，十许年间，曾不暇给；殊涂同归，百虑一致。夫生灵所难行，人伦之高迹，虽尊居黄屋，尽蹈之矣。若乃钦明稽古，协御天人，帝王制作，朝野轨度。斟酌用舍，焕乎其有文章。海内黔黎，咸受耳目之赐。加以雄才大略，爱奇好士，视下如伤，役己利物，亦无得而称之。其经纬天地，岂虚谥也！</p>
-<div class='pn'><p class='pre'>上一节：<a href='-卷二-原文.html'>-卷二</a></p><p class='next'>下一节：<a href='-卷四-原文.html'>-卷四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='-卷二-原文.html'>-卷二</a></p><p class='next'>下一节：<a href='-卷四-原文.html'>-卷四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

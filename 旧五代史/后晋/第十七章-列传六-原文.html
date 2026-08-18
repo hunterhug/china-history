@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后晋<a href='../旧五代史.html#后晋'>：目录</a></p>
@@ -169,5 +196,18 @@
 </p><p>符彦饶，唐庄宗朝蕃汉总管存审之第二字也。存审，《唐书》有传。彦饶少骁勇，能骑射。唐天祐十五年冬，庄宗与梁大战于胡柳陂，彦饶与弟彦图俱从其父血战，有功，庄宗壮之，因用为骑将。同光中，以功授曹州刺史。明宗即位，改刺沂州。天成中，屯守梁园，会起军北戍塞下，时有偏校以宣武之帅，迫彦饶为之，彦饶绐许其请，明日，杀为恶者奏之，时人嘉其方略。长兴中，为金州防御使，为政甚有民誉，其后略迁节镇。天福初，为滑州节度使，累官至检校太傅。二年七月，范延光据鄴都叛，朝廷遣侍卫马军都指挥使白奉进率骑军三千，屯于州之开元寺。一日，彦饶与奉进因事忿争于牙署，事具奉进传中。是时，奉进厉声曰：“尔莫是与范延光同反耶？”拂衣而起，彦饶不留，帐下介士大噪，擒奉进杀之。奉进从骑散走，传呼于外。时步军都校马万、次校卢顺密闻奉进被害，即率其部众攻滑之子城，执彦饶以出。遣裨校方太拘送阙下，行及赤冈南，高祖遣中使害于路左。
 </p><p>罗周敬，字尚素，鄴王绍威之弟三子也。绍威，《梁书》有传。周敬幼聪明，八岁学为诗，往往传于人口，起家授检校尚书、礼部员外郎。梁乾化中，以兄周翰节制滑台，卒于官，乃以周敬继之，命为两使留后，寻正授旄钺，时年十岁。未几，改授许州节度使，继加检校尚书左仆射。逾三年，征授秘书监、检校司空、驸马都尉，尚梁普安公主，旋移光禄卿。庄宗即位，历左右金吾大将军。初，唐天祐中，绍威尝建第于洛阳福善里，及庄宗入洛，以梁租庸使赵岩宅赐明宗。同光中，明宗在洛，以趋内稍远，乃召周敬议易其第，周敬诺之。后明宗即位，一日梦中见一人，仪形瑰秀，若素识者，梦中问曰：“此得非前宅主罗氏子？”及寤，访其子孙，左右对曰：“周敬见列明廷。”召至，果符梦中所见。明宗谓侍臣曰：“朕不欲使大勋之后久无土地。”因授同州节度使，加检校太保。长兴中，入为左监门卫上将军，四迁诸卫上将军。天福二年卒，时年三十二。赠太傅。
 </p><p>郑琮，太原人也。始事唐武皇为五院军小校，屡有军功。庄宗在河上，为马步都虞候。戎伍之事，一睹不忘，凡所诘问，应答如流，故所在知名。唐同光末，从明宗伐魏州，时军情有变，明宗退守魏县，未知趋向。安重诲将征兵于四方，琮在帐前，历数诸道屯军及主将姓名，附口传檄，相次而至。明宗即位，嘉其功，授防州刺史，秩满，父老请留。三年，授左羽林统军。唐长兴二年二月，出刺武州。高祖即位，复居环卫。久之，以俸薄家贫，郁郁不得志。天福中，以疾终于官。赠司徒。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十六章-列传五-原文.html'>第十六章-列传五</a></p><p class='next'>下一节：<a href='第十八章-列传七-原文.html'>第十八章-列传七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十六章-列传五-原文.html'>第十六章-列传五</a></p><p class='next'>下一节：<a href='第十八章-列传七-原文.html'>第十八章-列传七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

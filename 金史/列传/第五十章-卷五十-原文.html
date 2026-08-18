@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -181,5 +208,18 @@
 </p><p>北军自北渡者毕集，前后以大树塞其军路，沃衍军夺路，得之。合达又议陈和尚先拥山上大势，比再整顿，金军已接竹林，去钧州止十余里矣。金军遂进，北军果却三峰之东北、西南。武、高前锋拥其西南，杨、樊拥其东北，北兵俱却，止有三峰之东。张惠、按得林立山上望北兵二三十万，约厚二十里。按得木与张惠谋曰：“此地不战，欲何为耶？”乃率骑兵万余乘上而下拥之，北兵却。须臾雪大作，白雾蔽空，人不相觌。时雪已三日，战地多麻田，往往耕四五过，人马所践泥淖没胫。军士被甲骨僵立雪中，枪槊结冻如椽，军士有不食至三日者。北兵与河北军合，四外围之，炽薪燔牛羊肉，更递休息。乘金困惫，乃开钧州路纵之走，而以生军夹击之。金军遂溃，声如崩山，忽天气开霁，日光皎然，金军无一人得逃者。
 </p><p>武仙率三十骑入竹林中，杨、樊、张三军争路，北兵围之数重，及高英残兵共战于柿林村南，沃衍、泽、英皆死，惟张惠步持大枪奋战而殁。蒲阿走京师，未至，追及，擒之。七月，械至官山，召问降否，往复数百言，但曰：“我金国大臣，惟当金国境内死耳。”遂见杀。
 </p><p>赞曰：金自南渡，用兵克捷之功，史不绝书，然而地不加辟，杀伤相当，君子疑之。异时伐宋，唐州之役，丧师七百，主将讹论匿之，而以捷闻。御史纳兰纠之，宣宗奖御史，而不罪讹论，是君臣相率而为虚声也。禹山之捷，两省为欺，遂致误国，岂非宣宗前事有以启之耶？至于三峰山之败，不可收拾，上下〈目咢〉眙，而金事已去十九。天朝取道襄、汉，悬军深入，机权若神，又获天助，用能犯兵家之所忌，以建万世之俊功，合达虽良将，何足以当之。蒲阿无谋，独以一死无愧，犹足取焉尔。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十九章-卷四十九-原文.html'>第四十九章-卷四十九</a></p><p class='next'>下一节：<a href='第五十一章-卷五十一-原文.html'>第五十一章-卷五十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十九章-卷四十九-原文.html'>第四十九章-卷四十九</a></p><p class='next'>下一节：<a href='第五十一章-卷五十一-原文.html'>第五十一章-卷五十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

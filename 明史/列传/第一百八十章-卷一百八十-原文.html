@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -224,5 +251,18 @@
 </p><p>世淳，崇祯中举人。十三年冬，历随州知州。州尝被贼，居民萧然。世淳知贼必复至，集士民誓以死守。会岁大荒，士多就食粥厂，叹曰：“可使士以馁失礼乎？”分粟振之。溃兵过随索饷，世淳授兵登陴，而单骑入见军帅曰：“军食不供，有司罪也。杀我足矣，请械我以见督师。”帅气夺，敛众去。
 </p><p>明年三月，张献忠自襄阳来犯，世淳寝食南城谯楼，晓夜固守，告急于巡抚宋一鹤。一鹤遣兵来援，为监司守承天者邀去。守月余，援绝力穷，贼急攻南城，而潜兵堕北城以入。世淳命子肇梁｛艹貍｝印廨后，勒马巷战，矢贯颐，耳鼻横断，坠马，乱刃斫死。肇梁奔赴，且哭且骂，贼将杀之，呼州人告以｛艹貍｝印处，乃死。世淳妾赵、王及臧获十八人皆死。后赠太仆少卿，建祠，以肇梁祔。
 </p><p>随自十年正月陷，及是再陷，至七月复陷，判官余塙死焉。三陷之后，城中几无孑遗。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百七十九章-卷一百七十九-原文.html'>第一百七十九章-卷一百七十九</a></p><p class='next'>下一节：<a href='第一百八十一章-卷一百八十一-原文.html'>第一百八十一章-卷一百八十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百七十九章-卷一百七十九-原文.html'>第一百七十九章-卷一百七十九</a></p><p class='next'>下一节：<a href='第一百八十一章-卷一百八十一-原文.html'>第一百八十一章-卷一百八十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

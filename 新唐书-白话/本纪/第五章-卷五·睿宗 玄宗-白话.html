@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新唐书-本纪<a href='../新唐书.html#新唐书'>：目录</a></p>
@@ -503,5 +530,18 @@
 </p><p>至德二载(757)正月初一，玄宗颁诰向全国招求孝亲敬兄可予表彰者。十五日，剑南的勇士贾秀反叛，被处死。三月二十二日，通化郡传言玄元皇帝降临。五月十三日，玄宗行文追立贵妃杨玉环为皇后。七月初四，行营的勇军士李季反叛，被处死。二十四日，剑南勇士郭千仞反叛，被处死。十月十三日，肃宗李亨收复京城长安，禀报玄宗。玄宗颁诰对剑南的囚犯减刑，流放刑罚以下的罪犯免刑。
 </p><p>十二月初四，玄宗自蜀郡返回京城，居住兴庆宫。至德三载(758)，肃宗给玄宗进献尊号为太上至道圣皇天帝。上元元年(760)，玄宗迁居于西内甘露殿。本年四月，玄宗在神龙殿逝世，终年七十八岁。
 </p><p>评说：睿宗依靠其子玄宗之功登基，而在位又不久，因而没有可评述的事。可叹哪，女子对人的祸害太厉害了！自高祖到中宗，数十年间，一再遭受女子干政之祸，李唐皇位断而复续，中宗身不免祸，韦氏因此灭族。玄宗亲自平靖韦氏之乱，实在值得以其为鉴了，却又毁于女子。当他振作精神治理国政，开元之际，近于太平治世，那是何等兴盛呵！到他放纵之心一动，竭尽天下之所好也不能满足其享乐，又沉溺于宠爱的人，忘了值得警戒的教训，乃至于逃命失国而不改。考察他从开始到最后的差异，其禀性因习染而相距之远竟达到了如此地步。能不谨慎吗！能不谨慎吗！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四·则天皇后 中宗-白话.html'>第四章-卷四·则天皇后 中宗</a></p><p class='next'>下一节：<a href='第六章-卷六·肃宗 代宗-白话.html'>第六章-卷六·肃宗 代宗</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四·则天皇后 中宗-白话.html'>第四章-卷四·则天皇后 中宗</a></p><p class='next'>下一节：<a href='第六章-卷六·肃宗 代宗-白话.html'>第六章-卷六·肃宗 代宗</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

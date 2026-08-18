@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -191,5 +218,18 @@
 </p><p>孙瑛嗣。屡从出塞，镇永平、山海、蓟州，城云州、独石。爽闿有将材。然贪残，人多怨者。卒，子埙嗣。殁于土木，谥荣怀。弟韶嗣。卒。孙鏸嗣。总蓟州兵。朵颜入寇，御却之。嘉靖初，叙奉迎功，加太子太保，进少保，委寄亚武定侯郭勋。嗣伯六十余年卒。又五传而明亡。
 </p><p>王友，荆州人。袭父职为燕山护卫百户。从起兵，定京师。论功当侯，以骄纵，授都指挥佥事。及邱福等议上，乃封清远伯。明年充总兵官，帅舟师沿海捕倭。倭数掠海上，友无功，帝切责之。已，大破倭。帝喜，降敕褒劳，寻召还。四年从征交阯，与指挥柳琮合兵破筹江栅，困枚、普赖诸山，斩首三万七千余级。六年七月进侯，加禄五百石，与世券。明年，再征交阯，为副总兵。八年还，从北征，督中军。别与刘才筑城饮马河上。会知院失乃干欲降，帝令友将士卒先行，谕以遇敌相机剿灭。友等至，与敌相距一程，迂道避之应昌。军中乏食，多死者。帝震怒，屡旨切责，夺其军属张辅。还令群臣议罪。已而赦之。十二年，坐妾告友夫妇诽谤。有验，夺爵。未几卒。仁宗即位，官其子顺为指挥佥事。
 </p><p>赞曰：张武、陈珪诸人，或从起藩封，或率先归附，皆偏裨列校，非有勇略智计称大将材也。一旦遘风云之会，剖符策功，号称佐命，与太祖开国诸臣埒，酬庸之义不亦厚欤！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十三章-卷三十三-原文.html'>第三十三章-卷三十三</a></p><p class='next'>下一节：<a href='第三十五章-卷三十五-原文.html'>第三十五章-卷三十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十三章-卷三十三-原文.html'>第三十三章-卷三十三</a></p><p class='next'>下一节：<a href='第三十五章-卷三十五-原文.html'>第三十五章-卷三十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

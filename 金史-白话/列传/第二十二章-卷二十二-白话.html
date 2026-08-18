@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#金史'>：目录</a></p>
@@ -172,5 +199,18 @@
 </p><p>时间长了，皇上召见景仁令他读陈言文字。皇上问“：典章制度有多少款？”景仁轻率简单，缺乏周密思考，回答说：“有二十多条。”又说：“其中如某条某条有十条可行，其余的都是无所谓的。”第二天，皇上召见景仁斥责他说：“卿昨天说可行的条款，朕看了，其中又有不可行的。卿说无所谓的条款，其中却有可行的。朕未曾让卿分别可行与不可行，卿却自做主张分可行不可行，这怎么行呢？卿自己要从现在改正。”大定十年(1170)，张景仁兼任太常卿、学士同时依然修国史。后又转任承旨、兼修国史。后又改任河南尹。二十一年(1181)，奉召出任御史大夫，仍然兼任承旨、修国史。
 </p><p>世宗对景仁说：“卿是一位博学老儒，要求像古代的御史大夫，然后行事，这样才是称职，不能像古代的普通人一样，众人不单独讥诮卿，也会说朕不能知人善任。卿酒醉的时候很有轻脱失言之处，应当戒备酒后失言才好。”当初，朝中大臣们说景仁有文才技艺然而很轻率简单，不能胜任台察。景仁被诏做台察，即在台中治监察罪，就随便看情况决定处罚。皇上听说了这些，责问景仁：“朕当初用卿当大夫，有人说不可以让卿做这个官，现在果然不用旧日的典章制度，轻率简单竟然像这样。卿要自己谨慎，不然要罢黜处罚了！”景仁叩头谢恩。
 </p><p>没过多久，皇帝下诏把元妃李氏安葬在海王庄。平章政事乌古论元忠负责监控安葬元妃一事，都水监丞高杲寿治道路不合标准，元忠不上奏，景仁决断责打他四十大板。景仁上奏弹劾元忠妄自断送了六品官职责，没有履行作为大臣的礼节。皇上说“：卿的劾奏很恰当。”派左宣徽使蒲察鼎寿传诏书训戒元忠说：“监丞六品，有罪闻奏，现在是一切事赶忙办，擅自决定处罚六品官，依法制应当像这样做吗？御史在朝廷受尊重，你应当自责，不要再发生类似事件！”元忠娶的是豫国公主，依仗受宠任意专行，倨傲侮慢朝中人士。景仁上奏弹劾了他，满朝上下对景仁肃然起敬。就在这一年，景仁逝世。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十一章-卷二十一-白话.html'>第二十一章-卷二十一</a></p><p class='next'>下一节：<a href='第二十三章-卷二十三-白话.html'>第二十三章-卷二十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十一章-卷二十一-白话.html'>第二十一章-卷二十一</a></p><p class='next'>下一节：<a href='第二十三章-卷二十三-白话.html'>第二十三章-卷二十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

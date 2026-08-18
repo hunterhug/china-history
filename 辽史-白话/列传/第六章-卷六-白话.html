@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#辽史'>：目录</a></p>
@@ -174,5 +201,18 @@
 </p><p>后来太宗见张砺刚强正直，颇有文采，提升为翰林学士。张砺遇事总是有言必发，无所回避，皇上更加重用他。不久，计划逃跑回故国，为骑兵追获。皇上责备他说“：你为什么要逃走？”张砺回答说“：我不习惯风俗、饮食、居处，心里总是郁郁不乐，因此想逃走。”皇上回头对通事高彦英说“：我曾经告诫你要好好待他，为什么还是让他因不得其所而逃走？张砺要是走了，你能再找回一个张砺来吗？”于是杖击彦英而向张砺致歉。
 </p><p>会同初年，升任翰林承旨，兼吏部尚书，随从太宗讨伐晋国。进入汴京，诸将萧翰、耶律郎五、麻答等人肆意杀人抢掠，张砺上奏说：“现在大辽刚刚得到中国，应该任用中国人治理他们，不能专用我国人及左右亲信。倘使政策和法令出现差错，那么人心就会不服，即使暂时得到中原也还是要失去的。”皇上不听。改任张砺为右仆射，兼门下侍郎、平章事。
 </p><p>不久，皇上北归，到达栾城便崩逝了。当时张砺在恒州，萧翰与麻答派兵包围了其府第。张砺正卧病于床，勉力支撑着出门见他们。萧翰数落他说“：你为什么要在先帝面前说契丹国人不可以做节度使？我以国舅之亲，出兵征讨有功，先帝留我守卫汴京，任命我为宣武军节度使，独有你以为不行。又诬陷我与解里喜欢抢掠别人的财物子女。今天我一定要杀了你！”敦促手下人将他拘锁起来。张砺大声抗言道“：此乃事关国家大局，维系国家安危之所在；所以我直言不讳。你要杀就杀，何必要锁起来呢？”麻答觉得张砺乃是重臣，不可擅自滥杀，便出面相救制止。当晚，张砺愤恨而死。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五-白话.html'>第五章-卷五</a></p><p class='next'>下一节：<a href='第七章-卷七-白话.html'>第七章-卷七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五-白话.html'>第五章-卷五</a></p><p class='next'>下一节：<a href='第七章-卷七-白话.html'>第七章-卷七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

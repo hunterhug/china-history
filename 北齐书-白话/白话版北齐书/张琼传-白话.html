@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>北齐书-白话版北齐书<a href='../北齐书.html#北齐书'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>张琼传<span style='font-size:small'> 白话</span></h1>
 <p>张琼，字连德，代地人氏。年轻时强壮健康，有武艺，魏朝时从荡寇将军升为朔州征虏府外兵参军。随葛荣作乱，荣败，尔朱荣拜他做了都督。因征讨元颢有功，除汲郡太守。建明初，为东道慰劳大使，封行唐县子，食邑三百户。转太尉长史，出为河内太守，除济州刺史。尔朱兆败，投奔高祖，迁汾州刺史。天平中，高祖偷袭夏州成功，以琼为慰劳大使，并留他镇守夏州。不久，琼因周文帝攻城，战死。赠使持节、燕恒云朔四州诸军事、大将军、司徒公、恒州刺史。琼有二子，长曰忻，次曰遵业。<BR><BR>　　忻，普泰中为都督，是尔朱世隆的麾下。因军功娶魏平阳公主，拜驸马都尉、大将军、开府仪同三司、建州刺史、南郑县伯。琼经常担忧忻的官位显赫，对亲近熟识的人说：“凡人做官得爵，不如不高不低，忻位秩过高，这是我最大的忧虑。”忻豪险放纵，又与公主感情不和，很快遭到武帝的迫害，时人认为琼有先见之明。<BR><BR>　　遵业，征讨元颢立下军功，封固安县开国子，拜宁远将军、云州大中正。天平中，除清河太守，不久加安西将军、建州刺史。武定中，随仪同刘丰讨伐侯景，被景掳获。侯景败，在涡阳杀死了遵业。遵业尸体运回来时，世宗亲自吊唁，赠其并肆幽安四州军事、开府仪同三司、并州刺史。</p>
-<div class='pn'><p class='pre'>上一节：<a href='司马子如传-白话.html'>司马子如传</a></p><p class='next'>下一节：<a href='斛律羌举传-白话.html'>斛律羌举传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='司马子如传-白话.html'>司马子如传</a></p><p class='next'>下一节：<a href='斛律羌举传-白话.html'>斛律羌举传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

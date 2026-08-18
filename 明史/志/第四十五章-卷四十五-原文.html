@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-志<a href='../明史.html#志'>：目录</a></p>
@@ -166,5 +193,18 @@
 </p><p>自儒学外，又有宗学、社学、武学。宗学之设，世子、长子、众子、将军、中尉年未弱冠者俱与焉。其师，于王府长史、纪善、伴读、教授等官择学行优长者除授。万历中，定宗室子十岁以上，俱入宗学。若宗子众多，分置数师，或于宗室中推举一人为宗正，领其事。令学生诵习《皇明祖训》、《孝顺事实》、《为善阴骘》诸书，而《四书》、《五经》、《通鉴》、性理亦相兼诵读。寻复增宗副二人。子弟入学者，每岁就提学官考试，衣冠一如生员。已复令一体乡试，许得中式。其后宗学浸多，颇有致身两榜、起家翰林者。
 </p><p>社学，自洪武八年，延师以教民间子弟，兼读《御制大诰》及本朝律令。正统时，许补儒学生员。弘治十七年，令各府、州、县建立社学，选择明师，民间幼童十五以下者送入读书，讲习冠、婚、丧、祭之礼。然其法久废，浸不举行。
 </p><p>武学之设，自洪武时置大宁等卫儒学，教武官子弟。正统中，成国公朱勇奏选骁勇都指挥等官五十一员，熟娴骑射幼官一百员，始命两京建武学以训诲之。寻命都司、卫所应袭子弟年十岁以上者，提学官选送武学读书，无武学者送卫学或附近儒学。成化中，敕所司岁终考试入学武生。十年以上学无可取者，追廪还官，送营操练。弘治中，从兵部尚书马文升言，刑《武经七书》分散两京武学及应袭舍人。嘉靖中，移京城东武学于皇城西隅废寺，俾大小武官子弟及勋爵新袭者，肄业其中，用文武重臣教习。万历中，兵部言，武库司专设主事一员管理武学，近者裁去，请复专设。教官升堂，都指挥执弟子礼，请遵《会典》例，立为程式。诏皆如议。崇祯十年，令天下府、州、县学皆设武学生员，提学官一体考取。已又申《会典》事例，簿记功能，有不次擢用、黜退、送操、奖罚、激厉之法。时事方棘，无所益也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十四章-卷四十四-原文.html'>第四十四章-卷四十四</a></p><p class='next'>下一节：<a href='第四十六章-卷四十六-原文.html'>第四十六章-卷四十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十四章-卷四十四-原文.html'>第四十四章-卷四十四</a></p><p class='next'>下一节：<a href='第四十六章-卷四十六-原文.html'>第四十六章-卷四十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

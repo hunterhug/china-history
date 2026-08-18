@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -196,5 +223,18 @@
 <p>　　洎陆贽知政事，以有翰林之旧，数告贽求官。贽密谓公辅曰：“予尝见郴州窦 相，言为公奏拟数矣，上旨不允，有怒公之言。”公辅恐惧，上疏乞罢官为道士， 久之未报。后又廷奏，德宗问其故，公辅不敢泄贽，便以参言为对。帝怒，贬公辅 为泉州别驾，又遣中使赍诏责窦参。顺宗即位，起为吉州刺史，寻卒。宪宗朝，赠 礼部尚书。 </p>
 <p>　　史臣曰：贾魏公以温克长者，致位丞相，拒献甫之请，畋李纳之郊，则器略可 知矣！韦郢公慷慨节义，困于谗邪，命矣夫！赵丞相区分检裁，求为雅士，以争权 而陷陆贽，则前时以德报怨，其可信乎！公辅一言悟主，骤及台司；一言不合，礼 遽疏薄，则加膝坠泉之间，君道可知矣！ </p>
 <p>　　赞曰：元靖訏谟，真谓纯儒。手调鼎饪，心运地图。姜躁赵险，并跃天衢。哀 哉韦公，终困谗夫。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十七章-卷八十七-原文.html'>第八十七章-卷八十七</a></p><p class='next'>下一节：<a href='第八十九章-卷八十九-原文.html'>第八十九章-卷八十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八十七章-卷八十七-原文.html'>第八十七章-卷八十七</a></p><p class='next'>下一节：<a href='第八十九章-卷八十九-原文.html'>第八十九章-卷八十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

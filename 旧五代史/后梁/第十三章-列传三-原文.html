@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后梁<a href='../旧五代史.html#后梁'>：目录</a></p>
@@ -166,5 +193,18 @@
 </p><p>蒋殷，不知何许人。幼孤，随其母适于河中节度使王重盈之家，重盈怜之，畜为己子。唐天复初，太祖既平蒲、陕，殷与从兄珂举族迁于大梁。太祖感王重荣之旧恩，凡王氏诸子，皆录用焉，殷由是继历内职，累迁至宣徽院使。殷素与庶人友珪善，友珪篡立，命为徐州节度使。乾化四年秋，末帝以福王友璋镇徐方，殷自以为友珪之党，惧不受代，遂坚壁以拒命。时华州节度使王瓚，殷之从弟也，惧其连坐，上章言殷本姓蒋，非王氏之子也。末帝乃下诏削夺殷在身官爵，仍令却还本姓，命牛存节、刘鄩等率军讨之。是时，殷求救于淮南，杨溥遣硃瑾率众来援，存节等逆击，败之。贞明元年春，存节、刘鄩攻下徐州，殷举族自燔而死，于火中得其尸，枭首以献之。
 </p><p>张万进，云州人。初为本州小校，亡命投幽州，刘守光厚遇之，任为裨将。沧州刘守文，以弟守光囚父而窃据其位，自领兵问罪，寻败于鸡苏。守光遂兼有沧、景之地，令其子继威主留务。继威年幼，未能政事，以万进佐之，凡关军政，一皆委任。继威凶虐类父，尝淫乱于万进之家，万进怒而杀之，《通鉴》云：乾化二年九月庚子，万进遣使奉表降于梁。辛丑，以万进为义昌留后。甲辰，改义昌为顺化军，以万进为节度使。此传疑有阙文。又遣使归于晋。既而末帝遣杨师厚、刘守奇潜兵掠镇、冀，因东攻沧州，万进乞降。师厚表青州节度使，俄迁兗州，仍赐名守进。万进性既轻险，专图反侧。贞明四年冬，据城叛命，遣使送款于晋王。末帝降制削其官爵，仍复其本名，遣刘鄩讨之，晋人不能救。五年冬，万进危蹙，小将邢师遇潜谋内应，开门以纳王师，遂拔其城，万进族诛。
 </p><p>史臣曰：夫云雷构屯，龙蛇起陆，势均者交斗，力败者先亡，故瑄、瑾、时溥之流，皆梁之吞噬，斯亦理之常也。惟瑾始以窃发有土，终以窃发亡身，《传》所谓“君以此始，必以此终”者乎！师范属衰季之运，以兴复为谋，事虽不成，忠则可尚，虽贻族灭之祸，亦可以与臧洪游于地下矣。知俊骁武有余，奔亡不暇，六合虽大，无所容身，夫如是则岂若义以为勇者乎！崇本而下，俱以叛灭，又何足以道哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十二章-列传二-原文.html'>第十二章-列传二</a></p><p class='next'>下一节：<a href='第十四章-列传四-原文.html'>第十四章-列传四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十二章-列传二-原文.html'>第十二章-列传二</a></p><p class='next'>下一节：<a href='第十四章-列传四-原文.html'>第十四章-列传四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

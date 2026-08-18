@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-帝纪<a href='../晋书.html#晋书'>：目录</a></p>
@@ -184,5 +211,18 @@
 </p><p>咸安二年正月，降封皇帝为海西县公。四月，徙居吴县，敕命吴国内史刁彝防卫，又派御史顾允监督。十一月，妖贼卢悚派弟子殿中监许龙大清早到海西县公大门前，称说有太后密诏，奉迎海西县公回去恢复皇位。皇帝开始想听从许龙，听取了集中统一的规谏后作罢。许龙说曰：“大事就要成功了，怎么还听女人的话呢？”皇帝说：“我犯了这样的罪，幸而承蒙宽宥，怎么敢轻举妄动呢！而且太后如果有诏令，就应该派自己的心腹来，为什么偏偏是你呢？你一定是作乱。”就呼喝侍从们绑了他，许龙惊慌逃走。皇帝知道皇位不能再得，很担心遭来横祸，就对世事不闻不门，无忧无虑，终日饮酒作乐，沉溺于内宠之中，不抚育自己的儿子，希望能保住自身。当时的人们哀怜他，给他唱赞歌。朝廷因为皇帝安于屈辱不再担忧他东山再起。太元十一年十月甲申，皇帝在吴国去世，当时四十五岁。
 </p><p>史臣曰：孝宗年幼，由母亲摄政，中外无事，安定了十多年。用武安君那样的雄才，在疆场开拓；用周文王那样的风化，施行到了江汉，那么这就是孔子所说的没有非议了。哀皇帝宽厚仁惠，可以做国君，但是祭祀祈福于上天，德行蒙受污损。海西公拒绝许龙让他恢复皇位，屈身于放逐之臣，正所谓是柔弱胜刚强，能够享尽天年的人。
 </p><p>赞曰：帝位虚设，母后当政，大孝为根本。遵循母亲教诲，成就诚信恭谦。可作西边玉垒的榜样，可作北边金墉的旗帜。迁徒的殷人追日的僰人，没有不来归顺的。哀后宽厚仁惠，神灵自来会集。海西公多难，灾祸降临头上。他不是辅臣，我也不是昌邑。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章--白话.html'>第七章-</a></p><p class='next'>下一节：<a href='第九章--白话.html'>第九章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七章--白话.html'>第七章-</a></p><p class='next'>下一节：<a href='第九章--白话.html'>第九章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

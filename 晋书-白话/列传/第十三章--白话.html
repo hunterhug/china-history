@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#晋书'>：目录</a></p>
@@ -219,5 +246,18 @@
 </p><p>乐凯字弘绪，任大司马齐王掾，参骠骑军事。乐肇字弘茂，任太傅束海王掾。洛阳陷落，兄弟一同南渡长江。乐谟字弘范，任征虏将军、吴郡内史。
 </p><p>史臣曰：汉相清静，无为而治；周相清虚，受禄而不务政事。难道三公宰相的任用，与一般官员不同吗!浚冲善于清谈，夷甫崇尚道家，登上三公的显赫之位，学老庄而高远。他们信奉虚无，朝纲混乱。王戎讨好别人以求安身，积蓄财物；王衍则自保其身，难道还能顾及国家吗?三方战乱，外族插手，羌狄人马，兵器如云。夷直小人，谄媚凶恶，以求宽容，推墙压死，还算是礼遇。平子纵情傲物，承受不了美名，最终丢了性命，自取灭亡。衣服修饰仪容，珪璋规范道德，声韵符合礼乐，神采映照山华，立武有理，立言成训。王澄的傲慢，太过分了。如果解衣爬树，裸身抓鹊，以此为通达，认为这是高雅的情趣，那么轻薄的人会效仿，伤风败俗。道德败坏至极怪事相接，独往独来，自己断送了生命。往昔晏婴为庄公伏尸痛哭，而今乐令释放愍怀的追随者，是受伯夷的影响吧，软弱的人也可以立志。
 </p><p>赞曰：晋朝访求贤人隐士，构筑仙台，高入云霄，山皇知才。王濬身居高位，好清谈而不务实。首鼠两端，狡兔三窟。扰乱当世，不忠于人。芒王凌侮贤人，多用小人。碧验拨开云雾，蓝天清澄。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十二章--白话.html'>第十二章-</a></p><p class='next'>下一节：<a href='第十四章--白话.html'>第十四章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十二章--白话.html'>第十二章-</a></p><p class='next'>下一节：<a href='第十四章--白话.html'>第十四章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

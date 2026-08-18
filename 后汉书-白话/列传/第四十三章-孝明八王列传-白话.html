@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#后汉书'>：目录</a></p>
@@ -159,5 +186,18 @@
 </p><p>梁节王刘畅，永平十五年(72)封为汝南王。母阴贵人有宠于帝，刘畅尤其被宠爱，国土租入比其他国封地加一倍。肃宗即位，顺着先帝的意思，赏赐恩宠很厚。建初二年(77)，封刘畅舅父阴棠为西陵侯。四年(79)，徙为梁王，将陈留之郾、宁陵，济阴之薄、单父，己氏、成武等六县加入梁国封地。帝死后，当年去封地。刘畅性聪惠，然而少年贵骄，不大遵守法度。到封地后，多次有恶梦，从官卞忌自己说能使六丁(注：六甲申丁神)，会占梦，刘畅数次使他占卜筮。又刘畅之乳母王礼等，借此自言能见鬼神事，于是一道占气，祠祭求福。卞忌等谄媚刘畅，说神言王应当做天子。刘畅心喜，和他们应答。永元九年(97)，豫州刺史梁相举奏刘畅大逆不道，考问，辞不服。有司请求召刘畅到廷尉那里坐牢，和帝不同意。有司又奏免除刘畅的封地，迁到九真，帝不忍心，只削去成武、单父两县。刘畅惭愧害怕，上疏辞谢道：“臣天性狂愚，生在深宫之中，长于傅母之手，信惑左右的话。等到归国，不知防禁。从官侍史为了谋取财物，荧惑我的心。臣畅没有觉察，和他们互相然诺，不知自陷死罪，以至犯了罪。内心害怕，自悔也来不及。自以为当被杀掉，魂魄离身，分归黄泉。不意陛下圣德，枉法曲平，不听有司之言，赦免了我。战忄栗连月，不敢自安。上念有负先帝之恩，使陛下替臣收恶天下，的确使臣无气以息，筋骨不相连。臣畅知道宽大不可再得，自己发誓要束身约妻子，不敢再出入不讲规矩，不敢再有浪费。租入有剩余，请求裁减睢阳、谷熟、虞、蒙、宁陵五县，还剩下四县。臣有小妻三十七人，那些无子的愿回本家。自选择谨数束力奴婢二百人，其余所受虎贲、官骑和诸工技、鼓吹、仓头、奴婢、兵弩、厩马都上还本署。臣畅以骨肉至亲，乱圣化，氵于清流，既得生活，的确无面目以凶恶居大宫，食大国，张官属，藏什物。愿陛下加大恩，开臣自悔之门，假臣小善之路，使天下知臣蒙恩，能去死就生，颇能自悔。臣将公卿所奏罪恶诏书常置于前，昼夜诵读。臣本小人，贪见明时，不能即肘自引，望陛下哀臣，使得喘息漏刻。如不听许，臣实无颜以久生，下入黄泉，无以见先帝。这的确是臣一片至心。臣想多还所受，恐天恩不听许，节量所留，于臣畅已足够了。”皇上诏书回报道：“朕惟王至亲之属，淳淑之美，傅相不良，不能防止邪恶，至使有司纷纷有言。今王深思悔过，端自克责，朕很难过。志非由王，过在那班小子。一日克己复礼，天下归仁。王其安心静意，茂率休德。《易经》不是说过吗：‘一谦而四益。小有言，绝吉。’强食自爱。”刘畅坚决退让，奏章数上，终不同意。刘畅立二十七年死去，子恭王刘坚嗣。
 </p><p>淮阳顷王刘日丙，永平十五年(72)封常山王。建初四年(79)，徙为淮阳王，将汝南之新安、西华加入淮阴国。立十六年死去，未及立嗣。
 </p><p>济阴悼王刘长，永平十五年(72)封。建初四年(79)，将东郡之离狐，陈留之长垣加入济阴国。立十三年，死在京师，无子，封地废除。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十二章-王充王符仲长统列传-白话.html'>第四十二章-王充王符仲长统列传</a></p><p class='next'>下一节：<a href='第四十四章-李陈庞陈桥列传-白话.html'>第四十四章-李陈庞陈桥列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十二章-王充王符仲长统列传-白话.html'>第四十二章-王充王符仲长统列传</a></p><p class='next'>下一节：<a href='第四十四章-李陈庞陈桥列传-白话.html'>第四十四章-李陈庞陈桥列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

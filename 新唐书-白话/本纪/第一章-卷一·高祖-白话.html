@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新唐书-本纪<a href='../新唐书.html#新唐书'>：目录</a></p>
@@ -267,5 +294,18 @@
 </p><p>八月初一，突厥求和。初二，白天出现太白星。初七，吐谷浑求和。初九，皇太子李世民登基。
 </p><p>贞观三年(629)，太上皇李渊迁居大安宫。贞观九年(635)五月，高祖李渊在垂拱前殿逝世，享年七十一岁。谥号为“太武”，庙号“高祖”。上元元年(674)，改高祖的谥号为“神尧皇帝”。天宝八载(749)，谥号为“神尧大圣皇帝”；十三载(754)，其谥号增为“神尧大圣大光孝皇帝”。
 </p><p>赞语：自古承受天命的君主，不是有德贤明者王业不旺。自夏后氏以来，才兴世袭传位，而继位者有的德才兼备，有的寡德少才，因此，占有天下，气数也就有长有短。论家于是讲：周朝从始祖后稷直到文王、武王，积聚功德累集仁爱，由来久远，因此统治天下特别长久。然而考察史书《世本》，夏、商、周三代均由黄帝而来，夏朝在其始祖鲧之前，商朝从始祖契直至开国君主成汤，这期间默默无闻，与周朝的兴起不同。而汉朝也兴起于亭长、叛逃的人们。到它们兴国之后，各都占有天下数百年才结束。由此说来，“天命”难道容易知道吗？但考察一个王朝的兴起与终止、太平与动乱，看看它们的功业、德行有高有低、有厚有薄和用来维持它的制度法纪的是什么，以及它的后代，有的渐渐兴盛繁荣，有的突然败坏混乱，有的逐步加剧衰颓，有的能够振起中兴，有的终于不能支撑而垮台，虽然各顺其势，然而都是有德的就兴盛，无德行就绝灭，这难道不是所谓的“天命”总不显示它的征兆，而使握有国柄者兢兢业业以自勉吗？唐公在北周、隋朝之际，家世虽已高贵了，然而并没有所谓积聚功德累集仁爱的渐进迹象；而高祖的兴起，与顺应时势崛起的人士有什么两样呢？尽管唐朝有时太平、有时动乱、有时危困、有时衰败，但它拥有天下将近三百年，可称得上兴盛啊！难道不是人民厌弃隋朝的乱世，而得到高祖的恩惠，又继之以太宗的治理，制度纲纪的法则，使后继者治国得以有所依凭、扶助，才能“天命”长久的吗？</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-卷二·太宗-白话.html'>第二章-卷二·太宗</a></p></div></body>
+<div class='pn'><p class='next'>下一节：<a href='第二章-卷二·太宗-白话.html'>第二章-卷二·太宗</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

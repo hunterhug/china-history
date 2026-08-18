@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#金史'>：目录</a></p>
@@ -163,5 +190,18 @@
 </p><p>完颜福寿，是曷速馆人。其父完颜合住，建国之初前来归顺，被授予猛安。天眷二年(1139)，完颜福寿继承父亲完颜合住的职位，被授予定远大将军，直至升到金吾卫上将军。海陵王减少合并猛安谋克，于是停止了他的加封。
 </p><p>正隆末年，海陵王攻打宋朝，完颜福寿率领娄室、台答蔼二猛安由山东道进军到泰安。接受了命令，完颜福寿于是劝将校们北撤，而高忠建、卢万家奴等也各自率领军队一万多人来归顺东京，想共同拥立世宗做皇帝。完颜福寿到达辽口，金世宗派徒单思忠、府吏张谋鲁瓦等前来迎候，以了解他的去向。徒单思忠等几个人骑马到完颜福寿军中，拜见他们并问道“：将军您为什么到这里？”完颜福寿等向南指向皇帝海陵王说“：这个人失去道义，不能保持天下。国公是太祖皇帝的亲孙子，我们想推立他做皇帝，所以来到这里。”诸军都向东朝拜，高呼万岁。完颜福寿写信交给徒单思忠。完颜福寿敦促各军渡辽水，直到东京城下，然后告谕军士武装进入卫宫城，杀了高存福等人。第二天，完颜福寿同诸将及东京官民随婆速路兵马都统总管完颜谋衍劝说皇帝登基。金世宗即皇帝位，任完颜福寿为元帅右监军，赏赐给他银子、钱币及御马。
 </p><p>始初，完颜谋衍到，诸军会合，把完颜福寿的军队排列在左边，高忠建的军队排在右边。高忠建说“：为什么把我的军队排在右边？”完颜谋衍说“：我让这样排的，你怎敢说这话！”完颜福寿说：“刚开始建立大事业，左右军的高低不值得争。”于是让高忠建的军队当作左军。金世宗听说此事，认为完颜福寿很贤德。不久，完颜福寿随从完颜谋衍在北京讨伐白彦敬、纥石烈志宁。这年冬天，皇帝听说临潢尹兼元帅左都监完颜吾扎忽等同移剌窝斡作战不利，命令完颜福寿率兵进行讨伐。打败了敌军，俘虏一万多人。金世宗用纥石烈志宁代替完颜福寿的职务，把他召回京城，授予兴平军节度使，恢复他的世袭猛安，不久做领济州路诸军事。大定三年(1163)，完颜福寿死去。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十三章-卷二十三-白话.html'>第二十三章-卷二十三</a></p><p class='next'>下一节：<a href='第二十五章-卷二十五-白话.html'>第二十五章-卷二十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十三章-卷二十三-白话.html'>第二十三章-卷二十三</a></p><p class='next'>下一节：<a href='第二十五章-卷二十五-白话.html'>第二十五章-卷二十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

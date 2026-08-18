@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -198,5 +225,18 @@
 <p>　　张敬则者，不知何许人，本名昌，后赐名敬则。初助刘玄佐，累有军功，官至 凤翔节度使。常有复河湟之志，遣大将野诗良辅发锐卒至陇西，番戎大骇。元和二 年六月卒。 </p>
 <p>　　史臣曰：有唐中否，逆寇勃兴，天王窘以蒙尘，诸侯忠而赴难。可孤生居沙漠， 挺然怀效命之风；功冠貔貅，屹尔有不矜之色。李观文儒之胄，乐习兵戎，戴圣主 著定难之勋，救浑瑊于会盟之变。休颜斩使婴城，怀光股栗；惠元穷蹙自致，天子 轸悼。元谅退兵章敬，力战让功，雅有器度。及不忍小忿，专杀庭光，请罪军门， 壮哉烈士！其下诸将，郁有劳能。胜生异域，推位让国，坚留宿卫，顾慕华风；居 中土者，岂不思廉让耶！斯乃高祖之基，太宗之业，贻厥孙谋，不徒虚语。 </p>
 <p>　　赞曰：建中失国，啸聚氛慝。景命载延，群雄毕力。歌钟甲第，珪组繁锡。凡 百人臣，忠为令德。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第九十三章-卷九十三-原文.html'>第九十三章-卷九十三</a></p><p class='next'>下一节：<a href='第九十五章-卷九十五-原文.html'>第九十五章-卷九十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九十三章-卷九十三-原文.html'>第九十三章-卷九十三</a></p><p class='next'>下一节：<a href='第九十五章-卷九十五-原文.html'>第九十五章-卷九十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

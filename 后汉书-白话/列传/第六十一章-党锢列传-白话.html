@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#后汉书'>：目录</a></p>
@@ -211,5 +238,18 @@
 </p><p>延熹九年(166)，党祸起，太尉陈蕃反对，没有成功，朝廷百官为之寒心，不敢再说。贾彪对同僚说：“我不西行，大祸不能解除。”于是入洛阳，说城门校尉窦武、尚书霍..，窦武等向皇帝申诉，桓帝因此大赦党人。李膺出来说“：我得以免遭党祸，贾生的力啊！”先时，岑晊因党祸逃亡，亲戚朋友都隐藏他，贾彪独闭门不接纳，当时的人都恨了他。贾彪说“：《传》说‘：要看时间行动，不要连累后人。’公孝因要挟皇上招罪，自取其咎，我正因不能持戈相待为恨，难道反而可以收留隐藏他吗？”因党祸禁止不得做官，死在家里。
 </p><p>起先，贾彪兄弟三人，都很有名气，贾彪最好，故天下传说：“贾氏三虎，伟节最怒。”
 </p><p>◆何颙传，何颙字伯求，南阳郡襄乡县人。年轻时游学京师。何颙虽然是晚辈，但郭林宗、贾伟节等与他很要好。著名太学。友人虞伟高有父亲的仇没有报，重病将死，何颙去看他，虞伟高向他哭诉，何颙被他的大义感动了，为他报了仇，用仇人的脑袋祭了虞伟高父亲的坟墓。陈蕃、李膺失败以后，何颙因与陈蕃、李膺相好，被宦官诬陷，他于是改变自己的姓名，逃亡汝南郡境内。他所到的地方，结纳豪杰，有名于荆州、豫州一带。袁绍仰慕他的为人，悄悄地与他往来，结为谕德宣誓的朋友。这时党祸起，天下不少人遭了难，何颙经常私自跑到洛阳，与袁绍计议。对一些穷困无助的人，帮助他们渡过祸患。对一些被追捕的人，就大为出谋献计，使他们得以逃跑或隐藏起来，使不少人免于党祸。党祸解除了以后，何颙被司空府征召。每次三府会议，没有不推何颙为长的。累次升迁。董卓秉政，逼迫何颙为长史，他托疾不接受，与司空荀爽、司徒王允等共同谋划诛杀董卓。荀爽逝世，何颙因别的事被董卓收捕，忧愤死去。起先，何颙见曹操，叹息说：“汉家将亡，安天下的必定是这个人啊。”曹操因此非高常兴。曾经称赞“颍川荀..，王佐之器。”荀..任尚书令，派人西迎叔父荀爽，并收何颙尸体，葬在荀爽的墓旁。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十章-陈王列传-白话.html'>第六十章-陈王列传</a></p><p class='next'>下一节：<a href='第六十二章-郭符许列传-白话.html'>第六十二章-郭符许列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十章-陈王列传-白话.html'>第六十章-陈王列传</a></p><p class='next'>下一节：<a href='第六十二章-郭符许列传-白话.html'>第六十二章-郭符许列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

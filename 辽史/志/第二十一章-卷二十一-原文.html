@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-志<a href='../辽史.html#志'>：目录</a></p>
@@ -175,5 +202,18 @@
 </p><p>高丽使朝辞仪：臣僚起居、上殿如常仪。阁门奏高丽使朝辞榜子，起居、恋阙，如宋使之仪。赞各上殿祗候。引西阶上殿立。契丹舍人赞拜，称“万岁”。赞各就坐，中书令以下伴酒三行，肴膳二味，皆如初见之仪。既谢，赞“有敕宴”，五拜。赞“各好去”，引出，于幕次内别差使臣伴宴。毕，赐衣物，跪受，遥谢五拜。归馆。
 </p><p>西夏国进奉使朝见仪：臣僚常朝毕，引使者左入，至丹墀，面殿立。引使者上露台立。揖少前，拜跪，附奏起居讫，俯兴，复位。阁使宣问“某安否”，鞠躬听旨，跪奏“某安”。俯伏兴退，复位。引左下，至丹墀，面殿立。礼物右入左出，毕，阁使鞠躬，通某国进奉使姓名候见，共一十七拜。赞祗候，平立。有私献，过毕，揖使者鞠躬，赞“进奉收讫”。赞祗候，引左上殿，就位立。臣僚、使者齐声喏。酒三行，引使左下，至丹墀谢宴，五拜。毕，赞“有敕宴”，五拜。祗候，引右出。礼毕。于外赐宴，客省伴宴，仍赐衣物。
 </p><p>西夏使朝辞仪：常朝毕，引使者左入，通某国某使祗候辞，再拜。不出班，起居，再拜。出班，恋阙、致词，复再拜。赐衣物，谢恩如常仪。若赐宴，五拜。毕，赞“好去”，引右出。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p><p class='next'>下一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p><p class='next'>下一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

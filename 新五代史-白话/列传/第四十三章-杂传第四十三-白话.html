@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-列传<a href='../新五代史.html#新五代史'>：目录</a></p>
@@ -344,5 +371,18 @@
 </p><p>李悍，京兆人。年轻时好学，十分擅长文辞。唐末考中进士，任秘书省校书郎、集贤校理。唐灭亡，奉事梁任监察御史，经多次升任为中书舍人、翰林学士。梁灭亡，贬为怀州司马，遇上大赦酌情调到别处，逐渐升任卫尉少卿。天成年间，又任中书舍人、翰林学士，几次升任尚书右丞承旨。当时右散骑常侍张文宝管理贡举，发榜考中的进士，有的被中书省审察落选，于是请求下令学士院作诗赋作为贡举用的范文，学士窦梦征、张砺等人作的诗赋不好，于是让李怿作，李悍笑着说：“我年轻时考中进士，不过是出自偶然而已。
 </p><p>后生可畏，后来的人不可估量，假使让我又参加礼部考试，未必不落选，怎能给英俊少年做范文呢？”听说的人赞赏他说话得体。
 </p><p>后来升任刑部尚书，分司洛阳。去世，享年七十多岁。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十二章-杂传第四十二-白话.html'>第四十二章-杂传第四十二</a></p><p class='next'>下一节：<a href='第四十四章-杂传第四十四-白话.html'>第四十四章-杂传第四十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十二章-杂传第四十二-白话.html'>第四十二章-杂传第四十二</a></p><p class='next'>下一节：<a href='第四十四章-杂传第四十四-白话.html'>第四十四章-杂传第四十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

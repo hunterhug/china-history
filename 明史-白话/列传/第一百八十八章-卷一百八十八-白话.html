@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -184,5 +211,18 @@
 </p><p>三月初一，农民起义军进攻北京的形势日益急迫，朝廷命文武勋戚分守京城。继祖守皇城东安门，文耀守永定门，永固守崇文门。文炳因继祖、文耀都守城，故未有任务。十六日，农民军攻西直门，形势紧急。尼麓慌慌张张跑来对文炳说：“城将被攻陷，君最好自做打算。”文炳的母亲杜氏闻知，即命侍女找一些丝绳在楼上做七八个环，命家僮在楼下堆积薪柴，随即又派老仆郑平去把李氏、吴氏二女接回来，对她们说：“我们母女同死于此。”念瀛国太夫人年岁已高，不与她们一同自焚，便与文炳商议，藏于申湛然家中。
 </p><p>三月十八日，帝遣太监察召文炳、永固入宫。文炳先归家对母亲说“：有诏召儿，儿不能事奉母亲。”母轻轻拍着文炳的肩说“：太夫人已安顿好了，我与你妻及妹死而无憾！”文炳与永固进见崇祯帝，这时外城已为农民军所占领。帝问他们“：二卿所集中的家丁能巷战否？”文炳对帝说，寡不敌众，崇祯帝惊惶不知所措。永固奏道：“臣等已将柴薪堆在家中，到时闭门自焚，以报皇上恩德。”崇祯帝说“：朕决心已下，朕不能守社稷，但能与社稷共存亡。”二人皆泪如雨下，誓死效忠，永固直奔崇文门。不一会儿，义军入城，永固、文炳进行抵抗，杀数十人，各自赶紧归家。
 </p><p>十九日，文照正侍奉母亲吃饭，家人急奔进来报告说“：城已陷落！”文照手中的碗跌在地上，两眼直看着母亲。母亲立即起身上楼，文照及二女随从，文炳妻王氏也上楼。挂上孝纯皇太后的遗像，母亲率众哭拜于像前，然后都自缢而死。文照上吊时又跌了下来，抚着母亲臂膀连声叫道：“儿不能死了，听从母命去奉侍太夫人。”只身逃走了，家人点火焚烧了这栋楼。文炳赶回来时，火烧得正旺，从后园进入，遇到湛然、尼麓，都说：“恐都尉已烧了府第，自刎了。”文炳只说了声“知道了”便去投井，但又忽然止步说：“我还穿着军装，不可见皇帝。”湛然把自己的头巾取下给文炳戴上，文炳投井而死。继祖归家也投井自尽，其妻左氏见大宅着火，忙登楼自焚，妾董氏、李氏都自焚。文耀见外城已破，冲到浑河，闻内城也被攻破，再入城，见自家房屋已焚，大声哭道：“文耀之所以不死，是因为有皇上和老母在。今已如此，我活着为了什么！”找到文炳死难地方，在井边石板上写道“：左都督刘文耀同兄文炳毕命报国处。”投井自杀。郑氏一家人死者达四十二。福王时，谥文炳忠壮，文耀忠果。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百八十七章-卷一百八十七-白话.html'>第一百八十七章-卷一百八十七</a></p><p class='next'>下一节：<a href='第一百八十九章-卷一百八十九-白话.html'>第一百八十九章-卷一百八十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百八十七章-卷一百八十七-白话.html'>第一百八十七章-卷一百八十七</a></p><p class='next'>下一节：<a href='第一百八十九章-卷一百八十九-白话.html'>第一百八十九章-卷一百八十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

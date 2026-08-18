@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#后汉书'>：目录</a></p>
@@ -183,5 +210,18 @@
 </p><p>延光元年(122)，河西落大雹，大的如斗大。安帝诏令有道术的人，陈述灾异，在德阳殿召见孔季彦，帝亲自问孔季彦这是什么缘故。孔季彦回答道“：这是阴胜阳的征兆。现在大臣专权，母后党羽强大，皇上应当修至德，考虑这两件事。”帝不吭声，左右的人都恨孔季彦。举孝廉，不就。三年，年四十七岁，死在家里。以前，平帝对王莽掌权，封孔子后代孔均为褒成侯，追谥孔子为褒成宣尼。王莽失败后，失去了封国。建武十三年(37)，世祖再给孔均的儿子孔志为褒成侯。孔志逝世，儿子孔损继承。永元四年(92)，徙封褒亭侯。孔损逝世，儿子孔曜继承。孔曜逝世，儿子孔完继承。代代相传，到献帝初年，封国断绝。
 </p><p>◆杨伦传，杨伦字仲理，陈留东昏人。年轻时为诸生，拜司徒丁鸿为老师，学《古文尚书》。任郡文学掾。经过几个郡将，志意不合于时，因为不会应酬世俗的一套“做官术”，于是去职，自此不再应州郡的任命。讲授于大泽中，弟子有一千多人。元初中，郡里以礼请他，三府都征召他，公车征，都托病不就。后来特征博士，做清河王傅。这年，安帝逝世，杨伦就弃官奔丧，号泣阙下不断声。阎太后因他专擅，罢了他的官，获罪。顺帝即位，诏令免去杨伦的罪刑，就留在恭陵办丧事。服满，征授侍中。这时邵陵令任嘉在职贪污腐化，升武威太守，后来管事人奏任嘉赃罪千万，征到廷尉考问，牵涉将相大臣一百多人。杨伦于是上书道“：我听说《春秋》上说诛恶要找根本，根本除了，其余的就自然会消除了；提裘要拿着裘领，裘领正了，裘毛就自然顺理了。现在任嘉所犯的贪污罪行，极为严重，却没有受到处理，反而以罪恶之身，调守大郡，如果不办原来荐举的人，就不能禁绝奸罪。从前湖陆令张叠、萧令马因贤、徐州刺史刘福等人，罪恶明白之后，都处决了，但是如豺狼一样的官吏至今不绝，难道不是对荐举的人没有加罪的原因吗？从前齐威成霸，杀奸臣五个，都连累到荐举的人，因而止息了诽谤的流行。当断不断，反受其乱，这是黄石公所戒的。圣主贤王所以听匹夫匹妇的话，好比灰尘加在嵩山、泰山，云雾集在淮海，虽说没有增加什么，但也没有使它失去什么呢。希望皇上留神考察。”书送上。管事人认为杨伦的话太切直，措词不委婉，公布出来。尚书奏杨伦探知国家机密，说话激切以表示自己正直，获不敬罪，结论定为鬼薪罪(取薪以给宗庙，三岁刑)。诏令认为杨伦多次进忠言，特加原宥，免官回乡。
 </p><p>阳嘉二年(133)，征授太中大夫。大将军梁商任为长史。因谏诤不合，出补常山王傅，因病不到任。诏令司隶催促他去，杨伦因留河内朝歌，因病上书说：“有留死一尺，不北行一寸。杀头不改，九死不恨。匹夫所守，比三军还强。因敢于上词。”帝乃下诏说：“杨伦出低处，升高地，得傅的宏任不遵王命，擅自停止道路，托病自从，肆其狂志。”于是征到廷尉，诏令原谅他的罪过。杨伦前后三次被征举，都因直谏不合。归家以后，闭门讲学，不与人来往。公车再征，逃避不应，死在家里。光武中兴，北海牟融学《大夏侯尚书》，东海王良学《小夏侯尚书》，沛国桓荣学《欧阳尚书》。桓荣世代学习传授，东京称他最盛。扶风杜林传《古文尚书》、杜林同郡人贾逵为他作考证，马融作传，郑玄作注解，由是《古文尚书》就为世所重。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十三章-宦者列传-白话.html'>第七十三章-宦者列传</a></p><p class='next'>下一节：<a href='第七十五章-儒林列传下-白话.html'>第七十五章-儒林列传下</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七十三章-宦者列传-白话.html'>第七十三章-宦者列传</a></p><p class='next'>下一节：<a href='第七十五章-儒林列传下-白话.html'>第七十五章-儒林列传下</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

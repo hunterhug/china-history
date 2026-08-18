@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>南史-白话版南史<a href='../南史.html#南史'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>宋明恭王皇后传<span style='font-size:small'> 白话</span></h1>
 <p>明恭王皇后名叫贞风，琅笽临沂人。起初封为淮阳王妃，明帝改换封号，又被封为湘东王妃。生了晋陵长公主伯姒、建安长公主伯媛。明帝即位，立为皇后。皇上曾经在宫内举办大型宴会，而让妇女裸体，进行观赏，尽情欢笑。王皇后用扇子遮住脸，独自没有言语。明帝发怒说：“外戚家里贫寒，现在共同来作笑乐，为什么你却独独不看？”皇后说：“为乐的事，方式自有多种，哪有姑婆姊妹聚在一起，而让妇女裸露形体，以此为乐的？外戚家一起欢乐，和这不同。”明帝非常生气，命令皇后起来。皇后的哥哥扬州刺史王景文把这件事说给堂舅陈郡的谢绰说：“皇后在家的时候是个软弱的女子，不知道现在如此刚正。”<BR><BR>　　废帝即位，尊她为皇太后，她的宫殿名叫弘训宫。废帝缺少德行，太后常常进行启发鼓励，开始还较顺从，后来狂放邪恶日渐厉害。太后曾赠给废帝一把玉柄的毛扇，废帝嫌毛扇不够华丽，因此想对皇后加以毒害，就命令太医煮药。身边的人制止他说：“如果做了这事，陛下就要充当孝子，哪里还能出去进来地嬉戏。”废帝说：“你的话很有道理。”才停止了。顺帝即位，齐高帝掌权，宗族中的刘晃、刘绰、卜伯兴等人有异图，太后与他们很有关系。顺帝禅让了皇位，太后与顺帝退住到东面的府邸。由此迁入丹阳宫，封为汝阴王太妃。顺帝在丹阳去世，改立府第在京城中。建元元年(479)，在府中逝世，追加谥号，用宋朝的礼仪进行埋葬。皇后的父亲王僧朗，另外有传记。</p>
-<div class='pn'><p class='pre'>上一节：<a href='宋孝武宣贵妃传-白话.html'>宋孝武宣贵妃传</a></p><p class='next'>下一节：<a href='齐高昭刘皇后传-白话.html'>齐高昭刘皇后传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='宋孝武宣贵妃传-白话.html'>宋孝武宣贵妃传</a></p><p class='next'>下一节：<a href='齐高昭刘皇后传-白话.html'>齐高昭刘皇后传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

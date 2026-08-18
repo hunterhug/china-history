@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新唐书-志<a href='../新唐书.html#志'>：目录</a></p>
@@ -196,5 +223,18 @@
 </p><p>小祥。毁庐为垩室，设蒲席。垩室者除之，席地。主人及诸子沐浴栉翦，去首绖，练冠，妻妾女子去腰绖。主用栗，祭如虞礼。
 </p><p>大祥之祭如小祥。间月而禫，释祥服，而禫祭如大祥。既祥而还外寝。妻妾女子还于寝。食有醢、酱，既禫而饮醴酒，食干肉。
 </p><p>祔庙，筮日。将祔，掌事者为坎室于始祖庙室西壁，主人及亚献以下散齐三日，致齐一日。前一日，主人以酒、脯告递迁之主，乃迁置于幄坐，又奠酒、脯以安神。掌馔者彻膳以出，掌庙者以次椟神主纳于坎室。又设考之祔坐于曾祖室内东壁下，西向，右几。设主人位于东南，西面。设子孙位于南门内道东，北面西上。设亚献、终献位于主人东南。设掌事以下位于终献东南，俱西面北上。设赞唱者位于主人西南，西面。设酒尊于堂上室户之东南，北向西上。设洗于阼阶东南，北向，实爵三，巾二，加冪。其日，具少牢之馔二座，各俎三、簋二、簠二、钘二。酒尊二，其一实玄酒为上，其一实清酒次之。其笾豆，一品者各十二，二品、三品者各八。主人及行事者祭服。掌事者具腰舆，掌庙者、阍寺人立于庙庭，北面再拜，升自东阶，入，开坎室，出曾祖、曾祖妣神主置于座，降，出。执尊、罍、篚者入就位，祝进座前，西面告曰：“以今吉辰，奉迁神主于庙。”执舆者以舆升，入，进舆于座前，祝纳神主于椟，升舆，祝仍扶于左，降自西阶，子孙内外陪从于后。至庙门，诸妇人停于门外，周以行帷，俟祭讫而还。神主人自南门，升自西阶。入于室，诸子孙从升，立于室户西，重行东面，以北为上。行事者从入，各就位，舆诣室前，回舆西向。祝启椟乂神主，置于坐。舆降，立于西阶下，东向。相者引主人以下降自东阶，各就位。祝立定，赞唱者曰：“再拜。”在位者皆再拜。掌馔者引馔入，升自东阶，入于室。各设于神座前。主人盥手，洗爵，升自东阶。酌醴酒，入室，进，北面跪，奠爵于曾祖神座前。主人出，取爵酌酒，入室，进，东面跪，奠于祖座前。出户，北面立。祝持版进于室户外之右，东向跪读祝文，主人再拜。祝进，入奠版于曾祖座。主人出，降，还本位。初，主人出，亚献盥手，洗爵，升，酌酒入，进，北面跪，奠于曾祖，又酌酒入，进，东面跪，奠于祖神座，出户，北面再拜讫。又入室，立于西壁下，东面再，拜，出，降，复位。亚献将毕，终献入如亚献。祝入，彻豆，赞者皆再拜。主人及在位子孙以下出。掌馔者入，彻馔以出，掌庙者纳曾祖神主于坎室，出，又以腰舆升诸考神座前，纳主于椟，置于舆，诣考庙，出神主置于座，进酒、脯之奠，少顷，彻之。祝纳神主于坎室。六品以下袝祭于正寝，礼略如之。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九·礼乐九-原文.html'>第九章-卷九·礼乐九</a></p><p class='next'>下一节：<a href='第十一章-卷十一·礼乐十一-原文.html'>第十一章-卷十一·礼乐十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九·礼乐九-原文.html'>第九章-卷九·礼乐九</a></p><p class='next'>下一节：<a href='第十一章-卷十一·礼乐十一-原文.html'>第十一章-卷十一·礼乐十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

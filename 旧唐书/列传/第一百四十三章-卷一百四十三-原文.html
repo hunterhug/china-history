@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -191,5 +218,18 @@
 <p>　　孝女王和子者，徐州人。其父及兄为防秋卒，戍泾州。元和中，吐蕃寇边，父 兄战死，无子，母先亡。和子时年十七，闻父兄殁于边上，被发徒跣缞裳，独往泾 州。行丐取父兄之丧，归徐营葬。手植松柏，剪发坏形，庐于墓所。节度使王智兴 以状闻，诏旌表之。 </p>
 <p>　　又大中五年，兗州瑕丘县人郑神佐女，年二十四，先许适驰雄牙官李玄庆。神 佐亦为官健，戍庆州。时党项叛，神佐战死，其母先亡，无子。女以父战殁边城， 无由得还，乃剪发坏形，自往庆州护父丧还，至瑕丘县进贤乡马青村，与母合葬。 便庐于坟所，手植松桧，誓不适人。节度使萧椒以状奏之曰：“伏以闾里之中，罕 知礼教，女子之性，尤昧义方。郑氏女痛结穷泉，哀深《陟岵》，投身沙碛，归父 遗骸，远自边陲，得还闾里。感《蓼莪》以积恨，守丘墓以誓心。克彰孝理之仁， 足厉贞方之节。”诏旌表门闾。 </p>
 <p>　　赞曰：政教隆平，男忠女贞。礼以自防，义不苟生。彤管有炜，兰闺振声。 《关雎》合《雅》，始号文明。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百四十二章-卷一百四十二-原文.html'>第一百四十二章-卷一百四十二</a></p><p class='next'>下一节：<a href='第一百四十四章-卷一百四十四-原文.html'>第一百四十四章-卷一百四十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百四十二章-卷一百四十二-原文.html'>第一百四十二章-卷一百四十二</a></p><p class='next'>下一节：<a href='第一百四十四章-卷一百四十四-原文.html'>第一百四十四章-卷一百四十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

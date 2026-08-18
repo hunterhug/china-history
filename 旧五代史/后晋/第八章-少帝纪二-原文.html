@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后晋<a href='../旧五代史.html#后晋'>：目录</a></p>
@@ -161,5 +188,18 @@
 </p><p>夏四月，车驾在澶州。沧州奏，契丹陷德州，刺史尹居璠为敌所执。甲辰，鄴都留守张从恩来朝。丁未，加从恩平章事，还鄴。己酉，诏取今月八日车驾还京，令高行周、王周留镇澶渊，近地兵马委便宜制置。甲寅，至自澶州，曲赦京城大辟以下罪人。丁巳，升冀州为防御使额。同、华奏，人民相食。己未，以右武卫上将军张彦泽为右神武统军。辛酉，以郓州节度使、侍卫亲军都指挥使景延广为西京留守；以宋州节度使高行周为侍卫亲军都指挥使；以侍卫亲军都虞候、义成军节度使李守贞为兗州节度使，典军如故。是日，分命文武臣僚三十六人往诸道州府括率钱帛，以资军用。癸亥，以西京留守安彦威为晋昌军节度使，以晋昌军节度使赵莹为华州节度使，以左龙武统军皇甫遇为滑州节度使。是日，置酒宫中，召景延广谓之曰：“卿有佐命之功，命保厘伊、洛，非酬勋之地也。”因解御衣、宝带以赐之。丙寅，陇州奏，饿死者五万六千口。
 </p><p>五月壬申朔，太原刘知远奏，边境未宁，军用甚广，所封王爵，乞未行册命。戊寅，遣侍卫亲军都虞候李守贞率步骑二万，讨杨光远于青州。丁亥，以鄴都留守张从恩为贝州行营都部署，《通鉴》：张从恩上言：“赵延昭虽据贝州，麾下将士久客思归，宜速进军攻。”诏以从恩为贝州行营都部署。以滑州节度使皇甫遇为行营都虞候，以左神武统军潘环掌骑兵，右神武统军张彦泽掌步兵。辛卯，张从恩奏，贝州贼将赵延昭纵火大掠，弃城而遁。《通鉴》：延昭屯于瀛、莫，阻水自固。以李守贞为青州行营都部署，以河阳节度使符彦卿副之。戊戌，以邓州节度使何建为贝州永清军节度使。是月，泽潞上言，饿死者凡五千余人。
 </p><p>六月辛丑朔，王师拔淄州，斩杨光远伪署刺史刘翰。癸卯，以太尉、兼侍中冯道为检校太师、兼侍中，充同州节度使。丙午，诏复置枢密院。丁未，以侍中桑维翰为中书令，充枢密使。权开封府尹李周卒，辍朝，赠太师。辛亥，以邢州节度使安叔千为晋州节度使，加同平章事；以晋州节度使宋彦筠为陕州节度使；以吏部郎中李穀充枢密直学士。丙辰，滑州河决，漂注曹、单、濮、郓等州之境，环梁山合于汶、济。《宋史·杨昭俭传》：河决数郡，大发丁夫，以本部帅董其役，既而塞之。晋少主喜，诏立碑纪其事。昭俭表谏曰：“陛下刻石纪功，不若降哀痛之诏；摛翰颂美，不若颁罪己之文。”言甚切至，少主嗟赏之，卒罢其事。戊午，升府州为团练使额。庚申，襄州献白鹊。甲子，复置翰林学士。乙丑，宰臣等三上表请听乐，诏允之。戊辰，以门下侍郎王松为左丞；以右丞王易简为吏部侍郎；以右散骑常侍萧愿为秘书监；以右谏议大夫王仁裕为给事中；以给事中李式为左散骑常侍；以金部郎中、知制诰徐台符为翰林学士；以礼部郎中李浣本官知制诰，充翰林学士；以刑部郎中刘温叟改都官郎中，充翰林学士；以主客员外郎范质充翰林学士；御史张宜改仓部员外郎、知制诰。庚午，以前晋州节度使周密为左龙武统军，以同州节度使李怀忠为左羽林统军。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-少帝纪一-原文.html'>第七章-少帝纪一</a></p><p class='next'>下一节：<a href='第九章-少帝纪三-原文.html'>第九章-少帝纪三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七章-少帝纪一-原文.html'>第七章-少帝纪一</a></p><p class='next'>下一节：<a href='第九章-少帝纪三-原文.html'>第九章-少帝纪三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

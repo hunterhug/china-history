@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后汉<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -163,5 +190,18 @@
 </p><p>王章，大名南乐人。少年时为官吏。同光初年，在枢密院做事，后回归大名，历官至都孔目官。后唐清泰末年，屯驻大名的捧圣都虞候张令昭作乱，赶走节度使刘延皓，自称为留后，王章仍任原官职，为张令昭所役使。唐末帝派范延光征讨平定张令昭，搜索叛党很严。王章的妻子就是白文珂的女儿，白文珂与副招讨使李敬周很要好，便将王章托付给李敬周。当攻下逆贼城池后，李敬周把王章藏起来，装在袋子里放在骆驼背上，运到洛阳，藏在李敬周的家里。到唐末帝失败后，王章任宫中职务，历任河阳粮料使。汉高祖掌管侍卫亲军时，任他为都孔目官，王章跟从汉高祖到河东，专管钱粮。后汉建国初年，授予三司使、检校太傅，跟随杜重威到邺下征伐。第二年，高祖去世，隐帝即位，加封检校太尉、同平章事。
 </p><p>不久，蒲、雍、岐三镇反叛。这时，在遭受契丹寇犯京城之后，国家方兴，物力不充足，王章与郭威、史弘肇、杨..等尽心忠于王室，知无不为，罢免不急需的事务，节省无用的开支，收聚财赋，致力于西征，军队所需的费用，供给没有缺乏。到三镇叛乱平定后，除犒赏之外，国家尚有多余的积蓄。然而王章专权谋求钱财，盘剥百姓过份，激起下民对朝廷的怨愤，舆论都指责他。以前的制度，秋夏两季禾苗的租赋，农民每交一斛时，再附交二升，叫“鼠雀耗”。到乾佑年间，交一斛时，又另交两斗，叫“省耗”。百姓深受其苦。又，官府借贷放出缗钱，都以八十缗为一陌，到王章时人民交给官府仍以八十缗为一陌，而官府给予人民时却以七十七缗为一陌，成为常例。百姓有为田产诉之于官时，虽然不过十数户，王章必令在全州普查田地面积，以期多量出田地数量，以增加税收，不到几年，百姓大为困苦。王章与杨..不喜欢文士，郡官请求月俸，王章都将一些不能用于军中的物资给他们，称这些物资为“闲杂物”，命有关部门高估闲杂物的价值，估定后还要抬高，叫作“抬估”，王章仍不满意，随意再令添估。王章急敛财赋，严用刑法，人民有违犯盐、矾、酒曲的禁令者，即使是丝毫点滴，也全处以极刑。官吏因此为奸，人民难以活命。
 </p><p>王章与杨邠同郡，尤其亲密，奖励提拔的人，没有不是老乡的。总是轻视文官，说：“这些人如给他一把算盘，连正反都不懂，有什么用！”后来在家中设宴，招待宾客，因史弘肇、苏逢吉乘醉相争而作罢。王章从此闷闷不乐，暗中寻求到地方任职，杨..与史弘肇极力劝阻他。而家中经常出现怪异，王章更加心怀忧恐。乾佑三年(950)冬天，与史弘肇、杨..等一同遇害，被灭了全家。妻子白氏，在祸前几个月就死了。没有儿子，只有一女，嫁给户部员外郎张贻肃，生病多年，带病受戮。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八章-列传三-白话.html'>第八章-列传三</a></p><p class='next'>下一节：<a href='第十章-列传五-白话.html'>第十章-列传五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八章-列传三-白话.html'>第八章-列传三</a></p><p class='next'>下一节：<a href='第十章-列传五-白话.html'>第十章-列传五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

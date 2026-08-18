@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -232,5 +259,18 @@
 </p><p>后举孝廉，为州从事，弃官投辅之。辅之时为太傅越从事中郎，荐逸于越，越以门寒而不召。越后因闲宴，责辅之无所举荐。辅之曰：“前举光逸，公以非世家不召，非不举也。”越即辟焉。书到郡县，皆以为误，审知是逸，乃备礼遣之。寻以世难，避乱渡江，复依辅之。初至，属辅之与谢鲲、阮放、毕卓、羊曼、桓彝、阮孚散发裸袒，闭室酣饮已累日。逸将排户入，守者不听，逸便于户外脱衣露头于狗窦中窥之而大叫。辅之惊曰：“他人决不能尔，必我孟祖也。”遽呼入，遂与饮，不舍昼夜。时人谓之八达。元帝以逸补军谘祭酒。中兴建，为给事中，卒官。
 </p><p>史臣曰：夫学非常道，则物靡不通；理有忘言，则在情斯遣。其进也，抚俗同尘，不居名利；其退也，餐和履顺，以保天真。若乃一其本原，体无为之用，分其华叶，开寓言之道，是以伯阳垂范，鸣谦置式，欲崇诸己，先下于人，犹大乐无声，而跄鸾斯应者也。庄生放达其旨，而驰辩无穷；弃彼荣华，则俯轻爵位，怀其道术，则顾蔑王公；舐痔兼车，鸣鸢吞腐。以兹自口，于焉玩物，殊异虚舟，有同攘臂。嵇、阮竹林之会，刘、毕芳樽之友，驰骋庄门，排登李室。若夫仪天布宪，百官从轨，经礼之外，弃而不存。是以帝尧纵许由于埃盍之表，光武舍子陵于潺湲之濑，松萝低举，用以优贤，岩水澄华，兹焉赐隐；臣行厥志，主有嘉名。至于嵇康遗巨源之书，阮氏创先生之传，军谘散发，吏部盗樽，岂以世疾名流，兹焉自垢？临锻灶而不回，登广武而长叹，则嵇琴绝响，阮气徒存。通其旁径，必凋风俗；召以效官，居然尸素。轨躅之外，或有可观者焉。咸能符契情灵，各敦终始，怆神交于晚笛，或相思而动驾。史臣是以拾其遗事，附于篇云。
 </p><p>赞曰：老篇爰植，孔教提衡。各存其趣，道贵无名。相彼非礼，遵乎达生。秋水扬波，春云敛映。旨酒厥德，凭虚其性。不玩斯风，谁亏王政？</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十八章--原文.html'>第十八章-</a></p><p class='next'>下一节：<a href='第二十章--原文.html'>第二十章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十八章--原文.html'>第十八章-</a></p><p class='next'>下一节：<a href='第二十章--原文.html'>第二十章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

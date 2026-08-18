@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -193,5 +220,18 @@
 </p><p>臻弟舆，果烈善战，以功累迁武威将军。初，贼张奕本中州人，元康中被差西征，遇天下乱，遂留蜀。至是，率三百余家欲就杜弢，为侃所获。诸将请杀其丁壮，取其妻息，舆曰：“此本官兵，数经战阵，可赦之以为用。”侃赦之，以配舆。及侃与杜弢战败，贼以桔槔打没官军船舰，军中失色。舆率轻舸出其上流以击之，所向辄克。贼又率众将焚侃辎重，舆又击破之。自是每战辄克，贼望见舆军，相谓曰：“避陶武威。”无敢当者。后与杜弢战，舆被重创，卒。侃哭之恸，曰：“丧吾家宝！”三军皆为之垂泣。诏赠长沙太守。
 </p><p>史臣曰：古者明王之建国也，下料疆宇，列为九州，辅相玄功，咨于四岳。所以仰希齐政，俯寄宣风。备连率之仪，威腾阃外；总颁条之务，礼缛区中。委称其才，《甘棠》以之流咏；据非其德，仇饷以是兴嗟。中朝叔世，要荒多阻，分符建节，并紊天纲。和季以同里之情，申卢绾之契，居方牧之地，振吴起之风。自幽徂荆，亟敛豺狼之迹；举贤登善，穷掇孔翠之毛。由是吏民毕力，华夷顺命，一州清晏，恬波于沸海之中；百城安堵，静寝于稽天之际。犹独称善政，何其寡欤！《易》云“贞固足以干事”，于征南见之矣。士行望非世族，俗异诸华，拔萃陬落之间，比肩髦俊之列，超居外相，宏总上流。布泽怀边，则严城静柝；释位匡主，则沦鼎再宁。元规以戚里之崇，挹其膺而下拜；茂弘以保衡之贵，服其言而动色。望隆分陕，理则宜然。至于时属云屯，富逾天府，潜有包藏之志，顾思折翼之祥，悖矣！夫子曰“人无求备”，斯言之信，于是有征。
 </p><p>赞曰：和季承恩，建旟南服。威静荆塞，化扬江澳。戮力天朝，匪忘忠肃。长沙勤王，拥旆戎场。任隆三事，功宣一匡。繄赖之重，匪伊舟航。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十五章--原文.html'>第三十五章-</a></p><p class='next'>下一节：<a href='第三十七章--原文.html'>第三十七章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十五章--原文.html'>第三十五章-</a></p><p class='next'>下一节：<a href='第三十七章--原文.html'>第三十七章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

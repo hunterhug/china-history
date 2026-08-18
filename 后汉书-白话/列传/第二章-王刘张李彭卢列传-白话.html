@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#后汉书'>：目录</a></p>
@@ -181,5 +208,18 @@
 </p><p>建武十二年(36)，卢芳与贾览共攻云中，久攻不下，其将领随昱留守九原，想胁迫卢芳投降。卢芳知道他下面的人外附汉室，心腹从内部离叛，于是抛弃辎重，与十多骑逃亡到匈奴，其部下都归附于随昱。随昱于是与使者程恂入京，光武帝拜随昱为五原太守，封镌胡侯，随弟随宪为武进侯。
 </p><p>建武十六年(40)，卢芳再入居高柳县，与闵堪兄闵林遣使请归降。帝就立卢芳为代王，闵堪为代相，闵林为代太傅，赐缯二万匹，令他与匈奴和平相处。卢芳上疏谢恩说：“臣卢芳托为先帝遗体，被弃在边陲，汉朝社稷遭到王莽废绝，这是刘氏子孙的忧虑，应当奋起共诛国贼，所以我西连羌戎，北怀匈奴。单于不忘旧德，权且立我以相救助。那时兵革并起，到处都是。臣非敢有所贪婪觊觎，只望能奉承宗庙，兴立社稷，因而十多年来久僭汉帝号位，这是罪该万死。陛下圣德高明，亲自统率群贤，海内归服，恩惠及于远方。以亲属之故，赦免我的罪过，加以仁恩，封我为代王，令我守备北部边疆。无以报答重责，希望必定能与匈奴和睦相处，以不辜负圣恩。谨奉献天子玉玺，望到阙庭朝拜。”诏报卢芳于明年正月进朝。这年冬天，卢芳入朝，南到昌平县，有诏书止其行，令他明年再来。卢芳只得就地返回，忧郁恐惧，就再次背叛，与闵堪、闵林相攻连月。匈奴遣数百骑迎接卢芳及其妻子出塞。卢芳留在匈奴中十多年，病死。
 </p><p>史官评论说：传称“有盛德者百代不绝”，孔子说“：宽仁就得人心”，能得人心就百世不会被遗忘啊。我们看到在更始的时代，刘氏的遗恩余烈，英雄谁能抗拒得了呢！这样就可以知道高祖、孝文的宽仁结于人心是何等的深了。周朝人思念邵公，因为邵公曾经听论于甘棠之下，对甘棠也不剪不伐，更何况是他的子孙呢？刘氏的得以中兴，大概就是这个缘故啊。如王、刘、张、李、彭、卢之流，难道有为国者之深谋远虑吗？他们不过是乘时扰攘，胡乱妄为而已，但正是附假刘氏宗室之名，能够逞强时日，看他们的智略，本不足以使汉高祖生畏而奋发他的英灵啊！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-刘玄刘盆子列传-白话.html'>第一章-刘玄刘盆子列传</a></p><p class='next'>下一节：<a href='第三章-隗嚣公孙述列传-白话.html'>第三章-隗嚣公孙述列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-刘玄刘盆子列传-白话.html'>第一章-刘玄刘盆子列传</a></p><p class='next'>下一节：<a href='第三章-隗嚣公孙述列传-白话.html'>第三章-隗嚣公孙述列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

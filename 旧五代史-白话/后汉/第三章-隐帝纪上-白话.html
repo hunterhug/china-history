@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后汉<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -161,5 +188,18 @@
 </p><p>冬十月三日，赵晖上奏，在凤翔城下打败王景崇贼军。十二日，中书舍人张谊贬任房州司户，兵部郎中马承翰贬任庆州司户，均为员外职，由所在地驿使遣送。此前，张谊与马承翰均出使两浙，目睹那里骄横僭越的过失，予以讥讽，又乘醉有轻慢的话，钱弘亻叔因以为耻，摘取他们的过错上奏，朝廷正在怀柔两浙，所以有对张、马二人的贬任。二十九日，延州上奏，夏州李彝殷先出兵临近延州边境，想接应李守贞，现在撤回去了。
 </p><p>十一月九日，诛杀太子太傅李崧以及他的弟弟司封员外郎李屿、国子博士李山义，夷灭了他们的家族，因为被部下诬告的缘故。十五日，高祖灵车出发。二十七日，葬高祖于睿陵。
 </p><p>十二月八日，隐帝身披衮袍冠冕上崇元殿，授六庙宝册，正使宰臣苏禹王圭及副使、大府卿刘白皋赴西京行礼。兖州上奏，淮南贼人先在沂州边界建立营垒，上月十七日已回海州，是因为受李守贞的牵制。十六日，奉高祖神主牌位到西京的太庙。南唐伪国主李王景写信给隐帝，说“：前因河府李守贞求援，又听到贵国沿淮河屯驻军队，我国也在边境上设防。昨日听说贵国已经收兵，我国已旋即撤防，希望商贾游人依旧往来通行。”朝廷没有答复。十七日，群臣上表，请求以三月九日隐帝生日为嘉庆节，隐帝应准。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二章-高祖纪下-白话.html'>第二章-高祖纪下</a></p><p class='next'>下一节：<a href='第四章-隐帝纪中-白话.html'>第四章-隐帝纪中</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二章-高祖纪下-白话.html'>第二章-高祖纪下</a></p><p class='next'>下一节：<a href='第四章-隐帝纪中-白话.html'>第四章-隐帝纪中</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

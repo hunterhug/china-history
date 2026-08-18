@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#辽史'>：目录</a></p>
@@ -175,5 +202,18 @@
 </p><p>耶律铎轸，字敌辇，积庆宫人。出仕于统和年间。生性散漫随便，不拘小节，人们初时因此而指责他。
 </p><p>后来进犯宋境，铎轸分管病弱士卒随征。待到交战时，他身披红色绢帛，穿戴铠甲和头盔以自我炫示，飞马冲入敌人阵营，杀死了很多人。太后望见很高兴，召见他，并说：“有你如此尽力，我们何愁不能取胜！”给他以重赏。从此太后经常将军事托付给他。不久授任东北详稳。开泰二年(1013)，进军讨伐阻卜，战胜之。
 </p><p>重熙年间，历任东北路统军使、天德军节度使。十七年(1048)，在西部边境筑城，命令铎轸观察地势地貌以及建造战船，于是制成楼船一百三十艘。上面装载士兵，下层放置战马，规模形制坚固高大，很令兴宗皇上满意。及至西征，诏令铎轸率兵由岔路进发，会师于黄河之滨。敌兵依仗黄河之险结阵，皇上率领战舰横断黄河攻击敌军，大获全胜而回，皇上亲赐卮酒给铎轸。又问他想要什么，铎轸回答说：“臣有幸沐浴圣恩，得效驽马之劳，虽万死不能报效国家，哪里还有什么要求呢？”皇上更加看重他，亲手在铎轸的衣袍上写道：“勤国忠君，举世无双。”后死于任上，终年七十岁。子耶律低烈，历任观察、节度使。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十二章-卷二十二-白话.html'>第二十二章-卷二十二</a></p><p class='next'>下一节：<a href='第二十四章-卷二十四-白话.html'>第二十四章-卷二十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十二章-卷二十二-白话.html'>第二十二章-卷二十二</a></p><p class='next'>下一节：<a href='第二十四章-卷二十四-白话.html'>第二十四章-卷二十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

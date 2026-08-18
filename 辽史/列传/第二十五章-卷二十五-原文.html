@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#列传'>：目录</a></p>
@@ -160,5 +187,18 @@
 </p><p>萧素飒，字特免，五院部人。重熙间始仕，累迁北院承旨，彰愍宫使。清宁初，历左皮室详稳、右夷离毕。咸雍五年，剖阿里部叛，素飒讨降之，率其酋长来朝。帝嘉其功，徙北院林牙，改南院副部署，卒。子谋鲁斡，字回琏，初补夷离毕郎君，迁文班太保。大康中，改南京统军使，为右夷离毕。与枢密使耶律阿思论事不合，见忌，出为马群太保。北部来侵，谋鲁斡破之，以功迁同知乌古敌烈统军，仍许便宜行事。后以谗毁，降领西北路戍军，复为马群太保，卒。
 </p><p>耶律大悲奴，字休坚，王子班聂里古之后。大康中，历永兴延昌宫使、右皮室详稳。会阻卜叛，奉诏招降之。寿隆二年，拜殿前都点检。乾统初，历上京留守、惕隐，复为都点检，改西南面招讨使。请老，不许。天庆中，留守上京，领北南枢密院点检中丞诸司等事。以彰国军节度使致仕，卒。大悲奴举止驯雅，好礼仪，为时人所称。
 </p><p>论曰：辽自神册而降，席富强之势，内修法度，外事征伐，一时将帅，震扬威灵，风行电扫。讨西夏，征党项，破阻卜，平敌烈，诸部震慑，闻鼙鼓而胆落股弁，斯可谓雄武之国矣。其战胜攻取，必有奇谋秘计神变莫测者，将前史所载，未足以发之邪？抑天之所授，众莫与争而能然邪？虽然，兵者凶器，可戢而不可玩；争者末节，可遏而不可召。此黄石公所谓柔能制刚，弱能制强也。又况乎仁者之无敌哉！辽之君臣智足守此，金人果能乘其敝而蹑其后乎？是以于耶律弘古辈诸将，不能无慨然也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十四章-卷二十四-原文.html'>第二十四章-卷二十四</a></p><p class='next'>下一节：<a href='第二十六章-卷二十六-原文.html'>第二十六章-卷二十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十四章-卷二十四-原文.html'>第二十四章-卷二十四</a></p><p class='next'>下一节：<a href='第二十六章-卷二十六-原文.html'>第二十六章-卷二十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后周<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -155,5 +182,18 @@
 </p><p>夏四月十六日，世宗到达沧州。这天，世宗率领各军北征。十七日，到乾宁军驻地，伪宁州刺史王洪献城投降，二十二日，世宗乘坐龙舟，率领水军顺流向北，前后数十里长。二十六日，到达益津关。从这里再往西，水面逐渐狭窄，水军难以前进，便弃船上岸。二十七日，住宿在野外。当时世宗是在预定日期之前就来到了这里，大军尚未汇合，在身边的士兵，还不到一旅人，全靠今上赵匡胤率领勇武的官员和骑士以保卫世宗。二十八日，赵匡胤先到瓦桥关，伪守将姚内斌献城投降。二十九日，莫州刺史刘楚信献州城投降。
 </p><p>五月一日，世宗驻扎在瓦桥关，侍卫亲军都指挥使李重进以及各位将领都相继来到这里，瀛州刺史高彦晖献本城投降。瓦桥关以南得以平定，共得到三州，十七县，一万八千三百六十户。这一战，朝廷数万军队，不发一箭，边境城邑都望风而降。二日，世宗与众将商议进攻幽州，众将都认为不可，世宗不听。这夜，世宗生病，进攻幽州之事才作罢。四日，定州节度使孙行友上奏，攻下易州，俘获伪刺史李在钦献上，斩杀在军营中的街上。五日，以瓦桥关为雄州，以益津关为霸州。这天，先锋都指挥使张藏英在瓦桥关以北打败契丹数百骑兵，攻下固安县。诏令征发滨、棣二州丁壮民夫修筑霸州州城。六日，派侍卫都指挥使李重进领兵经过土门，进入河东地界。八日，世宗从雄州出发，回京。泉州节度使留从效派别驾从事使王禹锡到世宗所在地奉上贡物，世宗认为泉州不久前还臣服于南唐，南唐李景才归顺周朝，所以不想夺南唐所属，仅赐诏褒扬泉州而已。二十五日，侍卫都指挥使李重进上奏，在百井打败河东贼军，斩首二千级。三十日，世宗从雄州回到京城。
 </p><p>六月一日，潞州李筠上奏，攻下辽州，俘获伪辽州刺史张丕旦。四日，郑州上奏，黄河冲决原武县堤防，诏令宣徽南院使吴延祚征发附近县邑的丁壮民夫二万人堵塞决口。六月，晋州节度使杨廷璋上奏，领兵进入河东地界，招降城堡营寨十三座。九日，以皇长子郭宗训为特进、左卫上将军，封为燕国公。赐给江南进奉使李从善钱二万贯，绢二万匹，银子一万两；赐给两浙进奉使吴延福钱三千贯，绢五千匹，银器三千两。十四日，潞州押送俘获的辽州刺史张丕旦等二百四十五人献上，诏令释放他们。十五日，以今上赵匡胤为殿前都点检，加封检校太傅，依旧任忠武军节度使。十九日，世宗在万岁殿驾崩，圣寿三十九岁。二十日，宣读遗诏，梁王郭宗训在灵柩前即皇帝位，服饰纪元，全依旧时制度。这天，群臣在万岁殿东边奉梁王即位，朝廷内外举哀。同年八月，翰林学士、判太常寺事窦亻严进谥号叫睿武孝文皇帝，庙号世宗。十一月一日，葬在庆陵。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章-世宗纪五-白话.html'>第九章-世宗纪五</a></p><p class='next'>下一节：<a href='第十一章-恭帝纪-白话.html'>第十一章-恭帝纪</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九章-世宗纪五-白话.html'>第九章-世宗纪五</a></p><p class='next'>下一节：<a href='第十一章-恭帝纪-白话.html'>第十一章-恭帝纪</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

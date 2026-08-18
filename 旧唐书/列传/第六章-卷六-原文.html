@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -184,5 +211,18 @@
 <p>　　李子和者，同州蒲城人也。本姓郭氏。大业末，为左翊卫，犯罪徙榆林，见郡 内大饥，遂潜引敢死士，得十八人，攻郡门，执郡丞王才，数以不恤百姓，斩之， 开仓以赈穷乏。自称永乐王，建元为正平，尊其父为太公，以弟子政为尚书令，子 端、子升为左、右仆射。有众二千余骑，南连梁师都，北附突厥始毕可汗，并送子 为质以自固。始毕先署刘武周为定杨天子，梁师都为解事天子，又以子和为平杨天 子，子和固辞不敢当，始毕乃更署子和为屋利设。武德元年，遣使归款，授榆林郡 守。寻就拜云州总管，封金河郡公。二年，进封郕国公。时师都强暴，子和虑为所 攻，寻勒兵袭师都宁朔城，克之。子和既绝师都，又伺突厥间衅，遣使以闻，为处 罗可汗候骑所获，处罗大怒，囚其弟子升。子和自以孤危，甚惧。四年，拔户口南 徙，诏以延州故城居之。五年，从太宗平刘黑闼，陷阵有功。高祖嘉其诚节，赐姓 李氏，拜右武卫将军。贞观元年，赐实封三百户。十一年，除婺州刺史，改封夷国 公。显庆元年，累转黔州都督。以年老乞骸骨，许之，加金紫光禄大夫。麟德九年 卒。 </p>
 <p>　　史臣曰：萧铣聚乌合之众，当鹿走之时，放兵以夺将权，杀旧以求位定，洎大 军奄至，束手出降，宜哉！杜伏威恃勇聚徒，见机归国，或致疑于高祖，竟见雪于 太宗。辅公祏窃兵为叛，王雄诞守节不回，训子孙以忠贞，感士庶之流涕。子通修 仁驭众，终怀贰以伏诛；罗艺归国立功，信妖言而为叛。善始令终者，鲜矣！沈法 兴狂贼，梁师都凶人，皆至覆亡，殊无改悔。自隋朝维绝，宇县瓜分，小则鼠窃狗 偷，大则鲸吞虎据。大唐举义，兆庶归仁，高祖运应瑶图，太宗天资神武，群凶席 卷，寰海镜清，祚享永年，功宣后代，谥曰神尧、文武，岂不韪哉！ </p>
 <p>　　赞曰：失政资盗，图王僭号。真主勃兴，风驱电扫。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p><p class='next'>下一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p><p class='next'>下一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

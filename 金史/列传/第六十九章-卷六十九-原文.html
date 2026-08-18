@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -176,5 +203,18 @@
 </p><p>天兴二年九月，蔡州被围，亢奏曰：“十二月三日必攻城。”及期果然。末帝问曰：“解围当在何日？”对曰：“明年正月十三日，城下无一人一骑矣。”帝不知其由，乃喜围解有期，日但密计粮草，使可给至其日不阙者。明年甲午正月十日，蔡州破，十三日，大元兵退。是日，亢赴水死云。
 </p><p>李懋，不知何许人。有异术。正大间，游京兆，行省完颜合达爱其术，与俱至汴京，荐于哀宗。遣近侍密问国运否泰，言无忌避。居之繁台寺，朝士日走问之，或能道隐事及吉凶之变，人以为神。帝恶其言太泄，遣使者杀之。使者乃持酒肴入寺，懋出迎，笑曰：“是矣。”使者曰：“何谓也？”懋曰：“我数当尽今日，尚复何言。”遂索酒，痛饮就死。
 </p><p>胡德新，河北士族也。寓居南阳，往来宛、叶间，嗜酒落魄不羁，言祸福有奇验。正大七年夏，与燕人王铉邂逅於叶县村落中。与铉初不相识，坐中谬以兵官对，胡曰：“此公在吾法中当登科甲，何以谓之兵官。”众愕然，遂以实告。二人相得甚欢，即命家人具鸡酒以待，酒酣、举大白相属曰：“君此去事业甚远，不必置问。某有所见，久不敢对人言，今欲告子。”遂邀至野田，密谓曰：“某自去年来，行宛、叶道中，见往来者十且八九有死气。今春至陈、许间，见其人亦有大半当死者。若吾目可用，则时事可知矣。”铉惊问应验迟速，曰：“不过岁月间耳，某亦不逃此厄，请密志之。”明年，大元兵由金、房入，取峭石滩渡汉，所过庐舍萧然，胡亦举家及难，其精验如此。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十八章-卷六十八-原文.html'>第六十八章-卷六十八</a></p><p class='next'>下一节：<a href='第七十章-卷七十-原文.html'>第七十章-卷七十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十八章-卷六十八-原文.html'>第六十八章-卷六十八</a></p><p class='next'>下一节：<a href='第七十章-卷七十-原文.html'>第七十章-卷七十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

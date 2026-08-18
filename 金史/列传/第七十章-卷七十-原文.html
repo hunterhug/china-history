@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -223,5 +250,18 @@
 </p><p>执中之党呼于衢路曰：“飐军反矣，杀之者有赏。”市人从之。飐军死者甚众，一军皆恟恟，宣宗遣近侍抚谕之，诏有司量加赙赠，众乃稍安。明日，除特末也泰宁军节度使，乌古论奋剌真授知济南府事，徒单金寿真授知归德府事，蒲察六斤真授知平阳府事。
 </p><p>甲寅，左谏议大夫张行信上封事曰：“《春秋》之法，国君立不以道，若尝与诸侯盟会，即列为诸侯。东海在位已六年矣，为其臣者谁敢干之。胡沙虎握兵入城，躬行弑逆，当是时惟鄯阳、石古乃率众赴援，至于战死，论其忠烈，在朝食禄者皆当愧之。陛下始亲万机，海内望化，褒显二人，延及子孙，庶几少慰贞魂，激天下之义气。宋徐羡之、傅亮、谢晦弑营阳王立文帝，文帝诛之，以江陵奉迎之诚，免其妻子。胡沙虎国之大贼，世所共恶，虽已死而罪名未正，合暴其过恶，宣布中外，除名削爵，缘坐其家，然后为快。陛下若不忍援立之劳，则依仿元嘉故事，亦足以示惩戒。”宣宗乃下诏暴执中过恶，削其官爵。赠鄯阳、石古乃，加恩其子。庆山奴、惟弼、惟康皆迁赏，近侍局自此用事矣。
 </p><p>论曰：金九主，遇弑者三，其逆谋者十人。熙宗之弑，惟大兴国一人世宗声其罪而磔之思陵之侧。徒单贞虽诛。未闻暴其罪状，后以戚畹又复赠官追封。余秉德、唐括辩等六人，皆以他罪诛，海陵之弑，其首恶为完颜元宜，则令终焉。卫绍王之弑曰胡沙虎，不死于司败之诛，而死于高琪之手。古所谓弑君之贼人得而讨之者，谓请于公上而致讨焉。如孔子之请讨陈恒是也。岂有如琪之擅杀而以为功者乎。金之政刑，其乱若此，国欲不亡，其可得乎！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十九章-卷六十九-原文.html'>第六十九章-卷六十九</a></p><p class='next'>下一节：<a href='第七十一章-卷七十一-原文.html'>第七十一章-卷七十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十九章-卷六十九-原文.html'>第六十九章-卷六十九</a></p><p class='next'>下一节：<a href='第七十一章-卷七十一-原文.html'>第七十一章-卷七十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

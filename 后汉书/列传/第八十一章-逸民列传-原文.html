@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#列传'>：目录</a></p>
@@ -202,5 +229,18 @@
 </p><p>陈留老父者，不知何许人也。桓帝世，党锢事起，守外黄令陈留张升去官归乡里，道逢友人，共班草而言。升曰：“吾闻赵杀鸣犊，仲尼临河而反；覆巢竭渊，龙凤逝而不至。今宦竖日乱，陷害忠良，贤人君子其去朝乎？夫德之不建，人之无援，将性命之不免，奈何？”因相抱而泣。老父趋而过之，植其杖，太息言曰：“吁！二大夫何泣之悲也？夫龙不隐鳞，凤不藏羽，网罗高县，去将安所？虽泣何及乎！”二人欲与之语，不顾而去，莫知所终。
 </p><p>庞公者，南郡襄阳人也。居岘山之南，未尝入城府。夫妻相敬如宾。荆州刺史列表数延请，不能屈，乃就候之。谓曰：“夫保全一身，孰若保全天下乎？”庞公笑曰：“鸿鹄巢于高林之上，暮而得所栖；鼋鼍穴于深渊之下，夕而得所宿。夫趣舍行止，亦人之巢穴也。且各得其栖宿而已，天下非所保也。”因释耕于垄上，而妻子耘于前。表指而问曰：“先生苦居畎亩而不肯官禄，后世何以遗子孙乎？”庞公曰：“世人皆遗之以危，今独遗之以安。虽所遗不同，未为无所遗也。”表叹息而去。后遂携其妻子登鹿门山，因采药不反。
 </p><p>赞曰：江海冥灭，山林长往。远性风疏，逸情云上。道就虚全，事违尘枉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十章-方术列传下-原文.html'>第八十章-方术列传下</a></p><p class='next'>下一节：<a href='第八十二章-列女传-原文.html'>第八十二章-列女传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八十章-方术列传下-原文.html'>第八十章-方术列传下</a></p><p class='next'>下一节：<a href='第八十二章-列女传-原文.html'>第八十二章-列女传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

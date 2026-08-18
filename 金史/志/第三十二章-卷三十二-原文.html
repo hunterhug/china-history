@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-志<a href='../金史.html#志'>：目录</a></p>
@@ -181,5 +208,18 @@
 </p><p>武举，尝设于皇统时，其制则见于《泰和式》，有上中下三等。能挽一石力弓，以重七钱竹箭，百五十步立贴，十箭内，府试欲中一箭，省试中二箭，程试中三箭。又远射二百二十步垛，三箭内一箭至者。又百五十步内，每五十步设高五寸、长八寸卧鹿二，能以七斗弓、二大凿头铁箭驰射，府试则许射四反，省试三反，程试二反，皆能中二箭者。又百五十步内，每三十步，左右错置高三尺木偶人戴五寸方板者四，以枪驰刺，府试则许驰三反，省试二反，程试三反，左右各刺落一板者。又依荫例问律一条，又问《孙》、《吴》书十条，能说五者，为上等。凡程试，若一有不中者，皆黜之。若射贴弓八斗，远射二百一十步，射鹿弓六斗，《孙》、《吴》书十条通四，为中等。射贴弓七斗，远射二百五步，射鹿弓五斗，《孙》、《吴》书十条通三，为下等。解律、刺板，皆欲同前。凡不知书者，虽上等为中，中则为下。凡试中中下，愿再试者听。旧制，就试上等不中，不许再试中下等。泰和元年，定制，不分旧等，但从所愿，试中则以三等为次。二年，省奏：“武举程式当与进士同时，今年八月府试，欲随路设考试所，临期差官，恐以创立未见应试人数，遂权令各处就考之。”宣宗贞祐三年，同进士例，赐敕命章服。时以随处武举入试者，自非见居职任及已用于军前者，令郡县尽遣诣京师，别为一军，以备缓急。其被荐而未授官者，亦量材任之。元光二年，东京总帅纥石烈牙吾塔言：“武举入仕，皆授巡尉军辖，此曹虽善骑射，不历行阵，不知军旅，一旦临敌，恐致败事。乞尽括付军前为长校，俟有功则升之。”宰臣奏：“国家设此科与进士等，而欲尽置军中，非奖进人材之道。”遂籍丁忧、待阙、去职者付之。
 </p><p>试学士院官。大定二十八年，敕设科取士为学士院官。礼部下太常，按唐典，初入学士院例先试，今若于进士已仕者，以随朝六品，外路五品职事官荐，试制诏诰等文字三道，取文理优者充应奉。由是翰苑之选为精。明昌五年，以学士院撰文字人少，命尚书省访有文采者勾取权试之。
 </p><p>凡司天台学生，女直二十六人，汉人五十人，听官民家年十五以上，三十以下试补。又三年一次，选草泽人试补。其试之制，以《宣明历》试推步，及《婚书》、《地理新书》试合婚、安葬，并《易》筮法，六壬课、三命五星之术。凡医学十科，大兴府学生三十人，余京府二十人，散府节镇十六人，防御州十人，每月试疑难，以所对优劣加惩劝，三年一次试诸太医，虽不系学生，亦听试补。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十一章-卷三十一-原文.html'>第三十一章-卷三十一</a></p><p class='next'>下一节：<a href='第三十三章-卷三十三-原文.html'>第三十三章-卷三十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十一章-卷三十一-原文.html'>第三十一章-卷三十一</a></p><p class='next'>下一节：<a href='第三十三章-卷三十三-原文.html'>第三十三章-卷三十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

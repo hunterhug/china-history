@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#后汉书'>：目录</a></p>
@@ -191,5 +218,18 @@
 </p><p>建安三年，吕布终于又投靠袁术，派高顺攻打在沛县的刘备，击败刘备。曹操派夏侯惇援救刘备，被高顺打败。曹操于是亲自率兵攻打吕布，兵到下邳城下。曹操送了一封信给吕布，向他陈述祸福。吕布想投降，但陈宫等人由于自己对曹操负罪，极力破坏吕布的计策，而且对吕布说：“曹公从速道而来，其局势不能持久，将军如果用步兵和骑兵驻守城外，我率领其余人马关了城门把守。曹操如果向将军进攻，我带领部队从后面进攻曹军；要是曹操衹是攻城，将军就从外面救援。用不了一个月，曹军粮食全部用尽，发起进攻就可以打败曹操。”吕布同意他的看法。吕布的妻子说：“从前曹氏对待陈公台像对待婴儿一样无微不至，陈宫仍然丢下曹操投靠我们。现在将军对待公台的好处并未超过曹氏，却打算丢下全城和妻子儿女孤军远出吗？一旦发生变故，我难道还能成为将军的妻子吗？”于是吕布作罢，但暗中派人向袁术求救，又亲自率领一千多骑兵出城，打败后退回城内，守住城不敢出去。袁术也不能援救。
 </p><p>曹操绕城挖了深沟，将沂水、泅水堵塞以淹灌下邳城，三个月后，城内上下叛离。吕布的将领侯成要门客去放牧他的名马，然而门客骑马叛逃。侯成追赶门客，将马追回，将领们凑合了礼物向侯成祝贺。侯成分了一部分酒肉，先到裹面见吕布说：“靠将军的神威，将失去的马追回，将领们都来祝贺，我没敢尝用，先拿来献给您。”吕布发怒说：“我禁止喝酒，而你们在一起谋划，是想藉喝酒打我的主意吗？”侯成又恨又怕，就与众将共同捉了陈宫、高顺，率领部下投降。吕布与身边部下登上白门楼。由于士兵们围攻很紧，吕布要身边的人砍下自己的脑袋去见曹操。身边的人心中不忍，就下楼投降。吕布见到曹操，说：“从今以后，天下平定了。”曹操说：“为什么这么说呢？”吕布说：“您所担心的人没有超过我吕布的，我现在已经归顺了。让我统率骑兵，您统率步兵，天下的平定轻而易举。”又掉过头来对刘备说：“玄德，您为座上客人，我是投降的俘虏。我被绳子捆得太紧了，难道不能为我说句话吗？”曹操笑着说：“捆绑老虎不能不紧。”于是下令将吕布的绳索捆松些。刘备说：“不可以。您没有看到吕布侍奉丁建阳、董太师的事情吗？”曹操摇摇头。吕布看着刘备说：“你这长着大耳朵的家伙最不可相信！”曹操对陈宫说：“公台平生自认为足智多谋，现在你认为怎么样？”陈宫指着吕布说：“此人不采纳我的意见，才弄到这个地步。如果听我的话，结果很难预料。”曹操说：“您老母亲怎么办？”陈宫说：“老母亲取决于您而不取决于我。听说以孝治理天下的人，不会杀害别人的父母。”曹操又说：“您的妻子儿女怎么办？”陈宫说：“我听说成就霸主和天子功业的人，不断绝别人的香火祭祀。”陈宫坚持要求受刑，接着走出门外不再回头，曹操为他掉下眼泪。吕布、陈宫和高顺全被勒死，他们的首级被送到许县集市示众。
 </p><p>赞曰：型聂做卢业牧，希望后代得到幸福。谁知道他的继承人，将地盘丢失，自身也被放逐。塞矩已经贪婪成性，旦壶也反覆无常。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十九章-袁绍刘表列传下-白话.html'>第六十九章-袁绍刘表列传下</a></p><p class='next'>下一节：<a href='第七十一章-循吏列传-白话.html'>第七十一章-循吏列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十九章-袁绍刘表列传下-白话.html'>第六十九章-袁绍刘表列传下</a></p><p class='next'>下一节：<a href='第七十一章-循吏列传-白话.html'>第七十一章-循吏列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

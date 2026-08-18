@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>元史-志<a href='../元史.html#志'>：目录</a></p>
@@ -234,5 +261,18 @@
 </p><p>正阶下二十四甓，香案一。护尉席内各所迤内第四螭首取直，边北，左右护尉第五席相向布席，北二席宿直。次殿中，次典瑞，次起居，每席函丈五尺。设殿前板位八，各以左右戺道内边丹墀迤内第五甓纵直，北空路五丈五尺，东西走路各违四丈九尺，中布席四十，席函九尺，设护尉板位二。
 </p><p>辇路东西各五道，袤二丈一仞五寸。南北两道，广丈有奇。北至道当中，第一北三南一，自两端各函六丈。第二北起十一，各函丈咫，南起九，各函丈三尺。第三北起十三，各函丈五尺，南起十二，各函丈五寸。第四北起十六，各函丈二尺，南起十四，各函九尺。第五北起，同上南起，各函八尺，北头曲尺路内，各函九尺，设黄麾仗锜二百二十。仗南画阑约丈许，左右同，中央置席，设尚厩板位二。仗内丹墀横界一十八道，道函五尺，纵引横引三丈，中设九品板位一十八。尚厩南左右纵画各一十八道，道函仞，左右向，设起居旁折板位三十六，以内为上。
 </p><p>大明门中两楹外，斜界二道，护尉板位二，外设管旗板位二。门下左右阙边各六丈，南北各画一道，广一引七丈一仞六寸，空各二丈一仞，内横二引二丈五寸，空各三丈五尺。每锜后丈五尺屏风渠一道，长五尺，坐各违四壁丈五尺，设牙旗锜七十四。阙下两观内各六丈，纵各界一十八道，道违仞，左右设外序班板位三十六。自序班北入阙左右门边两外仗往北折，西至月华门，东至日精门，道中央入至起居旁折界一道导引。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十二章-卷三十二-原文.html'>第三十二章-卷三十二</a></p><p class='next'>下一节：<a href='第三十四章-卷三十四-原文.html'>第三十四章-卷三十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十二章-卷三十二-原文.html'>第三十二章-卷三十二</a></p><p class='next'>下一节：<a href='第三十四章-卷三十四-原文.html'>第三十四章-卷三十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

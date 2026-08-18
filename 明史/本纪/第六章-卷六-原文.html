@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-本纪<a href='../明史.html#本纪'>：目录</a></p>
@@ -206,5 +233,18 @@
 </p><p>秋七月戊寅，封阿鲁台为和宁王。八月甲子，北京地震。乙丑，镇远侯顾成讨思州、靖州叛苗。九月壬午，诏自今郡县官每岁春行视境内，蝗蝻害稼即捕绝之，不如诏者二司并罪。
 </p><p>冬十月丙寅，以玺书命皇太子录囚。十一月戊寅，以野蚕茧为衾，命皇太子荐太庙。壬午，瓦剌马哈木兵渡饮马河，阿鲁台告警，命边将严守备。甲申，宁阳侯陈懋，都督谭青、马聚、朱崇巡宁夏、大同、山西边，简练士马。寻命陕西、山西及潼关等五卫兵驻宣府，中都、辽东、河南三都指挥使司及武平等四卫兵会北京。乙巳，应城伯孙岩备开平。十二月壬子，张辅、沐晟大败交阯贼于爱子江。
 </p><p>是年，马哈木弑其主本雅失里，立答里巴为可汗。别失八里、满剌加、占城、爪哇西王入贡。琉球中山入贡者四。琉球山南入贡者再。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p><p class='next'>下一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p><p class='next'>下一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

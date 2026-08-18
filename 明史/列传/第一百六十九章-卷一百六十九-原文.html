@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -245,5 +272,18 @@
 </p><p>布政使刘浑成弟灿成助妾杀妻，治如律。行太仆卿陈耀文家人犯法，立捕治之。汝宁知府邱度虑幼学得祸，言于抚按，调繁中牟。秋成时，飞蝗蔽天。幼学捕蝗，得千三百余石，乃不为灾。县故土城，卑且圮。给饥民粟，俾修筑，工成，民不知役。县南荒地多茂草，根深难垦。令民投牒者，必入草十斤。未几，草尽，得沃田数百顷，悉以畀民。有大泽，积水，占膏腴地二十余里。幼学疏为河者五十七，为渠者百三十九，俱引入小清河，民大获利。大庄诸里多水，为筑堤十三道障之。给贫民牛种，贫妇纺具，倍于确山。越五年，政绩茂著。以不通权贵，当考察拾遗，掌道御史拟斥之，其子争曰：“儿自中州来，咸言中牟治行无双。今予殿，何也？”乃已。
 </p><p>稍迁刑部主事。中官采御园果者，怒杀园夫母，弃其尸河中。幼学具奏，逮置之法。嘉兴人袁黄妄批削《四书》、《书经集注》，名曰《删正》，刊行于时。幼学驳正其书，抗疏论列。疏虽留中，镂板尽毁。以员外郎恤刑畿辅，出矜疑三百余人。进郎中。
 </p><p>迁湖州知府，甫至，即捕杀豪恶奴。有施敏者，士族子，杨升者，人奴也，横郡中。幼学执敏置诸狱。敏赂贵人嘱巡抚檄取亲鞫，幼学执不予，立杖杀之。敏狱辞连故尚书潘季驯子廷圭，幼学言之御史，疏劾之，下狱。他奸豪复论杀数十辈，独杨升畏祸敛迹，置之。已，念己去，升必复逞，遂捕置之死，一郡大治。霪雨连月，禾尽死。幼学大举荒政，活饥民三十四万有奇。御史将荐之，征其治行，推官阎世科列上三十六事，御史以闻。诏加按察副使，仍视郡事。久之，以副使督九江兵备。幼学年已七十，其母尚在，遂以终养归。母卒，不复出。天启三年起南京光禄少卿，改太常少卿，俱不赴。明年卒，年八十四矣。中矣、湖州并祠祀之。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百六十八章-卷一百六十八-原文.html'>第一百六十八章-卷一百六十八</a></p><p class='next'>下一节：<a href='第一百七十章-卷一百七十-原文.html'>第一百七十章-卷一百七十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百六十八章-卷一百六十八-原文.html'>第一百六十八章-卷一百六十八</a></p><p class='next'>下一节：<a href='第一百七十章-卷一百七十-原文.html'>第一百七十章-卷一百七十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

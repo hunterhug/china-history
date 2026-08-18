@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-本纪<a href='../辽史.html#本纪'>：目录</a></p>
@@ -157,5 +184,18 @@
 </p><p>四年春二月辛未，泰宁王察割来朝，留侍。是月，建政事省。三月戊戌朔，南唐遣赵延嗣、张福等来贺南征捷。秋九月乙丑朔，如山西。冬十月，自将南伐，攻下安平、内丘、束鹿等城，大获而还。是岁，册皇后萧氏。
 </p><p>五年春正月癸亥朔，如百泉湖。汉郭威弑其主自立，国号周，遣朱宪来告。即遣使致良马。汉刘崇自立于太原。二月，周遣姚汉英、华昭胤来，以书辞抗礼，留汉英等。夏五月壬戌朔，太子太傅赵莹薨，辍朝一日，命归葬于汴。诏州县录事参军、主簿委政事省铨注。六月辛卯朔，刘崇为周所攻，遣使称，乞援，且求封册。即遣燕王牒〈虫葛〉、枢密使高勋册为大汉神武皇帝。南唐遣蒋洪来，乞举兵应援。是夏，清暑百泉岭。九月庚申朔，自将南伐。壬戌，次归化州祥古山。癸亥，祭让国皇帝于行宫。群臣皆醉，察割反，帝遇弑，年三十四。应历元年，葬于显州西山，陵曰显陵。二年，谥孝和皇帝，庙号世宗。统和二十六年七月，加谥孝和庄宪皇帝。
 </p><p>赞曰：世宗中才之主也，入继大统，曾未三年，纳唐丸书，即议南伐，即乏持重，宜乖周防，盖有致祸之道矣。然而孝友宽慈，亦有君人之度焉。未及师还，变起沉湎，岂不可哀也哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

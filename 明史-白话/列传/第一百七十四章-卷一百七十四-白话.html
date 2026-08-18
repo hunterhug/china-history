@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -209,5 +236,18 @@
 </p><p>廷陈隐居二十余年，每日嗜酒作乐，更加颓废，士大夫登门看他，他常常是蓬头赤足，不行宾主之礼。时常穿着红紫窄袖衣衫，骑牛跨马，大声歌唱于田野间。嘉靖十八年(1539)，诏修《承天大志》，巡抚顾王..举荐廷陈和颜木、王格参与。书修成，皇帝不满意，仅赐银币而已。廷陈才高，诗文为当时所重视，一般才士很少有超过他的。
 </p><p>李濂，字川父，祥符人。正德八年(1513)乡试第一名，第二年中进士。授沔阳知州，不久调为宁波同知，又升山西佥事。嘉靖五年(1526)因考核地方官吏而被免职归家。这时不过三十八岁。
 </p><p>李濂年少自负有俊才，常随同一些侠少年骑马出城打猎，酒酣则慷慨悲歌。他很仰慕信陵君、侯生之为人。著有《理情赋》，友人左国玑拿去给李梦阳看，梦阳十分叹赏，于吹台访到了他。从此，濂声名远及河名隹之间。罢官归家后，更加努力于学，以能写古文而闻名于世。最初受到李梦阳的赏识，后来他不屑于附和梦阳。在家住四十年，著作很多。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百七十三章-卷一百七十三-白话.html'>第一百七十三章-卷一百七十三</a></p><p class='next'>下一节：<a href='第一百七十五章-卷一百七十五-白话.html'>第一百七十五章-卷一百七十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百七十三章-卷一百七十三-白话.html'>第一百七十三章-卷一百七十三</a></p><p class='next'>下一节：<a href='第一百七十五章-卷一百七十五-白话.html'>第一百七十五章-卷一百七十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

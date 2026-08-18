@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-志<a href='../金史.html#志'>：目录</a></p>
@@ -184,5 +211,18 @@
 </p><p>十二月，宣宗崩。
 </p><p>哀宗正大元年正月戊午，上初视朝，尊太后为仁圣宫皇太后，太元妃为慈圣宫皇太后。是日，大风飘端门瓦，昏霾不见日，黄气塞天，仁圣又梦乞丐万数踵其后，心恶之，占者曰：“后为天下母，百姓贫窭，将谁诉焉？”遂敕京城设粥与冰药以应之，人以为壬辰、癸巳之兆。又有人衣麻衣，望承天门大笑者三，大哭者三，有司拘而问之，其人曰：“我先笑者，笑许大天下将相无人。后哭者，哀祖宗家国破荡至此也。”有司以为妖言，处之重典。上曰：“近诏草泽之士并许直言，虽涉讥讪亦不治罪，况此人言亦有理。止不应哭笑阙下耳。”乃杖之。二年正月甲申，有黄黑之昆。四月，旱。京畿大雨雹。三年春，大寒。三月乙丑，有火自吏部中出，大如斛，流行展转，人皆惊避，逾时而灭。四月，旱、蝗。六月，京东雨雹，蝗死。四年六月丙辰，地震。八月癸亥，大风吹左掖门鸱尾坠，丹凤门扉坏。是日，风、霜损禾皆尽。五年春，大寒。二月，雷而雪。木之华者皆败。四月，郑州大雨雹，桑柘皆枯。京畿旱。八月，御座上闻若有言者曰：“不放舍则何？”索之不见。七年十二月，新卫州北三里许，有影在沙上，如旧卫州城状，寺塔宛然，数日乃灭。
 </p><p>天兴元年正月丁酉，大雪。二月癸丑，又雪。戊午，又雪。是时，钧州、阳邑、卢氏兵皆大败。五月，大寒如冬。七月庚辰，兵刃有火。闰八月己未，有箭射入宫中。九月辛丑府，大雷，工部尚书蒲乃速震死。二年六月，上迁蔡，自发归德，连日暴雨，平地水数尺，军士漂没。及蔡始晴，复大旱数月。识者以为不祥。初，南京未破一二年间，市中有一僧不知所从来，持一布囊贮枣，日散与市人无穷，所在儿童百十从之。又有一人拾街中破瓦，复以石击碎之。人皆以为狂，不晓其理，后乃知之，其意盖欲使人早散，国家将瓦解矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p><p class='next'>下一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p><p class='next'>下一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

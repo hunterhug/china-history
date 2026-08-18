@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -227,5 +254,18 @@
 </p><p>万历十九年(1591)，安抚马祥没有后嗣，其妻瞿氏掌管安抚司事务，招了一个瞿姓的孩子来抚养，将另有所谋。居住在松坪的马祥的侄子土舍便兴兵攻城，夺走了官印，番族人便乘机抢劫。此时参将吴文杰正好有征东的任务，便把军队带过来将作乱的番族人剿灭平定。二十四年，朝廷将黎州安抚司降为千户所，将千户所的所治建在原安抚司南面三十里远的大田山坝，并将原安抚司的编户分成上下各七枝。上七枝的编户隶属于大渡河千户所，下七枝的编户仍由松坪的马氏约束。松坪在原安抚司的东南面，从炒米城出来径直与峨眉相连，高山峻岭有三百多里，都是受招抚的番族人在那儿居住。
 </p><p>黎州、雅州的各蛮族，宋朝时屡屡成为边疆的祸患。明朝建立后，认为散居在这二个州境内的蛮族人，都是天全六番的各部落，于是便在黎州设置安抚，在天全六番设置招讨，对蛮族人实行羁縻政策。隶属于雅州的蛮族人与天全六番招讨司所管辖的蛮族人，因为彼此土地相连，时常发生争讼。边界之外的大木瓜、小木瓜地区的番族人可分为三支，其中的一支腻乃卜最为强大，世代居住在西河。早先他们归马湖的土官安氏管辖，自从马湖改由流官治理后，大小木瓜的番族人叛乱，并入邛部，归岭氏管辖。他们盘踞在从西河到凉山、雪山之间的地域内。嘉靖末年，大小木瓜地区的畜牧繁盛，时常窥伺边界地区，邛部的长官岭柏无法制止他们，嘉、峨、犍为等边关地区都受到他们的侵扰。镇巡官督促邛部的军队去捕捉他们，大小木瓜的番族军队侵扰更为厉害。朝廷便决定大规模前去征讨，于是大军分建昌、越..、马湖三路出发。大小木瓜地区的番族人开始惶恐骇怕，请求投降，愿每年向朝廷贡献马匹和土产，这样事情才平定下来。大小木瓜地区有四千八百四十多亩土地，每年征收粮食四百四十多石，全输送到峨眉县。
 </p><p>明朝初年与安抚司一起设置的还有大渡河守御千户所。唐朝时，大渡河水流平广，可通漕运，戍将一旦失守，则黎州、雅州、邛州、嘉州、成都都会动摇。宋朝建隆三年(962)，王金斌平定四川，将图献给朝廷。有大臣提议乘着军威收复越..，艺祖用玉斧画图说：“该地在境外，我们无法占有。”从此之后，大渡河中的水流忽然下落了五六十丈，水流到此处时汹涌澎湃尤如从天而降，船和筏都无法通行，故名叫噎口。这大概是上天自动设置天险以区分境内境外吧！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百九十八章-卷一百九十八-白话.html'>第一百九十八章-卷一百九十八</a></p><p class='next'>下一节：<a href='第二百章-卷二百-白话.html'>第二百章-卷二百</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百九十八章-卷一百九十八-白话.html'>第一百九十八章-卷一百九十八</a></p><p class='next'>下一节：<a href='第二百章-卷二百-白话.html'>第二百章-卷二百</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

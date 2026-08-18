@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新唐书-本纪<a href='../新唐书.html#本纪'>：目录</a></p>
@@ -183,5 +210,18 @@
 </p><p>三年三月癸未，萧遘、裴澈、兵部侍郎郑昌图有罪伏诛。壬辰，如凤翔。郑从谠罢。韦昭度为司徒。癸巳，镇海军将刘浩逐其节度使周宝，度支催勘使薛朗自称知府事。四月甲辰，六合镇遏使徐约陷苏州，逐其刺史张雄。甲子，淮南兵马使毕师鐸陷扬州，执其节度使高骈。是月，维州山崩。五月甲戌，宣歙观察使秦彦入于扬州。癸未，秦宗权陷郑州。六月，陷孟州，河阳将李罕之人于孟州，张全义入于东都。己酉，凤翔节度使李昌符反。庚戌，犯大安门，不克，奔于陇州。壬子，武定军节度使李茂贞为陇州招讨使。丁巳，护国军将常行儒杀其节度使王重荣，其兄重盈自称留后。壬戌，亳州将谢殷逐其刺史宋衮。七月丁亥，降死罪以下，贞观、开元、建中、兴元功臣后予一子九品正员官，减常膳三之一，赐民九十以上粟帛。七月，李昌符伏诛。八月，韦昭度为太保。壬寅，谢殷伏诛。硃全忠陷亳州。壬子，陷曹州，刺史丘弘礼死之。九月，户部侍郎、判度支张浚为兵部侍郎、同中书门下平章事。秦彦杀高骈。十月丁未，硃全忠陷濮州。甲寅，封子升为益王。杭州刺史钱升〗陷常州。丁卯，升杀周宝。是月，秦宗权将孙儒寇扬州。十一月壬申，庐州刺史杨行密陷扬州，秦彦、毕师鐸奔于孙儒。十二月癸巳，淮西将赵德諲陷江陵，荆南节度使张瑰死之。硃全忠为东南面招讨使。饶州刺史陈儒陷衢州。上蔡贼冯敬章陷蕲州。
 </p><p>文德元年正月甲寅，孙儒杀秦彦、毕师鐸。癸亥，硃全忠为蔡州四面行营都统。丙寅，薛朗伏诛。钱升陷润州。二月乙亥，不豫。乙丑，至自凤翔。庚寅，竭于太庙。大赦，改元。是月，魏博军乱，杀其节度使乐彦祯，其将罗弘信自称权知留后。三月戊戌朔，日有食之，既。壬寅，疾大渐，立寿王杰为皇太弟，知军国事。癸卯，皇帝崩于武德殿，年二十七。
 </p><p>赞曰：唐自穆宗以来八世，而为宦官所立者七君。然则唐之衰亡，岂止方镇之患？盖朝廷天下之本也，人君者朝廷之本也，始即位者人君之本也。其本始不正，欲以正天下，其可得乎？懿、僖当唐政之始衰，而以昏庸相继；乾符之际，岁大旱蝗，民悉盗起，其乱遂不可复支，盖亦天人之会欤！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八·穆宗 敬宗 文-原文.html'>第八章-卷八·穆宗 敬宗 文</a></p><p class='next'>下一节：<a href='第十章-卷十·昭宗 哀帝-原文.html'>第十章-卷十·昭宗 哀帝</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八·穆宗 敬宗 文-原文.html'>第八章-卷八·穆宗 敬宗 文</a></p><p class='next'>下一节：<a href='第十章-卷十·昭宗 哀帝-原文.html'>第十章-卷十·昭宗 哀帝</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

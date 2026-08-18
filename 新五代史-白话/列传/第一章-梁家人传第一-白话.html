@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-列传<a href='../新五代史.html#新五代史'>：目录</a></p>
@@ -166,5 +193,18 @@
 </p><p>太祖外孙袁象先与驸马都尉赵岩等商议与末帝讨贼。二月，象先率禁军入宫，友皀与妻张氏跑到北墙楼下，准备爬城墙逃走未成，叫冯廷谔杀妻与自己，廷谔也自杀。末帝即位，恢复友文官爵，废友皀为庶人。
 </p><p>康王友孜，太祖第七子，眼是双眼皮，自认为很了不起，以为应当做天子。贞明元年(915)，末帝德妃死，将要下葬，友孜派刺客夜入帝寝室中。末帝正睡觉，梦见有人害自己，惊醒，听见榻上宝剑有响声，一跃而起，抽剑说：“有情况呀！”立即搜索寝室，捉住刺客，亲手杀了，下令诛友孜。第二天，对赵岩、张汉杰说“：朕几乎不能与你们再见面。”从此以后对宗室疏远，而信任赵、张，以至于败亡。
 </p><p>唉！《春秋》之法，是非争夺之际，难判断啊！有人问：“梁太祖以臣弑君，友皀以子弑父，一样吧？弑后即位，过一年改元，《春秋》之法，都按君主来写，然而友皀不得列入本纪，为什么？而且父子之恶一样，只夺其子，却给其父，这难道是《春秋》的主旨吗？”我回答说“：梁朝的事已经写出来了，其父之恶，不必靠夺其子而后写明，然而末帝为君父报仇之志不可不伸张啊。《春秋》之法，弑君之贼不讨伐者，国家大臣要承担责任。我对于友皀的事，是要伸张讨贼者的壮志啊！”</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-唐家人传第二-白话.html'>第二章-唐家人传第二</a></p></div></body>
+<div class='pn'><p class='next'>下一节：<a href='第二章-唐家人传第二-白话.html'>第二章-唐家人传第二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

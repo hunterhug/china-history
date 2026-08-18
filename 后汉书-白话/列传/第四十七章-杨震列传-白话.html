@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#后汉书'>：目录</a></p>
@@ -159,5 +186,18 @@
 </p><p>我想皇上因边境不宁，自己非常刻苦，官殿垣屋倾斜，也只用一根支柱撑撑罢了。土木不兴，想使远近都知道政化清廉，京师庄严雄伟，不在乎崇楼高阁。而一些谄媚之徒，不能与皇上同心，骄奢越法，浪用劳役，大修房屋，作威作福。道路议论纷纷，大家耳闻目睹。地动的变异，就在京城附近，大概就是因此发生。又冬无宿雪，春节未雨，百官焦急，而修建不止，真是致旱的先兆。《尚书》说：‘僭恒阳若，臣无作威作福玉公。’就是说：只有君王得专威福，为美食。请皇上发扬刚健中正的精神，抛弃那些骄奢之徒，杜塞妖言的来源，秉承皇天的警戒，莫令威福久移在下，大权旁落。”杨震前后所上，言词激切，帝已经不高兴他，而樊丰等又都侧目憎怨，只是因为他是名儒，不敢加害。不久，河间男子至朝廷上书，言朝政的得失。帝发怒，下令逮捕入狱，定为欺上不道。杨震又上疏救他，说：“我听说尧舜时，谏鼓谤木，立于朝廷；商周圣哲之主，小人怨，还自我检查，勉励自己。这是为了广开言路，集思广益，使下情上达。现在赵腾以攻击诽谤获罪，与杀人犯法有差别，请皇上减罪，保全腾的性命，启发百姓敢于说话。”帝不理，赵腾被杀掉。
 </p><p>到了三年(124)春，皇帝东登泰山，樊丰等乘机竞修房屋。杨震部掾高舒召大匠令史稽查这件事。获得赵丰等的假诏书，写了奏书，要等皇上回来再送上。樊丰等听说了，惶恐万状。正好太史说星变倒行，就一起诬陷杨震说：“自赵腾死后，杨震深为怨怒。并且为邓骘的旧部，怀恨在心。”等皇上返回，在太学待吉日入宫，晚上派使者持令收了杨震太尉印绶，杨震于是闭门绝宾客。樊丰等还是恨他，竟请大将军耿宝奏杨震大臣不服罪，心怀怨恨，有令送归原籍。杨震走到城西几阳亭，慷慨地对他的儿子、学生说“：死是一个人不可免的。我蒙恩居位，痛恨奸臣狡猾而不能诛，恶嬖女倾乱而不能禁，还有什么面目见天下呢？身死之日，用杂木为棺，布单被只要盖住形体，不归葬所，不设祭祠。”于是服毒而死，时年七十余岁。弘农太守移良奉樊丰等旨意，派吏在陕县留停杨震丧，露棺道旁，责令杨震诸子代邮行书，道路之人，皆为之流泪。岁余，顺帝即位，樊丰、周广等诛死，杨震学生虞放，陈翼至朝廷申诉杨震事。朝廷都称杨震忠。下诏授二子为郎，赠钱百万，以礼改葬杨震于华阴潼亭，远近毕至。葬前十几天，有大鸟高丈余，飞到杨震丧前，俯仰悲鸣，泪流湿地，葬完，才飞去。
 </p><p>郡里将这一情况报告上去。当时灾异连续出现，帝觉得杨震为冤案，下诏说“：已故太尉杨震，正直为怀，使他辅佐时政，而小人颠倒黑白，谄害忠良，上天降威，灾害屡作，求神问卜，都说是杨震枉死之故。我的昏庸，加重了这种罪过。山岳崩塌，栋梁折断，我是多么危险啊！现在使太守丞用中牢具祠，魂而有灵，或者来享受我的这些祭品吧。”于是人们立石鸟像于杨震墓前，以纪念他。杨震被诬陷，高舒也获罪，作减死论。等到杨震事平反，高舒拜侍御史，至荆州判史。杨震五个儿子。长子杨牧，任富波相。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十六章-周黄徐姜申屠列传-白话.html'>第四十六章-周黄徐姜申屠列传</a></p><p class='next'>下一节：<a href='第四十八章-章帝八王列传-白话.html'>第四十八章-章帝八王列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十六章-周黄徐姜申屠列传-白话.html'>第四十六章-周黄徐姜申屠列传</a></p><p class='next'>下一节：<a href='第四十八章-章帝八王列传-白话.html'>第四十八章-章帝八王列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

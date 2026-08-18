@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -209,5 +236,18 @@
 </p><p>成化六年(1470)，他以右副总兵的身份随朱永赴延绥，追击贼人黄草梁。遇到埋伏，激战中他下巴受伤，部下奋力保护才得以脱身，不久又与都督范瑾等人到青草沟攻击贼寇，击败了他们。朱永等人追击贼寇到牛家寨，刘聚也占据南山奋力攻击。贼寇大败，出了国境。论功，刘聚进升左都督，又因宦官的力助被特封为宁晋伯。
 </p><p>八年(1472)，他取代赵辅为将军，总领陕西各镇之兵。敌寇进入花马池，刘聚率副总兵孙钺、游击将军王玺等人将他们击退。回到高家堡时，敌寇再次入侵，刘聚击败了他们。追到漫天岭时，官军伏兵起而夹击，又击败了他们。孙钺、王玺也在井油山击败敌人。捷报传到朝廷，赐予他世袭诰券。
 </p><p>这年冬，孛罗忽、满都鲁、..加思兰联合深入，到达秦州、安定、会宁等州县，纵横数千里。贼人退走后，正好王越从红盐池回来，妄称取得大捷，报告朝廷，皇上颁给玺书嘉奖慰劳。不久，纪功兵部员外郎张谨弹劾刘聚和总兵官范谨等六名将领，杀害被抢掠的人来冒功。部科和御史纷纷上疏弹劾。诏令派给事中韩文前往调查，他回来后上奏，与张瑾所说的一致。所报的首功一百五十级，实际上只有十九级。皇上因贼寇既然已经逃走，便置而不问。不久刘聚去世。赠侯爵，谥威勇。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十二章-卷四十二-白话.html'>第四十二章-卷四十二</a></p><p class='next'>下一节：<a href='第四十四章-卷四十四-白话.html'>第四十四章-卷四十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十二章-卷四十二-白话.html'>第四十二章-卷四十二</a></p><p class='next'>下一节：<a href='第四十四章-卷四十四-白话.html'>第四十四章-卷四十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

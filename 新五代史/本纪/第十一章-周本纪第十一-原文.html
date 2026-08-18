@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-本纪<a href='../新五代史.html#本纪'>：目录</a></p>
@@ -160,5 +187,18 @@
 </p><p>二年春正月甲子，侍卫步军都指挥使曹英为兗州行营都部署。庚午，高丽王昭使其广评侍郎徐逢来。二月庚寅，府州防御使折德扆克岢岚军。三月丁巳朔，寒食，望祭于郊。戊辰，内客省使郑仁诲为枢密副使，翟光鄴罢。夏五月庚申，东征，李穀留守东都，郑仁诲为大内都点检。癸亥，次曹州，赦流罪以下囚。乙亥，克兗州。壬午，赦兗州。六月乙酉朔，幸曲阜，祠孔子。庚子，至自兗州。秋九月乙丑，太仆少卿王演使于高丽。契丹寇边。
 </p><p>三年春正月乙卯，麟州刺史杨重训叛于汉，来附。闰月丙戌，回鹘使独呈相温来。二月甲子，贬王峻为商州司马。三月甲申，封荣为晋王。丙戌，郑仁诲罢。己丑，棣州团练使王仁镐为左卫大将军、枢密副使。夏六月，大雨，水。秋七月，契丹卢台军使张藏英来奔。九月，吐浑党富达等来。冬十月庚申，冯道为奉迎神主使。十一月癸未，党项使吴帖磨五等来。十二月戊申，四庙神主至自西京，迎之于西郊，祔于太庙。壬申，杀天雄军节度使王殷。乙亥，享于太庙。
 </p><p>显德元年春正月丙子朔，有事于南郊，大赦，改元，群臣上尊号曰圣明文武仁德皇帝。戊寅，罢鄴都。丙戌，镇宁军节度使郑仁诲为枢密使。壬辰，端明殿学士、户部侍郎王溥为中书侍郎、同中书门下平章事，王仁镐罢。是日，皇帝崩于滋德殿。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十章-汉本纪第十-原文.html'>第十章-汉本纪第十</a></p><p class='next'>下一节：<a href='第十二章-周本纪第十二-原文.html'>第十二章-周本纪第十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十章-汉本纪第十-原文.html'>第十章-汉本纪第十</a></p><p class='next'>下一节：<a href='第十二章-周本纪第十二-原文.html'>第十二章-周本纪第十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

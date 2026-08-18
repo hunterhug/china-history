@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -260,5 +287,18 @@
 <p>　　二十七年二月，嘉运率将士诣阙献俘，玄宗御花萼楼以宴之，仍令将吐火仙献 于太庙。俄又黄姓、黑姓自相屠杀，各遣使降附。 </p>
 <p>　　史臣曰：中原多事，外国窥边，周猃狁、汉匈奴之后，其类实繁，前史论之备 矣。突厥自隋文修王道，肃军容，示恩威以羁縻之；炀帝失政教，生戎心，肇乱离 以启发之。高祖借其力而入平京师，群贼附其强而迭据河朔。高祖同御榻以延其使， 太宗幸便桥以约其和。当其时焉，不其盛矣！竟灭其族而身死于国者，何也？咸谓 太宗有驭夷狄之道，李勣著戡定之功。殊不知突厥之始也，赏罚明而将士戮力。遇 炀帝之乱，亡命蓄怒者既附之，其兴也宜哉！颉利之衰也，兄弟扌勾隙而部族离心。 当太宗之理，谋臣猛将讨逐之，其亡也宜哉！洎武后乱朝，默啜犯塞，玄宗纂嗣， 传首京师，东封太山，西戎扈跸，开元之代，继踵来降。西突厥诸族，遇其理，则 众心悦附而甲兵兴焉；遇其乱，则族类怨怒而本根破矣！理乱二道，华夷一途。或 质言于盛衰倚伏，未为确论。 </p>
 <p>　　赞曰：中国失政，边夷幸灾。理乱之道，取鉴将来。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百四十三章-卷一百四十三-原文.html'>第一百四十三章-卷一百四十三</a></p><p class='next'>下一节：<a href='第一百四十五章-卷一百四十五-原文.html'>第一百四十五章-卷一百四十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百四十三章-卷一百四十三-原文.html'>第一百四十三章-卷一百四十三</a></p><p class='next'>下一节：<a href='第一百四十五章-卷一百四十五-原文.html'>第一百四十五章-卷一百四十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

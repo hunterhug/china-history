@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -199,5 +226,18 @@
 </p><p>济敏慧有才辩。凡国家经制、田赋、狱讼、工役、河渠事，众莫能裁定，济一算画，即有条理品式，可为世守。以故帝甚信任，数备顾问，兼预他部事。人以是忌之，谤议滋起。然济亦深刻，好以法中伤人。尝奉命定诈伪律。济议法巧密。帝曰：：“张密网以罗民，可乎？”又设籍曰“寅戌之书”，以程僚属出入。帝切责曰：“古人以卯酉为常。今使趋事者朝寅暮戌。奉父母，会妻子，几何时耶！”又为榜戒其僚属，请揭文华殿。帝曰：“告诫僚属之言，欲张殿廷，岂人臣礼？”济惭谢。
 </p><p>寻令郎中仇衍脱囚死，为狱官所发。济与侍郎王希哲、主事王叔徵执狱官，毙之。其年十二月，御史陶垕仲等发其事，且言：“济奏事时，置奏劄怀中，或隐而不言，觇伺上意，务为两端，奸狡莫测。役甥女为婢。妹早寡，逐其姑而略其家财。”帝怒，下济狱，并希哲、衍等皆弃市。
 </p><p>赞曰：六部之制仿于《周官》，所以佐王理邦国，熙庶绩，任至重也。明兴，建官分职，立法秩然。又三途用人，求贤弥广。若陈修、滕毅之典铨法，杨思义、范敏之治赋役，周祯之定律令，单安仁之领将作，以至沈溍、开济辈之所经画，皆委曲详备，细大不遗。考其规模，固一代政治之权舆者欤。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十五章-卷二十五-原文.html'>第二十五章-卷二十五</a></p><p class='next'>下一节：<a href='第二十七章-卷二十七-原文.html'>第二十七章-卷二十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十五章-卷二十五-原文.html'>第二十五章-卷二十五</a></p><p class='next'>下一节：<a href='第二十七章-卷二十七-原文.html'>第二十七章-卷二十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

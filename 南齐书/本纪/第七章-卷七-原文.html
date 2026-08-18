@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>南齐书-本纪<a href='../南齐书.html#本纪'>：目录</a></p>
@@ -175,5 +202,18 @@
 </p><p>宣德太后令曰：“皇室受终，祖宗齐圣，太祖高皇帝肇基骏命，膺录受图，世祖武皇帝系明下武，高宗明皇帝重隆景业，咸降年不永，宫车早晏。皇祚之重，允属储元；而禀质凶愚，发于稚齿。爰自保姆，迄至成童，忍戾昏顽，触途必著。高宗留心正嫡，立嫡惟长，辅以群才，间以贤戚，内外维持，冀免多难，未及期稔，便逞屠戮。密戚近亲，元勋良辅，覆族歼门，旬月相系。凡所任仗，尽慝穷奸，皆营伍屠贩，容状险丑，身秉朝权，手断国命，诛戮无辜，纳其财产，睚眦之间，屠覆比屋。身居元首，好是贱事，危冠短服，坐卧以之。晨出夜反，无复已极，驱斥氓庶，巷无居人。老细奔遑，置身无所。东迈西屏，北出南驱，负疾舆尸，填街塞陌。兴筑缮造，日夜不穷，晨构夕毁，朝穿暮塞。络以随珠，方斯巳陋；饰以璧榼，曾何足道！时暑赫曦，流金铄石，移竹艺果，匪日伊夜，根未及植，叶已先枯，畚锸纷纭，勤倦无已。散费国储，专事浮饰，逼夺民财，自近及远，兆庶恇患，流窜道路。府帑既竭，肆夺市道，工商裨贩，行号道泣。屈此万乘，躬事角抵，昂首翘肩，逞能橦木，观者如堵，曾无怍容！芳乐、华林，并立阛阓，踞肆鼓刀，手铨轻重。干戈鼓噪，昏晓靡息，无戎而城，岂足云譬！至于居丧淫宴之愆，三年载弄之丑，反道违常之衅，牝鸡晨鸣之慝，于事已细，故可得而略也。罄楚、越之竹，未足以言，校辛、癸之君，岂或能匹！征东将军忠武奋发，投袂万里，光奉明圣，翊成中兴。乘胜席卷，扫清京邑，而群小靡识，婴城自固，缓戮稽诛，倏弥旬月。宜速剿定，宁我邦家！可潜遣间介，密宣此旨，忠勇齐奋，遄加荡扑，放斥昏凶，卫送外第。未亡人不幸，骤此百罹，感念存没，心焉如割。奈何！奈何！”又令依汉海昏侯故事，追封东昏侯。茹法珍、梅虫儿、王咺之等伏诛。丰勇之原死。
 </p><p>史臣曰：汉宣帝时，南郡获白虎，获之者张武，言武张而猛服也。东昏侯亡德横流，道归拯乱，躬当翦戮，实启太平。推阉竖之名字，亦天意也。
 </p><p>赞曰：东昏慢道，匹癸方辛。乃隳典则，乃弃彝伦，玩习兵火，终用焚身。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p><p class='next'>下一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p><p class='next'>下一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

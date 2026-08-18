@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>南齐书-本纪<a href='../南齐书.html#南齐书'>：目录</a></p>
@@ -198,5 +225,18 @@
 </p><p>当年金德沦落之后，把帝位传给我有宋，运数宣告终结，确在此曰，也因为水德而把帝位传给齐。遵照前代典制，广泛征询众人意见，王公卿士，都说适宜。现在派使持节、兼太保、侍中、中书监、司空、卫将军、雩都县侯褚渊，兼太尉、守尚书令王僧虔奉上皇帝玺印，接受帝位的典礼，一概依照唐尧、虞舜的旧典。齐王应回应入神之愿，即时登临帝位，爱抚安定天下，以酬谢皇天的美意。
 </p><p>太祖再三辞让，宋帝及王公以下官员坚决请求。兼太史令、将作匠陈文建陈奏上天所赐符瑞说：“六，是亢位。后汉从建武到建安二十五年，经过一百九十六年后禅让给魏；魏从黄初到咸熙二年，经过四十六年后禅让给晋；晋从太始到元熙二年，经过一百五十六年后掸让给宋；宋从永初元年到升明三年，共六十年：都是在六数终结传受。六，是亢位。查考古往今来，就是如此清楚。斗胆根据自己的职责，详细陈述一孔之见。伏地祈求顺应天时，应验符瑞。”二朝百官又坚决请求。尚书右仆射王俭上奏：“宋既已韶令退位，臣等相互商量，应当限定日期备车驾接受禅让，制定仪式制度。”太祖才答应。
 </p><p>史臣曰：据《太一九宫占》推算，汉高帝五年，太一在四宫，主人和客都能得到吉祥，推算是先起事的人获胜，这年汉高祖击败楚。晋元兴二年，太一在七宫，太一是帝，天目是辅佐，威胁太一，这年安帝被桓玄逼迫出宫。大将在一宫，参相在三宫，阻碍太一。经解释格的意思是，已经确立的政事，上下加以阻碍，不利于有所作为，安居的年代，不利于有所举动。元兴三年，太一在七宫，宋武帝击败桓玄。元嘉元年。太一在六宫，不利于有所作为，徐、傅废黜营阳王。七年，太一在八宫，受困年岁不吉，大小将都不能成事，这年到彦之北伐，初胜后败，客主都不利．十八年，太一在二宫，客主都不利，这年氐族杨难当进犯梁州、益州，来年仇池被攻破。十九年，大小将都受困不能成事，不吉利，这年裴方明讨伐仇池，攻克百顷，第二年又失掉。台盘元年，太一在二宫，被大小将突袭，这年景和帝被废黜。二年，太一在三宫，不利于首先起事，主人胜，这年晋安王子勋反叛。元徽二年，太一在六宫，首先起事者败，这年桂阳王休范反叛，都被处死。四年，太一在七宫，首先起事的是客，向西北逃走，这年建平王景素失败。升明元年，太一在七宫，不利于作客的，安居的年代，生事的是主人，响应发动的是客人，袁粲、沈攸之等反叛，被处死。这年太一在杜门，临近八宫，宋帝惮让帝位，不利于作客的，安居的年代，生事是主人，这是朝代更替的应验．</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-白话.html'>第二章-卷二</a></p></div></body>
+<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-白话.html'>第二章-卷二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>元史-志<a href='../元史.html#志'>：目录</a></p>
@@ -449,5 +476,18 @@
 </p><p>乡宁。（下。）
 </p><p>岭北等处行中书省统和宁路总管府
 </p><p>和宁路，（上。）始名和林，以西有哈剌和林河，因以名城。太祖十五年，定河北诸郡，建都于此。初立元昌路，后改转运和林使司，前后五朝都焉。（太宗乙未年，城和林，作万安宫。丁酉，治迦坚茶寒殿，在和林北七十余里。戊戌，营图苏胡迎驾殿，去和林城三十余里。）世祖中统元年，迁都大兴，和林置宣慰司都元帅府。后分都元帅府于金山之南，和林止设宣慰司。至元二十六年，诸王叛兵侵轶和林，宣慰使怯伯等乘隙叛去。二十七年，立和林等处都元帅府。大德十一年，立和林等处行中书省，以淇阳王月赤察儿为右丞相，太傅答剌罕为左丞相，罢和林宣慰司都元帅府，置和林总管府。至大二年，改行中书省为行尚书省。四年，罢尚书省，复为行中书省。皇庆元年，改岭北等处行中书省，改和林路总管府为和宁路总管府。（至元二十年，令西京宣慰司送牛一千，赴和林屯田。二十二年，并和林屯田入五条河。三十年，命戍和林汉军四百，留百人，余令耕屯杭海。元贞元年，于六卫汉军内拨一千人赴青海屯田。北方立站帖里干、木怜、纳怜等一百一十九处。）</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p><p class='next'>下一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p><p class='next'>下一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

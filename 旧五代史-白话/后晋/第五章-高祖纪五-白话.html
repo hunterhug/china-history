@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后晋<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -166,5 +193,18 @@
 </p><p>夏四月一日，湖南上奏，溪州刺史彭士愁、五溪酋长等请求投降，并在溪州建立了铜柱，上面铸刻了誓词，把玉溪铜柱图上呈给高祖。七日，下令显义军指挥使刘康把他手下的五百士兵放回淮海，这些士兵就是在安州俘获的。十二日，宰臣监修国史赵莹上奏“：奉旨派遣张昭远等五人共同修编《唐史》，内起居郎贾纬碰上丧事离官，请任命刑部侍郎吕琦、侍御史尹拙一起参与编修。”又上奏“：史馆所缺少的唐朝实录，请求下令采购索求。”高祖一并应允了。十六日，齐、鲁一带百姓碰上饥荒，诏令兖、郓、青三州打开粮仓赈济灾民。
 </p><p>五月一日，已故皇子石杲册封追赠为太尉，进爵封为陈王。十一日，泾州上奏，下了冰雹，川谷河流暴涨溢出堤外，冲坏泾州郡镇二十四座城池。十五日，北京派牙将刘从带领吐谷浑大头领白承福、念庞里、赫连功德来京朝拜。邢州上奏：吐谷浑把他的部族迁徙到镇州领地。
 </p><p>六月八日，诏令：“今后藩、郡主管，凡有善政，委派副职条列上奏，百姓官吏等不准远赴京城。”十三日，右领卫上将军李顷去世，追赠为太师。十五日，迦叶弥陀国僧人口室哩带着佛牙渡海来到朝廷。十七日，高丽国王建增授开府仪同三司、检校太师，赏赐领地一万户。二十九日，镇州节度使安重荣抓获契丹使臣拽刺，并派遣轻捷骑兵抢劫幽州南部的老百姓，驻扎在博野，又上表并传书布告天下，陈述契丹援引天子统治天下的礼仪，贪婪傲慢没有满足，困扰亏耗中原，已修缮了甲胄兵器，将与中原展开决战。高祖发出诏谕去阻止安重荣，安重荣专横跋扈更加厉害，因此，与襄州节度使安从进暗地里相互勾结图谋不轨。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章-高祖纪四-白话.html'>第四章-高祖纪四</a></p><p class='next'>下一节：<a href='第六章-高祖纪六-白话.html'>第六章-高祖纪六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四章-高祖纪四-白话.html'>第四章-高祖纪四</a></p><p class='next'>下一节：<a href='第六章-高祖纪六-白话.html'>第六章-高祖纪六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

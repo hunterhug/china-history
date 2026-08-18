@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -221,5 +248,18 @@
 </p><p>古者帝王，乃生奇类、淳维，伯禹之苗裔，岂异类哉？反首衣皮，餐膻饮氵重，而震惊中域，其来自远。天未悔祸，种落弥繁。其风俗险诐，性灵驰突，前史载之，亦以详备。轩帝患其干纪，所以徂征；武王窜以荒服，同乎禽兽。而于露寒之野，候月觇风，睹隙扬埃，乘间骋暴，边城不得缓带，百姓靡有室家。孔子曰：“微管仲，吾其被发左衽矣。”此言能教训卒伍，整齐车甲，边埸既伏，境内以安。然则燕筑造阳之郊，秦堑临洮之险，登天山，绝地脉，苞玄菟，款黄河，所以防夷狄之乱中华，其备豫如此。
 </p><p>汉宣帝初纳呼韩，居之亭鄣，委以候望，始宽戎狄。光武亦以南庭数万徙入西河，后亦转至五原，连延七郡。董卓之乱，则汾晋之郊萧然矣。郭钦腾笺于武帝，江统献策于惠皇，皆以为魏处戎夷，绣居都鄙，请移沙塞之表，定一殷周之服。统则忧诸并部，钦则虑在盟津。言犹自口，元海已至。语曰“失以豪厘”，晋卿大夫之辱也。聪之誓兵，东兼齐地；曜之驰旆，西逾陇山，覆没两京，蒸徒百万。天子陵江御物，分据地险，回首中原，力不能救，划长淮以北，大抵弃之。胡人利我艰虞，分镳起乱；晋臣或阻兵遐远，接武效尤。
 </p><p>大凡刘元海以惠帝永兴元年据离石称汉。后九年，石勒据襄国称赵。张氏先据河西，是岁，自石勒后三十六年也，重华自称凉王。后一年，冉闵据鄴称魏。后一年，苻健据长安称秦。慕容氏先据辽东称燕，是岁，自苻健后一年也，俊始僭号。后三十一年，后燕慕容垂据鄴。后二年，西燕慕容冲据阿房。是岁也，乞伏国仁据桴罕称秦。后一年，慕容永据上党。是岁也，吕光据姑臧称凉。后十二年，慕容德据滑台称南燕。是岁也，秃发乌孤据廉川称南凉，段业据张掖称北凉。后三年，李玄盛据敦煌称西凉。后一年，沮渠蒙逊杀段业，自称凉。后四年，谯纵据蜀称成都王。后二年，赫连勃勃据朔方称大夏。后二年，冯跋杀离班，据和龙称北燕。提封天下，十丧其八，莫不龙旌帝服，建社开祊，华夷咸暨，人物斯在。或篡通都之乡，或拥数州之地，雄图内卷，师旅外并，穷兵凶于胜负，尽人命于锋镝，其为战国者一百三十六载，抑元海为之祸首云。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十九章--原文.html'>第六十九章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十九章--原文.html'>第六十九章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

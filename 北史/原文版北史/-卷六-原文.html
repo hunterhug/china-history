@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>北史-原文版北史<a href='../北史.html#原文版北史'>：目录</a></p>
@@ -193,5 +220,18 @@
 </p><p>七年四月甲辰，魏帝进文襄位相国，封齐王，绿綟绶。赞拜不名，入朝不趋，剑履上殿。食冀州之勃海、长乐、安德、武邑、瀛州之河间五郡，邑十五万户，使持节、都督中外诸军事、录尚书、大行台并如故。丁未，文襄入朝。固让，魏帝不许。五月戊寅，文襄帅师自鄴赴颍川。六月丙申克颍川，禽西魏大将军王思政，以忠于所事，释而待之。七月，文襄朝于鄴，请魏帝立皇太子，复辞爵位殊礼，未报。八月辛卯，遇盗而崩。初，梁将兰钦子京见虏，文襄以配厨。钦求赎之，不许。京再诉，文襄使监厨苍头薛丰洛杖之，曰：“更诉，当杀汝。”京与其党六人谋作乱。时文襄将受魏禅，与陈元康、崔季舒屏左右谋于北城东柏堂。太史启言宰辅星甚微，变不一月。时京将进食，文襄却之，谓人曰：“昨夜梦此奴斫我。”又曰：“急杀却。”京闻之，置刀于盘下，冒言进食。文襄见之，怒曰：“我未索食，何遽来？”京挥刀曰：“将杀汝！”文襄自投，伤足，入床下。贼党至，去床，因见弑，时年二十九。秘不发丧。明年正月辛酉，魏帝举哀于太极东堂。诏赠物八万段，凶事依汉大将军霍光、东平王苍故事。赠假黄钺、使持节、相国、都督中外诸军事、齐王玺绂，巉辌车、黄屋左纛、后部羽葆鼓吹、轻车介士，备九锡礼，谥曰文襄王。二月甲申，葬于义平陵之北。天保初，追尊曰文襄皇帝，庙号世宗，陵曰峻成。
 </p><p>文襄美姿容，善言笑，谈谑之际，从容弘雅。性聪警，多筹策，当朝作相，听断如流。爱士好贤，待之以礼，有神武之风焉。然少壮气猛，严峻刑法。高慎西叛，侯景南翻，非直本怀狼戾，兼亦有惧威略。情欲奢淫，动乖制度。尝于宫西造宅，墙院高广，听事宏壮，亚太极殿。神武入朝，责之，乃止。
 </p><p>论曰：昔魏氏失驭，中原荡析。齐神武爰从晋部，大号冀方。屡战而翦凶徒，一麾以清京洛。尊主匡国，功济天下。既而魏武帝规避权逼，历数既尽，适所以速关、河之分焉。文襄嗣膺霸道，威略昭著。内除奸逆，外拓淮夷，摈斥贪残，存情人物。而志在峻法，急于御下，于前王之德，有所未同。盖天意人心，好生恶杀，虽吉凶报应，未皆影响。总而论之，积善多庆。然文襄之祸生所忽，盖有由焉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='-卷五-原文.html'>-卷五</a></p><p class='next'>下一节：<a href='-卷七-原文.html'>-卷七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='-卷五-原文.html'>-卷五</a></p><p class='next'>下一节：<a href='-卷七-原文.html'>-卷七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

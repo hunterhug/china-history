@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -183,5 +210,18 @@
 <p>　　开元中，神庆子琳等皆至大官，群从数十人，趋奏省闼。每岁时家宴，组珮辉 映，以一榻置笏，重叠于其上。开元、天宝间，中外族属无缌麻之丧，其福履昌盛 如此。东都私第门，琳与弟太子詹事珪、光禄卿瑶，俱列棨戟，时号“三戟崔家”。 琳位终太子少保。 </p>
 <p>　　史臣曰：周、隋已来，韦氏世有令人，郁为冠族，而安石嗣立，竟大其门。挺 恃才傲物，固亏长者之风，宾王报之以不仁，难与议乎君子矣！议者以尧、舜有溢 美，桀、纣有溢恶，盖以一为凶德，则群恶所归。杨素父子，倾覆隋祚，丑声流闻， 虽弘礼、弘武之正士，而元亨兄弟，竟以凶族窜逐。古人守死善道，不无为也。德 威奏议，练刑名之要，俾长秋卿，美哉！审礼仁孝，治行可为世范，卒与祸会，悲 夫！二阎曲学甚工，措思精巧，艺成而下，垂诫宜然。柳氏世称謇谔，奭、泽有正 人风彩，忠规献纳，抑有人焉。义玄附丽武后，神庆宽纵秽臣，弈世纤邪，以至倾 败，宜哉！ </p>
 <p>　　赞曰：韦子骄矜，终损功名。杨家积恶，宗门摈落。阎以艺辱，刘以孝愆。二 崔能吏，行无取焉。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十六章-卷二十六-原文.html'>第二十六章-卷二十六</a></p><p class='next'>下一节：<a href='第二十八章-卷二十八-原文.html'>第二十八章-卷二十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十六章-卷二十六-原文.html'>第二十六章-卷二十六</a></p><p class='next'>下一节：<a href='第二十八章-卷二十八-原文.html'>第二十八章-卷二十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

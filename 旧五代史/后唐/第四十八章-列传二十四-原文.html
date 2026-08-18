@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后唐<a href='../旧五代史.html#后唐'>：目录</a></p>
@@ -160,5 +187,18 @@
 </p><p>马绍宏，阉官也。初与孟知祥同为中门使，及周德威薨，庄宗兼领幽州，令绍宏权知州事。即位之初，郭崇韬勋望高，旧在绍宏之下，时征潞州监军张居翰与崇韬并为枢密使，绍宏失望，乃以为宣徽使。绍宏以己合当枢密任，常郁郁侧目于崇韬。崇韬知其慊也，乃置内勾之目，令天下钱谷薄书，悉委裁遣。既而州郡供报，辄滋烦费，议者以为十羊九牧，深所不可，内勾之目，人以为是妖言。案：下有阙文。据《通鉴》，李嗣源为谣言所属，危殆者数四，赖宣徽使李绍宏左右营护，以是得全。天成元年二月己丑朔，以宣徽南院使李绍宏为枢密使。
 </p><p>孟汉琼，本镇州王镕之小竖也。明宗镇常山，得侍左右。明宗即位，自诸司使累迁宣徽南院使。汉琼性通黠，善交构。初见秦王权重，及挟王淑妃势，倾心事之；及硃、冯用事，又与之缔结。秦王领兵至天津桥，时汉琼与硃、冯及康义诚方会议于内庭，谋犹未决，汉琼独出死力，先入殿门，奏于明宗，语在《秦王传》。汉琼即自介马以召禁军。秦王既诛，翼日，令汉琼驰骑召闵帝于鄴。《通鉴》：遣汉琼征从厚，且权知天雄军府事。闵帝嗣位，尤恃恩宠，期月之内，累加开府仪同三司、骠骑大将军。西军既叛，闵帝急召汉琼，欲令先入于鄴，汉琼藏匿不行。潞王行及陕州，乃悉召诸妓妾诀别，欲手刃之，众知其心，率皆藏窜。初，潞王失守于河中，勒归于清化里第。时王淑妃恆令汉琼传教旨于潞王，王善待之，故汉琼自谓潞王于己有恩。至是，乃单骑至渑池谒见潞王，因自恸哭，欲有所陈。潞王曰：“诸事不言可知。”汉琼即自预从臣之列，寻戮于路左。
 </p><p>史臣曰：承业感武皇之大惠，佐庄宗之中兴，既义且忠，何以阶也。夫如是，则晋之勃貂，秦之景监，去之远矣。居翰改一字于诏书，救千人之滥死，可不谓之仁人矣乎！如绍宏之争权，汉琼之构祸，乃宦者之常态也，又何足以道哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十七章-列传二十三-原文.html'>第四十七章-列传二十三</a></p><p class='next'>下一节：<a href='第四十九章-列传二十五-原文.html'>第四十九章-列传二十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十七章-列传二十三-原文.html'>第四十七章-列传二十三</a></p><p class='next'>下一节：<a href='第四十九章-列传二十五-原文.html'>第四十九章-列传二十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

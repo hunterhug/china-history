@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -194,5 +221,18 @@
 </p><p>初，导渡淮，使郭璞筮之，卦成，璞曰：“吉，无不利。淮水绝，王氏灭。”其后子孙繁衍，竟如璞言。
 </p><p>史臣曰：飞龙御天，故资云雨之势；帝王兴运，必俟股肱之力。轩辕，圣人也，杖师臣而授图；商汤，哲后也，托负鼎而成业。自斯已降，罔不由之。原夫典午发踪，本于陵寡，金行抚运，无德在时。九土未宅其心，四夷已承其弊。既而中原荡覆，江左嗣兴，兆著玄石之图，乖少康之祀夏；时无思晋之士，异文叔之兴刘；辅佐中宗，艰哉甚矣！茂弘策名枝屏，叶情交好，负其才智，恃彼江湖，思建克复之功，用成翌宣之道。于是王敦内侮，凭天邑而狼顾；苏峻连兵，指宸居而隼击。实赖元宰，固怀匪石之心；潜运忠谟，竟翦吞沙之寇。乃诚贯日，主垂饵以终全；贞志陵霜，国缀旒而不灭。观其开设学校，存乎沸鼎之中，爰立章程，在乎栉风之际；虽则世道多故，而规模弘远矣。比夫萧曹弼汉，六合为家；奭望匡周，万方同轨，功未半古，不足为俦。至若夷吾体仁，能相小国；孔明践义，善翊新邦，抚事论情，抑斯之类也。提挈三世，终始一心，称为“仲父”，盖其宜矣。恬珣踵德，副吕虔之赠刀；谧乃聩声，惭刘毅之征玺。语曰：“深山大泽，有龙有蛇。”实斯之谓也。
 </p><p>赞曰：虎啸猋驰，龙升云映。武冈矫矫，匡时辑政。懿绩克宣，忠规靡竞。契叶三主，荣逾九命。贻刀表祥，巫水流庆。赫矣门族，重光斯盛。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十四章--原文.html'>第三十四章-</a></p><p class='next'>下一节：<a href='第三十六章--原文.html'>第三十六章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十四章--原文.html'>第三十四章-</a></p><p class='next'>下一节：<a href='第三十六章--原文.html'>第三十六章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

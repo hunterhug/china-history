@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#辽史'>：目录</a></p>
@@ -161,5 +188,18 @@
 </p><p>太平三年(1023)，封秦国王。圣宗崩逝，钦哀皇后称制摄政，密谋立重元为帝。重元将皇后之谋划告知于兴宗，兴宗更加看重他，封为皇太弟。历任北院枢密使、南京留守、知元帅府事。重元身居军职，从不离开皇上身边。此前，契丹人犯法，按例必须由汉人按察审判，受冤枉的人很多。重元奏请在五京分别设置契丹警巡使，皇上下诏从之，赐以金券誓书。道宗即位，册立为皇太叔，上朝免拜，赞拜时不直呼姓名，任天下兵马大元帅，又赐给金券、四顶帽、二色袍，所受尊重宠幸为前所未有。
 </p><p>清宁九年(1063)，皇上出猎于滦水，由其子涅鲁古预先策划，与同党陈国王陈六、知北院枢密事萧胡睹等共计四百余人，引诱胁迫弩手军列阵于皇上行宫之外。准备交战时，其党人大多悔过而愿效顺于皇上，各自奔逃溃散。重元既已知道计划落空，便北逃于大漠，叹道：“是涅鲁古让我落到今天这一步！”便自杀了。
 </p><p>先前重元准备举兵叛乱时，帐前落雨红得如鲜血一般，有见识的人说这是败亡之征兆。子涅鲁古。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十一章-卷四十一-白话.html'>第四十一章-卷四十一</a></p><p class='next'>下一节：<a href='第四十三章-卷四十三-白话.html'>第四十三章-卷四十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十一章-卷四十一-白话.html'>第四十一章-卷四十一</a></p><p class='next'>下一节：<a href='第四十三章-卷四十三-白话.html'>第四十三章-卷四十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

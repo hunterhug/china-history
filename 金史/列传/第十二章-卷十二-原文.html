@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -208,5 +235,18 @@
 </p><p>文既失职，居常怏怏，日与家奴石抹合住、忽里者为怨言。合住揣知其意，因言南京路猛安阿古、合住、谋克颇里，银术可与大王厚善，果欲举大事，彼皆愿从。文信其言。乃召日者康洪占休咎，密以谋告洪。洪言来岁甚吉。文厚谢洪，使家僮刚哥等往南京以书币遗阿古等。刚哥问合住何以知阿古等必从。合住曰：“阿古等与大王善，以此意其必从耳。”刚哥到南京，见阿古等，不言其本来之事。及还，绐文曰：“阿古从大王矣。”文乃造兵仗，使家奴斡敌画阵图。家奴重喜诣河北东路上变，府遣总管判官孛特驰往德州捕文。孛特至德州，日已晚。会文出猎，召防御判官酬越谋就猎所执之。酬越言：“文兵卫甚众，且暮夜，明日文生日，可就会上执之。”孛特乃止。是夜，文知本府使至，意其事觉，乃与合住、忽里者等俱亡去。河间府使奏文事，诏遣右司郎中纥石烈哲典、斡林修撰阿不罕讹里也往德州鞫问。
 </p><p>上闻文亡命，谓宰臣曰：“海陵翦灭宗室殆尽，朕念太祖孙存者无几人，曲为宽假，而文曾不知幸，尚怀异图，何狂悖如此。”上恐文久不获，诖误者多，督所在捕之。诏募获文者迁官五阶，赐钱三千贯。文以大定十二年九月事觉，亡命凡四月，至十二月被获，伏诛。康洪论死，余皆坐如律。诏释其妻术实懒。孛特、酬越不即捕，致文亡去，孛特杖二百，除名，酬越杖一百，削两阶。诏曰：“德州防御使文、北京曹贵、鄜州李方皆因术士妄谈禄命，陷于大戮。凡术士多务苟得，肆为异说。自今宗室、宗女有属籍者及官职三品者，除占问嫁娶、修造、葬事，不得推算相命，违者徒二年，重者从重。”上以文家财产赐其故兄特进齐之子咬住，并以西京留守京没入家产赐之。
 </p><p>赞曰：宗望启行平州，战胜白河，席卷而南，风行电举，兵无留难，再阅月而汴京围矣。所谓敌不能与校者耶。既取信德，留兵守之，以为后距，此岂轻者耶。《管子》曰：“径于绝地，攻于恃固，独出独入，而莫之能止。”其宗望之谓乎。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十一章-卷十一-原文.html'>第十一章-卷十一</a></p><p class='next'>下一节：<a href='第十三章-卷十三-原文.html'>第十三章-卷十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十一章-卷十一-原文.html'>第十一章-卷十一</a></p><p class='next'>下一节：<a href='第十三章-卷十三-原文.html'>第十三章-卷十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

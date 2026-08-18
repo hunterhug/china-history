@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -187,5 +214,18 @@
 </p><p>在南京做官的山东籍人士，联合上疏攻击刘宇烈，请求增派部队。于是调集三千昌平兵，让总兵陈洪范统帅。陈洪范也是辽阳人，熊明遇每天踮起脚跟盼望，说：“去吧，他们是可以招抚的。”天津旧将孙应龙，大声对众人说：“仲明兄弟跟我很有交情，我能叫他把孔有德、李九成捆绑过来。”巡抚郑宗周给了他二千兵，从海上前往。耿仲明听说这事，用匣子装了别人的头写信哄他说：“这是孔有德的头。”孙应龙率领水军抵达水城，匪徒把他迎入城内，突然把他捆绑起来，杀了他，没有一个人能够逃脱。贼人得到巨舰，势力更加嚣张。岛帅黄帅进攻不利就返回了。敌人于是攻占了招远，包围莱阳。莱阳知县梁衡坚守，敌人失败离开了。
 </p><p>刘宇烈重新回到昌邑，陈洪范、牟文绶等人也到了。莱州推官屈宜阳请求进入敌营讲和，匪徒假装对他很礼貌，屈宜阳派人回来说贼人已俯首听命。刘宇烈得到上面的同意后，于是写信告示贼人解围。贼人邀请刘宇烈，刘宇烈害怕不敢前往。营将严正中抬他到河边，贼人把他接走了，而让屈宜阳回到莱州城，只要莱州城内的文武官员出城门宣读告示，包围就可以解除。杨御蕃不同意。谢琏说：“包围已快六个月了，既然已经没有办法对付他们，还不如权且听他们的。”于是偕同监督军队的宦官徐得时、翟升，知府朱万年出城。孔有德等伏在地上叩头，泪流满面。谢琏劝慰了很久才回去，第二天又叫屈宜阳进城，请谢琏、杨御蕃一起出城。杨御蕃说：“我是将门的后代，只知道杀敌人，不知道招抚的事情。”谢琏等人于是出城。孔有德抓住他们，突然发动攻击，还叫朱万年呼喊城内的士兵投降。朱万年高喊道：“我就要死了，你们一定要固守。”对敌人骂不绝口然后死去。敌人把谢琏和二名宦官送到登州囚禁，严正中、屈宜阳都死了。
 </p><p>当初，招抚的意见兴盛，只有徐从治不同意。刘宇烈等各位将领相信了，而以尚书熊明遇为首。徐从治战死，谢琏也因而被俘。于是整个朝廷都愤怒了，逮捕刘宇烈下狱，调集关外的精锐部队围剿，废除总督和登莱巡抚的官职，专门任命徐从治的代理人朱大典带兵作战。熊明遇被判处主张招抚误国罪，罢官回家，于是杜绝了招抚的议论。八月，朱大典联合各路兵救援莱州。刚一交战，敌人就被打得大败，包围解除了。孔有德逃往登州，李九成杀死谢琏和二个宦官。朱大典包围登州，李九成战死，攻破登州城，追击剿灭敌人。孔有德、耿仲明从海上逃走了。活捉毛承禄等人，杀死李应元，贼人全部平定。详情见《朱大典传》。下诏追赠徐从治为兵部尚书，赐予祭奠下葬，封荫锦衣百户，建“忠烈祠”。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百三十五章-卷一百三十五-白话.html'>第一百三十五章-卷一百三十五</a></p><p class='next'>下一节：<a href='第一百三十七章-卷一百三十七-白话.html'>第一百三十七章-卷一百三十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百三十五章-卷一百三十五-白话.html'>第一百三十五章-卷一百三十五</a></p><p class='next'>下一节：<a href='第一百三十七章-卷一百三十七-白话.html'>第一百三十七章-卷一百三十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

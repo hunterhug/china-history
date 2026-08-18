@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -182,5 +209,18 @@
 </p><p>谢成，濠人。从克滁、和。渡江，定集庆，授总管。克宁国、婺州，进管军千户。战鄱阳，平武昌，下苏、湖，进指挥佥事。从大军征中原，克元都，攻庆阳，捣定西。为都督佥事、晋王府相。从沐英征朵甘，降乞失迦，平洮州十八族。洪武十二年封永平侯，禄二千石，世指挥使。二十年同张温追讨纳哈出余众，召还。二十七年坐事死，没其田宅。
 </p><p>李新，濠州人。从渡江，数立功。战龙湾，授管军副千户。取江陵，进龙骧卫正千户。克平江，迁神武卫指挥佥事，调守茶陵卫，屡迁至中军都督府佥事。十五年，以营孝陵，封崇山侯，岁禄千五百石。二十二年命改建帝王庙于鸡鸣山。新有心计，将作官吏视成画而已。明年遣还乡，颁赐金帛田宅。时诸勋贵稍僣肆，帝颇嫉之，以党事缘坐者众。新首建言：公、侯家人及仪从户各有常数，余者宜归有司。帝是之，悉发凤阳隶籍为民，命礼部纂《稽制录》，严公侯奢侈逾越之禁。于是武定侯英还佃户输税，信国公和还仪从户，曹国公景隆还庄田，皆自新发之。二十六年，督有司开胭脂河于溧水，西达大江，东通两浙，以济漕运。河成，民甚便之。二十八年以事诛。
 </p><p>赞曰：治天下不可以无法，而草昧之时法尚疏，承平之日法渐密，固事势使然。论者每致慨于鸟尽弓藏，谓出于英主之猜谋，殊非通达治体之言也。夫当天下大定，势如磐石之安，指麾万里，奔走恐后，复何所疑忌而芟薙之不遗余力哉？亦以介胄之士桀骜难驯，乘其锋锐，皆能竖尺寸于疆场。迨身处富贵，志满气溢，近之则以骄恣启危机，远之则以怨望扞文网。人主不能废法而曲全之，亦出于不得已，而非以剪除为私计也。亮祖以下诸人，既昧明哲保身之几，又违制节谨度之道，骈首就僇，亦其自取焉尔。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p><p class='next'>下一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p><p class='next'>下一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

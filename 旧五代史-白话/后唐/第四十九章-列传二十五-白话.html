@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后唐<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -159,5 +186,18 @@
 </p><p>孔谦，庄宗同光初年，任租庸副使。孔谦原是州中能干的小吏，远从天..十二年(915)，皇帝平定魏博，会计都委托给他管理。孔谦能曲意服侍权贵要人，为他们效劳。皇帝把钱财事务交给他，他设法收敛搜刮，七八年间，军储充足。皇帝在邺城即位，孔谦已应当任租庸使，舆论认为孔谦虽然有经营供应钱财的功劳，但他地位还卑微，不应突然让他担当重任。枢密使郭崇韬推举魏博观察判官张宪为租庸使，任孔谦为副使，孔谦郁郁不乐有很长一段时间。
 </p><p>皇帝平定汴梁后，孔谦直接从魏州赶到天子所在地，对郭崇韬说：“魏都是重要的地方，必须要有大臣弹压，按我的想法，非张宪不可。”郭崇韬觉得是忠告，便上奏任张宪为邺都副留守，命宰臣豆卢革专判租庸。孔谦更加失望。于是寻找豆卢革的过失。这时豆卢革以手书趁便借了几十万库钱，孔谦拿手书给郭崇韬看，并稍微暗示豆卢革。豆卢革害怕了，上表章请郭崇韬专管此事，郭崇韬也辞让回避。皇帝问“：应当委任哪个人才可以呢？”郭崇韬说“：孔谦虽然很长时间掌管钱货，然而大家的议论认为他不能担当这个大任，以我的意见，应委任张宪更好。”皇帝催促快点征召他。张宪生性精细明辨，受到趋炎附势的人的妒忌，人们不愿接受他。孔谦乘机对豆卢革说：“租庸钱谷，都在眼前，委任一个小吏就可办理。邺都是根本之地，不可轻易交付一个人。兴唐尹王正言没有有用之才，徒然有操行，诏书既然征召张宪，又用什么人代替他留守邺都？”豆卢革对郭崇韬说到此事，郭崇韬说：“邺都各部门的众官员，都是主上的旧人，委任王正言有什么担心办不好？”豆卢革说“：都是失策，假设不得已，就任王正言掌管租庸，和大臣一起谋划，或许可以办好，若任命他掌管一个方面，一定会坏了事。”孔谦觉得王正言既无德也无功勋，懦弱而容易控制，说：“这种安排比较合适。”然而也不是他的心愿。接着他又寻找王正言的过失，哭着告诉郭崇韬，用厚礼贿赂宦官、伶人，以求任租庸正使，人们知道他奸诈谄媚，阻止他，于是孔谦上表章请求退职。皇帝对他逃避的行为很愤怒，将要依法惩处，伶人景进在皇帝跟前劝解后才作罢。王正言得了风病，恍恍惚惚的，不能治理三司的事务。景进多次对皇帝说这事，于是任王正言守礼部尚书，任孔谦为租庸使。
 </p><p>孔谦因为国家财务支出不足，上奏说“：各道的判官人数过多，请只设置节度、观察、判官、书记、支使、推官各一人，留守设置判官各一人，三京府设判官、推官，其余的一并罢免俸钱。”又上奏说：“百官的俸钱虽然多，折合支出不合实数，请减半数，都支付实钱。”一并同意了他的办法。没多久，半年俸钱又从虚数折合。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十八章-列传二十四-白话.html'>第四十八章-列传二十四</a></p><p class='next'>下一节：<a href='第五十章-列传二十六-白话.html'>第五十章-列传二十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十八章-列传二十四-白话.html'>第四十八章-列传二十四</a></p><p class='next'>下一节：<a href='第五十章-列传二十六-白话.html'>第五十章-列传二十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

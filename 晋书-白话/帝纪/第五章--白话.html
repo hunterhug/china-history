@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-帝纪<a href='../晋书.html#晋书'>：目录</a></p>
@@ -179,5 +206,18 @@
 </p><p>如今晋朝的兴起，功业比历代帝王都显赫，事业比三代更成功。宣帝、景帝遭逢许多祸难的时候，诛戮庶孽来解决事端，顾不上推行公刘、太王那样的仁政。接受遣命辅佐朝政，多次遇上废置皇帝的事情，因此齐王不明政事礼法，未能重掌朝政于亳；高贵乡公年幼无知，没有恢复他皇帝的地位。二位先祖威逼禅位代立的时候，是没有闲暇等待各路诸侯来聚会推举的。遣正是他们开创基业建立国本时，不同于前代的地方。加上朝中少有品德纯正的人，乡间缺乏忠心的长者，风俗不正，丧失了耻辱感和应该崇尚的目标，学者把老庄思想当作正宗而不学《六经》，清谈的人把虚空当作目标而看不起名誉道德，处身行事的人把放任浊行当作通达而少守节操讲信义，为官者看重苟且贪得而鄙视清正，当权者把不问政务当作高明而讥笑勤勉。因此刘颂常常谈论治政的方法，傅咸往往纠偏正邪，都被称作俗吏；那些推崇虚空，依凭无为的人都名重海内。至于像周文王那样日头偏西而没工夫吃饭，像仲山甫那样从早到晚不敢懈怠的人，被众人嗤笑而当作灰尘。由此而对善与恶的批评舆赞誉变得混淆，真情和好伪在货赂与私欲的道路上失去了界限。选拔人才的人按人情选择官吏，担任官职的人为自己决定利害取舍，而执钧当轴的掌权人士，一身兼任的官职有十几个甚至几十个。大的达到尊宠的极限，小的也是个要职，至于世族贵戚的子弟，越级超拔，不论资历班秩。悠悠风尘中，都是竞逐名利的人，列位的冗官成百上千，没有让贤的举动。刘子真着《崇让论》而无人理会，刘子雅制定九班的制度而不能实行。那时的妇女，梳洗打扮纺织裁衣都靠婢女仆人，从来不知道女工丝臬方面的事，也不懂烹调酒食方面的事。不到时候就结婚，任情感而动，所以都不认为淫荡放纵是可耻，不克制妒忌一类的恶行，父兄们不责备她们的罪过，天下人没有一个说她们的不是。更何从要求她们学习古代的妇女四德，在现在培养贞节测顷的品行，来辅佐君子呢!礼法刑政在逭方面彻底被破坏，好像水积蓄而冲决了堤岸，火积蓄而烧着了柴堆。国家将要灭亡，根基必定先要颠覆，说的就是这种情况!
 </p><p>所以观察阮籍的行为，就能发觉礼教废弛的原因。察度庾纯、贾充的矛盾，就能看出师尹大臣有很多不合正道的地方；考究平定吴地的战功，就能知道将帅们很不谦让；回头看当年郭钦的谋略，就能省悟到戎狄会挑起战乱；听傅玄、刘毅的言论，就能知道百官们的好邪；核实傅咸的奏议、《钱神》中的论述，就能看到宠幸贿赂一类的行为。民风和国势到了这种地步，即使让才德中庸，能遵守成法的君主来治理，辛有也必然会从祭祀上有所发现，季札也必然会从声乐中得到启示，范燮必然会为这样的情况而请死，贾谊必然会为这样的情况而痛哭，又何况惠帝足以放荡的德行来统治百姓和天下!怀帝在乱世中继位，被强臣控制；愍帝在流亡中执政，徒有虚名；天下的政事大势已去，如果不是盖世的雄才，不可能取得天下!祖先伟大辉煌的业绩还没有完全丧失，所以上天赋予的权力和使命又加在中宗元皇帝身上。
 </p><p>赞曰：怀帝佩着玉玺，愍帝坐在黄缯车盖下。鳖使三山翻坠，鲸将各地吞并。獯鬻闯入金商门，穹庐搭在未央宫。百姓沦落，人民遭殃，大夫们披头散发，跟随被俘的皇帝迁往平阳。主上忧虑而臣子哭泣，为什么如此不幸!</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章--白话.html'>第四章-</a></p><p class='next'>下一节：<a href='第六章--白话.html'>第六章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四章--白话.html'>第四章-</a></p><p class='next'>下一节：<a href='第六章--白话.html'>第六章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

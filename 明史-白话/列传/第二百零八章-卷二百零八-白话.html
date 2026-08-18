@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -227,5 +254,18 @@
 </p><p>六年(1633)六月，李亻宗传书给总兵黄龙说“：毛文龙的部将孔有德、耿仲明率领士卒二万投顺了大清，现向朝鲜征粮。本国认为孔有德等人以往在皮岛时就已是本国的祸患，所以没答应他。”黄龙将此上报给了朝廷。
 </p><p>十年(1637)正月，清太宗文皇帝亲自率兵征讨朝鲜，责备他们违反盟约帮助明朝的罪行。朝鲜各城军民全部溃逃。朝鲜向明朝廷告急，明朝廷命令总兵陈洪范调遣各镇的水军前去援救。三月，陈洪范上奏说官军已经出海。又过了几天，山东巡抚颜继祖上奏说朝鲜国已经失守，江华已被攻破，朝鲜的世子被大清擒获，国王出降。现今大清正大造船舰，进攻皮岛和铁山，其锋甚锐。应急忙敕令沈世魁、陈洪范二位镇守大臣，要他们以坚守皮岛为第一要义。皇帝则认为颜继祖不能协助他匡扶国家救护百姓，深切地责备了他。不久，皮岛也被大清的军队所攻破，朝鲜便灭绝了，没过几年明朝也灭亡了。
 </p><p>朝鲜之于明朝，虽然是属国，但与国内没什么区别，所以朝鲜对朝廷的上贡络绎不绝，而朝廷对他们的赏赉也是不胜其书。这里只著有关朝鲜的治乱情况。至于该国的风土物产都在以前篇章中已有所述，在此不赘。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二百零七章-卷二百零七-白话.html'>第二百零七章-卷二百零七</a></p><p class='next'>下一节：<a href='第二百零九章-卷二百零九-白话.html'>第二百零九章-卷二百零九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二百零七章-卷二百零七-白话.html'>第二百零七章-卷二百零七</a></p><p class='next'>下一节：<a href='第二百零九章-卷二百零九-白话.html'>第二百零九章-卷二百零九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

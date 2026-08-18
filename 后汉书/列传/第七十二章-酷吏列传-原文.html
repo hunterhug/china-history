@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#列传'>：目录</a></p>
@@ -189,5 +216,18 @@
 </p><p>王吉者，陈留浚仪人，中常侍甫之养子也。甫在《宦者传》。吉少好诵读书传，喜名声，而性残忍。以父秉权宠，年二十余，为沛相。晓达政事，能断察疑狱，发起奸伏，多出众议。课使郡内各举奸吏豪人诸常有微过酒肉为臧者，虽数十年犹如贬弃，注其名籍。专选剽悍吏，击断非法。若有生子不养，即斩其父母，合土棘埋之。凡杀人皆磔尸车上，随其罪目。宣示属县。夏月腐烂，则以绳连其骨，周遍一郡乃止，见者骇惧。视事五年，凡杀万余人。其余惨毒刺刻，不可胜数。郡中惴恐，莫敢自保。及阳球奏甫，乃就收执，死于洛阳狱。
 </p><p>论曰：古者郭BE75，善恶易分。至于画衣冠，异服色，而莫之犯。叔世偷薄，上下相蒙，德义不足以相洽，化导不能以惩违，遂乃严刑痛杀，随而绳之，致刻深之吏，以暴理奸，倚疾邪之公直，济忍苛之虐情。汉世所谓酷能者，盖有闻也。皆以敢捍精敏，巧附文理，风行霜烈，威誉喧赫。与夫断断守道之吏，何工否之殊乎！故严君蚩黄霸之术，密人笑卓茂之政，猛既穷矣，而犹或未胜。然朱邑不以笞辱加物，袁安未尝鞫人臧罪，而猾恶自禁，人不敢犯。何者？以为威辟既用，而苟免这行兴；仁信道孚，故感被之情著。苟免者威隙则奸起，感被者人亡而思存。由一邦以言天下，则刑讼繁措，可得而求乎！
 </p><p>赞曰：大道既往，刑礼为薄。斯人斯矣，机诈萌作。去杀由仁，济宽非虐。末暴虽胜，崇本或略。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十一章-循吏列传-原文.html'>第七十一章-循吏列传</a></p><p class='next'>下一节：<a href='第七十三章-宦者列传-原文.html'>第七十三章-宦者列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七十一章-循吏列传-原文.html'>第七十一章-循吏列传</a></p><p class='next'>下一节：<a href='第七十三章-宦者列传-原文.html'>第七十三章-宦者列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

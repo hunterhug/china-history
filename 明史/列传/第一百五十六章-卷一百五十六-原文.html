@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -177,5 +204,18 @@
 </p><p>时大清兵已渡江，知福王奔，分兵袭太平。得功方收兵屯芜湖，福王潜入其营。得功惊泣曰：“陛下死守京城，臣等犹可尽力，奈何听奸人言，仓卒到此！且臣方对敌，安能扈驾？”王曰：“非卿无可仗者。”得功泣曰：“愿效死。”得功战荻港时，伤臂几堕。衣葛衣，以帛络臂，佩刀坐小舟，督麾下八总兵结束前迎敌。而刘良佐已先归命，大呼岸上招降。得功怒叱曰：“汝乃降乎！”忽飞矢至，中其喉偏左。得功知不可为，掷刀拾所拔箭刺吭死。其妻闻之，亦自经。总兵翁之琪投江死，中军田雄遂挟福王降。
 </p><p>得功粗猛不识文义。江南初立，王诏书指挥，多出群小。得功得诏纸或对使骂裂之。然忠义出天性，闻以国事相规诫者，辄屈己改不旋踵。北来太子之狱，得功抗疏争曰：“东宫未必假冒，先帝子即上子，未有了无证明，混然雷同者。臣恐在廷诸臣，谄徇者多，抗颜者少，即明白识认，亦不敢抗词取祸矣。”时太子真伪莫敢决，而得功忠愤不阿如此。得功每战，饮酒数斗，酒酣气益厉。喜持铁鞭战，鞭渍血沾手腕，以水濡之，久乃得脱，军中呼为黄闯子。始为偏裨，随大帅立功名，未尝一当大敌。及专镇封侯，不及一年余而南北转徙，主逃将溃，无所一用其力，束手就殪，与国俱亡而已。其军行纪律严，下无敢犯，所至人感其德。庐州、桐城、定远皆为立生祠。葬仪真方山母墓侧。
 </p><p>赞曰：曹文诏等秉骁猛之资，所向摧败，皆所称万人敌也。大命既倾，良将颠蹶。三人者忠勇最著，死事亦最烈，故别著于篇。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百五十五章-卷一百五十五-原文.html'>第一百五十五章-卷一百五十五</a></p><p class='next'>下一节：<a href='第一百五十七章-卷一百五十七-原文.html'>第一百五十七章-卷一百五十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百五十五章-卷一百五十五-原文.html'>第一百五十五章-卷一百五十五</a></p><p class='next'>下一节：<a href='第一百五十七章-卷一百五十七-原文.html'>第一百五十七章-卷一百五十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

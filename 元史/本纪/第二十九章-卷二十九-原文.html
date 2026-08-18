@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>元史-本纪<a href='../元史.html#本纪'>：目录</a></p>
@@ -177,5 +204,18 @@
 </p><p>冬十月戊寅朔，张珪归保定上冢，以病辞禄，不允。岑世兴及子铁木儿率众寇上林等州，命抚谕之。壬午，禁成都路酿酒。癸未，以倒剌沙为御史大夫。丁亥，享太庙。己丑，赐恩平王塔思不花部钞五千锭。壬辰，荧惑犯氐。癸巳，填星退犯井。播州凯黎苗率诸寨苗、獠为寇。乙未，皇后亦怜真八剌受佛戒于帝师。丁酉，广西獠酋何童降，请防边自效，从之。乙巳，宁远知州添插言，安南国土官押那攻掠其木末诸寨，请治之，敕安南世子谕押那归其俘。丙辰，宁夏路、曹州属县水，霸州、衢州路饥，赈粮二月。
 </p><p>十一月戊申，周王和世〈王束〉遣使以豹来献。改长宁军为州。庚戌，旭迈杰以岁饥请罢皇后上都营缮，从之。纽泽以病乞罢，不允。丙辰，郭菩萨等伏诛，杖流其党。丁巳，幸大承华普庆寺，祀昭献元圣皇后于影堂，赐僧钞千锭。岑世兴结八番蛮班光金等合兵攻石头等寨，敕调兵御之。八番宣慰司官失备坐罪。戊午，填星退犯井宿钺星。己未，诏整饬台纲。庚申，倭舶来互市。广西道宣慰使获徭酋潘宝下狱，其弟潘见遂寇柳州，命湖广行省左丞乞住捕之。壬戌，敕军民官荫袭者，由本贯图宗支，申请铨授。丙寅，倒剌沙复为中书左丞相，加开府仪同三司、录军国重事。丁卯，罢蒙山银冶提举司，命瑞州路领之。壬申，赐诸王不赛因钞二万锭、帛百匹。诸王斡耳朵罕遣使以追捕广西徭寇上闻，帝曰：“朕自即位，累诏天下悯恤黎元，惟广徭屡叛，杀掠良民，故命斡耳朵罕等讨之。今闻迎降者甚众，宜更以恩抚之。若果不悛，严兵追捕。”京师饥，赈粜米四十万石。内郡饥，赈钞十万锭、米五万石。河间诸郡流民就食通、漷二州，命有司存恤之。杭州路火，赈贫民粮一月。常德路水，民饥，赈粮万一千六百石。
 </p><p>十二月戊寅，以塔失帖木儿为中书右丞相。癸未，加塔失帖木儿开府仪同三司、上柱国、录军国重事、监修国史，封蓟国公。诸王不赛因遣使贡珠，赐钞二万锭。乙酉，帝复受佛戒于帝师。荧惑犯天江，辰星犯建星。丁亥，修鹿顶殿。镇南王脱不花薨，遣中书平章政事乃马歹摄镇其地。中书省臣言山东、陕西、湖广地接戎夷，请议选宗室往镇，从之。申禁图谶，私藏不献者罪之。癸巳，京师多盗，塔失帖木儿请处决重囚，增调逻卒，仍立捕盗赏格，从之。甲午，太白犯垒壁阵。召张珪于保定。丁酉，加纽泽知枢密院事，与马某沙并开府仪同三司。弛瑞州路酒禁。左丞乞住、诸王斡耳朵罕征徭贼，败之。元江路土官普山为寇，命戍兵捕之。壬寅，大宁路凤翔府饥，禁酿酒。右丞赵简请行区田法于内地，以宋董煟所编《救荒活民书》颁州县。济南、延川二路饥，赈钞三千五百锭。惠州、杭州等处饥，赈粜有差。是岁，陕西府雨雹，御河水溢。以故翰林学士不花、中政使普颜笃、指挥使卜颜忽里为铁失等所系死，赠功臣号及阶勋爵谥。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十八章-卷二十八-原文.html'>第二十八章-卷二十八</a></p><p class='next'>下一节：<a href='第三十章-卷三十-原文.html'>第三十章-卷三十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十八章-卷二十八-原文.html'>第二十八章-卷二十八</a></p><p class='next'>下一节：<a href='第三十章-卷三十-原文.html'>第三十章-卷三十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

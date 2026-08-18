@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-志<a href='../晋书.html#晋书'>：目录</a></p>
@@ -252,5 +279,18 @@
 </p><p>上天赐命，大运有归宿。伟大晋朝，三位先帝相互辉映。继承圣明传续后代，广泛安抚九域之内的地方。我们的皇帝继承大业，于是登上帝位。民众听命，统领天下。恭谨宣扬五典，教化遍及各方。万方同一制度，到处全都和谐。于是创制《大豫》，宣扬德政表现功业。使得教化纯正，王道协调兴隆。仁爱遍及草木，恩惠涉及昆虫。亿万四夷的人民，喜悦地景仰皇风。伟大光明的基业，一代代更加发达。
 </p><p>荀勖又创制十二支新律用的笛子，用来调试律吕，规范雅乐，在正式集会的殿上和庭院使用，自称能够使宫商谐调，但是议论的人还是称荀勖为“暗解”。当时阮咸精通八音，议论的人称他为“神解”。阮咸常常在心裹批评荀勖的新律调子高，认为调子高接近悲哀愁思，不符合中正和睦的精神。每次公会奏乐，荀勖感到阮咸认为他不合调，视之为异己，就把阮咸调出京城去担任始平相。后来有农夫在野地裹耕作，发现周代的玉尺，荀勖用来核对自己所制作的钟鼓金石丝竹等乐器，都短了一点点，由此服了阮咸的精妙，重新征召阮咸回来。荀勖根据新律创作了两个舞蹈，后来又修正乐器。赶上荀勖去世，没有完成他的事业。元康三年，下韶让他的儿子苟藩修定乐器，用到郊祭和宗庙祭祀中。不久遭逢丧乱，没有记录下来。
 </p><p>漠高祖从蜀漠出兵将要平定三秦，板中人范因率领宾地的人来跟从他，担任前锋。到平定秦地一带，封范因为阎中侯，恢复宾人的七个姓。他们的习俗是爱跳舞，高祖喜欢他们的勇猛精锐，多次观看他们的舞蹈，后来派乐入学习他们。阗中有条渝水河，根据他们所居住的地方，所以叫做《巴渝舞》。舞曲有《矛渝本歌曲》、《安弩渝本歌曲》、《安台本歌曲》、《行辞本歌曲》，共四篇。歌辞很古奥，没有人能通晓它的句读。魏朝初年，就让担任军谋祭酒的王粲改编它的歌词。王粲向巴渝的将领李管、种玉询问歌曲的意思，尝试让他们唱，自己听，根据这个考证研究歌曲，从而改编为《矛渝新福歌典》、咱渝新福歌曲》、《安台新福歌曲》、《行辞新福歌曲》，《行辞》用来叙述魏朝的德行。魏黄初三年，又把《巴渝舞》改称为《昭武舞》。到魏量翅元年，尚书上奏，考察研究了三代在礼乐方面遗留下来的乐曲，根据功业象征德行，建议创作《武始》、《咸熙》、《章斌》三个舞蹈，都要拿着羽毛和籥。到晋朝又把《昭武舞》改作《宣武舞》，《羽籥舞》改作《宣文舞》。晋咸宁元年，下韶确定祖宗的庙号，于是宗庙音乐中就停掉了《宣武》、《宣文》两个舞蹈，而在同等情况时就使用苞劻让郭夏、宋识等人所创作的《正德》、《大豫》两个舞蹈。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十一章--白话.html'>第十一章-</a></p><p class='next'>下一节：<a href='第十三章--白话.html'>第十三章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十一章--白话.html'>第十一章-</a></p><p class='next'>下一节：<a href='第十三章--白话.html'>第十三章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

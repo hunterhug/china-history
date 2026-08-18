@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>梁书-原文版梁书<a href='../梁书.html#原文版梁书'>：目录</a></p>
@@ -161,5 +188,18 @@
 </p><p>太宗聪睿过人，神彩秀发，多闻博达，富赡词藻。然文艳用寡，华而不实，体穷淫丽，义罕疏通，哀思之音，遂移风俗，以此而贞万国，异乎周诵、汉庄矣。我生不辰，载离多难，桀逆构扇，巨猾滔天，始自牖里之拘，终类望夷之祸。悠悠苍天，其可问哉！
 </p><p>昔国步初屯，兵缠魏阙，群后释位，投袂勤王。元帝以盘石之宗，受分陕之任，属君亲之难，居连率之长，不能抚剑尝胆，枕戈泣血，躬先士卒，致命前驱；遂乃拥众逡巡，内怀觖望，坐观时变，以为身幸。不急莽、卓之诛，先行昆弟之戮。又沉猜忌酷，多行无礼。骋智辩以饰非，肆忿戾以害物。爪牙重将，心膂谋臣，或顾眄以就拘囚，或一言而及菹醢。朝之君子，相顾懔然。自谓安若泰山，举无遗策，怵于邪说，即安荆楚。虽元恶克剪，社稷未宁，而西邻责言，祸败旋及。上天降鉴，此焉假手，天道人事，其可诬乎！其笃志艺文，采浮淫而弃忠信；戎昭果毅，先骨肉而后寇仇。虽口诵《六经》，心通百氏，有仲尼之学，有公旦之才，适足以益其骄矜，增其祸患，何补金陵之覆没，何救江陵之灭亡哉！
 </p><p>敬帝遭家不造，绍兹屯运，征伐有所自出，政刑不由于己，时无伊、霍之辅，焉得不为高让欤？”</p>
-<div class='pn'><p class='pre'>上一节：<a href='-卷五-原文.html'>-卷五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='-卷五-原文.html'>-卷五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

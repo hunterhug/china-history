@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -212,5 +239,18 @@
 </p><p>通政司经历李继先亦上言：“陛下追崇尊号，乃人子至情，诚不容已。群臣一时冒触天威，重得罪谴，死者遂十余人。大臣纷纷去位，小臣苟默自容。今日大同告变，曾无一人进一疏、画一策者，则小大之臣，志不奋而气不扬，亦可见矣。乞录恤已死，赦还谪戍，追复去国诸臣，而在位者委任宽假之，使各陈边计。臣愚不胜忄卷忄卷。”帝皆不省。
 </p><p>明年三月，御史王懋言：“廷臣以议礼死杖下者十有七人，其父母妻子颠沛可悯，乞赐优恤，赠官录荫。”帝大怒，谪懋四川高县典史。逾数日，而楠疏至。帝益怒，遂逮治削籍。六年春，以灾变修省，从吏部言量与楠一官，得吉水教谕。终南宁知府。
 </p><p>赞曰：“大礼”之争，群臣至撼门恸哭，亦过激且戆矣。然再受廷杖，或死或斥，废锢终身，抑何惨也。杨慎博物洽闻，于文学为优。王思、张翀诸人，或纳谏武宗之朝，或抗论世宗初政，侃侃凿凿，死节官下，非徒意气奋发立效一时已也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十九章-卷七十九-原文.html'>第七十九章-卷七十九</a></p><p class='next'>下一节：<a href='第八十一章-卷八十一-原文.html'>第八十一章-卷八十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七十九章-卷七十九-原文.html'>第七十九章-卷七十九</a></p><p class='next'>下一节：<a href='第八十一章-卷八十一-原文.html'>第八十一章-卷八十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

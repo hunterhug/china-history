@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-志<a href='../晋书.html#晋书'>：目录</a></p>
@@ -326,5 +353,18 @@
 </p><p>永康元年三月，尉氏县天降血。政治刑罚松缓，就会有持久炎热赤祥的妖异。这年正月，愍檀立王被幽禁在盖宫。天戒这样说，不应宽宥放纵邪恶的人，将会使太子含冤而死。惠帝愚昧不明，这月愍怀太子终于毙命。于是王室出现仇怨，祸难遍及天下。淖齿杀齐湣王那天，天上降血雨沾湿衣服。这是上天的警告，说的就是这种情况吗?京房《易传》说：“归罪不开释，这叫作追非，其责罚是天降血。这叫作不亲，下有邪恶之心，不出三年，将会绝减宗族。”又说：“谗佞的人受到封赏，有功之臣受杀戮，上天会降血雨。”
 </p><p>愍帝建兴元年十二月，河东地震，天降肉雨。四年十二月丙寅，丞相府斩杀督运令史淳于值，血倒流上柱子二丈三尺高，这是赤祥。这时，后将军荡塞镇守卢壁，丞相扬言要北伐，蓬王伯因督办运输拖延和受劳役贿赂的罪，依照军法处死他。他的儿子上诉说：“督办运输的事完成，没有拖延和供给不上，接受役使的人的贿赂，罪不当死。军队的行动，先造声势后是实际行动，实际是屯边守卫，不是征伐进军。自四年以来，漕运拖延停止，都不以军队出动的法律论处。”属吏们没有人理会他。等到有了变故，负责查实的官员弹劾众官，元帝不问，于是连续三年干旱。王室认为是冤气的应验。郭景纯说：“血是水类，同属于《坎》。《坎》是法象，水是平润而下，不应倒流。这是朝政有谬失的征兆。”
 </p><p>刘聪伪建元元年正月，垩盐地震，塞旦旦塑陷没成为池塘，池水红色像血一样，红色的气冲上天，有赤龙腾飞而去。流星从牵牛星出现，进入紫微宿，像龙形一样蜿蜒，光亮照地，落在平阳北十里处。细看是肉，臭味传遍平阳，有三十步长，二十七步宽。肉旁常有哭声，日夜不停。几天后，刘聪的皇后刘氏生下一条蛇一只兽，各伤害人后逃走。寻找没有找到，不久在天上陨落的肉旁见到蛇兽。这时刘聪娶了刘殷的三个女儿，都立为皇后。天戒像是说，刘聪既然自称刘姓，三位皇后又都是刘氏，背逆了骨肉的纲常，扰乱了人伦的规矩。天降肉等众妖异，其灾异也很大。不久刘氏死，哭声便自行消失。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十七章--白话.html'>第十七章-</a></p><p class='next'>下一节：<a href='第十九章--白话.html'>第十九章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十七章--白话.html'>第十七章-</a></p><p class='next'>下一节：<a href='第十九章--白话.html'>第十九章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

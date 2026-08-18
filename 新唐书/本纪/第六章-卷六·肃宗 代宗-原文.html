@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新唐书-本纪<a href='../新唐书.html#本纪'>：目录</a></p>
@@ -184,5 +211,18 @@
 </p><p>是岁，恒、定、赵三州地震。冬，无雪。十三年正月戊辰，回纥寇并州。癸酉，河东节度留后鲍防及回纥战于阳曲，败绩。二月庚辰，代州刺史张光晟成回纥战于羊虎谷，败之。四月甲辰，吐蕃寇灵州，常谦光败之。十月己丑，禁京畿持兵器捕猎。是岁，郴州黄芩山崩。
 </p><p>十四年二月癸未，魏博节度使田承嗣卒，其兄子悦自称留后。三月丁未，汴宋将李希烈逐其节度使李忠臣，自称留后。五月辛酉，不豫，诏皇太子监国。是夕，皇帝崩于紫宸内殿，年五十三。
 </p><p>赞曰：天宝之乱，大盗遽起，天子出奔。方是时，肃宗以皇太子治兵讨贼，真得其职矣！然以僖宗之时，唐之威德在人，纪纲未坏，孰与天宝之际？而僖宗在蜀，诸镇之兵纠合戮力，遂破黄巢而复京师。由是言之，肃宗虽不即尊位，亦可以破贼矣。盖自高祖以来，三逊于位以授其子，而独睿宗上畏天戒，发于诚心，若高祖、玄宗，岂其志哉！代宗之时，馀孽犹在，平乱守成，盖亦中材之主也！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五·睿宗 玄宗-原文.html'>第五章-卷五·睿宗 玄宗</a></p><p class='next'>下一节：<a href='第七章-卷七·德宗 顺宗 宪-原文.html'>第七章-卷七·德宗 顺宗 宪</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五·睿宗 玄宗-原文.html'>第五章-卷五·睿宗 玄宗</a></p><p class='next'>下一节：<a href='第七章-卷七·德宗 顺宗 宪-原文.html'>第七章-卷七·德宗 顺宗 宪</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

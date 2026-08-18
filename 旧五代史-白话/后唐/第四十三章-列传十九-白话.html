@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后唐<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -163,5 +190,18 @@
 </p><p>常山一战，李嗣昭为帅，死于军中，任圜代理李嗣昭为军队总管，号令指挥和李嗣昭生前一样，敌人都不知道换了主帅。庄宗听说了，倍加奖赏。这年秋天，又以上党的军队攻打常山，城中万人突然冲出，大将孙文进战死，敌人逼进我军，任圜指挥骑兵出击，杀获不少。曾用利害祸福告诉城中，镇州人相信了，乞求投降。城中溃败后，除杀了首犯外，官吏的家属都保住了，这也是任圜庇护才做到的。庄宗改镇州为北京，任任圜为工部尚书兼真定尹、北京副留守，主管留守事务。第二年，郭崇韬兼镇北京，任圜改任行军司马，兼北面水陆转运使，仍主管真定府政事。同光三年，回到朝中，守工部尚书。
 </p><p>郭崇韬征伐蜀地，上奏令任圜从征，西蜀平定后任命任圜为黔南节度使，经任圜恳切推辞才作罢。魏王回师，走到利州，康延孝反叛，以八千劲兵劫掠西川。李继岌听说了，半夜要宫中使者李廷安召来任圜，任圜正在睡觉，李廷安登他的床告诉他，任圜来不及系衣带，立即去见李继岌，李继岌哭着说：“康延孝忘恩负义，非您不能制住他。”随即暂任任圜为招讨副使，和都指挥使梁汉..等人带兵到汉州攻打康延孝，抓住了他。回师到渭南，李继岌遇害，任圜代理总管全军，到洛阳朝见。明宗嘉勉他的功劳，拜平章事，主管三司。
 </p><p>任圜选择贤能俊秀之才，杜绝宠幸者之门，百官的俸禄收入被孔谦减少，任圜以廷臣是国家的表率，禁止虚报领取俸禄，一个月之内，国家仓库充实，朝廷得到修整，军民都很满足。任圜虽然像忧虑自家一样忧虑国事，但对功名看得过重，所以受安重诲的忌妒。曾和安重诲在家中相见，他有善唱歌的妓女，安重诲向他要没要到，隔阂从此加深了。在这之前，出使者的粮券都出自户部，安重诲取消这种方法，要由内廷出钱，二人在皇帝跟前反复争执，最终被安重诲占了上风，任圜因此请求辞掉三司之职。天成二年，授太子少保职退休，居住在磁州。朱守殷在汴州反叛时，安重诲趁机诬陷任圜和朱守殷勾结，立即派人假传皇帝诏令杀害他，诏令说：“退休的太子少保任圜，早年立过功勋，也曾委以重任，既然退休离开权力中枢，就应在外地悠然赋闲，然而却不遵守礼义本分，暗中依附汴州朱守殷，写信题词不避嫌疑，言语中明显有埋怨朝廷的意思。自从收取汴州后，备见他勾结朱守殷相通的证据，如务求宽容，就将削弱了朝中法典，还是顾全大体，只惩罚你一个人。应令本州在私第中赐自尽。”任圜接到诏命时，聚合全族畅饮，神情不变。清泰年中，诏令追赠为太傅。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十二章-列传十八-白话.html'>第四十二章-列传十八</a></p><p class='next'>下一节：<a href='第四十四章-列传二十-白话.html'>第四十四章-列传二十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十二章-列传十八-白话.html'>第四十二章-列传十八</a></p><p class='next'>下一节：<a href='第四十四章-列传二十-白话.html'>第四十四章-列传二十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

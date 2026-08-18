@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后周<a href='../旧五代史.html#后周'>：目录</a></p>
@@ -156,5 +183,18 @@
 </p><p>六月辛卯朔，不视朝，以汉隐帝梓宫在殡故也。甲午，百僚上表，请以七月二十八日皇帝降圣日为永寿节，从之。邢州大雨霖。己亥，太常少卿刘悦上汉少帝谥曰隐皇帝，陵曰颖陵，从之。辛亥，以枢密使王峻为尚书左仆射兼门下侍郎、同平章事、监修国史，充枢密使；以枢密副使、尚书兵部侍郎范质为中书侍郎、同平章事，充集贤殿大学士；以户部侍郎、判三司李穀为中书侍郎、同平章事，判三司。司徒兼侍中、监修国史窦贞固，司空兼中书侍郎、同平章事、集贤殿大学士苏禹珪，并罢相守本官。壬子，幸西庄。癸丑，诏宰臣范质参知枢密院事。鄴都、洺、沧、贝等州大雨霖。丙辰，西京奏，新授宗正卿郭令图卒。丁巳，以尚书左丞颜衎为兵部侍郎，充端明殿学士；以宣徽北院使翟光鄴兼枢密副使。秋七月辛酉朔，帝被衮冕，御崇元殿，授太庙四室宝册于中书令冯道等，赴西京行礼。癸亥，尚书左丞田敏兼判国子监事。戊辰，以卸史中丞于德辰为尚书右丞，以秘书监边光范为太子宾客。以户部尚书张昭为太子宾客，以其子秉为阳翟簿，犯法抵罪，昭诣阁待罪，诏释之，乃左授此官。壬申，史官贾纬等以所撰《晋高祖实录》三十卷、《少帝实录》二十卷上之。丙子，幸宰臣王峻第。己丑，镇州奏，破河东贼军于平山县西，斩首五百级。是日，太常卿边蔚奏，议改郊庙舞名，事具《乐志》。
 </p><p>八月辛卯，汉隐帝梓宫发引，帝诣太平宫临奠，诏群臣出祖于西郊。是岁，幽州饥，流人散入沧州界。诏流人至者，口给斗粟，仍给无主土田，令取便种莳，放免差税。癸已，虎入西京修行寺伤人，市民杀之。乙未，幸班荆馆。壬寅，契丹遣幽州牙将曹继筠来归故晋中书令赵莹之丧，诏赠太傅，仍赐其子绢五百匹，以备丧事，归葬于华阴故里。乙巳，幸西庄。壬子，晋州王晏移镇徐州，沧州王景移镇河中，定州孙方简移镇华州，永兴郭从义移镇许州，贝州王继宏移镇河阳，李晖移镇沧州。以许州节度使武行德为西京留守，滑州折从阮移镇陕州，河中扈彦珂移镇滑州，陕州李洪信移镇永兴，华州王饶移镇贝州，徐州王彦超移镇晋州。丙辰，尚食李氏等宫官八人并封县君，司记刘氏等六人并封郡夫人，尚宫皇甫氏等三人并封国夫人。唐制有内官、宫官，各有司存，更不加郡国之号，近代加之，非旧典也。以易州刺史孙行友为定州留后。戊午，故夫人柴氏追立为皇后，仍令所司定谥，备礼册命。
 </p><p>九月庚申朔，帝诣太平宫起居汉太后。辛酉，故夫人杨氏追赠淑妃，仍令所司择日备礼册命。故皇第五女追封永宁公主。癸亥，定州奏，契丹永康王乌裕为部下所杀。甲子，以前耀州团练使武廷翰为太子少保致仕。丙子，诸道兵马都元帅、两浙节度使、检校太师、尚书令、中书令、吴越国王钱俶加天下兵马都元帅。丁丑，中书舍人刘涛责授少府少监，分司西京，坐遣男顼代草制词也。监察御史刘顼责授复州司户，坐代父草制也。中书舍人杨昭俭解官放逐私便，以多在假告，不亲其职也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-太祖纪一-原文.html'>第一章-太祖纪一</a></p><p class='next'>下一节：<a href='第三章-太祖纪三-原文.html'>第三章-太祖纪三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-太祖纪一-原文.html'>第一章-太祖纪一</a></p><p class='next'>下一节：<a href='第三章-太祖纪三-原文.html'>第三章-太祖纪三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

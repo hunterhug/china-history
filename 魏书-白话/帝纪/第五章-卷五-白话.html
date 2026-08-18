@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-帝纪<a href='../魏书.html#魏书'>：目录</a></p>
@@ -203,5 +230,18 @@
 </p><p>六年春正月丙申，大赦天下。二月丁丑，前往楼烦宫。高丽、蓰王、对曼各国各遣使者入朝献纳。三月戊戌，相州刺史、西平郡王吐谷浑权逝世。乙巳，皇帝回宫。
 </p><p>夏四月，破洛那国献汗血马，普岚国献宝剑。五月癸卯，皇帝在叁茎毖逝世，时年二十六岁。六月丙寅，奉上谧号为文成皇帝，庙号为直塞。八月，安葬在云主的金堕。
 </p><p>史臣曰：世祖治理四方，内部颇为空虚。不久国家内乱时事艰辛，朝野凄苦。高宗顺时而变，以平静加以镇抚，培养声威布下恩德，怀柔和睦内外的人。除非机敏善悟深情宽厚，以怜悯济民为心胸，又怎能如此可以说是有治理人的气度了。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-白话.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-白话.html'>第六章-卷六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-白话.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-白话.html'>第六章-卷六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

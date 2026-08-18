@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后梁<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -170,5 +197,18 @@
 </p><p>八月，以段凝代替王彦章任北面行营招讨使。十七日，段凝在王村扎营，领军从高陵渡过黄河，收复临河而回。董璋进攻泽州，攻下了它。十九日，后唐庄宗驻军于朝城，先锋将康延孝率领一百骑兵投奔后唐，泄露了梁军全部军机。末帝命滑州节度使王彦章领兵屯守在郓州东境。
 </p><p>九月二十七日，王彦章率领部队渡过汶水，与后唐军队在递坊镇遭遇，王彦章不利，退守中都。
 </p><p>冬十月一日，发生日蚀。四日，后唐庄宗领兵袭击中都，王彦章军队溃败，于是王彦章与监军张汉杰以及赵廷隐、刘嗣彬、李知节、康文通、王山兴等人都被后唐军队俘获。后来，王彦章死在任城。末帝听到中都战役失败，唐军长驱而来，便派张汉伦驰马前往黄河边召回段凝，不料张汉伦在路上从马背上摔下来伤了脚，又被洪水所限，不能前行。当时京师禁军还有四千人，朱王圭请求使用禁军抵拒唐军，末帝不听从，登上建国门召见开封尹王瓒，对他说：“段凝久久不来，国家就依赖于您的方略了。”王瓒于是发动军民登上城墙做准备。有人劝末帝西奔洛阳，赵岩说：“形势已到这一地步，一离开这座楼，还有谁能靠得住？”末帝才作罢。一会儿有报告说“：唐军已过曹州了。”末帝将传国宝放在卧室内，一下就不见了，已经被身边的人偷去迎接后唐皇帝了。末帝召来控鹤都将皇甫麟，对他说：“我与太原晋人是世仇，不能死在他们的刀斧之下。您可以结束我的性命，不要让我落入他们的手中。”皇甫麟不忍心，末帝说：“您不忍心，就是要出卖我！”皇甫麟举起刀准备自刎，末帝抱住他，因而相向大声痛哭。八日晚上，皇甫麟在建国楼的廊下向末帝进刀，末帝驾崩，皇甫麟随即自刎。天亮时，唐军攻打封丘门，王瓒相迎投降。唐庄宗李存勖入宫，末帝妃子郭氏号哭着迎拜。唐庄宗刚入汴京，听到末帝驾崩，怃然叹息说“：对方的恩惠对方的仇怨，都不涉及他的后代。我与梁主对阵十年，遗憾不能活着见他一面。”即诏令河南尹张全义收葬末帝，将他首级藏在太社。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章-末帝纪中-白话.html'>第九章-末帝纪中</a></p><p class='next'>下一节：<a href='第十一章-列传一-白话.html'>第十一章-列传一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九章-末帝纪中-白话.html'>第九章-末帝纪中</a></p><p class='next'>下一节：<a href='第十一章-列传一-白话.html'>第十一章-列传一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

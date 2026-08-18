@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -203,5 +230,18 @@
 </p><p>其后数十年，松阳王诏游治平寺，于转轮藏上得书一卷，载建文亡臣二十余人事迹。楮墨断烂，可识者仅九人。梁田玉、梁良玉、梁良用、梁中节皆定海人，同族，同仕于朝。田玉，官郎中，京师破，去为僧。良玉，官中书舍人，变姓名，走海南，鬻书以老。良用为舟师，死于水。中节好《老子》、《太玄经》，为道士。何申、宋和、郭节，俱不知何许人，同官中书。申使蜀，至峡口闻变，呕血，疽发背死。和及节挟卜筮书走异域，客死。何洲，海州人。不知何官，亦去为卜者，客死。郭良，官籍俱无考，与梁中节相约弃官为道士。余十一人并失其姓名。缙云郑僖纪其事，为《忠贤奇秘录》，传于世。
 </p><p>及万历时，江南又有《致身录》，云得之茅山道书中。建文时，侍书吴江史仲彬所述，纪帝出亡后事甚具。仲彬、程济、叶希贤、牛景先皆从亡之臣。又有廖平、金焦诸姓名，而雪庵和尚、补锅匠等，具有姓名、官爵。一时士大夫皆信之。给事中欧阳调律上其书于朝，欲为请谥立祠。然考仲彬实未尝为侍书，《录》盖晚出，附会不足信。
 </p><p>赞曰：靖难之役，朝臣多捐躯殉国。若王艮以下诸人之从容就节，非大义素明者不能也。高巍一介布衣，慷慨上书，请归藩服。其持论甚伟，又能超然远引，晦迹自全，可称奇士。若夫行遯诸贤，虽其姓字杂出于诸家传纪，未足征信，而忠义奇节，人多乐道之者。《传》曰：“与其过而去之，宁过而存之。”亦足以扶植纲常，使懦夫有立志也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十章-卷三十-原文.html'>第三十章-卷三十</a></p><p class='next'>下一节：<a href='第三十二章-卷三十二-原文.html'>第三十二章-卷三十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十章-卷三十-原文.html'>第三十章-卷三十</a></p><p class='next'>下一节：<a href='第三十二章-卷三十二-原文.html'>第三十二章-卷三十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

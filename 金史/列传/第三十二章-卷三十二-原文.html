@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -182,5 +209,18 @@
 </p><p>瑶里孛迭，北京路窟白猛安陀罗山谋克人也。以军功历海滨令，迁徐王府掾。以称职，再任御史台。察廉，升同知震武军节度使事。明昌初，为唐州刺史，寻授西北路招讨副使。未几，改东北路。六年正月，北边有警，聚兵围庆州急，孛迭率本路军往救，敌解去，州竟无患。承安元年，丞相襄北伐，孛迭为先锋副统，进军至龙驹河，受围，会襄引大军至，得解。后授镇宁军节度使，以六群牧人叛，改宁昌军。孛迭为都统，领步骑万次懿州，敌数万来逆战，兵势甚张，孛迭亲陷阵，奋力鏖击却之，身中二创，捷闻，迁一官。承安二年，飐军千余出没剽掠锦、懿间，孛迭追败之，复获所掠，悉还本户。三年，从同判大睦亲府事宗浩为左翼都统，战移密河，胜；战骨堡子西，杀获甚众。五年，授知广宁府事，俄改东北路招讨使。以捍边有功，赐诏褒谕，三迁为崇义军节度使。泰和六年，卒。讣闻，遣官致祭，赐银五百两，赠金紫光禄大夫。
 </p><p>孛迭勇决善战，自幼以军功显，任兵镇十余年，所向克捷，凡再迁官，赐金币，甚为上倚注云。
 </p><p>赞曰：《易·师》之初六：“师出以律，否臧凶。”盖初为师之始，出师之道，当慎其始。清臣首议出师，遽以贪小利败。襄虽贤，竭力而后胜其任。衡、安国、孛迭之功又亚于襄者也。然而兵连祸结，以终金世。故兵无常胜，制胜在势。势制兵者强，兵制势者亡。迹襄之开筑壕堑以自固，其犹元魏、北齐之长城欤？金之势可知矣。势屈而兵胜，亡国之道也。金以兵始，亦以兵终。呜呼！用兵之始，可不慎欤，可不慎欤！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十一章-卷三十一-原文.html'>第三十一章-卷三十一</a></p><p class='next'>下一节：<a href='第三十三章-卷三十三-原文.html'>第三十三章-卷三十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十一章-卷三十一-原文.html'>第三十一章-卷三十一</a></p><p class='next'>下一节：<a href='第三十三章-卷三十三-原文.html'>第三十三章-卷三十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

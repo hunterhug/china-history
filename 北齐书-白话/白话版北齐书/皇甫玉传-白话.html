@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>北齐书-白话版北齐书<a href='../北齐书.html#北齐书'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>皇甫玉传<span style='font-size:small'> 白话</span></h1>
 <p>皇甫玉，不知是哪里人氏。善相人，常游王侯家。世宗从颍川带着整顿好了的军队回来，显祖跟随在后，玉在道边观看，对人说：“大将军不是别人，便是路北边的那个流鼻涕的。”显祖即位之后，为测试玉的相术，特地用帛巾将他的眼睛蒙上，让他抚摸众人。摸至显祖，玉说：“这位是最大的达官。”摸到任城王，说：“这位当至丞相。”于常山、长广二王，称都要显贵腾达，并分别掐了他们一下。摸到石动统，玉道：“这位是个弄痴人。”摸到供膳，说：“恰好得到了好酒好肉。”玉曾为高归彦相面，之后，讲：“你会位极人臣的，但切勿造反。”归彦说：“我为什么要造反？”玉说：“不是这样吗？你有反骨。”玉对高氏的妻子道：“在殿上行走不会超过两年。”高氏妻将此话告诉给了斛斯庆，庆又向帝作了禀报。帝十分愤怒，召玉。玉每次照镜，常自言会死在兵器之下。当被征召时，对妻说：“我今天进宫是不能回来了，如果捱过下午，也许有活的可能。”中午，玉被斩杀。</p>
-<div class='pn'><p class='pre'>上一节：<a href='由吾道荣传-白话.html'>由吾道荣传</a></p><p class='next'>下一节：<a href='綦母怀文传-白话.html'>綦母怀文传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='由吾道荣传-白话.html'>由吾道荣传</a></p><p class='next'>下一节：<a href='綦母怀文传-白话.html'>綦母怀文传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

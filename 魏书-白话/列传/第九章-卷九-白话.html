@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#魏书'>：目录</a></p>
@@ -278,5 +305,18 @@
 </p><p>元劭的弟弟子正，容貌美好，性格宽厚和顺。肃宗初年，封为霸城县公，食邑一千户。历任散骑侍郎、太常少卿。庄帝即位，授任他为尚书令，封始平王。和哥哥元劭一起被杀害。追赠假黄铍、侍中、都督中外诸军事、大将军、录尚书事、相，王爵照旧，赐给皇帝车辆旌旗、车盖装饰、前后部仪仗鼓吹、虎贲带剑卫士一百人，谧号为贞。
 </p><p>儿子元钦，字世道，继承爵位。武定年间，任散骑侍郎。齐国接受禅让，爵位依例降低。
 </p><p>史臣日：武宣王以孝顺为本质，忠诚建树德行，文韬武略，自得于心中，协调于塞勉年间，哪是偶然的呢!至于居处安危时的操守，送别死者侍奉生者的气节，旦公旦无二心的道义，星光异姓的诚意，事情兼而有之。功劳大震撼君主，德行盛骇动世俗，谗言一献上，最终不能保全志向。唉!周成王、汉昭帝那样的君主也不容易遇到啊。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八-白话.html'>第八章-卷八</a></p><p class='next'>下一节：<a href='第十章-卷十-白话.html'>第十章-卷十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八-白话.html'>第八章-卷八</a></p><p class='next'>下一节：<a href='第十章-卷十-白话.html'>第十章-卷十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

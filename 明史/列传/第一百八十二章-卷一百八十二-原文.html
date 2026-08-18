@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -217,5 +244,18 @@
 </p><p>其时士大夫居家尽节者，灵石宋之俊、翼城史可观、阳曲朱慎镂。之俊举进士，历官登莱监军副使，忤巡按谢三宾，互讦于朝，落职归。三宾亦贬秩。及遇变，之俊受刑死。妻乔詈贼撞阶死。女敛尸毕，拔簪刺喉死。可观，太常少卿学迁子。官中书舍人，加鸿胪少卿。城陷，自缢死。慎镂，晋府宗室，摄灵丘郡王府事。贼陷太原，冠带祀家庙，驱家人入庙中，焚之，己亦投火死。
 </p><p>丁泰运，字孟尚，泽州人。崇祯十三年进士。除武陟知县，调河内，著廉直声。十七年二月，贼将刘方亮自蒲坂渡河。巡按御史苏京托言塞太行道，先遁去，与陕西巡抚李化熙同抵宁郭驿。俄兵变，化熙被伤走。兵执京，披以妇人服，令插花行，稍违，辄抶之以为笑乐。叛将陈永福引贼至，京即迎降。贼遂逼怀庆，监司以下皆窜。泰运独守南城，力不支，被执。贼拥见方亮，使跪不屈，烧铁锁炙之，亦不从，乃遇害。
 </p><p>贼既陷怀庆，寻陷彰德。安阳人尚大伦，字崇雅。由进士历官刑部郎中。有国学生白梦谦以救黄道周系狱，大伦议宽之，忤尚书意，遂罢归。城陷，抗节死。参将榆林王荣乃其子师易，皆死之。又有王橓徵，由乡举历官蒲州知州，忤豪宗，谢事归。为贼所执，传诣李自成，道愤恨不食死。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百八十一章-卷一百八十一-原文.html'>第一百八十一章-卷一百八十一</a></p><p class='next'>下一节：<a href='第一百八十三章-卷一百八十三-原文.html'>第一百八十三章-卷一百八十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百八十一章-卷一百八十一-原文.html'>第一百八十一章-卷一百八十一</a></p><p class='next'>下一节：<a href='第一百八十三章-卷一百八十三-原文.html'>第一百八十三章-卷一百八十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

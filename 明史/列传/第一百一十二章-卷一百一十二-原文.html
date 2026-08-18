@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -198,5 +225,18 @@
 </p><p>当是时，帝委时乔铨柄，又不置右侍郎，一人独理部事，铨叙平允。然堂陛扞格，旷官废事，日甚一日，而中朝议论方嚣，动见掣肘。时乔官位未崇，又自温纯去，久不置都御史，益无以镇厌百僚。由是上下相凌，纪纲日紊，言路得收其柄。时乔亦多委蛇，议者谅其苦心，不甚咎也。秉铨凡五年。最后起故尚书孙丕扬。未至，而时乔已卒。箧余一敝裘，同列赙襚以殓。诏赠吏部尚书，谥端洁。
 </p><p>时乔受业永丰吕怀，最不喜王守仁之学，辟之甚力，尤恶罗汝芳。官通政时具疏斥之曰：“佛氏之学，初不溷于儒。乃汝芳假圣贤仁义心性之言，倡为见性成佛之教，谓吾学直捷，不假修为。于是以传注为支离，以经书为糟粕，以躬行实践为迂腐，以纲纪法度为桎梏。逾闲荡检，反道乱德，莫此为甚。望敕所司明禁，用彰风教。”诏从其言。
 </p><p>赞曰：古者冢宰统百官，均四海，即宰相之任也。后代政柄始分，至明中叶，旁挠者众矣。严清诸人，清公素履，秉正无亏，彼岂以进退得失动其心哉。孙丕扬创掣签法，虽不能辨材任官，要之无任心营私之弊，苟非其人，毋宁任法之为愈乎！盖与时宜之，未可援古义以相难也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百一十一章-卷一百一十一-原文.html'>第一百一十一章-卷一百一十一</a></p><p class='next'>下一节：<a href='第一百一十三章-卷一百一十三-原文.html'>第一百一十三章-卷一百一十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百一十一章-卷一百一十一-原文.html'>第一百一十一章-卷一百一十一</a></p><p class='next'>下一节：<a href='第一百一十三章-卷一百一十三-原文.html'>第一百一十三章-卷一百一十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

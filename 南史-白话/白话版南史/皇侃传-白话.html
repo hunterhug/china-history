@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>南史-白话版南史<a href='../南史.html#南史'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>皇侃传<span style='font-size:small'> 白话</span></h1>
 <p>皇侃，吴郡人，是青州刺史皇象的九世孙。他从小好学，以贺蠩为老师，集中精力专攻学问，几乎精通各门学业，尤其明于《三礼》、《孝经》、《论语》。当他兼国子助教在学中讲课时，听的人经常多达几百人。撰有《礼记讲疏》五十卷。书写成后上奏朝廷，诏令交付秘阁收藏。不久，又召他进寿光殿讲说《礼记义》，梁武帝对他很好，加封他为员外散骑侍郎。<BR><BR>　　皇侃本性十分孝顺，每天规定自己要诵读二十遍《孝经》，以比之于《观世音经》。母亲去世后他回到故乡，平西邵陵王钦佩他的学识，用厚礼来迎候他。当皇侃到达后，由于发了心脏病而去世。所撰写的《论语义》、《礼记义》，被世人所敬重，在学者中广为流传。</p>
-<div class='pn'><p class='pre'>上一节：<a href='严植之传-白话.html'>严植之传</a></p><p class='next'>下一节：<a href='儒林传论-白话.html'>儒林传论</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='严植之传-白话.html'>严植之传</a></p><p class='next'>下一节：<a href='儒林传论-白话.html'>儒林传论</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

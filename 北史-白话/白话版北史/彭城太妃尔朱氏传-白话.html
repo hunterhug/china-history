@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>北史-白话版北史<a href='../北史.html#北史'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>彭城太妃尔朱氏传<span style='font-size:small'> 白话</span></h1>
 <p>彭城太妃尔朱氏，是尔朱荣的女儿，原是北魏孝庄帝的皇后。神武帝高欢把她娶为夫人，但对她的敬重超过原配夫人娄妃，每次入见时一定束着衣带，自称为“下官”。神武帝迎接蠕蠕公主回来时，尔朱氏在木井北面迎候。她和蠕蠕公主前后分开行走，两人并不见面。公主拉开角制的硬弓仰射正在飞翔的鹞鹰，弓响而鹰落。彭城太妃也拉开长弓斜射高飞的鸟，也一发而中。神武帝高兴地说：“我的这两位妻子，都能够杀贼。”后来，她出家当了尼姑，神武帝为她修建了寺院。天保初年，被封为太妃。当文宣帝酒醉发酒疯时，想要对她无礼，太妃不肯顺从，因而遇祸身亡。</p>
-<div class='pn'><p class='pre'>上一节：<a href='蠕蠕公主郁久闾氏传-白话.html'>蠕蠕公主郁久闾氏传</a></p><p class='next'>下一节：<a href='冯翊太妃郑氏传-白话.html'>冯翊太妃郑氏传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='蠕蠕公主郁久闾氏传-白话.html'>蠕蠕公主郁久闾氏传</a></p><p class='next'>下一节：<a href='冯翊太妃郑氏传-白话.html'>冯翊太妃郑氏传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -208,5 +235,18 @@
 </p><p>王禄，新城人。举于乡，为福建平和知县。嘉靖九年，疏请建献帝庙于安陆，封崇仁王以主其祀，不当考献帝，伯孝宗，涉二本之嫌。宗藩子有幼而岐嶷者，当养之宫中，备储贰选。疏奏，即弃官归。命按臣逮治，亦斥为民。
 </p><p>侯廷训，乐清人。与张璁同郡，同举进士，而持论不合。初释褐，即上疏请考孝宗，且言不当私藩邸旧臣，语最切直。除南京礼部主事。嘉靖三年冬，“大礼”定，廷训心非之。私刊所著议礼书，潜寄京师，下诏狱拷讯。子一元，年十三，伏阙讼冤，得释。后起官至漳南佥事。以贪虐，被劾为民。一元举进士，官至江西布政使。
 </p><p>赞曰：“大礼”之议，杨廷和为之倡，举朝翕然同声，大抵本宋司马光、程颐《濮园议》。然英宗长育宫中，名称素定。而世宗奉诏嗣位，承武宗后，事势各殊。诸臣徒见先贤大儒成说可据，求无得罪天下后世，而未暇为世宗熟计审处，准酌情理，以求至当。争之愈力，失之愈深，惜夫。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十八章-卷七十八-原文.html'>第七十八章-卷七十八</a></p><p class='next'>下一节：<a href='第八十章-卷八十-原文.html'>第八十章-卷八十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七十八章-卷七十八-原文.html'>第七十八章-卷七十八</a></p><p class='next'>下一节：<a href='第八十章-卷八十-原文.html'>第八十章-卷八十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

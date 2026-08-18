@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-本纪<a href='../明史.html#明史'>：目录</a></p>
@@ -214,5 +241,18 @@
 </p><p>冬十月初一，派起居注吴琳、魏观以币求遗贤于四方。初三，令百官礼仪崇尚左边。改李善长左相国，徐达右相国。十二日，祭祀元臣余阙于安庆，李黼于江州。十三日，设御史台。十四日，汤和为征南将军，吴祯为副，讨伐方国珍。十五日，制定律令。十九日，正郊社、太庙雅乐。
 </p><p>二十一日，太祖召诸将商议北征。太祖说“：山东王宣正好倾斜，河南扩廓跋扈，关、陇李思齐、张思道嚣张猜忌，元运将亡，中原涂炭。今将北伐，拯生民于水火，怎么取胜？”常遇春回答说：“以我百战之师，击彼久逸之兵，可直捣元都，如破竹之势。”太祖说：“元建国百年，守备必然牢固，悬军深入，粮饷不前，援兵四集，这是危险的战法。我想先取山东，撤除他们屏蔽，然后移兵两河，破其藩篱，拔潼关而守之，扼其门槛。天下形势入我手掌，然后进兵，元都势孤援绝，不战自克。再鼓行而西，云中、九原、关、陇皆可席卷。”诸将皆说“：好。”
 </p><p>二十五日，徐达为征虏大将军，常遇春为副将军，率师二十五万，由淮河入黄河，北取中原。胡廷瑞为征南将军，何文辉为副将军，进取福建。湖广行省平章杨王景、左丞周德兴、参政张彬取广西。三十日，朱亮祖攻克温州。十一月九日，汤和攻克庆元，方国珍逃入海上。十日，徐达攻克沂州，斩王宣。十五日，廖永忠为征南副将军，从海道与汤和相会讨伐方国珍。二十一日，颁行大统历。二十七日，徐达攻克益都。十二月二日，颁律令。五日，方国珍投降，浙东平定。张兴祖下东平，兖东州县相继投降。七日，徐达攻下济南。胡廷瑞攻下邵武。十一日，李善长率百官劝太祖即皇帝位，三次上表，太祖才许可。二十二日，告祭上帝。二十八日，汤和、廖永忠由海道攻克福州。</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-白话.html'>第二章-卷二</a></p></div></body>
+<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-白话.html'>第二章-卷二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

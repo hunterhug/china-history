@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -185,5 +212,18 @@
 </p><p>成化四年(1468)，他以右佥都御史的身份巡抚广西，剿蛮寇有功。这年冬天撤消巡抚官，命他回去管理南京都察院事务。后来改为总督漕运，兼巡抚淮安、扬州等四府。不久他解去漕运职务，专管巡抚事务。他又回南都察院，进升为副都御史，巡抚宁夏。被召回后，历任兵部左、右侍郎。
 </p><p>十八年(1482)，他取代陈钺任兵部尚书。守卫珠池的宦官韦助请求往来高州、肇庆、琼州、廉州，会同守巡官员捕寇。张鹏反对，皇上竟答应了韦助的请求。南北方印马，都是派勋臣和宦官去，后来因为灾荒只派御史去。这一年，皇上又想派宦官去，张鹏等人反对，皇上勉强听从了，命令等以后仍恢复旧例。镇守大同的宦官王直说小王子将大举入侵，请调发京兵增援。张鹏等人说：“大同战士马匹四万，已足够用，他的请求不宜批准。并且京军被土木工程所困，精力消损，万一仓卒有紧急情况，怎能用他们显威风和激励士气？请停罢京军所承担的劳役。”诏令说可。不久加封他为太子少保。
 </p><p>张鹏初任御史时，刚正而尚气节，有盛名。后来历任中外官职，只追求政治安静，明哲保身。小人们盗窃威权，内阁大臣万安、刘吉之辈专营私利，张鹏只是循职而已，不能有所匡正和补救。二十一年(1485)，有星变，张鹏偕同他的属官上书说“：传奉武职官员达八百余人，请令他们全部闲住，不是立有军功不要滥授官衔。四方的镇守、监枪、守备宦官，不是正统年间所设的，都应把他们召回。”廷臣也纷纷请求，皇上交兵部重新考察。张鹏害怕宦官，不敢坚持自己的意见，皇上于是把那些宦官全部留下了。当时舆论都指责张鹏。奸民章瑾献上珍宝，得任锦衣卫镇抚官。理刑官出缺，张鹏所推荐的皇上不批准。他知道皇上看中章瑾，即推荐他。台谏官员弹劾不称职的大臣时多提到张鹏，张鹏极力请求离去。皇上于是赐给敕书，发给驿车让他回去。弘治四年(1491)，他去世，谥懿简。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十七章-卷四十七-白话.html'>第四十七章-卷四十七</a></p><p class='next'>下一节：<a href='第四十九章-卷四十九-白话.html'>第四十九章-卷四十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十七章-卷四十七-白话.html'>第四十七章-卷四十七</a></p><p class='next'>下一节：<a href='第四十九章-卷四十九-白话.html'>第四十九章-卷四十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

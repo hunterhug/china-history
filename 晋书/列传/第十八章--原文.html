@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -200,5 +227,18 @@
 </p><p>长子亨为辽西太守，属王濬自用其人，亨不得之官。依青州刺史苟晞，刑政苛虐，亨数切谏，为晞所害。
 </p><p>史臣曰：愍怀之废也，天下称其冤。然皆惧乱政之参夷，慑淫嬖之凶忍，遂使谋臣怀忠而结舌，义士蓄愤而吞声。阎续伯官既微于侍郎，位不登于执戟，轻生重义，视死如归，伏奏而待严诛，舆棺以趋鼎镬，察言观行，岂非忠直壮乎！顾视晋朝公卿，曾不得与其徒隶齿也。茂伯笃终，哭王经以全节。休然追远，理邓艾以成名。故得义感明时，仁流枯骨。虽硃勃追论新息，栾布奏事彭王，弗之尚也。
 </p><p>赞曰：感义收会，笃终理艾。道既相侔，名亦俱泰。续伯区区，舆榇陈謩。偪兹淫嬖，弗遂良图。啜其泣矣，何嗟及乎！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十七章--原文.html'>第十七章-</a></p><p class='next'>下一节：<a href='第十九章--原文.html'>第十九章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十七章--原文.html'>第十七章-</a></p><p class='next'>下一节：<a href='第十九章--原文.html'>第十九章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

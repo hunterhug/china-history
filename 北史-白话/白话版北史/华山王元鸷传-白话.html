@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>北史-白话版北史<a href='../北史.html#北史'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>华山王元鸷传<span style='font-size:small'> 白话</span></h1>
 <p>元瞔的儿子元鸷，字孔雀，孝文帝末年，因军功被赐封为晋阳男爵。武泰元年(528)，尔朱荣到河阴，杀害朝士，当时，元鸷跟尔朱荣一起登上高冢子，俯视这场屠杀。从此以后，他跟尔朱荣结合在一起。永安初年被封为华山王。庄帝杀了尔朱荣后，他又跟着尔朱荣的侄子尔朱兆作乱。皇帝打算带领众军亲自讨伐，而元鸷跟尔朱兆私通，便劝皇帝说：“黄河万仞之高，哪能那么容易渡过？”庄帝因此安居下来。当尔朱兆进殿时，元鸷又制止卫兵们干预。皇帝受逼迫，京城受破坏，都是元鸷的阴谋导致的。孝静帝初年，入朝为大司马，加侍中之职。<BR><BR>　　元鸷容貌魁伟健壮，腰阔十围，有武艺。平时显得木讷，很少说话，但他本性直率忠厚，每当轮到他在宫中值班时，虽然是大热天里也不解开衣冠。有一次在侍中高岳的宴席上，咸阳王坦恃自己有武力而且带着酒意和人比较，众人都甘拜下风。元坦对元鸷说：“孔雀老武官，凭什么得到封王？”元鸷回答说“：曾经斩下反叛的咸阳王禧的首级，因此得到王爵。”众人都大惊失色，而元鸷依然像平时那样乐呵呵的。兴和三年(541)去世，赠假黄钺、尚书令、司徒公。<BR><BR>　　他儿子名大器，袭封他的爵位。后来和元谨一起谋害齐文襄帝，被杀。</p>
-<div class='pn'><p class='pre'>上一节：<a href='炀愍皇后萧氏传-白话.html'>炀愍皇后萧氏传</a></p><p class='next'>下一节：<a href='元苌传-白话.html'>元苌传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='炀愍皇后萧氏传-白话.html'>炀愍皇后萧氏传</a></p><p class='next'>下一节：<a href='元苌传-白话.html'>元苌传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

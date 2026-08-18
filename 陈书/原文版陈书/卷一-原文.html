@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>陈书-原文版陈书<a href='../陈书.html#原文版陈书'>：目录</a></p>
@@ -180,5 +207,18 @@
 </p><p>又玺书曰：
 </p><p>君子者自昭明德，达人者先天弗违，故能进退咸亨，动静元吉。朕虽蒙寡，庶乎景行。何则？三才剖判，九有区分，情性相乖，乱离云起，是以建彼司牧，推乎圣贤，授受者任其时来，皇王者本非一族，人谋是与，屈己从万物之心，天意斯归，鞠躬奉百灵之命。讴歌所往，则攘袂以膺之，菁华已竭，乃褰裳而去之。昔在唐、虞，鉴于天道，举其黎献，授彼明哲，虽复质文殊轨，沿革不同，历代因循，斯风靡替。我大梁所以考庸太室，接礼贰宫，月正元日，受终文祖。但运不常夷，道无恒泰，山岳倾偃，河海沸腾，电目雷声之禽，钩爪锯牙之兽，咀啮含生，不知纪极。二后英圣，相仍在天，六夷贪狡，争侵中国，县王都帝，人怀干纪，一民尺土，皆非梁地。朕以不造，幼罹闵凶，仰凭衡佐，亟移年序。周成、汉惠，邈矣无阶，惟是童蒙，必贻颠蹶。若使时无圣哲，世靡艰难，犹当高蹈于沧洲，自求于泰伯者矣。惟王应期诞秀，开箓握图，性道故其难闻，嘉庸已其被物，乾行同其焘覆，日御比其贞明，登承圣于复禹之功，树鞠子于兴周之业，灭陆浑于伊、洛，歼骊戎于镐京，大小二震之骁徒，东南两越之勍寇，遽行天讨，无遗神策。于是祖述尧舜，宪章文武，大乐与天地同和，大礼与天地同节，鼓之以雷霆，润之以风雨，仁沾葭苇，信及豚鱼，殷牖斯空，夏台虚设，民惟大畜，野有同人，升平颂平，无偏无党，固以云飞紫盖，水跃黄龙，东伐西征，晻映川陆。荣光暧暧，已冒郊廛，甘露瀼瀼，亟流庭苑。车辙马迹，谁不率从？蟠水流沙，谁不怀德？祥图远至，非唯赤伏之符，灵命昭然，何止黄星之气。海口河目，贤圣之表既彰，握旄执钺，君人之状斯伟。且自摄提无纪，孟陬殄灭，枉矢宵飞，天弧晓映，久矣夷羊之在牧，时哉蛟龙之出泉。革运之兆咸徵，惟新之符并集，朕所以钦若勋、华，屡回星琯。昔者水运斯尽，予高祖受焉。今历去炎精，神归枢纽，敬以火德，传于尔陈。远鉴前王，近谋群辟，明灵有悦，率土同心。今遣使持节兼太保侍中尚书左仆射平乐亭侯王通，兼太尉司徒左长史王锡奉皇帝玺绶。受终之礼，一依唐、虞故事。王其时陟元后，宁育兆民，光阐洪猷，以承昊天之休命！
 </p><p>是日，梁帝逊于别宫。高祖谦让再三，群臣固请，乃许。</p>
-<div class='pn'><p class='next'>下一节：<a href='卷二-原文.html'>卷二</a></p></div></body>
+<div class='pn'><p class='next'>下一节：<a href='卷二-原文.html'>卷二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

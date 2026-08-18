@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>南齐书-志<a href='../南齐书.html#南齐书'>：目录</a></p>
@@ -212,5 +239,18 @@
 </p><p>十一年正月辛酉，月进入井宿的空隙中，无所冲犯。乙丑，月在轩辕女主星北八寸，造成冲犯。壬申，月运行在氐宿东北九寸，造成冲犯。二月甲午，月运行进入太微垣，在上将星东北一尺五寸，无所冲犯。壬寅，月在运行中遮掩冲犯南斗第六颗星。癸卯，月遮掩冲犯西建中星，又遮掩束星。四月乙丑，月进入太微垣，在右执法星西北一尺四寸，无所冲犯。壬寅，月运行在危宿方位，进入羽林星，无所冲犯。五月丁巳，月运行进入太微垣左执法星北三尺，无所冲犯。甲子，月运行在南斗第二颗星西七寸，造成冲犯。乙丑，月遮掩冲犯西建中星。又犯东星六寸．六月辛丑，月在运行中遮掩冲犯毕宿左股第三颗星．壬寅，月进入毕宿。七月壬子，月进入太微垣，在左执法星束三尺，无所冲犯。丙辰，月运行进入氐宿，在东北星西南六寸，造成冲犯。己未，月运行在南斗第六颗星南四寸，造成冲犯。庚申，月运行在西建星东南一寸，造成冲犯。九月庚寅，月运行在哭星西南六寸，造成冲犯。壬辰，月运行在营室星方位，进入羽林星，无所冲犯。丁酉，月进入毕宿，在右股大赤星西北六寸，造成冲犯。己亥，月进入井宿的空隙中，无所冲犯。乙巳，月运行在太微垣，正当右掖门内，在屏星西南六寸，造成冲犯。十月壬午，月运行在东建中星九寸，造成冲犯．十一月壬子，月在哭星南五寸，造成冲犯。辛酉，月运行在井宿铁星南八寸，又在井宿南辕西头第一颗星南五寸，都造成冲犯。进入井宿中。丁卯，月进入太微垣。壬申，月运行进入氐宿，无所冲犯。十二月辛巳，月进入羽林星，又进入井宿的空隙中，又进入井宿北辕西头第二颗星南六寸，造成冲犯。乙未，月进入太微垣，在右执法星东北二尺，无所冲犯。乙亥，月进入氐宿，无所冲犯。
 </p><p>隆昌元年正月辛亥，月进入毕宿，在左股第一颗星东南一尺，造成冲犯。三月聿亥，月在井宿北辕西头第二颗星东七寸，造成冲犯。甲申，月进入太微垣，在屏星南九寸，造成冲犯。六月乙丑，月进入毕宿，在右股第一颗星东北五寸，造成冲犯。又在木星东南一尺，造成冲犯。丁卯，月进入井宿南辕西头第一颗星东北七寸，造成冲犯。
 </p><p>泰元元年七月，月遮掩心宿中星。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章-卷十一-白话.html'>第三章-卷十一</a></p><p class='next'>下一节：<a href='第五章-卷十三-白话.html'>第五章-卷十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三章-卷十一-白话.html'>第三章-卷十一</a></p><p class='next'>下一节：<a href='第五章-卷十三-白话.html'>第五章-卷十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

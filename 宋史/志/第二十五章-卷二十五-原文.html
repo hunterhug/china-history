@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>宋史-志<a href='../宋史.html#志'>：目录</a></p>
@@ -890,5 +917,18 @@
 　　求九服晷景：若地在陽城北冬至前後者，置冬至前後日數，用減距差日，為餘日；以餘日減一百四十六，餘退一等，為定差；以餘日自相乘而乘之，滿六千六百四十五除之為尺，不滿，退除為寸分，加陽城冬至晷景，為其地其日中晷常數。若冬至前後日多於距差日，即減去距差日，餘依陽城法求之，各其地其日中晷常數。若地在陽城南夏至前後者，以夏至前後日數減距差日，為餘日；以減一千二百一十七，餘再退，為定差；以餘日自相乘而乘之，滿二萬四千九百三十為尺，不滿，退除為寸分，以減陽城夏至晷數，即其地其日中晷常數；如不及減，乃減去陽城夏至日晷景，餘即晷在表南也。若夏至前後日多於距差日，即減去距差日，餘依陽城法求之，各其地其日中晷常數。若求中晷定數，先以盈縮分加減之，乃用法求之，即各得其地其日中晷定數。<BR>
 <BR>
 　　求九服所在晝夜漏刻：冬、夏至各於所在下水漏，以定其處二至夜刻數，相減為冬、夏至差刻。乃置陽城其日消息定數，以其處二至差刻乘之，如陽城二至差刻二十而一，所得，為其地其日消息定數。乃倍消息定數，進一位，滿刻法約之為刻，不滿為分，乃加減其處二至夜刻。秋分後、春分前，減冬至夜刻；春分後、秋分前，加夏至夜刻。為其地其日夜刻；用減一百刻，餘為晝刻。求日出入辰刻及距中度五更中星，皆依陽城法。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十四章-卷二十四-原文.html'>第二十四章-卷二十四</a></p><p class='next'>下一节：<a href='第二十六章-卷二十六-原文.html'>第二十六章-卷二十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十四章-卷二十四-原文.html'>第二十四章-卷二十四</a></p><p class='next'>下一节：<a href='第二十六章-卷二十六-原文.html'>第二十六章-卷二十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

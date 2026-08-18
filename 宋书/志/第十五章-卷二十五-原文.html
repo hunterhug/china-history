@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>宋书-志<a href='../宋书.html#志'>：目录</a></p>
@@ -190,5 +217,18 @@
 </p><p>十四年三月癸丑，太白犯五诸侯，占同上。四月壬申，月犯填星，于张。占曰：“天下有大丧。”五月庚子，月犯太微，占同上。壬子，有星孛于北斗魁中。占曰：“有圣人受命。”七月甲辰，荧惑犯舆鬼。占曰：“秦有兵。”丁巳，月犯东井。占曰：“军将死。”癸亥，彗星出太微西，柄起上相星下，芒渐长至十余丈，进归北斗紫微中台。占曰：“彗出太微，社稷亡，天下易王。入北斗紫微，帝宫空。”一曰：“天下得圣主。”八月甲子，太白犯轩辕。癸酉，填星入太微，犯右执法，因留太微中，积二百余日乃去。占曰：“填星守太微，亡君之戒，有徙王。”九月乙未，太白入太微，犯左执法。丁巳，月入太微。占曰：“大人忧。”十月癸巳，荧惑入太微，犯西蕃上将，仍从行至左掖门内，留二十日乃逆行。至恭帝元熙元年三月五日，出西蕃上将西三尺许，又从还入太微。时填星在太微，荧惑绕填星成钩已。其年四月二十七日丙戌，从端门出。占曰：“荧惑与填星钩已，天下更纪。”甲申，月入太微，占同上。
 </p><p>十一年正月，高祖讨司马休之、鲁宗之等，溃奔长安。五月，林邑寇交州，交州刺史杜慧度距战于九真，大为所败。十二年七月，高祖伐羌。十月，前驱定陕、洛。十三年三月，索头大众缘河为寇，高祖讨之奔退，其别帅托跋嵩交战，又大破之，嵩众歼焉。进复攻关。八月，擒姚泓，司、兗、秦、雍悉平，索头凶惧。十四年，高祖还彭城，受宋公。十一月，左仆射前将军刘穆之卒。明年，西虏寇长安，雍州刺史硃龄石诸军陷没，官军舍而东。十二月，安帝崩，母弟琅邪王践阼，是曰恭帝。
 </p><p>晋恭帝元熙元年正月丙午，三月壬寅，月犯太微，占悉同上。乙卯，辰星犯轩辕。六月庚辰，太白犯太微。七月，月犯岁星。己卯，月犯太微，太白昼见。占悉同上。自义熙元年至是，太白经天者九，日蚀者四，皆从上始。革代更王，臣民失君之象也。是夜，太白犯哭星。十二月丁巳，月、太白俱入羽林。二年二月庚午，填星犯太微。占悉同上。元年七月，高祖受宋王。二年六月，晋帝逊位，高祖入宫。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十四章-卷二十四-原文.html'>第十四章-卷二十四</a></p><p class='next'>下一节：<a href='第十六章-卷二十六-原文.html'>第十六章-卷二十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十四章-卷二十四-原文.html'>第十四章-卷二十四</a></p><p class='next'>下一节：<a href='第十六章-卷二十六-原文.html'>第十六章-卷二十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

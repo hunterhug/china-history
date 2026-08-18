@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后梁<a href='../旧五代史.html#后梁'>：目录</a></p>
@@ -165,5 +192,18 @@
 </p><p>大顺元年，从庞师古渡淮深入，讨孙儒之乱，夺邵伯堰，破高邮军。檀奋命击贼，刃伤左臂。未几，迁顺义都将。天复中，从太祖率四镇之师围凤翔，以迎昭宗。屡立戎效，迁左踏白指挥使。从攻王师范于青州，檀以偏师收复密郡，《永阳志》云：张训守密州刺史，硃全忠至青州，训谓诸将曰：“汴人将至，何以御之？”诸将请焚城大掠而归。训曰：“不可。”乃封府库，植旗帜于城上，遣羸弱居前，自以精兵殿其后而去。全忠遣王檀攻密州，数日乃敢入城。遂权知军州事，充本州马步军都指挥使，寻表授检校右仆射，守密州刺史。郡接淮戎，旧无壁垒，乃率夫修筑罗城，六旬而毕，居民赖之，加检校司空。开平二年六月，授邢州保义军节度使、检校司徒。三年，加检校太保，充潞州东北面行营招讨使。乾化元年正月，王景仁与晋人战于柏乡，王师败绩，河朔大震。景仁与众为敌骑所追，檀严设备，应接败军，助以资装，获济者甚众。俄而晋军大至，重围四合，土山地穴，昼夜攻击，太祖忧之。檀密上表，请驾不亲征，而悉力枝梧，竟全城垒。三月，以功就加检校太傅、同平章事。七月，又加开府仪同三司、检校太尉，进封琅琊郡王，命宣徽使赵殷衡赉诏慰谕，赐绢千匹、银千两，赏守御邢州之功也。庶人友珪僭位，授邓州宣化军节度使、检校太尉、兼侍中。
 </p><p>末帝即位，移授许州匡国军节度使，加检校太师。五年，蔡州刺史王彦温作乱，檀受诏讨平之，加兼中书令。贞明元年三月，魏博军乱。六月，晋王入魏州，分兵收下属郡，河北大扰，檀受诏与开封尹刘鄩犄角进师，以援河北。檀攻澶州魏县，下之，擒贼将李岩、王开关以献。顷之，檀密疏请以奇兵西趣河中，自阴地关袭取晋阳，末帝许之，即驰兵而去。二年二月，师至晋阳，昼夜急攻其垒，并州几陷。既而蕃将石家才自潞州以援兵至，檀引军大掠而还。寻授天平军副大使，知节度使事，弃郓、齐、曹等州观察等使。先是，檀招诱群盗，选其劲悍者置于帐下，以为爪牙。至是，数辈窃发，突入府第，檀素不为备，遂为所害，时年五十一。节度副使裴彦闻变，率府兵尽擒诸贼，州城帖然。寻册赠太师，谥曰忠毅，葬于开封县之皋门原。有子六人，皆升朝列。
 </p><p>史臣曰：夫大都偶国，《春秋》所非。当师厚之据鄴城也，绾数万之甲兵，擅六州之舆赋，名既震主，势亦滔天。逮其丧亡，须议分割。由兹以失河朔，因是以启晋人，《诗》所谓“谁生厉阶”者，师厚之谓欤！存节、王檀俱出身事主，底力图功，观其方略，皆将帅之良者也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十一章-列传十一-原文.html'>第二十一章-列传十一</a></p><p class='next'>下一节：<a href='第二十三章-列传十三-原文.html'>第二十三章-列传十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十一章-列传十一-原文.html'>第二十一章-列传十一</a></p><p class='next'>下一节：<a href='第二十三章-列传十三-原文.html'>第二十三章-列传十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

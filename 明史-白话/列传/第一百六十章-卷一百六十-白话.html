@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -163,5 +190,18 @@
 </p><p>九月，承畴、变蛟等率领所有的骑兵和步兵想突围出去，失败而回。他们又继续防守了半年，到第二年二月，副将夏成德给大清部队做内应，松山于是被打了下来。承畴、变蛟、廷臣以及巡抚丘民仰，旧总兵祖大乐，兵备道张斗、姚恭、王三祯，副将江翥、饶勋、朱文德，以及参将以下共一百多军官都被抓获、杀死，只有承畴与大乐没有被杀。
 </p><p>三月里，大寿就把锦州交出投降了。杏山、塔山也接连失守，京师受到很大震动。
 </p><p>后来，朝廷颁布诏书，赐予殉难的各位大臣以祭奠、安葬，让有关部门为他们建立祠庙。变蛟的妻子请求给予追赠、封荫，朝廷追赠他为荣禄大夫、太子少保，荫封后世子孙为世袭锦衣指挥佥事。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百五十九章-卷一百五十九-白话.html'>第一百五十九章-卷一百五十九</a></p><p class='next'>下一节：<a href='第一百六十一章-卷一百六十一-白话.html'>第一百六十一章-卷一百六十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百五十九章-卷一百五十九-白话.html'>第一百五十九章-卷一百五十九</a></p><p class='next'>下一节：<a href='第一百六十一章-卷一百六十一-白话.html'>第一百六十一章-卷一百六十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

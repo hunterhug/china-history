@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后晋<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -161,5 +188,18 @@
 </p><p>不久梁将葛从周攻取邢、氵名两州，唐武皇率兵南下，在青山口构筑营垒。李周不知投靠谁好，因想到卢岳的话，便去投奔青山寨将领张污落，唐武皇奖赏他，补任他为万胜黄头军使。武皇平定云州，庄宗攻战柏乡，李周都有功劳，被提升为匡霸军都指挥使。庄宗进入魏地，李周率军屯守临河、杨刘，所到之地与士兵同甘共苦。李周尤长于守护城池，一天因他奔赴母亲的丧事，由其他将领代替防守，他走后，那座城池就将被攻陷，庄宗连忙派人前去追赶李周，让他穿着丧服守城。庄宗北征，李周与宦官焦彦宾留守杨刘城，梁将王彦章率领几万军队前来进攻。李周日夜登城，亲身抵挡飞箭流石，并派人快马禀告庄宗，请求百里兼程，以解危难，庄宗说：“李周在城中，我担心什么！”便每天只走六十里路，仍不停止田猎，到达的时候，将士断绝粮食已经三天了。等到围困解开，庄宗对李周说：“如果没有你多次阻击的功劳，恐怕各位都被梁军俘虏了。”
 </p><p>同光年间，历任相、蔡二州刺史，蜀地平定后，被任为西川节度副使。天成二年(927)春节，迁任遂州两使留后，不久正式授任节度使，不多时，辞官回朝。三年(928)秋天，外出担任..州节度使，碰上庆州刺史窦廷琬据城违抗皇命，李周奉命讨伐平定他。长兴、清泰年间，历镇徐、安、雍、汴四州，所到的地方没有苛政，老百姓都安居乐业。
 </p><p>晋高祖夺取天下后，李周再次镇守..州，累官至检校太师、兼侍中。到免镇职回朝，逢上少帝临幸澶渊，因李周是历朝老臣，便命他为东京留守。少帝回京时，拜为开封尹。到染上疾病时，梦见焚烧旌旗铠甲，因此而独自感慨嗟叹，上章请求退职，不久在官府去世，时年七十四岁。诏令追赠太师，陪葬在后唐明宗徽陵的北面。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十六章-列传五-白话.html'>第十六章-列传五</a></p><p class='next'>下一节：<a href='第十八章-列传七-白话.html'>第十八章-列传七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十六章-列传五-白话.html'>第十六章-列传五</a></p><p class='next'>下一节：<a href='第十八章-列传七-白话.html'>第十八章-列传七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

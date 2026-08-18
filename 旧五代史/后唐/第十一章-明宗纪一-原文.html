@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后唐<a href='../旧五代史.html#后唐'>：目录</a></p>
@@ -171,5 +198,18 @@
 </p><p>壬辰，文武百僚三拜笺，请行监国之仪，以安宗社，答旨从之。既而有司上监国仪注。甲午，幸大内兴圣宫，始受百僚班见之仪。所司议即位仪注，霍彦威、孔循等言：“唐之运数已衰，不如自创新号。”因请改国号，不从土德。帝问籓邸侍臣，左右奏曰：“先帝以锡姓宗属，为唐雪冤，以继唐祚。今梁朝旧人，不愿殿下称唐，请更名号。”帝曰：“予年十三事献祖，以予宗属，爱幸不异所生。事武皇三十年，排难解纷，栉风沐雨，冒刃血战，体无完肤，何艰险之不历！武皇功业即予功业，先帝天下即予天下也。兄亡弟绍，于义何嫌。且同宗异号，出何典礼？历之衰隆，吾自当之，众之莠言，吾无取也。”时群臣集议，依违不定，惟吏部尚书李琪议曰：“殿下宗室勋贤，立大功于三世，一朝雨泣赴难，安定宗社，抚事因心，不失旧物。若别新统制，则先朝便是路人，茕茕梓宫，何所归往！不惟殿下追感旧君之义，群臣何安！请以本朝言之，则睿宗、文宗、武宗皆以弟兄相继，即位柩前，如储后之仪可也。”于是群议始定。河中军校王舜贤奏，节度使李存霸以今月三日出奔，不知所在。乙未，敕曰：“寡人允副群情，方监国事，外安黎庶，内睦宗亲，庶谐敦惇之规，永保隆平之运。昨京师变起，祸难荐臻，至于戚属之间，不测惊奔之所，虑因藏窜，滥被伤痍，言念于兹，自然流涕。宜令河南府及诸道，应诸王眷属等，昨因惊扰出奔，所至之处，即时津送赴阙。如不幸物故者，量事收瘗以闻。”《北梦琐言》：庄宗诸弟存纪、存确匿于南山民家，人有以报安重诲者，重诲曰：“主上以下诏寻访，帝之仁德，必不加害，不如密令杀之。”果并命于民家。后明宗闻之，切让重诲，伤惜久之。以中门使安重诲为枢密使，以镇州别驾张延朗为枢密副使，以客将范延光为宣徽使，进奏官冯赟为内客省使。
 </p><p>丙申，下敕：“今年夏苗，委人户自供，通顷亩五家为保，本州具帐送省，州县不得差人检括。如人户隐欺，许人陈告，其田倍征。”己亥，命石敬瑭权知陕州兵马留后，皇子从珂权知河南府兵马留后。庚子，淮南杨溥进新茶。以权知汴州军州事孔循为枢密副使，以陈州刺史刘仲殷为邓州留后，以郑州防御使王思同为同州留后。敕曰：“租庸使孔谦，滥承委寄，专掌重权，侵剥万端，奸欺百变。遂使生灵涂炭，军士饥寒，成天下之疮痍，极人间之疲弊。载详众状，侧听舆辞，难私降黜之文，合正诛夷之典。宜削夺在身官爵，按军令处分。虽犯众怒，特贷全家，所有田宅，并从籍没。”是日，谦伏诛。敕停租庸名额，依旧为盐铁、户部、度支三司，委宰臣豆卢革专判。
 </p><p>中书门下上言：“请停废诸道盐运使、内勾司、租庸院大程官，出放猪羊柴炭户。括田竿尺，一依硃梁制度，仍委节度、刺史通申三司，不得差使量检。州使公廨钱物，先被租庸院管系，今据数却还州府，州府不得科率百姓。百姓合散蚕盐，每年只二月内一度亻表散，依夏税限纳钱。夏秋苗税子，除元征石斗及地头钱，余外不得纽配。先遇赦所放逋税，租庸违制征收，并与除放。今欲晓告河南府及诸道准此施行。”从之。是日，宋州节度使元行钦伏诛。壬寅，以枢密副使孔循为枢密使。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十章-庄宗纪八-原文.html'>第十章-庄宗纪八</a></p><p class='next'>下一节：<a href='第十二章-明宗纪二-原文.html'>第十二章-明宗纪二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十章-庄宗纪八-原文.html'>第十章-庄宗纪八</a></p><p class='next'>下一节：<a href='第十二章-明宗纪二-原文.html'>第十二章-明宗纪二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

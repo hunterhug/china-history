@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#魏书'>：目录</a></p>
@@ -177,5 +204,18 @@
 </p><p>李业兴爱好书籍，收集不已，亲手补治残缺，亲自加以题帖，家藏书籍，积至万卷。而他则读书不止，常有异事发现，众儒者佩服他的学识渊博。李业兴性格豪爽侠义，重义气。如人家有急难，投奔他那里，他便收留藏匿。人家与他情投意合，他便能倾注身心，绝不吝啬。如有矛盾，他便会中伤别人，以至于怒形于色，横加诅骂。性情又很急躁偏狭，以至于辩论的时候，高声粗语，伸拳振臂，没有儒者风度。他经常跟别人说：“只要说我好，虽然我明知那是假话，但比说坏处强。”只求进职，忌讳他人比他强，做起事来不问后果，当时的人因这一点，厌恶他。但他学术精深的程度，当时无人能赶得上。
 </p><p>子李崇祖，武定年间，任太尉外兵参军。
 </p><p>崇祖弟遵祖，太昌年间(532)，业兴把长子伯的爵位传给了他。齐立国，按例降爵。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十一章-卷七十一-白话.html'>第七十一章-卷七十一</a></p><p class='next'>下一节：<a href='第七十三章-卷七十三-白话.html'>第七十三章-卷七十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七十一章-卷七十一-白话.html'>第七十一章-卷七十一</a></p><p class='next'>下一节：<a href='第七十三章-卷七十三-白话.html'>第七十三章-卷七十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

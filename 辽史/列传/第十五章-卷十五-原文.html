@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#列传'>：目录</a></p>
@@ -163,5 +190,18 @@
 </p><p>萧塔列葛，字雄隐，五院部人。八世祖只鲁，遥辇氏时尝为虞人。唐安禄山来攻，只鲁战于黑山之阳，败之。以功为北府宰相，世预其选。塔列葛仕开泰间，累迁西南面招讨使。重熙十一年，使西夏，谕伐宋事，约元昊出别道以会。十二年，改右夷离毕、同知南京留守，转左夷离毕，俄授东京留守，以世选为北府宰相，卒。
 </p><p>耶律撒合，字率懒，乙室部人，南府宰相欧礼斯子。天禄间始仕。应历中，拜乙室大王，兼知兵马事。乾亨初，宋来侵，诏以本部兵守南京，与北院大王奚底、统军萧讨古等逆战，奚底等败走，独撒合全军还。上谕之曰：“拒敌当如此。卿勉之，无忧不富贵。”加守太保。统和间卒。
 </p><p>论曰：辽在统和间，数举兵伐宋，诸将如耶律谐理、奴瓜、萧柳等俱有降城擒将之功。最后以萧挞凛为统军，直抵澶渊。将与宋战，挞凛中弩，我兵失倚，和议始定。或者天厌其乱，使南北之民休息者耶！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十四章-卷十四-原文.html'>第十四章-卷十四</a></p><p class='next'>下一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十四章-卷十四-原文.html'>第十四章-卷十四</a></p><p class='next'>下一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

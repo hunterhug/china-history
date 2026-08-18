@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-帝纪<a href='../晋书.html#帝纪'>：目录</a></p>
@@ -181,5 +208,18 @@
 </p><p>帝幼称聪悟。简文之崩也，时年十岁，至晡不临，左右进谏，答曰：“哀至则哭，何常之有？”谢安尝叹以为精理不减先帝。既威权己出，雅有人主之量。既而溺于酒色，殆为长夜之饮。末年长星见，帝心甚恶之，于华林园举酒祝之曰：“长星，劝汝一杯酒，自古何有万岁天子邪！”太白连年昼见，地震水旱为变者相属。醒日既少，而傍无正人，竟不能改焉。时张贵人有宠，年几三十，帝戏之曰：“汝以年当废矣。”贵人潜怒，向夕，帝醉，遂暴崩。时道子昏惑，元显专权，竟不推其罪人。初，简文帝见谶云：“晋祚尽昌明。”及帝之在孕也，李太后梦神人谓之曰：“汝生男，以‘昌明’为字。”及产，东方始明，因以为名焉。简文帝后悟，乃流涕。及为清暑殿，有识者以为“清暑”反为“楚”声，哀楚之征也。俄而帝崩，晋祚自此倾矣。
 </p><p>史臣曰：前史称“不有废也，吾何以兴”，若乃天挺惟神，光膺嗣位，迈油云而骧首，济沈川而能跃。少康一旅之众，所以阐帝图；成汤七十之基，所以兴王业；静河海于既泄，补穹圆于已紊；事异于斯，则弗由也。简皇以虚白之姿，在屯如之会，政由桓氏，祭则寡人。太宗晏驾，宁康纂业，天诱其衷，奸臣自陨。于时西逾剑岫而跨灵山，北振长河而临清洛；荆吴战旅，啸叱成云；名贤间出，旧德斯在：谢安可以镇雅俗，彪之足以正纪纲，桓冲之夙夜王家，谢玄之善断军事。于时上天乃眷，强氐自泯。五尽童子，振袂临江，思所以挂旆天山，封泥函谷；而条纲弗垂，威思罕树，道子荒乎朝政，国宝汇以小人，拜授之荣，初非天旨，鬻刑之货，自走权门，毒赋年滋，愁民岁广。是以闻人、许荣驰书诣阙，烈宗知其抗直，而恶闻逆耳，肆一醉于崇朝，飞千觞于长夜。虽复“昌明”表梦，安听神言？而金行颓弛，抑亦人事，语曰“大国之政未陵夷，小邦之乱已倾覆”也。属苻坚百六之秋，弃肥水之众，帝号为“武”，不亦优哉！
 </p><p>赞曰：君若缀旒，道非交泰。简皇凝寂，不贻伊害。孝武登朝，奸雄自消。燕之击路，郑叔分镳。倡临帝席，酒劝天妖。金风不竞，人事先凋。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八章--原文.html'>第八章-</a></p><p class='next'>下一节：<a href='第十章--原文.html'>第十章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八章--原文.html'>第八章-</a></p><p class='next'>下一节：<a href='第十章--原文.html'>第十章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

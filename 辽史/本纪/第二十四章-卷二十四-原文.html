@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-本纪<a href='../辽史.html#本纪'>：目录</a></p>
@@ -158,5 +185,18 @@
 </p><p>十年春正月辛丑朔，如春水。丙午，复建南京奉福寺浮图。戊辰，如山榆淀。二月庚午朔，萌古国遣使来聘。三月戊申，远萌古国遣使来聘。丁巳，命知制诰王师儒、牌印郎君耶律固傅导燕国王延禧。夏四月丁丑，女直贡良马。五月壬戌，驻跸散水原。乙丑，阻卜来贡。丙寅，降国舅详稳班位在敞稳之下。六月壬辰，禁毁铜钱为器。秋七月甲辰，如黑岭。九月癸亥，驻跸藕丝淀。冬十二月乙未，改庆州大安军曰兴平。是月，改明年为大安，赦杂犯死罪以下。
 </p><p>大安元年春正月丁酉，如混同江。癸卯，王绩知南院枢密使事，邢熙年为中京留守。戊申，以枢密直学士杜公谓参知政事。庚戌，五国酋长来贡良马。二月辛未，如山榆淀。夏四月乙酉，宋主顼殂，子煦嗣位，使来告哀。辛卯，西幸。六月戊辰，驻跸拖古烈。壬申，以王绩为南府宰相，萧挞不也兼知南院枢密使事。丁丑，遣使吊祭于宋。戊寅，宋遣王真、甄佑等馈其先帝遗物。秋七月乙巳，遣使贺宋主即位。戊午，猎于赤山。八月丁卯，幸庆州。戊辰，谒庆陵。冬十月癸亥，驻跸好草淀。戊辰，夏国王李秉常遣使报其母梁氏哀。甲申，以萧挞不也为南院枢密使。十一月乙未，诏“比者外官因誉进秩，久而不调，民被其害。今后皆以资给迁转。”丁酉，以南女直详稳萧袍里为北府宰相。辛亥，史臣进太祖以下七帝《实录》。丙辰，遣使册三韩国公王勋弟运为高丽国王。己未，诏僧尼无故不得赴阙。十二月甲戌，宋遣蔡卞来谢吊祭。
 </p><p>二年春正月辛卯，如混同江。己酉，五国诸部长来贡。癸丑，召权翰林学士赵孝严、知制诰王师儒等讲《五经》大义。二月癸酉，驻跸山榆淀。是月，太白犯岁星。三月乙酉，女直贡良马。夏四月戊戌，北幸。癸丑，遣使加统军使萧讹都斡太子太保，裨将老古金吾卫大将军，萧雅哥静江军节度使，耶律燕奴右监门卫大将军，仍赐赉诸军士。五月丁巳朔，以牧马蕃息多至百万，赏群牧官，以次进阶。乙亥，驻跸纳葛泺。戊寅，宰相梁颖出知兴中府事。是月，放进士张毂等二十六人。六月丁亥朔，以左夷离毕耶律坦为惕隐，知枢密院事耶律斡特剌兼知左夷离毕事。丙申，阻卜来朝。癸卯，遣使按诸路狱。甲辰，以同知南京留守事耶律那也知右夷离毕事。乙巳，阻卜酋长余古赧及爱的来朝，诏燕国王延禧相结为友。戊申，以契丹行宫都部署耶律阿思兼知北院大王事。壬子，高墩以下、县令、录事兄弟及子，悉许叙用。秋七月丁巳，惠妃母燕国夫人削古以厌魅梁王事觉，伏诛，子兰陵郡王萧酬斡除名，置边郡，仍隶兴圣宫。戊午，猎沙岭。甲子，赐兴圣、积庆二宫贫民钱。乙酉，出粟振辽州贫民。八月戊子，以雪罢猎。九月庚午，还上京。壬申，发粟振上京、中京贫民。丙子，谒二仪、五鸾二殿。己卯，出太祖、太宗所御铠仗示燕国王延禧，谕以创业征伐之难。辛巳，召南府宰相议国政。冬十月乙酉朔，以枢密副使窦景庸知枢密院事。丙戌，五国部长来贡。丁亥，以夏国王李秉常薨，遣使诏其子乾顺知国事。十一月甲戌，为燕国王延禧行再生礼，曲赦上京囚。戊寅，高丽遣使谢封册。癸未，出粟振乾、显、成、懿四州贫民。十二月辛卯，以兰陵郡王萧挞不也为南院枢密使。己亥，夏国王李乾顺遣使上其父遗物。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十三章-卷二十三-原文.html'>第二十三章-卷二十三</a></p><p class='next'>下一节：<a href='第二十五章-卷二十五-原文.html'>第二十五章-卷二十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十三章-卷二十三-原文.html'>第二十三章-卷二十三</a></p><p class='next'>下一节：<a href='第二十五章-卷二十五-原文.html'>第二十五章-卷二十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

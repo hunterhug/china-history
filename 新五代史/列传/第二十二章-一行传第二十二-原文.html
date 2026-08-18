@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-列传<a href='../新五代史.html#列传'>：目录</a></p>
@@ -163,5 +190,18 @@
 </p><p>程福赟者，不知其世家。为人沉厚寡言而有勇。少为军卒，以战功累迁洺州团练使。晋出帝时，为奉国右厢都指挥使。开运中，契丹入寇，出帝北征，奉国军士乘间夜纵火焚营，欲因以为乱，福赟身自救火被伤，火灭而乱者不得发。福赟以为契丹且大至，而天子在军，京师虚空，不宜以小故动摇人听，因匿其事不以闻。军将李殷位次福赟下，利其去而代之，因诬福赟与乱者同谋，不然何以不奏。出帝下福赟狱，人皆以为冤，福赟终不自辨以见杀。
 </p><p>○李自伦
 </p><p>李自伦者，深州人也。天福四年正月，尚书户部奏：“深州司功参军李自伦六世同居，奉敕准格。按格，孝义旌表，必先加按验，孝者复其终身，义门仍加旌表。得本州审到乡老程言等称，自伦高祖训，训生粲，粲生则，则生忠，忠生自伦，自伦生光厚，六世同居不妄。”敕以所居飞凫乡为孝义乡，匡圣里为仁和里，准式旌表门闾。九月丙子，户部复奏：“前登州义门王仲昭六世同居，其旌表有听事、步栏，前列屏，树乌头正门，阀阅一丈二尺，乌头二柱端冒以瓦桶，筑双阙一丈，在乌头之南三丈七尺，夹树槐柳，十有五步，请如之。”敕曰：“此故事也，令式无之。其量地之宜，高其外门，门安绰楔，左右建台，高一丈二尺，广狭方正称焉，圬以白而赤其四角，使不孝不义者见之，可以悛心而易行焉。”</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十一章-死事传第二十一-原文.html'>第二十一章-死事传第二十一</a></p><p class='next'>下一节：<a href='第二十三章-唐六臣传第二十三-原文.html'>第二十三章-唐六臣传第二十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十一章-死事传第二十一-原文.html'>第二十一章-死事传第二十一</a></p><p class='next'>下一节：<a href='第二十三章-唐六臣传第二十三-原文.html'>第二十三章-唐六臣传第二十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

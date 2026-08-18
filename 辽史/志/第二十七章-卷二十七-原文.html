@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-志<a href='../辽史.html#志'>：目录</a></p>
@@ -172,5 +199,18 @@
 </p><p>银牌二百面，长尺，刻以国字，文曰“宜速”，又曰“敕走马牌”。国有重事，皇帝亲授使者，手紥给驿马若干。驿马阙，取它马代。法，昼夜驰七百里，其次五百里。所至天子亲临，须索更易，无敢违者。使回，皇帝亲受之，手封牌印郎君收掌。
 </p><p>木契，正面为阳，背面为判，阁门唤仗则用之。朝贺之礼，宣徽使请阳面木契下殿，至于殿门，以契授西上阁门使云：“授契行勘。”勘契官声喏，跪受契，举手勘契同，俯、兴，鞠躬，奏“内外勘契同。”阁门使云：“准敕勘契，行勘。”勘契官执阴面木契声喏，平身立，少退近后，引声云“军将门仗官”，齐声喏。勘契官云：“内出唤仗木契一只，准敕付左右金吾仗行勘。”勘契官云“合不合”，门仗官云“合”，凡再。勘契官云“同不同”，门仗官云“同”，亦再。勘契官近前鞠躬，奏：“勘官左金吾引驾仗、勾画都知某官某，对御勘同。”平身，少退近后，右手举契云：“其契谨付阁门使进入。”阁门使引声喏，门仗官下声喏。勘契官跪以契授，阁门使上殿纳契，宣徽使受契。阁门使下殿，奉敕唤仗。
 </p><p>木箭，内箭为雄，外箭为雌，皇帝行幸则用之。还宫，勘箭官执雌箭，东上阁门使执雄箭，如勘契之仪，详具《礼仪志》。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十六章-卷二十六-原文.html'>第二十六章-卷二十六</a></p><p class='next'>下一节：<a href='第二十八章-卷二十八-原文.html'>第二十八章-卷二十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十六章-卷二十六-原文.html'>第二十六章-卷二十六</a></p><p class='next'>下一节：<a href='第二十八章-卷二十八-原文.html'>第二十八章-卷二十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

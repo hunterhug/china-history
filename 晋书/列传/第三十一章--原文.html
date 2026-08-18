@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -201,5 +228,18 @@
 </p><p>柳字叔惠，亦有名誉。少登清官，历尚书左右仆射。时右丞傅迪好广读书而不解其义，柳唯读《老子》而已，迪每轻之。柳云：“卿读书虽多，而无所解，可谓书簏矣。”时人重其言。出为徐、兗、江三州刺史。卒，赠右光禄大夫、开府仪同三司。乔弟乂，始安太守。乂子成，丹阳尹。
 </p><p>史臣曰：周浚人伦鉴悟，周馥理识精详，华轶动顾礼经，刘乔志存谅直，用能历官内外，咸著勋庸。而祖宣献策迁都，乖忤于东海，彦夏系心宸极，获罪于琅邪，乃被以恶名，加其显戮，岂不哀哉！向若违左衤任于伊川，建右社于淮服，据方城之险，藉全楚之资，简练吴越之兵，漕引淮海之粟，纵未能祈天永命，犹足以纾难缓亡。嗟乎！“不用其良，覆俾我悖”，其此之谓也。苟晞擢自庸微，位居上将，释位之功未立，贪暴之衅已彰，假手世龙，以至屠戮，斯所谓“杀人多矣，能无及此乎”！
 </p><p>赞曰：开林才理，爰登贵仕，绩著折冲，化行江汜。轶既尊主，馥亦勤王，背时获戾，违天不祥。乔为戎首，未识行藏。道将鞠旅，威名克举，领虐有闻，忠勤未取。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十章--原文.html'>第三十章-</a></p><p class='next'>下一节：<a href='第三十二章--原文.html'>第三十二章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十章--原文.html'>第三十章-</a></p><p class='next'>下一节：<a href='第三十二章--原文.html'>第三十二章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

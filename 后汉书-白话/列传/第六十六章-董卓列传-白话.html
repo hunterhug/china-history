@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#后汉书'>：目录</a></p>
@@ -188,5 +215,18 @@
 </p><p>韩遂与马腾自从回到凉州，战争不断，攻下陇地占据关中。曹操当时正对付河北，怕他们乘机作乱，建安七年，就让朝廷封马腾征南将军，封韩遂征西将军，均开府。后来征召段煨为大鸿胪，段煨病死。又征召马腾为卫尉，封槐里侯。马腾应召而去，留下儿子马超带领他的部队。建安十六年，马超与韩遂以关中地区反叛曹操，曹操击败了他们，韩遂、马超败逃，马腾因此被减三族。马超又攻杀凉州刺史韦康，再次占据陇右。建安十九年，天水人杨阜击败马超，马超逃到汉中，投降了刘备。韩遂跑到金城羌地，被其部下杀死。当初，陇西人宗建在抱罕，自称“河首平汉王”，分封百官三十多年。曹操就派夏侯渊攻打宗建，斩了他，凉州全部平定。
 </p><p>论曰：董卓当初本性凶暴强悍，因为赶上天下动乱的形势，所以得以践踏常理，祸害天下，以他那种剖腹取肝断人脚历的残忍性情，则杀尽天下苍生也不能满足他的快意，然而尚能谦抑对待官绅士人，也并未决心对皇室欺凌篡夺，还算存有盗贼之道。到后来贼寇又乘势作乱，翻山倒海，烈火毒焰，从此而燃，天下动荡，至此达到顶点。呜呼，人活着真难啊！天地真是太不仁德丫啊！
 </p><p>赞曰：逢百六阴极注定厄运，国家失度小人得志成灾祸。董卓罪恶滔天，天怒地愤人怨。天下崩溃沸腾，京城烽烟滚滚。多行无礼虽殃及自身，遣下祸患却随之蔓延。流矢飞到天子车旁，刀兵环绕皇家宫阙。天下动荡，入神不宁。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十五章-皇甫嵩朱俊列传-白话.html'>第六十五章-皇甫嵩朱俊列传</a></p><p class='next'>下一节：<a href='第六十七章-刘虞公孙瓚陶谦列传-白话.html'>第六十七章-刘虞公孙瓚陶谦列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十五章-皇甫嵩朱俊列传-白话.html'>第六十五章-皇甫嵩朱俊列传</a></p><p class='next'>下一节：<a href='第六十七章-刘虞公孙瓚陶谦列传-白话.html'>第六十七章-刘虞公孙瓚陶谦列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

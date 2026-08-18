@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#列传'>：目录</a></p>
@@ -185,5 +212,18 @@
 </p><p>浩母卢氏，谌孙女也。浩著《食经叙》曰：“余自少及长，耳目闻见，诸母诸姑所修妇功，无不温习酒食。朝夕养舅姑，四时祭祀，虽有功力，不任僮使，常手自亲焉。昔遭丧乱，饥馑仍臻，饘蔬糊口，不能具其物用，十余年间不复备设。先妣虑久废忘，后生无知见，而少不习业书，乃占授为九篇，文辞约举，婉而成章，聪辩强记，皆此类也。亲没之后，值国龙兴之会，平暴除乱，拓定四方。余备位台铉，与参大谋，赏获丰厚，牛羊盖泽，赀累巨万。衣则重锦，食则梁肉。远惟平生，思季路负米之时，不可复得，故序遗文，垂示来世。”
 </p><p>始浩与冀州刺史颐、荣阳太守模等年皆相次，浩为长，次模，次颐。三人别祖，而模、颐为亲。浩恃其家世魏晋公卿，常侮模、颐。模谓人曰：“桃简正可欺我，何合轻我家周兒也？”浩小名桃简，颐小名周兒。世祖颇闻之，故诛浩时，二家获免。浩既不信佛、道，模深所归向，每虽粪土之中，礼拜形象。浩大笑之，云：“持此头颅不净处跪是胡神也。”
 </p><p>史臣曰：崔浩才艺通博，究览天人，政事筹策，时莫之二，此其所以自比于子房也。属太宗为政之秋，值世祖经营之日，言听计从，宁廓区夏。遇既隆也，勤亦茂哉。谋虽盖世，威未震主，末途邂逅，遂不自全。岂鸟尽弓藏，民恶其上？将器盈必概，阴害贻祸？何斯人而遭斯酷，悲夫！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p><p class='next'>下一节：<a href='第二十四章-卷二十四-原文.html'>第二十四章-卷二十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p><p class='next'>下一节：<a href='第二十四章-卷二十四-原文.html'>第二十四章-卷二十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

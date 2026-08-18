@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#晋书'>：目录</a></p>
@@ -205,5 +232,18 @@
 </p><p>杜锡字世嘏。年少时有名望，最初做官是长沙王义的文学，渐次迁升为太子中舍人。性情耿直忠烈，多次劝谏愍怀太子，言辞恳切，太子感到忧虑。后来在杜锡常坐处的毛毡中放了针，把杜锡刺出了血。过后，太子问杜锡：“近来你在做什么事?”杜锡回答说：“喝醉了不知道。”太子追问说：“你喜欢苛求别人，怎么自己也作错事呢。”后来转任卫将军长史。赵王伦篡位，任他为治书御史。孙秀请求和杜锡交往，而杜锡拒绝了他，孙秀虽然怨恨，但怕他名望高，不敢加害于他。惠帝复位，升杜锡为吏部郎、城阳太守，不接受，改为尚书左丞。四十八岁去世，追赠散骑常侍。儿子杜义继嗣，见《外戚传》。
 </p><p>史臣曰：泰始年间，人与神奉献赐与，羊公提出平定吴国之策，由此可见天地之心。过去齐国有黔夫，燕人在北门祭鬼；赵国有李牧，秦王停止了向东吞并的势头。以德报怨，消除旧恨。在南方显示诚信，在汉水边倾倒了吴人，江南平定，男女老幼一同归心。至于成功而不居功，系幅巾居穷巷，是个落落大方有气量的人。杜预不是生而知之，用时就学，挥鞭攻城取邑，有儒将之风而转战。孔门称道四大弟子，而杜预崇敬其中三人；《春秋》分为五家，而杜预擅长其中一家，难道不优秀吗!三年的丧礼，不分贵贱。地位低微的超过在位的，令人感叹；下葬后太子就除去丧服，也太残酷了。随便顺从，不求正道，把当代最杰出的人，当作诸侯的庶子，檀弓学习变通礼仪的情况，杜预也有吧。
 </p><p>赞曰：选水险阻，呈江回漩。芝茧恩惠信义，百万人归顺。誓师出征，不求爵位。杜预在文坛，可以称作无所不通。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章--白话.html'>第三章-</a></p><p class='next'>下一节：<a href='第五章--白话.html'>第五章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三章--白话.html'>第三章-</a></p><p class='next'>下一节：<a href='第五章--白话.html'>第五章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

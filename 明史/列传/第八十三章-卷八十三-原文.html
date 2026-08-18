@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -171,5 +198,18 @@
 </p><p>冀元亨，字惟乾，武陵人。笃信守仁学。举正德十一年乡试。从守仁于赣，守仁属以教子。宸濠怀不轨，而外务名高，贻书守仁问学，守仁使元亨往。宸濠语挑之，佯不喻，独与之论学，宸濠目为痴。他日讲《西铭》，反覆君臣义甚悉。宸濠亦服，厚赠遣之，元亨反其赠于官。已，宸濠败，张忠、许泰诬守仁与通。诘宸濠，言无有。忠等诘不已，曰：“独尝遣冀元亨论学。”忠等大喜，搒元亨，加以炮烙，终不承，械系京师诏狱。
 </p><p>世宗嗣位，言者交白其冤，出狱五日卒。元亨在狱，善待诸囚若兄弟，囚皆感泣。其被逮也，所司系其妻李，李无怖色，曰：“吾夫尊师乐善，岂他虑哉！”狱中与二女治麻枲不辍。事且白，守者欲出之。曰：“未见吾夫，出安往？”按察诸僚妇闻其贤，召之，辞不赴。已就见，则囚服见，手不释麻枲。问其夫学，曰：“吾夫之学，不出闺门衽席间。”闻者悚然。
 </p><p>赞曰：王守仁始以直节著。比任疆事，提弱卒，从诸书生扫积年逋寇，平定孽藩。终明之世，文臣用兵制胜，未有如守仁者也。当危疑之际，神明愈定，智虑无遗，虽由天资高，其亦有得于中者欤。矜其创获，标异儒先，卒为学者讥。守仁尝谓胡世宁少讲学，世宁曰：“某恨公多讲学耳。”桂萼之议虽出于媢忌之私，抑流弊实然，固不能以功多为讳矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十二章-卷八十二-原文.html'>第八十二章-卷八十二</a></p><p class='next'>下一节：<a href='第八十四章-卷八十四-原文.html'>第八十四章-卷八十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八十二章-卷八十二-原文.html'>第八十二章-卷八十二</a></p><p class='next'>下一节：<a href='第八十四章-卷八十四-原文.html'>第八十四章-卷八十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

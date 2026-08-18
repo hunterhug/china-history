@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -192,5 +219,18 @@
 </p><p>祁宰，字彦辅，江淮人。宋季以医术补官。王师破汴得之，后隶太医。累迁中奉大夫、太医使。数被赏赉，常感激欲自效。海陵将伐宋，宰欲谏，不得见。会元妃有疾，召宰诊视。既入见，即上疏谏，其略言：“国朝之初，祖宗以有道伐无道，曾不十年，荡辽戡宋。当此之时，上有武元、文烈英武之君，下有宗翰、宗雄谋勇之臣，然犹不能混一区宇，举江淮、巴蜀之地，以遗宋人。况今谋臣猛将，异于曩时。且宋人无罪，师出无名。加以大起徭役，营中都，建南京，缮治甲兵，调发军旅，赋役烦重，民人怨嗟，此人事之不修也。间者昼星见于牛斗，荧惑伏于翼轸。巳岁自刑，害气在扬州，太白未出，进兵者败，此天时不顺也。舟师水涸，舳舻不继，而江湖岛渚之间，骑士驰射，不可驱逐，此地利不便也。”言甚激切。海陵怒，命戮于市，籍其家产，天下哀之。綦戩，宰婿也，海陵疑奏疏戩为之。辞曰：“实不知也。”海陵犹杖戩。召禁中诸司局官至咸德门，谕以杀宰事。
 </p><p>明年，世宗即位于辽东。四年，诏赠资政大夫，复其田宅。章宗即位，诏访其子忠勇校尉、平定州酒监公史，擢尚药局都监。泰和初，诏定功臣谥，尚书省掾李秉钧上言：“事有宜缓而急，若轻而重者，名教是也。伏见故赠资政大夫祁宰以忠言被诛，慕义之士，尽伤厥心。世宗即位，赠之以官，陛下录用其子，甚大惠也。虽武王比干之墓，孔子誉夷、齐之仁，何以异此。而有司拘文，以职非三品不在议谥之例，臣窃疑之。若职至三品方得请谥，当时居高官、食厚禄者，不为无人，皆畏罪淟涊，曾不敢申一喙，画一策，以为社稷计。卒使立名死节之士，顾出于医卜之流，亦可以少愧矣。臣以谓非常之人，当以非常之礼待之。乞诏有司特赐谥以旌其忠，斯亦助名教之一端也。”制曰：“可。”下太常，谥曰忠毅。
 </p><p>赞曰：异哉，海陵之为君也，舞智御下而不恤焉。君子仕于朝，动必以礼，然后免于耻。张通古、耶律安礼位不及张浩，进退始终，其贤远矣。浩无事不为，无役不从，为相最久，用之厚，遇之薄，岂亦自取之邪？海陵伐宋，浩、安礼位皆大臣，一以婉辞，一以密谏，贤于不谏而已。祁宰一医流，独能极谏，其后皆如所言。海陵戕之，足以成其百世之名耳。纳合椿年援引善类，有君子风。其死适在宋兵未举之前，然观其好营产殖，亦未必忘身徇国之士也。祁宰卓乎不可及也夫！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p><p class='next'>下一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p><p class='next'>下一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

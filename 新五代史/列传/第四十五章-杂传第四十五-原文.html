@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-列传<a href='../新五代史.html#列传'>：目录</a></p>
@@ -187,5 +214,18 @@
 </p><p>天福三年，重绩上言：“历象，王者所以正一气之元，宣万邦之命。而古今所纪，考审多差，《宣明》气朔正而星度不验，《崇玄》五星得而岁差一日，以《宣明》之气朔，合《崇玄》之五星，二历相参，然后符合。自前世诸历，皆起天正十一月为岁首，用太古甲子为上元，积岁愈多，差阔愈甚。臣辄合二历，创为新法，以唐天宝十四载乙未为上元，雨水正月中气为气首。”诏下司天监赵仁锜、张文皓等考覈得失。仁锜等言：“明年庚子正月朔，用重绩历考之，皆合无舛。”乃下诏班行之，号《调元历》。行之数岁辄差，遂不用。重绩又言：“漏刻之法，以中星考昼夜为一百刻，八刻六十分刻之二十为一时，时以四刻十分为正，此自古所用也。今失其传，以午正为时始，下侵未四刻十分而为午。由是昼夜昏晓，皆失其正，请依古改正。”从之。重绩卒年六十四。
 </p><p>○赵延义
 </p><p>赵延义，字子英，秦州人也。曾祖省躬通数术，避乱于蜀。父温珪，事蜀王建为司天监，每为建占吉凶，小不中，辄加诘责。温珪临卒，戒其子孙曰：“数术，吾世业，然吾仕乱国，得罪而几死者数矣！子孙能以佗道仕进者，不必为也。”然延义少亦以此仕蜀为司天监。蜀亡，仕唐为星官。延义兼通三式，颇善相人。契丹灭晋，延义随虏至镇州。李筠、白再荣谋逐麻答归汉，犹豫未决，延义假述数术赞成之。周太祖自魏以兵入京师，太祖召延义问：“汉祚短促者，天数邪？”延义言：“王者抚天下，当以仁恩德泽，而汉法深酷，刑罚枉滥，天下称冤，此其所以亡也！”是时，太祖方以兵围苏逢吉、刘铢第，欲诛其族，闻延义言悚然，因贷其族，二家获全。延义事周为太府卿、判司天监，以疾卒。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十四章-杂传第四十四-原文.html'>第四十四章-杂传第四十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十四章-杂传第四十四-原文.html'>第四十四章-杂传第四十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

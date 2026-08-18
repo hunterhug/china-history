@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>隋书-志<a href='../隋书.html#志'>：目录</a></p>
@@ -178,5 +205,18 @@
 </p><p>仁寿中，用法益峻，帝既喜怒不恆，不复依准科律。时杨素正被委任，素又禀性高下，公卿股栗，不敢措言。素于鸿胪少卿陈延不平，经蕃客馆，庭中有马屎，又庶仆氈上樗蒲。旋以白帝，帝大怒曰：“主客令不洒扫庭内，掌固以私戏污败官氈，罪状何以加此！”皆于西市棒杀，而榜棰陈延，殆至于毙。大理寺丞杨远、刘子通等，性爱深文，每随牙奏狱，能承顺帝旨。帝大悦，并遣于殿庭三品行中供奉，每有诏狱，专使主之。候帝所不快，则案以重抵，无殊罪而死者，不可胜原。远又能附杨素，每于途中接候，而以囚名白之，皆随素所为轻重。其临终赴市者，莫不途中呼枉，仰天而哭。越公素侮弄朝权，帝亦不之能悉。
 </p><p>炀帝即位，以高祖禁网深刻，又敕修律令，除十恶之条。时斗称皆小旧二倍，其赎铜亦加二倍为差。杖百则三十斤矣。徒一年者六十斤，每等加三十斤为差，三年则一百八十斤矣。流无异等，赎二百四十斤。二死同赎三百六十斤。其实不异。开皇旧制，Ｘ门子弟，不得居宿卫近侍之官。先是萧严以叛诛，崔君绰坐连庶人勇事，家口籍没。严以中宫故，君绰缘女入宫爱幸，帝乃下诏革前制曰：“罪不及嗣，既弘至孝之道，恩由义断，以劝事君之节。故羊鲋从戮，弥见叔向之诚，季布立勋，无预丁公之祸，用能树声往代，贻范将来。朕虚己为政，思遵旧典，推心待物，每从宽政。六位成象，美厥含弘，一眚掩德，甚非谓也。诸犯罪被戮之门，期已下亲，仍令合仕，听预宿卫近侍之官。”
 </p><p>三年，新律成。凡五百条，为十八篇。诏施行之，谓之《大业律》。一曰名例，二曰卫宫，三曰违制，四曰请求，五曰户，六曰婚，七曰擅兴，八曰告劾，九曰贼，十曰盗，十一曰斗，十二曰捕亡，十三曰仓库，十四曰厩牧，十五曰关市，十六曰杂，十七曰诈伪，十八曰断狱。其五刑之内，降从轻典者，二百余条。其枷杖决罚讯囚之制，并轻于旧。是时百姓久厌严刻，喜于刑宽。后帝乃外征四夷，内穷嗜欲，兵革岁动，赋敛滋繁。有司皆临时迫胁，苟求济事，宪章遐弃，贿赂公行，穷人无告，聚为盗贼。帝乃更立严刑，敕天下窃盗已上，罪无轻重，不待闻奏，皆斩。百姓转相群聚，攻剽城邑，诛罚不能禁。帝以盗贼不息，乃益肆淫刑。九年，又诏为盗者籍没其家。自是群贼大起，郡县官人，又各专威福，生杀任情矣。及杨玄感反，帝诛之，罪及九族。其尤重者，行轘裂枭首之刑。或磔而射之。命公卿已下，脔啖其肉。百姓怨嗟，天下大溃，及恭帝即位，狱讼有归焉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p><p class='next'>下一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p><p class='next'>下一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

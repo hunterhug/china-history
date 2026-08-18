@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#列传'>：目录</a></p>
@@ -171,5 +198,18 @@
 </p><p>萧衍使张皋写子升文笔，传于江外。衍称之曰：“曹植、陆机复生于北土。恨我辞人，数穷百六。”阳夏太守傅标使吐谷浑，见其国主床头有书数卷，乃是子升文也。济阴王晖业尝云：“江左文人，宋有颜延之、谢灵运，梁有沈约、任昉，我子升足以陵颜轹谢，含任吐沈。”杨遵彦作《文德论》，以为古今辞人皆负才遗行，浇薄险忌，唯邢子才、王元景、温子升彬彬有德素。
 </p><p>齐文襄王引子升为大将军府谘议参军。子升前为中书郎，常诣萧衍客馆受国书，自以不修容止。谓人曰：“诗章易作，逋峭难为。”文襄馆客元仅曰：“诸大当贺。”推子升合陈辞。子升久忸怩，乃推陆操焉。及元仅、刘思逸、荀济等作乱，文襄疑子升知其谋。方使之作献武王碑文，既成，乃饿诸晋阳狱，食弊襦而死，弃尸路隅，没其家口。太尉长史宋游道收葬之，又为集其文笔为三十五卷。子升外恬静，与物无竞，言有准的，不妄毁誉，而内深险。事故之际，好预其间，所以终致祸败。又撰《永安记》三卷。无子。
 </p><p>史臣曰：古之人所贵名不朽者，盖重言之尚存，又加之以才名，其为贵显，固其宜也。自余或位下人微，居堂亦何能自达。及其灵蛇可握，天网俱顿，并编缃素，咸贯儒林，虽其位可下，其身可杀，千载之后，贵贱一焉。非此道也，孰云能致。凡百士子，可不务乎！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十二章-卷七十二-原文.html'>第七十二章-卷七十二</a></p><p class='next'>下一节：<a href='第七十四章-卷七十四-原文.html'>第七十四章-卷七十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七十二章-卷七十二-原文.html'>第七十二章-卷七十二</a></p><p class='next'>下一节：<a href='第七十四章-卷七十四-原文.html'>第七十四章-卷七十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

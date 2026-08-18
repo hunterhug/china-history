@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后周<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -166,5 +193,18 @@
 </p><p>“现在我们驱车命将，鸣鼓出兵，征发浙西的大船，调来朗陵的戈甲，东西合势，水陆齐攻。吴国孙皓走投无路时，自动投降归顺；陈朝后主气数完尽时，何处容他生存！凡淮南将士军民，久违大朝，未闻声德教化，虽然一时顺从伪朝，但应亲近中原正统，须善于选择安危，早定去向。如能放下武器表示归顺，全郡投降，准备牛酒以犒劳我将士，交出符印而听从我命令，那么车服玉帛，奖赏你们决不吝惜，土地山河，封给你们决不小气。奖惩之令，信如丹青，如果执迷不误，就不免将要后悔。王师所至，军纪严明，秋毫无犯，就如及时澍雨，百姓父老，务请放心安居，抢掠焚烧之类，必使禁止不生。”
 </p><p>十八日，潞州上奏，在祁县打败河东贼军。十九日，西南面行营都部署王景上奏，收复凤州，抓获伪节度使王环。二十一日，部分赦免秦、凤、阶、成等州管区内犯人，从今年十一月以前，凡有罪犯，不管轻重，全部释放。二十五日，邢州上奏，河东刘崇死亡。二十八日，淮南前军都部署李谷上奏，先锋都指挥使白延遇在来远镇打败淮南贼军。
 </p><p>十二月十日，李谷上奏，在寿州城下打败淮南贼军二千人。十五日，李谷上奏，在山口镇打败淮南贼军一千多人。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章-世宗纪一-白话.html'>第五章-世宗纪一</a></p><p class='next'>下一节：<a href='第七章-世宗纪三-白话.html'>第七章-世宗纪三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五章-世宗纪一-白话.html'>第五章-世宗纪一</a></p><p class='next'>下一节：<a href='第七章-世宗纪三-白话.html'>第七章-世宗纪三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

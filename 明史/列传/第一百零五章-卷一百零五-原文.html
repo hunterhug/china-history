@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -188,5 +215,18 @@
 </p><p>道南辅大政不为诡随，颇有时望。岁丙辰，偕礼部尚书刘楚先典会试。吴江举人沈同和者，副都御史季文子，目不知书，贿礼部吏，与同里赵鸣阳联号舍。其首场七篇，自坊刻外，皆鸣阳笔也。榜发，同和第一，鸣阳亦中式，都下大哗。道南等亟检举，诏令覆试。同和竟日构一文。下吏，戍烟瘴，鸣阳亦除名。
 </p><p>先是，汤宾尹科场事，实道南发之，其党侧目。御史李嵩、周师旦遂连章论道南，而给事中刘文炳攻尤力。道南疏辨乞休，颇侵文炳。文炳遂极诋御史张至发助之。道南不能堪，言：“台谏劾阁臣，职也，未有肆口嫚骂者。臣辱国已甚，请立罢黜。”帝雅重道南，谪文炳外任，夺嵩等俸。御史韩浚、朱堦救文炳，复诋道南。道南益求去。杜门逾年，疏二十七上，帝犹勉留。会继母讣至，乃赐道里费，遣行人护归。天启初，以覃恩即家进太子太保。居二年卒。赠少保，谥文恪。
 </p><p>赞曰：《传》称“道合则服从，不合则去”，其王家屏、沈鲤之谓乎！廷机虽颇丛物议，然清节不污。若于陛之世德，慎行之博闻，亦足称羽仪廊庙之选矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百零四章-卷一百零四-原文.html'>第一百零四章-卷一百零四</a></p><p class='next'>下一节：<a href='第一百零六章-卷一百零六-原文.html'>第一百零六章-卷一百零六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百零四章-卷一百零四-原文.html'>第一百零四章-卷一百零四</a></p><p class='next'>下一节：<a href='第一百零六章-卷一百零六-原文.html'>第一百零六章-卷一百零六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-志<a href='../金史.html#志'>：目录</a></p>
@@ -202,5 +229,18 @@
 </p><p>明昌六年制，文武官六贯石以上承应人并及荫者，许用牙领，紫圆板皂条罗带，皂靴，上得兼下。系籍儒生止服白衫领，系背带并以紫圆绦罗带，乾皂靴。余人用纯紫领，不得用缘，杂色圆板绦罗带不得用紫，靴用黄及黑油皂蜡等，妇人各从便。泰和四年，以亲王品官既分领缘，而复有皂靴之禁，似涉太烦，遂听亲王用银褐领紫缘，品官皆紫领白缘，余从明昌制。
 </p><p>书袋之制。大定十六年，世宗以吏员与士民之服无别，潜入民间受赇辒狱，有司不能检察，遂定悬书袋之制。省、枢密院令、译史用紫襜丝为之，台、六部、宗正、统军司、检察司以黑斜皮为之，寺、监、随朝诸局、并州县，并黄皮为之，各长七寸，阔二寸、厚半寸，并于束带上悬带，公退则悬于便服，违者所司纠之。
 </p><p>大定十三年，太常寺拟士人及僧尼道女冠有师号、并良闲官八品以上，许服花纱绫罗丝绸。在官承应有出身人、带八品以下官，未带官亦同，许服花纱绫罗襜丝丝绸，家属同，妇人许用珠为首饰。其都孔目与八品良闲官同，京府州县司吏皆与庶人同。庶人止许服霡绸、绢布、毛褐、花纱、无纹素罗、丝绵，其头巾、系腰、领帕许用芝麻罗、绦用绒织成者，不得以金玉犀象诸宝玛瑙玻璃之类为器皿、及装饰刀把鞘、并银装钉床榻之类。妇人首饰，不许用珠翠钿子等物，翠毛除许装饰花环冠子，余外并禁。兵卒许服无纹压罗、霡绸、绢布、毛褐。奴婢止许服霡绸、绢布、毛褐。倡优遇迎接、公筵承应，许暂服绘画之服，其私服与庶人同。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十三章-卷二十三-原文.html'>第二十三章-卷二十三</a></p><p class='next'>下一节：<a href='第二十五章-卷二十五-原文.html'>第二十五章-卷二十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十三章-卷二十三-原文.html'>第二十三章-卷二十三</a></p><p class='next'>下一节：<a href='第二十五章-卷二十五-原文.html'>第二十五章-卷二十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

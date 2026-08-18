@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#列传'>：目录</a></p>
@@ -161,5 +188,18 @@
 </p><p>静帝曾季秋大射，普令赋诗，收诗末云：“尺书征建鄴，折简召长安。”文襄壮之，顾谓人曰：“在朝今有魏收，便是国之光采。雅俗文墨，通达纵横，我亦使子才、子升时有所作，至于词气并不及之。吾或意有所怀，忘而不语，语而不尽，意有未及。及收呈草，皆以周悉。此亦难有。”又敕兼主客郎，接萧衍使谢延徐陵。侯景既陷台城，衍鄱阳王范时为合州刺史，文襄敕收以书喻之。范得书，乃率部伍西上，口州刺史崔圣念入据其城。文襄谓收曰：“今定一州，卿有其力，犹恨‘尺书征建鄴’未郊耳。”
 </p><p>文襄崩，文宣如晋阳，今与黄门郎崔季舒、高德正、吏部郎中尉瑾于北第参掌机密。转秘书监，兼著作郎，又除定州大中正。时齐将受禅，杨愔奏收置之别馆，令撰禅代诏册诸文，遣徐之才守门不听出。天保元年，除中书令，仍兼著作郎，封富平县子。
 </p><p>二年，受诏撰魏史，除魏尹，故优以禄力，专在史阁，不知郡事。初，帝令群臣各言志，收曰：“臣愿得直笔东观，早出《魏书》。”故帝使收专其任。又诏平原王高隆之总监之，隆之署名而已，帝敕收曰：“好直笔，我终不作魏太武诛史官。”始魏初，邓渊撰《代记》十余卷，其后崔浩典史，游雅、高允、程骏、李彪、崔光、李琰之世修其业。浩为编年体，彪始分作纪表志传，书犹未出。世宗时，命邢峦追撰《高祖起居注》，书至太和十四年，又命崔鸿、王遵业补续焉。下讫肃宗，事甚委悉。济阴王晖业撰《辩宗室录》三十卷。收于是与通直常侍房延祐，司空司马辛元植，国子博士刁柔、裴昂之，尚书郎高孝干专总斟酌，以成《魏书》。辨定名称，随条甄举，又搜采亡遗，缀续后事，备一代史籍，表而上闻。勒成一代大典，凡十二纪、九十二列传，合一百一十卷，五年三月奏上之。秋，除梁州刺史，收以志未成，奏请终业，许之。十一月，复奏十志：《天象》四卷，《地形》三卷，《律历》二卷，《礼》、《乐》四卷，《食货》一卷，《刑罚》一卷，《灵征》二卷，《官氏》二卷，《释老》一卷，凡二十卷，续于纪传，合一百三十卷，分为十二帙。其史三十五例，二十五序，九十四论，前后二表一启焉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九十一章-卷九十一-原文.html'>第九十一章-卷九十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九十一章-卷九十一-原文.html'>第九十一章-卷九十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

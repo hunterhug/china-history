@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -190,5 +217,18 @@
 <p>　　元和八年，西受降城为河徙浸毁，宰相李吉甫请移兵于天德故城。坦与李绛叶 议，以为：“西城张仁愿所筑，制匈奴上策。城当碛口，居虏要冲，美水丰草，边 防所利。今河流之决，不过退就二三里，奈何舍万代安永之策，徇一时省费之谋？ 况天德故城僻处确瘠，其北枕山，与河绝远，烽候警备，不相统接。虏之唐突，势 无由知，是无故而蹙国二百里，非所利也。”及城使周怀义奏利害，与坦议同。事 竟不行。未几，出为剑南东川节度使。在镇累年，后请收闰月军吏粮料，以助军行 营，人多非之。贞元十二年九月卒，年六十九，赠礼部尚书。 </p>
 <p>　　史臣曰：古之诤臣，有死于言者。其次，引裾折槛，不改其操，亦难矣哉！袁 高之执卢杞，存诚之戮鉴虚，有古人之遗风焉！平仲触鳞之气，纠其谬欤？文洽夺 章，以摅府愤；永夷绝食，不饮盗泉，节义之士也。南仲非葬之言，卢坦西城之议， 量之深也。如数子，道为时无君子，乃是厚诬。 </p>
 <p>　　赞曰：灵草指佞，谏臣匡失。惟袁与薛，人中屈轶。宽夫雀跃，廷老鸿轩。姚、 卢启奏，君子之言。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百零二章-卷一百零二-原文.html'>第一百零二章-卷一百零二</a></p><p class='next'>下一节：<a href='第一百零四章-卷一百零四-原文.html'>第一百零四章-卷一百零四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百零二章-卷一百零二-原文.html'>第一百零二章-卷一百零二</a></p><p class='next'>下一节：<a href='第一百零四章-卷一百零四-原文.html'>第一百零四章-卷一百零四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-志<a href='../明史.html#志'>：目录</a></p>
@@ -188,5 +215,18 @@
 </p><p>成化八年二月，忻王见治薨。发引日，帝不视朝。及葬，辍朝一日。十三年，四川按察使彭韶言：“亲王郡王薨逝，皆遣官致祭，使臣络绎，人夫劳扰。自后惟亲王如旧，其郡王初丧遣官一祭，馀并遣本处官。凡王国母妃之丧，俱遣内官致祭。今宗妇众多，其地有镇守太监者，宜遣行礼。又王国茔葬，夫妇同穴。初造之时，遣官监修，开圹合葬，乞止命本处官司。”帝从礼部覆奏，王妃祭礼如旧，馀依议行。弘治十六年七月，申王祐楷薨。礼部言：“前沂穆王薨，未出府。申王已出府而未之国，拟依沂穆参以在外亲王例行之。”
 </p><p>王妃葬地载于《会典》者，明初追封寿春等十王及妃，坟在凤阳府西北二十五里白塔，设祠祭署、陵户。南昌等五王及妃祔葬凤阳皇陵，有司岁时祭祀，皆与享。怀献世子以下诸王未之国者，多葬于西山，岁时遣内官行礼。
 </p><p>永乐十五年正月，永安公主薨。时初举张灯宴，遂罢之。辍朝四日，赐祭，命有司治丧葬。二月，太祖第八女福清公主薨，辍朝三日。定制，凡公主丧闻，辍朝一日。自初丧至大祥，御祭凡十二坛。下葬，辍朝一日。仪视诸王稍杀，丧制同，惟各官不成服，其未下嫁葬西山者，岁时遣内官行礼。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十四章-卷三十四-原文.html'>第三十四章-卷三十四</a></p><p class='next'>下一节：<a href='第三十六章-卷三十六-原文.html'>第三十六章-卷三十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十四章-卷三十四-原文.html'>第三十四章-卷三十四</a></p><p class='next'>下一节：<a href='第三十六章-卷三十六-原文.html'>第三十六章-卷三十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

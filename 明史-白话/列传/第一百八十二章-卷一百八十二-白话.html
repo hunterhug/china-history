@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -173,5 +200,18 @@
 </p><p>万龄拜同乡人冯从吾为师，万历四十四年(1616)中进士，授保定知府。天启六年(1626)，魏忠贤尽毁天下书院，万龄非常愤怒。魏忠贤党人李鲁生弹劾万龄，散布讹言，说天变、地震、物怪、人妖等，都是由于书院所造成的。万龄因而被撤职。
 </p><p>崇祯初年，起任万龄为黄州知府，他在黄州把本府生员召集于定惠书院，以儒家正学来开导他们。在黄州任职三年后，调为河南副使，监军磁州。辉县之北与山西陵川之南，有个水峪村，是农民起义军老回回部的根据地，在此已数十年。万龄与山西监司王肇生合兵进剿，大战六次，焚烧三百余里，攻克此村。万龄因功加右参政之职。
 </p><p>义军由山西入河北，进攻新乡。万龄截击，义军转战陵川，其后又攻新乡。万龄战败，削职归家。汤开远为他伸冤，无效。许久以后，廷臣交相举荐，正准备任用，西安为义军所陷。万龄赴关中书院，哭拜先圣，上吊自尽。泾阳人佥事王征、太常寺卿耀州宋师襄、咸宁人怀庆通判窦光仪、长安人仪封知县徐方敬、咸宁人芮城知县徐芳声、明王朝宗族举人米谊及举人席增光都在西安，城破被杀。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百八十一章-卷一百八十一-白话.html'>第一百八十一章-卷一百八十一</a></p><p class='next'>下一节：<a href='第一百八十三章-卷一百八十三-白话.html'>第一百八十三章-卷一百八十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百八十一章-卷一百八十一-白话.html'>第一百八十一章-卷一百八十一</a></p><p class='next'>下一节：<a href='第一百八十三章-卷一百八十三-白话.html'>第一百八十三章-卷一百八十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

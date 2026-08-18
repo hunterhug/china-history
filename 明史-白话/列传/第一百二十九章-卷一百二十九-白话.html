@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -199,5 +226,18 @@
 </p><p>天启二年(1622)，吏部将任命他为左副都御史，钟羽正推辞说：“冯从吾先生做佥都御史已经很长时间了。我是后来人，排在他前面，是助长争逐之风。西御史台是什么地方，难道有这种风气存在的位置？”于是接受佥都御史而让冯从吾当左副都御史。刚进入官署，就说：“方从哲进献药丸讨论谥号，封太后迁移宫室，没有谋略而少决断，既巧言媚上又妄言欺下，应该免除他的官级，让他接受法律的惩罚。沈翭与宫内相勾结，揽权行贿，应该立即把他赶走。”朝中邪佞之辈都不高兴。熊廷弼、王化贞的官司，大家议论纷扬。钟羽正说：“以前开原、铁岭的罪责不明，导致丧失了辽阳，辽阳的罪责不明，导致丧失了广宁。国家的疆土，怎么经受得起三番五次地丢失。”由此这二人都被定罪处以重刑。正好朱童蒙用讲学的事情来攻击邹元标及冯从吾，钟羽正说书院的设置，实在是北京城里的第一好事，不应该禁止，于是请求退休。没多久，代替冯从吾当左副都御史，后改任户部右侍郎，监督仓场。
 </p><p>第二年春天，授官工部尚书。太监隔一年发一次冬衣。这年夏天六月份，众太监一千多人请求预领冬衣，蜂拥入官署，打碎办公桌椅，殴打办事员，谩骂着离开了。大概是忌恨钟羽正的人唆使太监故意与钟羽正为难。钟羽正因为这事上疏请求辞职。皇帝下诏让司礼太监棒打众闹事太监，把他们贬职，谕示钟羽正出来处理事务。钟羽正请求离职更加坚定，于是说：“现在国库空虚，九边的战士日夜枕戈待旦，却吃不到一顿饱饭。庆陵的工人登高负重，顶烈日冒酷暑，却得不到工钱。唯独宫内的官员有什么请求，早上报告打上来，晚上就批准了。这事传扬出去，哪个不愤慨？卑臣不能克尽职称，按理应该罢官免职。”又上了三道奏疏，自行引退了。
 </p><p>过了一年，阉党霍维华追查三案，说钟羽正投身于帮派之中，于是剥夺了他的官级。崇祯初年，恢复他的官级。不久去世，赠太子太保。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百二十八章-卷一百二十八-白话.html'>第一百二十八章-卷一百二十八</a></p><p class='next'>下一节：<a href='第一百三十章-卷一百三十-白话.html'>第一百三十章-卷一百三十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百二十八章-卷一百二十八-白话.html'>第一百二十八章-卷一百二十八</a></p><p class='next'>下一节：<a href='第一百三十章-卷一百三十-白话.html'>第一百三十章-卷一百三十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

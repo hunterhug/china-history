@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -181,5 +208,18 @@
 <p>　　翰之守潼关也，主天下兵权，肆志报怨，诬奏户部尚书安思顺与禄山潜通，伪 令人为禄山遗思顺书，于关门擒之以献。其年三月，思顺及弟太仆卿元贞坐诛，徙 其家属于岭外，天下冤之。 </p>
 <p>　　史臣曰：大盗作梗，禄山乱常，词虽欲诛国忠，志则谋危社稷。于时承平日久， 金革道消，封常清、高仙芝相次率不教之兵，募市人之众，以抗ＡＴ寇，失律丧师。 哥舒翰废疾于家，起专兵柄，二十万众拒贼关门，军中之务不亲，委任又非其所。 及遇羯贼，旋致败亡，天子以之播迁，自身以之拘执，此皆命帅而不得其人也。 《礼》曰：“大夫死众。”又曰：“谋人之军师败则死之。”翰受署贼庭，苟延视 息，忠义之道，即可知也，岂不愧于颜杲卿乎！抑又闻之，古之命将者，推毂而谓 之曰：“阃外之事，将军裁之。”观杨国忠之奏事，边令诚之护戎，又掣肘于军政 者也，未可偏责三帅，不尤伊人。后之君子，得不深鉴！ </p>
 <p>　　赞曰：羯贼犯顺，戎车启行。委任失所，封、高败亡。虔刘圻甸，僭窃衣裳。 丑哉舒翰，不能死王。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十三章-卷五十三-原文.html'>第五十三章-卷五十三</a></p><p class='next'>下一节：<a href='第五十五章-卷五十五-原文.html'>第五十五章-卷五十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五十三章-卷五十三-原文.html'>第五十三章-卷五十三</a></p><p class='next'>下一节：<a href='第五十五章-卷五十五-原文.html'>第五十五章-卷五十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

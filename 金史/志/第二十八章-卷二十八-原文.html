@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-志<a href='../金史.html#志'>：目录</a></p>
@@ -178,5 +205,18 @@
 </p><p>牛头税
 </p><p>即牛具税，猛安谋克部女直户所输之税也。其制每耒牛三头为一具，限民口二十五受田四顷四亩有奇，岁输粟大约不过一石，官民占田无过四十具。天会三年，太宗以岁稔，官无储积无以备饥谨，诏令一耒赋粟一石，每谋克别为一廪贮之。四年，诏内地诸路，每牛一具赋粟五斗，为定制。
 </p><p>世宗大定元年，诏诸猛安不经迁移者，征牛具税粟，就命谋克监其仓，亏损则坐之。十二年，尚书省奏：“唐古部民旧同猛安谋克定税，其后改同州县，履亩立税，颇以为重。”遂命从旧制。二十年，定功授世袭谋克，许以亲族从行，当给以地者，除牛九具以下全给，十具以上四十具以下者，则于官豪之家量拨地六具与之。二十一年，世宗谓宰臣曰：“前时一岁所收可支三年，比闻今岁山西丰稔，所获可支三年。此间地一岁所获不能支半岁，而又牛头税粟，每牛一头止令各输三斗，又多逋悬，此皆递互隐匿所致，当令尽实输之。”二十三年，有司奏其事，世宗谓左丞完颜襄曰：“卿家旧止七具，今定为四十具，朕始令卿等议此，而卿皆不欲，盖各顾其私尔。是后限民口二十五，算牛一具。”七月，尚书省复奏其事，上虑版籍岁久贫富不同，猛安谋克又皆年少，不练时事，一旦军兴，按籍征之必有不均之患。乃令验实推排。阅其户口、畜产之数，其以上京二十二路来上。八月，尚书省奏，推排定猛安谋克户口、田亩、牛具之数。猛安二百二，谋克千八百七十八，户六十一万五千六百二十四，口六百一十五万八千六百三十六，内正口四百八十一万二千六百六十九，奴婢口一百三十四万五千九百六十七，田一百六十九万三百八十顷有奇，牛具三十八万四千七百七十一。在都宗室将军司，户一百七十，口二万八千七百九十，内正口九百八十二，奴婢口二万七千八百八，田三千六百八十三顷七十五亩有奇，牛具三百四。迭剌、唐古二部五飐，户五千五百八十五，口一十三万七千五百四十四，内正口十一万九千四百六十三，奴婢口一万八千八十一，田四万六千二十四顷一十七亩，牛具五千六十六。后二十六年，尚书省奏并征牛头税粟，上曰：“积压五年，一见并征，民何以堪？其令民随年输纳。被灾者蠲之，贷者俟丰年征还。”</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十七章-卷二十七-原文.html'>第二十七章-卷二十七</a></p><p class='next'>下一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十七章-卷二十七-原文.html'>第二十七章-卷二十七</a></p><p class='next'>下一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

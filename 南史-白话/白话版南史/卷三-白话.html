@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>南史-白话版南史<a href='../南史.html#南史'>：目录</a></p>
@@ -184,5 +211,18 @@
 </p><p>七月初七夜，后废帝在仁寿殿被刺杀，当时年龄十五岁。初八，皇太后命令贬废帝为苍梧郡王，埋葬在丹阳秣陵县郊外祭坛的西面。
 </p><p>起初，后废帝出生的那天夜里，明帝梦见有人骑马，而马没有头和后脚，有人说：“这是太子。”等进了东宫，五六岁就能爬上油漆的帐竿，离地一丈多高，这样呆上半顿饭的功夫才下来。渐渐长大了，喜怒反常，身边的人稍有不合心意的便加以抽打，光着脚板蹲下或坐着。继承皇位以后，内部害怕皇后，外部害怕大臣，还没有能够放胆行事。自从加戴了皇冠，元徽三年，喜欢出入宫中只带着身边的人，有时十里、二十里，有时进入街市，遇到有人随口辱骂，则高兴地接受。元徽四年，无日不外出，与身边的解僧智、张五儿总是夜间开承明门外出，夜里出去，清晨返回；早晨出去，晚上归来，随从的人都拿着铁矛，男女行人和狗马牛驴只要遇上他们没有能幸免的。社会上的人们都很恐惧，白天不开门，路上没有行人。曾经只着一条小裤，不穿戴衣帽。有白色棍棒几十根，各有名号，钳凿锥锯，不离左右，用击脑、捶阴、剖心等方法杀人，每天都有几十个。常常见到卧尸流血，然后才感到快乐。身边的人见到后有皱眉的，废帝就命令他正直站立，用矛在他身上刺穿一个洞。曜灵殿上养了几十头驴，自己所骑的马，养在御床的旁边。他和右卫翼辇营中的女子私通，常常跟她一块出游，拿好几千钱作为酒肉费用。外出碰到结婚送葬的，就和赶车的伙计成群地聚在一起饮酒，求得快活。阮佃夫的心腹人张羊，受到阮佃夫的委任和信赖，阮佃夫失败后，他背叛逃走，又被捉住，废帝自己在承明门用车轮把他轧死。杀死杜延载、杜幼文，他亲自挥动铁矛，亲手分割他们的肉。他发觉孙超有蒜的气味，就剖开了他的肚子察看究竟。他拿着盾，骑着马，亲自前往玄武北湖将杜叔文刺死。孝武帝有二十八个儿子，明帝杀死了其中的十六个，剩余的都是由废帝杀死的。吴兴人沈勃有很多宝物，废帝前去抢劫，他挥着刀独自走在前面，左右的人还没有赶到，沈勃当时在住室中守丧，废帝望见了他，便把铁矛投了过去，没有投中；沈勃知道不能逃脱，用手抓住废帝的耳朵，唾他的脸并且骂道：“你的罪孽超过夏桀、商纣，被杀的日子不远了！”随即被害。废帝亲自将他用刀割肉。废帝曾经制造了一辆没有帷盖的露车，上面加篷，乘坐出入，随从的几十人，仪仗队在后面追赶，总是追不上；又各自害怕遇祸，也不敢追上，只是整好队形，在另外的地方观望罢了。凡是各种粗鄙事情，他过目就会，锻银、裁衣、作帽，无不精绝。他没有吹过諶，却拿来一吹就成韵调。他天性好杀，一天没事，就闷闷不乐。朝内外的人都很忧虑恐慌，朝不保夕。领军将军萧道成和直阁将军王敬则一同谋划对付他。
 </p><p>七月初七，废帝化装出去到北湖，自己单马在前面走，仪仗队没有赶上，身旁张五儿的马落入湖中，废帝十分生气，自己骑马冲上去直刺张五儿的马，并把他用刀割死。他与身边的人表演羌胡伎取乐。又在蛮冈赛跳为赌，然后乘着露车，不再有仪仗队，便前往青园尼姑寺。晚上到新安寺去偷狗，然后在昙度道人那里煮了狗肉饮酒。杨玉夫平时非常得意，却忽然受到憎恶，废帝遇到了他就咬牙切齿，说道：“明天一定杀了你小子，取出你的肝肺。”这天夜晚是七夕，命令杨玉夫等待织女渡河，报告给自己，于是便和内人穿针完毕，喝得大醉，睡在仁寿殿东边的毡屋中。废帝出入没有禁卫，王敬则预先串通了杨玉夫、陈奉伯、杨万年等共二十五人，这天夜里，杨玉夫等废帝睡熟，到了二更的时候，与杨万年一同进入毡屋里边，取出了千牛刀把他杀死。</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷二-白话.html'>卷二</a></p><p class='next'>下一节：<a href='卷四-白话.html'>卷四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='卷二-白话.html'>卷二</a></p><p class='next'>下一节：<a href='卷四-白话.html'>卷四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#列传'>：目录</a></p>
@@ -159,5 +186,18 @@
 </p><p>耶律阿没里，字蒲邻，遥辇嘲古可汗之四世孙。幼聪敏。保宁中，为南院宣徽使。统和初，皇太后称制，与耶律斜轸参预国论，为都统。以征高丽功，迁北院宣徽使，加政事令。四年春，宋将曹彬、米信等侵燕，上亲征，阿没里为都监，屡破敌军。十二年，行在多盗，阿没里立禁捕法，盗始息。先是，叛逆之家，兄弟不知情者亦连坐。阿没里谏曰：“夫兄弟虽曰同胞，赋性各异，一行逆谋，虽不与知，辄坐以法，是刑及无罪也。自今虽同居兄弟，不知情者免连坐。”太后嘉纳，著为令。致仕，卒。
 </p><p>阿没里性好聚敛，每从征所掠人口，聚而建城，请为丰州，就以家奴阎贵为刺史，时议鄙之。子贤哥，左夷离毕。
 </p><p>论曰：景宗之世，人望中兴，岂其勤心庶绩而然，盖承穆宗醟虐之馀，为善易见；亦由群臣多贤，左右弼谐之力也。室昉进《无逸》之篇，郭袭陈谏猎之疏，阿没里请免同气之坐，所谓仁人之言，其利溥哉。贤适忠介，亦近世之名臣。女里贪猥，后人所当取鉴者也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p><p class='next'>下一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p><p class='next'>下一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

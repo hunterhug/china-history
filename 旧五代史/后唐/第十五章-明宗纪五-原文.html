@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后唐<a href='../旧五代史.html#后唐'>：目录</a></p>
@@ -163,5 +190,18 @@
 </p><p>冬十月甲辰，制琼华长公主孟氏可册为福庆长公主。丙午，以沧州节度使李从敏兼北面招讨使。戊申，帝临轩，命礼部尚书韩彦恽、工部侍郎任赞往应州奉册四庙。诏邠州节度使李敬周攻庆州，以刺史窦廷琬拒命故也。戊午，契丹平州刺史张希崇已下八十余人见于元德殿，颁赐有差。突厥首领张慕进等来朝贡。甲子，安州节度使高行珪奏，屯驻左神捷、左怀顺军士作乱，已逐杀出城。诏升寿州为忠正军。戊辰，以云州节度使索自通领寿州节度使，以前云州节度使张温复为云州节度使。庚午夜，西南有彗星长丈余，在牛星五度。
 </p><p>十一月癸酉，日南至，帝御崇元殿受朝贺。甲戌，捧圣指挥使何福进招收到安州作乱兵士五百人，自指挥使已下至节级四十余人并斩，余众释之。壬午，房知温奏，荆南高季兴卒。中书舍人刘赞奏：“请节度使及文班二品已上谢见通唤。”从之。是日，以契丹所署平州刺史、光禄大夫、检校太保张希崇为汝州刺史，加检校太傅。己丑，中书奏：“今后或有封册，请御正衙。”从之。青州奏，节度使霍彦威卒，辍朝三日。诏宰臣王建立权知青州军州事。庚寅，礼部员外郎和凝奏：“应补斋郎并须引验正身，以防伪滥。旧例，使廕一任官补一人，今后改官须转品即可，如无子，许以亲侄继限，念书十卷，试可则补。”从之。甲午，以尚书左仆射、同平章事、集贤殿大学士、判三司王建立为青州节度使、检校太尉、同平章事。丙申，帝谓侍臣曰：“古铁券如何？”赵凤对曰：“帝王誓文，许其子子孙长享爵禄。”帝曰：“先朝所赐，惟朕与郭崇韬、李继麟三人尔，崇韬、继麟寻已族灭，朕之危疑，虑在旦夕。”于是嗟叹久之。赵凤曰：“帝王执信，故不必铭金镂石矣。”吏部郎中何泽奏：“流外官请不试书判之类。”从之。吐蕃遣使朝贡。戊戌，前安州节度副使范延荣并男皆斩于军巡狱，为高行珪诬奏故也。
 </p><p>十二月壬寅朔，诏真定府属县宜准河中、凤翔例升为次畿，真定县升为次赤。甲辰，邠州节度使李敬周奏，收下庆州，刺史窦廷琬族诛。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十四章-明宗纪四-原文.html'>第十四章-明宗纪四</a></p><p class='next'>下一节：<a href='第十六章-明宗纪六-原文.html'>第十六章-明宗纪六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十四章-明宗纪四-原文.html'>第十四章-明宗纪四</a></p><p class='next'>下一节：<a href='第十六章-明宗纪六-原文.html'>第十六章-明宗纪六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

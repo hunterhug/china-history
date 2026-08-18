@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>元史-本纪<a href='../元史.html#本纪'>：目录</a></p>
@@ -191,5 +218,18 @@
 </p><p>冬十月甲申朔，甘露降于国子监大成殿前柏木。以张良弼为湖广行省参知政事，讨南阳、襄樊。诏孛罗帖木儿守冀宁，孛罗帖木儿遣保保、殷兴祖、高脱因倍道趋冀宁，守者不纳。丙戌，命迭儿必失为太尉，守卫大斡耳朵思。戊子，荧惑犯井宿。己亥，察罕帖木儿遣陈秉直、琐住等，以兵攻孛罗帖木儿之军于冀宁，与孛罗帖木儿部将脱列伯战，败之。时帝有旨以冀宁畀孛罗帖木儿，察罕帖木儿以为用兵数年，惟藉冀、晋以给其军，而致盛强，苟奉旨与之，则彼得以足其兵食，乃托言用师汴梁，寻渡河就屯泽、潞拒之，调延安军交战于东胜州等处，再遣八不沙以兵援之。八不沙谓彼军奉旨而来，我何敢抗王命，察罕帖木儿怒，杀之。
 </p><p>十一月甲寅朔，黄河清，凡三日。孛罗帖木儿以兵侵汾州，察罕帖木儿以兵拒之。癸酉，贼犯易州。
 </p><p>十二月丙戌，诏：“太庙、影堂祭祀，乃子孙报本重事。近兵兴岁歉，品物不能丰备，累朝四祭，减为春秋二祭，今宜复四祭。”后竟不行。辛卯，广平路陷。是岁，阳翟王阿鲁辉帖木儿拥兵数十万，屯于木儿古彻兀之地，将犯京畿，使来言曰：“祖宗以天下付汝，汝已失其太半；若以国玺付我，我当自为之。”帝遣报之曰：“天命有在，汝欲为则为之。”命知枢密院事秃坚帖木儿等将兵击之，不克，军士皆溃，秃坚帖木儿走上都。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十四章-卷四十四-原文.html'>第四十四章-卷四十四</a></p><p class='next'>下一节：<a href='第四十六章-卷四十六-原文.html'>第四十六章-卷四十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十四章-卷四十四-原文.html'>第四十四章-卷四十四</a></p><p class='next'>下一节：<a href='第四十六章-卷四十六-原文.html'>第四十六章-卷四十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

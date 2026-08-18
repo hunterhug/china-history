@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>元史-志<a href='../元史.html#志'>：目录</a></p>
@@ -233,5 +260,18 @@
 </p><p>天下州县所设猎户：腹里打捕户，总计四千四百二十三户。河东宣慰司打捕户，五百九十八户。晋宁路打捕户，三百三十二户。大同路打捕户，一十五户。冀宁路打捕户，二百五十一户。上都留守司打捕户，三百九十七户。宣德提领所打捕户，一百八十二户。山东宣慰司打捕户，三百九十七户。宣德提领所打捕户，一百八十二户。山东宣慰司打捕户，一百户。益都路打捕户，四十三户。济南路打捕户，三十六户。般阳路二十一户。东平路三十四户。曹州八十四户。德州一十户。濮州三十一户。泰安州五户。东昌路一户。真定路九十一户。顺德路一十九户。广平路一十九户。冠州五户。恩州二户。彰德三十七户。卫辉路一十六户。大名路二百八十六户。保定路三十一户。河间路二百五十二户。随路提举司一千一百九十一户。河间鹰户府二百七十六名。都总管府七百五十六户。
 </p><p>辽阳大宁等处打捕鹰房官捕户，七百五十九户。东平等路打捕鹰房官捕户，三百九户。随州德安河南襄阳怀孟等处打捕鹰房官捕户，一百七十二户。扠捕提领所捕户，四十户。高丽鹰房总管捕户，二百五十户。河南等路打捕鹰房官捕户，一千一百四十二户。益都等处打捕鹰房官捕户，五百二十一户。河北河南东平等处打捕鹰房官捕户，三百户。随路打捕鹰房总管捕户，一百五十九户。真定保定等处打捕鹰房官捕户，五十户。淮安路鹰房官捕户，四十七户。扬州等处打捕鹰房官捕户，七十二户。
 </p><p>宣徽院管辖淮东淮西屯田打捕总管府司属打捕衙门，提举司十处，千户所一处，总一万四千三百二户。淮安提举司八百五十八户。安东提举司九百一十二户。招泗提举司四百六十五户。镇巢提举司二千五百四十户。蕲黄提举司一千一百一十二户。通泰提举司七百四十九户。塔山提举司六百四十四户。鱼网提举司二千五百一十九户。打捕手号军上千户所打捕军，六百四户。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十三章-卷五十三-原文.html'>第五十三章-卷五十三</a></p><p class='next'>下一节：<a href='第五十五章-卷五十五-原文.html'>第五十五章-卷五十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五十三章-卷五十三-原文.html'>第五十三章-卷五十三</a></p><p class='next'>下一节：<a href='第五十五章-卷五十五-原文.html'>第五十五章-卷五十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

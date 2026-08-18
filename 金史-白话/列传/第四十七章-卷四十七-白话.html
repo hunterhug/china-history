@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#金史'>：目录</a></p>
@@ -195,5 +222,18 @@
 </p><p>许古因朝廷准备发兵讨伐宋朝，上疏进谏说：“原在大定初年，宋人入侵宿州，后来屡遭失败，世宗预料他们不敢立即求和，便令元帅府派人前去议和，从那时太平了近三十年。泰和年间，韩..胄乱开边境之祸端，章宗派驸马仆散揆讨伐。仆散揆担心开战以后费用很多不能支持很久，暗地派韩..胄的族人带着他祖父韩琦的画像以及家谱，伪装投降，见到了丘崇，因而得以继续和好，全军回师。以世宗、章宗时的兴盛，府库充实，天下富裕，尚且首先委屈求全以取得成功，告于祖庙，记入史册，成为万世的美谈，如今能不这样做吗？今日大兵稍微止息，如果再南边无事，那么太平之日不远了。有人认为使用军威可以使宋人屈服，这是假话，不能实用。就算一时得到小胜，也不足以多加庆贺。他方见我来势盛大，必定坚守不出，我军匆忙而无所得，必须回军来取粮，对方乘机来袭击，将使我方要战不得，要退不能，那时休兵的日期就难以等到了。况且对方有江南积蓄的余财，我方只有河南一路征敛的残弊之力，实在令人寒心。愿陛下暂且隐忍包容，速速行此良策。如果通和，那么北方敌兵得知也将收敛不来，因为我方将没有掣肘的缘故。河南得到休息，然后经营北方，那么陛下享有中兴之福，而天下人赖以涵养而大加庆贺了。愿陛下放弃眼前之功，考虑后患，是大幸！”皇帝赞同他的话，立即让许古草写和议文书，写成之后出示宰臣，宰臣们认为其中有哀求的语意，是自示衰弱，于是未加采用。
 </p><p>监察御史粘割梭失弹劾榷货司同提举毛端卿有贪污不法的行为，许古认为奏文写得文字杂乱，便替他删削更定，中间颇有些脱漏，粘割梭失将这件事奏闻皇上，许古被削去一级官阶，解除职务，以当年末等政绩而特予罢免。三年正月，尚书省因谏官缺人而上奏，请召用许古。皇帝说：“我昨天晚上正在想许古事，而你们也正提及他，正合我意，可前去召来。”便又任命他为左补阙。八月，又被削去四级官阶，解除职务。起初，朝廷派近侍局直长温敦百家奴和刑部侍郎奥屯胡撒合去迁移吉州的民众，送往丹地以避兵灾，州民舍不得迁移，便拦路控诉。百家奴告诉他们，这是天子恐怕百姓们遭受伤亡才这样决定的，并且让召来晋安的兵士准备护送老幼上路。百姓认为兵来以后肯定强迫迁移，便鼓噪着拥进州署，抓住百家奴以后把他打死了。胡撒合担心惹出大祸，便假装迎合众人的情绪，和他们一起欢饮，歌舞作乐，整整搞了一整天，民众前呼后拥，抬着他欢呼拜谢，然后散去。回京以后，皇帝让许古和监察御史纥石烈铁论审讯他，并传旨说：“百家奴的死都是胡撒合出卖的，你们审问清楚后上奏。”奥屯胡撒合被捕下狱之后，皇帝极为恼怒，非常想要拿出证据来将胡撒合处以极刑。而许古他们以为应当从宽处理，胡撒合自缢而死，有关方面以许古故意放纵论罪，因而受到这种处罚。
 </p><p>哀宗初即位，召回朝廷担任补阙，不久又迁任左司谏，但他进谏言事也稍不及以前了。不久，辞去官职，居住在伊阳，郡守给他建造了伊川亭。许古嗜好饮酒，到年老而未减，他经常乘船到村落中去，被人留下饮酒，有时十多天不回家，当他沿河逆流而上时，老幼争着替他牵拉船只，几十里路来人不断。他就是这样得到当时人的爱慕。正大七年(1230)去世，年纪七十四岁。许古平生喜爱做诗写书，但并不为士大夫们所看重，时论只是称赞他的为人正直。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十六章-卷四十六-白话.html'>第四十六章-卷四十六</a></p><p class='next'>下一节：<a href='第四十八章-卷四十八-白话.html'>第四十八章-卷四十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十六章-卷四十六-白话.html'>第四十六章-卷四十六</a></p><p class='next'>下一节：<a href='第四十八章-卷四十八-白话.html'>第四十八章-卷四十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

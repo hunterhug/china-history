@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -185,5 +212,18 @@
 </p><p>道兴召集士民，告谕说：“我力薄兵寡，不能抵抗，我死是应该的，你们可速速逃走。”百姓请他同行，道兴厉声道：“守边疆之臣死于边疆，我还要到哪里去！”他身边只有一仆，拿出俸金二锭给这个仆人说：“一锭给你，一锭给我买棺材安葬。”仆大哭，要与他同死。道兴劝道“：你死了，谁收我的尸骨？”仆叩头泣别。义军攻入官署，道兴大骂不止，被义军处死。
 </p><p>刘廷标，字霞起，福建上杭人。王运开，字子郎，四川夹江人。廷标由贡生授永昌府通判。运开由举人授永昌推官。
 </p><p>云南沙定洲之乱，黔国公沐天波逃到永昌。孙可望等入云南，传谕天波投降。这时运开代行永昌监司事，廷标代行知府事，才发兵守澜沧。而天波准备遣其子去向可望投降，谕令廷标和运开将印交出带去，两人坚持不给。永昌士民泣请运开向义军投降免祸，运开不肯。又请廷标，廷标也不肯，并拿出毒酒来准备自杀。两人互相勉励说“：众人都想投降，我们只有一死以表示对朝廷的忠心。”当晚，运开先自尽。廷标闻知道：“我年纪大，应当先死才是，而运开却先走一步了。”赋诗三章，也自尽。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百八十二章-卷一百八十二-白话.html'>第一百八十二章-卷一百八十二</a></p><p class='next'>下一节：<a href='第一百八十四章-卷一百八十四-白话.html'>第一百八十四章-卷一百八十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百八十二章-卷一百八十二-白话.html'>第一百八十二章-卷一百八十二</a></p><p class='next'>下一节：<a href='第一百八十四章-卷一百八十四-白话.html'>第一百八十四章-卷一百八十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

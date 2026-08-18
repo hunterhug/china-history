@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -200,5 +227,18 @@
 </p><p>闵字子骞，方直有父风。历衡阳、建安、临川太守，侍中，中领军，吏部尚书，尚书左仆射，加中军将军，转护军，领秘书监。卒，追赠金紫光禄大夫，谥曰烈。无子，以弟颐长子琳为嗣。琳仕至东阳太守。恬、颐并历卿守。琳少子文，骠骑谘议参军
 </p><p>史臣曰：夫太刚则折，至察无徒，以之为政，则害于而国；用之行己，则凶于乃家。诚以器乖容众，非先王之道也。大连司宪，阴候主情，当约法之秋，献斫棺之议。玄亮刚愎，与物多违，虽有崇上之心，专行刻下之化，同薄相济，并运天机。是使贤宰见疏，致物情于解体；权臣发怒，借其名以誓师。既而谋人之国，国危而苟免；见昵于主，主辱而图生。自取流亡，非不幸也。若思闲爽，照理研幽。伯仁凝正，处腴能约。咸以高才雅道，参豫畴咨。及京室沦胥，抗言无挠，甘赴鼎而全操，盖事君而尽节者欤！顗招时论，尤其酒德，《礼经》曰“瑕不掩瑜”，未足韬其美也。
 </p><p>赞曰：刘刁亮直，志奉兴王。奸回丑正，终致奔亡。周戴英爽，忠谟允塞。道属屯蒙，祸罹凶慝。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十八章--原文.html'>第三十八章-</a></p><p class='next'>下一节：<a href='第四十章--原文.html'>第四十章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十八章--原文.html'>第三十八章-</a></p><p class='next'>下一节：<a href='第四十章--原文.html'>第四十章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

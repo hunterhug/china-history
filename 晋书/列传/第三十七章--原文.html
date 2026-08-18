@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -207,5 +234,18 @@
 </p><p>隆少为赵王伦所善，及伦专擅，召为散骑常侍。伦之篡也，以为扬州刺史。僚属有犯，辄依台阁峻制绳之，远近咸怨。寻加宁东将军，未拜，而齐王冏檄至，中州人在军者皆欲赴义，隆以兄子鉴为赵王掾，诸子悉在京洛，故犹豫未决。主簿赵诱、前秀才虞潭白隆曰：“当今上计，明使君自将精兵径赴齐王；中计，明使君可留督摄，速遣猛将率精兵疾赴；下计，示遣兵将助，而称背伦。”隆素敬别驾顾彦，密与谋之。彦曰：“赵诱下计，乃上策也。”西曹留承闻彦言，请见，曰：“不审明使君当今何施？”隆曰：“我俱受二帝恩，无所偏助，惟欲守州而已。”承曰：“天下者，世祖皇帝之天下也。太上承代已积十年，今上取四海不平，齐王应天顺时，成败之事可见。使君若顾二帝，自可不行，宜急下檄文，速遣精兵猛将。若其疑惑，此州岂可得保也！”隆无所言，而停檄六日。时宁远将军陈留王邃领东海都尉，镇石头，隆军人西赴邃甚众。隆遣从事于牛渚禁之，不得止。将士愤怒，夜扶邃为主而攻之，隆父子皆死，顾彦亦被害，诬隆聚合远近，图为不轨。隆之死也，时议莫不痛惜焉。
 </p><p>史臣曰：忠臣本乎孝子，奉上资乎爱亲，自家刑国，于期极矣。太真性履纯深，誉流邦族，始则承颜候色，老莱弗之加也；既而辞亲蹈义，申胥何以尚焉！封狐万里，投躯而弗顾；猰窳千群，探穴而忘死。竟能宣力王室，扬名本朝，负荷受遗，继之全节。言念主辱，义声动于天地；祗赴国屯，信誓明于日月。枕戈雨泣，若雪分天之仇；皇舆旋轸，卒复夷庚之躅。微夫人之诚恳，大盗几移国乎！道徽儒雅，柔而有正，协德始安，颇均连璧。方回踵武，奕世登台。露冕为饰，援高人以同志，抑惟大隐者献！爱子云亡，省遗文而辍泣，殊有大义之风矣。
 </p><p>赞曰：太真怀贞，勤宣乃诚。谋敦翦峻，奋节摛名。道徽忠劲，高芬远映。愔克负荷，超惭雅正。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十六章--原文.html'>第三十六章-</a></p><p class='next'>下一节：<a href='第三十八章--原文.html'>第三十八章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十六章--原文.html'>第三十六章-</a></p><p class='next'>下一节：<a href='第三十八章--原文.html'>第三十八章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

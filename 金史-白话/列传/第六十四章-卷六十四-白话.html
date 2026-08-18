@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#金史'>：目录</a></p>
@@ -167,5 +194,18 @@
 </p><p>兴定五年(1221)，元好问参加科举考试中第，做过内乡县令。正大年间，是南阳令。天兴初年(1232)，被选拔到尚书省任职，没过多久，任左司都事，转行尚书省左司员外郎。金国灭亡，不再做官。
 </p><p>元好问写文章有法度，各种文体完备。他的诗词奇崛而绝无雕琢，巧饰而去掉绮丽。他的五言诗高古沉郁，七言乐府不用古题，特出新意。他写的歌谣慷慨豪迈，挟带一种幽、并之气。他写的长短句，宣扬新声，写出恩怨的有几百篇。战乱以后，故交老友都没有了，好问蔚为一代宗匠，为众人所推崇，四方的人们凡是要写碑版铭志，都跑到他家门下。他所著的文章和诗歌有若干卷、《杜诗学》一卷、《东坡诗雅》三卷、《锦礻几》一卷、《诗文自警》十卷。
 </p><p>元好问在晚年尤其以著书立说为己任，他认为金源氏之所以取得天下，典章法度几乎达到汉、唐的水准，国亡了要写出历史，已经是自己应当承担的任务。当时金国实录在顺天的张万户家中，好问于是对张万户说，愿意把金国实录撰写成书，后来被乐夔阻止才罢了。元好问说“：不能让一个朝代的轨迹泯灭而得不到流传。”于是在自己家中建造个亭子，在亭子中著述，并因此把写的稿子称为“野史”。凡是金朝君臣的遗言和往来活动，采访所闻，得到一些资料立即用寸纸细字做出记录，以至于收集到一百多万字。流传至今的有《中州集》和《壬辰杂编》若干卷。元好问六十八岁时逝世。后来人编撰《金史》，大多依据他的著作。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十三章-卷六十三-白话.html'>第六十三章-卷六十三</a></p><p class='next'>下一节：<a href='第六十五章-卷六十五-白话.html'>第六十五章-卷六十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十三章-卷六十三-白话.html'>第六十三章-卷六十三</a></p><p class='next'>下一节：<a href='第六十五章-卷六十五-白话.html'>第六十五章-卷六十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

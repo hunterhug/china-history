@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -222,5 +249,18 @@
 </p><p>十一年，杨春贼赵林花陷高州，总督陶谐檄祐讨。深入，多所斩获。忽中危疾卒，军中为哀恸。
 </p><p>祐身长八尺，智识绝人。驭军有节制，与下同甘苦，不营私产。性好书，每载以自随，军暇即延儒生讲论。尝过乌蛮滩，谒马伏波祠，太息曰：“殁不俎豆其间，非夫也。”题诗而去。后田州人立祠横山祀之。
 </p><p>赞曰：苗蛮阻险自固，易动难服，自其性然。而草薙禽狝，滥杀邀功，贪货贿，兴事端，控驭乖方，绥怀无策，则镇将之过也。韩观诸人，虽功最焯著，而皆以威信震慑蛮荒。若山云、王信、张祐之廉俭有守，士君子何以过？故尤足尚云。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十三章-卷五十三-原文.html'>第五十三章-卷五十三</a></p><p class='next'>下一节：<a href='第五十五章-卷五十五-原文.html'>第五十五章-卷五十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五十三章-卷五十三-原文.html'>第五十三章-卷五十三</a></p><p class='next'>下一节：<a href='第五十五章-卷五十五-原文.html'>第五十五章-卷五十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

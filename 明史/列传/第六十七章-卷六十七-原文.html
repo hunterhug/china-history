@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -203,5 +230,18 @@
 </p><p>马汝骥，字仲房，绥德人。正德十二年进士。改庶吉士。偕芬等谏南巡，罚跪受杖。教习期满，当授编修，特调泽州知州。惩王府人虐小民。比王有所属，辄投其书椟中不视。陵川知县贪，汝骥欲黜之。巡按御史为曲解，汝骥不听，竟褫其官。世宗立，召复编修，寻录直谏功，增秩一等。预修《武宗实录》，进修撰。历两京国子司业，擢南京右通政，就改国子祭酒，召拜礼部右侍郎。尚书严嵩爱重汝骥，入阁称之，帝特加侍读学士。汝骥行己峭厉，然性故和易，人望归焉。卒赠尚书，谥文简。
 </p><p>应轸等自有传。
 </p><p>赞曰：词臣以文学侍从为职，非有言责也。激于名义，侃侃廷诤，抵罪谪而不悔，岂非皎然志节之士欤？夺情之典不始李贤，然自罗伦疏传诵天下，而朝臣不敢以起复为故事，于伦理所裨，岂浅鲜哉。章懋等引宣宗箴，明国家设官意，不为彰君之过。邹智指列贤奸，矫拂媮末。舒芬危言耸切，有爰盎揽辔之风。况夫清修峻节，行无瑕尤，若诸子者，洵足以矫文士浮夸之习矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十六章-卷六十六-原文.html'>第六十六章-卷六十六</a></p><p class='next'>下一节：<a href='第六十八章-卷六十八-原文.html'>第六十八章-卷六十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十六章-卷六十六-原文.html'>第六十六章-卷六十六</a></p><p class='next'>下一节：<a href='第六十八章-卷六十八-原文.html'>第六十八章-卷六十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

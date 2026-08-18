@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-本纪<a href='../明史.html#本纪'>：目录</a></p>
@@ -173,5 +200,18 @@
 </p><p>六月癸丑，盛庸帅舟师败燕兵于浦子口，复战不利。都督佥事陈瑄以舟师叛附于燕。乙卯，燕兵渡江，盛庸战于高资港，败绩。戊午，镇江守将童俊叛降燕。庚申，燕兵至龙潭。辛酉，命诸王分守都城，遣李景隆及兵部尚书茹瑺、都督王佐如燕军，申前约。壬戌，复遣谷王橞、安王楹往。皆不听。甲子，遣使齐蜡书四出，促勤王兵。乙丑，燕兵犯金川门，左都督徐增寿谋内应，伏诛。谷王橞及李景隆叛，纳燕兵，都城陷。宫中火起，帝不知所终。燕王遣中使出帝后尸于火中，越八日壬申葬之。
 </p><p>或云帝由地道出亡。正统五年。有僧自云南至广西，诡称建文皇帝。恩恩知府岑瑛闻于朝。按问，乃钧州人杨行祥，年已九十余，下狱，阅四月死。同谋僧十二人，皆戍辽东。自后滇、黔、巴、蜀间，相传有帝为僧时往来迹。正德、万历、崇祯间，诸臣请续封帝后，及加庙谥，皆下部议，不果行。大清乾隆元年，诏廷臣集议，追谥曰恭闵惠皇帝。
 </p><p>赞曰：惠帝天资仁厚。践阼之初，亲贤好学，召用方孝孺等。典章制度，锐意复古。尝因病晏朝，尹昌隆进谏，即深自引咎，宣其疏于中外。又除军卫单丁，减苏、松重赋，皆惠民之大者。乃革命而后，纪年复称洪武，嗣是子孙臣庶以纪载为嫌，草野传疑，不无讹谬。更越圣朝，得经论定，尊名壹惠，君德用彰，懿哉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p><p class='next'>下一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p><p class='next'>下一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

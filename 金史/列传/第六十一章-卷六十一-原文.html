@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -186,5 +213,18 @@
 </p><p>禹显，雁门人。贞祐初，隶上党公张开，累以战功授义胜军节度使、兼沁州招抚副使。元光二年四月，大帅达儿泬、按察儿攻河东，张开遣显扼龙猪谷，夹攻败之，擒元帅韩光国，获辎重甲仗甚众，追至祁县而还，所历州县悉复之。显将军三百人，守襄垣，八年不迁。大帅尝集河朔步骑数万攻之，至于数四不能拔。既而，战于玉女寨，大获。开言于朝，权元帅右都监。正大六年冬十二月，军内变，城破被擒。帅义之，不欲加害。初以铁绳钤之，既而密与旧部曲二十人遁去，闻上党公军复振，将往从之。大兵四向来追，显适与负釜一兵相失，乞饭山寺中，僧走报焉，被执不屈死，时年四十一。
 </p><p>秦州人张邦宪，字正叔，登正大中进士第，为永固令。天兴二年，避兵徐州。卓翼率兵至城，邦宪被执，将驱之北，邦宪骂曰：“我进士也，误蒙朝廷用为邑长，可从汝曹反耶！”遂遇害。
 </p><p>刘全者，彭城民也。率乡邻数百避兵沫沟，推为砦主。北兵至徐，尽俘其老幼，全父亦在其中，北兵质之以招全，全缚其人送徐州，因窃其父以归。徐帅益都嘉其忠，承制以为昭信校尉，遥领彭城县尉。后遇国用安，怒其不附己，见杀。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十章-卷六十-原文.html'>第六十章-卷六十</a></p><p class='next'>下一节：<a href='第六十二章-卷六十二-原文.html'>第六十二章-卷六十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十章-卷六十-原文.html'>第六十章-卷六十</a></p><p class='next'>下一节：<a href='第六十二章-卷六十二-原文.html'>第六十二章-卷六十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

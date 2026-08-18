@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后周<a href='../旧五代史.html#后周'>：目录</a></p>
@@ -171,5 +198,18 @@
 </p><p>宋彦筠，雍丘人也。初隶滑州军，梁氏与庄宗夹河之战，彦筠时为战棹都指挥使，以劳迁开封府牙校。庄宗有天下，擢领禁军。伐蜀之役，率所部从康延孝为前锋，蜀平，历维、渝二州刺史。明宗在位，连典数郡。晋初，自汝州防御使讨安从进于襄阳，以功拜邓州节度使，累官至检校太尉。未几，历晋、陕二镇。晋少帝嗣位，再领邓州，寻移镇河中。汉初，授太子太师致仕。国初，拜左卫上将军。世宗嗣位，复为太子太师致仕。显德四年冬，卒于西京之私第。辍视朝一日，诏赠侍中。
 </p><p>初，彦筠入成都，据一甲第，第中资货钜万，妓女数十辈，尽为其所有。一旦，与其主母微忿，遽击杀之，自后常有所睹，彦筠心不自安，乃修浮屠法以禳之，因而溺志于释氏。其后，每岁至金仙入涅之日，常衣斩缞号恸于其像前，佞佛也如是。家有侍婢数十人，皆令削发披缁，以侍左右，大为当时所诮。又性好货殖，能图什一之利，良田甲第，相望于郡国。将终，以伊、洛之间田庄十数区上进，并籍于官焉。
 </p><p>史臣曰：近代领戎籓，列王爵，禄厚而君子不议，望重而人主不疑，能自晦于饮酌之间，保功名于始终之际，如行周之比者，几何人哉！奕世籓翰，固亦宜然。审琦有分阃之劳，乏御家之道，峰摧玉折，盖不幸也。其余虽拥戎旃，未闻阃政，固不足与文、召、龚、黄为比也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十三章-列传二-原文.html'>第十三章-列传二</a></p><p class='next'>下一节：<a href='第十五章-列传四-原文.html'>第十五章-列传四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十三章-列传二-原文.html'>第十三章-列传二</a></p><p class='next'>下一节：<a href='第十五章-列传四-原文.html'>第十五章-列传四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#晋书'>：目录</a></p>
@@ -241,5 +268,18 @@
 </p><p>西河缪王司马斌字子政，是魏的中郎。武帝接受禅让，封他为陈王，封邑一千七百一十户。三年，改封西河。咸宁四年去世，儿子隐立继承王位。迁死，儿子继承王位。
 </p><p>史臣日：泰始初年，天下少事，革除魏遣留下来的弊端，遵循且塑的旧典章，一起建立宗室，作为保卫国家的屏障。那些父辈的人与虞堕的尊贵相同，兄弟享有鲁、街的福祉，以为历代长久，正宗旁支百世相传。安平风度宏大飘邈，器宇高雅，对内弘扬道义，对外阐发忠贞。到高贵乡公遇害时，则趴在尸体上痛哭；陈留王赴金墉城，则跪拜辞行悲伤落泪。俗话说“疾风知劲草”，可以用来形容献王。因而能位居上卿之列，享有高寿，美好至极的典范，是晋宗族的英才，子孙遵循遣业，世代忠实于他的善行。高密王作风清静超俗，简朴少欲望，用孝心奉承亲人，用忠诚奉承朝廷，比起其他旁支宗亲，实在可以说他是国家的栋梁。新蔡王、南阳王，都统治一方。时值王室多难，中原荒芜阻塞，表明义气节操，在艰难危困时建立功绩。那时恶人实在太多，凶威一天比一天得逞，势力悬殊人力不足，因而相继沦亡，可悲啊!谯闵王勇敢有大略，镇守南方。适逢奸邪放肆作乱，起兵欺侮朝廷。谯闵王怀着忠心发奋振作，在湘州举义，荆沔响应，众多人才出力。虽然没有建头功，但显现了忠诚节操，把功业留给后人，几代人忠贞贤明，难道不可喜吗!司马勋托身于宗室，禀性凶暴。仍负荷着朝廷的寄托，被推举到梁岷，于是背弃宗族国君，辜负君恩抛弃命令。凭藉庸蜀的富饶，包藏自己的不满；仗着江山的坚固，奸邪的谋划越来越深。因此官吏切齿，发泄长期不满的心意；义士发奋，磨砺自己忘身的节操。上天之道降灾祸于邪恶，适时平定。过去汲黯还在，淮南王搁置了策谋，周抚要是活着，司马勋也不敢作乱，由于邪恶顾忌正直，不同的朝代同样的道理。《诗》说“自己给自己留下悲伤”，说的就是司马勋啊。习阳亭侯因出身宗室而得福，保持俭约心怀隐逸，置情感于尘世之外，仰慕追随超越世事，关心独善其身，看重通达事理合乎节操的准则，一句话说出而扬名，还是应该庆幸。
 </p><p>赞曰：安平王树立节操，高尚的性格忠贞贤明。高密王心怀和睦，是宗室的名人。新蔡王遇难，保全了忠诚丧失了性命。谯闵王为道义而死，力量竭尽志气播扬。司马勋自找忧戚，名败身亡。司马顺不顾忌，扬名到远方。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章--白话.html'>第六章-</a></p><p class='next'>下一节：<a href='第八章--白话.html'>第八章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六章--白话.html'>第六章-</a></p><p class='next'>下一节：<a href='第八章--白话.html'>第八章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

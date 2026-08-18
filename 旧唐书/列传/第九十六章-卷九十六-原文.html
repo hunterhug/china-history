@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -186,5 +213,18 @@
 <p>　　玢历二镇，颇以公清苦节为政；不交权幸，不务贡献，蔬食敝衣，居处才避风 雨，而廪库饶实，三军百姓安业，近代将帅无比焉。及绵疾辞位，请归长安。元和 七年卒，年六十五，赠尚书左仆射，谥曰节。 </p>
 <p>　　薛伾，胜州刺史涣之子。尚父汾阳王召置麾下，著名于诸将间。左仆射李揆使 西蕃，伾为将从役。时贼泚之难，昆夷赴义，伾驰骑乡导，至于武功，擢授左威卫 将军。使绝域者前后数四，累迁左金吾卫大将军、检校工部尚书、兼将作监，出为 鄜坊观察使。元和八年，卒于官，赠潞州大都督。 </p>
 <p>　　史臣曰：薛播温敏有文，鲍防董戎无术，李、严太原之政，可谓美矣。萧昕抱 则哲之知，杜亚怀非次之望。王纬清洁而伤苛碎，若初善理而性刚严。于颀好任机 权，趋附势利。卢徵厚敛货贿，结托中人。杨凭好奢，郑元有断。杜兼杀戮端士， 怙乱邀君。裴玢发奸谋，安民和众。而玢敝衣粝食，不交权幸，帑庾咸实，郡邑以 宁。若夫君子无求备于人，舍短从长，彰善瘅恶，则裴玢之善，抑之更扬；杜兼之 恶，欲盖而彰耳。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第九十五章-卷九十五-原文.html'>第九十五章-卷九十五</a></p><p class='next'>下一节：<a href='第九十七章-卷九十七-原文.html'>第九十七章-卷九十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九十五章-卷九十五-原文.html'>第九十五章-卷九十五</a></p><p class='next'>下一节：<a href='第九十七章-卷九十七-原文.html'>第九十七章-卷九十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

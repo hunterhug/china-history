@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#后汉书'>：目录</a></p>
@@ -197,5 +224,18 @@
 </p><p>元和元年(84)，诏书告庐江太守、东平相说：“议郎郑均，束修安贫，恭俭节整，前在机密，以病退休，守善贞固，黄发不怠。又前安邑令毛义，躬行谦让，从征辞病，纯洁之风，东州称仁。《尚书》不是说‘表彰那些有常德的人，是善政’。宜赐郑均、毛义谷各千斛，常以八月长吏慰问，赐羊酒，以显此异行。”第二年，帝东巡过任城，就亲临郑均家，命赐尚书禄以终其身，所以当时人称为“白衣尚书”。永元中，在家去世。
 </p><p>◆赵典传
 </p><p>赵典字仲经，蜀郡成都人。父赵戒，为太尉，桓帝立，以定策封厨亭侯。赵典年少时就专心实行隐约静俭，博学经书，弟子自远方来求教于他。建和初，四府表荐，征拜为议郎，侍讲宫中，再迁为侍中。时帝想广开鸿池，赵典谏道：“鸿池水面，已达百顷，还要增广挖深，这不是崇敬唐虞的约束自己，遵守孝文的爱护百姓哩。”帝纳其言而止。父亲去世后，赵典袭封。出为弘农太守，转右扶风。公事去官，征拜城门校尉，转将作大匠，迁少府，又转为大鸿胪。当时恩泽诸侯以无功受封，群臣不悦，但不敢提出意见，赵典独谏道：“无功而赏，劳者得不到奖励，上愧下辱，天象紊乱。且高祖之誓，非功臣不封。宜对那些无功受封的都削免爵土，以存旧制。”帝不从。不久，转为太仆，迁太常。朝廷每有灾异疑议，常咨询于他。赵典据经正对，并无曲折隐晦。每得赏赐，常分给诸生中的贫者。后来以谏争违背旨意，被免官就国。恰逢帝崩，当时规定藩国诸侯不得奔丧，赵典愤然说：“我从衣褐之中，致位上列。而且鹊鸟还能反哺报恩，何况是士子呢？”于是解下印绶符策付县，而驰马到京师。州郡及大鸿胪都要捉拿他处以罪，而公卿百僚却表扬赵典有义气，上表奏请以租自赎，诏书批准。再迁长乐少府、卫尉。公卿又表奏赵典专心治学广识博闻，宜备位国师。恰病逝，使者吊唁。窦太后复遣使兼赠印绶，谥号献侯。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十六章-伏侯宋蔡冯赵牟韦列传-白话.html'>第十六章-伏侯宋蔡冯赵牟韦列传</a></p><p class='next'>下一节：<a href='第十八章-桓谭冯衍列传上-白话.html'>第十八章-桓谭冯衍列传上</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十六章-伏侯宋蔡冯赵牟韦列传-白话.html'>第十六章-伏侯宋蔡冯赵牟韦列传</a></p><p class='next'>下一节：<a href='第十八章-桓谭冯衍列传上-白话.html'>第十八章-桓谭冯衍列传上</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后唐<a href='../旧五代史.html#后唐'>：目录</a></p>
@@ -173,5 +200,18 @@
 </p><p>天成二年，除太子少保致仕，出居磁州。及硃守殷叛，重诲乘间诬其结构，立遣人称制就害之，乃下诏曰：“太子少保致仕任圜，早推勋旧，曾委重难，既退免于剧权，俾优闲于外地，而乃不遵礼分，潜附守殷，缄题罔避于嫌疑，情旨颇彰于怨望。自收汴垒，备见踪由，若务含宏，是孤典宪，尚全大体，止罪一身。宜令本州于私第赐自尽。”圜受命之日，聚族酣饮，神情不挠。清泰中，制赠太傅。
 </p><p>子彻，仕皇朝，位至度支郎中，卒。
 </p><p>史臣曰：革、说承旧族之胄，佐新造之邦，业虽谢于财成，罪未闻于昭著，而乃为权臣之所忌，顾后命以无逃，静而言之，亦可悯也。卢程器狭如是，形渥攸宜。赵凤、李愚，咸以文学之名，俱践岩廊之位，校其贞节，愚复优焉。任圜有纵横济物之才，无明哲保身之道，退犹不免，吁可悲哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十二章-列传十八-原文.html'>第四十二章-列传十八</a></p><p class='next'>下一节：<a href='第四十四章-列传二十-原文.html'>第四十四章-列传二十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十二章-列传十八-原文.html'>第四十二章-列传十八</a></p><p class='next'>下一节：<a href='第四十四章-列传二十-原文.html'>第四十四章-列传二十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

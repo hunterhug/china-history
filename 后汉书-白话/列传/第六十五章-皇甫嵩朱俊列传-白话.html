@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#后汉书'>：目录</a></p>
@@ -173,5 +200,18 @@
 </p><p>同心同德，托于元帅。”值李莈用太尉周忠、尚书贾诩的计策，征召朱俊入朝。军队官吏都怕入关，想响应陶谦等人。朱俊说“：用天子的命令召臣子，应当不等车子就要去，何况是天子的诏命呢？且李莈、郭汜是奸乱小人，樊稠是平庸无用的人，无别的什么远大的谋略，又势力相等，变乱必作。我乘他们的不备，突然行动，大事可为。”于是辞陶谦而赴李莈的征召。再为太仆，陶谦等人就没有干了。
 </p><p>初平四年(193)，朱俊代周忠为太尉，兼尚书事。第二年秋天，因日食免官，再行骠骑将军事，持天子节镇守关东。没有出发，值李莈杀樊稠，郭汜又自生疑惑，与李莈打起来，长安中乱，所以朱俊不去镇守关东，留在朝廷任大司农。献帝诏令朱俊与太尉杨彪等十余人劝郭汜，使他与李莈和解。郭汜不肯，因把朱俊等人作为人质扣留起来。朱俊性情素来刚烈，当天发病去世。朱俊的儿子朱皓，也有才略德行，官至豫章太守。
 </p><p>史官评论说：皇甫嵩、朱俊都因有上将的才略，受命于国家祸乱的时候。功成师克，威名满天下。值弱主受辱，恶贼抗命，这真是叶公子高奋袂而起，翟义举兵诛王莽的时候，所以梁衍献规，山东连盟，不去干正天的大业，而去践匹夫的小信，结果狼狈虎口，被有识的人所耻笑。难道是老天要助长这种叛乱吗？为什么智勇之士不能有始有终到这种地步呢？前史晋平原华峤，说他的父亲光禄大夫华表经常说他的祖父魏太尉华歆称“：时人说皇甫嵩不以功劳自居，汝豫一役，把功归于朱俊，打败张角，是靠了卢植，论名论功，说自己没有。大抵功名，是世所最看得重的，真正不争天下的所最重，那么，怨祸就不会深啊！”如皇甫公的处危乱之际，却能够保全姓命富贵，他的高风亮节不是很难能可贵吗？所以颜子以不夸耀自己的善行为先，这也许是立身的要道啊。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十四章-郑孔荀列传-白话.html'>第六十四章-郑孔荀列传</a></p><p class='next'>下一节：<a href='第六十六章-董卓列传-白话.html'>第六十六章-董卓列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十四章-郑孔荀列传-白话.html'>第六十四章-郑孔荀列传</a></p><p class='next'>下一节：<a href='第六十六章-董卓列传-白话.html'>第六十六章-董卓列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

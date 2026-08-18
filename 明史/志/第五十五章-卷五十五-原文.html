@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-志<a href='../明史.html#志'>：目录</a></p>
@@ -180,5 +207,18 @@
 </p><p>其在外诸布政司、都司、直省府州县卫所皆有库，以贮金银、钱钞、丝帛、赃罚诸物。巡按御史三岁一盘查。各运司皆有库贮银，岁终，巡盐御史委官察之。凡府州县税课司局、河泊所，岁课、商税、鱼课、引由、契本诸课程，太祖令所司解州县府司，以至於部，部札之库，其元封识，不擅发也。至永乐时，始委验勘，中，方起解；至部复验，同，乃进纳。嘉靖时，建验试厅，验中，给进状寄库。月逢九，会巡视库藏科道官，进库验收，不堪者驳易。正统十年设通济库於通州。世宗时罢。隆庆初，密云、蓟州、昌平诸镇皆设库，收贮主客年例、军门公费及抚赏、修边银云。
 </p><p>凡为仓库害者，莫如中官。内府诸库监收者，横索无厌。正德时，台州卫指挥陈良纳军器，稽留八载，至乞食於市。内府收粮，增耗尝以数倍为率，其患如此。诸仓初不设中官，宣德末，京、通二仓始置总督中官一人，后淮、徐、临、德诸仓亦置监督，漕輓军民被其害。世宗用孙交、张孚敬议，撤革诸中官，惟督诸仓者如故。久之，从给事中管怀理言，乃罢之。
 </p><p>初，天下府库各有存积，边饷不借支於内，京师不收括於外。成化时，巡盐御史杨澄始请发各盐运提举司赃罚银入京库。弘治时，给事中曾昂请以诸布政司公帑积贮征徭羡银，尽输太仓。尚书周经力争之，以为有不足者，以识造、赏赉、斋醮、土木之故，必欲尽括天下财，非藏富於民意也。至刘瑾用事，遂令各省库藏尽输京师。世宗时，闽、广进羡馀，户部请责他省巡按，岁一奏献如例。又以太仓库匮，运南户部库银八十万两实之。而户部条上理财事宜，临、德二仓积银二十万两，录以归太仓。隆庆初，遣四御史分行天下，搜括库银。神宗时，御史萧重望请核府县岁额银进部，未报上。千户何其贤乞敕内官与己督之，帝竟从其请，由是外储日就耗。至天启中，用操江巡抚范济世策，下敕督岁进，收括靡有遗矣。南京内库颇藏金银珍宝，魏忠贤矫旨取进，盗窃一空。内外匮竭，遂至於亡。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十四章-卷五十四-原文.html'>第五十四章-卷五十四</a></p><p class='next'>下一节：<a href='第五十六章-卷五十六-原文.html'>第五十六章-卷五十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五十四章-卷五十四-原文.html'>第五十四章-卷五十四</a></p><p class='next'>下一节：<a href='第五十六章-卷五十六-原文.html'>第五十六章-卷五十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

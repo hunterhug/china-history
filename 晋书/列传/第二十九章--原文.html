@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -241,5 +268,18 @@
 </p><p>初，元帝镇建鄴，裴妃之意也，帝深德之，数幸其第，以第三子冲奉越后。薨，无子，成帝以少子奕继之。哀帝徙奕为琅邪王，而东海无嗣。隆安初，安帝更以会稽忠王次子彦璋为东海王，继冲为曾孙。为桓玄所害，国除。
 </p><p>史臣曰：昔高辛抚运，衅起参商；宗周嗣历，祸缠管、蔡。祥观曩册，逖听前古，乱臣贼子，昭鉴在焉。有晋郁兴，载崇籓翰，分茅锡瑞，道光恆典；仪台饰衮，礼备彝章。汝南以纯和之姿，失于无断；楚隐习果锐之性，遂成凶很。或位居朝右，或职参近禁，俱为女子所诈，相次受诛，虽曰自贻，良可哀也！伦实庸琐，见欺孙秀，潜构异图，煽成奸慝。乃使元良遘怨酷，上宰陷诛夷，乾耀以之暂倾，皇纲于焉中圮。遂裂冠毁冕，幸百六之会；绾玺扬纛，窥九五之尊。夫神器焉可偷安，鸿名岂容妄假！而欲托兹淫祀，享彼天年，凶暗之极，未之有也。冏名父之子，唱义勤王，摧伪业于既成，拯皇舆于已坠，策勋考绩，良足可称。然而临祸忘忧，逞心纵欲，曾不知乐不可极，盈难久持，笑古人之未工，忘己事之已拙。向若采王豹之奇策，纳孙惠之嘉谋，高谢衮章，永表东海，虽古之伊、霍，何以加焉！长沙材力绝人，忠概迈俗，投弓掖门，落落标壮夫之气；驰车魏阙，懔懔怀烈士之风。虽复阳九数屯，在三之情无夺。抚其遗节，终始可观。颖既入总大权，出居重镇，中台藉以成务，东夏资其宅心，乃协契河间，共图进取。而颙任李含之狙诈，杖张方之陵虐，遂使武闵丧元，长沙授首，逞其无君之志，矜其不义之强。銮驾北巡，异乎有征无战；乘舆西幸，非由望秩观风。若火燎原，犹可扑灭，矧兹安忍，能无及乎！东海纠合同盟，创为义举，匡复之功未立，陵暴之衅已彰，罄彼车徒，固求出镇。既而帝京寡弱，狡寇凭陵，遂令神器劫迁，宗社颠覆，数十万众并垂饵于豺狼，三十六王咸陨身于锋刃。祸难之极，振古未闻。虽及焚如，犹为幸也。自惠皇失政，难起萧墙，骨肉相残，黎元涂炭，胡尘惊而天地闭，戎兵接而宫庙隳，支属肇其祸端，戎羯乘其间隙，悲夫！《诗》所谓“谁生厉阶，至今为梗”，其八王之谓矣。
 </p><p>赞曰：亮总朝政，玮怀职竞。谗巧乘间，艳妻过听。构怨连祸，递遭非命。伦实下愚，敢窃龙图，乱常奸位，遄及严诛。伟哉武闵！首创宏谟。德之不建，良可悲夫！长沙奉国，始终靡慝；功亏一篑，奄罹残贼。章度勤王，效立名扬；合从关右，犯顺争强，事穷势蹙，俱为乱亡。元超作辅，出征入抚，败国丧师，无君震主。焚如之变，抑惟自取。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十八章--原文.html'>第二十八章-</a></p><p class='next'>下一节：<a href='第三十章--原文.html'>第三十章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十八章--原文.html'>第二十八章-</a></p><p class='next'>下一节：<a href='第三十章--原文.html'>第三十章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

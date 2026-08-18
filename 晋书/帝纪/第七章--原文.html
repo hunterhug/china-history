@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-帝纪<a href='../晋书.html#帝纪'>：目录</a></p>
@@ -174,5 +201,18 @@
 </p><p>初，成帝有疾，中书令庾冰自以舅氏当朝，权侔人主，恐异世之后，戚属将疏，乃言国有强敌，宜立长君，遂以帝为嗣。制度年号，再兴中朝，因改元曰建元。或谓冰曰：“郭璞谶云‘立始之际丘山倾’，立者，建也；始者，元也；丘山，讳也。”冰瞿然，既而叹曰：“如有吉凶，岂改易所能救乎？”至是果验云。
 </p><p>史臣曰：肆虐滔天，岂伊朝夕。若乃详刑不怨，庶情犹仰，又可以见逆顺之机焉。成帝因削弱之资，守江淮之地，政出渭阳，声乖威服。凶徒既纵，神器阽危，京华元敖之资，宫室类咸阳之火。桀犬吠尧。封狐嗣乱，方诸后羿，曷若斯之甚也。反我皇驾，不有晋文之师，系于苞桑，且赖陶公之力。古之侯服，不幸臣家，天子宣游，则避宫北面，闻诸遗策，用为恆范。显宗于王导之门，敛衣前拜，岂鲁公受玉之卑乎！帝亦克俭于躬，庶能激扬流弊者也。
 </p><p>赞曰：惟皇夙表，余舅为毗。勤于致寇，拙于行师。火及君屋，兵缠帝帷。石头之驾，海内含悲。康后天资，居哀礼缛。坠典方兴，降龄奚促。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章--原文.html'>第六章-</a></p><p class='next'>下一节：<a href='第八章--原文.html'>第八章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六章--原文.html'>第六章-</a></p><p class='next'>下一节：<a href='第八章--原文.html'>第八章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

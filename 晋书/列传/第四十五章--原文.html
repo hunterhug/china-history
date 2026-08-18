@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -256,5 +283,18 @@
 </p><p>转丹阳尹、吏部尚书、领军将军。既疾病，占候者云：“不宜此官。”朝廷改授太常，未拜，卒，时年四十九，即赠太常。子璯，官至衡阳太守。
 </p><p>史臣曰：王湛门资台铉，地处膏腴，识表邻机，才惟王佐。叶宣尼之远契，玩道韦编；遵伯阳之幽旨，含虚牝谷。所谓天质不雕，合于大朴者也。安期英姿挺秀，籍甚一时，朝野挹其风流，人伦推其表烛。虽崇勋懋绩有阙于旂常，素德清规足传于汗简矣。怀祖鉴局夷远，冲衿玉粹。坦之墙宇疑旷，逸操金贞。腾讽庾之良笺，情嗤语怪；演《废庄》之宏论，道焕崇儒。或寄重文昌，允釐于衮职；或任华纶阁，密勿于王言。咸能克著徽音，保其荣秩，美矣！国宝检行无闻，坐升彼相，混暗识于心镜，开险路于情田。于时疆埸多虞，宪章罕备，天子居缀旒之连，人臣微覆餗之忧。于是窃势拥权，黩明王之彝典；穷奢纵侈，假凶竖之余威。绣桷雕楹，陵跨于宸极；丽珍冶质，充牣于帷房。亦犹犬彘腴肥，不知祸之将及。告尽私室，固其宜哉！荀景猷履孝居忠，无惭往烈。范玄平陈谋献策，有会时机。崧则思业该通，缉遗经于已紊。汪则风飚直亮，抗高节于将颠，扬榷而言，俱为雅士。刘韩俊爽，标置轶群，胜气笼霄，飞谈卷雾，并兰芬菊耀，无绝于终古矣。
 </p><p>赞曰：处冲纯懿，是称奇器。养素虚庭，同尘下位。雅道虽屈，高风不坠。猗欤后胤，世传清德。帝室驰芬，士林扬则。国宝庸暗，托意骄奢。既丰其屋，终蔀其家。荀范令望，金声远暢。刘韩秀士，珠谈间起。异术同华，葳蕤青史。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十四章--原文.html'>第四十四章-</a></p><p class='next'>下一节：<a href='第四十六章--原文.html'>第四十六章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十四章--原文.html'>第四十四章-</a></p><p class='next'>下一节：<a href='第四十六章--原文.html'>第四十六章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

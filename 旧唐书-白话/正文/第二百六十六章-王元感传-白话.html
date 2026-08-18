@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-正文<a href='../旧唐书.html#旧唐书'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>第二百六十六章-王元感传<span style='font-size:small'> 白话</span></h1>
 <p>王元感，濮州鄄城县人。年轻时应明经科考试中选，后补官博城县丞。兖州都督、纪王李慎很敬重他，让自己的儿子东平王李续向元感从师求学。则天帝天授年间，转任左卫率府录事，兼弘文馆官职。此后武则天亲自到南郊祭祀及在明堂举行祭祀大典，到嵩岳封禅祭天，元感都受诏与众儒生一道撰写拟定礼仪制度，凡他所提出的意见，众人都很推许佩服。转任四门博士，仍在弘文馆任职，元感当时虽已年老，还能在灯下看书，通宵不寐。长安三年(703)，上表进奉他所撰写的《尚书纠谬》十卷、《春秋振滞》二十卷、《礼记绳愆》三十卷等书，将他为《孝经》、《史记》作注的书稿，请求官府供给纸笔予以抄录，一并奉上秘书阁。诏命弘文、崇贤两馆的学士以及成均博士详审这些著述议其可否。学士祝钦明、郭山恽、李宪等人专门恪守前辈儒家的章句，对元感指摘陈旧的义理大为讥讽，元感随木板所示问题对答如流，竟未被他们挫败。凤阁舍人魏知古、司封郎中徐坚、左史刘知几、右史张思敬，极爱新奇的言论学说，常为元感申述阐发书中义理，接连上表举荐他。不久颁下诏书道：“王元感禀性温和聪慧，博闻强记，手不释卷，年虽老而治学热情弥笃。指正前辈贤达的失误之处，深究古代圣人学说的主要意旨，可以称作儒学的宗师，人才不可多得。可以担任太子司议郎，兼崇贤馆学士。”魏知古曾经称赞元感所撰写的书说：“的确可以称作《五经》的指南。”中宗即位，因元感曾为东宫旧臣，提拔晋升他为朝散大夫，拜官崇贤馆学士。不久去世。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二百六十五章-郎余令传-白话.html'>第二百六十五章-郎余令传</a></p><p class='next'>下一节：<a href='第二百六十七章-王绍宗传-白话.html'>第二百六十七章-王绍宗传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二百六十五章-郎余令传-白话.html'>第二百六十五章-郎余令传</a></p><p class='next'>下一节：<a href='第二百六十七章-王绍宗传-白话.html'>第二百六十七章-王绍宗传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

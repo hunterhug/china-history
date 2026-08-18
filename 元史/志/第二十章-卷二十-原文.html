@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>元史-志<a href='../元史.html#志'>：目录</a></p>
@@ -223,5 +250,18 @@
 </p><p>前期二日，太庙令扫除内外，翰林国史院学士撰写祝文；前一日，告官等致斋一日。其日，告官等各服紫服，奉祝版，进请御署讫，差控鹤，用红罗销金案抬舁，覆以黄罗帕，并奉御香、御酒，如常仪，迎至祝所斋宿。告日质明前三刻，礼直官引太庙令，率其属入庙殿，开室，陈设如仪。礼直官引告官等，各服紫服，以次入就位，东向立定。礼直官稍前，赞曰“有司谨具，请行事”。赞者曰“再拜”，在位者皆再拜。礼直官先引执事者各就位，次引告官诣盥洗、爵洗位，北向立。搢笏，盥手，帨手，洗爵、拭爵讫，执笏，请诣酒尊所，搢笏，执爵，司尊者举幂，良酝令酌酒，以爵授奉爵官，执笏，诣太祖室，再拜。执事者奉香，告官搢笏跪，三上香，执爵三祭酒，以虚爵授奉爵官，执笏，俯伏兴。举祝官搢笏跪，对举祝版，读祝官跪读祝文讫，奠祝于案，执笏，俯伏兴。礼直官、赞告官再拜毕，每室并如上仪。告毕，引告官以下降，复位。再拜讫，诣望瘗燔祝，再拜，半燎，告官以下皆退。
 </p><p>国史院进先朝实录仪
 </p><p>是日大昕，诸司官具公服，立于光天门外，侍仪使引《实录》案以入，监修国史以下奉随，至光天殿前，分班立，皇帝升御座。宣赞唱曰“拜”，通赞赞曰“鞠躬”，曰“拜”，曰“兴”，曰“拜”，曰“兴”，曰“平身”。待制四人奉《实录》，升自午阶，监修国史以下奉随，至御前香案南立，众官降，复位。应奉翰林文字升，至《实录》前，跪读表，读毕，俯伏兴，复位。翰林学士承旨升，至御前，分班立，俟御览毕，降复位。宣赞唱曰“监修国史以下皆再拜”，通赞赞曰“鞠躬”，曰“拜”，曰“兴”，曰“拜”，曰“兴”，曰“平身”。待制升，取《实录》，降自午阶，置于案，由光天门以出，音乐仪从前导，还国史院，置于堂上。通赞赞曰“鞠躬”，曰“拜”，曰“兴”，曰“拜”，曰“兴”，曰“平身”，曰“搢笏”，曰“上香”，曰“上香，曰“三上香”，曰“出笏”，曰“就拜”，曰“兴，”曰“拜”，曰“兴”，曰“拜”，曰“兴”，曰“平立”。百僚趋退。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p><p class='next'>下一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p><p class='next'>下一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

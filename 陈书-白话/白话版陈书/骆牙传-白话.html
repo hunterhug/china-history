@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>陈书-白话版陈书<a href='../陈书.html#陈书'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>骆牙传<span style='font-size:small'> 白话</span></h1>
 <p>骆牙字旗门，吴兴临安人。祖父骆皉道，梁安成王田曹参军。父骆裕，鄱阳嗣王中兵参军事。<BR><BR>　　骆牙十二岁时，宗族中有善于相面之人说：“令郎相貌非凡，必定会飞黄腾达。”梁太清末年，世祖曾避乱于临安，骆牙的母亲看见世祖之仪表，知道是非常之人，礼待十分厚重。待到世祖为吴兴太守，引荐骆牙为将帅，骆牙便跟从世祖平定杜龛、张彪等，每当作战便冲锋陷阵，勇冠三军，以功授直阁将军。太平二年(557)，因丧母而离职。世祖镇守会稽，任骆牙为山阴令。永定二年(558)，任安东府中兵参军，出镇冶城。不久跟从世祖狙击王琳于南皖。世祖即位，授职为假节、威虏将军、员外散骑常侍，封为常安县侯，食邑五百户。不久为临安县令，迁越州刺史，余并如故。<BR><BR>　　当初骆牙母去世时，因正当饥馑之年，又值兵荒马乱，到这时才正式下葬，诏赠骆牙母常安国太夫人，谥号恭。晋升牙为贞威将军、晋陵太守。<BR><BR>　　永定三年(559)，以平周迪之功，晋升为冠军将军、临川内史。太建三年(571)，又授安远将军、衡阳内史，未拜，改为桂阳太守。八年还朝，迁任散骑常侍，入直殿省。十年授丰州刺史，余并如故。至德二年(584)去世，时年五十七岁。赠安远将军、广州刺史。有子骆义为后。</p>
-<div class='pn'><p class='pre'>上一节：<a href='钱道戢传-白话.html'>钱道戢传</a></p><p class='next'>下一节：<a href='沈君理传-白话.html'>沈君理传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='钱道戢传-白话.html'>钱道戢传</a></p><p class='next'>下一节：<a href='沈君理传-白话.html'>沈君理传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -207,5 +234,18 @@
 <p>　　陈希烈者，宋州人也。精玄学，书无不览。开元中，玄宗留意经义，自褚无量、 元行冲卒后，得希烈与凤翔人冯朝隐，常于禁中讲《老》、《易》。累迁至秘书少 监，代张九龄专判集贤院事。玄宗凡有撰述，必经希烈之手。李林甫知上睠待深异， 又以和裕易制，乃引为宰相，同知政事，相行甚欢。而林甫居位日久，虽阴谋奸画 足以自固，亦希烈佐佑唱和之力也。累迁兼兵部尚书、左相，封颍川郡开国公，宠 遇侔于林甫。及林甫死，杨国忠用事，素忌嫉之。乃引韦见素同列，罢希烈知政事， 守太子太师。希烈失恩，心颇怏怏。禄山之乱，与张垍、达奚珣同掌贼之机衡。六 等定罪，希烈当斩，肃宗以上皇素遇，赐死于家。 </p>
 <p>　　史臣曰：刘徐公负不羁之材，逢抵戏之运，遂能奋命决策，扶力中兴，朝为 徒步之人，夕据公侯之位，苟非轻死重利，不耻不义之富，安及此哉！郭代公、张 燕公解逢掖而登将坛，驱貔虎之师，断獯戎之臂，暨居衡轴，克致隆平，可谓武纬 文经，惟申与甫而已。惜乎均、垍务速，失节贼廷。自武德已来，称贤相者，房、 杜、姚、宋四公，皆遭无赖子弟污圮先业，非独燕国之不幸也。希烈柔而多智，长 于名理，竟死于名。所谓离娄不见其眉睫，与夫平叔、太初，同膏肓耳。 </p>
 <p>　　赞曰：箕、微去纣，闳、散扶昌。谋不近义，旋踵而亡。幽求不令，道济允臧。 伟哉郭侯，勋德煌煌。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十六章-卷四十六-原文.html'>第四十六章-卷四十六</a></p><p class='next'>下一节：<a href='第四十八章-卷四十八-原文.html'>第四十八章-卷四十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十六章-卷四十六-原文.html'>第四十六章-卷四十六</a></p><p class='next'>下一节：<a href='第四十八章-卷四十八-原文.html'>第四十八章-卷四十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

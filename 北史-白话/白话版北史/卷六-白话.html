@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>北史-白话版北史<a href='../北史.html#北史'>：目录</a></p>
@@ -222,5 +249,18 @@
 </p><p>七月，高澄到邺城朝见，请求魏帝立皇太子，同时又辞去爵位和特殊礼遇，魏帝不答复。
 </p><p>八月初八，高澄遇强盗而去世。起初，梁朝将军兰钦的儿子兰京被俘虏，高澄让他到厨房做饭，兰钦请求赎还，高澄不答应。兰京再次陈诉，高澄就让掌管厨房的仆人薛丰洛用木棒打他，并说：“再说就杀了你。”兰京就和同党六个人阴谋作乱。当时，高澄正打算接受魏帝的禅让，和陈元康、崔季舒屏去身边随从到北城的东柏堂商议。太史上奏说宰相的星光很暗弱，变故不足一月就会发生。这时，兰京送来食物，高澄拒绝了，并对别人说：“昨晚梦见这个奴才砍我。”又说“：赶快杀了他。”兰京听到后，把刀放在盘子下面，冒充进上食品。高澄见到后，大怒说：“我没有要吃的，怎么这么快又来了？”兰京挥舞着刀子说：“准备杀你！”高澄扑了上去，被兰京砍伤脚，钻进床下。贼人同党来到，搬掉床，因而被杀，当年二十九岁。保密不发丧。第二年正月十一日，魏帝在太极东堂举行哀悼仪式，下诏赠给帛八万段，办理丧事依照汉朝大将军霍光、东平王苍的旧制，赠封假黄钺、使持节、相国、都督中外诸军事、齐王的印玺，赠给帝王丧礼使用的鍂车京车、黄屋左纛、后部羽葆鼓吹、轻车介士，准备了九锡礼仪，谥为文襄王。二月初四，埋葬于义平陵的北面。天保初年，追封为文襄皇帝，庙号世宗，陵称为峻成陵。
 </p><p>文襄皇帝仪容俊美，善于言笑，言谈和戏谑的时候，都从容宽宏高雅。本性聪慧机敏，多有策略，当朝任相，听断如流。爱士好贤，以礼相待，有神武帝的遗风。但年轻气盛，刑法严峻，高慎的叛降西魏，侯景的南奔，不仅是他们本身凶狠不仁，也兼有害怕高澄的威严。情欲过度，举止违反制度。他曾经在西宫建造院宅，墙高院广，十分宏伟壮观，仅次于太极殿，神武帝入朝见到后责备他，这才停建。</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷五-白话.html'>卷五</a></p><p class='next'>下一节：<a href='卷七-白话.html'>卷七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='卷五-白话.html'>卷五</a></p><p class='next'>下一节：<a href='卷七-白话.html'>卷七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

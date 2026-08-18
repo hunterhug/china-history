@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -212,5 +239,18 @@
 </p><p>叶茂才，字参之，无锡人。万历十七年进士。除刑部主事，以便养改南京工部。榷税芜湖，课登，辄纵民舟去。既而课羡，请以饷边卒，不取一钱。就改吏部，进郎中，三迁南京大理丞。复引疾。四十年，起南京太仆少卿。时朝士方植党争权。祭酒汤宾尹、修撰韩敬既败，其党犹力庇之。御史汤世济者，敬邑人也，疏陈时政，阴诋发敬奸弊者。茂才驰疏驳之。其党给事中官应震辈遂连疏力争。茂才更具揭发其隐，因移疾乞休。世济益恚，偕同年金汝谐、牟志夔攻之不已。茂才再疏折之，竟自引去。当是时，党人悉踞言路，凡他曹有言，必合力逐之。茂才既去，党人益专，无复操异议者。天启初，召为太仆少卿，改太常，皆不赴。四年，擢南京工部右侍郎。明年抵官。甫三月，以时政日非，谢病归。友人高攀龙被逮，赴水死，使者将逮其子，茂才力救免之。未几卒。
 </p><p>茂才恬淡寡嗜好。通籍四十年，家食强半。始同邑顾宪成、允成、安希范、刘元珍及攀龙并建言去国，直声震一时，茂才只以醇德称。及官太仆，清流尽斥，邪议益棼，遂奋身与抗，人由是服其勇。时称“东林八君子”，宪成、允成、攀龙、希范、元珍、武进钱一本、薛敷教及茂才也。
 </p><p>赞曰：成、弘以上，学术醇而士习正，其时讲学未盛也。正、嘉之际，王守仁聚徒于军旅之中，徐阶讲学于端揆之日，流风所被，倾动朝野。于是搢绅之士，遗佚之老，联讲会，立书院，相望于远近。而名高速谤，气盛招尤，物议横生，党祸继作，乃至众射之的，咸指东林。甘陵之部，洛、蜀之争，不烈于是矣。宪成诸人，清节姱修，为士林标准。虽未尝激扬标榜，列“君宗”、“顾”、“俊”之目，而负物望者引以为重，猎时誉者资以梯荣，附丽游扬，薰莸猥杂，岂讲学初心实然哉？语曰“为善无近名”，士君子亦可以知所处矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百一十八章-卷一百一十八-原文.html'>第一百一十八章-卷一百一十八</a></p><p class='next'>下一节：<a href='第一百二十章-卷一百二十-原文.html'>第一百二十章-卷一百二十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百一十八章-卷一百一十八-原文.html'>第一百一十八章-卷一百一十八</a></p><p class='next'>下一节：<a href='第一百二十章-卷一百二十-原文.html'>第一百二十章-卷一百二十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

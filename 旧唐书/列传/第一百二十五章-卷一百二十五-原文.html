@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -231,5 +258,18 @@
 <p>　　王行瑜者，邠州人也。少隶本军，事硃玫为偏将，平巢寇有功。光启二年，玫 册嗣襄王襜为伪帝，授天平军节度使。领兵守大散关，攻大唐峰，为李铤所败，乃 送款行在。以部下反攻硃玫于阙下，斩之，因授邠州节度使。后平杨守亮于山南， 以功累加至中书令。景福中，逼朝廷加尚书令。宰臣韦昭度密奏不可。会韩建、李 茂贞称兵入觐，欲行废立。不果，乃请杀昭度与李磎。是岁，又遣弟行约攻河中； 河中引太原军至，由是大败。行约、行实劫驾不获，遂归邠州。行瑜率兵屯梨园， 王师围急。行实、行约先败，次保龙泉。行瑜又遁至邠州，不能守。乾宁二年十一 月，挈族至庆州，为部下所杀。 </p>
 <p>　　史臣曰：自天宝已降，内官握禁旋，中闱纂继，皆出其心。故手才揽于万机， 目己睨于六宅；防闲禁锢，不近人情。文守好古睦亲，至敦友悌。悔前非于齐凑， 褒以储闱；付后事于陈王，归其胄席。或降舆硃邸，对食琼筵，怡怡申肺腑之情， 穆穆尽棣华之义；近朝盛美，可洽风谣。昭肃惑谗，毒流安邸。虽览大臣之议，欲 使磐维；竟无出阁之仪，终身幽枉。《谷风》之怨，可为伤心。大中、咸通已来， 宝图世及。犬牙麟趾，虽不迨于姬周；平什布谣，未甚悲于宗籍。于姬不足，比魏 有余。 </p>
 <p>　　赞曰：周封子弟，运祚绵长。管、蔡剿绝，鲁、魏克昌。诛叛赏顺，王者大纲。 法不私亲，棣萼其芳。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百二十四章-卷一百二十四-原文.html'>第一百二十四章-卷一百二十四</a></p><p class='next'>下一节：<a href='第一百二十六章-卷一百二十六-原文.html'>第一百二十六章-卷一百二十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百二十四章-卷一百二十四-原文.html'>第一百二十四章-卷一百二十四</a></p><p class='next'>下一节：<a href='第一百二十六章-卷一百二十六-原文.html'>第一百二十六章-卷一百二十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>北史-白话版北史<a href='../北史.html#北史'>：目录</a></p>
@@ -235,5 +262,18 @@
 </p><p>秋八月初三，太皇太后下令废黜皇帝，封为济南王，食邑一郡。由大丞相、常山王演继承帝位。当天，济南王出居别宫。皇建二年(561)九月，死于晋阳，年纪十七岁。
 </p><p>废帝聪慧天成，宽厚而仁智，天保年间，很有美名。当继承皇位之后，杨、燕子献、宋钦道等一同辅佐他。因常山王为皇族至亲，很有人望，内外敬畏服从，加上文宣帝刚去世时，太后本有立他为帝的意思，所以杨等人都对他怀有疑忌之心。常山王为此感到忧虑不安，便告诉了太后，杀了这批同党。当时，平秦王归彦也参与了这次谋划。皇建二年秋天，天文发生变异，归彦害怕以后有灾难，便告诉了孝昭，认为济南王应当承担祸患。孝昭帝便派归彦立即驰赴晋阳杀害了废帝。济南王死后，孝昭帝身体不适，常常见到文宣帝作祟。孝昭帝十分厌恶，便用了各种厌胜之术来镇伏，但都毫无用处。济南王去世三十天后，孝昭帝也去世了。太宁二年(562)，废帝被葬于武宁的西北面，谥为闵悼王。
 </p><p>当初，文宣帝让邢邵给废帝起名字，名殷字正道。文宣帝听从了可是却又很生气，他说：“殷朝是兄终弟及，‘正’字是一止，在我的身后儿子不得帝位啊！”邢邵听后大惊，请求改换名字。文宣帝不答应，说：“天意啊！”他便对昭帝说：“想夺位时就夺，但千万不要杀他。”</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷六-白话.html'>卷六</a></p><p class='next'>下一节：<a href='卷八-白话.html'>卷八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='卷六-白话.html'>卷六</a></p><p class='next'>下一节：<a href='卷八-白话.html'>卷八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

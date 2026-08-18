@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#列传'>：目录</a></p>
@@ -184,5 +211,18 @@
 </p><p>大将军何进连征不诣，进必欲致之，使蟠同郡黄忠书劝曰：“前莫府初开，至如先生，特加殊礼，优而不名，申以手笔，设几杖之坐。经过二载，而先生抗志弥高，所尚益固。窃论先生高节有余，于时则未也。今颍川荀爽载病在道，北海郑玄北面受署。彼岂乐羁牵哉，知时不可逸豫也。昔人之隐，遭时则放声灭迹，巢栖茹薇。其不遇也，则裸身大笑，被发狂歌。今先生处平壤，游人间，吟典籍，袭衣裳，事异昔人，而欲远蹈其迹，不亦难乎！孔氏可师，何必首阳。”蟠不答。
 </p><p>中平五年，复与爽、玄及颍川韩融、陈纪等十四人并博士征，不至。明年，董卓废立，蟠及爽、融、纪等复俱公车征，惟蟠不到。众人咸劝之，蟠笑而不应。居无几，爽等为卓所胁迫，西都长安，京师扰乱。及大驾西迁，公卿多遇兵饥，室家流散，融等仅以身脱。唯蟠处乱末，终全高志。年七十四，终于家。
 </p><p>赞曰：琛宝可怀，贞期难对。道苟违运，理用同废。与其遐栖，岂若蒙秽？凄凄硕人，陵阿穷退。韬伏明姿，甘是堙暧。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十五章-崔骃列传-原文.html'>第四十五章-崔骃列传</a></p><p class='next'>下一节：<a href='第四十七章-杨震列传-原文.html'>第四十七章-杨震列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十五章-崔骃列传-原文.html'>第四十五章-崔骃列传</a></p><p class='next'>下一节：<a href='第四十七章-杨震列传-原文.html'>第四十七章-杨震列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

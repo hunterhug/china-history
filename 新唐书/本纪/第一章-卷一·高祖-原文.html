@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新唐书-本纪<a href='../新唐书.html#本纪'>：目录</a></p>
@@ -171,5 +198,18 @@
 </p><p>九年正月甲寅，裴寂为司空。二月庚申，齐王元吉为司徒。壬午，有星孛于胃、昴。丁亥，孛于卷舌。三月庚寅，幸昆明池，习水战。壬辰，至自昆明池。丙午，如周氏陂。乙卯，至自周氏陂。丁巳，突厥寇凉州，都督、长乐郡王幼良败之。四月辛巳，废浮屠，老子法。六月丁巳，太白经天。庚申，秦王世民杀皇太子建成、齐王元吉。大赦。复浮屠、老子法。癸亥，立秦王世民为皇太子，听政。赐为父后者袭勋、爵，赤牒官得为真，免民逋租宿赋。己卯，太白昼见。庚辰，幽州都督、庐江郡王瑗反，伏诛。癸未，赦幽州管内为瑗所诖误者。七月辛卯，杨恭仁罢。太子右庶子高士廉为侍中，左庶子房玄龄为中书令，萧瑀为尚书左仆射。癸巳，宇文士及为中书令，封德彝为尚书左仆射。辛亥，太白昼见。甲寅，太白昼见。八月丙辰，突厥请和。丁巳，太白昼见。壬戌，吐谷浑请和。甲子，皇太子即皇帝位。
 </p><p>贞观三年，太上皇徙居大安宫。九年五月，崩于垂拱前殿，年七十一。谥曰大武，庙号高祖。上元元年，改谥神尧皇帝。天宝八载，谥神尧大圣皇帝；十三载，增谥神尧大圣大光孝皇帝。
 </p><p>赞曰：自古受命之君，非有德不王。自夏后氏以来，始传以世，而有贤有不肖，故其为世，数亦或短或长。论者乃谓周自后稷至于文、武，积功累仁，其来也远，故其为世尤长。然考于《世本》，夏、商、周皆出于黄帝，夏自鲧以前，商自契至于成汤，其间寂寥无闻，与周之兴异矣。而汉亦起于亭长叛亡之徒。及其兴也，有天下皆数百年而后已。由是言之，天命岂易知哉！然考其终始治乱，顾其功德有厚薄与其制度纪纲所以维持者何如，而其后世，或浸以隆昌，或遽以坏乱，或渐以陵迟，或能振而复起，或遂至于不可支持，虽各因其势，然有德则兴，无德则绝，岂非所谓天命者常不显其符，而俾有国者兢兢以自勉耶？唐在周、隋之际，世虽贵矣，然乌有所谓积功累仁之渐，而高祖之兴，亦何异因时而特起者欤？虽其有治有乱，或绝或微，然其有天下年几三百，可谓盛哉！岂非人厌隋乱而蒙德泽，继以太宗之治，制度纪纲之法，后世有以凭藉扶持，而能永其天命欤？</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-卷二·太宗-原文.html'>第二章-卷二·太宗</a></p></div></body>
+<div class='pn'><p class='next'>下一节：<a href='第二章-卷二·太宗-原文.html'>第二章-卷二·太宗</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

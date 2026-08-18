@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>南史-白话版南史<a href='../南史.html#南史'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>夷貊传论<span style='font-size:small'> 白话</span></h1>
 <p>评论说：自从晋代南渡，夹居江东，西北部荒凉偏远地区，被阻隔不能交通。至于东南边疆，国界相连，到宋代元嘉应天顺时，动用武力，象浦大捷，威震海外，于是各国使节接连不断，年年都来朝拜。直到齐、梁年间，各国贡奉都不失臣仆之礼。到了侯景作乱，边境日益告急。陈朝的基业，已是十分衰微，不是救首就是救尾，身躯还能存在几天呢。因此外国来朝贡之事。就不见于史册。恐怕这就是所谓的有德则来，无道则去吧。</p>
-<div class='pn'><p class='pre'>上一节：<a href='北狄传-白话.html'>北狄传</a></p><p class='next'>下一节：<a href='侯景传-白话.html'>侯景传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='北狄传-白话.html'>北狄传</a></p><p class='next'>下一节：<a href='侯景传-白话.html'>侯景传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

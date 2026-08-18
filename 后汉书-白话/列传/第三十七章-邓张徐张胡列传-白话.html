@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#后汉书'>：目录</a></p>
@@ -182,5 +209,18 @@
 </p><p>九年(166)又拜司徒。灵帝即位，与太傅陈蕃参录尚书事，复封故国。因病请求退职。遇上陈蕃被杀，代为太傅，总录如故。这时年已八十，而心力克壮。继母在堂，早晚问安，傍无几杖，言不称老。母死后，居丧尽哀，照礼不差。性格温柔谨素，常逊言恭色。达练事体，明解朝章。虽没有謇直之风，屡有补缺之益。所以京师谚语说：“万事不理问伯始，天下中庸有胡公。”等到与李固定策，大议不全，又与中常侍丁肃结为婚姻，因此被当时人讥毁。胡广自在公台三十余年，历侍六个皇帝，礼任甚优，每次逊位辞病，及免职退回田里，不满一年，又复升进。共一次作司空，两次作司徒，三次登太尉，又做了太傅。他所辟命，都是天下名士。与故吏陈蕃、李咸并为三司。陈蕃等每朝会，常称病避胡广，时人以为光荣。
 </p><p>年八十二，熹平元年(172)去世。朝廷派五官中郎将持节奉策赠太傅、安乐乡侯印绶，给东园梓器，谒者护丧事，赐冢茔于原陵，谥为文恭侯，拜家中一人为郎中。故吏自公、卿、大夫、博士、议郎以下数百人，都是....殡位，自寿终到殡葬。汉兴以来，人臣之盛，不曾有过。起初，杨雄依照《虞箴》作《十二州二十五官箴》，其中九箴遗失，后来涿郡崔马因和儿子崔瑗又临邑侯刘..马余增补十六篇，胡广又继作四篇，文甚典美。于是全部撰目录，为它作解释，名叫《百官箴》，共四十八篇。其余所著诗、赋、铭、颂、箴、吊及诸解诂，共二十二篇。
 </p><p>熹平六年(178)，灵帝思感旧德，于是画胡广及太尉黄琼之像于省内，诏议郎蔡邕替它作颂。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十六章-朱乐何列传-白话.html'>第三十六章-朱乐何列传</a></p><p class='next'>下一节：<a href='第三十八章-袁张韩周列传-白话.html'>第三十八章-袁张韩周列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十六章-朱乐何列传-白话.html'>第三十六章-朱乐何列传</a></p><p class='next'>下一节：<a href='第三十八章-袁张韩周列传-白话.html'>第三十八章-袁张韩周列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

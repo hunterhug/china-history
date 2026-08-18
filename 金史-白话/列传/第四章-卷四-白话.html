@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#金史'>：目录</a></p>
@@ -160,5 +187,18 @@
 </p><p>完颜勖编撰审定《女直郡望姓氏谱》以及其他文集很多。大定二十年(1180)，金世宗下诏书说：“太师勖的谏表诗文很有典范法则，是朕即位以来所不曾见过的。他的谏表可以收入《实录》，他的《射虎赋》及诗文等篇章，可以镂版印刷发行。”完颜勖有儿子叫宗秀。
 </p><p>宗秀，字实甫，本名叫厮里忽。宗秀涉猎经史，通晓契丹大小字。他还善于骑马射箭，曾参与平定宗磐、宗隽之乱，被皇上授予定远大将军，并把宗磐世袭的猛安之地授予了他。
 </p><p>宗弼收复河南，宗秀和海陵一起去军前听候调遣。宋朝将领岳飞的军队驻扎在亳、宿之间，宗秀率领步兵和骑兵三千扼住岳军的要害之地，然后与诸军共同反攻击败了岳军。班师还朝，被授予太原府尹，又改派为婆速路统军使，他不接受。高丽派使者向他献土产品，他推辞了。后来宗秀入朝出任刑部尚书，改任御史中丞，并被授予翰林学士。天德初(1149)，宗秀转承海陵王旨意，被封为宿国公，并被授予玉带。宗秀历任平阳府尹、昭义军节度使，被封为广平郡王。正隆二年(1157)终止当官，时年四十二岁。当年，按律例被降为二品以上封爵，改赠他为金紫光禄大夫。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三-白话.html'>第三章-卷三</a></p><p class='next'>下一节：<a href='第五章-卷五-白话.html'>第五章-卷五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三-白话.html'>第三章-卷三</a></p><p class='next'>下一节：<a href='第五章-卷五-白话.html'>第五章-卷五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-志<a href='../金史.html#志'>：目录</a></p>
@@ -381,5 +408,18 @@
 </p><p>金既取汴，皆辇致于燕，天轮赤道牙距拨轮悬象钟鼓司辰刻报天池水壶等器久皆弃毁，惟铜浑仪置之太史局候台。但自汴至燕相去一千余里，地势高下不同，望筒中取极星稍差，移下四度才得窥之。明昌六年秋八月，风雨大作，雷电震击，龙起浑仪鳌云水趺下，台忽中裂而摧，浑仪仆落台下，旋命有司营葺之，复置台上。贞祐南渡，以浑仪熔铸成物，不忍毁拆，若全体以运则艰于辇载，遂委而去。
 </p><p>兴定中，司天台官以台中不置浑仪及测候人数不足，言之于朝，宜铸仪象，多补生员，庶得尽占考之实。宣宗召礼部尚书杨云翼问之，云翼对曰：“国家自来铜禁甚严，虽罄公私所有，恐不能给。今调度方殷，财用不足，实未可行。”他日，上又言之，于是止添测候之人数员，铸仪之议遂寝。
 </p><p>初，张行简为礼部尚书提点司天监时，尝制莲花、星丸二漏以进，章宗命置莲花漏二禁中，星丸漏遇车驾巡幸则用之。贞祐南渡，二漏皆迁于汴，汴亡废毁，无所稽其制矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p><p class='next'>下一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p><p class='next'>下一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

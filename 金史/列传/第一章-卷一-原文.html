@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -210,5 +237,18 @@
 </p><p>蒲察阿虎迭女叉察，海陵姊庆宜公主所生，嫁秉德之弟特里。秉德诛，当连坐，太后使梧桐请于海陵，由是得免。海陵白太后欲纳叉察。太后曰：“是儿始生，先帝亲抱至吾家养之，至于成人。帝虽舅，犹父也，不可。”其后，嫁宗至安达海之子乙刺补。海陵数使人讽乙刺补出之，因而纳之。叉察与完颜守诚有奸，守诚本名遏里来，事觉，海陵杀守诚，太后为叉察求哀，乃释之。叉察家奴告叉察语涉不道，海陵自临问，责叉察曰：“汝以守诚死詈我邪？”遂杀之。
 </p><p>同判大宗正阿虎里妻浦速碗，元妃之妹，因入见元妃，海陵逼淫之。浦速碗自是不复入宫。
 </p><p>世宗为济南尹，海陵召夫人乌林荅氏。夫人谓世宗曰：“我不行，上必杀王。我当自勉，不以相累也。”夫人行至良乡自杀，是以世宗在位二十九年，不复立后焉。</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p></div></body>
+<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

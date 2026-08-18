@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -208,5 +235,18 @@
 </p><p>明年，御史刘熙祚、给事中姜埰交章言溥砥行博闻，所纂述经史，有功圣学，宜取备乙夜观。帝御经筵，问及二人，延儒对曰：“读书好秀才。”帝曰：“溥已卒，采小臣，言官何为荐之？”延儒曰：“二人好读书，能文章，言官为举子时读其文，又以其用未竟，故惜之耳。”帝曰：“亦未免偏。”延儒言：“诚如圣谕，溥与黄道周皆偏，因善读书，以故惜之者众。”帝颔之，遂有诏征溥遗书，而道周亦复官。有司先后录上三千余卷，帝悉留览。
 </p><p>溥诗文敏捷。四方征索者，不起草，对客挥毫，俄顷立就，以故名高一时。卒时，年止四十。
 </p><p>采，字受先，与溥善。溥性宽，泛交博爱。采特严毅，喜甄别可否，人有过，尝面叱之。知临川，摧强扶弱，声大起。移疾归，士民泣送载道。知州刘士斗、钱肃乐严重之，以奸蠹询采，片纸报，咸置之法。福王时，起礼部主事，进员外郎，乞假去。南都失守，奸人素衔采者，群击之死，复用大锥乱刺之。已而苏，避之邻邑，又三年卒。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百七十五章-卷一百七十五-原文.html'>第一百七十五章-卷一百七十五</a></p><p class='next'>下一节：<a href='第一百七十七章-卷一百七十七-原文.html'>第一百七十七章-卷一百七十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百七十五章-卷一百七十五-原文.html'>第一百七十五章-卷一百七十五</a></p><p class='next'>下一节：<a href='第一百七十七章-卷一百七十七-原文.html'>第一百七十七章-卷一百七十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

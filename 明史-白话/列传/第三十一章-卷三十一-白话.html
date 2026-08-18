@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -161,5 +188,18 @@
 </p><p>燕王举兵后，黄观起草皇上命令劝告他遣散军队返回藩地，然后自绑谢罪，言辞十分严厉。建文四年(1402)，黄观奉诏前往上游募兵，并且督率诸郡军队赴援。到达安庆时，燕王已经渡江进入京城，下令揭露左班文职奸臣罪状，黄观名列第六。不久搜寻国宝，不知所在，有人说已交给黄观去募兵了。成祖下令，命官府追捕黄观，逮捕其妻翁氏及二个女儿交给象奴。象奴索取钗镯去买酒菜，翁氏便让其全部拿去，然后迅速带领二个女儿及家属十人，跳下淮清桥而死。
 </p><p>黄观获悉金川门失守，叹道：“我妻守节操，必死无疑。”于是招魂葬于江上。然后下令将船开到罗刹矶，黄观身穿朝服向东拜别，在江水湍急处投江而死。黄观之弟黄觏，先将其幼子藏起来，然后自己逃往他处。有人说黄觏之妻毕氏孀居母家，生下遗腹子，因而黄氏在贵池才有后代。
 </p><p>当初，黄观之妻投水时，曾吐血在一块石头上，形成小影，阴雨时可见，相传为大士像，僧人将此石抬至庵中，翁氏托梦说：“我是黄状元之妻。”等到天明，在石头上浇水，影子更加清晰，显出愁惨的样子。后来被移至黄观祠，称作翁夫人血影石。现在尚存。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十章-卷三十-白话.html'>第三十章-卷三十</a></p><p class='next'>下一节：<a href='第三十二章-卷三十二-白话.html'>第三十二章-卷三十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十章-卷三十-白话.html'>第三十章-卷三十</a></p><p class='next'>下一节：<a href='第三十二章-卷三十二-白话.html'>第三十二章-卷三十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-列传<a href='../新五代史.html#列传'>：目录</a></p>
@@ -165,5 +192,18 @@
 </p><p>三月，仁赡病甚，已不知人，其副使孙羽诈为仁赡书，以城降。世宗命舁仁赡至帐前，叹嗟久之，赐以玉带、御马，复使入城养疾，是日卒。制曰：“刘仁赡尽忠所事，抗节无亏，前代名臣，几人可比！予之南伐，得尔为多。”乃拜仁赡检校太尉兼中书令、天平军节度使。仁赡不能受命而卒，年五十八。
 </p><p>世宗遣使吊祭，丧事官给，追封彭城郡王，以其子崇赞为怀州刺史，赐庄宅各一区。李景闻仁赡卒，亦赠太师。寿州故治寿春，世宗以其难克，遂徙城下蔡，而复其军曰忠正军，曰：“吾以旌仁赡之节也。”
 </p><p>呜呼，天下恶梁久矣！然士之不幸而生其时者，不为之臣可也，其食人之禄者，必死人之事，如彦章者，可谓得其死哉！仁赡既杀其子以自明矣，岂有垂死而变节者乎？今《周世宗实录》载仁赡降书，盖其副使孙羽等所为也。当世宗时，王环为蜀守秦州，攻之久不下，其力屈而降，世宗颇嗟其忠，然止于为大将军。视世宗待二人之薄厚而考其制书，乃知仁赡非降者也。自古忠臣义士之难得也！五代之乱，三人者，或出于军卒，或出于伪国之臣，可胜叹哉！可胜叹哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十九章-周臣传第十九-原文.html'>第十九章-周臣传第十九</a></p><p class='next'>下一节：<a href='第二十一章-死事传第二十一-原文.html'>第二十一章-死事传第二十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十九章-周臣传第十九-原文.html'>第十九章-周臣传第十九</a></p><p class='next'>下一节：<a href='第二十一章-死事传第二十一-原文.html'>第二十一章-死事传第二十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

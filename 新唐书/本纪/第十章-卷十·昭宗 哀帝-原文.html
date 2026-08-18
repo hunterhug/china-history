@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新唐书-本纪<a href='../新唐书.html#本纪'>：目录</a></p>
@@ -174,5 +201,18 @@
 </p><p>三年正月壬戌，淮南将王茂章以宣、歙二州叛附于钱升。二月，杨渥陷岳州。癸巳，王建陷归州。四月癸未朔，日有食之。镇南军节度使钟传卒，其子匡时自称留后。六月，钱升陷衢、睦二州，刺史陈璋、陈询奔于淮南。七月，杨渥陷饶州。八月癸未，硃全忠陷相州。九月，杨渥陷洪州，执钟匡时。乙亥，匡国军节度使刘知俊陷坊州，执刺史刘彦晖。十月辛巳，杨崇本会凤翔、泾原、鄜延、秦陇兵以讨硃全忠，战于美原、败绩。十一月，忠国军节度使高彦卒，其子澧自称留后。闰十二月戊辰，李克用陷潞州，昭义军节度使丁会叛附于克用。乙亥，震电，雨雪。
 </p><p>四年三月，刘守光囚其父仁恭，自称幽州卢龙军节度使。四月戊午，钱升陷温州。甲子，皇帝逊于位，徙于曹州，号济阴王。梁开平二年二月遇杀，年十七，谥曰哀帝。后唐明宗追谥昭宣光烈孝皇帝，陵曰温陵。
 </p><p>赞曰：自古亡国，未必皆愚庸暴虐之君也。其祸乱之来有渐积，及其大势巳去，适丁斯时，故虽有智勇，有不能为者矣，可谓真不幸也，昭宗是已。昭宗为人明隽，初亦有志于兴复，而外患已成，内无贤佐，颇亦慨然思得非常之材，而用匪其人，徒以益乱。自唐之亡也，其遗毒余酷，更五代五十余年，至于天下分裂，大坏极乱而后止。迹其祸乱，其渐积岂一朝一夕哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九·懿宗 僖宗-原文.html'>第九章-卷九·懿宗 僖宗</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九·懿宗 僖宗-原文.html'>第九章-卷九·懿宗 僖宗</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

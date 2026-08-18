@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后周<a href='../旧五代史.html#后周'>：目录</a></p>
@@ -165,5 +192,18 @@
 </p><p>冬十月甲辰，左羽林大将军孟汉卿赐死，坐监纳厚取耗余也。丙午，以安州节度使李洪义为青州节度使，以贝州节度使王饶为相州节度使，以徐州节度使王晏为西京留守，以西京留守武行德为徐州节度使。戊申，以龙捷左厢都指挥使、泗州防御使韩令坤为洋州节度使，充侍卫马军都指挥使；以虎捷右厢都指挥使、永州防御使李继勋为利州节度使，充侍卫步军都指挥使。己酉，太子太保致仕杨凝式卒。诏安、贝二州依旧为防御州，其军额并停。壬子，以今上为永州防御使，依前殿前都虞候。戊午，监修国史李穀等上言曰：“窃以自古王者咸建史官，君臣献替之谋皆须备载，家国安危之道得以直书。历代已来，其名不一。人君言动，则起居注创于累朝；辅相经纶，则时政记兴于前代。然后采其事实，编作史书。盖缘闻见之间须有来处，记录之际得以审详。今之左右起居郎，即古之左右史也。唐文宗朝，命其官执笔，立于殿阶螭头之下，以纪政事。后则明宗朝，命端明殿及枢密直学士，皆轮修日历，旋送史官，以备纂修。及近朝，此事皆废，史官惟凭百司报状，馆司但取两省制书，此外虽有访闻，例非端的。伏自先皇帝创开昌运，及皇帝陛下缵嗣丕基，其圣德武功、神谋睿略，而皆万几宥密，丹禁深严，非外臣之所知，岂庶僚之可访。此后欲望以谘询之事、裁制之规，别命近臣旋具抄录，每当修撰日历，即令封付史臣，庶国事无漏略之文，职业免疏遗之咎。”从之。因命枢密直学士，起今后于枢密使处，逐月抄录事件，送付史馆。己未，供奉官郝光庭弃市，坐在叶县巡检日，挟私断杀平人也。是日大阅，帝亲临之。帝自高平之役，睹诸军未甚严整，遂有退却，至是命今上一概简阅，选武艺超绝者，署为殿前诸班，因是有散员、散指挥使、内殿直、散都头、铁骑、控鹤之号。复命总戎者，自龙捷、虎捷以降，一一选之，老弱羸小者去之，诸军士伍，无不精当。由是兵甲之盛，近代无比，且减冗食之费焉。《五代会要》：显德元年，上谓侍臣曰：“侍卫兵士老少相半，强懦不分，盖徇人情，不能选练。今春朕在高平，与刘崇及蕃军相遇，临敌有指使不前者，苟非朕亲当坚阵，几至丧败。况百户农夫，未能赡一甲士，且兵在精不在众，宜令一一点选，精锐者升在上军，怯懦者任从安便，庶期可用，又不虚费。”先是，上按于高平，观其退缩，慨然有惩革之志。又以骁勇之士，多为外诸侯所占，如是召募天下豪杰，不以草泽为阻，在于阙下，躬亲试阅，选武艺超绝及有身首者，分署为殿前诸班。
 </p><p>十一月戊寅，以太子宾客石光赞为兵部尚书致仕。壬午，镇州节度使曹英卒。乙酉，以澶州节度使郭崇为镇州节度使。乙未，以荆南节度副使、归州刺史高保勖为宁江军节度使、检校太尉，充荆南节度行军司马。戊戌，诏宰臣李穀监筑河堤。先是，郓州界河决，数州之地洪流为患，故命穀治之。役丁夫六万人，三十日而罢。
 </p><p>十二月己酉，太子太师侯益以本官致仕。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章-太祖纪四-原文.html'>第四章-太祖纪四</a></p><p class='next'>下一节：<a href='第六章-世宗纪二-原文.html'>第六章-世宗纪二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四章-太祖纪四-原文.html'>第四章-太祖纪四</a></p><p class='next'>下一节：<a href='第六章-世宗纪二-原文.html'>第六章-世宗纪二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

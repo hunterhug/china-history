@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#金史'>：目录</a></p>
@@ -194,5 +221,18 @@
 </p><p>尚书省上奏猛安谋克愿意考进士的人听便，皇帝章宗说：“世袭猛安谋克的人在太学学习可以吗？”徒单克宁说“：太平日子太久，现在的猛安谋克其才能武功不如前辈人，万一有警报，派谁去抵御？学习文章六艺，忘了武功，对国家不利。”皇帝金章宗说“：太傅说的对。”章宗初即皇帝位，颇好辞章，而边疆正有战事，所以徒单克宁说到这些。
 </p><p>明昌二年(1191)，徒单克宁生病，章宗前往探视。徒单克宁叩头致谢说“：臣没有才，曾蒙先帝重用，陛下即位，授予我上相，现在臣年老有病，没有辅助好明主安抚四方百姓。陛下亲自来看我，我死也有罪呀。”这天，在病榻前授予徒单克宁太师，封为淄王，赐赏很丰厚。
 </p><p>这年二月，徒单克宁死去，他遗留下奏章，其大意是：“人君往往重君子而后反而疏远他，轻小人而最终爱昵他。愿陛下始终如一，安不忘危，言不及私。”皇帝下诏有司统辖徒单克宁的丧事，送回莱州安葬，谥号忠烈。明昌五年(1194)，徒单克宁配享世宗庙廷祭祀，图像挂于衍庆宫。大安元年(1209)，他改为配享章宗庙廷祭祀。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十九章-卷二十九-白话.html'>第二十九章-卷二十九</a></p><p class='next'>下一节：<a href='第三十一章-卷三十一-白话.html'>第三十一章-卷三十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十九章-卷二十九-白话.html'>第二十九章-卷二十九</a></p><p class='next'>下一节：<a href='第三十一章-卷三十一-白话.html'>第三十一章-卷三十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后周<a href='../旧五代史.html#后周'>：目录</a></p>
@@ -169,5 +196,18 @@
 </p><p>世宗之北征也，命为东京副留守。车驾回自河东，世宗以艰于国用，乃以范为中书侍郎平章事、判三司。《册府元龟》载：世宗即位，七月癸巳，制曰：“朕自履宸极，思平泰阶，出一令虑下民之未从，行一事惧上穹之罔祐，晨兴夕惕，终岁于兹。虽礼让渐闻兴行，而风雨未之咸若，岂刑政之所阙，而德教之未孚哉！由是进用良臣，辅宣皇化，虽朕志先定，亦舆情具瞻，爰择佳辰，诞敷明命。枢密院直学士、中大夫、尚书工部侍郎、上柱国、晋阳县开国男、食邑三百户、赐紫金鱼袋范，昔佐先帝，每罄嘉谟，逮事眇躬，愈倾忠节，奉上得大臣之体，检身为君子之儒。一昨戎辂亲征，皇都是守，赞勋贤于留府，副征发于行营，军政所需，国用无阙。今则灵台偃革，宣室图功，思先朝欲用之言，成圣考得贤之美，俾参大政，仍掌利权。尔其明听朕言，往敷洪化，予欲则垂象而清品汇，尔则顺天道以序彝伦，余欲恤刑名而息战争，尔则谨宪章而恢庙略。天人之际悬合，军民之事罔渝，则国相之尊，非尔孰处，邦计之重，惟材是臧。勉思倜傥以致君，勿效因循而保位，伫闻成绩，用副虚怀。可正议大夫、中书侍郎平章事，判三司。
 </p><p>范为人厚重刚正，无所屈挠，然理繁治剧，非其所长，虽悉心尽瘁，终无称职之誉。世宗知之，因其有疾，乃罢司计。寻以父丧罢相东归。显德三年冬，以疾卒于乡里。优诏赠侍中，官为立碑焉。
 </p><p>史臣曰：夫以稽古之力，取秉钧之位者，岂常人乎！然文纪耽于货殖，裔孙伤于龌龊，则知全其德者鲜矣。如成绩之文采，元锡之履行，景范之纯厚，皆得谓之君子儒矣。以之爰立，何用不臧。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十七章-列传六-原文.html'>第十七章-列传六</a></p><p class='next'>下一节：<a href='第十九章-列传八-原文.html'>第十九章-列传八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十七章-列传六-原文.html'>第十七章-列传六</a></p><p class='next'>下一节：<a href='第十九章-列传八-原文.html'>第十九章-列传八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

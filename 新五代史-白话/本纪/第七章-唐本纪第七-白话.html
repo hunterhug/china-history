@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-本纪<a href='../新五代史.html#新五代史'>：目录</a></p>
@@ -161,5 +188,18 @@
 </p><p>清泰二年(935)二月九日，范延光罢相。十四日，追尊鲁国太夫人魏氏为皇太后。三月七日，任忠武军节度使赵延寿为枢密使。五月八日，任宣徽南院使刘延皓为枢密使。契丹侵犯边境。六月二十日，群臣献添都马。七月五日，回鹘可汗王仁美派其都督陈福海来。刘延皓罢官。九月十七日，任刑部尚书房詗为枢密使。二十三日，渤海派使者来。
 </p><p>清泰三年(936)正月五日，百济派使者来。十七日，封子重美为雍王。三月十七日，任翰林学士、礼部侍郎马胤孙为中书侍郎、同中书门下平章事。河东节度使石敬瑭反叛。五月七日，任命建雄军节度使张敬达为太原四面都招讨使，义武军节度使杨光远为副。二十日，先锋指挥使安审信叛变投降石敬瑭。二十一日，振武戍将安重荣叛降石敬瑭。二十四日，天雄军屯驻捧圣都虞候张令昭驱逐节度使刘延皓。六月六日，以令昭为右千牛卫将军，权知天雄军事。十七日，任宣武军节度使范延光为天雄军四面招讨使。七月二十二日，攻克魏州。二十六日，张令昭被处死。二十七日，彰圣指挥使张万迪率军叛变投降石敬瑭。八月二日，契丹使者梅里来。九月十八日，张敬达与契丹在太原交战失败。契丹在晋安包围敬达。二十二日，往河阳。十月七日，搜刮马匹，按户籍征兵。十一月三日，任卢龙军节度使赵德钧为行营都统。十二日，契丹立晋。闰十一月九日，杨光远杀张敬达，叛变投降契丹。十九日，契丹和晋军到达潞州。二十二日，从河阳回到京城。二十六日，皇帝自焚死。
 </p><p>唉！君臣之间的关系是很难处理的啊！聪明的人对于未发生的事情有预见性，所以预先提出忠言，但得不到信任和采纳，等到事情发生了后悔时，又哪里还来得及呢？重诲早已独自预见到潞王之祸，但处理得不恰当，以至于被杀和灭族，他的矛盾就是从这件事上产生的。说到愍帝的灭亡，墓穴在徽陵，只有一堆土，路人看见，都感到悲哀。假设明宗地下有知，他是有愧于重诲的，可悲啊！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章-唐本纪第六-白话.html'>第六章-唐本纪第六</a></p><p class='next'>下一节：<a href='第八章-晋本纪第八-白话.html'>第八章-晋本纪第八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六章-唐本纪第六-白话.html'>第六章-唐本纪第六</a></p><p class='next'>下一节：<a href='第八章-晋本纪第八-白话.html'>第八章-晋本纪第八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

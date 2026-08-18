@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>宋史-白话版宋史<a href='../宋史.html#宋史'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>李艸传<span style='font-size:small'> 白话</span></h1>
 <p>李王比，大名府宗城人。性情笃实孝道，致力耕作来事奉母亲。母亲去世，把田让给他的弟弟李坚，于是在母亲下葬的地方结庐，日夜号哭，运载泥土筑坟一丈多高。又替两代以及各族父母用稻草埋葬的尽礼筑造坟墓，共三年修成六造坟，都有一丈多高。李王比不吃肉不穿帛衣，不预人间事，匆忙不安惟恐筑造不及，坟墓修成，再留下来守坟三年。常常让兄长的儿子卖药以自给。他六十多岁，脚从没有踏入县城门。乡里人称他为李孝子。天禧年中，知府张知白把他的事迹写成状闻于朝廷，诏令赐给李王比粟米布帛，命令府县安抚慰问他。同里中有母亲健在而析产分家的人听说李王比被朝廷旌表，兄弟惭愧恐惧，又相继共同住在一起。</p>
-<div class='pn'><p class='pre'>上一节：<a href='华岳传-白话.html'>华岳传</a></p><p class='next'>下一节：<a href='戚同文传-白话.html'>戚同文传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='华岳传-白话.html'>华岳传</a></p><p class='next'>下一节：<a href='戚同文传-白话.html'>戚同文传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

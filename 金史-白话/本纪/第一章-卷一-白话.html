@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-本纪<a href='../金史.html#金史'>：目录</a></p>
@@ -197,5 +224,18 @@
 </p><p>康宗七年(1109)，年景不丰，减少做盗贼的人应出的赔偿额，赈助贫乏的穷人。
 </p><p>十一年(1113)，康宗逝世，享年五十三岁。天会十五年(1137)，追谥他为恭简皇帝。皇统四年(1144)，封号其寝陵为乔陵。五年(1155)，增谥他为康宗献敏恭简皇帝。
 </p><p>史家赞叹说：金朝开初，兄弟三人，也是出身贫贱的人。熙宗追念先帝祖宗，定名为始祖、景祖、世祖宗庙，世世不辱先君的祖庙。始祖娶六十岁的老妇而能生下二男一女，难道不是天意吗？景祖不接受辽籍辽印，却取雅达“国相”之职给他的儿子。世祖攻破了桓赧、散达之后，辽国政事日益衰败，而让太祖归属于穆宗。这些事难道不正说明金之祖先深谋远虑吗？</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-白话.html'>第二章-卷二</a></p></div></body>
+<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-白话.html'>第二章-卷二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

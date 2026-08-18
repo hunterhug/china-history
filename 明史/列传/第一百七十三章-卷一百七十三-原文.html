@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -230,5 +257,18 @@
 </p><p>李德，字仲修，番禺人。洪武三年以明经荐授洛阳典史，历南阳、西安二府幕官，并能其职。以年衰乞改汉阳教谕，秩满，调义宁。义宁在粤西，荒陋甚，德为振举，文教渐兴，解官归卒。德初好为诗，晚究洛、闽之学，谓诚意为古圣喆心要，故岭南人称理学，必曰李仲修云。黄哲，亦番禺人。历仕州郡，以治行称。
 </p><p>王蒙，字叔明，湖州人，赵孟頫之甥也。敏于文，不尚榘度。工画山水，兼善人物。少时赋宫词，仁和俞友仁见之，曰“此唐人佳句也”，遂以妹妻焉。元末官理问，遇乱，隐居黄鹤山，自称黄鹤山樵。洪武初，知泰安州事。蒙尝谒胡惟庸于私第，与会稽郭传、僧知聪观画。惟庸伏法，蒙坐事被逮，瘐死狱中。
 </p><p>郭传，一名正传，字文远。洪武七年，帝御武楼，赐学士宋濂坐，谓曰：“天下既定，朕方垂意宿学之士，卿知其人乎？”对曰：“会稽有郭传者，学有渊源，其文雄赡新丽，其议论根据《六经》，异才也。”既而濂持其文以进，帝召见于谨身殿，授翰林应奉，直起居注。迁兵部主事，再迁考功监丞，进监令，出署湖广布政司参政。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百七十二章-卷一百七十二-原文.html'>第一百七十二章-卷一百七十二</a></p><p class='next'>下一节：<a href='第一百七十四章-卷一百七十四-原文.html'>第一百七十四章-卷一百七十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百七十二章-卷一百七十二-原文.html'>第一百七十二章-卷一百七十二</a></p><p class='next'>下一节：<a href='第一百七十四章-卷一百七十四-原文.html'>第一百七十四章-卷一百七十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

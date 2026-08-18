@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -181,5 +208,18 @@
 <p>　　威性明敏，达于吏道。伏膺儒术，招纳文人，聚书至万卷。每花朝月夕，与宾 佐赋咏，甚有情致。钱塘人罗隐者，有当世诗名，自号“江东生”。威遣使赂遗， 叙其宗姓，推为叔父。隐亦集其诗寄之。威酷嗜其作，目己所为曰《偷江东集》， 凡五卷，今鄴中人士讽咏之。 </p>
 <p>　　史臣曰：魏、镇、燕三镇，不能制之也久矣。兵强地广，合从连衡。爵命虽假 于朝廷，群臣自谋于元帅。如史宪诚等五家，其初皆因此而得之，其后亦因此而失 之。盖不知取之以权，守之以仁，则远矣。若善继者，史氏、罗氏之二子有焉，其 余不足观也。 </p>
 <p>　　赞曰：逆取顺守，古亦有之。如其逆守，灭亡必随。史、何、韩、乐，世数盛 衰。足以为鉴，念兹在兹。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百三十章-卷一百三十-原文.html'>第一百三十章-卷一百三十</a></p><p class='next'>下一节：<a href='第一百三十二章-卷一百三十二-原文.html'>第一百三十二章-卷一百三十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百三十章-卷一百三十-原文.html'>第一百三十章-卷一百三十</a></p><p class='next'>下一节：<a href='第一百三十二章-卷一百三十二-原文.html'>第一百三十二章-卷一百三十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

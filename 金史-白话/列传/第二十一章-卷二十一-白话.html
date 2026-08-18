@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#金史'>：目录</a></p>
@@ -174,5 +201,18 @@
 </p><p>祁宰字彦辅，长江淮河之间的人。宋朝末年，因为懂医学而做官。金朝的军队攻破汴京俘获了他，后来做了太医。他直至做到中奉大夫、太医使。多次被赏赐，他常常感激因而尽力效劳。
 </p><p>海陵王准备攻打宋朝，祁宰想上谏，没有被召见。适逢元妃有病，呼唤祁宰去诊断看病。进入宫廷后，祁宰就呈上劝谏奏议，大略意思是：“国家刚建立的时候，祖宗们用有道攻打无道，不到十年，就平定了辽国和宋朝。当时，上面有武元、文烈那样的英武之君，下面有完颜宗翰、完颜宗雄那样的谋勇之臣，然而还不能把天下的土地都统为一体，虽攻下长江淮河、巴蜀的地方，后来还是把它们送给了宋朝人。况且今天的谋臣猛将，和先前的不一样。而且宋朝人没有罪状，出兵攻打它没有借口，加上大大增加劳役，建造中都，修建南京，修造军器，调遣军队，赋税劳役繁重，百姓怨声叹气，这是人和方面的不利。夜里昼星出现在斗牛星宿旁，荧惑星伏在翼轸星旁，太白星没有出来，进兵会失败的，这是天时的不顺。水兵出击而水道干涸，大船不连续，而且江湖岛渚之间，骑兵难驰骋射击，不可以驱逐，这是地利的不便。”祁宰言词激烈，海陵王大怒，命令在街上杀死祁宰，没收他的家产，为此天下的人很悲痛。綦戬是祁宰的女婿，海陵王怀疑祁宰的奏章是他写的。綦戬回答说“：我实在不知道这件事。”海陵王还是杖打了綦戬。海陵王下诏京城中各个司局的官员到咸德门，向他们说明杀祁宰的事。
 </p><p>第二年(1161)，金世宗在辽东即皇帝位。大定四年(1164)，金世宗下诏追封祁宰为资政大夫，归还他的土地和家宅。章宗即皇帝位，下诏书查访祁宰的儿子授予他忠勇校尉、平定州酒监公史，提拔他为尚乐局都监。泰和初年，皇帝下诏确定功臣的谥号，尚书省掾李秉钧上言说“：事情有应该缓的却急了，轻的却重了，诸侯王公的文告就是这样。受人敬佩的已故追封资政大夫祁宰因为忠言被杀，敬仰他的人都很伤心。世宗即皇帝位，追封他为官，陛下录用他的儿子，这是很大的恩惠。纵然武王授给比干坟墓，孔子称赞夷、齐的仁义，但同这件事不相同。然而有司拘泥于制度，认为职位不到三品的人不在讨论封谥号的行列，我私下怀疑此事。如果职位到三品的人才能请求封谥号，当时居高官、食厚禄的人，不是没有人，但都怕被判污浊罪，曾经不敢陈述自己的观点，写出自己的计策，为国家出谋献计。终于为祁宰正名是为节操而死的人，这对于出身医学的人，也可以减少他们的一点羞愧。我认为祁宰不是平常的人，应当用特别的礼仪对待他。请求皇上下诏有司特别赏赐给祁宰谥号，以表彰他的忠诚，这也有助于改正文告。”皇帝下令说“：可以这样做。”于是颁令祁宰为太常，谥号忠毅。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十章-卷二十-白话.html'>第二十章-卷二十</a></p><p class='next'>下一节：<a href='第二十二章-卷二十二-白话.html'>第二十二章-卷二十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十章-卷二十-白话.html'>第二十章-卷二十</a></p><p class='next'>下一节：<a href='第二十二章-卷二十二-白话.html'>第二十二章-卷二十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

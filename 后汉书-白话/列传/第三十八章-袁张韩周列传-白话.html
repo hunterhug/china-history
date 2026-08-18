@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#后汉书'>：目录</a></p>
@@ -166,5 +193,18 @@
 </p><p>窦宪很害怕，向太后请求出击匈奴以赎罪。韩棱又上疏谏阻，太后不听从。等到窦宪立了功，回来做了大将军，威名震惊天下，又出兵驻在武威。碰上皇帝西祠园陵，诏窦宪与车驾相会于长安。等窦宪到了，尚书以下的官吏商量想拜窦宪时，伏地口称万岁。韩棱正言厉色地说“：对上不谄媚，对下不亵黩，礼无人臣称万岁的规定。”议论人都惭愧地作罢论。尚书左丞王龙，私自奏记上牛酒给窦宪，韩棱举奏珑，判为城旦罪(城旦，轻刑之名。白天司寇虏，夜晚筑长城，所以叫城旦)。韩棱在朝廷数次荐举良吏应顺、吕章、周纡等，都有名于当时。等窦氏失败，韩棱负责查究这个案子，深深追究其党羽，数月不曾休息沐浴。皇帝以为韩棱忧国忘家，赐布三百匹。韩棱升为南阳太守，朝廷特让韩棱能回家上祖坟，乡里以为光荣。韩棱揭发奸盗坏人，郡中坏人都很害怕，政治号为严格公平。数年后，召入朝做太仆。
 </p><p>九年(98)冬，代张奋做司空。第二年死去。儿子韩辅，安帝时做了赵王良之孙刘商之相。
 </p><p>◆周荣传，周荣字平孙，庐江舒人。肃宗时，举明经科，召到司徒袁安之府为吏。袁安数次和周荣论议，非常器重他。等到袁安举奏窦宪、窦景争立北单于事，都是周荣起草的。窦氏的宾客太尉掾徐齿奇十分讨厌他，威胁周荣道：“你是袁公心腹之谋士，排奏窦氏，窦氏的打手刺客满城中，仔细防备好了！”周荣说：“我是江淮孤生子，承蒙先帝大恩，做过两城的主宰。现在又能升为司徒府，即使被窦氏所害，也很甘心。”所以常告诫妻子，如果猝然碰上飞来之大祸，不要急于殡殓，希望以区区的腐身使朝廷觉悟。等到窦氏失败，周荣由此名声大显。从郾令提为尚书令。出为颍川太守，触犯法令，当下狱，和帝想到周荣忠节，降为共县县令。一年多，又用他作山阳太守。所经过的郡县，都被称赞。因年老多病请求退职，死在家中。诏特赐钱二十万，除儿子周兴为郎中。周兴年少时有名誉，永宁年间，尚书陈忠上疏荐周兴道“：臣想起古代帝王有所号令，言语必弘雅，辞藻必温丽，垂于后代，列在典经。所以仲尼称赞唐虞的文章，追随周朝的文雅。臣私下看到光禄郎周兴，孝友之行，著于闺门，清厉之志，闻于州里。研究古今，博物多闻。《三坟》之篇，《五典》之策，没有不看。写出文章，很有可观。尚书出纳帝命，作王之喉舌。臣等既愚暗，而诸郎又多文俗吏，少有雅才，每次起草诏文，宣示内外，转相求请，有的以不能而专己自由，言辞很多鄙俗固陋。周兴抱奇怀能，随着流辈栖迟，很可叹息。”诏书于是拜兴为尚书郎。后来死了。儿子名周景。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十七章-邓张徐张胡列传-白话.html'>第三十七章-邓张徐张胡列传</a></p><p class='next'>下一节：<a href='第三十九章-郭陈列传-白话.html'>第三十九章-郭陈列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十七章-邓张徐张胡列传-白话.html'>第三十七章-邓张徐张胡列传</a></p><p class='next'>下一节：<a href='第三十九章-郭陈列传-白话.html'>第三十九章-郭陈列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

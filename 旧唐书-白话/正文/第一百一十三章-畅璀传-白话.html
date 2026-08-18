@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-正文<a href='../旧唐书.html#旧唐书'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>第一百一十三章-畅璀传<span style='font-size:small'> 白话</span></h1>
 <p>畅璀，河东人。在乡考取进士。天宝初年(742)，安禄山上奏任他为河北海运判官。三次升为大理评事，副元帅郭子仪征召他跟随自己。至德初年(756)，肃宗即位，广收俊杰人才，有人推荐璀，皇上召见他对其满意，升为谏议大夫。多次转任吏部侍郎。广德二年(764)十二月，任散骑常侍、河中尹，兼任御史大夫。永泰元年(765)，又任左常侍，与裴冕一并在集贤院待制。大历五年(770)，兼任判太常卿，升为户部尚书。十年(775)七月死，赠予太子太师。<BR><BR>　　璀具有口才，喜欢谈论霸王战略，在职时总是责成属下官吏，拘谨无过失而已。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百一十二章-高适传-白话.html'>第一百一十二章-高适传</a></p><p class='next'>下一节：<a href='第一百一十四章-裴冕传-白话.html'>第一百一十四章-裴冕传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百一十二章-高适传-白话.html'>第一百一十二章-高适传</a></p><p class='next'>下一节：<a href='第一百一十四章-裴冕传-白话.html'>第一百一十四章-裴冕传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

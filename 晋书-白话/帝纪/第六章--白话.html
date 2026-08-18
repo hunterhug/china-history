@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-帝纪<a href='../晋书.html#晋书'>：目录</a></p>
@@ -169,5 +196,18 @@
 </p><p>惠帝太安年间(302～303)，有童谣说：“五马浮渡江，一马化为龙。”怀帝永嘉年间(307～313)，岁、镇、荧惑、太白等星聚于斗、牛二星之间，识星象的人认为吴越之地当有王者兴起。这一年，中原王室倾覆，元帝与西阳王、汝南王、南顿王、彭城王南下渡江，而元帝终于即皇帝位。当初，《玄石图》上有“牛继马后”的话，所以宣帝司马懿深刻忌讳牛氏，于是做了个能装两种酒只有一个口的酒器，自己先饮好酒，而将毒酒斟给其大将牛金，将他毒死。而琅王牙恭王司马觐的妃子夏侯氏竟与一个姓牛的小吏私通而生了元帝，有人说这就是“牛继马后”的符应。
 </p><p>史臣曰：以维扬之地为疆域，以长江洪流为依凭，楚江流域常有战祸，方城常作战场，不得不诚心信用将相，以统领军队。拥有上万的战船，兵力成倍于王室，处在这样的地位而没有篡国之心的，就是周公那样的人。国家的威权被外人藉用，仇隙在内部兴起，那边有乘势而来的军队，这边没有强大的封国作后援。商遭遇九乱，尧制止八音，明皇受命的祥瑞，就出现在此日。运转大略于手掌之中，在江畔竖起顺天应命的大旗，余灰复燃，威势就如同火烧秋后的草原。除去丧服踏上战场，斩杀凶恶之人，而祭告先帝。削弱威权强盛的大臣，把江、漠等地州郡分小，吸取前人的教训，其谋划可保子孙安宁。在他之后七十多年，终于被桓敬道所减。有人说“兴亡在于命运，不仅仅靠有权势”，可以说创立基业都一样，而继承光大者有所不同。
 </p><p>赞曰：像天塌下来一样灾害兴起，猛兽呈现祸殃。琅邪之子，有仁有义。行事恭谨如赵璧，定刑法于荆台。乌云遮蔽北方昏黑，长江望南天开云霁。在晋阳抵御敌人，在河西保全国土。胡寇虽然猖獗，圣心不为之差失。三方奔驰来归，百蛮响应。天命重新昌盛，太阳的光辉更加明亮。明皇帝年幼聪慧，把军事文书处理得有条不紊。早晨悬挂起王莽的脑袋，晚上用董卓的肚脐燃灯。他的功德不能重现，风范却可以勉励后人。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章--白话.html'>第五章-</a></p><p class='next'>下一节：<a href='第七章--白话.html'>第七章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五章--白话.html'>第五章-</a></p><p class='next'>下一节：<a href='第七章--白话.html'>第七章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

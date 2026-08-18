@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#后汉书'>：目录</a></p>
@@ -187,5 +214,18 @@
 </p><p>◆许慎传，许慎字叔重，汝南郡召陵人。性格淳朴敦厚，年少时，广泛地学习经书，马融经常推崇他，敬重他。当时人称赞他说“：许叔重对《五经》的研究举世无双。”任郡里的功曹，被举为孝廉，再升迁，任命为氵交县长。死在家里。先是，许慎认为五经的解释有好有坏，于是撰《五经异义》，又作《说文解字》十四篇，都传于世。
 </p><p>◆蔡玄传，蔡玄字叔陵，汝南郡南顿人。学通《五经》，门徒常一千多人，在册的有一万六千人。征辟都不就。顺帝时特诏征授议郎，讲论《五经》异同，很合顺帝的意。升侍中，出为弘农太守，死在任上。
 </p><p>史家评论说：光武自中年以后，用兵少了，专事经学，从此社会风气渐渐趋于纯朴。那些穿着儒者衣服，讲述先王道德，游庠序，聚集私人讲学塾舍的，遍布全国。至于博士所在的地方，有不远万里担负粮食来的，住着精美的住宅，往往以千计，那些著名的开门授徒的学者，在册的学生不下万人，都是专业传授，没有错误或不纯的邪说。有的甚至在朝廷争论，私下里结朋党，订立繁密的章程条例，访求岩穴的隐居之士，以成一家的学说。所以扬雄说：“现在的学者，不但文辞藻丽，而且弄得有些烦碎了。”本来，书的道理只有一个，意思是要统一，饱学的人，不能转变，所以普通人鄙视他们固执，又扬雄所谓“吵吵闹闹的学问，都是从老师那里学来的”。并且成名高第，真正是远方来的也不多。迂阔不通竟到了如此地步啊。但他们所谈的是仁义，所传授的是圣人之法。所以人人知道君臣父子的大纲，家家晓得返邪归正的道路。桓帝、灵帝时，君主的教化败坏，朝廷的纪律一天一天衰弛，国家的祸乱不断，中等智力以上的人，没有不知道国家分崩离析，难以维持下去的。但是大权在握的强臣，没有企图篡位的阴谋，英雄豪俊之士，为鄙陋之徒的议论所屈服。这是因为人人诵习先王的言，在下的惧怕叛逆顺从形势啊。至如张温、皇甫嵩之徒，有定天下一半的大功，威名远扬四海之外，俯仰顾盼，大业可以转移，还鞠躬尽瘁于昏主之下，折简而召，就狼狈匍匐，散成兵，被拘执，却无后悔之心。及汉祚自终，人神数尽，然后天下的英雄并起，际会风云，曹丕继位。考寻衰败的原因，但又能拖得这么长的时间，这难道不是讲求儒学的功劳吗？所以先师垂典文，褒奖学者的功劳，不是偶然的，其意义是极为深远的。不遵《春秋》，比于篡杀诛死之罪，这是多么重要的思想啊。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十四章-儒林列传上-白话.html'>第七十四章-儒林列传上</a></p><p class='next'>下一节：<a href='第七十六章-文苑列传上-白话.html'>第七十六章-文苑列传上</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七十四章-儒林列传上-白话.html'>第七十四章-儒林列传上</a></p><p class='next'>下一节：<a href='第七十六章-文苑列传上-白话.html'>第七十六章-文苑列传上</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

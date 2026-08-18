@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -177,5 +204,18 @@
 </p><p>五年，置陕西路统军使，兼京兆尹。元帅府移治河中府。统军使璋朝辞，上曰：“合喜年老，以陕西军事委卿，凡镇防利害，可访问合喜也。”七年，入为枢密副使，改东京留守，赐以衣带、佩刀，诏曰：“卿年老，以此职优佚，宜勉之。”九年，入为平章政事，奏睿宗收复陕西功数事，上嘉纳之，藏之秘府。封定国公。
 </p><p>十一年，薨。上方击球，闻讣遂罢。有司致祭，备礼以葬。赙银一千二百五十两及重彩币帛。二十一年，上念其功，迁其孙三合武功将军，授世袭本猛安曷懒若窟申谋克。泰和元年，配享世宗庙廷。
 </p><p>赞曰：大定之初，兵连于江、淮，难作于契丹，谋衍挟功，窝斡横噬，有弗戢之畏焉。世宗独断，召还谋衍，仆散忠义受任责成矣。故曰：“兵主于将，将贤则士勇。”其此之谓邪！纥石烈志宁有言：“受诏征伐，则不敢辞，为宰相则诚不能。”如知为相之难，固所谓贤也。秦、陇之兵，殆哉岌岌乎，徒单合喜料敌应变若此之审，亦难矣哉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十四章-卷二十四-原文.html'>第二十四章-卷二十四</a></p><p class='next'>下一节：<a href='第二十六章-卷二十六-原文.html'>第二十六章-卷二十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十四章-卷二十四-原文.html'>第二十四章-卷二十四</a></p><p class='next'>下一节：<a href='第二十六章-卷二十六-原文.html'>第二十六章-卷二十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -177,5 +204,18 @@
 </p><p>十一年，我大清兵深入内地。以十一月九日攻高阳，承宗率家人拒守。大兵将引去，绕城纳喊者三，守者亦应之三，曰“此城笑也，于法当破”，围复合。明日城陷，被执。望阙叩头，投缳而死，年七十有六。
 </p><p>子举人鉁，尚宝丞钥，官生铈，生员鋡、镐，从子炼，及孙之沆、之滂、之澋、之洁、之瀗，从孙之澈、之氵美、之泳、之泽、之涣、之瀚，皆战死。督师中官高起潜以闻。帝嗟悼，命所司优恤。当国者杨嗣昌、薛国观辈阴扼之，但复故官，予祭葬而已。福王时，始赠太师，谥文忠。
 </p><p>赞曰：承宗以宰相再视师，皆粗有成效矣，奄竖斗筲，后先齮扼，卒屏诸田野，至阖门膏斧钅质，而恤典不加。国是如此，求无危，安可得也。夫攻不足者守有余，度彼之才，恢复固未易言，令专任之，犹足以慎固封守；而廷论纷呶，亟行翦除。盖天眷有德，气运将更，有莫之为而为者夫。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百三十七章-卷一百三十七-原文.html'>第一百三十七章-卷一百三十七</a></p><p class='next'>下一节：<a href='第一百三十九章-卷一百三十九-原文.html'>第一百三十九章-卷一百三十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百三十七章-卷一百三十七-原文.html'>第一百三十七章-卷一百三十七</a></p><p class='next'>下一节：<a href='第一百三十九章-卷一百三十九-原文.html'>第一百三十九章-卷一百三十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

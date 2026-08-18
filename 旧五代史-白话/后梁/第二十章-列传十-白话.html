@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后梁<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -157,5 +184,18 @@
 </p><p>寇彦卿身长八尺，高鼻梁，方脸盘，声如洪钟。善于骑马射箭，爱看书籍史传，又善于领会太祖旨意，所有作为，都与太祖相合。太祖常说“：敬翔、刘捍、寇彦卿，都是为我而生的啊。”如此看重寇彦卿。太祖有匹坐骑乌马，叫“一丈乌”，曾赐给寇彦卿。天复年间，太祖到凤翔迎接昭宗，多次与岐下李茂贞的军队对阵。当时寇彦卿任各道马军步军都排阵使，曾经亲自身穿甲胄，乘太祖所赐乌马，驰骋于战阵之前，太祖瞧着他说“：真是神将啊！”昭宗回到京师，赐寇彦卿为迎銮毅勇功臣名号，改任邢州刺史，接着迁任亳州团练使。
 </p><p>太祖接受禅让帝位后，寇彦卿任华州节度使，加封检校太保。一年多后，入京任左金吾卫大将军、充街使。一天，经过天津桥，有一老人误撞他的前导骑卫，被推开，掉到桥下摔死了，寇彦卿因此被御史府弹劾，太祖不得已，贬任寇彦卿为左卫中郎将。不到几个月，任相州防御使，复任行营各军排阵使旧职。不久，任河阳节度使，加封检校太傅。到太祖被杀害，寇彦卿追感旧恩，画下太祖图形以祭奠他。每当与客人随便谈起前朝旧事时，就眼泪鼻涕一起流下。
 </p><p>末帝即位，寇彦卿遥任兴元节度使、东南面行营都招讨使，以抵拒淮南吴国贼寇，接着改任右金吾卫上将军。贞明初年，任邓州节度使。遇上淮南吴人围困安陆，寇彦卿奉诏领兵解围，大破淮南贼寇而回。四年，死于藩镇，时年五十七岁。诏令追赠为侍中。寇彦卿坚贞干练聪明敏捷，善于服事人主，然而恃宠作威作福，性多妒忌，喜欢杀戮，虽然大有功名，仍然被有识之人瞧不起。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十九章-列传九-白话.html'>第十九章-列传九</a></p><p class='next'>下一节：<a href='第二十一章-列传十一-白话.html'>第二十一章-列传十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十九章-列传九-白话.html'>第十九章-列传九</a></p><p class='next'>下一节：<a href='第二十一章-列传十一-白话.html'>第二十一章-列传十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

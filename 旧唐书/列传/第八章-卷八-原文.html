@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -174,5 +201,18 @@
 <p>　　次兄士逸，亦有战功，武德初，为齐王府户曹，赐爵安陆县公。从齐王镇并州， 为刘武周所获，于贼中密令人诣京师，陈武周可图之计。及武周平，甚见慰勉，累 授益州行台左丞。数陈时政得失，高祖每嘉纳之。贞观初，为韶州刺史，卒。 </p>
 <p>　　史臣曰：唐俭委质义旗之下，立功草昧之初，被拘虏庭，脱高祖蒲州之急；侍 猎苑囿，谏太宗马上之言，可谓纯臣矣。顺德佐命立功，理郡著明肃之政；弘基临 难不屈，陷阵多克捷之勋。殷峤、刘政会、柴嗣昌并在太原，首预举义，从微至著， 善始令终。马三宝出厮养之徒，处将军之位，亦马之善走者也。武士首参起义， 例封功臣，无戡难之劳，有因人之迹，载窥他传，过为褒词。虑当武后之朝，佞出 敬宗之笔，凡涉虚美，削而不书。 </p>
 <p>　　赞曰：茂约忠纯，顺德功勋。弘基六士，义合风云。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

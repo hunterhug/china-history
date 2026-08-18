@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>南齐书-本纪<a href='../南齐书.html#南齐书'>：目录</a></p>
@@ -164,5 +191,18 @@
 </p><p>夏四月初三，禅位诏书下达，皇太后退居外宫。初九，梁王让皇上做巴陵王，王宫设在姑熟，仍然使用齐的日历，一切照先例进行。初十，巴陵王去世，当时才十五岁。追尊为齐和帝，埋葬在恭安陵。
 </p><p>史臣曰：夏代因为有了桀而灭亡，殷代由于有了纣而覆灭，改朝换代，理所当然。然而皇权的运数，重兴于西楚，暂时获得的皇位，也是有冥数的，能获得这样美好的名号，也算是幸运了。
 </p><p>赞曰：和帝在齐朝末期能够兴隆一时，扫除了艰难，清理了宫廷。他能够明达徵兆察知运数，这样的结局也很值得后人传颂。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-白话.html'>第七章-卷七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-白话.html'>第七章-卷七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

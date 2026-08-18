@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-列传<a href='../新五代史.html#列传'>：目录</a></p>
@@ -181,5 +208,18 @@
 </p><p>彦泽自以有功于契丹，昼夜酣饮自娱，出入骑从常数百人，犹题其旗帜曰“赤心为主”。迫迁出帝，遂辇内库，输之私第，因纵军士大掠京师。军士逻获罪人，彦泽醉不能问，真目视之，出三手指，军士即驱出断其腰领。皇子延煦母楚国夫人丁氏有色，彦泽使人求于皇太后，太后迟疑未与，即劫取之。彦泽与阁门使高勋有隙，乘醉入其家，杀数人而去。
 </p><p>耶律德光至京师，闻彦泽劫掠，怒，锁之。高勋亦自诉于德光，德光以其状示百官及都人，问：“彦泽当诛否？”百官皆请不赦，而都人争投状疏其恶，乃命高勋监杀之。彦泽前所杀士大夫子孙，皆缞绖杖哭，随而诟詈，以杖朴之，彦泽俯首无一言。行至北市，断腕出锁，然后用刑，勋剖其心祭死者，市人争破其脑，取其髓，脔其肉而食之。
 </p><p>呜呼，晋之事丑矣，而恶亦极也！其祸乱覆亡之不暇，盖必然之理尔。使重威等虽不叛以降虏，亦未必不亡；然开虏之隙，自一景延广，而卒成晋祸者，此三人也。视重威、彦泽之死，而晋人所以甘心者，可以知其愤疾怨怒于斯人者，非一日也。至于争已戮之尸，脔其肉，剔其髓而食之，撦裂蹈践，斯须而尽，何其甚哉！此自古未有也。然当是时，举晋之兵皆在北面，国之存亡，系此三人之胜败，则其任可谓重矣。盖天下恶之如彼，晋方任之如此，而终以不悟，岂非所谓“临乱之君，各贤其臣”者欤？</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十九章-杂传第三十九-原文.html'>第三十九章-杂传第三十九</a></p><p class='next'>下一节：<a href='第四十一章-杂传第四十一-原文.html'>第四十一章-杂传第四十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十九章-杂传第三十九-原文.html'>第三十九章-杂传第三十九</a></p><p class='next'>下一节：<a href='第四十一章-杂传第四十一-原文.html'>第四十一章-杂传第四十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

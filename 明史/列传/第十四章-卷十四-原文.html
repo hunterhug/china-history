@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -210,5 +237,18 @@
 </p><p>昌祚初以都督佥事总兵官镇守，久之嗣公爵。万历元年，姚安蛮罗思等叛，杀郡守。昌祚与都御史邹应龙发土、汉兵讨之，破向宁、鲊摩等十余寨，犁其巢，尽得思等。十一年，陇川贼岳凤叛附缅甸，挟其兵侵旁近土司。昌祚壁洱海，督裨将邓子龙、刘綎等斩木邦叛酋罕虔，以暑瘴退师。明年复攻罕虔故巢，三道并入，擒其酋罕招等，又破缅兵于猛脸。岳凤降。论功加太子太保，悉食故禄。复以次平罗雄诸叛蛮，再赐银币。缅兵攻猛广，昌祚会师壁永昌，缅人遁，追击至那莫江，瘴作而还。二十一年，缅人复入寇，昌祚逐之。连战俱捷，遂傅于缅，会群蛮内乱乃还。
 </p><p>沐氏在滇久，威权日盛，尊重拟亲王。昌祚出，佥事杨寅秋不避道，昌祚笞其舆人。寅秋诉于朝，下诏切责。已，以病，命子叡代镇。武定土酋阿克叛，攻会城，胁府印去。叡被逮下狱，昌祚复理镇事。卒，孙启元嗣。卒，子天波嗣。十余年而土司沙定洲作乱，天波奔永昌。乱定，复归于滇。永明王由榔入滇，天波任职如故。已，从奔缅甸。缅人欲劫之，不屈死。初，沙定洲之乱，天波母陈氏、妻焦氏自焚死。后天波奔缅，妾夏氏不及从，自缢死。逾数十日收葬，支体不坏，人以为节义所感焉。
 </p><p>赞曰：明兴诸将，以六王为称首。非独功茂，亦由其忠诚有以契主知焉。亲莫如岐阳，旧莫如东瓯，而宁河、黔宁皆以英年膺腹心之寄。汗马宣劳，纯勤不二，旂常炳耀，洵无愧矣。岐阳敦诗说礼，以儒雅见重，东瓯乞身归第，以明哲自全，皆卓然非人所能及。独黔宁威震遐荒，剖符弈世，勋名与明相始终。而宁河尽瘁驰驱，功高龄促，后嗣亦少所表见。论者谓诸王之遗泽，隆替有殊，然而中山有增寿，与岐阳之有景隆，追溯先烈，不无遗憾。荣遇之弗齐，亦安见其有幸有不幸哉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十三章-卷十三-原文.html'>第十三章-卷十三</a></p><p class='next'>下一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十三章-卷十三-原文.html'>第十三章-卷十三</a></p><p class='next'>下一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

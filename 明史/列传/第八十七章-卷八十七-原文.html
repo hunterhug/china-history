@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -191,5 +218,18 @@
 </p><p>寻还视刑部事。严嵩势益炽。晓素不善嵩。而其时大狱如总督王忬以失律，中允郭希颜以言事，晓并予轻比，嵩则置重典。南都叛卒周山等杀侍郎黄懋官，海寇汪直通倭为乱，晓置重典，嵩故宽假之。惟巡抚阮鹗、总督杨顺、御史路楷，以嵩曲庇，晓不能尽法，议者讥其失出云。故事，在京军民讼，俱投牒通政司送法司问断。诸司有应鞫者，亦参送法司，无自决遣者。后诸司不复遵守，狱讼纷拿。晓奏循故事，帝报许，于是刑部间捕囚畿府。而巡按御史郑存仁谓讼当自下而上，檄州县，法司有追取，毋辄发。晓闻，率侍郎赵大祐、傅颐守故事争，存仁亦据律执奏。章俱下都察院会刑科平议。议未上，晓疏辨。嵩激帝怒切让，遂落晓职，两侍郎亦贬二秩。
 </p><p>晓通经术，习国家典故，时望蔚然。为权贵所扼，志不尽行。既归，角巾布衣与乡里父老游处，见者不知其贵人也。既卒，子履淳等讼晓御倭功于朝，诏复职。隆庆初，赠太子少保，谥端简。履淳自有传。
 </p><p>赞曰：李钺诸人皆以威略干济显于时。钺与王宪、王以旂之治军旅，李承勋、范钅之画边计，才力均有过人者。胡世宁奋不顾身，首发奸逆，危言正色，始终一节。《易》称“王臣蹇蹇”，世宁近之矣。王邦瑞抵抗权幸，踬而复起，郑晓谙悉掌故，博洽多闻，兼资文武，所在著效，亦不愧名臣云。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十六章-卷八十六-原文.html'>第八十六章-卷八十六</a></p><p class='next'>下一节：<a href='第八十八章-卷八十八-原文.html'>第八十八章-卷八十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八十六章-卷八十六-原文.html'>第八十六章-卷八十六</a></p><p class='next'>下一节：<a href='第八十八章-卷八十八-原文.html'>第八十八章-卷八十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

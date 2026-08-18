@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -197,5 +224,18 @@
 </p><p>孜敬为人剽锐，果于行事。昔与佺期劝殷仲堪杀殷顗，仲堪不从，孜敬拔刃而起，欲自己出取之，仲堪苦禁乃止。及为梁州刺史，常怏怏不满其志。经襄阳，见鲁宗之侍卫皆佺期之旧也，孜敬愈愤，见于辞色。宗之参军刘千期于座面折之，因大发怒，抽剑刺千期立死。宗之表而斩之。思平、尚保后亦以罪诛，杨氏遂灭。
 </p><p>史臣曰：生灵道断，忠贞路绝，弃彼弊冠，崇兹新履。牢之事非其主，抑亦不臣，功多见疑，势陵难信，而投兵散地，二三之甚。若夫司牧居愆，方隅作戾，口顺勤王，心乖抗节。王恭鲠言时政，有昔贤之风。国宝就诛，而晋阳犹起。是以仲堪侥幸，佺期无状，雅志多隙，佳兵不和，足以亡身，不足以静乱也。
 </p><p>赞曰：孝伯怀功，牢之总戎。王因起衅，刘亦惭忠。殷杨乃武，抽旆争雄。庾君含怨，交斗其中。猗欤群采，道睽心异。是曰乱阶，非关臣事。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十三章--原文.html'>第五十三章-</a></p><p class='next'>下一节：<a href='第五十五章--原文.html'>第五十五章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五十三章--原文.html'>第五十三章-</a></p><p class='next'>下一节：<a href='第五十五章--原文.html'>第五十五章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

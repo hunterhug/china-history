@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>史记-十表<a href='../史记.html#十表'>：目录</a></p>
@@ -151,5 +178,18 @@
 
 <h1>第八章-建元以来侯者年表<span style='font-size:small'> 原文</span><span style='font-size:small;padding-left:5px'> <a href='第八章-建元以来侯者年表-段译.html'>段译</a></span><span style='font-size:small;padding-left:5px'> <a href='第八章-建元以来侯者年表-译文.html'>译文</a></span></h1>
 <p>太史公曰：匈奴绝和亲，攻当路塞；闽越擅伐，东瓯ōu请降。二夷交侵，当盛汉之隆，以此知功臣受封侔于祖考矣。何者？自《诗》《书》称三代“戎狄是膺，荆荼是征”，齐桓越燕伐山戎，武灵王以区区赵服单于，秦缪用百里霸西戎，吴楚之君以诸侯役百越。况乃以中国一统，明天子在上，兼文武，席卷四海，内辑亿万之众，岂以晏然不为边境征伐哉！自是后，遂出师北讨强胡，南诛劲越，将卒以次封矣。</p><p>后进好事儒者褚先生曰：太史公记事尽于孝武之事，故复修记孝昭以来功臣侯者，编于左方，令后好事者得览观成败长短绝世之适，得以自戒焉。当世之君子，行权合变，度时施宜，希世用事，以建功有土封侯，立名当世，岂不盛哉！</p><p>观其持满守成之道，皆不谦让，骄蹇争权，喜扬声誉，知进不知退，终以杀身灭国。以三得之，及身失之，不能传功于后世，令恩德流子孙，岂不悲哉！</p><p>夫龙雒侯曾为前将军，世俗顺善，厚重谨信，不与政事，退让爱人。其先起于晋六卿之世。有土君国以来，为王侯，子孙相承不绝，历年经世，以至于今，凡百余岁，岂可与功臣及身失之者同日而语之哉？悲夫，后世其诫之！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-惠景间侯者年表-原文.html'>第七章-惠景间侯者年表</a></p><p class='next'>下一节：<a href='第九章-建元已来王子侯者年表-原文.html'>第九章-建元已来王子侯者年表</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七章-惠景间侯者年表-原文.html'>第七章-惠景间侯者年表</a></p><p class='next'>下一节：<a href='第九章-建元已来王子侯者年表-原文.html'>第九章-建元已来王子侯者年表</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

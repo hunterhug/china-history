@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -197,5 +224,18 @@
 </p><p>疏入，帝但报闻，不怒也。而附拱者谓奋庸久不徙官，怏怏风刺，相与诋訾之。给事中涂梦桂遂劾奋庸动摇国是。会给事中曹大埜亦劾拱十罪，帝斥之。给事中程文因奏拱竭忠报国，万世永赖，奋庸与大埜渐构奸谋，倾陷元辅，罪不可胜诛。章并下吏部。拱方掌部事，阳为二臣祈宽。帝不许，竟谪大埜乾州判官，奋庸兴国知州。梦桂、文皆拱门生。梦桂极诋奋庸，文则盛称颂拱，又尽举大埜奏中语代拱剖析，士论非之。奋庸谪官两月，会神宗即位，遂擢山西提学佥事。再迁陕西提学副使。以病乞归，卒。
 </p><p>大埜，巴县人。其劾拱，张居正实使之。万历中，累迁右副都御史，巡抚江西。以贪劾免。
 </p><p>赞曰：世宗之季，门户渐开。居言路者，各有所主，故其时不患其不言，患其言之冗漫无当，与其心之不能无私；言愈多，而国是愈益淆乱也。汪文辉所陈四弊，有旨哉！论明季言路诸臣，而考其得失，当于是观之。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百零二章-卷一百零二-原文.html'>第一百零二章-卷一百零二</a></p><p class='next'>下一节：<a href='第一百零四章-卷一百零四-原文.html'>第一百零四章-卷一百零四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百零二章-卷一百零二-原文.html'>第一百零二章-卷一百零二</a></p><p class='next'>下一节：<a href='第一百零四章-卷一百零四-原文.html'>第一百零四章-卷一百零四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

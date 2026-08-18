@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后周<a href='../旧五代史.html#后周'>：目录</a></p>
@@ -161,5 +188,18 @@
 </p><p>冬十月丙辰，赐京城内新修四寺额，以天清、天寿、显静、显宁为名。壬戌，左藏库使符令光弃市。时帝再议南征，先期敕令光广造军士袍襦，不即办集，帝怒，命斩之。时宰臣等至庭救解，帝起入宫，遂戮于都市。令光出勋阀之后，历职内庭，以清慎自守，累总繁剧，甚有廉干之誉。帝素重其为人，每加委用，至是以小过见诛，人皆冤之。戊午，诏悬制科凡三，其一曰贤良方正能直言极谏科，其二曰经学优深可为师法科，其三曰详闲吏理达于教化科。不限前资、见任职官，黄衣草泽，并许应诏。时兵部尚书张昭条奏，请兴制举，故有是命。癸亥，河东伪命麟州刺史杨重训以城归顺，授重训本州防御使、检校太傅。戊辰，诏取月内车驾暂幸淮上。己巳，以枢密使王朴为权东京留守，以三司使张美为大内都点检。壬申，驾发京师。壬午，以前郓州节度使郭从义为徐州节度使，以徐州节度使向训为宋州节度使。
 </p><p>十一月癸未朔，以内客省使昝居润为宣徽北院使，权东京留守。丙戌，车驾至濠州城下。戊子，亲破十八里滩。寨在濠州东北淮水之中，四面阻水，上令甲土数百人跨驼以济。今上以骑军浮水而渡，遂破其寨，掳其战舰而回。癸巳，帝亲率诸军攻濠州，夺关城，破水寨，贼众大败，焚战舰七十余艘，斩首二千级，进军攻羊马城。丙申夜，伪濠州团练使郭廷谓上表陈情，且言家在江南，欲遣人禀命于李景，从之。辛丑，帝自濠州率大军水陆齐进，循淮而下，命今上率精骑为前锋。癸卯，大破淮贼于涡口，斩首五千级，收降卒二千余人，夺战船三百艘，遂鼓行而东，以追奔寇，昼夜不息，沿淮城栅，所至皆下。乙巳，至泗州。今上乘势麾军，焚郭门，夺月城，帝亲冒矢石以攻其垒。丙午，日南至，从臣拜贺于月城之上。
 </p><p>十二月乙卯，泗州守将范再遇以其城降，授再遇宿州团练使。戊午，帝自泗州率众东下，命今上领兵行于南岸，与帝夹淮而进。己未，至清口，追及淮贼，军行鼓噪之声闻数十里。辛酉，至楚州西北，大破贼众，水陆俱奔，有贼船数艘，顺流而逸，帝率骁骑与今上追之数十里，今上擒贼大将伪保义军节度使、江北都应援使陈承昭以献。收获舟船，除焚荡外得三百余艘，将士除杀溺外得七千余人。初，帝之渡淮也，比无水战之备，每遇贼之战棹，无如之何，敌人亦以此自恃，有轻我之意。帝即于京师大集工徒，修成艛舰，逾岁得数百艘，兼得江、淮舟船，遂令所获南军教北人习水战出没之势，未几，舟师大备。至是水陆皆捷，故江南大震。壬戌，伪命濠州团练使郭廷谓以城归顺。乙丑，雄武军使崔万迪以涟水归顺。丙寅，以郭廷谓为亳州防御使，《隆平集》：廷谓望金陵大恸，再拜，然后以城降。世宗曰：“江南诸将，惟卿断涡口桥，破定远寨，足以报李景禄矣。濠上使李景自守，亦何能为！”乃授以亳州防御使。以伪命濠州兵马都监陈迁为沂州团练使，以伪命保义军节度使陈承昭为右监门上将军。江南李景遣兵驱掳扬州士庶渡江，焚其州郭而去。丙子，故同州节度使白延遇赠太尉，故濠州刺史唐景思赠武清军节度使。丁丑，泰州平。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-世宗纪三-原文.html'>第七章-世宗纪三</a></p><p class='next'>下一节：<a href='第九章-世宗纪五-原文.html'>第九章-世宗纪五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七章-世宗纪三-原文.html'>第七章-世宗纪三</a></p><p class='next'>下一节：<a href='第九章-世宗纪五-原文.html'>第九章-世宗纪五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-志<a href='../旧唐书.html#志'>：目录</a></p>
@@ -183,5 +210,18 @@
 </p><p>夫横既有之，纵亦宜然。假令设两表，南北相距十里，其崇皆数十里，若置火炬于南表之端，而植八尺之木于其下，则当无影。试从南表之下，仰望北表之端，必将积微分之差，渐与南表参合。表首参合，则置炬于其上，亦当无影矣。又置火炬于北表之端，而植八尺之木于其下，则当无影。试从北表之下，仰望南表之端，又将积微分之差，渐与北表参合。表首参合，则置炬于其上，亦当无影矣。复于二表之间，相距各五里，更植八尺之木，仰而望之，则表首环屈而相会。若置火炬于两表之端，皆当无影。夫数十里之高与十里之广，然则斜射之影与仰望不殊。今欲求其影差以推远近高下，犹尚不可知也；而况稽周天积里之数于不测之中，又可必乎！假令学者因二十里之高以立句股之术，尚不知其所以然，况八尺之木乎！原人所以步圭景之意，将欲节宣和气，辅相物宜，而不在于辰次之周径；其所以重历数之意，将欲敬授人时，钦若乾象，而不在于浑、盖之是非。若乃述无稽之谈于视听之所不及，则君子阙疑而不质，仲尼慎言而不论也。而或者各守所传之器以述天体，谓浑元可任数而测，大象可运算而窥，终以六家之说，迭为矛盾。今诚以为盖天，则南方之度渐狭；以为浑天，则北方之极浸高。此二者，又浑、盖之家未能有以通其说也。由是而观，则王仲任、葛稚川之徒，区区于异同之辨，何益人伦之化哉！
 </p><p>又凡日晷差，冬夏至不同，南北亦异，而先儒一以里数齐之，丧其事实。沙门一行因修《大衍图》，更为《覆矩图》，自丹穴以暨幽都之地，凡为图二十四，以考日蚀之分数，知夜漏之短长。今载诸州测景尺寸如左：
 </p><p>林邑国，北极高十七度四分。冬至影在表北六尺九寸。定春秋分影在表北二尺八寸五分，夏至影在表南五寸七分。安南都护府，北极高二十六度六分。冬至影在表北七尺九寸四分。定春秋分影在表北二尺九寸三分，夏至影在表南三寸三分。朗州武陵县，北极高二十九度五分。冬至影在表北一丈五寸三分。定春秋分影在表北四尺三寸七分半，夏至影在表北七寸七分。襄州。恆春分影在表北四尺八寸。蔡州上蔡县武津馆，北极高三十三度八分。冬至影在表北一丈二尺三寸八分。定春秋分影在表北五尺二寸八分，夏至影在表北一尺三寸六分半。许州扶沟，北极高三十四度三分。冬至影在表北一丈二尺五寸三分。定春秋分影在表北五尺三寸七分，夏至影在表北一尺四寸四分。汴州浚仪太岳台，北极高三十四度八分。冬至影在表北一丈二尺八寸五分。定春秋分影在表北五尺五寸，夏至影在表北一尺五寸三分。滑州白马，北极高三十五度三分。冬至影在表北一丈三尺。定春秋分影在表北五尺三寸六分，夏至影在表北一尺五寸七分。太原府。恆春分影在表北六尺。蔚州横野军，北极高四十度。冬至影在表北一丈五尺八寸九分。定春秋分影在表北六尺六寸三分，夏至影在表北二尺二寸九分。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十四章-卷十四-原文.html'>第十四章-卷十四</a></p><p class='next'>下一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十四章-卷十四-原文.html'>第十四章-卷十四</a></p><p class='next'>下一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

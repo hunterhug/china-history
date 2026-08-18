@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -182,5 +209,18 @@
 </p><p>泰和六年，伐宋，尚书省奏：“军兴，随路官，差占者别注，阙者选补，老不任职者替罢，及司、县各存留强干正官一员。”革与签陕西高霖、签山东孟子元俱被诏，体访三路官员能否，籍存留正官，行省、行部、元帅府差占员数及事故阙员，老不任职，赴阙奏事。改刑部员外郎，调观州刺史兼提举漕运，陕西西路按察副使，大兴府治中。知府徒单南平贵幸用事，势倾中外，遣所亲以进取诱革，革拒之。贞祐二年，迁户部侍郎。宣宗迁汴，行河北西路六部事，迁知开封府事，河南劝农使，户部、吏部尚书，陕西行省参议官。
 </p><p>四年，拜参知政事。革奏：“有司各以情见引用断例，牵合附会，实启幸门。乞凡断例敕条特旨奏断不为永格者，不许引用，皆以律为正。”诏从之。是岁，大元兵破潼关，革自以执政失备御之策，上表请罪。不许，罢为绛阳军节度使。兴定元年，胥鼎自平阳移镇陕西，革以知平阳府事，权参知政事，代鼎为河东行省。是时兴兵伐宋，革上书曰：“今之计当休兵息民，养锐待敌。宋虽造衅，止可自备。若不忍小忿以勤远略，恐或乘之，不能支也。”不纳。太原兵后阙食，革移粟七万石以济之。二年，宣差粘割梭失至河东，于是晚禾未熟，牒行省耕毁清野。革奏：“今岁雨泽及时，秋成可待。如令耕毁，民将不堪。”诏从革奏。十月，平阳被围，城中兵不满六千，屡出战，旬日间伤者过半。征兵吉、隰、霍三州，不时至。裨将李怀德缒城出降，兵自城东南入。左右请革上马突围出，革叹曰：“吾不能保此城，何面目见天子！汝辈可去矣。”乃自杀。赠尚书右丞。
 </p><p>赞曰：《传》曰：“君子之言，其利博哉！”徒单镒拱挹一语而宣宗立，厥功懋矣。贾铉、孙铎皆旧臣，铉久致仕，铎忤旨卫王，皆不复见用。徒单镒亦外官，惟孙即康诡随，乃骤至宰相。古所谓斗筲之人，即康之谓矣。铎论李新喜，其言似汉耿育，有旨哉。贞祐执政李革，可谓君子，其进退之际，有古人为相之风焉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十六章-卷三十六-原文.html'>第三十六章-卷三十六</a></p><p class='next'>下一节：<a href='第三十八章-卷三十八-原文.html'>第三十八章-卷三十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十六章-卷三十六-原文.html'>第三十六章-卷三十六</a></p><p class='next'>下一节：<a href='第三十八章-卷三十八-原文.html'>第三十八章-卷三十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

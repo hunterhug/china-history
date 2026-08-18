@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>南齐书-志<a href='../南齐书.html#南齐书'>：目录</a></p>
@@ -169,5 +196,18 @@
 </p><p>祠部郎何佟之建议说：“《春秋》的意义，臣子继续君主宗亲的事业，虽然恩义有别，但用的礼是一致的，都为的是敦厚孝敬的感情，加重有关丧服的礼义。皇上虽然上继高皇帝，曾经北面为臣，但现在秉承天运统治天下，教化百姓，凡是父亲、老师、国君的恩情，照理不容更替。我认为世宗的祥祭忌日，皇上应穿哀悼礼服登上殿堂，群臣共同致哀，事情完毕，百官到宣德宫祭拜上表，还要到陵园致哀，弘扬追念思慕之义。”尚书令王呈等十九人赞同何{驻的建议。皇上下诏说“可以”。
 </p><p>海陵王去世，百官集会致哀，当时实行戒严，朝廷议论对穿军服赴会犹疑不决。祠部郎何佟之建议：“不能穿羊羔皮衣、黑色帽子吊唁。照理不允许穿军服参加丧礼。宋泰始二年，为孝武帝举行大祥礼那天，当时百官进宫哭吊，都在宫门换下军服，穿上便衣，哭吊完毕出来，仍旧穿上军服。”采纳了这一建议。
 </p><p>赞曰：周公、孔子制作礼仪，训示规范百王。共有三千之数，礼、义、廉、耻得以伸张。增减法度，兴废宪章。军队典礼国家祭祀，社稷宗庙郊祭学校礼仪。冠礼婚礼朝会礼，丧服标志凶丧之礼。国家保存是因为有大德，从前的亡国要引以为戒。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-卷九-白话.html'>第一章-卷九</a></p><p class='next'>下一节：<a href='第三章-卷十一-白话.html'>第三章-卷十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-卷九-白话.html'>第一章-卷九</a></p><p class='next'>下一节：<a href='第三章-卷十一-白话.html'>第三章-卷十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

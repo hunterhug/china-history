@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后唐<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -161,5 +188,18 @@
 </p><p>梁太祖看信，到“毒手尊拳”一句时，高兴地对敬翔说“：李公占据着一小角地方，怎么会得到这种文士，如果用我的智谋，再得到李袭吉的文才，就像老虎添了翅膀。”又读到“马邑儿童”、“阴山部落”等句，梁太祖生气地对敬翔说：“李克用只剩下一口气，仍然气吞宇宙，可以臭骂他。”敬翔写回信时，词句理气均超不过原信，因此李袭吉的名气更大。
 </p><p>自从广明大乱后，诸侯割据各地，竞相延揽名士，掌管文书军檄，此时梁朝有敬翔，燕地有马郁，华州有李巨川，荆南有郑准，钱塘有罗隐，魏博有李山甫，都以文章出名，与李袭吉一起著称于当时。
 </p><p>李袭吉在武皇幕府有十五年，办公事之余，只是读书作文，手不释卷。性格淡泊于名利，提拔后进，不以自己的才能求财物。参预决策公事，务必公平，不互相送礼，绰绰有士大夫的风度气概。天..三年(906)因患风病死于太原。同光二年(925)，追赠礼部尚书。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十五章-列传十一-白话.html'>第三十五章-列传十一</a></p><p class='next'>下一节：<a href='第三十七章-列传十三-白话.html'>第三十七章-列传十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十五章-列传十一-白话.html'>第三十五章-列传十一</a></p><p class='next'>下一节：<a href='第三十七章-列传十三-白话.html'>第三十七章-列传十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

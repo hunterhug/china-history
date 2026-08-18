@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-志<a href='../明史.html#志'>：目录</a></p>
@@ -211,5 +238,18 @@
 </p><p>弘治十一年更定，三师三少并宫僚于丹陛四拜毕，从殿左右门入，东西立。候讲读毕，叩头退。隆庆六年，改设皇太子座于文华殿之东厢，正中西向。每日讲读各官，先诣文华门外东西向，序立。候帝御日讲经筵毕，皇太子出阁升座。凡东宫初讲时，阁臣连侍五日，后每月三、八日一至，先拜出，然后各官入。崇祯十一年，署礼部事学士顾锡畴言：“东宫嘉礼告成，累朝锡赉有据。《实录》载成化十五年，皇太子出阁讲学，六卿皆加保、傅。弘治十年，皇太子出阁讲学，内阁徐溥等四人、尚书马文升等七人，俱加宫保。”帝命酌议行之。
 </p><p>诸王读书仪
 </p><p>书堂在皇极门右厢。讲官选部曹或进士改授翰林官充之。天顺二年定，初入书堂，其日早，王至右顺门之北书堂，面东，中坐。提督讲读并讲读官行四拜礼。内官捧书展于案上，就案左坐。讲读官进立于案右。伴读十遍，叩头退。每日讲读，清晨，王至书堂，讲读官行叩头礼，伴读十遍，出。饭后，复诣堂伴看写字。讲书毕，仍叩头退。万历六年定，书堂设中座，书案在左，写字案在右。辅臣率讲读侍书官候于门外。王入书堂，传令旨“先生进”。辅臣率各官入，四拜，分班侍立。讲读官以次授书各十遍讫，令旨“先生吃酒饭”，各官出，王暂入堂南间少憩。辅臣各率官入。令旨“先生进”，遂入分班侍立。侍书官看写字，讲读以次进讲毕，各官一拜出。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十章-卷三十-原文.html'>第三十章-卷三十</a></p><p class='next'>下一节：<a href='第三十二章-卷三十二-原文.html'>第三十二章-卷三十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十章-卷三十-原文.html'>第三十章-卷三十</a></p><p class='next'>下一节：<a href='第三十二章-卷三十二-原文.html'>第三十二章-卷三十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -205,5 +232,18 @@
 </p><p>刘瑾用事，瑞即谢病。贫不能还乡，依从母子李充嗣于澧州。瑾榜瑞为奸党，又以前荐雍泰除其名，罚米输塞上。坐是益困，授徒自给。
 </p><p>瑾诛，以副使督浙江学校，召为南京太仆少卿。嘉靖二年，由南太常卿就迁礼部右侍郎。因灾变偕同官条上六事，且言斋醮无益且妨政，织造多费且病民。帝多粕用之。大礼议起，瑞偕九卿合疏。极言大宗、小宗之义，凡数千言。四年卒官。赠尚书。隆庆初，谥文肃。
 </p><p>赞曰：周洪谟等以词臣历卿贰。或职事拳拳，或侃侃建白，进讲以启沃为心，守官以献替自效。于文学侍从之选，均无愧诸。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十一章-卷七十一-原文.html'>第七十一章-卷七十一</a></p><p class='next'>下一节：<a href='第七十三章-卷七十三-原文.html'>第七十三章-卷七十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七十一章-卷七十一-原文.html'>第七十一章-卷七十一</a></p><p class='next'>下一节：<a href='第七十三章-卷七十三-原文.html'>第七十三章-卷七十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

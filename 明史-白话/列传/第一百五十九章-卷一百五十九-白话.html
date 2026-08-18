@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -167,5 +194,18 @@
 </p><p>七年(1627)正月，大清部队南征朝鲜。率教统兵进驻三岔河作为牵制，最后没有效果。三月，崇焕打算修建锦州、大凌河、中左所三城，试图逐渐收复失地。率教奉令移驻锦州保卫工程建设，又升官做了左都督。五月，大清兵包围了锦州，率教与宦官纪用，副将左辅、朱梅等环城固守，发射大炮，死伤了不少清兵。双方相持了二十四天，大清兵的包围才解除。当时满桂也在宁远立了大功，因此当时称为“宁锦大捷”。魏忠贤等人因此受到了重赏。率教也加官为太子少傅，荫封子孙为锦衣千户，世袭。
 </p><p>崇祯元年(1628)八月，率教移驻永平，兼辖蓟镇八路。过一个月，挂平辽将军的大印，又移驻到山海关大门口来。第二年，大清兵由大安口南下，率教策马西行，三昼夜就进抵三屯营。总兵官朱国彦不肯放他进来，率教只好策马而西。十一月四日在遵化开战时，率教被飞来的箭射中身亡，全军覆灭了。庄烈帝听说后极为伤心，给率教进行了丧葬仪式，并建立祠堂公祭。
 </p><p>率教作为一名战将，他廉洁、勇猛，待人厚道，勤身奉公，劳而不懈，和满桂一起被人看作良将。他们两个人死后，更加没有能办理辽东战事的人了。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百五十八章-卷一百五十八-白话.html'>第一百五十八章-卷一百五十八</a></p><p class='next'>下一节：<a href='第一百六十章-卷一百六十-白话.html'>第一百六十章-卷一百六十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百五十八章-卷一百五十八-白话.html'>第一百五十八章-卷一百五十八</a></p><p class='next'>下一节：<a href='第一百六十章-卷一百六十-白话.html'>第一百六十章-卷一百六十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

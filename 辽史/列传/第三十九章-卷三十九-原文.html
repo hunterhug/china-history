@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#列传'>：目录</a></p>
@@ -159,5 +186,18 @@
 </p><p>王继恩，棣州人。睿智皇后南征，继恩被俘。初，皇后以公私所获十岁已下儿容貌可观者近百人，载赴凉陉，并使阉为竖，继恩在焉。聪慧，通书及辽语。擢内谒者、内侍左厢押班。圣宗亲政，累迁尚衣库使、左承宣、监门卫大将军、灵州观察使、内库都提点。继恩好清谈，不喜权利，每得赐赉，市书至万卷，载以自随，诵读不倦。每宋使来聘，继恩多充宣赐使。后不知所终。
 </p><p>赵安仁，字小喜，深州乐寿人，自幼被俘。统和中，为黄门令、秦晋国王府祗候。王薨，授内侍省押班、御院通进。开泰八年，与李胜哥谋奔南土，为游兵所擒。初，仁德皇后与钦哀有隙，钦哀密令安仁伺皇后动静，无不知者。仁德皇后威权既重，安仁惧祸，复谋亡归。仁德欲诛之，钦哀以言营救。圣宗曰：“小喜言父母兄弟俱在南朝，每一念，神魂陨越。今为思亲，冒死而亡，亦孝子用心，实可怜悯。”赦之。重熙初，钦哀摄政，欲废帝，立少子重元。帝与安仁谋，迁太后庆州守陵，授安仁左承宣、监门卫大将军，充契丹汉人渤海内侍都知，兼都提点。会上思太后，亲驭奉迎，太后责曰：”汝负万死，我尝营救。不望汝报，何为离间我母子耶！”安仁无答。后不知所终。
 </p><p>论曰：名器所以砺天下，非贤而有功则不可授，况宦者乎！继恩为内谒者，安仁为黄门令，似矣，何至溺于私爱，而授以观察使、大将军耶？《易》曰：“负且乘，致寇至。”此安仁所以不克有终，继恩幸而免欤？</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十八章-卷三十八-原文.html'>第三十八章-卷三十八</a></p><p class='next'>下一节：<a href='第四十章-卷四十-原文.html'>第四十章-卷四十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十八章-卷三十八-原文.html'>第三十八章-卷三十八</a></p><p class='next'>下一节：<a href='第四十章-卷四十-原文.html'>第四十章-卷四十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

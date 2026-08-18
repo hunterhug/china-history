@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新唐书-志<a href='../新唐书.html#志'>：目录</a></p>
@@ -206,5 +233,18 @@
 </p><p>营州柳城郡，上都督府。本辽西郡，万岁通天元年为契丹所陷，圣历二年侨治渔阳，开元五年又还治柳城，天宝元年更名。土贡：人、麝香、豹尾、皮骨。户九百九十七，口三千七百八十九。县一：有平卢军，开元初置；东有镇安军，本燕郡守捉城，贞元二年为军城；西四百八十里有渝关守捉城；又有汝罗、怀远、巫闾、襄平四守捉城。柳城。中。西北接奚，北接契丹。有东北镇医巫闾山祠，又东有碣石山。
 </p><p>安东，上都护府。总章元年，李勣平高丽国，得城百七十六，分其地为都督府九，州四十二，县一百，置安东都护府于平壤城以统之，用其酋渠为都督、刺史、县令。上元三年徙辽东郡故城，仪凤二年又徙新城。圣历元年更名安东都督府，神龙元年复故名。开元二年徙于平州，天宝二年又徙于辽西故郡城。至德后废。土贡：人。有安东守捉。有怀远军，天宝二载置；又有保定军。
 </p><p>右河北采访使，治魏州。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十八章-卷二十八-原文.html'>第二十八章-卷二十八</a></p><p class='next'>下一节：<a href='第三十章-卷三十-原文.html'>第三十章-卷三十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十八章-卷二十八-原文.html'>第二十八章-卷二十八</a></p><p class='next'>下一节：<a href='第三十章-卷三十-原文.html'>第三十章-卷三十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

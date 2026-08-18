@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -177,5 +204,18 @@
 <p>　　中宗即位，制曰：“忠正之臣，自昔攸尚；褒赠之典，旧章所重。故赠大理卿 徐有功，节操贞劲，器怀亮直，徇古人之志业，实一代之贤良，司彼刑书，深存敬 慎。周兴、来俊臣等性惟残酷，务在诛夷，不顺其情，立加诬害。有功卓然守法， 虽死不移，无屈挠之心，有忠烈之议。当其执断，并遇平反，定国、释之，何以加 此。朕惟新庶政，追想前迹，其人既殁，其德可称。追往赠终，慰兹泉壤。可赠越 州刺史，仍遣使就家吊祭，赐物百段，授一子官。”今上践祚，窦孝谌之子希瑊等 请以身之官爵让有功子惀，以报旧恩。惀由是自太子司议郎、恭陵令累迁申王府司 马，卒。 </p>
 <p>　　史臣曰：文法，理具之大者，故舜命皋陶为士，昌言诫敕，勤亦至焉。盖人命 所悬，一失其平，冤不可复，圣王所以疚心也。如临之守法，文瓘之议刑，时属哲 王，可以理夺。当贼后迁鼎之际，酷吏罗织之辰，徐有功独抗群邪，持平不挠，此 所以为难也。比释之、定国，徐又过之。希瑊让爵酬恩，可知遗爱。 </p>
 <p>　　赞曰：听讼惟明，持法惟平。二者或爽，人何以生？猗欤徐公，獬豸之精。世 皆纷浊，不改吾清。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十四章-卷三十四-原文.html'>第三十四章-卷三十四</a></p><p class='next'>下一节：<a href='第三十六章-卷三十六-原文.html'>第三十六章-卷三十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十四章-卷三十四-原文.html'>第三十四章-卷三十四</a></p><p class='next'>下一节：<a href='第三十六章-卷三十六-原文.html'>第三十六章-卷三十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

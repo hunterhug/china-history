@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-正文<a href='../旧唐书.html#旧唐书'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>第三百零八章-史朝义传<span style='font-size:small'> 白话</span></h1>
 <p>史朝义是史思明的小老婆生的儿子。他为人宽容厚道，人们都亲近他。他派人到范阳，杀掉了伪燕国的太子史朝英等人。范阳留守张通儒发觉后，在城里打起来了，几天之内，死了好几千人，才斩杀张通儒。当时洛阳周围几百里，人们相杀而食，州城县城变成了废墟。各节度使都是安禄山的老将，跟史思明地位平等，史朝义征求召集都不肯来。代宗宝应元年(762)十月，朝廷派遣元帅雍王率领河东、朔方各节度和回纥兵马开赴陕地。仆固怀恩与回纥援军打先锋，鱼朝恩、郭英..当后卫，从渑池开进去；李抱玉从河阳开进去；副元帅李光弼从陈留开进去；雍王留驻陕州。十月二十九日，在邙山下边跟史朝义交锋，叛军被打败，要渡过黄河逃跑，斩杀一万六千人，活捉四千六百人，投降的三万二千人，武器装备无法统计。史朝义投奔汴州，汴州的叛军将领张献诚拒绝他进城，他只得渡过黄河向北投奔幽州。宝应二年(763)正月，叛军范阳节度李怀仙在莫州活捉史朝义，把他押送朝廷作为诚心服罪的凭证表示归顺，朝廷将史朝义绑赴宫门之外斩首示众。又任命献城投降的叛军官员恒州刺史、成德军节度张忠志为礼部尚书，其他头衔一一照旧；赵州刺史卢淑、定州刺史程元胜、徐州刺史刘如伶、相州节度薛嵩、幽州节度李怀仙、郑州节度田承嗣一起加封爵位，担任原来职务。<BR><BR>　　史思明于肃宗乾元二年(759)僭称燕王，到史朝义于代宗宝应二年(763)被消灭，一共四年时间。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三百零七章-史思明传-白话.html'>第三百零七章-史思明传</a></p><p class='next'>下一节：<a href='第三百零九章-朱氵此传-白话.html'>第三百零九章-朱氵此传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三百零七章-史思明传-白话.html'>第三百零七章-史思明传</a></p><p class='next'>下一节：<a href='第三百零九章-朱氵此传-白话.html'>第三百零九章-朱氵此传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

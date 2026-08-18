@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后唐<a href='../旧五代史.html#后唐'>：目录</a></p>
@@ -174,5 +201,18 @@
 </p><p>彦超，存审之长子也。少事武皇，累历牙职。存审卒，庄宗以彦超为汾州刺史。同光末，魏州军乱，诏彦超赴北京巡检。先是，朝廷令内官吕、郑二人在太原，一监兵，一监仓库。及明宗入洛，皇弟存霸单骑奔河东，与吕、郑谋杀彦超与留守张宪。彦超觉之，密与宪谋，未决，部下大噪，州兵毕集，张宪出奔。是夕，军士杀吕、郑、存霸于衙城。诘旦，闻洛城祸变，彦超告谕三军。《宋史·张昭传》云：昭为张宪推官，庄宗及难，闻鄴中兵士推戴明宗，宪部将符彦超合戍将应之。宪死，有害昭者，执之以送彦超。彦超曰：“推官正人，无得害之。”又逼昭为榜，安抚军民。明宗又令其弟龙武都虞候彦卿驰骑安抚。六月，彦超入觐，明宗召见抚谕，寻授晋州留后。未行，会其弟前曹州刺史彦饶平宣武乱军，明宗喜，召彦超谓之曰：“吾得尔兄弟力，余更何忧，尔为我往河东抚育耆旧。”即授北京留守、太原尹。明年冬，移授昭义节度使。四年，授骁卫上将军，改金吾上将军。长兴元年，授泰宁军节度使，寻移镇安州。
 </p><p>彦超厮养中有王希全者，小字佛留，粗知书计，委主货财，岁久耗失甚多，彦超止于诃谴而已。应顺元年正月，佛留闻朝廷多事，因与任货兒等谋乱。一夕，扣门言朝廷有急递至，彦超出至事，佛留挟刃害之。诘旦，本州节度副使李端召州兵攻佛留等，杀之，余众奔淮南，擒彦超部将赵温等二十六人诛之。彦超赠太尉。
 </p><p>存审次子彦饶，《晋史》有传。次彦卿，皇朝前凤翔节度使、守太师、中书令，封魏王，今居于洛阳。次彦能，终于楚州防御使。次彦琳，仕皇朝为金吾上将军，卒于任。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十一章-列传七-原文.html'>第三十一章-列传七</a></p><p class='next'>下一节：<a href='第三十三章-列传九-原文.html'>第三十三章-列传九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十一章-列传七-原文.html'>第三十一章-列传七</a></p><p class='next'>下一节：<a href='第三十三章-列传九-原文.html'>第三十三章-列传九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

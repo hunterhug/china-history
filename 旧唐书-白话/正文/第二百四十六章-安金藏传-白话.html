@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-正文<a href='../旧唐书.html#旧唐书'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>第二百四十六章-安金藏传<span style='font-size:small'> 白话</span></h1>
 <p>安金藏，京兆长安人，开始时为太常工人。载初年间(689～690)，武则天行使皇帝职权，睿宗称为皇嗣。少府监裴匪躬、内侍范云仙都是因私下拜谒皇嗣而被腰斩的。从此公卿以下官员，都不能会见皇嗣，只有金藏等工人能够在睿宗左右行动。有人诬告皇嗣有暗中谋反的事，武则天下令让来俊臣穷究审查谋反情形。睿宗左右的工人不能忍受审讯的痛苦，都想认罪屈招，只有金藏坚决不招供，大声对来俊臣喊道：“您不相信我金藏的话，请让我剖出心来以明白显示皇嗣的不反。”随即拔出佩刀自剖胸部，五脏六腑一起滚出，血流遍地，立刻断气倒到地上。武则天听说后，让人用轿子抬着急忙赶进宫中来，派医生把金藏的五脏六腑都放回胸腔中，用桑白皮做线进行缝合，然后敷上药。经过一夜的时间，金藏才舒醒过来。武则天亲自前去看望他，叹道：“我的儿子不能自我表白，不如你的忠诚。”便命令来俊臣停止审讯，睿宗因此免除了灾难。<BR><BR>　　神龙初(705)丧母，他把母亲寄葬在京城南面的阙口以北，在墓旁造倚庐住下，亲自建造石坟石塔，昼夜不停。那片开阔平坦的地上本来没有水，忽然间有泉水自行涌出。又有李树于盛冬时节开花，狗和鹿相狎相亲的奇异事情发生。本道使卢怀慎上书禀报君主，敕诏命在他门前立牌坊以表彰他的孝行。景云年间(710～711)，迁升为右武卫中郎将。玄宗即位，追念金藏忠孝有节操，下诏书褒奖赞美，提拔为右骁卫将军，还下令让史官把他的事迹编入史册。开元二十年(732)，又特为封爵代国公，还在东岳泰山等处各石碑上镌刻他的名字。最后以寿终，追赠兵部尚书。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二百四十五章-王同皎传-白话.html'>第二百四十五章-王同皎传</a></p><p class='next'>下一节：<a href='第二百四十七章-李忄登传(附李源等传)-白话.html'>第二百四十七章-李忄登传(附李源等传)</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二百四十五章-王同皎传-白话.html'>第二百四十五章-王同皎传</a></p><p class='next'>下一节：<a href='第二百四十七章-李忄登传(附李源等传)-白话.html'>第二百四十七章-李忄登传(附李源等传)</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-志<a href='../明史.html#志'>：目录</a></p>
@@ -213,5 +240,18 @@
 </p><p>按祀典，太祖时，应天祀陈乔、杨邦乂、姚兴、王鉷，成都祀李冰、文翁、张咏，均州祀黄霸，密县祀卓茂，松江祀陆逊、陆抗、陆凯，龙州祀李龙迁，建宁祀谢夷甫，彭泽祀狄仁杰，九江祀李黼，安庆祀余阙、韩建之、李宗可。宣宗时，高邮祀耿遇德。英宗时，豫章祀韦丹、许逊，无锡祀张巡。宪宗时，崖山祀张世杰、陆秀夫。孝宗时，新会祀宋慈元杨后，延平祀罗从彦、李侗，建宁祀刘子翚，乌撒祀潭渊，庐陵祀文天祥，婺源祀朱熹，都昌祀陈澔，饶州祀江万里，福州祀陈文龙，兴化祀陈瓒，湖广祀李芾，广西祀马慨。武宗时，真定祀颜杲卿、真卿，韶州附祀张九龄子拯，沂州祀诸葛亮，萧山祀游酢、罗从彦。皆历代名臣，事迹显著。守臣题请，礼官议覆，事载实录，年月可稽。至若有明一代之臣抗美前史者，或以功勋，或以学行，或以直节，或以死事，胪于志乘，刻于碑版，匪一而足。其大者，鄱阳湖忠臣祠祀丁普郎等三十五人，南昌忠臣祠祀赵德胜等十四人，太平忠臣庙祀花云、王鼎、许瑗，金华忠臣祠祀胡大海，皆太祖自定其典。其后，通州祀常遇春，山海关祀徐达，苏州祀夏原吉、周忱，淮安祀陈瑄，海州卫祀卫青、徐安生，甘州祀毛忠，榆林祀余子俊，杭州祀于谦，萧山祀魏骥，汀州祀王得仁，广州祀杨信民、毛吉，云南祀沐英、沐晟，贵州祀顾成，庐陵祀刘球、李时勉，广信祀邓颙，宝庆祀贺兴隆，上杭祀伍骥、丁泉，庆远祀叶祯，云南祀王祎、吴云，青田祀刘基，平阳祀薛瑄，杭州祀邹济、徐善述，金华祀章懋，皆众著耳目，炳然可考。其他郡县山川龙神忠烈之士，及祈祷有应而祀者，《会典》所载，尤详悉云。
 </p><p>厉坛
 </p><p>泰厉坛祭无祀鬼神。《春秋传》曰“鬼有所归，乃不为厉。”此其义也。《祭法》：王祭泰厉，诸侯祭公厉，大夫祭族厉。《士丧礼》：“疾病祷于厉’，《郑注》谓“汉时民间皆秋祠厉”，则此祀达于上下矣，然后世皆不举行。洪武三年定制，京都祭泰厉，设坛玄武湖中，岁以清明及十月朔日遣官致祭。前期七日，檄京都城隍。祭日，设京省城隍神位于坛上，无祀鬼神等位于坛下之东西，羊三，豕三，饭米三石。王国祭国厉，府州祭郡厉，县祭邑厉，皆设坛城北，一年二祭如京师。里社则祭乡厉。后定郡邑厉、乡厉，皆以清明日、七月十五日、十月朔日。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十五章-卷二十五-原文.html'>第二十五章-卷二十五</a></p><p class='next'>下一节：<a href='第二十七章-卷二十七-原文.html'>第二十七章-卷二十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十五章-卷二十五-原文.html'>第二十五章-卷二十五</a></p><p class='next'>下一节：<a href='第二十七章-卷二十七-原文.html'>第二十七章-卷二十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

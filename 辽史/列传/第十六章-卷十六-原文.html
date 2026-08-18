@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#列传'>：目录</a></p>
@@ -164,5 +191,18 @@
 </p><p>合里只明达勤恪，怀柔有道。置诸宾馆及西边营田，皆自合里只发之。
 </p><p>耶律颇的，字撒版，季父房奴瓜之孙。孤介寡合。重熙初，补牌印郎君。清宁初，稍迁知易州。去官，部民请留，许之。咸雍八年，改彰国军节度使。上猎大牢古山，颇的谒于行宫。帝问边事，对曰：“自应州南境至天池，皆我耕牧之地。清宁间，边将不谨，为宋所侵，烽堠内移，似非所宜。”道宗然之。拜北面林牙。后遣人使宋，得其侵地，命颇的往定疆界。还，拜南院宣徽使。大康四年，迁忠顺军节度使，寻为南院大王，改同知南京留守事，召拜南府宰相，赐贞良功臣，封吴国公，为北院枢密使。廉谨奉公，知无不为。大安中致仕，卒。子霞抹，北院枢密副使。
 </p><p>论曰：耶律合住安边讲好，养兵息民，其虑深远矣。六符启衅邀功，岂国家之利哉？牛、杜、颇的、合里只辈衔命出使，幸不辱命。褭里杀人婢以求婚，身负罪衅，画其主容，以冀免死，亦可丑也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p><p class='next'>下一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p><p class='next'>下一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新唐书-本纪<a href='../新唐书.html#本纪'>：目录</a></p>
@@ -184,5 +211,18 @@
 </p><p>三年二月己丑，及皇后幸玄武门，观宫女拔河，为宫市以嬉。壬寅，韦巨源为尚书左仆射，杨再思为右仆射：同中书门下三品。壬子，及皇后幸太常寺。三月戊午，宗楚客为中书令，萧至忠守侍中，太府卿韦嗣立守兵部尚书、同中书门下三品。中书侍郎兼检校吏部侍郎崔湜，守兵部侍郎赵彦昭为中书侍郎：同中书门下平章事。戊寅，礼部尚书韦温为太子少保、同中书门下三品。太常少卿郑愔守吏部侍郎、同中书门下平章事。五月丙戌，贬崔湜为瀼州刺史，郑愔江州司马。六月癸巳，太白昼见。庚子，以旱避正殿，减膳，撤乐。诏括天下图籍。壬寅，虑囚。癸卯，杨再思薨。七月丙辰，西突厥娑葛降。辛酉，许妇人非缘夫、子封者廕其子孙。癸亥，虑囚。庚辰，澧水溢。八月乙酉，李峤同中书门下三品，特进韦安石为侍中。壬辰，有星孛于紫宫。九月戊辰，吏部尚书苏环为尚书左仆射、同中书门下三品。十一月乙丑，有事于南郊，以皇后为亚献，大赦，赐文武官阶、爵，入品者减考，免关内今岁赋，赐酺三日。甲戌，豆卢钦望薨。十二月壬辰，前宋国公致仕唐休璟为太子少师、同中书门下三品。甲午，如新丰温汤。甲辰，赦新丰，给复一年，赐从官勋一转。乙巳，至自新丰。
 </p><p>四年正月丙寅，及皇后微行以观灯，遂幸萧至忠第。丁卯，微行以观灯，幸韦安石、长宁公主第。己卯，如始平。二月壬午，赦咸阳、始平，给复一年。癸未，至自始平。庚戌，及后、妃、公主观三品以上拔河。三月，以河源九曲予吐蕃。庚申，雨木冰，井溢。五月辛酉，封嗣虢王邕为汴王。丁卯，杀许州司兵参军燕钦融。丁丑，剡县地震。六月，皇后及安乐公主、散骑常侍马秦客反。壬午，皇帝崩，年五十五，谥曰孝和皇帝天宝十三年，加谥大和大圣大昭孝皇帝。
 </p><p>赞曰：昔都孔子作《春秋》而乱臣贼子惧，其于杀君篡国之主，皆不黜绝之，岂以其盗而有之者，莫大之罪也，不没其实，所以著其大恶而不隐欤？自司马迁、班固皆作《高后纪》，吕氏虽非篡汉，而盗执其国政，遂不敢没其实，岂其得圣人之意欤？抑亦偶合于《春秋》之法也。唐之旧史因之，列武后于本纪，盖其所从来远矣。夫吉凶之于人，犹影响也，而为善者得吉常多，其不幸而罹于凶者有矣；为恶者未始不及于凶，其幸而免者亦时有焉。而小人之虑，遂以为天道难知，为善未必福，而为恶未必祸也。武后之恶，不及于大戮，所谓幸免者也。至中宗韦氏，则祸不旋踵矣。然其亲遭母后之难，而躬自蹈之，所谓下愚之不移者欤！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三·高宗-原文.html'>第三章-卷三·高宗</a></p><p class='next'>下一节：<a href='第五章-卷五·睿宗 玄宗-原文.html'>第五章-卷五·睿宗 玄宗</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三·高宗-原文.html'>第三章-卷三·高宗</a></p><p class='next'>下一节：<a href='第五章-卷五·睿宗 玄宗-原文.html'>第五章-卷五·睿宗 玄宗</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

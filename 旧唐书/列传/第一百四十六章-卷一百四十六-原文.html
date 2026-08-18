@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -271,5 +298,18 @@
 <p>　　会昌二年，赞普卒。十二月，遣论赞等来告哀，诏以将作少监李璟吊祭之。大 中三年春，宰相尚恐热杀东道节度使，以秦、原、安乐等三州并石门、木硖等七关 款塞，泾原节度使康季荣以闻，命太仆卿陆耽往劳焉。其年七月，河、陇耆老率长 幼千余人赴阙，上御延喜楼观之，莫不欢呼抃舞，更相解辫，争冠带于康衢，然后 命善地以处之，观者咸称万岁。 </p>
 <p>　　史臣曰：戎狄之为患也久矣！自秦、汉已还，载籍大备，可得而详也。但世罕 小康，君无常圣，我衰则彼盛，我盛则彼衰，盛则侵我郊圻，衰则服我声教。怀柔 之道，备预之方，儒臣多议于和亲，武将唯期于战胜，此其大较也。彼吐蕃者，西 陲开国，积有岁年，蚕食邻蕃，以恢土宇。高宗朝，地方万里，与我抗衡；近代以 来，莫之与盛。至如式遏边境，命制出师，一彼一此，或胜或负，可谓劳矣！迨至 幽陵盗起，乘舆播迁，戍卒咸归，河、湟失守，此又天假之也。自兹密迩京邑，时 纵寇掠，虽每遣行人，来修旧好，玉帛才至于上国，烽燧已及于近郊，背惠食言， 不顾礼义，即可知也。夫要以神明，贵其诚信，平凉之会，畜其诈谋，此又不可以 忠信而御也。孔子曰：“夷狄之有君，不如诸夏之亡也。”诚哉是言！ </p>
 <p>　　赞曰：西戎之地，吐蕃是强。蚕食邻国，鹰扬汉疆。乍叛乍服，或弛或张。礼 义虽摄。其心豺狼。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百四十五章-卷一百四十五-原文.html'>第一百四十五章-卷一百四十五</a></p><p class='next'>下一节：<a href='第一百四十七章-卷一百四十七-原文.html'>第一百四十七章-卷一百四十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百四十五章-卷一百四十五-原文.html'>第一百四十五章-卷一百四十五</a></p><p class='next'>下一节：<a href='第一百四十七章-卷一百四十七-原文.html'>第一百四十七章-卷一百四十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

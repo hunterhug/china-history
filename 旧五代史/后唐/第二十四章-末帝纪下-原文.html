@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后唐<a href='../旧五代史.html#后唐'>：目录</a></p>
@@ -165,5 +192,18 @@
 </p><p>闰月丙辰，日南至，群臣称贺于行宫，帝曰：“晋安寨内将士，应思家国矣。”因泣下久之。丁巳，以岢岚军为胜州。辛酉，以右龙武统军李从昶为左龙武统军，以前邠州节度使杨思权为右龙武统军。壬戌，丹州刺史康承询停任，配流邓州。时承询奉诏率义军赴延州义军乱，承询奔鄜州，故有是责。甲子，太原行营副招讨使杨光远杀招讨使张敬达于晋安寨，以兵降契丹。时契丹围寨，自十一月以后刍粮乏绝，军士毁居屋茅、淘马粪、削松甗以供秣饲，马尾鬣相食俱尽。杨光远谓敬达曰：“少时人马俱尽，不如奋命血战，十得三四，犹胜坐受其弊。”敬达曰：“更少待之。”一日，光远伺敬达无备，遂杀之，与诸将同降契丹。时马犹有五千匹，契丹主以汉军与石敬瑭，其马及甲仗即赍驱出塞。丁卯，契丹立石敬瑭为大晋皇帝，约为父子之国，改元为天福。契丹与晋高祖南行，赵德钧父子与诸将自团柏谷南奔，王师为蕃骑所蹙，投戈弃甲，自相腾践，挤于岩谷者不可胜纪。
 </p><p>己巳，帝闻晋安寨为敌所陷，诏移幸河阳，时议以魏府军尚全，契丹必惮山东，未敢南下，车驾可幸鄴城。帝以李崧与范延光相善，召入谋之。薛文遇不知而继至，帝变色，崧蹑文遇足，乃出。帝曰：“我见此物肉颤，适拟抽刀刺之。”崧曰：“文遇小人，致误大事，刺之益丑。”崧因请帝归京。壬申，车驾至河阳。甲戌，晋高祖与契丹至潞州，契丹遣蕃将大详衮率五千骑送晋高祖南行。丁丑，车驾至自河阳。时左右劝帝固守河阳。居数日，符彦饶、张彦琪至，奏帝不可城守。是日晚，至东上门，小黄门鸣鞘于路，索然无声。己卯，帝遣马军都指挥使宋审虔率千余骑至白马坡，言踏阵地，时诸将谓审虔曰：“何地不堪交战，谁人肯立于此？”审虔乃请帝还宫。庚辰，晋高祖至河阳。辛巳辰时，帝举族与皇太后曹氏自燔于元武楼。晋高祖入洛，得帝烬骨于火中，来年三月，诏葬于徽陵之封中。帝在位共二年，年五十二。《五代史阙文》：晋高祖引契丹围晋安寨，降杨光远。清泰帝至自覃怀，京师父老迎帝于上东门外，帝垂泣不止。父老奏曰：“臣等伏闻前唐时中国有难，帝王多幸蜀以图进取。陛下何不且入西川？”帝曰：“本朝两川节度使皆用文臣，所以玄宗、僖宗避寇幸蜀。今孟氏已称尊矣，吾何归乎！”因恸哭入内，举族自焚。
 </p><p>史臣曰：末帝负神武之才，有人君之量。由寻戈而践阼，惭德应深；及当宁以居尊，政经未失。属天命不祐，人谋匪臧，坐俟焚如，良可悲矣！稽夫衽金甲于河需之际，斧眺楼于梁垒之时，出没如神，何其勇也！及乎驻革辂于覃怀之日，绝羽书于汾晋之辰，涕泪沾襟，何其怯也！是知时之来也，雕虎可以生风；运之去也，应龙不免为醢。则项籍悲歌于帐下，信不虚矣！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十三章-末帝纪中-原文.html'>第二十三章-末帝纪中</a></p><p class='next'>下一节：<a href='第二十五章-列传一-原文.html'>第二十五章-列传一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十三章-末帝纪中-原文.html'>第二十三章-末帝纪中</a></p><p class='next'>下一节：<a href='第二十五章-列传一-原文.html'>第二十五章-列传一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

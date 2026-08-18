@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>隋书-志<a href='../隋书.html#志'>：目录</a></p>
@@ -279,5 +306,18 @@
 </p><p>五年，诏尚书左丞刘平、仪曹郎张崖定南北郊及明堂仪注。改天嘉中所用齐乐，尽以韶为名。工就位定，协律校尉举麾，太乐令跪赞云：“奏《懋韶》之乐。”降神，奏《通韶》；牲入出，奏《洁韶》；帝入坛及还便殿，奏《穆韶》。帝初再拜，舞《七德》，工执干楯，曲终复缀。出就悬东，继舞《九序》，工执羽籥。献爵于天神及太祖之座，奏登歌。帝饮福酒，奏《嘉韶》；就望燎，奏《报韶》。
 </p><p>至六年十一月，侍中尚书左仆射、建昌侯徐陵，仪曹郎中沈罕奏来年元会仪注，称舍人蔡景历奉敕，先会一日，太乐展宫悬、高纟亘、五案于殿庭。客入，奏《相和》五引。帝出，黄门侍郎举麾于殿上，掌故应之，举于阶下，奏《康韶》之乐。诏延王公登，奏《变韶》。奉珪璧讫，初引下殿，奏亦如之。帝兴，入便殿，奏《穆韶》。更衣又出，奏亦如之。帝举酒，奏《绥韶》。进膳，奏《侑韶》。帝御茶果，太常丞跪请进舞《七德》，继之《九序》。其鼓吹杂伎，取晋、宋之旧，微更附益。旧元会有黄龙变、文鹿、师子之类，太建初定制，皆除之。至是蔡景历奏，悉复设焉。其制，鼓吹一部十六人，则箫十三人，笳二人，鼓一人。东宫一部，降三人，箫减二人，笳减一人。诸王一部，又降一人，减箫一。庶姓一部，又降一人，复减箫一。
 </p><p>及后主嗣位，耽荒于酒，视朝之外，多在宴筵。尤重声乐，遣宫女习北方箫鼓，谓之《代北》，酒酣则奏之。又于清乐中造《黄鹂留》及《玉树后庭花》、《金钗两臂垂》等曲，与幸臣等制其歌词，绮艳相高，极于轻薄。男女唱和，其音甚哀。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

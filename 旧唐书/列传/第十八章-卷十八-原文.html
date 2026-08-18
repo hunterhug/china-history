@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -163,5 +190,18 @@
 <p>　　转襄州都督，甚有惠政。卒官，年三十九。太宗闻而嗟悼，出次发哀，有司奏 言：“准《阴阳书》，日子在辰，不可哭泣，又为流俗所忌。”太宗曰：“君臣之 义，同于父子，情发于衷，安避辰日？”遂哭之。赠左骁卫大将军，谥曰襄。十三 年，追思旧功，改封郯国公。十七年，图形于凌烟阁。永徽中，又赠荆州都督。长 子大象嗣，官至户部侍郎。次子大素、大安，并知名。大素，龙朔中历位东台舍人， 兼修国史，卒于怀州长史，撰《后魏书》一百卷、《隋书》三十卷。大安，上元中 历太子庶子、同中书门下三品。时章怀太子在春宫，令大安与太子洗马刘讷言等注 范晔《后汉书》。宫废，左授普州刺史。光宅中，卒于横州司马。大安子涚，开元 中为国子祭酒。 </p>
 <p>　　史臣曰：敬德夺槊陷阵，鼓勇王师，却赂报恩，竭忠霸主。然而奋拳负气，非 自全之道；文皇告诫之言，可为功臣药石。叔宝善用马槊，拔贼垒则以寡敌众，可 谓勇矣。知节志平国难，拜隼籞则致命辅君，可谓忠矣。而并晓世充之猜贰，识唐 代之霸图，可谓见几君子矣。志玄中镝不言，竟安师旅。公谨投龟定议，志助储君。 皆所谓猛将谋臣，知机识变。有唐之盛，斯实赖焉。 </p>
 <p>　　赞曰：太宗经纶，实赖虎臣。胡、鄂诸将，奋不顾身。图形凌烟，配食严禋。 光诸简册，为报君亲。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p><p class='next'>下一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p><p class='next'>下一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

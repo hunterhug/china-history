@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-本纪<a href='../金史.html#本纪'>：目录</a></p>
@@ -190,5 +217,18 @@
 </p><p>九月庚午朔，天寿节，以皇太后丧，不受朝。谕尚书省：“去岁山东、河北被灾伤处所阁租税及借贷钱粟，若便征之，恐贫民未苏，俟丰收日以分数带征可也。”又谕宰臣曰：“随路提刑司旧止察老病不任职及不堪亲民者，如得其实，即改除他路。若他路提刑司覆察得实，勿复注亲民之职。卿等其议行之。”甲戌，以郊社署令唐括合达为夏国生日使。己卯，如秋山。免围场经过人户今岁夏秋租税之半，曾当差役者复一年。冬十月壬寅，至自秋山。丙午，敕御史台，提刑司自今保申廉能官，勿复有乞升品语。壬子，有司奏增修曲阜宣圣庙毕，敕：“党怀英撰碑文，朕将亲行释奠之礼，其检讨典故以闻。”甲寅，敕置常平仓处，并令州、府官以本职提举，县官兼管勾其事，以所籴多寡约量升降，以为永制。赐河南路提刑司所举逸民游总同进士出身，以年老不乐仕进，授登仕郎，给正八品半俸终身。戊午，谕尚书省访求博物多知之士。癸亥，遣谕诸王府傅尉曰：“朕分命诸王出镇，盖欲政事之暇，安便优逸，有以自适耳。然虑其举措之间或违于理，所以分置傅尉，使劝导弥缝，不入于过失而已。若公余游宴不至过度，亦复何害。今闻尔等或用意太过，凡王门细碎之事无妨公道者，一一干与，赞助之道，岂当如是？宜各思职分，事举其中，无失礼体。仍就谕诸王，使知朕意。”丙寅，敕应保举官及试中书判者委官覆察，言行相副者量与升除，随朝及六品以上各随所长用之。己巳，猎于近郊。
 </p><p>十一月庚午朔，尚书省奏：“翰林侍讲学士党怀英举孔子四十八代孙端甫，年德俱高，该通古学。济南府举魏汝翼有文章德谊，苦学三十余年，已四举终场。蔚州举刘震亨学行俱优，尝充举首。益都府举王枢博学善书，事亲至孝。”敕魏汝翼特赐进士及第，刘震亨等同进士出身，并附王泽榜。孔端甫俟春暖召之。丙子，诏臣庶名犯古帝王而姓复同者禁之，周公、孔子之名亦令回避。戊寅，升相州为彰德府。以前右副都点检温敦忠等为贺宋正旦使。壬午，尚书省奏：“知河南府事程峄乞进封父祖。”权尚书礼部郎中党怀英言：“凡宰执改除外任长官，其佐官以下相见礼仪皆与他长官不同，其子亦得试补省令史。其子且尔，父祖封赠理当不同，合举宰执一例封赠。”从之。甲申，改提刑司令为书史。丙申，以有司言：“河州定羌民张显孝友力田，焚券已责，又献粟千石以赈饥。棣州民荣楫赈米七百石、钱三百贯，冬月散柴薪三千束。皆别无希觊。”特各补两官，仍正班叙。
 </p><p>十二月癸卯，以东上阁门使张汝猷为高丽生日使。辛亥，谕有司祈雪。癸丑，猎于近郊。丙辰，有赤气见于北方。丁巳，敕华州下邽县置武定镇仓，京兆栎阳县置粟邑镇仓，许州舞阳县置北舞渡仓，各设仓草都监一人，县官兼领之。乙丑，定到任告致仕格。丁卯，宋、高丽、夏遣使来贺正旦。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p><p class='next'>下一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p><p class='next'>下一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

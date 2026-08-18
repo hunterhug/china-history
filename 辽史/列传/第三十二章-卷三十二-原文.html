@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#列传'>：目录</a></p>
@@ -158,5 +185,18 @@
 </p><p>耶律余睹，一名余都姑，国族之近者也。慷慨尚气义。保大初，历官副都统。其妻天祚文妃之妹，文妃生晋王，最贤，国人皆属望。时萧奉先之妹亦为天祚元妃，生秦王。奉先恐秦王不得立，深忌余睹，将潜图之。适耶律挞葛里之妻会余睹之妻于军中，奉先讽人诬余睹结驸马萧昱、挞葛里，谋立晋王，尊天祚为太上皇。事觉，杀昱及挞葛里妻，赐文妃死。余睹在军中闻之，惧不能自明被诛，即引兵千余，并骨肉军帐叛归女直。会大霖雨，道途留阻。天祚遣知奚王府萧遐买、北宰相萧德恭、大常衮耶律谛里姑、归州观察使萧和尚奴、四军太师萧干追捕甚急。至闾山，及之。诸将议曰：“萧奉先恃宠，蔑害官兵。余睹乃宗室雄才，素不肯为其下。若擒之，则他日吾辈皆余睹矣。不如纵之。”还，绐云追袭不及。
 </p><p>余睹既入女直，为其国前锋，引娄室孛堇兵攻陷州郡，不测而至。天祚闻之大惊，知不能敌，率卫兵入夹山。余睹在女直为监军，久不调，意不自安，乃假游猎，遁西夏。夏人问：“汝来有兵几何？”余睹以二三百对，夏人不纳，卒。
 </p><p>论曰：辽之亡也，虽孽降自天，亦柄国之臣有以误之也。当天庆而后，政归后族。奉先沮天祚防微之计，陷晋王非罪之诛，夹山之祸已见于此矣。处温副魏王以僣号，结宋将以卖国，迹其奸佞，如出一轨。呜呼！天祚之所倚毗者若此，国欲不亡，得乎？张琳娖娖守位，余睹反覆自困，则又何足议哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十一章-卷三十一-原文.html'>第三十一章-卷三十一</a></p><p class='next'>下一节：<a href='第三十三章-卷三十三-原文.html'>第三十三章-卷三十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十一章-卷三十一-原文.html'>第三十一章-卷三十一</a></p><p class='next'>下一节：<a href='第三十三章-卷三十三-原文.html'>第三十三章-卷三十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

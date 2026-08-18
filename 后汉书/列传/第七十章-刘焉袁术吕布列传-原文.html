@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#列传'>：目录</a></p>
@@ -192,5 +219,18 @@
 </p><p>建安三年，布遂复从袁术，遣顺攻刘备于沛，破之。曹操遣夏侯惇救备，为顺所败。操乃自将击布，至下邳城下。遗布书，为陈祸福。布欲降，而陈宫等自以负罪于操，深沮其计，而谓布曰：“曹公远来，势不能久。将军若以步骑出屯于外，宫将余众闭守于内。若向将军，宫引兵而攻其背；若但攻城，则将军救于外。不过旬月，军食毕尽，击之可破也。”布然之。布妻曰：“昔曹氏待公台如赤子，犹舍而归我。今将军厚公台不过于曹氏，而欲委全城，捐妻、子，孤军远出乎？若一旦有变，妾岂得为将军妻哉！”布乃止。而潜遣人求救于袁术，自将千余骑出。战败走还，保城不敢出。术亦不能救。
 </p><p>曹操堑围之，壅沂、泗以灌其城，三月，上下离心。其将侯成使客牧其名马，而客策之以叛。成追客得马，诸将合礼以贺成。成分酒肉，先入诣布而言曰：“蒙将军威灵，得所亡马，诸将齐贺，未敢尝也，故先以奉贡。”布怒曰：“布禁酒而卿等醖酿，为欲因酒共谋布邪？”成忿惧，乃与诸将共执陈宫、高顺，率其众降。布与麾下登白门楼。兵围之急，令左右取其首诣操。左右不忍，乃下降。布见操曰：“今日已往，天下定矣。”操曰：“何以言之？”布曰：“明公之所患不过于布，今已服矣。令布将骑，明公将步，天下不足定也。”顾谓刘备曰：“玄德，卿为坐上客，我为降虏，绳缚我急，独不可一言邪？”操笑曰：“缚虎不得不急。”乃令缓布缚。刘备曰：“不可。明公不见吕布事丁建阳、董太师乎？”操颔之。布目备曰：“大耳兒最叵信！”操谓陈宫曰：“公台平生自谓智有余，今意何如？”宫指布曰：“是子不用宫言，以至于此。若见从，未可量也。”操又曰：“奈卿老母何？”宫曰：“老母在公，不在宫也。夫以孝理天下者，不害人之亲。”操复曰：“奈卿妻、子何？”宫曰：“宫闻霸王之主，不绝人之祀。”固请就刑，遂出不顾，操为之泣涕。布及宫、顺皆缢杀之，传首许市。
 </p><p>赞曰：焉作庸牧，以希后福。曷云负荷？地堕身逐。术既叨贪，布亦翻覆。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十九章-袁绍刘表列传下-原文.html'>第六十九章-袁绍刘表列传下</a></p><p class='next'>下一节：<a href='第七十一章-循吏列传-原文.html'>第七十一章-循吏列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十九章-袁绍刘表列传下-原文.html'>第六十九章-袁绍刘表列传下</a></p><p class='next'>下一节：<a href='第七十一章-循吏列传-原文.html'>第七十一章-循吏列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

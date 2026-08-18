@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-志<a href='../明史.html#志'>：目录</a></p>
@@ -186,5 +213,18 @@
 </p><p>万历元年，即墨福山岛坏粮运七艘，漂米数千石，溺军丁十五人。给事、御史交章论其失，罢不复行。二十五年，倭寇作，自登州运粮给朝鲜军。山东副使於仁廉复言：“饷辽莫如海运，海运莫如登、莱。盖登、莱度金州六七百里，至旅顺口仅五百馀里，顺风扬帆一二日可至。又有沙门、鼍矶、皇城等岛居其中，天设水递，止宿避风。惟皇城至旅顺二百里差远，得便风不半日可度也。若天津至辽，则大洋无泊；淮安至胶州，虽仅三百里，而由胶至登千里而遥，礁碍难行。惟登、莱济辽，势便而事易。”时颇以其议为然，而未行也。四十六年，山东巡抚李长庚奏行海运，特设户部侍郎一人督之，事具《长庚传》。
 </p><p>崇祯十二年，崇明人沈廷扬为内阁中书，复陈海运之便，且辑《海运书》五卷进呈。命造海舟试之。廷扬乘二舟，载米数百石，十三年六月朔，由淮安出海，望日抵天津。守风者五日，行仅一旬。帝大喜，加廷扬户部郎中，命往登州与巡抚徐人龙计度。山东副总兵黄荫恩亦上海运九议，帝即令督海运。先是，宁远军饷率用天津船赴登州，候东南风转粟至天津，又候西南风转至宁远。廷扬自登州直输宁远，省费多。寻命赴淮安经理海运，为督漕侍郎朱大典所沮，乃命易驻登州，领宁远饷务。十六年加光禄少卿。福王时，命廷扬以海舟防江，寻命兼理粮务。南都既失，廷扬崎岖唐、鲁二王间以死。
 </p><p>当嘉靖中，廷臣纷纷议复海运，漕运总兵官万表言：“在昔海运，岁溺不止十万。载米之舟，驾船之卒，统卒之官，皆所不免。今人策海运辄主丘浚之论，非达於事者也。”</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十一章-卷六十一-原文.html'>第六十一章-卷六十一</a></p><p class='next'>下一节：<a href='第六十三章-卷六十三-原文.html'>第六十三章-卷六十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十一章-卷六十一-原文.html'>第六十一章-卷六十一</a></p><p class='next'>下一节：<a href='第六十三章-卷六十三-原文.html'>第六十三章-卷六十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

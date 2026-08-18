@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#列传'>：目录</a></p>
@@ -160,5 +187,18 @@
 </p><p>耶律独攧，字胡独堇，太师古昱之子。重熙初，为左护卫，将禁兵从伐夏有功，授十二行糺司徒。再举伐夏，独攧括山西诸郡马。还，迁拽剌详稳。西南未平，命独攧同知金肃军事。夏人来侵，击败之，进涅剌奥隗部节度使。清宁元年，召为皇太后左护卫太保。四年，改宁远军节度使。东路饥，奏振之。历五国、乌古部、辽兴军三镇节度使，四捷军详稳。大康元年卒，追赠同中书门下平章事。子阿思，有传。
 </p><p>萧韩家，国舅之族。性端简谨愿，动循礼法。清宁中，为护卫太保。大康二年，迁知北院枢密副使。三年，经画西南边天池旧堑，立堡砦，正疆界，刻石而还，为汉人行宫都部署。是年秋猎，堕马卒。
 </p><p>萧乌野，字草隐，其先出兴圣宫分，观察使塔里直之孙也。性孝悌，尚礼法，雅为乡党所称。重熙中，补护卫，兴宗见其勤恪，迁护卫太保。清宁九年，佐耶律仁先平重元乱，以功加团练使。时敌烈部数为邻部侵扰，民多困弊，命乌野为敌烈部节度使，恤困穷，省徭役，不数月，部人以安。寻以母老，归养于家。母亡，尤极哀毁。服阕，历官兴圣、延庆二宫使，卒。论曰：乌古敌烈，大部也，夺剌为统军，克敌有功；普达居详稳，悦以使人。西北，重镇也，侯哂巡边以廉称；古昱镇抚而民富；独攧驻金肃而夏人不敢东猎。噫！部人内附，方面以宁，虽朝廷处置得宜，而诸将之力抑亦何可少哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p><p class='next'>下一节：<a href='第二十三章-卷二十三-原文.html'>第二十三章-卷二十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p><p class='next'>下一节：<a href='第二十三章-卷二十三-原文.html'>第二十三章-卷二十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

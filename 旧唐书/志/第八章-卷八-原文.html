@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-志<a href='../旧唐书.html#志'>：目录</a></p>
@@ -173,5 +200,18 @@
 </p><p>凡命将征讨，有大功献俘馘者，其日备神策兵卫于东门外，如献俘常仪。其凯乐用铙吹二部，笛、筚篥、箫、笳、铙、鼓，每色二人，歌工二十四人。乐工等乘马执乐器，次第陈列，如卤簿之式。鼓吹令丞前导，分行于兵马俘馘之前。将入都门，鼓吹振作，迭奏《破阵乐》等四曲。《破阵乐》、《应圣期》两曲，太常旧有辞。《贺朝欢》、《君臣同庆乐》，今撰补之。《破阵乐》“受律辞元首，相将讨叛臣。咸歌《破阵乐》，共赏太平人。”《应圣期》：“圣德期昌运，雍熙万宇清。乾坤资化育，海岳共休明。辟土忻耕稼，销戈遂偃兵。殊方歌帝泽，执贽贺升平。”《贺朝欢》：“四海皇风被，千年德水清。戎衣更不著，今日告功成。”《君臣同庆乐》：“主圣开昌历，臣忠奏大猷。君看偃革后，便是太平秋。”候行至太社及太庙门，工人下马，陈列于门外。按《周礼大司乐》注云：“献于祖。”《大司马》云：“先凯乐献于社。”谨详礼仪，则社庙之中，似合奏乐。伏以尊严之地，铙吹哗欢，既无明文，或乖肃敬。今请并于门外陈设，不奏歌曲。候告献礼毕，复导引奏曲如仪。至皇帝所御楼前兵仗旌门外二十步，乐工皆下马徐行前进。兵部尚书介胄执钺，于旌门内中路前导。《周礼》：“师有功，则大司马左执律，右秉钺，以先凯乐。”注云：“律所以听军声，钺所以为将威。”今吹律听声，其术久废，惟请秉钺，以存礼文。次协律郎二人，公服执麾，亦于门下分导。鼓吹令、丞引乐工等至位立定。太常卿于乐工之前跪，具官臣某奏事，请奏凯乐。协律郎举麾，鼓吹大振作，遍奏《破阵乐》等四曲。乐阕，协律郎偃麾，太常卿又跪奏凯乐毕。兵部尚书、太常卿退。乐工等并出旌门外讫，然后引俘馘入献及称贺如别仪。别有献俘馘仪注。俟俘囚引出方退。
 </p><p>请宣付当司，编入新礼，仍令乐工教习。
 </p><p>依奏</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

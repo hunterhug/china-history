@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#金史'>：目录</a></p>
@@ -187,5 +214,18 @@
 </p><p>圣上驾临西京，州县官奉诏入见，猛安谋克不准跟班。子敬禀奏说军民是一体，应该同时命令猛安谋克跟班入见，皇上赞许并采纳了这个意见，于是责备宣徽院。到了端午朝会，皇上诏令依照子敬的奏议去办。子敬说山后禁止出入留做打猎的地方划得太广了，对百姓耕垦有所妨碍，皇上听取了他的意见，于是把四外打猎的禁地交给了百姓。子敬又迁任秘书监，谏议、修《起居注》等依然如故。
 </p><p>子敬推举同知宣徽院事移剌神独斡、兵部侍郎移剌按答，太子少詹事乌古论三合自荐要取代他们，皇上不同意。子敬和同签宣徽院事移剌神独斡侍奉皇上，皇上说：“辽国虽已灭亡却不忘旧俗，朕认为是这样的。海陵学习汉人风俗，是忘本。如果依照国家旧风，四境可以没有失误，这是长久之计。”世宗将到凉陉，子敬与右补遗粘割斡特剌、左拾遗杨伯仁上奏说：“车驾到曷里浒，西北招讨司正好圈在行宫的内地。请求把它迁到界上，用来作为遮蔽环卫的屏障。”皇上说“：好。”皇帝下令在尚书省说“：招讨斜里虎可以迁徙到界上，治理蕃部的事情。都监撒八仍然在燕子城做猛安谋克之事。”
 </p><p>皇上和侍臣讨论古代的人君是否贤君，子敬上奏说：“陛下凡是和宰相大臣议论策划，不可不叫史官知道讨论内容。”皇上说“：卿说的对。”批转签书给枢密院事，让子敬同修国家历史，出任河中府尹，请求退休养老。河中地方气候炎热，皇上担心子敬不耐暑热，改任他为兴中府尹。子敬的女儿从懿州来兴中探视，在途中遇到强盗，把她的行李掠夺一空，事后又归还了她，并谢罪说“：我辈开始不知道是府尹家的人，府尹对人民有恩德，还能忍心侵犯他吗？”子敬又奉命迁任咸平、广宁府尹。二十一年(1181)，子敬辞官，在家中逝世，享年七十一岁。子敬曾经出使宋国，以及接受诸部落的进贡，所接受的礼物，全部分给了亲戚朋友。到逝世时，家里没有富余钱财，他的儿子典当家宅用来料理丧葬之事。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十六章-卷二十六-白话.html'>第二十六章-卷二十六</a></p><p class='next'>下一节：<a href='第二十八章-卷二十八-白话.html'>第二十八章-卷二十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十六章-卷二十六-白话.html'>第二十六章-卷二十六</a></p><p class='next'>下一节：<a href='第二十八章-卷二十八-白话.html'>第二十八章-卷二十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

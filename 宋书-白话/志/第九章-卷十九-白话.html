@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>宋书-志<a href='../宋书.html#宋书'>：目录</a></p>
@@ -241,5 +268,18 @@
 </p><p>角，在书籍中没有记载。有人说是出自羌胡之族，用它来惊扰中原各国的马。有人说是出自吴越之地。旧志说：“古乐有籁、缶。”如今都没有。史臣查考，据《尔雅》所载，籁本是箫的另一名称罢了。《诗》说：“坎坎地敲着缶。”《毛传》说：“盎称为缶。”
 </p><p>筑城时砸土的乐曲，出自梁孝王。梁孝王建筑睢阳城，广十二里，创作首倡的歌声，敲小鼓作为节拍，筑城的人砸下木杵来应答它。后代称这一歌声为《睢阳曲》，到今天仍然流传。
 </p><p>在魏、晋的时候，有一姓孙的人善于增广旧乐曲，宋识善于打拍子唱和，陈左善于清唱，列和善于吹笛，郝索善于弹筝，朱生善于琵琶，最能发扬新声。尽玄著书说：“人们如果钦慕听说遇的人而忽视见到的人，不是也很糊涂吗?假如这六位音乐家生在上世，那就超越古今而无与伦比，哪裹衹是与夔和伯牙同契合呢?”查考这一观点，那么从魏、晋以后，都是孙、朱等人留下的规则了。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八章-卷十八-白话.html'>第八章-卷十八</a></p><p class='next'>下一节：<a href='第十章-卷二十-白话.html'>第十章-卷二十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八章-卷十八-白话.html'>第八章-卷十八</a></p><p class='next'>下一节：<a href='第十章-卷二十-白话.html'>第十章-卷二十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#列传'>：目录</a></p>
@@ -192,5 +219,18 @@
 </p><p>熹平六年，灵帝思感旧德，乃图画广及太尉黄琼于省内，诏议郎蔡邕为其颂云。
 </p><p>论曰：爵任之于人重矣，全丧之于生大矣。怀禄以图存者，仕子之桓情；审能而就列者，出身之常体。大纡于物则非己，直于志则犯俗，辞其艰则乖义，徇其节则失身。统之，方轨易因，险涂难御。故昔人明慎于所受之分，迟迟于岐路之间也。如令志行无牵于物，临生不先其存，后世何贬焉？古人以宴安为戒，岂数公之谓乎？
 </p><p>赞曰：邓、张作傅，无咎无誉。敏正疑律，防议章句，胡公庸庸，饰情恭貌。朝章虽理，据正或桡。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十六章-朱乐何列传-原文.html'>第三十六章-朱乐何列传</a></p><p class='next'>下一节：<a href='第三十八章-袁张韩周列传-原文.html'>第三十八章-袁张韩周列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十六章-朱乐何列传-原文.html'>第三十六章-朱乐何列传</a></p><p class='next'>下一节：<a href='第三十八章-袁张韩周列传-原文.html'>第三十八章-袁张韩周列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

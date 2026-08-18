@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-志<a href='../晋书.html#晋书'>：目录</a></p>
@@ -182,5 +209,18 @@
 </p><p>世人有的说魏朝不使用钱币很久之后，积累了巨万财富，所以想要实行它，有利于公家而使国家富强，遣恐怕是不对的。晋塞公搁置舅犯提出的谋略，而先用成季主张的诚信，认为即使有一时的功勋，赶不上有万世的益处。当时有名的贤人就在官员中，有德的君子满朝都是，大家商讨天下形势的利弊，将要确定治理国家的基本方法。如果谷子确实比钱币便利，按道理不会被当时的浅近小利所蒙蔽，而废止永远有用的东西，是明显可以了解的了。遣实在是进入困境而想到变革，改弦更张罢了。近时晋孝武帝的末期，天下没有战事，时令和顺年成丰收，百姓安居乐业，谷子布帛充足，几乎家家充裕人人丰足，用实际事例来检验，钱也是不妨害人的。
 </p><p>不久战争多次发生，荒年饥馑接连到来，饥寒没有解决，实在是由此造成。公既然帮助并拯救了世道，彻底改变人们的认识，弘扬注重根本的道理，彰明推广农耕的事项，认真地告知人们时令的变迁，各自从事他们的事业，游荡的人知道改正，不务正业的自行停止，共同在农田上争相出力，野地裹没有遗漏的耕地了。从此以后，升平景象将必定到来，哪裹值得为衣食发愁!我认为拯救时弊的办法，从废除钱币裹是得不到的。
 </p><p>朝堂上的意见多数同意琳之的，所以桓玄的意见没有实行。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十五章--白话.html'>第十五章-</a></p><p class='next'>下一节：<a href='第十七章--白话.html'>第十七章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十五章--白话.html'>第十五章-</a></p><p class='next'>下一节：<a href='第十七章--白话.html'>第十七章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

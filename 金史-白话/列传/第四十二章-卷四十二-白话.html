@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#金史'>：目录</a></p>
@@ -158,5 +185,18 @@
 </p><p>蒲察思忠，本名畏也，隆安路合懒合兀主猛安人。大定二十五年(1185)中进士，任文德、氵郭阴主簿，国子助教，应奉翰林文字，太学博士，累迁至涿州刺史、吏部郎中，改任潞王师傅。朝廷下令由他和翰林侍读学士张行简一起讨论武成王庙中祭祀人员的等第排列次序，蒲察思忠上奏说：“依我所见，武成王庙中配祭的诸将，不按世代先后为序。我后来查阅了唐代的祀典，李靖、李责力的地位都在吴起、乐毅之上。圣朝太祖以二千人马，击败了百万军队，太宗皇帝克宋，以成此帝业，秦王宗翰、宋王宗望、娄室、谷神和前代的各将领，各以他们的功德大小加以排列次序就行了。”思忠的言论，大多矫饰虚伪，不必全记录，只录他讲得尚有点道理的。迁任大理卿、兼左谏司、同修国史。
 </p><p>泰和六年(1206)，平章政事仆散揆到河南宣抚，诏令做好准备，确定防御和攻守的方法，集合百官在尚书省商议。朝臣中有许多不同意见，思忠说：“宋人攻围城邑时，一出动就是几千人，不是普通小股敌人。重要在于选择贤能的将领，既能攻又能守的，临时随机应变，就没有什么问题了。”皇帝认为他说的有理。不久迁任翰林侍讲学士兼左谏议大夫，大理卿、同修国史职务如故。过了一个月，又兼知审官院正职，一个人而兼任四种职务是从蒲察思忠开始的。宋人请求议和，朝廷赐给他银子五十两，彩帛十端。后来他为母亲服丧，服终被任命为侍讲学士，兼谏议、修史、知审官院，又转任侍读，兼兵部侍郎。
 </p><p>贞祐初年，胡沙虎请求朝廷将卫绍王废黜为庶人，蒲察思忠和奥屯忠孝附和胡沙虎的意见，并说：“偷人钱财，还称为盗，何况偷窃皇帝的位置为一己之私利呢！”金宣宗不肯听从。不久，改任太子太保兼侍读、修国史。二年春天，祭祀太庙时，蒲察思忠代理太尉职务，因酒醉殴打礼部值班官员，受到御史台弹劾，降为秘书监兼同修国史。不久，又迁任翰林学士同修国史，死于任上。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十一章-卷四十一-白话.html'>第四十一章-卷四十一</a></p><p class='next'>下一节：<a href='第四十三章-卷四十三-白话.html'>第四十三章-卷四十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十一章-卷四十一-白话.html'>第四十一章-卷四十一</a></p><p class='next'>下一节：<a href='第四十三章-卷四十三-白话.html'>第四十三章-卷四十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

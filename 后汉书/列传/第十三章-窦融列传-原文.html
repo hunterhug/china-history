@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#列传'>：目录</a></p>
@@ -194,5 +221,18 @@
 </p><p>顺帝初，章女年十二，能属文，以才貌选入掖庭，有宠，与梁皇后并为贵人。擢章为羽林郎将，迁屯骑校尉。章谦虚下士。收进时辈，甚得名誉。是时，梁、窦并贵，各有宾客，多交构其间，章推心待之，故得免于患。
 </p><p>贵人早卒，帝追思之无已，诏史官树碑颂德，章自为之辞。贵人殁后，帝礼待之无衰。永和五年，迁少府。汉安二年，转大鸿胪。建康元年，梁后称制，章自免，卒于家。中子唐，有俊才，官至虎贲中郎将。
 </p><p>赞曰：悃悃安丰，亦称才雄。提河石，奉图归忠。孟孙明边，伐北开西。宪实空漠，远兵金山。听笳龙庭，镂石燕然。虽则折鼎，王灵以宣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十二章-朱景王杜马刘傅坚马列-原文.html'>第十二章-朱景王杜马刘傅坚马列</a></p><p class='next'>下一节：<a href='第十四章-马援列传-原文.html'>第十四章-马援列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十二章-朱景王杜马刘傅坚马列-原文.html'>第十二章-朱景王杜马刘傅坚马列</a></p><p class='next'>下一节：<a href='第十四章-马援列传-原文.html'>第十四章-马援列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

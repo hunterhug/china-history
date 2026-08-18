@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#魏书'>：目录</a></p>
@@ -227,5 +254,18 @@
 </p><p>文安公元泥，是宗室疏远的同族人。性格忠诚正直强健英勇，有智慧谋略。太祖优厚地对待他，赐爵为文安公，任命为安东将军。去世。
 </p><p>儿子元屈，继承爵位。太宗时在门下省，发布韶命。性格聪明敏捷，善于进奏事情，常合皇帝旨意，赐爵为元城侯，加授功劳将军，和南平公长孙嵩、白马侯崖圭堂等人一起决断诉讼。叁塞向东巡视，命五星代理右丞相，山阳侯罢丘代理左丞相，命二人掌管军队朝政，十分有声誉。后来吐京胡和离石胡出以兵等人反叛，设立将校，向外招引赫连屈丐。元屈统领会稽公室烬、永安侯瑟勤抵御，逸勤死于战阵，型辽落马，被吐塞翅抓住并押送给显王，仅五星的部众还存在。左塞因元届损失二位将领，想杀了他。这时差塑刺史元六头荒淫懈怠，就赦免元屈让他代理州中事务。元屈纵情饮酒，很荒废政事，塞塞累积他前后的过失，用囚车召回，在街市斩首。
 </p><p>儿子磨运，年轻时为主塞所了解。五钮作乱时，友塞躲藏在外，磨运和担还俊假称主塞所在的地方。豆题派手下二人跟随磨运前去，谋划杀死左塞。磨运出来后，就捆绑二人前往太宗那裹杀掉。太宗得到磨浑．功勋赐爵位为长沙公，刺史。去世。大喜，于是成为辅佐。因任命为尚书，外任为定州。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-卷一-白话.html'>第一章-卷一</a></p><p class='next'>下一节：<a href='第三章-卷三-白话.html'>第三章-卷三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-卷一-白话.html'>第一章-卷一</a></p><p class='next'>下一节：<a href='第三章-卷三-白话.html'>第三章-卷三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

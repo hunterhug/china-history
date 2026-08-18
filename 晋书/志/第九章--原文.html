@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-志<a href='../晋书.html#志'>：目录</a></p>
@@ -218,5 +245,18 @@
 </p><p>魏故事，天子为次殿于庙殿之北东，天子入自北门。新礼，设次殿于南门中门外之右，天子入自南门。挚虞以为：“次殿所以为解息之处，凡适尊以不显为恭，以由隐为顺，而设之于上位，入自南门，非谦厌之义。宜定新礼，皆如旧说。”从之。
 </p><p>礼，大事则告祖祢，小事则特告祢，秦汉久废。魏文帝黄初四年七月，将东巡，以大军当出，使太常以特牛告南郊。及文帝崩，又使太尉告谥策于南郊。自是迄晋相承，告郊之后仍以告庙，至江左其礼废。至成帝咸和三年，苏峻覆乱京都，温峤等立行庙于白石，复行其典。告先君及后曰：“逆臣苏峻，倾覆社稷，毁弃三正。污辱海内。臣侃、臣峤、臣亮等手刃戎首，龚行天罚。惟中宗元皇帝、肃祖明皇帝、明穆皇后之灵，降鉴有罪，剿绝其命，翦此群凶，以安宗庙。臣等虽陨首摧躯，犹生之年。”
 </p><p>魏明帝太和三年，诏曰：“礼，王后无嗣，择建支子，以继大宗，则当纂正统而奉公义，何得复顾私亲哉！汉宣继昭帝后，加悼考以皇号。哀帝以外籓援立，而董宏等称引亡秦，惑误朝议，遂尊恭皇，立庙京师。又宠籓妾，使比长信，僭差无礼，人神弗佑。非罪师丹忠正之谏，用致丁傅焚如之祸。自是之后，相踵行之。其令公卿有司，深以前世为戒。后嗣万一有由诸侯入奉大统，则当明为人后之义。敢为佞邪导谀君上，妄建非正之号，谓考为皇，称妣为后，则股肱大臣诛之无赦。其书之金策，藏之宗庙。”是后高贵、常道援立，皆不外尊。及愍帝建兴四年，司徒梁芬议追尊之礼，帝既不从，而左仆射索綝等亦称引魏制，以为不可，故追赠吴王为太保而已。元帝太兴二年，有司言琅邪恭王宜称皇考。贺循议云：“礼典之义，子不敢以己爵加其父号。”帝又从之。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八章--原文.html'>第八章-</a></p><p class='next'>下一节：<a href='第十章--原文.html'>第十章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八章--原文.html'>第八章-</a></p><p class='next'>下一节：<a href='第十章--原文.html'>第十章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

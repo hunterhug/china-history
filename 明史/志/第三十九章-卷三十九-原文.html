@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-志<a href='../明史.html#志'>：目录</a></p>
@@ -297,5 +324,18 @@
 </p><p>七奏《泰道开之曲》，《沽美酒》：布春风，满画楼，对嘉景，凤凰洲。高捧金波碧玉瓯，设威仪左右，分品从，列公侯。其二，《太平令》：效圣上诚心勤厚，主宗器严备《春秋》，谐律吕仙音齐奏，钦王政皇天保佑。拜舞顿首，赞祝进酒，千千岁康宁福寿。
 </p><p>迎膳乐曲，《水龙吟》：方响笙闉鼓乐喧，排宝器，开玳筵。鸾仪旌工，锦绣景相连。簪缨趋进，皆来朝见，春满文华殿。
 </p><p>升座、还宫、百官行礼，奏《千秋岁曲》：尧年舜日胜禹周，庆云生缭绕凤楼。风调雨顺五谷收，万民畅歌讴。(朔望朝参同。)</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十八章-卷三十八-原文.html'>第三十八章-卷三十八</a></p><p class='next'>下一节：<a href='第四十章-卷四十-原文.html'>第四十章-卷四十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十八章-卷三十八-原文.html'>第三十八章-卷三十八</a></p><p class='next'>下一节：<a href='第四十章-卷四十-原文.html'>第四十章-卷四十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

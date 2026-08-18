@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>元史-本纪<a href='../元史.html#本纪'>：目录</a></p>
@@ -192,5 +219,18 @@
 </p><p>冬十月甲子，改浙东宣慰司为宣慰司都元帅府，徙治庆元，镇遏海道。置大同路黄花岭屯田。罢军储所，立屯储军民总管万户府，设官六员，仍以军储所宣慰使法忽鲁丁掌之。南人林都邻告浙西廉访使张珪收藏禁书及推算帝五行，江浙运使合只亦言珪沮挠盐法，命省、台官同鞫之。丙子，车驾还大都。壬午，荧惑犯太微西垣上将。济南滨、棣、泰安、高唐州霖雨，米价腾涌，民多流移，发粟赈之，并给钞三万锭。
 </p><p>十一月辛卯，填星犯左执法。甲午，刘国杰裨将宋光率兵大败蛇节，赐衣二袭，仍授以金符。乙未，辰星犯房。癸卯，太阴犯昴。己酉，太阴犯轩辕。庚戌，禁和林军酿酒，惟安西王阿难答、诸王忽剌出、脱脱、八不沙、也只里、驸马蛮子台、弘吉列带、燕里干许酿。辛亥，以同知枢密院事合答知枢密院事。诏江南寺观凡续置民田及民以施入为名者，并输租充役。戊午，籍河西宁夏善射军隶亲王阿木哥，甘州军隶诸王出伯。己未，诏诸驿使辄枉道者罪之。
 </p><p>十二月庚申朔，荧惑犯填星。辛酉，御史台臣言：“自大德元年以来，数有星变及风水之灾，民间乏食。陛下敬天爱民之心，无所不尽，理宜转灾为福；而今春霜杀麦，秋雨伤稼，五月太庙灾，尤古今重事。臣等思之，得非荷陛下重任者不能奉行圣意，以致如此。若不更新，后难为力。乞令中书省与老臣识达治体者共图之。”复请禁诸路酿酒，减免差税，赈济饥民。帝皆嘉纳，命中书郎议行之。云南地震。戊辰，又震。甲子，衡州袁舜一等诱集二千余人侵掠郴州，湖南宣慰司发兵讨之，获舜一及其余党，命诛其首谋者三人，余者配洪泽、芍陂屯田，其胁从者招谕复业。乙丑，岁星犯舆鬼。乙亥，太阴犯舆鬼。丙子，刘国杰、也先忽都鲁来献蛇节、罗鬼等捷。庚辰，荧惑犯太微东垣上相。命中书省更定略卖良人罪例。癸未，太阴犯房。保定等路饥，以钞万锭赈之。是岁，断大辟三人。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p><p class='next'>下一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p><p class='next'>下一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

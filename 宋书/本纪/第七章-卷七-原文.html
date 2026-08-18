@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>宋书-本纪<a href='../宋书.html#本纪'>：目录</a></p>
@@ -159,5 +186,18 @@
 </p><p>未亡人余年不幸婴此百艰，永寻情事，虽存若殒。当复奈何！当复奈何！
 </p><p>葬废帝丹阳秣陵县南郊坛西。帝幼而狷急，在东宫每为世祖所责。世祖西巡，子业启参承起居，书迹不谨，上诘让之。子业启事陈谢，上又答曰：“书不长进，此是一条耳。闻汝素都懈怠，狷戾日甚，何以顽固乃尔邪！”初践阼，受玺绂，悖然无哀容。始犹难诸大臣及戴法兴等，既杀法兴，诸大臣莫不震慑。于是又诛群公，元凯以下，皆被殴捶牵曳。内外危惧，殿省骚然。初太后疾笃，遣呼帝。帝曰：“病人间多鬼，可畏，那可往。”太后怒，语侍者：“将刀来，破我腹，那得生如此宁馨兒！”及太后崩后数日，帝梦太后谓之曰：“汝不孝不仁，本无人君之相。子尚愚悖如此，亦非运祚所及。孝武险虐灭道，怨结人神，兒子虽多，并无天命。大运所归，应还文帝之子。”其后湘东王绍位，果文帝子也。故帝聚诸叔京邑，虑在外为患。山阴公主淫恣过度，谓帝曰：“妾与陛下，虽男女有殊，俱托体先帝。陛下六宫万数，而妾唯驸马一人。事不均平，一何至此！”帝乃为主置面首左右三十人；进爵会稽郡长公主，秩同郡王侯，汤沐邑二千户，给鼓吹一部，加班剑二十人。帝每出，与朝臣常共陪辇。主以吏部郎褚渊貌美，就帝请以自侍，帝许之。渊侍主十日，备见逼迫，誓死不回，遂得免。帝所幸阉人华愿兒，官至散骑常侍，加将军带郡。帝少好讲书，颇识古事，自造《世祖诔》及杂篇章，往往有辞采。以魏武帝有发丘中郎将、摸金校尉，乃置此二官。以建安王休祐领之。其余事迹，分见诸传。
 </p><p>史臣曰：废帝之事行著于篇。若夫武王数殷纣之衅，不能挂其万一；霍光书昌邑之过，未足举其毫厘。假以中才之君，有一于此，足以霣社残宗，污宫潴庙，况总斯恶以萃一人之体乎！其得亡，亦为幸矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p><p class='next'>下一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p><p class='next'>下一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

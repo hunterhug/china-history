@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>北史-白话版北史<a href='../北史.html#北史'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>拓跋瞝传<span style='font-size:small'> 白话</span></h1>
 <p>陈留王拓跋虔的哥哥拓跋瞝，性情严肃，沉默寡言，道武帝非常敬重他，他也善于进献良策。跟从讨平中山时，因功而赐爵为蒲城侯，特别受宠信和厚遇，给予鼓吹羽仪，如同诸侯州牧的礼节。在职期间，以威信著称。任职七年以后，皇帝任命元易干代替瞭当郡守。当时，元易干的儿子万言得到道武帝的宠信，他便恃着儿子的关系，轻视拓跋瞝，也不先告诉原因，轻骑突然来到郡中，把拓跋瞝从床上推下来，自己占据瞭的座位。拓跋瞝并不知道元易干是来代替自己职务的，还以为是因罪被捕。后来弄清情况，耻于受欺负侮辱，便对元易干说“：我因更换而被你替职，这是正常的，你毫无礼节来侮辱我，怎么能够容忍！”于是把元易干捆起来杀掉。然后把情况详细报告朝廷，道武帝赞赏他的胆气。万言多次陈诉父亲的冤情，道武帝才下诏让拓跋瞝出钱赎罪。拓跋瞝便自己前来请求处置，道武帝赦免了，又连同赎罪钱也免除了。后来病死。</p>
-<div class='pn'><p class='pre'>上一节：<a href='义宁公元晖传-白话.html'>义宁公元晖传</a></p><p class='next'>下一节：<a href='毗陵王拓跋顺传-白话.html'>毗陵王拓跋顺传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='义宁公元晖传-白话.html'>义宁公元晖传</a></p><p class='next'>下一节：<a href='毗陵王拓跋顺传-白话.html'>毗陵王拓跋顺传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

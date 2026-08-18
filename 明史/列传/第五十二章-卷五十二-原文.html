@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -240,5 +267,18 @@
 </p><p>黎淳，华容人。天顺元年进士第一。官至南京礼部尚书，颇有名誉。其与瑶争郕王庙号也，专欲阿宪宗意，至以昌邑、更始比景帝，为士论所薄。当成化时，言路大阻，给事、御史多获谴。惟瑶以卑官建危议，卒无罪。时皆称帝盛德云。
 </p><p>又有虎臣者，麟游人。成化中贡入太学。上言天下士大夫过先圣庙，宜下舆马。从之。省亲归，会陕西大饥，巡抚郑时将请振，臣赍奏行，陈饥歉状，词激切，大获振贷。已，上言：“臣乡比岁灾伤，人相食，由长吏贪残，赋役失均。请敕有司审民户，编三等以定科徭。”从之。孝宗践阼，将建棕棚万岁山，备登眺。臣抗疏切谏。祭酒费訚惧祸及，锒铛絷臣堂树下。俄官校宣臣至左顺门，传旨慰谕曰：“若言是，棕棚已毁矣。”訚大惭，臣名遂闻都下。顷之，命授七品官，乃以为云南柷嘉知县，卒官。
 </p><p>赞曰：明自太祖开基，广辟言路。中外臣寮，建言不拘所职。草野微贱，奏章咸得上闻。沿及宣、英，流风未替。虽升平日久，堂陛深严，而逢掖布衣。刀笔掾史，抱关之冗吏，荷戈之戍卒，朝陈封事，夕达帝阍。采纳者荣显其身，报罢者亦不之罪。若仁宗之复弋谦朝参，引咎自责，即悬鞀设铎，复何以加。以此为招，宜乎慷慨发愤之徒扼腕而谈世务也。英、景之际，《实录》所载，不可胜书。今掇其著者列于篇。迨宪宗季年，阉尹擅朝，事势屡变，别自为卷，得有考焉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十一章-卷五十一-原文.html'>第五十一章-卷五十一</a></p><p class='next'>下一节：<a href='第五十三章-卷五十三-原文.html'>第五十三章-卷五十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五十一章-卷五十一-原文.html'>第五十一章-卷五十一</a></p><p class='next'>下一节：<a href='第五十三章-卷五十三-原文.html'>第五十三章-卷五十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

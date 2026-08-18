@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后周<a href='../旧五代史.html#后周'>：目录</a></p>
@@ -162,5 +189,18 @@
 </p><p>冬十月己卯，以户部侍郎高防为西南面水陆转运使，将用师于巴、邛故也。《宋史·高防传》：世宗谋伐蜀，以防为西南面水陆转运制置使，屡发刍粮赴凤州，为征讨之备。丙戌，邠州李晖移镇凤翔。戊子，幸迎春苑。己丑，太常卿司徒诩以本官致仕。壬辰，帝狩于近郊。癸巳，前相州节度使王饶卒。甲午，左监门上将军许文缜、右千牛上将军边镐、卫尉卿周延构并归江南。乙未，诏淮南诸州乡军，并放归农。丁酉，遣左散骑常侍艾颖等均定河南六十州税赋。《五代会要》载赐诸道均田诏曰：“朕以干戈既弭，寰海渐宁，言念地征，罕臻艺极，须并行均定，所冀永适重轻。卿受任方隅，深穷治本，必须副寡昧平分之意，察乡闾治弊之原，明示条章，用分寄任，伫令集事，允属推公。今差使臣往彼检括，余从别敕。
 </p><p>十一月丁未朔，诏翰林学士窦俨，集文学之士，撰集《大周通礼》、《大周正乐》，从俨之奏也。辛亥，日南至，帝御崇元殿受朝贺，仗卫如式。己未，昭义李筠奏，破辽州长清寨，获伪命磁州刺史李再兴。甲子，帝狩于近郊。
 </p><p>十二月丁丑朔，郎州奏，醴陵县玉仙观山门中，旧有田二万顷，久为山石闭塞，今年七月十七日夜，暴雷劈开，其路复通。己卯，楚州兵马都监武怀恩弃市，坐擅杀降军四人也。丙戌，诏重定诸道州府幕职令录佐官料钱，其州县官俸户宜停。己丑，楚州防御使张顺赐死，坐在任隐落榷税钱五十万、官丝绵二千两也。壬辰，诏两京及五府少尹司参军各省一员，六曹判司内只直户法二曹，余及诸州观察支使、两蕃判官并省。甲午，帝狩于近郊。乙未，邓州刘重进移镇邠州，滑州宋延渥移镇邓州，以前河中节度使王仁镐为邢州节度使，以邢州留后陈思让为滑州留后。己亥，诏翰林学士，今后逐日起居，当直者仍赴晚朝。是月，江南李景杀其臣伪太傅中书令宋齐丘、伪兵部侍郎陈觉、伪镇南军节度副使李徵古等。初，帝之南征也，吴人大惧，觉与徵古皆齐丘门人，因进说于景，请委国事于齐丘，景繇是衔之。及吴人遣钟谟、李德明奉表至行在，帝寻遣德明复命于金陵，德明因说李景请割江南之地求和于我，而陈觉、李徵古等以德明为卖国，请戮之，景遂杀德明。及江南内附，帝放钟谟南归，谟本德明之党也，因谮齐丘等，故齐丘等得罪。放齐丘归九华山，觉等贬官，寻并害之。景既诛齐丘等，令钟谟到阙，具言其事，故书。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八章-世宗纪四-原文.html'>第八章-世宗纪四</a></p><p class='next'>下一节：<a href='第十章-世宗纪六-原文.html'>第十章-世宗纪六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八章-世宗纪四-原文.html'>第八章-世宗纪四</a></p><p class='next'>下一节：<a href='第十章-世宗纪六-原文.html'>第十章-世宗纪六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

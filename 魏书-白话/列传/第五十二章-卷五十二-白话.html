@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#魏书'>：目录</a></p>
@@ -161,5 +188,18 @@
 </p><p>这以前，萧衍派将康绚遏阻淮水，准备淹灌扬州、徐州，郭祚上表说：“萧衍狂悖，擅自截断河水，工程很苦，民众不堪，危亡征兆已经显出。但是古谚有‘敌不可纵’的话。夫以一瓢之水，也许会成为不测之渊，如不及时剪灭，恐怕会后果不堪设想。陛下应该命一重将，率领统军三十人，领羽林一万五千人，并调京东七州虎旅九万人，长驱电迈，火速令其扑讨。擒斩之勋，一如常制，敌人辎重杂物，都交军人。像这样，则贼凶之首用不了多长时间就可高高悬起。为臣的确清楚，农桑之时，不是发兵之日，但假如事情深有道理，那也就不得不这样了。过去韦、顾跋扈，殷后起昆吾之师；犭严狁乱起，周王兴六月之伐。微臣身处机要之地，提出建议是臣的责任，为臣心中有什么想法，怎么敢默而不献。陛下一并应敕扬州选择一名猛将，派当州之兵赶赴浮山，表里夹攻。”朝议接受了这个建议。
 </p><p>朝廷出除郭祚的使持节、散骑常侍，都督雍、岐、华三州诸军事、征西将军、雍州刺史。太和以前，朝廷刑法尤其严酷，显贵臣僚稍有差失，便常常遭杀头之罪。李冲掌握朝政，钦佩郭祚的学识才干，推荐他为左丞，又兼任黄门郎。郭祚便觉得心满意足，经常因家中以前曾经历崔氏之祸，总担心会遭危险灭亡，苦自陈诉，言词恳切，发自内心。李冲对他说：“人生有运数，是无法躲避的，你只管清白当官，有什么可害怕的。”从此二十多年，官位俸禄都很隆重，而求进之心越发滋长。又以东宫师傅的资本，看不上尚书之职，志在封侯、仪同之位，尚书令、任城王元澄替他上奏请位。等到为征西将军、雍州刺史，郭祚虽很高兴外任，但尚以府号不优，愿望越发大起来，执政的人颇觉奇怪。这时，领军于忠恃宠骄横，崔光这些人，卑躬奉承他，郭祚很讨厌他，于是派太尉从事中郎景尚说服高阳王元雍，令于忠出任州职，于忠听说大怒，矫诏杀害郭祚，当时郭祚六十七岁。
 </p><p>郭祚通达政事，凡是他经历的职务，都很称职，每有裁断，都有旧例可依。名位既重，声望也深，一旦无辜被害，远近时人无不惋惜。灵太后临朝，派使者前去吊慰，追复伯爵之位。正光年间，朝廷赠他为使持节、车骑将军、仪同三司、雍州刺史，谥称文贞公。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十一章-卷五十一-白话.html'>第五十一章-卷五十一</a></p><p class='next'>下一节：<a href='第五十三章-卷五十三-白话.html'>第五十三章-卷五十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五十一章-卷五十一-白话.html'>第五十一章-卷五十一</a></p><p class='next'>下一节：<a href='第五十三章-卷五十三-白话.html'>第五十三章-卷五十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

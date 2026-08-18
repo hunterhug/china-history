@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新唐书-本纪<a href='../新唐书.html#新唐书'>：目录</a></p>
@@ -402,5 +429,18 @@
 </p><p>二月初七，僖宗生病。二十一日，由凤翔返回京都。二十二日，拜谒太庙，施行大赦，更改年号为“文德”。本月，魏博的军队发生动乱，杀了魏博节度使乐彦祯，其部将罗弘信自称权知留后。
 </p><p>三月初一，日月合朔，日全食。初五，僖宗病势重危，立寿王李杰为皇太弟，主持军国政务。初六，僖宗在武德殿逝世，终年二十七岁。
 </p><p>评说：唐朝自穆宗以后的八代皇帝，被宦官立为君主的就有七人。那么，唐朝的衰亡，哪里仅是藩镇酿成的祸患所致？朝廷是天下的根基，君主是朝廷的根基，起始登基就位是君主的根基。根基一开始就不正，而想以这样的根基正天下，还可能吗？懿宗、僖宗尚在唐朝政权刚开始衰落之际，而相继登位的皇帝却是昏聩愚昧之辈；僖宗乾符年间，连年发生严重旱、蝗灾害，黎民愁怨、盗贼蜂起，社会动乱终于再也无法排解，这大概也是天命、人事两相遇合的机运吧！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八·穆宗 敬宗 文-白话.html'>第八章-卷八·穆宗 敬宗 文</a></p><p class='next'>下一节：<a href='第十章-卷十·昭宗 哀帝-白话.html'>第十章-卷十·昭宗 哀帝</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八·穆宗 敬宗 文-白话.html'>第八章-卷八·穆宗 敬宗 文</a></p><p class='next'>下一节：<a href='第十章-卷十·昭宗 哀帝-白话.html'>第十章-卷十·昭宗 哀帝</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

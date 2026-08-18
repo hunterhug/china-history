@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后汉<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -162,5 +189,18 @@
 </p><p>五月一日，临时河阳留后武行德率领全城归顺高祖。当初，契丹国主准备从东京出发北上，用船只装载着武库里的兵甲器械，从汴河运到黄河，想搬往北方，派遣奉国都虞候武行德的部队护送，拨给军士一千多人带着家属们一起上路。到河阴时，军士变乱，夺取兵器，杀死契丹的监察使者，众人推举武行德为首领，与河阴驻军会合，就从汜水抵达河阳。河阳伪节度使崔廷勋领兵抵御他们，被打败，武行德等追击败兵，崔廷勋弃城而逃，武行德因此占据河阳城。伪西京留守刘..放弃洛阳，向南逃奔许州，又逃奔东京，洛阳巡检使方太自己暂时掌管留守事务。不久，方太被武行德杀死。
 </p><p>同月，蕃族将领耿崇美驻扎泽州，史弘肇派先锋将领马诲领兵攻击他，耿崇美后退据守怀州。崔廷勋率领契丹人在河阳攻打武行德，武行德出战，被崔廷勋打败。汴州萧翰派蕃将高牟翰领兵援助护送刘..再回到洛阳，高牟翰返回洛阳后，在洛阳杀死前澶州节度使潘环。
 </p><p>五月九日，契丹国主耶律德光死在镇州的栾城。赵延寿在镇州自称临时掌管契丹国务。</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-高祖纪下-白话.html'>第二章-高祖纪下</a></p></div></body>
+<div class='pn'><p class='next'>下一节：<a href='第二章-高祖纪下-白话.html'>第二章-高祖纪下</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

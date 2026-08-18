@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#列传'>：目录</a></p>
@@ -200,5 +227,18 @@
 </p><p>六年，鸿薨，赐赠有加常礼。子湛嗣。湛卒，子浮嗣。浮卒，子夏嗣。
 </p><p>论曰：“孔子曰“太伯三以天下让，民无得而称焉”。孟子曰“闻伯夷之风者，贪夫廉，懦夫有立志”。若乃太伯以天下而违周，伯夷率洁情以去国，并未始有其让也。故太伯称至德，伯夷称贤人。后世闻其让而慕其风，徇其名而昧其致，所以激诡行生而取与妄矣。至夫邓彪、刘恺，让其弟以取义，使弟受非服而己厚其名，于义不亦薄乎！君子立言，非苟显其理，将以启天下之方悟者；立行，非独善其身，将以训天下之方动者。言行之所开塞，可无慎哉！原丁鸿之心，主于忠爱乎？何其终悟而从义也！异夫数子类乎徇名者焉。
 </p><p>赞曰：五更待问，应若鸣钟。庭列辎驾，堂修礼容。穆穆帝则，拥经以从。丁鸿翼翼，让而不饰。高论白虎，深言日食。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十八章-郑范陈贾张列传-原文.html'>第二十八章-郑范陈贾张列传</a></p><p class='next'>下一节：<a href='第三十章-张法滕冯度杨列传-原文.html'>第三十章-张法滕冯度杨列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十八章-郑范陈贾张列传-原文.html'>第二十八章-郑范陈贾张列传</a></p><p class='next'>下一节：<a href='第三十章-张法滕冯度杨列传-原文.html'>第三十章-张法滕冯度杨列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

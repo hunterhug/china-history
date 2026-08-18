@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-志<a href='../明史.html#志'>：目录</a></p>
@@ -236,5 +263,18 @@
 </p><p>是年，真定知府郭勉浚大鸣、小鸣泉四十馀穴，溉田千顷。邢台达活、野狐二泉流为牛尾河，百泉流为澧河，建二十一闸二堤，灌田五百馀顷。
 </p><p>天启元年，御史左光斗用应蛟策，复天津屯田，令通判卢观象管理屯田水利。明年，巡按御史张慎言言：“自枝河而西，静海、兴济之间，万顷沃壤。河之东，尚有盐水沽等处为膏腴之田，惜皆芜废。今观象开寇家口以南田三千馀亩，沟洫芦塘之法，种植疏浚之方，皆具而有法，人何惮而不为？大抵开种之法有五：一官种。谓牛、种、器具、耕作、雇募皆出於官，而官亦尽收其田之入也。一佃种。谓民愿垦而无力，其牛、种、器具仰给於官，待纳稼之时，官十而取其四也。一民种。佃之有力者，自认开垦若干，迨开荒既熟，较数岁之中以为常，十一而取是也。一军种。即令海防营军种葛沽之田，人耕四亩，收二石，缘有行、月粮，故收租重也。一屯种。祖宗卫军有屯田，或五十亩，或百亩。军为屯种者，岁入十七於官，即以所入为官军岁支之用。国初兵农之善制也。四法已行，惟屯种则今日兵与军分，而屯仅存其名。当选各卫之屯馀，垦津门之沃土，如官种法行之。”章下所司，命太仆卿董应举管天津至山海屯田，规画数年，开田十八万亩，积谷无算。
 </p><p>崇祯二年，兵部侍郎申用懋言：“永平泺河诸水，逶迤宽衍，可疏渠以防旱潦。山坡隙地，便栽种。宜令有司相地察源，为民兴利。”从之。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十三章-卷六十三-原文.html'>第六十三章-卷六十三</a></p><p class='next'>下一节：<a href='第六十五章-卷六十五-原文.html'>第六十五章-卷六十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十三章-卷六十三-原文.html'>第六十三章-卷六十三</a></p><p class='next'>下一节：<a href='第六十五章-卷六十五-原文.html'>第六十五章-卷六十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

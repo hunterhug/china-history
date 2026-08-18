@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#列传'>：目录</a></p>
@@ -183,5 +210,18 @@
 </p><p>会稽海外有东鳀人，分为二十余国。又有夷洲及澶洲。传言秦始皇遣方士徐福将童男女数千人入海，求蓬莱神仙不得，徐福畏诛不敢还，遂止此洲，世世相承，有数万家。人民时至会稽市。会稽东治县人有入海行遭风，流移至澶洲者。所在绝远，不可往来。
 </p><p>论曰：“昔箕子违衰殷之运，避地朝鲜。始其国俗未有闻也，及施八条之约，使人知禁，遂乃邑无淫盗，门不夜扃，回顽薄之俗，就宽略之法，行数百千年，故东夷通以柔谨为风，异乎三方者也。苟政之所暢，则道义存焉。仲尼怀愤，以为九夷可居。或疑其陋。子曰：“君子居之，何陋之有！”亦徒有以焉尔。其后遂通接商贾，渐交上国。而燕人卫满扰杂其风，于是从而浇异焉。《老子》曰：“法令滋章，盗贼多有。”若箕子之省简文条而用信义，其得圣贤作法之原矣！
 </p><p>赞曰：宅是C868夷，曰乃旸谷。巢山潜海，厥区九族。嬴末纷乱，燕人违难。杂华浇本，遂通有汉。眇眇偏译，或从或畔。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十二章-列女传-原文.html'>第八十二章-列女传</a></p><p class='next'>下一节：<a href='第八十四章-南蛮西南夷列传-原文.html'>第八十四章-南蛮西南夷列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八十二章-列女传-原文.html'>第八十二章-列女传</a></p><p class='next'>下一节：<a href='第八十四章-南蛮西南夷列传-原文.html'>第八十四章-南蛮西南夷列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

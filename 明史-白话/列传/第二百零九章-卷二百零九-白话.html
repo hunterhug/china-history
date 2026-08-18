@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -212,5 +239,18 @@
 </p><p>二十五年(1597)黎维潭派使者前来询问日期，杨寅秋告诉他们在四月投诚。届时，黎维潭到关外，译者问他六件事。第一件是擅自杀死莫茂洽，他答以“太急于复仇，来不及向朝廷请命”。第二件询问他的宗派，他说“我是世孙，祖先黎晖，朝廷曾经有赐命”。第三件是询问郑松之事，黎维潭说：“他是黎氏世代的大臣，不是与黎氏捣乱的人。”问他何以连夜逃走，他说：“因为举行仪式的物资不全，不是逃走。”问他为何使用国王的印章，他说“：暂时仿着用一用，立刻就销毁。”只有在将高平之地割给莫氏方面，双方还相持不下。陈大科等人又谕告说“：大家都是朝廷的贡臣，黎氏昔日可居住在漆马江，莫氏就不能在高平栖息吗？”黎维潭这才听命。杨寅秋把款关仪节传授给他，让他去熟悉。黎维潭率领他的下属入关拜谒御幄，一如莫登庸旧时的仪式。仪式完毕后，黎维潭去拜见杨寅秋，请求杨寅秋以宾主之礼相待，杨寅秋不答应。黎维潭于是四拜成礼而退。安南再次安定。皇帝下诏，授予黎维潭都统使职位，颁历法给他，让他如期奉贡给朝廷，就像以前莫氏一样。先前，黎利和莫登庸向朝廷进献代表自身本人的金人，都是囚首缚面的形状，黎维潭认为自己是恢复正名，其金人是立而肃容的形象。接受金人的官员嫌该形象过于倨傲，让他改制，便成为俯伏状，在金人背上镌刻有字“：安南黎氏世孙，臣子黎维潭不能亲自匍伏在朝廷门前，恭进代身金人，悔罪乞恩。”从此以后，安南又属黎氏所有，而莫氏只保有高平一个郡。
 </p><p>二十七年(1599)，黎维潭去世，其儿子黎维新继嗣官位，郑松专擅权柄。碰上叛背的酋长潘彦作乱，黎维新和郑松移兵保清化。三十四年(1606)他们派使者向朝廷进贡，朝廷命令授予黎维新都统使职务。此时莫氏宗亲多逃窜到海边，往往自称公侯伯的名号，侵犯我国边境，黎维新也无法制止。守卫大臣发檄文问罪，数次发兵与安南军一起夹剿，虽然及时将他们击败并消灭，但边境一带已颇受其害。黎维新死后，其儿子黎维祺继嗣。天启四年(1624)，他发兵出击莫敬宽，攻克之后，杀了莫敬宽的长子，将其妻妾和小儿子掳掠回来。莫敬宽与第二个儿子一起逃入山中，重回高平，其势力更弱。然而终明朝之世，安南都是二姓分据，最终都无法统一。
 </p><p>安南的都会在交州，就是唐代的都护治所。其疆域东靠海，西接老挝，南边渡过海就是占城，北部连接中国广西的思明、南宁，云南的临安、元江。安南的土地肥沃，气候炎热，稻谷一年二稔。安南人性格犷悍。..州、演州多文学，交州、爱州多倜傥之士，这与其他地方有所差别。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二百零八章-卷二百零八-白话.html'>第二百零八章-卷二百零八</a></p><p class='next'>下一节：<a href='第二百一十章-卷二百一十-白话.html'>第二百一十章-卷二百一十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二百零八章-卷二百零八-白话.html'>第二百零八章-卷二百零八</a></p><p class='next'>下一节：<a href='第二百一十章-卷二百一十-白话.html'>第二百一十章-卷二百一十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

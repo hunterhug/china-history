@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新唐书-本纪<a href='../新唐书.html#新唐书'>：目录</a></p>
@@ -433,5 +460,18 @@
 </p><p>十一月十五日，右武卫将军程务挺任单于道安抚大使，征讨突厥。十八日，皇太子李哲代理国政。二十四日，高宗去东都。二十五日，裴炎、刘齐贤、郭正一兼任东宫平章事。
 </p><p>十二月初四，更改年号，施行大赦。此夜，高宗在贞观殿逝世，时年五十六岁。谥号“天皇大帝”。天宝八载(749)，改其谥号为“天皇大圣皇帝”；天宝十三载(754)，增谥号为“天皇大圣大弘孝皇帝”。
 </p><p>评说：《诗·小雅》有句云：“盛大周王朝，褒姒毁灭掉。”这是指责周幽王宠爱褒姒的诗。这时，幽王虽死，但太子宜臼业已继位，此即周平王。而诗人仍说周朝灭亡，因为文王、武王的基业从此荡然无存，东周虽在，已不能复兴了。诗人说周朝灭亡，是恨极之辞。武氏祸乱，李唐王室成员遭受残害殆尽，贤明的士大夫十之八、九不能幸免。这时太宗的贞观之治，留存在世的德政功业相距尚不久远，却几乎完全丧尽，武氏的作恶哪里是一个褒姒所能比拟的呢？太宗如此圣明，却昏昧于了解自己的儿子，在废、立皇太子之时，不能自主裁决，终于起用愚昧之人。高宗溺爱寝卧中人，不警戒防微杜渐，以至于祸害遍及天下，毁灭邦国家族。可叹哪，父子夫妇之间的关系，实在堪称极难处置呀！能不审慎吗？</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二·太宗-白话.html'>第二章-卷二·太宗</a></p><p class='next'>下一节：<a href='第四章-卷四·则天皇后 中宗-白话.html'>第四章-卷四·则天皇后 中宗</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二·太宗-白话.html'>第二章-卷二·太宗</a></p><p class='next'>下一节：<a href='第四章-卷四·则天皇后 中宗-白话.html'>第四章-卷四·则天皇后 中宗</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

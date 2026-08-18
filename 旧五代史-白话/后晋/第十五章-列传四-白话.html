@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后晋<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -165,5 +192,18 @@
 </p><p>开运末年，冯玉、李彦韬执政，因桑维翰才能名望一向过重，而赵莹柔顺而能控制，因此，一同拥举他，罢除桑维翰宰相调出京城，恢复赵莹相位，加封弘文馆大学士。到李崧、冯玉商议派兵对付赵延寿时，以杜重威为都督部署，赵莹私下对冯立、李崧说：“杜重威是皇室至亲，他所希求的不曾如愿，心中常常不快，怎么可以再给予兵权？如果边陲有战事，只有李守贞可以担任将领。”
 </p><p>等到契丹攻陷京城后，契丹国主迁徙少帝到北方塞上，赵莹与冯玉、李彦韬一起跟从前往，契丹永康王即位，任命赵莹为太子太保。后周广顺初年，周太祖派尚书左丞田敏向契丹禀报，在幽州碰上了赵莹。赵莹见到中原汉人，悲叹惆怅不已，并对田敏说：“老朽漂零异乡寄居在这里，最近听说妻室去世，孩儿无恙，幸蒙朝廷皇帝倍加抚恤存爱，东京旧宅本来属于公家，也听说皇上优待恩宠特别给予好的价钱收购，老夫至死无以报答。”于是向南叩头，涕泪横流。在此之前，后汉高祖把入蕃将相的宅第全部赏赐给跟随御驾的大臣，所以把赵莹宅第赏赐给了后周太祖。周太祖当时担任枢密副使，召唤赵莹的儿子原刑部郎中赵易则说：“所赏赐的宅第，除去属于国家的部分之外，如果另有契券证明是你们自己所置办的，可以归还置办所费的价值。”于是把一千多缗钱送给了赵易则。赵易则惶恐推辞谦让，周太祖坚持给予他，才接受下来，所以赵莹说了上面的话。不久，赵莹在幽州去世，时年六十七岁。
 </p><p>赵莹刚染上疾病时，便派人祈求禀告契丹国主，希望让他这把老骨头送回后周，让羁旅他乡的魂魄有幸复归故土，契丹国主哀怜并答应了他。等到去世，就派他的儿子赵易从和家中几位人护丧回归，还派遣大将护送到京城。周太祖感慨良久，下诏追赠太傅，还赏赐他的儿子五百匹丝绢，以办理丧事，并让送回安葬在华阴故里。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十四章-列传三-白话.html'>第十四章-列传三</a></p><p class='next'>下一节：<a href='第十六章-列传五-白话.html'>第十六章-列传五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十四章-列传三-白话.html'>第十四章-列传三</a></p><p class='next'>下一节：<a href='第十六章-列传五-白话.html'>第十六章-列传五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

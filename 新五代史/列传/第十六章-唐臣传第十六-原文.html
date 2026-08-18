@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-列传<a href='../新五代史.html#列传'>：目录</a></p>
@@ -203,5 +230,18 @@
 </p><p>初，赞闻秦王败，即白衣驾驴以俟，人有告赞夺官而已，赞曰：“岂有天子冢嗣见杀，而宾僚夺官者乎，不死幸矣！”已而赞长流岚州百姓。清泰二年，诏归田里，行至石会关，病卒。
 </p><p>○何瓚
 </p><p>何瓚，闽人也，唐末举进士及第。庄宗为太原节度使，辟为判官。庄宗每出征伐，留张承业守太原，承业卒，瓚代知留守事。瓚为人明敏，通于吏事，外若疏简而内颇周密。庄宗建大号于鄴都，拜瓚谏议大夫，瓚虑庄宗事不成，求留守北京。瓚与明宗有旧，明宗即位，召还，见于内殿，劳问久之，已而以瓚为西川节度副使。是时，孟知祥已有二志，方以副使赵季良为心腹，闻瓚代之，亟奏留季良，遂改瓚行军司马。瓚耻于自辞，不得已而往，明宗赐予甚厚。初，知祥在北京为马步军都虞候，而瓚留守太原，知祥以军礼事瓚，瓚常绳以法，知祥初不乐，及瓚为司马，犹勉待之甚厚。知祥反，罢瓚司马，置之私第，瓚饮恨而卒。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十五章-唐臣传第十五-原文.html'>第十五章-唐臣传第十五</a></p><p class='next'>下一节：<a href='第十七章-晋臣传第十七-原文.html'>第十七章-晋臣传第十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十五章-唐臣传第十五-原文.html'>第十五章-唐臣传第十五</a></p><p class='next'>下一节：<a href='第十七章-晋臣传第十七-原文.html'>第十七章-晋臣传第十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

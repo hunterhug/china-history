@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-本纪<a href='../旧唐书.html#本纪'>：目录</a></p>
@@ -199,5 +226,18 @@
 </p><p>九年五月庚子，高祖大渐，下诏：“既殡之后，皇帝宜于别所视军国大事。其服轻重，悉从汉制，以日易月。园陵制度，务从俭约。”是日，崩于太安宫之垂拱前殿，年七十。群臣上谥曰大武皇帝，庙号高祖。十月庚寅，葬于献陵。高宗上元元年八月，改上尊号曰神尧皇帝。天宝十三载二月，上尊号神尧大圣大光孝皇帝。
 </p><p>史臣曰：有隋季年，皇图板荡，荒主燀燎原之焰，群盗发逐鹿之机，殄暴无厌，横流靡救。高祖审独夫之运去，知新主之勃兴，密运雄图，未伸龙跃。而屈己求可汗之援，卑辞答李密之书，决神机而速若疾雷，驱豪杰而从如偃草。洎讴谣允属，揖让受终，刑名大刬于烦苛，爵位不逾于珝轴。由是攫金有耻，伏莽知非，人怀汉道之宽平，不责高皇之慢骂。然而优柔失断，浸润得行，诛文静则议法不从，酬裴寂则曲恩太过。奸佞由之贝锦，嬖幸得以掇蜂。献公遂间于申生，小白宁怀于召忽。一旦兵交爱子，矢集申孙。匈奴寻犯于便桥，京邑咸忧于左衽。不有圣子，王业殆哉！
 </p><p>赞曰：高皇创图，势若摧枯。国运神武，家难圣谟。言生床笫，祸切肌肤。《鸱鸮》之咏，无损于吾。</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p></div></body>
+<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

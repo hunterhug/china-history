@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#列传'>：目录</a></p>
@@ -158,5 +185,18 @@
 </p><p>王郁，京兆万年人，唐义武军节度使处直之孽子。伯父处存镇义武，卒，三军推其子郜袭，处直为都知兵马使。光化三年，梁王朱全忠攻定州，郜遣处直拒于沙河。兵败，入城逐郜，郜奔太原。乱兵推处直为留后，遣人请事梁王。梁与晋王克用绝好，表处直为义武军节度使。初，郜之亡也，郁从之。晋王克用妻以女，用为新州防御使。处直料晋必讨张文礼，镇亡，则定不独存，益自疑。阴使郁北导契丹入塞，以牵晋兵，且许为嗣。郁自奔晋，常恐失父心，得使，大喜。神册六年，奉表送款，举室来降，太祖以为养子。未几，郁兄都囚父，自为留后，帝遣郁从皇太子讨之。至定州，都坚壁不出，掠居民而还。明年，从皇太子攻镇州，遇唐兵于定州，破之。天赞二年秋，郁及阿古只略地燕、赵，攻下磁窑务。从太祖平渤海，战有功，加同政事门下平章事，改崇义军节度使。太祖崩，郁与妻会葬，其妻泣诉于淳钦皇后，求归乡国，许之。郁奏曰：“臣本唐主之婿，主已被弑，此行夫妻岂能相保？愿常侍太后。”后喜曰：“汉人中，惟王郎最忠孝。”以太祖尝与李克用约为兄弟故也。寻加政事令。还宜州，卒。
 </p><p>耶律图鲁窘，字阿鲁隐，肃祖子洽瑽之孙，勇而有谋略。太宗立晋之役，其父敌鲁古为五院夷离堇，殁于兵，帝即以其职授图鲁窘。会同元年，改北院大王，尝屏左右与议大事，占对合上意。从讨石重贵，杜重威拥十万余众拒滹沱桥，力战数日，不得进。帝曰：“两军争渡，人马疲矣，计安出？”诸将请缓师，为后图，帝然之。图鲁窘厉色进曰：“臣愚窃以为陛下乐于安逸，则谨守四境可也；既欲扩大疆宇，出师远攻，讵能无廑圣虑。若中路而止，适为贼利，则必陷南京，夷属邑。若此，则争战未已，吾民无奠枕之期矣。且彼步我骑，何虑不克！况汉人足力弱而行缓，如选轻锐骑先绝其饷道，则事蔑不济矣。”帝喜曰：“国强则其人贤，海巨则其鱼大。”于是塞其饷道，数出师以牵挠其势，重威果降如言。以功获赐甚厚。明年春，卒军中。
 </p><p>论曰：神册初元，将相大臣拔起风尘之中，翼扶王运，以任职取名者，固一时之材，亦由太祖推诚御下，不任独断，用能总揽群策而为之用欤！其投天隙而列功庸，至有心腹、耳目、手足之喻，岂偶然哉！讨党项，走敌鲁，平剌葛，定渤海，功亦伟矣。若默记治狱不冤，颇德持论不挠，延徽立经陈纪，绍勋秉节而死，图鲁窘料敌制胜，岂器博者无近用，道长者其功远欤？称为佐命，固宜。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

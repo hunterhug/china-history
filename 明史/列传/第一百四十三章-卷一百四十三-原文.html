@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -239,5 +266,18 @@
 </p><p>崇祯中，迁南京户部主事，遭内外艰。服阕，入都，未补官，疏陈吏治之弊，言：“催科一事，正供外有杂派，新增外有暗加，额办外有贴助，小民破产倾家，安得不为盗贼。夫欲救州县之弊，当自监司郡守始。不澄其源，流安能洁。乃保举之令行已数年，而称职者希覯，是连坐法不可不严也。”帝纳之，授户部主事。帝以傅永淳为吏部尚书。廷秀言永淳庸才，不当任统均。甫四月，永淳果败。道周逮下狱，廷秀抗疏救之。帝怒，杖百，系诏狱。明年冬，遣戍福建。
 </p><p>廷秀受业刘宗周门，造诣渊邃，宗周门人以廷秀为首。与道周未相识，冒死论救，获重罪，处之恬然。及道周释还，给事中左懋第、御史李悦心复相继论荐，执政亦称其贤，道周在途又为请。帝令所司核议，已而执政复荐。十六年冬，特旨起故官。会都城陷，未赴。福王时，兵部侍郎解学龙荐道周，并及廷秀，命以佥都御史用。及还朝，马士英恶之，抑授光禄少卿。南都覆，唐王召拜左佥都御史，进兵部右侍郎。事败，为僧以终。
 </p><p>赞曰：刘宗周、黄道周所指陈，深中时弊。其论才守，别忠佞，足为万世龟鉴。而听者迂而远之，则救时济变之说惑之也。《传》曰：“虽危起居，竟信其志，犹将不忘百姓之病也”，二臣有焉。杀身成仁，不违其素，所守岂不卓哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百四十二章-卷一百四十二-原文.html'>第一百四十二章-卷一百四十二</a></p><p class='next'>下一节：<a href='第一百四十四章-卷一百四十四-原文.html'>第一百四十四章-卷一百四十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百四十二章-卷一百四十二-原文.html'>第一百四十二章-卷一百四十二</a></p><p class='next'>下一节：<a href='第一百四十四章-卷一百四十四-原文.html'>第一百四十四章-卷一百四十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

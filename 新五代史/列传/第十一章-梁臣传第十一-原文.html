@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-列传<a href='../新五代史.html#列传'>：目录</a></p>
@@ -172,5 +199,18 @@
 </p><p>王虔裕，琅琊临沂人也。为人健勇善骑射，以弋猎为生。少从诸葛爽起青、棣间，其后爽为汝州防御使，率兵北击沙陀，还入长安攻黄巢。爽兵败降巢，巢以爽为河阳节度使。中和三年，孙儒陷河阳，虔裕随爽奔于梁。是时，太祖新就镇，黄巢、秦宗权等兵方盛，太祖数为所窘，而梁未有佗将，乃以虔裕将骑兵，常为先锋击巢陈、蔡间，拔其数栅。巢走，梁兵蹑之，战于万胜戍，贼败而东，虔裕功为多，乃表虔裕义州刺史。黄巢已去，秦宗权攻许、郑，与梁为敌境，大小百余战，虔裕常有功。秦贤攻汴南境，太祖遣虔裕拒贤于尉氏，战败，失一裨将，太祖怒，拘虔裕于军中。邢州孟迁降梁，为晋人所围，太祖遣虔裕以精兵百人疾驰，夜破晋围，入邢州，迟明，立梁旗帜于城上，晋人以为救兵至，乃退。已而晋兵复来，迁执虔裕降于晋，见杀。
 </p><p>○谢彦章
 </p><p>谢彦章，许州人也。幼事葛从周，从周怜其敏惠，养以为子，授之兵法，从周以千钱置大盘中，为行阵偏伍之状，示以出入进退之节，彦章尽得之。及壮，事梁太祖为骑将。是时，贺瑰善用步卒，而彦章与孟审澄、侯温裕皆善将骑兵，审澄、温裕所将不过三千，彦章多而益办。彦章事末帝，累迁匡国军节度使。贞明四年，晋攻河北，贺瑰为北面招讨使，彦章为排阵使，屯于行台。彦章为将，好礼儒士，虽居军中，尝儒服，或临敌御众，肃然有将帅之威，左右驰骤，疾若风雨。晋人望其行阵齐整，相谓曰：“谢彦章必在此也！”其名重敌中如此。瑰心忌之。彦章与瑰行视郊外，瑰指一地语彦章曰：“此地冈阜隆起，其中坦然，营栅之地也。”已而晋兵栅之，瑰疑彦章阴以告晋，益恶之。彦章故与马步都虞候硃珪有隙，瑰欲速战，彦章请持重以老敌，珪乃诬彦章以为将反。瑰旦享士，使珪伏甲杀之，审澄、温裕皆见害。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十章-梁臣传第十-原文.html'>第十章-梁臣传第十</a></p><p class='next'>下一节：<a href='第十二章-唐臣传第十二-原文.html'>第十二章-唐臣传第十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十章-梁臣传第十-原文.html'>第十章-梁臣传第十</a></p><p class='next'>下一节：<a href='第十二章-唐臣传第十二-原文.html'>第十二章-唐臣传第十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

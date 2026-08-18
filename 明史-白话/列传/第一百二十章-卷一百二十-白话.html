@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -182,5 +209,18 @@
 </p><p>第二年，刘光复因事被下狱。李三才表面上请求释放他，而极力为东林党人辩白，说：“自从沈一贯伪造妖书，任意杀戮楚王宗族，满朝正直之人将他攻击出廷。接着汤宾尹、韩敬考场作弊，咎由自取，与别人何干。现在的党人动不动就与正直的人为仇敌，王士昌、刘光复尤其厉害，挺身而出，极力为沈一贯、韩敬报仇。乱说一气，百般攻击。就贤明的大臣来说，叶向高走了，王象乾、孙玮、王图、许弘纲走了，曹于汴、胡忻、朱吾弼、叶茂才、南企仲、朱国祯等也走了，近来又将陈荐、汪应蛟攻击走了。以贤明的小臣来说，梅之焕、孙振基、段然、吴亮、马孟祯、汤兆京、周起元、史学迁、钱春等走了，李朴、鲍应鳌、丁元荐、庞时雍、吴正志、刘宗周等走了。与他们意见一致的就留下，不一致的就赶走。陛下只知道各大臣离开了，哪里知道都是党人赶走的呢？现在奸人仇视的正直之人，一是东林人，一是淮抚。所谓东林，是顾宪成读书讲学的地方。与他一起的像高攀龙、姜士昌、钱一本、刘元珍、安希范、岳元声、薛敷教，都是些约束自己、有气节的人，有什么辜负国家的地方？偶然被指为东林，便陷入深渊。如邹元标、赵南星等就因为背上此名，晋升的道路就非常困难。早上申报晚上被任命的，只有史继偕等人。人才的邪与直，实与国家命运相攸关，希望陛下要看清楚。”上疏奏上，众人更加恨他。吴亮嗣等已经去勘察，很久都没有得到什么。宅第并不是刘光复所说的那样，回来汇报后，李三才被降为平民。
 </p><p>天启元年(1621)，辽阳失守。御史房可壮接连上疏请起用李三才。皇上下诏让大臣讨论。通政参议吴殿邦极力说不行，把他指为强盗大臣。御史刘廷宣又推荐李三才，说：“国家既然珍惜他的才干，就用他吧。还议论什么呢？然而广宁已有王化贞，不如让他在山海关任职。”皇上同意他的话，想起用李三才，可是大臣的意见相持不下。詹事公鼐极力认为可用，刑部侍郎邹元标、佥都御史王德完都赞同。不久，王德完迫于众议，就改变了态度。等到安排议定时，邹元标也不敢表态。议论没有结果，事情就搁置下来。三年李三才被起用为南京户部尚书，还没上任就死了。后来，魏忠贤专权，其帮凶、御史石三畏弹劾他，皇上下诏削掉他的名册，夺回封诰。崇祯初年，才将他官复原职。
 </p><p>李三才有雄才大略却爱耍手腕，善于笼络朝廷大臣。巡抚淮上十三年，结交的人遍天下。生性不能坚持廉洁，所以为众人所抨击。其后，攻击李三才的人，如邵辅忠、徐楚魁等人，都是依附魏忠贤的小人。而推崇李三才的，如顾宪成、邹元标、赵南星、刘宗周，都是当时公认的名臣。所以世人认为李三才是贤臣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百一十九章-卷一百一十九-白话.html'>第一百一十九章-卷一百一十九</a></p><p class='next'>下一节：<a href='第一百二十一章-卷一百二十一-白话.html'>第一百二十一章-卷一百二十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百一十九章-卷一百一十九-白话.html'>第一百一十九章-卷一百一十九</a></p><p class='next'>下一节：<a href='第一百二十一章-卷一百二十一-白话.html'>第一百二十一章-卷一百二十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

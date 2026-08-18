@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后晋<a href='../旧五代史.html#后晋'>：目录</a></p>
@@ -171,5 +198,18 @@
 </p><p>李承福，字德华，汉阳人。少寒贱，事元行钦掌皁栈之役，后为高祖家臣。高祖登极，历皇城武德宣徽使、左千牛将军，出为澶州刺史，迁齐州防御使、检校太保。承福性鄙狭，无器局，好察人微事，多所诋讦，虽小过不能恕，工商之业，舆隶之情，官吏之幸，皆善知之，然自任所见，无所准的，故人多薄之。少帝嗣位，授同州节度使，寻卒于镇。少帝以高祖佐命之臣，闻之嗟叹，赙物加等，辍视朝一日，诏赠太傅。
 </p><p>相里金，字奉金，并州人也。性勇悍果敢，能折节下士。唐景福初，武皇始置五院兵，金首预其选。从庄宗攻下夹寨，得补为小校，后与梁师战于柏乡及胡柳陂，以功授黄甲指挥使。同光中，统帐前军拔中都，赐忠勇拱卫功臣、检校刑部尚书。二年，自羽林都虞候出为忻州刺史，凡部曲私属，皆不令干预民事，但优其赡给，使分掌家事而已，故郡民安之，大有声绩。应顺元年，为陇州防御使，会唐末帝起兵于凤翔，传檄于邻道，诸侯无应者，唯金遣判官薛文遇往来计事，末帝深德之。及即位，擢为陕州节度使加检校太保。清泰三年夏，高祖建义于太原，唐末帝发兵来攻，以金为太原四面步军都指挥使。高祖即位，移镇晋州，及受代归阙，累为诸卫上将军，加开府仪同三司，官至检校太尉。爵列开国公，勋登上柱国，以久居散地，优之故也。天福五年夏，卒于任。赠太师。
 </p><p>史臣曰：在礼之起甘陵也，当鼎革之期，会富贵来逼，既因人成事，亦何足自多。及其仗钺拥旄，积财败德，货之为累，可不诫乎！全节之佐晋氏也，平安陆之妖，预宗城之战，功既茂矣，贵亦宜然。张筠历事累朝，享兹介福，盖近代之幸人也。自温琪而下，皆服冕乘轩，苴茅焘土，垂名汗简，咏亦宜焉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十五章-列传四-原文.html'>第十五章-列传四</a></p><p class='next'>下一节：<a href='第十七章-列传六-原文.html'>第十七章-列传六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十五章-列传四-原文.html'>第十五章-列传四</a></p><p class='next'>下一节：<a href='第十七章-列传六-原文.html'>第十七章-列传六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

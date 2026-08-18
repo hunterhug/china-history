@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>元史-志<a href='../元史.html#志'>：目录</a></p>
@@ -239,5 +266,18 @@
 </p><p>诸藩王及军马经过，郡县委积馆劳，并许于应给官物内支遣，随申行省知会，或擅移易齐敛者，禁之。诸郡县非遇圣旨令旨，诸王驸马大臣经过，官吏并免郊迎，妨夺公务，仍不得赆以钱物，按治官常纠察之。诸职官但犯军情违误，受敕官各路就断，受宣官从都省行省处分。其余公罪，各路并不得辄断。
 </p><p>诸部送囚徒，中路所次州县，不寄囚于狱而监收旅舍，以致反禁而亡者，部送官笞二十七，还职本处，防护官笞四十七，就责捕贼，仍通记过名。诸有司各处递至流囚，辄主意故纵者，杖六十七，解职，降先品一等叙，刑部记过。
 </p><p>诸和顾和买，依时置估，对物给价。官吏权家，因缘结揽，营私害公者，罪之。诸有司和买诸物，多余估计，分受其价者，准盗官钱论，不分受，以冒估多寡论。监临及当该官吏诡名中纳者，物价全没之。克落价钞者，准不枉法赃论。不即支价者，台宪官纠之。诸职官辄以亲故人事之物，为散之民，鸠敛钱财者，计其时直，以余利为坐，减不枉法赃二等科罪，钱物各归其主。诸职官私用民力者，笞二十七，记过，追顾直给其民。诸克除所属官吏俸钱，为公用及备进上礼物，既去职者，并勿论。诸在任官敛属吏俸赠去官者，笞四十七，还职。诸职官辄借骑所部内驿马者，笞三十七，降先职一等叙，记过。诸职官于所部非亲故及理应往复之家，辄行庆吊之礼者，禁之。违者罪之。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十四章-卷五十四-原文.html'>第五十四章-卷五十四</a></p><p class='next'>下一节：<a href='第五十六章-卷五十六-原文.html'>第五十六章-卷五十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五十四章-卷五十四-原文.html'>第五十四章-卷五十四</a></p><p class='next'>下一节：<a href='第五十六章-卷五十六-原文.html'>第五十六章-卷五十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

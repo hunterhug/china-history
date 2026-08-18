@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -204,5 +231,18 @@
 </p><p>道亨贞亮有守。自参政至尚书，不以家累自随，一苍头执爨而已。崇祯初，赠太子少保，谥清襄。
 </p><p>子弘绪，字士业。为晋州知州，以文名。
 </p><p>赞曰：光、熹之际，朝廷多故，又承神宗颓废之余，政体怠弛，六曹罔修厥职。周嘉谟、张问达诸人，恳恳奉公，《诗》所称“不懈于位”者，盖庶几焉。汪应蛟持国计，谨出纳，水田之议，凿凿可见施行。孙玮请登用善类，钟羽正请禁馈遗，韪哉，救时之良规也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百二十八章-卷一百二十八-原文.html'>第一百二十八章-卷一百二十八</a></p><p class='next'>下一节：<a href='第一百三十章-卷一百三十-原文.html'>第一百三十章-卷一百三十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百二十八章-卷一百二十八-原文.html'>第一百二十八章-卷一百二十八</a></p><p class='next'>下一节：<a href='第一百三十章-卷一百三十-原文.html'>第一百三十章-卷一百三十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

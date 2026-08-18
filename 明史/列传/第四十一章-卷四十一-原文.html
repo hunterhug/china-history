@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -189,5 +216,18 @@
 </p><p>性机警。钱谷钜万，一屈指无遗算。尝阴为册记阴晴风雨。或言某日江中遇风失米，忱言是日江中无风，其人惊服。有奸民故乱其旧案尝之。忱曰：“汝以某时就我决事，我为汝断理，敢相绐耶？”三殿重建，诏征牛胶万斤，为彩绘用。忱适赴京，言库贮牛皮，岁久朽腐，请出煎胶，俟归市皮偿库。土木之变，当国者议，欲焚通州仓，绝寇资。忱适议事至，言仓米数百万，可充京军一岁饷，令自往取，则立尽，何至遂付煨烬。顷之，诏趣造盔甲数百万。忱计明盔浴铁工多，令且沃锡，数日毕办。
 </p><p>忱既被劾，帝命李敏代之，敕无轻易忱法。然自是户部括所积余米为公赋，储备萧然。其后吴大饥，道殣相望，课逋如故矣。民益思忱不已，即生祠处处祀之。景泰四年十月卒。谥文襄。况锺等自有传。
 </p><p>赞曰：宋礼、陈瑄治河通运道，为国家经久计，生民被泽无穷。周忱治财赋，民不扰而廪有余羡。此无他故，殚公心以体国，而才力足以济之。诚异夫造端兴事，徼一时之功，智笼巧取，为科敛之术者也。然河渠之利，世享其成，而忱之良法美意，未几而澌灭无余，民用重困。岂非成功之有迹者易以循，而用法之因人者难其继哉。虽然，见小利而乐纷更，不能不为当日之哓哓者惜也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十章-卷四十-原文.html'>第四十章-卷四十</a></p><p class='next'>下一节：<a href='第四十二章-卷四十二-原文.html'>第四十二章-卷四十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十章-卷四十-原文.html'>第四十章-卷四十</a></p><p class='next'>下一节：<a href='第四十二章-卷四十二-原文.html'>第四十二章-卷四十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

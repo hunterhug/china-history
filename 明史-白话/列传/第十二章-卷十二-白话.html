@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -164,5 +191,18 @@
 </p><p>梁王把匝剌瓦尔密，是元世祖第五子云南王忽哥赤的后代。受封梁王，仍镇守云南。顺帝之时，天下多事，云南地处偏远，梁王抚治，既有威望，且有实绩。至正二十三年(1363)，明玉珍在蜀僭称皇帝，分兵三路进攻云南，梁王撤走，驻扎金马山。第二年率大理军队迎战，明玉珍军兵败而退。久而久之，顺帝北逃，大都失守，中原已无元朝寸尺之地，而梁王仍在云南驻守自如；每年派遣使者自塞外前去元帝行在所，保持臣节如故。
 </p><p>不久，明军平定四川，天下大定。太祖因云南地势险要，又相隔遥远，不想用兵。第二年正月，北平守将将所俘梁王派往漠北的使者苏成献送太祖，太祖于是命待制王..携带诏书，偕同苏成前去招降梁王。梁王对王..以礼相待。正巧元朝嗣君派使臣脱脱前来征饷，脱脱怀疑梁王另有他意，因此对他进行恐吓和威胁。梁王于是杀死王..，以礼殓葬。三年过后，太祖又派遣湖广参政吴云偕同大军所获云南使臣铁知院等前往。铁知院因为自己奉命出使而被俘，因此引诱吴云更改诏书哄骗梁王，吴云不从而被杀。梁王获悉吴云去世，便收其尸骨，送往蜀之给孤寺。
 </p><p>太祖知道梁王始终不可以招降，便命傅友德为征南将军，蓝玉、沐英为副将军，率军征讨。洪武十四年(1381)十二月明军攻下普定。梁王派司徒平章达里麻率军驻守曲靖。沐英率军迅速靠近，乘着浓雾，抵达白石江。雾散之后，达里麻见此情形，大惊失色。傅友德等率军进击，达里麻兵溃被擒。在此之前，梁王将女儿许配大理酋长段得功为妻，曾经依靠他的兵力，后因疑心而处死段得功，于是失去大理之援。现在达里麻战败，丧失精兵十余万。梁王知道抵挡不住，便逃往普宁州的忽纳砦，焚毁龙衣，驱赶妻儿投滇池而死。然后与左丞达的、右丞驴儿夜入草屋，都上吊而死。太祖将其家属迁居耽罗。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十一章-卷十一-白话.html'>第十一章-卷十一</a></p><p class='next'>下一节：<a href='第十三章-卷十三-白话.html'>第十三章-卷十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十一章-卷十一-白话.html'>第十一章-卷十一</a></p><p class='next'>下一节：<a href='第十三章-卷十三-白话.html'>第十三章-卷十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

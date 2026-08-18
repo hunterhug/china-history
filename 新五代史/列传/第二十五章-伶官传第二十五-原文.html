@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-列传<a href='../新五代史.html#列传'>：目录</a></p>
@@ -159,5 +186,18 @@
 </p><p>史彦琼者，为武德使，居鄴都，而魏博六州之政皆决彦琼，自留守王正言而下，皆俯首承事之。是时，郭崇韬以无罪见杀于蜀，天下未知其死也，第见京师杀其诸子，因相传曰：“崇韬杀魏王继岌而自王于蜀矣，以故族其家。”鄴人闻之，方疑惑。已而硃友谦又见杀。友谦子廷徽为澶州刺史，有诏彦琼使杀之，彦琼秘其事，夜半驰出城。鄴人见彦琼无故夜驰出，因惊传曰：“刘皇后怒崇韬之杀继岌也，已弑帝而自立，急召彦琼计事。”鄴都大恐。贝州人有来鄴者，传引语以归。戍卒皇甫晖闻之，由此劫赵在礼作乱。在礼已至馆陶，鄴都巡检使孙鐸，见彦琼求兵御贼，彦琼不肯与，曰：“贼未至，至而给兵岂晚邪？”已而贼至，彦琼以兵登北门，闻贼呼声，大恐，弃其兵而走，单骑归于京师。在礼由是得入于鄴以成其叛乱者，由彦琼启而纵之也。
 </p><p>郭门高者，名从谦，门高其优名也。虽以优进，而尝有军功，故以为从马直指挥使。从马直，盖亲军也。从谦以姓郭，拜崇韬为叔父，而皇弟存乂又以从谦为养子。崇韬死，存乂见囚，从谦置酒军中，愤然流涕，称此二人之冤。是时，从马直军士王温宿卫禁中，夜谋乱，事觉被诛。庄宗戏从谦曰：“汝党存乂、崇韬负我，又教王温反。复欲何为乎？”从谦恐，退而激其军士曰：“罄尔之赀，食肉而饮酒，无为后日计也。”军士问其故，从谦因曰：“上以王温故，俟破鄴，尽坑尔曹。”军士信之，皆欲为乱。李嗣源兵反，向京师，庄宗东幸汴州，而嗣源先入。庄宗至万胜，不得进而还，军士离散，尚有二万馀人。居数日，庄宗复东幸汜水，谋扼关以为拒。四月丁亥朔，朝群臣于中兴殿，宰相对三刻罢。从驾黄甲马军阵于宣仁门、步军阵于五凤门以俟。庄宗入食内殿，从谦自营中露刃注矢，驰攻兴教门，与黄甲军相射。庄宗闻乱，率诸王卫士击乱兵出门。乱兵纵火焚门，缘城而入，庄宗击杀数十百人。乱兵从楼上射帝，帝伤重，踣于绛霄殿廊下，自皇后、诸王左右皆奔走。至午时，帝崩，五坊人善友聚乐器而焚之。嗣源入洛，得其骨，葬新安之雍陵。以从谦为景州刺史，已而杀之。
 </p><p>《传》曰：“君以此始，必以此终。”庄宗好伶，而弑于门高，焚以乐器。可不信哉！可不戒哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十四章-义兒传第二十四-原文.html'>第二十四章-义兒传第二十四</a></p><p class='next'>下一节：<a href='第二十六章-宦者传第二十六-原文.html'>第二十六章-宦者传第二十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十四章-义兒传第二十四-原文.html'>第二十四章-义兒传第二十四</a></p><p class='next'>下一节：<a href='第二十六章-宦者传第二十六-原文.html'>第二十六章-宦者传第二十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

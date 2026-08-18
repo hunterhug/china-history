@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -171,5 +198,18 @@
 </p><p>罗复仁，吉水人。少年时就爱好学习，陈友谅征召他为编修。不久，知友谅无成，逃去。在九江谒见了太祖，被留在左右。从战鄱阳，带着蜡书谕降江西还没攻下的诸郡。授予中书咨议。从大军围攻武昌。太祖想招降陈理，因复仁是陈友谅的旧臣，派他入城劝降，并说“：陈理如果来降，将令他不失富贵。”复仁顿首说“：如陈氏遗孤得以保全性命，让为臣不在将来某日食言，为臣就是死了也无遗憾。”太祖说：“你去吧，我不会误你。”复仁到城下，号恸者终日。陈理把复仁吊入城中。见到陈理后大哭，陈说了太祖的意思，并说：“明军所到之处无不攻克，不投降将会被屠城，城中的居民又有什么罪？”陈理听从复仁的功告，率部下出降。
 </p><p>晋升为国子助教，因年老特恩赐乘小车出入。每次宴会，恩赐坐位和饮食。不久，再次出使扩廓。以前的使者大多被拘留。复仁议论慷慨，独自得以返回。洪武元年(1368)，提升为编修，再次偕同主事张福前往安南晓谕归还占城的侵地。安南奉诏，赐给复仁金、贝、土产十分丰厚，复仁推却不受。太祖听说后认为他贤良。
 </p><p>三年(1370)设置弘文馆，任命复仁为学士，与刘基同位。复仁在太祖面前直率地陈述得失，曾操南方口音。太祖欣赏他朴直，称他为“老实罗”。曾经亲临他的房舍，位于城外的偏僻小巷，复仁正在粉刷墙壁，连忙叫妻子拿来小凳给太祖坐。太祖说“：贤士怎么适宜居住在这里？”于是恩赐房屋于城中。天寿节制《水龙吟》一阕献上。太祖十分高兴，赏赐十分丰厚。不久请求辞职。阶下辞行，赐给大布衣，在衣襟上题诗褒奖赞美。不久，又召他至京师，上奏减免江西的秋粮。得到许可。居留三个月，赐给玉带、铁拄杖、坐墩、裘马、食具返回，寿终正寝。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十四章-卷二十四-白话.html'>第二十四章-卷二十四</a></p><p class='next'>下一节：<a href='第二十六章-卷二十六-白话.html'>第二十六章-卷二十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十四章-卷二十四-白话.html'>第二十四章-卷二十四</a></p><p class='next'>下一节：<a href='第二十六章-卷二十六-白话.html'>第二十六章-卷二十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

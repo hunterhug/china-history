@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新唐书-志<a href='../新唐书.html#志'>：目录</a></p>
@@ -184,5 +211,18 @@
 </p><p>沂州琅邪郡，上。土贡：紫石、钟乳。户三万三千五百一十。口十九万五千七百三十七。县五：临沂，上。武德四年析置兰山、临汴、昌乐三县，六年皆省。费，上。贞观元年省颛臾县入焉。丞，上。本兰陵，武德四年以县置鄫州，更名，别置兰陵、鄫城二县。贞观元年州废，省兰陵、鄫城，以丞来属。有铁；有陂十三，畜水溉田，皆贞观以来筑。沂水，上。武德五年以沂水、新泰、莒置莒州。贞观八年州废，以莒隶密州，沂水、新泰来属。有铜；有沂山、龙山；北有穆陵关。新泰。上。有蒙山。
 </p><p>密州高密郡，上。土贡：赀布、海蛤、牛黄。户二万八千二百九十二，口十四万六千五百二十四。县四：诸城，上。有盐。辅唐，上。本安丘，武德六年省郚城县入焉。乾元二年更名。高密，上。武德三年置，六年省胶西县入焉。莒。上。有盐。
 </p><p>右河南采访使，治汴州。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十七章-卷二十七-原文.html'>第二十七章-卷二十七</a></p><p class='next'>下一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十七章-卷二十七-原文.html'>第二十七章-卷二十七</a></p><p class='next'>下一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -206,5 +233,18 @@
 </p><p>同敞有文武材，意气慷慨。每出师，辄跃马为诸将先。或败奔，同敞危坐不去，诸将复还战，或取胜。军中以是服同敞。大将王永祚等久围永州，大兵赴救，胡一青率众迎敌，战败。同敞驰至全州，檄杨国栋兵策应，乃解去。顺治七年，大兵破严关，诸将尽弃桂林走。城中虚无人，独式耜端坐府中。适同敞自灵川至，见式耜。式耜曰：“我为留守，当死此。子无城守责，盍去诸？”同敞正色曰：“昔人耻独为君子，公顾不许同敞共死乎？”式耜喜，取酒与饮，明烛达旦。侵晨被执，谕之降，不从。令为僧，亦不从。乃幽之民舍。虽异室，声息相闻，两人日赋诗倡和。阅四十余日，整衣冠就刃，颜色不变。既死，同敞尸植立，首坠跃而前者三，人皆辟易。
 </p><p>而居正第五子允修，字建初，荫尚宝丞。崇祯十七年正月，张献忠掠荆州，允修题诗于壁，不食而死。
 </p><p>赞曰：徐阶以恭勤结主知，器量深沉。虽任智数，要为不失其正。高拱才略自许，负气凌人。及为冯保所逐，柴车即路。倾辄相寻，有自来已。张居正通识时变，勇于任事。神宗初政，起衰振隳，不可谓非干济才。而威柄之操，几于震主，卒致祸发身后。《书》曰“臣罔以宠利居成功”，可弗戒哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百章-卷一百-原文.html'>第一百章-卷一百</a></p><p class='next'>下一节：<a href='第一百零二章-卷一百零二-原文.html'>第一百零二章-卷一百零二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百章-卷一百-原文.html'>第一百章-卷一百</a></p><p class='next'>下一节：<a href='第一百零二章-卷一百零二-原文.html'>第一百零二章-卷一百零二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

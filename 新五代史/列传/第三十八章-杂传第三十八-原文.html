@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-列传<a href='../新五代史.html#列传'>：目录</a></p>
@@ -168,5 +195,18 @@
 </p><p>初，昶遣其秦州节度使高处俦以兵援环，未至，闻堂仓兵败，亦溃归，处俦判官赵玭闭城不内，处俦遂奔成都，玭乃以城降，成、阶二州相继亦降，独环坚守百馀日，然后克之。世宗召见环，叹曰：“三州已降，环独坚守，吾数以书招之，而环不答，至于力屈就擒，虽不能死，亦忠其所事也，用之可劝事君者。”乃拜环右骁卫将军。是时，周师已征淮，即以环佐侯章为攻取贼城水砦副部署。初，周师南征，李景陈兵于淮，舟楫甚盛，周师无水战之具，世宗患之，乃置造船务于京城之西，为战舰数百艘，得景降卒，教之水战。明年，世宗再征淮，使环将水战卒数千，自蔡河以入淮。环居军中，未尝有战功。蜀卒与环俱擒者，世宗不杀，悉以从军，后多南奔于景，世宗待环益不疑。已而景将许文缜、边镐等皆被擒，世宗悉以为将军，与环等列第京师，岁时赐与甚厚。明年又幸淮南，又以环从，遇疾，卒于泗州。
 </p><p>○折从阮
 </p><p>折从阮，字可久，初名从远，避汉高祖名，改为阮，云中人也。其父嗣伦，为麟州刺史。从阮为人，温恭长者，居父丧，以孝闻。唐庄宗镇太原，以为牙将，后以为府州刺史。晋出帝与契丹败盟，从阮以兵攻契丹，取其城堡十馀，迁本州团练使，兼领朔州刺史、安北都护、振武军节度使、契丹西南面行营马步军都虞候。汉高祖入立，于府州建永安军，以从阮为节度使。明年，以其族朝京师，徙镇武胜，即拜从阮子德扆为府州团练使。周太祖入立，从阮历徙宣义、保义、静难三镇。显德二年，罢还京师，行至洛阳卒，赠中书令。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十七章-杂传第三十七-原文.html'>第三十七章-杂传第三十七</a></p><p class='next'>下一节：<a href='第三十九章-杂传第三十九-原文.html'>第三十九章-杂传第三十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十七章-杂传第三十七-原文.html'>第三十七章-杂传第三十七</a></p><p class='next'>下一节：<a href='第三十九章-杂传第三十九-原文.html'>第三十九章-杂传第三十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

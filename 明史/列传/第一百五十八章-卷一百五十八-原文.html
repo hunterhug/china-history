@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -195,5 +222,18 @@
 </p><p>十五年夏，中原盗益炽。在田上疏曰：“臣以石屏世弁，因流氛震陵，奋激国难，捐赀募精卒九千五百，战象四，战马二千，入楚、豫破贼。贼不敢窥江北陵寝，滇兵有力焉。五载捷二十有八，忌口中阻，逼臣病归。自臣罢，亲藩辱，名城屡陷。臣妄谓讨寇必须南兵。盖诸将所统多乌合，遇寇即逃，乏饷即噪。滇兵万里长驱，家人父子同志，非若他军易溃也。且一岁中，秋冬气凉，贼得驰骋。春夏即入山避暑，养锐而出，故其气益盛。夫平原战既不胜，山蹊又莫敢撄，师老财殚，荡平何日。滇兵轻走远跳，善搜山。臣愿整万众，力扫秦、楚、豫、皖诸寇，不灭不止。望速给行粮，沿途接济。臣誓捐躯报国，言而不效，甘伏斧钅质。”帝壮之，下兵部议，寝不行。
 </p><p>逾二载，乙酉八月，吾必奎叛。黔国公沐天波檄在田及宁州土知州禄永命协讨，击擒之。未几，沙定洲作乱，据云南府，在田不敢击。明年，定州攻在田不下，移攻宁州，寻陷嶍峨，在田走大理。又明年，孙可望等至贵州，在田说令攻定洲，定洲迄破灭。在田归，卒于家。
 </p><p>赞曰：马世龙等值边陲多事，奋其勇略，著绩戎行，或捐躯力战，身膏原野，可谓无忝爪牙之任矣。夫摧锋陷敌，宿将犹难，而秦良玉一土舍妇人，提兵裹粮，崎岖转斗，其急公赴义有足多者。彼仗钺临戎，缩朒观望者，视此能无愧乎！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百五十七章-卷一百五十七-原文.html'>第一百五十七章-卷一百五十七</a></p><p class='next'>下一节：<a href='第一百五十九章-卷一百五十九-原文.html'>第一百五十九章-卷一百五十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百五十七章-卷一百五十七-原文.html'>第一百五十七章-卷一百五十七</a></p><p class='next'>下一节：<a href='第一百五十九章-卷一百五十九-原文.html'>第一百五十九章-卷一百五十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

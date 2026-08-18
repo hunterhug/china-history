@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -211,5 +238,18 @@
 </p><p>寇犯延绥、大同，世忠言：“国初设七十二卫，军士不下百万。近军政日坏，精卒不能得一二万人。此兵足忧也。太仓之储，本以备军。近支费日广，移用日多。倘兴师十万，犒赐无所取给。此食足忧也。正统己巳之变尚有石亨、杨洪，迩所用李杲、阮兴、赵昶、刘淮之属，先后皆败。今王玺、马昇又以失事告。此将帅足忧也。国家多事，大臣有以镇之。迩者忠正多斥，贪庸获存。既鲜匡济之才，又昧去就之节，安能慑强敌壮国势乎？此任人足忧也。政多舛乖，民日咨怨。京军敝力役，京民苦催科，畿甸觊恩尤切。顾使不乐其生至此，临难谁与死守？此民心足忧也。天变屡征，火患频发。云南地震压万余家，大同马灾踣二千匹。此天意足忧也。愿顺好恶以收人心，肃念虑以回天意，遣文武重臣经略宣、大，以饬边防。策免诸臣不肖者，而起素有才望，如何乔新、刘大夏、倪岳、戴珊、张敷华、林俊诸人，以任国事。则贼将望风远循，而边境可无忧矣。”帝以言多诋毁，切责之。寻乞大同增置台堡，以闲田给军耕垦，不征其税。江西岁饥盗起，请简巡抚，黜有司贪残者。又请筑京师外城。所司多从其议。再迁吏科左给事中，擢湖广参议，坐事降山东佥事。
 </p><p>正德四年闰九月召为光禄少卿，旋改尚宝司卿。其年冬，与通政丛兰等出理边屯，世忠往蓟州。明年奏言：“占种盗卖，积弊已久。若一一究问，恐人情不安，请量为处分。”从之。刘瑾败，言官劾其尝请清核屯田，助瑾为虐。世忠故方鲠，朝议宽之，得免。再迁大理少卿。八年擢右佥都御史巡抚延绥。寇在河套，逐之失利，乃引疾归。
 </p><p>赞曰：明至英宗以后，幸门日开。传奉请乞，官冗役繁，用度奓汰，盛极孽衰，国计坐绌。李敏诸人斤斤为国惜财，抵抗近幸，以求纾民。然涓滴之助，无补漏卮。国家当承平殷阜之世，侈心易萌。近习乘之，糜费日广。《易》曰：“节以制度，不伤财，不害民”，又曰“不节若，则嗟若”，此恭俭之主所为凛凛也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十二章-卷七十二-原文.html'>第七十二章-卷七十二</a></p><p class='next'>下一节：<a href='第七十四章-卷七十四-原文.html'>第七十四章-卷七十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七十二章-卷七十二-原文.html'>第七十二章-卷七十二</a></p><p class='next'>下一节：<a href='第七十四章-卷七十四-原文.html'>第七十四章-卷七十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

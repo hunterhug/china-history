@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后汉<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -159,5 +186,18 @@
 </p><p>十二月六日，御驾离开邺都返回京城，十三日，从邺都到达京城。十四日，因为皇太子、开封府尹刘承训去世停止上朝三天，追封为魏王。十七日，高祖在太平宫举行哀悼。二十日，司徒李钅..去世。二十八日，宿州报告，宿州被饿死的有八百六十七人。
 </p><p>乾祐元年(948)正月一日，高祖没接受朝拜祝贺。五日，颁布诏令说：“太赦天下，改天福十三年为乾..元年，在正月五日黎明以前，犯了罪的除了十恶五逆外，无论罪行的轻重，全部赦免释放。”九日，高祖将御名改为詗。十一日，以前邓州节度使、燕国公冯道担任主太师，进封为齐国公。十四日，高祖生病。二十日，高祖在万岁殿驾崩，这时年龄五十四岁，封闭消息不发布讣告。三十日，太傅杜重威被诛杀。
 </p><p>二月一日，朝廷下达高祖遗令，皇子、周王刘承..可在高祖灵柩前登皇帝位。同日发布讣告。同年三月，太常卿张昭进上高祖谥号叫睿文圣武昭肃孝皇帝，庙号叫高祖。十一月二十七日，葬在睿陵，宰臣禹王圭在迁葬时撰写了赞扬高祖功德的韵文。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-高祖纪上-白话.html'>第一章-高祖纪上</a></p><p class='next'>下一节：<a href='第三章-隐帝纪上-白话.html'>第三章-隐帝纪上</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-高祖纪上-白话.html'>第一章-高祖纪上</a></p><p class='next'>下一节：<a href='第三章-隐帝纪上-白话.html'>第三章-隐帝纪上</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

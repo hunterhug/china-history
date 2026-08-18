@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#列传'>：目录</a></p>
@@ -201,5 +228,18 @@
 </p><p>及义兵起，嘉随更始征伐。汉军之败小长安也。嘉妻子遇害。更始即位，以为偏将军。及攻破宛，封兴德侯，迁大将军。击延岑于冠军，降之。更始既都长安，以嘉为汉中王、扶威大将军，持节就国，都于南郑，众数十万。建武二年，延岑复反，攻汉中，围南郑，嘉兵败走。岑遂定汉中，进兵武都，为更始柱功侯李宝所破。岑走天水，公孙述遣将侯丹取南郑。嘉收散卒，得数万人，以宝为相，从武都南击侯丹，不利，还军河池、下辨。复与延岑连战，岑引北入散关，至陈仓，嘉追击破之。更始邓王廖湛将赤眉十八万攻嘉，嘉与战于谷口，大破之。嘉手杀湛，遂到云阳就谷。
 </p><p>李宝等闻邓禹西征，拥兵自守，马嘉且观成败。光武闻之，告禹曰：&quot;孝孙素谨善，少且亲爱，当是长安轻薄儿误之耳。&quot;禹即宣帝旨，嘉乃因来歙诣禹于云阳。三年，到洛阳，从征伐，拜为千乘太守。六年，病，上书乞骸骨，征诣京师。十三年，封为顺阳侯。秋，复封嘉子廧为黄李侯。十五年，嘉卒。子参嗣，有罪，削为南乡侯。永平中，参为城门校尉。参卒，子循嗣。循卒，子章嗣。
 </p><p>赞曰：齐武沉雄，义戈乘风。仓卒匪图，亡我天工。城阳早协，赵孝晚同。泗水三侯，或恩或功。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章-隗嚣公孙述列传-原文.html'>第三章-隗嚣公孙述列传</a></p><p class='next'>下一节：<a href='第五章-李王邓来列传-原文.html'>第五章-李王邓来列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三章-隗嚣公孙述列传-原文.html'>第三章-隗嚣公孙述列传</a></p><p class='next'>下一节：<a href='第五章-李王邓来列传-原文.html'>第五章-李王邓来列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

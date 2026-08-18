@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>宋书-志<a href='../宋书.html#宋书'>：目录</a></p>
@@ -445,5 +472,18 @@
 </p><p>《石流篇》
 </p><p>石上细水缓缓流，流时泛起湔湔波。发源深山出幽谷，源源不绝入长河．看那不息长流水。岁月同逝去不停。壬迂在Ji!上观流水，徒增悲叹感伤情。叹我心中重重忧，日夜辛劳不得休。生此乱世逢灾祸，空有抱负志难酬。人生短促倏忽过，辛劳忙碌度一生。一旦身死离人世，感伤此身事无成。幸遇亨通安泰时，沐浴恩德转嘉运。悠闲自在度余年，安居乐业又何恨。古代之人寻仁德，自己努力求诸己。虚情仰慕不施行，最终衹是徒然矣。
 </p><p>《圣人制礼乐》一篇，巾舞歌一篇，按《景枯广乐记》说，字讹误很多，表声字和文辞混杂．塞鼓吹铙歌四篇，以前的史书说，文字意义不可理解。漠鼓吹铙歌十八篇，按《古今乐录》，说歌辞中表声字、文辞以及楚地歌谣中的俗字互相混杂，没有办法再分辨。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十一章-卷二十一-白话.html'>第十一章-卷二十一</a></p><p class='next'>下一节：<a href='第十三章-卷二十三-白话.html'>第十三章-卷二十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十一章-卷二十一-白话.html'>第十一章-卷二十一</a></p><p class='next'>下一节：<a href='第十三章-卷二十三-白话.html'>第十三章-卷二十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

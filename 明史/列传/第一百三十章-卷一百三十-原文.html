@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -203,5 +230,18 @@
 </p><p>天启四年，赵南星为尚书，起为文选郎中。甫视事，魏忠贤欲逐南星，假廷推谢应祥事矫旨切责。南星时与推应祥者，员外郎夏嘉遇，非光前也。光前抗疏争之，曰：“南星人品事业昭灼人耳目，忽奉严旨责以不公忠，臣窃惑之。选郎，诸曹领袖，尚书臂指，南星所甄别进退，臣实佐之。功罪与共，乞先赐罢斥。”亦被旨切责。未几，以推乔允升等代南星，忤忠贤意，削侍郎陈于廷及杨涟、左光斗籍。光前又抗疏曰：“会推尚书，于廷主议，臣执笔，谨席稿待罪。”遂贬三秩，调外任。
 </p><p>光前操行清严，峻却请谒。知县石三畏赃私狼籍，得奥援，将授台谏，光前出之为王官，其党咸侧目。明年，光前兄右布政使光缙治兵遵化，为奄党门克新所劾，亦削籍。兄弟并以忤奄去，见称于世。崇祯元年，起光禄少卿，不赴。三年，起太常。已，进大理少卿。累疏乞休，及家而卒。
 </p><p>赞曰：朝政弛，则士大夫腾空言而少实用。若陈邦瞻、毕懋康、翟凤翀、董应举，尚思有所建立，惜不逢明作之朝，故所表见止此耳。萧近高、洪文衡诸人皆以清素自矢，白瑜论郑氏狱能持平，固卿贰之铮铮者欤。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百二十九章-卷一百二十九-原文.html'>第一百二十九章-卷一百二十九</a></p><p class='next'>下一节：<a href='第一百三十一章-卷一百三十一-原文.html'>第一百三十一章-卷一百三十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百二十九章-卷一百二十九-原文.html'>第一百二十九章-卷一百二十九</a></p><p class='next'>下一节：<a href='第一百三十一章-卷一百三十一-原文.html'>第一百三十一章-卷一百三十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

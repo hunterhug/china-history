@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-志<a href='../晋书.html#晋书'>：目录</a></p>
@@ -269,5 +296,18 @@
 </p><p>成帝咸康七年，尚书蔡谟上奏：“八年元旦朝会礼节，衹奏钟鼓鼓吹之乐，其余伎乐一律不奏。”侍中张澄、给事黄门侍郎陈逵则加以反驳，认为“王者视时设教，至于吉凶异断，那是不变的道理。今四方各国都来观礼，陵园设有敬悼祖宗之位，庭奏宫悬礼乐，二礼兼用，哀乐不分，建国设制，莫大于此”。皇帝韶曰：“今既以天下为大，礼仪当从权宜，三正合祭宜都用祭祀之礼。至于娱乐耳目之乐，有所不忍听，所以缺少了也无妨。事之大者，不过上寿酒，称万岁，既然承认此事为大，不可再缺少钟鼓鼓吹。”
 </p><p>张澄、陈逵又上奏说：“今大礼虽毕，事亦有吉于朝。然而敬吊显于园陵，则未灭其为哀；礼服定于典籍，其义并非尽为吉庆。所以咸宁朝会，有撤乐之典，实为先朝考核古代典章制度，垂范于万世的典礼。”皇帝诏曰：“如果元旦举行夹祭之礼，万国诸侯朝见天子，庭废钟鼓之乐，就缺少了出入起居的礼节，朝无石磬之音，来宾的步履就失去了节度，其于事义，不也是有欠缺吗!衹有衡量事之轻重，才能做到恰到好处。”
 </p><p>散骑侍郎顾臻上奏说：“我听说圣王制定礼乐制度，是为赞扬正道，教民以仁义，防其怠惰淫佚，上可享祭宗庙，下可训导黎民，含五行之正音，协八方之风以陶冶物情。宫声正方而好义，角声坚定齐整而循礼，弦歌钟鼓金石之乐是很齐备的。因此能深入人心而潜移默化，使人有循礼舞蹈之感，能移风易俗，以达到极和乐的境地。末世的歌舞杂技，多有不符合礼法的表演，如逆行而接连翻倒，头足同入竹筐之类，外则剥损皮肤，内则摧残肝心，拢彼行苇，犹教牛羊勿践，何况生灵，怎能不凄怆悲痛。再说四海诸侯来朝见天子，说要观看帝庭，耳听《雅》《颂》之声，目睹威仪之序，却看到以足踏天，以头行地，逆天地之顺序，有伤人伦常理之大法。今夷狄与我隔岸相对，外御强敌最为急迫，兵食七升，犹忘死以赴国难，而遇甚之戏，却日给五斗。方今正扫荡神州，经略中原，像此类事情，不可以示四海。应令太常，纂集雅乐，如箫《韶》九成之属，以维新于盛世国运，歌功颂德，永远昌明于后世，这才是用以‘燕及皇天，克昌厥后，的大事。诸歌舞杂技而又伤人者，应该一律废除。传扬崇尚俭约的道德，勉励安国康民的咏唱，清风既行，下应如草，说的就是这个道理。愚臣管见之诚，惟望明察采纳。”于是废除《高垣》、《紫鹿》、《肢行》、《瞳食》以及《齐王卷衣》、《笮儿》等乐，并减其廪食。其后又恢复《高桓》、《紫鹿》。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十二章--白话.html'>第十二章-</a></p><p class='next'>下一节：<a href='第十四章--白话.html'>第十四章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十二章--白话.html'>第十二章-</a></p><p class='next'>下一节：<a href='第十四章--白话.html'>第十四章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

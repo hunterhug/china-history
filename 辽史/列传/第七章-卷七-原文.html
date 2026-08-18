@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#列传'>：目录</a></p>
@@ -162,5 +189,18 @@
 </p><p>耶律挞烈，字涅鲁衮，六院部郎君甗古直之后。沉厚多智，有任重才。年四十未仕。会同间，为边部令稳。应历初，升南院大王，均赋役，劝耕稼，部人化之，户口丰殖。时周人侵汉，以挞烈都统西南道军援之。周已下太原数城，汉人不敢战。及闻挞烈兵至，周主遣郭从义、尚钧等率精骑拒于忻口。挞烈击败之，获其将史彦超，周军遁归，复所陷城邑，汉主诣挞烈谢。及汉主殂，宋师来伐，上命挞烈为行军都统，发诸道兵救之。既出雁门，宋谍知而退。保宁元年，加兼政事令，致政。乾亨初，召之。上见须发皓然，精力犹健，问以政事，厚礼之。以疾薨，年七十九。
 </p><p>挞烈凡用兵，赏罚信明，得士卒心。河东单弱，不为周、宋所并者，挞烈有力焉。在治所不修边幅，百姓无称，年谷屡稔。时耶律屋质居北院，挞烈居南院，俱有政迹，朝议以为“富民大王”云。
 </p><p>赞曰：立嗣以嫡，礼也。太宗崩，非安抟、吼、洼谋而克断，策立世宗，非屋质直而能谏，杜太后之私，折李胡之暴，以成横渡之约，则乱将谁定？四臣者，庶几《春秋》首止之功哉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p><p class='next'>下一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p><p class='next'>下一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

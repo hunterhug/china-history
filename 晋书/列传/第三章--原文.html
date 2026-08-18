@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -221,5 +248,18 @@
 </p><p>孙铄字巨鄴，河内怀人也。少乐为县吏，太守吴奋转以为主簿。铄自微贱登纲纪，时僚大姓犹不与铄同坐。奋大怒，遂荐铄为司隶都官从事。司隶校尉刘讷甚知赏之。时奋又荐铄于大司马石苞，苞辟为掾。铄将应命，行达许昌，会台已密遣轻军袭苞。于时汝阴王镇许，铄过谒之。王先识铄，以乡里之情私告铄曰：“无与祸。”铄即出，即驰诣寿春，为苞画计，苞赖而获免。迁尚书郎，在职驳议十有余事，为当时所称。
 </p><p>史臣曰：若夫经为帝师，郑冲于焉无愧；孝为德本，王祥所以当仁；何曾善其亲而及其亲之党者也。夏禹恭俭，殷因损益。牲牢服用，各有品章，诸侯不恆牛，命士不恆豕。御而骄奢，其关乎治政。乘时立制，莫不由之。石崇学乃多闻，情乖寡悔，超四豪而取富，喻五侯而竞爽。春畦{艹靃}靡，列于凝沍之晨；锦障逶迤，亘以山川之外。撞钟舞女，流宕忘归，至于金谷含悲，吹楼将坠，所谓高蝉处乎轻阴，不知螳良袭其后也。
 </p><p>赞曰：郑冲含素，王祥迟暮。百行斯融，双飞天路。何石殊操，芳饪标奇。帝风流靡，崇心载驰。矜奢不极，寇害成赀。邦分身坠，乐往哀随。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二章--原文.html'>第二章-</a></p><p class='next'>下一节：<a href='第四章--原文.html'>第四章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二章--原文.html'>第二章-</a></p><p class='next'>下一节：<a href='第四章--原文.html'>第四章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

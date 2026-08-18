@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后周<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -168,5 +195,18 @@
 </p><p>十六日，户部侍郎、临时掌管选拔推荐的赵上交报告说：“各科的举人，要按等级次第各加考提问对答的门数，进士除考诗赋以外，另外加试一门其他文章。”太祖答应了。两浙吊祭使、左谏议大夫李知损因过贬授登州司马，作为不在官额之内的员外官，又令他所在地方政府用快马将他贬谪到登州。因为李知损到江、浙履行使命时，经过各州郡，都向州牧郡守强行借贷，被青州知州张凝报告皇上，所以有此任命。十八日，驾临南庄，到水中亭子旁边，看见有两只鸭子在池中嬉戏，太祖拉开弓箭射击它们，一箭射中两只，跟随的臣子都称颂祝贺。十九日，前莱州刺史叶仁鲁被赐死，因为被民众告发的缘故。二十日，诏令枢密使王峻巡视黄河堤岸，是王峻请求去巡视，所以答应他。三十日，驾临南庄。
 </p><p>闰一月三日，朗州刘言、潭州王进逵报告，广州贼寇占据桂管，深入永州境内搜刮抢劫，于是派朗州行军司马何敬真与指挥使朱全王秀、陈顺等，率领五万水陆大军进击。五日，回鹘派使者进贡地方物产。诏令后梁租庸使赵岩的侄子赵崇勋，现住在陈州，适时赐以官府的店铺住宅，是听从了王峻的请求。十日，定州报告，契丹人进攻义丰军，定州出动精兵夜晚杀向契丹兵营，杀死六十人，契丹人逃走。十三日，镇州报告，契丹人进犯边境，派兵追击，到无极山才回来。十五日，皇子、澶州节度使郭荣来京朝见。二十一日，延州衙内指挥使高绍基报告说：“父亲高允权膝盖得了病，令臣子我临时掌管军政事务。”二十二日，陈州报告：“官吏百姓请求为前任刺史李谷建立祠堂。”高祖答应了。当时李谷已做宰相，听到陈州人的陈述请求，谦让再三，才作罢。二十八日，开封府报告，都城内登记到没有名称的僧尼寺院五十八所。诏令废掉它们。
 </p><p>二月三日，唐州方城县令陈守愚被诛杀弃市，因他克扣民户蚕盐一千五百斤归为己有。内廷制造两座国宝，诏令中书令冯道书写宝文，一座写上“皇帝承天受命之宝”，一座写上“皇帝神宝”。按：传国之宝始自秦始皇，令李斯撰写，历代传授，事迹详见于前代史书。到唐末帝自焚之际，将传国之宝带在身边，于是都被烧掉了。晋高祖称帝后，特制传国宝一座。开运末年，北方契丹进犯京城，晋少帝派他儿子石延煦将国宝送给契丹王，契丹国王惊讶得不相信它是真的，少帝上表详细说明这回事，到契丹国王回归北方时，将传国宝一起带回了契丹。汉朝两任帝王，没有工夫另外制造，至周朝这时才开始制造传国宝。十四日，枢密使、平卢军节度使、尚书左仆射、平章事、监修国史王峻因过贬为商州司马，作为不在官额之内的员外官，令所在官府用快马发遣到商州。十八日，左监门上将军李建崇去世。延州牙内都指挥使高绍基报告，将军府移交给副使张图。十九日，朗州刘言报告，本道先遣行军司马何敬真领兵掩袭广州贼寇，进到潭州时，部下溃逃。湖南王进逵认为何敬真失职，已经砍头示众。二十二日，凤翔少尹桑能因过贬为邓州长史。桑能，是晋代宰相桑维翰的旁支弟弟，因占据桑维翰的其他房产被人告发。二十三日，以户部侍郎、主管选拔科举的赵上交任太子詹事。这一年，新进士中有一个叫李观的人，不该录取做官，舆论哗然。中书门下因为李观所做的诗赋不合押韵要求，勾掉了他的名字，所以赵上交因此调任官职。二十七日，驾幸南庄，赐随从官员射猎。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二章-太祖纪二-白话.html'>第二章-太祖纪二</a></p><p class='next'>下一节：<a href='第四章-太祖纪四-白话.html'>第四章-太祖纪四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二章-太祖纪二-白话.html'>第二章-太祖纪二</a></p><p class='next'>下一节：<a href='第四章-太祖纪四-白话.html'>第四章-太祖纪四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

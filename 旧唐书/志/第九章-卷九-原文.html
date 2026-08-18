@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-志<a href='../旧唐书.html#志'>：目录</a></p>
@@ -180,5 +207,18 @@
 </p><p>伏以俯逼郊天，式修雅乐，必将集事，须务相时。今者帑藏未充，贡奉多阙，凡阙货力，不易方圆，制度之间，亦宜撙节。臣伏惟《仪礼》宫悬之制，陈镈钟二十架，当十二辰之位。甲、丙、庚、壬，各设编钟一架；乙、丁、辛、癸，各设编磬一架，合为二十架。树建鼓于四隅。当乾、坤、艮、巽之位，以象二十四气。宗庙、殿庭、郊丘、社稷，皆用此制，无闻异同。周、汉、魏、晋、宋、齐六朝，并只用二十架。隋氏平陈，检梁故事，乃设三十六架。国初因之不改。高宗皇帝初成蓬莱宫，充庭七十二架，寻乃省之。则簨架数太多，本近于侈。止于二十架，正协礼经。兼今太庙之中，地位甚狭，百官在列，万舞充庭，虽三十六架具存，亦施为不得。庙庭难容，未易开广，乐架不可重沓铺陈。今请依周、汉、魏、晋、宋、齐六代故事，用二十架。
 </p><p>从之。
 </p><p>古制，雅乐宫县之下，编钟四架，十六口。近代用二十四口，正声十二，倍声十二，各有律吕，凡二十四声。登歌一架，亦二十四钟。雅乐沦灭，至是复全。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p><p class='next'>下一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p><p class='next'>下一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

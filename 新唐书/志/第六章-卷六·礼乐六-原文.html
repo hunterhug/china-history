@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新唐书-志<a href='../新唐书.html#志'>：目录</a></p>
@@ -185,5 +212,18 @@
 </p><p>选人年十二以上、十六以下为侲子，假面，赤布袴褶。二十四人为一队，六人为列。执事十二人，赤帻、赤衣，麻鞭。工人二十二人，其一人方相氏，假面，黄金四目，蒙熊皮，黑衣、硃裳，右执楯；其一人为唱帅，假面，皮衣，执棒；鼓、角各十，合为一队。队别鼓吹令一人、太卜令一人，各监所部；巫师二人。以逐恶鬼于禁中。有司预备每门雄鸡及酒，拟于宫城正门、皇城诸门磔攘，设祭。太祝一人，斋郎三人，右校为瘗臽，各于皇城中门外之右。前一日之夕，傩者赴集所，具其器服以待事。
 </p><p>其日未明，诸卫依时刻勒所部，屯门列仗，近仗入陈于阶。鼓吹令帅傩者各集于宫门外。内侍诣皇帝所御殿前奏“侲子备，请逐疫”。出，命寺伯六人，分引傩者于长乐门、永安门以入，至左右上阁，鼓噪以进。方相氏执戈扬楯唱，侲子和，曰：“甲作食凶，胇胃食虎，雄伯食魅，腾简食不祥，揽诸食咎，伯奇食梦，强梁、祖明共食磔死寄生，委隋食观，错断食巨，穷奇、腾根共食蛊，凡使一十二神追恶凶，赫汝躯，拉汝干，节解汝肉，抽汝肺肠，汝不急去，后者为粮。”周呼讫，前后鼓噪而出，诸队各趋顺天门以出，分诣诸城门，出郭而止。
 </p><p>傩者将出，祝布神席，当中门地南向。出讫，宰手、斋郎牲匈磔之神席之西，藉以席，北首。斋郎酌清酒，太祝受，奠之。祝史持版于座右，跪读祝文曰：“维某年岁次月朔日，天子遣太祝臣姓名昭告于太阴之神。”兴，尊版于席，乃举牲并酒瘗于臽。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五·礼乐五-原文.html'>第五章-卷五·礼乐五</a></p><p class='next'>下一节：<a href='第七章-卷七·礼乐七-原文.html'>第七章-卷七·礼乐七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五·礼乐五-原文.html'>第五章-卷五·礼乐五</a></p><p class='next'>下一节：<a href='第七章-卷七·礼乐七-原文.html'>第七章-卷七·礼乐七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

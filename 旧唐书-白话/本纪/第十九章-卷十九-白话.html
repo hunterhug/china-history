@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-本纪<a href='../旧唐书.html#旧唐书'>：目录</a></p>
@@ -413,5 +440,18 @@
 </p><p>文德元年(888)春，正月初一，皇上的车驾到达凤翔。决定追赠已故凤翔陇右节度使、观察处置使、检校司徒、同平章事，兼凤翔尹、上柱国、荥阳郡开国公、食邑三千户郑畋为司徒，追加谥号为文昭。蔡州贼将孙儒在高邮将秦彦、毕师铎斩首。
 </p><p>二月初一为己巳日。二月十四日，皇上的车驾从凤翔抵达京师。魏博军人发生动乱，驱逐其主帅乐彦祯。乐彦祯的儿子、相州刺史乐从训率领部众进攻魏州。他部下的亲军拥立一个叫作罗宗弁的小军官为留后，出兵抗拒他。乐从训向汴州求援，朱全忠派遣部将朱珍渡过黄河前去救援。二月二十日，皇上驾临承天门，下诏大赦天下，改年号为文德。宰相韦昭度兼任司空，孔纬、杜让能加授左、右仆射，晋封阶官开府仪同三司，并赐尊号为“持危启运保..功臣”。张浚兼任兵部尚书，晋封阶官开府仪同三司。左、右神策十军观军容使、左金吾卫上将军、左右街功德使、上柱国、弘农郡开国公杨复恭晋封魏国公，加授食邑七千户，赐尊号为“忠贞启圣定国功臣”。任命保銮都将领、黔中节度使李钅延任检校司徒、平章政事，保銮都将领陈..为检校司空、广州刺史、岭南东道节度使。各藩镇封疆大吏，升职和加俸各不相同。宰臣韦昭度率领文武百官向皇帝敬奉徽号，称为“圣文睿德光武弘孝皇帝”。
 </p><p>三月初一，皇上在正殿接受册书。三月初三，皇上患暴病。三月初五，病情严重。三月初六，宣布：决定册立皇弟寿王李杰为皇太弟，处理军国大事。当天傍晚，皇上在武德殿驾崩，享年二十七岁，群臣敬奉谥号为惠圣恭定孝皇帝，庙号僖宗。当年十二月安葬于靖陵。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十八章-卷十八-白话.html'>第十八章-卷十八</a></p><p class='next'>下一节：<a href='第二十章-卷二十-白话.html'>第二十章-卷二十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十八章-卷十八-白话.html'>第十八章-卷十八</a></p><p class='next'>下一节：<a href='第二十章-卷二十-白话.html'>第二十章-卷二十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

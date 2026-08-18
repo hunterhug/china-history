@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新唐书-志<a href='../新唐书.html#志'>：目录</a></p>
@@ -183,5 +210,18 @@
 </p><p>初，乾元末，天下上计百六十九州，户百九十三万三千一百二十四，不课者百一十七万四千五百九十二；口千六百九十九万三百八十六，不课者千四百六十一万九千五百八十七。减天宝户五百九十八万二千五百八十四，口三千五百九十二万八千七百二十三。
 </p><p>元和中，供岁赋者，浙西、浙东、宣歙、淮南、江西、鄂岳、福建、湖南八道，户百四十四万，比天宝才四之一。兵食于官者八十三万，加天宝三之一，通以二户养一兵。京西北、河北以屯兵广，无上供。至长庆，户三百三十五万，而兵九十九万，率三户以奉一兵。至武宗即位，户二百一十一万四千九百六十。会昌末，户增至四百九十五万五千一百五十一。
 </p><p>宣宗既复河、湟，天下两税、榷酒茶盐钱，岁入九百二十二万缗，岁之常费率少三百余万，有司远取后年乃济。及群盗起，诸镇不复上计云。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十一章-卷四十一-原文.html'>第四十一章-卷四十一</a></p><p class='next'>下一节：<a href='第四十三章-卷四十三-原文.html'>第四十三章-卷四十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十一章-卷四十一-原文.html'>第四十一章-卷四十一</a></p><p class='next'>下一节：<a href='第四十三章-卷四十三-原文.html'>第四十三章-卷四十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-本纪<a href='../金史.html#本纪'>：目录</a></p>
@@ -225,5 +252,18 @@
 </p><p>十一月庚午，左司郎中兀不喝等闻赦，入白东京即位改元事，上拊髀叹曰：“我本欲灭宋后改元大定，岂非天命乎？”出其书示之，即预志改元事也。以劝农使完颜元宜为浙西道兵马都统制，刑部尚书郭安国副之。上驻军江北。遣武平总管阿邻先渡江至南岸，失利。上还和州，遂进兵扬州。甲午，会舟师于瓜洲渡，期以明日渡江。乙未，浙西兵马都统制完颜元宜等军反，帝遇弑，崩，年四十。
 </p><p>海陵在位十余年，每饰情貌以御臣下。却尚食进鹅以示俭，及游猎顿次，不时需索，一鹅一鹑，民间或用数万售之，有以一牛易一鹑者。或以弊衾覆衣，以示近臣。或服补缀，令记注官见之。或取军士陈米饭与尚食同进，先食军士饭几尽。或见民车陷泥泽，令卫士下挽，俟车出然后行。与近臣燕语，辄引古昔贤君以自况。显责大臣，使进直言。使张仲轲辈为谏官，而祁宰竟以直谏死。比昵群小，官赏无度，左右有旷僚者，人或以名呼之，即授以显阶。常置黄金裀褥间，有喜之者，令自取之。而淫嬖不择骨肉，刑杀不问有罪。至营南京宫殿，运一木之费至二千万，牵一车之力至五百人。宫殿之饰，遍傅黄金而后间以五采，金屑飞空如落雪。一殿之费以亿万计，成而复毁，务极华丽。其南征造战舰江上，毁民庐舍以为材，煮死人膏以为油，殚民力如马牛，费财用如土苴，空国以图人国，遂至于败。都督府以其柩置之南京班荆馆。大定二年，降封为海陵郡王，谥曰炀。二月，世宗使小底娄室与南京官迁其柩于宁德宫。四月，葬于大房山鹿门谷诸王兆域中。二十年，熙宗既祔庙，有司奏曰：“炀王之罪未正。准晋赵王伦废惠帝自立，惠帝反正，诛伦，废为庶人。炀帝罪恶过于伦，不当有王对，亦不当在诸王茔域。”乃诏降为海陵庶人，改葬于山陵西南四十里。
 </p><p>赞曰：海陵智足以拒谏，言足以饰非。欲为君则弑其君，欲伐国则弑其母，欲夺人之妻则使之杀其夫。三纲绝矣，何暇他论。至于屠灭宗族，剪刈忠良，妇姑姊妹尽入嫔御。方以三十二总管之兵图一天下，卒之戾气感召，身由恶终，使天下后世称无道主以海陵为首。可不戒哉！可不戒哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -199,5 +226,18 @@
 <p>　　瑰四代孙翔，文宗太和四年，释褐文学参军。 </p>
 <p>　　史臣曰：韦思谦始以州县，奋于烟霄，持纲不避于权豪，报国能忘于妻子。自 强不息，刚毅近仁，信有之矣！高季辅、皇甫公义，可谓知人矣！且福善余庆，不 谓无徵，二子构堂，俱列相辅，文皆经济，政尽明能。加以承庆方危，染翰而曾非 恐悚；嗣立见用，袭封而罔坠逍遥。无忝父风，宁惭祖德，谥温谥孝，何愧易名？ 陆元方博学大度，再践钧衡，当则天时，非有忠贞，应无黜责，绥州之任，抑又何 惭！观其济海无私，狂风自止，临终焚藁，温树始彰。故知正可以动神明，德可以 延家代。象先益高人品，尤著相才，全济有名，孤立无祸。景倩、景融、景献、景 裔等咸居清列，得非有后于鲁乎？苏瑰，孔子云：“居其室，出其言善，则千里之 外应之，况其迩者乎！”又“言行君子之枢机，枢机之发，荣辱之主也”。当中宗 弃代，韦氏夺权，预谋者十有九人，咸生异议，瑰志存大节，独发谠言。其后善恶 显彰，黜陟明著。圣人之言，验于斯矣。颋唯公是相，以俭承家，李峤许之涌泉， 宋璟称其过父。艰难之际，节操不回，善始令终，先后无愧。 </p>
 <p>　　赞曰：善人君子，怀忠秉正。尽富文章，咸推谏诤。岂愧明廷，无惭重柄。子 子孙孙，演承余庆。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十七章-卷三十七-原文.html'>第三十七章-卷三十七</a></p><p class='next'>下一节：<a href='第三十九章-卷三十九-原文.html'>第三十九章-卷三十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十七章-卷三十七-原文.html'>第三十七章-卷三十七</a></p><p class='next'>下一节：<a href='第三十九章-卷三十九-原文.html'>第三十九章-卷三十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

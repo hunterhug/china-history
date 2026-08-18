@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-列传<a href='../新五代史.html#列传'>：目录</a></p>
@@ -185,5 +212,18 @@
 </p><p>明宗诸子八人，至晋出帝时六已亡殁，惟从温、从敏在，太后常曰：“吾惟有一兄，岂可绳之以法！”从温由此益骄。尝诬亲吏薛仁嗣为盗，悉籍没其家赀数千万。仁嗣等诣阙自诉，事下有司，从温具伏。出帝惧伤太后意，释之而不问。开运二年，徙河阳三城，卒于官。
 </p><p>是时从璋子重俊为虢州刺史，坐脏，亦以太后故，罪其判官高献而已。重俊复为商州刺史。坐与其妹奸及杀其仆孙汉荣掠其妻，赐死。
 </p><p>从敏字叔达，为人沉厚寡言，善骑射。初从庄宗为马步军都指挥使兼行军司马，明宗入立，迁皇城使、保义军节度使，与讨王都。历镇横海、义武、成德、归德、保义、昭义、河阳，封泾王。汉高祖时，为西京留守，封秦国公。周广顺元年卒，赠中书令，谥曰恭惠。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二章-唐家人传第二-原文.html'>第二章-唐家人传第二</a></p><p class='next'>下一节：<a href='第四章-唐废帝家人传第四-原文.html'>第四章-唐废帝家人传第四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二章-唐家人传第二-原文.html'>第二章-唐家人传第二</a></p><p class='next'>下一节：<a href='第四章-唐废帝家人传第四-原文.html'>第四章-唐废帝家人传第四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

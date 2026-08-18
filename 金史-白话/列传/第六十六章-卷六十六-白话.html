@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#金史'>：目录</a></p>
@@ -160,5 +187,18 @@
 </p><p>刘焕以监察御史的身份兼辅助户部员外郎。代州钱监在铸钱时掺杂青铜，钱币成色恶劣，类似铁钱。民间偷偷仿造，许多人因此犯罪。朝廷对这件事很忧虑，向尚书省下达命令让讨论对策。刘焕禀奏说“：钱宝应当纯粹用黄铜精心制作，其中加进少量锡。如果青铜可以用来铸造钱币，历代没有理由不用。自从代州按二分和四六分的比例，把青铜和黄铜杂糅铸制钱币，一定是节省铜而且容易造成。由于这个原因，民间偷偷铸钱，犯罪的人很多，这并不是朝廷的本意。一定要为天下的利益考虑，应该规定铸钱纯用黄铜，这样虽然铸得的钱数少而利益长远。那些掺杂青铜铸成的钱已经在市上流行的，应该验收数量收入库，准许拥有的人来兑换。”皇上听从了他的意见。
 </p><p>刘焕再迁任管州刺史，德高望重的老学者几百人共同上疏他的十一件事迹，前往节镇请求留下刘焕继续任职，说“：刘刺史忠于职守，奉公守法，乞请留下他。”刘焕因廉政升任郑州防御使，官升一级，转任同知北京留守事。
 </p><p>世宗巡幸上京，所经过的州郡大力调动民夫整治桥梁马路，企望恩赏，刘焕领导他的部下只是治桥平路使它们处于良好状态而已。皇上嘉奖他的诚意，令迁任辽东路转运使，在任上逝世。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十五章-卷六十五-白话.html'>第六十五章-卷六十五</a></p><p class='next'>下一节：<a href='第六十七章-卷六十七-白话.html'>第六十七章-卷六十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十五章-卷六十五-白话.html'>第六十五章-卷六十五</a></p><p class='next'>下一节：<a href='第六十七章-卷六十七-白话.html'>第六十七章-卷六十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -220,5 +247,18 @@
 </p><p>不久，幼学升为刑部主事，宦官采摘御园果实时，怒杀园夫之母，弃尸河中。幼学如实奏报，将肇事宦官依法处置。嘉兴人袁黄妄自批删《四书》、《书经集注》，名为《删正》，刊行于世。幼学予以驳正，并上疏直言不讳地列论其谬误。幼学的上疏虽被廷臣扣留，但《删正》的刻板全被烧毁。幼学曾以员外郎之职对畿辅罪犯审慎用刑，将案情不明而又值得同情的三百余人全部释放。其后晋升为郎中。
 </p><p>幼学调任湖州知府，一到任便捕杀豪强恶奴。士人之子施敏、某富豪家奴杨升，横行郡中。幼学将施敏下狱，施敏买通权贵，嘱咐巡抚亲自审理，幼学不允，即刻将施敏用棍杖击毙。施敏供词中株连到故尚书潘季驯之子潘廷圭，幼学将此案情告诉御史，上章弹劾，将廷圭逮捕入狱。其他奸豪论罪处死者数十人。唯独杨升畏罪潜逃。幼学想到，若自己离开湖州，杨升必再来逞凶，终于将他逮捕处死。从此一郡太平。湖州阴雨连月，禾苗尽死，幼学施行救荒措施，被赈饥民达三十四万余人。御史准备向朝廷举荐他，收集其政绩，推官阎世科列举了三十六事，上报朝廷。朝廷下诏加官为按察副使，仍管湖州政事。
 </p><p>以后，幼学以副使职总督九江兵备，这时他已七十高龄，其母尚在，故请求辞官归家奉养母亲。母亲去世后他不肯出来任职。天启三年(1623)，朝廷起用他为光禄少卿，又改为太常少卿，他都未赴任。四年逝世，享年八十四岁。中牟县、湖州均建祠纪念他。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百六十八章-卷一百六十八-白话.html'>第一百六十八章-卷一百六十八</a></p><p class='next'>下一节：<a href='第一百七十章-卷一百七十-白话.html'>第一百七十章-卷一百七十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百六十八章-卷一百六十八-白话.html'>第一百六十八章-卷一百六十八</a></p><p class='next'>下一节：<a href='第一百七十章-卷一百七十-白话.html'>第一百七十章-卷一百七十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

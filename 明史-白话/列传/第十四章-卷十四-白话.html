@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -187,5 +214,18 @@
 </p><p>十七年，曲靖亦佐酋长作乱，沐英将其征讨降服。并趁机平定普定、广南诸蛮，打通田州粮道。二十年，平定浪穹蛮族，并奉诏自永宁至大理，每六十里设一堡垒，留下军队屯田。第二年，百夷思伦发反叛，诱使群蛮入侵摩沙勒寨，沐英派遣都督宁正率军将其击败。二十二年，思伦发再次侵犯定边，军队号称三十万。沐英挑选骑兵三万奔往援救，设置三行火炮劲弩。蛮军驱赶百象，身披甲衣，肩扛栏盾，左右挟着大竹筒，筒中装设标枪，锐气十足。沐英将军队分成三路，都督冯诚率领前军，宁正率领左军，都指挥同知汤昭率领右军。即将开战，沐英下令道：“今日之战，有进无退。”于是乘风大呼，炮弩齐发，象都掉头而跑。昔剌亦是蛮寇枭将，他殊死而战，左军稍有退却。沐英登高望见此情形，抽出佩刀，命令左右将左帅首级砍来。左帅见一人握刀奔下，心中恐惧，奋力大呼而突入阵中。大军乘机冲杀，斩首四万余人，生获三十七头象，其余的象全被射死。蛮贼将帅各遭百余箭，伏在象背死去。思伦发逃走，诸蛮深受震慑，麓川从此不再被阻塞。不久，沐英会合颍国公傅友德讨平东川蛮，又平息越州酋长阿资及广西阿赤部。这年冬天，沐英入朝觐见，太祖在奉天殿赐宴招待，赏赐黄金二百两、白金五千两、钞五百锭、彩帛百匹，然后派其返回。辞行之时，太祖亲切地抚摸着沐英说道：“使我对南方能高枕无忧的人，是你沐英啊。”沐英返回滇中后，在景东再败百夷。思伦发乞降，进贡土产。阿资又反叛，沐英率军将其击败。南中全部平定。又派遣使者以兵威谕降诸番，番部有通过翻译辗转前来进贡者。
 </p><p>二十五年六月，沐英获悉皇太子去世，哭得十分伤心。当初，高皇后去世，沐英哭得吐血。到了现在身染疾病，死于滇中，终年四十八岁。军民在里巷间相聚号哭，远处夷族也都为之流涕。沐英归葬京城，追封为黔宁王，谥号昭靖，配享太庙。
 </p><p>沐英深稳刚毅，寡言少笑，喜欢礼贤下士，安抚部卒，恩惠有加，从不妄杀无辜。沐英在滇之时，百事并举，选拔地方官，督促农桑，每年以屯田增减进行赏罚，因而垦田达到百万余亩。滇池狭小，沐英下令将其疏通拓广，使它不再造成水灾。又以盐井之利招来商队，辨别土产以确定贡税，视百姓人数多寡以均摊劳役。凡事井井有条，治理有方，百姓得以安居乐业。沐英在家经常读书，手不释卷，闲暇之时则邀请诸儒生讲解经史。太祖起兵之初，将许多他姓小孩收为养子，攻下郡邑，总是派他们前去驻守，多达二十余人，惟独沐英在西南功勋最大。其子沐春、沐晟、沐昂都镇守云南。沐昕为驸马都尉，娶成祖之女常宁公主为妻。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十三章-卷十三-白话.html'>第十三章-卷十三</a></p><p class='next'>下一节：<a href='第十五章-卷十五-白话.html'>第十五章-卷十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十三章-卷十三-白话.html'>第十三章-卷十三</a></p><p class='next'>下一节：<a href='第十五章-卷十五-白话.html'>第十五章-卷十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -196,5 +223,18 @@
 <p>　　牧从兄忭隆盛于时，牧居下位，心常不乐。将及知命，得病，自为墓志、祭文。 又尝梦人告曰：“尔改名毕。”逾月，奴自家来，告曰：“炊将熟而甑裂。”牧曰： “皆不祥也。”俄又梦书行纸曰：“皎皎白驹，在彼空谷。”寤寝而叹曰：“此过 隙也。吾生于角，徵还于角，为第八宫，吾之甚厄也。予自湖守迁舍人，木还角， 足矣。”其年，以疾终于安仁里，年五十。有集二十卷，曰《杜氏樊川集》，行于 代。子德祥，官至丞郎。 </p>
 <p>　　史臣曰：黄裳以道致君，持诚奉主；辨怀光之诈，罢全义之征。讨贼辟之凶， 举无遗算；葬执谊之柩，岂曰不仁。郢天纵之性，总丱之年，代父命于临刑，孝也； 怀光之乱，王人被伤，抚巢父于贼庭，义也；抑浮滥之流，考艺文之士，尽搜幽滞， 大变时风，正也；保止足之名，辞荣辱之路，高避世利，遐躅昔贤，智也。忠孝全 矣，仁智备矣！此二子者，皆临大节而不可夺也。佑承廕入仕，谳狱受知，博古该 今，输忠效用；位居极品，荣逮子孙，操修之报，不亦宜哉！及其宾僚紊法，嬖妾 受封，事重因循，难乎语于正矣！牧之文章，忭之长厚，能否既异，才位不伦，命 矣夫！ </p>
 <p>　　赞曰：贞公壮节，临难奋发。言行无玷，斯为明哲。戡乱阜俗，时泰位隆。国 之名臣，郑公、岐公。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第九十六章-卷九十六-原文.html'>第九十六章-卷九十六</a></p><p class='next'>下一节：<a href='第九十八章-卷九十八-原文.html'>第九十八章-卷九十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九十六章-卷九十六-原文.html'>第九十六章-卷九十六</a></p><p class='next'>下一节：<a href='第九十八章-卷九十八-原文.html'>第九十八章-卷九十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

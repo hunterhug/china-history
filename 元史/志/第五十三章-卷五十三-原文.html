@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>元史-志<a href='../元史.html#志'>：目录</a></p>
@@ -280,5 +307,18 @@
 </p><p>海北海南道宣慰司都元帅府民屯：世祖至元三十年，召募民户并发新附士卒，于海南、海北等处置立屯田。成宗元贞元年，以其地多瘴疠，纵屯田军二千人还各翼，留二千人与召募民之屯种。大德三年，罢屯田万户府，屯军悉令还役，止令民户八千四百二十八户屯田，琼州路五千一十一户，雷州路一千五百六十六户，高州路九百四十八户，化州路八百四十三户，廉州路六十户。为田琼州路二百九十二顷九十八亩，雷州路一百六十五顷五十一亩，高州路四十五顷，化州路五十五顷二十四亩，廉州路四顷八十八亩。
 </p><p>广西两江道宣慰司都元帅撞兵屯田：成宗大德二年，黄圣许叛，逃之交趾，遗弃水田五百四十五顷七亩。部民有吕瑛者，言募牧兰等处及融庆溪洞徭、撞民丁，于上浪、忠州诸处开屯耕种。十年，平大任洞贼黄德宁等，以其地所遗田土，续置藤州屯田。为户上浪屯一千二百八十二户，忠州屯六百一十四户，那扶屯一千九户，雷留屯一百八十七户，水口屯一千五百九十九户。续增藤州屯，二百八顷一十九亩。
 </p><p>湖南道宣慰司衡州等处屯田：世祖至元二十五年，调德安屯田万户府军士一千四百六十七名，分置衡州之清化、永州之乌符、武冈之白仓，置立屯田。二十七年，募衡阳县无土产居民，得九户，增入清化屯。为户清化屯军民五百九户；乌符屯军民五百户，白仓屯同。为田清化屯一百二十顷一十九亩，乌符屯一百三顷五十亩，白仓屯八十六顷九十二亩。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十二章-卷五十二-原文.html'>第五十二章-卷五十二</a></p><p class='next'>下一节：<a href='第五十四章-卷五十四-原文.html'>第五十四章-卷五十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五十二章-卷五十二-原文.html'>第五十二章-卷五十二</a></p><p class='next'>下一节：<a href='第五十四章-卷五十四-原文.html'>第五十四章-卷五十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

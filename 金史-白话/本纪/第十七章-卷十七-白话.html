@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-本纪<a href='../金史.html#金史'>：目录</a></p>
@@ -179,5 +206,18 @@
 </p><p>夏四月初七，派户部侍郎杨居仁奉金帛到元朝军中求和。十三日，明惠皇后陵被掘，灵柩被盗，派中官前往察视复得。用兵保护十个宫女出迎朔门奉柩到城下，设御幄围住灵柩，当夜又埋葬了。十四日，改元天兴。减去御膳，裁减冗员，放出宫女。上书不能称圣，把圣旨改为制旨。
 </p><p>五月初五，以南阳郡王的儿子思烈在邓州行尚书省，召集援兵。初六，在大庆殿拜天。十一日，天气像冬天一样寒冷。密国公王寿死去。汴京瘟疫，历时五十天。从各个门出城埋葬的有九十多万人，不包括贫穷不能埋的。
 </p><p>八月初一，合喜驻守杏花营，又增兵五千人，开始进驻中牟故城。初二，调五千壮丁运粮，送到合喜军中。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十六章-卷十六-白话.html'>第十六章-卷十六</a></p><p class='next'>下一节：<a href='第十八章-卷十八-白话.html'>第十八章-卷十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十六章-卷十六-白话.html'>第十六章-卷十六</a></p><p class='next'>下一节：<a href='第十八章-卷十八-白话.html'>第十八章-卷十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

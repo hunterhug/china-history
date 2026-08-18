@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>元史-本纪<a href='../元史.html#元史'>：目录</a></p>
@@ -191,5 +218,18 @@
 </p><p>十一月初五，诏令：宋朝人前来归顺的，以及北方人陷没在宋朝而返回的，每月都发给粮食。初十，征伐骨嵬。在这之前，吉里迷归附内地，说他们国家东面有骨嵬、亦里于两个部落，每年都来侵犯边境。因此前去征伐他们。十八日，把至元二年的历书赐给高丽国王王礻直。禁止登州、和州等处的人和女真人进入高丽境内抢劫。二十日，征召卫州太一教第五代度师李居寿前来皇宫。二十一日，撤销领中书省左右部，合并到中书省。任命领中书省左右部兼诸路转运使、掌管太府监事务的阿合马为平章政事，任命领中书省左右部兼诸路都转运使阿里为中书右丞。二十六日，太原路临州进献嘉禾两株。因为元帅按敦、刘整、刘元礼、钦察等部的将士立下战功，给予他们数量不等的赏赐。
 </p><p>十二月初五，撤销投下州的镇守官，制定朝内外官员的仪仗随从。初七，敕令遣送四名宋朝间谍返回他们本国。十八日，赏给蒙古勇士白银，总共五十万两。二十四日，太阴星干犯房宿天区。二十五日，因为王鉴从前出使大理时为国事而死，他的儿子王天赦不能够自立，从优对他抚恤。二十七日，敕命在邓州沿边境一带增设茱萸、常平、建陵、季阳四个堡寨。二十八日，命令挑选一个水性好的人，沿着黄河，计算一直到东胜都可以通行漕运船只的里程，用驿传快马奏闻皇帝。三十日，下诏撤销枢密院断事官以及各路辎重老营的长官，命令各路总管府兼管总押所。开始停止诸侯王世代承袭的制度，建立官员升迁调转的法律。
 </p><p>这一年，真定、顺天、氵名州、磁州、顺德、大名、东平、曹州、濮州、泰安、高唐、济州、博州、德州、济南、滨州、棣州、淄州、莱州、河间都发生水灾。按照每年的常例赐给诸侯王黄金、白银、钞币、绢帛。全国共有一百五十八万八千一百九十五户。全年判处死刑的罪犯七十三人。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-白话.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-白话.html'>第六章-卷六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-白话.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-白话.html'>第六章-卷六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

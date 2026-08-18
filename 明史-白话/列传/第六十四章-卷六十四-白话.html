@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -215,5 +242,18 @@
 </p><p>四年，进升为礼部左侍郎。万贵妃受到特别的宠爱，皇后很少能见到皇帝，皇储还没有征兆。邸王的女儿已成年还未出嫁。刘定之因长久干旱，一并论及到这些事。并且请求御前讲席兼讲太祖御制的各种书，斥责异端邪教，不让它们危害政事，消耗财物。皇帝将他的奏疏留在宫中不下发。
 </p><p>五年，死在任上。赠予礼部尚书，谧号文安。刘定之谦虚恭敬、朴实正直，以文才闻名一时。曾经有圣旨命他作元宵诗，内使退后站着等待。刘定之靠着桌子，铺开纸张，立即写成七言绝句一百首。又曾经一天起草九份诏书，笔不停地写。有人问他宋人的名字，他就列出所问的人的世次，像谱系一样，人们佩服他的敏捷和博学。
 </p><p>赞曰：英宗复辟时，正值军队饥饿之后，民气还没有恢复，当权的奸臣内讧，国家的栋梁倾斜偏移，朝野多变故，时事也很棘手。李贤一人支撑其间，气势充沛，游刃有余。奖励人才，整顿纲纪。到宪宗、孝宗之世，名臣相接，也多是李贤所赏识提拔的。伟大啊，兵是作宰相的人才。彭时、商辖从容不迫地坚守道义，用尽忠心，进献忠言，纯粹全出于正义。他们对于慈懿的典礼，不是人们所说的善于成全君主的大德吗。商辖的科举名次与宋代王曾、宋庠相等，品德声望也不比他们逊色。吕原、岳正、刘定之虽然功业不很优秀，而吕原的品行，岳正的气概，刘定之的建议，都有值得称赞之处，因此按时间编次，一并列入篇中。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十三章-卷六十三-白话.html'>第六十三章-卷六十三</a></p><p class='next'>下一节：<a href='第六十五章-卷六十五-白话.html'>第六十五章-卷六十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十三章-卷六十三-白话.html'>第六十三章-卷六十三</a></p><p class='next'>下一节：<a href='第六十五章-卷六十五-白话.html'>第六十五章-卷六十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

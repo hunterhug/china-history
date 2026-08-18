@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>宋书-志<a href='../宋书.html#志'>：目录</a></p>
@@ -253,5 +280,18 @@
 </p><p>泰始四年八月甲寅，诏曰：“车服之饰，象数是遵。故盛皇留范，列圣垂制。朕近改定五路，酌古代今，修成六服，沿时变礼。所施之事，各有条叙；便可付外，载之典章。朕以大冕纯玉缫，玄衣黄裳，乘玉辂，郊祀天，宗祀明堂。又以法冕五彩缫，玄衣绛裳，乘金路，祀太庙，元正大会诸侯。又以饰冠冕四彩缫，紫衣红裳，乘象辂，小会宴飨，饯送诸侯，临轩会王公。又以绣冕三彩缫，硃衣裳，乘革路，征伐不宾，讲武校猎。又以宏冕二彩缫，青衣裳，乘木辂，耕稼，飨国子。又以通天冠，硃纱袍，为听政之服。”
 </p><p>泰始六年正月戊辰，有司奏：“被敕皇太子正冬朝驾，合著衮冕九章衣不？”仪曹郎丘仲起议：“案《周礼》，公自衮冕以下。郑注：‘衮冕以至卿大夫之玄冕，皆其朝聘天子之服也。’伏寻古之上公，尚得服衮以朝。皇太子以储副之尊，率土瞻仰。愚谓宜式遵盛典，服衮冕九旒以朝贺。”兼左丞陆澄议：“服冕以朝，实著经典。秦除六冕之制，至汉明帝始与诸儒还备古章。自魏、晋以来，宗庙行礼之外，不欲令臣下服衮冕，故位公者，每加侍官。今皇太子承乾作副，礼绝群后，宜遵圣王之盛典，革近代之陋制。臣等参议，依礼，皇太子元正朝贺，应服衮冕九章衣。以仲起议为允。撰载仪注。”诏可。
 </p><p>后废帝即位，尊所生陈贵妃为皇太妃，舆服一如晋孝武太妃故事，唯省五牛旗及赤旗。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-卷十七-原文.html'>第七章-卷十七</a></p><p class='next'>下一节：<a href='第九章-卷十九-原文.html'>第九章-卷十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七章-卷十七-原文.html'>第七章-卷十七</a></p><p class='next'>下一节：<a href='第九章-卷十九-原文.html'>第九章-卷十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

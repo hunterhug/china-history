@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#列传'>：目录</a></p>
@@ -159,5 +186,18 @@
 </p><p>奚回离保，一名翰，字挼懒，奚王忒邻之后。善骑射，趫捷而勇，与其兄鳖里剌齐名。大安中，车驾幸中京，补护卫，稍迁铁鹞军详稳。天庆间，徙北女直详稳，兼知咸州路兵马事，改东京统军。既而诸蕃入寇，番破之，迁奚六部大王，兼总知东路兵马事。保大二年，金兵至，天祚播迁，回离保率吏民立秦晋国王淳为帝。淳伪署回离保知北院枢密事，兼诸军都统，屡败宋兵。淳死，其妻普贤女摄事。是年，金兵由居庸关入，回离保知北院，即箭笴山自立，号奚国皇帝，改元天复，设奚、汉、渤海三枢密院，改东、西节度使为二王，分司建官。时奚人巴辄、韩家奴等引兵击附近契丹部落，劫掠人畜，群情大骇。会回离保为郭药师所败，一军离心，其党耶律阿古哲与其甥乙室八斤等杀之，伪立凡八月。
 </p><p>萧特烈，字讹都碗，遥辇洼可汗宫分人。乾统中入宿卫，出为顺义军节度使。天庆四年，同知咸州路兵马事。五年，以兵败夺节度使。保大元年，迁隗古部节度使。及天祚在山西集群牧兵，特烈为副统军。闻金兵将至，特烈谕士卒以君臣之义，死战于石辇铎。金兵不战，特烈伺间欲攻之。天祚喜甚，召嫔御诸子登高同观，将诧之。金兵望日月旗，知天祚在其下，以劲兵直趋奋击，无敢当者，天祚遁走。特烈所至，招集散亡，寻为中军都统，复败于梯已山。天祚决意渡河奔夏，从臣切谏不听，人情惶惧不知所为。特烈阴谓耶律兀直曰：“事势如此，亿兆离心，正我辈效节之秋。不早为计，奈社稷何！”遂共劫梁王雅里，奔西北诸部，伪立为帝，特烈自为枢密使。雅里卒，欲择可立者。会耶律兀直言术烈才德纯备，兼兴宗之孙，众皆曰可，遂僣立焉，特烈伪职如故。未三旬，与术烈俱为乱兵所杀。
 </p><p>论曰：辽之秉国钧，握兵柄，节制诸部帐，非宗室外戚不使，岂不以为帝王久长万世之计哉。及夫肆叛逆，致乱亡，皆是人也。有国家者，可不深戒矣乎！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十三章-卷四十三-原文.html'>第四十三章-卷四十三</a></p><p class='next'>下一节：<a href='第四十五章-卷四十五-原文.html'>第四十五章-卷四十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十三章-卷四十三-原文.html'>第四十三章-卷四十三</a></p><p class='next'>下一节：<a href='第四十五章-卷四十五-原文.html'>第四十五章-卷四十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

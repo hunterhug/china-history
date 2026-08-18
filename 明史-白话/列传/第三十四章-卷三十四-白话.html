@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -165,5 +192,18 @@
 </p><p>二十年(1422)，张信跟随北征，监督运饷。成祖在隰宁进行大检阅，张信称病不至，被贬为办事官。不久复职。仁宗即位后，张信被加封为少师，同时支取二份俸禄，并给予世袭凭证。宣德元年(1426)，随军征讨乐安。三年，皇上巡边，征讨兀良哈，张信受命居守。第二年，张信督军一万五千人前去疏通河西务河道。正统七年(1442)五月，他死于南京。被赠为郧国公，谥号恭僖。
 </p><p>王友，荆州人。承袭父职为燕山护卫百户。跟随燕王起兵，平定京城。论功应当封侯，可他因行为骄纵，只被授为都指挥佥事。直到丘福等奏达朝廷，才封为清远伯。第二年，王友充任总兵官，率水师沿海追捕倭寇。倭寇屡次骚扰海上，王友无功，皇上严厉指责。不久，王友大破倭寇。皇上大喜，降旨褒奖慰劳，王友随即应诏回京。永乐四年(1406)，他随军征讨交趾，与指挥柳琮合兵攻破筹江栅栏，困枚、普赖诸山，斩首三万七千余人。六年七月，王友进封为侯，加禄五百石，并被授予世袭凭证。第二年再征交趾，王友任副总兵。
 </p><p>八年(1410)，王友回京，又随军北征，督率中军。王友另与刘才在饮马河岸筑城。恰逢知院失乃干打算投降，皇上命王友率士卒先行，并谕示他遇到敌人要伺机剿灭。王友等到后，与敌军相距还有一段路程，便绕道避往应昌。军中缺乏粮食，许多士兵饿死了。皇上为此震怒，屡次降旨切责，夺去其属下军官张辅。还命群臣议王友之罪，不久赦免了他。十二年，因其妾告发王友夫妇诽谤而获罪。查有证据，王友被剥夺爵位，不久便去世了。仁宗即位后，任命其子王顺为指挥佥事。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十三章-卷三十三-白话.html'>第三十三章-卷三十三</a></p><p class='next'>下一节：<a href='第三十五章-卷三十五-白话.html'>第三十五章-卷三十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十三章-卷三十三-白话.html'>第三十三章-卷三十三</a></p><p class='next'>下一节：<a href='第三十五章-卷三十五-白话.html'>第三十五章-卷三十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

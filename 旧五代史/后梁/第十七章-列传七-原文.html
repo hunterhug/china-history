@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后梁<a href='../旧五代史.html#后梁'>：目录</a></p>
@@ -161,5 +188,18 @@
 </p><p>雷满，《新唐书》：满字秉仁。武陵洞蛮也。始为朗州小校，唐广明初，王仙芝焚劫江陵。是时，朝廷以高骈为节度使，骈擢满为裨将，以领蛮军。骈移镇淮南，复隶部曲，以悍犷趫健知名。中和初，擅率部兵自广陵逃归于朗，沿江恣残暴，始为荆人大患矣。率一岁中三四移，兵入其郛，焚荡驱掠而去。唐朝姑务息兵，即以澧朗节度使授之。累官至检校太傅、同平章事。满贪秽惨毒，盖非人类。又尝于府署浚一深潭，构大亭于其上，每邻道使车经由，必召宴于中，且言：“此水府也，中有蛟龙，奇怪万态，惟余能游焉。”或酒酣对客，即取筵中宝器乱掷于潭中，因自褫其衣，裸露其文身，遽跃入水底，遍取所掷宝器，戏弄于水面，久之方出，复整衣就坐，其诡诞如此。
 </p><p>及死，子彦恭继之。《新唐书》：满以天复元年卒，子彦威自立，弟彦恭结忠义节度使赵匡凝以逐彦威。蛮蜒狡狯，深有父风，烬墟落，榜舟楫，上下于南郡、武昌之间，殆无人矣。又与淮、蜀结连，阻绝王命。太祖诏湖南节度使马殷、荆南节度使高季昌练精兵五千，遣将倪可福统之，下澧州，与潭兵合。先是，满堑沅江，以周其垒，门临长桥，势不可入。殷极其兵力，攻围周岁，彦恭食尽兵败，间使求救于淮夷。及淮军来援，高季昌逆战于治津马头岸，大破之，俄而攻陷朗州，彦恭单棹遁去。马殷擒其弟彦雄及逆党七人，械送至阙，皆斩于汴桥下，时开平二年十一月也。
 </p><p>史臣曰：成汭、钟、杜、田、硃之流，皆因否运，雄据大籓，虽无济代之劳，且有勤王之节，功虽不就，志亦可嘉，若较其诚明，则田頵、延寿斯为优矣。匡凝一门昆仲，千里江山，失守籓垣，不克负荷，斯乃刘景升之子之徒欤！张佶有让帅之贤，雷满辱俾侯之寄，优劣可知矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十六章-列传六-原文.html'>第十六章-列传六</a></p><p class='next'>下一节：<a href='第十八章-列传八-原文.html'>第十八章-列传八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十六章-列传六-原文.html'>第十六章-列传六</a></p><p class='next'>下一节：<a href='第十八章-列传八-原文.html'>第十八章-列传八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

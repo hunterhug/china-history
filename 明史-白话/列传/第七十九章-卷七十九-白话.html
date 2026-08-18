@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -191,5 +218,18 @@
 </p><p>世宗即位后，文华又得到起复，官复原任，经河南按察副使，在嘉靖二年(1523)被推举为政事、修身双优，然后应诏入朝做大理右少卿，不久转为左少卿。当时朝廷中正在讨论兴献帝的“大礼”，文华几番和其他大臣们一起极力谏争。第二年七月，又号召大臣们在宫门外跪地哭谏，因此被扣发了四个月官俸。后来，席书、张璁、桂萼、方献夫召集大臣们讨论，文华与汪伟、郑岳还是极力反对。武定侯郭勋就说：“祖训是这样子，古礼也是这样子，张璁等人说得对。古书上讲了，大臣侍候君上，应当顺成他的好事。”就这样形成了决议。等后来改题宗庙神主时，文华进谏说：“按道理孝宗是祖辈，不能称为伯考。武宗是父辈，不能称为皇兄。不如干脆称为孝宗敬皇帝、武宗毅皇帝，还算是两全其美，不害正统。”奏疏递上后，世宗又一次让扣发了他的官俸。
 </p><p>六年(1527)秋天，李福达一案再审。主持再审的张璁、桂萼、方献夫，因为讨论“大礼”一事本来就恨文华这些人，于是把审讯记录全给颠倒过来，把文华和其他法官们关进了监狱。结案以后，文华被指责为徇私包庇御史杀人，充军辽阳。后来碰上大赦，死在回乡的道路上了。隆庆初年，朝廷追赠他为左佥都御史。
 </p><p>自从大学士毛纪、侍郎何孟春罢官后，以前争议“大礼”的大臣们有的就违心地顺从了世宗的意思，文华却坚持以前的意见不变。他无罪被充军边疆，当时的官僚士绅对他深感惋惜。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十八章-卷七十八-白话.html'>第七十八章-卷七十八</a></p><p class='next'>下一节：<a href='第八十章-卷八十-白话.html'>第八十章-卷八十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七十八章-卷七十八-白话.html'>第七十八章-卷七十八</a></p><p class='next'>下一节：<a href='第八十章-卷八十-白话.html'>第八十章-卷八十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

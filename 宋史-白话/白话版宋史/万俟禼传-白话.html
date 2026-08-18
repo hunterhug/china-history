@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>宋史-白话版宋史<a href='../宋史.html#宋史'>：目录</a></p>
@@ -166,5 +193,18 @@
 </p><p>						禼提举刊修《贡举敕令格式》五十卷、《看详法意》四百八十七卷，书成后献上，他被授予金紫光禄大夫，退休。去世时七十五岁，谥号为“忠靖”。<BR><BR>　　万俟
 </p><p>						禼起初党附秦桧，担任言官，他所说的大多出于秦桧的意图；等他任宰相后，不受秦桧控制，于是因违背秦桧而被罢职。秦桧死后，皇帝亲政，准备改变秦桧的做法，首先召回万俟
 </p><p>						禼。万俟禼主张与金国议和以巩固自己的地位，与秦桧无异，更被众论所鄙薄。</p>
-<div class='pn'><p class='pre'>上一节：<a href='秦桧传-白话.html'>秦桧传</a></p><p class='next'>下一节：<a href='韩芃胄传-白话.html'>韩芃胄传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='秦桧传-白话.html'>秦桧传</a></p><p class='next'>下一节：<a href='韩芃胄传-白话.html'>韩芃胄传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

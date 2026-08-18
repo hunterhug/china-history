@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -167,5 +194,18 @@
 </p><p>不久，崇明全力攻建武所，万禄在十里外拦截，兵少败回。建武被攻陷，世勋与其家属自焚。万禄亲手杀其两妾、两孙，然后自刎，未死。又手执长矛飞奔而出，大呼：“我就是龚万禄，谁敢来追我！”贼面面相觑，不敢靠近。万禄走至叙州，向巡抚朱燮元求救兵收复了建武所。这时官军败于江门，贼四面来攻，万禄力战三日，终与其子崇学牺牲。朝廷诏赠都督佥事，立祠赐祭，荫后代为百户。
 </p><p>姬文胤，字士昌，华州人。乡试中举，天启二年(1622)授滕县知县。文胤到任刚三日，白莲教徐鸿儒起义，进攻滕县，百姓十分之九都加入了义军。文胤把其吏卒驱赶到城上去抵御，总共不足三百人，他们一看到义军便逃走了，只剩下数十人。文胤询问吏民为何要投降义军，他们说是因为董二。董二就是已故延绥巡抚董国光的儿子，此人在当地贪婪横暴，弄得民不聊生，故百姓纷纷投入起义军。文胤在城上对大家说“：良民因为董二而铤身走险。我一定把董二依法惩处，为你们雪恨，你们看如何？”文胤身长面赤，胡须像戟一样，城下义军以为他是神人。
 </p><p>忽然从西城角射出箭，杀死义军二人。义军认为文胤是在欺骗他们，非常愤恨，一举攻下滕县。文胤穿上大红朝服，坐在堂上大骂不止，三日后自尽。朝廷闻知，赠太仆寺少卿，立祠祭祀。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百七十七章-卷一百七十七-白话.html'>第一百七十七章-卷一百七十七</a></p><p class='next'>下一节：<a href='第一百七十九章-卷一百七十九-白话.html'>第一百七十九章-卷一百七十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百七十七章-卷一百七十七-白话.html'>第一百七十七章-卷一百七十七</a></p><p class='next'>下一节：<a href='第一百七十九章-卷一百七十九-白话.html'>第一百七十九章-卷一百七十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

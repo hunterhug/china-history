@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#魏书'>：目录</a></p>
@@ -174,5 +201,18 @@
 </p><p>“臣以为慕容白曜为官朝廷，接连蒙受荣显的封授，历任朝廷内外要职，一生胸怀忠诚美善。掌握兵权开辟边地，屡次挫败敌国之军，开疆千里，拔城十二，辛勤于军旅之际，奔驰于矢石之间，登锋锐而履危难，一心只为肃清动乱。及至一方之难已经平夷，身受崇高的奖赏，得到疆土的封赐，命运与国家同升降，才以六十岁花甲之年，承蒙极大的荣宠。综观他所建立的功勋，就足以看清他的机谋运筹，难道会希图侥幸，又去谋求非分之望吗？况且在当时，国家的兵马，屯驻在京都之南，跨州连镇，势同云岳。主将全都骁勇雄武，各自镇守其所在之地，无不准备殉忠死难，以尽其节操遵奉时命。这样使任何人都不敢滋生异心，慕容白曜是全然知道的。更何况暗藏的逆贼阻挡官军，营、岱的百姓不满战乱，加以王师接连征伐，州郡屠戮，平民劳苦，神胆俱丧，逃亡失散之众不能与他们图存，离散疲败之民不可同他们谈勇呢！慕容白曜果敢刚毅，熟谙军事，善于体察用兵之势，难道就不懂得兵民不可以凭靠，将士不与自己同心，竟然会依仗强兵之势，凭借涂炭之民，而想要谋求颠覆朝廷，这是愚笨的人也不会去做的。据此推断，事情也就十分明显了。
 </p><p>“陛下圣鉴来自上天，以仁义孝德主宰当世，风度冠于天下，道德超过百王。自大魏开国以来，多有罪犯被处极刑，不能得到完整尸身的人，全都听任其收葬。宽容之恩，自古未有。而慕容白曜人老功高，遭遇祸害而沉沦湮没，声名败灭身受诛戮，其爵位也无以继承，天下百姓，都共同哀伤怜惜，慕容白曜的待遇比起那些无名之辈来，应有差异。愿陛下扬日月之光，明勋臣之绩，垂天地之恩，慰僵尸之魂。让其遗体合棺安葬，给予谥号，让其死后留下名号。再挑选他宗族近亲中才能可以任用的人，赐给低微的爵位，以继承其断绝的香火。如此，进可以奖劝将来之人，退可以显示国家恩泽。使生者蒙莫大之恩，死者受骨肉之惠，难道不是两全其美吗！臣仰奉陛下圣明，赐恩昭览，我为所陈述的狂妄愚昧之言，恭谨地听候刑宪予以裁决。”
 </p><p>高祖阅览成淹的表章，十分赞赏，为慕容白曜的事十分悯怜痛惜。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十七章-卷三十七-白话.html'>第三十七章-卷三十七</a></p><p class='next'>下一节：<a href='第三十九章-卷三十九-白话.html'>第三十九章-卷三十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十七章-卷三十七-白话.html'>第三十七章-卷三十七</a></p><p class='next'>下一节：<a href='第三十九章-卷三十九-白话.html'>第三十九章-卷三十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

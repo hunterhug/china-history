@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后唐<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -183,5 +210,18 @@
 </p><p>三月，邢州节度使安知建叛变，奔向青州。皇帝任安知建为神武统军，从棣州逆黄河而上归朝。郓州朱王宣在黄河岸边拦住，杀了他，把他的头送到晋阳，任李存孝为邢州节度使。
 </p><p>四月，武皇大举进军云州讨伐赫连铎，派骑将薛阿檀率前军进攻，武皇在御河之上埋设伏兵，大破敌军，并挖掘濠沟围困云州城。七月，武皇进军柳会，赫连铎势穷粮尽，逃奔吐谷浑部，遂归幽州，云州平定。武皇表奏任石善友为大同军防御使。
 </p><p>邢州节度使李存孝因为镇州王..依附汴人，谋乱河朔，北连燕寇，请乘云州、代州的胜利之势，平定燕、赵二地，武皇同意了。八月，在晋阳阅兵，遂南巡泽、潞二地，占领怀州、孟州，河阳赵克裕望风求和，请修友邻之好。九月，在邢州阅兵。十月，李存孝带前军进攻临城，镇州五万人在临城西北龙尾岗扎营，武皇令李存审、李存贤领步兵进攻，镇州人大败，杀获数万，攻下临城，进攻元氏。幽州李匡威领步兵骑兵五万在高阝邑扎营，以援助镇州，武皇分兵大掠，回师邢州。</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-皇纪下-白话.html'>第二章-皇纪下</a></p></div></body>
+<div class='pn'><p class='next'>下一节：<a href='第二章-皇纪下-白话.html'>第二章-皇纪下</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

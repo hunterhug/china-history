@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -181,5 +208,18 @@
 </p><p>天兴元年冬，哀宗将北渡，世勣率朝官刘肃、田芝等二十人求见仁安殿。上问卿等欲何言，世勣曰：“臣等闻陛下欲亲出，切谓此行不便。”上曰：“我不出，军分为二，一军守，一军出战。我出则军合为一。”世勣曰：“陛下出则军分为三，一守、一战、一中军护从，不若不出为愈也。”上曰：“卿等不知，我若得完颜仲德、恒山公武仙付之兵事，何劳我出。我岂不知今日将兵者，官奴统马兵三百止矣，刘益将步兵五千止矣，欲不自将，得乎？”上又指御榻曰：“我此行岂复有还期，但恨我无罪亡国耳。我未尝奢侈，未尝信任小人。”世勣应声曰：“陛下用小人则亦有之。”上曰：“小人谓谁？”世勣历数曰：“移剌粘古、温敦昌孙、兀撒惹、完颜长乐皆小人也。陛下不知为小人，所以用之。”肃与世勣复多有言，良久，君臣涕泣而别。初，肃等求见，本欲数此四人。至是，世勣独言之，于是哀宗以世勣行。自蒲城至归德。明年六月，走蔡州，次新蔡县之姜寨。
 </p><p>世勣子嵩，时为县令，拜上于马前，兵乱后父子始相见。上嘉之，授嵩应奉翰林文字，以便养亲。蔡城破，父子俱死。嵩字企隆，兴定二年经义进士。
 </p><p>赞曰：爱实言卫、镐家属禁锢之虐，京城括粟之暴，近侍干政之横；世勣言河北军户给田之不便，亲出渡河之非计；皆药石之言也。然金至斯时，病在膏肓间矣，仓扁何施焉。其为忠谠，则不可废也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十一章-卷五十一-原文.html'>第五十一章-卷五十一</a></p><p class='next'>下一节：<a href='第五十三章-卷五十三-原文.html'>第五十三章-卷五十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五十一章-卷五十一-原文.html'>第五十一章-卷五十一</a></p><p class='next'>下一节：<a href='第五十三章-卷五十三-原文.html'>第五十三章-卷五十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

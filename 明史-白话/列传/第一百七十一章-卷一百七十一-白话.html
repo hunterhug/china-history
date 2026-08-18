@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -210,5 +237,18 @@
 </p><p>元锡之学，渊源于王守仁，但又不完全秉承守仁的学说。当时，心学盛行，认为感到世界空虚无物才是学问，否则就没有什么深奥之处。九容、九思、四教、六艺都是做学问的桎梏，元锡极力排斥。他生平博览群书，而归宗于《六经》。所著《五经绎》、《函史上下编》、《皇明书》，均流行于世。
 </p><p>刘元卿，字调父，安福人。隆庆四年(1510)乡试中举，第二年会试，在对策中，陈述当时弊政，主考官不敢录取。张居正闻后大怒，令当地官府告诫元卿，且派人秘密侦察，侦察的人反倒为他说情，因而获免。归家后拜同乡王守仁弟子刘阳为师。万历二年(1574)会试落第，从此绝意于科举之途，而以求道为事。后累被推荐，朝廷召为国子监博士。升礼部尚书，疏请皇帝早朝勤政。订正旧有的外蕃朝贡礼仪。不久，称病回家，致力于著述，撰有《山居草》、《还山续草》、《诸儒学案》、《贤弈编》、《思问编》、《礼律类要》、《大学新编》等书。
 </p><p>章潢，字本清，南昌人。父死服丧，哀痛欲绝。建“此洗堂”，联络同志讲学其中。纂辑群书一百二十七卷，名曰《图书编》。著有《周易象仪》、《诗经原体》、《书经原始》、《春秋窃义》、《礼记答刂言》、《论语约言》等书。随从他求学的甚多。多次被荐举。从吏部侍郎杨时乔的奏请，按陈献章、来知德的成例，遥授为顺天训导，当地官府每月给米三斗以供养家。卒于万历三十六年(1608)，年八十二岁。乡里人说，潢对人无论老少，口无非礼之言，身无非礼之行，交无非礼之友，目不看非礼之书，他们私谥潢“文德先生”。自吴与弼之后，元锡、元卿、潢，都蒙举荐征召，号称“江右四君子”。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百七十章-卷一百七十-白话.html'>第一百七十章-卷一百七十</a></p><p class='next'>下一节：<a href='第一百七十二章-卷一百七十二-白话.html'>第一百七十二章-卷一百七十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百七十章-卷一百七十-白话.html'>第一百七十章-卷一百七十</a></p><p class='next'>下一节：<a href='第一百七十二章-卷一百七十二-白话.html'>第一百七十二章-卷一百七十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

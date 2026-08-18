@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后晋<a href='../旧五代史.html#后晋'>：目录</a></p>
@@ -162,5 +189,18 @@
 </p><p>汉乾祐二年二月，帝自辽阳城发赴建州。行至中路，太妃安氏得疾而薨，乃焚之，载其烬骨而行。帝自辽阳行十数日，过仪州、灞州，遂至建州。节度使赵延晖尽礼奉迎，馆帝于衙署中。其后割寨地五千余顷，其地至建州数十里。帝乃令一行人员于寨地内筑室分耕，给食于帝。是岁，舒噜王子遣契丹数骑诣帝，取内人赵氏、聂氏疾驰而去。赵、聂者，帝之宠姬也，及其被夺，不胜悲愤。
 </p><p>汉乾祐三年八月，太后薨。周显德初，有汉人自塞北而至者，言帝与后及诸子俱无恙，犹在建州，其随从职官役使人辈，自蕃中亡归，物故者大半矣。《郡斋读书志》云：《晋朝陷蕃记》，范质撰。质，石晋末在翰林，为出帝草降表，知其事为详。记少帝初迁于黄龙府，后居于建州，凡十八年而卒。案：契丹丙午岁入汴，顺数至甲子岁为十八年，实太祖乾德二年也。《五代史补》：少主之嗣位也，契丹以不俟命而擅立；又，景延广辱其使。契丹怒，举国南侵。以驸马都尉杜重威等领驾下精兵甲御之于中流渡桥。既而契丹之众已深入，而重威等奏报未到朝廷。时桑维翰罢相，为开封府尹，谓僚佐曰：“事急矣，非大臣钳口之时。”乃叩内阁求见，欲请车驾亲征，以固将士之心。而少主方在后苑调鹰，至暮竟不召。维翰退而叹曰：“国家阽危如此，草泽逋客亦宜下问，况大臣求见而不召耶！事亦可知矣。”未几，杜重威之徒降于契丹，少主遂北迁。
 </p><p>史臣曰：少帝以中人之才，嗣将坠之业，属上天不祐，仍岁大饥，尚或绝强敌之欢盟，鄙辅臣之谋略。奢淫自纵，谓有泰山之安；委托非人，坐受平阳之辱。族行万里，身老穷荒。自古亡国之丑者，无如帝之甚也。千载之后，其如耻何，伤哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十章-少帝纪四-原文.html'>第十章-少帝纪四</a></p><p class='next'>下一节：<a href='第十二章-列传一-原文.html'>第十二章-列传一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十章-少帝纪四-原文.html'>第十章-少帝纪四</a></p><p class='next'>下一节：<a href='第十二章-列传一-原文.html'>第十二章-列传一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-本纪<a href='../明史.html#本纪'>：目录</a></p>
@@ -187,5 +214,18 @@
 </p><p>是年，琉球中山、哈密、安南、乌斯茂入贡。
 </p><p>八年春正月乙卯，帝不豫。己未，皇太子摄事于文华殿。己巳，大渐，遗诏罢宫妃殉葬。庚午，崩，年三十有八。二月乙未，上尊谥，庙号英宗，葬裕陵。
 </p><p>赞曰：英宗承仁、宣之业，海内富庶，朝野清晏。大臣如三杨、胡濙、张辅，皆累朝勋旧，受遗辅政，纲纪未弛。独以王振擅权开衅，遂至乘舆播迁。乃复辟而后，犹追念不巳，抑何其感溺之深也。前后在位二十四年，无甚稗政。至于上恭让后谥，释建庶人之系，罢宫妃殉葬，则盛德之事可法后世者矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十一章-卷十一-原文.html'>第十一章-卷十一</a></p><p class='next'>下一节：<a href='第十三章-卷十三-原文.html'>第十三章-卷十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十一章-卷十一-原文.html'>第十一章-卷十一</a></p><p class='next'>下一节：<a href='第十三章-卷十三-原文.html'>第十三章-卷十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

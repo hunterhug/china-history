@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-本纪<a href='../旧唐书.html#本纪'>：目录</a></p>
@@ -198,5 +225,18 @@
 </p><p>开元四年夏六月甲子，太上皇帝崩于百福殿，时年五十五。秋七月己亥，上尊谥曰大圣贞皇帝，庙曰睿宗。冬十月庚午，葬于桥陵。天宝十三载二月，改谥曰玄真大圣大兴孝皇帝。
 </p><p>史臣曰：法不一则奸伪起，政不一则朋党生，上既启其泉源，下胡息于奔竞。观夫天后之时，云委于二张之第；孝和之世，波注于三王之门。献奇则除设盈庭，纳贿则斜封满路，咸以进趋相轨，奸利是图，如火投泉，安得无败？洎景龙继统，污俗廓清，然犹投杼于乘舆之间，抵掌于太平之日。以至书频告变，上不自安，宫臣致御魅之科，天子慊巡边之诏。彼既弯弓而射我，我则号泣以行刑。此虽镇国之尤，亦是临轩之失。夫君人孝爱，锡之以典刑，纳之于轨物，俾无僭逼，下绝觊觎，自然治道惟新，乱阶不作。孝和既已失之，玄真亦未为得。
 </p><p>赞曰：孝和、玄真，皆肖先人。率情背礼，取乐于身。夷涂不履，覆辙攸遵。扶持圣嗣，赖有贤臣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p><p class='next'>下一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p><p class='next'>下一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -167,5 +194,18 @@
 </p><p>郡守欲荐周贤良，周筮《易》，得《遁》之九五，遂决意隐遁。所居有水竹亭馆之胜，图书鼎彝充牣错列，四方名士过从无虚日，风流文彩，照映一时。奉亲至孝。父殁，或劝之仕，对曰：“若不知母氏以我为命耶？奈何离膝下。”居恒厌入城市，于郭外置行窝，有事一造之。晚年，匿迹惟恐不深，先后巡抚王恕、彭礼咸礼敬之，欲留幕下，并以母老辞。
 </p><p>有郡守征画工绘屋壁。里人疾周者，入其姓名，遂被摄。或劝周谒贵游以免，周曰：“往役，义也，谒贵游，不更辱乎！”卒供役而还。已而守入觐，铨曹问曰：“沈先生无恙乎？”守不知所对，漫应曰：“无恙。”见内阁，李东阳曰：“沈先生有牍乎？”守益愕，复漫应曰：“有而未至。”守出，仓皇谒侍郎吴宽，问“沈先生何人？”宽备言其状。询左右，乃画壁生也。比还，谒周舍，再拜引咎，索饭，饭之而去。周以母故，终身不远游。母年九十九而终，周亦八十矣。又三年，以正德四年卒。
 </p><p>陈继儒，字仲醇，松江华亭人。幼颖异，能文章，同郡徐阶特器重之。长为诸生，与董其昌齐名。太仓王锡爵招与子衡读书支硎山。王世贞亦雅重继儒，三吴名下士争欲得为师友。继儒通明高迈，年甫二十九，取儒衣冠焚弃之。隐居昆山之阳，构庙祀二陆，草堂数椽，焚香晏坐，意豁如也。时锡山顾宪成讲学东林，招之，谢弗往。亲亡，葬神山麓，遂筑室东佘山，杜门著述，有终焉之志。工诗善文，短翰小词，皆极风致，兼能绘事。又博文强识，经史诸子、术伎稗官与二氏家言，靡不较核。或刺取琐言僻事，诠次成书，远近竞相购写。征请诗文者无虚日。性喜奖掖士类，屦常满户外，片言酬应，莫不当意去。暇则与黄冠老衲穷峰泖之胜，吟啸忘返，足迹罕入城市。其昌为筑来仲楼招之至。黄道周疏称“志尚高雅，博学多通，不如继儒”，其推重如此。侍郎沈演及御史、给事中诸朝贵，先后论荐，谓继儒道高齿茂，宜如聘吴与弼故事。屡奉诏征用，皆以疾辞。卒年八十二，自为遗令，纤悉毕具。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百八十五章-卷一百八十五-原文.html'>第一百八十五章-卷一百八十五</a></p><p class='next'>下一节：<a href='第一百八十七章-卷一百八十七-原文.html'>第一百八十七章-卷一百八十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百八十五章-卷一百八十五-原文.html'>第一百八十五章-卷一百八十五</a></p><p class='next'>下一节：<a href='第一百八十七章-卷一百八十七-原文.html'>第一百八十七章-卷一百八十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

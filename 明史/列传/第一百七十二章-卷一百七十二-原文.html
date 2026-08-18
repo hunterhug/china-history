@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -181,5 +208,18 @@
 </p><p>邵继祖，洛阳人，先贤康节公邵子二十七代孙也。崇祯三年，河南巡按吴甡请以继祖为翰林院《五经》博士，子孙世袭，以奉邵子祀事。诏从之。卒，子养醇袭。
 </p><p>朱梴，字孟龄，先贤文公朱子九世孙也，世居福建建安县之紫霞洲。景泰六年授翰林院《五经》博士，子孙世袭，以奉朱子祀事。梴为人淳谨，言动有则。卒，子燉，字孔晖袭。燉以事入都，中途遇盗。未几，有遗金道上者，燉守之，以还其人，人称其廉介。卒，子茔，字元厚袭。卒，子鎏袭。卒，子法，字兆祖袭。法为人孝友。卒，子楗，字士启袭。卒，子莹，字惟玉袭。卒，子之俊，字乔之袭。
 </p><p>朱墅，先贤文公朱子十一世孙也。正德间，给事中戴铣、汪元锡，御史王完等相继言：“朱子，继孔子者也。孔子之后有曲阜、西安，朱子之后亦有建安、婺源。今建安恩典已隆，在婺源者，请依阙里之例，录其子孙一人，量授以官，俾掌祠事。”诏许之。嘉靖二年授墅翰林院《五经》博士。三十八年以本学训导席端言，令其世袭。墅卒，子镐袭。卒，子德洪袭。卒，子邦相袭。卒，子煜袭。卒，子坤袭。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百七十一章-卷一百七十一-原文.html'>第一百七十一章-卷一百七十一</a></p><p class='next'>下一节：<a href='第一百七十三章-卷一百七十三-原文.html'>第一百七十三章-卷一百七十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百七十一章-卷一百七十一-原文.html'>第一百七十一章-卷一百七十一</a></p><p class='next'>下一节：<a href='第一百七十三章-卷一百七十三-原文.html'>第一百七十三章-卷一百七十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

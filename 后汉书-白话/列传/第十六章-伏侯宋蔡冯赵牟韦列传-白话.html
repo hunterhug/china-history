@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#后汉书'>：目录</a></p>
@@ -194,5 +221,18 @@
 </p><p>建初二年(77)已封曹参后裔曹湛为平阳侯，所以不再封曹参后代。于是厚赐韦彪钱珍馐食物，让他回平陵扫墓上冢。回来后，拜他为大鸿胪。这时上书言事的，多言郡国贡举大多不按功名次序，以致职守日益懈怠而吏事荒疏，咎在州郡。帝下诏令公卿朝臣讨论。韦彪呈上建议说：“陛下明诏，忧劳百姓，垂恩选举，务得其人。国家以选拔贤才为要务，贤才应以孝行为首。孔子说过：‘事亲孝则忠可移之于君，所以要求忠臣必于孝子之门。’人的才力与行为很少能兼备的，是以孟公绰优于赵、魏老，不可以为滕、薛大夫，因滕、薛国小政繁他们吃不消。忠孝之人，持心近于宽厚；锻炼成熟之吏，持心近于刻薄。三代之所以能以直道而行，在于古代用贤都经过磨砺选练。士应以才行为先，不可纯以功次相论。然其关键，在于选二千石，二千石贤，那么贡举就都得其人了。”帝深以为然而采纳。韦彪以当时是继承了光武、明帝二代吏化之后，多以苛刻为能，又设置官吏选任职务，不必以才为条件，因盛夏多寒，就上疏谏道：“臣闻政化的根本，必顺阴阳。现在立夏以来，当热而寒，这是刑罚刻急，下面郡国不奉时节所造成的。农夫急于务农而苛吏却夺其农时，交纳赋税本已达到常规而贪吏们却强夺其财，这是巨大的祸患。要急人所务，必先除其所患。天下的中枢要害，在于尚书。尚书之选，岂可不慎重？而过去是多从郎官越级擢升为尚书，虽知晓文法，长于应对，然只有一般区区小慧，并无治国安民的大才。应当从历任州宰素有能名的官员中简拔，虽进退缓慢，有时来不及，然而他们是忠心向公，奉职周密可靠的。文帝因啬夫善对要拜他为上林令的教训，周勃木讷少文而能安刘氏的大功都是应当引以为鉴的。以前楚狱大起，所以设置令史以助郎职，而这些人小人很多，好为奸利。现在务必精简，把他们停省。又谏议之职，应用公正之士，能看出问题匡正时务，对朝廷政务有所补益的人。又御史外迁，动不动据有州郡。应清理选择其任，以政绩来责成他们。有些二千石视事已久，且能为官吏民众创造便利平安的，应增秩禄重赏，不要随便迁徙。希圣上留心。”书奏上去，帝接纳了。
 </p><p>元和二年(85)，春，帝东巡狩，以韦彪代司徒事从行。回来后，韦彪因病求退职，帝遣小黄门、太医问病，赐以食物。韦彪说疲困已极。
 </p><p>章和二年(88)夏，使近侍策诏书说：“韦彪以将相的后裔，勤勉谨慎，出自州里，在位很久。因患笃疾，连上书求退。君年已老，不可以再加重任，恐职事烦琐，以加重损耗。着其上大鸿胪印绶。遣太子舍人到中臧府，受赐钱二十万。”永元元年(89)卒，诏尚书：“故大鸿胪韦彪，在位无过失，正准备录用，奄忽而卒。特赐钱二十万，布百匹，谷三千斛。”韦彪清俭好施舍，所得禄赐分与宗族，家无余财。著书十二篇，号为《韦卿子》。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十五章-卓鲁魏刘列传-白话.html'>第十五章-卓鲁魏刘列传</a></p><p class='next'>下一节：<a href='第十七章-宣张二王杜郭吴承郑赵-白话.html'>第十七章-宣张二王杜郭吴承郑赵</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十五章-卓鲁魏刘列传-白话.html'>第十五章-卓鲁魏刘列传</a></p><p class='next'>下一节：<a href='第十七章-宣张二王杜郭吴承郑赵-白话.html'>第十七章-宣张二王杜郭吴承郑赵</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>南史-原文版南史<a href='../南史.html#原文版南史'>：目录</a></p>
@@ -280,5 +307,18 @@
 </p><p>是月，上不豫，徙御延昌殿，始登阶而殿屋鸣吒，上恶之。魏军将至，上虑朝野忧惶，力疾召乐府奏正声伎。戊寅，大渐，诏曰：“始终大期，圣贤不免，吾行年六十，亦复何恨。但皇业艰难，万机自重，不能无遗虑耳。太孙进德日茂，社稷有寄，子良善相毗辅，思弘正道。内外衆事无大小，悉与鸾参怀。尚书是职务根本，悉委王晏、徐孝嗣。军旅捍边之略，委王敬则、陈显达、王广之、王玄邈、沈文季、张瑰、薛深等。百辟庶僚，各奉尔职，谨事太孙，勿有懈怠。”又诏曰：“我识灭后，身上着夏衣画天衣，纯乌犀导，絓诸器服，悉不得用宝物及织成等，唯装复夹衣各一通。常所服刀长短二口，铁环者，随入梓宫。祭敬之典，本在因心，灵上慎勿以牲爲祭。祭惟设饼、茶饮、乾饭、酒脯而已。天下贵贱，咸同此制。未山陵前，朔望设菜食。陵墓万世所宅，意常恨休安陵未称，今可用东三处地最东边以葬我，名爲景安陵。丧礼每存省约，不须烦人，百官停六时入临，朔望祖日可依旧。诸主六宫，并不须从山陵。内殿凤华、寿昌、曜灵三处，是吾所改制。夫贵有天下，富兼四海，宴处寝息，不容乃陋，谓此爲奢俭之中，慎勿坏去。显阳殿玉像诸佛及供养，具如别牒，可尽心礼拜供养之。应有功德事，可专在中。自今公私皆不得出家爲道，及起立塔寺，以宅爲精舍，并严断之。惟年六十，必有道心，听朝贤选序，已有别诏。诸小小赐乞，及合内处分，亦有别牒。内外禁卫劳旧主帅左右，悉令萧谌优量驱使之。”是日上崩于延昌殿，年五十四。群臣上諡曰武皇帝，庙号世祖。九月丙寅，葬景安陵。
 </p><p>上刚毅有断，政总大体，以富国爲先。颇喜游宴、雕绮之事，言常恨之，未能顿遣。临崩，又诏：“凡诸游费，宜从休息。自今远近荐献，务存节俭，不得出界营求，相高奢丽。金粟缯纩，敝人已甚，珠玉玩好，伤俗尤重，严加禁绝。”
 </p><p>论曰：齐高帝基命之初，武功潜用，泰始开运，大拯时艰。及苍梧暴虐，衅结朝野，而百姓懔懔，命县朝夕。权道既行，兼济天下。元功振主，利器难以假人，群方戮力，实怀尺寸之望，岂惟天厌水行，固已人希木德，归功与能，事极乎此。武帝云雷伊始，功参佐命，虽爲继体，事实艰难。御衮垂旒，深存政典，文武授任，不革旧章，明罚厚恩，皆由己出。外表无尘，内朝多豫，机事平理，职贡有恒，府藏内充，人鲜劳役。宫室苑圃，未足以伤财，安乐延年，衆庶所同幸，亦有齐之良主也。据齐、梁纪录，并云出自萧何，又编御史大夫望之以爲先祖之次。案何及望之于汉俱爲勋德，而望之本传不有此陈，齐典所书，便乖实录。近秘书监顔师古博考经籍，注解汉书，已正其非，今随而改削云。</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷三-原文.html'>卷三</a></p><p class='next'>下一节：<a href='卷五-原文.html'>卷五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='卷三-原文.html'>卷三</a></p><p class='next'>下一节：<a href='卷五-原文.html'>卷五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

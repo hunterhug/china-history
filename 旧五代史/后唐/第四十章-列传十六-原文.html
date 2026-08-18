@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后唐<a href='../旧五代史.html#后唐'>：目录</a></p>
@@ -165,5 +192,18 @@
 </p><p>有子师道，仕皇朝，为右赞善大夫。卒。
 </p><p>周知裕，字好问，幽州人也。少事燕帅刘仁恭为骑将，表为妫州刺史。久之，移刺德州。天祐四年，刘守光既平沧州，乃以其幼子继威为留后，大将张万进与知裕佐之。继威冲幼，宣淫于万进之家，万进杀之。诘旦，召知裕告其故，万进自称留后，署知裕为景州刺史。会万进纳款于梁，知裕先奔于汴，梁主厚待之。特置归化军，以知裕为指挥使。凡军士自河朔归梁者，皆隶于部下。梁与庄宗交战于河，摧坚挫锐，惟恃归化一军，然岁将一纪，位不及郡守。同光初，庄宗入汴，知裕随段凝军解甲封丘。明宗时为总管，受降于郊外，见知裕甚喜，遥相谓曰：“周归化今为吾人，何乐如之！”因令诸子以兄事之。庄宗抚怜尤异，而诸校心妒之。有壮士唐从益者，因猎射之，知裕遁而获免。庄宗遂诛从益，出知裕为房州刺史。魏王继岌伐蜀，召为前锋骑将。明宗即位，移刺绛州，改淄州刺史、宿州团练使。知裕老于军旅，勤于稼穑，凡为郡劝课，皆有政声，朝廷喜之，迁安州留后。淮上之风恶病者，至于父母有疾，不亲省视，甚者避于他室；或时问讯，即以食物揭于长竿之首，委之而去。知裕心恶之，召乡之顽很者诃诘教导，俾知父子骨肉之恩，由是弊风稍革。长兴末，入为右神武统军。清泰初，卒于官。赠太傅。
 </p><p>史臣曰：夫才之良者，在秦亦良也，在虞亦良也。故彦威而下，昔为梁臣，不亏亮节；洎归唐祚，亦无丑声，盖松贞不变于四时，玉粹宁虞其烈焰故也。况彦威之辅明宗也，有翊戴之绩；晏球之伐中山也，著戡定之功。方之数公，尤为优矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十九章-列传十五-原文.html'>第三十九章-列传十五</a></p><p class='next'>下一节：<a href='第四十一章-列传十七-原文.html'>第四十一章-列传十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十九章-列传十五-原文.html'>第三十九章-列传十五</a></p><p class='next'>下一节：<a href='第四十一章-列传十七-原文.html'>第四十一章-列传十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

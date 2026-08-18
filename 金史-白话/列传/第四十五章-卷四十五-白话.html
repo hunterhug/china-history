@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#金史'>：目录</a></p>
@@ -192,5 +219,18 @@
 </p><p>又说：“近来听说保举县令，特别增加他们的俸禄，这也是朝廷对民众的善意。然而从潼关以西，至今还没有到任的，远方的民众不能总是没有指望，难道是举荐的人数少，因而不足吗？请诏令内外官员，增大选举范围，以补其缺，让天下人都得到好处。况且县丞、主簿、县尉也都是接近民众之官，却独不增加俸禄，他们既然不够自给自足，又怎么能禁止他们侵占和牟利呢？有人认为国家经费正紧张，不应当乱花钱，这是很不对的。给官吏俸禄丰厚，正是要让他们不侵扰民众，民众安宁国家就安定，怎么是乱花钱？假如能够裁减那些机构中无事无用的官员，不养那些毫无用处的人，又何必担心费用不足？如今一个人当兵，全家都由国家供给，军人死亡后，又供给他的子弟，以激励军心，为国尽力。至于没有男丁的家庭，他们的妻子和女儿仍然供给，这是什么原因？自从皇帝车驾南巡以来，已负担几年了，都张着嘴等吃饭，农民就要受困。国家时常担心存粮不足，这也是因为赡养这些老幼几千万人，多人求食，白费的金钱也正在于此。如果立即停止供应，恐怕流离失所，但应当规定时间，让他们各自想办法，到规定期限便停止供应，他们又有什么可说。”皇帝大多采纳他的意见。
 </p><p>元光元年(1222)正月，升为保大军节度使，兼任..州管内观察使。二月，改任静难军节度使，兼..州管内观察使。不久，告退离职。哀宗即位，召用旧官员，起用他为尚书左丞，他奏事已略不如以前那样，名望也有所降低。不久，又请求退休回家，日常只是抄书教给子孙们，并在汴城东面修建园林，建一座亭子称为“静隐亭”，他时常跟侯挚等人在里面游览吟咏。正大八年(1231)二月乙丑，死于嵩山的崇福宫，当年六十九岁。他初次游览嵩山时，曾经说：“我多想主管这座山！”果然死在这里。
 </p><p>张行信为人品德纯正直率，不喜欢粉饰自己，虽然两次担任丞相，却依然像没有当官一样。他遇事敢于发表意见，无所畏惧和避讳，每次在皇帝面前奏事时，别人都替他捏一把汗，而张行信坦然自若。他去世时，即使是平日非常嫉妒他的人，也在说一个正派人去世了。初到汴京，他父亲以御史大夫之职退休时身体还很健康，他的哥哥张行简任翰林学士承旨，张行信任礼部尚书，各子侄当中许多人中进士当了官，这是当世所未有过的情况。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十四章-卷四十四-白话.html'>第四十四章-卷四十四</a></p><p class='next'>下一节：<a href='第四十六章-卷四十六-白话.html'>第四十六章-卷四十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十四章-卷四十四-白话.html'>第四十四章-卷四十四</a></p><p class='next'>下一节：<a href='第四十六章-卷四十六-白话.html'>第四十六章-卷四十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

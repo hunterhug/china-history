@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#辽史'>：目录</a></p>
@@ -165,5 +192,18 @@
 </p><p>萧塔剌葛，字陶哂，六院部人。一向刚直不阿。太祖时，因叔祖台哂谋杀于越释鲁之事连坐，被抄没入弘义宫。世宗即位，因为是舅父，出其宫籍，补为国舅别部敞史。
 </p><p>有人称泰宁王察割有蔑视君王之心。塔剌葛说：“他纵然忍心行不义之事，又有谁肯听从他呢！”后来一日侍宴，酒至半酣，塔剌葛捉住察割的耳朵，强行劝他喝酒说“：皇上本来就知道你倨傲狠戾，然而皇上所以将国事托付于你，对你曲意加以怜悯，让你呆在身边，只不过是为了考察一下你的才干到底如何罢了。如果你长时怙恶不悛，只不过会自取灭族之祸！”察割不能作答，勉强笑着说：“怎么开这么毒的玩笑呢！”
 </p><p>天禄末，塔剌葛任北府宰相，及至察割作乱，塔剌葛醉中骂他说：“我后悔没有杀这个逆贼！”不久为察割所杀害。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-白话.html'>第十九章-卷十九</a></p><p class='next'>下一节：<a href='第二十一章-卷二十一-白话.html'>第二十一章-卷二十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-白话.html'>第十九章-卷十九</a></p><p class='next'>下一节：<a href='第二十一章-卷二十一-白话.html'>第二十一章-卷二十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

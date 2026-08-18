@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-志<a href='../明史.html#志'>：目录</a></p>
@@ -205,5 +232,18 @@
 </p><p>崇祯二年，淮安苏家嘴、新沟大坝并决，没山、盐、高、泰民田。五年，又决建义北坝。总河尚书朱光祚浚骆马湖，避河险十三处，名顺济河。六年，良城至徐塘淤为平陆，漕运愆期，夺光祚官，刘荣嗣继之。
 </p><p>八年，骆马湖淤阻，荣嗣开河徐、宿，引注黄水，被劾，得重罪。侍郎周鼎继之，乃专力于泇河，浚麦河支河，筑王母山前后坝、胜阳山东堤、马蹄厓十字河拦水壩，挑良城闸抵徐塘口六千馀丈。九年夏，泇河复通，由宿迁陈沟口合大河。鼎又修高家堰及新沟漾田营堤，增筑天妃闸石工，去南旺湖彭口沙礓，浚刘吕庄至黄林庄百六十里。而是时黄、淮涨溢日甚，倒灌害漕。鼎在事五年，卒以运阻削职。继之者侍郎张国维，甫莅任，即以漕涸被责。
 </p><p>十四年，国维言：“济宁运道自枣林闸溯师家庄、仲家浅二闸，岁患淤浅，每引泗河由鲁桥入运以济之。伏秋水长，足资利涉。而挟沙注河，水退沙积，利害参半。旁自白马河汇邹县诸泉，与泗合流而出鲁桥，力弱不能敌泗，河身半淤，不为漕用。然其上源宽处正与仲家浅闸相对，导令由此入运，较鲁桥高下悬殊，且易细流为洪流，又减沙渗之患，而济仲家浅及师庄、枣林，有三便。”又言：“南旺水本地脊，惟藉泰安、新泰、莱芜、宁阳、汶上、东平、平阴、肥城八州县泉源，由汶入运，故运河得通。今东平、平阴、肥城淤沙中断，请亟浚之。”复上疏运六策：一复安山湖水柜以济北闸，一改挑沧浪河从万年仓出口以利四闸，一展浚汶河、陶河上源以济邳派，一改道沂河出徐塘口以并利邳、宿，其二即开三州县淤沙及改挑白马湖也。皆命酌行。国维又浚淮、扬漕河三百馀里。当是时，河臣竭力补苴，南河稍宁，北河数浅阻。而河南守臣壅黄河以灌贼。河大决开封，下流日淤，河事益坏，未几而明亡矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十章-卷六十-原文.html'>第六十章-卷六十</a></p><p class='next'>下一节：<a href='第六十二章-卷六十二-原文.html'>第六十二章-卷六十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十章-卷六十-原文.html'>第六十章-卷六十</a></p><p class='next'>下一节：<a href='第六十二章-卷六十二-原文.html'>第六十二章-卷六十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

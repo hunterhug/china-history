@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>周书-原文版周书<a href='../周书.html#原文版周书'>：目录</a></p>
@@ -192,5 +219,18 @@
 </p><p>唯自尊崇，无所顾惮。国典朝仪，率情变改。后宫位号，莫能详录。每对臣下，自称为天。以五色土涂所御天德殿，各随方色。又于后宫与皇后等列坐，用宗庙礼器樽彝珪瓒之属以饮食焉。又令群臣朝天台者，皆致斋三日，清身一日。
 </p><p>车旗章服，倍于前王之数。既自比上帝，不欲令人同己。尝自带绶及冠通天冠，加金附蝉，顾见侍臣武弁上有金蝉，及王公有绶者，并令去之。又不听人有高大之称，诸姓高者改为姜，九族称高祖者为长祖，曾祖为次长祖，官名凡称上及大者改为长，有天者亦改之。又令天下车皆以浑成木为轮，禁天下妇人皆不得施粉黛之饰，唯宫人得乘有辐车，加粉黛焉。西阳公温，杞国公亮之子，即帝之从祖兄子也。其妻尉迟氏有容色，因入朝，帝遂饮之以酒，逼而淫之。亮闻之，惧诛，乃反。纔诛温，即追尉迟氏入宫，初为妃，寻立为皇后。每召侍臣论议，唯欲兴造变革，未尝言及治政。其后游戏无恒，出入不（饰）〔节〕，羽仪仗卫，晨出夜还。或幸天兴宫，或游道会苑，陪侍之官，皆不堪命。散乐杂戏鱼龙烂漫之伎，常在目前。好令京城少年为妇人服饰，入殿歌舞，与后宫观之，以为喜乐。摈斥近臣，多所猜忌。又吝于财，略无赐与。恐群臣规谏，不得行己之志，常遣左右密伺察之，动止所为，莫不钞录，小有乘违，辄加其罪。自公卿已下，皆被楚挞，其间诛戮黜免者，不可胜言。每笞捶人，皆以百二十为度，名曰天杖。宫人内职亦如之。后妃嫔御，虽被宠嬖，亦多被杖背。于是内外恐惧，人不自安，皆求苟免，莫有固志，重足累息，以逮于终。
 </p><p>史臣曰：高祖识嗣子之非才，顾宗祏之至重，滞爱同于晋武，则哲异于宋宣。但欲威之以槚楚，期之于惩肃，义方之教，岂若是乎。卒使昏虐君临，奸回肆毒，善无小而必弃，恶无大而弗为。穷南山之简，未足书其过；尽东观之笔，不能记其罪。然犹获全首领，及子而亡，幸哉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='-卷六-原文.html'>-卷六</a></p><p class='next'>下一节：<a href='-卷八-原文.html'>-卷八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='-卷六-原文.html'>-卷六</a></p><p class='next'>下一节：<a href='-卷八-原文.html'>-卷八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

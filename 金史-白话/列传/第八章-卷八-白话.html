@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#金史'>：目录</a></p>
@@ -160,5 +187,18 @@
 </p><p>世祖曾经怀疑术甲孛里笃，可能与乌春等人叛变，他派习不失一人骑马去察看，术甲孛里笃和忽鲁在楼上摆酒同饮。习不失听他们低声窃窃私语，似乎要抓自己，就从楼上一跃而下，沿篱笆跳出去，丢下马匹跑回来，他就是这样勇敢矫健。杯乃与乌春相约起兵，世祖到苏素海甸与乌春遭遇，肃宗打前阵，斜列、习不失在旁辅佐，捆扎乱麻放火，烟焰遮天，大败乌春，抓住杯乃，军队返回。太祖擒获麻产，割下其左耳献给辽国，辽人赏励军功，穆宗、太祖、欢都、习不失都被封为详稳。后来，习不失与阿里合懑、斡带共同辅助撒改进攻留可城，并攻克下来。太祖征伐辽国，让习不失带领一千兵士，在两旁侍奉。出河店一战中，只有习不失的计策与太祖相合，突袭击败十万敌军，挫伤了敌军的前锋。于是习不失和太宗、撒改等人劝说太祖继续前进。收国元年(1115)七月，习不失与太宗、撒改、杲都成为勃极烈，习不失是阿买勃极烈。
 </p><p>天辅七年(1123)，太宗和习不失驻守京城，郓王昂违犯纪律，失去民心，依法应当处死。这时，辽人献出燕京来归降，宋人签订盟约交纳岁币。三月，世宗出世。习不失对太宗说：“对兄弟骨肉，要用恩德掩盖道义，宁可亏枉法律也要保全他。现在国家不断有喜庆大事，您可以减免昂的罪行不予处死，如果皇上责备的话，就拿我是问吧。”太宗同意他的话，就杖罚了昂并上报给太祖。太祖每次征伐辽国，就命习不失和太宗留守，习不失虽然没有一方的军事功绩，但是凭靠职位与撒改并肩而立。这年七月，习不失去世。适逢太祖在回兵的路上得病，太宗前来迎接进见，恐怕太祖激动感伤而病情加重，没敢告诉他习不失的死讯。太祖就问道“：阿买勃极烈在哪儿？”太宗谎言答道“：现在快到了。”正隆二年(1157)，习不失受赠开府仪同三司之职，并被追封为曹国公。大定三年(1163)，他被进封为金源郡王，纎祭于太祖庙廷，谥号为“忠毅”。
 </p><p>习不失的儿子鹘沙虎，在建国初期立有功绩，天会年间，他任真定留守。鹘沙虎的儿子叫挞不也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-白话.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-白话.html'>第九章-卷九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-白话.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-白话.html'>第九章-卷九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

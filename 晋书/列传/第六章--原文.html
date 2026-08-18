@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -203,5 +230,18 @@
 </p><p>后为吏部令史，迁齐王攸司空主簿，转太常丞、司徒左西曹掾、尚书郎，所历皆称职。累迁散骑侍郎，除并州刺史，入为左卫率，知贾后废太子之谋，甚忧之。以计干张华而不见用，益以不平。贾后亲党微服听察外间，颇闻卞言，乃迁卞为轻车将军、雍州刺史，卞知言泄，恐为贾后所诛，乃饮药卒。初，卞之并州，昔同时为须昌小吏者十余人祖饯之，其一人轻卞，卞遣扶出之，人以此少之。
 </p><p>史臣曰：夫忠为令德，学乃国华，譬众星之有礼义，人伦之有冠冕也。卫瓘抚武帝之床，张华距赵伦之命，进谏则伯玉居多，临危则茂先为美。遵乎险辙，理有可言：昏乱方凝，则事睽其趣；松筠无改，则死胜于生，固以赴蹈为期，而不辞乎倾覆者也。俱陷淫网，同嗟承剑，邦家殄瘁，不亦伤哉！
 </p><p>赞曰：贤人委质，道映陵寒。尸禄观败，吾生未安。卫以贾灭，张由赵残。忠于乱世，自古为难。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章--原文.html'>第五章-</a></p><p class='next'>下一节：<a href='第七章--原文.html'>第七章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五章--原文.html'>第五章-</a></p><p class='next'>下一节：<a href='第七章--原文.html'>第七章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

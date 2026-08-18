@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后梁<a href='../旧五代史.html#后梁'>：目录</a></p>
@@ -163,5 +190,18 @@
 </p><p>天复中，太祖迎昭宗于凤翔，累与岐军对阵。时彦卿为诸道马步军都排阵使。尝躬擐甲胄，乘其所赐乌马，驰骋于阵前，太祖目之曰：“真神王也！”昭宗还京，赐迎銮毅勇功臣，改邢州刺史，寻迁亳州团练使。案《通鉴》：开平二年，帝从吴越王钱镠之请，以亳州团练使寇彦卿为东南面行营都指挥使，使击淮南。十一月，彦卿率众一千袭霍丘，为土豪硃景所败；又攻庐、寿二州，皆不胜。淮南遣滁州刺史李俨拒之。《九国志·硃景传》：梁祖闻景名，命寇彦卿率劲骑三千袭霍丘，图取景，且谕梁祖之意令降，景率其徒战于丘墟林泽中，射死者无数，彦卿兵折力殚而去。
 </p><p>太祖受禅，为华州节度使，加检校太保。岁余，入为左金吾卫大将军，充街使。一日，过天津桥，有老人误冲其趋道者，排之，落桥而毙，为御史府所弹，太祖不得已，责授左卫中郎将。不数月，除相州防御使，依前行营诸军排阵使。未几，授河阳节度使，加检校太傅。及太祖遇弑，彦卿追感旧恩，图御容以奠之。每因对客言及先朝旧事，即涕泗交流。末帝嗣位，遥领兴元节度使、东南面行营都招讨使。以拒淮寇，寻改右金吾卫上将军。贞明初，授邓州节度使。会淮人围安陆，彦卿奉诏领兵解围，大破淮贼而回。四年，卒于镇，时年五十七。诏赠侍中。彦卿贞干明敏，善事人主，然怙宠作威，多忌好杀，虽显立功名，而犹为识者之所鄙焉。
 </p><p>史臣曰：案：原本有阙文。存敬有提鼓之劳，彦卿遇攀鳞之会，俱为籓后，亦其宜哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十九章-列传九-原文.html'>第十九章-列传九</a></p><p class='next'>下一节：<a href='第二十一章-列传十一-原文.html'>第二十一章-列传十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十九章-列传九-原文.html'>第十九章-列传九</a></p><p class='next'>下一节：<a href='第二十一章-列传十一-原文.html'>第二十一章-列传十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

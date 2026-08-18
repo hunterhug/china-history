@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#列传'>：目录</a></p>
@@ -173,5 +200,18 @@
 </p><p>契丹国，在库莫奚东，异种同类，俱窜于松漠之间。登国中，国军大破之，遂逃迸，与库莫奚分背。经数十年，稍滋蔓，有部落，于和龙之北数百里，多为寇盗。真君以来，求朝献，岁贡名马。显祖时，使莫弗纥何辰奉献，得班飨于诸国之末。归而相谓，言国家之美，心皆忻慕，于是东北群狄闻之，莫不思服。悉万丹部、何大何部、伏弗郁部、羽陵部、日连部、匹洁部、黎部、吐六于部等，各以其名马文皮入献天府，遂求为常。皆得交市于和龙、密云之间，贡献不绝。太和三年，高句丽窃与蠕蠕谋，欲取地豆于分之。契丹惧其侵轶，其莫弗贺勿于率其部落车三千乘、众万余口，驱徙杂畜，求入内附，止于白狼水东。自此岁常朝贡。后告饥，高祖矜之，听其入关市籴。及世宗、肃宗时，恆遣使贡方物。熙平中，契丹使人祖真等三十人还，灵太后以其俗嫁娶之际，以青氈为上服，人给青氈两匹，赏其诚款之心，余依旧式。朝贡至齐受禅常不绝。
 </p><p>乌洛候国，在地豆于之北，去代都四千五百余里。其土下湿，多雾气而寒，民冬则穿地为室，夏则随原阜畜牧。多豕，有谷麦。无大君长，部落莫弗皆世为之。其俗绳发，皮服，以珠为饰。民尚勇，不为奸窃，故慢藏野积而无寇盗。好猎射。乐有箜篌，木槽革面而施九弦。其国西北有完水，东北流合于难水，其地小水皆注于难，东入于海。又西北二十日行有于已尼大水，所谓北海也。世祖真君四年来朝，称其国西北有国家先帝旧墟，石室南北九十步，东西四十步，高七十尺，室有神灵，民多祈请。世祖遣中书侍郎李敞告祭焉，刊祝文于室之壁而还。
 </p><p>史臣曰：夷狄之于中国，羁縻而已。高丽岁修贡职，东籓之冠，荣哀之礼，致自天朝，亦为优矣。其他碌碌，咸知款贡，岂牛马内向，东风入律者也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十七章-卷八十七-原文.html'>第八十七章-卷八十七</a></p><p class='next'>下一节：<a href='第八十九章-卷八十九-原文.html'>第八十九章-卷八十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八十七章-卷八十七-原文.html'>第八十七章-卷八十七</a></p><p class='next'>下一节：<a href='第八十九章-卷八十九-原文.html'>第八十九章-卷八十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

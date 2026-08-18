@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#列传'>：目录</a></p>
@@ -215,5 +242,18 @@
 </p><p>棱字伯威，援之族孙也。少孤，依从兄毅共居业，恩犹同产。毅卒无子，棱心丧三年。
 </p><p>建初中，仕郡功曹，举孝廉。及马氏废，肃宗以棱行义，征拜谒者。章和元年，迁广陵太守。时谷贵民饥，奏罢盐官，以利百姓，赈贫赢，薄赋税，兴复陂湖，溉田二万余顷，吏民刻石颁之。永元二年，转汉阳太守，有威严称。大将军窦宪西屯武威，棱多奉军费，侵赋百姓，宪诛，坐抵罪。后数年，江湖多剧贼，以棱为丹阳太守。棱发兵掩击，皆禽灭之。转会稽太守，治亦有声。转河内太守。永初中，坐事抵罪，卒于家。
 </p><p>赞曰：伏波好功，爰自冀、陇。南静骆越，西屠烧种。徂年已流，壮情方勇。明德既升，家祚以兴。廖乏三趣，防遂骄陵。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十三章-窦融列传-原文.html'>第十三章-窦融列传</a></p><p class='next'>下一节：<a href='第十五章-卓鲁魏刘列传-原文.html'>第十五章-卓鲁魏刘列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十三章-窦融列传-原文.html'>第十三章-窦融列传</a></p><p class='next'>下一节：<a href='第十五章-卓鲁魏刘列传-原文.html'>第十五章-卓鲁魏刘列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

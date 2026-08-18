@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#魏书'>：目录</a></p>
@@ -190,5 +217,18 @@
 </p><p>等到尔朱荣死后，范阳太守卢文伟诱骗侯渊出猎，侯渊闭门拒之。侯渊率领部下屯据郡南，为尔朱荣举哀，统兵向南。庄帝派东莱王贵平为大使，慰劳燕、蓟。侯渊于是诈称投降，贵平相信了他。于是侯渊绑缚贵平。进军至中山，行台仆射魏兰根拦截，被侯渊打败。正逢元晔被立为帝，侯渊想投靠他。常山太守甄楷屯据井陉，侯渊又打败了他们。元晔于是授侯渊为骠骑大将军、仪同三司、定州刺史、左军大都督、渔阳郡开国公，食邑一千户。前废帝登基，仍加开府，余官仍旧。幽州刺史刘灵助举义兵，屯驻安国城，侯渊与叱列延庆等人打败了他们，擒获刘灵助。后来随尔朱兆在广阿抵抗义军，尔朱兆军败后逃走，侯渊归降齐献武王，后跟随齐献武王在韩陵破尔朱氏。永熙初年(532)，除任齐州刺史，余官仍旧。
 </p><p>出帝末年，侯渊与兖州刺史樊子鹄、青州刺史东莱王贵平密信往来，相互连结，又派伺机行事的使者向齐献武王表达忠心。等到出帝入关，侯渊仍在犹豫观望。汝阳王元暹既除齐州刺史，军驻城西，侯渊拥军据城，不予迎接。百姓刘桃符等偷偷地把元暹引入齐州西城，侯渊与他争夺城门没有成功，率领骑兵出逃，妻儿部下被暹所虏。行达广里，逢承帝旨以侯渊行使青州事。齐献武王又给他写信说：“卿不要认为部下很少，难于东进。齐人风气浮薄，惟利是从，齐州城民且能迎汝阳王，青州之人还不能开门迎接你吗？你尽管前去。”侯渊于是又回来了，元暹归还了他的部下。而贵平自认为是斛斯椿同党，不同意接受代替。侯渊进军袭击高阳郡，攻克城池，把部下家小安置在城中，身率轻骑在外游击抢掠。贵平让他长子率众攻高阳，南青州刺史茹怀朗派兵协助。当时青州城百姓送粮的首尾相接。侯渊率骑兵夜奔青州，诈骗送粮的人说：“朝廷大军已至，见人都杀光，我是世子下人，今天都走了，你们为什么还不逃命去？”人们相信了他的话，弃粮奔走。天亮后，又对行人说：“朝廷大军昨晚已到高阳，我是前锋部队，今始到此，很想知道侯公竟在何处？”城中百姓都害怕了，抓住贵平出城投降。侯渊自思反复无常，担心不会安全，于是斩了贵平，传首京城，想表明他与斛斯椿不同。
 </p><p>等到樊子鹄之乱平定了，帝诏任封延之为青州刺史。侯渊既不能得到州职，心中又生恐惧，行达广川，便劫持光州库军反叛。派骑兵到平原抓住前胶州刺史贾璐。夜袭青州南廓，劫持前廷尉崔光韶，以惑人情。攻掠郡县。他的部下督帅背叛抵抗他，侯渊率领骑兵投奔萧衍，中途部下纷纷离散而去，行到南青州南境，被卖酒的人杀了，传首京师，家小配斩。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十七章-卷六十七-白话.html'>第六十七章-卷六十七</a></p><p class='next'>下一节：<a href='第六十九章-卷六十九-白话.html'>第六十九章-卷六十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十七章-卷六十七-白话.html'>第六十七章-卷六十七</a></p><p class='next'>下一节：<a href='第六十九章-卷六十九-白话.html'>第六十九章-卷六十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

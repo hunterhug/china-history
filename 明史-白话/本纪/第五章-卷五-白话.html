@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-本纪<a href='../明史.html#明史'>：目录</a></p>
@@ -170,5 +197,18 @@
 </p><p>二日，下诏任前北平按察使陈瑛为左副都御使，全部恢复建文朝废弃的官员。三日，恢复官制。二日，改封吴王允火通广泽王、衡王允火坚怀恩王、徐王允火熙敷惠王，随母妃吕氏居懿文太子陵园。二十二日，江阴侯吴高总督河南、陕西兵备，安抚军民。二十三日，尚书严震直、王纯、府尹薛正言等巡视山西、山东、河南、陕西。
 </p><p>八月一日，侍读解缙、编修黄淮入文渊阁供职。不久命侍读胡广、修撰杨荣、编修杨士奇、检讨金幼孜、胡俨一同入朝供职，并参与军国大事。押送兵部尚书铁铉至京，不认罪，被杀。左军都督刘真镇守辽东。六日，分遣御使察看天下利弊。七日，都督何福为征虏将军，镇守宁夏，节制陕西行都司。都督同知韩观练兵江西，节制广东、福建。十三日，西平侯沐晟守云南。九月四日，论靖难之功，封丘福淇国公、朱能成国公、张武等十三人为侯、徐祥等十一人为伯。论诚恳依附之功，封驸马都尉王宁为侯。茹王常、陈王宣、都督同知王佐皆封为伯。十四日，规定功臣犯死罪减俸禄条例。十五日，将山西无田贫民迁往北平，赐给钱钞，免除赋税五年。韩观为征南将军，镇守广西。
 </p><p>冬十月七日，命北平州县弃官逃避靖难之役的朱宁等二百一十九人入粟免死，戍边兴州。十九日，撰修《太祖实录》。十六日，镇远侯顾成镇守贵州。十二日，迁封谷王朱木惠于长沙。十九日，下诏徙迁征战将士有掠民家之女的送还其家。十一月十三日，立后妃徐氏为皇后。废广泽王允火通、怀恩王允火坚为庶人。十二月四日，蠲免遭受兵祸州县夏税。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-白话.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-白话.html'>第六章-卷六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-白话.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-白话.html'>第六章-卷六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

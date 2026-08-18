@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>汉书-表<a href='../汉书.html#表'>：目录</a></p>
@@ -151,5 +178,18 @@
 
 <h1>第十章-古今人表<span style='font-size:small'> 段译</span><span style='font-size:small;padding-left:5px'> <a href='第十章-古今人表-原文.html'>原文</a></span><span style='font-size:small;padding-left:5px'> <a href='第十章-古今人表-译文.html'>译文</a></span></h1>
 <p>自书契之作，先民可得而闻者，经传所称，唐、虞以上，帝王有号谥。辅佐不可得而称矣，而诸子颇言之，虽不考虖孔氏，然犹著在篇籍，归乎显善昭恶，劝戒后人，故博采焉。孔子曰：“若圣与仁，则吾岂敢？”又曰：“何事于仁，必也圣乎！”“未知，焉得仁？”“生而知之者，上也；学而知之者，次也；困而学之，又其次也；困而不学，民斯为下矣。”又曰：“中人以上，可以语上也。”“唯上智与下愚不移。”传曰：譬如尧、舜，禹、稷、卨与之为善则行，鮌、讠雚兜欲与为恶则诛。可与为善，不可与为恶，是谓上智。桀、纣，龙逢、比干欲与之为善则诛，于莘、崇侯与之为恶则行。可与为恶，不可与为善，是谓下愚。齐桓公，管仲相之则霸，竖貂辅之则乱。可与为善，可与为恶，是谓中人。因兹以列九等之序，究极经传，继世相次，总备古今之略要云。表略</p><p style="color:#967d63;">自从文字被发明以来，能够了解的上古人物，就是经传中所提到的。唐、虞之前，帝王有谥号，但辅佐他们的大臣却没有记载。但是诸子却多次提到他们，虽然诸子不考察孔子之书，但仍将这些大臣记载在书中，是出于彰显善行，揭发恶行，劝导警戒后世人的目的。所以我广泛地采纳这些资料。孔子说：“若圣与仁，则吾岂敢。”又说：“何事于人，必也圣乎。”“为知，焉得仁。”“生而知之者，上也；学而知之者，次也；困而不学，民斯为下矣。”又说：“中人以上可以语上，唯上智与下愚不移。”经义中这样解释：比如尧、舜、禹、稷、契，和他们做善事则能够仕途通畅，鮌、讙兜想要和他们作恶就被诛杀。能够和他们做善事而不能和他们作恶事，这就叫上智。夏桀、商纣，关龙逢和王子比干想要和他们做善事就被诛杀，于莘、崇侯和他们做恶事就能够仕途通畅。能够和他们为恶而不能和他们为善，这叫下愚。齐桓公，管仲辅佐他则成为霸主，竖貂辅佐他则国家大乱，能和他为善，也能和他做恶，这叫中人。我根据这个来排列九等次序，穷极经传，世代相继，依次排序，总体将古今的概要整理完备。表格此处省略。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章-百官公卿表下-段译.html'>第九章-百官公卿表下</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九章-百官公卿表下-段译.html'>第九章-百官公卿表下</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

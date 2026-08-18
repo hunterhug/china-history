@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>宋史-白话版宋史<a href='../宋史.html#宋史'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>王忠植传<span style='font-size:small'> 白话</span></h1>
 <p>王忠植，太行山义士。绍兴九年(1139)，攻取石州等十一郡，被授为武功大夫、华州观察、统制河东忠义军马，于是知代州。不久被降官，任建宁军承宣使、龙神卫四厢都指挥使、河东经略安抚使。<BR><BR>　　第二年，金人急围庆阳，帅臣宋万年登城拒守。恰逢川、陕宣抚副使胡世将檄令王忠植以所部开赴陕西会合，路上驻扎在延安，叛将赵惟清挟持忠植使他跪拜听诏，忠植说：“本朝的诏书就拜，金国的诏书就不拜。”赵惟清把他拘系起来送往金右副元帅撒离曷，忠植不为所屈。撒离曷让士兵牵挽忠植前往庆阳城下，谕示他劝降，忠植大声喊道：“我是河东步佛山忠义人士，被金人所捉，他们派人来招降你们，希望将士们不要辜负朝廷，坚守城壁。忠植我就要死在城下。”撒离曷怒骂忠植，忠植披着衣襟大声说：“可以赶快杀掉我。”终于遇害。胡世将向朝廷上奏忠植之事，朝廷赠忠植为奉国军节度使、开府仪同三司，使他家十人为官。</p>
-<div class='pn'><p class='pre'>上一节：<a href='赵立传-白话.html'>赵立传</a></p><p class='next'>下一节：<a href='崔纵传-白话.html'>崔纵传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='赵立传-白话.html'>赵立传</a></p><p class='next'>下一节：<a href='崔纵传-白话.html'>崔纵传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

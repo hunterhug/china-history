@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -169,5 +196,18 @@
 </p><p>孔克仁，句容人。由行省都事晋升为郎中。曾和宋濂一同侍奉太祖，太祖多次和他讨论天下形势及前代兴亡的史实。陈友谅已被消灭，太祖志图中原，对克仁说“：元朝的国运已被摧毁，豪杰互争，有可乘之隙。我将督促两淮、江南诸郡的百姓，及时耕种，加以训练，兵农兼资，进取退守。再于两淮之间的可馈运之处，储粮等候时机。兵粮充足，中原就可谋图，你认为怎样？”克仁回答说：“储粮和训兵，等待时机，这是长久的策略。”当时，江左的兵势日盛，太祖以汉高祖的标准来要求自己，曾对克仁说：“秦政暴虐，汉高祖起自布衣，以宽大驾驭着群雄，于是成为天下之主。现群雄蜂拥而起，但都不知制定法度以严明军政，这就是他们难以成功的原因。”因而感叹很久。又说：“天下用兵，河北有孛罗帖木儿，河南有扩廓帖木儿，关中有李思齐、张良弼。然而有部队而无纪律的是河北，稍有纪律但兵不振奋的是河南，道路不通、粮饷不继的是关中。江南则唯有我和张士诚。士诚多奸谋，崇尚间谍之术，军无纪律。我率领十万之众，修军政，任用将帅，伺机而动，我们的势力将不可战胜。”克仁点头说：“主上神武，一定能一统天下。”
 </p><p>太祖曾阅读《汉书》，宋濂和孔克仁侍奉其旁。太祖说“：汉朝治理国政不完美在哪里？”克仁说：“王霸之道杂用之故。”太祖说“：谁的错误呢？”克仁说“：责任在于汉高祖。”太祖说：“高祖创业，正遇上秦朝灭学，百姓憔悴以待复苏，礼乐之事还没兴起。孝文为令主，修定礼乐，恢复三代旧制，但顾虑重重而无暇他顾，致使汉朝帝业终归如此。帝王之道，可贵的是不违背时代。三代之王有时机而能为之，汉文有时机而不为，周世宗则是没时机而为之。”又曾问克仁“：汉高祖从平民成为万乘之主，他采用什么办法？”克仁问答说“：知人善任。”太祖说“：项羽在南面称王，仁义不施，而自以为功成名就。高祖了解他的底细，对他恭顺，待他宽仁，却最终打败了他。今豪杰非一人，我守卫在江左，任人唯贤，抚济百姓，坐观天下之变，如仅仅依靠武力，则难以平定。”
 </p><p>到了徐达等人攻下淮东、淮西后，太祖又对克仁说：“壬辰之乱(1352)，生民涂炭。中原诸将，孛罗拥兵犯阙，乱伦干纪，已全部灭亡。扩廓挟持太子称戈，急私仇，无敌忾之志。思齐碌碌无为，窃据一方，百姓深受其害。士诚对外假借元名，反复无常。明玉珍父子占据蜀地称王，喜于自用而无远谋。纵观他们的所作所为，他们都不能有所成就。我考察天时，审视人事，平定天下的时机成熟了。现部队西出襄、樊，东西跨越淮、泗，首尾相应，攻敌必胜，大事可成，天下不难平定。统一天下以后，生息尚艰难，还得进一步考虑。”克仁侍奉太祖最久，所以得知太祖的谋略最多。洪武二年(1369)四月，命令克仁等人教授诸子经书，功臣的子弟也一起学习。不久，出任江州知州，入朝为参议，犯罪而死。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十二章-卷二十二-白话.html'>第二十二章-卷二十二</a></p><p class='next'>下一节：<a href='第二十四章-卷二十四-白话.html'>第二十四章-卷二十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十二章-卷二十二-白话.html'>第二十二章-卷二十二</a></p><p class='next'>下一节：<a href='第二十四章-卷二十四-白话.html'>第二十四章-卷二十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

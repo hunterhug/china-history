@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -184,5 +211,18 @@
 </p><p>司徒王导惧不可制，乃大赦天下，枭胤首于大航，以默为西中郎将、豫州刺史。武昌太守邓岳驰白太尉陶侃，侃闻之，投袂起曰：“此必诈也。”即日率众讨默，上疏陈默罪恶。导闻之，乃收胤首，诏庾亮助侃讨默。默欲南据豫章，而侃已至城下筑土山以临之。诸军大集，围之数重。侃惜默骁勇，欲活之，遣郭诵见默，默许降，而默将张丑、宋侯等恐为侃所杀，故致进退，不时得出。攻之转急，宋侯遂缚默求降，即斩于军门，同党死者四十人，传首京师。
 </p><p>史臣曰：邵、李、魏、郭等诸将，契阔丧乱之辰，驱驰戎马之际，威怀足以容众，勇略足以制人，乃保据危城，折冲千里，招集义勇，抗御仇雠，虽艰阻备尝，皆乃心王室。而矩能以少击众，战胜获多，遂使玄明愤恚，世龙挫衄。惜其寡弱，功亏一篑。方之数子，其最优乎！默既拔迹危亡，参陪朝伍，忿因眦睚，祸及诛夷，非夫狂悖，岂宜至此！段匹磾本自遐方，而系心朝廷，始则尽忠国难，终乃抗节虏廷，自苏子卿以来，一人而已。越石之见诛段氏，实以威名；匹磾之取戮世龙，亦由众望：祸福之应，何其速哉！《诗》云：“无言不酬，无德不报”，此之谓也。
 </p><p>赞曰：邵李诸将，实惟忠壮。蒙犯艰危，驱驰亭鄣。力小任重，功亏身丧。匹磾劲烈，陨身全节。默实凶残，自贻罪戾。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十二章--原文.html'>第三十二章-</a></p><p class='next'>下一节：<a href='第三十四章--原文.html'>第三十四章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十二章--原文.html'>第三十二章-</a></p><p class='next'>下一节：<a href='第三十四章--原文.html'>第三十四章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

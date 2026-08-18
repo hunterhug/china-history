@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -184,5 +211,18 @@
 <p>　　曹王明，太宗第十四子。贞观二十一年受封。二十三年，赐实封八百户，寻加 满千户。显庆中，授梁州都督，后历虢、蔡、苏三州刺史。诏令继巢剌王元吉后。 永崇中，坐与庶人贤通谋，降封零陵王，徙于黔州。都督谢祐希旨，逼胁令自杀， 帝深悼之，黔府官僚咸坐免职。景云元年，明丧柩归于京师，陪葬昭陵。有二子， 南州别驾零陵王俊、黎国公杰，垂拱中并遇害。中兴初，封杰子胤为嗣曹王。胤叔 父备自南州还，又封备为嗣曹王、卫尉少卿、同正员，胤遂停封。后备招慰忠州叛 獠，没于贼，又封胤为王、银青光禄大夫、右武卫将军。卒，子戢嗣，左卫率府中 郎将。卒，子皋嗣。皋自有传。 </p>
 <p>　　史臣曰：太宗诸子，吴王恪、濮王泰最贤。皆以才高辩悟，为长孙无忌忌嫉， 离间父子，遽为豺狼，而无忌破家，非阴祸之报欤？武后斫丧王室，潜移龟鼎，越 王贞父子痛愤，义不图全。毁室之悲，《鸱鸮》之诗，伤矣！比齐祐之妄作，岂同 年而语哉！ </p>
 <p>　　赞曰：子弟作籓，磐石维城。骄侈取败，身无令名。冲、譔愤发，视死如生。 承乾、齐祐,愚弟庸兄。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十五章-卷二十五-原文.html'>第二十五章-卷二十五</a></p><p class='next'>下一节：<a href='第二十七章-卷二十七-原文.html'>第二十七章-卷二十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十五章-卷二十五-原文.html'>第二十五章-卷二十五</a></p><p class='next'>下一节：<a href='第二十七章-卷二十七-原文.html'>第二十七章-卷二十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

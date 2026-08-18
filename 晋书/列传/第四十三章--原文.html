@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -213,5 +240,18 @@
 </p><p>爰之有翼风，寻为桓温所废。温既废爰之，又以征虏将军刘惔监沔中军事，领义成太守，代方之。而方之。而方之、爰之并迁徙于豫章。
 </p><p>史臣曰：外戚之家，连辉椒掖，舅氏之族，同气兰闺，靡不凭藉宠私，阶缘险谒。门藏金穴，地使其骄；马控龙媒，势成其逼。古者右贤左戚，用杜溺私之路，爱而知恶，深慎满覆之灾，是以厚赠琼瑰，罕升津要。涂山在夏，靡与禼稷同驱；姒氏居周，不预燕齐等列。圣人虑远，殊有旨哉！搢昵元规，参闻顾命。然其笔敷华藻，吻纵涛波，方驾搢绅，足为翘楚。而智小谋大，昧经邦之远图；才高识寡，阙安国之长算。璇萼见诛，物议称其拔本；牙尺垂训，帝念深于负芒。是使苏祖寻戈，宗祧殆覆。已而猜嫌上宰，谋黜负图。向使郗鉴协从，必且戎车犯顺，则与夫台、产、安、桀，亦何以异哉！幸漏吞舟，免沦昭宪，是庾宗之大福，非晋政之不纲明矣。怿恣凶怀，鸩加连率，再世之后，三阳存仅，余殃所及，盖其宜也。
 </p><p>赞曰：元规矫迹，宠阶椒掖。识暗厘道，乱由乘隙。下拜长沙，有惭忠益。季坚清贞，毓德驰名。处泰逾约，居权戒盈。稚恭慷慨，亦擅雄声。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十二章--原文.html'>第四十二章-</a></p><p class='next'>下一节：<a href='第四十四章--原文.html'>第四十四章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十二章--原文.html'>第四十二章-</a></p><p class='next'>下一节：<a href='第四十四章--原文.html'>第四十四章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

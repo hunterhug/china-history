@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-本纪<a href='../金史.html#金史'>：目录</a></p>
@@ -181,5 +208,18 @@
 </p><p>八月初一，邳州从宜经略使纳合六哥等率都统金山颜俊带领沂州的一百多人，早晨进入省府，杀了行尚书省蒙古纲后反叛。九月初，宋朝军进入寿州，女奚烈蒲乃奋力作战打退了他们。
 </p><p>冬十月初四，把晋阳公郭文振的兵调到卫州。初八，宣宗皇帝在近郊打猎。十一月初八，邳州红袄贼寇三千人来降，开始拟把他们放到陈、许两地间。宣宗皇帝说：他们虽然投降了，而家属还在河朔，其余的党徒一定会杀他们，而我们所得到的人少而被杀人多，于心何忍？不如命使者安抚告谕，加以官职、奖赏而送他们回去。如果一定要忠于我，即使身处河朔也不会负我。而且其余的党徒将感恩，将会有更多的人来归顺。
 </p><p>十二月初一，把淮河边的巡检边军调到内地。十九日，宣宗皇帝不舒服免朝。二十日，皇太子率百官及王妃、公主入朝问皇帝安。二十一日，又入朝问安。二十二日，宣宗皇帝死于宁德殿，终年六十一岁。宣宗皇帝病重的当夜，近臣都离开了，只有前朝资明夫人郑氏年老侍立床边，宣宗皇帝知道她可托嘱，诏她说“：速召皇太子主持后事。”说完就死了。郑夫人把遗旨密封起来，当夜，皇后及贵妃庞氏在寝..中问安。庞氏阴险狡诈机谋聪明，常认为其子完颜守纯年长而没能立为皇太子，心里不满意。郑夫人怕她叛乱，即哄骗她说：“皇帝正换衣服，后妃可在其他室里稍作休息。”等到后妃进到屋中，她赶快锁上门，急忙召集大臣，传遗诏立皇太子为皇帝，尔后放出后妃并发丧。皇太子刚入宫，英王完颜守纯已先进去。皇太子知道了，分别派枢密院官及东宫亲卫军官移剌蒲阿在东华门街召集三万多军队。部署完毕，命令四个护卫在近侍局监禁完颜守纯，于是在灵柩前即皇帝位。二十四日，宣布遗诏。当日，诏赦中外。第二年正月初一，改元正大，先帝谥号继天兴统述道勤仁英武圣孝皇帝，庙号宣宗。三月二十三日，葬于德陵。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷十五-白话.html'>第十五章-卷十五</a></p><p class='next'>下一节：<a href='第十七章-卷十七-白话.html'>第十七章-卷十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷十五-白话.html'>第十五章-卷十五</a></p><p class='next'>下一节：<a href='第十七章-卷十七-白话.html'>第十七章-卷十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

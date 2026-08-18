@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -181,5 +208,18 @@
 </p><p>累迁刑部侍郎，遂代郑三俊为本部尚书。之凤以天下囚徒皆五年一审录，高墙罪独不与，上疏言之，报可。尝与左侍郎王命璿召对平台，论律例及狱情，帝申饬而退。时有火星之变，之凤特请修刑，言：“自今狱情大者，一月奏断，小者半月。赃重人犯，结案在数年前者，大抵本犯无髓可敲，戚属亦无脂可吸。祈悉宥免，全好生之仁。”从之。然之凤虽为此奏，其后每上狱词，帝必严驳，之凤惧甚，诸司呈稿，迟疑不敢遽发，屡疏谢病，帝不从。会尚书范景文劾南京给事中荆可栋贪墨，下部讯，之凤予轻比。帝疑其受贿，下之吏，法司希旨坐绞。给事中李清言于律未合，同官葛枢复论救。帝怒，镌枢级，调外。十三年四月，之凤狱中上书自白无赃贿，情可矜原。亦置不省，竟瘐死。
 </p><p>计崇祯朝刑部易尚书十七人。薛贞以奄党抵死。苏茂相半岁而罢。王在晋未任，改兵部。乔允升坐逸囚遣戍。韩继思坐议狱除名。胡应台独得善去。冯英被劾遣戍。郑三俊坐议狱逮系。之凤论绞，瘐死狱中。甄淑坐纳贿下诏狱，改系刑部，瘐死。李觉斯坐议狱削籍。刘泽深卒于位。郑三俊再为尚书，改吏部。范景文未任，改工部。徐石麒坐议狱，落职闲住。胡应台再召不赴。继其后者张忻，贼陷京师，与子庶吉士端并降。
 </p><p>赞曰：崔景荣、黄克缵皆不为东林所与，然特不附东林耳。方东林势盛，罗天下清流，士有落然自异者，诟谇随之矣。攻东林者，幸其近己也，而援以为重。于是中立者类不免蒙小人之玷。核人品者，乃专以与东林厚薄为轻重，岂笃论哉？毕自严、李长庚计臣中办治才，而自严增赋之议，识者病焉。刘之凤议狱不当，罪止谪罢，竟予重比，刑罚不中，欲求治得乎！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百四十三章-卷一百四十三-原文.html'>第一百四十三章-卷一百四十三</a></p><p class='next'>下一节：<a href='第一百四十五章-卷一百四十五-原文.html'>第一百四十五章-卷一百四十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百四十三章-卷一百四十三-原文.html'>第一百四十三章-卷一百四十三</a></p><p class='next'>下一节：<a href='第一百四十五章-卷一百四十五-原文.html'>第一百四十五章-卷一百四十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

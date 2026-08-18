@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-本纪<a href='../明史.html#明史'>：目录</a></p>
@@ -184,5 +211,18 @@
 </p><p>七月一日，皇帝生病。二日，罢免袁崇焕。十五日，封魏忠贤之孙魏鹏翼为安平伯。十八日，将孙慎行充军。二十三日，海盗进攻广东。当月，浙江发生大水灾。八月三日，加封魏良卿为太师，魏鹏翼为少师。五日，中极殿和建极殿完工。十二日，在乾清宫召见阁部、科道诸臣说魏忠贤、王体乾十分忠贞，一切大事都可以与他们商量。封魏忠贤之侄魏良栋为东安侯。二十日，皇帝病情加重。二十一日，在乾清宫死去。年仅二十三岁。在遗诏中说明由第五个弟弟信王朱由检继承皇位。
 </p><p>十月七日，奉上尊谥，庙号熹宗，葬在德陵。
 </p><p>评论：明自从世宗以后，纲纪逐渐衰颓，到神宗末年，已经废弛到极点了。虽有刚明英武之君，也难以振肃。又加上皇帝的庸懦，妇寺窃其根本，滥施淫刑，忠良惨遭横祸，万民离心，即使不想亡国，可又怎么办呢！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十一章-卷二十一-白话.html'>第二十一章-卷二十一</a></p><p class='next'>下一节：<a href='第二十三章-卷二十三-白话.html'>第二十三章-卷二十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十一章-卷二十一-白话.html'>第二十一章-卷二十一</a></p><p class='next'>下一节：<a href='第二十三章-卷二十三-白话.html'>第二十三章-卷二十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

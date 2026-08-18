@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#列传'>：目录</a></p>
@@ -189,5 +216,18 @@
 </p><p>始骏从祖弟伯达，伯达名犯显祖庙讳。与骏同年，亦以文辩。囗沮渠牧犍时，俱选与牧犍世子参乘出入，时论美之。伯达早亡。
 </p><p>弟子灵虬幼孤，颇有文才，而久沦末役。在吏职十余年，坐事免。会骏临终启请，得擢为著作佐郎。后坐称在京无缌亲，而高祖知其与骏子公义为始族，故致谴免。至洛无官。贫病久之，崔光启申为羽林监，选补徐州梁郡太守，以酗酒为刺史武昌王鉴所劾，失官。既下梁郡，志力少衰，犹时为酒困。久去官禄，不免饥寒，屡诣尚书乞效旧任。仆射高肇领选，还申为著作郎，以崔光领任，敕令外叙。
 </p><p>史臣曰：韩麒麟以才器识用，遂见记于齐王。显宗文学立己，屡陈时务，至于实录之功，所未闻也。子熙清尚自守，荣过其器。程骏才业未多，见知于世者，盖当时之长策乎？</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十七章-卷四十七-原文.html'>第四十七章-卷四十七</a></p><p class='next'>下一节：<a href='第四十九章-卷四十九-原文.html'>第四十九章-卷四十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十七章-卷四十七-原文.html'>第四十七章-卷四十七</a></p><p class='next'>下一节：<a href='第四十九章-卷四十九-原文.html'>第四十九章-卷四十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

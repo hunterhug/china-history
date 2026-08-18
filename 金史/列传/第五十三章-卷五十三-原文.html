@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -169,5 +196,18 @@
 </p><p>天骥沉静寡言，不妄交。起于田亩，能以雅道自将，践历台省若素宦然，诸人多自以为不及也。
 </p><p>赤盏尉忻，字大用，上京人。当袭其父谋克，不愿就，中明昌五年策论进士第。后选为尚书省令史、吏部主事、监察御史，言“诸王驸马至京师和买诸物，失朝廷体。”有诏禁止。迁镇南军节度副使、息州刺史。耕鞠场种禾，两禾合穗，进于朝，特诏褒谕。改丹州，迁郑州防御使，权许州统军使。丞相高汝砺尝荐其才可任宰相。元光二年正月，召为户部侍郎。未几，权参知政事。二月，为户部尚书，权职如故。三月，拜参知政事，兼修国史。诏谕近臣曰：“尉忻资禀纯质，事可倚任，且其性孝，朕今相之，国家必有望，汝辈当效之也。”正大元年五月，拜尚书右丞。哀宗欲修宫室，尉忻极谏，至是卧薪尝胆为言，上悚然从之。同判睦亲府内族撒合辇交结中外，久在禁近。哀宗为太子，有定策功，由是颇惑其言，复倚信日深，台谏每以为言。太后尝戒敕曰：“上之骑鞠举乐，皆汝教之，再犯必杖汝。”哀宗终不能去。尉忻谏曰：“撒合辇奸谀之最，日在天子左右，非社稷福。”上悔悟，出为中京留守，朝论快之。五年，致仕，居汴中，崔立之变明日，召家人付以后事，望睢阳恸哭，以弓弦自缢而死，时年六十三。一子名董七，没于兵间。弟秉甫，字正之。
 </p><p>赞曰：聂天骥素履清慎，赤盏尉忻天资忠谅，在治世皆足为良臣，不幸仕乱离之朝，以得死为愿欲，哀哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十二章-卷五十二-原文.html'>第五十二章-卷五十二</a></p><p class='next'>下一节：<a href='第五十四章-卷五十四-原文.html'>第五十四章-卷五十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五十二章-卷五十二-原文.html'>第五十二章-卷五十二</a></p><p class='next'>下一节：<a href='第五十四章-卷五十四-原文.html'>第五十四章-卷五十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

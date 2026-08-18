@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>南齐书-本纪<a href='../南齐书.html#本纪'>：目录</a></p>
@@ -173,5 +200,18 @@
 </p><p>上少沈深有大量，宽严清俭，喜怒无色。博涉经史，善属文，工草隶书，弈棋第二品。虽经纶夷险，不废素业。从谏察谋，以威重得众。即位后，身不御精细之物，敕中书舍人桓景真曰：“主衣中似有玉介导，此制始自大明末，后泰始尤增其丽。留此置主衣，政是兴长疾源，可即时打碎。凡复有可异物，皆宜随例也。”后宫器物栏槛以铜为饰者，皆改用铁，内殿施黄纱帐，宫人著紫皮履，华盖除金花瓜，用铁回钉。每曰：“使我治天下十年，当使黄金与土同价。”欲以身率天下，移变风俗。上姓名骨体及期运历数，并远应图谶数十百条，历代所未有，臣下撰录，上抑而不宣，盛矣。
 </p><p>史臣曰：孙卿有言：“圣人之有天下，受之也，非取之也。”汉高神武骏圣，观秦氏东游，盖是雅多大言，非始自知天命；光武闻少公之论谶，亦特一时之笑语；魏武初起义兵，所期“征西”之墓；晋宣不内迫曹爽，岂有定霸浮桥？宋氏崛起匹夫，兵由义立：咸皆一世推雄，卒开鼎祚。宋氏正位八君，卜年五纪，四绝长嫡，三称中兴，内难边虞，兵革世动。太祖基命之初，武功潜用，泰始开运，大拯时艰，龙德在田，见猜云雨之迹。及苍梧暴虐，衅结朝野，百姓懔懔，命悬朝夕。权道既行，兼济天下。元功振主，利器难以假人，群才戮力，实怀尺寸之望。岂其天厌水行，固已人希木德。归功与能，事极乎此。虽至公于四海，而运实时来；无心于黄屋，而道随物变。应而不为，此皇齐所以集大命也。
 </p><p>赞曰：於皇太祖，有命自天，同度宇宙，合量山渊。宋德不绍，神器虚传。宁乱以武，黜暴资贤。庸发西疆，功兴北翰，偏师独克，孤旅霆断。援旆东夏，职司静乱；指斧徐方，时惟伐叛；抗威京辇，坐清江汉。文艺在躬，芳尘渊塞。用下以才，镇民以德。端己雄睟，君临尊默。苞括四海，大造家国。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-卷一-原文.html'>第一章-卷一</a></p><p class='next'>下一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-卷一-原文.html'>第一章-卷一</a></p><p class='next'>下一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

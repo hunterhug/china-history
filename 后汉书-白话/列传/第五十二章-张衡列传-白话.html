@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#后汉书'>：目录</a></p>
@@ -158,5 +185,18 @@
 </p><p>以前侍中贾逵指出谶互相矛盾三十余事，一群说谶的人都不能解释。至于王莽篡位，这是汉朝的大祸，八十篇为什么不戒呢？这就可知图谶成于哀平之世啊！且《河流》、《六艺》，篇目已定，后人强相附会，不容妄有加增。永元中，清河人宋景用历纪推言水灾，而假托洞视玉版所见。有的至于弃家业，走入山林，后都无效，又搜集前世的成事，作为证验。至顺帝废而复位，就不知道了。这都是欺世骗俗，蒙昧势位，其情虚伪，清清楚楚，却没有人纠禁。律历、卦候、九宫、风角，屡有效验，没有人学，而争说谶纬之书。譬如画工，厌恶画犬马，而喜欢作鬼魅，这是因为具体的事物难于形容，而鬼魅虚伪无形，画起来容易。
 </p><p>应该收藏图谶，禁止流行，则是非不致混淆，坏书也没有了。”后升侍中，帝把他引入深宫，讽议左右。曾经问张衡，天下所痛恶的是什么。宦官怕他说坏话，都睁着眼睛看着他。张衡于是说了些假话出去了。但是宦官还是怕他为患，一起诬陷他。张衡常想着如何立身行事。认为吉凶祸福，幽暗深微，不易明白，于是作《思玄赋》，以表达和寄托自己的情志。顺帝永和初，出为河间相。当时河间王骄奢淫逸，不遵守法纪；又有不少豪强之徒，纠集一起捣乱。张衡到任，树威严，整理法度，暗中探得奸党名姓，一时收捕，上下肃然，以政治清廉著称。任职三年，上书请求退职归家。征拜尚书。年六十二，永和四年(139)卒。著《周官训诂》，崔瑗认为与诸儒没有什么不同的地方。又想继孔子《易》补正《彖》、《象》的残缺，始终没有完成。所著诗、赋、铭、七言、《灵宪》、《应间》、《七辩》、《巡诰》、《悬图》，共三十二篇。
 </p><p>安帝永初中，谒者仆射刘珍、校书郎刘..马余等著作东观，撰集《汉记》，因定汉家礼仪，上言请张衡参加讨论，适刘珍、刘..马余逝世，张衡平居叹息，想完成这件事。及为侍中，上疏请得在东观专门收检遗文，全力补缀。又条上司马迁、班固所记与典籍不合的十余事。又认为王莽本传，只应记载篡夺皇位而已，至于编年月，记灾祥，应作《元后本纪》。又更始居位，人民没有什么异议。光武初为其将，后来才即位，应该把更始之号建在光武之前。上书数次，没采纳。后来的著述，多不详见于典籍，时人感到遗憾。史官评说：崔瑗称赞平子说：“数术穷究天地的奥妙，制作的技巧，与自然同工。”这种造诣可以说说吗？考其研究天地，天地的灵气无所蕴蓄；用心机械，没有人能比得上他的智慧。所以人深微的思想，达到了智思的顶点。《礼记》说：“德成而上，艺成而下。”考量他的智思，难道能说它仅仅是一种艺能吗？它对德行有什么亏损呢？</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十一章-虞傅盖臧列传-白话.html'>第五十一章-虞傅盖臧列传</a></p><p class='next'>下一节：<a href='第五十三章-马融列传上-白话.html'>第五十三章-马融列传上</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五十一章-虞傅盖臧列传-白话.html'>第五十一章-虞傅盖臧列传</a></p><p class='next'>下一节：<a href='第五十三章-马融列传上-白话.html'>第五十三章-马融列传上</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

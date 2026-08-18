@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#后汉书'>：目录</a></p>
@@ -191,5 +218,18 @@
 </p><p>建武四年(28)，诏令耿纯率兵击更始东平太守范荆，范荆投降。又进击太山济南及平原贼，都平定了。居东郡四年，这时发干县长有罪，耿纯案奏，将县长围守，奏没有下来，发干县长自杀了。耿纯被牵连免职，以列侯奉朝请。跟从攻击董宪，路过东郡，百姓老小数千人跟着世祖车驾流泪哭泣，说“愿再得耿君。”帝对公卿们说“：耿纯从小身披甲胄为军吏罢了，作为东郡太守竟然能这样为百姓所思念吗？”建武六年(30)，定封为东光侯。耿纯告辞就国，帝说：“文帝对周勃说过丞相是我所敬重的，你现在为我率诸侯到封国去’，现在也是这样啊。”耿纯接受诏命而去。到了邺，赐谷万斛。到了封国，耿纯吊唁死者慰问病人，民众很敬爱他。
 </p><p>建武八年(32)，东郡、济阴盗贼群起，帝派遣大司空李通、横野大将军王常去讨伐。帝以耿纯在卫地有很高的威信，遣使拜耿纯为太中大夫，让他与大军会于东郡。东郡听说耿纯到了，盗贼九千余人都到耿纯处投降，大军不战而回。玺书再以耿纯为东郡太守，官吏百姓都心悦诚服。
 </p><p>建武十三年(37)，卒于官，谥封为成侯。子耿阜嗣位。耿植后来为辅威将军，封武邑侯。耿宿为代郡太守，封遂乡侯。耿讠斤为赤眉将军，封著武侯，跟从邓禹西征，战死于云阳。宗族中被封为列侯的有四人，关内侯的三人，为二千石的共九人。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十章-铫期王霸祭遵列传-白话.html'>第十章-铫期王霸祭遵列传</a></p><p class='next'>下一节：<a href='第十二章-朱景王杜马刘傅坚马列-白话.html'>第十二章-朱景王杜马刘傅坚马列</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十章-铫期王霸祭遵列传-白话.html'>第十章-铫期王霸祭遵列传</a></p><p class='next'>下一节：<a href='第十二章-朱景王杜马刘傅坚马列-白话.html'>第十二章-朱景王杜马刘傅坚马列</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

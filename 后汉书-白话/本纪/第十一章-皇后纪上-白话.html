@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-本纪<a href='../后汉书.html#后汉书'>：目录</a></p>
@@ -205,5 +232,18 @@
 </p><p>安帝元初六年(119)，邓太后诏令征召和帝弟弟济北王、河间王子女年龄在五岁以上的四十余人，又邓太后近亲三十余人，都为他们开设邸舍，教学经书，并亲自监督考试。年龄幼小的，使设置保育人员，朝晚入宫，抚育勉励告诫诱导，恩爱很是浓厚。于是诏令堂兄河南尹邓豹、越骑校尉邓康等说：“我之所以引进接纳这些孩子们，设置学官进行教育，实在是因为现在继承了过去一切弊端，时尚世俗浅薄，淫巧虚伪普遍存在，《五经》之义衰落缺乏，没有教化开导，将会一天一天衰微下去，所以我想褒扬崇尚圣人的道义，用以匡救挽回失去了的淳朴世俗。孔子不是说过吗：‘饱食终日，无所用心，不措心于大义，末了是没有出息的，很危险啊！’处在衰亡时期的皇亲贵戚，为享受优厚俸禄的家族，穿好的吃好的，乘坐好车驱策良马，而面墙向学，分不清善恶得失，不晓得品评褒贬，这就是一切祸害失败的由来。明帝永平中，外戚樊、郭、阴、马四姓子弟小侯都叫入学，就是用以矫正砥砺浅薄的风俗，反还到忠孝的轨道。我先祖既以武功书之竹帛，又以礼乐教化子孙，所以能约束修整自己，不触犯法律陷身罗网。应让儿孙辈上要继承先祖父亲的美德和武功，下要体会诏书的根本意义，那就很满足了。大家勉励啊！”邓康因邓太后长期临朝听政，心里很是害怕，假托有病不入宫朝拜。邓太后派宫婢去查问原委。当时宫里的婢女出入，多说好说歹，有毁有誉，其中年纪大的在宫里时间长的都称中大人。邓太后所派遣的是邓康家以前的婢女，她也自己通报自己为中大人。邓康知道后，责骂她说：“你是我们家出去的婢女，你敢于这样吗？”婢女发怒，还说邓康诈言称病出言不逊。邓太后便免去邓康的官职，遣送归国，且除去他的宗籍。
 </p><p>安帝永宁二年(121)二月，邓太后卧病日渐严重，便乘辇到前殿，见侍中、尚书，并北至太子新近所修缮的宫室。返还，大赦天下，赏赐诸园贵人、王、主、群僚钱布各不等。诏令说：“我以无德，母仪天下，而天不..我，早遭大忧。殇帝延平之际，海内无主，平民厄运，国家危于累卵。我勤勤恳恳，一片苦心，不敢以万乘之国为儿戏，上求不欺天愧对先帝，下求不违背民意有负本心，至诚在于赈济安度众生，安定刘氏天下。自己觉得应当彻底感动天地，蒙受福祚，而和帝、殇帝、新野君相继去世，内外丧祸，伤痛不绝。近来老病沉重纠缠，长久不能侍祠宗庙，自奋力上原陵，加上咳塞唾血，以至不起。生死存亡，寿命大限，是无可奈何的。公卿百官，应勉力尽忠恪慎，辅助朝廷。”邓太后三月去世，在位二十年，享年四十一。与和帝合葬顺陵。
 </p><p>史家评论说：邓太后临朝行使皇帝权力到终年，号令自出，术智拒采周公之良，身缺摄位还政于君的大义。至使嗣主怒恨不敢正视，收敛衣襟空拥着帝位，杜根等上书请太后还政，心怀愤懑，悬治象之法于阙门。以此为效法，不也近于迷惑吗？然而建光之后，安帝王柄在握，竟信谗戮辱杨震、邓骘等贤良，便嬖妖孽结伙而进，衰败之来，日趋严重有明显的征兆。所以知道把持朝廷特权容易招来诽谤，所幸者不是为了己身；焦心悯惜忧患，自强者只知有国。因此邓太后兄邓骘因母死请求退职，太后问班昭后才准许，阖门辞事；邓太后的侄儿邓凤，因受遗事泄，其父将邓凤髡剔向天下谢罪。将杜根杀掉，是不相信他的诚意吧？这像牵牛踩人之田而田主夺人之牛一样，惩罚得太重了。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十章-孝献帝纪-白话.html'>第十章-孝献帝纪</a></p><p class='next'>下一节：<a href='第十二章-皇后纪下-白话.html'>第十二章-皇后纪下</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十章-孝献帝纪-白话.html'>第十章-孝献帝纪</a></p><p class='next'>下一节：<a href='第十二章-皇后纪下-白话.html'>第十二章-皇后纪下</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

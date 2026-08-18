@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-本纪<a href='../后汉书.html#后汉书'>：目录</a></p>
@@ -175,5 +202,18 @@
 </p><p>四年(125)春正月二十四日，东郡报告濮阳出现黄龙二、麒麟一。二月乙亥，下邳王刘衍逝世。十七日，帝视察南部。三月初一，日蚀。初三，帝到宛，身体不舒适。初四，令大将军耿宝代行太尉工作。祭祀章陵园庙，告长沙、零陵太守，祭祀定王、节侯、郁林府君。初八帝从宛还。初十，帝到叶，逝世于乘舆中，年三十二。秘不敢宣，所到之处上食问起居照旧。十三日，还宫。十四日晚，发丧。尊皇后为皇太后，太后临朝执政，以后兄大鸿胪阎显为车骑将军，定策宫中，立章帝孙济北惠王刘寿子北乡侯刘懿为帝。十七日，济南王刘香逝世。二十八日，北乡侯即皇帝位。夏四月十一日，任太尉冯石为太傅，司徒刘熹为太尉，参与总领尚书事务；任前司空李..为司徒。初五，大将军耿宝、中常侍樊丰、侍中谢恽、周广、乳母野王君王圣，因结党阴谋不轨，樊丰、谢恽、周广监死狱中，耿宝自杀，王圣遣送去雁门。二十三日，葬孝安皇帝于恭陵，尊称庙号为恭宗。六月二十日，大赦天下。诏令先帝巡视所到之处，都半入今年田租。秋七月，西域长史班勇攻击车师后王，把他杀掉。二十一日，东海王刘肃逝世。冬十月二十二日，越..山崩。二十七日，少帝逝世。这年冬，京师疾疫流行。
 </p><p>史家评论说：“安帝虽称尊统治天下，而权柄掌握在邓太后手中，以至衣食菲薄，能尽心政务。然号令出自宫房帷幕，声威不能远及，开始失去根本，终于形成汉家衰败的局面，且竟然计入钱谷鬻官卖爵，移民内迁逃避羌寇，推咎于三公，以答对上天的过失。这就是所谓‘哲夫成城，哲妇倾城，牛七鸡司晨，国家一定颓败了。’”
 </p><p>史家颂赞说：“安帝德行不高，政教不行。立皇太子，旋又信谮废去，为江京等的邪蠹行为开绿灯。特别宠幸卫尉冯石，并任为太傅。又听信樊丰的谮言，免去太尉杨震。君道..乱不明，政化凌迟，所以汉祚归于衰微了。”</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章-孝和孝殇帝纪-白话.html'>第五章-孝和孝殇帝纪</a></p><p class='next'>下一节：<a href='第七章-孝顺孝冲孝质帝纪-白话.html'>第七章-孝顺孝冲孝质帝纪</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五章-孝和孝殇帝纪-白话.html'>第五章-孝和孝殇帝纪</a></p><p class='next'>下一节：<a href='第七章-孝顺孝冲孝质帝纪-白话.html'>第七章-孝顺孝冲孝质帝纪</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

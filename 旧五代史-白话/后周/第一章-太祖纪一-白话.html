@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后周<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -177,5 +204,18 @@
 </p><p>“我以微贱的出身，升于王公之上，担心德望不相匹配，抚身自思常感惶恐不安，哪能将别人不够的拿来过多地奉养自己？德业不如古贤却不知节俭计算，与其为了自身的消耗而使他人劳苦，何不勤俭节约而克制自己！以前颁发的大赦令，已经讲述了我的内心话。皇宫内衣食住行所需之物，全都减少；珍奇纤巧的贡物，都使停止。还有未讲完备的，应当再次列举。凡天下各州府原来进贡的美味饮食之物，应该有所减少。如两浙进贡的细酒、海味、姜瓜，湖南的枕子茶、乳糖、白沙糖、橄榄子，镇州的高公米、水梨，易州、定州的栗子，河东的白杜梨、米粉、绿豆粉、玉屑糁子面，永兴的御田红粳米、新大麦面，兴平的苏栗子，华州的麝香、羚羊角、熊胆、獭肝、朱柿、熊白，河中的树红枣、五味子、轻饧，同州的石鏊饼，晋州、绛州的葡萄、黄消梨，陕府的凤栖梨，襄州的紫姜、新笋、桔子，安州的折粳米、糟味，青州的水梨，河阳的诸种杂果，许州的御李子，郑州的新笋、鹅梨，怀州的寒食杏仁，申州的飤荷，亳州的萆..，沿淮河一带州郡的淮河白鱼，这些物品，虽然都出于土产，也有取之于民间百姓家中，未免劳顿烦扰，全是奢侈浪费。加上役使劳力肩挑背负，奔走在路上，堆积在有关部门，很是没有用处的东西，以后都不要进贡。各州府还有按旧例应进贡的美味食品，上面没有包括进去的，应该上奏报告以使停止进贡。”
 </p><p>又诏令在朝文武臣僚，各有奏折章表，凡是有益于国家有利于人民的事，赶快上报让皇上知道。
 </p><p>二十四日，潞州报告，得到石会关使者王延美通告，河东刘崇于正月十六日僭称北汉皇帝帝号。</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-太祖纪二-白话.html'>第二章-太祖纪二</a></p></div></body>
+<div class='pn'><p class='next'>下一节：<a href='第二章-太祖纪二-白话.html'>第二章-太祖纪二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -193,5 +220,18 @@
 </p><p>谏议大夫杨伯雄入直禁中，因与同直者相语，伯雄曰：“宿王之死，盖养于宫外，供护虽谨，不若父母膝下。岂国家风俗素尚如此。”或以此言告海陵。海陵大怒，谓伯雄曰：“尔臣子也，君父所为，岂得言风俗。宫禁中事，岂尔当言。朕或体中不佳，间不视朝，只是少得人几拜耳。而庶事皆奏决便殿，纵有死刑不即论决，盖使囚者得缓其死。至于除授宣敕虽复稽缓，有何利害。朕每当闲暇，颇阅教坊声乐，聊以自娱。《书》云：‘内作色荒，外作禽荒，酣酒嗜音，峻宇雕墙，有一于此，未或不亡。’此戒人君不恤国事溺于此者耳。如我虽使声乐喧动天地，宰相敢有滥与人官而吏敢有受赇者乎。外间敢有窃议者乎。尔谏官也，有可言之事，当公言之。言而不从，朕之非也。而乃私议，可乎？”伯雄对曰：“陛下至德明圣，固无窃议者。愚臣失言，罪当万死，惟陛下哀怜。”海陵曰：“本欲杀汝，今只杖汝二百。”既决杖至四十，使近臣传诏谕伯雄曰：“以尔藩邸有旧，今特释之。”
 </p><p>滕王广阳，母南氏，本大抃家婢，随元妃大氏入宫，海陵幸之，及有娠，即命为殿直。正隆二年九月二十六日，生广阳。十月满月，海陵分施在京贫民，凡用钱千贯。三年二月，封南氏为才人。七月，封广阳为滕王。九月，薨。
 </p><p>赞曰：海陵伐宋，光英居守，使陀满讹里也以宫师兼统军之任，计至悉也，岂料死其手乎。荀首有言：“不以人子，吾子其可得耶？”海陵睨人之子不翅鱼肉，而独己子之谋安，不可得矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p><p class='next'>下一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p><p class='next'>下一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

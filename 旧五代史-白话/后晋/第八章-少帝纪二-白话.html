@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后晋<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -161,5 +188,18 @@
 </p><p>夏天四月，少帝在澶州。沧州上奏，契丹攻陷了德州，刺史尹居..被敌军擒获。二日，邺都留守张从恩进京朝拜。五日，加封张从恩为平章事，返回邺都。七日，下诏定于本月八日少帝还京，命高行周、王周镇守澶州。附近兵马都交给他们管辖。十二日，少帝自澶州回到京城，特赦京城死刑以下罪人。十九日，分别派文武官员三十六人前往各州府储收括钱帛，以供军需。二十一日，少帝在宫中置备酒宴，召见景延广，并对他说“：你有辅佐王命的功劳，让你保护治理伊、洛，并不是用那里来酬劳你的功勋。”便解下御衣、宝带赏赐给他。二十四日，陇州奏报，饿死了五万六千多人。
 </p><p>五月一日，太原刘知远奏报，边境动乱，军用开支很大，对封赏的王位，乞求不举行册封典仪。七日，派侍卫亲军都虞候李守贞率领二万步骑兵，讨伐在青州的杨光远。二十日，张从恩上奏，贝州贼将赵延昭纵火抢掠，弃城而逃。这个月，泽潞上报，饿死的人达五千多。
 </p><p>六月一日，少帝军队进攻淄州，斩杀杨光远伪任刺史刘翰。六日，下令重新设置枢密院。七日，临时开封府尹李周去世，暂停上朝，追赐太师。十六日，滑州黄河溃决，洪水冲进曹、单、濮、郓等州境内，环绕梁山然后合注流入汶水、济水。二十日，襄州进献白鹊。二十四日，重新设置翰林学士。二十五日，宰相等再三上表，请求听玩声乐，少帝下诏予以准允。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-少帝纪一-白话.html'>第七章-少帝纪一</a></p><p class='next'>下一节：<a href='第九章-少帝纪三-白话.html'>第九章-少帝纪三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七章-少帝纪一-白话.html'>第七章-少帝纪一</a></p><p class='next'>下一节：<a href='第九章-少帝纪三-白话.html'>第九章-少帝纪三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

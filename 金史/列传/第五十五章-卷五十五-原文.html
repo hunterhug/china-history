@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -179,5 +206,18 @@
 </p><p>元光元年二月，全与元帅左监军讹可，节制三路军马伐宋。诏曰：“卿等重任，毋致不和，以贻丧败。其资粮可取，规取失宜不能得之，罪在讹可，既已得之，不能运致以为我用，罪在全。”全与讹可由颍、寿进渡淮，败宋人于高塘市，攻固始县，破宋庐州将焦思忠兵。无何，获生口言，时青受宋诏，与全兵相拒，全匿其事。
 </p><p>五月，兵还，距淮二十里，诸军将渡，全矫称密诏“诸军且留收淮南麦”，遂下令人获麦三石以给军。众惑之，讹可及诸将佐劝之不听，军留三日。讹可谓全曰：“今淮水浅狭，可以速济。时方暑雨，若值暴涨，宋乘其后，将不得完归矣。”全力拒之。从宜达阿、移失不、斜烈、李辛稍稍不平，全怒曰：“讹可一帅耳，汝曹党之。汝曹致身至此，皆吾之力。吾院官也，于汝无不可者。”众乃不敢言。是夜，大雨。明日，淮水暴涨，乃为桥渡军。宋兵袭之，军遂败绩。桥坏，全以轻舟先济，士卒皆覆没。宣宗乃下诏诛之，遣官招集溃军，诏曰：“大军渡淮，每立功效。诸将谬误，部曲散亡，流离忧苦，朕甚闵焉。各归旧营，勉图自效。”又诏曰：“阵亡把军品官子孙，十五以上者依品官子孙例随局承应，十五以下、十岁以上者依品从随局给俸，至成人本局差使。无子孙官，依例给俸。应赠官、赙钱、军人家口当养赡者。并如旧制。”
 </p><p>赞曰：金自章宗季年，宋韩侂胄构难，招诱邻境亡命以挠中原，事竟无成。而青、徐、淮海之郊民心一摇，岁遇饥馑，盗贼蜂起，相为长雄，又自屠灭，害及无辜，十余年糜沸未息。宣宗不思靖难，复为伐宋之举，迄金之亡，其祸尤甚。简书所载国用安、时青等遗事，至今仁人君子读之犹蹙頞终日。当时烝黎，如鱼在釜，其何以自存乎。兵，凶器也。金以兵得国，亦以兵失国，可不慎哉，可不慎哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十四章-卷五十四-原文.html'>第五十四章-卷五十四</a></p><p class='next'>下一节：<a href='第五十六章-卷五十六-原文.html'>第五十六章-卷五十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五十四章-卷五十四-原文.html'>第五十四章-卷五十四</a></p><p class='next'>下一节：<a href='第五十六章-卷五十六-原文.html'>第五十六章-卷五十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

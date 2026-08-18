@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -237,5 +264,18 @@
 </p><p>秦鳌，字子元，昆山人。嘉靖五年进士。授行人。擢兵科给事中。劾魏国公徐鹏举、中官赖义不法状，义罢还。彗星见，劾张孚敬妒贤病国，拟议诏旨，辄引以自归。帝遂罢孚敬。已，孚敬再相。汪鋐承风指以考察谪鳌东阳县丞。屡迁福建右参议。卒官。
 </p><p>又有张寅者，太仓人。嘉靖初进士。历南京御史。尝劾礼部侍郎黄绾十罪。比张孚敬罢政，寅言其憸邪蠹政，不可悉数，请追所赐封诰、银章之属，明正其辟。并劾左都御史汪鋐阴贼邪媚。帝怒，谪高唐判官。屡迁南京文选郎中。会简宫僚，改春坊右司直兼翰林院检讨。未几，被劾罢。
 </p><p>赞曰：《书》曰：“非佞折狱，惟良折狱，罔非在中。”又曰：“明启刑书，胥占咸庶中。”正言折狱之不可不得其中也。张寅、李钅盬，罪状昭然。中于郭勋、席书之说，廷臣获罪，而寅还职，钅盬宥死。陈洸罪至百七十二条，竟得免死，而犹上书讼冤，凡攻洸之恶与治洸之狱者，逮捕至百数十人。皆由议礼触众怒，一言有以深入帝隐。甚矣，佞人之可畏也。夫反成案似于明，出死罪似于仁，而不知其借端报复，刑罚失中。佞良之辨，可弗审欤！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九十三章-卷九十三-原文.html'>第九十三章-卷九十三</a></p><p class='next'>下一节：<a href='第九十五章-卷九十五-原文.html'>第九十五章-卷九十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九十三章-卷九十三-原文.html'>第九十三章-卷九十三</a></p><p class='next'>下一节：<a href='第九十五章-卷九十五-原文.html'>第九十五章-卷九十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

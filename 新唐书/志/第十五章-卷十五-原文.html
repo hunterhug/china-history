@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新唐书-志<a href='../新唐书.html#志'>：目录</a></p>
@@ -211,5 +238,18 @@
 </p><p>望去交分，冬先后交，皆去二时；春先交，秋后交，去半时；春后交，秋先交，去二时；夏则依定。不足去者，既。乃以三万六千一百八十三为法而一，以减十五，余为月蚀分。
 </p><p>朔去交，在内道，五月朔，加时在南方，先交十三时外；六月朔，后交十三时外者，不蚀。启蛰毕清明，先交十三时外，值缩，加时在未西；处暑毕寒露，后交十三时外，值盈，加时在巳东，皆不蚀。交在外道，先后去交一时内者，皆蚀。若二时内，及先交值盈、后交值缩二时外者，亦蚀。夏去交二时内，加时在南方者，亦蚀。若去分、至十二时内，去交六时内者，亦蚀。若去春分三日内，后交二时；秋分三日内，先交二时内者，亦蚀。诸去交三时内有星伏，土、木去见十日外，火去见四十日外，金晨伏去见二十二日外，有一星者，不蚀。各置去交分。秋分后，毕立春，均减二十二万八百分。启蛰初日，毕芒种，日损所减千八百一十分。夏至后，毕白露，日增所减二千四百分。以减去交分，余为不蚀分。不足减，反相减为不蚀分。亦以减望差为定法。后交值缩者，直以望差为定法。其不蚀分，大寒毕立春，后交五时外，皆去一时。时差值减者，先交减之，后交加之。时差值加者，先交加之，后交减之。不足减者，皆既。十五乘之，定法而一，以减十五，余为日蚀分。
 </p><p>置日月蚀分，四已下，因增二；五已下，因增三；六已上，因增五；各为刻率，副之。以乘所入历损益率，四千五十七为法而一。值盈，反其损益；值缩，依其损益。皆损益其副，为定用刻。乃六乘之，十而一，以减蚀甚辰刻，为亏初。又四乘之，十而一。以加食甚辰刻，为复满。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十四章-卷十四·车服-原文.html'>第十四章-卷十四·车服</a></p><p class='next'>下一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十四章-卷十四·车服-原文.html'>第十四章-卷十四·车服</a></p><p class='next'>下一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

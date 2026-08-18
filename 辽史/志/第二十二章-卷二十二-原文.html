@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-志<a href='../辽史.html#志'>：目录</a></p>
@@ -159,5 +186,18 @@
 </p><p>皇帝纳后之仪：择吉日。至日，后族毕集。诘旦，后出私舍，坐于堂。皇帝遣使及媒者，以牲酒饔饩至门。执事者以告，使及媒者入谒，再拜，平身立。少顷，拜，进酒于皇后次及后之父母、宗族、兄弟。酒遍，再拜。纳币，致词，再拜讫，后族皆坐。惕隐夫人四拜，请就车。后辞父母、伯叔父母、兄，各四拜；宗族长者，皆再拜。皇后升车，父母饮后酒，致戒词，遍及使者、媒者、送者。发轫，伯叔父母、兄饮后酒如初。教坊遮道赞祝，后命赐以物。后族追拜，进酒，遂行。将至宫门，宰相传敕，赐皇后酒，遍及送者。既至，惕隐率皇族奉迎，再拜。皇后车至便殿东南七十步止，惕隐夫人请降车。负银罂，捧縢，履黄道行。后一人张羔裘若袭之，前一妇人捧镜却行。置鞍于道，后过其上，乃诣神主室三拜，南北向各一拜，酹酒。向谒者一拜。起居讫，再拜。次诣舅姑御容拜，奠酒。选皇族诸妇宜子孙者，再拜之，授以罂、縢。又诣诸帝御容拜，奠酒。神赐袭衣、珠玉、珮饰，拜受服之。后姊若妹、陪拜者各赐物。皇族迎者、后族送者遍赐酒，皆相偶饮讫，后坐别殿，送后者退食于次。媒者传旨命送后者列于殿北。俟皇帝即御坐，选皇族尊者一人当奥坐，主婚礼。命执事者往来致辞于后族，引后族之长率送后者升，当御坐，皆再拜；又一拜，少进，附奏送后之词；退复位，再拜。后族之长及送后者向当奥者三拜，南北向各一拜，向谒者一拜。后族之长跪问“圣躬万福”，再拜；复奏送后之词，又再拜。当奥者与媒者行酒三周，命送后者再拜，皆坐，终宴。翼日，皇帝晨兴，诣先帝御容拜，奠酒讫，复御殿，宴后族及群臣，皇族、后族偶饮如初，百戏、角抵、戏马较胜以为乐。又翼日，皇帝御殿，赐后族及赆送后者，各有差。受赐者再拜，进酒，再拜。皇帝御别殿，有司进皇后服饰之籍。酒五行，送后者辞讫，皇族献后族礼物；后族以礼物谢当奥者。礼毕。
 </p><p>公主下嫁仪：选公主诸父一人为婚主，凡当奥者、媒者致词之仪，自纳币至礼成，大略如纳后仪。择吉日，诘旦，媒者趣尚主之家诣宫。俟皇帝、皇后御便殿，率其族人见。进酒讫，命皇族与尚主之族相偶饮。翼日，尚主之家以公主及婿率其族入见，致宴于皇帝、皇后。献赆送者礼物讫，朝辞。赐公主青幰车二，螭头、盖部皆饰以银，驾驼；送终车一，车楼纯锦，银螭，悬铎，后垂大毡，驾牛，载羊一，谓之祭羊，拟送终之具，至履尸仪物咸在。赐其婿朝服、四时袭衣、鞍马，凡所须无不备。选皇族一人，送至其家。
 </p><p>亲王女封公主者婚仪：仿此，以亲疏为差降。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p><p class='next'>下一节：<a href='第二十三章-卷二十三-原文.html'>第二十三章-卷二十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p><p class='next'>下一节：<a href='第二十三章-卷二十三-原文.html'>第二十三章-卷二十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

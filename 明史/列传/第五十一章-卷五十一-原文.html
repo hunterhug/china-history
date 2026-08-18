@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -199,5 +226,18 @@
 </p><p>铎以德望重于时。居乡，有盗掠牛马，或绐云：“鲁祭酒物也”，舍之去。大学士李东阳生日，铎为司业，与祭酒赵永皆其门生也，相约以二帕为寿。比检笥，亡有，徐曰：“乡有馈乾鱼者，盍以此往？”询诸庖，食过半矣，以其余诣东阳。东阳喜，为烹鱼置酒，留二人饮，极欢乃去。
 </p><p>永，字尔锡，临淮人。与铎同年进士，亦官编修。复与铎相继为祭酒。寻迁南京礼部侍郎。大学士杨一清重其才，欲引以自助，乃为他语挑之。永正色曰：“可以缨冠污吾道乎？”遂请致仕去。人服其廉介。
 </p><p>赞曰：明太祖时，国学师儒，体貌优重。魏观、宋讷为祭酒，造就人才，克举其职。诸生衔命奉使，往往擢为大官，不专以科目进也。中叶以还，流品稍杂，拨历亦为具文，成均师席，不过为儒臣序迁之地而已。李时勉、陈敬宗诸人，方廉清鲠，表范卓然，类而传之，庶观者有所法焉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十章-卷五十-原文.html'>第五十章-卷五十</a></p><p class='next'>下一节：<a href='第五十二章-卷五十二-原文.html'>第五十二章-卷五十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五十章-卷五十-原文.html'>第五十章-卷五十</a></p><p class='next'>下一节：<a href='第五十二章-卷五十二-原文.html'>第五十二章-卷五十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -198,5 +225,18 @@
 </p><p>未几，献之遇疾，家人为上章，道家法应首过，问其有何得失。对曰：“不觉余事，惟忆与郗家离婚。”献之前妻，郗昙女也。俄而卒于官。安僖皇后立，以后父追赠侍中、特进、光禄大夫、太宰，谥曰宪。无子，以兄子静之嗣，位至义兴太守。时议者以为羲之草隶，江左中朝莫有及者，献之骨力远不及父，而颇有媚趣。桓玄雅爱其父子书，各为一帙，置左右以玩之。始羲之所与共游者许迈。
 </p><p>许迈，字叔玄，一名映，丹阳句容人也。家世士族，而迈少恬静，不慕仕进。未弱冠，尝造郭璞，璞为之筮，遇《泰》之《大畜》，其上六爻发。璞谓曰：“君元吉自天，宜学升遐之道。”时南海太守鲍靓隐迹潜遁，人莫之知。迈乃往候之，探其至要。父母尚存，未忍违亲。谓余杭悬霤山近延陵之茅山，是洞庭西门，潜通五岳，陈安世、茅季伟常所游处，于是立精舍于悬霤，而往来茅岭之洞室，放绝世务，以寻仙馆，朔望时节还家定省而已。父母既终，乃遣妇孙氏还家，遂携其同志遍游名山焉。初采药于桐庐县之桓山，饵术涉三年，时欲断谷。以此山近人，不得专一，四面籓之，好道之徒欲相见者，登楼与语，以此为乐。常服气，一气千余息。永和二年，移入临安西山，登岩茹芝，眇尔自得，有终焉之志。乃改名玄，字远游。与妇书告别，又著诗十二首，论神仙之事焉。羲之造之，未尝不弥日忘归，相与为世外之交。玄遗羲之书云：“自山阴南至临安，多有金堂玉室，仙人芝草，左元放之徒，汉末诸得道者皆在焉。”羲之自为之传，述灵异之迹甚多，不可详记。玄自后莫测所终，好道者皆谓之羽化矣。
 </p><p>赞曰：书契之兴，肇乎中古，绳文鸟迹，不足可观。末代去朴归华，舒笺点翰，争相跨尚，竞其工拙。伯英临池之妙，无复余踪；师宜悬帐之奇，罕有遗迹。逮乎钟王以降，略可言焉。钟虽擅美一时，亦为回绝，论其尽善，或有所疑。至于布纤浓，分疏密，霞舒云卷，无所间然。但其体则古而不今，字则长而逾制，语其大量，以此为瑕。献之虽有父风，殊非新巧。观其字势疏瘦，如隆冬之枯树；览其笔踪拘束，若严家之饿隶。其枯树也，虽槎枿而无屈伸；其饿隶也，则羁羸而不放纵。兼斯二者，故翰墨之病歙！子云近出，擅名江表，然仅得成书，无丈夫之气，行行若萦春蚓，字字如绾秋蛇；卧王濛于纸中，坐徐偃于笔下；虽秃千兔之翰，聚无一毫之筋，穷万谷之皮，敛无半分之骨；以兹播美，非其滥名邪！此数子者，皆誉过其实。所以详察古今，研精篆素，尽善尽美，其惟王逸少乎！观其点曳之工，裁成之妙，烟霏露结，状若断而还连；凤翥龙蟠，势如斜而反直。玩之不觉为倦，览之莫识其端，心慕手追，此人而已。其余区区之类，何足论哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十九章--原文.html'>第四十九章-</a></p><p class='next'>下一节：<a href='第五十一章--原文.html'>第五十一章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十九章--原文.html'>第四十九章-</a></p><p class='next'>下一节：<a href='第五十一章--原文.html'>第五十一章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

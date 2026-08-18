@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#辽史'>：目录</a></p>
@@ -166,5 +193,18 @@
 </p><p>十三能言善辩，灵巧聪明，善于揣摩他人之心意。清宁年间，根据任职的年数和劳绩迁任为护卫太保。大康初，耶律乙辛再度进入枢密府，更加骄横无忌。当时萧十三出入于耶律乙辛家中，觉得哪个朝臣不阿附于他们便将他贬至京外任职，十三由宿卫迁任殿前副点检。
 </p><p>三年(1077)夏，护卫萧忽古等人图谋杀乙辛，事情败露被关入监牢。十三对乙辛说：“如今太子还活着，臣民归心于他。大王您在国中一向没有稳固的根基，又有诬害皇后的怨仇。如果太子即位，大王您何处容身呢？应该仔细地加以考虑。”乙辛说“：我担心这一点已经好久了！”当天夜里，召来萧得里特商议如何陷害太子之事。十三之策略既已得到采行，不久便迁任殿前都点检，兼同知枢密院事。十三又命令萧讹都斡等人诬告说，耶律查剌上次告发耶律撒剌等人之事都是实情，皇上下令查究其事，太子不服。另派夷离毕耶律燕哥审问太子，太子详细地陈说了如何遭到诬陷的情形。十三听说后，对燕哥说：“像这样陈奏于皇上，则大事去矣！应当将他所说的话改为招认罪状。”燕哥入宫，依十三所言禀奏。皇上大怒，废去太子。太子将要出京，说：“我有何罪该受如此处罚！”十三呵叱让他上车，派卫兵关上车门。同年，十三迁任北院枢密副使，又陈说暗中谋害太子的计策，乙辛从之。
 </p><p>及至乙辛被出贬为知南院大王事，也出贬十三为保州统军使，去世。乾统年间，被剖棺斩戮尸体。有二子：的里得、念经，均被诛杀。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十九章-卷三十九-白话.html'>第三十九章-卷三十九</a></p><p class='next'>下一节：<a href='第四十一章-卷四十一-白话.html'>第四十一章-卷四十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十九章-卷三十九-白话.html'>第三十九章-卷三十九</a></p><p class='next'>下一节：<a href='第四十一章-卷四十一-白话.html'>第四十一章-卷四十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

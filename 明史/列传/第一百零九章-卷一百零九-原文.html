@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -190,5 +217,18 @@
 </p><p>丁宾，字礼原，嘉善人。隆庆五年进士。授句容知县。征授御史。大学士张居正，宾座主也，诬刘台以赃，属宾往辽东按之。宾力辞，忤居正意，去官。万历十九年，用荐起故官，复以忧去。起南京大理丞。累迁南京右佥都御史兼督操江。江防多懈，宾率将校乘一舟往来周视，增守兵戍要害，部内宴然。南卫世职率赴京师请袭，留滞不得官，宾请就南勘袭。妖民刘天绪左道事觉，兵部尚书孙鑛欲穷治之，诏下法司讯鞫。宾兼摄刑部大理事，力平反，论七人死，余皆获释。召拜工部左侍郎，寻擢南京工部尚书。自上元至丹阳道路，尽易以石，行旅颂之。数引年乞罢，光宗立，始予致仕。
 </p><p>宾官南都三十年，每遇旱潦，辄请振贷，时出家财佐之。初以御史家居，及丁忧归，连三年大饥，咸捐资以振。至天启五年，复捐粟三千石振贫民，以资三千金代下户之不能输赋者。抚按录上其先后事，时已加太子少保，诏进太子太保，旌其门。以年高，三被存问。崇祯六年卒，年九十一。谥清惠。
 </p><p>赞曰：南京卿长，体貌尊而官守无责，故为养望之地，资地深而誉闻重者处焉。或强直无所附丽，不为执政所喜，则以此远之。袁洪愈诸人类以清强居优闲之地，不竟其用，亦以自全。干时冒进之徒，可以风矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百零八章-卷一百零八-原文.html'>第一百零八章-卷一百零八</a></p><p class='next'>下一节：<a href='第一百一十章-卷一百一十-原文.html'>第一百一十章-卷一百一十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百零八章-卷一百零八-原文.html'>第一百零八章-卷一百零八</a></p><p class='next'>下一节：<a href='第一百一十章-卷一百一十-原文.html'>第一百一十章-卷一百一十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

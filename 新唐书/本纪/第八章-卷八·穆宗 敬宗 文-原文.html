@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新唐书-本纪<a href='../新唐书.html#本纪'>：目录</a></p>
@@ -199,5 +226,18 @@
 </p><p>十二年正月戊戌，户部侍郎、判度支刘彖同中书门下平章事。二月，废穆宗忌日，停光陵朝拜及守陵宫人。壬申，崔慎由罢。闰月，自十月不雨，至于是月雨。三月，盐州监军使杨玄价杀其刺史刘皋。四月庚子，岭南军乱，逐其节度使杨发。戊申，兵部侍郎、诸道盐铁转运使夏侯孜同中书门下平章事。五月丙寅，刘彖薨。庚辰，湖南军乱，逐其观察使韩琮。六月丙申，江西都将毛鹤逐其观察使郑宪。辛亥，南蛮寇边。七月，容州将来正反，伏诛。八月，宣歙将康全泰逐其观察使郑薰，淮南节度使崔铉兼宣歙池观察处置使以讨之。丁巳，太原地震。十月，康全泰伏诛。十二月，毛鹤伏诛。甲寅，兵部侍郎、判户部蒋伸同中书门下平章事。
 </p><p>十三年正月戊午，大赦，蠲度支、户部逋负，放宫人。八月壬辰，左神策军护军中尉王宗实立郓王温为皇太子，权句当军国政事。癸巳，皇帝崩于咸宁殿，年五十。谥曰圣武献文孝皇帝。咸通十三年，加谥元圣至明成武献文睿智章仁神聪懿道大孝皇帝。
 </p><p>赞曰：《春秋》之法，君弑而贼不讨，则深责其国，以为无臣子也。宪宗之弑，历三世而贼犹在。至于文宗，不能明弘志等罪恶，以正国之典刑，仅能杀之而已，是可叹也。穆、敬昏童失德，以其以位不久，故天下未至于败乱，而敬宗卒及其身，是岂有讨贼之志哉！文宗恭俭儒雅，出于天惟，尝读太宗《政要》，慨然恭之。及即位，锐意于治，每延英对宰臣，率漏下十一刻。唐制，天子以只日视朝，乃命辍朝、放朝皆用双日。凡除吏必召见访问，亲察其能否。故太和之初，政事脩饬，号为清明。然其仁而少断，承父兄之弊，宦官挠权，制之不得其术，故其终困以此。甘露之事，祸及忠良，不胜冤愤，饮恨而已。由是言之，其能杀弘志，亦足伸其志也。昔武丁得一傅说，为商高宗。武宗用一李德裕，遂成其功烈。然其奋然除去浮图之法甚锐，而躬受道家之箓，服药以求长年。以此见其非明智之不惑者，特好恶有不同尔。宣宗精于听断，而以察为明，无复仁恩之意。呜呼，自是而后，唐衰矣！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七·德宗 顺宗 宪-原文.html'>第七章-卷七·德宗 顺宗 宪</a></p><p class='next'>下一节：<a href='第九章-卷九·懿宗 僖宗-原文.html'>第九章-卷九·懿宗 僖宗</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七·德宗 顺宗 宪-原文.html'>第七章-卷七·德宗 顺宗 宪</a></p><p class='next'>下一节：<a href='第九章-卷九·懿宗 僖宗-原文.html'>第九章-卷九·懿宗 僖宗</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -194,5 +221,18 @@
 <p>　　凭累历诸卫大将军，恕太子洗马，并以廕授官，累迁至少卿监。惎累官至右龙 武大将军，沉湎酒色，恣为豪侈，积债至数千万。其子贷回鹘钱一万余贯不偿，为 回鹘所诉，文宗怒，贬惎为定州司法参军。 </p>
 <p>　　王佖，晟之甥。雄武善骑射，自晟河西、河北出师，佖无役不从。硃泚之乱， 晟攻贼于光泰门，贼锋尚劲，佖与兵马使李演逾苑墙血战，败贼前锋，诸军方振， 论功为神策将。吐蕃之寇泾原，佖伏卒击尚结赞，几获，由是深为吐蕃所畏。晟视 佖恩宠与愿、愬不殊，给与过之。晟既为张延赏媒孽罢兵权，亦不用佖为将帅，入 为左卫上将军。元和中，愿、愬醖兄弟在方镇，佖检校工部尚书、灵州大都督府长 史、朔方灵盐节度使。先是，吐蕃欲成乌兰桥于河需，先贮材木，朔方节度使每 遣人潜载之，委于河流，终莫能成。至是，蕃人知佖贪而无谋，先厚遗之，然后亻 并忠于事君，长于应变，诚一代之贤将也。观恆山之役，立谈释二帅之憾；泾师之 乱，号哭赴奉天之危，可不为忠义乎！对白华之进军，知平凉之必诈，沮星变之议， 移渭桥之军，可不为应变乎！解带结孝忠之心，请婚释延赏之怨，嫉恶有楚琳之请， 惩乱行希鉴之诛，可不为明于决断乎！而德宗皇帝听断不明，无人君之量，俾功臣 困谗慝之口，奸人秉衡石之权，丁琼之言，诚堪太息。虽龊龊刻渭桥之石，区区赐 烟阁之铭，亦何心哉！作善遗庆，诸子俱才，元和平贼之功，听、愬居其半。父子 昆弟，皆以功名始终，道家所忌之谈，李氏以善胜矣。 </p>
 <p>　　赞曰：桓桓太师，义勇天资。运钟祸乱，力拯颠危。愬事章武，诛蔡平齐。凌 烟画图，父子为宜。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十二章-卷八十二-原文.html'>第八十二章-卷八十二</a></p><p class='next'>下一节：<a href='第八十四章-卷八十四-原文.html'>第八十四章-卷八十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八十二章-卷八十二-原文.html'>第八十二章-卷八十二</a></p><p class='next'>下一节：<a href='第八十四章-卷八十四-原文.html'>第八十四章-卷八十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

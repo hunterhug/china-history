@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -211,5 +238,18 @@
 </p><p>孙虎，不知何许人。从援池州，下于潜、昌化，定建德、诸全，皆有功。授千户。克新城、桐、庐，进海宁卫指挥使。平嘉兴盗。从副将军李文忠北征，由东道入应昌，至落马河与元兵战死。追封康安郡伯。
 </p><p>又指挥佥事刘广，戍永平，御寇战死。凉州卫百户刘林戍凉州，也先帖木儿叛，战死。边人壮之，名其所居窦融台为刘林台。钱塘卫千户袁兴，全椒人。从征云南，自请为前锋，陷阵死。并褒赠有差。
 </p><p>赞曰：明祖之兴，自决策渡江，始力争于东南数千里之内，摧友谅，灭士诚，然后北定中原，南图闽、粤，则廖永安胡大海以下诸人，厥功岂细哉！计不旋踵，效命疆场，虽勋业未竟，然褒崇庙祀，竹帛烂然。以视功成命爵、终罹党籍者，其犹幸也夫。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p><p class='next'>下一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p><p class='next'>下一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

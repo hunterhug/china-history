@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>北史-白话版北史<a href='../北史.html#北史'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>元苌传<span style='font-size:small'> 白话</span></h1>
 <p>元苌是元平的儿子。孝文帝时，袭父亲的爵位为松滋侯。按照规定降爵，赐封为艾陵伯。元苌性情刚毅，哪怕遇到吉庆的大喜事，他也从未开口笑过。孝文帝迁都时，元苌为代尹而留守，并被委任为怀朔镇都大将。临别时，孝文帝赐酒给元苌，元苌虽然拜谢后饮下，但面色依然没有一点高兴的样子。皇帝说：“听人说您一生都没有笑过，今天准备离别了，应当给我笑一次。”可是，元苌依然不笑。文帝说：“五行之气，偏偏有的地方不入，六合之间，什么怪事没有！”他身边看到的人，无不把着手大笑。<BR><BR>　　宣武帝时，任北中郎将，兼河内太守。因为黄河上的河桥是由船只连接起来的，路很狭窄，过往行旅很不方便，加上秋水大涨时，每年时常被毁坏，元苌便建造船路。广为招募，凡空车从京城出来的，全部让运载两块石头，累砌起来作为桥岸。这样，桥面宽阔，来往十分方便，近桥的各郡，也不再年年派劳役和受打扰。公家和私人都依赖它。后来他历任度支尚书、侍中、雍州刺史。死时，谥号为“成”。元苌中年之后，官位比较通显，便自尊自傲，闺房中又没有礼节，兄弟之间不和睦，本性贪婪暴虐，评论者因而鄙视他。</p>
-<div class='pn'><p class='pre'>上一节：<a href='华山王元鸷传-白话.html'>华山王元鸷传</a></p><p class='next'>下一节：<a href='元子华传-白话.html'>元子华传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='华山王元鸷传-白话.html'>华山王元鸷传</a></p><p class='next'>下一节：<a href='元子华传-白话.html'>元子华传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

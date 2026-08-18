@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -177,5 +204,18 @@
 <p>　　赵仁本者，陕州河北人也。贞观中，累转殿中侍御史。自义宁已来，诏敕皆手 自纂录，临事皆暗记之，甚为当时所伏。会有敕差一御史远使，同列递相辞托，仁 本越次请行，言于治书侍御史马周曰：“食君之禄，死君之事。虽复跋涉艰险，所 不敢辞也。”及回，事又称旨，擢吏部员外郎。乾封中，历迁东台侍郎、同东西台 三品，寻转司列少常伯，知政事如故。时许敬宗为右相，颇任权势，仁本拒其请托， 遂为敬宗所构，俄授尚书左丞，罢知政事。咸亨初卒官。 </p>
 <p>　　史臣论曰：崔、卢数公，皆以忠清文行，致位枢要。恪恭匪懈，以保名位，诚 所谓持盈守成，太平之君子。然敬玄之擢太玄，可谓能举善者矣。义琰腐材而不营 第舍，可谓有俭德矣。彦玮独遏奸臣，仁本请当远使，终升辅相，不亦宜乎！ </p>
 <p>　　赞曰：卢、刘两族，奕世名卿。二李、二乐，俱号公清。权臣独抗，美第不营。 以兹辅弼，无愧德声。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十章-卷三十-原文.html'>第三十章-卷三十</a></p><p class='next'>下一节：<a href='第三十二章-卷三十二-原文.html'>第三十二章-卷三十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十章-卷三十-原文.html'>第三十章-卷三十</a></p><p class='next'>下一节：<a href='第三十二章-卷三十二-原文.html'>第三十二章-卷三十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

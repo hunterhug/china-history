@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-本纪<a href='../明史.html#本纪'>：目录</a></p>
@@ -170,5 +197,18 @@
 </p><p>秋七月壬午朔，大祀天地于南郊，奉太祖配。诏：“今年以洪武三十五年为纪，明年为永乐元年。建文中更改成法，一复旧制。山东、北平、河南被兵州县，复徭役三年，未被兵者与凤阳、淮安、徐、滁、扬三州蠲租一年，馀天下州县悉蠲今年田租之半。”癸未，召前北平按察使陈瑛为左副都御史，尽复建文朝废斥者官。甲申，复官制。癸巳，改封吴王允熥广泽王，衡主允熞怀恩王，徐王允熙敷惠王，随母妃吕氏居懿文太子陵园。癸卯，江阴侯吴高督河南、陕西兵备，抚安军民。甲辰，尚书严震直、王钝，府尹薛正言等巡视山西、山东、河南、陕西。
 </p><p>八月壬子，侍读解缙、编修黄淮入直文渊阁。寻命侍读胡广，修撰杨荣，编修杨士奇，检讨金幼孜、故俨同入直，并预机务。执兵部尚书铁铉至，不屈，杀之。左军都督刘真镇辽东。丁巳，分遣御史察天下利弊。戊午，都督何福为征虏将军，镇宁夏，节制陕西行都司。都督同知韩观练兵江西，节制广东、福建。甲子，西平侯沐晟镇云南。九月甲申，论靖难功，封丘福淇国公，朱能成国公，张武等侯者十三人，徐祥等伯者十一人。论欸附功，封驸马都尉王宁为侯，茹瑺、陈瑄及都督同知王佐皆为伯。甲午，定功臣死罪减禄例。乙未，徙山西民无田者实北平，赐之钞，复五年，韩观为征南将军，镇广西。
 </p><p>冬十月丁巳，命北平州县弃官避靖难兵者朱宁等二百一十九人入粟免死，戍兴州。己未，脩《太祖实录》。丙寅，镇远侯顾成镇贵州。壬申，徙封谷王橞于长沙。甲戌，诏从征将士掠民间子女者还其家。十一月壬辰，立妃徐氏为皇后。废广泽王允熥、怀恩王允熞为庶人。十二月癸丑，蠲被兵州县明年夏税。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

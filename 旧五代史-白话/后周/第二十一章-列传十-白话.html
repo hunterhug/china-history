@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后周<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -159,5 +186,18 @@
 </p><p>这时王峻因以前服事过赵岩，很受赵岩宠爱，现在想给他追赠官爵立碑纪念。有人对王峻说“：赵岩以谗言奸诈服事君主，败坏梁朝王室，现在的人说起他，没有不切齿痛恨的，如果像你所想的那样做，一定会招致舆论的反对。”王峻才作罢。赵岩侄子赵崇勋，居住在陈郡，王峻为他请求赐给官位田地房屋，太祖也听从他。三年(953)春，兴修黄河大堤，工程浩大，王峻受诏在工地巡视督察。不久世宗从澶州入京城朝见太祖，王峻一向胆怯世宗的聪明英勇果断，听到世宗到了京城，立即从黄河工地回到朝廷。不多久，要求兼管青州，太祖不得已让他镇守青州。接受任命后，要求马上赴任，又请求借用国库里的绫缎绢布一万匹，太祖答应了他。
 </p><p>这年，户部侍郎赵上交临时掌管贡举选拔，赵上交曾经拜见王峻，王峻谈到一位童子，赵上交没理解王峻的用意，出榜的那天，那位童子没有录取，王峻记恨在心。当赵上交带着新录取的人到中书省时，王峻在办公厅堂上厉声说：“今年选拔士子不公平，应当重新考试。”各位宰相说“：但因事情已经办成，这时不好更改，况且尚没有重新考试的诏令下达，等下达后再复试也不晚。”王峻更加生气，指责赵上交，声音在外面都能听到。过一会，竟要赵上交引咎自责。完后，赵上交到王峻处道歉，王峻又若无其事地留下他喝酒。第二天，王峻上奏章弹劾赵上交掌管贡举不公正，请绳之以法，太祖只得点头而已。
 </p><p>王峻又奏请以颜愆、陈观代替范质、李谷为宰相。太祖说：“提拔和罢免宰相，不能仓促，等慢慢考虑。”王峻辩论这事，言语不甚恭敬。太祖还没吃饭，都将到中午，王峻仍争持不止。太祖说：“寒食节假之内，不好马上就办，等过了寒食节，就依您所说的做。”王峻才退下回到中书省。第二天中午时分，太祖宣诏召来宰臣、枢密使，当都来到后，就将王峻软禁到别的地方。太祖见冯道以下臣属，哭着说：“王峻欺凌我太过份了，非常没有礼貌，想全部除去我身旁臣僚，翦除我的助手。我的儿子在外地，专门想阻隔他，叫他暂时到京城来，王峻就心怀不满。哪有已经总管枢密院，又兼任宰相，还坚持要执掌地方重镇的道理？我也马上就任命他，任其所欲，还不满足，这样目无君主，谁能甘心忍受！”立即叫翰林学士徐台符等起草诏令。当天，退朝宣读诏令，贬谪王峻任商州司马，派供奉官蒋光远送往商州。不久，死在贬谪的地方，时为广顺三年(953)三月。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十章-列传九-白话.html'>第二十章-列传九</a></p><p class='next'>下一节：<a href='第二十二章-列传十一-白话.html'>第二十二章-列传十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十章-列传九-白话.html'>第二十章-列传九</a></p><p class='next'>下一节：<a href='第二十二章-列传十一-白话.html'>第二十二章-列传十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

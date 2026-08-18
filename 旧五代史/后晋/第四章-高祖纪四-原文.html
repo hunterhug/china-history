@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后晋<a href='../旧五代史.html#后晋'>：目录</a></p>
@@ -164,5 +191,18 @@
 </p><p>冬十月戊戌朔，故昭信军节度使白奉进赠太尉。丙午，以太常卿程逊没于海，废朝一日，赠右仆射。庚戌，闽王王昶、威武军节度使王继恭遣僚佐林思、郑元弼等朝贡，致书于宰执，无人臣之礼。帝怒，诏令不受所贡，应诸州纲运，并令林思、郑元弼等押归本道。既而兵部员外郎李知损上疏，请禁锢使人，籍没纲运。可之，收林思等下狱。丙辰，谿州刺史彭士愁，以锦、奖之兵与蛮部万人掠辰、澧二境，湖南节度使马希范遣牙兵拒之而退。金州山贼度从谠等寇洵阳，遣兵讨平之。
 </p><p>十一月甲戌，以太子宾客李延范为司农卿。乙亥，诏立唐高祖、太宗及庄宗、明宗、闵帝五庙于洛阳。丁丑，祠部郎中、知制诰吴承范改中书舍人，充翰林学士；翰林学士、中书舍人窦贞固改御史中丞；御史中丞薛融改尚书左丞；尚书右丞王延改吏部侍郎；尚书左丞崔棁改太常卿。戊寅，史馆奏：“请令宰臣一人撰录时政记，逐时以备撰述。”从之。《五代会要》：史馆奏：“唐长寿二年，右丞姚璹奏，帝王谟训，不可阙文。其仗下所言军国政事，令宰臣一人撰录，号‘时政记’。唐明宗朝，又委端明殿学士撰录，逐季送付史馆，伏乞遵行者。宜令宰臣一员撰述。”己卯，吏部侍郎龙敏改尚书左丞。己丑，以太子宾客杨凝式为礼部尚书致仕。诏建钱炉于栾川。丙申，谏议大夫致仕逍遥先生郑云叟卒。
 </p><p>十二月丁酉朔，百官不入阁，大雪故也。己亥，故皇子重英妻张氏落发为尼，赐名悟慎，并夏腊二十。庚戌，礼官奏：“来岁正旦，王公上寿，皇帝举酒，奏《元同之乐》；再饮，奏《文同之乐》；三饮，奏同前。”从之。歌辞不录。丙辰，诏今后城郭村坊，不得创造僧尼院舍。丁巳，帝谓宰臣曰：“大雪害民，五旬未止。京城祠庙，悉令祈祷，了无其验。岂非凉德不储，神休未洽者乎？”因令出薪炭米粟给军士贫民等。壬戌，礼官奏：“正旦上寿，宫悬歌舞未全，且请杂用九部雅乐，歌教坊法曲。”从之。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章-高祖纪三-原文.html'>第三章-高祖纪三</a></p><p class='next'>下一节：<a href='第五章-高祖纪五-原文.html'>第五章-高祖纪五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三章-高祖纪三-原文.html'>第三章-高祖纪三</a></p><p class='next'>下一节：<a href='第五章-高祖纪五-原文.html'>第五章-高祖纪五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

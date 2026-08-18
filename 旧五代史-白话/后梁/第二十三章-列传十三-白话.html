@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后梁<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -163,5 +190,18 @@
 </p><p>乾宁二年(895)十月，太祖亲自征伐兖州、郓州。十一月，朱王宣派贺瑰与晋军将领何怀宝率领一万多士兵援助朱瑾，部队驻扎在待宾馆，切断了梁军的粮道。太祖知悉后，从中都领军连夜急驰一百多里，天亮时到达巨野的东边，与贺瑰等交战，兖州人大败，贺瑰窜到长满荆棘的高坟上面，大叫道：“我是郓州都将贺瑰，愿降，请不要伤害我。”太祖听到后，奔马到高坟前，于是擒获了他。同时俘获了何怀宝以及将官几十人，在兖州城下示众，下令全部杀死，只留贺瑰一人，解开捆绑贺瑰的绳索，把他安置在太祖手下，不久暂任他为教练使，上奏朝廷授与检校左仆射。贺瑰感念太祖保全他性命的大恩，私下发誓以身相报。
 </p><p>天复年间，贺瑰参与平定青州王师范的战役，因功授与他曹州刺史兼先锋都指挥使，加封检校司空。天..二年，与杨师厚一起跟从太祖平定荆州、襄州，授与荆南两使留后，不久，召回，任行营左厢步军都指挥使。开平二年(908)十月，授与左龙虎军马军步军都指挥使。十二月，改任左卫上将军，兼任六军马步军都虞候。三年五月，转任右龙虎统军，不久，加封检校司徒、邢州团练使。四年二月，改任泽州刺史，兼任昭义军节度留后、检校太保，进封开国侯。乾化二年(914)七月，授与相州刺史，接着加封检校太傅，不久，转任左龙虎统军。
 </p><p>贞明二年(916)，庆州反叛，被李继陟占据，贺瑰以原官的身份兼任西面行营马步军都指挥使兼各军都虞候，与张筠一起打败泾州、凤翔三万敌人，攻下宁、衍二州。三年秋天，庆州平定。十二月，贺瑰因功授与滑州宣义军节度使，封为检校太傅，加平章事，不久授任北面行营招讨使。四年春天，晋人攻占了杨刘城。八月，贺瑰与许州节度使谢彦章率领大军在濮州的行台村扎营，与晋军对阵几个月。一天，晋王率轻骑挑战，贺瑰与谢彦章出动伏兵奋力攻击，晋王只身逃脱。此前，贺瑰与谢彦章不和，这年冬季十二月，又被诸军都虞候朱王圭挑拨，贺瑰于是埋伏甲士，在军中杀害谢彦章以及濮州刺史孟审澄、别将侯温裕等人，谎报说他们谋反被诛。同月，贺瑰与晋军在胡柳陂大战，晋军战败，临阵斩杀晋将周阳五。到傍晚，贺瑰军队又战败。五年春天正月，晋军在德胜筑城，在黄河两岸建起营寨。四月，贺瑰率领大军攻打晋军南岸营寨，用大船战舰阻扼中流，晋军切断连接的大船，增兵援救南岸营寨，贺瑰军队退到行台。接着因病去世，时年六十二岁。诏令追赠为侍中。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十二章-列传十二-白话.html'>第二十二章-列传十二</a></p><p class='next'>下一节：<a href='第二十四章-列传十四-白话.html'>第二十四章-列传十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十二章-列传十二-白话.html'>第二十二章-列传十二</a></p><p class='next'>下一节：<a href='第二十四章-列传十四-白话.html'>第二十四章-列传十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

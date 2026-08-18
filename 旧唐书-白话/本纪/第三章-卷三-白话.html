@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-本纪<a href='../旧唐书.html#旧唐书'>：目录</a></p>
@@ -321,5 +348,18 @@
 </p><p>史臣道：臣看文皇帝，聪明神武，得志不同一般。选拔人才不结党，托负大业都人尽其才。所以屈突通、尉迟敬德，从仇敌转而倾心交结愿作心腹；马周、刘洎，从疏远的关系而终于委任他们评量人才。终于平定国家，确实是由于这些用人之道。现在我试着论述一下：石基润湿，白云兴起；虫子鸣叫，蝗虫跳跃。即使尧、舜这样的圣人，不能用木寿杌、穷奇这样凶恶的人治理平定天下；伊尹、吕尚的贤能，不能辅佐残暴的君王夏桀、殷纣而使国家昌盛。君臣的良好关系，遭遇是这样难啊！以至于挖眼、剖心、抽筋、喂蛇，确实是由于遭遇的君王不同啊。凭借房玄龄、魏征的才智，不超过孔丘、孟轲，但能够遵从皇上庇护民众，这是遇到好的时机啊！
 </p><p>有人说：凭借太宗的贤德，不被兄弟所爱，不能给儿子以良好的教育，什么原因呢？曰：是的！舜不能给四个罪人以仁爱，尧不能教育好儿子丹朱，这是先前的历史记载。正当神尧受谗言的年代，当建成忌妒太宗功绩的时候，暂且除去畏惧、威逼，谁还能顾上分崩离析。变故的兴起，灾祸马上临头，不忧虑倾巢覆灭之祸，难道会考虑“尺布”童谣兄弟手足之情吗？废太子承乾之愚昧，圣贤的父亲文皇帝也不能改变啊！假若文皇帝自己在儿子中确定继承人，不在高丽扩大领土，放纵欲望，用人惟才像贞观初年，听取意见能像对待魏征的时候。这样较之世袭的周武王姬发、周成王，还会有更多的美德；较之汉文帝、汉武帝的宽大胸怀，他们也会感到德行有亏而惭愧。根据文皇帝的一生能当机立断而不疑惑，能很好地听取意见，千载以来值得称赞的，只有文皇帝一人罢了。
 </p><p>赞曰：姬昌、姬发开国，一门有三位圣人。周文姬昌定了周武王的君王地位，兄弟友爱之情便不好了。管叔、蔡叔已经被杀，周成王、周康王的王道才成为正统。贞观的风气，到今天人们还歌咏。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二-白话.html'>第二章-卷二</a></p><p class='next'>下一节：<a href='第四章-卷四-白话.html'>第四章-卷四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二-白话.html'>第二章-卷二</a></p><p class='next'>下一节：<a href='第四章-卷四-白话.html'>第四章-卷四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

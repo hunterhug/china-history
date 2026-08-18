@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#后汉书'>：目录</a></p>
@@ -178,5 +205,18 @@
 </p><p>袁术与吴匡合力砍斫进攻，中黄门持武器守阁。正值日暮，袁术因放火烧南宫九龙门及东西宫，想威胁张让等出来。张让等人进去告诉太后，说大将军兵反，烧宫，攻尚书门，因此劫持太后，天子及陈留王，又劫宫中官属，从复道走北宫。尚书卢植拿着戈在阁道窗下，抬头骂段王圭。段王圭害怕了，就释放了太后。太后跳阁得以未劫去。袁绍与叔父袁隗假称皇帝诏召樊陵、许相杀了。何苗、袁绍于是带兵驻朱雀阙下，逮捕了赵忠等人杀了。吴匡等久就抱怨何苗不与何进同心，又怀疑他与宦官同谋，于是命令军中说：“杀大将军的就是车骑，你们能够为大将军报仇吗？”何进对部属本有仁恩，士卒都流泪说“：愿以死相报！”吴匡就带兵与董卓的弟弟奉车都尉董..攻杀何苗，把尸体抛在苑中。袁绍就关闭北宫门，指挥兵吏捕捉宦官。无分大小，统统杀掉。有的无须被错认为是宦官杀死，有的自己发露身体然后才得免遭杀死。死了二千多人。
 </p><p>袁绍因进兵排宫，有的上端门屋进攻宫中。张让、段王圭等人围困不得出，于是劫持皇上与陈留王几十人步出..门，逃奔小平津。公卿都从平乐观出来，没有跟着他们跑的，只有尚书卢植晚上骑马奔驰河上，王允派河南中部掾闵贡跟在卢植后面。闵贡到，拿剑斩了几个人，其余的都跳河而死。第二天，公卿百官奉迎天子还宫，用闵贡为郎中，封都亭侯。董卓于是废了灵帝，迫杀太后，杀舞阳君，何氏亡了，而汉室也自此败乱。
 </p><p>史官评论曰：窦武、何进以大舅的身份，掌握辅政的大权，宫内依靠太后临朝听政的威势，外面迎来群英乘风的有利条件，终于为宦官所败，身死功坠，为世人所悲，难道智力不足而权位有余吗？《左传》说：“天之废商久矣，君将兴之。”老天爷好久就抛弃商朝了，您想兴起来吗？这就是宋襄公败于泓的原因啊！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十二章-郭符许列传-白话.html'>第六十二章-郭符许列传</a></p><p class='next'>下一节：<a href='第六十四章-郑孔荀列传-白话.html'>第六十四章-郑孔荀列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十二章-郭符许列传-白话.html'>第六十二章-郭符许列传</a></p><p class='next'>下一节：<a href='第六十四章-郑孔荀列传-白话.html'>第六十四章-郑孔荀列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

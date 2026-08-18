@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#魏书'>：目录</a></p>
@@ -361,5 +388,18 @@
 </p><p>前废帝时，以本身官职代行青州事务，遇上当地人崔祖螭作乱，贼寇十分强盛，包围逼迫东阳一百多天。贵平率领市民固守，又命令将领士兵打开城门交战。救援大军赶到，于是擒获祖螭等人，杀了他。返回后，授任车骑将军，加授散骑常侍，升任左卫将军、宗师，又升任车骑大将军、左光禄大夫、仪同三司。
 </p><p>贵平为人阴险刻薄，被出帝所信任。外出任青州刺史，又加授骠骑大将军、开府仪同三司，被幽州大都督侯渊所谋害。
 </p><p>史臣曰：对南安王的行事考察始终，善不掩恶。元英有将帅才能，有名于当时。元熙、元略兄弟，早先在民众中传有声誉，或才能不足而抱负大，或器量狭小而职任多，都不能成就功名，全死于非命，是可惜的。康王寿命不长，元鸾振兴家世的名声。元徽弄巧设诈矫揉造作，对外谄媚内心妒忌，永安年间的祸患，谁承担责任?好像他的死，本是应该的呀!章武王、乐陵王，大概不值得一提。靖王聪明果断声威显赫，太和年间受到称赞，是美好的。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章-卷六-白话.html'>第六章-卷六</a></p><p class='next'>下一节：<a href='第八章-卷八-白话.html'>第八章-卷八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六章-卷六-白话.html'>第六章-卷六</a></p><p class='next'>下一节：<a href='第八章-卷八-白话.html'>第八章-卷八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

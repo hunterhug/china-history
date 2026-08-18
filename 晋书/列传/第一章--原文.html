@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -211,5 +238,18 @@
 </p><p>谢夫人，名玖。家本贫贱，父以屠羊为业，玖清惠贞正而有淑姿，选入后庭为才人。惠帝在东宫，将纳妃。武帝虑太子尚幼，未知帷房之事，乃遣往东宫侍寝，由是得幸有身。贾后妒忌之，玖求还西宫，遂生愍怀太子，年三四岁，惠帝不知也。入朝，见愍怀与诸皇子共戏，执其手，武帝曰：“是汝兒也。”及立为太子，拜玖为淑媛。贾后不听太子与玖相见，处之一室。及愍怀遇酷，玖亦被害焉。永康初，诏改葬太子，因赠玖夫人印绶，葬显平陵。
 </p><p>怀王皇太后，讳媛姬，不知所出。初入武帝宫，拜中才人，早卒。怀帝即位，追尊曰皇太后。
 </p><p>元夏侯太妃，名光姬，沛国谯人也。祖威，兗州刺史。父庄，字仲容，淮南太守、清明亭侯。妃生自华宗，幼而明慧。琅邪武王为世子觐纳焉，生元帝。及恭王薨，元帝嗣立，称王太妃。永嘉元年，薨于江左，葬琅邪国。初有谶云“铜马入海建鄴期，”太妃小字铜环，而元帝中兴于江左焉。</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章--原文.html'>第二章-</a></p></div></body>
+<div class='pn'><p class='next'>下一节：<a href='第二章--原文.html'>第二章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

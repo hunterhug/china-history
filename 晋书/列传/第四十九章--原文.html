@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -202,5 +229,18 @@
 </p><p>邈字茂度。父铁，永嘉太守。邈性刚鲠，无所屈挠，颇有理识。累迁侍中。时孝武帝觞乐之后多赐侍臣文诏，辞义有不雅者，邈辄焚毁之，其他侍臣被诏者或宣扬之，故论者以此多邈。后为吴兴太守。孙恩之乱，为贼胡桀、郜骠等所执，害之。贼逼令北面，邈厉声曰：“我不得罪天子，何北面之有！”遂害之。邈妻郗氏，甚妒。邈先娶妾，郗氏怨怼，与邈书告绝。邈以其书非妇人词，疑其门下生仇玄达为之作，遂斥玄达。玄达怒，遂投孙恩，并害邈兄弟，竟至灭门。
 </p><p>史臣曰：建元之后，时政多虞，巨猾陆梁，权臣横恣。其有兼将相于中外，系存亡于社稷，负扆资之以端拱，凿井赖之以晏安者，其惟谢氏乎！简侯任总中台，效彰分阃；正议云唱，丧礼堕而复弘；遗音既补，雅乐缺而还备。君子哉，斯人也！文靖始居尘外，高谢人间，啸咏山林，浮泛江海，当此之时，萧然有陵霞之致。暨于褫薜萝而袭硃组，去衡泌而践丹墀，庶绩于是用康，彝伦以之载穆。苻坚百万之众已瞰吴江，桓温九五之心将移晋鼎，衣冠易虑，远迩崩心。从容而杜奸谋，宴衎而清群寇，宸居获太山之固，惟扬去累卵之危，斯为盛矣。然激繁会于期服之辰，敦一欢于百金之费，废礼于偷薄之俗，崇侈于耕战之秋，虽欲混哀乐而同归，齐奢俭于一致，而不知颓风已扇，雅道日沦，国之仪刑，岂期若是！琰称贞干，卒以忠勇垂名；混曰风流，竟以文词获誉：并阶时宰，无堕家风。奕万以放肆为高，石奴以褊浊兴累，虽曰微颣，犹称名实。康乐才兼文武，志存匡济，淮肥之役，勍寇望之而土崩；涡颍之师，中州应之而席卷。方欲西平巩洛，北定幽燕，庙算有遗，良图不果，降龄何促，功败垂成，拊其遗文，经纶远矣。
 </p><p>赞曰：安西英爽，才兼辩博。宣力方镇，流声台阁。太保沈浮，旷若虚舟。任高百辟，情惟一丘。琰邈忠壮，奕万虚放。为龙为光，或卿或将。伟哉献武，功宣授斧。克翦凶渠，几清中宇。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十八章--原文.html'>第四十八章-</a></p><p class='next'>下一节：<a href='第五十章--原文.html'>第五十章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十八章--原文.html'>第四十八章-</a></p><p class='next'>下一节：<a href='第五十章--原文.html'>第五十章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

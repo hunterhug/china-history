@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -199,5 +226,18 @@
 </p><p>哀宗初即位，召为补阙，俄迁左司谏，言事稍不及昔时。未几，致仕，居伊阳，郡守为起伊川亭。古性嗜酒，老而未衰，每乘舟出村落间，留饮或十数日不归，及溯流而上，老稚争为挽舟，数十里不绝，其为时人爱慕如此。正大七年卒，年七十四。古平生好为诗及书，然不为士大夫所重，时论但称其直云。
 </p><p>天兴间，有右司谏陈岢者，遇事辄言无少隐，上尝面奖。及汴京被兵，屡上封事言得失，请战一书尤为剀切，其略云：“今日之事，皆出陛下不断，将相怯懦，若因循不决，一旦无如之何，恐君臣相对涕泣而已。”可谓切中时病，而时相赤盏合喜等沮之，策为不行，识者惜焉。岢字和之，沧州人，大安元年进士。
 </p><p>赞曰：宣宗即位，孜孜焉以继述世宗为志，而其所为一切反之。大定讲和，南北称治，贞祐用兵，生民涂炭。石琚为相，君臣之间务行宽厚。高琪秉政，恶儒喜吏，上下苛察。完颜素兰首攻琪恶，谓琪必乱纪纲。陈规力言刀笔吏残虐，恐坏风俗。许古请与宋和，辞极忠爱。三人所言皆切中时病，有古诤臣之风焉。宣宗知其为直，而不用其言，如是而欲比隆世宗，难矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十六章-卷四十六-原文.html'>第四十六章-卷四十六</a></p><p class='next'>下一节：<a href='第四十八章-卷四十八-原文.html'>第四十八章-卷四十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十六章-卷四十六-原文.html'>第四十六章-卷四十六</a></p><p class='next'>下一节：<a href='第四十八章-卷四十八-原文.html'>第四十八章-卷四十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

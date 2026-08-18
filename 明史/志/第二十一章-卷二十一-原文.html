@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-志<a href='../明史.html#志'>：目录</a></p>
@@ -429,5 +456,18 @@
 </p><p>思陵州(元属思明路。)洪武三年省入思明府。二十一年正月复置，直隶布政司。(南有角硬山，角硬水出焉，又有淰削水合之，下流入思明府界。)距布政司二千一百二十里。
 </p><p>凭祥州本凭祥县。永乐二年五月以思明府之凭祥镇置，属思明府。成化十八年升为州，直隶布政司。(西北有丽江，自交址广源州流入。又南有镇南关，一名大南关，即界首关也。)距布政司二千四十里。
 </p><p>安隆长官司(元致和元年三月置安隆州，属云南行省。后废为寨，属泗城州。)洪武三十五年十二月置安隆长官司，仍属泗城州，后直隶布政司。(西有坝达山，浑水河经其下，即红水江也，东入泗城州界。又西南有同舍河。)距布政司里。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p><p class='next'>下一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p><p class='next'>下一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

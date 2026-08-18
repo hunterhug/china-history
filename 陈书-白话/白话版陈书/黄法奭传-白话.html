@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>陈书-白话版陈书<a href='../陈书.html#陈书'>：目录</a></p>
@@ -160,5 +187,18 @@
 </p><p>						奭为都督，出到历阳。北齐派历阳王率领五万步兵骑兵前来援救，在小岘筑城，黄法奭派左卫将军樊毅分率军在大岘御敌，大败北齐军，俘获了全部人马器械。于是造拍车和步舰，竖起拍车逼向历阳。历阳人窘迫，请求投降，黄法
 </p><p>						奭于是减缓了攻势，历阳人却又坚守，黄法奭生气，亲自率领士兵攻城，放拍石击打城楼和矮墙。当时又下起大雨，城崩塌，攻克，把守城士兵全部杀掉。进军合肥，敌人看见他的旗帜就投降，黄法
 </p><p>						奭下令将士不能掠夺，亲自抚慰，并且和他们结盟，把他们全部放回北方。按照功劳升任侍中，改封为义阳郡公，食邑二千户。同年，迁任都督合州、霍州诸军事，征西大将军，合州刺史，增加食邑五百户。七年(575)，调任都督豫州、建州、光州、朔州、合州、北徐州诸军事，豫州刺史，镇守寿阳，侍中、散骑常侍、持节、将军、仪同、鼓吹、给扶等职衔和待遇都不变。八年十月去世，时年五十九岁，追任为侍中、中权大将军、司空，谥号威。其子黄玩袭封。</p>
-<div class='pn'><p class='pre'>上一节：<a href='程文季传-白话.html'>程文季传</a></p><p class='next'>下一节：<a href='淳于量传-白话.html'>淳于量传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='程文季传-白话.html'>程文季传</a></p><p class='next'>下一节：<a href='淳于量传-白话.html'>淳于量传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

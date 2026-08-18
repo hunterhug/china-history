@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -188,5 +215,18 @@
 </p><p>永乐元年(1403)，他升为云南按察使，还没出发，改任户部右侍郎。二年，调任左副都御史。当时左都御史陈瑛残酷，右都御史吴中宽和，刘观委蛇于两人之间，专务取悦他们。四年，北京营造宫室，刘观奉命到浙江采木，不久回来。第二年冬，皇上因山西旱灾，命刘观乘驿车前往，遣散采木的军民。六年，郑赐去世，刘观升为礼部尚书。十二月他与刑部尚书吕震换职。因有过失受到皇太子谴责。皇上在北京听到后，以大臣有小过，不应该即刻折辱，特赐信谕告太子。八年，都督佥事费王献讨伐凉州反叛的羌人，命刘观赞佐军事。回来后，因犯有过失，被贬为本部吏，十三年复职，改任左都御史。十五年他督管疏浚黄河漕运。十九年，受命巡按陕西，考察官吏。
 </p><p>仁宗即位后，刘观兼任太子宾客，不久加封为太子少保，支给二职俸禄。当时大理寺少卿弋谦多次上书提建议，皇上讨厌他过于繁琐。尚书吕震、大理寺卿虞谦投合皇上心意，上奏弹劾弋谦，刘观又令十四道御史论奏弋谦欺骗皇上，他因此而被舆论所鄙。
 </p><p>当时还没有关于官妓的禁令。宣德初年，臣僚欢宴时，都以奢华相尚，歌妓布满席前。刘观私下收取贿赂，而御史们也贪婪无忌。三年(1428)六月，罢朝后，皇上召大学士杨士奇、杨荣到文华门，对他们说：“祖宗时期，朝臣恭谨，近年以来却贪污成风，为什么？”杨士奇回答说：“永乐末年这种情况已经出现了，现在是更甚而已。”杨荣说：“永乐时期，没有超过方宾的。”皇上问“：现在谁最严重？”杨荣回答说“：刘观。”皇上又问“：谁可以取代他？”杨士奇、杨荣推荐通政使顾佐。皇上于是将刘观派出视察河道，以顾佐为右都御史。于是御史张循理等人纷纷上书弹劾刘观，以及他的儿子贪赃等不法之事。皇上大怒，逮捕了刘观父子，把弹劾他的奉章拿给他看。刘观上疏辩解。皇上更怒，出示廷臣先后的密奏，其中有的说他枉法受贿达千金的。刘观这才伏罪，遂把他逮进锦衣卫监狱。第二年将要给他治以重罪。杨士奇、杨荣请求宽恕他的死罪。于是将刘辐贬戍辽东，而命刘观随同前往，刘观竟客死他乡。七年，杨士奇请求命监察官员考察因贪污而被上奏罢免的有关官员，皇上说“：好。如果以前不罢免刘观，监察部门怎得整肃？”</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十八章-卷三十八-白话.html'>第三十八章-卷三十八</a></p><p class='next'>下一节：<a href='第四十章-卷四十-白话.html'>第四十章-卷四十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十八章-卷三十八-白话.html'>第三十八章-卷三十八</a></p><p class='next'>下一节：<a href='第四十章-卷四十-白话.html'>第四十章-卷四十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

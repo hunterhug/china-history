@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>南齐书-志<a href='../南齐书.html#志'>：目录</a></p>
@@ -213,5 +240,18 @@
 </p><p>史臣曰：案禊与曲水，其义参差。旧言阳气布畅，万物讫出，姑洗洁之也。巳者祉也，言祈介祉也。一说，三月三日，清明之节，将修事于水侧，祷祀以祈丰年。应劭云：“禊者，洁也，言自洁濯也。或云汉世有郭虞者，以三月上辰生二女，上巳又生一女，二日中频生皆死，时俗以为大忌，民人每至其日，皆适东流水祈祓自洁濯，浮酌清流，后遂为曲水。”案高后祓霸上，马融《梁冀西第赋》云“西北戌亥，玄石承输。虾蟆吐写，庚辛之域”。即曲水之象也。今据禊为曲水事，应在永寿之前已有，祓除则不容在高后之后。祈农之说，于事为当。
 </p><p>九月九日马射。或说云，秋金之节，讲武习射，像汉立秋之礼。
 </p><p>史臣曰：案晋中朝元会，设卧骑、倒骑、颠骑，自东华门驰往神虎门，此亦角抵杂戏之流也。宋武为宋公，在彭城，九日出项羽戏马台，至今相承，以为旧准。</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-卷十-原文.html'>第二章-卷十</a></p></div></body>
+<div class='pn'><p class='next'>下一节：<a href='第二章-卷十-原文.html'>第二章-卷十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

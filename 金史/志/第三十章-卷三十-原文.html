@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-志<a href='../金史.html#志'>：目录</a></p>
@@ -189,5 +216,18 @@
 </p><p>明昌元年正月，敕尚书省，定院务课商税额，诸路使司院务千六百一十六外，比旧减九十四万一千余贯，遂罢坊场，免赁房税。十月，尚书省奏：“今天下使司务，既减课额，而监官增亏既有升迁追殿之制，宜罢提点所给赏罚俸之制，但委提刑司，察提点官侵犯场务者，则论如制。”诏从之。二年，诏减南京出赁官房及地基钱。三年，谕提刑司，禁势力家不得固山泽之利。又司竹监岁采入破竹五十万竿，春秋两次输都水监，备河防，余边刀笋皮等卖钱三千贯，苇钱二千贯，为额。明昌五年，陈言者乞复旧置坊场，上不许，惟许增置院务，诏尚书省参酌定制，遂拟辽东、北京依旧许人分办，中都等十一路差官按视，量添设院务于二十三处，自今岁九月一日立界，制可。大定间，中都税使司岁获十六万四千四百四十余贯，承安元年，岁获二十一万四千五百七十九贯。泰和六年五月，制院务课亏，令运司差监榷。
 </p><p>金银之税
 </p><p>大定三年，制金银坑冶许民开采，二十分取一为税。泰和四年，言事者以金银百分中取一，诸物取三，今物价视旧为高，除金银则额所不能尽该，自余金银可并添一分。诏从之。七年三月，户部尚书高汝砺言：“旧制，小商贸易诸物收钱四分，而金银乃重细之物，多出富有之家，复止三分，是为不伦，亦乞一例收之。”省臣议以为如此恐多匿隐。遂止从旧。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p><p class='next'>下一节：<a href='第三十一章-卷三十一-原文.html'>第三十一章-卷三十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p><p class='next'>下一节：<a href='第三十一章-卷三十一-原文.html'>第三十一章-卷三十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后唐<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -155,5 +182,18 @@
 </p><p>大顺二年(891)三月，邢州节度使安知建叛变归顺汴军，武皇命令李存孝平定邢州、氵名州，因此授予他邢氵名节度使。这时幽州李匡威与镇州王钅容屡次削弱中山，准备瓜分中山疆土。定州王处存向武皇求援。武皇命令李存孝侵入镇州、赵州的南部边地，又命令李存信、李存审军队出井陉与李存孝会合，联军攻打临城、柏乡。这时，李匡威救兵赶到临城，李存孝便打算回师。李存信与李存孝不和，便到武皇跟前陷害他，说李存孝望风而逃，无心杀敌，大概有私下结盟之事。李存孝知道了，自以为有战功，郁郁不平，因而写信给王钅容通好，又与汴州结交。
 </p><p>第二年，武皇亲自出井陉，将要逼近真定，李存孝当面见王钅容陈述军机大事。武皇暴怒，杀掉以前俘获的汴将安康八后回师。七月，又出兵讨伐李存孝，从缚马关东下，攻平山，渡滹水，击镇州四关城。王钅容害怕，派使者求和，并愿出三万兵力协助武皇攻打李存孝，武皇同意了。武皇在栾城阅兵，李存信驻扎在琉璃陂。九月，李存孝夜里攻击李存信营地，奉诚军使孙考老被俘，李存信军队混乱。武皇进攻邢州，用深沟高垒环绕该城，旋即被李存孝冲击，沟堑没有挖成。军校袁奉韬秘密派人对李存孝说“：大王等沟堑建成后便回太原，如没建成，恐怕没有回去的意思。尚书你所害怕的只有大王，料想其余各将没有超过你的。大王如果西归，虽然有黄河阻隔，也可以渡过去，况且几尺宽的沟堑，怎么能阻挡尚书您的锋芒呢！”李存孝同意了他的说法，让武皇兵士建成堑垒。过了十几天，深沟高垒，不能越过。因此李存孝失败，城中食物已尽。
 </p><p>乾宁元年(894)三月，李存孝登城请罪，向武皇哭诉说：“儿深受大王恩典，官至将帅，如果不是进谗言的小人离间，怎么会割舍父子之恩，转附敌人为党？儿虽然见识偏狭，实在是李存信构陷才到这个地步，如能活着见到大王面，说上三言两语而死，也是甘心的。”武皇怜悯他，派刘太妃进城慰劳，太妃带他进见武皇，李存孝叩首请罪说：“儿立过微小的功劳，本来没有大的过错，但被人中伤，无法申明心迹，迷乱以至如此。”武皇斥责他说“：你写给王..的信，列举我万条罪状，也是李存信教的吗？”于是把他缚着送回太原，在街市上车裂处死，然而武皇很爱惜他的才能。李存孝每当临阵对敌，身穿重铠带硬弓长矛，由仆人带两匹马跟随，在战斗中换骑战马，轻捷如飞，独自舞动铁木过，挺身冲锋陷阵，万人都要避开，大概可以比作古代的张辽、甘宁。李存孝死后，武皇有十几天没心思办事，私下对各位将军埋怨了很久。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十八章-列传四-白话.html'>第二十八章-列传四</a></p><p class='next'>下一节：<a href='第三十章-列传六-白话.html'>第三十章-列传六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十八章-列传四-白话.html'>第二十八章-列传四</a></p><p class='next'>下一节：<a href='第三十章-列传六-白话.html'>第三十章-列传六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

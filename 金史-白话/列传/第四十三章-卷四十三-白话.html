@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#金史'>：目录</a></p>
@@ -183,5 +210,18 @@
 </p><p>张翰，字林卿，忻州秀容人。大定二十八年(1188)中进士，调任隰州军事判官。有人诬告一家兄弟三人拦路抢劫，张翰暗访得知真实情况，就向州里说明并释放了他们。历任东胜、义丰、会川县令，补任尚书省令史，又任户部主事，升为监察御史。服母丧，服终，调任山东路盐使。服父丧，起复任尚书省都事、户部员外郎。大安年间，平章政事独吉思忠、参知政事承裕行省戍守边境，张翰任左右司郎中，由于意见不一致，处置不得法，张翰多次力争不被采纳。承裕被逮捕后，卫绍王知道张翰事先已经提过不同看法，便召见他并加以安慰。改任知登闻鼓院，仍兼原来职务，又升为侍御史。贞..初年，任翰林直学士，充元帅府经历官。中都戒严时，调度有方，改任户部侍郎。
 </p><p>金宣宗迁都汴京，张翰规划筹措粮草并随从至真定，他上书皇帝进言五事：“一为强本，也就是要聚集兵士、迁徙豪强，以充实南京。二为足用，也就是说应当依照蔡州、汴河的旧渠道来通漕运。三为防乱，就是应当聚集义军，发给官印，让他们相互统帅，以使内部安定不致反复。四为省事，是说县、邑不能自保的应当加以合并，既可减少官员人数，又便于防盗。五为推恩，也就是应当广施恩惠，以示天子所在地值得庆幸的意思。”皇帝略加施行了。
 </p><p>张翰一向善于治理烦难的事务，每到一处就办理得有条不紊。升任河平军节度使、都水监、提控军马使，不久又改为户部尚书。当时，刚迁都南京，各种事情正是草创阶段，张翰处置得有条有理。当年去世，谥为达义。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十二章-卷四十二-白话.html'>第四十二章-卷四十二</a></p><p class='next'>下一节：<a href='第四十四章-卷四十四-白话.html'>第四十四章-卷四十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十二章-卷四十二-白话.html'>第四十二章-卷四十二</a></p><p class='next'>下一节：<a href='第四十四章-卷四十四-白话.html'>第四十四章-卷四十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

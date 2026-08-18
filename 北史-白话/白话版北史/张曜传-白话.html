@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>北史-白话版北史<a href='../北史.html#北史'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>张曜传<span style='font-size:small'> 白话</span></h1>
 <p>张曜，字灵光，上谷昌平人。从小就待人忠贞谨慎。韩轨被御史弹劾，州府的官吏以及韩轨的亲信因贪赃触犯法律的一百多人，惟有张曜因清廉免于处罚。天保初年，朝廷给他封爵为都乡男，逐步升迁，官至尚书右丞。文宣帝曾经出宫到近处走动，命他留守。文宣帝夜晚归来，他不让开门，命令士兵严加防守。文宣帝在大门外等了很久，催促得十分紧急，他以夜深天黑为理由，提出要用火把照一照面部，认出是文宣帝后才把门打开。他单独出来叩见文宣帝，文宣帝笑着说：“你想效法东汉忠于职守的郅恽吗？”便让他开门，然后进来。对他大加赞赏，赐给他许多锦缎。太宁初年，他迁任秘书监。<BR><BR>　　张曜任职历经几位皇帝，奉职忠诚谨慎，从未有过过失。每次得到俸禄和赏赐，都分送给宗族中的人。他节俭简约，车子、衣服、饮食，仅仅够用而已。喜欢读《春秋》，每月一定看一遍，人们把他比作汉代的贾逵。赵彦深曾对他说“：你研习《左氏春秋》，怎么能沿袭杜预、服虔错误的成说呢？”他答道“：为何要这样说呢？《左氏春秋》一书，详细地叙述一代史实，邪恶的人可以用来警戒自己，善良的人可以察觉自己微小的过失。所以，为了勉励自己，我才不断温习，不是想诋毁前人的得失啊。”<BR><BR>　　天统元年(565)，他到朝廷奏事，暴病突发，摔倒在后主的御座前面，后主(按：原文误为武成)走下座位亲自看视他，呼喊他也不答应，便哭着说“：我失去了一位优秀的大臣啊！”过了十多天去世，追赠为尚书右仆射，谥号为贞简。</p>
-<div class='pn'><p class='pre'>上一节：<a href='房谟传-白话.html'>房谟传</a></p><p class='next'>下一节：<a href='王瞺传-白话.html'>王瞺传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='房谟传-白话.html'>房谟传</a></p><p class='next'>下一节：<a href='王瞺传-白话.html'>王瞺传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

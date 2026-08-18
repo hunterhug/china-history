@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#列传'>：目录</a></p>
@@ -221,5 +248,18 @@
 </p><p>论曰：自光武中年以后，干戈稍戢，专事经学，自是其风世笃焉。其服儒衣，称先王，游庠序，聚横塾者，盖布之于邦域矣。若乃经生所处，不远万里之路，精庐暂建，赢粮动有千百，其耆名高义开门受徒者，编牒不下万人，皆专相传祖，莫或讹杂。至有分争王庭，树朋私里，繁其章条，穿求崖穴，以合一家之说。故杨雄曰：“今之学者，非独为之华藻，又从而绣其鞶帨。”夫书理无二，义归有宗，而硕学之徒，莫之或徙，故通人鄙其固焉，又雄所谓“譊々之学，各习其师”也。且观成名高第，终能远至者，盖亦寡焉，而迂滞若是矣。然所谈者仁义，所传者圣法也。故人识君臣父子之纲，家知违邪归正之路。
 </p><p>自桓、灵之间，君道秕僻，朝纲日陵，国隙屡启，自中智以下，靡不审其崩离；而权强之臣，息其窥盗之谋，豪俊之夫，屈于鄙生之议者，人诵先王言也，下畏逆顺势也。至如张温、皇甫嵩之徒，功定天下之半，声驰四海之表，俯仰顾眄，则天业可移，犹鞠躬昏主之下，狼狈折札之命，散成兵，就绳约，而无悔心，暨乎剥桡自极，人神数尽，然后群英乘其运，世德终其祚。迹衰敝之所由致，而能多历年所者，斯岂非学之效乎？故先师垂典文，褒励学者之功，笃矣切矣。不循《春秋》，至乃比于杀逆，其将有意乎！
 </p><p>赞曰：斯文未陵，亦各有承。涂方流别，专门并兴。精疏殊会，通阂相征。千载不作，渊原谁澄？</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十四章-儒林列传上-原文.html'>第七十四章-儒林列传上</a></p><p class='next'>下一节：<a href='第七十六章-文苑列传上-原文.html'>第七十六章-文苑列传上</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七十四章-儒林列传上-原文.html'>第七十四章-儒林列传上</a></p><p class='next'>下一节：<a href='第七十六章-文苑列传上-原文.html'>第七十六章-文苑列传上</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

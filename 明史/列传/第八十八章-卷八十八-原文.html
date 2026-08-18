@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -216,5 +243,18 @@
 </p><p>三十二年，擢佥都御史，巡抚山西。时春慷慨负奇气，善骑射。慨寇纵横，将帅不任职，数谓人：“使吾领选卒五千，俺答、邱福不足平也。”作《御寇论》，论战守甚悉。既秉节钺，益思以武功自奋。其年九月，寇入神池、利民诸堡，时春率马步兵往御之。至广武，诸将毕会。谋报寇骑二千余，去两舍。时春擐甲欲驰，大将李涞固止之。时春大言曰：“贼知吾来必遁，缓追即不及。”遂策马前。及于大虫岭，伏兵四起，败绩。仓皇投一墩，守卒缒之上乃得免，涞军竟覆。被论，解官听调。时春喜谈兵，至是一战而败。然当是时将帅率避寇不击。为督抚者安居坚城，遥领军事，无躬搏寇者。时春功虽不就，天下皆壮其气。
 </p><p>时春读书善强记，文章豪肆，与唐顺之、王慎中齐名。诗，伉浪自喜类其为人。
 </p><p>赞曰：姚镆等封疆宣其擘画，军务畅其机谋，勋绩咸有可纪。伍文定从王守仁平宸濠之难，厥功最懋。赵时春将略自命，一出辄踬。夫危事而易言之，固知兵者所弗取乎。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十七章-卷八十七-原文.html'>第八十七章-卷八十七</a></p><p class='next'>下一节：<a href='第八十九章-卷八十九-原文.html'>第八十九章-卷八十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八十七章-卷八十七-原文.html'>第八十七章-卷八十七</a></p><p class='next'>下一节：<a href='第八十九章-卷八十九-原文.html'>第八十九章-卷八十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

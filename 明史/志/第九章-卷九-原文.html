@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-志<a href='../明史.html#志'>：目录</a></p>
@@ -392,5 +419,18 @@
 </p><p>如求冬至后四度昼刻。术曰：置冬至后四十四度黄赤道内外半弧一十七度二十五分六十九秒，(又为黄赤道小弧弦，前立成中取之。)以二至出入差半弧背一十九度九十六分一十四秒乘之为实，以二至黄赤道内外半弧弦二十三度七十一分为法除之，得一十四度五十二分八十五秒，为出入半弧背。(又法：置黄赤道内外半弧弦一十七度二五六九，以度差零度八四一九乘之，亦得一十四度五二八五，为出入半弧背。)置半径六十零度八七五，以四十四度黄赤道内外矢二度五十一分八十一秒(又为赤道二弦差，前立成中取之。)减之，余五十八度三十五分六十九秒，(即赤道小弦。)倍之，得一百一十六度七十一分三十八秒，三因之，加一度，得三百五十一度一十四分一十四秒，为日行百刻度。(又术：倍黄赤道内外矢得五度零三分六十二秒，以减全径一百二十一度七十五分，亦得一百一十六度七十一分三十八秒，三因加一度，为日行百刻度，亦同。)置出入半弧背一十四度五十二分八十五秒，以百刻乘之为实，以日行百刻度三百五十一度一十四分一十四秒为法除之，得四刻一十三分七十五秒，为出入差刻。置二十五刻，以出入差刻四刻一十三分七十五秒减之，(因冬至后四十四度，黄道在赤道外，故减。)余二十零刻八十六分二十五秒，为半昼刻。倍之得四十一刻七十二分半，为昼刻。以昼刻减百刻，余五十八刻二十七分半，为夜刻。(又术：置出入差刻四刻一十三分七十五秒，倍之，得八刻二十七分半，以减春秋分昼夜五十刻，得四十一刻七十二分半，为昼刻。以倍刻加五十刻，得五十八刻二十七分半，为夜刻。昼减故废加，余仿此。)
 </p><p>(表格略)
 </p><p>右《历草》所载昼夜刻分，乃大都即燕京晷漏也。夏昼、冬夜极长，六十一刻八十四分，冬昼、夏夜极短，三十八刻一十六分。明既迁都于燕，不知遵用。惟正统己巳奏准颁历用六十一刻，而群然非之。景泰初仍复用南京晷刻，终明之世未能改正也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p><p class='next'>下一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p><p class='next'>下一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

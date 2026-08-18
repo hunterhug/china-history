@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#魏书'>：目录</a></p>
@@ -177,5 +204,18 @@
 </p><p>孝昌年间，李苗还朝，被除授为镇远将军、步兵校尉。不久兼尚书右丞，为西北道行台，与大都督宗正珍孙讨伐汾州、绛州敌贼，平定了。回来后除授司徒司马，转太府少卿，加授龙骧将军。
 </p><p>当时萧衍巴西百姓何难尉等豪姓，相继请求朝廷征讨巴蜀，帝诏李苗为通直散骑常侍、冠军将军、西南道慰劳大使。还没出发，正逢尔朱荣被杀，尔朱荣堂弟尔朱世隆拥尔朱荣部下屯据河桥，还逼京都。孝庄帝亲临大夏门，召集群臣博议。百官忧怕，计无所出。李苗独独奋衣而起说：“现在小贼如此唐突无礼，朝廷有不测之危，正是忠臣烈士效节之日。为臣虽说不上英武，但有尽节之意。臣请求率一旅人马，为陛下切断河、梁。”城阳王元徽、中尉高道穆赞成他的计策。庄帝以之为壮，同意他这样做。李苗于是招募人马从马渚上游以舟师夜下黄河，在离桥数里的地方便放火船，船顺水下，顷刻就到桥边。敌人在南岸看见火船直冲而来，争先恐后争桥过河，不一会桥被烧断，淹死的人很多。李苗身率士卒百余人停泊在浅滩边等待南援。既而官军不至，敌人涉水过河，与李苗展开殊死搏斗。终因寡不敌众，左右士兵死尽，李苗因渡而死，时年四十六岁。孝庄帝听说李苗死了，哀伤了很久，说：“苗若不死，当应更立奇功。”赠使持节，都督梁、益、巴、东梁四州诸军事，车骑大将军，仪同三司，梁州刺史，河阳县开国侯。食邑一千户，赠帛五百匹，粟五百担。谥称忠烈侯。
 </p><p>李苗少有节操，立志功名。每次读《蜀书》，见魏延请求出击长安，诸葛不许，常叹息说诸葛亮无奇妙计策。到看《周瑜传》，未曾不嗟叹赞许，为之绝倒。太保、城阳王元徽、临淮王元..都很看重他，二王很是不和，李苗每每劝说。等到元徽大红大紫，猜忌元..更厉害了。李苗对人说：“城阳蜂目先见，豺声现在更转厉害了。”李苗懂音乐，好文咏，尺牍文章的敏捷程度，当世罕比。死的那天，朝野人士无不十分悲痛，以之为壮。等庄帝幽崩，尔朱世隆进入洛阳，有人主张追夺李苗赠封，禀请尔朱世隆。世隆说：“我那时讨论，过一两天便要大纵兵士焚烧京城，任其掠抢。全赖李苗京师才得以保全。天下的善行都是一致的。不应追夺赠封。”</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十八章-卷五十八-白话.html'>第五十八章-卷五十八</a></p><p class='next'>下一节：<a href='第六十章-卷六十-白话.html'>第六十章-卷六十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五十八章-卷五十八-白话.html'>第五十八章-卷五十八</a></p><p class='next'>下一节：<a href='第六十章-卷六十-白话.html'>第六十章-卷六十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

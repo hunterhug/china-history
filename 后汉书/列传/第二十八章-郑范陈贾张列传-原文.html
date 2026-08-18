@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#列传'>：目录</a></p>
@@ -211,5 +238,18 @@
 </p><p>初，冀弟不疑为河南尹，举陵孝廉。不疑疾陵之奏冀，因谓曰：“昔举君，适所以自罚也。”陵对曰：“明府不以陵不肖，误见擢序，今申公宪，以报私恩。”不疑有惭色。陵弟玄。
 </p><p>玄字处虚，沉深有才略，以时乱不仕。司空张温数以礼辟，不能致。中平二年，温以车骑将军出征凉州贼边章等，将行，玄自田庐被褐带索，要说温曰：“天下寇贼云起，岂不以黄门常侍无道故乎？闻中贵人公卿已下当出祖道于平乐观，明公总天下威重，握六师之要，若于中坐酒酣，鸣金鼓，整行阵，召军正执有罪者诛之，引兵还屯都亭，以次剪除中官，解天下之倒县，报海内之怨毒，然后显用隐逸忠正之士，则边章之徒宛转股掌之上矣。”温闻大震，不能对，良久谓玄曰：“处虚，非不悦子之言，顾吾不能行，如何！”玄乃叹曰：“事行则为福，不行则为贼。今与公长辞矣。”即仰药欲饮之。温前执其手曰：“子忠于我，我不能用，是吾罪也，子何为当然！且出口入耳之言，谁今知之！”玄遂去，隐居鲁阳山中。及董卓秉政，闻之，辟以为掾，举侍御史，不就。卓临之以兵，不得已强起，至轮氏，道病终。
 </p><p>赞曰：中世儒门，贾、郑名学。众驰一介，争礼氈幄。升、元守经，义偏情较，霸贵知止，辞交戚里。公超善术，所舍成市。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十七章-张曹郑列传-原文.html'>第二十七章-张曹郑列传</a></p><p class='next'>下一节：<a href='第二十九章-桓荣丁鸿列传-原文.html'>第二十九章-桓荣丁鸿列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十七章-张曹郑列传-原文.html'>第二十七章-张曹郑列传</a></p><p class='next'>下一节：<a href='第二十九章-桓荣丁鸿列传-原文.html'>第二十九章-桓荣丁鸿列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

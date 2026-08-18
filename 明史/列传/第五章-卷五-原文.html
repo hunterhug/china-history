@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -187,5 +214,18 @@
 </p><p>宸澅弟宸浫素方正，宸濠欲屈之，不得，数使人火其居，而讽诸宗资给之以示惠，宸浫辞不受。宸濠败，宸浫得免。子辅国将军拱概，孙奉国将军多量，曾孙镇国中尉谋〈土韦〉，三世皆端谨自好，而谋〈土韦〉尤贯串群籍，通晓朝廷典故。诸王子孙好学敦行，自周藩中尉睦坰而外，莫及谋〈土韦〉者。万历二十二年，廷议增设石城、宜春管理，命谋〈土韦〉以中尉理石城王府事，得劾治不法者。典藩政三十年，宗人咸就约束。暇则闭户读书，著《易象通》、《诗故》、《春秋戴记鲁论笺》及他书，凡百十有二种，皆手自缮写。黄汝亨为进贤令，投谒抗礼，剧谈久之，逡巡改席。次日，北面称弟子，人两称之。病革，犹与诸子说《易》。子八人，皆贤而好学。从弟谋晋筑室龙沙，躬耕赋诗以终。
 </p><p>奉国将军拱榣，瑞昌王奠墠四世孙也。父宸渠为宸濠累，逮系中都。兄拱枘请以身代，拱榣佐之，卒得白。嘉靖九年上书请建宗学，令宗室设坛墠，行耕桑礼，谨祀典，加意恤刑，皆得旨俞允。捐田白鹿洞赡学者。其后以议礼称旨。拱枘上《大礼颂》，并赐敕褒谕。诸子群从多知名者。多煴、多炖以孝友著。多煪、多宁以秉礼严重称。多贵、多煃、多炘以善词赋名。而多煴与从兄多煡独杜门却扫，多购异书，校仇以为乐。万历中，督抚荐理瑞昌王府事，谢不起。多煪父拱樛以宸濠事被逮，多煪甫十余龄，哭走军门，乞以身代，王守仁见而异之。嘉靖二年疏讼父冤，得释归，复爵。时诸郡王统于弋阳，而瑞昌始王不祀。多煪自谓小宗宜典宗祏，请于朝，特敕许焉。乃益祭田，修饬家政，俨若朝典。四子皆庄谨嗜学。
 </p><p>奉国将军多煌，惠王第五子弋阳王奠壏五世孙也。孝友嗜学。弋阳五传而绝，宗人举多煌贤能，敕摄府事，瑞昌诸宗皆属焉。性廉静寡欲，淑人熊氏早卒，不再娶，独处斋阁者二十六年。万历四十一年，抚按以行谊闻。诏褒之。会病卒，诏守臣加祭一坛。又多炡者，亦奉国将军，颖敏善诗歌，尝变姓名出游，踪迹遍吴、楚。晚病羸，犹不废吟诵。卒，门人私谥曰清敏先生。子谋堚亦有父风。时乐安辅国将军多靦有诗癖，与谋堚等放志文酒，终其世。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

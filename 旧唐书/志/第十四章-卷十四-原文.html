@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-志<a href='../旧唐书.html#志'>：目录</a></p>
@@ -357,5 +384,18 @@
 </p><p>求差行，先定日数，径求积度及分置所求日减一，次每日差乘之，二而一，所得，以加减初日行分。益迟减之，益疾加之。以所求日乘之，如辰法而一，为积度。不尽者，为行分。即是从初日至所求日积度及分也。
 </p><p>求差行，先定度数，径求日数置所求行度，以辰法乘之，有分者从之。八之，如每日差而一，为积。倍初日行分，以每日差加减之。益迟者加之，益疾者减之。如每日差而一，为率。今自乘，以积加减之，益迟者以积减之，益疾者以积加之。开方除之。所得，以率加减之。益迟者以率加之，益疾者以率减之。乃半之，即所求日数也。其开方除者，置所开之数为实，借一算于实之下，名曰下法。步之，超一位，置商于上方，副商于下法之上，名曰方法。命上商以除实，毕，倍方法一折，下法再折，乃置后商于下法之上，名曰隅法。副隅并方，命后商以除实，毕，隅从方法折下就除，如前开之。讫除，依上术求之即得也。
 </p><p>求星行黄道南北各视其星变行入阴阳爻而定之。其前变入阳爻为黄道北，入阴爻为黄道南；后变入阳爻为黄道南，入阴爻为黄道北。其金水二星，以爻变为前变，各计其变行，起初日入爻之算，尽老象上爻末算之数，不满变行度常率者，因置其数，以变行日定率乘之，如变行度常率而一，为日。其入变日数，与此日数以下者，星在黄道南北，依本所入阴阳爻为定。过此日数之外者，黄道南北则返之。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十三章-卷十三-原文.html'>第十三章-卷十三</a></p><p class='next'>下一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十三章-卷十三-原文.html'>第十三章-卷十三</a></p><p class='next'>下一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-本纪<a href='../明史.html#明史'>：目录</a></p>
@@ -189,5 +216,18 @@
 </p><p>七月二十六日，少詹事文震孟、刑部侍郎张至发同为礼部侍郎兼东阁大学士，参与军国大事。这月，张献忠突袭朱阳关，总兵官尤世威惨遭失败。张献忠遂进入河南。八月，李自成攻克咸阳，将领高杰投降。十五日，下诏撤回监视总理内臣，只有京师营兵及关、宁保持原来一样。二十四日，卢象升总理直隶、河南、山东、湖广、四川军务。九月四日，洪承畴监督副将曹变蛟等在关山镇打败李自成。李自成向东逃去，与张献忠会合。十五日，官军在沈丘瓦店失败，总兵官张全昌被捉。二十五日，王应熊辞官退职。
 </p><p>十月三日，下诏责罚自己，避居武英殿，减少膳食，不兴音乐，表示与将士同甘共苦。九日，户部尚书侯恂请求严格征收新旧欠交赋税，皇帝采纳了他的建议。十四日，李自成攻克陕州。十一月四日，何吾驺、文震孟辞官退职。十四日，祭祀天于京师南郊。总兵官祖宽在汝州攻破流贼。十二月二日，驻兵于凤阳。九日，卢象升、祖宽在确山打败李自成。十二日，左良玉在阌乡打败流贼。十七日，流贼侵犯长江北岸，围攻滁州。二十九日，老回回诸贼从河南侵犯陕西，被洪承畴打败于临潼。
 </p><p>这年，安南、暹罗、琉球来朝进贡。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十二章-卷二十二-白话.html'>第二十二章-卷二十二</a></p><p class='next'>下一节：<a href='第二十四章-卷二十四-白话.html'>第二十四章-卷二十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十二章-卷二十二-白话.html'>第二十二章-卷二十二</a></p><p class='next'>下一节：<a href='第二十四章-卷二十四-白话.html'>第二十四章-卷二十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

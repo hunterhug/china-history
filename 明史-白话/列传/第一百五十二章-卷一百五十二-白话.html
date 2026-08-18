@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -157,5 +184,18 @@
 </p><p>五年，居益升任工部右侍郎，总督河道。魏忠贤恨居益在叙功时不提到自己，压下了给他的奖赏。给事中黄承昊又说他拉帮结派，卖身投靠，靠钻营爬上了重要位置，于是居益被剥夺官籍，离开了朝廷。福建人到京师替他诉冤，熹宗不听，他们就为居益立了一座祠堂纪念他，在澎湖和平远台为他立了碑。
 </p><p>崇祯元年(1628)，居益起复，担任户部右侍郎，总督仓库、草场。陕西的兵镇缺饷达三十多个月，居益请把应送到关门的陕西田赋留下三十万石，解决部队的困难，庄烈帝回答可以。京郊戒严时居益在通州，制定的守城办法很完善。这时工部尚书张凤翔因为军用器材没准备齐全被关进了监狱，四司郎中有三个人死在了监狱里，朝廷就诏令居益接替了凤翔。不久，在试验大炮时发生了爆炸事故，兵部尚书梁廷栋弹劾郎中王守履失职。守履害怕了，就攻击说是兵部郎中王建候诬陷自己。朝廷审讯后发现事实不像守履所说，就把他逮捕入狱。居益上书营救守履，庄烈帝认为居益徇私，把他罢免了官籍，把守履廷杖了六十大棍，罢官为民。不久，朝廷评定守城的功劳，恢复了居益的官籍。
 </p><p>崇祯十六年(1643)，李自成打下渭南，向南氏一门勒索一百六十万石军饷，企仲已经八十三岁了，还被贼兵害死。贼寇想诱降居益及企仲的儿子、礼部主事居业，他们两个都不肯投降。第二年正月，贼寇派兵把他们带走，加以炮烙，居益、居业始终不屈，绝食七天死去了。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百五十一章-卷一百五十一-白话.html'>第一百五十一章-卷一百五十一</a></p><p class='next'>下一节：<a href='第一百五十三章-卷一百五十三-白话.html'>第一百五十三章-卷一百五十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百五十一章-卷一百五十一-白话.html'>第一百五十一章-卷一百五十一</a></p><p class='next'>下一节：<a href='第一百五十三章-卷一百五十三-白话.html'>第一百五十三章-卷一百五十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

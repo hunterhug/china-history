@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -190,5 +217,18 @@
 </p><p>淮南袁甫，字公胄，亦好学，与谭齐名，以词辩称。尝诣中领军何勖，自言能为剧县。勖曰：“唯欲宰县，不为台阁职，何也？”甫曰：“人各有能有不能。譬缯中之好莫过锦，锦不可以为；谷中之美莫过稻，稻不可以为赟。是以圣王使人，必先以器，苟非周材，何能悉长！黄霸驰名于州郡，而息誉于京邑。廷尉之材，不为三公，自昔然也。”勖善之，除松滋令。转淮南国大农、郎中令。石珩问甫曰：“卿名能辩，岂知寿阳已西何以恆旱？寿阳已东何以恆水？”甫曰：“寿阳已东皆是吴人，夫亡国之音哀以思，鼎足强邦，一朝失职，愤叹甚积，积忧成阴，阴积成雨，雨久成水，故其域恆涝也。寿阳已西皆是中国，新平强吴，美宝皆入，志盈心满，用长欢娱。《公羊》有言，鲁僖甚悦，故致旱京师。若能抑强扶弱，先疏后亲，则天下和平，灾害不生矣。”观者叹其敏捷。年八十余，卒于家。
 </p><p>史臣曰：夫缉政厘俗，拔群才以成务；振景观光，俟明主而宣绩。武皇之世，天下乂安，朝廷属意于求贤，轴有怀于干禄。郤诜等并韫价州里，裒然应召，对扬天问，高步云衢，求之前哲，亦足称矣。令思行己徇义，志笃周、甘，仁者必通，抑斯之谓！虽才行夙章，而待终秘阁，积薪之恨，岂独古人乎！
 </p><p>赞曰：郤、阮洽闻，含章体政。华生毓德，褫巾应命。鸟路曾飞，龙津派泳。素业可久，高芬斯盛。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十一章--原文.html'>第二十一章-</a></p><p class='next'>下一节：<a href='第二十三章--原文.html'>第二十三章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十一章--原文.html'>第二十一章-</a></p><p class='next'>下一节：<a href='第二十三章--原文.html'>第二十三章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

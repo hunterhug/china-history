@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -200,5 +227,18 @@
 </p><p>边方的士兵凶猛、憨直，性子跟别的兵不同，法规无法约束住他们。过去官兵中大多是关中人，跟贼寇是同乡，两军对阵，他们相互问候，甚至抛牲口，弃辎重，故意把贼寇给放走，称这是“打活仗”。边方的士兵跟他们语言不通，见到贼就杀，所以经常打胜仗。但是他们所过之处焚烧房屋，奸淫妇女，仗着战功，毫不收敛；又喜欢野战，害怕搜山；并且看到贼寇远窜，不是十天半月可以打下时，就自认为是客将，没有长久坚持的信念。祖宽的士兵在刚过河以后就一哄而逃，象升再三鼓励，他们才接受命令。到了党子口就又停下不走了。总兵李重镇一向懦弱，只想推卸责任，所以大家更加想回去。象升于是极力向朝廷陈述入山搜剿的困难，请改派祖宽、重镇赴关中讨贼去。正好总督洪承畴也这样奏请，祖宽等于是奉命移军陕西，隶承畴麾下。八月，京师受到进攻，朝廷召他进京防卫。经评定他在滁州的战功，升他当了右都督，赏了他若干银币。京师的战事平息后，朝廷派他到宁远协助守城。
 </p><p>十一年(1638)冬天，朝廷传令祖宽率兵增援京师郊区。等山东告急时，祖宽逗留不前。第二年正月，济南失守，祖宽被落职逮捕，因为失陷领土的罪行，最后被杀掉了。
 </p><p>祖宽作战勇敢，屡立战功，称得上是一员猛将。但他性情刚烈，爱发脾气，得不到文职官员的喜欢，所以最后被判死刑，也没人为他辩护。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百六十章-卷一百六十-白话.html'>第一百六十章-卷一百六十</a></p><p class='next'>下一节：<a href='第一百六十二章-卷一百六十二-白话.html'>第一百六十二章-卷一百六十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百六十章-卷一百六十-白话.html'>第一百六十章-卷一百六十</a></p><p class='next'>下一节：<a href='第一百六十二章-卷一百六十二-白话.html'>第一百六十二章-卷一百六十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

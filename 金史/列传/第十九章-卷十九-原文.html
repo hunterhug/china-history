@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -179,5 +206,18 @@
 </p><p>田颢，字默之，兴中人。辽天庆八年进士，历官金部员外郎，权归德节度使。太祖定燕，颢举四州版图归朝，加都官郎中，权节度使事，四迁知真定府事。招降齐博、游贵等贼众五千余人。已而贵复叛去，颢遣齐博伪叛从贵，因令伺间杀之，降其众，贼垒悉平。三迁行台左丞、彰德军节度使。是时，新定力役，颢蠲籍之半而上之，故相之徭赋比他州独轻。徙同知河北东路都总管，改同签燕京留守司事，民遮留不得出，易服夜去。改河东南路转运使，寻改绛阳军节度使。居三年，以疾请谢事，径解印归。数奏不允，移镇振武军。入为刑部尚书，居三月请老，卒于家。
 </p><p>赵隇，字德固，辽阳人。其妇翁以优伶得幸于辽主，隇补阁门祗候，累迁太子左卫率。后居滦州。宗望讨张觉，隇逾城出降，授洛苑副使，为滦州千户。迁洛苑使，检校工部尚书。从伐宋，至汴，迁棣州刺史、侍卫步军都虞候。及再伐宋，攻真定，与有功，改商州刺史，检校尚书右仆射。五年，同知信德府路统押军兵，兼沿边安抚司事。明年，权知济州事。八年，从定河南，授陇州团练使。十年，改知石州。隇久在兵间，不善治民，坐谤议，谪监平州甜水盐。齐国废，河南皆以宿将守之，授隇宿州防御使，统本路军兵。隇重义，接儒士。尝以事至汴，有故人子负官钱百万，隇以橐金赠之，其子悉为私费，复代输之。顷之，有讼徐帅不法者，朝廷使隇鞫治，隇委曲营护，坐是废罢，寓居于燕。海陵出领行台省，至燕，隇往见之，因诉其事。及海陵即位，起为保大军节度使。贞元初，改内省使。未几，为中都路都转运使。明年，再徙顺义、兴平，入为太子詹事，镇沁南，以疾卒，年六十六。
 </p><p>后十余年，隇子孙、司徒张通古子孙皆不肖淫荡，破赀产，卖田宅。世宗闻之，诏曰：“自今官民祖先亡没，子孙不得分割居第，止以嫡幼主之，毋致鬻卖。”仍著于令。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p><p class='next'>下一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p><p class='next'>下一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

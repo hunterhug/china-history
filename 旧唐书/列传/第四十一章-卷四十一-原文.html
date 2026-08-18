@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -191,5 +218,18 @@
 <p>　　袁恕己，沧州东光人也。长安中，历迁司刑少卿，兼知相王府司马事。敬晖等 将诛张易之兄弟，恕己预其谋议，又从相王统率南衙兵仗，以备非常。及事定，加 银青光禄大夫，行中书侍郎、同中书门下三品，封南阳郡公，食实封五百户。将作 少匠杨务廉素以工巧见用，中兴初，恕己恐其更启游娱侈靡之端，言于中宗曰： “务廉致位九卿，积有岁年，苦言嘉谋，无足可纪。每宫室营构，必务其侈，若不 斥之，何以广昭圣德？”由是左授务廉陵州刺史。恕己俄擢拜中书令，仍加特进， 封南阳郡王，罢知政事。则天崩，遗制加实封满七百户。后与敬晖等累遭贬黜，流 于环州。寻为周利贞所逼，饮野葛汁数升，恕己常服黄金，饵毒发，愤闷，以手掘 地，取土而食，爪甲殆尽，竟不死，乃击杀之。建中初，赠太子太傅。曾孙德文， 举进士，开成三年，授秘书省校书郎。 </p>
 <p>　　史臣曰：昔夫差入越，勾践保于会稽，不听子胥之言，而有甬东之叹。此五王 除凶返正，得计成功。当是时，彦范、敬晖握兵全势，三思、攸暨其党半歼，若从 季昶之言，宁有利贞之祸？盖以心怀不忍，遽失后图，黜削流移，理固然也。且芟 蔓而不能拔本，建谋而尚欠防微，死即无辜，祸由自掇。失断召乱也，不亦宜哉！ </p>
 <p>　　赞曰：嗟彼五王，忠于有唐。知火在木，谓其无伤。祸发既克，势摧靡当。何 事不敏，周身之防。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十章-卷四十-原文.html'>第四十章-卷四十</a></p><p class='next'>下一节：<a href='第四十二章-卷四十二-原文.html'>第四十二章-卷四十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十章-卷四十-原文.html'>第四十章-卷四十</a></p><p class='next'>下一节：<a href='第四十二章-卷四十二-原文.html'>第四十二章-卷四十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

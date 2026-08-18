@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#辽史'>：目录</a></p>
@@ -167,5 +194,18 @@
 </p><p>皇上恼怒匡嗣，数落他说：“你不听众人的谋划，深入敌人境内，这是你的第一条罪；军令不严肃，队伍不整齐，这是你的第二条罪；抛弃我国的军队，独自一人逃窜，这是你的第三条罪；侦察敌情贻误军机，守卫防御不完备，这是你的第四条罪；遗弃军用旗鼓，损害军威，辱没国格，这是你的第五条罪。”下令将他立即斩首。皇后领着各位内亲慢慢地为他开脱释罪，皇上一再不听他们的求情。很久以后，震怒渐渐平息，于是杖击韩匡嗣然后释免了他。
 </p><p>不久遥授晋昌军节度使。乾亨三年(981)，改为西南面招讨使，去世。睿智皇后闻讯，派使者前往吊唁，赠予助丧的钱物十分丰厚，后来追赠他为尚书令。
 </p><p>有五子：德源、德让———后赐名隆运、德威、德崇、德凝。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三-白话.html'>第三章-卷三</a></p><p class='next'>下一节：<a href='第五章-卷五-白话.html'>第五章-卷五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三-白话.html'>第三章-卷三</a></p><p class='next'>下一节：<a href='第五章-卷五-白话.html'>第五章-卷五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

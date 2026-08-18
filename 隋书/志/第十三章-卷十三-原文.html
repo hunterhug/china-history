@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>隋书-志<a href='../隋书.html#志'>：目录</a></p>
@@ -387,5 +414,18 @@
 </p><p>置星定见、其日夜半所在宿度及分，以其日先后余，分前加、分后减气日法，而乘定见余，气日法而一所得加夜半度分，乃以星初见去日度数，晨减夕加之，即星初见所在宿度及分。
 </p><p>求次日：
 </p><p>各加一日所行度及分。其有益疾、迟者副置一日行分，各以其分疾增、迟损，乃加之。有篾者，满法从分，其母有不等，齐而进退之。留即因前，逆则依减入虚去分，逆出先加。皆以篾法除，为转分；其不尽者，仍谓之篾，各得每日所在知去日度。增以日所入先后分，定之。诸行星度求水其外内，准月行增损黄道而步之；不明者，依黄道而求所去日度。先后分亦分明前加后减。其金、火诸日度，计数增损定之者。其日少度多，以日减度之残者，与日多度少之度，皆度法乘之，日数而一，所得为分。不满篾，以日数为母。日少者以分并减之一度，日多者直为度分，即皆一日平行分。其差行者，皆减所行日数一，乃半其益疾、益迟分而乘之，益疾以减、益迟以加一日平行分，皆初日所行分。有计日加减，而日数不满未得成度者，以气日法若度法乘，见已所行日即日数除之，所得以增损其气日疾法，为日及度。其不成者，亦即为篾。其木、火、土，晨有见而夕有伏；金、水即夕见还夕伏，晨见即晨伏。然火之初行及后疾，距冬至日计日增损日度者，皆当先置从冬至日余数，累加于位上，以知其去冬至远近，乃以初见与后疾初日去冬至日数而增损定之，而后依其所直日度数行之也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p><p class='next'>下一节：<a href='第十四章-卷十四-原文.html'>第十四章-卷十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p><p class='next'>下一节：<a href='第十四章-卷十四-原文.html'>第十四章-卷十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

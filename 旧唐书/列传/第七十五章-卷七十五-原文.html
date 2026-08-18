@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -175,5 +202,18 @@
 <p>　　浑母兄识，，笃意文章，有重名于开元、天宝间，与萧颖士、元德秀、刘迅相 亚。其练理创端往往诣极，当时作者，咸伏其简拔，而趣尚辨博。浑亦善为文，然 趋时向功，非沉思之所及。浑警辩，好谐谑放达，与人交，豁然无隐。性节俭，不 治产业，官至丞相，假宅而居。罢相数日，则命亲族寻胜，宴醉方归，陶陶然忘其 黜免。时李勉、卢翰皆退罢居第，相谓曰：“吾辈方柳宜城，悉为拘俗之人也。” </p>
 <p>　　史臣曰：张镒、萧复、柳浑，节行才能訏谟亮直，皆足相明主，平泰阶，而卢 杞忌之于前，延赏排之于后，管仲有言：“任君子，使小人间之，害霸也。”德宗 黜贤相，位奸臣，致硃泚、怀光之乱，是失其人也，岂尤其时哉！河清殁于王事， 乃显忠贞；从一举自奸人，固宜循默。 </p>
 <p>　　赞曰：得人则兴，失人则亡。镒、复、浑去，宗社其殃。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十四章-卷七十四-原文.html'>第七十四章-卷七十四</a></p><p class='next'>下一节：<a href='第七十六章-卷七十六-原文.html'>第七十六章-卷七十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七十四章-卷七十四-原文.html'>第七十四章-卷七十四</a></p><p class='next'>下一节：<a href='第七十六章-卷七十六-原文.html'>第七十六章-卷七十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

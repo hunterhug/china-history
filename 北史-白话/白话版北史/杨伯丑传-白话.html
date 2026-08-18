@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>北史-白话版北史<a href='../北史.html#北史'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>杨伯丑传<span style='font-size:small'> 白话</span></h1>
 <p>杨伯丑，冯翊武乡人。喜读《易经》，隐居在华山。隋朝开皇初年，被征召入朝，见到公卿大夫不行礼节，不分贵贱都用“你”称呼，人们不能猜度。文帝召见与他谈话，竟然没有回答什么。赏赐给他衣服，到朝堂上抛弃后离开。于是披头散发装疯，在市场上奔走，身体肮脏，不曾梳洗过。当时有个叫张永乐的人，在京城占卜为生，杨伯丑经常跟着他游玩。张永乐算卦有不能决定的，杨伯丑就替他分析爻象，寻幽入微，张永乐叹服，自认为赶不上他。<BR><BR>　　杨伯丑也开张卖卜。有人曾经丢失孩子，找杨伯丑筮卜，卦算好，杨伯丑说：“你的孩子在怀远坊南门东边，路北的墙壁上有一个穿青色裙子的女子抱着，可前去领取。”依照他的话，果然找到孩子。有一家有数两黄金，夫妻俩人共同藏放，后来金子丢失，丈夫想到妻子有别的打算，准备休掉妻子。妻子觉得很冤枉，来告诉杨伯丑。伯丑为她卜筮说“：金子找到了。”聚集他们全家人，对其中一人说：“可向他要。”果然得到金子。还有将军许知常寻问吉凶，杨伯丑说：“你不要往东北去，一定不得已，要尽快返回。不然的话，杨素砍掉你的头。”不久，皇帝命令许知常侍奉汉王谅。很快皇上死去，汉王谅兴兵造反，许知常逃回京城。许知常以前和杨素有矛盾，到杨素平定并州时，他先走访许知常、准备斩掉知常。后来幸亏伯丑斡旋，才得以赦免。还有人丢马来请求伯丑占卜的，当时杨伯丑被皇太子召见，在路上碰见这个人，随时为他算卦。卦成后，说：“我不急于对你说，你且去西市场东壁门南边第三个店，替我买鱼作菜，就会得马了。”那人按照伯丑的话去做，不多会，有一人牵着他丢失的马来到，于是擒住。崖州曾经进献直径一寸的珠，送宝的人私下更换，皇帝心中有疑，就召杨伯丑让他算卦。伯丑说：“有东西出自水中，质地圆滑，色彩光亮，是大珠子，现在被人隐藏起来。”详细说明隐藏人的姓名、长相。皇上按照他的话，让官吏审问，果然得到原来那颗珠。皇上惊奇他的才能，赏赐二十匹帛。<BR><BR>　　国子祭酒何妥曾经造访他谈论《周易》，听到何妥的话，闲静地笑着说：“怎么引用郑玄、王弼的话呢？”时间长了，稍有争辩应答，所说文辞含义，都不同于先代儒家旨要，而思理玄远微妙。所以议论的人都认为他是天然独得，不是一般人能赶上的。后来长寿而死。</p>
-<div class='pn'><p class='pre'>上一节：<a href='萧吉传-白话.html'>萧吉传</a></p><p class='next'>下一节：<a href='张胄玄传-白话.html'>张胄玄传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='萧吉传-白话.html'>萧吉传</a></p><p class='next'>下一节：<a href='张胄玄传-白话.html'>张胄玄传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

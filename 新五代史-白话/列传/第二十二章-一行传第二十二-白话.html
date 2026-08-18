@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-列传<a href='../新五代史.html#新五代史'>：目录</a></p>
@@ -203,5 +230,18 @@
 </p><p>依照规定，表彰忠孝仁义之人，必定要首先加以核查，忠孝的人终身免除徭役，全家仁义的一并加以表彰．得到本州岛审察到乡中老人程言等人称说，李白伦的高祖叫李训，李训生李粲，李粲生李则，李则生李忠，李忠生李白伦，李白伦生李光厚，六代人同居属实。”下诏以他们居住的飞尧乡为孝义乡，匡圣里为仁和里，按规定立牌坊赐匾额加以表彰。
 </p><p>九月丙子，卢部又上奏说：“前登州孝义人家王仲昭六代人同住，为表彰他忠孝建有厅堂、步栏，前面树立屏风，修建乌头正门，门前两柱高一丈二尺，墨染的柱子顶端覆盖瓦桶，修筑双阙高一丈，在乌头正门南面三丈七尺，两旁种上槐树柳树，相距十五步，请仿照这一形式为李白伦旌表门间。”下韶说：“这是从前的事，没有令格。
 </p><p>依据地势所宜，外门修高些，门两旁安放旌表木柱，左右修建台，高一丈二尺，长宽方正相称，涂成白色而四角用红色，使不孝不义的人看见，可以产生悔改之心而改变他们的行为。”</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十一章-死事传第二十一-白话.html'>第二十一章-死事传第二十一</a></p><p class='next'>下一节：<a href='第二十三章-唐六臣传第二十三-白话.html'>第二十三章-唐六臣传第二十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十一章-死事传第二十一-白话.html'>第二十一章-死事传第二十一</a></p><p class='next'>下一节：<a href='第二十三章-唐六臣传第二十三-白话.html'>第二十三章-唐六臣传第二十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -180,5 +207,18 @@
 <p>　　李元平者，宗室子。始为湖南观察使萧复判官，试大理评事。性疏傲，敢大言， 好论兵，天下贤士大夫无可其意者，以是人多衔怒。关播奇重之，许以将帅。时希 烈反叛，朝廷以汝州与贼接壤，刺史韦光裔懦弱不任职，播乃盛称元平，特召见， 超左补阙，不数日，擢为检校吏部郎中，兼汝州别驾，知州事。既至部，募工徒缮 理郛郭，希烈乃使勇士应募，执役板筑，凡入数百人，元平不之觉。希烈遣伪将李 克诚以数百骑突至其城，先应募执役者应于内，缚元平驰去。既见希烈，遗下污地。 希烈见其无须眇小，戏谓克诚曰：“使汝取李元平，何得将元平兒来？”因嫚骂曰： “盲宰相使汝当我，何待我浅耶！”伪署为御史中丞。播闻元平得用，仍欺于人曰： “李生功业济矣。”言必能覆希烈而建功也。居无何，希烈用为宰相，或告其有二 者，乃断一指以自誓。希烈既死，或有人言在贼中微有谋虑，贷死流于珍州。会赦 得归剡中，浙东观察使皇甫政表闻其到，以发上怒，复流贺州而死。 </p>
 <p>　　史臣曰：蒸尝礿祀，前王制以奉先；怪力乱神，宣圣鄙而不语。凡云左道，固 有旧章。玙假于鬼神，乃至将相，既处代天之位，爰滋乱政之源。国祯妖人疑众， 妄恢其祀典；梁镇正士抗疏，方悟其上心。泌见可进而知难退，足为高率智辩之士； 居相位而谈鬼神，乃见狂妄浮薄之踪。《王制》云：“执左道以乱政，杀。”宁无 畏乎！繁之丑行，弃于当时，竟陷非辜，谅由素履。造为臣得礼，莅事非能；播居 位取容，举人败事。皆非国器，咸历台司，失人者亡，国其危矣。 </p>
 <p>　　赞曰：玙、泌、造、播，俱非相材。国祯左道，梁生直哉！</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十九章-卷七十九-原文.html'>第七十九章-卷七十九</a></p><p class='next'>下一节：<a href='第八十一章-卷八十一-原文.html'>第八十一章-卷八十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七十九章-卷七十九-原文.html'>第七十九章-卷七十九</a></p><p class='next'>下一节：<a href='第八十一章-卷八十一-原文.html'>第八十一章-卷八十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

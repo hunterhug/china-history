@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -172,5 +199,18 @@
 </p><p>明武宗尊崇信任西藏僧人，常常穿着西藏僧人的衣服在内部演讲佛法。有个叫绰吉我些儿的西域僧人常出入豹房，被封为大德法王，他派遣二个徒弟回乌思藏，要求效法大乘法王的例子授予国师诰命，每年按时向朝廷入贡，朝廷送茶叶让其带回去。刘春表示反对。武宗下令再议，刘春奏道：“乌思藏远在西方，极其愚昧蛮横。虽然设四王安抚他们，但其入朝进贡必须有节制。使其不造成边患。如果同意送他们茶叶，给以诰敕，万一他们假冒圣旨诱骗藏人，向朝廷提出不切实际的要求，朝廷不答应其要求藏人不满，答应其要求则滋生祸害。”奏章呈上，罢免他们携带茶叶的特权，但还是给予了诰敕。刘春又奏道“：西番信奉佛教，因此祖宗承前代旧例，设立乌思藏诸司，以及在陕西洮州、岷州、四川松潘建立诸寺庙，用以教化引导番人，许其朝贡。贡期、人数都有定制。近因诸番地处僻远，难辨真伪。内地的逃亡罪人，学习番人语言，藏身在内，又多建寺庙请求僧人配额。番人进贡的日益增多，宴请赏赐繁费。请求对上朝入贡的番人严格地限制日期，酌情限定人数，每座寺庙只给经核实的十道度牒，沿边军队备存经核实后的底本，人员与底本相符合，才允许起程。禁止滥建寺庙。”武宗回答可以。广东布政使罗荣等朝见皇帝，各言镇守内臣入贡之害。刘春一一列上累朝停革入贡上献的诏旨，并且说了四方水旱盗贼，军民困苦的情况，请求罢除诸镇守臣，意见未被接纳。
 </p><p>刘春掌管礼部三年，慎守法典。对于受封的皇族要求赏赐，请求赐婚以及文武大臣的祭葬、赠谥，他都按礼制裁决。回家里处理丧事，丧服期满，刘春被起用为南京吏部尚书。不久以礼部尚书的身份专门负责诰敕，掌管詹事府的事务。十六年(1521)，去世，追赠太子太保，谥号文简。
 </p><p>刘氏世代以科举扬名。刘春的父亲刘规是御史，弟弟刘台为云南参政，儿子刘彭年为贵州巡抚兼右副都御史。刘彭年的儿子刘起宗为辽东苑马寺卿。刘起宗的儿子刘世赏为广东左布政使。刘台的儿子刘鹤年为云南布政使，以清廉闻名。刘鹤年的孙子刘世曾以右副都御史巡抚云南，出征缅甸有功。他们都是由进士进入仕途的。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十一章-卷七十一-白话.html'>第七十一章-卷七十一</a></p><p class='next'>下一节：<a href='第七十三章-卷七十三-白话.html'>第七十三章-卷七十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七十一章-卷七十一-白话.html'>第七十一章-卷七十一</a></p><p class='next'>下一节：<a href='第七十三章-卷七十三-白话.html'>第七十三章-卷七十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

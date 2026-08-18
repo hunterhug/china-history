@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -165,5 +192,18 @@
 </p><p>二十二年六月，丰、士诚乘闲刺杀察罕，入益都。元以兵柄付扩廓，围城数重，猱头等告急。福通自安丰引兵赴援，遇元师于火星埠，大败走还。元兵急攻益都，穴地道以入，杀丰、士城，而械送猱头于京师，林儿势大窘。明年，张士诚将吕珍围安丰，林儿告急于太祖。太祖曰：“安丰破则士诚益强。”遂亲帅师往救，而珍已入城杀福通。太祖击走珍，以林儿归，居之滁州。明年，太祖为吴王。又二年，林儿卒。或曰太祖命廖永忠迎林儿归应天，至瓜步，覆舟沉于江云。
 </p><p>初，太祖驻和阳，郭子兴卒，林儿牒子兴子天叙为都元帅，张天祐为右副元帅，太祖为左副元帅。时太祖以孤军保一城，而林儿称宋后，四方响应，遂用其年号以令军中。林儿殁，始以明年为吴元年。其年，遣大将军定中原，顺帝北走，距林儿亡仅岁余。林儿僣号凡十二年。
 </p><p>赞曰：元之末季，群雄蜂起。子兴据有濠州，地偏势弱。然有明基业，实肇于滁阳一旅。子兴之封王祀庙，食报久长，良有以也。林儿横据中原，纵兵蹂躏，蔽遮江、淮十有余年。太祖得以从容缔造者，藉其力焉。帝王之兴，必有先驱者资之以成其业，夫岂偶然哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p><p class='next'>下一节：<a href='第十一章-卷十一-原文.html'>第十一章-卷十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p><p class='next'>下一节：<a href='第十一章-卷十一-原文.html'>第十一章-卷十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

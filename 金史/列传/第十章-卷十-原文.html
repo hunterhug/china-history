@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -208,5 +235,18 @@
 </p><p>乌虎里部人迪烈、划沙率部族降，朝廷以挞仆野为本部节度使，乌虎为都监。习古乃封还挞仆野等宣诰，以便宜加挞仆野散官，填空名告身授之，及录上降附有劳故官八百九十三人，朝廷从之。于是，迪烈加防御使，为本部节度使。划沙加诸司使，为节度副使，知迪烈底部事。挞离答加左金吾卫上将军，节度副使，知突鞠部事。阿枲加观察使，为本部节度使。其余迁授有差。以厖葛城地分赐乌虎里、迪烈底二部及契丹人，其未垦者听任力占射。
 </p><p>久之，领咸州烟火事。天会六年，完颜慎思所部及其余未置猛安谋克户口，命习古乃通阅具籍以上。天会十年，改南京路军帅司为东南路都统司，习古乃为都统，移治东京，镇高丽。
 </p><p>赞曰：金启疆土，斡鲁、斡鲁古方面功最先著，婆卢火、娄室最先封，泰州之边圉，黄龙之冲要，寄亦重矣。若阇母之勤劳南路，娄室之经营陕西，银术可之围守太原，劳亦至矣。斡鲁古之不治，阇母之败，谴罚之亟，诸将慴焉。夫能以弱小终制强大，其效验与。银术可、习古乃观人之国而知其可伐，古语云“国有八观”，善矣夫。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p><p class='next'>下一节：<a href='第十一章-卷十一-原文.html'>第十一章-卷十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p><p class='next'>下一节：<a href='第十一章-卷十一-原文.html'>第十一章-卷十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

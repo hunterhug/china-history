@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#后汉书'>：目录</a></p>
@@ -179,5 +206,18 @@
 </p><p>十二年，公孙述的弟弟公孙恢和子婿史兴都被大司马吴汉、辅威将军臧宫所攻破，战死。从此将帅恐惧，日夜离叛，公孙述虽然杀其全家，还是不能禁止。光武帝必欲公孙述投降，就下诏书晓喻公孙述道：“往年诏书频下，开导并示以恩信，不要以来歙、岑彭受害而自疑。现在只要如期归降，就可保证家族完全；假使迷惑不悟，那等于把肉送进虎口，可痛又有什么办法呢！你的将帅疲倦，吏士们都想回家，不愿意继续屯守下去，诏书手记，不可数得，我是不食言的。”公孙述终无降意。九月，吴汉又破斩其大司徒谢丰、执金吾袁吉，汉兵进驻成都。公孙述对延岑说“：现在怎么办呢？”岑说“：男儿应当在死中求生，怎能坐着等死呢！财物是容易聚敛的，不应当吝惜。”公孙述就将金帛全数拿出来，募得敢死队五千多人，在市桥以配合延岑，假装建立旗帜，鸣鼓挑战，暗地里却派遣奇兵绕到吴汉军后面，袭击攻破吴汉军。吴汉坠落水中，抓着马尾巴得以出水。十一月，臧宫军到咸门。公孙述看到占卦上说“虏死城下”。大喜，认为吴汉等当死城下。于是亲自率领数万人攻吴汉，使延岑拒臧宫。大战，延岑三合三胜。从清晨到日中，军士吃不到粮食，都很疲乏，吴汉命令壮士突击，公孙述兵士大乱，公孙述胸部中枪坠落马下。左右以车将公孙述救入城内。公孙述把兵交延岑，晚上就死了。次日晨，延岑向吴汉投降。吴汉就杀了公孙述妻子，把公孙氏全都杀尽，并把延岑全族都杀了。又纵兵大掠，焚烧公孙述宫室。
 </p><p>光武听到发怒，谴责吴汉。又责让吴汉副将刘尚说“：城降三日，吏人都服从，孩儿老母，有万数人口，一旦纵兵放火，听到了都叫人酸鼻！你刘尚的宗室子孙，也曾经历过吏职，怎么忍心做这种事？仰视天，俯视地，看看秦西巴放鞧归其母与乐羊啜子之羹，哪一个更仁呢？很是失去斩将而吊其民人的道义了。”初，常少、张隆劝公孙述降汉，述不从，常少与张隆都忧郁而死。光武下诏书追赠常少为太常，张隆为少禄勋，以太常和光禄勋的仪礼改葬他俩。凡是忠节志义的人士，都受到了表彰和显扬。程乌、李育因有才干，都提拔使用。于是西土都感到高兴，没有不归心的。
 </p><p>史家评论道：以前赵佗因汉初天下未定自立为南越王，公孙述也窃取帝位于蜀汉，推想他没有别的功能，而到最后才灭亡，难道是由于地处边远，因得以苟安于一隅吗？公孙述虽为汉吏，并没有什么大的凭借资本，徒以文俗自喜，就能实现他的志愿和计谋。道不足而意有余，不能乘隙立功，以观时变，而是坐守边缘，以高深自安，这就和以前魏侯欣喜于河山之固，吴起对他说，国家巩固在德不在险一样的啊。等到他谢臣属，坚持兴废是命运而不肯投降，与孙皓泥首面缚降王氵睿、许男面缚衔璧见楚子，就不可同日而语了。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二章-王刘张李彭卢列传-白话.html'>第二章-王刘张李彭卢列传</a></p><p class='next'>下一节：<a href='第四章-宗室四王三侯列传-白话.html'>第四章-宗室四王三侯列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二章-王刘张李彭卢列传-白话.html'>第二章-王刘张李彭卢列传</a></p><p class='next'>下一节：<a href='第四章-宗室四王三侯列传-白话.html'>第四章-宗室四王三侯列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

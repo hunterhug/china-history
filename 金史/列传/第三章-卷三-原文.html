@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -207,5 +234,18 @@
 </p><p>天会六年，权元帅左都监。十五年，为西京留守。天眷三年，为平章政事。皇统元年，封漆水郡王。二年，制诏昂暑衔带“皇叔祖”字，封郓王。是岁，薨。
 </p><p>子郑家、鹤寿。鹤寿累官耶鲁瓦群牧使，死于契丹撒八之难，语在《忠义传》。
 </p><p>郑家，皇统初，以宗室子授定远大将军，除磁州刺史。天德间，为右谏议大夫，累迁会宁尹、安化军节度使，改益都尹。海陵伐宋，为浙东道副统制，与工部尚书苏保衡以舟师自海道趋临安，至松林岛阻风，泊岛间。诘旦，舟人望见敌舟，请为备。郑家问：“去此几何？”舟人曰：“以水路测之，且三百里。风迅，行即至矣。”郑家不晓海路舟楫，不之信。有顷，敌果至，见我军无备，即以火炮掷之。郑家顾见左右舟中皆火发，度不得脱，赴水死，时年四十一。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p><p class='next'>下一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p><p class='next'>下一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

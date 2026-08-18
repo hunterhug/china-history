@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#晋书'>：目录</a></p>
@@ -200,5 +227,18 @@
 </p><p>后来和几位兄弟都被害。灾难发生的那天晚上，东宫召见杨济。杨济对裴楷说：“我该去哪裹呢?”蜚护说：“你身为保傅，应当去束宫。”扰遭喜好施舍，长期主管军队，跟从他的四百多人都是塞地壮士，衹要射箭就能命中，都要救杨济。垄睦已经入宫，众人没有不叹息遗憾的。
 </p><p>史臣曰：贾充凭着谄媚奉承的浅薄品质，舞文弄墨的平庸才能，有幸赶上昌盛的时代，力不能胜任而占据高位。抽出兵戈犯上作乱，连猜忌畏惧的心思都没有；交付他军权伐吴，竟有知难而退的请求，不仅是魏的叛逆，也是晋的罪人啊!然而他享尽宠幸光耀，身兼文武要职，活着担负宰相的重任，死后有柑祭于皇室的殊荣，可以说是没有美德而享有厚禄，灾祸将要殃及了。至于他的子孙，那是乞丐一类的人，继承了恶习的根本，放纵奸邪的凶德。煽动那多谋的妇人，追求那种家天下的局面，即便是被诛灭，怎能说就算是开脱罪责了呢!过去魏的破灭，贾充实在是尽了辛劳，晋的分崩，买后也尽了气力，可以说是“你以这种方式起家，必以这种方式终结”，这话真是不假啊!杨骏凭藉外戚身份受宠幸，于是担负栋梁重任，恭敬尚且还怕来不及，反而骄奢淫佚，难道能免于灾难吗?趟括的母亲因明智而保全自身，钟会的兄长因有言在先而获得赦免，文琚见识与先人相同，而受到的惩罚却与先人两样，可悲啊!
 </p><p>赞曰：公间谄佞，心思违背正道。遇上好时机，于是登上显赫地位。乞丐继承世系，祸害家族扰乱政治。平庸的文长，就身居要职。不胜任而占据高位，最终灭亡。杨珧虽事先觉悟，也遭祸殃。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章--白话.html'>第九章-</a></p><p class='next'>下一节：<a href='第十一章--白话.html'>第十一章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九章--白话.html'>第九章-</a></p><p class='next'>下一节：<a href='第十一章--白话.html'>第十一章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

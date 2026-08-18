@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>元史-本纪<a href='../元史.html#本纪'>：目录</a></p>
@@ -180,5 +207,18 @@
 </p><p>冬十月甲寅朔，增海漕米为七十万石。壬戌，太白犯牵牛。置蒙古都万户府于凤翔，立平珠、六洞蛮夷长官司二，设土官四十四员。戊寅，太阴犯角距星。令御史台检劾枢密院案牍。赐诸王岳木忽而、兀鲁忽不花所部粮五万石；控鹤七百人，赐钞五百锭。
 </p><p>十一月庚寅，安南贡方物。丙申，知枢密院那怀言：“常例文移，乞令副枢以下署行。”从之。罢云南行御史台，置肃政廉访司。己亥，太阴犯舆鬼。辛丑，辰星犯牵牛。罢徐、邳炉冶所进息钱。壬寅，太阴犯右执法。以中书右丞王庆端为平章政事。赐和林军校币六千匹，衣帽等物有差。
 </p><p>十二月戊午，太白经天。己未，填星犯舆鬼。乙丑，太白犯岁星，太阴犯荧惑。括诸路马，除牝孕携驹者，齿三岁以上并拘之。赐朵而朵海所部钞八十五万锭。庚午，镇星入舆鬼，太阴犯上将。辛未，增置各路推官，专掌刑狱，上路二员，下路一员。诏诸逃军复业者免役三年。江浙行省平章政事答剌罕升左丞相。甲戌，彗出子孙星下。己卯，太阴犯南斗。辛巳，命廉访司岁举所部廉干者各二人。诏和市价直随给其主，违者罪之。定诸税钱三十取一，岁额之上勿增。扬州、淮安两路旱、蝗，以粮十万石赈之。给阵亡军妻子衣粮。免内郡赋税。诸王小薛所部三百余户散处凤翔，以潞州田二千八百顷赐之。释在京囚二百一十九人。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p><p class='next'>下一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p><p class='next'>下一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

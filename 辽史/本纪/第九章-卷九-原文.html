@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-本纪<a href='../辽史.html#本纪'>：目录</a></p>
@@ -163,5 +190,18 @@
 </p><p>三年春二月丙子，东幸。己丑，复幸南京。三月乙卯，皇子韩八卒。辛酉，葬潢、土二河之间，置永州。以秦王韩匡嗣为西南面招讨使。夏五月丙午，上京汉军乱，劫立喜隐不克，伪立其子留礼寿，上京留守除室擒之。秋七月甲子，留礼寿伏诛。冬十月，如蒲瑰坡。十一月辛亥，加除室同政事门下平章事。是月，以南院枢密使郭袭为武定军节度使。十二月，以辽兴军节度使韩德让为南院枢密使。
 </p><p>四年春正月己亥，如华林、天柱。三月乙未，清明，与诸王大臣较射，宴饮。夏四月，自将南伐。至满城，战不利，守太尉奚瓦里中流矢死。统军使善补为伏兵所围，枢密使斜轸救免，诏以失备杖之。五月，班师。清暑燕子城。秋七月壬辰，遣使赐喜隐死。八月，如西京。九月庚子，幸云州。甲辰，猎于祥古山，帝不豫。壬子，次焦山，崩于行在。年三十五，在位十三年。遗诏梁王隆绪嗣位，军国大事听皇后命。统和元年正月壬戌，上尊谥孝成皇帝，庙号景宗。重熙二十一年，加谥孝成康靖皇帝。
 </p><p>赞曰：辽兴六十馀年，神册、会同之间，日不暇给；天禄、应历之君，不令其终；保宁而来，人人望治。以景宗之资，任人不疑，信赏必罚，若可与有为也。而竭国之力以助河东，破军杀将，无救灭亡。虽一取偿于宋，得不偿失。知匡嗣之罪，数而不罚；善郭袭之谏，纳而不用；沙门昭敏以左道乱德，宠以侍中。不亦惑乎！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p><p class='next'>下一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p><p class='next'>下一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

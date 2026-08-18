@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-本纪<a href='../旧唐书.html#旧唐书'>：目录</a></p>
@@ -355,5 +382,18 @@
 </p><p>十二月己酉是朔日，月初一。五日，贬光禄卿、驸马都尉韦让为澧州长史。七日，乾陵失火。以杭州刺史李宗闵为太子宾客，分管东都。十三日，皇上身体不适，百官到延英殿问安。二十七日，宰相们入宫进见，在太和殿拜见皇上。这一年，户部统计现在管辖户数是四百九十九万六千七百五十二户。
 </p><p>开成五年(840)春正月戊寅是朔日，月初一，皇上身体不适，不接受朝贺。二日，皇上下诏立亲弟弟颍王氵廛为皇太弟，暂时主管军国大事，皇太子成美重新做陈王。四日，皇上在大明宫之太和殿去世，享年三十三岁。群臣上谥号曰元圣昭献皇帝，庙号文宗。这年八月十七日，安葬在章陵。
 </p><p>史臣说：昭献皇帝严肃、节俭，温文尔雅，出于自然，继位于父兄奢侈、败坏风气之后，正当宦官专职之际，然而他能以治改变乱，化危为安。大和初年，可谓圣明了。当初，皇上在藩邸当王时，喜欢阅读《贞观政要》，每每阅读到太宗勤奋努力于治国之道，便对治国有意了。等到即帝位之后，每次在延英殿召见宰相们议事，常常到深夜。按照旧制，天子在单日处理朝政，皇上对宰相们说：“朕想与卿等每天相见，至于停止上朝、放朝，用双日就可以了。”当时宪宗的郭后居住在兴庆宫，叫太皇太后，敬宗母宝历太后及皇上母亲萧太后，当时并呼为“三宫太后”。皇上性格仁爱孝敬，到三宫向三位太后问安，情感忠厚对待态度完全一样。内园曾经进献樱桃，有关部门报告说：“可以另外赐给三宫太后。”皇上说：“到太后宫送东西，怎么能叫做‘赐’。”马上拿笔改“赐”为“奉”。宗正衙门认为祭祀器皿朽坏，请求更换，等到有关部门呈献新器皿，皇上命陈列在别殿，而且穿戴好冠带去观看，容颜一派凄凉的样子。皇上尤其在朝政治理上勤奋，凡是选拔朝廷内外官员，宰相们进上名单，皇上一定要当面询问了解他的品行、才能，然后才补官。中书省用鸿胪卿张贾为衢州刺史，张贾喜欢赌博，在朝廷辞别皇上之日，皇上对他道：“听说你擅长赌博。”张贾对答说：“办理政事之闲暇，姑且与宾客玩玩，不会对政事有什么妨碍。”皇上说“：难道有爱好赌博而对政事毫无妨碍的！”朝廷内外听说后都惊惧而停止了赌博。然而皇上由于累代国家发生事变都来自宫中，尤其痛恨专权的太监，想要将他们都除掉。然而李训、郑注这些狂妄轻率之人，制服太监没有办法，施行计谋已经败露以至于国家颠覆。文宗皇帝是所谓的“有帝王的品德，而无帝王的才干”，即使为国事焦虑甚至不能按时吃饭，也不能平息祸患，可惜啊！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十六章-卷十六-白话.html'>第十六章-卷十六</a></p><p class='next'>下一节：<a href='第十八章-卷十八-白话.html'>第十八章-卷十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十六章-卷十六-白话.html'>第十六章-卷十六</a></p><p class='next'>下一节：<a href='第十八章-卷十八-白话.html'>第十八章-卷十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

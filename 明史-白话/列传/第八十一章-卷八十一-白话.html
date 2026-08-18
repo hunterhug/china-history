@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -184,5 +211,18 @@
 </p><p>原先给事中杨..弹劾霍冀贪婪、无能。穆宗已经继续留用他，霍冀因为杨..是贞吉的同乡，就怀疑对他的弹劾是贞吉出的主意，又上书辩解，请求罢免，并且在奏章中攻击贞吉。贞吉也上书请求离休。穆宗传诏挽留贞吉，把霍冀削了职。此后禁军的营制屡次调整，不出一年就又恢复了老样子，贞吉也争执不过。只是俺答叩击边塞请求封赏时，贞吉曾极力促成这件事。
 </p><p>在这之前，高拱二次入阁，并且一入阁就兼管了吏部。贞吉向李春芳请求，也兼管了都察院。高拱因为私仇想考察科道官，排斥异己。贞吉和同事上书说：“不久前因为御史叶梦熊议事不恰当，触犯了陛下，陛下就严厉地指示考核言官，并且连带考核任期内升了官的大臣，应当接受考核的有将近二百人，其中难道就没有忠心报效陛下、敢于仗义直言的人？现在全把他们看成放肆、奸邪之人治罪，我担心有关部门在执行过程中做得太过分，忠邪不分，以至于阻塞言路，打击士气，这可不是国家的福份啊。”穆宗不听。高拱因为贞吉说中了他的隐情，也恨透了他。等到考察时，高拱想拿掉贞吉喜欢的人，贞吉也拿掉高拱所喜欢的人来解恨。就这样被罢斥的有二十七个人，高拱所厌恶的已都在其中了。他还引以为恨，唆使他的门生给事中韩楫弹劾贞吉平庸而且专横，在考察过程中徇私舞弊。贞吉上书辩解，请求退休，并且说“：我自从掌管都察院以来，仅仅因为考察这一件事和高拱意见不一致。他所干的其他一些破坏选法、放肆作假、明白不过的坏事，我闭着嘴巴不敢说，辜负了陛下对我的任命，我实在是个平庸的大臣。像高拱，那才真叫专横呢。我罢官以后，最好还是让高拱回内阁中去，不要让他长期掌握用人大权，广树朋党。”奏疏递进以后，穆宗竟批准他退休了，可是高拱仍旧掌握着吏部的大权。
 </p><p>贞吉学识广博，本领很大。但他很好强，爱发脾气，动不动就得罪人。他对有的九卿重臣也直呼其名，很有些人也因此怨恨他。高拱、张居正的名望、年龄都不如贞吉，但是都在他前边受到重用。他们三个人都仗着自己的才气争强好胜，互不相让，贞吉终于被排挤掉了。他死在万历十年(1582)，朝廷追赠他为少保，谥文肃。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十章-卷八十-白话.html'>第八十章-卷八十</a></p><p class='next'>下一节：<a href='第八十二章-卷八十二-白话.html'>第八十二章-卷八十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八十章-卷八十-白话.html'>第八十章-卷八十</a></p><p class='next'>下一节：<a href='第八十二章-卷八十二-白话.html'>第八十二章-卷八十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

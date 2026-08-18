@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -198,5 +225,18 @@
 </p><p>天兴元年七月，权参知政事思烈、恒山公武仙合军自汝州入援，诏以合喜为枢密使，统京城军万五千应之，且命赛不为之助。八月己酉朔，驻于近郊，候益兵乃进屯中牟古城。凡三日，闻思烈军溃，即夜弃辎重驰还。黎明至郑门，聚军乃入。言者谓：“合喜始则抗命不出，中则逗遛不进，终则弃军先遁，委弃军资不可胜计，不斩之无以谢天下。”上贷其死，免为庶人，既而籍其家以赐军士。
 </p><p>既废，居汴中，常鞅鞅不乐。会大将速不泬遣人招之，合喜即治装欲行，崔立邀至省酌酒饯送，且以白金二百两为赆。明日，复诣省别立，方对语，适一人自归德持文书至，发视之，乃行省传哀宗语以谕合喜者，其言曰：“卿朕老臣，中间虽废出，未尝忘卿。今崔立已变，卿处旧人尚多，若能反正，与卿世袭公相。”立怒，叱左右系之狱，是日斩之。
 </p><p>论曰：合喜初年用兵西夏，屡著劳效，要亦诸将颜盏虾蟆等功也。既当大任，遂自矜伐，汴城之役，举措烦扰，质出兵退，即图称贺，此岂有体国之诚心者乎。中牟之溃，众怒所归，幸逭一死，犹怀异图，卒殒猜疑，天盖假手于崔立也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十章-卷五十-原文.html'>第五十章-卷五十</a></p><p class='next'>下一节：<a href='第五十二章-卷五十二-原文.html'>第五十二章-卷五十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五十章-卷五十-原文.html'>第五十章-卷五十</a></p><p class='next'>下一节：<a href='第五十二章-卷五十二-原文.html'>第五十二章-卷五十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

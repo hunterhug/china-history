@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后唐<a href='../旧五代史.html#后唐'>：目录</a></p>
@@ -173,5 +200,18 @@
 </p><p>五月，六镇使至幽州，梁使亦集。《通鉴考异》引《庄宗实录》云：三月己丑，镇州遣押衙刘光业至，言刘守光凶淫纵毒，欲自尊大，请稔其恶以咎之，推为尚父。乙未，上至晋阳宫，召张承业诸将等议讨燕之谋，诸将亦云宜稔其恶。上令押衙戴汉超持墨制及六镇书如幽州，其辞曰：“天祐八年三月二十七日，天德军节度使宋瑶、振武节度使周德威、昭义节度使李嗣昭、易定节度使王处直、镇州节度使王镕、河东节度使尚书令晋王谨奉册进卢龙横海等军节度、检校大尉、中书令、燕王为尚书令、尚父。”五月，六镇使至，汴使亦集。六月，守光令有司定尚父、采访使议。是月，梁祖遣都招讨使杨师厚将兵三万屯邢州，帝令李嗣昭出师掠相、卫而还。
 </p><p>秋七月，帝会王镕于承天军。镕，武皇之友也，帝奉之尽敬，捧卮酒为寿，镕亦捧酒醻帝。镕幼子昭诲从行，因许为婚。八月甲子，幽州刘守光僭称大燕皇帝，年号应天。九月庚子，梁祖将亲军自洛渡河而北，至相州，闻帝军未出，乃止。十月，幽州刘守光杀帝之行人李承勋，忿其不行朝礼也。
 </p><p>十一月辛丑，燕人侵易、定，王处直来告难。十二月甲子，帝遣周德威、刘光浚、李嗣源及诸将率蕃汉之兵发晋阳，伐刘守光于幽州。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二章-皇纪下-原文.html'>第二章-皇纪下</a></p><p class='next'>下一节：<a href='第四章-庄宗纪二-原文.html'>第四章-庄宗纪二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二章-皇纪下-原文.html'>第二章-皇纪下</a></p><p class='next'>下一节：<a href='第四章-庄宗纪二-原文.html'>第四章-庄宗纪二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

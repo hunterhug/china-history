@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#魏书'>：目录</a></p>
@@ -166,5 +193,18 @@
 </p><p>神瑞二年(415)，司马德宗派广武将军玄文、石齐前来朝贡。泰常初年(416)，刘裕发兵征讨姚泓。二年，太宗派长孙道生、娥清在石河打败刘裕的部将朱超石，生擒骑将杨丰，斩首一千七百余级。
 </p><p>泰常三年(418)，司马德宗去世，其弟司马德文继位。泰常四年(419)，将其年号改称元熙五年，司马德文禅位给刘裕，刘裕封司马德文为零陵王。司马德文的皇后河南褚氏，她的哥哥褚季之、弟弟褚淡之虽说是司马德文的姻亲，但他们都只为刘裕尽心尽力。司马德文只要生了男孩，他们就令人找机会杀掉。或者诱使宫内的人，暗地里加以毒害，前后害死的孩子不止一个。及至司马德文被刘裕废除皇帝之位，囚禁在秣陵宫内，他经常害怕遭到他们杀害，虽然和褚氏共居在一间房屋内，但他因害怕他们在食物里放了毒药，就自己在前面煮食。泰常六年(421)，刘裕打算杀掉司马德文，又不想派人去到宫内，就叫褚谈之兄弟去探视褚氏，等她出来去到别宫，派去的兵士就越墙而入，进上毒药给司马德文。德文不肯饮服毒药，说：“佛教教规有言，自杀的人来生不再转为人身。”于是就用被子把他闷死。
 </p><p>自从司马睿在江南即位以来，直到司马德文被杀死，国君势弱而权臣势强，不能牵制约束，一切赏罚号令，都出于权贵宠臣，国家的危亡，君主的废夺，各种动乱事故相继发生，这就是人们所说的夷狄之有君主，不如诸侯之亡国的道理。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十三章-卷八十三-白话.html'>第八十三章-卷八十三</a></p><p class='next'>下一节：<a href='第八十五章-卷八十五-白话.html'>第八十五章-卷八十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八十三章-卷八十三-白话.html'>第八十三章-卷八十三</a></p><p class='next'>下一节：<a href='第八十五章-卷八十五-白话.html'>第八十五章-卷八十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

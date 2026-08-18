@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -165,5 +192,18 @@
 </p><p>汤显祖意气慷慨，与李化龙、李三才、梅国桢要好。后来他们都有显赫的建树，而汤显祖遭遇挫折，一直到老都穷困。李三才管理淮河漕运时，曾送信迎接他，汤显祖辞谢没去。
 </p><p>逯中立，字与权，聊城人。万历十七年(1589)进士。由行人提为吏科给事中。遇事敢于发表意见。行人高攀龙，御史吴弘济，南部郎谭一召、孙继有、安希范都由于为赵用贤罢官辩护而遭到斥退，逯中立上疏说：“这些大臣都是修有德行的人士，使他们隐匿于田野，的确可惜。陛下对言官恼怒，则说：‘出于我的独断’，辅臣王锡爵也说：‘皇上亲自裁定。’我认为所贬退的不是正直的人，判决来自陛下，是陛下去掉邪恶小人的证明，即使出自辅臣草拟，也是大臣为国的忠心。倘若所贬退的果然是正直的人，出于辅臣的怂恿而下的圣旨，有心要贬退的是遭嫉妒的贤正之人，假使出于皇上的亲自裁定而辅臣不予救援的是不称职。大臣以人臣侍奉君王的道理应当这样吗？陛下想安抚辅臣，则罢掉言官，不知道言官被罢，辅臣更加不安。”奏疏呈上，违背旨意，被停发俸禄一年。
 </p><p>不久升兵科右给事中。皇上下诏编修国史，王锡爵推荐前任詹事刘虞夔为总裁。刘虞夔是王锡爵的门生，在补录纠察过失时被弹劾罢官。各御史认为不应当征召他。而逯中立诋毁虞夔尤其卖力，并提到王锡爵，皇上于是停止征召的命令。没有多久，文选郎顾宪成等因为推举内阁大臣的事被贬，给事中卢明诹申救，也被贬官。逯中立对皇上说：“两年以来，吏部大臣相继被贬，尚书孙钅龙离职了，陈有年闭门请求罢官了，文选一职刚刚有人上任就被贬退，已经三次了，顾宪成又接着遭贬斥。臣恐怕今后，不像王国光、杨巍，则不能执掌朝政一天；不像徐一木贾、谢廷肕、刘希孟则不能担任文选郎一天。好坏混淆，本末倒置，使考铨之权都寄于权贵，进用与贬退、斥责与处罚皆由一时喜怒决定，公正的言论被堵塞，繁琐的言论四起。这是人才消亡或成长的时机、道理废弃或兴盛的开始，陛下不能不深深地考虑。况且朝臣一起推荐阁臣，不是从十九年开始，皇祖二十八年朝廷推荐了六人，任用张治、李本二人，即使现在的首辅王锡爵进入内阁，也是推荐的。特别选拔与朝廷推荐，祖宗二者都有实行。朝廷推选必定依据大家的意见，特别选拔有的由于私交。现在辅臣赵志皋等不考察旧典，妄自激起陛下发怒，即使有几句救援顾宪成等人的话，也是强为笑容，并无诚心，想打动别人很难。现在战场危急，公私耗散，群情思乱，有志之士很担忧。而朝议纷纭，难道能不为此长长叹息吗！”皇上发了脾气，下旨严厉责骂，贬卢明诹为平民，贬中立为陕西按察司知事。中立称病回家，在家居住了二十年后死去。熹宗时，赠为光禄少卿。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百一十七章-卷一百一十七-白话.html'>第一百一十七章-卷一百一十七</a></p><p class='next'>下一节：<a href='第一百一十九章-卷一百一十九-白话.html'>第一百一十九章-卷一百一十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百一十七章-卷一百一十七-白话.html'>第一百一十七章-卷一百一十七</a></p><p class='next'>下一节：<a href='第一百一十九章-卷一百一十九-白话.html'>第一百一十九章-卷一百一十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

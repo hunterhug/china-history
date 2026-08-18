@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>宋史-白话版宋史<a href='../宋史.html#宋史'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>薛庆传<span style='font-size:small'> 白话</span></h1>
 <p>薛庆，起于群盗之中，占据高邮，有兵几万人，多勇猛俊杰敢斗之士，能够以少击众，归附的人日益增多。张浚听说薛庆没有依附隶属的地方，打算使薛庆归附在自己的旗帜之下，亲自前去招纳他。薛庆感动心服，张浚因而让他守高邮，不久升任拱卫大夫、福州观察使、承州天长军镇抚使。金人从浙江返回，屯驻在天长、六合二地之间，薛庆率领众人劫掠他们，获得几百头牛，把牛全部低价分给耕田的百姓。<BR><BR>　　金人打算从运河引船北归，但赵立在楚州，薛庆在承州扼制住金人的要冲使之不能前进。金左监军完颜昌来见兀..，想合兵攻打楚州，真、扬州镇抚郭仲威听到这一消息，约薛庆一起前往迎战敌人。薛庆到达扬州，郭仲威没有一点行动的意思，设酒盛宴。薛庆发怒说：“这难道是纵酒行乐的时候吗？我做先锋，你应当继后。”上马急速奔驰而去，天大亮的时候出扬州西门，随从的骑兵不满一百人，转战十多里，死亡骑兵三人，郭仲威终没有到。薛庆与他的部下奔往扬州，郭仲威紧闭城门拒绝他们入内，薛庆匆促坠落马下，被金追逐的骑兵所俘获。马识别原路回来，军中看见马说：“马回来了，太尉还不死吗？”金人杀害薛庆，承州陷落。死讯传到朝廷，宋朝廷赠薛庆保宁军承宣使，以他家十人为官，封他的妻子为硕人。</p>
-<div class='pn'><p class='pre'>上一节：<a href='林空斋传-白话.html'>林空斋传</a></p><p class='next'>下一节：<a href='姚兴传-白话.html'>姚兴传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='林空斋传-白话.html'>林空斋传</a></p><p class='next'>下一节：<a href='姚兴传-白话.html'>姚兴传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

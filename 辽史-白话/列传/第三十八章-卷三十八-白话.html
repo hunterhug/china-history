@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#辽史'>：目录</a></p>
@@ -153,5 +180,18 @@
 </p><p>魏璘，不知何郡人士，因为善于卜筮闻名于世，太宗从汴京得到了他。
 </p><p>天禄元年(947)，世宗命众人赛马比较出快慢，从而定胜负。皇上问王白及魏璘哪匹马会获胜。王白奏道“：赤马会获胜。”魏璘说：“依我看来，青鬃马将获胜。”驰逐结束，最终结果如魏璘所说。皇上觉得奇异便发问，王白说：“今日火气当旺，所说我认为赤色马获胜。”魏璘说“：不是这样，火气虽旺，然而火上有烟。以烟色看来，青色马必胜。”皇上大为赞赏。五年(951)，察割谋反，私下里向魏璘求卜。魏璘开始卜卦，对他说：“大王的卦数，卜得一日了，应该小心为是！”及至乱发，察割最终落败。应历年间，周兵侵犯燕京，穆宗皇上向魏璘问胜负情况。魏璘说：“周主姓柴，燕之分野为火曜。柴入火中，必自焚。”其言果然应验了。
 </p><p>魏璘曾经替太平王罨撒葛预卜僭立成败之事，皇上知道后，免其死罪，流放于乌古部。一日，节度使征召魏璘，正好有人来献双鲤鱼，节度使开玩笑说：“您卜算一下此鱼何时可以吃？”魏璘过了很久才答道：“您与我都活不过今天，有意外之祸事，哪里还有时间吃鱼？”赶紧命人烹煮之。还没来得及吃，盗匪来了，两人同时被杀害。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十七章-卷三十七-白话.html'>第三十七章-卷三十七</a></p><p class='next'>下一节：<a href='第三十九章-卷三十九-白话.html'>第三十九章-卷三十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十七章-卷三十七-白话.html'>第三十七章-卷三十七</a></p><p class='next'>下一节：<a href='第三十九章-卷三十九-白话.html'>第三十九章-卷三十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

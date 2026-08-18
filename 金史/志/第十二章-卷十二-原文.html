@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-志<a href='../金史.html#志'>：目录</a></p>
@@ -175,5 +202,18 @@
 </p><p>大定二十九年，章宗即位，礼官言：“自大定二十七年十月袷享，至今年正月世宗升遐，故四月不行禘礼。按《公羊传》，闵公二年‘吉禘于庄公，言吉者未可以吉，谓未三年也’。注：‘谓禘祫从先君数，朝聘从今君数，三年丧毕，遇禘则禘，遇祫则祫。’故事，宜于辛亥岁为大祥，三月禫祭，逾月则吉，则四月一日为初吉，适当孟夏禘祭之时，可为亲祠。”诏从之。及期，以孝懿皇后崩而止。
 </p><p>五月，礼官言：“世宗升祔已三年，尚未合食于祖宗，若来冬遂行祫礼，伏为皇帝见居心丧，丧中之吉《春秋》讥其速，恐冬祫未可行。然《周礼》王有哀惨则春官摄事，窃以世宗及孝懿皇后升祔以来，未曾躬谒，岂可令有司先摄事哉！况前代摄事者止施于常祀，今乞依故事，三年丧毕，祫则祫，禘则禘，于明昌四年四月一日释心丧，行禘礼”。上从之。明昌三年十二月，尚书省奏：“明年亲禘，室当用犊一。钦怀皇后祔于明德之庙，按大定三年祫享，明德皇后室未尝用犊。”敕钦怀皇后亦用之。上因问拜数，右丞玮具对，上曰：“世宗圣寿高，故杀其数，并不立于位，今当从礼而已。”
 </p><p>大定六年，定晨稞行礼，自大次至板位先见神之礼，两拜。再至板位，又两拜。稞鬯毕，还板位，再两拜。还小次，酌献时，罍洗位盥讫，至板位，先两拜。酌献毕还板位，再两拜。止将始祖祝册于板位西南安置，读册讫，又两拜。还小次，又至饮福位，先两拜，饮毕两拜。凡十六拜。贞祐四年，命参知政事李革为修奉太庙使，七月吉日亲行祔享，有司以故事用皇帝时享仪，初至版位两拜，晨稞及酌献则每位三拜，饮福五拜，总七十九拜。今升祔则遍及祧庙五室，则为一百九拜也。明昌间尝减每位酌献奠爵后一拜，则为九十二拜而已。然大定六年，世宗尝令礼官通减为十六拜。又皇帝当散斋四日于别殿，致斋三日于大庆殿，今国事方殷，宜权散斋二日，致斋一日。上曰：“拜数从大定例，余准奏。”礼部尚书张行信言：“近奉诏从世宗十六拜之礼，臣与太常参定仪注，窃有疑焉。谨按唐、宋亲祠典礼，皆有通拜及随位拜礼。世宗大定三年亲行奉安之礼，亦通七拜，每室各五拜，合七十二拜。逮六年禘，始敕有司减为十六拜，仍存七十二拜之仪，其意亦可见矣。盖初年享礼以备，故后从权，更定通拜。今陛下初庙见奉安，而遽从此制，是于随室神位并无拜礼，此臣之所疑一也；大定间十有二室，姑从十六拜，犹可。今十有七室。而拜数反不及之，此臣之所疑二也；况六年所定仪注，惟于皇帝板位前读始祖一室祝册。夫祭有祝辞，本告神明，今诸祝册各书帝后尊谥，及高曾祖考世次不一，皇帝所自称亦自不同，而乃止读一册，余皆虚设，恐于礼未安，此臣之所疑三也。先王之礼顺时施宜，不可多寡，惟称而已。今近年礼官酌古今，别定四十四拜之礼。初见神二拜，晨稞通四拜，随室酌献读祝毕两拜，饮福四拜，似为得中。”上从之，乃定祔享如时享十二室之仪。又以祧庙五主始祖室不能容，止于室户外东西一列，以西为上。神主阙者以升祔前三日庙内敬造，以享日丑前题写毕，以次奉升。十月己未，亲王百官自明俊殿奉迎祖宗神主于太庙幄次。辛酉行礼，用四十四拜之仪，无宫县乐，牺牲从俭，十七室用犊三、羊豕九而已。以皇太子为亚献，濮王守纯为终献。皇帝权服靴袍，行礼日服衮冕，皇太子以下公服，无卤簿仪仗，礼毕乘马还宫。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十一章-卷十一-原文.html'>第十一章-卷十一</a></p><p class='next'>下一节：<a href='第十三章-卷十三-原文.html'>第十三章-卷十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十一章-卷十一-原文.html'>第十一章-卷十一</a></p><p class='next'>下一节：<a href='第十三章-卷十三-原文.html'>第十三章-卷十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

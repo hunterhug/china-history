@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -171,5 +198,18 @@
 </p><p>马经纶被贬之后，工科都给事中海阳林熙春等人上疏说：“陛下气愤言官缄默，排斥驱逐三十余人，臣等不胜惊恐。现在御史马经纶慷慨陈言，臣等窃以为陛下一定会对他温旨褒奖，没想到也跟着被贬斥。这是因为提建议有罪呢，还是因为不提建议有罪呢？臣等不能理解。先前怪罪的，既然是由于不说的缘故，当今所怪罪的，又因为敢说的缘故，这真是叫臣等无所适从啊！陛下若真以不进言为失职，则臣等不难进忧危的苦词；若以直言为逆旨，则臣等不难仿效暗中保持缄默的成习。只怕朝廷之上，全都阿谀奉承以讨陛下的欢心，这不是君主的福气啊。臣等富贵荣辱的心念难道与常人不同？然而臣等宁愿直言进谏而不愿阿谀奉承，只不过是沐浴了二百余年来大明的养士之恩，不辜负君父，并且不辜负此生罢了。陛下为什么要深恶痛绝，如此折辱臣等啊？”皇帝更加恼怒，贬林熙春为茶盐判官，加倍贬斥马经纶为典史。林熙春于是称病离职。这一天，御史定兴鹿久征等人也上疏，请求与各臣同罪，被贬为泽州判官。二疏列有数十人的名字，全部都剥夺俸禄。
 </p><p>不久，南京御史东莞林培上疏陈述时政。皇帝追怒马经纶，竟将他贬为平民。回家乡之后，闭门隐居达十年之久。马经纶死后，他的门人私下谥号为闻道先生。
 </p><p>天启初年，恢复马经纶的官衔，赠为太仆少卿。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百二十一章-卷一百二十一-白话.html'>第一百二十一章-卷一百二十一</a></p><p class='next'>下一节：<a href='第一百二十三章-卷一百二十三-白话.html'>第一百二十三章-卷一百二十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百二十一章-卷一百二十一-白话.html'>第一百二十一章-卷一百二十一</a></p><p class='next'>下一节：<a href='第一百二十三章-卷一百二十三-白话.html'>第一百二十三章-卷一百二十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

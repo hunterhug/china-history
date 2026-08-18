@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-本纪<a href='../明史.html#明史'>：目录</a></p>
@@ -220,5 +247,18 @@
 </p><p>正统十四年(1449)正月十三日，在京城南郊大祭天地。二十四日，免浙江、福建银课。二月六日，御史丁王宣、指挥刘福击败并斩杀邓茂七于延平。十八日，王骥相继在金沙江、鬼哭山大破思机发，尔后班师。二十日，指挥佥事徐恭充任总兵官，征讨处州贼叶宗留，工部尚书石璞辅助军务。三月八日，到天寿山。十三日回宫。
 </p><p>四月一日，处州贼侵犯崇安，杀都指挥吴刚。十三日，湖广、贵州苗贼大起，命令王骥镇压。十六日，派御史十三人同中官监督福建、浙江银课。五月七日，陈懋攻破沙县盗贼。十三日，天旱，太监金英同法官审查囚犯。二十日，侍读学士张益入值文渊阁，参与军国大事。二十一日，巡按福建御史汪澄斩首弃市示众。还杀前任巡按御史柴文显。六月二日，靖州苗侵犯辰溪，都指挥高亮战死。八日，南京谨身诸殿发生火灾。十六日，修身反省。下诏河南、山西轮留休假的军士全部开赴大同、宣府。十七日，西宁侯宋瑛总督大同兵马。二十一日，诏赦天下。三十日，平乡伯陈怀、驸马都尉井源、都督王贵、吴克勤、太监林寿，分别在大同、宣府训练京师军队，防备瓦剌来犯。
 </p><p>七月十一日，瓦剌也先侵掠大同，参将吴浩战死。英宗下诏亲自出征。吏部尚书王直率群臣进谏，英宗不听。十五日，命成阝王居守京师。当天，西宁侯宋瑛、武进伯朱冕与瓦剌兵战于阳和，官军败没。十六日，英宗从京师出发。十七日，到龙虎台，军中深夜惊恐。十九日，暂住居庸关。二十三日，到宣府。各位使臣多次请求驻兵休整，英宗不许。二十八日，到阳和。八月一日，兵临大同。镇守大同太监郭敬进谏，主张回师。二日，广宁伯刘安为总兵官，镇守大同。三日，回师。十日，到宣府。十三日，瓦剌兵大举来犯，恭顺侯吴克忠、都督吴克勤战死，成国公朱勇、永顺伯薛绶率兵救援，到鹞儿岭遇到伏兵，全军覆灭。十四日，在土木堡被围。十五日，官军溃败，数十万人战死。英国公张辅，泰宁侯陈瀛，驸马都尉井源，平乡伯陈怀，襄城伯李珍，遂安伯陈埙，修武伯沈荣，都督梁成、王贵，尚书王佐、邝聎，学士曹鼐、张益，侍郎丁铉、王永和，副都御史邓蓕等全部战死。英宗被俘北去。十七日，京师听说前线失败，群臣在朝廷大哭，侍讲徐王呈请求南迁，兵部侍郎于谦不许。十八日，皇太后命成阝王监国。二十一日，英宗到大同。二十二日，皇太后命令立皇子朱见深为皇太子。二十四日，英宗到威宁海子。二十七日，到黑河。九月六日，郕王即皇位，遥尊英宗为太上皇帝。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九-白话.html'>第九章-卷九</a></p><p class='next'>下一节：<a href='第十一章-卷十一-白话.html'>第十一章-卷十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九-白话.html'>第九章-卷九</a></p><p class='next'>下一节：<a href='第十一章-卷十一-白话.html'>第十一章-卷十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

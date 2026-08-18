@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>宋书-志<a href='../宋书.html#志'>：目录</a></p>
@@ -699,5 +726,18 @@
 </p><p>法兴曰：“夫交会之元，则蚀既可求，迟疾之际，非凡夫所测。昔贾逵略见其差，刘洪粗著其术，至于疏密之数，莫究其极。且五纬所居，有时盈缩，即如岁星在轸，见超七辰，术家既追算以会今，则往之与来，断可知矣。《景初》所以纪首置差，《元嘉》兼又各设后元者，其并省功于实用，不虚推以为烦也。冲之既违天于改易，又设法以遂情，愚谓此治历之大过也。”冲之曰：迟疾之率，非出神怪，有形可检，有数可推，刘、贾能述，则可累功以求密矣。议又云“五纬所居，有时盈缩”。“岁星在轸，见超七辰”。谓应年移一辰也。案岁星之运，年恆过次，行天七匝，辄超一位。代以求之，历凡十法，并合一时，此数咸同，史注所记，天验又符。此则盈次之行，自其定准，非为衍度滥徙，顿过其冲也。若审由盈缩，岂得常疾无迟。夫甄耀测象者，必料分析度，考往验来，准以实见，据以经史。曲辩碎说，类多浮诡，甘、石之书，互为矛盾。今以一句之经，诬一字之谬，坚执偏论，以罔正理，此愚情之所未厌也。算自近始，众法可同，但《景初》之二差，承天之后元，实以奇偶不协，故数无尽同，为遗前设后，以从省易。夫建言倡论，岂尚矫异，盖令实以文显，言势可极也。稽元曩岁，群数咸始，斯诚术体，理不可容讥；而讥者以为过，谬之大者。然则《元嘉》置元，虽七率舛陈，而犹纪协甲子，气朔俱终，此又过谬之小者也。必当虚立上元，假称历始，岁违名初，日避辰首，闰余朔分，月纬七率，并不得有尽，乃为允衷之制乎？设法情实，谓意之所安；改易违天，未睹理之讥者也。
 </p><p>法兴曰：“日有八行，合成一道，月有一道，离为九行，左交右疾，倍半相违，其一终之理，日数宜同。冲之通同与会周相觉九千四十，其阴阳七十九周有奇，迟疾不及一匝，此则当缩反盈，应损更益。”冲之曰：此议虽游漫无据，然言迹可检。按以日八行譬月九道，此为月行之轨，当循一辙，环匝于天，理无差动也。然则交会之际，当有定所，岂容或斗或牛，同丽一度。去极应等，安得南北无常。若日月非例，则八行之说是衍文邪？左交右疾，语甚未分，为交与疾对？为舍交即疾？若舍交即疾，即交在平率入历七日及二十一日是也。值交蚀既当在盈缩之极，岂得损益，或多或少。若交与疾对，则在交之冲，当为迟疾之始，岂得入历或深或浅，倍半相违，新故所同，复摽此句，欲以何明。臣览历书，古今略备，至如此说，所未前闻，远乖旧准，近背天数，求之愚情，窃所深惑。寻迟疾阴阳不相生，故交会加时，进退无常，昔术著之久矣，前儒言之详矣。而法兴云日数同。窃谓议者未晓此意，乖谬自著，无假骤辩，既云盈缩失衷，复不备记其数，或自嫌所执，故泛略其说乎？又以全为率，当互因其分，法兴所列二数皆误，或以八十为七十九，当缩反盈，应损更益，此条之谓矣。总检其议，岂但臣历不密，又谓何承天法乖谬弥甚。若臣历宜弃，则承天术益不可用。法兴所见既审，则应革创。至非景极，望非日冲，凡诸新说，必有妙辩乎？
 </p><p>时法兴为世祖所宠，天下畏其权，既立异议，论者皆附之。唯中书舍人巢尚之是冲之之术，执据宜用。上爱奇慕古，欲用冲之新法，时大明八年也。故须明年改元，因此改历。未及施用，而宫车晏驾也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二章-卷十二-原文.html'>第二章-卷十二</a></p><p class='next'>下一节：<a href='第四章-卷十四-原文.html'>第四章-卷十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二章-卷十二-原文.html'>第二章-卷十二</a></p><p class='next'>下一节：<a href='第四章-卷十四-原文.html'>第四章-卷十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

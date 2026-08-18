@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#魏书'>：目录</a></p>
@@ -162,5 +189,18 @@
 </p><p>司马楚之跟从皇驾征讨凉州，因功被赐给隶户一百。刘义隆派将裴方明、胡崇之侵犯仇池。朝廷以司马楚之为假节，与淮阳公皮豹子等督领关中诸军从散关西进，赶走裴方明，捉住胡崇之，平定仇池而还。
 </p><p>皇帝车驾讨伐柔然，命司马楚之与济阴公卢中山等人督运粮草以供应大军。当时镇北将军封沓逃入柔然，劝说柔然攻击司马楚之以断粮道。柔然便派探子进入楚之军中，割下驴耳而去。有人报告说驴耳没了，众将领无人知道这是怎么回事。楚之说：“一定是敌人探子割去作为凭证，敌人快来了。”他立即派人砍柳为城，灌上水让其结冰，城刚修起，敌人便到了。冰坚城固，无法攻打，敌人只好走散。世祖听说大为赞赏。
 </p><p>不久朝廷拜司马楚之为假节、侍中、镇西大将军、开府仪同三司、云中镇大将、朔州刺史，王爵仍旧。在边疆二十多年，司马楚之以清俭著称。和平五年(464)去世，时年七十五岁。高宗很痛惜，追赠他为都督梁、益、秦、宁四州诸军事、征南大将军、领护西戎校尉、扬州刺史，谥称贞王。陪葬金陵。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十四章-卷二十四-白话.html'>第二十四章-卷二十四</a></p><p class='next'>下一节：<a href='第二十六章-卷二十六-白话.html'>第二十六章-卷二十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十四章-卷二十四-白话.html'>第二十四章-卷二十四</a></p><p class='next'>下一节：<a href='第二十六章-卷二十六-白话.html'>第二十六章-卷二十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

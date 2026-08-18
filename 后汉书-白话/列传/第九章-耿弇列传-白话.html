@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#后汉书'>：目录</a></p>
@@ -168,5 +195,18 @@
 </p><p>十二年(36)，耿况抱病，光武帝几次亲临看望，等到耿况死，谥封烈侯。
 </p><p>十三年(37)，增加耿弇的食邑，上大将军印绶，免去大将军后，以列侯身份奉朝请。帝每遇四方有不同意见，经常召见耿弇顾问筹策。年五十六，永平元年卒。谥封为愍侯。
 </p><p>史官评论道：韩信当着刘邦的面评论项羽，周密预料楚汉的形势，就知道高祖必胜了。耿弇决策河北，定计南阳，也看到光武的帝业必成。然而自从耿弇攻拔全齐以后，就没有再立什么新功了。难道是不想再立新功？或者是当时的法度不容许他再立新功吗？三世为将，道家以为是不吉祥而忌讳的，而耿氏却能世世代代以功名而自终其身，难道耿家的用兵是想以杀止杀吗？为什么独能兴盛呢？</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八章-吴盖陈臧列传-白话.html'>第八章-吴盖陈臧列传</a></p><p class='next'>下一节：<a href='第十章-铫期王霸祭遵列传-白话.html'>第十章-铫期王霸祭遵列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八章-吴盖陈臧列传-白话.html'>第八章-吴盖陈臧列传</a></p><p class='next'>下一节：<a href='第十章-铫期王霸祭遵列传-白话.html'>第十章-铫期王霸祭遵列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

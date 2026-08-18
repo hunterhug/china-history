@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#列传'>：目录</a></p>
@@ -175,5 +202,18 @@
 </p><p>烈弟僧晧，字山客。历涉群书，工于谈说，有名于当世。熙平初，征为谏议大夫；正光五年，以国子博士征之；孝昌二年，征为散骑侍郎；并不赴。世号为征君焉。好营产业，孜孜不已，藏镪巨万，他资亦称是。兄弟自供俭约，车马瘦敝，身服布裳，而婢妾纨绮。僧晧尤好蒲弈，戏不择人，是以获讥于世。前废帝时，崔祖螭举兵攻东阳城，僧晧与同。事败，死于狱，籍没家产。出帝初，诉复业。
 </p><p>子轨，州主簿。
 </p><p>史臣曰：卢同质器洪厚，卷舒兼济。张烈早标名辈，气尚见知。趋舍深沉，俱至显达，雅道正路，其殆病诸。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十三章-卷六十三-原文.html'>第六十三章-卷六十三</a></p><p class='next'>下一节：<a href='第六十五章-卷六十五-原文.html'>第六十五章-卷六十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十三章-卷六十三-原文.html'>第六十三章-卷六十三</a></p><p class='next'>下一节：<a href='第六十五章-卷六十五-原文.html'>第六十五章-卷六十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

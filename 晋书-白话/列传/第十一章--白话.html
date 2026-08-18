@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#晋书'>：目录</a></p>
@@ -195,5 +222,18 @@
 </p><p>子韬字子远，放纵不检点。直韭任廷尉时，韬收受贿赂，有关官吏奏报此事，而高光不知道。当时的人虽然批评高光不能防备自己的儿子，但因为他平素用心，就不以遣件事使高光受连累。起初，高光到长安留在官署，让高韬兼任右卫将军。高韬与皇帝及公卿居所的小人勾结，等到高光去世时，仍在服丧中来往不断。当时束海王司马越辅佐朝政，不朝见皇帝。高韬知道人心埋怨，暗中与太傅参军姜迹、京兆杜毖等人谋划讨伐司马越，事情泄露被杀。
 </p><p>史臣曰：下等才能的人竞争而有文采，中等才能的人清静而质朴，不如进不足而退有余。魏舒、刘寔思维精华，出仕为官，便成就大事。季塑恳切发问据实应答，当官严正。诗中的“贪人败类”，难道说的是刘夏吗!
 </p><p>赞曰：魏舒言语不骄矜，李患敢与王侯作对。子真、宣茂，志气高洁，难于欺凌。能举进忠良，兴起退让。皎洁的瑚器，来光亮玉绳星。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十章--白话.html'>第十章-</a></p><p class='next'>下一节：<a href='第十二章--白话.html'>第十二章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十章--白话.html'>第十章-</a></p><p class='next'>下一节：<a href='第十二章--白话.html'>第十二章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

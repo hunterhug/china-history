@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#列传'>：目录</a></p>
@@ -191,5 +218,18 @@
 </p><p>烈有文才，所著诗、书蜨教、颂等凡四篇。
 </p><p>论曰：崔氏世有美才，兼以沉沦典籍，遂为儒家文林。骃、瑗虽先尽心于贵戚，而能终之以居正，则其归旨异夫进趣者乎！李固，高洁之士也，与瑗邻郡，奉贽以结好。由此知杜乔之劾，殆其过矣。寔之《政论》，言当世理乱，虽祐错之徒不能过也。
 </p><p>赞：崔为文宗，世禅雕龙。建新耻洁，摧志求容。永矣长岑，于辽之阴。不有直道，曷取泥沈。瑗不言禄，亦离冤辱。子真持论，感起昏俗。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十四章-李陈庞陈桥列传-原文.html'>第四十四章-李陈庞陈桥列传</a></p><p class='next'>下一节：<a href='第四十六章-周黄徐姜申屠列传-原文.html'>第四十六章-周黄徐姜申屠列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十四章-李陈庞陈桥列传-原文.html'>第四十四章-李陈庞陈桥列传</a></p><p class='next'>下一节：<a href='第四十六章-周黄徐姜申屠列传-原文.html'>第四十六章-周黄徐姜申屠列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

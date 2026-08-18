@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-本纪<a href='../金史.html#本纪'>：目录</a></p>
@@ -230,5 +257,18 @@
 </p><p>十二月丙寅，以大理正移剌彦拱为高丽生日使。乙亥，上不豫。庚辰，赦天下。乙酉，诏皇太孙景摄政，居庆和殿东庑。丙戌，以太尉、左丞相徒单克宁为太尉兼尚书令，平章政事襄为尚书右相，右丞张汝霖为平章政事。参知政事完颜婆卢火罢，以户部尚书刘暐为参知政事。戊子，诏尚书令徒单克宁、右丞相相襄、平章政事张汝霖宿于内殿。
 </p><p>二十九年正月壬辰朔，上大渐，不能视朝。诏遣宋高丽、夏贺正旦使还。癸巳，上崩于福安殿，寿六十七。皇太孙即皇帝位。己亥，殡于大安殿。三月辛卯朔，上尊谥曰光天兴运文德武功圣明仁孝皇帝，庙号世宗。四月乙酉，葬兴陵。
 </p><p>赞曰：世宗之立，虽由劝进，然天命人心之所归，虽古圣贤之君，亦不能辞也。盖自太祖以来，海内用兵，宁岁无几。重以海陵无道，赋役繁兴，盗贼满野，兵甲并起，万姓盼盼，国内骚然，老无留养之丁，幼无顾复之爱，颠危愁困，待尽朝夕。世宗久典外郡，明祸乱之故，知吏治之得失。即位五载，而南北讲好，与民休息。于是躬节俭，崇孝弟，信赏罚，重农桑，慎守令之选，严廉察之责，却任得敬分国之请，拒赵位宠郡县之献，孳孳为治，夜以继日，可谓得为君之道矣！当此之时，群臣守职，上下相安，家给人足，仓廪有余，刑部岁断死罪，或十七人，或二十人，号称“小尧舜”，此其效验也。然举贤之急，求言之切，不绝于训辞，而群臣偷安苟禄，不能将顺其美，以底大顺，惜哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

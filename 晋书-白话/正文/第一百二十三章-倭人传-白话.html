@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-正文<a href='../晋书.html#晋书'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>第一百二十三章-倭人传<span style='font-size:small'> 白话</span></h1>
 <p>倭人在带方郡东南大海中，依山环海建立国家，岛上多是山林，没有良田，以海中动物为食。从前有一百多个小国相联合，到魏朝时，有三十六个小国互相通好。全国有七万户人家。男人不分大小，都刺面纹身。自称是西周太伯的后代，又说上古时代派使者到中国，都自称自己是大夫。从前，夏少康的儿子封在会稽，以断发纹身的方式来逃避蚊虫的危害，现在倭人喜欢潜入水中捕鱼，也是用纹身来使水禽骇怕。推测它的方位，应该在会稽东冶以东地方。他们的男子用横幅为衣，但上下接束相连，几乎没有一点缝。妇女的衣着如同被单，在被单的中央有一洞眼用来伸头，都是披散头发，光脚而走。当地气候温暖，普遍种植稻禾舼麻，也种桑养蚕织布。当地没有牛马，但有刀盾弓箭，箭头都是铁制的。盖有房屋，父母兄弟都不在一处躺卧休息。饮食炊事使用碗俎等器皿。儿女嫁娶不拿钱帛，拿衣物去迎娶。人死后有棺无外椁，封土做成坟墓。人刚死，要哭泣，不能吃肉。埋葬之后，全家人到水中洗澡，自我清洁，以此清除不祥。他们决定大事时就燃烧骨头来占卜吉凶。不知道一年有四季，只知道过了秋收就是一年。人大多有百岁的长寿，或者八九十岁。国中妇女占多数，但不淫荡不嫉妒。不设公堂诉讼，犯有轻罪的人没收他的妻子儿女，犯有重罪的族灭其家。从前以男人为君主。汉代末年，倭人发生内乱，攻伐不定，便立女子为王，名叫卑弥呼。<BR><BR>　　宣帝司马懿平定公孙氏时，它的女王派使者到带方朝见，从此以后贡聘不绝。到晋文帝作相时，又数次前来朝贡。晋泰始初年(265)，派遣使者带着两种翻译人员前来朝贡。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百二十二章-鸠摩罗什传-白话.html'>第一百二十二章-鸠摩罗什传</a></p><p class='next'>下一节：<a href='第一百二十四章-林邑国传-白话.html'>第一百二十四章-林邑国传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百二十二章-鸠摩罗什传-白话.html'>第一百二十二章-鸠摩罗什传</a></p><p class='next'>下一节：<a href='第一百二十四章-林邑国传-白话.html'>第一百二十四章-林邑国传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

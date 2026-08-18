@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -199,5 +226,18 @@
 </p><p>过了两年，定国终于按照这篇机密指示把永明王护送到了云南。然后追赠贞毓为少师、太子太师、吏部尚书、中极殿大学士，赐予公祭，谥文忠，荫子世袭锦衣千户。其他人程度不同地给予了追赠和抚恤。后来又在马场修了一所大庙，在碑石上刻下“十八先生成仁处”一行大字以表彰他们的忠诚。
 </p><p>定国保护永明王驻云南后，就逮捕了吉翔和他一家，让部将靳统武看管起来，打算杀掉他。吉翔整天讨好统武。定国的门客来见统武时吉翔也讨好他们。于是这些人一起向定国称赞吉翔，含蓄地为他辩白。定国召吉翔来见，吉翔一进门就叩头在地说“：大王再造社稷的功绩千古无比，吉翔有幸一睹尊颜，死且不朽，别的什么是非哪还值得辩白呢？”定国于是十分高兴。吉翔后来天天逢迎定国的门客，让他们劝定国推荐自己入内阁。于是他和定国的门客相互勾结，把持了朝廷内外的大权。天寿也复出当官。后来他们随永明王逃入缅甸，天寿先死，吉翔被缅甸人杀了。
 </p><p>当时缅甸弟弟杀了哥哥自立为王，想杀掉明室的文武群臣，派人来说：“我们蛮人的风俗看重赌咒结盟，请让我们和天朝的各位大人一起喝碗咒水吧！”吉翔、国泰邀各位大臣一起去了，到后缅甸人派兵包围了他们，让他们挨个儿出去，一个个给杀了，共杀了四十二个人。任国玺、杨在、天波、吉翔、国泰、华亭侯王维恭、绥宁伯蒲樱、都督马雄飞、吏部侍郎邓士廉等都在其中。只有都督同知邓凯因为伤了脚没去，得以避免。当时是顺治十八年(1661)七月。从此以后由榔左右无人，到这年十二月，缅甸人就把他押送出境来了，这事详见于大清历史。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百六十六章-卷一百六十六-白话.html'>第一百六十六章-卷一百六十六</a></p><p class='next'>下一节：<a href='第一百六十八章-卷一百六十八-白话.html'>第一百六十八章-卷一百六十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百六十六章-卷一百六十六-白话.html'>第一百六十六章-卷一百六十六</a></p><p class='next'>下一节：<a href='第一百六十八章-卷一百六十八-白话.html'>第一百六十八章-卷一百六十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -228,5 +255,18 @@
 </p><p>其冬，孛罗忽、满都鲁、癿加思兰连兵深入，至秦州、安定、会宁诸州县，纵横数千里。贼退，适王越自红盐池还，妄以大捷闻，玺书嘉劳。顷之，纪功兵部员外郎张谨劾聚及总兵官范瑾等六将杀被掠者，冒功。部科及御史交章劾。诏遣给事中韩文往勘，还奏如谨言：所报首功百五十，仅十九级。帝以寇既遁，置不问。聚寻卒。赠侯，谥威勇。
 </p><p>传子禄及福，福，弘治中掌三千营，加太子太保。卒，子岳嗣。卒，从子文请嗣。吏部言聚无大功，子孙不宜再袭。世宗不允，命文嗣。亦传至明亡乃绝。
 </p><p>赞曰：宋晟在太祖时，即与开国诸元勋参迹戎行，其后四镇凉州，威著西鄙。两子尚主，世列彻侯，功名盛矣。薛禄以下诸人，皆与“靖难”。禄东昌、滹沱之战，刘荣守永平，谭广守保定，宣力最著。虽策勋之日，未即剖符，而各以积阀受封。其善抚士卒，慎固封守，恪谨奉职，有足尚者。赵辅、刘聚猷绩远逊前人，而带砺之盟，与国终始，诚厚幸哉。诸人并以勋爵镇御边陲，故类著于篇。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十二章-卷四十二-原文.html'>第四十二章-卷四十二</a></p><p class='next'>下一节：<a href='第四十四章-卷四十四-原文.html'>第四十四章-卷四十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十二章-卷四十二-原文.html'>第四十二章-卷四十二</a></p><p class='next'>下一节：<a href='第四十四章-卷四十四-原文.html'>第四十四章-卷四十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

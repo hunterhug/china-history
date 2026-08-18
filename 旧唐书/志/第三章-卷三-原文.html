@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-志<a href='../旧唐书.html#志'>：目录</a></p>
@@ -206,5 +233,18 @@
 </p><p>维天生人，立君以理，维君受命，奉天为子。代去不留，人来无已，德凉者灭，道高斯起。赫赫高祖，明明太宗，爰革隋政，奄有万邦。罄天张宇，尽地开封，武称有截，文表时邕。高宗稽古，德施周溥，茫茫九夷，削平一鼓。礼备封禅，功齐舜禹，岩巍岱宗，卫我神主。中宗绍运，旧邦惟新，睿宗继明，天下归仁。恭己南面，氤氲化淳，告成之礼，留诸后人。缅余小子，重基五圣，匪功伐高，匪德矜盛。钦若祀典，丕承永命，至诚动天，福我万姓。古封太山，七十二君，或禅亭亭，或禅云云。其迹不见，其名可闻，祗遹文祖，光昭旧勋。方士虚诞，儒书不足，佚后求仙，诬神检玉。秦灾风雨，汉污编录，德未合天，或承之辱。道在观政，名非从欲，铭心绝岩，播告群岳。
 </p><p>于是中书令张说撰《封祀坛颂》、侍中源乾曜撰《社首坛颂》、礼部尚书苏颋撰《朝觐坛颂》以纪德。
 </p><p>玄宗乙酉岁生，以华岳当本命。先天二年七月正位，八月癸丑，封华岳神为金天王。开元十年，因幸东都，又于华岳祠前立碑，高五十余尺。又于岳上置道士观，修功德。至天宝九载，又将封禅于华岳，命御史大夫王鉷开凿险路以设坛场，会祠堂灾而止。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p><p class='next'>下一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p><p class='next'>下一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

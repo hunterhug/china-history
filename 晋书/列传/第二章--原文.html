@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -185,5 +212,18 @@
 </p><p>恭思褚皇后，讳灵媛，河南阳翟人，义兴太守爽之女也。后初为琅邪王妃。元熙元年，立为皇后，生海盐、富阳公主。及帝禅位于宋，降为零陵王妃。宋元嘉十三年崩，时年五十三，祔葬冲平陵。
 </p><p>史臣曰：方祇体安，俪乾仪而合德；圆舒循晷，配羲曜以齐明。故知阳烁阴凝，万物假其陶铸；火炎水润，六气由其调理。取譬贤淑，作伉文思，灵根式固，实资于此。宣穆阅礼，偶德潜鳞，翊天造之艰虞，嗣涂山之逸响，宝运归其后胤，盖有母仪之助焉。武元杨氏预闻朝政，明不逮远，爱弱私情，深杜卫瓘之言，不晓张泓之诈，运其阴沴，韬映乾明，晋道中微，基于是矣。惠皇禀质，天纵其嚚，识暗鸣蛙，智昏文蛤。南风肆狡，扇祸稽天。初践椒宫，逞枭心于长乐；方观梓树，颁鸩羽于离明。褒后灭周，方之盖小；妹妃倾夏，曾何足喻。中原陷于鸣镝，其兆彰于此焉。昔者高宗谅闇，总百官于元老；成王冲眇，托万机于上公。太后御宸，谅知非古。而明穆、康献，仍世临朝，时属委裘，躬行负扆。各免华阳之衅，竟蹑和熹之踪，保陵迟以克终，所幸实为多矣。
 </p><p>赞曰：二妃光舜，三母翼周。末升夷癸，褒进亡幽。家邦兴灭，职此之由。穆后沈断，忘情执爨。故剑辞恩，池蒲起叹。崇化繁祉，肇基商乱。二杨继宠，福极灾生。南风炽虐，国丧身倾。献容幸乱，居辱疑荣。援笔废主，持尺威帝。契阔终罹，殷忧以毙。芬实窈窕，芳菲婉嫕。吕妾变嬴，黄姬化羋。石文远著，金行潜徙。妇德倾城，迷硃夺紫。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章--原文.html'>第一章-</a></p><p class='next'>下一节：<a href='第三章--原文.html'>第三章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一章--原文.html'>第一章-</a></p><p class='next'>下一节：<a href='第三章--原文.html'>第三章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

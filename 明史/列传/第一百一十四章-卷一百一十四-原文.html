@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -216,5 +243,18 @@
 </p><p>光宗在东宫，数语近侍曰：“何为欲杀我好讲官？”诸人闻之皆惧。詹事唐文献偕其僚杨道宾等诣一贯争之，李廷机亦力为之地，狱益解。刑部尚书萧大亨具爰书，犹欲坐正域。郎中王述古抵稿于地，大亨乃止。遂坐生光极刑，释诸波及者，而正域获免。方狱急时，逻卒围鲤舍及正域舟，铃柝达旦。又声言正域且逮，迫使自裁。正域曰：“大臣有罪，当伏尸都市，安能自屏野外？”既而幸无事，乃归。归三年，巡按御史史学迁勘上楚王所讦事，无状。给事顾士琦因请召还正域，不报。
 </p><p>正域博通载籍，勇于任事，有经济大略，自守介然，故人望归之。扼于权相，遂不复起，家居十年卒。后四年，赠礼部尚书。光宗遗诏，加恩旧学，赠太子少保，谥文毅，官其子中书舍人。
 </p><p>赞曰：海瑞秉刚劲之性，戆直自遂，盖可希风汉汲黯、宋包拯。苦节自厉，诚为人所难能。丘橓、吕坤，虽非瑞匹，而指陈时政，炳炳凿凿，鲠亮有足称者。郭正域持楚狱，与执政异趣，险难忽发，慬而后免，危矣哉！以妖书事与坤相首尾，故并著焉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百一十三章-卷一百一十三-原文.html'>第一百一十三章-卷一百一十三</a></p><p class='next'>下一节：<a href='第一百一十五章-卷一百一十五-原文.html'>第一百一十五章-卷一百一十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百一十三章-卷一百一十三-原文.html'>第一百一十三章-卷一百一十三</a></p><p class='next'>下一节：<a href='第一百一十五章-卷一百一十五-原文.html'>第一百一十五章-卷一百一十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

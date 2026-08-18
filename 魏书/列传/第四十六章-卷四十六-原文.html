@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#列传'>：目录</a></p>
@@ -224,5 +251,18 @@
 </p><p>穆弟俭，宁远将军、顿丘太守。建义初，除太府少卿。寻为华州中正，加左将军。俭与元颢有旧，及颢入洛，受其位任。庄帝还宫，坐免。后以本将军、颍州刺史，寻加散骑常侍、平南将军，州罢不行。普泰初，除征南将军、金紫光禄大夫。永熙中，以大将军除北雍州刺史，仍陷关西。
 </p><p>俭弟宽，自宗正丞，建义初为通直散骑侍郎，领河南尹丞。稍迁散骑常侍、安东将军。永安二年，除中军将军、太府卿。后为散骑常侍、骠骑将军、右光禄大夫、澄城县开国伯。太昌初，除给事黄门侍郎，寻加骠骑大将军，除华州大中正，监内典书事。坐事去官。永熙三年，兼武卫将军，又除黄门郎。随出帝入关西。俭、宽皆轻薄无行，为人流所鄙。
 </p><p>史臣曰：杨播兄弟，俱以忠毅谦谨，荷内外之任，公卿牧守，荣赫累朝，所谓门生故吏遍于天下。而言色恂恂，出于诚至，恭德慎行，为世师范，汉之万石家风、陈纪门法，所不过也。诸子秀立，青紫盈庭，其积善之庆欤？及胡逆擅朝，淫刑肆毒，以斯族而遇斯祸，报施之理，何相反哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十五章-卷四十五-原文.html'>第四十五章-卷四十五</a></p><p class='next'>下一节：<a href='第四十七章-卷四十七-原文.html'>第四十七章-卷四十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十五章-卷四十五-原文.html'>第四十五章-卷四十五</a></p><p class='next'>下一节：<a href='第四十七章-卷四十七-原文.html'>第四十七章-卷四十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

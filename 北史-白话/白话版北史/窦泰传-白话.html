@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>北史-白话版北史<a href='../北史.html#北史'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>窦泰传<span style='font-size:small'> 白话</span></h1>
 <p>窦泰，字世宁，太安捍殊人。开初，他的母亲梦见刮起大风，响起惊雷，好像天要降雨，她到院子里观看，只见电光闪耀，夺人眼目，疾雨降落。睡梦中惊出一身汗水，便怀有身孕。怀胎期满而不分娩，他的母亲十分恐惧。有一个巫婆告诉她“：渡河时弄湿裙子，生孩子就一定容易。”她便到水边，忽然看见一个人对她说：“你当生贵子，可迁移到南边去住。”他的母亲听从了这些劝告，不久生下窦泰。他长大后，善于骑马射箭，颇有勇气和胆略，他的父兄都在战场上牺牲，他背着他们的尸骨去投奔..朱荣。因跟随..朱荣讨伐邢杲有功，被赐爵为广阿子。神武帝高欢任晋州刺史，征请窦泰为镇城都督，参与谋划军事。他多次升迁，官至侍中、京畿大都督，不久，任御史中尉，他以勋臣贵戚的身份位居台阁。虽然对朝中弊端没有进行过多的弹劾纠察，然而，百官对他都很畏惧。<BR><BR>　　东魏孝静帝天平三年(536)，高欢率兵进讨西魏，命窦泰从潼关进攻。天平四年，他投军来到小关，被宇文泰袭击，全军覆没，他自尽身亡。他将从邺地出发西进时，邺城有一个叫惠化的僧人散布谣谚说：“窦行台，去不回。”临出发的前一天晚上三更时分，忽然有数千名穿着红衣服戴着头巾的人来到御史台，说是来收回窦中尉。值班的官吏和士兵都很惊奇。这些人进入几个屋子，不久离去。第二天看门上的锁都没有动，大家才知道来的这些都不是人，便知道窦泰出兵必败。死后，朝廷追赠他为大司马、太尉、录尚书事，谥号武贞。</p>
-<div class='pn'><p class='pre'>上一节：<a href='司马膺之传-白话.html'>司马膺之传</a></p><p class='next'>下一节：<a href='尉景传-白话.html'>尉景传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='司马膺之传-白话.html'>司马膺之传</a></p><p class='next'>下一节：<a href='尉景传-白话.html'>尉景传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

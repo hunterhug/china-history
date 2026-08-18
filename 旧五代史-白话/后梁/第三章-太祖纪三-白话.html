@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后梁<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -158,5 +185,18 @@
 </p><p>八月十九日平明前，老人星出现在南极。黄河变清，一直到十月。
 </p><p>九月二十七日，西京皇宫放出皇帝及皇后两宫里的前朝宫人，任他们所往。下诏令说，近年赴各道出使的文武官员，都在出使地长期停驻，长年累月不回京城。不仅苦劳耗费了州郡资财，而且侮慢了国家纲纪。臣子失职，法纪何在！从今以后出使到两浙、福建、广州、安南、邕、容等道的使者准许在出使地停留一个月，出使湖南、洪、鄂、黔、桂者准许停留二十天，出使荆、襄、同、雍、镇、定、青、沧者准许停留十天，其余出使附近者不过三五天。凡来往于路时，根据远近里数，每天走两所驿站。如遇生病以及江河阻隔，由所在长官将事情缘由上奏。如有违犯，当执行朝廷法律，命御史审核惩治，以警告轻慢的官员。
 </p><p>十二月，诏令追赠已故荆南节度使、守中书令、上谷王周..为太师，追赠已故武昌军节度使、兼中书令、西平王杜洪为太傅。此前，武昌再次被淮南吴国贼军侵犯，围攻非常紧急，杜洪因士兵粮食将尽，接连来请求救兵。太祖认为武昌远隔长江，难以赴援，而荆州在长江上游，有很多战舰，离江夏很近，于是命令周..率领舟船部队顺长江而下以援救武昌。周..于是领兵东下，才到武昌地界，遇上朗州背叛盟誓作乱，乘着江陵兵力空虚，领兵袭击攻破了它，俘获抢掠将尽。很快周..的士卒知道这件事，都顾念他们的家，全无斗志，于是被淮南贼寇打败，将卒们溃散，周..忿而投江自尽。..本姓成，其姓犯文穆皇帝朱诚庙讳，现在追赠时，因他出自周文，所以赐姓周。在周..兵败之后，武昌因受重围已历一年，粮尽力竭，救兵不到，终于被贼寇攻陷，杜洪被押送淮南，终遭杀害。荆南、武昌二镇主帅，都因忠于朝廷，坚贞不屈而死。太祖每当谈到各藩镇保卫王室，经营国家的功业时，必定首先痛惜周..、杜洪的牺牲，现在追赠他们，以表深切的悼念，对他们的子孙亲属各加以任用。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二章-太祖纪二-白话.html'>第二章-太祖纪二</a></p><p class='next'>下一节：<a href='第四章-太祖纪四-白话.html'>第四章-太祖纪四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二章-太祖纪二-白话.html'>第二章-太祖纪二</a></p><p class='next'>下一节：<a href='第四章-太祖纪四-白话.html'>第四章-太祖纪四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-列传<a href='../新五代史.html#列传'>：目录</a></p>
@@ -182,5 +209,18 @@
 </p><p>王重师，许州长社人也。为人沈嘿多智，善剑槊。秦宗权陷许州，重师脱身归梁，从太祖平蔡，攻兗、郓，为拔山军指挥使。重师苦战齐、鲁间，威震邻敌。迁颍州刺史。太祖攻濮州，已破，濮人积草焚之，梁兵不得入。是时，重师方病金疮，卧帐中，诸将强之，重师遽起，悉取军中氈毯沃以水，蒙之火上，率精卒以短兵突入，梁兵随之皆入，遂取濮州。重师身被八九疮，军士负之而还。太祖闻之，惊曰：“柰何使我得濮州而失重师乎！”使医理之，逾月乃愈。王师范降，表重师青州留后，累迁佑国军节度使、同中书门下平章事。居数年，甚有威惠。重师与刘捍故有隙，捍尝构之太祖，太祖疑之。重师遣其将张君练西攻邠、凤而不先请，君练兵小败，太祖以其擅发兵，挫失国威，将召而罪之，遣刘捍代重师。重师不知太祖怒己，捍至，重师不出迎，见之青门，礼又倨，捍因驰白太祖，言重师有二志。太祖益怒，贬重师溪州刺史，再贬崖州司户参军，未行，赐死。
 </p><p>○徐怀玉
 </p><p>徐怀玉，亳州焦夷人也。少事梁太祖，与太祖俱起微贱。怀玉为将，以雄豪自任，而勇于战阵。从太祖镇宣武，为永城镇将。秦宗权攻梁，壁金堤、灵昌、酸枣，怀玉以轻骑连击破之，俘杀五千余人，迁左长剑都虞候。又破宗权于板桥、赤冈，拔其八栅。从太祖东攻兗、郓，破徐、宿。怀玉金创被体，战必克捷，所得赏赉，往往以分士卒，为梁名将。本名琮，太祖赐名怀玉。从太祖攻魏，败魏兵黎阳，遂东攻兗，破硃瑾于金乡。又从庞师古攻杨行密，师古败清口，怀玉独完一军，行收散卒万余人以归。迁沂州刺史，属岁屡丰，乃缮兵治壁，为战守具。已而王师范叛梁，攻东境，怀玉屡以州兵击破之。迁齐州防御使。天复四年，以州兵辽昭宗都洛阳，迁华州观察留后，以兵屯雍州。迁右羽林统军，屯于泽州，晋人攻之，为隧以入，怀玉击之隧中，晋人乃却。太祖时，历曹、晋二州刺史，晋数攻之，怀玉坚守，败晋兵于洪洞。拜保大军节度使。太祖崩，友珪自立，硃友谦附于晋，以袭鄜州，执怀玉杀之。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章-梁臣传第九-原文.html'>第九章-梁臣传第九</a></p><p class='next'>下一节：<a href='第十一章-梁臣传第十一-原文.html'>第十一章-梁臣传第十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九章-梁臣传第九-原文.html'>第九章-梁臣传第九</a></p><p class='next'>下一节：<a href='第十一章-梁臣传第十一-原文.html'>第十一章-梁臣传第十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

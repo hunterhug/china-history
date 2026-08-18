@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-志<a href='../晋书.html#志'>：目录</a></p>
@@ -217,5 +244,18 @@
 </p><p>议奏，元帝犹欲从展所上。大将军王敦以为：“百姓习俗日久，忽复肉刑，必骇远近。且逆寇未殄，不宜有惨酷之声，以闻天下。”于是乃止。
 </p><p>咸康之世，庾冰好为纠察，近于繁细，后益矫违，复存宽纵，疏密自由，律令无用矣。
 </p><p>至安帝元兴末，桓玄辅政，又议欲复肉刑斩左右趾之法，以轻死刑，命百官议。蔡廓上议曰：“建邦立法，弘教穆化，必随时置制，德刑兼施。长贞一以闲其邪，教禁以检其慢，洒湛露以流润，厉严霜以肃威，虽复质文迭用，而斯道莫革。肉刑之设，肇自哲王。盖由曩世风淳，人多惇谨，图像既陈，则机心直戢，刑人在涂，则不逞改操，故能胜残去杀，化隆无为。季末浇伪，设网弥密，利巧之怀日滋，耻畏之情转寡。终身剧役，不足止其奸，况乎黥劓，岂能反于善。徒有酸惨之声，而无济俗之益。至于弃市之条，实非不赦之罪，事非手杀，考律同归，轻重均科，减降路塞，钟陈以之抗言，元皇所为留愍。今英辅翼赞，道邈伊周，诚宜明慎用刑，爱人弘育，申哀矜以革滥，移大辟于支体，全性命之至重，恢繁息于将来。”而孔琳之议不同，用王朗、夏侯玄之旨。时论多与琳之同，故遂不行。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十九章--原文.html'>第十九章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十九章--原文.html'>第十九章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

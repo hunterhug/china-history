@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#后汉书'>：目录</a></p>
@@ -169,5 +196,18 @@
 </p><p>汉阴老父传、汉阴老父，不知是什么人。桓帝延熹年间，皇上幸竟陵，过云梦，临沔水。百姓没有不去看的，有老父独自耕种不止。尚书郎南阳张温觉得奇怪，派人问道“：人们都来观看，老父独耕不止，为什么？”老父笑而不答。张温下来走百步，亲自与老父谈话。老父说：“我是野人，不懂这话。请问天下因乱而立天子呢？还是因治而立天子？立天子是为了作天下人之父呢？还是役使百姓以养天子？从前圣王治世，茅茨采椽，而万姓得以安宁。今你之君，劳役百姓而自己放纵，逸游无忌。我替你羞愧，你何忍心想人观看呢？”张温听了大惭。问他的姓名，不告诉而离去。
 </p><p>陈留老父传、陈留老父，不知是什么人。桓帝年代，党锢事起，守外黄令陈留人张升离官位回乡里。路上遇友人，共铺草坐地而谈。张升说：“我听说赵国人杀了鸣犊，孔子到河滨而回去；覆巢竭渊，龙凤逝去而不到来。今日宦竖日乱，陷害忠良之人，贤人君子离开朝廷么？德之不建，人之无援，将来性命难免，怎么办？”于是相抱而哭。老父急走而过，拄着杖棍，叹息道“：唉，二大夫哭得怎么这样悲伤呢？龙不隐鳞，凤不藏羽，网罗高悬，去到何方，即使哭泣有什么用呢？”二人想和他谈话，不顾而去，不知其所终。
 </p><p>庞公传，庞公，南郡襄阳人。住岘山之南，从未进过城府，夫妻相敬如宾。荆州刺史刘表数次请他，不能屈，于是就去访问他。对他说：“保全自己一身，何如保全天下呢？”庞公笑道“：鸿鹄做巢在高林之上，晚上才得有所栖息之处；鼋鼍做洞在深渊之下，晚上才得到归宿，人们的取舍行止，也是人的巢穴。暂且各得其栖宿之处而已，天下非所保哩。”于是释耕于垄上，而妻子在前除草。刘表指而问道：“先生劳动在田亩而不肯受官禄，以后用什么留给子孙呢？”庞公说“：世人都用危险留给子孙，今独用安宁留给子孙，虽然遗留不同，不算没有遗留吧。”刘表叹息而去。后来庞公携其妻子登鹿门山，因采药再不回来。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十章-方术列传下-白话.html'>第八十章-方术列传下</a></p><p class='next'>下一节：<a href='第八十二章-列女传-白话.html'>第八十二章-列女传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八十章-方术列传下-白话.html'>第八十章-方术列传下</a></p><p class='next'>下一节：<a href='第八十二章-列女传-白话.html'>第八十二章-列女传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

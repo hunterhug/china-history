@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>元史-本纪<a href='../元史.html#本纪'>：目录</a></p>
@@ -159,5 +186,18 @@
 </p><p>八月辛丑，诸王阿儿加失里献斡罗思三十人、渐丁百三人。赈大都宝坻县饥民，以京畿运司粮万石。癸卯，吴王木喃子及诸王答都河海、锁南管卜、帖木儿赤、帖木迭儿等来朝。赐护守上都宫殿卫卒二千二百二十九人，人钞二十五锭。乙巳，天鼓鸣于东北。丙午，遣官祭社稷。丁未，有事于太庙。海道漕运粮六十九万余石至京师。己酉，陇西地震。帝崩，寿二十有九，在位五年。癸丑，灵驾发引，葬起辇谷，从诸帝陵。元统二年正月己酉，太师右丞相伯颜率文武百官等议，上尊谥曰圣明元孝皇帝，庙号文宗，国言谥号曰札牙笃皇帝，请谥于南郊。三月己酉，祔于太庙。后至元六年六月，以帝谋为不轨，使明宗饮恨而崩，诏除其庙主。其略曰：
 </p><p>昔我皇祖武宗皇帝升遐之后，祖母太皇太后惑于憸慝，俾皇考明宗皇帝出封云南。英宗遇害，正统浸备，我皇考以武宗之嫡，逃居朔漠，宗王大臣同心翊戴，肇启大事，于时以地近，先迎文宗，暂总机务。继知天理人伦之攸当，假让位之名，以宝玺来上，皇考推诚不疑，即授以皇太子宝。文宗稔恶不悛，当躬迓之际，乃与其臣月鲁不花、也里牙、明里董阿等谋为不轨，使我皇考饮恨上宾。归而再御宸极，思欲自解于天下，乃谓夫何数日之间，宫车弗驾。海内闻之，靡不切齿。又私图传子，乃构邪言，嫁祸于八不沙皇后，谓朕非明宗之子，遂俾出居遐陬。祖宗大业，几于不继。内怀愧慊，则杀也里牙以杜口。上天不佑，随降殒罚。叔婶不答失里，怙其势焰，不明明考之嗣，而妄立孺稚之弟亦怜真班，奄复不年，诸王大臣以贤以长，扶朕践位。国之大政，属不自遂者，讵能枚举。每念治必本于尽孝，事莫先于正身，赖天之灵，权奸屏黜，尽孝正名，不容复缓，永惟鞠育罔极之恩，忍忘不共戴天之义。既往之罪，不可胜诛，其命太常彻去脱脱木儿在庙之主。不答失里本朕之婶，乃阴构奸臣，弗体朕意，僣膺太皇太后之号，迹其闺门之祸，离间骨肉，罪恶尤重，揆之大义，削去鸿名，徙东安州安置。
 </p><p>放燕帖古思于高丽，未至，月阔察儿害之于中道。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十五章-卷三十五-原文.html'>第三十五章-卷三十五</a></p><p class='next'>下一节：<a href='第三十七章-卷三十七-原文.html'>第三十七章-卷三十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十五章-卷三十五-原文.html'>第三十五章-卷三十五</a></p><p class='next'>下一节：<a href='第三十七章-卷三十七-原文.html'>第三十七章-卷三十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>北齐书-白话版北齐书<a href='../北齐书.html#北齐书'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>王峻传<span style='font-size:small'> 白话</span></h1>
 <p>王峻，字峦嵩，灵丘人氏。聪明有才干。高祖请他做相府墨曹参军，因事辞官。数年之后，显祖为仪同开府，推举峻为城局参军。迁恒州大中正，任世宗相府外兵参军。随同诸将平定淮阴，赐爵北平县男。除营州刺史。<BR><BR>　　营州地邻边城，盗贼多次为害。峻来州后，远远地派出侦察的斥候，多多地设置疑兵，一旦有贼出现，常常出其不意地拦截攻打，贼不敢轻举妄动，因此合境安宁。先是刺史陆士茂诈杀失韦八百多人，所以朝贡从此断绝。这个时候，峻分命将士，阻挡住他们的行路，失韦果然来了，峻打败了他们，还俘虏了首帅，送往朝廷。帝厚加奖赏，放还了失韦的首帅。于是失韦献诚款，不绝朝贡，峻在其中起了很大作用。当初，蠕蠕主盭罗辰率领其余党徒东徙，峻估计他们一定会来，便提前做好了准备。不长时间，盭罗辰到，驻扎营州城西。峻用伏兵打败了蠕蠕，并掳获其名王郁久闾豆拔提等几十人，解送京师。盭罗辰在两军交战时偷偷地逃走。显祖嘉奖了他。迁秘书监。<BR><BR>　　废帝即位，除峻洛州刺史、河阳道行台左丞。皇建中，诏令在洛州西界挖掘深堑三百里，设置城戍用来防止间谍。河清元年(562)，征拜祠部尚书。诏令前往晋阳检校兵马，不久还邺，转太仆卿。当车驾巡幸外出，峻常与吏部尚书尉瑾辅佐皇太子、诸亲王同知留后事。赐其食梁郡干，迁侍中，除都官尚书。周师寇逼，诏峻以本官与东安王娄睿又、武兴王普等人从邺城赶赴河阳防御。车驾巡幸洛阳，因为悬瓠被周师占据，帝又诏峻为南道行台，与娄睿又领军往南征讨。军未到，周师弃城逃逸，朝廷令峻抚慰永、郢二州。四年(565)春，还京师。坐违反格令私度禁物和盗截军粮，有关部门依照律令判处死刑，家口配没入官。特诏免除死罪，鞭击一百，除去名籍发配甲坊，同时赦免其家口。后遇赦免罪，但不许为官。天统二年(566)，授骠骑大将军、仪同三司，不久加开府。武平初，除侍中。四年(573)卒。赠司空公。</p>
-<div class='pn'><p class='pre'>上一节：<a href='徐远传-白话.html'>徐远传</a></p><p class='next'>下一节：<a href='薛琡传-白话.html'>薛琡传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='徐远传-白话.html'>徐远传</a></p><p class='next'>下一节：<a href='薛琡传-白话.html'>薛琡传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

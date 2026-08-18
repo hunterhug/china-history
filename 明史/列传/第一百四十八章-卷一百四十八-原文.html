@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -233,5 +260,18 @@
 </p><p>其冬，京师戒严，任学入卫，道谒文灿，言：“献忠狼子野心，终为国患，我以勤王为名，出其不意，可立缚也。”文灿不能用。抵畿南，有诏却还。巡抚道立调良玉兵于陕州，贼乘卢氏虚，遁入内乡、淅川，为文灿所劾。明年除道立名，任学亦镌一秩。游击宋怀智、都司孔道兴再破贼陈州，部将王应龙、尤之龙等破贼襄城，五战皆胜。副将岱与应龙、怀智等复破贼叶县，十日奏八捷，帝诏所司核实。已，又挫贼裕州。而是时总兵孙应元、黄得功统京军讨贼，屡奏大捷。凯旋录功，任学亦叙复二秩。
 </p><p>寻与左良玉、陈洪范蹙李万庆于内乡。万庆方降，献忠已叛，文灿尽调河南军援剿，独任学留汝南。川贵总督李若星论文灿主抚之谬，请复任学原官，摄行大将，督察军事。不从。七月，献忠合汝才自房县西走，岱偕良玉追之。良玉令岱为前锋，己随其后。至罗犭英山，军乏食。贼伏兵要害，岱与副将刘元捷鼓勇直上，伏四起。岱马足挂于藤，抽刀断之，蹶而复进，乃弃马步斗，久之矢尽，陷于贼，良玉军亦大败。事闻，任学坐褫职。十五年，言官请起废，任学与焉，未及用而卒。
 </p><p>赞曰：流贼之肆毒也，祸始于杨鹤，成于陈奇瑜，而炽于熊文灿、丁启睿。然练国事、郑崇俭先罹其罚，而邵捷春、余应桂亦或死或戍。疆场则剿抚乖方，庙堂则赏罚不当，偾师玩寇，贼势日张，谓非人谋不臧实使之然乎！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百四十七章-卷一百四十七-原文.html'>第一百四十七章-卷一百四十七</a></p><p class='next'>下一节：<a href='第一百四十九章-卷一百四十九-原文.html'>第一百四十九章-卷一百四十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百四十七章-卷一百四十七-原文.html'>第一百四十七章-卷一百四十七</a></p><p class='next'>下一节：<a href='第一百四十九章-卷一百四十九-原文.html'>第一百四十九章-卷一百四十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

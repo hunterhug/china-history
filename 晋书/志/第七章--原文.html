@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-志<a href='../晋书.html#志'>：目录</a></p>
@@ -484,5 +511,18 @@
 </p><p>金：夕与日合，伏，顺，四十一日五万六千九百五十四分，行星五十度五万九千九百五十四分，而夕见西方，在日前。顺，疾，日行一度九十一分之二十二，九十一日行百一十三度。更顺，减疾，日行一度十五分，九十一日行百六度而顺。迟，日行四十六分之三十三，四十六日行三十三度。留，不行八日。旋，逆，日行五分之三，十日退六度，在日前，夕伏西方，逆，疾，五日退四度，而与日合。凡再合一终，五百八十四日十一万三千九百八分，行星亦如之。
 </p><p>水：晨与日合，伏，逆，九日退七度，而晨见东方，在日后。更逆，疾，一日退一度。留，不行二日。旋，顺，迟，日行九分之八，九日行八度而顺。疾，日行一度四分之一，二十日行二十五度，在日后。晨伏东方，顺，十六日六百四十一万九百六十七分，行星三十二度六百四十一万九百六十七分，而与日合，一合，五十七日六百四十一万九百六十七分，行星亦如之。
 </p><p>水：夕与日合，伏，顺，十六日六百四十一万九百六十七分行星三十二度六百四十一万九百六十七分，而夕见西方，在日前。顺，疾，日行一度四分之一，二十日行二十五度而顺。迟，日行九分之八，九日行八度。留，不行二日。旋，逆，一日退一度，在日前，夕伏西方。逆，迟，九日退七度，与日合。凡再合一终，一百一十五日六百一万二千五百五分，行星亦如之。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章--原文.html'>第六章-</a></p><p class='next'>下一节：<a href='第八章--原文.html'>第八章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六章--原文.html'>第六章-</a></p><p class='next'>下一节：<a href='第八章--原文.html'>第八章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

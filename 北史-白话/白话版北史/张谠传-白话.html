@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>北史-白话版北史<a href='../北史.html#北史'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>张谠传<span style='font-size:small'> 白话</span></h1>
 <p>张谠，字处言，清河东武城人。早先在南朝刘宋那里做官，位至东徐州刺史。北魏军队平定徐州和兖州，张谠向北魏将领尉元归顺，并上表接受朝廷任命的东徐州刺史的官职。原先，张谠的妻子皇甫氏被北魏军队抢走，朝廷把她赠给太监做奴婢。皇甫氏假装痴呆，才免于替太监梳洗沐浴。后来，张谠任刘宋的冀州长史，卖了许多东西，向北魏要求赎回皇甫氏。魏文成帝很奇怪他为此交纳这么多的金钱。等到引见之后，看到皇甫氏已年近六十，文成帝说：“南朝的人有特殊的爱好，能珍重夫妻间的情义。这个老太婆还有什么用，能值得如此破费？”皇甫氏回到南朝，张谠命他所有的小妾到边境上迎接。过了数年，皇甫氏才去世。又过了十年，张谠归顺北魏。</p>
-<div class='pn'><p class='pre'>上一节：<a href='江文遥传-白话.html'>江文遥传</a></p><p class='next'>下一节：<a href='傅永传-白话.html'>傅永传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='江文遥传-白话.html'>江文遥传</a></p><p class='next'>下一节：<a href='傅永传-白话.html'>傅永传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

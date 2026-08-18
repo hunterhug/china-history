@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-志<a href='../金史.html#志'>：目录</a></p>
@@ -179,5 +206,18 @@
 </p><p>功酬亏永之制。凡诸提点院务官，三十月迁一官，周岁为满，止取无亏月日用之。大定四年，定制，一任内亏一分以上降五人，二分以上降十人，三分以上降十五人，若有增羡则依此升迁，其升降不尽之数，于后任充折。二十一年，以旧制监当官并责决，而不顾廉耻之人，以谓已决即得赴调，不以刑罚为畏。拟自今，若亏永及一酬以上，依格追官殿一年外，亏永不及酬者，亦殿一年。
 </p><p>章宗大定二十九年，罢年迁之法，更定制，比永课增及一酬迁一官，两酬迁两官，如亏课则削亦如之，各两官止。又罢使司小都监与使副一体论增亏者，及罢余前升降不尽之数后任充折之制。泰和元年，制犯选及亏永者，右职汉人至宣武将军从五品、女直至广威将军正五品，方注县令。又吏格，曾犯选及亏永者，女直至武义从六，汉人及诸色人至武略从六，皆注诸司，亦两除一差，至明威方注丞簿。贞祐三年，制曾亏永、犯选者，迁至宣武，注诸司，至怀远从四下，方注丞簿，至安远从四上，注下令。
 </p><p>正大元年，制曾犯选、曾亏永者，至广威与诸司、两除一差，至安远注丞簿，三任，其至镇国从三品下，方注下令。群牧官三周岁为满，所牧之畜以十为率，驼增二头，马增二匹，牛亦如之，羊增四口，而大马百死十五匹者，及能征前官所亏，三分为率，能尽征及征二分半以上，为上等，升一品级。驼增一，马牛增二，羊增三，大马百死二十五，征前官所亏二分以上，为中等，约量升除。驼不增，马牛增一，羊增二，大马百死三十，征亏一分以上，为下等，依本等除。余畜皆依元数，而大马百死四十，征亏不及一分者，降一等。此明昌四年制也。五年，制马牛羊亏元数十之一，騬马百死四十，征亏不及一分者，降一等，决四十。若驼马牛羊亏元数一分、马百死四十，征亏不得者，杖八十，降同前。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十四章-卷三十四-原文.html'>第三十四章-卷三十四</a></p><p class='next'>下一节：<a href='第三十六章-卷三十六-原文.html'>第三十六章-卷三十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十四章-卷三十四-原文.html'>第三十四章-卷三十四</a></p><p class='next'>下一节：<a href='第三十六章-卷三十六-原文.html'>第三十六章-卷三十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

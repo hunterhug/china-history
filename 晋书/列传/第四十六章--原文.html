@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -207,5 +234,18 @@
 </p><p>帝践阼，出补晋陵内史，在郡甚有威惠。帝下诏曰：“夫二千石之任，当勉励其德，绥齐所莅，使宽而不纵，严而不苛，其于勤功督察，便国利人，抑强扶弱，使无杂滥，真太守之任也。若声过其实，古人所不取。功乎异端，为政之甚害，盖所贵者本也。”闿遵而行之。时所部四县并以旱失田，闿乃立曲阿新丰塘，溉田八百余顷，每岁丰稔。葛洪为其颂。计用二十一万一千四百二十功，以擅兴造免官。后公卿并为之言曰：“张闿兴陂溉田，可谓益国，而反被黜，使臣下难复为善。”帝感悟，乃下诏曰：“丹阳侯闿昔以劳役部人免官，虽从吏议，犹未掩其忠节之志也。仓廪国之大本，宜得其才，今以闿为大司农。”闿陈黜免始尔，不宜便居九列。疏奏，不许，然后就职。帝晏驾，以闿为大匠卿，营建平陵，事毕，迁尚书。苏峻之役，闿与王导俱入宫侍卫。峻使闿持节权督东军。王导潜与闿谋，密宣太后诏于三吴，令速起义军。陶侃等至，假闿节，行征虏将军，与振威将军陶回共督丹阳义军。闿到晋陵，使内史刘耽尽以一部谷，并遣吴郡度支运四部谷，以给车骑将军郗鉴。又与吴郡内史蔡谟、前吴兴内史虞潭、会稽内史王舒等招集义兵，以讨峻。峻平，以尚书加散骑常侍，赐爵宜阳伯。迁廷尉，以疾解职，拜金紫光禄大夫。寻卒，时年六十四。子混嗣。闿笺表文议传于世。
 </p><p>史臣曰：季孙行父称见有礼于其君者，如孝子之养父母；无礼于其君者，如鹰鹯之逐鸟雀。是以石碏戮厚，叔向诛鲋，前史以为美谭。王敦之恶，不足矜其类。然而硃家容布，为大侠之首；郦寄载吕，兴卖友之讥。亦所以激扬风俗，弘长名教。王彬舣船而厚其所薄，王舒沈江而薄其所厚，较之优劣，断乎可知。思行、彪之厉风规于多僻之日，虞潭、顾众徇贞心于危蹙之辰。龙管为出纳之端，{制鱼}鱼非献替之术，啸父之对，何其鄙欤！
 </p><p>赞曰：处明夙令，声颓暮年。允之骍角，无弃山川。暠称多艺，绸缪哲后。二三其德，亦孔之丑。世儒愤发，恸顗陵敦。彪之不挠，宁浩旋温。顾实南金，虞惟东箭。铣质无改，筠心不变，公望公才，斐为其选。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十五章--原文.html'>第四十五章-</a></p><p class='next'>下一节：<a href='第四十七章--原文.html'>第四十七章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十五章--原文.html'>第四十五章-</a></p><p class='next'>下一节：<a href='第四十七章--原文.html'>第四十七章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

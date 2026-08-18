@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后晋<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -156,5 +183,18 @@
 </p><p>后汉乾佑元年(948)四月，永康王来到辽阳，少帝与太后前往永康王帐中，少帝穿着白衣纱帽，永康王阻止他，改穿平常衣服相见。少帝趴在地下痛哭泪如雨下，自陈过错，永康王叫左右扶少帝上殿，安慰很久，便设乐行酒，从容而罢。永康王帐下从官以及教坊内人看见以前的故主，不胜悲痛呜咽，内人都将衣服医药送给少帝。当永康王离开辽阳时，取内官十五人，文武朝官十五人以及皇子石延煦，都令他们跟随自己到陉地去，陉地就是蕃王避暑的地方。有个叫禅奴舍利的，是永康王的妻兄，知道少帝有位未出嫁的小公主，就找少帝求娶，少帝推辞说公主年幼，不行。又得知朝廷上有几位善于歌唱的，禅奴又要，少帝就给了他。几天后，永康王骑马要走了少帝幼女，把她赐给了禅奴。八月，永康王离开陉地，太后骑马到霸州，求见永康王，请求在汉人城寨附近赐给一块耕种养殖的土地，永康王答应了，令太后在建州住下。
 </p><p>汉乾佑二年(949)二月，少帝从辽阳城出发前往建州。走到半路，太妃安氏得病去世，于是火化了她，带上骨灰而行。少帝从辽阳出发走了十多天，经过仪州、灞州，到达建州。建州节度使赵延晖尽心用礼节奉迎，将少帝安置在衙署。后来划出五十多顷营地，离建州城几十里，少帝便让一行人员在营地造房耕种，供养少帝。这年，述律王子派契丹几位骑兵到少帝这里，要走内人赵氏、聂氏疾驰而去，赵氏和聂氏是少帝的宠姬，当她们被夺走后，少帝不胜悲愤。
 </p><p>汉乾佑三年(950)八月，太后去世。后周显德初年，有从塞北回来的汉人，说少帝与皇后以及各位儿子都还好，还在建州。那些随从官员仆役等人，从蕃地逃回，去世的有一大半了。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十章-少帝纪四-白话.html'>第十章-少帝纪四</a></p><p class='next'>下一节：<a href='第十二章-列传一-白话.html'>第十二章-列传一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十章-少帝纪四-白话.html'>第十章-少帝纪四</a></p><p class='next'>下一节：<a href='第十二章-列传一-白话.html'>第十二章-列传一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后唐<a href='../旧五代史.html#后唐'>：目录</a></p>
@@ -167,5 +194,18 @@
 </p><p>有女为庄宗淑妃。子承俊，历贝、辽二州刺史。
 </p><p>李承勋者，与广同为牙将，善于奉使，名闻军中。承勋累迁至太原少尹。刘守光之僭号也，庄宗遣承勋往使，问其衅端。承勋至幽州，见守光，如籓方聘问之礼。谒者曰：“燕王为帝矣，可行朝礼。”承勋曰：“吾大国使人，太原亚尹，是唐帝除授，燕主自可臣其部人，安可臣我哉！”守光闻之不悦，拘留于狱，数日而出，诘之曰：“臣我乎？”承勋曰：“燕君能臣我王，则我臣之；吾有死而已，安敢辱命！”会王师讨守光，承勋竟殁于燕。
 </p><p>史敬镕，太原人。事武皇为帐中纲纪，甚亲任之。庄宗初嗣晋王位，李克宁阴构异图，将害庄宗，事发有日矣，克宁密引敬镕，以邪谋谕之。既而敬镕白，贞简太后惶骇，召张承业、李存璋等图之。克宁等伏诛，以功累历郡。同光初，为华州节度使，移镇安州。天成中，入为金吾上将军。期年，复授邓州，至镇数月卒。赠太尉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十章-列传六-原文.html'>第三十章-列传六</a></p><p class='next'>下一节：<a href='第三十二章-列传八-原文.html'>第三十二章-列传八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十章-列传六-原文.html'>第三十章-列传六</a></p><p class='next'>下一节：<a href='第三十二章-列传八-原文.html'>第三十二章-列传八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

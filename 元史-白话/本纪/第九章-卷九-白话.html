@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>元史-本纪<a href='../元史.html#元史'>：目录</a></p>
@@ -179,5 +206,18 @@
 </p><p>十一月初三，枢密院大臣上奏说：“宋朝文天祥和他的部下赵孟氵营共同起兵，行中书省派兵进攻他们，杀死了赵孟氵营，文天祥仅仅只身脱逃。”皇上下诏把他的妻儿送到京师，右副都元帅张德润上奏涪州之战的功劳，赐给他钱钞一千锭。初十，凡是伪造钱钞的以及串通一气的，均处以死刑；分用伪钞的，减去死罪，处以杖刑，具文为法令。十五日，命令中书省发布文告晓谕朝内外，江南既然已经平定，宋朝应该称为“亡宋”，“亡宋”的朝廷所在地应当称为杭州。任命吏部尚书别都鲁丁为参知政事。
 </p><p>十二月初二，设置中滦、唐村、淇门的驿站。十三日，因为大都物价飞涨，发放官仓的粮食一万石，以赈济贫苦百姓。十六日，梁山军的袁世安献出他的城池，带着金石城的军民前来归降。十八日，潭州行中书省恢复祁阳县。把贼首罗飞处斩，余党全部被平定。二十一日，都元帅杨文安攻占咸淳府。把至元十五年的历书赐给高丽国。任命参议中书省事务的耿仁为参知政事。冠州及永年县发生大水，免征今年的田租。疏导任河，恢复民田三千多顷，按照每年的常例赏赐诸侯王黄金、白银、钱钞、绢帛等物。赐给诸侯王也不干、燕帖木儿等五百二十九人羊马钱———钞币八千四百五十二锭。因拜答儿等一千三百五十五人的战功，赏赐黄金一百两、白银一万五千一百两，钱钞一百三十锭，以及纳失失、彩色和素色的绢帛、貂裘、鼠裘、豹裘、衣帽等，数额各不相同。
 </p><p>这一年，赈济东平、济南等郡的饥民大米二万一千六百一十七石、小米二万八千六百一十三石、钱钞一万零一百一十二锭。全年被判处死刑的罪犯三十二人。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八-白话.html'>第八章-卷八</a></p><p class='next'>下一节：<a href='第十章-卷十-白话.html'>第十章-卷十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八-白话.html'>第八章-卷八</a></p><p class='next'>下一节：<a href='第十章-卷十-白话.html'>第十章-卷十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

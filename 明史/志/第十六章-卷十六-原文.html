@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-志<a href='../明史.html#志'>：目录</a></p>
@@ -472,5 +499,18 @@
 </p><p>含山(州西。洪武初省，十三年十一月复置。南有白石山，白石水出焉。西南有濡须山，与无为州界。西对巢县之七宝山，濡须水出其间，即东关口也。又南有三义河，东合裕溪入江。)
 </p><p>广德州(元广德路，属江浙行省。)太祖丙申年六月曰广兴府。洪武四年九月曰广德州。十三年四月以州治广德县省入，直隶京师。(西有横山。南有灵山。西北有桐川，汇丹阳湖入江，亦名白石水。南有广安、西南有陈阳、北有杭村三巡检司。又东南有苦岭关，路通浙江安吉州。又有四安镇。)领县一。北距南京五百里。洪武二十六年编户四万四千二百六十七，口二十四万七千九百七十九。弘治四年，户四万五千四十三，口一十二万七千七百九十五。万历六年，户四万五千二百九十六，口二十二万一千五十三。
 </p><p>建平(州西北。西南有桐川，又有南碕湖，亦谓之南湖，与宣城县界，流入丹阳湖。北有梅渚、南有陈村二巡检司。)</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p><p class='next'>下一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p><p class='next'>下一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

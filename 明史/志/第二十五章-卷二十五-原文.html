@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-志<a href='../明史.html#志'>：目录</a></p>
@@ -203,5 +230,18 @@
 </p><p>城隍
 </p><p>洪武二年，礼官言：“城隍之祀，莫详其始。先儒谓既有社，不应复有城隍。故唐李阳冰《缙云城隍记》谓‘祀殿无之，惟吴越有之。’然成都城隍祠，李德裕所建，张说有祭城隍之文，杜牧有祭黄州城隍文，则不独吴越为然。又芜湖城隍庙建于吴赤乌二年，高齐慕容俨、梁武陵王祀城隍，皆书于史，又不独唐而已。宋以来其祠遍天下，或锡庙额，或颁封爵，至或迁就傅会，各指一人以为神之姓名。按张九龄《祭洪州城隍文》曰：‘城隍是保，氓庶是依。’则前代崇祀之意有在也。今宜附祭于岳渎诸神之坛。”乃命加以封爵。京都为承天鉴国司民升福明灵王，开封、临濠、太平、和州、滁州皆封为王。其馀府为鉴察司民城隍威灵公，秩正二品。州为鉴察司民城隍灵佑侯，秩三品。县为鉴察司民城隍显佑伯，秩四品。衮章冕旒俱有差。命词臣撰制文以颁之。
 </p><p>三年，诏去封号，止称其府州县城隍之神。又令各庙屏去他神。定庙制，高广视官署厅堂。造木为主，毁塑像舁置水中，取其泥涂壁，绘以云山。六年，制中都城隍神主成，遣官赍香币奉安。京师城隍既附飨山川坛，又于二十一年改建庙。寻以从祀大礼殿，罢山川坛春祭。永乐中，建庙都城之西，曰大威灵祠。嘉靖九年，罢山川坛从祀，岁以仲秋祭旗纛日，并祭都城隍之神。凡圣诞节及五月十一日神诞，皆遣太常寺堂上官行礼。国有大灾则告庙。在王国者王亲祭之，在各府州县者守令主之。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十四章-卷二十四-原文.html'>第二十四章-卷二十四</a></p><p class='next'>下一节：<a href='第二十六章-卷二十六-原文.html'>第二十六章-卷二十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十四章-卷二十四-原文.html'>第二十四章-卷二十四</a></p><p class='next'>下一节：<a href='第二十六章-卷二十六-原文.html'>第二十六章-卷二十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

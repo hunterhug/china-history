@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#金史'>：目录</a></p>
@@ -165,5 +192,18 @@
 </p><p>第二天，崔立发动兵变。四喜、术甲塔失不，连同塔失不的父亲咬住、四喜的妻子完颜氏，带着九十七个忠孝骑兵从曹门夺路而出，打算到归德去，但没冲出去，又转而到陈州门，也被守门兵士挡住。守门将帅裕州防御使阿不罕斜合已经逃走，经历官完颜合住暂且担当门帅之职。他指挥守门兵士把塔失不等人放出城去，并且说：“罪责在我，不是你们的过错。”次日，崔立派骑兵数十名来召见合住，合住料想自己必死无疑，便换了衣帽前往。崔立的侍从举刀就要杀他，崔立远远地看见了就问“：你是那个把忠孝军放出城门的人吗？”合住说“：是的。天子的使者有令，我确实把人放走了，罪过在我。”崔立忽然间仿佛有所省悟，看着众兵士说：“这位官人我认识，从前修筑内城的时候他曾和我共过事。我部下十几个兵士偷盗官府的木材，应当治死罪，而这位官人却并不追究，只是责罚了几十军棍而已。他能杀人，也能救人。”于是崔立和颜悦色地对合住说道“：既然人已经放走，我就不治你的罪了。”
 </p><p>四喜等人来到归德，皇上吃惊地问两宫太后怎样了，二人奏明由于京城发生兵变，来不及进宫去。皇上怒道：“唯独你父亲和你妻子倒逃出来了。”随后把他们打下监狱，全部押在街中斩首。
 </p><p>著者评论：四喜奉旨来迎接两宫皇太后，却正遇上崔立兵变，聪明人在这时应该和两宫太后一起周旋于两方军队之间，以等待事情平静的时候再慢慢图谋对策。万一不行，便以死殉职，而别无其他计策。四喜只把他的私人亲眷带了回来，而希望皇帝饶他一死，这难道不是太愚蠢了吗？</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十七章-卷五十七-白话.html'>第五十七章-卷五十七</a></p><p class='next'>下一节：<a href='第五十九章-卷五十九-白话.html'>第五十九章-卷五十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五十七章-卷五十七-白话.html'>第五十七章-卷五十七</a></p><p class='next'>下一节：<a href='第五十九章-卷五十九-白话.html'>第五十九章-卷五十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

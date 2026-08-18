@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -221,5 +248,18 @@
 </p><p>初，由榔之走缅甸也，昆明诸生薛大观叹息曰：“不能背城战，君臣同死社稷，顾欲走蛮邦以苟活，不重可羞耶！”顾子之翰曰：“吾不惜七尺躯，为天下明大义，汝其勉之！”之翰曰：“大人死忠，儿当死孝。”大观曰：“汝有母在。”时其母适在旁，顾之翰妻曰：“彼父子能死忠孝，吾两人独不能死节义耶？”其侍女方抱幼子，问曰：“主人皆死，何以处我？”大观曰：“尔能死，甚善。”于是五人偕赴城北黑龙潭死。次日，诸尸相牵浮水上，幼子在侍女怀中，两手坚抱如故。大观次女已适人，避兵山中，相去数十里，亦同日赴火死。
 </p><p>有那嵩者，沅江土官也。世为知府。嵩嗣职，循法无过。王走缅甸，过沅江，嵩与子焘迎谒，供奉甚谨，设宴皆金银器。宴毕，悉以献，曰：“此行上供者少，聊以佐缺乏耳。”后李定国号召诸土司兵，嵩即起兵应之。已而城破，登楼自焚，阖家皆死，其士民亦多巷战死。
 </p><p>赞曰：明自神宗而后，浸微浸灭，不可复振。揆厥所由，国是纷呶，朝端水火，宁坐视社稷之沦胥，而不能破除门户之角立。故至桂林播越，旦夕不支，而吴、楚之树党相倾，犹仍南都翻案之故态也。颠覆之端，有自来矣，于当时任事诸臣何责哉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百六十六章-卷一百六十六-原文.html'>第一百六十六章-卷一百六十六</a></p><p class='next'>下一节：<a href='第一百六十八章-卷一百六十八-原文.html'>第一百六十八章-卷一百六十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百六十六章-卷一百六十六-原文.html'>第一百六十六章-卷一百六十六</a></p><p class='next'>下一节：<a href='第一百六十八章-卷一百六十八-原文.html'>第一百六十八章-卷一百六十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

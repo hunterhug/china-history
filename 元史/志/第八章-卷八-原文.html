@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>元史-志<a href='../元史.html#志'>：目录</a></p>
@@ -357,5 +384,18 @@
 </p><p>各置其星定见定伏泛积日及分秒，晨加夕减九十一日三十一分六秒，如在半岁周已下，自相乘，已上，反减岁周，余亦自相乘，满七十五，除之为分，满百为度，不满，退除为秒；以其星见伏度乘之，一十五除之；所得，以其段行差除之，为日，不满，退除为分秒；见加伏减泛积，为其星定见伏定积日及分秒；加命如前，即得定见定伏日辰及分秒。
 </p><p>求金水二星定见伏定积日
 </p><p>各以伏见日行差，除其段初日太阳盈缩积，为日，不满，退除为分秒；若夕见晨伏，盈加缩减；如晨见夕伏，盈减缩加；以加减其星定见定伏泛积日及分秒，为常积。如在半岁周已下，为冬至后；已上，去之，余为夏至后。各在九十一日三十一分六秒已下，自相乘，已上，反减半岁周，亦自相乘。冬至后晨，夏至后夕，一十八而一，为分；冬至后夕，夏至后晨，七十五而一，为分；又以其星见伏度乘之，一十五除之；所得，满行差，除之，为日，不满，退除为分秒，加减常积，为定积。在晨见夕伏者，冬至后加之，夏至后减之；夕见晨伏者，冬至后减之，夏至后加之；为其星定见定伏定积日及分秒；加命如前，即得定见定伏日晨及分秒。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

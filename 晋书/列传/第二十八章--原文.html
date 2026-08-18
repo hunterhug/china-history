@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -186,5 +213,18 @@
 </p><p>初，陶侃微时，丁艰，将葬，家中忽失牛而不知所在。遇一老父，谓曰：“前岗见一牛眠山污中，其地若葬，位极人臣矣。”又指一山云：“此亦其次，当世出二千石。”言讫不见。侃寻牛得之，因葬其处，以所指别山与访。访父死，葬焉，果为刺史，著称宁、益，自访以下，三世为益州四十一年，如其所言云。
 </p><p>史臣曰：夫仁义岂有常，蹈之即君子，背之即小人。周子隐以跅弛之材，负不羁之行，比凶蛟猛兽，纵毒乡闾，终能克己厉精，朝闻夕改，轻生重义，徇国亡躯，可谓志节之士也。宣佩奋兹忠勇，屡殄妖氛，威略冠于本朝，庸绩书于王府。既而结憾朝宰，潜构异图，忿不思难，斯为隘矣。终于愤恚，岂不惜哉！札、筵等负俊逸之材，以雄豪自许，始见疑于朝廷，终获戾于权右，强弗如弱，信有征矣。而札受委扞城，乃开门揖盗，去顺效逆，彼实有之。后虽假手凶徒，可谓罪人斯得。朝廷议加荣赠，不其僭乎！有晋之刑政陵夷，用此道也。周访器兼文武，任在折冲，戡定湘、罗，克清江、汉，谋孙翼子，杖节拥旄，西蜀仰其威风，中兴推为名将，功成名立，不亦美乎！孟威陷迹虏廷，抗辞伪主，虽图史所载，何以加焉！
 </p><p>赞曰：平西果劲，始邪末正。勇足除残，忠能致命。宣佩懋功，三定江东。札虽启敌，筵实怀忠。寻阳纬武，拥旄持斧。曰子曰孙，重规叠矩。孟威抗烈，心存旧主。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十七章--原文.html'>第二十七章-</a></p><p class='next'>下一节：<a href='第二十九章--原文.html'>第二十九章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十七章--原文.html'>第二十七章-</a></p><p class='next'>下一节：<a href='第二十九章--原文.html'>第二十九章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

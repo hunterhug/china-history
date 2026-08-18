@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>梁书-白话版梁书<a href='../梁书.html#梁书'>：目录</a></p>
@@ -181,5 +208,18 @@
 </p><p>太宗聪明睿智超过常人，神采奕奕，见闻广博通达，词藻丰富。然而文风华艳，可用者少，文章华而不实，文体穷尽淫靡华丽之能事，文义罕有畅通之处，哀损思念的靡靡之音，于是变移了风俗，用这种做法正万国，与周诵、漠庄相比是不同的了。我生不逢时，遭遇许多灾难，凶暴叛逆的人捏造罪名煽动作乱，巨恶狡猾的人罪恶滔天，灾难始于牖里那样的拘禁，结局类似望夷的灾祸。悠悠苍天，这难道还可以去问吗!
 </p><p>从前国家刚刚举步艰难。兵燹集中在京城，各位诸侯王放弃自己的职位，挥袖而起前来勤王。元帝以磐石般不可否定的宗亲，接受分管陕的重任，遭遇君亲的灾难，位居联合统率之长，不能抚剑思战卧薪尝胆，枕戈待旦泪尽泣血，身先士卒，拼命前驱；反而拥众白保逡巡不前，内怀怨恨，坐观时变，以此为自身幸事。不急着诛杀王莽、董卓一样的贼人，却先行兄弟之间的杀戮。又性格非常爱猜忌酷虐，多做无礼之事。尽情施展他的智慧和辩才来文遇饰非，放任他的怨恨凶暴来损害事物。他的得力助手重要将领，心腹谋臣，有的因看一下就被拘囚，有的因一句话而遭到被剁成肉酱的酷刑，朝中君子，相顾都很害怕。自认为安定如泰山，举动没有遗留策略，警惕邪说，就可安定荆楚。虽然首恶被打败剪除，但是社稷没有安宁，而且西边的邻国有责难的言辞，灾祸和失败随即来到。上天降下明鉴，这是假手于人，天道人事，难道是可以欺骗的吗!元帝很有志于艺文，但采写轻浮淫靡的言辞而抛弃忠贞信誉；在战争中表明他果敢坚毅，但是他先杀亲骨肉而后杀贼寇和仇敌。虽然他口能背《六经》，心能通百姓，有仲尼的学识，有全担的才能，但这恰好足以增加他的骄横傲慢，增多他的祸患，对金陵的覆没有何补益，对江陵的灭亡有何挽救呢!
 </p><p>敬帝遭遇家室无成，继此艰难的国运，征伐有的是出自自己的心意，政令刑令却不能由着自己，当时没有伊、霍这样的辅佐大臣，敬帝哪能不做出高让的举动呢？</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷五-白话.html'>卷五</a></p><p class='next'>下一节：<a href='武帝本纪-白话.html'>武帝本纪</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='卷五-白话.html'>卷五</a></p><p class='next'>下一节：<a href='武帝本纪-白话.html'>武帝本纪</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-志<a href='../辽史.html#志'>：目录</a></p>
@@ -153,5 +180,18 @@
 </p><p>○闰考
 </p><p>月度不足，是生朔虚；天行有余，是为气盈。盈虚相悬，岁月乃牉，积牉而差，寒暑互易，百谷不成，庶政不明。圣人验以斗柄，准以岁星，爰立闰法，信治百官。是故闰正而月正，月正而岁正。岁月即正，颁令考绩，无有不时。国史正岁年以叙事，莫重于此。辽始征历梁、唐。入晋之后，奄有帝制，《乙未》、《大明》，历法再变。穆宗应历六年，周用显德《钦天历》；十年，宋用建隆《应天历》。景宗乾亨四年，宋用《乾元历》。圣宗统和十九年，宋用《仪天历》；太平元年，宋用《崇天历》。道宗清宁十年，宋用《明天历》；大康元年，宋用《奉元历》；大安七年，宋用《观天历》。天祚皇帝乾统六年，宋用《纪元历》。五代历三变，宋凡八变，辽终始再变。历法不齐，故定朔置闰，时有不同，览者惑焉。作《闰考》。
 </p><p>(表略)</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p><p class='next'>下一节：<a href='第十四章-卷十四-原文.html'>第十四章-卷十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p><p class='next'>下一节：<a href='第十四章-卷十四-原文.html'>第十四章-卷十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

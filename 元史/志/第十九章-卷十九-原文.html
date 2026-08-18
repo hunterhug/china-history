@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>元史-志<a href='../元史.html#志'>：目录</a></p>
@@ -189,5 +216,18 @@
 </p><p>至正二年正月，中书参议孛罗帖木儿、都水傅佐建言，起自通州南高丽庄，直至西山石峡铁板开水古金口一百二十余里，创开新河一道，深五丈，广二十丈，放西山金口水东流至高丽庄，合御河，接引海运至大都城内输纳。是时，脱脱为中书右丞相，以其言奏而行之。廷臣多言其不可，而左丞许有壬言尤力，脱脱排群议不纳，务于必行。有壬因条陈其利害，略曰：
 </p><p>大德二年，浑河水发为民害，大都路都水监将金口下闭闸板。五年间，浑河水势浩大，郭太史恐冲没田薛二村、南北二城，又将金口已上河身，用砂石杂土尽行堵闭。至顺元年，因行都水监郭道寿言，金口引水过京城至通州，其利无穷，工部官并河道提举司、大都路及合属官员耆老等相视议拟，水由二城中间窒碍。又卢沟河自桥至合流处，自来未尝有渔舟上下，此乃不可行船之明验也。且通州去京城四十里，卢沟止二十里，此时若可行船，当时何不于卢沟立马头，百事近便，却于四十里外通州为之？又西山水势高峻，亡金时，在都城之北流入郊野，纵有冲决，为害亦轻。今则在都城西南，与昔不同。此水性本湍急，若加以夏秋霖潦涨溢，则不敢必其无虞，宗庙社稷之所在，岂容侥幸于万一？若一时成功，亦不能保其永无冲决之患。且亡金时此河未必通行，今所有河道遗迹，安知非作而复辍之地乎？又地形高下不同，若不作闸，必致走水浅涩，若作闸以节之，则沙泥浑浊，必致淤塞，每年每月专人挑洗，盖无穷尽之时也。且郭太史初作通惠河时，何不用此水，而远取白浮之水，引入都城，以供闸坝之用？盖白浮之水澄清，而此水浑浊不可用也。此议方兴，传闻于外，万口一辞，以为不可。若以为成大功者不谋于众，人言不足听，则是商鞅、王安石之法，当今不宜有此。
 </p><p>议既上，丞相终不从，遂以正月兴工，至四月功毕。起闸放金口水，流湍势急，沙泥壅塞，船不可行，而开挑之际，毁民庐舍坟茔，夫丁死伤甚众，又费用不赀，卒以无功。继而御史纠劾建言者，孛罗帖木儿、傅佐俱伏诛。今附载其事于此，用为妄言水利者之戒。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p><p class='next'>下一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p><p class='next'>下一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

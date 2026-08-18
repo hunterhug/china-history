@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -210,5 +237,18 @@
 </p><p>杨嗣昌疏请抚流寇，有“乐天者保天下”及“善战服上刑”语。锡畴抗言此诸侯交邻事，称引不伦，与嗣昌大忤。嗣昌秉政，诸词臣多攻之，嗣昌颇疑锡畴。会驸马都尉王昺有罪，锡畴拟轻典，嗣昌构之，遂削其籍。十五年，廷臣交荐，召还。御史曹溶、给事中黄云师复言其不当用。帝不听，起为南京礼部左侍郎。
 </p><p>福王立，进本部尚书。时尊福恭王为恭皇帝，将议庙祀，锡畴请别立专庙。俄请补建文帝庙谥、景皇帝庙号及建文朝忠臣赠谥，并从之。东平伯刘泽清言：“宋高宗即位南京，即以靖康二年五月为建炎元年，从民望也。乞以今岁五月为弘光元年。”锡畴言明诏已颁，不可追改，乃已。时定大行皇帝庙号为思宗，忻城伯赵之龙言“思”非美称，援证甚核，锡畴亦以为然，疏请改定。大学士高弘图以前议自己出，力持之，遂寝。温体仁之卒也，特谥文忠，而文震孟、罗喻义、姚希孟、吕维祺皆不获谥。锡畴言：“体仁得君，行政最专且久，其负先帝，罪大且深，乞将文忠之谥，或削或改，而补震孟诸臣，庶天下有所劝惩。”报可。遂谥诸人，削体仁谥。吏部尚书张慎言去位，代者徐石麒未至，命锡畴摄之。时马士英当国，锡畴雅不与合。给事中章正宸、熊汝霖劾之，遂乞祭南海去。明年春，御史张孙振力颂体仁功，请复故谥。遂勒锡畴致仕。南都失守，锡畴乡邑亦破。时方遭父丧，间关赴闽。唐王命以故官，力辞不拜，寓居温州江心寺。总兵贺君尧挞辱诸生，锡畴将论劾。君尧夜使人杀之，投尸于江。温人觅之三日，乃得棺殓。
 </p><p>赞曰：吴山等雍容馆阁，扬历台省，固所谓词苑之鸿儒，庙堂之岿望也。要其守正自立，不激不争，淳静敦雅，承平士大夫之风流，概可想见矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百零三章-卷一百零三-原文.html'>第一百零三章-卷一百零三</a></p><p class='next'>下一节：<a href='第一百零五章-卷一百零五-原文.html'>第一百零五章-卷一百零五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百零三章-卷一百零三-原文.html'>第一百零三章-卷一百零三</a></p><p class='next'>下一节：<a href='第一百零五章-卷一百零五-原文.html'>第一百零五章-卷一百零五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

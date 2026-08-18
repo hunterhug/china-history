@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>北史-白话版北史<a href='../北史.html#北史'>：目录</a></p>
@@ -236,5 +263,18 @@
 </p><p>四月，宇文泰北巡。七月，渡北河。魏恭帝封宇文泰儿子宇文直为秦郡公，宇文招为正平公。
 </p><p>九月，宇文泰有病，回兵至云阳，命令中山公宇文护受遗命辅助嗣子。十月初四，宇文泰死于云阳宫，送回长安发丧，享年五十。十二月十四日，葬于成陵，谥号“文公”。当孝闵帝受禅继皇帝位后，追尊号为文王，建庙号称太祖。武成元年(559)，追尊号为文皇帝。
 </p><p>周文帝宇文泰知人善任，从谏如流，崇尚儒术，善于处理政事，他的恩德和信誉都为众人所深知。他能够驾驭英雄豪杰，凡是见到他的人，都愿意为他效命。沙苑之战时所俘虏的敌军，他释放后加以重用，在河桥之战中，把他们作为战士，他们都死力作战。众将出征时，他都教给作战方略，无不克敌制胜。他生性朴素，不喜欢虚假浮夸，常常以反对当时习俗提倡复古作为自己的初衷。</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷八-白话.html'>卷八</a></p><p class='next'>下一节：<a href='卷十-白话.html'>卷十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='卷八-白话.html'>卷八</a></p><p class='next'>下一节：<a href='卷十-白话.html'>卷十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

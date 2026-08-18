@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-列传<a href='../新五代史.html#新五代史'>：目录</a></p>
@@ -166,5 +193,18 @@
 </p><p>次日，从荣派马处钧对冯斌贝说：“我今天到兴圣宫居住。”又告诉义诚，义诚答应了。斌贝即跑到宫里，见义诚及弘昭、汉琼等人坐在中兴殿商议，斌贝责备义诚说“：皇帝养活我们为的是今天用我们，现在安危的关头已到了一触即发的程度，你为啥因儿子的原因就抱着观望的态度，假若秦王进了这个门，皇帝到哪里去呢？我们还能不灭族吗？”汉琼说“：贱命不足惜，我自己率兵抵抗。”立即进见明宗说：“从荣造反，兵已攻端门。”宫中一片哭声。明宗问弘昭等人说“：有这种事吗？”回答说“：有。”明宗用手指着天哭了，过了一会儿说：“义诚自己处理，不要震动京城。”潞王的儿子重吉在旁边，明宗说“：我和你父亲出身穷人家，夺天下时多次在危困中救我。从荣出了啥力，却做这种可恶事！你快点率兵把守宫门。”重吉立即派控鹤兵守住宫门。
 </p><p>当日，从荣从河南府率兵千人出来。从荣僚属很多，然而正直的大臣他都厌恶，他最厌恶的是刘赞、王居敏，最亲近的是刘陟、高辇。从荣率兵出来与陟、辇并马低声说话，走到天津桥南，指着太阳对辇说：“明天这时，杀王居敏了！”把军队摆在桥北，自己下马坐在胡床之上，派人召康义诚。这时宫门已经关闭，叩左掖门，也关闭了，从门缝中看到捧圣指挥使朱弘实率骑兵从北来，立即飞马报告从荣。从荣吃惊害怕，拿来铁弓，自己调好弓箭。皇城使安从益率三百骑兵冲到，从荣兵射箭，从益稍退。弘实五百骑兵从左掖门出来，刚渡河，后军来的很多，从荣才退回河南府，判官任赞等人都走出定鼎门，牙兵在嘉善坊抢劫后溃散。从荣夫妻藏在床下，被从益捉住杀了。
 </p><p>明宗听说从荣已经死了，悲哀哭泣得几乎跌落床下，几次昏倒。冯道率百官进见，明宗说：“我家闹成这个样子，无面目见大臣们！”君臣互相看着，哭得衣襟都湿了。从荣两个儿子还小，都被杀了。过了六天，明宗也死了。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二章-唐家人传第二-白话.html'>第二章-唐家人传第二</a></p><p class='next'>下一节：<a href='第四章-唐废帝家人传第四-白话.html'>第四章-唐废帝家人传第四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二章-唐家人传第二-白话.html'>第二章-唐家人传第二</a></p><p class='next'>下一节：<a href='第四章-唐废帝家人传第四-白话.html'>第四章-唐废帝家人传第四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

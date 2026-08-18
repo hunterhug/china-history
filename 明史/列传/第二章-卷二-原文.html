@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -194,5 +221,18 @@
 </p><p>有宫人魏氏者，当贼入宫，大呼曰：“我辈必遭贼污，有志者早为计。”遂跃入御河死，顷间从死者一二百人。宫人费氏，年十六，自投眢井中。贼钩出，见其姿容，争夺之。费氏绐曰：“我长公主也。”群贼不敢逼，拥见李自成。自成命中官审视之，非是，以赏部校罗某者。费氏复绐罗曰：“我实天潢，义难苟合，将军宜择吉成礼。”罗喜，置酒极欢。费氏怀利刃，俟罗醉，断其喉立死。因自诧曰：“我一弱女子，杀一贼帅足矣。”遂自刎死。自成闻大惊，令收葬之。
 </p><p>恭淑贵妃田氏，陕西人，后家扬州。父弘遇以女贵，官左都督，好佚游，为轻侠。妃生而纤妍，性寡言，多才艺，侍庄烈帝于信邸。崇祯元年封礼妃，进皇贵妃。宫中有夹道，暑月驾行幸，御盖行日中。妃命作籧篨覆之，从者皆得休息。又易小黄门之舁舆者以宫婢。帝闻，以为知礼。尝有过，谪别宫省愆。所生皇五子，薨于别宫，妃遂病。十五年七月薨。谥恭淑端惠静怀皇贵妃，葬昌平天寿山，即思陵也。
 </p><p>赞曰：高皇后从太祖备历艰难，赞成大业，母仪天下，慈德昭彰。继以文皇后仁孝宽和，化行宫壸，后世承其遗范，内治肃雍。论者称有明家法，远过汉、唐，信不诬矣。万、郑两贵妃，亦非有阴鸷之谋、干政夺嫡之事，徒以恃宠溺爱，遂滋谤讪。《易》曰：“闲有家，悔亡。”苟越其闲，悔将无及。圣人之垂戒远矣哉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-卷一-原文.html'>第一章-卷一</a></p><p class='next'>下一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-卷一-原文.html'>第一章-卷一</a></p><p class='next'>下一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

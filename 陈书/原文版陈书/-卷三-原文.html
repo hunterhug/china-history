@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>陈书-原文版陈书<a href='../陈书.html#原文版陈书'>：目录</a></p>
@@ -161,5 +188,18 @@
 </p><p>天康元年春二月丙子，诏曰：“朕以寡德，纂承洪绪，日昃劬劳，思弘景业，而政道多昧，黎庶未康，兼疹患淹时，亢阳累月，百姓何咎，实由朕躬，念兹在兹，痛如疾首。可大赦天下，改天嘉七年为天康元年。三月己卯，以骠骑将军、开府仪同三司、扬州刺史、司空安成王顼为尚书令。夏四月乙卯，皇孙至泽生，在位文武赐绢帛各有差，为父后者赐爵一级。癸酉，世祖疾甚。是日，崩于有觉殿。遗诏曰：“朕疾苦弥留，遂至不救，修短有命，夫复何言。但王业艰难，频岁军旅，生民多弊，无忘愧惕。今方隅乃定，俗教未弘，便及大渐，以为遗恨。社稷任重，太子可即君临，王侯将相，善相辅翊，内外协和，勿违朕意！山陵务存俭速。大敛竟，群臣三日一临，公除之制，率依旧典。”六月甲子，群臣上谥曰文皇帝，庙号世祖。丙寅，葬永宁陵。
 </p><p>世祖起自艰难，知百姓疾苦。国家资用，务从俭约。常所调敛，事不获已者，必咨嗟改色，若在诸身。主者奏决，妙识真伪，下不容奸，人知自励矣。一夜内刺闺取外事分判者，前后相续。每鸡人伺漏，传更签于殿中，乃敕送者必投签于阶石之上，令枪然有声，云“吾虽眠，亦令惊觉也”。始终梗概，若此者多焉。
 </p><p>陈吏部尚书姚察曰：世称继体守文，宗枝承统，得失之间，盖亦祥矣。大抵以奉而勿坠为贤能，挠而易之为不肖；其有光扬前轨，克荷曾构，固以少焉。世祖自初发迹，功庸显著，宁乱静寇，首佐大业。及国祸奄臻，入承宝祚，兢兢业业，其若驭朽，加以崇尚儒术，爱悦文义，见善如弗及，用人如由己，恭俭以御身，勤劳以济物，自昔允文允武之君，东征西怨之后，宾实之迹，可为联类。至于杖聪明，用鉴识，斯则永平之政，前史其论诸。</p>
-<div class='pn'><p class='pre'>上一节：<a href='-卷二-原文.html'>-卷二</a></p><p class='next'>下一节：<a href='-卷四-原文.html'>-卷四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='-卷二-原文.html'>-卷二</a></p><p class='next'>下一节：<a href='-卷四-原文.html'>-卷四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

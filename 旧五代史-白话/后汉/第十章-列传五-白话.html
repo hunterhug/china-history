@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后汉<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -161,5 +188,18 @@
 </p><p>苏逢吉性爱奢侈挥霍，喜欢华丽的衣服，精美的食物，对中书省内集体的膳食，瞧不起而不吃，设立私人厨房供应膳食，尽力追求甘甜美味，曾经在家中大摆酒席女乐，以招待权贵，花费了一千多缗线。他的妻子武氏死了，送葬非常隆盛，朝廷百官及州镇首脑，有与苏逢吉合得来的，都要他们赠送绫罗绸缎，用作丧礼，败坏礼制违背法度，竟到了这种地步。又不遵守名分教规，继母死了不行服丧的礼节，妻子死了丧期未满，就把他儿子都授给官职。有一个旁支的哥哥从外地来，没有先见苏逢吉，就去见苏逢吉的几个儿子，苏逢吉生气，又怕他将来欺负自己的儿子，就偷偷告诉高祖，用其他的事诬告他，于是高祖派人用乱棍打死了他。
 </p><p>乾佑二年(949)秋天，加封为守司空。周太祖郭威镇守邺都时，苏逢吉奏请汉隐帝免去郭威枢密使的职务，隐帝问他“：有前例吗？”苏逢吉回答说“：枢密使这一职，由正任州镇职务的人兼任不方便。”史弘肇说：“兼任枢密使，所希望的是使军队听从指挥有所敬畏。”最后隐帝听从了史弘肇的话。史弘肇责备苏逢吉排除异己，苏逢吉却说：“这是为了国家大事，再说在朝廷管理地方则顺当，在地方管理朝廷事务难道方便吗！”苏逢吉要做的事虽然没被听从，但是舆论都认为他不对。不多久，王章设宴招待同僚，苏逢吉与史弘肇开玩笑，被史弘肇大加羞辱，苏逢吉不与他对言，几乎要被史弘肇殴打，苏逢吉骑上马赶快跑回来，从此将相之间失去了和谐。苏逢吉想到地方上去任职，以避开史弘肇的怒气，不久又放弃这一想法。人们问他原因，苏逢吉说“：如果统领一方州镇，只要史公稍加处置，我就成为粉末了。”
 </p><p>李业一帮人恨史弘肇、杨..等人，苏逢吉知悉这一情况，每当见到李业等人时，就用不显露的话语激怒他们。到史弘肇等人被害时，苏逢吉没有参预他们的谋划，听到事变感到惊骇，旋即接任宣徽使，临时掌管枢密院事务。不久又受命起草诏令，诏令上交朝廷，听到邺兵已到澶州才停止。事情紧急，苏逢吉对人说“：萧墙之内的变乱，太突然了，皇上若能问我一句话，一定不会乱到这个地步。”几天夜晚苏逢吉都住在金祥殿东边，对天官正王处讷说：“夜里靠上枕头没有入睡，就看见李崧在旁边，活人跟死人见面，没好事了。”到周太祖郭威从邺都到汴州，汉朝官军在刘子陂被打败，这天晚上苏逢吉住在七里郊，与同住的人痛饮，喝醉了准备自杀，旁边的人阻止了他。到天亮，与汉隐帝一同到民户家里，于是自杀了。周太祖平定京城，将苏逢吉与聂文进等人一同割下脑袋挂在北面街市上示众，放了他的家人。那悬挂头颅的地方，恰好就是李崧被冤死的地方。周太祖广顺初年，诏令在西京赐给苏逢吉的儿子们每人一所庄园和住宅。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章-列传四-白话.html'>第九章-列传四</a></p><p class='next'>下一节：<a href='第十一章-列传六-白话.html'>第十一章-列传六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九章-列传四-白话.html'>第九章-列传四</a></p><p class='next'>下一节：<a href='第十一章-列传六-白话.html'>第十一章-列传六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#列传'>：目录</a></p>
@@ -168,5 +195,18 @@
 </p><p>论曰：道宗知太子之贤，而不能辨乙辛之诈，竟绝父子之亲，为万世惜。乙辛知为一身之计，不知有君臣之义，岂复知有太子乎！奸邪之臣乱人家国如此，可不戒哉！可不戒哉！
 </p><p>晋王，小字敖卢斡，天祚皇帝长子，母曰文妃萧氏。甫髫龀，驰马善射。出为大丞相耶律隆运后，封晋王。性乐道人善，而矜人不能。时宫中见读书者辄斥，敖卢斡尝入寝殿，见小底茶剌阅书，因取观。会诸王至，阴袖而归之，曰：“勿令他人见也。”一时号称长者。及长，积有人望，内外归心。保大元年，南军都统耶律余睹与其母文妃密谋立之，事觉，余睹降金，文妃伏诛，敖卢斡实不与谋，免。二年，耶律撒八等复谋立，不克。上知敖卢斡得人心，不忍加诛，令缢杀之。或劝之亡，敖卢斡曰：“安忍为蕞尔之躯，而失臣子之大节！”遂就死。闻者伤之。
 </p><p>论曰：天祚不君，臣下谋立其子，适以杀之。敖卢斡重君父之命，不亡而死，申生其恭矣平！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-卷一-原文.html'>第一章-卷一</a></p><p class='next'>下一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-卷一-原文.html'>第一章-卷一</a></p><p class='next'>下一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-志<a href='../晋书.html#志'>：目录</a></p>
@@ -209,5 +236,18 @@
 </p><p>永和十一年，彭城国为李太妃求谥。博士曹耽之议：“夫妇行不必同，不得以夫谥谥妇。《春秋》妇人有谥甚多，经无讥文，知礼得谥也。”胡讷云：“礼，妇人生以夫爵，死以夫谥。《春秋》夫人有谥，不复依礼耳。安平献王李妃、琅邪武王诸葛妃，太傅东海王裴妃并无谥，今宜率旧典。”王彪之云：“妇人有谥，礼坏故耳。声子为谥，服虔诸儒以为非。杜预亦云‘礼，妇人无谥’。《春秋》无讥之文，所谓不待贬绝自明者也。近世惟后乃有谥耳。”
 </p><p>太尉荀顗上谥法云：“若赐谥而道远不及葬者，皆封策下属，遣所承长吏奉策即冢祭赐谥。”
 </p><p>太元十三年，召孔安国为侍中。安国表以黄门郎王愉名犯私讳，不得连署，求解。有司议云：“名终讳之，有心所同，闻名心瞿，亦明前诰。而《礼》复云‘君所无私讳，大夫之所有公讳’，无私讳。又云‘诗书不讳，临文不讳’。岂非公义夺私情，王制屈家礼哉！尚书安众男臣先表中兵曹郎王祐名犯父讳，求解职，明诏爰发，听许换曹，盖是恩出制外耳。而顷者互相瞻式，源流既启，莫知其极。夫皇朝礼大，百僚备职，编官列署，动相经涉。若以私讳，人遂其心，则移官易职，迁流莫已，既违典法，有亏政体。请一断之。”从之。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章--原文.html'>第九章-</a></p><p class='next'>下一节：<a href='第十一章--原文.html'>第十一章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九章--原文.html'>第九章-</a></p><p class='next'>下一节：<a href='第十一章--原文.html'>第十一章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

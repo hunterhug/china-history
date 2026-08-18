@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#后汉书'>：目录</a></p>
@@ -201,5 +228,18 @@
 </p><p>到王莽篡位作乱时，氏人也反叛。建武初年，氐人全部归顺陇和蜀。到隗嚣灭后，氐人的首领这才背叛公孙述投降汉朝。陇西太守马援上书恢复氐人的王侯首领，朝廷赐给他们印绶。后来隗嚣的同族人隗茂反叛，杀害了武都太守。氐人大首领齐钟留为部族裹的人尊敬信任，他的声威使许多首领信服，他同郡丞孔奋一道攻打隗茂，打败并杀死了隗茂。后来氐人也时常入侵，为郡县征讨击败。
 </p><p>论曰：刘漠征伐戎狄，对边远地区用兵，大致也同帝王的业绩一同终始。有时弄到边境失陷、军队覆灭将领大败的境地，但不出一年功夫，最终能够开拓四方夷人的土地，使习俗不同的种族归顺。至于文书和盟约所润泽到的，风化声威所影响到的地方，几乎扩及到了太阳升起到太阳落入的全部地区。典籍从山经、水志起，也都粗略地提及这方面的情况。四方夷人虽然归顺反叛反覆无常，朝廷的声威和恩泽经常中断，但衹要教化推行的地方，不论是垂耳雕足的部族，还是像野兽般生活像乌一样说话的种族，无一不是以整个种族部落归顺，请派官吏，并且渡过大海，翻越高山，通过辗转翻译要求归属中原。所以他们的名字在中郎将和校尉的官府中有记载，他们的人El数被都护府、部都尉府、太守府下面的功曹编入简册，人口经常用几百万计算。至于藏在深山、潜在海底的神物，埋在沙石裹面、栖息在陆地上的珍宝，无不呈现出奇异华丽，被装饰在宫廷帷幄中。并且责惊、火浣令、驯养的飞禽和高大的野兽之类的贡赋，聚集在朝廷府库；夷人的乐歌、巴渝的舞蹈这样的声响节奏完全不同的艺术，陈列在宫廷门外。难道柔服之道到此就一定完备了吗？然而也可以说招致远方的种族归顺了。蛮夷虽然靠着山岩溪谷生活，但大多有一定的居住地域，连通荆州、交州地区，分布守护在巴郡、庸的外面，没法算出他们的数量。但蛮夷凶猛狡诈，比起羌狄来要稍弱一些，所以他们侵掠残暴造成的危害，不可能深入。西南边境外的蛮夷尤其弱小。所以在永昌设关驻守，起始于防备远方的夷人，后来开拓土地，使百姓自立，到现在那裹就成了都市。
 </p><p>赞曰：各种蛮夷居住的地区很小，但遍布那四方边界。雕刻身体，身穿草衣，凭藉深险峻峭的高山生活。也有一些夷人，居住在蜀郡的边境地区。四散分布的部族村落，辗转投奔周岐那样的德义之道。前去教化一旦得到信任，夷人就改变衣襟送来珍宝，使得朝廷设立永昌郡，将蛮夷人与内地亿万人一同编入户册。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十三章-东夷列传-白话.html'>第八十三章-东夷列传</a></p><p class='next'>下一节：<a href='第八十五章-西羌传-白话.html'>第八十五章-西羌传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八十三章-东夷列传-白话.html'>第八十三章-东夷列传</a></p><p class='next'>下一节：<a href='第八十五章-西羌传-白话.html'>第八十五章-西羌传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后晋<a href='../旧五代史.html#后晋'>：目录</a></p>
@@ -173,5 +200,18 @@
 </p><p>秘琼，镇州平山人也。父遇，以善射历本军偏校，累官至庆州刺史。琼亦有勇。清泰中，董温琪为镇州节度使，擢琼为衙内指挥，倚以腹心。及温琪陷蕃，琼乃害温琪之家，载其尸，都以一坎瘗之。温琪在任贪暴，积镪巨万，琼悉辇之，以藏其家，遂自称留后。高祖即位，遣安重荣代之，授琼齐州防御使。时重荣与蕃帅赵思温同行，部曲甚众，琼不敢拒命，寻橐其奇货，由鄴中以赴任。先是，鄴帅范延光将谋叛，遣牙将范鄴持书构琼，琼领书不答。使者还，具达其事，延光深忿之。及闻琼过其境，密使精骑杀琼于夏津，以灭其口，一行金宝侍伎，皆为延光所有，由是延光异志益露焉。
 </p><p>李彦珣，邢州人也。少为郡之牙吏。唐天祐中，明宗镇其地，彦珣素无检节，因洽于左右，明宗即位，以为通事舍人。尝遣使东川，行至其境，其仆从为董璋所收，彦珣窜还，以失敬故也。朝廷攻璋，诏授行营步军都监。彦珣素不孝于父母，在乡绝其供馈，同列恶其鄙恶，旋出为外任。清泰中，迁河阳行军司马，遇张从宾为乱，因朋助之，从宾败，奔于魏州。范延光既叛，署为步军都监，委以守陴。招讨使杨光远以彦珣见用，欲挠延光而诱彦珣，乃遣人就邢台访得其母，令于城下以招之。彦珣识其母，发矢以毙之，见者伤之。及随延光出降，授坊州刺史。近臣以彦珣之恶逆奏于高祖，高祖曰：“赦命已行，不可改也。”遂令赴郡，后不知其所终焉。《欧阳史》云：彦珣后以坐赃诛。
 </p><p>史臣曰：昔从简从庄宗战于河上，可谓勇矣，及其为末帝守于孟津，岂得为忠乎？忠既无闻，勇何足贵！潘环、方太，虽咸负雄干，而俱殁乱世，盖方略不足以卫其身故也。何建举秦、陇之封，附巴、邛之俗，守方之寄，其若是乎！其余皆儋珪析爵之流也，亦可以垂名于是矣。秘琼既覆董氏之族，旋为鄴帅所屠，何报应之速也！惟彦珣忍射其亲，殆非人类，晋祖宥之不戮，盖失刑之甚也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十九章-列传八-原文.html'>第十九章-列传八</a></p><p class='next'>下一节：<a href='第二十一章-列传十-原文.html'>第二十一章-列传十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十九章-列传八-原文.html'>第十九章-列传八</a></p><p class='next'>下一节：<a href='第二十一章-列传十-原文.html'>第二十一章-列传十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

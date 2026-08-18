@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -211,5 +238,18 @@
 </p><p>多次迁官后任仪制郎中。沈王王呈尧由旁支长子嗣位，请求分封他的庶子为郡王，钟化民坚持认为不可以。皇上传下命令说：“只管给予虚名，命令藉此成婚。”钟化民上奏说：“沈王之子与嫡长子哪一个更亲？王子不立即分封，担心妨碍婚娶。嫡长子不立即立，不害怕妨碍礼教吗？”皇上震怒，以钟化民言辞率直没有追究。皇上命令同时分封三王，钟化民与顾允成等在朝房中当面责问王锡爵。不久，升光禄寺。
 </p><p>万历二十二年(1594)，河南发生大饥荒，人们相互吞食，皇上命令钟化民兼河南道御史前往赈恤。救荒之政均有振兴，老百姓大为高兴。钟化民既已完成任务，便把有关情况绘上图画进献给皇上。皇上予以嘉奖，一再下谕旨赞扬他。钟化民提升为太常少卿。二十四年钟化民以右佥都御史身份巡抚河南，讨平南阳的矿盗。夹河的强盗聚集在一起有数千人，钟化民又率兵大破他们。当时正值皇上派宦官开采矿产，钟化民上疏极力劝谏。
 </p><p>钟化民矮小精悍，多有智谋。居于官位勤勉政事，所到之处留有声名。走遍了八府，延请父老，询问疾苦。辛苦劳累死于任上。绅士、百姓相继到朝廷颂扬他。皇上下诏赠为右副都御史，赐给祠名为忠惠。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百一十四章-卷一百一十四-白话.html'>第一百一十四章-卷一百一十四</a></p><p class='next'>下一节：<a href='第一百一十六章-卷一百一十六-白话.html'>第一百一十六章-卷一百一十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百一十四章-卷一百一十四-白话.html'>第一百一十四章-卷一百一十四</a></p><p class='next'>下一节：<a href='第一百一十六章-卷一百一十六-白话.html'>第一百一十六章-卷一百一十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

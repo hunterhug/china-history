@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#列传'>：目录</a></p>
@@ -163,5 +190,18 @@
 </p><p>先是，重元将举兵，帐前雨赤如血，识者谓败亡之兆。子涅鲁古。
 </p><p>涅鲁古，小字耶鲁绾。性阴狠。兴宗一见，谓曰：“此子目有反相。”重熙十一年，封安定郡王。十七年，进王楚，为惕隐。清宁三年，出为武定军节度使。七年，知南院枢密使事，说其父重元诈病，俟车驾临问，因行弑逆。九年秋猎，帝用耶律良之计，遣人急召涅鲁古。涅鲁古以事泄，遽拥兵犯行宫。南院枢密使许王仁先等率宿卫士讨之。涅鲁古跃马突出，为近侍详稳渤海阿厮、护卫苏射杀之。
 </p><p>滑哥，字斯懒，隋国王释鲁之子。性阴险。初蒸其父妾，惧事彰，与克萧台哂等共害其父，归咎台哂，滑哥获免。太祖即位，务广恩施，虽知滑哥凶逆，姑示含忍，授以惕隐。六年，滑哥预诸弟之乱。事平，群臣议其罪，皆谓滑哥不可释，于是与其子痕只俱凌迟而死，敕军士恣取其产。帝曰：“滑哥不畏上天，反君弑父，其恶不可言。诸弟作乱，皆此人教之也。”</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十一章-卷四十一-原文.html'>第四十一章-卷四十一</a></p><p class='next'>下一节：<a href='第四十三章-卷四十三-原文.html'>第四十三章-卷四十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十一章-卷四十一-原文.html'>第四十一章-卷四十一</a></p><p class='next'>下一节：<a href='第四十三章-卷四十三-原文.html'>第四十三章-卷四十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-志<a href='../金史.html#志'>：目录</a></p>
@@ -161,5 +188,18 @@
 </p><p>泰和元年正月，尚书省奏，以见行铜杖式轻细，奸宄不畏，遂命有司量所犯用大杖，且禁不得过五分。
 </p><p>十二月，所修律成，凡十有二篇：一曰《名例》，二曰《卫禁》，三曰《职制》，四曰《户婚》五曰《厩库》，六曰《擅兴》，七曰《贼盗》，八曰《斗讼》，九曰《诈伪》，十曰《杂律》，十一曰《捕亡》，十二曰《断狱》。实《唐律》也，但加赎铜皆倍之，增徒至四年、五年为七，削不宜于时者四十七条，增时用之制百四十九条，因而略有所损益者二百八十有二条，余百二十六条皆从其旧。又加以分其一为二、分其一为四者六条，凡五百六十三条，为三十卷，附注以明其事，疏义以释其疑，名曰《泰和律义》。自《官品令》、《职员令》之下，曰《祠令》四十八条，《户令》六十六条，《学令》十一条，《选举令》八十三条，《封爵令》九条、《封赠令》十条，《宫卫令》十条，《军防令》二十五条，《仪制令》二十三条，《衣服令》十条，《公式令》五十八条，《禄令》十七条，《仓库令》七条，《厩牧令》十二条，《田令》十七条，《赋役令》二十三条，《关市令》十三条，《捕亡令》二十条，《赏令》二十五条，《医疾令》五条，《假宁令》十四条，《狱官令》百有六条，《杂令》四十九条，《释道令》十条，《营缮令》十三条，《河防令》十一条，《服制令》十一条，附以年月之制，曰《律令》二十卷。又定《制敕》九十五条，《榷货》八十五条，《蕃部》三十九条，曰《新定敕条》三卷，《六部格式》三十卷。司空襄以进，诏以明年五月颁行之。
 </p><p>贞祐三年，上谓宰臣：“自今监察官犯罪，其事关军国利害者，并笞决之。”贞祐四年，诏：“凡监察失纠劾者，从本法论。外使入国私通本国事情，宿卫、近侍官、承应人出入亲王、公主、宰执家，灾伤乏食有司检核不实致伤人命，转运军储而有私载，考试举人而防闲不严，其罚并决。在京犯至两次者，台官减监察一等治罪，论赎，余止坐，专差任满日议定。若任内曾以漏察被决，依格虽为称职，止从平常，平常者从降罚。”兴定元年八月，上谓宰臣曰：“律有八议，今言者或谓应议之人即当减等，何如？”宰臣对曰：“凡议者先条所坐及应议之状以请，必议定然后奏裁也。”上然之，曰：“若不论轻重而辄减之，则贵戚皆将恃此以虐民，民何以堪。”</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十五章-卷二十五-原文.html'>第二十五章-卷二十五</a></p><p class='next'>下一节：<a href='第二十七章-卷二十七-原文.html'>第二十七章-卷二十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十五章-卷二十五-原文.html'>第二十五章-卷二十五</a></p><p class='next'>下一节：<a href='第二十七章-卷二十七-原文.html'>第二十七章-卷二十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

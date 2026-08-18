@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-本纪<a href='../旧唐书.html#本纪'>：目录</a></p>
@@ -299,5 +326,18 @@
 </p><p>八月七日，宣遗诏立郓王为皇太子，勾当军国事。是日，崩于大明宫，圣寿五十。诏门下侍郎、平章事令狐綯摄冢宰。群臣上谥曰圣武献文孝皇帝，庙号宣宗。十四年二月，葬于贞陵。
 </p><p>史臣曰：臣尝闻黎老言大中故事，献文皇帝器识深远，久历艰难，备知人间疾苦。自宝历巳来，中人擅权，事多假借，京师豪右，大扰穷民。洎大中临驭，一之日权豪敛迹，二之日奸臣畏法，三之日阍寺詟气。由是刑政不滥，贤能效用，百揆四岳，穆若清风，十余年间，颂声载路。上宫中衣浣濯之衣，常膳不过数器，非母后侑膳，辄不举乐，岁或小饥，忧形于色。虽左右近习，未尝见怠惰之容。与群臣言，俨然煦接，如待宾僚，或有所陈闻，虚襟听纳。旧时人主所行，黄门先以龙脑、郁金藉地，上悉命去之。宫人有疾，医视之，既瘳，即袖金赐之，诫曰：“勿令敕使知，谓予私于侍者。”其恭俭好善如此。季年风毒，召罗浮山人轩辕集，访以治国治身之要，其伎术诡异之道，未尝措言。集亦有道之士也。十三年春，坚求还山。上曰：“先生少留一年，候于罗浮山别创一道馆。”集无留意，上曰：“先生舍我亟去，国有灾乎？朕有天下，竟得几年？”集取笔写“四十”字，而十字挑上，乃十四年也。兴替有数，其若是乎！而帝道皇猷，始终无缺，虽汉文、景不足过也。惜乎简藉遗落，旧事十无三四，吮墨挥翰，有所慊然。
 </p><p>赞曰：李之英主，实惟献文。粃粺尽去，淑慝斯分。河、陇归地，朔漠消氛。到今遗老，歌咏明君。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p><p class='next'>下一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p><p class='next'>下一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

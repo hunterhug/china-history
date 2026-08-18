@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -204,5 +231,18 @@
 </p><p>初，宣宗将迁南，欲置飐军于平州，高琪难之。及迁汴，戒彖多厚抚此军，彖多辄杀飐军数人，以至于败。宣宗末年尝曰：“坏天下者，高琪、彖多也。”终身以为恨云。
 </p><p>移剌塔不也，东北路猛安人。明昌元年，累官西上阁门使。二年，袭父谋克。泰和伐宋，有功，遥授同知庆州事，权迪列飐详稳。丁父忧，起复西北路招讨判官，改尚辇局使、曹王傅。贞祐二年，迁武宁军节度使，招徕中都飐军，无功，平章高琪芘之，召为武卫军都指挥使。应奉翰林文字完颜素兰尝面奏高琪党比，语在《高琪传》。寻知河南府事，兼副统军，徙彰化军节度使。上言：“尽籍山东、河间、大名猛安人为兵，老弱城守，壮者捍御。”又言：“河东地险人勇，步兵为天下冠，可尽调以戍诸隘。”从之。自是河东郡县屯兵少，不可守矣。改知临洮府事，兼陕西副统军。贞祐三年十一月，破夏兵于熟羊寨。平章高琪率宰臣入贺曰：“塔不也以少败众，盖陛下威德所致。”宣宗曰：“自古兴国皆赖忠贤，今兹立功，皆将率诸贤之力也。”乃以塔不也为劝农使，兼知平凉府事，进阶银青荣禄大夫。四年，伐西夏，攻威、灵、安、会等州。兴定元年，知庆阳府事。三年，迁元帅左都监，卒。
 </p><p>论曰：高琪擅杀执中，宣宗不能正其罪，又曲为之说，以诏臣下。就其事论之，人君欲诛大臣，而与近侍密谋于宫中，已非其道。谋之不密，又为外臣所知，以告败军之将，因杀之以为说，此可欺后世邪？金至南渡，譬之尫羸病人，元气无几。琪喜吏而恶儒，好兵而厌静，沮迁飐之议，破和宋之谋，正犹缪医，投以乌喙、附子，只速其亡耳。使宣宗于擅杀之日，即能伸大义而诛之，何至误国如是邪。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十三章-卷四十三-原文.html'>第四十三章-卷四十三</a></p><p class='next'>下一节：<a href='第四十五章-卷四十五-原文.html'>第四十五章-卷四十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十三章-卷四十三-原文.html'>第四十三章-卷四十三</a></p><p class='next'>下一节：<a href='第四十五章-卷四十五-原文.html'>第四十五章-卷四十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

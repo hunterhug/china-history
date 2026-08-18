@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#列传'>：目录</a></p>
@@ -183,5 +210,18 @@
 </p><p>玄质于辞训，通人颇讥其繁。至于经传洽孰，称为纯儒，齐、鲁间宗之。其门人山阳郗虑至御史大夫，东莱王基、清河崔琰著名于世。又乐安国渊、任嘏，时并童幼，玄称渊为国器，嘏有道德，其余亦多所鉴拔，皆如其言。玄唯有一子益恩，孔融在北海，举为孝廉；及融为黄巾所围，益恩赴难损身。有遗腹子，玄以其手文似己，名之曰小同。
 </p><p>论曰：自秦焚《六经》，圣文埃灭。汉兴，诸儒颇修艺文；及东京，学者亦各名家。而守文之徒，滞固所禀，异端纷纭，互相诡激，遂令经有数家，家有数说，章句多者或乃百余万言，学徒劳而少功，后生疑而莫正。郑玄括囊大典，网罗众家，删裁繁诬，刊改漏失，自是学者略知所归。王父豫章君每考先儒经训，而长于玄，常以为仲尼之门不能过也。及传授生徒，并专以郑氏家法云。
 </p><p>赞曰：富平之绪，承家载世。伯仁先归，厘我国祭。玄定义乖，褒修礼缺。孔书遂明，汉章中辍。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十六章-梁统列传-原文.html'>第二十六章-梁统列传</a></p><p class='next'>下一节：<a href='第二十八章-郑范陈贾张列传-原文.html'>第二十八章-郑范陈贾张列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十六章-梁统列传-原文.html'>第二十六章-梁统列传</a></p><p class='next'>下一节：<a href='第二十八章-郑范陈贾张列传-原文.html'>第二十八章-郑范陈贾张列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

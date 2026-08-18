@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#魏书'>：目录</a></p>
@@ -168,5 +195,18 @@
 </p><p>正光四年(523)三月，刘腾死于职上，时年六十岁。殡葬所费的物财有帛七百匹、钱四十万贯、蜡二百斤。一切丧事都由鸿胪少卿承办。宦官没有子息，而为他穿丧服的却有四十余人。
 </p><p>刘腾当初建造官宅，奉车都尉周特替他卜卦，认为不吉利，极力劝他停止，他大怒而不从。周特告诉别人说：“刘腾在三月、四月之交必有厄运。”果然他在这个时候死去，官邸刚刚建成，他的尸首便陈放在这里。皇上追赠刘腾为使持节、骠骑大将军、太尉公、冀州刺史。刘腾出葬那一天，太监们当他的义子，执丧杖穿丧衣的数以百计，朝中权贵都相随送葬，他们乘坐的车马填塞大路，前后连接直达郊野。自魏初到当时，宦官权贵死后礼仪的盛大，没有能赶得上刘腾的。
 </p><p>后来，灵太后再次临朝执政，把刘腾所封的一切爵位统统取消，并挖开他的坟墓，将尸骨都散在野外，没收他的全部财产。后刘腾所收养的一个儿子叛变投向萧衍，灵太后大怒，就把刘腾收养的其他义子都迁到北方边境，不久又派密使往汲郡将其追杀。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十一章-卷八十一-白话.html'>第八十一章-卷八十一</a></p><p class='next'>下一节：<a href='第八十三章-卷八十三-白话.html'>第八十三章-卷八十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八十一章-卷八十一-白话.html'>第八十一章-卷八十一</a></p><p class='next'>下一节：<a href='第八十三章-卷八十三-白话.html'>第八十三章-卷八十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

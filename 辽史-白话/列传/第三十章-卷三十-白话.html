@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#辽史'>：目录</a></p>
@@ -161,5 +188,18 @@
 </p><p>及至天祚亲征女真，萧胡睹担任先锋都统，章奴任都监。大军渡过鸭子河，章奴与魏国王耶律淳之妻兄萧敌里及其外甥萧延留等人谋划扶立耶律淳，引诱将士三百余人逃回。不久天祚为女真击败，章奴便派敌里、延留以废天祚立淳之事飞速报告于耶律淳。耶律淳犹豫不决。适逢行宫使者乙信带着天祚的书信前来，详述章奴反叛王命之经过，耶律淳对着使者失声痛哭，便将敌里、延留斩首献给天祚。
 </p><p>章奴见耶律淳不从，便引诱草寇数百人袭击抢夺上京，夺取府库中的财物。到祖州，率领手下官员向太祖陵庙祷告说“：我们大辽的基业，是由太祖经千百次征战而奠立的。如今天下土崩瓦解，我私下发现兴宗皇帝之孙魏国王耶律淳德行深厚，能够治理国家安定百姓，臣等想扶立他以主持社稷大业。适逢耶律淳前往好草甸去了，大事未成。近来天祚只知游玩享乐，不理政事；强敌肆意侮辱我邦，军队一败再败。加上盗贼纷起，国家危于累卵，臣等忝在宗族之列，世代蒙受恩泽，在上想安宁九庙在天之灵，在下想救济万民之性命，所以才有此举。实出于一片至诚之心，希望历代圣上赐予福佑。”向西进军至庆州，又祭祀诸庙，仍旧陈述之所以举兵之意图，传檄于州县、诸陵官僚，士卒渐渐归心。
 </p><p>时逢饶州渤海以及侯概等人相继响应前来，拥兵至数万人，前往广平淀。其党人耶律女古等人横行不守法纪，抢掠妇女、财产和牲畜。章奴料想无法制止，心怀悔恨；又进攻上京，未能攻下，北逃，想投降北虏。顺国女真阿鹘产率兵追击，打败了他，杀其将领耶律弥里直，活捉贵族二百余人，将其妻子儿女发配到绣院服劳役，或者发给诸近侍做奴婢；其余得以脱身者均逃跑了。章奴假称是使者，想投奔女真，为巡逻之人所抓获，捆绑送到行宫，被诛杀。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十九章-卷二十九-白话.html'>第二十九章-卷二十九</a></p><p class='next'>下一节：<a href='第三十一章-卷三十一-白话.html'>第三十一章-卷三十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十九章-卷二十九-白话.html'>第二十九章-卷二十九</a></p><p class='next'>下一节：<a href='第三十一章-卷三十一-白话.html'>第三十一章-卷三十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

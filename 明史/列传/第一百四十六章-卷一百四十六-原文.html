@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -269,5 +296,18 @@
 </p><p>给事中黄云师劾其学非而博，言伪而辩，又以进垦荒议为陵竞。帝不问。时议欲用龙正为吏部，御史黄澍以伪学诋之。十七年正月，左迁南京国子监丞。甫抵家而京师陷。
 </p><p>福王立于南京，用为祠祭员外郎，不就。南京不守，龙正已得疾，遂卒。
 </p><p>赞曰：崇祯时，佥壬相继枋政，天下多故，事之可言者众矣。许誉卿诸人，抨击时宰，有直臣之风。然傅朝佑死杖下，姜埰、熊开元得重谴，而詹尔选抗雷霆之威，顾获放免。言天子易，言大臣难，信哉。汤开远以疏远处僚，侃侃论事，愤惋溢于辞表。就其所列国势，亦重可慨矣夫！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百四十五章-卷一百四十五-原文.html'>第一百四十五章-卷一百四十五</a></p><p class='next'>下一节：<a href='第一百四十七章-卷一百四十七-原文.html'>第一百四十七章-卷一百四十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百四十五章-卷一百四十五-原文.html'>第一百四十五章-卷一百四十五</a></p><p class='next'>下一节：<a href='第一百四十七章-卷一百四十七-原文.html'>第一百四十七章-卷一百四十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

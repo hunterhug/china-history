@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-帝纪<a href='../魏书.html#魏书'>：目录</a></p>
@@ -262,5 +289,18 @@
 </p><p>昭成帝生性宽厚，智勇兼备，仁慈为怀。其时国中丝帛数量很少，代郡人许谦盗绢二匹，看守者向昭成帝报告，昭成帝隐而不宣，对燕凤说：“我不忍心因此而面对许谦，你不要泄露此事。许谦或许会因惭愧而自杀，为财辱士，实不足取。”昭成帝曾在攻打西部叛贼时，被流矢射中眼睛。歼灭叛贼后，诸大臣抓到射手，各持尖刀要将他屠割，昭成帝却说：“他不过是各为其主罢了，有什么罪呢？”于是将其释放。
 </p><p>本年，苻坚消灭张天锡。
 </p><p>史臣曰：帝王的兴起，必须行善积德，建立丰功伟绩，造福于苍生。施政的方针、策略既要顾全大局，又要兼顾细微末节，方能契合神灵之心。魏国占据北方，拓跋氏世居君长之位，普及教化，养育万民，与时无争。始祖神元皇帝为天女所生，桓帝、穆帝尽忠于西晋皇室。天命人事，岂会徒然而无应验、回报。昭成帝以雄杰之姿，怀君子器量，征伐四方，攻无不克，威镇远方，于是立号迁都，恢弘大业。此后魏帝国在前后一百六十年间雄踞中原。追本溯源，是有其历史的渊源的。</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-白话.html'>第二章-卷二</a></p></div></body>
+<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-白话.html'>第二章-卷二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

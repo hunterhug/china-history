@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>元史-志<a href='../元史.html#志'>：目录</a></p>
@@ -202,5 +229,18 @@
 </p><p>礼乐队：（朝会用之。）引队礼官乐工大乐冠服，并同乐音王队。次二队，妇女十人，冠黑漆弁冠，服青素袍，方心曲领，白裙，束带，执圭；次妇女一人，冠九龙冠，服绣红袍，玉束带，进至御前，立定，乐止，念致语毕，乐作，奏《长春柳》之曲。次三队，男子三人，冠服舞蹈同乐音王队。次四队，男子三人，皆冠卷云冠，服黄袍，涂金带，执圭。次五队，男子五人，皆冠三龙冠，服红袍，各执劈正金斧，同前队而进，北向立。次六队，童子五人，三髻，素衣，各执香花，舞蹈而进，乐止。次七队，乐工八人，皆冠束发冠，服锦衣白袍，龙笛三，觱栗三，杖鼓二，与前大乐合奏《新水令》、《水仙子》之曲。次八队，妇女二十人，冠笼巾，服紫袍，金带，执笏，歌《新水令》之曲，与乐声相和，进至御前，分为四行，北向立，鞠躬拜，兴，舞蹈，叩头，山呼，就拜，再拜，毕，复趁声歌《水仙子》之曲一阕，再歌《青山口》之曲，与后队相和。次九队，妇女二十人，冠车髻冠，服销金蓝衣，云肩，佩绶，执孔雀幢，舞唱与前队相和。次十队，妇女八人，冠翠花唐巾，服锦绣衣，执宝盖，舞唱前曲。次男子八人，冠凤翅兜牟，披金甲，执金戟。次男子一人，冠平天冠，服绣鹤氅，执圭，齐舞唱前曲一阕，乐止。次妇女三人，歌《新水令》、《沽美酒》、《太平令》之曲终，念口号毕，舞唱相和，以次而出。
 </p><p>说法队：引队礼官乐工大乐冠服，并同乐音王队。次二队，妇女十人，冠僧伽帽，服紫禅衣，皂绦；次妇女一人，服锦袈裟，余如前，持数珠，进至御前，北向立定，乐止，念致语毕，乐作，奏《长春柳》之曲。次三队，男子三人，冠、服、舞蹈，并同乐音王队。次四队，男子一人，冠隐士冠，服白纱道袍，皂绦，执麈拂；从者二人，冠黄包巾，服锦绣衣，执令字旗。次五队，男子五人，冠金冠，披金甲，锦袍，执戟，同前队而进，北向立。次六队，男子五人，为金翅雕之像，舞蹈而进，乐止。次七队，乐工十有六人，冠五福冠，服锦绣衣，龙笛六，觱栗六，杖鼓四，与前大乐合奏《金字西番经》之曲。次八队，妇女二十人，冠珠子菩萨冠，服销金黄衣，缨络，佩绶，执金浮屠白伞盖，舞唱前曲，与乐声相和，进至御前，分为五重，重四人，曲终，再起，与后队相和。次九队，妇女二十人，冠金翠菩萨冠，服销金红衣，执宝盖，舞唱与前队相和。次十队，妇女八人，冠青螺髻冠，服白销金衣，执金莲花。次男子八人，披金甲，为八金刚像。次一人，为文殊像，执如意；一人为普贤像，执西番莲花；一人为如来像；齐舞唱前曲一阕，乐止。次妇女三人，歌《新水令》、《沽美酒》、《太平令》之曲终，念口号毕，舞唱相和，以次而出。
 </p><p>凡吉礼，郊祀、享太庙、告谥，见《祭祀志》。军礼，见《兵志》。丧礼五服，见《刑法志》。水旱赈恤，见《食货志》。内外导从，见《仪卫志》。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十三章-卷二十三-原文.html'>第二十三章-卷二十三</a></p><p class='next'>下一节：<a href='第二十五章-卷二十五-原文.html'>第二十五章-卷二十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十三章-卷二十三-原文.html'>第二十三章-卷二十三</a></p><p class='next'>下一节：<a href='第二十五章-卷二十五-原文.html'>第二十五章-卷二十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后唐<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -167,5 +194,18 @@
 </p><p>此时，两河大水，家口流亡的人占了十分之四、五，首都供应不足，军士缺吃，以致有卖儿卖女、抛弃妻子、年老体弱在野外采拾和饿死在路上的人。下面州郡飞快用车子运输供应京师，租庸使孔谦每天站在上东门外盼望车子到来，计算着供应。加上路途泥水多，车运艰难，愁叹之声到处可闻，四方地震，天象怪诞。庄宗深为忧虑，问有关官员救灾养民的办法。孔谦是才从小官提拔上来的，所以没有保邦济民的大才，只知道以急切苛刻征收赋税为能事。枢密承旨段徊上奏“：我见本朝经常遇上灾祸歉收，国费不足，天子如求经邦济世之要略，应写出朱书御札，访之于宰臣，请陛下按这个惯例行事。”立即命学士起草文辞，庄宗亲自写信向宰臣寻访，岂不是庄宗确有忧民之心？此时宰相豆卢革等随声附和旨意完全没有计策献上，只是说：“陛下威德为天下第一，现在西蜀平定，珍宝甚多，可以供给军队。水旱成灾。是自然的正常现象，不足以引起陛下忧虑。”中官李绍宏上奏说：“等魏王回师后，如果兵员增多，粮饷难以供应，请陛下暂到汴州，以就粮饷运输之便。”此时群臣献计策的也多，大都词理迂阔，不解决实际问题。只有吏部尚书李琪引用古时田租之法，作为临时救急的方法，上奏献计，庄宗下诏奖赏他。
 </p><p>九日，诏令伪蜀私自任命的官员等人“：只有名号与器物，不可以给人，何况是偏僻远地，僭任伪职，趁时事混乱而滥称名位，国体既归我唐朝，伪职应当全部削除。但是恐怕在本朝艰难之时，有历代为官的，隐落在那里之后，于是授为伪官。又考虑到有曾受本朝优待恩遇的，当时已居官秩，应有升降，不可以同等看待。凡是伪朝任命官到太师、太傅以及三少，并太尉、司徒、司空、侍中、中书令、左右仆射以上的，全应降到六尚书，临时再约定伪职高低为六行次第。官阶到开府、特进、金紫的，应令文官降为朝散大夫，武官降为银青。伪任官爵在将相以上的给予开国男爵封号，其余都不准再称封爵，有功臣名号者削去名号。所有这些伪任节镇，在我进军之初，率先归顺和立功的，应委托李继岌、郭崇韬临时奖赏任命。刺史只许称使君，不能再有检校官职。伪在班行正四品以上的，依此酌情降职去职，五品以下的，如不曾经过本朝授官，若才能智识有名声的，允许在府县中量材录用；如没什么材智，只是蜀地本地人，应全部放归乡村。如果西班中有称统军上将军的，若是本朝功臣子孙及将相后代，应根据人材高下，给予诸卫小将军、府率、中郎将，按次序授任。如果是小将军以下，人材可以使用的，应委任西川节度使衙前补押衙，不可以使用的，也应放归乡村。凡是以前的降官，除了在军前按事迹任用以外，其余的一并称以前的官衔，等朝廷以后根据才能品行任用。”
 </p><p>十二日，彰武、保大等节度使高万兴去世。十六日，淮南杨溥派使者来朝进贡。十八日，中书、枢密两省谏官上疏，请庄宗不要巡幸汴州，上三次表章，才同意。二十二日，魏王李继岌上奏，派秦州副史徐蔼带信招抚南诏蛮。又上奏，点清东西两川马共九千五百三十匹。二十三日，发文封皇二弟李存霸为永王，封皇三弟李存美为邕王，封皇四弟李存渥为申王，封皇五弟李存繧为睦王，封皇六弟李存确为通王，封皇七弟李存纪为雅王。这一年，太阳旁边有背气，一共十三次。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八章-庄宗纪六-白话.html'>第八章-庄宗纪六</a></p><p class='next'>下一节：<a href='第十章-庄宗纪八-白话.html'>第十章-庄宗纪八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八章-庄宗纪六-白话.html'>第八章-庄宗纪六</a></p><p class='next'>下一节：<a href='第十章-庄宗纪八-白话.html'>第十章-庄宗纪八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

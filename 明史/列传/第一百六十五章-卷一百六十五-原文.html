@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -219,5 +246,18 @@
 </p><p>上琛，字席公。世袭福州右卫指挥使。好读书，能诗。既袭职，复举武乡试。唐王时，官锦衣卫指挥，迁署都督佥事，充御营总兵官，从至汀州。王被执，上琛奔还福州，谓家人曰：“吾世臣，不可苟活，为我采毒草来。”妾刘年二十，愿同死。上琛喜曰：“汝幼妇亦能死耶！”遂整冠带与妾共饮药酒而卒。
 </p><p>纬，字文江，南昌人。崇祯十六年进士。授行人。两京既覆，每饮酒，辄涕泗交横下。友人语之曰：“昔狼瞫有言‘吾未获死所’，子既有志，曷求所乎？”乃赴延平谒唐王，擢给事中。寻扈行至汀州，遘变，从官皆散，纬仍奔赴。遇大清兵，死之。
 </p><p>赞曰：废兴之故，岂非天道哉。金声等以乌合之师，张皇奋呼，欲挽明祚于已废之后，心离势涣，败不旋踵，何尺寸之能补。然卒能致命遂志，视死如归，事虽无成，亦存其志而已矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百六十四章-卷一百六十四-原文.html'>第一百六十四章-卷一百六十四</a></p><p class='next'>下一节：<a href='第一百六十六章-卷一百六十六-原文.html'>第一百六十六章-卷一百六十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百六十四章-卷一百六十四-原文.html'>第一百六十四章-卷一百六十四</a></p><p class='next'>下一节：<a href='第一百六十六章-卷一百六十六-原文.html'>第一百六十六章-卷一百六十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

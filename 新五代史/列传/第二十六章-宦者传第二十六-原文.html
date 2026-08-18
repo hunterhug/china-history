@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-列传<a href='../新五代史.html#列传'>：目录</a></p>
@@ -164,5 +191,18 @@
 </p><p>庄宗未灭梁时，承业已死。其后居翰虽为枢密使，而不用事。有宣徽使马绍宏者，尝赐姓李，颇见信用。然诬杀大臣，黩货赂，专威福，以取怨于天下者，左右狎暱，黄门内养之徒也。是时，明宗自镇州入觐，奉朝请于京师。庄宗颇疑其有异志，阴遣绍宏伺其动静，绍宏反以情告明宗。明宗自魏而反，天下皆知祸起于魏，孰知其启明宗之二心者，自绍宏始也！郭崇韬已破蜀，庄宗信宦者言而疑之。然崇韬之死，庄宗不知，皆宦者为之也。当此之时，举唐之精兵皆在蜀，使崇韬不死，明宗入洛，岂无西顾之患？其能晏然取唐而代之邪？及明宗入立，又诏天下悉捕宦者而杀之。宦者亡窜山谷，多削发为浮图。其亡至太原者七十馀人，悉捕而杀之都亭驿，流血盈庭。
 </p><p>明宗晚而多病，王淑妃专内以干政，宦者孟汉琼因以用事。秦王入视明宗疾已革，既出而闻哭声，以谓帝崩矣，乃谋以兵入宫者，惧不得立也。大臣硃弘昭等方图其事，议未决，汉琼遽入见明宗，言秦王反，即以兵诛之，陷秦王大恶，而明宗以此饮恨而终。后愍帝奔于卫州，汉琼西迎废帝于路，废帝恶而杀之。
 </p><p>呜呼！人情处安乐，自非圣哲，不能久而无骄怠。宦、女之祸非一日，必伺人之骄怠而浸入之。明宗非佚君，而犹若此者，盖其在位差久也。其馀多武人崛起，及其嗣续，世数短而年不永，故宦者莫暇施为。其为大害者，略可见矣。独承业之论，伟然可爱，而居翰更一字以活千人。君子之于人也，苟有善焉，无所不取，吾于斯二人者，有所取焉。取其善而戒其恶，所谓“爱而知其恶，憎而知其善”也。故并述其祸败之所以然者著于篇。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十五章-伶官传第二十五-原文.html'>第二十五章-伶官传第二十五</a></p><p class='next'>下一节：<a href='第二十七章-杂传第二十七-原文.html'>第二十七章-杂传第二十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十五章-伶官传第二十五-原文.html'>第二十五章-伶官传第二十五</a></p><p class='next'>下一节：<a href='第二十七章-杂传第二十七-原文.html'>第二十七章-杂传第二十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

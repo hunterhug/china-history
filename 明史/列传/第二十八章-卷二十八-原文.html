@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -178,5 +205,18 @@
 </p><p>又乐平奸民亦诣阙诉大姓五十余家谋逆，饶州知州郎敏力为奏辨。诏诛奸民，而被诬者得尽释。
 </p><p>青文胜，字质夫，夔州人。仕为龙阳典史。龙阳濒洞庭，岁罹水患，逋赋数十万，敲扑死者相踵。文胜慨然诣阙上疏，为民请命。再上，皆不报。叹曰：“何面目归见父老！”复具疏，击登闻鼓以进，遂自经于鼓下。帝闻大惊，悯其为民杀身，诏宽龙阳租二万四千余石，定为额。邑人建祠祀之。妻子贫不能归，养以公田百亩。万历十四年，诏有司春秋致祭，名其祠曰“惠烈”。
 </p><p>赞曰：太祖起闾右，稔墨吏为民害，尝以极刑处之。然每旌举贤能，以示劝勉，不专任法也。尝遣行人赍敕并钞三十锭、内酒一尊，赐平阳知县张〈石楚〉。又建阳知县郭伯泰、丞陆镒，为政不避权势，遣使劳以酒醴，迁其官。丹徒知县胡梦通、丞郭伯高，金坛丞李思进，坐事当逮，民诣阙，言多善政。帝并赐内尊，降敕褒劳。永州守余彦诚、齐东令郑敏等十人坐事下狱，部民列政绩以请，皆复官。宜春令沈昌等四人更擢郡守。其自下僚不次擢用者，宁远尉王尚贤为广西参政，祥符丞邹俊为大理卿，静宁州判元善为佥都御史，芝阳令李行素为刑部侍郎。至如怀宁丞陈希文、宜兴簿王复春，先以善政擢，已知其贪肆，旋置重典。所以风厉激劝者甚至，以故其时吏治多可纪述云。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十七章-卷二十七-原文.html'>第二十七章-卷二十七</a></p><p class='next'>下一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十七章-卷二十七-原文.html'>第二十七章-卷二十七</a></p><p class='next'>下一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

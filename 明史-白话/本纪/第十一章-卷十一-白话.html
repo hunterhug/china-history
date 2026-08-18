@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-本纪<a href='../明史.html#明史'>：目录</a></p>
@@ -190,5 +217,18 @@
 </p><p>景泰八年(1457)正月三日，免江西受灾税粮。十二日，景帝带病登车住南郊斋宫，十四日，群臣请求立太子。景帝不听。十七日，武清侯石亨、副都御史徐有贞等迎接上皇英宗复位。二月一日，废景帝为成阝王，迁到西宫内。皇太后吴氏以下全部沿用原来称号。十九日，景帝(成阝王)死于西宫，终年三十岁。谥号曰戾。毁掉他所营建的寿陵，按亲王礼节葬成阝王于西山，给武成中卫军二百户守卫。
 </p><p>成化十一年(1475)十二月十三日，宪宗说“：我叔父成阝王即位，平定叛乱保卫国家，安定宗庙社稷，将近八年。病危之际，奸臣贪功，乱兴谗言诬陷他人，请求削除皇帝称号。先帝不久就知道实属冤枉，每次由于悔恨，按规定要将诸奸臣绳之以法。不宠爱贵客，没来得及纠正过失。朕厚爱亲人，完成先帝遗志，可仍称皇帝之号。讨论谥号已经知道了。”于是上尊谥。命令官吏修整陵墓，祭祀同其他诸先王陵墓一样。
 </p><p>评论：景帝在困难之时，奉命居守摄政，不久登皇位以系人心，受权得势而取得合法地位。他信任贤能，全心钻研政治，即使强寇深入内地侵略，但国家仍安然无恙。其治国之绩相当伟大了。然而心情急切改变储粮，使英宗在小皇城深深禁锢，不准朝贺拜见，不注意合理意见。最后，终于抱病登车去了斋宫，小人乘机悄悄兴起得势。事情起得仓猝，还没等到取得胜利，他那好的名声就此结束了，真是可惜啊！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十章-卷十-白话.html'>第十章-卷十</a></p><p class='next'>下一节：<a href='第十二章-卷十二-白话.html'>第十二章-卷十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十章-卷十-白话.html'>第十章-卷十</a></p><p class='next'>下一节：<a href='第十二章-卷十二-白话.html'>第十二章-卷十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

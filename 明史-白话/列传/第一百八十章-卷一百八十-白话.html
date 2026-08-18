@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -176,5 +203,18 @@
 </p><p>徐世淳，字中明，浙江秀水人。父徐必达，字德夫，万历二十年(1537)进士，曾任溧水县知县，筑石血湖堤，奏除齐泰姻戚子孙军籍二十六家。升吏部考功郎中，与吏科给事中储纯臣共同进行官吏考核。纯臣受贪官的贿赂，在考核京官时，必达奏报纯臣罪状，请革其职。调光禄寺丞，陈奏征收“白粮”的利弊十一事，均被采纳。进为少卿，巡漕御史孙居相因船坏，奏请雇民船运输，必达力争而止。天启初年，以右佥都御史督练江军。白莲教义军进攻徐州，必达募兵与山东军共同镇压。升兵部右侍郎，官至拾遗而罢职，死于家乡。
 </p><p>世淳为崇祯年间举人。崇祯十三年(1640)冬，任随州知州。该州曾遭兵乱，居民不多。世淳料定农民起义军必来攻打，召集士民决心死守。这年闹荒灾，连一些读书人都靠施粥为生。世淳叹息道“：难道能使这些读书人因饥饿而失礼？”对他们进行赈济。被农民起义军打败的官兵，路过随州时要供应他们的粮饷，世淳单骑去见他们统帅说：“军队粮饷不足，是地方官吏之罪，杀我就可以了，不要扰害百姓，把我押去见督师吧！”该败兵统帅无话可说，率领残兵败将而去。
 </p><p>崇祯十四年(1641)三月，张献忠自襄阳进攻随州，世淳日夜在南城谯楼上固守，并向巡抚宋一鹤告急。一鹤派兵来援救。但半途为监司守承天截去。世淳固守月余，粮尽援绝，随州为义军攻破。世淳在巷战中被乱刀斫死。后赠太仆寺少卿，为他建祠纪念。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百七十九章-卷一百七十九-白话.html'>第一百七十九章-卷一百七十九</a></p><p class='next'>下一节：<a href='第一百八十一章-卷一百八十一-白话.html'>第一百八十一章-卷一百八十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百七十九章-卷一百七十九-白话.html'>第一百七十九章-卷一百七十九</a></p><p class='next'>下一节：<a href='第一百八十一章-卷一百八十一-白话.html'>第一百八十一章-卷一百八十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

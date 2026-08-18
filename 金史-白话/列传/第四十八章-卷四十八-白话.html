@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#金史'>：目录</a></p>
@@ -187,5 +214,18 @@
 </p><p>正大初年(1224)，夏国派使者来讲和，朝廷派翰林待制冯延登前去谈判，当时李献甫是书表官，跟随冯延登前往。夏国的使者很有口才，冯延登不能说服对方，谈了好几天还不能谈定。当讲到要金国每年进贡时，李献甫忍不住了，在旁插话说：“夏国与我国和好百年，现在虽改君臣之名为兄弟之国，哪有让哥哥进贡的道理？”使者说：“且不说兄弟关系。宋每年送我国帛二十五万匹，旧例具在，难道您不知道吗？金朝要想恢复友好关系，也非这样办不可。”李献甫正言厉色地说“：使者还好意思说吗？宋每年给你家币帛而赐姓给你们，俨然以君父自居，但夏国的君臣却没有一个人明白这一点。就是使者也应当加以隐讳，但你现在却公开说出。使者当真能做主和议，那么也要按宋赐姓的规矩，敝国每年送给你们帛五十万匹，献甫也能以身自任，保证办到。”夏国使者说不出话来，和议便定了下来。后来朝廷给他记功，任命他为庆阳总帅府经历官。
 </p><p>不久，李献甫被任命为长安县令。长安是京兆行台所在地，供给任务十分繁重，李献甫处理得常常像是还有宽余，县里的百姓依赖他安居乐业。后来他入朝任尚书省令史。天兴元年(1232)任六部员外郎，朝中有关防卫的策略常靠李献甫提出，他又因功升迁为镇南军节度副使兼右警巡使。李献甫死于蔡州之难，年仅四十岁。
 </p><p>李献甫所著的文章名为《天倪集》，留在汴京。李献甫死后，他的家也破亡。同年，华阳人王元礼买到了《天倪集》，使这本书能流传于世。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十七章-卷四十七-白话.html'>第四十七章-卷四十七</a></p><p class='next'>下一节：<a href='第四十九章-卷四十九-白话.html'>第四十九章-卷四十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十七章-卷四十七-白话.html'>第四十七章-卷四十七</a></p><p class='next'>下一节：<a href='第四十九章-卷四十九-白话.html'>第四十九章-卷四十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

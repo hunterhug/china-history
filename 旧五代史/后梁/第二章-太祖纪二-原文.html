@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后梁<a href='../旧五代史.html#后梁'>：目录</a></p>
@@ -167,5 +194,18 @@
 </p><p>三年正月，幽、沧称兵，将寇于魏。魏人来乞师，且以牙军骄悍，谋欲诛之，遣亲吏臧延范密告于帝，帝阴许之。乙丑，北征。先是，帝之爱女适罗氏，是月卒于鄴城，因以兵仗数千事实于橐中，遣客将马嗣勋领长直军千人，杂以工匠、丁夫，肩其橐而入于魏，声言为帝女设祭，魏人信而不疑。庚午夜，嗣勋率其众与罗绍威亲军数百人同攻牙军，迟明尽杀之，死者七千余人，泊于婴孺，亦无留者。是日，帝次于内黄，闻之，驰骑至魏。时魏之大军方与帝军同伐沧州，闻牙军之死，即时奔还。帝之军追及历亭，杀贼几千，余众乃拥大将史仁遇保于高唐，帝遣兵围之。是月，天子诏河南尹张全义部署修制相国魏王法物。
 </p><p>三月甲寅，天子命帝总判盐铁、度支、户部等三司事，帝再上章切让之，乃止。四月癸未，攻下高唐，军民无少长皆杀之，生擒逆首史仁遇以献，帝命支解之。未几，又攻下澶、博、贝、卫等州，皆为魏军残党所据故也。是时晋人围邢州，刺史牛存节坚壁固守，帝遣符道昭帅师救之，晋人乃遁去。五月，帝略地于洺州，既而复入于魏。七月己未，自魏班师。是日，收复相州，自是魏境悉平。壬申，帝归自魏。
 </p><p>八月甲辰，以沧州未平，复命北征。九月丁卯，营于长芦。一夕，帝梦白龙附于两肩，左右瞻顾可畏，忄兄然惊寤。十月辛巳，邠州杨崇本以凤翔、邠、宁、泾、鄜、秦、陇之众合五六万来寇，屯于美原，列十五寨，其势甚盛。帝命同州节度使刘知俊、都将康怀英帅师御之。知俊等大破邠寇，杀二万余众，夺马三千余匹，擒其列校百余人，杨崇本、胡章仅以身免。十一月庚戌，怀英乘胜进军，遂收鄜州。十二月乙丑，帝以文武常参官每月一、五、九日赴朝，奏请备廊餐，诏从之。遂自长芦班师。案：以上疑有阙文。据《旧唐书·哀帝纪》：戊辰，李克用与幽州之众同攻潞州，全忠守将丁会以泽、潞降太原，克用以其子嗣昭为留后。甲戌，全忠烧长芦营旋军，闻潞州陷故也。以寨内糗粮山积，帝命焚之。沧帅刘守文以城中绝食，因致书于帝，乞留余粮以救饥民，帝为留十余囷以与之。《容斋续笔》：沧州还师，悉焚诸营资粮，在舟中者凿而沉之。守文遗全忠书曰：“城中数万口，不食数月矣，与其焚之为烟，沉之为泥，愿乞其所余以救之。”全忠为之留数囷，沧人赖以济。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-太祖纪一-原文.html'>第一章-太祖纪一</a></p><p class='next'>下一节：<a href='第三章-太祖纪三-原文.html'>第三章-太祖纪三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-太祖纪一-原文.html'>第一章-太祖纪一</a></p><p class='next'>下一节：<a href='第三章-太祖纪三-原文.html'>第三章-太祖纪三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

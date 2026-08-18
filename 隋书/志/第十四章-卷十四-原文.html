@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>隋书-志<a href='../隋书.html#志'>：目录</a></p>
@@ -237,5 +264,18 @@
 </p><p>东井钺前四星曰司怪，主候天地日月星辰变异，及鸟兽草木之妖，明主闻灾，修德保福也。司怪西北九星曰坐旗，君臣设位之表也。坐旗西四星曰天高，台榭之高，主远望气象。天高西一星曰天河，主察山林妖变。南河、北河各三星，夹东井。一曰天高天之阙门，主关梁。南河曰南戍，一曰南宫，一曰阳门，一曰越门，一曰权星，主火。北河一曰北戍，一曰北宫，一曰阴门，一曰胡门，一曰衡星，主水。两河戍间，日月五星之常道也。河戍动摇，中国兵起。南河三星曰阙丘，主宫门外象魏也。五诸侯五星，在东井北，主刺举，戒不虞。又曰理阴阳，察得失。亦曰主帝心。一曰帝师，二曰帝友，三曰三公，四曰博士，五曰太史。此五者常为帝定疑议。星明大润泽，则天下大治，角则祸在中。五诸侯南三星曰天樽，主盛饘粥，以给酒食之正也。积薪一星，在积水东，供给庖厨之正也。水位四星，在东井东，主水衡。客星若水火守犯之，百川流溢。
 </p><p>轩辕十七星，在七星北。轩辕，黄帝之神，黄龙之体也。后妃之主，士职也。一曰东陵，一曰权星，主雷雨之神。南大星，女主也。次北一星，妃也。次，将军也。其次诸星，皆次妃之属也。女主南小星，女御也。左一星少民，少后宗也。右一星大民，太后宗也。欲其色黄小而明也。轩辕右角南三星曰酒旗，酒官之旗也，主飨宴饮食。五星守酒旗，天下大甫，有酒肉财物，赐若爵宗室。酒旗南二星曰天相，丞相之象也。轩辕西四星曰爟，爟者烽火之爟也，边亭之警候。
 </p><p>爟北四星曰内平。少微四星，在太微西，士大夫之位也。一名处士，亦天子副主，或曰博士官。一曰主卫掖门。南第一星处士，第二星议士，第三星博士，第四星大夫。明大而黄，则贤士举也。月、五星犯守之，处士、女主忧，宰相易。南四星曰长垣，主界域及胡夷。荧惑入之，胡入中国。太白入之，九卿谋。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十三章-卷十三-原文.html'>第十三章-卷十三</a></p><p class='next'>下一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十三章-卷十三-原文.html'>第十三章-卷十三</a></p><p class='next'>下一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

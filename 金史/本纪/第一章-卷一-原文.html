@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-本纪<a href='../金史.html#本纪'>：目录</a></p>
@@ -174,5 +201,18 @@
 </p><p>十年癸未二月，穆宗还。辽使使授从破海里者官赏。高丽始来通好。十月二十九日，穆宗卒，年五十有一。初，诸部各有信牌，穆宗用太祖议，擅置牌号者置于法，自是号令乃一，民听不疑矣。自景祖以来，两世四主，志业相因，卒定离析，一切治以本部法令，东南至于乙离骨、曷懒、耶懒、土骨论，东北至于五国、主隈、秃答，金盖盛于此。天会十五年，追谥孝平皇帝，庙号穆宗。皇统四年，号其藏曰献陵。五年，增谥章顺孝平皇帝。
 </p><p>兄子康宗，讳乌雅束，字毛路完，世祖长子也。辽清宁七年辛丑岁生。乾统三年癸未，袭节度使，年四十三。穆宗末年，阿疏使达纪诱扇边民，曷懒甸人执送之。穆宗使石适欢抚纳曷懒甸，未行，穆宗卒，至是遣焉。先是，高丽通好，既而颇有隙，高丽使来请议事，使者至高丽，拒而不纳。五水之民附于高丽，执团练使十四人。语在《高丽传》中。二年甲申，高丽再来伐，石适欢再破之。高丽复请和，前所执团练十四人皆遣归，石适欢抚定边民而还。苏滨水民不听命，使斡带至活罗海川，召诸官僚告谕之。含国部苏滨水居斡豁勃堇不至。斡准部、职德部既至，复亡去。坞塔遇二部于马纪岭，执之而来，遂伐斡豁，克之。斡带进至北琴海，攻拔泓忒城，乃还。四年丙戌，高丽遣黑欢方石来贺袭位，遣杯鲁报之。高丽约还诸亡在彼者，乃使阿聒、胜昆往受之。高丽背约，杀二使，筑九城于曷懒甸，以兵数万来攻。斡赛败之。斡鲁亦筑九城，与高丽九城相对。高丽复来攻，斡赛复败之。高丽约以还逋逃之人，退九城之军。复所侵故地。九月，乃罢兵。七年己丑，岁不登，减盗贼征偿，振贫乏者。十一年癸巳，康宗卒，年五十三。天会十五年，追谥恭简皇帝。皇统四年，号其藏曰乔陵。五年，增谥康宗献敏恭简皇帝。
 </p><p>赞曰：金之厥初，兄弟三人，亦微矣。熙宗追帝祖宗，定著始祖、景祖、世祖庙，世世不祧。始祖娶六十之妇而生二男一女，岂非天耶？景祖不受辽籍辽印，取雅达国相以与其子。世祖既破桓赧、散达，辽政日衰，而以太祖属之穆宗，其思虑岂不深远矣夫！</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p></div></body>
+<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-本纪<a href='../辽史.html#辽史'>：目录</a></p>
@@ -262,5 +289,18 @@
 </p><p>二月初一，建国号为大辽，大赦天下，改元大同。升镇州为中京。以赵延寿为大丞相兼政事令、枢密使、中京留守，内外官僚将士赐爵赐物各有等差。十五日，河东节度使北平王刘知远自立为帝，国号汉，皇上诏令以耿崇美为昭义军节度使，高唐英为昭德军节度使，崔延勋为河阳军节度使，分头据守要地。
 </p><p>三月初一，以萧翰为宣武军节度使，赐将帅下吏爵位物品各有等差。十七日，晋诸司僚佐、嫔御、宦寺、方技、百工、图籍、历象、石经、铜人、明堂刻漏、太常乐谱、诸宫县、卤簿、法物及铠仗，尽数送往上京。磁州军帅梁晖以相州降于汉，二十四日，命高唐英讨伐之。
 </p><p>夏四月初一，自汴州出发，以冯道、李崧、和凝、李遆、徐台符、张砺等人随行。驻于赤冈，夜里有声音响如雷，起于御帐，大星又陨落在旗鼓前。初十，渡过黎阳渡，回头对侍臣说：“我此行有三个过失：纵兵抢掠刍粟，此其一；搜括百姓私财，此其二；没有立即将各路节度使派回镇所，此其三。”皇太弟派使者问军前事务，皇上回答说：“先是派兵二十万降服了杜重威、张彦泽，攻下镇州。待到进入汴京，见其官属有尸位素餐者即罢黜之，才当其任者任用之。官属尽管依旧保存，但是官吏都怠惰不视事，好比雏鸟飞走之后，只剩下些空巢。久经离乱，以至于此。所到之处盗贼聚众造反，土木工程一刻不停，军需不能按时供给，百姓无法承受差遣。河东至今还没有归顺，西路的军帅们也互相党附，我日夜都在考虑，制服他们的办法，只有对百官以诚心相待、协调军心、安抚百姓三者而已。现在归顺于我的总共七十六处，得户口一百零九万零一百一十八户。如果不是汴州炎热，水土不服难于居住，只需一年，我就可以轻而易举地使天下太平。已改镇州为中京，以便于巡幸。至于讨伐河东等事，姑且留待以后再计议。军前事务大纲如此。”十三日，驻于高邑，皇上病重。二十二日，驾崩于栾城，时年四十六岁。这一年九月初一，下葬于凤山，陵墓曰怀陵，庙号太宗。统和二十六年(1008)七月，奉上尊号谥为孝武皇帝。重熙二十一年(1052)九月，增谥为孝武惠文皇帝。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三-白话.html'>第三章-卷三</a></p><p class='next'>下一节：<a href='第五章-卷五-白话.html'>第五章-卷五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三-白话.html'>第三章-卷三</a></p><p class='next'>下一节：<a href='第五章-卷五-白话.html'>第五章-卷五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

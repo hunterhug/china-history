@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#魏书'>：目录</a></p>
@@ -249,5 +276,18 @@
 </p><p>魏朝法律开始时很严苛，朝臣大多被杖罚过。高允经历了五代皇帝，出入三个省衙，五十多年，始终没有遇到过谴责与棒笞的处罚。当初，真君年间因狱讼新案太多，开始让中书用经义来决断疑案。高允根据律法评判行刑，三十多年，内外都称赞高允的公正公平。高允认为，官司的事关系到百姓的生命，常常感叹地说：“皋陶是至德的人啊，但是他的儿子英蓼却先死了。刘邦项羽之时，英布虽是犯人而能称王。经历世事很久，仍然可能会有犯法的危险，何况普通人怎么可能没有过错呢？”
 </p><p>第二年四月，皇上在西郊有事情，下诏让用皇帝所乘的马车接高允到西郊皇帝所在的板殿去观看风景，忽然马受惊狂奔，车翻人伤，伤及眼眉三处。高祖、文明太后派医携药前往护理治疗，抚慰探望。负责驾车者将给予重罪，高允奏称自己并未受大伤，乞请免了驾车人之罪。以前曾命令中黄门苏兴寿负责搀扶高允，曾经在下雪时遇到猛犬而惊惧跌倒，扶他的人都十分害怕、高允安慰劝勉他们，不让上边闻知此事。苏兴寿称接待扶持高允共三年，没有发现高允有过忿怒的脸色，对人循循善诱，诲人不倦，昼夜手里常常拿着书，翻看吟咏，对亲友笃厚，对故旧思念，虚己待人，虽然地位高贵，但志向贫素淡泊，素来喜好音乐，每有歌唱人来为他歌舞演唱，他常常和着节拍而称赞。又很相信佛家之学，经常安排斋饭请僧人讲诵佛法，平生喜欢善行恶杀。生性又十分疏简，从不妄加交游。显祖平定青齐后，将其中有名望的大族之人迁移到代州。当时许多士人因流动迁移到这么远的地方，都饥寒交迫。迁来的人中，有许多是高允的妻族之人，都走到高允门前，高允把自己的财产全部拿出来用来周济他们，慰问周到，人们没有不感谢他的仁厚的。高允又对这些迁移来的人根据不同才能上书请皇上任用。当时议论的人都认为刚归顺的人容易产生异心，高允说取材任能，不应当以此来压抑委屈他们。以前高允被召到方山作颂词，身体尚可且记忆也十分好，谈及过去之事，几乎没有什么遗忘。太和十一年(487)正月去世，享年九十八岁。
 </p><p>最初，高允常对人言：“我任中书时有阴德曾救济恩治过百姓性命，如果阳报不差的话，我的寿命在百岁上。”去世前十天左右，略有不舒适，但仍不愿卧床不起，呼请医生饮用汤药，出入行止，仍然吟咏不止。高祖、文明太后听说后派医生李..去看他并把脉观察，高允仍说没有大病。李..入宫后悄悄向皇上、文明太后陈述说高允的荣卫两脉已有异常之象，恐怕不久于世了。于是皇上、文明太后派使者准备好御膳珍肴相赐，自酒米到调味，有一百多种，都是当时新鲜之物。床帐、衣服、茵被、几杖罗列在庭中，朝中之官往往来来给予慰问，高允喜形于色，对人说：“天恩因我太老，给了这么多赐品，可以用来待客了。”上表表示感谢，没有其他考虑。如此这样多日，夜间去世，家人都没察觉。去世后皇上下诏给绢一千匹，布二千匹，绢五百斤，锦五十匹，杂彩百匹，谷一千斛用做送葬之费。魏朝自初建国至此，存亡蒙赐赏的人没有一个人有过这么多，满朝人都认为这是莫大之荣。将下葬，赠侍中、司空公、冀州刺史、将军、公如故、谥曰：文。赐给命服一袭。高允所作的诗、赋、谏、颂、箴、论、表、赞、左氏、公羊释、毛诗拾遗、论杂解、议何郑膏肓事，共约百余篇，另有文集刊行于世。高允还精于算法之学，著有《算术》三卷。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十五章-卷三十五-白话.html'>第三十五章-卷三十五</a></p><p class='next'>下一节：<a href='第三十七章-卷三十七-白话.html'>第三十七章-卷三十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十五章-卷三十五-白话.html'>第三十五章-卷三十五</a></p><p class='next'>下一节：<a href='第三十七章-卷三十七-白话.html'>第三十七章-卷三十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

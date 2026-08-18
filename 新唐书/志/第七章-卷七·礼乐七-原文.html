@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新唐书-志<a href='../新唐书.html#志'>：目录</a></p>
@@ -176,5 +203,18 @@
 </p><p>初，宾出，皇子东面见，诸亲拜之，皇子答拜。皇子入见内外诸尊于别所。
 </p><p>宾、主既释服，改设席，讫，宾、赞俱出次，立于门西。主人出揖宾，宾报揖。主人先入，宾、赞从之。至阶，一揖一让，升坐，俱坐。会讫，宾立于西阶上，赞冠者在北，少退，俱东面。主人立于东阶上，西面。掌事者奉束帛之篚升，授主人于序端。主人执篚少进，西面立。又掌事者奉币篚升，立于主人后。币篚升，牵马者牵两马入，陈于门内，三分庭一在南，北首西上。宾还西阶上，北面再拜。主人进，立于楹间，赞冠者立于宾左，少退，俱北面再拜。主人南面，宾、赞进，立于主人之右，俱南面东上。主人授币，宾受之，退，复位。于主人授币，掌事者又以币篚授赞冠者。主人还阼阶上，北面拜送，宾、赞降自西阶，从者讶受币。宾当庭实，东面揖，出，牵马者从出，从者讶受马于门外。宾降，主人降。送宾于大门，西面再拜。
 </p><p>若诸臣之嫡子三加，皆祝而冠，又祝而酌，又祝而字。庶子三加，既加，然后酌而祝之，又祝而字。其始冠皆缁布；再加皆进贤；其三加，一品之子以衮冕，二品之子以惊冕，三品之子以毳冕，四品之子以絺冕，五品之子以玄冕，六品至于九品之子以爵弁。其服从之。其即席而冠也，嫡子西面，庶子南面。其筮日，筮宾、赞，遂戒之，及其所以冠之礼，皆如亲王。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章-卷六·礼乐六-原文.html'>第六章-卷六·礼乐六</a></p><p class='next'>下一节：<a href='第八章-卷八·礼乐八-原文.html'>第八章-卷八·礼乐八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六章-卷六·礼乐六-原文.html'>第六章-卷六·礼乐六</a></p><p class='next'>下一节：<a href='第八章-卷八·礼乐八-原文.html'>第八章-卷八·礼乐八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

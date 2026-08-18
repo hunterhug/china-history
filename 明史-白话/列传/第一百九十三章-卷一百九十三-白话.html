@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -214,5 +241,18 @@
 </p><p>王承恩，属太监曹化淳名下，历任到司礼监秉笔太监。崇祯十七年(1644)三月，李自成侵犯禁宫，皇上命承恩提督京营部队。当时，大势已去，守城士卒寥寥，贼人架设飞梯进攻西直门、平则门、德胜门三门。承恩见贼人挖城墙，急忙发炮攻击，一连击毙了几个人，宦官们便沾沾自喜。皇上诏见承恩，叫他赶快整顿宦官，准备亲征。到了晚上，内城失陷。天将亮时，皇上在寿皇亭驾崩，承恩也在亭下上吊。福王时期，给他谥号叫忠愍。大清朝赐给土地六十亩，建祠立碑以表彰他的忠诚，将他附葬在故主庄烈帝陵之侧。
 </p><p>方正化，山东人。崇祯时期，任司礼监太监。十五年(1642)冬，京畿地区遭受兵灾，他受命总监保定军务，立下了保全城池之功，不久撤回。十七年二月，皇上又命他出去镇守，方正化叩头推辞，皇上不准。他又叩头说“：奴才此行绝无所作为，不过是以一死报答主上恩德而已。”但皇上还是含泪派他出去。他到任后，与同知邵宗元等人登城共守。凡有人来请示，他总是说：“我方才已乱，各位好自为之吧！”城池失陷后，他击杀数十人，贼人问他：“你是谁？”他厉声说道：“我是总监方公！”贼人乱刀将他砍死，他的随从宦官也死了。
 </p><p>当时殉难的宦官，还有原司礼监掌印太监高时明，司礼监秉笔太监李凤翔，提督诸监局太监褚宪章、张国元四人。提督东厂的太监王之心家中最富，他投降后，贼人向他勒索钱财，将他拷打而死。南渡时期，建旌忠祠祭祀那些死难者，以王承恩为正祀，宦官方正化等人附祀，而王之心也得以混了进去。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百九十二章-卷一百九十二-白话.html'>第一百九十二章-卷一百九十二</a></p><p class='next'>下一节：<a href='第一百九十四章-卷一百九十四-白话.html'>第一百九十四章-卷一百九十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百九十二章-卷一百九十二-白话.html'>第一百九十二章-卷一百九十二</a></p><p class='next'>下一节：<a href='第一百九十四章-卷一百九十四-白话.html'>第一百九十四章-卷一百九十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

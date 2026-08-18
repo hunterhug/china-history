@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>宋史-白话版宋史<a href='../宋史.html#宋史'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>李汉超传<span style='font-size:small'> 白话</span></h1>
 <p>李汉超，云州云中人，他起初跟随邺州帅守范延光，不为范所了解。他又跟随郓州帅高行周，亦不被亲近信用。恰逢周世宗镇守澶渊，李汉超于是归顺世宗。周世宗即皇帝位，补选李汉超为殿前指挥使，三次迁升为殿前都虞候。<BR><BR>　　宋朝初年，李汉超改任散指挥都指挥使，掌领绵州刺史，累升至控鹤左厢都校，掌领恩州团练使。他随宋太祖平定李重进，不久升迁为齐州防御使兼关南兵马都监。李汉超在关南时，有人告他强娶民女为妾和借钱不还，太祖召见上告之人问：“你女儿可嫁什么人？”答曰：“农民家。”太祖又问：“李汉超没到关南时，契丹怎么样？”回答说：“我们每年都苦于契丹的侵暴。”太祖又问“：你们现在又怎么样呢？”回答说“：没有契丹的侵害了。”宋太祖说：“李汉超，是我的重要大臣，你女儿做他的妾不强于当农妇吗？若使汉超不守关南，还能担保是你家所有吗？”太祖责备上告之人后让他走了。太祖又派密使告诉汉超说“：立即归还民女和所借的钱，我暂且赦免你，不要再做这种事了。钱不够用，为何不把这情况告诉我呢？”李汉超感动得流下了泪，发誓以死相报宋太祖。他在郡十七年，政治稳定断案合理，官吏百姓都喜爱他，到朝廷请求为李汉超立碑颂德。宋太祖召率更令徐铉撰写碑文赐之。<BR><BR>　　霸州监军马仁王禹曾像待兄长一样对待汉超，马仁王禹常任己放肆，擅自派部下士兵进入辽境，剽劫掠夺人口、羊马，由于这样李、马二将关系恶化。宋太祖担心发生事变，派宦官赐给汉超、仁王禹金帛，令他们和解。太平兴国初，李汉超升任应州观察使，判齐州，仍任关南巡检。太平兴国二年(977)八月，去世于屯所。宋太宗甚是悼念痛惜，赠他为太尉、忠武军节度，派宦官护葬。李汉超善抚士卒，与士卒同甘共苦，他死的那天，军中士卒都流泪。他的儿子李守恩。</p>
-<div class='pn'><p class='pre'>上一节：<a href='杨延昭传-白话.html'>杨延昭传</a></p><p class='next'>下一节：<a href='郭进传-白话.html'>郭进传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='杨延昭传-白话.html'>杨延昭传</a></p><p class='next'>下一节：<a href='郭进传-白话.html'>郭进传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

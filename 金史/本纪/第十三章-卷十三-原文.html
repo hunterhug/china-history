@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-本纪<a href='../金史.html#本纪'>：目录</a></p>
@@ -197,5 +224,18 @@
 </p><p>九月甲辰，宣宗即位。丁未，诣邸临奠，伏哭尽哀。敕以礼改葬。胡沙虎请废为庶人，诏百官议于朝堂，议者三百余人。太子少傅奥屯忠孝、侍读学士蒲察思忠请从废黜，户部尚书武都、拾遣田庭芳等三十人请降为王侯。太子太保张行简请用汉昌邑王、晋海西公故事，侍郎史完颜讹出等十人请降复王封。胡沙虎固执前议，宣宗不得已，乃降封东海郡侯。昭雪道陵元妃李氏、承御贾氏。
 </p><p>十月辛亥，元帅右监军术虎高琪杀胡沙虎于其第。胡沙虎者，纥石烈执中也。宣宗乃下诏削其官爵。赠石古乃顺州刺史，鄯阳顺天军节度副使，凡从二人拒战者，千户赏钱五百贯，谋克三百贯，蒲辇散军二百贯，各迁官两阶，战没者赠赏付其家。冬儿加龙虎卫上将军，再迁宿进将军。蒲察六斤加定远大将军、武卫军钤辖。石古乃子尚幼，给俸八贯石，敕有司，俟其年十五以闻。贞祐四年，诏追复卫王谥曰绍。
 </p><p>赞曰：卫绍王政乱于内，兵败于外，其灭亡已有征矣。身弑国蹙，记注亡失，南迁后不复纪载。皇朝中统三年，翰林学士承旨王鹗有志论著，求大安、崇庆事不可得，采摭当时诏令，故金部令史窦祥年八十九，耳目聪明，能记忆旧事，从之得二十余条。司天提点张正之写灾异十六条，张承旨家手本载旧事五条，金礼部尚书杨云翼日录四十条，陈老日录三十条，藏在史馆。条件虽多，重复者三之二。惟所载李妃、完颜匡定策，独吉千家奴兵败，纥石烈执中作难，及日食、星变、地震、氛昆，不相背盭。今校其重出，删其繁杂。《章宗实录》详其前事，《宜宗实录》详其后事。又于金掌奏目女官大明居士王氏所纪，得资明夫人援玺一事，附著于篇，亦可以存其梗概云尔。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p><p class='next'>下一节：<a href='第十四章-卷十四-原文.html'>第十四章-卷十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p><p class='next'>下一节：<a href='第十四章-卷十四-原文.html'>第十四章-卷十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

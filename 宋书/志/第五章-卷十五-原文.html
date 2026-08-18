@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>宋书-志<a href='../宋书.html#志'>：目录</a></p>
@@ -240,5 +267,18 @@
 </p><p>孝武帝大明六年五月，诏立凌室藏冰。有司奏，季冬之月，冰壮之时，凌室长率山虞及舆隶取冰于深山穷谷涸阴冱寒之处，以纳于凌阴。务令周密，无泄其气。先以黑牡翙黍祭司寒于凌室之北。仲春之月，春分之日，以黑羔翙黍祭司寒。启冰室，先荐寝庙。二庙夏祠用鉴盛冰，室一鉴，以御温气蝇蚋。三御殿及太官膳羞，并以鉴供冰。自春分至立秋，有臣妾丧，诏赠秘器。自立夏至立秋，不限称数以周丧事。缮制夷盘，随冰借给。凌室在乐游苑内，置长一人，保举吏二人。
 </p><p>三公黄皞，前史无其义。史臣按，《礼记》“士韠与天子同，公侯大夫则异”。郑玄注：“士贱，与君同，不嫌也。”夫硃门洞启，当阳之正色也。三公之与天子，礼秩相亚，故黄其皞，以示谦不敢斥天子，盖是汉来制也。张超与陈公笺，“拜黄皞将有日月”是也。
 </p><p>史臣按：今朝士诣三公，尚书丞、郎诣令、仆射、尚书，并门外下车，履，度门阃乃纳屐。汉世朝臣见三公，并拜。丞、郎见八座，皆持板揖，事在《汉仪》及《汉旧仪》，然则并有敬也。陈蕃为光禄勋，范滂为主事，以公仪诣蕃，执板入皞，至坐，蕃不夺滂板，滂投板振衣而去。郭泰责蕃曰：“以阶级言之，滂宜有敬；以类数推之，至皞宜省。”然后敬止在门，其来久矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章-卷十四-原文.html'>第四章-卷十四</a></p><p class='next'>下一节：<a href='第六章-卷十六-原文.html'>第六章-卷十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四章-卷十四-原文.html'>第四章-卷十四</a></p><p class='next'>下一节：<a href='第六章-卷十六-原文.html'>第六章-卷十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

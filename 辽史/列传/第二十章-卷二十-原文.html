@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#列传'>：目录</a></p>
@@ -160,5 +187,18 @@
 </p><p>萧塔剌葛，字陶哂，六院部人。素刚直。太祖时，坐叔祖台哂谋杀于越释鲁，没入弘义宫。世宗即位，以舅氏故，出其籍，补国舅别部敞史。或言泰宁王察割有无君心。塔剌葛曰：“彼纵忍行不义，人孰肯从！”他日侍宴，酒酣，塔剌葛捉察割耳，强饮之曰：“上固知汝傲狠，然以国属，曲加矜悯，使汝在左右，且度汝才何能为。若长恶不悛，徒自取赤族之祸！”察割不能答，强笑曰：“何戏之虐也！”天禄末，塔剌葛为北府宰相，及察割作乱，塔剌葛醉詈曰：“吾悔不杀此逆贼！”寻为察割所害。
 </p><p>耶律敌禄，字阳隐，孟父楚国王之后。性质直，多膂力。察割作乱，敌禄闻之，入见寿安王，慷慨言曰：“愿得精兵数百，破贼党。”王嘉其忠。穆宗即位，为北院宣徽使。上以飞狐道狭，诏敌禄广之。明年，将兵援河东，至太原，与汉王会于高平，击周军，败之，仍降其众。忻、代二州叛，将兵讨之。会耶律挞烈至，败周师于忻口。师还，卒。
 </p><p>论曰：忠臣惟知有国，而不知有身，故恶恶不避其患。阿剌以谄谀不法折萧革，陶隗以用必基祸言阿思，塔剌葛以忍行不义徒自取赤族之罪责察割，其心可谓忠矣。言一出而祸辄随之。吁，邪正既不辨，国焉得无乱哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p><p class='next'>下一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p><p class='next'>下一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

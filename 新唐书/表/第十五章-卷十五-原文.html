@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新唐书-表<a href='../新唐书.html#表'>：目录</a></p>
@@ -191,5 +218,18 @@
 </p><p>李氏三公七人，三师二人。柳城李氏有光弼；武威李氏有抱玉；高丽李氏有正已。又柳城李氏有宝臣；鸡田李氏有光颜；范阳李氏有载义；代北李氏有克用。安东王氏，本阿布思之族，世隶安东都护府，曰五哥之，左武卫将军，生末怛活。田氏出自妫姓。陈厉公子完，字敬仲，仕齐，初有采地，国号田氏。又云，“陈”“田”声相近也。至田和篡齐为诸侯，九世至王建，为秦所灭。汉兴，诸田徙阳陵，后徙北平。魏议郎田畴，字子泰。二十二世孙璟。
 </p><p>唐宰相三百六十九人，凡九十八族。再入五十七人：长孙无忌、杨师道、李勣、褚遂良、李义府、刘仁轨、骞味道、狄仁杰、姚、李元素、娄师德、陆元方、苏味道、杨再思、杜景佺、宗楚客、魏元忠、张锡、唐休璟、韦嗣立、萝瑰、萧至忠、岑羲、宋璟、郭元振、窦怀贞、源乾曜、苗晋卿、李岘、杜鸿渐、李勉、郑余庆、武元衡、李吉甫、张弘靖、李逢吉、王涯、牛僧孺、李宗闵、李德裕、崔铉、杜悰、白敏中、刘瞻、卢携、郑从谠、裴澈、萧迈、韦昭度、孔纬、徐彦若、李溪、王搏、崔远、裴枢。三入十二人：武承嗣、武攸宁、豆卢钦望、武三思、李峤、李怀远、崔湜、刘幽求、张说、张延赏、王鐸、郑畋。四入三人、韦巨源、姚元之、韦安石。五入三人：萧瑀、裴度、崔胤。三公三师七十一人：宗室亲王二十人：秦王世民、齐王元吉、荆王元景、吴王恪、徐王元礼、韩王元嘉、霍王元轨、舒王元名、相王旦、宋王宪、申王捴、邠王守礼、忠王浚、薛王业、庆王琮、广平郡王俶、福王绾、抚王纮、荣王忄责、建王震。以宰相及前宰相迁者二十七人：裴寂、房玄龄、长孙无忌、李勣、武三思、杨国忠、杜佑、裴度、王涯、李德裕、李讠襄夷、杜忄宗、白敏中、令狐綯、夏侯孜、韦保衡、王鐸、郑畋、郑从谠、萧迈、韦昭度、孔纬、杜讠襄能、徐彦若、胤、王搏、柳璨。以军功进者二十人：李光弼、郭子仪、王思礼、仆固怀恩、李抱玉、田承嗣、李正已、硃泚、李宝臣、侯希逸、马燧、李晟、李光颜、乌重胤、王智兴、李载义、李克用、王建、韩建、硃全忠。以恩泽进者四人：武攸暨、李辅国、于頔、韩弘。皆通见《宰相世系》。别著田氏、乌氏二族。希逸，亡其世系。辅国，中官也；怀恩，判臣也；硃泚、王建、韩建、硃全忠，唐之盗也，皆削而不著。
 </p><p>以上表略</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十四章-卷十四-原文.html'>第十四章-卷十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十四章-卷十四-原文.html'>第十四章-卷十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

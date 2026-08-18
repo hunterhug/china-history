@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>宋书-本纪<a href='../宋书.html#本纪'>：目录</a></p>
@@ -183,5 +210,18 @@
 </p><p>二十九年春正月甲午，诏曰：“经寇六州，居业未能，仍值灾涝，饥困荐臻。可速符诸镇，优量救恤。今农事行兴，务尽地利。若须田种，随宜给之。”二月庚申，虏帅拓跋焘死。庚午，立第十二皇子休仁为建安王。夏四月戊午，诃罗单国遣使献方物。以骠骑参军张永为冀州刺史。五月甲午，罢湘州并荆州。以始兴、临贺、始安三郡属广州。丙申，诏曰：“恶稔身灭，戎丑常数，虐虏穷凶，著于自昔。未劳资斧，已伏天诛，子孙相残，亲党离贰，关、洛伪帅，并怀内款，河朔遗民，注诚请效。拯溺荡秽，今其会也。可符骠骑、司空二府，各部分所统，东西应接。归义建绩者，随劳酬奖。”是月，京邑雨水。六月己酉，遣部司巡行，赐樵米，给船。抚军将军萧思话率众北伐。以征北从事中郎刘瑀为益州刺史。秋七月壬辰，汝阴王浑改封武昌王，淮阳王讳改封湘东王。丁酉，省大司农、太子仆、廷尉监官。八月丁卯，萧思话攻确磝，不拔，退还。九月丁亥，以平西将军吐谷浑拾寅为安西将军、秦河二州刺史。己丑，抚军将军、徐兗二州刺史萧思话加冀州刺史，兗州如故。冬十月癸亥，司州刺史鲁爽攻虎牢不拔，退还。十一月壬寅，扬州刺史庐陵王绍薨。十二月辛未，以骠骑将军、南兗州刺史江夏王义恭为大将军、南徐州刺史，录尚书事如故。
 </p><p>三十年春正月戊寅，以司空、荆州刺史南谯王义宣为司徒、中军将军、扬州刺史。以南兗州并南徐州。庚辰，以领军将军刘遵考为平西将军、豫州刺史。壬午，以征北将军、南徐州刺史始兴王浚为卫将军、荆州刺史。戊子，江州刺史武陵王讳统众军伐西阳蛮。癸巳，以豫州刺史南平王铄为抚军将军、领军将军。青、徐州饥。二月壬子，遣运部赈恤。甲子，上崩于含章殿，时年四十七。谥曰景皇帝，庙曰中宗。三月癸巳，葬长宁陵。世祖践阼，追改谥及庙号。
 </p><p>史臣曰：太祖幼年特秀，顾无保傅之严，而天授和敏之姿，自禀君人之德。及正位南面，历年长久，纲维备举，条禁明密，罚有恆科，爵无滥品。故能内清外晏，四海谧如也。昔汉氏东京常称建武、永平故事，自兹厥后，亦每以元嘉为言，斯固盛矣！授将遣帅，乖分阃之命，才谢光武，而遥制兵略，至于攻日战时，莫不仰听成旨。虽覆师丧旅，将非韩、白，而延寇蹙境，抑此之由。及至言漏衾衽，难结商竖，虽祸生非虑，盖亦有以而然也。呜呼哀哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

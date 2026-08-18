@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后唐<a href='../旧五代史.html#后唐'>：目录</a></p>
@@ -166,5 +193,18 @@
 </p><p>重吉，末帝长子，为控鹤都指挥使。闵帝嗣位，出为亳州团练使。末帝兵起，为闵帝所害。《通鉴》云：诏遣殿直楚匡祚执亳州李重吉，幽于宋州。又云：遣楚匡祚杀李重吉于宋州。匡祚榜捶重吉，责其家财。清泰元年，诏赠太尉，仍令宋州选隙地置庙。《明宗纪》：闵帝有子重哲，授银青光禄大夫、检校工部尚书。《欧阳史·家人传》不载。
 </p><p>雍王理美，末帝第二子，清泰三年封。晋兵入，与末帝俱自焚死。《通鉴》云：洛阳自闻兵败，众心大震，居人四出，逃窜山谷。门者请禁之，雍王重美曰：“国家多难，未能为百姓主，徒增恶名耳。不若听其自便，事宁自还。”乃出令任从所适，众心差安。又云：皇后积薪欲烧宫室，重美谏曰；“新天子至，必不露居，他日重劳民力，死而遗怨，将安用之。”乃止。
 </p><p>史臣曰：继岌以童騃之岁，当统帅之任，虽功成于剑外，寻求死于渭滨，盖运尽天亡，非孺子之咎也。从审感厚遇之恩，无苟免之意，死于君侧，得不谓之忠乎！从荣以狂躁之谋，贾覆亡之祸，谓为大逆，则近厚诬。从璨为权臣所忌，从益为强敌所胁，俱不得其死，亦良可伤哉！重美听洛民之奔亡，止母后之燔爇，身虽烬于戏焰，言则耀乎青编。童年若斯，可谓贤矣！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十六章-列传二-原文.html'>第二十六章-列传二</a></p><p class='next'>下一节：<a href='第二十八章-列传四-原文.html'>第二十八章-列传四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十六章-列传二-原文.html'>第二十六章-列传二</a></p><p class='next'>下一节：<a href='第二十八章-列传四-原文.html'>第二十八章-列传四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-志<a href='../明史.html#志'>：目录</a></p>
@@ -229,5 +256,18 @@
 </p><p>崇祯元年，陕西饥，延、巩民相聚为盗。二年，山西、陕西饥。五年，淮、扬诸府饥，流殍载道。六年，陕西、山西大饥。淮、扬洊饥，有夫妻雉经于树及投河者。盐城教官王明佐至自缢于官署。七年，京师饥，御史龚廷献绘《饥民图》以进。太原大饥，人相食。九年，南阳大饥，有母烹其女者。江西亦饥。十年，浙江大饥，父子、兄弟、夫妻相食。十二年，两畿、山东、山西、陕西、江西饥。河南大饥，人相食，卢氏、嵩、伊阳三县尤甚。十三年，北畿、山东、河南、陕西、山西、浙江、三吴皆饥。自淮而北至畿南，树皮食尽，发瘗胔以食。十四年，南畿饥。金坛民于延庆寺近山见人云，此地深入尺余，其土可食。如言取之，淘磨为粉粥而食，取者日众。又长山十里亦出土，堪食，其色青白类茯苓。又石子涧土黄赤，状如猪肝，俗呼“观音粉”，食之多腹痛陨坠，卒枕藉以死。是岁，畿南、山东洊饥。德州斗米千钱，父子相食，行人断绝。大盗滋矣。
 </p><p>▲黄眚黄祥
 </p><p>正统十一年二月辛酉，有异气现华盖殿金顶及奉天殿鸱吻之上。成化九年四月乙亥，两京雨土。十三年四月戊戌，陕西、甘肃冰厚五尺，间以杂沙，有青红黄黑四色。弘治十年三月己酉，雨土。十一年四月辛巳，雨土。十七年二月甲辰，郧阳、均州雨沙。嘉靖元年正月丁卯，雨黄沙。十三年二月己未，雨微土。二十一年，象山雨黄雾，行人口耳皆塞。隆庆元年三月甲寅，南郑雨土。万历二十五年二月癸亥，湖州雨黄沙。四十六年三月庚午，暮刻，雨土，濛濛如雾如霰，入夜不止。四十七年二月甲戌，从未至酉，尘沙涨天，其色赤黄。四十八年，山东省城及泰安、肥城皆雨土。崇祯十二年二月壬申，浚县有黑黄云起，旋分为二。顷之四塞。狂风大作，黄埃涨天，间以青白气。五步之外，不辨人踪，至昏始定。十四年正月壬寅，黄埃涨天。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p><p class='next'>下一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p><p class='next'>下一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

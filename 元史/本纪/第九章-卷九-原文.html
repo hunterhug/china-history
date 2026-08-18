@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>元史-本纪<a href='../元史.html#本纪'>：目录</a></p>
@@ -177,5 +204,18 @@
 </p><p>冬十月丙辰朔，日有食之。己未，享于太庙。庚申，湖北宣慰使塔海略地至夔府之太原坪，禽其将，诛之。辛酉，弛盖州猎禁。乙亥，以宋张世杰、文天祥犹未降，命阿塔海选锐兵防遏隆兴诸城。禁无籍军随大军剽掠者，勿过关渡。己卯，降臣郭晓、魏象祖入觐，赐币帛有差。壬午，置宣慰司于黄州。甲申，播州安抚使杨邦宪言：“本族自唐至宋，世守此土，将五百年。昨奉旨许令仍旧，乞降玺书。”从之。以行省参政忽都帖木儿、脱博忽鲁秃花、崔斌并为中书左丞，鄂州总管府达鲁花赤张鼎、湖北道宣慰使贾居贞并参知政事。
 </p><p>十一月戊子，枢密院臣言：“宋文天祥与其徒赵孟瀯同起兵，行中书发兵攻之，杀孟瀯，天祥仅以身免。”诏以其妻孥赴京师。右副都元帅张德润上涪州功，赐钞千锭。乙未，凡伪造宝钞，同情者并处死，分用者减死杖之，具为令。庚子，命中书省檄谕中外，江南既平，宋宜曰亡宋，行在宜曰杭州。以吏部尚书别都鲁丁参知政事。
 </p><p>十二月丙辰，置中滦、唐村、淇门驿。丁卯，以大都物价翔踊，发官廪万石，赈粜贫民。庚午，梁山军袁世安以其城及金石城军民来降。壬申，潭州行省复祁阳县。斩首贼罗飞，余党悉平。乙亥，都元帅杨文安攻咸淳府，克之。以十五年历日赐高丽国。以参议中书省事耿仁参知政事。冠州及永年县水，免今年田租。导任河，复民田三千余顷。赐诸王金、银、币、帛等物如岁例。赐诸王也不干、燕帖木儿等五百二十九人羊马价，钞八千四百五十二锭。赏拜答儿等千三百五十五人战功，金百两、银万五千一百两、钞百三十锭及纳失失、金素币帛、貂鼠豹裘、衣帽有差。是岁，赈东平、济南等郡饥民，米二万一千六百十七石、粟二万八千六百十三石、钞万一百十二锭。断死罪三十二人。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p><p class='next'>下一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p><p class='next'>下一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

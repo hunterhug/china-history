@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>北史-白话版北史<a href='../北史.html#北史'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>公孙表传<span style='font-size:small'> 白话</span></h1>
 <p>公孙表，字玄元，燕郡广阳人。担任慕容冲的尚书郎。慕容垂攻破长子城，公孙表跟随进入中山。慕容宝逃走后，他归从道武，任博士。当初，道武帝认为慕容垂的诸子分别位居要职，使得权柄推移，终于导致灭亡。公孙表上奏《韩非书》二十卷，道武颇为赞赏。明元初，赐公孙表固安子之爵。河西饥民胡人刘武在上党造反，明元下诏让公孙表讨伐，被胡人打败，皇帝对此耿耿于怀。<BR><BR>　　泰常七年(423)，宋武帝死去。朝廷议取河南一些地盘，任命奚斤为都督，公孙表为吴兵将军，广州刺史。公孙表攻克滑台，又将武牢围困。明元驾临汲郡。始昌子苏坦、太史令王亮上奏，说公孙表屯兵在武牢东面，处在不利于进攻的地势，所以使敌兵一时间没被消灭。明元帝一向喜欢使用权术，加上以前的积怨，后来公孙表攻城时，士卒大量伤亡，明元帝就派人半夜在帐中将公孙表缢杀。由于敌人尚未退败，此事秘而不宣。<BR><BR>　　以前，公孙表与渤海封恺友善，后来他为自己的儿子向封恺的侄女求婚，封恺不答应，公孙表怀恨在心。后来封恺被司马国..捉住，皇帝因为他是旧家族，想宽恕他，公孙表证实了他的罪状，于是封氏被杀。公孙表外表谦和而内心多猜疑，当时众人因此而鄙薄其为人。公孙表与王亮本为同营署的同事，他后来出兵时，对王亮态度倨傲轻慢，终于导致被杀。</p>
-<div class='pn'><p class='pre'>上一节：<a href='慕容白曜传-白话.html'>慕容白曜传</a></p><p class='next'>下一节：<a href='公孙轨传-白话.html'>公孙轨传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='慕容白曜传-白话.html'>慕容白曜传</a></p><p class='next'>下一节：<a href='公孙轨传-白话.html'>公孙轨传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

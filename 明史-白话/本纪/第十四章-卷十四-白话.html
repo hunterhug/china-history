@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-本纪<a href='../明史.html#明史'>：目录</a></p>
@@ -244,5 +271,18 @@
 </p><p>四月六日，免浙江遭灾税粮。五月十六日，天旱，派使者分别祈祷天下山川。十七日，命群臣修身反省。当月，朵颜三卫为躲避那孩进入辽东。命三卫兵驻扎并放牧于近边，给他们米布。六月，免陕西、南畿受灾秋粮。
 </p><p>七月十一日，封皇子朱..木元为兴王，朱..木仑为岐王，朱..槟为益王，朱..木军为衡王，朱..木云为雍王。八月十三日，宪宗身体不适。十七日，皇太子在文华殿摄政处理政事。二十二日，宪宗死，终年四十一岁。九月十九日，上尊谥，庙号宪宗，葬于茂陵。
 </p><p>评论：宪宗最初立为皇太子，后因故发生变化。及至登基之后，上景帝尊号，体恤于谦冤狱，抑制黎淳而召见商辂，颇有人君之风范。在位时政治修明，朝中多有才能之人。宪宗能知人善任，对戒律十分谨慎，减赋税，免刑狱，百姓日益富足，仁宗、宣宗之政治在此又重新出现。后因任用汪直，使西厂横行，假借皇上之权威，玩弄权术，明目张胆地随意决断，像皇帝下令一样。世人为之所惑，事后才发觉，太监之祸实在可怕！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十三章-卷十三-白话.html'>第十三章-卷十三</a></p><p class='next'>下一节：<a href='第十五章-卷十五-白话.html'>第十五章-卷十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十三章-卷十三-白话.html'>第十三章-卷十三</a></p><p class='next'>下一节：<a href='第十五章-卷十五-白话.html'>第十五章-卷十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

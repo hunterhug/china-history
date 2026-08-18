@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#晋书'>：目录</a></p>
@@ -181,5 +208,18 @@
 </p><p>永康初年，赵王司马伦用李重为相国左司马，因忧迫成疾而死，终年四十八岁。家贫，住宅狭小，没有收殓停柩之地，下韶在典客署办丧事。追赠为散骑常侍，谧号成。子名李式，有好的名声，官至侍中，咸和初年逝世。
 </p><p>史臣曰：子雅年轻时就在朝做官，竭尽忠诚努力为国，广泛论述建立封国，深合时宜，详细论述刑名，所论都适合政体。虽然文辞不够华美婉丽，但切要有理。和西京时代的人相比，离买谊不远；和束国的人相比，超过了郎颤。到元康之间，乱臣贼子专擅朝命，朝廷上下震惊，都苟且偷安；刘颂在这时，仍忠直不屈，痛哭张公的无罪，拒绝给赵王妄加九锡，即使古代的耿直名臣，谁能如此。至于私议，对刘友有不公平的看法。是憎恶某人但又能表彰他的优点，推举人才能不避仇敌一样!李重讲因循舆改革的道理，驳斥田产之制，词合事当，都有可取之处。到他锐意主持选拔官吏，留意举荐隐逸的贤人，浚冲当成知己，岂是虚假的!
 </p><p>赞曰：刘颂刚烈正直，德义形于言表。上下磨砺，他的确有这种德义。李重清廉雅正，心志无私。推举贤良提拔隐逸，好的言行在他那裹体现。两位贤哲，是国家的基石。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十五章--白话.html'>第十五章-</a></p><p class='next'>下一节：<a href='第十七章--白话.html'>第十七章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十五章--白话.html'>第十五章-</a></p><p class='next'>下一节：<a href='第十七章--白话.html'>第十七章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

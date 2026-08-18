@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -180,5 +207,18 @@
 </p><p>王正志，祥符人。万历二十六年进士。除富平知县。二十八年，税使梁永、赵钦肆虐，正志捕其党李英，杖杀之，因极论二人不法罪。钦亦以李英事讦奏，帝怒，命逮之。给事中陈惟春言正志劾钦罪多，宜提讯；钦所劾正志事宜下抚按核实，免其逮系。御史李时华亦言近日所逮吴应鸿、劳养魁、蔡如川、甘学书及正志等，俱宜敕下抚按勘虚实，不得以一人单词枉害良善。皆不报。未几，梁永亦讦正志。帝命诸抗违欺隐者悉指名劾奏，重治之。宦官盆张，长吏皆丧气。正志系诏狱四年，三十一年夏，瘐死。天启时，赠祭，荫子，皆视钰。
 </p><p>自矿税兴，中使四出，跆藉有司。谤书一闻，驾帖立下。二十四年，则辽东参将梁心；二十五年，则山东福山知县韦国贤；二十六年，则山东益都知县吴宗尧；二十七年，则江西南康知府吴宝秀、星子知县吴一元、山东临清守备王炀；二十八年，则广东新会在籍通判吴应鸿，举人劳养魁、钟声朝、梁斗辉，云南寻甸知府蔡如川，赵州知州甘学书及正志；二十九年，则湖广按察佥事冯应京、襄阳通判邸宅、推官何栋如、枣阳知县王之翰、武昌同知卞孔时、江西饶州通判陈奇可；三十年，则凤阳临淮知县林錝；三十四年，则陕西咸阳知县宋时际；三十五年，则陕西咸宁知县满朝荐；三十六年，则辽东海防同知王邦才、参将李获阳；皆幽系诏狱，久者至十余年。炀、应鸿、获阳毙狱中，其他削籍、贬官有差。至士民幽系死亡者，尤不可胜纪也。
 </p><p>赞曰：神宗二十四年，军府千户仲春请开矿助大工，遂命户部锦衣官各一人同仲春开采。给事中程绍言嘉靖中采矿，费帑金三万余，得矿银二万八千五百，得不偿失，因罢其役。给事中杨应文继言之。皆不纳。由是卑秩冗僚，下至市井黠桀，奋起言利。而珰使四出，毒流海内，民不聊生，至三十三年乃罢。嗣是军兴征发，加派再三。府库未充，膏脂已竭，明室之亡，于是决矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百二十四章-卷一百二十四-原文.html'>第一百二十四章-卷一百二十四</a></p><p class='next'>下一节：<a href='第一百二十六章-卷一百二十六-原文.html'>第一百二十六章-卷一百二十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百二十四章-卷一百二十四-原文.html'>第一百二十四章-卷一百二十四</a></p><p class='next'>下一节：<a href='第一百二十六章-卷一百二十六-原文.html'>第一百二十六章-卷一百二十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

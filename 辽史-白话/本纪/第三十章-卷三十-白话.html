@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-本纪<a href='../辽史.html#辽史'>：目录</a></p>
@@ -177,5 +204,18 @@
 </p><p>耶律淳在天祚之世，历封大国之王，受赐金券，参拜皇上时赞礼之人不直呼其名。所享受的恩遇，一时无与伦比。当天祚帝流亡之时，耶律淳作为都元帅留守南京，难道就不能愤激大义以激励燕京百姓及众大臣，兴勤王之师，东拒金人从而迎回天祚吗？竟然自取帝位，是之谓篡。何况忍心贬天祚为王呢？
 </p><p>大石既已立耶律淳为帝而贬天祚为王，后又回归天祚身边。天祚以大义责备他，他竟自立为王而出走了。有幸凭借祖宗之余威及余智，在万里之外建号立国。尽管是寡母弱子，互相更迭继承，将近九十年，也实在是难能可贵了。
 </p><p>然而耶律淳与雅里、大石之自立为帝，均在天祚之时。有君王而又自立为君，怎么可行呢？诸葛武侯为汉献帝发丧，然后再立先主为帝，此举比起三人所为，真是不可同日而语了。故此记下他们的行事以为鉴戒。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十九章-卷二十九-白话.html'>第二十九章-卷二十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十九章-卷二十九-白话.html'>第二十九章-卷二十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

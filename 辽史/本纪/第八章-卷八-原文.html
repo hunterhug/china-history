@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-本纪<a href='../辽史.html#本纪'>：目录</a></p>
@@ -159,5 +186,18 @@
 </p><p>鵩六年春正月癸未，幸南京。三月，宋遣使请和，以涿州刺史耶律昌术加侍中与宋议和。夏四月，宋王喜隐坐谋反废。秋七月丁未朔，閤门使酌古加检校太尉兼御史大夫，男海里以告喜隐事，遥授陇州防御使。庚申，猎于平地松林。冬十月乙亥朔，还上京。十二月戊子，以沙门照敏为三京诸道僧尼都总管，加兼侍中。
 </p><p>七年春正月甲戌朔，宋遣使来贺。壬寅，望祠木叶山。二月癸亥，汉雁门节度使刘继文来朝。贡方物。丙寅，以青牛白马祭天地。三月壬午，耶律速撒等献党项俘，分赐群臣。夏四月，遣郎君矧思使宋。己酉，祠木叶山。辛亥，射柳祈雨。如频跸淀清暑。五月丙戌，祭神姑。秋七月，黄龙府卫将燕颇杀都监张琚以叛，遣敞史耶律曷里必讨之。九月，败燕颇于治河，遣其弟安抟追之。燕颇走保兀惹城，安抟乃还，以余党千余户城通州。是秋，至自频跸淀。冬十月，钓鱼土河。
 </p><p>八年春正月癸酉，宋遣使来聘。二月壬寅，谕史馆学士，书皇后言亦称“朕”暨“予”，著为定式。三月辛未，遣五使廉问四方鳏寡孤独及贫乏失职者，赈之。夏六月，以西南面招讨使耶律斜轸为北院大王。秋七月丙寅朔，宁王只没妻安只伏诛，只没、高勋等除名。辛未，宋遣使来贺天清节。八月癸卯，汉遣使言天清节设无遮会，饭僧祝釐。丁未，如秋山。乙酉，汉以宋事来告。是月，女直侵贵德州东境。九月己巳，谒怀陵。辛未，东京统军使察邻、详稳涸奏女直袭归州五寨，剽掠而去。乙亥，鼻骨德来贡。壬午，汉为宋人所侵，遣使求援，命南府宰相耶律沙、冀王敌烈赴之。戊子，汉以宋师压境，遣驸马都尉卢俊来告。冬十月辛丑，汉以辽师退宋军来谢。十一月丙子，宋主匡胤殂，其弟炅自立，遣使来告。辛卯，遣郎君王六、挞马涅木古等使宋吊慰。十二月壬寅，遣萧只古、马哲贺宋即位。丁未，汉以宋军复至掠其军储来告。且乞赐粮为助。戊午，诏南京复礼部贡院。是月，辖戛斯国遣使来贡。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

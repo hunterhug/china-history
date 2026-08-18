@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>北史-白话版北史<a href='../北史.html#北史'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>李子雄传<span style='font-size:small'> 白话</span></h1>
 <p>李子雄年少时便慷慨有大志，陕州被周攻破后，他随着周军进入长安。李子雄家世代都是读书人，学业自通，他却还独自学习骑马、射箭。他的哥哥子旦劝他说“：弃文而崇尚武功，不是士大夫的本分啊。”李子雄说“：自古以来忠诚的大臣文武不能兼备而得以成功的人是很少的。我又文又武，兄长你担心什么呢？”子旦无话可说。<BR><BR>　　李子雄在北周做官，多次升迁任小宾部，后来跟从达奚武与齐人战于芒山，其他各路军队损失惨重，只有李子雄所领的军队保存了实力。他又经多次提拔任凉州总管长史。他跟随滕王荄在青海攻破吐谷浑，因为有功而加封上仪同。周宣帝即位后，李子雄跟随行军总管韦孝宽平定淮南，出任亳州刺史。隋文帝总管百事时，征为司会中大夫，因为李子雄在淮南有功，给他加位上开府。后来，当隋文帝受禅时，任命他为鸿胪卿，并晋爵高都郡公。<BR><BR>　　晋王杨广镇守并州，任命李子雄为河北行台兵部尚书。皇帝对少雄说“：我的孩子年轻，你兼有文武之才，现在我诚心将他委托给你，我就没有后顾之忧了。”李子雄叩头流泪，发誓为王室效命。李子雄为官正直，刚正不可冒犯的样子，晋王对他很尊敬，又很害怕，吏员们都称赞这位兵部尚书。在并州一年多，李少雄便去世了，他的儿子公扌延继承。</p>
-<div class='pn'><p class='pre'>上一节：<a href='李绘传-白话.html'>李绘传</a></p><p class='next'>下一节：<a href='高闾传-白话.html'>高闾传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='李绘传-白话.html'>李绘传</a></p><p class='next'>下一节：<a href='高闾传-白话.html'>高闾传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

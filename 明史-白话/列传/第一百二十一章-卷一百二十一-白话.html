@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -159,5 +186,18 @@
 </p><p>罗大纮，字公廓，吉水人。万历十四年(1586)进士，授职行人。十九年八月升礼科给事中。刚上任，就奏上《定制书》数千言。不久，又劝皇上上朝应勤，言语恳切、正直。
 </p><p>先前皇上有诏书说万历二十年(1592)春天册立太子。这时，工部主事张有德请求预备器物、仪式。皇上发怒，命令停发他的俸禄三个月，延缓册立太子一事。尚书曾同亨请求按前面的诏书行事，违反圣旨，遭到严厉指责。罗大纮又重申张有德的意见，也被停发三个月的俸禄。大学士许国、王家屏接连署上阁臣的名字，请求皇上收回新的命令，接纳大臣的请求，皇上更不高兴。首辅申时行正在休假，听到皇帝发了脾气，于是上密疏对皇上说：“我虽然名字列在奏疏上，但实在不知道。”皇上很高兴，下诏书赞扬了他，并且把奏疏与诏书都发给礼科。过去，阁臣的密奏没有发给礼科的。申时行既惭愧又害怕。与礼科都给事中胡汝宁商量，派人把密奏取回来。当时唯有罗大纮守在礼科，派出的那人用欺骗的手段把密奏拿走了。等到罗大纮去要的时候，申时行不给了。罗大纮上疏说：“臣奉守职责没有成绩，只是小心地待罪从事。独独顾念申时行受国家的重托，哪知他心存二心，包藏祸心，误了国家大事，出卖朋友，其罪过非语言所能说够。申时行虽在休假，但凡是翰林升迁的奏章都把他的名字列在首位，为何独对储君一事这样避讳呢。纵使陛下震惊生气，对许国等施加不可测度的威严，申时行也应当与他分担过错。更何况陛下并未发怒，他就堵塞言路，动摇国家根本，苟且献上他摇尾乞怜的权术，而阻击皇上悔悟的萌发。这是我特别恨他的地方。假使许国的请求得到同意，即将举行庆典、蒙受皇恩，申时行也会推辞吗？都是因为他出于私心，怕有所牵连，所以表面上依附朝廷大臣提出请立太子的意见，暗中却推迟此事，作为自己结交宫廷的计谋，假使请求得到批准，则可以居首功；不批准，则可另称为志趣各异。他耍弄这样的手段想愚弄一世，想不到今天却暴露了。”奏疏上后，皇上震惊，命令将罗大纮贬到边疆去任杂职。不久，因为六科钟羽正等上疏申救，将罗大纮贬为平民，钟羽正等人的俸禄被停发。中书舍人黄正宾又上疏极力诋毁申时行，皇帝发了脾气，将他下狱拷问，贬为平民。申时行也感到不安，没有多久，竟然自动称病离去。
 </p><p>罗大纮的志气、行为卓尔不群。乡人将他与前代的贤人罗伦、罗洪先，称为“三罗”。天启中，罗大纮被赠为光禄少卿。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百二十章-卷一百二十-白话.html'>第一百二十章-卷一百二十</a></p><p class='next'>下一节：<a href='第一百二十二章-卷一百二十二-白话.html'>第一百二十二章-卷一百二十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百二十章-卷一百二十-白话.html'>第一百二十章-卷一百二十</a></p><p class='next'>下一节：<a href='第一百二十二章-卷一百二十二-白话.html'>第一百二十二章-卷一百二十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-本纪<a href='../金史.html#本纪'>：目录</a></p>
@@ -213,5 +240,18 @@
 </p><p>九月丙寅朔，天寿节，宋、高丽、夏遣使来贺。壬申，以刑部尚书承晖等为贺宋生日使。戊子，以万宁宫提举司隶工部。壬辰，诏定千户谋克受随处捕盗官公移，盗急，不即以众应之者罪有差。召右丞相宗浩还朝。冬十月戊戌，日将暮，赤如赭。己亥，大风。甲辰，申、酉间天大赤，夜将旦亦如之。壬子，右丞仆散揆至自北边，丙辰，召至香阁慰劳之。以尚食局使师孝为高丽生日使。庚申，尚书左丞完颜匡等进《世宗实录》。上降座，立受之。壬戌，以蓟州刺史完颜太平为夏国生日使。奉御完颜阿鲁带以使宋还，言宋权臣韩侂胄市马厉兵，将谋北侵。上怒，以为生事，笞之五十，出为彰德府判官。及淮平陷，乃擢为安国军节度副使。丁卯，谕尚书省：“士庶陈言皆从所司以闻，自今可悉令诣阙，量与食直，仍给官居之。其言切直及系利害重者，并三日内奏闻。”
 </p><p>十一月辛未，以签枢密院事独吉思忠等为贺宋正旦使。丁丑，冬猎，以获兔，荐山陵。甲午，诏监察等察事可二年一出。
 </p><p>十二月庚子，谕宰臣曰：“贺正宋使且至，可令监察随之，以为常。”壬寅，还都。己酉，赐天长观额为太极宫。辛亥，诏诸亲王、公主每岁寒食、十月朔听朝谒兴、裕二陵，忌辰亦如之。癸丑，诏遣监察御史分按诸路，所遣者女直人，即以汉人朝臣偕，所遣者汉人，即以女直朝臣偕。戊午，敕行宫名曰光春，其朝殿曰兰皋，寝殿曰辉宁。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p><p class='next'>下一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p><p class='next'>下一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

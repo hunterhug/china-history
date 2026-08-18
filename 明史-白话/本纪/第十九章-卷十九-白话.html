@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-本纪<a href='../明史.html#明史'>：目录</a></p>
@@ -179,5 +206,18 @@
 </p><p>隆庆六年(1572)正月十四日，修筑徐州至宿迁堤防三百七十里。二月九日，倭寇侵犯广东，攻陷神屯卫，大肆抢劫。山寇又趁机兴起。闰二月十一日，穆宗到皇极门，疾病发作，便匆匆回到宫中。十九日，倭寇侵犯高、雷等州，被官军击败。
 </p><p>四月十三日，礼部尚书高仪兼文渊阁大学士，参与机要事务。五月八日，减免广东用兵各郡欠交赋税。二十五日，病危，召大学士高拱、张居正、高仪接受遗命。二十六日穆宗死于乾清宫，享年三十六岁。七月三日，上尊谥，庙号穆宗，葬于昭陵。
 </p><p>评论：穆宗在位六年，无为而治，少兴营造，励行勤俭节约，饮食方面每年节省数万开支。同意俺答加封进贡，减免赋税平息民众，边境宁静无事。他即位遵守先代成法，可称为是一个好君主。只是权臣相互间争权夺利，派别之分逐渐兴起，而穆宗并没能挽救并整治朝纲，革除弊习。大概是因为宽恕有余而使朝纲不明罢了。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十八章-卷十八-白话.html'>第十八章-卷十八</a></p><p class='next'>下一节：<a href='第二十章-卷二十-白话.html'>第二十章-卷二十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十八章-卷十八-白话.html'>第十八章-卷十八</a></p><p class='next'>下一节：<a href='第二十章-卷二十-白话.html'>第二十章-卷二十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

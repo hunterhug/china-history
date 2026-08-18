@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#列传'>：目录</a></p>
@@ -206,5 +233,18 @@
 </p><p>十七年，董昭等欲共进操爵国公，九锡备物，密以访彧。彧曰：“曹公本兴义兵，以匡振汉朝，虽勋庸崇著，犹秉忠贞之节。君子爱人以德，不宜如此。”事遂C85D。操心不能平。会南征孙权，表请彧劳军于谯，因表留彧曰：“臣闻古之遣将，上设监督之重，下建副二之任，所以尊严国命，谋而鲜过者也。臣今当济江，奉辞伐罪，宜有大使肃将王命。文武并用，自古有之。使持节侍中守尚书令万岁亭侯彧，国之重臣，德洽华夏，既停军所次，便宜与臣俱进，宣示国命，威怀丑虏。军礼尚速，不及先请，臣辄留彧，依以为重。”书奏，帝从之，遂以彧为侍中、光禄大夫，持节，参丞相军事。至濡须，彧病留寿春，操馈之食，发视，乃空器也，于是饮药而卒。时年五十。帝哀惜之，祖日为之废宴乐。谥曰敬侯。明年，操遂称魏公云。
 </p><p>论曰：自迁帝西京，山东腾沸，天下之命倒县矣。荀君乃越河、冀，间关以从曹氏。察其定举措，立言策，崇明王略，以急国艰，岂云因乱假义，以就违正之谋乎？诚仁为己任，期纾民于仓卒也。及阻董昭之议，以致非命，岂数也夫！世言荀君者，通塞或过矣。常以为中贤以下，道无求备，智算有所研疏，原始未必要末，斯理之不可全诘者也。夫以卫赐之贤，一说而毙两国。彼非薄于仁而欲之，盖有全必有丧也，斯又功之不兼者也。方时运之屯E578，非雄才无以济其溺，功高势强，则皇器自移矣。此文时之不可并也。盖取其归正而已，亦杀身以成仁之义也。
 </p><p>赞曰：公业称豪，骏声升腾。权诡时逼，挥金僚朋。北海天逸，音情顿挫。越俗易惊，孤音少和。直辔安归，高谋谁佐？彧之有弼，诚感国疾。功申运改，迹疑心一。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十三章-窦何列传-原文.html'>第六十三章-窦何列传</a></p><p class='next'>下一节：<a href='第六十五章-皇甫嵩朱俊列传-原文.html'>第六十五章-皇甫嵩朱俊列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十三章-窦何列传-原文.html'>第六十三章-窦何列传</a></p><p class='next'>下一节：<a href='第六十五章-皇甫嵩朱俊列传-原文.html'>第六十五章-皇甫嵩朱俊列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

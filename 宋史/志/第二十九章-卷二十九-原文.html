@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>宋史-志<a href='../宋史.html#志'>：目录</a></p>
@@ -818,5 +845,18 @@
 　　測景正加時早晚<BR>
 <BR>
 　　後漢熹平三年，四分曆志立冬中景長一丈，立春中景長九尺六寸。尋冬至南極，日晷最長，二氣去至日數既同，則中景應等，而前長後短，頓差四寸。此曆景冬至後天之驗也。二氣中景日差九分半弱，進退均調，略無盈縮，以率計之，二氣各退二日十二刻，則晷景之數，立冬更短，立春更長，並差二寸，二氣中景俱長九尺八寸矣，即立冬、立春之正日也。以此推之，曆置冬至後天亦二日十二刻也。熹平三年，時曆丁丑冬至，加時正在日中；以二日十二刻減之，定以乙亥冬至，加時在夜半後三十八刻。宋志大明五年十月十日，景一丈七寸七分半；十一月二十五日，景一丈八寸一分太；二十六日，一丈七寸五分強。折取其中，則中天冬至應在十一月三日求其早晚。令後二日景相減，則一日差率也，倍之為法；前二日減，以百刻乘之，為實；以法除實，得冬至加時在夜半後三十一刻，在元嘉曆後一日，天數之正也。量檢彌年，則加減均同；異歲相課，則遠近應率。觀二家之說，略而未通。熹平乃要取其中，而失於至前、至後之餘；大明則左右率，而失於為實、為法之數。若夫較景、定氣，曆家最為急務。觀古較驗，止以冬至前後數日之間，以定加時早晚。且景之差行，當二至前後，進退在微芒之間。又日有變行，盈縮稍異，若以為準，則加時相背。又晉、漢曆術，多以前後所測晷要取其中，此亦差過半日。今比歲較驗，在立冬、立春景移過寸，若較取加時，則宜以其相近者通計，半之為距至汎日；乃以其晷數相減，餘者以法乘之，滿其日晷差而一，為刻；乃以差刻求冬至，視其前晷，多則為減，少則為加，求夏至返之。加減距至汎日，為定日；仍加半日之刻，命從前距日辰，算外，即二至加時日辰及刻分。如此推求，則二至加時早晚可驗矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十八章-卷二十八-原文.html'>第二十八章-卷二十八</a></p><p class='next'>下一节：<a href='第三十章-卷三十-原文.html'>第三十章-卷三十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十八章-卷二十八-原文.html'>第二十八章-卷二十八</a></p><p class='next'>下一节：<a href='第三十章-卷三十-原文.html'>第三十章-卷三十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

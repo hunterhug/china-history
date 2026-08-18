@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后晋<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -156,5 +183,18 @@
 </p><p>崔棁，字子文，博陵安平人。历代为官宦世家。曾祖崔元受，进士及第，任职史馆。祖父崔铢，曾任安、濮二州刺史。父亲崔涿，做过刑部郎中。崔木兑小时就爱好学习，后梁贞明三年(917)，中进士甲科，任开封尹王瓒的从事。崔木兑生性特别孝顺，父亲崔涿有病时，对亲友说：“死生有命，不要请医生了。”崔木兑服侍父亲衣带不解，有宾客到来，一定在门外哭拜诉告，请求在方便时劝他父亲进药，崔涿最后还是不听从劝说。父亲去世后，哀毁过度。明宗朝，任他为监察御史，但没应召，一年后诏令再次下达，才就任监察御史，连迁至都官郎中、翰林学士。
 </p><p>天福初年，以户部侍郎身分任学士承旨。曾草创制诰，被宰相桑维翰改动，依照唐朝旧制，学士草创制诰有所改动的，应当罢免学士官职，崔木兑便引旧制据理力争，桑维翰不能反驳，令他暂时主持天福二年的贡举。当时有个叫孔英的进士，一向有丑恶的行为，被当时人所厌恶。崔木兑受命主持贡举时前往拜见桑维翰，桑维翰言语一向简短，对崔木兑说：“孔英来了。”崔木兑不明白他的意思，认为桑维翰代孔英说话，便录取孔英及第，舆论都认为崔木兑不对，于是罢免他学士衔，任尚书左丞，又迁任太常卿。后因手足麻木改任太子宾客，又派到西京，去世时六十八岁。
 </p><p>崔木兑平时所著文章、碑诔、制诰很多，有人借他的底本传抄学习，他则说：“前有古贤，后有来俊，哪用得着这样！”大凡受人之托而撰写的文章，一定亲自把文章送到，之后便用稻草烧掉原稿，担心为人抄袭。崔木兑笑语不至于讥刺，动怒不至于谩骂，与新进后生交往，没有不加以教诲的。无论与众人相处，还是与公众集会，都正坐少言，曾说多言不仅会招致别人的憎恶，还会冲犯他人祖先的名讳。平时指使仆从，都有礼节，盛暑严寒，都不违反礼仪。曾亲自对知心朋友说“：我小时候，梦见二人在我前面带路，一个人计算里程，说：‘已走三十里，可以停下来。’另一个人说‘：这个人应当再走三十八里。’于是又走三十八里，二人才都让他停下来，一会儿惊醒过来。”崔木兑常常记得这个梦，认为是命中注定的极限，所以六十七岁请求退职，第二年果然寿终。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十八章-列传七-白话.html'>第十八章-列传七</a></p><p class='next'>下一节：<a href='第二十章-列传九-白话.html'>第二十章-列传九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十八章-列传七-白话.html'>第十八章-列传七</a></p><p class='next'>下一节：<a href='第二十章-列传九-白话.html'>第二十章-列传九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

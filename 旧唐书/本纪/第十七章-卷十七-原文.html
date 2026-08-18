@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-本纪<a href='../旧唐书.html#本纪'>：目录</a></p>
@@ -310,5 +337,18 @@
 </p><p>五年春正月戊寅朔，上不康，不受朝贺。己卯，诏立亲弟颍王瀍为皇太弟，权勾当军国事。皇太子成美复为陈王。辛巳，上崩于大明宫之太和殿，寿享三十三。群臣谥曰元圣昭献皇帝，庙号文宗。其年八月十七日，葬于章陵。
 </p><p>史臣曰：昭献皇帝恭俭儒雅，出于自然，承父兄奢弊之余，当阍寺挠权之际，而能以治易乱，代危为安。大和之初，可谓明矣。初，帝在籓时，喜读《贞观政要》，每见太宗孜孜政道，有意于兹。洎即位之后，每延英对宰臣，率漏下十一刻。故事，天子双日视事，帝谓宰辅曰：“朕欲与卿等每日相见，其辍朝、放朝、用双日可也。”时宪宗郭后居兴庆宫，曰太皇太后，敬宗宝历太后及上母萧太后，时呼“三宫太后”。帝性仁孝，三宫问安，其情如一。尝内园进樱桃，所司启曰：“别赐三宫太后。”帝曰：“太后宫送物，焉得为赐。”遽取笔改赐为奉。宗正寺以祭器杇败，请易之，及有司呈进，命陈于别殿，具冠带面阅之，容色凄然。尤勒于政理凡选内外群官，府进名，帝必面讯其行能，然后补除。中书用鸿胪卿张贾为衢州刺史，贾好博，朝辞日，帝谓之曰：“闻卿善长行。”对曰：“政事之余，聊与宾客为戏，非有所妨。”帝曰：“岂有好之而无妨也！”内外闻之悚息。而帝以累世变起禁闱，尤侧目于中官，欲尽除之。然训、注狂狡之流，制御无术，矢谋既误，几致颠危。所谓“有帝王之道，而无帝王之才”，虽旰食焦忧，不能弭患，异哉！
 </p><p>赞曰：昭献统天，洪惟令德。心愤仇耻，志除凶慝。未殄夔魖，又生鬼蜮。天未好治，乱何由息。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p><p class='next'>下一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p><p class='next'>下一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

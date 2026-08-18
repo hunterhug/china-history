@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-正文<a href='../旧唐书.html#旧唐书'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>第七十九章-赵彦昭传<span style='font-size:small'> 白话</span></h1>
 <p>赵彦昭，甘州张掖人。他的父亲赵武孟，当初以驰骋打猎为职业。他捕获了肥鲜野味就留给母亲，母亲流着泪泣声相告“：你不读书，只是打猎，像这样下去，我无望了。”竟不吃他的野味，赵武孟因此而开始勤学，终于博通经史，后中进士，官至右台侍御史，撰写《河西人物志》十卷。<BR><BR>　　赵彦昭少年时代就以文辞知名。中宗的时候，他累任中书侍郎，代理宰相，兼任国史，充任文学馆士。景龙四年(710)，金城公主下嫁吐蕃赞普(即君长)，中宗命赵彦昭为使节，赵彦昭觉得既然充当了外使，担心会失宠，心中很是不高兴。司农卿赵履温私下对他说“：您是国之宰辅，却去做一介小小的使节，不是太不像话吗？”赵彦昭说“：这该怎么办呢？”赵履温就暗中托安乐公主密奏留下赵彦昭，中宗于是另派左骁卫大将军杨矩代他充当了使节。<BR><BR>　　睿宗时，他出京到凉州任都督，为政清正廉洁，将士以下都很是敬畏，后又任宋州刺史，又入京任吏部侍郎，又任刑部尚书、关内道持节巡边使、检校左御史台大夫。<BR><BR>　　赵彦昭平素与郭元振、张说友好，到萧至忠等被诛时，郭元振、张说等称赞赵彦昭先曾参与揭发萧至忠有功，于是升任刑部尚书，封耿国公，赐实封一百户。但殿中侍御史郭震却上奏，说赵彦昭与女巫赵五娘左道乱常，假托是自己的姑母，暗中相助，同恶相济。像今太平圣世，如不对这类加以贬谪严惩，法律还有什么用。请求依法处分。不久，姚崇做了宰相，很讨厌赵彦昭的为人，因此累贬江州任别驾，不久去世。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十八章-韦安石传-白话.html'>第七十八章-韦安石传</a></p><p class='next'>下一节：<a href='第八十章-萧至忠传-白话.html'>第八十章-萧至忠传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七十八章-韦安石传-白话.html'>第七十八章-韦安石传</a></p><p class='next'>下一节：<a href='第八十章-萧至忠传-白话.html'>第八十章-萧至忠传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

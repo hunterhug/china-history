@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -161,5 +188,18 @@
 </p><p>这年冬天，京师受到攻打，庄烈帝忧劳国事，半夜里能发出几道圣旨过来。自严做出的回答毫无迟疑，不敢放下心来睡觉，因此脑袋、眼睛都肿了，幸好没有什么缺少的东西。第二年夏天，他以六条罪过自我批评，请求离职，庄烈帝好心地加以安慰、挽留。以前因为考满自严已加官太子少保，现在朝廷评定遵化、永平战胜敌人得到收复的功劳，又给他加官为太子太保。
 </p><p>兵部尚书梁廷栋请加收全国的田赋，自严没能加以制止。于是除原先增加过的五百二十万之外，又加收一百六十五万多，天下百姓更加困耗了。后来自严就当时政务提出了十条意见，主旨是为了利民，庄烈帝都采纳了。又因为兵饷一天天增加，自严几次请求加以清查，可是兵部及总督、巡抚大都把这件事给搁在一边。自严又请求裁减内地用不着的军队，庄烈帝就传令严加整顿，但是并不能全面推行下去。
 </p><p>御史余应桂弹劾自严在殿试读卷时推荐陈于泰为第一。于泰是辅臣周延儒的儿女亲家。自严称病请求退休，书上了四次，庄烈帝不同意。当时朝廷有令，县令要报请吏部升用时，户部要先核算他的钱谷征收情况。华亭知县郑友元已经入朝当上御史，以前担任青浦知县时欠收二千九百两金花银。庄烈帝向户部质问这件事，自严说友元已经交了十分之七存在太仓里。庄烈帝让管仓库的人核实，没有，就怒气冲冲地批评自严。自严转弯抹角地辩解，庄烈帝更恼了，就把他打入监狱，又派使者去逮捕友元。御史李若谠上书论救，庄烈帝不听。过了一个月，给事中吴甘来又抗章论救，庄烈帝才把他释放出来。八年(1635)五月，朝廷评定四川平贼的功劳时，恢复了自严的官籍，让他退休了。又过了三年，自严去世，朝廷按规定给他赐以恤典。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百四十三章-卷一百四十三-白话.html'>第一百四十三章-卷一百四十三</a></p><p class='next'>下一节：<a href='第一百四十五章-卷一百四十五-白话.html'>第一百四十五章-卷一百四十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百四十三章-卷一百四十三-白话.html'>第一百四十三章-卷一百四十三</a></p><p class='next'>下一节：<a href='第一百四十五章-卷一百四十五-白话.html'>第一百四十五章-卷一百四十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

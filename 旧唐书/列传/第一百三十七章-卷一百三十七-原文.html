@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -318,5 +345,18 @@
 <p>　　浙西观察使杜审权遣大将翟行约率军三千赴援，屯莲塘驿。慆欲遣人劳之，将 吏皆惮其行。谠曰：“杜相公以大夫宗盟，急难相赴，安得令使者无言而还！”即 赍慆书币，犒其使。淮南大将李湘率师五千来援，贼诈降，败于淮口，湘与郭厚本 皆为贼所执，自是无援。贼并兵急攻，以铁锁断淮流，梯冲云合，凡周七月，昼夜 不息。乘城之士，不遑寝寐，面目生疮，军储渐少，分食稀粥。赖谠犯难仗义，求 救于淮北诸军。既而马举以大军至，贼解围而去。 </p>
 <p>　　谠无子，犹子山僧、元老等寄在广陵。每出城，则书二姓名，谓慆曰：“志之， 得嗣为幸。”慆益感之。贼平，授谠泗州团练判官、侍御史。慆迁郑滑节度，谠亦 从之，为宾佐。慆卒，乃退归江东，以隐居为事。 </p>
 <p>　　赞曰：兽解触邪，草能指佞。烈士徇义，见危致命。国有忠臣，亡而复存。何 以丧邦？奸邪受恩。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百三十六章-卷一百三十六-原文.html'>第一百三十六章-卷一百三十六</a></p><p class='next'>下一节：<a href='第一百三十八章-卷一百三十八-原文.html'>第一百三十八章-卷一百三十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百三十六章-卷一百三十六-原文.html'>第一百三十六章-卷一百三十六</a></p><p class='next'>下一节：<a href='第一百三十八章-卷一百三十八-原文.html'>第一百三十八章-卷一百三十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

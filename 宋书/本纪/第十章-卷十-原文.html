@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>宋书-本纪<a href='../宋书.html#本纪'>：目录</a></p>
@@ -156,5 +183,18 @@
 </p><p>三年春正月甲辰，以江州刺史萧嶷为镇西将军、荆州刺史，尚书左仆射王延之为安南将军、江州刺史。安西长史萧顺之为郢州刺史。乙卯，太傅齐王表诸负官物质役者，悉原除。辛亥，以骁骑将军王玄邈为梁、南秦二州刺史。领军将军、抚军将军齐王世子加尚书仆射，进号中军大将军、开府仪同三司。丙辰，加太傅齐王前部羽葆、鼓吹。丁巳，诏太傅府依旧辟召。以征西将军、雍州刺史张敬兒为护军将军，新除给事黄门侍郎萧讳为雍州刺史。二月丙子，安南将军、南豫州刺史邵陵王友薨。三月癸卯朔，日有蚀之。甲辰，崇太傅为相国，总百揆，封十郡，为齐公，备九锡之礼，加玺绂远游冠，位在诸王上；加相国绿綟绶，其骠骑大将军、扬州牧、南徐州刺史如故。丙午，以中军大将军萧讳为南豫州刺史、齐公世子，副贰相国，绿綟绶。庚戌，临川王绰谋反，绰及党与皆伏诛。丁巳，以齐国初建，给钱五百万，布五千匹，绢千匹。夏四月壬申，进齐公爵为齐王，增封十郡。甲戌，安西将军武陵王赞薨。丙戌，命齐王冕十有二旒，建天子旌旗，出警入跸，乘金根车，驾六马，备五时副车，置旄头云罕，乐舞八佾，设钟虡宫县。进世子为太子，王子、王女、王孙爵命之号，壹如旧仪。辛卯，天禄永终，禅位于齐，壬辰，帝逊位于东邸。既而迁居丹阳宫。齐王践阼，封帝为汝阴王，待以不臣之礼。行宋正朔，上书不为表，答表不为诏。
 </p><p>建元元年五月己未，殂于丹阳宫，时年十三。谥曰顺帝。六月乙酉，葬于遂宁陵。
 </p><p>史臣曰：圣王膺录，自非接乱承微，则天历不至也。自三、五以来，受命之主，莫不乘沦亡之极，然后符乐推之运。水德迁谢，其来久矣。岂止于区区汝阴揖禅而已哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

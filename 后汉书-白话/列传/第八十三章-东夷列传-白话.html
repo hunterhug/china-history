@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#后汉书'>：目录</a></p>
@@ -184,5 +211,18 @@
 </p><p>论曰：从前箕子远离衰败的殷商的命运，到朝鲜避难。朝鲜最初的习俗没有听说过，到箕子实行八条禁令以后，使人们知道法禁，因而城邑没有奸淫和偷盗，夜不闭户，改变了愚昧浅薄的习俗，接近宽大简略的法律，实行了几百几千年，所以束夷普遍形成温和谨慎的风气，和另外三方的夷人不同。衹要政治通达，那么就会存有道义。仲尼心怀感愤，认为九夷可以居住。有人怀疑九夷鄙陋。孔子说：“有才德的人在那裹居住，有什么鄙陋的呢厂也仅有这种想法罢了。白这以后朝鲜商贾往来做生意，逐渐和中原来往。然而燕国人卫满扰乱了朝鲜的风尚，自此风气变得浅薄不同了。
 </p><p>《老子》说：“法令愈益昭明，盗贼就有很多。”像箕子这样省简法律条文而用信义治理的，这是得到圣贤制订法律的根本了！
 </p><p>赞曰：居住在蜗夷，被称作旸谷的地方。入山裹栖息，藏海上生活，由此和中原的宗族相区别。秦朝末年发生祸乱，燕国人逃离灾难。糅杂进华夏人的习俗，原有的风尚浇薄，于是同汉国往来。地处遥远通过翻译，有时归顺有时背叛。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十二章-列女传-白话.html'>第八十二章-列女传</a></p><p class='next'>下一节：<a href='第八十四章-南蛮西南夷列传-白话.html'>第八十四章-南蛮西南夷列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八十二章-列女传-白话.html'>第八十二章-列女传</a></p><p class='next'>下一节：<a href='第八十四章-南蛮西南夷列传-白话.html'>第八十四章-南蛮西南夷列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

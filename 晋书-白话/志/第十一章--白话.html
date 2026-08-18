@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-志<a href='../晋书.html#晋书'>：目录</a></p>
@@ -206,5 +233,18 @@
 </p><p>《礼》中有三王在学校对德高年长者行养老之礼的记载，有飨射礼和饮酒的制度，周代末年都荒废了。汉明帝永平二年三月，皇帝开始亲自率领群臣在太学行养老礼，并为祭祀择士而举行大射之礼。郡国县道在学校施行乡饮酒的礼仪，都祭祀先圣先师周公、孔子，用牛羊猪作祭品。冬季第一个月也如此。到了魏高贵乡公甘露二年，天子亲自率各部门官吏施行养老的礼仪。于是王祥做了“三老”，郑小同做了“五更”。敬老的《仪注》没有留存，然而汉代的礼仪还在。武帝泰始六年十二月，皇帝亲临太学，举行乡饮酒的礼仪。诏书说：“礼仪的荒废已经很久了，今天重新讲习古代典章。”赐给太常绢一百匹，赐丞、博士及学生牛和酒。咸宁三年，惠帝元康九年，又举行这个礼仪。
 </p><p>魏正盘年间，变王每讲习一次经书，就让太常在太学祭拜先圣先师，自己不亲自做。到了塞童旦瞪做太子时，等到愍怀太子讲习经书结束，都亲自在太学行祭礼，太子向先师敬酒，中庶子向颜回敬酒。成帝、穆帝、孝武帝也都亲自祭拜。孝武帝时，因为太学在河水以南路途遥远，有关官吏议论按照升平元年先例，在中堂姑且设立太学堂分部。当时没有重设国子生，有关官吏上奏：“应当再设学生一百二十人。太学生从现有的人中选取六十人，国子生暂且从大臣子孙中选取六十人，事情结束就作罢。”奏章获准。祭拜先圣先师之礼完毕，会见六品以上官员。
 </p><p>汉代礼仪，春季第三个月上旬的巳日，官员及百姓都在东流水中沐浴，祓除不祥，洗去宿垢。自魏以后，衹用三月三日，不再用上巳曰。置朝廷中的公卿以下到百姓，都在洛水边沐浴。趟王司马伦篡夺皇位，三El在天泉池聚会，杀强拯。堡童也在天泉池聚会，赋诗。堕尴说：“天泉池南石沟引御沟水，池的西边堆积石头成了沐浴场所。”把酒杯放入水中，杯子流停人前则饮酒，也还没有说“曲水”。元帝又下诏书禁止各种博戏之具三日。海西在钟山设立流杯曲水，延请百官，都是造一类事。九月九日，骑马射箭。有人说：“秋天属于‘金’的季节，讲习武功练习射箭，像立秋的礼仪”。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十章--白话.html'>第十章-</a></p><p class='next'>下一节：<a href='第十二章--白话.html'>第十二章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十章--白话.html'>第十章-</a></p><p class='next'>下一节：<a href='第十二章--白话.html'>第十二章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

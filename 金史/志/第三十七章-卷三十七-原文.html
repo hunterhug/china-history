@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-志<a href='../金史.html#志'>：目录</a></p>
@@ -295,5 +322,18 @@
 </p><p>提举南京榷货司。(贞祐四年置。)提举，从五品。同提举，从六品。勾当官三员，正九品。
 </p><p>提举仓场司。(贞祐五年置，先吏部辟举，从省拟。)使，从五品。副使，从六品。掌出纳公平及毋致亏败。监支纳官，八品，十六员。(以年六十以下廉干人充，女直、汉人各一。广盈仓、丰盈仓、永丰仓、广储仓、富国仓、广衍仓、三登仓、常盈仓、西一场、西二场、西三场、东一场、东二场、南一场、北一场、北二场。通济仓与在京仓，置监支纳使副各一员。丰备仓、丰赡仓、广济仓、潼关仓，兴定五年创置潼关仓监支纳一员，兼枢密院弹压。陈州仓四员。洧川仓二员。)
 </p><p>八作左右院。设官同上，掌收军须、军器。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十六章-卷三十六-原文.html'>第三十六章-卷三十六</a></p><p class='next'>下一节：<a href='第三十八章-卷三十八-原文.html'>第三十八章-卷三十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十六章-卷三十六-原文.html'>第三十六章-卷三十六</a></p><p class='next'>下一节：<a href='第三十八章-卷三十八-原文.html'>第三十八章-卷三十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

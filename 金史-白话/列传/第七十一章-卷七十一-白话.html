@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#金史'>：目录</a></p>
@@ -187,5 +214,18 @@
 </p><p>十一日，皇太子率领百官上表祝贺。十二日，皇帝诏告天下。十八日，完颜思敬到京师献上俘虏，窝斡在市上被砍头，并砍掉手脚，在各个京府分别悬挂示众。他的母亲徐辇和妻子、儿子，也全被杀戮了。契丹投降的人都收缴他们的武器，对贫穷不能自给的，官府予以救济。
 </p><p>括里、扎八率众向南逃跑，皇上诏令左宣徽使宗亨追击他们。扎八诡诈地说要投降，宗亨轻信了他的话，便不和他交战。扎八欺骗宗亨说：“括里受惊逃走了，我愿意去追击他。”宗亨放纵扎八去了。益都猛安想带领所属部队去追歼括里、扎八，宗亨恐怕益都猛安分享他的功劳，没有听从，而纵使军士私自去拿取贼军所丢弃的资财、牲畜而归自己所有。括里、扎八由于这个原因而逃跑了，投奔了宋国。宗亨被降职当了宁州刺史。以后，宋朝李世辅任用括里、扎八，攻取宿州，在边境成为很大的祸患。
 </p><p>神独斡拜官同知安化军节度使，稍合住拜同知震武军节度使事。大定六年(1166)，点检司禀奏，亲军中有逆党的子弟，请求对他们一律清除。皇帝诏令：“亲身参加逆党的清除掉，其余的不要追究。“</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十章-卷七十-白话.html'>第七十章-卷七十</a></p><p class='next'>下一节：<a href='第七十二章-卷七十二-白话.html'>第七十二章-卷七十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七十章-卷七十-白话.html'>第七十章-卷七十</a></p><p class='next'>下一节：<a href='第七十二章-卷七十二-白话.html'>第七十二章-卷七十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后唐<a href='../旧五代史.html#后唐'>：目录</a></p>
@@ -164,5 +191,18 @@
 </p><p>庄宗季年，稍怠庶政，巷伯伶官，干预国事。时方面诸侯皆行赂遗，或求赂于继麟，虽僶俛应奉，不满其请。且曰：“河中土薄民贫，厚贶难办。”由是群小咸怨，遂加诬构。郭崇韬讨巴、蜀，征师于河中，继麟令其子令德率师赴之。伶官景进与其党构曰：“昨王师初起，继麟以为讨己，颇有拒命之意，若不除移，如国家有急，必为后患。”郭崇韬既诛，宦官愈盛，遂构成其罪，谓庄宗曰：“崇韬强项于蜀，盖与河中响应。”继麟闻之惧，将赴京师，面诉其事。其部将曰：“王有大功于国，密迩京城，群小流言，何足介意。端居奉职，谗邪自销，不可轻行。”继麟曰：“郭公功倍于我，尚为人构陷，吾若得面天颜，自陈肝膈，则流言者获罪矣。”四年正月，继麟入觐。景进谓庄宗曰：“河中人有告变者，言继麟与崇韬谋叛，闻崇韬死，又与李存乂构松逆，当断不断，祸不旋踵。”群阉异口同辞，庄宗骇惑不能决。是月二十三日，授继麟滑州节度使。是夜，令硃守殷以兵围其第，擒之，诛于徽安门外；诏继岌诛令德于遂州，王思同诛令锡于许州，吴缜《篡误》云：《伶官史彦琼传》，友谦有子建徽被杀。传中未载。命夏鲁奇诛其族于河中。初，鲁奇至，友谦妻张氏率其家属二百余口见鲁奇曰：“请疏骨肉名字，无致他人横死。”将刑，张氏持先赐铁券授鲁奇曰：“皇帝所赐也。”是时，百口涂地，冤酷之声，行路流涕。
 </p><p>先是，河中衙城阍者夜见妇人数十，袨服靓妆，仆马炫耀，自外驰骋，笑语趋衙城。阍者不知其故，不敢诘，至门排骑而入，既而扃锁如故，复无人迹，乃知妖鬼也。又继麟登逍遥楼，闻哭声四合，诘日讯之，巷无丧者，隔岁乃族诛。及明宗即位，始下诏昭雪焉。
 </p><p>史臣曰：全义一逢乱世，十领名籓，而能免梁祖之雄猜，受庄宗之厚遇，虽由恭顺，亦系货财。《传》所谓“货以籓身”者，全义得之矣。友谦向背为谋，二三其德，考其行事，亦匪纯臣。然全族之诛，祸斯酷矣，得非鬼神害盈，而天道恶满乎！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十八章-列传十四-原文.html'>第三十八章-列传十四</a></p><p class='next'>下一节：<a href='第四十章-列传十六-原文.html'>第四十章-列传十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十八章-列传十四-原文.html'>第三十八章-列传十四</a></p><p class='next'>下一节：<a href='第四十章-列传十六-原文.html'>第四十章-列传十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

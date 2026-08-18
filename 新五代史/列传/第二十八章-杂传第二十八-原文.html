@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-列传<a href='../新五代史.html#列传'>：目录</a></p>
@@ -190,5 +217,18 @@
 </p><p>韬在镇七年，唐诸陵在其境内者，悉发掘之，取其所藏金宝，而昭陵最固，韬从埏道下，见宫室制度闳丽，不异人间，中为正寝，东西厢列石床，床上石函中为铁匣，悉藏前世图书，钟、王笔迹，纸墨如新，韬悉取之，遂传人间，惟乾陵风雨不可发。
 </p><p>其后硃友谦叛梁，取同州，晋王以兵援友谦而趋华原，韬惧，求徙佗镇，遂徙忠武。庄宗灭梁，韬自许来朝，因伶人景进纳赂刘皇后，皇后为言之，庄宗待韬甚厚，赐姓名曰李绍冲。郭崇韬曰：“此劫陵贼尔，罪不可赦！”庄宗曰：“已宥之矣，不可失信。”遽遣还镇。明宗入洛，与段凝俱收下狱，已而赦之，勒归田里。明年，流于德州，赐死。
 </p><p>呜呼，厚葬之弊，自秦汉已来，率多聪明英伟之主，虽有高谈善说之士，极陈其祸福，有不能开其惑者矣！岂非富贵之欲，溺其所自私者笃，而未然之祸，难述于无形，不足以动其心欤？然而闻温韬之事者，可以少戒也！五代之君，往往不得其死，何暇顾其后哉！独周太祖能鉴韬之祸，其将终也，为书以遗世宗，使以瓦棺、纸衣而敛。将葬，开棺示人，既葬，刻石以告后世，毋作下宫，毋置守陵妾。其意丁宁切至，然实录不书其葬之薄厚也。又使葬其平生所服衮冕、通天冠、绛纱袍各二，其一于京师，其一于澶州；又葬其剑、甲各二，其一于河中，其一于大名者，莫能原其旨也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十七章-杂传第二十七-原文.html'>第二十七章-杂传第二十七</a></p><p class='next'>下一节：<a href='第二十九章-杂传第二十九-原文.html'>第二十九章-杂传第二十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十七章-杂传第二十七-原文.html'>第二十七章-杂传第二十七</a></p><p class='next'>下一节：<a href='第二十九章-杂传第二十九-原文.html'>第二十九章-杂传第二十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

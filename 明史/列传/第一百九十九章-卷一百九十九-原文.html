@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -221,5 +248,18 @@
 </p><p>洪武八年省汉源县，置黎州长官司，以芍德为长官。德，云南人，马姓。祖仕元，世袭邛部州六番招讨使。明氏据蜀，德兄安复为黎州招讨使。明氏亡，蛮民溃散，德奉母还居邛部。至是，四川布政司招之，德遂来朝贡马，请置长官司。诏以德为黎州长官，赐印及衣服绮帛，十一年升为黎州安抚司，即以德为使。十四年，德遣使贡马。诏赐德钞五十四锭、文绮七疋。自是，三年一入贡。弘治十四年命黎州安抚隶四川都司。
 </p><p>万历十九年，安抚马祥无后，妻瞿氏掌司事，取瞿姓子抚之，将有他志。祥侄上舍居松坪者，遂兴兵攻城，夺印，番众乘机剽掠。时参将吴文杰方有征东之役，移师剿平之。二十四年降黎州安抚司为千户所，立所治于司南三十里大田山坝。分上七枝编户，属大渡河千户所，下七枝仍属松坪马氏约束。松坪在司之东南，自炒米城直接峨眉，高山峻坂三百余里，皆安抚族人居之。
 </p><p>黎、雅诸蛮，宋时屡为边患。明兴，以诸蛮皆天全六番诸部，散居于二州之境，遂于黎州设安抚，于天全六番设招讨，以示羁縻。而雅州所属，与招讨所辖之蛮民，境土相连，时有争讼。徼外大、小木瓜种分三枝，腻乃卜最强，世居西河。初属马湖土官安氏钤辖，自马湖改流，诸瓜叛入邛部，归岭氏。其地自西河至凉山、雪山诸处，周围蟠据。嘉靖末，诸瓜畜牧蕃盛，时窥边，邛部长官岭柏不能制，嘉、峨、犍为诸边皆为侵扰。镇巡官督邛部兵捕之，瓜兵益炽，乃议大征，分建昌、越巂、马湖三路兵进讨。瓜部始惶骇请降，愿岁贡马方物，乃定。其地四千八百四十余亩，徵粮四百四十余石，输峨眉县。明初与安抚司同置者，有大渡河守御千户所。唐时，河平广可通漕，戍将一不守，则黎、雅、邛、嘉、成都皆动摇。宋建隆三年，王全斌平蜀，以图来上。议者欲因兵威复越巂，艺祖以玉斧画图曰：“外此，吾不有也。”自是之后，河中流忽陷下五六十丈，水至此，汹涌如空中落，船筏不通，名为噎口，殆天设险以限内外云。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百九十八章-卷一百九十八-原文.html'>第一百九十八章-卷一百九十八</a></p><p class='next'>下一节：<a href='第二百章-卷二百-原文.html'>第二百章-卷二百</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百九十八章-卷一百九十八-原文.html'>第一百九十八章-卷一百九十八</a></p><p class='next'>下一节：<a href='第二百章-卷二百-原文.html'>第二百章-卷二百</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

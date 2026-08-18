@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -190,5 +217,18 @@
 </p><p>二十三年，罢为咸平尹，封莘国公。上曰：“卿数年前尝乞致仕，朕不许卿。卿今老矣。咸平卿故乡，地凉事少，老者所宜。”赐通犀带。明日，复遣近侍曹渊谕旨曰：“咸平自窝斡乱后，民业尚未复旧，朕听卿归乡里，所以安辑一境也。”二十四年，薨。上闻之，悼惜良久。是岁幸上京，道过咸平，遣使致祭，赙赠有加。诏图像藏秘府，擢其子八狗为阁门祗候。
 </p><p>光祖字仲礼，幼名八狗。以荫补阁门祗候，调平晋令、卫州都巡河、内承奉押班，累转东上閤门使，兼典客署令。大安中，改少府少监。丁母忧，起复仪鸾局使，同知宣徽院使事，秘书监右宣徽使。兴定二年十一月，诏集百官议所以为长久之利者，光祖等三人议曰：“募土人假以方面权任，俾人自劝，各保一方。”由是公府封建之论兴焉，语在九公传。三年，转左宣徽使。五年，卒。
 </p><p>赞曰：良弼、守道、琚、安礼、道，皆无闻正隆时，及其簉治朝，佐明主，谏行言听，膏泽下于民，岂非遇其时邪。官序无阙，上下相安，君享其名，臣终其禄，可谓盛哉。海陵能知移剌道有公辅之器，而不能用，故其治绩亦待大定而后著焉。人才之显晦，有系于世道之污隆也，尚矣。金世内燕，惟亲王公主驸马得与，世宗一日特召琚入，诸王以下窃语，心盖易之。世宗觉之，即语之曰：“使我父子家人辈得安然无事，而有今日之乐者，此人力也。”乃历举近事数十显著为时所知者以晓之，皆俯伏谢罪。君臣相知如此，有不竭忠者乎！大定末，世宗将立元妃为后，以问琚，琚屏左右曰：“元妃之立，本无异辞，如东宫何？”世宗愕然曰：“何谓也？”琚曰：“元妃自有子，元妃立，东宫摇矣。”世宗悟而止。且人主家事，人臣之所难言者，许敬宗以一言几亡唐祚，琚之对，其为金谋者至矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十五章-卷二十五-原文.html'>第二十五章-卷二十五</a></p><p class='next'>下一节：<a href='第二十七章-卷二十七-原文.html'>第二十七章-卷二十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十五章-卷二十五-原文.html'>第二十五章-卷二十五</a></p><p class='next'>下一节：<a href='第二十七章-卷二十七-原文.html'>第二十七章-卷二十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

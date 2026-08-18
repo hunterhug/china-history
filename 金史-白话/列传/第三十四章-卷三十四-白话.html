@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#金史'>：目录</a></p>
@@ -167,5 +194,18 @@
 </p><p>先前，右丞相完颜襄上奏把天寿节移到九月一日去庆贺，路伯达论述了它时间的不妥，平章政事张汝霖、右丞相刘玮及台谏也都说那样不行，下到尚书省议论，路伯达说：“皇帝初即位，应当施行正直、信用之道，今天改变生辰不正直，因为哄骗四方没有信义。况且祝贺又不适时，这是轻礼而重物。”因此陈述正名从谏之道。路伯达升为尚书刑部郎中。皇帝世宗问群臣“：方今用什么方法能使人民务本业、广储蓄？”路伯达回答说：“从现在开始宣布德行流传教化。请罢免境内打猎，扩大农业以督促本职，轻币重谷，去奢存俭，遵从时节耕种，像这样就不会有农不勤的人、粟不广的地。”此时，采捕禁严，从京郊至真定、沧、冀，北到飞狐，几百里内都为禁地，老百姓有捕杀狐兔的人有罪，所以路伯达逮捕他。路伯达多次升迁为刑部侍郎、太常卿，授予安国军节度使，不久，改为镇安武。
 </p><p>路伯达曾经出使宋朝回来，上交所得的二百五十两金，一千两白银以助边疆，上奏请求退休，还未来得及呈上就去世了。路伯达的妻子傅氏说到此事，皇帝表扬他的忠诚，赠授太中大夫，仍把金银还给他，傅氏哭着请求献给国家，未得到批准。先前傅氏因为路伯达曾在冀州进修学习，于是卖信都、枣强的田以供应他学习，有司全部把这件事告诉了皇帝，皇帝认为她很贤惠，赐号“成德夫人”。
 </p><p>路伯达的儿子路铎、路钧。路钧，字和叔，登大定二十五年(1185)进士第，终于莱州观察判官。路铎最知名，另外有传。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十三章-卷三十三-白话.html'>第三十三章-卷三十三</a></p><p class='next'>下一节：<a href='第三十五章-卷三十五-白话.html'>第三十五章-卷三十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十三章-卷三十三-白话.html'>第三十三章-卷三十三</a></p><p class='next'>下一节：<a href='第三十五章-卷三十五-白话.html'>第三十五章-卷三十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

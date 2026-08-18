@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-本纪<a href='../明史.html#本纪'>：目录</a></p>
@@ -176,5 +203,18 @@
 </p><p>二十二年春正月己亥，诏以各省灾伤，山东、河南、徐、淮尤甚，盗贼四起，有司玩愒，朝廷诏令不行。自今以安民弭盗为抚按有司黜陟。二月癸丑，皇长子常洛出阁讲学。甲子，遣使振河南，免田租。三月癸卯，诏修国史。夏四月己酉朔，日有食之。五月辛卯，礼部尚书陈于陛、南京礼部尚书沈一贯并兼东阁大学士，预机务。庚子，王锡爵致仕。六月己酉，雷雨，西华门灾。敕修省。秋七月丙申，河套部长失兔犯延绥。是月，延绥总兵官麻贵败河套部敌于下马关。冬十月己未，南京兵部右侍郎邢玠总督川、贵军务，讨播州宣慰使杨应龙。丁卯，诏倭使入朝。是月，炒花犯辽东，总兵官董一元败之。是年，琉球、乌斯藏入贡。
 </p><p>二十三年春正月癸卯，遣都督佥事李宗城、指挥杨方亨封平秀吉为日本国王。三月乙未，赐朱之蕃等进士及第、出身有差。夏五月丁酉，京师地震，敕修省。秋九月戊寅，青海部长永邵卜犯甘肃，参将达云败之。乙酉，诏复建文年号。冬十一月辛未，湖广灾，蠲振有差。十二月辛丑，大学士赵志皋等请发留中章奏，不报。是年，江北大水，淮溢，浸泗州祖陵。
 </p><p>二十四年春二月戊申，麻贵袭河套部，败之。三月乙亥，乾清、坤宁两宫灾，敕修省。壬辰，下诏自责。是月，火落赤犯洮河，总兵官刘綎破走之。夏四月己亥，李宗城自倭营奔还王京。五月戊辰，河套部敌犯甘肃，总兵官杨浚击破之。庚午，复议封倭，命都督佥事杨方亨、游击沈惟敬往。六月，振福建饥。秋七月丁卯，吏部尚书孙丕扬请发推补官员章疏，不报。戊寅，仁圣皇太后崩。乙酉，始遣中官开矿于畿内。未几，河南、山东、山西、浙江、陕西悉令开采，以中官领之。群臣屡谏不听。闰八月乙丑朔，日有食之。丁卯，大学士赵志皋请视朝，发章奏，罢采矿，不报。九月乙未，杨方亨至日本，平秀吉不受封，复侵朝鲜。乙卯，葬孝安庄皇后。是月，河套部犯宁夏。总兵官李如柏击败之。是秋，河决黄堌口。冬十月丙子，停刑。乙酉，始命中官榷税通州。是后，各省皆设税使。群臣屡谏不听。十二月乙亥，陈于陛卒。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p><p class='next'>下一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p><p class='next'>下一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

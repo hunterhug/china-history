@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -228,5 +255,18 @@
 </p><p>不久，王之寀提升为尚宝少卿。过了一年，提升为太仆少卿，不久调任太仆寺卿。刘廷元和岳骏声、曾道难因为王之寀侵犯他们，先后上疏辩护。王之寀也接连上疏极力驳斥，并揭发各人先前讨论张差官司时，在红庙中分钱及居中调解双方争执的人名很详备，此事虽没得到处理，但这些人更加恨他。
 </p><p>天启四年(1624)秋天，他授官刑部右侍郎。第二年二月，魏忠贤势力嚣张，他的党徒杨维垣首先为“梃击案”翻案，极力诋毁王之寀，将他除名。不久把他列入汪文言案中，交给抚审问。岳骏声又攻击他，并且说他勒索郑国泰二万两，下诏追查。等到编修《三朝要典》，“梃击案”以王之寀为首犯。府尹刘志选又弹劾他，于是下诏逮捕入狱，判处窝赃银八千两，王之寀最终死在狱中。崇祯初年，恢复官职，赐予救济。
 </p><p>自从“梃击”的议论开始，“红丸”、“移宫”二件事接踵而至。两个派系争论是非，相互倾轧排挤，直到明朝灭亡才宣告结束。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百三十一章-卷一百三十一-白话.html'>第一百三十一章-卷一百三十一</a></p><p class='next'>下一节：<a href='第一百三十三章-卷一百三十三-白话.html'>第一百三十三章-卷一百三十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百三十一章-卷一百三十一-白话.html'>第一百三十一章-卷一百三十一</a></p><p class='next'>下一节：<a href='第一百三十三章-卷一百三十三-白话.html'>第一百三十三章-卷一百三十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-志<a href='../辽史.html#志'>：目录</a></p>
@@ -158,5 +185,18 @@
 </p><p>宋使告哀仪：皇帝素冠服，臣僚皂袍、皂鞓带。宋使奉书右入。丹墀内立。西上阁门使右阶下殿，受书匣：上殿，栏内鞠躬，奏“封全”。开封，于殿西案授宰相读讫，皇帝举哀。舍人引使者右阶上，栏内俯跪，附奏起居讫，俯兴，立。皇帝宣问“南朝皇帝圣躬万福”，使者跪奏“来时皇帝圣躬万福”起，退。舍人引使者右阶下殿，于丹墀西，面东鞠躬。通事舍人通使者名某祗候见，再拜。不出班，奏“圣躬万福”，再拜。出班，谢面天颜，再拜。又出班，谢远接、抚问、汤药，再拜。赞祗候，引出，就幕次，宣赐衣物。引从人入，通名拜，奏“圣躬万福”，出就幕，赐衣，如使者之仪。又引使者入，面殿鞠躬，赞谢恩。再赞“有敕赐宴”，再拜。赞祗候，出就幕次宴。引从人谢恩，拜敕赐宴，皆如初。宴毕，归馆。
 </p><p>宋使进遗留礼物仪：百官昧爽朝服，殿前班立。宋遗留使、告登位使副入内门，馆伴副使引谢登位使就幕次坐。馆伴大使与遗留使副奉书入，至西上阁门外毡位立。阁使受书匣，置殿西阶下案。引进使引遗留物于西上阁门入，即于廊下横门出。皇帝升殿坐。宣徽使押殿前班起居毕，引宰臣押文武班起居，引中书令西阶上殿，奏宋使见榜子。契丹臣僚起居，控鹤官起居。遗留使副西上阁门入，面殿立。舍人引使副西阶上殿，附奏起居讫，引西阶下殿，于丹墀东，西面鞠躬，通名奏“圣躬万福”，如告哀使之仪。谢面天颜，谢远接、抚问、汤药。引遗留使从人见亦如之。次引告登位使副奉书匣，于东上阁门入，面殿立。阁使东阶下殿，受书匣。中书令读讫，舍人引使副东阶上殿，附奏起居。引下殿，南面立。告登位礼物入，即于廊下横门出。退，西面鞠躬，附奏起居，谢面天颜、远接等，皆如遗留使之仪。宣赐遗留、登位两使副并从人衣物，如告哀使。应坐臣僚皆上殿就位立，分引两使副等于两廊立。皇帝问使副“冲涉不易”丹墀内五拜。各引上殿祗候位立。大臣进洒，皇帝饮酒。契丹通，汉人赞，殿上臣僚皆拜，称“万岁”。赞各就坐，行酒肴、茶膳、馒头毕，从人出水饭毕，臣僚皆起。契丹通，汉人赞，皆再拜，称“万岁”。各祗候。独引宋使副下殿谢，五拜。引出。控鹤官门外祗候，报阁门无事供奉官卷班出。
 </p><p>高丽、夏国告终仪：先期，于先宫左右下御帐，设使客幕次于东南。至日，北面臣僚各常服，其余臣僚并朝服，入朝。使者至幕次，有司以嗣子表状先呈枢密院，准备奏呈。先引北面臣僚并矮墩已上近御帐，相对立，其余臣僚依班位序立。引告终人使右入，至丹墀，面殿立。引右上，立；揖少前，拜，跪奏讫，宣问。若嗣子已立，恭身受圣旨。奏讫，复位。嗣子未立。不宣问，引右下丹墀，面北鞠躬。通班毕，引面殿再拜。不出班，奏“圣躬万福”，再拜。出班，谢面天颜，复位，再拜。出班，谢远接，复位，再拜。赞祗候，退就幕次。再入，依前面北鞠躬，通辞，再拜；叙恋阙，再拜。赞“好去”。礼毕。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p><p class='next'>下一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p><p class='next'>下一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

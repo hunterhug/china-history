@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-列传<a href='../新五代史.html#列传'>：目录</a></p>
@@ -197,5 +224,18 @@
 </p><p>○冯行袭
 </p><p>冯行袭，字正臣，均州人也。唐末，山南盗孙喜以众千人袭均州刺史吕烨，烨不能御。行袭为州校，乃阴选勇士伏江南，独乘小舟逆喜，告曰：“州人闻公至，皆欲归矣。然知公兵多，民惧虏掠，恐其惊扰，请留兵江北，独与腹心数人从行，愿为前导，以慰安州民，事可立定。”喜以为然，乃留其兵江北，独与行袭渡江。军吏前谒，行袭击喜仆地，斩之，伏兵发，尽杀从行者。馀兵在江北，闻喜死，皆溃。山南节度使刘巨容表行袭均州刺史。
 </p><p>是时，僖宗在蜀，诸镇贡献行在者皆道山南，盗贼多据州西长山以邀劫之，行袭尽破诸贼。洋州葛佐辟行袭行军司马，使以兵镇谷口，通秦、蜀道，行袭由此知名。李茂贞兼领山南，遣子继臻守金州，行袭逐之，遂据金州。昭宗乃以金州为戎昭军，拜行袭节度使。昭宗在岐，梁太祖引兵而西，中尉韩全诲遣中官郄文晏等二十馀人召兵江淮，以拒太祖，行袭已附梁，乃尽杀文晏等。太祖攻赵匡凝于襄阳，行袭遣子勖以舟兵会均、房，以功迁匡国军节度使。行袭为人严酷少恩，而所至辄天幸，境旱有蝗，则飞鸟食之，岁凶，田中卤谷自生。唐衰，知梁必兴，尤尽心倾附事梁，官至司空，封长乐郡王，卒赠太傅，谥曰忠敬。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十九章-杂传第二十九-原文.html'>第二十九章-杂传第二十九</a></p><p class='next'>下一节：<a href='第三十一章-杂传第三十一-原文.html'>第三十一章-杂传第三十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十九章-杂传第二十九-原文.html'>第二十九章-杂传第二十九</a></p><p class='next'>下一节：<a href='第三十一章-杂传第三十一-原文.html'>第三十一章-杂传第三十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

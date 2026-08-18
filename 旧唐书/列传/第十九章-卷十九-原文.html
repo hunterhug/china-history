@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -168,5 +195,18 @@
 <p>　　李君羡者，洺州武安人也。初为王世充骠骑，恶世充之为人，乃与其党叛而来 归，太宗引为左右。从讨刘武周及王世充等，每战必单骑先锋陷阵，前后赐以宫女、 马牛、黄金、杂彩，不可胜数。太宗即位，累迁华州刺史，封武连郡公。贞观初， 太白频昼见，太史占曰：“女三昌。”又有谣言：“当有女武王者。”太宗恶之。 时君羡为左武卫将军，在玄武门。太宗因武官内宴，作酒令，各言小名。君羡自称 小名“五娘子”，太宗愕然，因大笑曰：“何物女子，如此勇猛！”又以君羡封邑 及属县皆有“武”字，深恶之。会御史奏君羡与妖人员道信潜相谋结，将为不轨， 遂下诏诛之。天授二年，其家属诣阙称冤，则天乃追复其官爵，以礼改葬。 </p>
 <p>　　史臣曰：侯君集摧凶克敌，效用居多；恃宠矜功，粗率无检，弃前功而罹后患， 贪愚之将明矣。张亮听公颖之妖言，恃弓长之邪谶，义兒斯畜，恶迹遂彰，虽道裕 云反状未形，而诡诈之性，于斯验矣。万彻筹深行阵，勇冠戎夷，不能保其首领， 以至诛戮。夫二三子，非慎始而保终也。 </p>
 <p>　　赞曰：君子立功，守以谦冲。小人得位，足为身害。侯、张凶险，望窥圣代。 雄若韩、彭，难逃菹醢。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p><p class='next'>下一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p><p class='next'>下一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

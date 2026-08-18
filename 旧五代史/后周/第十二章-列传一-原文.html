@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后周<a href='../旧五代史.html#后周'>：目录</a></p>
@@ -161,5 +188,18 @@
 </p><p>世宗贞惠皇后刘氏，将家女也，幼归于世宗。汉乾祐中，世宗在西班，后始封彭城县君。世宗随太祖在鄴，后留居邸第。汉末李业等作乱，后与贵妃张氏及诸皇族同日遇祸。国初，追封彭城郡夫人。显德四年夏四月，追册为皇后，谥曰贞惠，陵曰惠陵。
 </p><p>宣懿皇后符氏，祖存审，事后唐武皇、庄宗，位极将相，追封秦王。父彦卿，天雄军节度使，封魏王。后初适李守贞之子崇训。汉乾祐中，守贞叛于河中，太祖以兵攻之，及城陷，崇训自刃其弟妹，次将及后，后时匿于屏处，以帷箔自蔽，崇训仓黄求后不及，遂自刎，后因获免。太祖入河中，令人访而得之，即遣女使送于其父，自是后常感太祖大惠，拜太祖为养父。世宗镇澶渊日，太祖为世宗聘之。后性和惠，善候世宗之旨，世宗或暴怒于下，后必从容救解，世宗甚重之，及即位，册为皇后。世宗将南征，后常谏止之，言甚切直，世宗亦为之动容，洎车驾驻于淮甸，久冒炎暑，后因忧恚成疾。显德二年七月二十一日，崩于滋德殿，时年二十有六。世宗甚悼之。既而有司上谥曰宣懿，葬于新郑，陵曰懿陵。案：世宗有两符后，其后符后，即宣懿之女弟也，入宋称符太后，是书不为立传，未免阙略。《五代史补》：世宗皇后符氏，即魏王彦卿之女。时有相工视之大惊，密告魏王曰：“此女贵不可言。”李守贞素有异志，因与子崇训娶之，礼毕，守贞甚有喜色。其后据河中叛，高祖为枢密使，受命出征。后知高祖与其父有旧，城破之际，据堂门而坐，叱诸军曰：“我符魏王女也，魏王与枢密太尉，兄弟之不若，汝等慎勿无礼。”于是诸军耸然引退。顷之，高祖至，喜曰：“此女于白刃纷拏之际保全，可谓非常人也。”乃归之魏王。至世宗即位，纳为皇后。既免河中之难，其母欲使出家，资其福寿，后不悦曰：“死生有命，谁能髡首跣足以求苟活也！”母度不可逼，遂止。世宗素以后贤，又闻命不以出家为念，愈贤之，所以为天下母也。
 </p><p>史臣曰：周室后妃凡六人，而追册者四，故中闱内则，罕得而闻，惟董妃、符后之懿范，亦无愧于彤管矣。案：是书无外戚传，考《五代会要》云：周太祖第三女乐安公主，为汉室所害，广顺元年二月追封，至显德四年四月，又追封莒国长公主。第四女寿安公主，降张永德，广顺元年四月封，至显德元年，封晋国长公主。第五女永宁公主，广顺元年九月追封，至显德四年四月，又追封梁国长公主。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十一章-恭帝纪-原文.html'>第十一章-恭帝纪</a></p><p class='next'>下一节：<a href='第十三章-列传二-原文.html'>第十三章-列传二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十一章-恭帝纪-原文.html'>第十一章-恭帝纪</a></p><p class='next'>下一节：<a href='第十三章-列传二-原文.html'>第十三章-列传二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

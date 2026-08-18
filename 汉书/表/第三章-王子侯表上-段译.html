@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>汉书-表<a href='../汉书.html#表'>：目录</a></p>
@@ -151,5 +178,18 @@
 
 <h1>第三章-王子侯表上<span style='font-size:small'> 段译</span><span style='font-size:small;padding-left:5px'> <a href='第三章-王子侯表上-原文.html'>原文</a></span><span style='font-size:small;padding-left:5px'> <a href='第三章-王子侯表上-译文.html'>译文</a></span></h1>
 <p>大哉，圣祖之建业也！后嗣承序，以广亲亲。至于孝武，以诸侯王畺土过制，或替差失轨，而子弟为匹夫，轻重不相准，于是制诏御史：“诸侯王或欲推私恩分子弟邑者，令各条上，朕且临定其号名。”自是支庶毕侯矣。《诗》云：“文王孙子，本支百世”，信矣哉！表略</p><p style="color:#967d63;"></p>
-<div class='pn'><p class='pre'>上一节：<a href='第二章-诸侯王表-段译.html'>第二章-诸侯王表</a></p><p class='next'>下一节：<a href='第四章-王子侯表下-段译.html'>第四章-王子侯表下</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二章-诸侯王表-段译.html'>第二章-诸侯王表</a></p><p class='next'>下一节：<a href='第四章-王子侯表下-段译.html'>第四章-王子侯表下</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

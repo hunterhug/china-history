@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -193,5 +220,18 @@
 </p><p>崧累迁侍中。是时谢万为豫州都督，疲于亲宾相送，方卧在室。崧径造之，谓曰：“卿令疆理西籓，何以为政？”万粗陈其意。崧便为叙刑政之要数百言。万遂起坐，呼崧小字曰：“阿酃！故有才具邪！”哀帝雅好服食，崧谏以为“非万乘所宜。陛下此事，实日月之一食也”。后以公事免，卒于家。子耆，官至散骑常侍。
 </p><p>史臣曰：昔张良拙说项氏，巧谋于沛公；孙惠沮计齐王，耀奇于东海，终而誓甘之旅炎运载昌，称狩之师金行不竞。岂遭时之会斯蹇，将谋国之道未通？迷于委质之贞，暗于所修之虑，本既颠矣，何以能终！熊远、王鉴有毗济之道，比之大厦，其榱桷之佐乎！崧之诋温，頵之距结，挫其劳役之策，申其汝颍之论，采郭嘉之风旨，挹硃育之余波，故桓温辍许攸之谋，解结钦王朗之迹。缉之时典，用此道欤！
 </p><p>赞曰：临湘游艺，才识英发。诡名违颖，陈书干越。孝文忠謇，嘉言斯践。茂高器鉴，雕章尤善。侯爵崧传，高门頵显。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十章--原文.html'>第四十章-</a></p><p class='next'>下一节：<a href='第四十二章--原文.html'>第四十二章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十章--原文.html'>第四十章-</a></p><p class='next'>下一节：<a href='第四十二章--原文.html'>第四十二章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

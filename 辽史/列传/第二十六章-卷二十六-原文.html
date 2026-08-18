@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#列传'>：目录</a></p>
@@ -166,5 +193,18 @@
 </p><p>致仕，不逾月复旧职。丁家艰，起复，兼中书令。上问古今儒士优劣，占对称旨，知兴中府，改朔方军节度使。大康初，徙镇辽兴。以上京多滞狱，命为留守，不数月，以狱空闻。累乞致政，不从。复请，许之，加守太师。卒，遣使吊祭，追封柳城郡王，谥文宪。寿隆五年，诏为立祠。
 </p><p>耶律阿思，字撒班。清宁初，补祗候郎君。以善射，掌猎事，进渤海近侍详稳。重元之乱，与护卫苏射杀涅鲁古，赐号靖乱功臣，徙契丹行宫都部署。大安初，为北院大王，封漆水郡王。寿隆元年，为北院枢密使，监修国史。道宗崩，受顾命，加于越。录乙辛党人，罪重者当籍其家，阿思受赂，多所宽贳。萧合鲁尝言当修边备，阿思力沮其事，或讥其以金卖国。后以风疾失音，致仕，加尚父，封赵王。薨，年八十，追封齐国王。
 </p><p>论曰：滦河之变，重元拥兵行幄，微仁先等，道宗其危乎！当其止幸北、南院，召塔剌兵以靖大难，功宜居首。良以反谋白太后，韩家奴以逆顺降奚人，德与阿思杀涅鲁古，皆有讨贼之力焉。仁先齐名休哥，勋德兼备，此其一节欤！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十五章-卷二十五-原文.html'>第二十五章-卷二十五</a></p><p class='next'>下一节：<a href='第二十七章-卷二十七-原文.html'>第二十七章-卷二十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十五章-卷二十五-原文.html'>第二十五章-卷二十五</a></p><p class='next'>下一节：<a href='第二十七章-卷二十七-原文.html'>第二十七章-卷二十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

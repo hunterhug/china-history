@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-本纪<a href='../明史.html#明史'>：目录</a></p>
@@ -202,5 +229,18 @@
 </p><p>这一年，暹罗、占城、琉球、苏门答剌、哈密、瓦剌入朝进贡。
 </p><p>宣德十年(1435)正月初一，宣宗没上朝办公，命文武百官在文华殿谒见皇太子。二日，病危。停止采买，营造诸使。三日，死于乾清宫，终年三十八岁。留遗诏天下大事向皇太后陈述。二十五日，上尊谥，庙号宣宗，葬于景陵。
 </p><p>评论：仁宗为太子时，成祖并不宠爱。之所以能够危而复安，完全得力于皇太孙，即位以后，官吏称职，政治稳定，法度修明，仓库充实有余，百姓安居乐业，终年没有什么大害。明朝从兴起至此时历六十余年，民间逐渐舒缓，显示出安定美好之迹象。即使强大的封藩突然起事，不久就被治服，扫荡边境，使狡猾的敌人不得不为之震慑。宣宗之深谋远虑与雄才大略，几乎能赛过先祖的武功了。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八-白话.html'>第八章-卷八</a></p><p class='next'>下一节：<a href='第十章-卷十-白话.html'>第十章-卷十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八-白话.html'>第八章-卷八</a></p><p class='next'>下一节：<a href='第十章-卷十-白话.html'>第十章-卷十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -194,5 +221,18 @@
 </p><p>捷先由进士出身后做到监司，小有才气，很能写作。朝钟乡试中举，能说会道，二十天里就晋升三次，做到了祭酒。有一个叫杨明竞的，是潮州人，喜欢说大话，假称他在惠州、潮州一带布置了大批精兵，约十万人，就被特批为惠潮巡抚。朝钟对人说：“朝廷里面有捷先，外面有明竞，有什么强敌不能铲平呢？”观生也很器重这三个人，遇事就向他们咨询。还有一个叫梁..的，是一个虚伪的家伙，观生认为他有本事，让他做了吏科都给事中，他和明竞两个人大胆地收取贿赂，一天里就能推荐几十个人当官。
 </p><p>观生本来没有什么有力的才略，加上总领朝廷内外的事务，就更加昏头昏脑了。他招进海盗来守护广州，那些人在大白天杀人，把死人的肠肺挂在达官贵人的家门口示威，搞得城内城外纷纷扰扰。当时大清兵已经打下了惠州、潮州，地方官都投降了，大清兵就利用他们的印信送公文到广州，汇报说没有战事发生。观生相信了。
 </p><p>这个月十五日，唐王聿钅粤在城里视学，百官都聚会一堂，有人报说大清兵已逼近城下了。观生喝斥说“：潮州昨天还有报告上来，清兵怎么可能就到了这里？胡说八道，迷乱众听，斩了他！”就这样搞了三回。大清兵已经从东门进城，观生才组织兵力拼搏。精锐的部队都向西出征去了，仓猝之间无法回师。观生跑到梁..的住处向他问计。梁..说：“死吧，还说什么呢？”于是观生进入东边的房子里，梁..进到西边的房子里，各自关上门上吊自杀去。观生怕他装假，稍停了一刻想听听他的动静。梁..故意用手按压咽喉，气往上涌，发出响声，又把几案推倒在地，过好长时间就一点声音都没有了。观生以为他真的死了，就自杀而死。第二天，梁..把观生的尸体献出投降了。朝钟得知事变发生后跳进池塘里，被邻居救出后，又自杀了。唐王聿钅粤当时正在观看射箭演习，匆忙改换服装翻墙到王应华家里躲藏。不久从城墙上吊下来逃跑，被骑兵抓获。给他东西吃，他不接受，说：“我如果喝你们一勺水，怎么到地底下去见祖先？”后来悬梁自尽了。吾驺、应华等人都投降了。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百六十五章-卷一百六十五-白话.html'>第一百六十五章-卷一百六十五</a></p><p class='next'>下一节：<a href='第一百六十七章-卷一百六十七-白话.html'>第一百六十七章-卷一百六十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百六十五章-卷一百六十五-白话.html'>第一百六十五章-卷一百六十五</a></p><p class='next'>下一节：<a href='第一百六十七章-卷一百六十七-白话.html'>第一百六十七章-卷一百六十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

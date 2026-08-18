@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -199,5 +226,18 @@
 <p>　　懿宗惠安皇后王氏，僖宗皇帝之母也。事阙 </p>
 <p>　　昭宗积善皇后何氏，东蜀人。入侍寿王邸，婉丽多智，特承恩顾，生德王、辉 王。昭宗即位，立为淑妃。乾宁中，车驾在华州，册为皇后。国家自乾符已后，盗 满天下，妖生九重，宫庙榛芜，奔播不暇。景福之际，奸臣内侮，后于蒙尘薄狩之 中，尝膳御侮，不离左右。左关、右辅之幸，时事危迫，后消息抚御，终获保全。 自岐下还京，崔胤尽诛黄门宦官，每宣谕宰臣，但令宫嫔来往。是时国命夺于硃氏， 左右前后，皆是汴人，宫中动息，虽纤芥必闻于硃全忠。宫人常怀惴怵，帝后垂泣 相视。天祐初，全忠逼迁舆驾，东幸洛阳。其年八月，昭宗遇弑。翌日，宰相柳璨、 独孤损等诈宣皇后令云：“帝为宫人害，辉王祚宜升帝位。”仍尊后为皇太后。遭 罹变故，迫以凶威，宫中哭泣，不敢声闻于外。明年十二月，全忠将僭位，先行九 锡，然后受禅。全忠牙将蒋玄晖在洛阳宫知枢密，与太常卿张廷范私议云：“山西、 河北未平，禅代无利，请俟荡定。”欲有咨谏。宣徽副使赵殷衡素与张、蒋不协， 且欲代知枢密事，因使于梁，诬告云：“玄晖私于何太后，相与盟诅，誓复唐室， 不欲王受九锡。”全忠大怒，即日遣使至洛阳，诛玄晖、廷范、柳璨等，太后亦被 害于积善宫，又杀宫人阿秋、阿虔，仍废太后为庶人。 </p>
 <p>　　赞曰：坤德既轨，彤管有炜。韦、武丧邦，毒侔蛇虺。阴教斯僻，嫔风浸毁。 贤哉长孙，母仪何伟。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-卷一-原文.html'>第一章-卷一</a></p><p class='next'>下一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-卷一-原文.html'>第一章-卷一</a></p><p class='next'>下一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

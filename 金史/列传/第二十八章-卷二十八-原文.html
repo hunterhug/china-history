@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -181,5 +208,18 @@
 </p><p>杨邦基，字德懋，华阴人。父綯，宋末为易州州佐。宗望伐宋，蔡靖以燕山降，易州即日来附，綯被杀，邦基年十余岁，匿僧舍中，得免。既长，好学。天眷二年，登进士第，调滦州军事判官，迁太原交城令。太原尹徒单恭贪污不法，托名铸金佛，命属县输金，邦基独不与。徒单恭怒，召至府，将以手持铁拄杖撞邦基面，邦基不动。秉德廉察官吏，尹与九县令皆免去，邦基以廉为河东第一，召为礼部主事。以兵部员外郎摄吏部差除，坐铨注李庆之、大奉国臣，与高衎等皆贬官，邦基降坊州宜君簿。转高密令。大定初，尚书省拟邦基刑部郎中，世宗曰：“县官即除郎中，如何？”太师张浩对曰：“邦基前为兵部员外郎矣，且其人材可用。”上许之。改太府少监，知登闻检院，为秘书少监，迁翰林直学士，再迁秘书监兼左谏议大夫，修起居注。中都警巡使张子衍与邦基姻家，子衍道中遇皇太子卫仗，立马市门不去伞，卫士诃之，子衍以鞭鞭卫士诃己者。御史台劾奏子衍，邦基见台官为子衍求解，及入见显宗，求脱子衍罪。诏削子衍官两阶。邦基坐削官一阶，出为同知西京留守事，徙山东东路转运使，永定军节度使，致仕。大定二十一年，卒。邦基能属文，善画山水人物，尤以画名当世云。
 </p><p>丁暐仁，字藏用，大兴府宛平人。曾祖奭。祖惟寿。父筠，以吏补州县，所至有治声，其后致仕，杜门不出，乡里有斗讼者，不之官而就筠质焉。暐仁冲澹寡欲，读书之外，无他好，辽季避难，虽间关道途，未尝释卷。皇统二年，登进士第，调武清县丞。县经兵革后，无学校，暐仁召邑中俊秀子弟教之学，百姓欣然从之。调磁州军事判官。是时，诏使廉察官吏，暐仁以廉摄守事。迁和川令。前令罢耎不事事，群小越法干禁无所惮，暐仁申明法禁，皆屏息，或走入他县以避之。有董佑者最强悍，畏服暐仁，以刀断指，誓终身不复犯法。凡租赋与百姓前为期率，比他邑先办。历北京推官，再迁大理司直，以忧去官，寻起复。大定三年，除定武军节度副使，而节度使、同知皆阙，暐仁为政无留讼。改大理丞，吏部员外郎，转户部郎中。于是，贾少冲为刑部郎中，上谓左丞相纥石烈良弼曰：“少冲为人柔缓，不称刑部之职，其议易之。”乃以暐仁为刑部郎中。坐尚厩局官私用官刍，违格付大兴府鞫问，解职。改祁州刺史。祁州为定武支郡，士民闻暐仁之官，相率欢迎界上，相属不绝。改同知西京留守事，首兴学校，以明养士之法。迁陕西西路转运使。大定二十一年，卒官。
 </p><p>赞曰：吏之兴，其秦之季邪？吏有选试，其辽、金之际邪？其文从一从史，守法不贰之谓邪？守法不贰，斯真吏矣。巧者舞文以乱法，窒者执一而弗通，此皆吏道之自失者也。高衎、高德基、张九思之徒，皆诡法以自失者矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十七章-卷二十七-原文.html'>第二十七章-卷二十七</a></p><p class='next'>下一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十七章-卷二十七-原文.html'>第二十七章-卷二十七</a></p><p class='next'>下一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

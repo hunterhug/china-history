@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -174,5 +201,18 @@
 </p><p>滑寿，字伯仁，先世本襄城人，迁居仪真，后又迁到浙江余姚。寿自幼机智好学，能写诗。京口王居中是位名医，寿从他学习，讲授《素问》、《难经》。学成后又请教师傅：“《素问》讲得倒是详细，可惜有颠倒错乱的地方，我准备将此书分为藏象、经度等十类，分类抄写阅读。《难经》又本于《素问》、《灵枢》，其间荣卫藏府与经络腧穴，分辨得很细，但遗漏错误也多。我想根据原书的义旨加以注释，可否？”居中非常高兴，连声说好。从此以后，寿之医学日有长进。他又将张仲景、刘守真、李明之三家医学融会贯通，治病没有不愈的。
 </p><p>滑寿又向东平人高洞阳学习了针灸，曾说：“人身六脉虽皆相连，但督任二脉则包于腹背，有专穴。其他诸经络满而溢者，则此二脉可以调剂，应与十二经并论。”于是取《内经骨空》诸论及《灵枢篇》中所述的经络，著《十四经发挥》三卷，通考穴位六百四十七。其他著作有《读伤寒论抄》、《诊家枢要》、《痔瘘篇》等。又摘取《本草》著为《医韵》。这些医著都有功于世。
 </p><p>晚年自号“撄宁生”，江、浙一带无人不知“撄宁生”。七十余岁，容色如幼童，行步骄捷，饮酒无数。天台朱右将滑寿治病神效者数十事例编写成传，所以滑寿的著述更为世人所称赞。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百八十五章-卷一百八十五-白话.html'>第一百八十五章-卷一百八十五</a></p><p class='next'>下一节：<a href='第一百八十七章-卷一百八十七-白话.html'>第一百八十七章-卷一百八十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百八十五章-卷一百八十五-白话.html'>第一百八十五章-卷一百八十五</a></p><p class='next'>下一节：<a href='第一百八十七章-卷一百八十七-白话.html'>第一百八十七章-卷一百八十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

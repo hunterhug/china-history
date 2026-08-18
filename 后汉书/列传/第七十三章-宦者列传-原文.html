@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#列传'>：目录</a></p>
@@ -226,5 +253,18 @@
 </p><p>六年，帝崩。中军校尉袁绍说大将军何进，令诛中官以悦天下。谋泄，让、忠等因进入省，遂共杀进。而绍勒兵斩忠，捕宦官无少长悉斩之。让等数十人劫质天子走河上。追急，让等悲哭辞曰：“臣等殄灭，天下乱矣。惟陛下自爱！”皆投河而死。
 </p><p>论曰：自古丧大业绝宗禋者，其所渐有由矣。三代以嬖色取祸，嬴氏以奢虐致灾，西京自外戚失祚，东都缘阉尹倾国。成败之来，先史商之久矣。至于衅起宦夫，其略犹或可言。何者？刑余之丑，理谢全生，声荣无辉于门阀，肌肤莫传于来体，推情未鉴其敝，即事易以取信，加渐染朝事，颇识典物，故少主凭谨旧之庸，女君资出内之命，顾访无猜惮之心，恩狎有可悦之色。亦有忠厚平端，怀术纠邪；或敏才给对，饰巧乱实；或借誉贞良，先时荐誉。非直苟恣凶德，止于暴横而已。然莫邪并行，情貌相越，故能回惑昏幼，迷瞀视听，盖亦有其理焉。诈利既滋，朋徒日广，直臣抗议，必漏先言之间，至戚发愤，方启专夺之隙，斯忠贤所以智屈，社稷故其为墟。《易》曰：“履霜坚冰至。”云所从来久矣。今迹其所以，亦岂一朝一夕哉！
 </p><p>赞曰：“任失无小，过用则违。况乃巷职，远参天机。舞文巧态，作惠作威。凶家害国，夫岂异归！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十二章-酷吏列传-原文.html'>第七十二章-酷吏列传</a></p><p class='next'>下一节：<a href='第七十四章-儒林列传上-原文.html'>第七十四章-儒林列传上</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七十二章-酷吏列传-原文.html'>第七十二章-酷吏列传</a></p><p class='next'>下一节：<a href='第七十四章-儒林列传上-原文.html'>第七十四章-儒林列传上</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-列传<a href='../新五代史.html#列传'>：目录</a></p>
@@ -189,5 +216,18 @@
 </p><p>庄宗闻崇韬欲留蜀，亦不悦，遣宦者向延嗣趣继岌班师。延嗣至成都，崇韬不出迎，及见，礼益慢，延嗣怒，从袭等因告延嗣崇韬有异志，恐危魏王。延嗣还，具言之。刘皇后涕泣请保全继岌，庄宗遣宦官马彦珪往视崇韬去就。是时，两川新定，孟知祥未至，所在盗贼聚山林，崇韬方遣任圜等分出招集，恐后生变，故师未即还。而彦珪将行，见刘皇后曰：“臣见延嗣言蜀中事势已不可，祸机之作，间不容发，安能三千里往复廪命乎！”刘皇后以彦珪语告庄宗，庄宗曰：“传言未审，岂可便令果决？”皇后不得请，因自为教与继岌，使杀崇韬。明年正月，崇韬留任圜守蜀，以待知祥之至，崇韬期班师有日。彦珪至蜀，出皇后教示继岌，继岌曰：“今大军将发，未有衅端，岂可作此负心事！”从袭等泣曰：“今有密敕，王苟不行，使崇韬知之，则吾属无类矣！”继岌曰：“上无诏书，徒以皇后手教，安能杀招讨使？”从袭等力争，继岌不得已而从之。诘旦，从袭以都统命召崇韬，继岌登楼以避之。崇韬入，升阶，继岌从者李环挝碎其首。
 </p><p>继岌遂班师。二月，军至泥溪，先锋康延孝叛，据汉州，继岌遣任圜讨平之。四月辛卯，至兴平，闻明宗反，兵入京师，继岌欲退保凤翔。至武功，李从袭劝继岌驰趋京师，以救内难。行至渭河，西都留守张抃断浮桥，继岌不得度，乃循河而东，至渭南，左右皆溃。从袭谓继岌曰：“大事已去，福不可再，王宜自图。”继岌徘徊泣下，谓李环曰：“吾道尽途穷，子当杀我。”环迟疑久之，谓继岌乳母曰：“吾不忍见王，王若无路求生，当踣面以俟。”继岌面榻而卧，环缢杀之。任圜从后至，葬继岌华州之西南。继岌少病阉，无子。明宗已即位，圜率征蜀之师二万至京师，明宗抚慰久之，问圜继岌何在，圜具言继岌死状。
 </p><p>同光三年，诏以皇子继嵩、继潼、继蟾、继峣皆为光禄大夫，检校司徒。盖其皆幼，故不封。当庄宗遇弑时，太祖子孙在者十有一人，明宗入立，其四人见杀，其余皆不知所终，太祖之后遂绝。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-梁家人传第一-原文.html'>第一章-梁家人传第一</a></p><p class='next'>下一节：<a href='第三章-唐明宗家人传第三-原文.html'>第三章-唐明宗家人传第三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-梁家人传第一-原文.html'>第一章-梁家人传第一</a></p><p class='next'>下一节：<a href='第三章-唐明宗家人传第三-原文.html'>第三章-唐明宗家人传第三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

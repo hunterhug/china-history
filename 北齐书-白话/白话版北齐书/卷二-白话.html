@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>北齐书-白话版北齐书<a href='../北齐书.html#北齐书'>：目录</a></p>
@@ -198,5 +225,18 @@
 </p><p>侯景一向小看太子，曾对司马子如说：“王在，我不敢有非分之举；王无，我不能与鲜卑小孩共事。”子如赶紧捂住了他的口。此时，太子代神武修书征召侯景。侯景先前与神武有约，得信函，若信函背面有小黑点，才来看望。信到，无约定的记号，侯景未来，又听说神武病重，便拥兵自守。神武对太子说：“我虽然病重，可是你的脸上却有更多的忧虑之色，为什么？”太子没有回答。神武又问：“难道不是担忧侯景反叛？”答：“是的。”神武说：“侯景专制河南十四年，常怀飞扬跋扈之志，只有我能调养，他岂能让你驾驭！如今天下未定，千万不要匆匆发布我死的消息。厍狄干是鲜卑老人，斛律金为敕勒老人，两人性格耿直，是不会背弃你的。可朱浑道元、刘丰生从远道来投奔我，无疑没有异心。贺拔焉过儿朴实而且很少有过失。潘相乐原本是个道人，心地善良而且宽厚，我们弟兄会得他的帮助。韩轨少戆，应该宽容。彭相乐难得真心实意，应该提防着他。稍微能与侯景抗衡的只有慕容绍宗，因此我不让他富贵，留下给你，你必须殊礼相待，委以重任。”
 </p><p>五年(547)正月初一，日蚀，神武说：“日蚀是为了我哟，死也没有什么遗憾的了。”初八日，向魏帝呈送书启。是日，崩于晋阳，时年五十二岁，秘不发丧。六月十七日，魏帝在东堂致哀，第三天，制作丧服，诏令丧礼依照汉大将军霍光、东平王苍规格办理；赠假黄钺、使持节、相国、都督中外诸军事、齐王玺绶，赐..车京车、黄屋、左纛、前后羽葆、鼓吹、轻车、介士，兼备九锡殊礼，谥号献武王。八月二十日，葬在邺西北漳水的西侧，魏帝送丧至紫陌。天保初年，追封为献武帝，庙号太祖，陵为义平。天统元年(565)，改谥号神武皇帝，庙号高祖。
 </p><p>神武性情深沉缜密傲岸严肃，整天表情庄重，别人不能揣测他的内心，策划谋略的时候，变化多端如同神人，至于军事和国家的重大方针，独到地运用自己的思考，文官武将很少能预知。统领指挥军队，法令严肃，面对敌人夺取胜利，制定策略没有一定之规。听讼断案明察是非，不可欺蒙。善于鉴识人的才能喜欢和士人交往，周全保护立遇功勋的人。性格周密善辩，每当有礼乐教化的事情，常常关注备至，阐述事理倾心交谈，不崇尚华丽奢侈。提拔人员授予官职，在于得到人才，如果他能够胜任，甚至到奴仆中选拔，徒有虚名而无实际才能的，很少得到任用。各将领出外征讨，照着他的策略做的，无不取胜报捷，违背他的指挥的，大多导致失败逃亡。十分崇尚俭朴，刀剑鞍辔上没有金玉的饰物。年轻时酒量很大，自从担当重任后，每次不超过三杯。住在家裹就和在官府一样。仁慈宽容地爱护士人。开始范阳人卢景裕以明晓经义受人称道，叠郡人垄堑以擅长书法声名显扬，他们都因谋反被抓，一并蒙受恩德安置在府宅裹，教神武的儿子们。他的文人武士尽心去做事，因遇错被抓起来而不加惩罚的有很多。所以远近都心悦诚服地归附他，都想为他出力效命。以至于南面慑服凿国，北面安抚竖坚，丝主避、厘至罗全都招引接纳，得到他们的人力物用，规划谋略考虑得远啊。</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷一-白话.html'>卷一</a></p><p class='next'>下一节：<a href='卷三-白话.html'>卷三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='卷一-白话.html'>卷一</a></p><p class='next'>下一节：<a href='卷三-白话.html'>卷三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

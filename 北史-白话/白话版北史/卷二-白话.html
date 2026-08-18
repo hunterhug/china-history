@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>北史-白话版北史<a href='../北史.html#北史'>：目录</a></p>
@@ -287,5 +314,18 @@
 </p><p>皇帝生下来后就没有见到密太后，当他开始懂事以后，一提起来就十分悲伤，这种哀伤的感情使旁人都为之动心，明元帝知道以后很赞赏并感叹不已。明元帝有病时，太武帝衣带不解一直在身旁照料。他喜爱清静俭朴，衣服饰品和日常用具、饮食等，够用而已，不喜欢珍美艳丽的东西。吃饭没有两种以上品味的菜肴，所宠爱的昭仪、贵人，衣服没有两种以上的色彩。众官上奏皇帝，请他按照《周易》中所说的高险的意图而加高城墙和深挖护城河，并且引用汉代萧何建宫殿使京城壮丽的故事。太武帝说：“古人曾经说过，治国在德不在险。屈丐蒸土修筑城池，使之更加坚固，也被我灭掉了，难道在乎城池是否坚固险要吗？如今天下未平，正需要大量人力，大兴土木的做法，不是我所要做的。萧何对汉高祖所说的话，也不是美言啊！”他常说财富是军队和国家的根本，不能轻易消耗浪费。至于他所赏赐的，都是建立功勋和政绩显著的人，亲戚和受他宠爱的人，没有人能够因此得到封赏。
 </p><p>每当和敌军对阵时，他常常和士卒们一起站在飞石乱箭四射的危险地方，左右人一个个被射死或受伤，太武帝依然神色自若，所以人人都愿意为他出力，所向无敌。他任命将领出兵时，都告诉他们指挥作战的方法，听从命令的人无不克敌制胜，而违反命令的则大多遭受失败。他知人善任，经常在普通士兵中选拔将领，并根据他们的才能发挥其特长，不管原出身如何。他兼听各种意见而又勇于决断，刑赏分明，立功而受赏时不漏掉卑贱者，因罪而受刑时不偏袒亲近者，虽然是平时深受宠爱的人，也决不破坏法律。他常说：“法律，是我和天下人所共同的准则，怎敢轻易改变？”所以大臣们违反法令，也决不宽恕。
 </p><p>太武帝善于倾听和观察，瞬息之间，部下难以设法隐瞒真情。但他杀人很果断，过后又常感到后悔。司徒崔浩被处死后，皇帝北伐时，正好宣城的李孝伯病重，外面传说他已经死去，皇帝知道后十分痛惜，对身旁人说：“李宣城真是可惜啊！”又说“：我刚才的话说错了，崔司徒真可惜，李宣城可是令人悲哀啊！”他对人褒贬很慎重，就像这种情况。</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷一-白话.html'>卷一</a></p><p class='next'>下一节：<a href='卷三-白话.html'>卷三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='卷一-白话.html'>卷一</a></p><p class='next'>下一节：<a href='卷三-白话.html'>卷三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

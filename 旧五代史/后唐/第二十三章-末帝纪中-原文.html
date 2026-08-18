@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后唐<a href='../旧五代史.html#后唐'>：目录</a></p>
@@ -167,5 +194,18 @@
 </p><p>冬十月丁卯，幸崇道宫、甘泉亭。己巳，以左卫上将军李顷为左领军上将军。北面行营总管石敬瑭奏，自代州归镇。庚午，以晋州节度使张温卒废朝。甲戌，幸赵延寿、张延朗第。丁丑，以端明殿学士、兵部侍郎李专美为秘书监，充宣徽北院使。庚寅，以左谏议大夫唐汭为左散骑常侍。
 </p><p>十一月庚子，以左骁卫上将军郝琼为左金吾上将军，以光禄卿王玟为太子宾客。以徐州节度使张敬达为晋州节度使，依前充大同、振武、威塞、彰国等军兵马副总管。丁未，以秘书少监丁济为太子詹事。乙卯，以前金州防御使马全节为沧州留后。《通鉴》：刘延朗欲除全节绛州刺史，群议沸腾。帝闻之，以为横海留后。渤海国遣使朝贡。
 </p><p>十二月戊辰，禁用铅钱。壬申，以中书侍郎兼兵部尚书、充枢密使韩昭允为检校司空、同平章事，充河中节度使。甲戌，以宗正少卿李延祚为将作监致仕。丁丑，故武安军州节度使、累赠太傅刘建峰赠太尉，从湖南之请也。戊寅，太常奏：“来年正月一日上辛，祀昊天上帝于圆丘，依礼大祠不朝。”诏曰：“祀事在质明前，仪仗在日出后，事不相妨，宜依常年受朝。”壬午，以翰林学士承旨、户部侍郎程遂为兵部侍郎；翰林学士、工部侍郎崔棁为户部侍郎；翰林学士、中书舍人和凝为工部侍朗，并依前充职。乙酉，以前秘书监杨凝式为兵部侍郎。己丑，以前同州节度使冯道为司空，以尚书右仆射刘煦为左仆射，以太子少师卢质为右仆射，以兵部侍郎马缟兼国子祭酒。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十二章-末帝纪上-原文.html'>第二十二章-末帝纪上</a></p><p class='next'>下一节：<a href='第二十四章-末帝纪下-原文.html'>第二十四章-末帝纪下</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十二章-末帝纪上-原文.html'>第二十二章-末帝纪上</a></p><p class='next'>下一节：<a href='第二十四章-末帝纪下-原文.html'>第二十四章-末帝纪下</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

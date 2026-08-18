@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#魏书'>：目录</a></p>
@@ -182,5 +209,18 @@
 </p><p>崔浩的母亲卢氏，是卢谌的孙女。崔浩写《食经叙》说：“我从小到大，耳闻目睹，伯母叔母及各位姑妈所学习的妇功，无不学习造酒做饭。朝夕供养公婆，四季祭祀，虽然耗费时间和精力，但是不用奴婢，常亲自动手。过去遭遇丧乱，饥馑接连而至，用极简单的饭菜糊口，不能具备这方面的物品器用，十多年间没有安排。亡母担心长期荒废，后辈看不见，而年轻时不学习可以立业的书籍，于是口授成九篇，文辞简约，委婉成章，聪慧明辩记忆力强，都像这样。母亲去世以后，国家振起，扫除暴乱，乎定四方。我位居宰辅，参与重大决策，得到的赏赐丰厚，牛羊遍地，资财巨万。穿的是精美的丝织品，吃的是精美的主食和肉食。追思平生，想望季路负米的时刻，不能再有，所以为遣文作序，传诸来世。”
 </p><p>起初崔浩与冀州刺史崔赜、荣阳太守崔模等年龄相当，崔浩为大，其次崔模，其次崔赜。三人不同宗，而崔模、崔赜相亲近。崔浩依恃他家世代是魏晋公卿，常欺负崔模、崔赜。崔模对人说：“桃简祇可以欺负我，怎么可以欺负我家周儿呢。”崔浩小名桃简，崔赜小名周儿。世祖已经听说这事，所以杀崔浩时，二家得到宽免。崔浩不信佛教、道教，崔模却深信宗教，即使在秽土之中，也礼拜偶像。崔浩大声讥笑他，说：“拿这头颅在不洁净的地方跪拜这胡神呵。”
 </p><p>史臣曰：崔浩的学识渊博，遍读天人关系学说，对政事的谋划，当时无双，这是他自比于子房的原因。在太宗当政的年月，在世祖治国的日子，言听计从，廓清平定中原。得到的恩遇既然深厚，也就努力尽心国事。谋略虽然盖世，声威却没有震惊君主，晚年意外，竟不能保全自己。难道是飞鸟尽而良弓当藏，百姓憎恶他们的君上?难道是满者招损，不为人知的伤害留下了祸害?为什么这个人遭受这样的灾难，可悲啊!</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十二章-卷二十二-白话.html'>第二十二章-卷二十二</a></p><p class='next'>下一节：<a href='第二十四章-卷二十四-白话.html'>第二十四章-卷二十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十二章-卷二十二-白话.html'>第二十二章-卷二十二</a></p><p class='next'>下一节：<a href='第二十四章-卷二十四-白话.html'>第二十四章-卷二十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

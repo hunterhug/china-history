@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>宋史-志<a href='../宋史.html#志'>：目录</a></p>
@@ -2622,5 +2649,18 @@
 　　臣又聞之，太祖生于洛邑，而胞絡惟黃；鴻圖既建，五緯聚於奎躔，而鎮星是主。及陛下升中之次，日抱黃珥；朝祀于太清宮，有星曰含譽，其色黃而潤澤。斯皆凝命有表，盛德攸屬，天意人事響效之大者，則土德之符在矣。是故天心之在茲，陛下拒而罔受；民意之若是，陛下謙而弗答。氣壅未宣，河決遂潰，豈不神哉！然則天淵之勃流，水德之浸患，考六府之厭鎮，驗五行之勝剋，亦宜興土之運，禦時之災。伏望順考符應，詳習法度，惟陛下時而行之。<BR>
 <BR>
 　　大理寺丞董行父又上言曰：「在昔泰皇以萬物生於東，至仁體乎木，故德始於木。木以生火，神農受之為火德；火以生土，黃帝受之為土德；土以生金，少昊受之為金德；金以生水，顓頊受之為水德；水以生木，高辛受之為木德；木以生火，唐堯受之為火德；火以生土，虞舜傳之為土德。土以生金，夏為金德；金以生水，商為水德；水以生木，周為木德；木以生火，漢應圖讖為火德；火以生土，唐受曆運為土德。陛下紹天之統，受天之命，固當上繼唐祚，以金為德，顯黃帝之嫡緒，彰聖祖之丕烈。臣又按聖祖先降於癸酉，太祖受禪於庚申，陛下即位於丁酉，天書下降於戊申。庚，金也，申、酉皆金也，天之體也。陛下紹唐、漢之運，繼黃帝之後，三世變道，應天之統，正金之德，斯又順也。」詔兩制詳議。既而獻議曰：「竊詳謝絳所述，以聖祖得瑞，宜承土德，且引漢承堯緒為火德之比，雖班彪敘漢祖之興有五，其一曰帝堯之苗裔，及序承正統，乃越秦而繼周，非用堯之行。今國家或用土德，即當越唐上承於隋，彌以非順，失其五德傳襲之序。又據董行父請越五代紹唐為金德，若其度越累世，上承百代之統，則晉、漢洎周，咸帝中夏，太祖實受終於周室而陟于元后，豈可弗遵傳繼之序，續於遐邈之統？三聖臨御六十餘載，登封告成，昭姓紀號，率循火行之運，以輝炎靈之曜。茲事體大，非容輕議，矧雍熙中徐鉉等議之詳矣。其謝絳、董行父等所請，難以施行。」詔可。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p><p class='next'>下一节：<a href='第二十四章-卷二十四-原文.html'>第二十四章-卷二十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p><p class='next'>下一节：<a href='第二十四章-卷二十四-原文.html'>第二十四章-卷二十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

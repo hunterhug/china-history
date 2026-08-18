@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-本纪<a href='../旧唐书.html#本纪'>：目录</a></p>
@@ -285,5 +312,18 @@
 </p><p>全忠建国，奉帝为济阴王，迁于曹州，处前刺史氏叔琮之第。时太原、幽州、凤翔、西川犹称天祐正朔。天祐五年二月二十一日，帝为全忠所害，时年十七，仍谥曰哀皇帝，以王礼葬于济阴县之定陶乡。中兴之初，方备礼改卜，遇国丧而止。明宗时就故陵置园邑，有司请谥曰昭宣光烈孝皇帝，庙号“景宗”。中书覆奏少帝行事，不合称宗，存谥而已。知礼者亦以宣、景之谥非宜，今只取本谥，载之于纪。
 </p><p>史臣曰：悲哉！土运之将亡也，五常殆尽，百怪斯呈，宇县瓜分，皇图瓦解。昭宗皇帝英猷奋发，志愤陵夷，旁求奇杰之才，欲拯沦胥之运。而世途多僻，忠义俱亡，极爵位以待贤豪，罄珍奇而托心腹。殷勤国士之遇，罕有托孤之贤，豢丰而犬豕转狞，肉饱而虎狼逾暴。五侯九伯，无非问鼎之徒；四岳十连，皆畜无君之迹。虽萧屏之臣扼腕，岩廊之辅痛心，空衔毁室之悲，宁救丧邦之祸？及扶风西幸，洛邑东迁，如寄珠于盗跖之门，蓄水于尾闾之上，往而不返，夫何言哉！至若川竭山崩，古今同叹；虎争龙战，兴替无常。纵胠箧之不仁，亦攫金之有道。曹操请刑于椒壶，盖迫阴谋；马昭拒命于凌云，窘于见讨。诚知丑迹，得以为词，而全忠所行，止于残忍。况自岐迁洛，天子塊然，六军尽斥于秦人，四面皆环于汴卒。冕旒如寄，纤芥为疑，迎銮未及于崇朝，剚刃已闻于涂地。立嗣君于南面，毙母后于中闱，黄门与禁旅皆歼，宗室共衣冠并殪。复又盗钟掩耳，嫁祸于人。何九六之数穷，偶天人之道尽，目击斯乱，言之伤心。哀帝之时，政由凶族。虽揖让之令，有类于山阳；而凌逼之权，过逾于侯景。人道浸薄，阴骘难征，然以此受终，如何延永！
 </p><p>赞曰：勋华受命，揖让告终。逆取顺守，仁道已穷。暴则短祚，义则延洪。虞宾之祸，非止一宗。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

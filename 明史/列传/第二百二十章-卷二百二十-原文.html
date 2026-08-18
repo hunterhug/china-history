@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -228,5 +255,18 @@
 </p><p>今采故牍尝奉贡通名天朝者，曰哈三，曰哈烈儿，曰沙的蛮，曰哈的兰，曰扫兰，曰乜克力，曰把力黑，曰俺力麻，曰脱忽麻，曰察力失，曰干失，曰卜哈剌，曰怕剌，曰你沙兀儿，曰克失迷儿，曰帖必力思，曰火坛，曰火占，曰苦先，曰牙昔，曰牙儿干，曰戎，曰白，曰兀伦，曰阿端，曰邪思城，曰舍黑，曰摆音，曰克癿，计二十九部。以疆域褊小，止称地面。与哈烈、哈实哈儿、赛蓝、亦力把力、失剌思、沙鹿海牙、阿速、把丹皆由哈密入嘉峪关，或三年、五年一贡，入京者不得过三十五人。其不由哈密者，更有乞儿、麻米儿、哈兰可脱、癿蜡烛、也的干、剌竹、亦不剌、因格失、迷乞儿、吉思羽奴、思哈辛十一地面，亦尝通贡。
 </p><p>鲁迷，去中国绝远。嘉靖三年遣使贡狮子、西牛。给事中郑一鹏言：“鲁迷非尝贡之邦，狮子非可育之兽，请却之，以光圣德。”礼官席书等言：“鲁迷不列《王会》，其真伪不可知。近土鲁番数侵甘肃，而边吏于鲁迷册内，察有土鲁番之人。其狡诈明甚，请遣之出关，治所获间谍罪。”帝竟纳之，而令边臣察治。
 </p><p>五年冬，复以二物来贡。既颁赐，其使臣言，长途跋涉，费至二万二千余金，请加赐。御史张禄言：“华夷异方，人物异性，留人养畜，不惟违物，抑且拂人。况养狮日用二羊，养西牛日用果饵。兽相食与食人食，圣贤皆恶之。又调御人役，日需供亿。以光禄有限之财，充人兽无益之费，殊为拂经。乞返其人，却其物，薄其赏，明中国圣人不贵异物之意。”不纳。乃从礼官言，如弘治撒马儿罕例益之。二十二年偕天方诸国贡马及方物，明年还至甘州。会迤北贼入寇，总兵官杨信令贡使九十余人往御，死者九人。帝闻，褫信职，命有司棺敛归其丧。二十七年、三十三年并入贡。其贡物有珊瑚、琥珀、金刚钻、花瓷器、锁服、撒哈剌帐、羚羊角、西狗皮、舍列狲皮、铁角皮之属。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二百一十九章-卷二百一十九-原文.html'>第二百一十九章-卷二百一十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二百一十九章-卷二百一十九-原文.html'>第二百一十九章-卷二百一十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

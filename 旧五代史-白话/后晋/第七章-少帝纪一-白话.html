@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后晋<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -166,5 +193,18 @@
 </p><p>夏四月一日，日蚀。二十二日，中书门下上奏“：请定六月二十七日皇上诞生日为启圣节。”少帝采纳了。这个月，河南、河北、关西各州发生旱灾和蝗灾，少帝分命使臣捕杀蝗虫。
 </p><p>五月十六日，命令宰臣等分别到各佛寺道观祈求下雨。二十二日，飞蝗从北面遮天盖日向南飞去。太子宾客李..去世。二十七日，少帝下诏：“各道州府被囚禁的罪犯，除十恶五逆、行劫杀人、伪造玺印符信、合制毒药、官员贪赃各减一等外，其余全部释放。”这时旱灾、蝗灾到处发生，所以下了这个诏令。二十八日，少帝幸临相国寺祈雨。
 </p><p>六月四日，因螟蝗为害，诏令侍卫马步军都指挥使李守贞到皋门祭祀祷告，又派诸司使梁抱超等七人分别前往开封府界捕杀螟蝗。九日，任命左羽林统军安审晖为潞州节度使。宿州上奏，飞蝗抱草干死。十日，贝州上奏，逃亡民户总计三千七百户。派供奉官卫延韬到嵩山投龙祈雨。十二日，开封府境内飞蝗自灭。十四日，河南府上奏，飞蝗猛降，遍及山野，草、苗、树叶都被吃光，人多饿死。礼部侍郎吴承范去世。二十日，因将要册封皇太后，派尚书左丞王易简祷告天地。陕州上奏，飞蝗入境内，噬食五谷及竹木枝叶，逃亡的人达八千一百户。二十五日，派朝廷内外官员二十八人分别前往各道州府收借粟麦。当时使臣迎合圣旨，立法很严，民间的石碓石磨都用泥封存起来，隐瞒粟麦数的人都予杀死，因此，民不聊生，百姓怨声载道。这个月，各州郡发生大蝗灾，蝗虫所经之地，草木都被吃尽。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章-高祖纪六-白话.html'>第六章-高祖纪六</a></p><p class='next'>下一节：<a href='第八章-少帝纪二-白话.html'>第八章-少帝纪二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六章-高祖纪六-白话.html'>第六章-高祖纪六</a></p><p class='next'>下一节：<a href='第八章-少帝纪二-白话.html'>第八章-少帝纪二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

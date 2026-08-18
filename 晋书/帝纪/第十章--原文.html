@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-帝纪<a href='../晋书.html#帝纪'>：目录</a></p>
@@ -180,5 +207,18 @@
 </p><p>帝幼年时性情比较残忍急躁，后来在封国时，曾经让善于射箭的入射马作为游戏。不久有人说：“马是国姓，却自己去杀马，太不吉利了。”恭帝也醒悟，非常悔恨做了遣件事。从那以后深信佛教，将成千上万的钱币铸在一起，造出一丈六尺高的铜像，亲自到瓦官寺迎接，步行随从了十多里。安帝是白痴，恭帝常常侍奉在他身边，关照冷暖起居饮食，因为恭谨而出名，当时的人们都称道这事。当初，元帝在丁丑年称晋王，立宗庙时，让郭璞占筮，说“享二百年”。从丁丑到禅代的这一年，是庚申年，正是一百零四年。但是丁丑开始有西晋，庚申就成了宋的年代，中间余下的衹有一百零二年罢了。郭璞大概因为一百零二年的期限短了，所以倒过来委婉地说成是二百年。
 </p><p>史臣曰：安帝即位的时期，正是紧张战乱的时期，道子、元显专权，君主昏庸而臣子乱法，这样怎能不亡国。即使手中掌握兵马，心中存念故国朝廷的人，也因回首四顾不见贤良的人，一下子就四散了。于是桓玄乘这个机会，势头超过了狂风卷地，六军都被消灭，皇帝流亡。所以宋直担并不是司马氏的臣子，瑟墨哪裹是置塑的敌寇。至于当朝而遇上颠覆，那就敷恭皇帝最不幸了。室迈之地的民众，怎会去烟熏丹穴，会稽山下的人们，难道会感叹作别人的臣民。离别了皇宫而返回旧家，写红纸诏书而不遗憾。天地间五运的更替变革，三正纪年的命数走到尽头，好比深秋时节万物凋零，是自然之理。看到晋已飘摇零落，也有人会哭泣流泪。
 </p><p>赞曰：安帝继承了放纵无度的国运，大盗趁势猖狂起来。恭帝暂时受命，事情由别人决定。就如保留周赧王，却是楚怀王取代。虚假的尊位和称号，不同的方法却同归于灭亡。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章--原文.html'>第九章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九章--原文.html'>第九章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -185,5 +212,18 @@
 <p>　　李安远者，夏州朔方人也。隋云州刺史彻子也。家富于财，少从博徒不逞，晚 始折节读书，敬慕士友。袭父爵城阳公。与王珪友善。大业初，珪坐叔颇当配流， 安远为之营护，免。后为正平令。及义兵攻绛郡，安远与通守陈叔达婴城自守。城 陷，高祖与安远有旧，驰至其宅抚慰之，引与同食。拜右翊卫统军，封正平县公。 武德元年，授右武卫大将军。从太宗征伐，特蒙恩泽，累战功，改封广德郡公。又 使于吐谷浑，与敦和好，于是吐谷浑主伏允请与中国互市，安远之功也。后隐太子 建成潜引以为党援，安远固拒之，由是太宗益加亲信。贞观初，历潞州都督、怀州 刺史。历任颇有声绩，然伤于严急，时论少之。七年卒，追赠凉州都督，谥曰密。 十三年，追封为遂安郡公。 </p>
 <p>　　史臣曰：裴寂历任仕隋，官至为宫监，总子女玉帛之务，据仓廪兵甲之饶，喜 博戏之利苟多，启举义之谋为首。谒岳神以徼福，始彰不逞之心；留贵妃以经宿， 终昧为臣之道。居第一之位，乏在三之规。恃高祖之旧恩，致文静之极法。终归四 罪，尚保再生，幸也。文静奋纵横之略，立缔构之功，罔思宠辱之机，过为轻躁之 行，未及封而祸也，惜哉！凡关佐命，爰第实封，小大不遗，贤愚自劝，太宗之行 赏也，明矣！ </p>
 <p>　　赞曰：风云初合，共竭智力。势利既分，遽变仇敌。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p><p class='next'>下一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p><p class='next'>下一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

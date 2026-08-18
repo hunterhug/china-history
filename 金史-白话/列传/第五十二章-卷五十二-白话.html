@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#金史'>：目录</a></p>
@@ -178,5 +205,18 @@
 </p><p>当年四月，京城外敌军停止进攻，元兵退去。不久，因为杀了唐庆，和议便中断了。于是，再挑选民兵准备守城。八月，收查京城中的粟米，由转运使完颜珠颗、张俊民、曳剌克忠等设局，以推排举报。珠颗对民众说：“你们应当照实说出，如果真的一旦粮尽，让你们的妻子当军粮吃，还能吝惜吗？”后来，朝廷免除了搜括粮食的命令，又采取进献的办法来收取。
 </p><p>前御史大夫内族合周又想得到进用，便建议说，在京城搜括粮食，可以得到一百多万石。朝廷相信了，任命他为代理参知政事，跟左丞李蹊一起总管这件事。他们先让各家自报，壮年的存粮一石三斗，年幼的只存一半，然后把存粮的数量写在门前，胆敢有私藏的以超过的升斗数量多少论罪。京城中共有三十六坊，都选用残忍的人来担任这件事，内族完颜久住尤其残暴。有位寡妇两口人，实有豆子六斗，其中杂有草籽三升，完颜久住笑着说“：我抓到了。”便将她抓起来示众。寡妇哭着说“：我的丈夫当兵而死，不能抚养婆婆，所以混杂些草籽糠来度日，并不是作为军粮。而且不过三升，六斗多出这一点。”久住不听，她竟然被打死在杖下。全京城人听到这消息后都十分惊慌，便将多余的粮食全部扔进粪坑里。有人告诉李蹊，李蹊皱着眉头说“：去告诉参政吧！”那人立即告诉了合周，合周说：“人们说是‘花又不伤，蜜又酿成’。我说花不损伤，怎能得蜜。况且京都危急，如今是要保存社稷呢，还是保存百姓呢？”当时说得没人敢吭。斜卯爱实便上奏，大意说：“停止搜括粟米，便将暴政改为仁政，可以使民众散去怨气变为和气。”可是，朝廷并不回报。
 </p><p>当时所搜括粮食还达不到三万斛，而京城却更加显得冷落了。从此以后，死去的人相互枕压，不管贫富都束手等死而已。皇帝听说以后，命令取出太仓中的米来熬粥给饥饿的人吃。爱实知道以后叹息说：“与其现在给吃的，不如当初不抢。”他的话被奉御把奴所告发。又因当时近侍臣子干预朝政，爱实上奏章进谏说“：如今近侍臣权力过重，将相大臣们都不敢跟他们对抗。自古以来侍御之臣不过用来使唤而已，虽然名为仆臣，也必须选择正人。如今不论贤与不贤，只要是世家子弟就可以充当。这些听从使唤的人员，却干预国家大计，这些人真正懂得什么？”奏章送上后，几位近侍臣在皇帝面前哭诉着说“：爱实把我们都说成是奴隶，他把皇上放在什么地位呢？”皇帝更加恼怒，让立即送交有关部门处置。近侍局副使李大节慢慢地替他在皇帝面前做了解释，这才赦免了他，派他出任中京留守，后来不知结局如何。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十一章-卷五十一-白话.html'>第五十一章-卷五十一</a></p><p class='next'>下一节：<a href='第五十三章-卷五十三-白话.html'>第五十三章-卷五十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五十一章-卷五十一-白话.html'>第五十一章-卷五十一</a></p><p class='next'>下一节：<a href='第五十三章-卷五十三-白话.html'>第五十三章-卷五十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -202,5 +229,18 @@
 </p><p>吴逵，吴兴人也。经荒饥疾病，合门死者十有三人，逵时亦病笃，其丧皆邻里以苇席裹而埋之。逵夫妻既存，家极贫窘，冬无衣被，昼则佣赁，夜烧砖甓，昼夜在山，未尝休止，遇毒虫猛兽，辄为之下道。期年，成七墓、十三棺。时有赙赠，一无所受。太守张崇义之，以羔雁之礼礼焉。卒于家。
 </p><p>史臣曰：尊亲之道，礼经之明训；孝友之义，诗人之美谈，是知人伦之本，罔兹攸尚。盛翁子立行淳至，素蓄异才，流恸致其感通，含哺申其就养，戴昌赏其清韵，陆云嘉其茂德。王裒隐居不从其辟，行己莫逾其礼，枯柏以应其诚，惊雷以危其虑。永言董蔡，异时均美。许孜少而敏学，礼备在三，驯雉栖其梁栋，猛兽扰其庭圃，居丧之礼，实古今之所难焉。庾叔褒不匮表于执勤，则裕存乎敬业，幽显不易其操，疫疠不骇其心，急病让夷之规，有古人之风烈矣。孙晷之匪懈，王谈之复仇，神人惜其亡，良守宥其罪。刘殷幼丁艰酷，柴毁逾制，发三冬之堇，赐七年之粟，至诚之契，义形于兹。王延叩冰而召鳞，扇席而清暑，虽黄香、孟宗，抑为伦辈。其余群子，并孝养可崇，清风素范，高山景行，会其宗流，同斯志也。
 </p><p>赞曰：德之所届，有感和征。孝哉王许，永慕烝烝。挥泗凋柏，对榥巢鹰。密、彦、夏、庾，夙标至性。文度、弘都，勤修懿行。敦彼孝友，载光谣咏。鸠驯长盛，鱼荐延元。谈桑义阐，琦吴道存。专洞之德，咸摛左言。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十七章--原文.html'>第五十七章-</a></p><p class='next'>下一节：<a href='第五十九章--原文.html'>第五十九章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五十七章--原文.html'>第五十七章-</a></p><p class='next'>下一节：<a href='第五十九章--原文.html'>第五十九章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>北齐书-原文版北齐书<a href='../北齐书.html#原文版北齐书'>：目录</a></p>
@@ -162,5 +189,18 @@
 </p><p>七月壬寅，神武帅师北伐尔朱兆。封隆之言：“侍中斛斯椿、贺拔胜、贾显智等往事尔朱，普皆反噬，今在京师，宠任，必构祸隙。”神武深以为然，乃归天光、度律于京师，斩之。遂自滏口入。尔朱兆大掠晋阳，北保秀容。并州平。神武以晋阳四塞，乃建大丞相府而定居焉。尔朱兆既至秀容，分兵守险，出入寇抄。神武扬声讨之，师出止者数四，兆意怠。神武揣其岁首当宴会，遣窦泰以精骑驰之，一日一夜行三百里，神武以大军继之。二年正月，窦泰奄至尔朱兆庭。军人因宴休惰，忽见泰军，惊走。追破之于赤洪岭。兆自缢，神武亲临厚葬之。慕容绍宗以尔朱荣妻子及余众自保乌突城，降，神武以义故，待之甚厚。
 </p><p>神武之入洛也，尔朱仲远部下都督桥宁、张子期自滑台归命，神武以其助乱，且数反覆，皆斩之。斛斯椿由是内不自安，乃与南阳王宝炬及武卫将军元毗、魏光、王思政构神武于魏帝。舍人元士弼又奏神武受敕大不敬。故魏帝心贰于贺拔岳。初，孝明之时，洛下以两拔相击，谣言曰：“铜拔打铁拔，元家世将末。”好事者以二拔谓拓拔、贺拔，言俱将衰败之兆。时司空高乾密启神武，言魏帝之贰，神武封呈。魏帝杀之，又遣东徐州刺史潘绍业密敕长乐太守庞苍鹰令杀其弟昂。昂先闻其兄死，以槊刺柱，伏壮士执绍业于路，得敕书于袍领，来奔。神武抱其首，哭曰：“天子枉害司空！”遽使以白武幡劳其家属。时乾次弟慎在光州，为政严猛，又从部下取纳，魏帝使代之。慎闻难，将奔梁。其属曰：“公家勋重，必不兄弟相及。”乃弊衣推鹿车归渤海。逢使者，亦来奔。于是魏帝与神武隙矣。
 </p><p>阿至罗虏正光以前常称藩，自魏朝多事，皆叛。神武遣使招纳，便附款。先是，诏以寇贼平，罢行台。至是，以殊俗归降，复授神武大行台，随机处分。神武常赉其粟帛，议者以为徒费无益，神武不从，抚慰如初。其酋帅吐陈等感恩，皆从指麾，救曹泥，取万俟受洛干，大收其用。河西费也头虏纥豆陵伊利居河池，恃险拥众，神武遣长史侯景屡招不从。</p>
-<div class='pn'><p class='next'>下一节：<a href='-卷二-原文.html'>-卷二</a></p></div></body>
+<div class='pn'><p class='next'>下一节：<a href='-卷二-原文.html'>-卷二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

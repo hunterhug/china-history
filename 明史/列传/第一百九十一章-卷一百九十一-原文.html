@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -235,5 +262,18 @@
 </p><p>先是，有慈谿王氏，归同里方姓。甫逾月，火起，延及其屋。夫适他出，氏坚坐小楼不下，遂被焚，骸骨俱烬，惟心独存。夫归，捧之长号，未顷即化。
 </p><p>甬上四烈妇。钱塘张氏，鄞县举人杨文瓒妻。国变后，文瓒与兄文琦，友华夏、屠献宸，俱坐死。张纫箴联其首，棺殓毕，即盛服题绝命诗，遍拜族戚。吞脑子不死，以佩带自缢而卒。文琦妻沈氏亦自缢。夏继妻陆氏结帨于梁，引颈就缢，身肥重，帨绝堕地。时炎暑，流汗沾衣，乃坐而摇扇，谓其人曰：“余且一凉。”既复取帨结之而尽。有司闻杨、华三妇之缢，遣丐妇四人至献宸家，防其妻朱氏甚严。朱不得间，阳为欢笑以接之，且时时诮三妇之徒自苦也。数日，防者稍懈，因谓之曰：“我将一浴，汝侪可暂屏。”丐妇听之，阖户自尽。时称“甬上四烈妇。”
 </p><p>夏氏，黔国公沐天波侍女也。沙定州之乱，天波出走，母陈、妻焦亦避外舍。惧贼迫，焦谓姑曰：“吾辈皆命妇，可陷贼手乎！”举火自焚死。夏归其母家，获免。后天波自永昌还，夏复归府，则已薙为尼矣。天波感其义，俾佐内政。及天波从亡缅甸，夏遂自经。时城中大乱，死者载道，尸为乌犬所食，血肉狼籍，夏尸弃十余日，独无犯者。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百九十章-卷一百九十-原文.html'>第一百九十章-卷一百九十</a></p><p class='next'>下一节：<a href='第一百九十二章-卷一百九十二-原文.html'>第一百九十二章-卷一百九十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百九十章-卷一百九十-原文.html'>第一百九十章-卷一百九十</a></p><p class='next'>下一节：<a href='第一百九十二章-卷一百九十二-原文.html'>第一百九十二章-卷一百九十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

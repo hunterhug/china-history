@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -196,5 +223,18 @@
 </p><p>先是，三党诸魁交甚密，后齐与浙渐相贰。布衣汪文言者，素游黄正宾、于玉立之门，习知党人本末。后玉立遣之入都，益悉诸党人所为，策之曰：“浙人者，主兵也，齐、楚则应兵。成功之后，主欲逐客矣，然柄素在客，未易逐，此可构也。”遂多方设奇间之，诸人果相疑。而邹之麟既见恶齐党，亦交斗其间。扬言齐人张凤翔为文选，必以年例斥宗文、廷元。于是齐、浙之党大离。及是嘉遇五疏力攻，诗教辈亦窘。而浙人唐世济、董元儒遂助嘉遇排击。自是亓、赵之势顿衰，兴邦竟不果迁，自引去。时论快焉。
 </p><p>光宗立，嘉遇乞改南部，就迁吏部员外郎。天启中，赵南星秉铨，召为考功员外郎，改文选署选事。时左光斗、魏大中以嘉遇与之麟、韩敬同年相善，颇疑之。已，见嘉遇公廉，亦皆亲善。及陈九畴劾谢应祥，语连嘉遇，镌三级，调外，语具南星传。未几，党人张讷诬劾南星，并及嘉遇，遂除名。寻锻炼光斗、大中狱，诬嘉遇尝行贿。逮讯论徒，愤恨发病卒。崇祯初，赠太常少卿。
 </p><p>赞曰：李植、江东之诸人，风节自许，矫首抗俗，意气横厉，抵排群枉，迹不违乎正。而质之矜而不争、群而不党之义，不能无疚心焉。“古之矜也廉，今之矜也忿戾”，圣人所为致慨于末世之益衰也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百二十三章-卷一百二十三-原文.html'>第一百二十三章-卷一百二十三</a></p><p class='next'>下一节：<a href='第一百二十五章-卷一百二十五-原文.html'>第一百二十五章-卷一百二十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百二十三章-卷一百二十三-原文.html'>第一百二十三章-卷一百二十三</a></p><p class='next'>下一节：<a href='第一百二十五章-卷一百二十五-原文.html'>第一百二十五章-卷一百二十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

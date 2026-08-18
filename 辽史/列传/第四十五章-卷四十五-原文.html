@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#列传'>：目录</a></p>
@@ -166,5 +193,18 @@
 </p><p>道宗即位，清宁元年，遣使来贺。九月，以先帝遗物赐夏。四年四月，遣使会葬。九年正月，禁民鬻铜于夏。咸雍元年五月，来贡。三年十一月，遣使进回鹘僧、金佛、《梵觉经》。十二月，谅祚薨。四年二月，谅祚子秉常遣使报哀，即遣使吊祭。秉常上其父遗物。十月，册秉常为夏国王。十二月，来贡。五年七月，遣使来谢封册，闰十一月，秉常乞赐印绶。九年，遣使来贡。大康二年正月，仁懿皇后崩，遣使报哀于夏，以皇太后遗物赐之。遣使来吊祭。五年，来贡。八年二月，遣使以所获宋将张天益来献。大安元年十月，秉常遣使报其母哀。二年十月，秉常薨，遣使诏其子乾顺知国事。十二月，李乾顺遣使上其父秉常遗物。四年七月，册乾顺为夏国王。五年六月，遣使来谢封册。八年六月，夏为宋所侵，遣使乞援。寿隆三年六月，以宋人置壁垒于要地，遣使来告。四年六月，求援。十一月，遣枢密直学士耶律俨使宋，讽与夏和。夏复遣使来求援。五年正月，诏乾顺伐拔思母等部。十一月，夏以宋人罢兵，遣使来谢。六年十一月，遣使请尚公主。七年，道宗崩，遣使告哀于夏。遣使来慰奠。
 </p><p>天祚即位，乾统元年，夏遣使来贺。二年，复请尚公主。又以为宋所侵，遣李造福、田若水来求援。三年，复遣使请尚公主。十月，使复来求援。四年、五年，李造福等至，乞援。以族女南仙封成安公主下嫁乾顺。六年正月，遣牛温舒使宋，令归所侵夏地。六月，遣李造福来谢。八年，乾顺以成安公主生子，遣使来告。九年，以宋不归地来告。十年，遣李造福等来贡。天庆三年六月，来贡。保大二年，天祚播迁，乾顺率兵来援，为金师所败，乾顺请临其国。六月，遣使册乾顺为夏国皇帝，而天祚被执归金矣。
 </p><p>论曰：高丽、西夏之事辽，虽尝请婚下嫁，乌足以得其固志哉？三韩接壤，反覆易知；凉州负远，纳叛侵疆。乘隙辄动，贡使方往，事衅随生。兴师问罪，屡烦亲征，取胜固多，败亦贻悔。昔吴赵咨对魏之言曰：“大国有征伐之兵，小国有备御之固。”岂其然乎！先王柔远，以德而不以力，尚矣。辽亡，求援二国，虽能出师，岂金敌哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十四章-卷四十四-原文.html'>第四十四章-卷四十四</a></p><p class='next'>下一节：<a href='第四十六章-卷四十六-原文.html'>第四十六章-卷四十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十四章-卷四十四-原文.html'>第四十四章-卷四十四</a></p><p class='next'>下一节：<a href='第四十六章-卷四十六-原文.html'>第四十六章-卷四十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

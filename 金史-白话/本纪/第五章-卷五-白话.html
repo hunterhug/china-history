@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-本纪<a href='../金史.html#金史'>：目录</a></p>
@@ -299,5 +326,18 @@
 </p><p>任命劝农使完颜元宜为浙西道兵马都统制，刑部尚书郭安国做他的副将。皇上把军队驻扎在长江北岸，派遣武平总管阿邻先渡到南岸，渡江失利。皇上回到和州，又向扬州进军。二十六日，在瓜洲渡和舟师会合，定下日期第二天渡江。二十七日，浙西兵马都统制完颜元宜等的军队造反，海陵帝遇刺身亡，时年四十岁。
 </p><p>海陵在位十多年，常常掩饰自己的真实感情和面貌来统治臣下，推却管理饮食的侍者进鹅来表示自己勤俭，可是去巡游打猎每住到一个地方，又不时地需要求索，虽说是一只鹅、一只鹌鹑，民间有的要卖数万钱，有时用一头牛换取一只鹌鹑。海陵有时拿破被子盖在衣服上面，来让近臣看，或者穿打补钉的衣服，让记注官看见他这样；或者把军士的剩米饭拿来和管理皇上吃饭的侍者一同吃，抢先吃军士的剩饭几乎吃光。有时他看见老百姓的车子陷入泥泽，命令卫士下去推车，等车出了泥泽然后他再启行。和近臣闲聊，则引用古代贤君的事迹来说明自己的情况。当面斥责大臣，让他们有话直说。让张仲轲一类人当谏官，然而祁宰竟然因为直言劝谏而招致杀身之祸。对亲近的一群小人，封官赏赐没有限度，左右有缺员的，有的人呼唤他的名字，就授予显贵的官阶。常常把黄金放在床垫和褥子之间，有他喜欢的人，就让这人自己去拿那些金子。浸淫、纳娶宠爱不择骨肉，判刑、诛杀不问是否有罪。到营造南京宫殿的时候，运输一块木头的费用高达二千万，牵引一车材料的人力多达五百人。宫殿的装饰，遍附黄金而其间镶嵌五彩，金屑飞舞在空中像下雪。一座宫殿的费用以亿万两银来计算，修成不满意而又毁掉，务必要极其华丽。他为了南征在长江上造战舰，毁掉老百姓的住宅当材料，煮死人熬油，用尽民力像用马牛，浪费财物像尘土草末，拿空国去图谋人国，终于招致失败。
 </p><p>都督府把海陵的灵柩放在南京班荆馆。大定二年(1162)，降封他为海陵郡王，谥号叫炀。二月，世宗派听差的小底娄室和南京官员把海陵的灵柩迁移到宁德宫。四月，下葬在大房山鹿门谷诸王坟墓的界址内。二十年(1180)，以熙宗附祭于先祖，有司禀奏说：“炀王的罪恶没有治办。比照晋赵王伦废除惠帝自立皇帝，惠帝反过来治了伦的罪，杀了伦，并把伦废除帝名而作为庶人。炀帝的罪恶超过了伦，不应当有王封，也不应当葬在诸王坟茔区域内。”世宗于是诏令把海陵降为庶人，改葬在山陵西南四十里。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-白话.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-白话.html'>第六章-卷六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-白话.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-白话.html'>第六章-卷六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

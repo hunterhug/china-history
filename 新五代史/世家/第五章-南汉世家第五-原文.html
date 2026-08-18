@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-世家<a href='../新五代史.html#世家'>：目录</a></p>
@@ -194,5 +221,18 @@
 </p><p>九年，南海民妻生子两首四臂。是时，太祖皇帝诏李煜谕鋹使称臣，鋹怒，囚煜使者龚慎仪。
 </p><p>十三年，诏潭州防御使潘美出师，师次白霞。鋹遣龚澄枢守贺州、郭崇岳守桂州、李托守韶州以备。是岁秋，潘美平贺州，十月平昭州，又平桂州，十一月平连州。鋹喜曰：“昭、桂、连、贺，本属湖南，今北师取之，足矣，其不复南也。”其愚如此。十二月平韶州。开宝四年正月，平英、雄二州，鋹将潘崇彻先降。师次泷头，鋹遣使请和，求缓师。二月，师度马迳，鋹遣其右仆射萧漼奉表降。漼行，鋹惶迫，复令整兵拒命。美等进师，鋹遣其弟祥王保兴率文武诣美军降，不纳。龚澄枢、李托等谋曰：“北师之来，利吾国宝货尔，焚为空城，师不能驻，当自还也。”乃尽焚其府库、宫殿。鋹以海舶十余，悉载珍宝、嫔御，将入海，宦官乐范窃其舟以逃归。师次白田，鋹素衣白马以降。献俘京师，赦鋹为左千牛卫大将军，封恩赦侯。其后事具国史。
 </p><p>隐兴灭年世，诸书皆同。盖自唐天祐二年隐为广州节度使，至皇朝开宝四年国灭，凡六十七年。《旧五代史》以梁贞明三年僭号为始，故曰五十五年尔。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章-后蜀世家第四-原文.html'>第四章-后蜀世家第四</a></p><p class='next'>下一节：<a href='第六章-楚世家第六-原文.html'>第六章-楚世家第六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四章-后蜀世家第四-原文.html'>第四章-后蜀世家第四</a></p><p class='next'>下一节：<a href='第六章-楚世家第六-原文.html'>第六章-楚世家第六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

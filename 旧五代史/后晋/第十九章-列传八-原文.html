@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后晋<a href='../旧五代史.html#后晋'>：目录</a></p>
@@ -165,5 +192,18 @@
 </p><p>尹玉羽，京兆长安人。唐天福中，随计京师，甚有文称。会有苴杖之丧，累岁羸疾，冬不释菅屦，期不变倚庐。制阕，隐居杜门，无仕宦之意。梁贞明中，刘鄩辟为保大军节度判官，历雍、汴、滑、兗从事。案：以下有阙。考宋黎持《移石经纪》：石经旧在务本坊，自天祐中韩建筑新城，而石经委弃于野。至硃梁时，刘鄩守长安，从幕吏尹玉羽之请，辇入城中，置于此地，即唐尚书省之西隅也。唐清泰中，为光禄少卿，退归秦中，以林泉诗酒自乐，自号自然先生。宰臣张延朗手书而召，高卧不从，谓人曰：“庶孽代宗，不可仕也。”及高祖入洛，即受诏而来，以所著《自然经》五卷贡之，且告其老。即日玺书褒美，颁其器币，授少府监致仕，月给俸钱及冬春二时服。天福中，卒，有《武库集》五十卷行于世。
 </p><p>郑云叟，本名遨，云叟其字也，以唐明宗庙讳，故世传其字焉，本南燕人也。少好学，耿介不屈。唐昭宗朝，尝应进士举，不第，因欲携妻子隐于林壑，其妻非之，不肯行，云叟乃薄游诸郡，获数百缗以赡其家，辞诀而去。寻入少室山，著《拟峰诗》三十六章，以导其趣，人多传之。后妻以书达意，劝其还家，云叟未尝一览，悉投于火，其绝累如此。俄闻西岳有五鬣松，沦脂千年，能去三尸，因居于华阴。与李道殷、罗隐之友善，时人目为“三高士”。道殷有钓鱼之术，钩而不饵，又能化易金石，无所不至，云叟恆目睹其事，信而不求。云叟与梁室权臣李振善，振欲禄之，拒而不诺，及振南迁，云叟千里徒步以省之，识者高焉。后妻兒继谢，每闻凶服，一哭而止。时惟青衿二童子、一琴、一鹤，从其游处。好棋塞之戏，遇同侣则以昼继夜，虽寒风大雪，临檐对局，手足皲裂，亦无倦焉。唐天成中，召拜左拾遗，不起。与罗隐之朝夕游处，隐之以药术取利，云叟以山田自给，俱好酒能诗，善长啸。有大瓠，云可辟寒暑，置酒于其中，经时味不坏，日携就花木水石之间，一酌一咏。尝因酒酣联句，郑曰：“一壶天上有名物，两个世间无事人。”罗曰：“醉却隐之、云叟外，不知何处是天真。”高祖即位，闻其名，遣使赍书致礼，征为右谏议大夫，云叟称疾不起，上表陈谢。高祖览表嘉之，赐近臣传观，寻赐号逍遥先生，以谏议大夫致仕，月给俸禄。云叟好酒，尝为《咏酒诗》千二百言，海内好名者书于缣缃，以为赠贶。复有越千里之外，使画工潜写其形容列为屏障者焉。其为时望所重也如此。天福末，以寿终，时年七十四。有文集二十卷行于世。
 </p><p>史臣曰：自古攀龙鳞，附凤翼，坐达于云衢者，岂独丰沛之士哉！苟怀才抱器，适会兴王，亦可以取贵于一时，如卢质而下数君子是也。至如国珍之谠直，仁愿之友悌，赵、李二子没于王事，皆无忝于士林矣。唯玉羽之贞退，云叟之肥遁，足可以柅奔竞之风，激高尚之节也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十八章-列传七-原文.html'>第十八章-列传七</a></p><p class='next'>下一节：<a href='第二十章-列传九-原文.html'>第二十章-列传九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十八章-列传七-原文.html'>第十八章-列传七</a></p><p class='next'>下一节：<a href='第二十章-列传九-原文.html'>第二十章-列传九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

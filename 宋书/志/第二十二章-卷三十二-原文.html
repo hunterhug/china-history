@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>宋书-志<a href='../宋书.html#志'>：目录</a></p>
@@ -219,5 +246,18 @@
 </p><p>晋武帝太康七年十一月，河阴有赤雪二顷。此赤祥也。后涉四载而帝崩，王宫遂乱。
 </p><p>晋惠帝元康五年三月，吕县有流血，东西百余步。此赤祥也。元康末，穷凶极乱，僵尸流血之应也。干宝以为后八载而封云乱徐州，杀伤数万人，是其应也。晋惠帝永康元年三月，尉氏雨血。夫政刑舒缓，则有常燠赤祥之妖。此岁正月，送愍怀太子幽于许宫。天戒若曰，不宜缓恣奸人，将使太子冤死。惠帝愚眊不悟，是月愍怀遂毙。于是王室衅成，祸流天下。淖齿杀齐闵王日，天雨血沾衣，天以告也，此之谓乎？京房《易传》曰：“归狱不解，兹谓追非，厥咎天雨血，兹谓不亲，民有怨心，不出三年，无其宗人。”又曰：“佞人禄，功臣戮，天雨血。”
 </p><p>晋愍帝建兴四年十二月丙寅，丞相府斩督运令史淳于伯，血逆流上柱二丈三尺。此赤祥也。是时后将军褚裒镇广陵，丞相扬声北伐，伯以督运稽留及役使臧罪，依征军法戮之。其息诉称：“伯督运事讫，无所稽乏，受赇役使，罪不及死。兵家之势，先声后实，实是屯戍，非为征军。自四年以来，运漕稽停，皆不以军兴法论。”僚佐莫之理。及有此变，司直弹劾众官，元帝又无所问。于是频旱三年。干宝以为冤气之应也。郭景纯曰：“血者水类，同属于《坎》，《坎》为法家。水平润下，不宜逆流。此政有咎失之征也。”</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十一章-卷三十一-原文.html'>第二十一章-卷三十一</a></p><p class='next'>下一节：<a href='第二十三章-卷三十三-原文.html'>第二十三章-卷三十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十一章-卷三十一-原文.html'>第二十一章-卷三十一</a></p><p class='next'>下一节：<a href='第二十三章-卷三十三-原文.html'>第二十三章-卷三十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

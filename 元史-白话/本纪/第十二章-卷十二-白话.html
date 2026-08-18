@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>元史-本纪<a href='../元史.html#元史'>：目录</a></p>
@@ -176,5 +203,18 @@
 </p><p>十一月初二，因战功而赏赐太不花、脱欢等银两钱钞。初三，总管陈义愿意自备海船三十艘以备征讨，下诏授予陈义万户之称，佩戴虎符。陈义本名陈五虎，出身于海盗，归附朝廷后，其兄任招讨使，陈义任总管。敕令：“凡是盗贼必须由管民官讯问，不得私下了结。”初七，命令各行省印制《授时历》。诸侯王只必帖木儿请求在封地内的二十四城自行设置管理课税的官员，皇帝不准。又请求设立收取专利的课税所，其长官由中书省派定，次官则由王府差员设置，皇上允从。诏令：“大都的田亩，命他们全部交纳田租；甘州新登记的田亩，每亩交纳田租三升。”初九，吏部尚书刘好礼前来奏上吉利吉思风俗的情况。十二日，重新设置南京宣慰司。十五日，撤销开成路屯田总管府，将其划入开成路，隶属于京兆宣慰司。十八日，设置司农司，掌管官田的房舍和人口。赐给诸侯王部下的撒合儿、兀鲁等羊马，以周济他们的贫困。河西的官府参用汉人为官。迁移甘肃沙州的民户，恢复其产业。大都的城门设置门尉官。二十七日，禁止云南管理税课的官员在通常应收的数额之外多取羡余钱。二十八日，禁止云南的权豪势要者多取债款利息，并禁止没收人口为奴和在他们脸上处黥刑。太白金星和木星互相干犯。二十九日，依从诸侯王术白忙古带等人的请求，赏赐也秃古等人银两钱钞，以表彰他们的战功。赐给皇太子钱钞一千锭。把御史台追缴的赃款罚钞赐给怯怜口。
 </p><p>十一月初一、赐给诸侯王浑都帖木儿衣物，赐给忽都儿所部军队银两、钱钞、绢帛。初五，赐给别速带部下的军队衣服、绢帛七千匹、马二千匹。因立下战功而赏赐西番的军官爱纳八斯等。十二日，以茶忽所率领的六千名士兵备征日本。十三日，付给诸侯王阿只吉牛价钱钞。因为中书省以温迪罕秃鲁花清廉贫困，不阿附权豪势要，赐给他钱钞一百锭。撤销对于女真地区冶炼金银的禁令。十五日，支出四万锭钱钞在上都购买平价粮。赐给贫困守卫宫门的卫士每人二十锭钱钞。二十三日，赐给诸侯王昔烈门等人银两。任命海道运粮招讨使朱清为中万户，赐予虎符。任命张王宣之子张文虎为千户，赐予金符。把新归附的降官迁调到内地的州郡任职。把蠡州重新隶属于真定府路。二十四日，发放粮食赈济水达达部的四十九处驿站。二十五日，太阴星遮蔽荧惑星。二十七日，撤销云南制造、贩买金箔的规措所。撤销云南都元帅府和重复设置的官吏。发出有关质子军的命令：凡是大官的子弟，均送往京师做人质。二十九日，云南施州的子童起兵作乱，敕令参知政事阿合八失率军和罗罗斯部的脱儿世合一起讨伐，给予布一万匹。赈济女真部的一千户饥民。
 </p><p>这一年，判处死刑的罪犯共二百七十八人。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十一章-卷十一-白话.html'>第十一章-卷十一</a></p><p class='next'>下一节：<a href='第十三章-卷十三-白话.html'>第十三章-卷十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十一章-卷十一-白话.html'>第十一章-卷十一</a></p><p class='next'>下一节：<a href='第十三章-卷十三-白话.html'>第十三章-卷十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

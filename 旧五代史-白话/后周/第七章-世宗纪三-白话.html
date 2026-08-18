@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后周<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -160,5 +187,18 @@
 </p><p>冬十月十四日，淮南招讨使李重进上奏，在盛唐打败南唐贼寇，斩首二千级。二十四日，右拾遗赵守微被杖击一百下，发配到沙门岛。赵守微本为一村民，相貌木讷朴实不加修饰，前一年以平民身份上书论事，世宗因急于举拔贤士，便任赵守微为右拾遗，听到的人对此都感惊愕。现在赵守微被他岳父告状，揭发他的丑行，所以发配他。
 </p><p>十一月一日，诏令废除天下无名祠庙。二十日，放华山隐士陈抟归隐山林。世宗一向听说陈抟有道术，将他征召到京城，一个多月后放回原隐居地。二十二日，殿前都指挥使张永德上奏，在下蔡打败濠州运送粮食的南唐军队。夺得米船十多艘。宰臣李谷因中风请假一百天，三次上表请求卸职，没批准。
 </p><p>十二月一日，任给事中张铸为光禄卿，张铸说自己所任官名与自己祖讳相同，旋即改任秘书监，主管光禄寺事务。四日，征调陈、蔡、宋、毫、颍、曹、单等州民夫筑造下蔡城。五日，诏令兵部尚书张昭纂修太祖实录以及梁、唐两朝末帝实录。三十日，淮南道招讨使李重进上奏，在塌山以北打败南唐贼军二千人。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章-世宗纪二-白话.html'>第六章-世宗纪二</a></p><p class='next'>下一节：<a href='第八章-世宗纪四-白话.html'>第八章-世宗纪四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六章-世宗纪二-白话.html'>第六章-世宗纪二</a></p><p class='next'>下一节：<a href='第八章-世宗纪四-白话.html'>第八章-世宗纪四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

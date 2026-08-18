@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -196,5 +223,18 @@
 </p><p>汤宗，字正传，浙江平阳人。洪武末，由太学生擢河南按察佥事，改北平。建文时上变，言按察使陈瑛受燕邸金钱，有异谋。诏逮瑛，安置广西，而迁宗山东按察使。坐事，左迁刑部郎中，出知苏州府。苏连岁水，民流，逋租百余万石。宗谕富民出米代输。富民知其爱民，不三月悉完纳。
 </p><p>永乐元年，有言其坐视水患者，逮下狱，谪判禄州。以黄淮荐，召为大理寺丞。或言宗曾发潜邸事。帝曰：“帝王惟才是使，何论旧嫌。”时外国贡使病死，从人谓医杀之。狱具，宗阅牍叹曰：“医与使者何仇，而故杀之乎？”卒辨出之。寻命振饥河南，还署户部事。解缙下狱，词连宗，坐系十余年。仁宗立，复官，再迁南京大理卿。宣宗初，清军山东。会天久不雨，极陈民间饥困状。帝为蠲租免役，罢不急之务。宣德二年卒。
 </p><p>赞曰：永、宣之际，严饬吏治，职事修举。若郁新之理赋，杨砥之马政，刘季｛虎｝、虞谦之治狱，可谓能其官矣。李庆、师逵诸人，清介有执，皆列卿之良也。陈寿、马京遭谗早废，惜乎未竟其用。金忠奋身卒伍，进自艺术末流，而有士君子之行。当其侃侃持论于文皇父子间，忠直不挠，卒以诚信悟主，岂不伟哉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十七章-卷三十七-原文.html'>第三十七章-卷三十七</a></p><p class='next'>下一节：<a href='第三十九章-卷三十九-原文.html'>第三十九章-卷三十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十七章-卷三十七-原文.html'>第三十七章-卷三十七</a></p><p class='next'>下一节：<a href='第三十九章-卷三十九-原文.html'>第三十九章-卷三十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

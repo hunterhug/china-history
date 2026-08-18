@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-志<a href='../晋书.html#志'>：目录</a></p>
@@ -244,5 +271,18 @@
 </p><p>四中郎将，并后汉置，历魏及晋，并有其职，江左弥重。
 </p><p>护羌、夷、蛮等校尉，案武帝置南蛮校尉于襄阳，西戎校尉于长安，南夷校尉于宁州。元康中，护羌校尉为凉州刺史，西戎校尉为雍州刺史，南蛮校尉为荆州刺史。及江左初，省南蛮校尉，寻又置于江陵，改南夷校尉曰镇蛮校尉。及安帝时，于襄阳置宁蛮校尉。
 </p><p>护匈奴、羌、戎、蛮、夷、越中郎将，案武帝置四中郎将，或领刺史，或持节为之。武帝又置平越中郎将，居广州，主护南越。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十三章--原文.html'>第十三章-</a></p><p class='next'>下一节：<a href='第十五章--原文.html'>第十五章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十三章--原文.html'>第十三章-</a></p><p class='next'>下一节：<a href='第十五章--原文.html'>第十五章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

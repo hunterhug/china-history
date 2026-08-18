@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -190,5 +217,18 @@
 <p>　　殇皇帝重茂，中宗第四子也。圣历三年，封北海王。神龙初，进封温王，授右 卫大将军，兼遥领并州大都督，未出閤。景龙四年，中宗崩，韦庶人立重茂为帝， 而自临朝称制。及韦氏败，重茂遂逊位，让叔父相王，退居别所。景云二年，改封 襄王，迁于集州，令中郎将率兵五百人守卫。开元二年，转房州刺史。寻薨，时年 十七，谥曰殇皇帝，葬于武功西原。 </p>
 <p>　　史臣曰：前代以嬖妇孽子破国亡家者多矣，然未如大帝、孝和之甚也。高宗八 子，二王早世，为武后所毙者四人，章怀以母子之爱，颖悟之贤，犹不免于虎口。 况燕、泽、素节异腹之胤乎！覆载胡心，产兹鸩毒，悲夫！孝和母嚣，妇傲女暴， 如置身群魅之中，安有保其终吉哉！天将涤荡昏氛，非重茂所能枝也。 </p>
 <p>　　赞曰：父子天性，嬖能害正。宜臼、申生，翻为不令。唐年钧德，章怀最仁。 凶母畏明，取乐于身。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十五章-卷三十五-原文.html'>第三十五章-卷三十五</a></p><p class='next'>下一节：<a href='第三十七章-卷三十七-原文.html'>第三十七章-卷三十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十五章-卷三十五-原文.html'>第三十五章-卷三十五</a></p><p class='next'>下一节：<a href='第三十七章-卷三十七-原文.html'>第三十七章-卷三十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

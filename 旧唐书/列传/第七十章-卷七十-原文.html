@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -201,5 +228,18 @@
 <p>　　李元忠，本姓曹，名令忠，以功赐姓名。时昕使自回纥历诸蕃部，方达于朝。 又有袁光庭者，为伊州刺史，陇右诸郡皆陷，光庭坚守伊州，吐蕃攻之累年，兵尽 食竭，光庭先刃其妻子，自焚而死。因昕使知之，赠工部尚书。 </p>
 <p>　　史臣曰：天宝之季，盗起幽陵，万乘播迁，两都覆没。天祚土德，实生汾阳。 自河朔班师，关西殄寇，身扞豺虎，手披荆榛。七八年间，其勤至矣，再造王室， 勋高一代。及国威复振，群小肆谗，位重恳辞，失宠无怨。不幸危而邀君父，不挟 憾以报仇雠，晏然效忠，有死无二，诚大雅君子，社稷纯臣。自秦、汉已还，勋力 之盛，无与伦比。而晞、暧于缞粗之中，拔身虎口，赴难奉天，可谓忠孝之门有嗣 矣。 </p>
 <p>　　赞曰：猗欤汾阳，功扶昊苍。秉仁蹈义，铁心石肠。四朝静乱，五福其昌。为 臣之节，敢告忠良。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十九章-卷六十九-原文.html'>第六十九章-卷六十九</a></p><p class='next'>下一节：<a href='第七十一章-卷七十一-原文.html'>第七十一章-卷七十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十九章-卷六十九-原文.html'>第六十九章-卷六十九</a></p><p class='next'>下一节：<a href='第七十一章-卷七十一-原文.html'>第七十一章-卷七十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

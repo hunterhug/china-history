@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -199,5 +226,18 @@
 </p><p>师安石，字子安，清州人，本姓尹氏，避国讳更焉。承安五年词赋进士。为人轻财尚义。初补尚书省令史，适宣宗南迁，留平章完颜承晖守燕都。承晖将就死，以遗表托安石使赴行在，安石间道走汴以闻。上嘉之，擢为枢密院经历官。时哀宗在春宫，领密院事，遂见知遇。元光二年，累迁御史中丞。其七月，上章言备御二事，其一曰：“自古所以安国家、息祸乱，不过战、守、避、和四者而已。为今之计，守、和为上。所谓守者，必求智谋之士，使内足以得戍卒之心，外足以挫敌人之锐，不惟彼不能攻，又可以伺其隙而败之。其所谓和，则汉、唐之君固尝用此策矣，岂独今日不可用乎。乞令有司详议而行。”其二曰：“今敌中来归者颇多，宜丰其粮饷，厚其接遇，度彼果肯为我用，则择有心力者数十人，潜往以诱致其余。来者既众，彼必转相猜贰，然后徐起而图之，则中兴之功不远矣。”上嘉纳之。
 </p><p>九月，坐劾英王守纯附奏不实，决杖追官。及哀宗即位，正大元年，擢为同签枢密院事。二年，复御史中丞。三年，工部尚书、权左参政。四年，进尚书右丞。五年，台谏劾近侍张文寿、张仁寿、李麟之，安石亦论列三人不已，上怒甚，有旨谓安石曰：“汝便承取贤相，朕为昏主，止矣。”如是数百言。安石骤蒙任用，遽遭摧折，疽发脑而死，上甚悼惜之。
 </p><p>赞曰：宣宗南迁，天命去矣，当是时虽有忠良之佐、谋勇之将，亦难为也。然而汝砺、行信拯救于内，胥鼎、侯挚守御于外，讫使宣宗得免亡国，而哀宗复有十年之久，人才有益于人国也若是哉。胡鲁养兵惜谷之论，善矣。安石不负承晖之托，遂见知遇，以论列近侍触怒而死，悲夫！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十五章-卷四十五-原文.html'>第四十五章-卷四十五</a></p><p class='next'>下一节：<a href='第四十七章-卷四十七-原文.html'>第四十七章-卷四十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十五章-卷四十五-原文.html'>第四十五章-卷四十五</a></p><p class='next'>下一节：<a href='第四十七章-卷四十七-原文.html'>第四十七章-卷四十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -178,5 +205,18 @@
 </p><p>天启元年，辽阳失。御史房可壮连疏请用三才。有诏廷臣集议。通政参议吴殿邦力言不可用，至目之为盗臣。御史刘廷宣复荐三才，言：“国家既惜其才，则用之耳，又何议，然广宁已有王化贞，不若用之山海。”帝是其言，即欲用三才，而廷议相持未决。詹事公鼐力言宜用，刑部侍郎邹元标、佥都御史王德完并主之。已，德完迫众议，忽变前说。及署议，元标亦不敢主。议竟不决，事遂寝。三年，起南京户部尚书，未上卒。后魏忠贤乱政，其党御史石三畏追劾之。诏削籍，夺封诰。崇祯初复官。
 </p><p>三才才大而好用机权，善笼络朝士。抚淮十三年，结交遍天下。性不能持廉，以故为众所毁。其后击三才者，若邵辅忠、徐兆魁辈，咸以附魏忠贤名丽逆案。而推毂三才，若顾宪成、邹元标、赵南星、刘宗周，皆表表为时名臣。故世以三才为贤。
 </p><p>赞曰：朋党之成也，始于矜名，而成于恶异。名盛则附之者众。附者众，则不必皆贤而胥引之，乐其与己同也。名高则毁之者亦众。毁者不必不贤而怒而斥之，恶其与己异也。同异之见岐于中，而附者毁者争胜而不已，则党日众，而为祸炽矣。魏允贞、王国、余懋衡皆以卓荦闳伟之概，为众望所归。李三才英遇豪俊，倾动士大夫，皆负重名。当世党论之盛，数人者实为之魁，则好同恶异之心胜也。《易》曰：“涣其群，元吉。”知此者，其惟圣人乎！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百一十九章-卷一百一十九-原文.html'>第一百一十九章-卷一百一十九</a></p><p class='next'>下一节：<a href='第一百二十一章-卷一百二十一-原文.html'>第一百二十一章-卷一百二十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百一十九章-卷一百一十九-原文.html'>第一百一十九章-卷一百一十九</a></p><p class='next'>下一节：<a href='第一百二十一章-卷一百二十一-原文.html'>第一百二十一章-卷一百二十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

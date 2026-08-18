@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-本纪<a href='../明史.html#明史'>：目录</a></p>
@@ -236,5 +263,18 @@
 </p><p>弘治十八年(1505)正月初三日，小王子诸部围攻灵州，进入花马池，抢劫韦州、环县。户部侍郎顾佐治理陕西军饷。九日，大祭天地于京城南郊。十八日，小王子攻陷宁夏清水营。二月十二日，到奉天门，告诉户、兵、工三部说：“如今人口逐渐增多，而户口、军士日趋损耗，这都是官吏抚恤无方、苟且不负责所造成。你们应全部讨论弊政上报。”三月十八日，赐顾鼎臣等进士及第、出身各有不同。
 </p><p>四月二十三日，刑部侍郎何鉴抚慰安置荆、襄流民。二十九日，孝宗身体不舒服。五月六日，病危，召见大学士刘健、李东阳、谢迁接受照管皇室的命令。七日，死于乾清宫，享年三十六岁。六月七日，上尊谥，庙号孝宗，葬于泰陵。
 </p><p>评论：明朝得天下，传十六世，除太祖、成祖以外，可称颂的是仁宗、宣宗、孝宗。仁、宣之际，国势初步强盛，纲纪修立，淳朴不变。至成化以来，号称太平无事，然而安乐则容易沉溺于怠慢贪玩，富强则会逐渐滋生骄奢。孝宗独能谦逊，节俭有度，勤政爱民，兢兢业业于保国泰持民盈之道，使朝政太平、安定有序，民物康富。《易》经说“：没有平地就没有山坡，没有往来就没有复回，只有艰贞是不会错的。”知此道理者，只有孝宗了。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十四章-卷十四-白话.html'>第十四章-卷十四</a></p><p class='next'>下一节：<a href='第十六章-卷十六-白话.html'>第十六章-卷十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十四章-卷十四-白话.html'>第十四章-卷十四</a></p><p class='next'>下一节：<a href='第十六章-卷十六-白话.html'>第十六章-卷十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

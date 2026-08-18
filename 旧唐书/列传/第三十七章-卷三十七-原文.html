@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -185,5 +212,18 @@
 <p>　　玄同富于词学，公任权衡，当为典选之时，备疏择才之理。但以高宗弃代之后， 则天居位之间，革命是怀，附己为爱，苟一言之不顺，则赤族以难逃。是以唐之名 臣，难忘中兴之计；周之酷吏，常谋并进之谗。玄同欲复皇储，固宜难免，死而无 过，人杀何妨。 </p>
 <p>　　昭德强干为臣，机巧莅事，凡所制置，动有规模。武承嗣方持左相权，将立为 皇太子，寻更所任，复寝其谋，咸由昭德之言，能拒则天之旨。又观其诛侯思止， 法王庆之，挫来俊臣，致朋党渐衰，谀佞稍退。又则天谓承嗣曰：“我任昭德，每 获高卧，代我劳苦，非汝所及也。”此则强干机巧之验焉。公忠之道，亦在其中矣。 不然，则何以致是哉！若使昭德用谦御下，以柔守刚，不恃专权，常能寡过，则复 皇嗣而非晚，保臣节而必终。盖由道乏弘持，器难苞贮，纯刚是失，卷智不全。所 以丘愔抗陈，邓注深论，瓦解而固难收拾，风摧而岂易扶持。自取诛夷，人谁怨怼？ </p>
 <p>　　赞曰：政无刑法，时属艰危。裴炎之智，虑浅见迟。祎之履行，贷色自欺。昭 德强猛，何由不亏？死无令誉，孰谓非宜。玄同不幸，颠殒亦随。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十六章-卷三十六-原文.html'>第三十六章-卷三十六</a></p><p class='next'>下一节：<a href='第三十八章-卷三十八-原文.html'>第三十八章-卷三十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十六章-卷三十六-原文.html'>第三十六章-卷三十六</a></p><p class='next'>下一节：<a href='第三十八章-卷三十八-原文.html'>第三十八章-卷三十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

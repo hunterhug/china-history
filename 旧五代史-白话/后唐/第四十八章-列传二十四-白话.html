@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后唐<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -159,5 +186,18 @@
 </p><p>张居翰，字德卿。咸通初年，掖廷令张从玫收养为子，以荫庇当官。中和三年(883)，从容管监军判官入朝廷任学士院判官，迁任枢密承旨、内府令，赐绯色衣。唐昭宗在华下，越级任命为内常侍，外出监察幽州军事，任期满后下诏召回，节度使刘仁恭上表留下他。天复年中，诏令诛杀宦官，刘仁恭上奏骗说杀了张居翰，把他藏在大安山的北溪。
 </p><p>天祐三年，汴军进攻沧州，武皇向刘仁恭求援，刘仁恭于是派张居翰和书记马郁等人率兵援助武皇一同进攻潞州，武皇因而留下张居翰。李嗣昭节制昭义军时，以张居翰监管其军事，以燕军三千为部下。不久汴将李思安筑外城来包围潞州，张居翰和李嗣昭登城保卫，终于解围。从此李嗣昭每次出征时，令张居翰主管留后事务。同光元年(923)四月，召为枢密使。十月，庄宗将渡黄河，留张居翰与李绍宏同守魏州。庄宗进入汴州后，加封为骠骑大将军，掌管内侍省事务，依前充枢密使。同光年间，宦官干预朝政，国家事务都由郭崇韬办理。张居翰自认为是漂泊流浪的人而乘着时运，提拔到重要位置，所以每次宣告任命之事，不敢有所建议是非，只是看别人脸色免除过错而已，因此也逃脱了末年之祸。四年三月，伪蜀王衍投降，下诏迁其族人到洛阳，走到秦川，这时关东已乱，庄宗担心王衍变乱，派中官向延嗣骑马带诏书下令杀掉他。诏书写着：“王衍一行，应一并杀掉。”诏书已经盖印，此时张居翰在密地，又看了诏书，立即就着殿柱揩去“行”字，改写“家”字。等到王衍在秦川驿被杀时，只杀了他的近属而已，其伪官以及随行者还有一千多人，都免于冤死，这是张居翰的功德。
 </p><p>明宗进入洛阳，张居翰在至德宫进见，流泪请罪，求放归乡里，诏令答应，于是回到长安。又以他儿子张延贵为西京职事，以供侍养张居翰。天成三年(928)四月，因病死于长安，时年七十一岁。张居翰性格和静，熟悉旧事。在潞州多年，每年春天督促人民种菜植树，务本惠农，有仁者之心。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十七章-列传二十三-白话.html'>第四十七章-列传二十三</a></p><p class='next'>下一节：<a href='第四十九章-列传二十五-白话.html'>第四十九章-列传二十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十七章-列传二十三-白话.html'>第四十七章-列传二十三</a></p><p class='next'>下一节：<a href='第四十九章-列传二十五-白话.html'>第四十九章-列传二十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

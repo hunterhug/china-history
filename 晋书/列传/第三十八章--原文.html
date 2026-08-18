@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -203,5 +230,18 @@
 </p><p>永昌初，王敦表兼为太常。明帝即位，加散骑常侍。帝以东宫时师傅，犹宜尽敬，乃下诏曰：“朕以不德，夙遭闵凶。猥以眇身，托于王公之上。哀茕在疚，靡所谘仰，忧怀惴惴，如临于谷。孔子有云：‘故虽天子，必有尊也。’朕将祗奉先师之礼，以谘有德。太宰西阳王秩尊望重，在贵思降。丞相武昌公、司空即丘子体道高邈，勋德兼备，先帝执友，朕之师傅。太常安阳乡侯训保朕躬，忠肃笃诚。夫崇亲尊贤，先帝所重，朕见四君及书疏仪体，一如东宫故事。”是岁，卒。诏曰：“太常、安阳乡侯兼履德冲素，尽忠恪己。方赖德训，弘济政道，不幸殂殒，痛于厥心。今遣持节侍御史赠左光禄大夫、开府仪同三司。魂而有灵，嘉兹荣宠。”及葬，属王敦作逆，朝廷多故，不得议谥，直遣使者祭以太牢。子颙，先兼卒，无后。
 </p><p>史臣曰：元帝树基淮海，百度权舆，梦想群材，共康庶绩。顾、纪、贺、薛等并南金东箭，世胄高门，委质霸朝，豫闻邦政；典宪资其刊辑，帷幄伫其谋猷；望重搢绅，任惟元凯，官成名立，光国荣家。非惟感会所钟，抑亦材能斯至。而循位登保傅，朝望特隆，遂使銮跸降临，承明下拜。虽西汉之恩崇张禹，东都之礼重桓荣，弗是过也。
 </p><p>赞曰：彦先通识，思远方直。薛既清贞，贺惟学植。逢时遇主，抟风矫翼。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十七章--原文.html'>第三十七章-</a></p><p class='next'>下一节：<a href='第三十九章--原文.html'>第三十九章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十七章--原文.html'>第三十七章-</a></p><p class='next'>下一节：<a href='第三十九章--原文.html'>第三十九章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

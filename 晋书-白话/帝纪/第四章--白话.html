@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-帝纪<a href='../晋书.html#晋书'>：目录</a></p>
@@ -177,5 +204,18 @@
 </p><p>九月，顿丘太守冯嵩逮捕成都王司马颖，押送到邺城。东嬴公司马腾进爵为东燕王，平昌公司马模晋爵为南阳王。冬十月，司空范阳王司马九虎死。司马九虎的长史刘舆杀害成都王司马颖。十一月十八日，惠帝死于显阳殿，终年四十八岁，葬在太阳陵。惠帝为太子时，朝中大臣都知道他不能胜任天下政事，武帝也对他有怀疑。曾经将东宫官属召集到一起，把尚书的政务让太子裁决，太子不能回答。贾妃使亲信代替太子回答，多引经据典。给事张泓对贾妃说：“太子平时不爱学习，这是陛下知道的。今天应该就事论事回答问题，不要引用古书。”贾妃同意这个意见。于是使张泓起草答卷，让太子抄写呈上。武帝看后大喜，太子的地位才得以稳定。即位以后，国家大事皆出于群臣之手，纲纪败坏，贿赂公行，有权位的势族以贵凌人，忠贤之路断绝，谗邪之人得志，得志者更相荐引，天下人称之为“互市”。高平人王沈作《释时论》，南阳人鲁褒作《钱神论》，庐江人杜嵩作《任子春秋》，都是愤世疾俗之作。惠帝曾经在华林园游玩，听到青蛙鸣叫，对左右侍从说“它们如此鸣叫，是为公事呢，还是为私事呢？”有人回答说：“在公众场合就是为公事，在私下场合就是为私事。”后来天下战乱饥荒，很多百姓饿死，惠帝说：“他们没有粮食，为什么不吃肉呢？”惠帝昏聩糊涂大多类此。惠帝是因吃饼子中毒而死，有人说是司马越下的毒。
 </p><p>史臣曰：不肖之子，登上皇位，皇权旁落，当政者亲近小人。褒姒和叔带同兴，襄后和犬戎同运。从前，丹朱不肖，赧王逃责，看他们丑恶的德行，事情关系到吉凶，就如同泥塑之人一样，失去了他们的感情。湿热的暑气将到尽头，淫乐很少能记录下来，这些东西祇能招致嗤笑，而使国家颠覆。难道通才俊杰之人衹在前代出现，而淫邪助虐之人衹在当今出现吗?忠良的人从此彻底消失，而妖邪的人从此不断出现。太后不祥，太子横死；百姓动荡不安，国家一片荒芜。自古以来败国亡身的事，虽然方式不同，但原因都是一样的，不是破坏了纲纪常规，就是政治昏暗。难道是神明失去了他的明鉴，武帝不了解他的后代吗!
 </p><p>赞日：惠帝登基，临朝听政。他自己很糊涂，他对国情也不明白。被幽禁在高台上盼望儿子，漫长的夜晚冤屈难伸。在金墉失去了皇位，在荡阴解甲。等到都死了，就构成了滔天大难。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章--白话.html'>第三章-</a></p><p class='next'>下一节：<a href='第五章--白话.html'>第五章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三章--白话.html'>第三章-</a></p><p class='next'>下一节：<a href='第五章--白话.html'>第五章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

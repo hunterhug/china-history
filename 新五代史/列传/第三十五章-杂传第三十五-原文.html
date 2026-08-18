@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-列传<a href='../新五代史.html#列传'>：目录</a></p>
@@ -196,5 +223,18 @@
 </p><p>○刘景岩
 </p><p>刘景岩，延州人也。其家素富，能以赀交游豪俊。事高万金，为部曲，其后为丹州刺史。晋高祖起兵太原，唐废帝调民七户出一卒为义兵。延州节度使杨汉章发乡民赴京师，将行，景岩遣人激怒之，义兵乱，杀汉章，迎景岩为留后。晋高祖即位，即拜景岩节度使。景岩从事熊皦，为人多智，阴察景岩跋扈难制，惧其有异心，欲以利愚之，因语景岩，以谓边地不可以久安，为陈保名享利之策，言邠、泾多善田，其利百倍，宜多市田射利以自厚。景岩信之，岁馀，其获甚多。景岩使皦朝京师，皦乃言：“景岩不宜在边，可徙之内地。”乃移景岩邠州，皦入拜补阙，而景岩又徙镇保义，居未几，又徙武胜。景岩乃悟皦为卖己，遂诬奏皦隐己玉带，皦坐贬商州上津令。皦惧景岩邀害之，道亡，匿山中。开运三年，景岩罢武胜，以太子太师致仕，居华州。契丹犯京师，以周密镇延州，景岩乃还故里。而州人逐密，立高允权，允权妻刘氏，景岩孙女子也。景岩良田甲第、僮仆甚盛，党项司家族畜牧近郊，尤富强，景岩与之往来，允权颇患之。允权妻岁时归省，景岩谓曰：“高郎一县令，而有此州，其可保乎？”允权益恶之，而心又利其田宅，乃诬其反而杀之，年八十馀。
 </p><p>长子行琮，德州刺史，罢，留京师，亦被诛。次子行谦，允权妇翁也，为奏言非刘氏子，遂免不诛。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十四章-杂传第三十四-原文.html'>第三十四章-杂传第三十四</a></p><p class='next'>下一节：<a href='第三十六章-杂传第三十六-原文.html'>第三十六章-杂传第三十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十四章-杂传第三十四-原文.html'>第三十四章-杂传第三十四</a></p><p class='next'>下一节：<a href='第三十六章-杂传第三十六-原文.html'>第三十六章-杂传第三十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

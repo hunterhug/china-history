@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>南齐书-本纪<a href='../南齐书.html#本纪'>：目录</a></p>
@@ -189,5 +216,18 @@
 </p><p>上刚毅有断，为治总大体，以富国为先。颇不喜游宴、雕绮之事，言常恨之，未能顿遣。临崩又诏“凡诸游费，宜从休息。自今远近荐献，务存节俭，不得出界营求，相高奢丽。金粟缯纩，弊民已多，珠玉玩好，伤工尤重，严加禁绝，不得有违准绳。”九月，丙寅，葬景安陵。
 </p><p>史臣曰：世祖南面嗣业，功参宝命，虽为继体，事实艰难。御衮垂旒，深存政典，文武授任，不革旧章。明罚厚恩，皆由上出，义兼长远，莫不肃然。外表无尘，内朝多豫，机事平理，职贡有恒，府藏内充，民鲜劳役。宫室苑囿，未足以伤财，安乐延年，众庶所同幸。若夫割爱怀抱，同彼甸人，太祖群昭，位后诸穆。昔汉武留情晚悟，追恨戾园，魏文侯克中山，不以封弟，英贤心迹，臣所未详也。
 </p><p>赞曰：武帝丕显，徽号止戈。韶岭歇祲，彭派澄波。威承景历，肃御金科。北怀戎款，南献夷歌。市朝晏逸，中外宁和。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p><p class='next'>下一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p><p class='next'>下一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

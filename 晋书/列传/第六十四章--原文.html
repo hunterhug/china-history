@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -233,5 +260,18 @@
 </p><p>其亲朋好事，或载酒肴而往，潜亦无所辞焉。每一醉，则大适融然。又不营生业，家务悉委之兒仆。未尝有喜愠之色，惟遇酒则饮，时或无酒，亦雅咏不辍。尝言夏月虚闲，高卧北窗之下，清风飒至，自谓羲皇上人。性不解音，而畜素琴一张，弦徽不具，每朋酒之会，则抚而和之，曰：“但识琴中趣，何劳弦上声！”以宋元嘉中卒，时年六十三，所有文集并行于世。
 </p><p>史臣曰：君子之行殊途，显晦之谓也。出则允釐庶政，以道济时；处则振拔嚣埃，以卑自牧。详求厥义，其来夐矣。公和之居窟室，裳唯编草，诫叔夜而凝神鉴；威辇之处丛祠，衣无全帛，对子荆而陈贞则：并灭景而弗追，柳禽、尚平之流亚。夏统远迩称其孝友，宗党高其谅直，歌《小海》之曲。则伍胥犹存；固贞石之心，则公闾尤愧，时幸洛滨之观，信乎兹言。宋纤幼怀远操，清规映拔，杨宣颂其画象，马岌叹其人龙，玄虚之号，实期为美。余之数子，或移病而去官，或著论而矫俗，或箕踞而对时人，或弋钓而栖衡泌，含和隐璞，乘道匿辉，不屈其志，激清风于来叶者矣。
 </p><p>赞曰：厚秩招累，修名顺欲。确乎群士，超然绝俗。养粹岩阿，销声林曲。激贪止竞，永垂高躅。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十三章--原文.html'>第六十三章-</a></p><p class='next'>下一节：<a href='第六十五章--原文.html'>第六十五章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十三章--原文.html'>第六十三章-</a></p><p class='next'>下一节：<a href='第六十五章--原文.html'>第六十五章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

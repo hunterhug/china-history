@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-帝纪<a href='../晋书.html#帝纪'>：目录</a></p>
@@ -169,5 +196,18 @@
 </p><p>帝之为太子也，朝廷咸知不堪政事，武帝亦疑焉。尝悉召东宫官属，使以尚书事令太子决之，帝不能对。贾妃遣左右代对，多引古义。给事张泓曰：“太子不学，陛下所知，今宜以事断，不可引书。”妃从之。泓乃具草，令帝书之。武帝览而大悦，太子遂安。及居大位，政出群下，纲纪大坏，货赂公行，势位之家，以贵陵物，忠贤路绝，谗邪得志，更相荐举，天下谓之互市焉。高平王沈作《释时论》，南阳鲁褒作《钱神论》，庐江杜嵩作《任子春秋》，皆疾时之作也。帝文尝在华林园，闻虾蟆声，谓左右曰：“此鸣者为官乎，私乎？”或对曰：“在官地为官，在私地为私。”及天下荒乱，百姓饿死，帝曰：“何不食肉糜？”其蒙蔽皆此类也。后因食饼中毒而崩，或云司马越之鸩。
 </p><p>史臣曰：不才之子，则天称大，权非帝出，政迩宵人。褒姒共叔带并兴，襄后与犬戎俱运。昔者，丹硃不肖，赧王逃责，相彼凶德，事关休咎，方乎土梗，以坠其情。溽暑之气将阑，淫蛙之音罕记，乃彰蚩笑，用符颠陨。岂通才俊彦犹形于前代，增淫助虐独擅于当今者欤？物号忠良，于兹拔本，人称袄孽，自此疏源。长乐不祥，承华非命，生灵版荡，社稷丘墟。古者败国亡身，分镳共轸，不有乱常，则多庸暗。岂明神丧其精魄，武皇不知其子也！
 </p><p>赞曰：惠皇居尊，临朝听言。厥体斯昧，其情则昏。高台望子，长夜奚冤。金墉毁冕，汤阴释胄，及尔皆亡，滔天来遘。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章--原文.html'>第三章-</a></p><p class='next'>下一节：<a href='第五章--原文.html'>第五章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三章--原文.html'>第三章-</a></p><p class='next'>下一节：<a href='第五章--原文.html'>第五章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

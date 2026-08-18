@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -202,5 +229,18 @@
 </p><p>仁宗即位，加汉、赵二王岁禄二万石。明年，之国彰德，辞常山左右二护卫。宣宗即位，赐田园八十顷。帝擒高煦归，至单桥，尚书陈山迎驾，言曰：“赵王与高煦共谋逆久矣，宜移兵彰德，擒赵王。否则赵王反侧不自安，异日复劳圣虑。”帝未决。时惟杨士奇以为不可。山复邀尚书蹇义、夏原吉共请。帝曰：“先帝友爱二叔甚。汉王自绝于天，朕不敢赦。赵王反形未著，朕不忍负先帝也。”及高煦至京，亦言尝遣人与赵通谋。户部主事李仪请削其护卫，尚书张本亦以为言。帝不听。既而言者益众。明年，帝以其词及群臣章遣驸马都尉广平侯袁容持示高燧。高燧大惧，乃请还常山中护卫及群牧所、仪卫司官校。帝命收其所还护卫，而与仪卫司。宣德六年薨。
 </p><p>子惠王蟾塙嗣，景泰五年薨。子悼王祈钅兹嗣，天顺四年薨。子靖王见灂嗣。惠王、悼王皆颇有过失，至见灂恶尤甚，屡贼杀人，又尝乘醉欲杀其叔父。成化十二年，事闻，诏夺禄米三之二，去冠服，戴民巾，读书习礼。其后二年，见灂母妃李氏为之请，得冠服如故。见灂卒不能改。爱幼子祐枳，遂诬长子祐棌以大逆，复被诏诮让。弘治十五年薨。子庄王祐棌嗣，正德十三年薨。
 </p><p>子康王厚煜嗣，事祖母杨妃以孝闻。嘉靖七年六月，玺书褒予。明年冬，境内大饥。厚煜上疏，请辞禄一千石以佐振。帝嘉王忧国，诏有司发粟，不允所辞。及帝南巡，厚煜远出迎，命益禄三百石。厚煜性和厚，构一楼名“思训”，尝独居读书，文藻赡丽。宗人辅国将军祐椋等数犯法，与有司为难。厚煜庇祐椋。祐椋卒得罪，并见责让。其后有司益务以事裁抑诸宗。洛川王翊鏴奴与通判田时雨之隶争瓜而殴，时雨捕王奴。厚煜请解不得，竟论奴充军。未几，宗室数十人索禄，时雨以宗室殴府官，白于上官。知府傅汝砺尽捕各府人。厚煜由是忿恚，竟自缢死。三十九年十月也。厚煜子成皋王载垸疏闻于朝，下法司按问。时雨斩河南市，汝砺戍极边。厚煜子载培及载培子翊锱皆前卒。翊锱子穆王常清嗣，以善行见旌。万历四十二年薨。世子由松前卒，弟寿光王由桂子慈夬嗣，薨。无子，穆王弟常氵臾嗣。崇祯十七年，彰德陷，被执。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p><p class='next'>下一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p><p class='next'>下一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

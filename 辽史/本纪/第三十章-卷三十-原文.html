@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-本纪<a href='../辽史.html#本纪'>：目录</a></p>
@@ -164,5 +191,18 @@
 </p><p>仁宗次子直鲁古即位，改元天禧，在位三十四年。时秋出猎，乃蛮王屈出律以伏兵八千擒之，而据其位。遂袭辽衣冠，尊直鲁古为太上皇，皇后为皇太后，朝夕问起居，以侍终焉。直鲁古死，辽绝。
 </p><p>耶律淳在天祚之世，历王大国，受赐金券，赞拜不名，一时恩遇，无与为比。当天祚播越，以都元帅留守南京，独不可奋大义以激燕民及诸大臣，兴勤王之师，东拒金而迎天祚乎？乃自取之，是篡也。况忍王天祚哉？大石既帝淳而王天祚矣，复归天祚。天祚责以大义，乃自立为王而去之。幸藉祖宗余威遗智，建号万里之外。虽寡母弱子，更继迭承，几九十年，亦可谓难矣。然淳与雅里、大石之立，皆在天祚之世。有君而复君之，其可乎哉？诸葛武侯为献帝发丧，而后立先主为帝者，不可同年语矣。故著以为戒云。
 </p><p>赞曰：辽起朔野，兵甲之盛，鼓行皞外，席卷河朔，树晋植汉，何其壮欤？太祖、太宗乘百战之势，辑新造之邦，英谋睿略，可谓远矣。虽以世宗中才，穆宗残暴，连遘弑逆，而神器不摇。盖由祖宗威令犹足以震叠其国人也。圣宗以来，内修政治，外拓疆宇，既而申固邻好，四境乂安。维侍二百余年之基，有自来矣。降臻天祚，既丁末运，又觖人望，崇信奸回，自椓国本，群下离心。金兵一集，内难先作，废立之谋，叛亡之迹，相继蜂起。驯致土崩瓦解，不可复支，良可哀也！耶律与萧，世为甥舅，义同休戚，奉先挟私灭公，首祸构难，一至于斯。天祚穷蹙，始悟奉先误己，不几晚乎！淳、雅里所谓名不正，言不顺，事不成者也。大石苟延，彼善于此，亦几何哉？</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

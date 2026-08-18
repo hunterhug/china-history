@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -213,5 +240,18 @@
 </p><p>乌蒙、芒部二府壤接筠连、珙县，围亘千里，山箐深阻。诸蛮僰人子、羿子、仲家子、苗子、倮、佫等杂居其中。有僰人子普法恶者，通汉语，晓符录。妄言弥勒出世，自称蛮王，煽诸夷作乱。流民谢文礼、谢文义应之。都指挥杜琮战败，文义夺其胄。十二年，昊督指挥曹昱进讨，法恶败，走保青山寨。昊分据水口，绝其汲道，阙南方围待之。贼乏水渴，突南围，官军遮击。法恶中流矢死，诸蛮大奔。以功，再进右都御史，荫子锦衣世百户。
 </p><p>昊有才气，能应变，挥霍自喜，所向辄有功。然官川中久，狎其俗，锐意立功名，卒以是败。先是，亦不剌既遁，昊移兵攻小东路番寨未下，茂州群蛮惧见侵，遂纠生苗围城堡。参将芮锡等讨之，兵败，指挥庞昇等皆死。又尝遣副总兵张杰、副使吴澧击松潘南北二路番，不利，亡军士三千余人，匿不以闻。僰蛮平，不置戍守，遽班师。请改高县为州，设长吏，增高、珙、筠连田租千八百石，令指挥魏武度田夺降人业给之军民。而珙县知县步梁窥昊意，诱杀降人阿尚。杜琮以亡胄故，怨文义，潜使人购其头。于是文义乘群蛮怨，嗾之，遂大讧。攻高、庆符二县，破其城。琮率兵御之，又败，死伤七百人。自黎雅以西，天全六番皆相继乱。南京给事中孙懋暨巡按御史卢雍、黎龙先后劾昊。十四年遂遣官逮昊。行至河南，疏称疾笃，留于家。世宗即位，始就逮，寻削籍归。杨一清、胡世宁荐之，为桂萼所驳而止。久之，卒。
 </p><p>赞曰：何鉴绾中枢，能任诸将灭贼，盖其时杨廷和在政府，阁部同心，故克奏效云尔。马中锡雅负时望，而军旅非其所长，适用取败。然观刘宸阻降之言，亦可以观朝事矣。陆完交结之罪浮于首功，得从八议，有佚罚焉。洪钟、陈金威略甚著，而土兵之谣，闻之心恻，斯又统戎旃者所当留意也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十四章-卷七十四-原文.html'>第七十四章-卷七十四</a></p><p class='next'>下一节：<a href='第七十六章-卷七十六-原文.html'>第七十六章-卷七十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七十四章-卷七十四-原文.html'>第七十四章-卷七十四</a></p><p class='next'>下一节：<a href='第七十六章-卷七十六-原文.html'>第七十六章-卷七十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

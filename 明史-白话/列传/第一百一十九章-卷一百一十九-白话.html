@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -169,5 +196,18 @@
 </p><p>万历三十三年(1605)京官考察，吏部侍郎杨时乔、都御史温纯，将宰相府的钱梦皋等全部贬退。大学士沈一贯秘密为之斡旋，皇上下诏给事中、御史被贬退的都留下，而且没发下考察的奏疏。刘元珍正当服丧期满等待依次补缺，上书直言：“沈一贯自从执掌朝政以来，亲近小人，窝藏奸险的人，凭借权势谋取私利，窃取朝廷的恩惠以获取好的名声，欺君罔上的不忠，没有比这更大了！从古至今，小人没有比这更大！最近看到钱梦皋有奏疏，每每用朋党之名强加于人。从古至今，小人没有不用朋党之说先控告好人的。这关系到治乱安危的大事，不是小事情。”疏奏上，被留在禁中，沈一贯赶紧为自己辩护，乞请明示独断之意，好让众人放心。钱梦皋也诋毁刘元珍是温纯的鹰犬。奏疏皇上都没有批示。没有多久，晓谕朝廷大臣以留用言官的缘故，将刘元珍降一级，调到边境。沈一贯假装申救，给事中、御史侯庆远、叶永盛等也替他争辩，皇上皆不听从。当时员外郎贺灿然、南京御史朱吾弼相继讨论京察。主事庞时雍则直接攻击沈一贯欺君罔上罪行十条、误国之罪十件，并且说：“沈一贯财富日日增加，陛下的社稷天天变坏。不久前南郊发生雷震，正当沈一贯上奏请求颁行敕谕之时。这不就是说老天讨厌他的奸诈，用以提醒陛下，让您早日除掉这邪恶的小人吗？”皇上看到奏疏大发脾气，命令一并降刘元珍、贺灿然职三级，调任最边远的地方。不久，庆远及御史李木冉等上疏救援。皇帝更加不高兴，停发他们的俸禄，将刘元珍等贬到最边远的地方任杂职。不久，御史周家栋指陈时政，言语过激。皇上迁怒于刘元珍等人，将他们皆从官籍中除掉。然而考察的奏疏也颁布下来，各被留用的人都自动免职离去了。
 </p><p>光宗即位，起用刘元珍为光禄少卿。当时辽、沈已经陷落，所以赞画主事刘国缙进入南四卫，以招抚军民为名，投递文书给督饷侍郎，命令发舟南渡。言官想推举他为东路巡抚，刘元珍上奏道：“刘国缙是李成梁的义子，李成梁放弃封疆，刘国缙在军营得以幸免，于是留下祸患。杨镐、李如柏丧师，刘国缙一为赞画，立即上奏担保二人，想以违反节制治杜松之罪。建议用辽人冒领官币二十万两招募士兵三万，结果没有一人能用。被弹劾解去官职，忽然拥兵数万，想从小道进入登、莱，逃窜于内地。万一敌人的间谍混入其中，拿什么防备呢？”奏疏下放到兵部巡抚议论，于是停止。
 </p><p>没有多久，刘元珍死于任上。当初，刘元珍被罢免官职回到家乡后，以讲学为业，旌表节义，抚恤鳏寡，名声、义气重于一时。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百一十八章-卷一百一十八-白话.html'>第一百一十八章-卷一百一十八</a></p><p class='next'>下一节：<a href='第一百二十章-卷一百二十-白话.html'>第一百二十章-卷一百二十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百一十八章-卷一百一十八-白话.html'>第一百一十八章-卷一百一十八</a></p><p class='next'>下一节：<a href='第一百二十章-卷一百二十-白话.html'>第一百二十章-卷一百二十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

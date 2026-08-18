@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -217,5 +244,18 @@
 </p><p>正统五年(1440)，八百地区前来朝贡的使者上奏说“：往年向朝廷进贡土产时，当地百姓不懂得朝廷的的礼法，也不通汉语。请求朝廷依照永乐年间的事例，仍让通事官持捧着金牌和信符，催促监督当地向朝廷进献贡物，沿途的驿站和道路上都派军士护送，这样才能保证不致疏忽失散。”朝廷同意这个建议。十年，朝廷因以前颁发给八百大甸的金牌和信符都被暹罗国入侵的军队所焚毁，便又给他们颁发金牌和信符各一面。
 </p><p>成化十七年(1481)，安南的黎灏已攻破了老挝，给车里颁伪敕令，约车里合兵攻打八百。结果黎灏的士兵有数千人暴死，传说是被雷电击死的。八百派军队扼制住安南军队的归路，袭击并杀死他们一万多人，交..人失败后回去了。土官刀揽那将此事上报给朝廷。黔国公沐琮上奏：“刀揽那能够保障百姓的安全，击败交..的贼人，救护老挝。交..人曾以伪敕令胁迫和利诱八百的刀揽那，刀揽那撕毁那个伪敕令，让大象去践踩。请求朝廷给刀揽那颁发赏赐品，以表彰忠义之人。”皇帝命令云南布政司奖励他银子一百两，彩帛四个表里。二十年，刀揽那派人向朝廷献贡品。云南守卫大臣上奏说：“交..的军队虽然退走了，但还是应该敕谕八百等部落整肃军队，做好防备。”弘治二年(1489)，刀揽那的孙子刀整赖向朝廷贡献土产，请求朝廷允许他承袭祖父的职务。兵部上奏说“：八百远离云南，是瘴气弥漫之地，对刀整赖可免于审核，直接承袭职务。”皇帝同意，给刀整赖颁发了冠带。
 </p><p>八百，其地域东至车里，南达波勒，西接大古喇，与缅甸为邻，北连孟艮。从姚关往东南方向行走五十程的路就到达八百。八百有平川数千里，有南格剌山，山下有条河。该河的南面属于八百，而北面则属于车里。八百人喜好佛教，恶杀生，寺庙宝塔数以万计。一旦有人侵略他们，则举兵抵抗，抓住仇人后就罢兵，因而俗名叫慈悲国。嘉靖年间，八百被缅甸兼并，其酋长避居到景线，名叫小八百。从此以后就没来京城朝贡了。缅甸酋长莽应里派他的弟弟莽应龙居住在景迈城，将其倚为左膀右臂。万历十五年(1587)，八百大甸上书给朝廷，请求恢复朝贡，而官府没有将此上报皇帝。原先，四译馆通事只译外国的文书，缅甸和八百也按外国对待。这两个军民宣慰使司在六慰中已经加重了。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二百零二章-卷二百零二-白话.html'>第二百零二章-卷二百零二</a></p><p class='next'>下一节：<a href='第二百零四章-卷二百零四-白话.html'>第二百零四章-卷二百零四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二百零二章-卷二百零二-白话.html'>第二百零二章-卷二百零二</a></p><p class='next'>下一节：<a href='第二百零四章-卷二百零四-白话.html'>第二百零四章-卷二百零四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

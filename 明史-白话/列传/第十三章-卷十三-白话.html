@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -177,5 +204,18 @@
 </p><p>恰遇元将也速进攻通州，朱元璋下诏常遇春回军守备，让平章李文忠帮助他，率步骑九万，从北平出发，取道会州，败敌将江文清于锦州，败也速于全宁。进一步进攻大兴州，将一千名骑兵分别埋伏八处。当大兴州守将趁夜逃跑时，常遇春将他们全部擒获，于是攻克开平。元帝向北逃走，常遇春追奔数百里，俘获其宗王庆生及平章鼎住等将士万人，车万辆，马三千匹，牛五万头，以及敌人子女、宝货等物。常遇春率军返回，临时驻扎在柳河川时，暴病而死，年仅四十岁。朱元璋知道后，大惊，十分悲痛。在龙江举行葬礼，太祖亲自出奠，并命礼官就天子为大臣主持葬礼之事进行商议，商议结果上报太祖，沿用宋太祖追悼韩王赵普的先例。太祖下诏说“：可以。”赐葬于钟山平地，赐给金银器物九十件随葬墓中。赠封常遇春为翊运推诚宣德靖远功臣、开府仪同三司、上柱国、太保、中书右丞相，追封开平王，谥号忠武。常遇春配享太庙，肖像功臣庙，都位列第二。
 </p><p>常遇春性情深沉、勇猛、果敢，善于爱抚士兵，冲锋陷阵，从未吃过败仗。虽然没有学过典籍史书，但他用兵打仗却总是与古代兵书相符合。他比大将军徐达大二岁，屡次跟随徐达率军征讨，都非常认真地听从徐达的指挥，当时的名将首推徐、常二人。常遇春曾经自称能统领十万人马，横行天下，军中将士又称他为“常十万”。
 </p><p>常遇春的堂弟常荣，多次立功，升为指挥同知，跟随李文忠出塞，战死于胪朐河。常遇春有二子：常茂、常升。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十二章-卷十二-白话.html'>第十二章-卷十二</a></p><p class='next'>下一节：<a href='第十四章-卷十四-白话.html'>第十四章-卷十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十二章-卷十二-白话.html'>第十二章-卷十二</a></p><p class='next'>下一节：<a href='第十四章-卷十四-白话.html'>第十四章-卷十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

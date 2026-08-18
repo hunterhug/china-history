@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -194,5 +221,18 @@
 </p><p>初，骏忌大司马汝南王亮，催使之籓。济与斌数谏止之，骏遂疏济。济谓傅咸曰：“若家兄征大司马入，退身避之，门户可得免耳。不尔，行当赤族。”咸曰：“但征还，共崇至公，便立太平，无为避也。夫人臣不可有专，岂独外戚！今宗室疏，因外戚之亲以得安，外戚危，倚宗室之重以为援，所谓脣齿相依，计之善者。”济益惧而问石崇曰：“人心云何？”崇曰：“贤兄执政，疏外宗室，宜与四海共之。”济曰：“见兄，可及此。”崇见骏，及焉，骏不纳。后与诸兄俱见害。难发之夕，东宫召济。济谓裴楷曰：“吾将何之？”楷曰：“子为保傅，当至东宫。”济好施，久典兵马，所从四百余人皆秦中壮士，射则命中，皆欲救济。济已入宫，莫不叹恨。
 </p><p>史臣曰：贾充以谄谀陋质，刀笔常材，幸属昌辰，滥叨非据。抽戈犯顺，曾无猜惮之心；杖钺推亡，遽有知难之请，非惟魏朝之悖逆，抑亦晋室之罪人者欤！然犹身极宠光，任兼文武，存荷台衡之寄，没有从享之荣，可谓无德而禄，殃将及矣。逮乎贻厥，乃乞丐之徒，嗣恶稔之余基，纵奸邪之凶德。煽兹哲妇，索彼惟家，虽及诛夷，曷云塞责。昔当涂阙翦，公闾实肆其劳，典午分崩，南风亦尽其力，可谓“君以此始，必以此终”，信乎其然矣。杨骏阶缘宠幸，遂荷栋梁之任，敬之犹恐弗逮，骄奢淫泆，庸可免乎？括母以明智全身，会昆以先言获宥，文琚识同曩烈，而罚异昔人，裴夫！
 </p><p>赞曰：公闾便佞，心乖雅正。邀遇时来，遂阶荣命。乞丐承绪，凶家乱政。琐琐文长，遂居栋梁。据非其位，乃底灭亡。珧虽先觉，亦罹祸殃。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章--原文.html'>第九章-</a></p><p class='next'>下一节：<a href='第十一章--原文.html'>第十一章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九章--原文.html'>第九章-</a></p><p class='next'>下一节：<a href='第十一章--原文.html'>第十一章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

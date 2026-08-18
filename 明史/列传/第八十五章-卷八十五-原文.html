@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -203,5 +230,18 @@
 </p><p>嘉靖四年七月，席书将辑《大礼集议》，因言：“近题请刊布，多系建言于三年以前，若臣书及璁、萼、献夫、韬，所正取者不过五人。礼科右给事中熊浃、南京刑部郎中黄宗明、都察院经历黄绾、通政司经历金述、监生陈云章、儒士张少琏及楚王、枣阳王二宗室外，所附取者不过六人。有同时建议，若监生何渊、主事王国光、同知马时中、巡检房濬，言或未纯，义多未正，亦在不取。其他罢职投闲之夫，建言于璁、萼等召用后者，皆望风希旨，有所觊觎，亦一切不录。其锦衣百户聂能迁、昌平致仕教谕王价建言三年二三月，未经采入。今二臣奏乞附名，应如其请。”帝从之。因诏“大礼”已定，自今有假言陈奏者，必罪不宥。
 </p><p>至十二年正月，蒲州诸生秦镗伏阙上书，言：“孝宗之统讫于武宗，则献皇帝于孝宗实为兄终弟及。陛下承献皇帝之统，当奉之于太庙，而张孚敬议礼，乃别创世庙以祀之，使不得预昭穆之次，是幽之也。”又谓：“分祀、天、地、日、月于四邻，失尊卑大小之序。去先师王号，撤其塑像，损其礼乐，增启圣祠，皆非圣祖之意。请复其初。”帝得奏，大怒。责以毁上不道，下诏狱严讯，令供主谋。镗服妄议希恩，实无主使者。乃坐妖言律论死，系狱。其后又从丰坊之请，入庙称宗，以配上帝，则璁辈已死，不及见矣。
 </p><p>赞曰：席书等亦由议礼受知，而持论差平。然事以激成，末流多变。盖至入庙称宗，则亦非诸人倡议之初心矣。书、韬在官颇有所建树，浃、宗明能自敛戢，时论为优。至绾之倾狡，乃不足道矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十四章-卷八十四-原文.html'>第八十四章-卷八十四</a></p><p class='next'>下一节：<a href='第八十六章-卷八十六-原文.html'>第八十六章-卷八十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八十四章-卷八十四-原文.html'>第八十四章-卷八十四</a></p><p class='next'>下一节：<a href='第八十六章-卷八十六-原文.html'>第八十六章-卷八十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

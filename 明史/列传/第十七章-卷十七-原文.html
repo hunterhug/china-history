@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -194,5 +221,18 @@
 </p><p>其冬，命为征南将军，帅师由江西取福建，谕之曰：“汝以陈氏丞相来归，事吾数年，忠实无过，故命汝总兵取闽。左丞何文辉为尔副，参政戴德听调发，二人虽皆吾亲近，勿以其故废军法。闻汝尝攻闽中，宜深知其地利险易。今总大军攻围城邑，必择便宜可否为进退，无失机宜。”美遂渡杉关，下光泽，邵武守将李宗茂以城降。次建阳，守将曹复畴亦降。进围建宁，守将同佥达里麻、参政陈子琦谋坚守以老我师。美数挑战，不出，急攻之，乃降。整军入城，秋毫无所犯。执子琦等送京师，获将士九千七百余人，粮糗马畜称是。会汤和等亦取福州、延平、兴化，美遂遣降将谕降汀、泉诸郡。福建悉平。美留守其地。寻召还，从幸汴梁。
 </p><p>太祖即位，以美为中书平章、同知詹事院事。洪武三年命赴河南，招集扩廓故部曲。是年冬论功，封豫章侯，食禄千五百石，予世券，诰词以窦融归汉为比。十三年改封临川侯，董建潭漂府于长沙。太祖榜列勋臣，谓持兵两雄间，可观望而不观望来归者七人。七人者，韩政、曹良臣、杨璟、陆聚、梅思祖、黄彬及美，皆封侯。美与璟有方面勋，帝遇之尤厚。
 </p><p>十七年坐法死。二十三年，李善长败，帝手诏条列奸党，言美因长女为贵妃，偕其子婿入乱宫禁，事觉，子婿刑死，美赐自尽云。赞曰：冯胜、傅友德，百战骁将也。考当日功臣位次，与太祖褒美之词，岂在汤和、邓愈下哉。廖永忠智勇超迈，功亚宋、颍，皆不得以功名终，身死爵除，为可慨矣。江夏侯周德兴之得罪也，太祖宥之，因诫谕公、侯，谓多粗暴无礼，自取败亡。又谓永忠数犯法，屡宥不悛。然则洪武功臣之不获保全者，或亦有以自取欤。杨璟、胡美功虽不逮，然尝别将，各著方面勋，故次列之云。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p><p class='next'>下一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p><p class='next'>下一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

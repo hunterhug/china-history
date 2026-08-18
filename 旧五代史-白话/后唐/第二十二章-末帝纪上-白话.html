@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后唐<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -180,5 +207,18 @@
 </p><p>十月四日，有一只金色野鸡，停在中书政事堂。中书门下上奏“：请以一月二十三日皇帝诞生日为千春节。”末帝同意了。十一日，宰臣李愚、刘日句罢去宰相，任李愚为守左仆射职，刘日句为守右仆射职。契丹侵犯云州、应州，下诏令河东节度使石敬瑭率兵在代州驻扎。二十一日，宰臣姚岂页上奏“：吏部三铨，近年合并成了一司，望下令按旧例分开。”末帝同意了。二十四日，由于左卫上将军李宏元去世而停止上朝，赠司徒职。二十六日，任礼部郎中、知制诰吕琦保留本官，充枢密院直学士。
 </p><p>十一月五日，任刑部侍郎郑韬光为尚书右丞，任光禄少卿乌昭远为少府监。秦州节度使张延朗上奏，率兵讨伐蜀国。中书门下奏道：“二十六日是明宗忌日，陛下第一次遇上这种忌日，与平时不同，请在忌日前后各一天不坐朝办公。”末帝同意了。御史台上奏：“前任的节度使、刺史、行军副使，虽然每天在便殿居住，每遇五日起居，也应该停止上朝。”末帝同意。十日，任前兴州刺史冯晖分配同州衙前安置。冯晖为兴州刺史时，驻扎在乾渠，蜀人来侵犯，冯晖从驻地奔回凤翔，所以有这次处分。十一日，下诏振武、新州、河东西北边地经过契丹侵掠的地方，减免三年两税差配，因这时契丹刚刚退出。十七日，命前华州节度使王万荣为左骁卫上将军退休。十八日，任振武节度使杨光远充大同、彰国、振武、威塞等军兵马都虞候，任前右金吾大将军穆延晖为右武卫上将军。二十六日，任礼部侍郎杨凝式为户部侍郎。
 </p><p>十二月一日，下诏修建本朝各位皇帝陵墓。三日，任北面马军都指挥使、易州刺史安叔千为安北都护、振武节度使，任齐州防御使尹晖为彰国军节度使。四日，下诏安葬庶人李从荣。有关官员上奏“：依照贞观年间庶李承乾的例子，以公礼安葬。”末帝答应了。九日，任秦州节度使张延朗为中书侍郎、同平章事、判三司；任中书侍郎、平章事卢文纪为门下侍郎、平章事、监修国史；任中书侍郎、平章事姚岂页兼集贤殿大学士；任前..州节度使康福为秦州节度使。二十日，夜间有白气贯穿东西天际。二十四日，到龙门祈求下雪，因为从九月到这时一直没下过雨雪。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十一章-闵帝纪-白话.html'>第二十一章-闵帝纪</a></p><p class='next'>下一节：<a href='第二十三章-末帝纪中-白话.html'>第二十三章-末帝纪中</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十一章-闵帝纪-白话.html'>第二十一章-闵帝纪</a></p><p class='next'>下一节：<a href='第二十三章-末帝纪中-白话.html'>第二十三章-末帝纪中</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

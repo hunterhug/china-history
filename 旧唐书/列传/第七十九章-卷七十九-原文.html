@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -183,5 +210,18 @@
 <p>　　文规子彦远，大中初由左补阙为尚书祠部员外郎。景初子天保，嗣庆子彦修， 次宗子曼容。延赏东都旧第在思顺里，亭馆之丽，甲于都城，子孙五代，无所加工， 时号“三相张氏”云。 </p>
 <p>　　史臣曰：君民足则国富，将相和则国安，反是道焉非得人者。滉杀元琇，奏瑞 盐，逞斡运之能，非贞纯之士，刻下罔上，以为己功。幸逢多事之朝，例在姑息之 地，幸而获免，余无可称。延赏以私害公，罢李晟兵柄，使武臣不陈其力矣；恶直 丑正，挤柳浑相位，致贤者不进其才矣。象恭僝功，皆四凶之迹也，虽以廕继世， 以才进身，蹈非道者，实小人哉！延赏历典名籓，皆称善政，及登大位，乃彰饰情。 皋迭处大僚，徒称旧德；弘靖轻傲边事，欺减军资；洄附元载、杨炎，继及累贬， 俱非守正中立者也。《书》云：“世禄之家，鲜克由礼。”不其是欤！ </p>
 <p>　　赞曰：韩滉刻下，延赏害公。皋、洄继世，弘靖兴戎。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十八章-卷七十八-原文.html'>第七十八章-卷七十八</a></p><p class='next'>下一节：<a href='第八十章-卷八十-原文.html'>第八十章-卷八十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七十八章-卷七十八-原文.html'>第七十八章-卷七十八</a></p><p class='next'>下一节：<a href='第八十章-卷八十-原文.html'>第八十章-卷八十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

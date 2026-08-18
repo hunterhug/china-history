@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#后汉书'>：目录</a></p>
@@ -185,5 +212,18 @@
 </p><p>建武二年(26)，加封穰、朝阳二县。更始郾王尹尊及诸多大将在南方没有投降的还很多，光武帝召集诸将商议兵事，没有发言，深思了很久，才以木简叩地说“：郾王尹尊最强，宛为其次，谁可担攻击之责？”贾复慨然回答说“：臣请命攻击尹尊。”光武帝笑说：“执金吾去攻郾王，我还有什么忧虑呢！大司马应去攻宛。”于是派遣贾复与骑都尉阴识、骁骑将军刘植南渡五社津击郾，连破郾等。一月有余，尹尊投降，其地全部平定。又引兵东击更始淮阳太守暴汜，暴汜投降，各属县全部平定。这年秋，又南击召陵、新息，平定了。第二年春，迁左将军，另击赤眉于新城、渑池之间，连破赤眉军。与光武帝会于宜阳，迫使赤眉投降。贾复跟从征伐，从来没有丧师失败过，多次与诸将在溃围中解救危急，身上受伤达十二处。光武帝因贾复敢深入敌军，很少令他远征，而称赞他的勇敢节气，常让他跟随自己，所以贾复少有独当一面的功勋。诸将每每论功自夸，贾复没有说过自己。光武帝常说“：贾君的功劳，我自己知道。”
 </p><p>建武十三年(37)，定封胶东侯，食邑郁秩、壮武、下密、即墨、梃、观阳，共六县。贾复知道光武帝想偃息干戈，修理文德，不想让功臣拥众在京师，就与高密侯邓禹共同削去甲兵，敦重儒学。光武帝深以为然，就罢掉左右将军。贾复以列侯赐以大第，加位特进。贾复为人刚毅正直，多大节。既回私第，关门修养威德。朱..等荐举贾复宜为宰相，光武帝正以吏事责让三公，所以对功臣都不重用。这时的列侯只有高密侯邓禹、固始侯李通、胶东侯贾复三位能与公卿参议国家大事，恩宠待遇甚厚。
 </p><p>建武三十一年(55)逝世，谥号刚侯。史官评论说：中兴将帅立功名的很多啊。只有岑彭、冯异建功立业，自函谷以西，方城以南，两将的功劳最大。如冯异、贾复的不自居功，岑公的义信，真足以感三军而惊敌人，所以他们能够成大业，终能保全荣庆。从前高祖忌“柏人”之名，就离开那里，因此全福；岑彭恶“彭亡”之地，想徙而不得，留在那里遭了灾祸。难道几微之间自有明惑，而幸与不幸，也许是天命使它这样的吗？</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章-邓寇列传-白话.html'>第六章-邓寇列传</a></p><p class='next'>下一节：<a href='第八章-吴盖陈臧列传-白话.html'>第八章-吴盖陈臧列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六章-邓寇列传-白话.html'>第六章-邓寇列传</a></p><p class='next'>下一节：<a href='第八章-吴盖陈臧列传-白话.html'>第八章-吴盖陈臧列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

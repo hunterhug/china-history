@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-本纪<a href='../新五代史.html#本纪'>：目录</a></p>
@@ -162,5 +189,18 @@
 </p><p>五年春正月丁卯朔，德音除民公私债。己丑，回鹘使石海金来。夏四月甲子，契丹兴化王来。五月丙戌，安远军节度使李金全叛附于唐。六月癸卯，李昪遣其将李承裕入于安州，金全奔于唐，安远军节度使马全节及承裕战，败之。丁巳，克安州，承裕奔于云梦，全节执而杀之。秋八月丁酉，阅稼于西郊。己未，西京留守杨光远杀太子太师范延光。九月丁卯，翰林学士承旨、户部侍郎和凝为中书侍郎、同中书门下平章事。辛巳，阅稼于沙台。冬十月丁未，契丹使舍利来。十一月丙子，冬至，始用二舞。
 </p><p>六年春正月戊寅，封唐叔虞为兴安王，台骀为昌宁公。二月戊申，停买宴钱。三月，除民二年至四年以前税。夏四月己未，契丹使述括来。五月，吐浑首领白承福来。秋七月壬午，突厥使薛同海来。八月壬辰，如鄴都，开封尹郑王重贵留守东京，宣徽南院使张从恩东京内外兵马都监。壬寅，大赦。甲寅，光禄卿张澄使于契丹。九月乙亥，前安国军节度使杨彦询使于契丹。丁丑，吐浑使白可久来。河决中都，入于沓河。冬十月，河决滑、濮、郓、澶州。山南东道节度使安从进反。十一月丁丑，西京留守高行周为南面军前都部署以讨之。十二月丙戌朔，郑王重贵为广晋尹，徙封齐王。先锋都指挥使郭金海及安从进战于唐州，败之。成德军节度使安重荣反。天平节度使杜重威为镇州行营招讨使。丙申，契丹遣使者来。戊戌，杜重威及安重荣战于宗城，败之。
 </p><p>七年春正月丁巳，克镇州，安重荣伏诛，赦广晋。庚午，契丹使达剌来。三月，归德军节度使安彦威塞决河于滑州。闰月，天兴蝗食麦。夏五月乙巳，尊皇太妃刘氏为太后。六月丙辰，吐浑使念丑汉来。乙丑，皇帝崩于保昌殿。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-唐本纪第七-原文.html'>第七章-唐本纪第七</a></p><p class='next'>下一节：<a href='第九章-晋本纪第九-原文.html'>第九章-晋本纪第九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七章-唐本纪第七-原文.html'>第七章-唐本纪第七</a></p><p class='next'>下一节：<a href='第九章-晋本纪第九-原文.html'>第九章-晋本纪第九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

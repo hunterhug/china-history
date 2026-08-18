@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-本纪<a href='../旧唐书.html#本纪'>：目录</a></p>
@@ -200,5 +227,18 @@
 </p><p>五月庚寅，幸芳桂宫，阴雨，还东都。突厥寇蔚州，杀刺史李思俭，丰州都督崔智辨率师出朝那山掩击之，为贼所败，遂寇岚州。秋七月已丑，封皇孙重福为唐昌郡王。甲辰，相王轮改封豫王，更名旦。己丑，令唐昌郡王重福为京留守，刘仁轨副之。召皇太子至东都。己巳，河水溢，坏河阳城，水面高于城内五尺，北至盐坎，居人庐舍漂没皆尽，南北并坏。庚戌，荧惑入舆鬼，犯质星。十一月，皇太子来朝。癸亥，幸奉天宫。时天后自封岱之后，劝上封中岳。每下诏草仪注，即岁饥、边事警急而止。至是复行封中岳礼，上疾而止。上苦头重不可忍，侍医秦鸣鹤曰：“刺头微出血，可愈。”天后帷中言曰：“此可斩，欲刺血于人主首耶！”上曰：“吾苦头重，出血未必不佳。”即刺百会，上曰：“吾眼明矣。”戊戌，命将军程务挺为单于道安抚大使，以招讨总管讨山贼元珍、骨笃禄、贺鲁等。诏皇太子监国，裴炎、刘齐贤、郭正一等于东宫同平章事。丁未，自奉天宫还东都。上疾甚，宰臣已下并不得谒见。十二月己酉，诏改永淳二年为弘道元年。将宣赦书，上欲亲御则天门楼，气逆不能上马，遂召百姓于殿前宣之。礼毕，上问侍臣曰：“民庶喜否？”曰：“百姓蒙赦，无不感悦。”上曰：“苍生虽喜，我命危笃。天地神祇若延吾一两月之命，得还长安，死亦无恨。”是夕，帝崩于真观殿，时年五十六。宣遗诏：“七日而殡，皇太子即位于柩前。园陵制度，务从节俭。军国大事有不决者，取天后处分。”群臣上谥曰天皇大帝，庙号高宗。文明元年八月庚寅，葬于乾陵。天宝十三载，改谥曰天皇大弘孝皇帝。
 </p><p>史臣曰：大帝往在籓储，见称长者；暨升旒扆，顿异明哉。虚襟似纳于触鳞，下诏无殊于扇暍。既荡情于帷薄，遂忽怠于基扃。惑麦斛之佞言，中宫被毒；听赵师之诬说，元舅衔冤。忠良自是胁肩，奸佞于焉得志。卒致盘维尽戮，宗社为墟。古所谓一国为一人兴，前贤为后愚废，信矣哉！
 </p><p>赞曰：藉文鸿业，仅保余位。封岱礼天，其德不类。伏戎于寝，构堂终坠。自蕴祸胎，邦家殄瘁。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

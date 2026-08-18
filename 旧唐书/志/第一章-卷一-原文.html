@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-志<a href='../旧唐书.html#志'>：目录</a></p>
@@ -224,5 +251,18 @@
 </p><p>六年十一月八日，有事于南郊。诏以皇太子为亚献，亲王为终献。上问礼官：“亚献、终献合受誓诫否？”吏部郎中柳冕曰：“准《开元礼》，献官前七日于内受誓诫。辞云：‘各扬其职，不供其事，国有常刑。’今以皇太子为亚献，请改旧辞，云‘各扬其职，肃奉常仪’。”从之。
 </p><p>十五年四月，术士匡彭祖上言：“大唐土德，千年合符，请每于四季月郊祀天地。”诏礼官儒者议。归崇敬曰：“准礼，立春迎春于东郊，祭青帝。立夏日迎夏于南郊，祭赤帝。立秋后十八日，迎黄灵于中地，祭黄帝。秋、冬各于其方。黄帝于五行为土，王在四季，土生于火，用事于木，而祭于秋，三季则否。汉、魏、周、隋，共行此礼。国家土德乘时，亦以每岁六月土王之日，祀黄帝于南郊，以后土配，合于典礼。彭祖凭候纬之说，据阴阳之书，事涉不经，恐难行用。”乃寝。
 </p><p>元和十五年十二月，将有事于南郊。穆宗问礼官：“南郊卜日否？”礼院奏：“伏准礼令，祠祭皆卜。自天宝已后，凡欲郊祀，必先朝太清宫，次日飨太庙，又次日祀南郊。相循至今，并不卜日。”从之。及明年正月，南郊礼毕，有司不设御榻，上立受群臣庆贺。及御楼仗退，百僚复不于楼前贺，乃受贺于兴庆宫。二者阙礼，有司之过也。</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p></div></body>
+<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

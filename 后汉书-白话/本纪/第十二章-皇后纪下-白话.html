@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-本纪<a href='../后汉书.html#后汉书'>：目录</a></p>
@@ -210,5 +237,18 @@
 </p><p>献穆曹皇后曹节，是魏公曹操的中女。
 </p><p>建安十八年(213)，曹操进纳三个女儿曹宪、曹节、曹华为夫人，聘以束帛玄纟熏五万匹，年纪小的留国待年长。建安十九年(214)，一同拜为贵人。到伏皇后被弑，第二年，立曹节为皇后。魏受汉献帝禅位，派使者索取玺绶，皇后曹节怒而不给。这样追索玺绶好几次，曹皇后才将使者叫进去，亲自数落责骂，并持玺抛掷轩下，从而涕泣纵横说：“上天是不会让你们延续长久的！”左右在场的人都不忍抬头仰视曹皇后。曹皇后在位七年。曹魏夺得了帝位以后，以曹皇后为山阳公夫人。此后四十一年，魏景元元年(260)去世，与献帝合葬禅陵，车服礼仪皆依汉制。史家评论说：汉代皇后没有谥号，都因帝的谥号以为称号。虽高祖吕后专政，昭帝上官皇后临朝，也没有特殊称号。光武中兴，明帝继位，才为其母光武阴皇后建立光烈之称叫光烈阴皇后。其后都以德为配，至于贤愚优劣，混同一贯都是这样，所以明帝马皇后称明德马皇后；章帝窦皇后称章德窦皇后，都以德称。其余只有帝之庶母及蕃王承统，以追尊为重，特有称号，如和帝母章帝梁贵人，追尊为恭怀、孝景皇后；桓帝母蠡吾侯刘冀媵妾..明，追尊为孝崇皇后便是。献帝初平中，蔡邕始追正和帝邓绥皇后为和熹邓皇后，自此以下，如安帝阎姬皇后为安思阎皇后，顺帝梁女内皇后为顺烈梁皇后，都依此而加谥号。
 </p><p>史家赞颂说：坤为地，它的可贵之处就是载得厚重；阴是指女性，她的责任就是正位于内，《诗经》言后妃有关雎之德，才是君子的配偶；《易经》讲归妹之象，少阴而承长阳，悦以动之。众多的后妃，配皇为俪，以示忠贞贤淑。良哲媚人，承受这天赐的福禄。颁布政治于兰闺，宣扬礼教于椒屋。有的因德操而升高位，如明德马皇后、和熹邓皇后；也有因幸运而跻于尊显，如安思阎皇后、灵思何皇后。身当隆高的极位，家族都得到恩泽。看到太阳的影子，便想争得更多的光辉；孤绝的方山，都想耸立峻拔。一味乘着刚愎的性格，必定多方受阻；像地一样卑顺行之，无往而不顺畅。咎衍是集骄傲自满而来，福禄是协调贞忠诚信而至。吉庆的延续全靠自己，祸患的形成不能归罪于别人的挑衅。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十一章-皇后纪上-白话.html'>第十一章-皇后纪上</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十一章-皇后纪上-白话.html'>第十一章-皇后纪上</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

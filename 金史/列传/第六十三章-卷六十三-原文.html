@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -191,5 +218,18 @@
 </p><p>党怀英，字世杰，故宋太尉进十一代孙，冯翊人。父纯睦，泰安军录事参军，卒官，妻子不能归，因家焉。应举不得意，遂脱略世务，放浪山水间。箪瓢屡空，晏如也。大定十年，中进士第，调莒州军事判官，累除汝阴县令、国史院编修官、应奉翰林文字、翰林待制、兼同修国史。
 </p><p>怀英能属文，工篆籀，当时称为第一，学者宗之。大定二十九年，与凤翔府治中郝俣充《辽史》刊修官，应奉翰林文字移剌益、赵沨等七人为编修官。凡民间辽时碑铭墓志及诸家文集，或记忆辽旧事，悉上送官。是时，章宗初即位，好尚文辞，旁求文学之士以备侍从，谓宰臣曰：“翰林阙人如之何？”张汝霖奏曰：“郝俣能属文，宦业亦佳。”上曰：“近日制诏惟党怀英最善。”移剌履进曰：“进士擢第后止习吏事，更不复读书，近日始知为学矣。”上曰：“今时进士甚灭裂，《唐书》中事亦多不知，朕殊不喜。”上谓宰臣曰：“郝俣赋诗颇佳，旧时刘迎能之，李晏不及也。”
 </p><p>明昌元年，怀英再迁国子祭酒。二年，迁侍讲学士。明年，议开边防濠堑，怀英等十六人请罢其役，诏从之。迁翰林学士。七年，有事于南郊，摄中书侍郎读祝册，上曰：“读册至朕名，声微下，虽曰尊君，然在郊庙，礼非所宜，当平读之。”承安二年乞致仕，改泰宁军节度使。明年，召为翰林学士承旨。泰和元年，增修《辽史》编修官三员，诏分纪、志、列传刊修官，有改除者以书自随。久之，致仕。大安三年卒，年七十八，谥文献。怀英致仕后，章宗诏直学士陈大任继成《辽史》云。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十二章-卷六十二-原文.html'>第六十二章-卷六十二</a></p><p class='next'>下一节：<a href='第六十四章-卷六十四-原文.html'>第六十四章-卷六十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十二章-卷六十二-原文.html'>第六十二章-卷六十二</a></p><p class='next'>下一节：<a href='第六十四章-卷六十四-原文.html'>第六十四章-卷六十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

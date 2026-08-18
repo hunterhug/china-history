@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新唐书-本纪<a href='../新唐书.html#新唐书'>：目录</a></p>
@@ -489,5 +516,18 @@
 </p><p>十二月十一日，崔群被免职。
 </p><p>元和十五年(820)正月，宦官陈弘志等反叛。二十七日，宪宗逝世，终年四十三岁，谥号为圣神章武孝皇帝。宣宗大中三年(849)，加其谥号为昭文章武大圣至神孝皇帝。
 </p><p>评说：德宗为人好猜疑妒忌、待人冷酷寡情，以见识高明自负，以顺从正确合理的言论为羞耻，却胡乱地受奸诈邪恶的谄媚之辞欺骗。他疑心萧复轻视自己，认为姜公辅是故作正直，因而不能相容；信用卢杞、赵赞，则达到毁政乱国的地步，却始终不改。及至奉天之难，他遭受惩创、深自戒惧，于是又推行无原则宽容的政策。由此朝廷权威更虚弱，而方镇势力更强悍，直至唐朝灭亡，其祸害自此发端。宪宗刚明果断，自一登基，便激昂发愤，立志平息僭位逆贼，能取用忠诚的计谋，不受各种议论的惑乱，终于收得成功之效。自从吴元济伏法，强蕃悍将大都想悔改过错，恭敬听从朝廷命令。当此之时，唐朝的朝纲刑法、军令政纪，将近恢复振兴，德宗、宪宗谁优谁劣，就不须比较而可区别了。到宪宗晚年，信用行为不端之人，使其事业未得善终，而身遭意外灾祸，则更甚于德宗的结局。可叹哪！奸佞小人之能够败毁国家，不一定是君主愚昧昏暗，即使是聪明圣智的君主，如果偶有迷惑，亦未有不造成祸患的。当年韩愈说：顺宗身处东宫为太子二十年，天下人不知不觉中受其赐予的恩惠。然而在位时日短暂，不幸染病，未能有所作为，确实令人悲哀呵！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章-卷六·肃宗 代宗-白话.html'>第六章-卷六·肃宗 代宗</a></p><p class='next'>下一节：<a href='第八章-卷八·穆宗 敬宗 文-白话.html'>第八章-卷八·穆宗 敬宗 文</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六章-卷六·肃宗 代宗-白话.html'>第六章-卷六·肃宗 代宗</a></p><p class='next'>下一节：<a href='第八章-卷八·穆宗 敬宗 文-白话.html'>第八章-卷八·穆宗 敬宗 文</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

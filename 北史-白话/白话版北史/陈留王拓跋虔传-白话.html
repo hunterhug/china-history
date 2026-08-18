@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>北史-白话版北史<a href='../北史.html#北史'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>陈留王拓跋虔传<span style='font-size:small'> 白话</span></h1>
 <p>陈留王拓跋虔，是纥根的儿子。登国初年，赐爵为陈留公。他和卫王仪打败了黜弗部，又跟皇帝征讨卫辰。慕容宝前来进犯时，拓跋虔切断了他的左翼部队，慕容宝因而失败。慕容垂怀恨前来桑乾讨战，拓跋虔虽然勇猛，但轻敌，死于战场。<BR><BR>　　拓跋虔容貌魁梧雄杰，勇力超群。他总是嫌矛过于细短，便大大地加粗加长，就这样他还觉得太轻，便在刃下缀上铃。他拉弓的力气也比常人加倍。由于他使用的兵器和常人不同，所以代京的武库中一直保存着加以记念。拓跋虔经常用槊刺人，把人穿透后又高高举起。他曾经用一只手把槊扎进土地，然后飞马假装败退。敌人争先恐后来拔槊，谁也拔不出来。拓跋虔便开弓射敌，一箭射死两三人，那些在摇槊的敌人都惊慌四散而逃，过后拓跋虔才让人把槊取回来。每次跟从皇帝征讨敌人，以及充当偏将时，总是身先士卒，冲锋陷阵，勇冠当时，敌人无论多少，都没有人敢前来和他对阵的。当他去世时，全国都替他悲伤和叹息，许多人哭泣着，道武帝多次追念，十分伤心。追谥为“陈留桓王”，配祀于太庙，封他的儿子悦为朱提王。</p>
-<div class='pn'><p class='pre'>上一节：<a href='元亨传-白话.html'>元亨传</a></p><p class='next'>下一节：<a href='朱提王拓跋悦传-白话.html'>朱提王拓跋悦传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='元亨传-白话.html'>元亨传</a></p><p class='next'>下一节：<a href='朱提王拓跋悦传-白话.html'>朱提王拓跋悦传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

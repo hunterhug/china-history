@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -198,5 +225,18 @@
 </p><p>二十五年遣使请期，寅秋示以四月。郕期，维潭至关外，译者诘以六事。首擅杀茂洽，曰：“复仇急，不遑请命。”次维潭宗派，曰：“世孙也，祖晖，天朝曾锡命。”次郑松，曰：“此黎氏世臣，非乱黎氏也。”然则何宵遁，曰：“以仪物之不戒，非遁也。”何以用王章，曰：“权仿为之，立销矣。”惟割高平居莫氏，犹相持不绝。复谕之曰：“均贡臣也，黎昔可栖漆马江，莫独不可栖高平乎？”乃听命。授以款关仪节，俾习之。维潭率其下入关谒御幄，一如登庸旧仪。退谒寅秋，请用宾主礼，不从，四拜成礼而退。安南复定。诏授维潭都统使，颁历奉贡。一如莫氏故事。先是，黎利及登庸进代身金人，皆囚首面缚，维潭以恢复名正，独立而肃容。当事嫌其倨，令改制，乃为俯伏状，镌其背曰：“安南黎氏世孙，臣黎维潭不得蒲伏天门，恭进代身金人，悔罪乞恩。”自是，安南复为黎氏有，而莫氏但保高平一郡。
 </p><p>二十七年，维潭卒，子维新嗣，郑松专其柄。会叛酋潘彦构乱，维新与松移保清化。三十四年遣使入贡，命授都统使。时莫氏宗党多窜处海隅，往往僣称公侯伯名号，侵轶边境，维新亦不能制。守臣檄问，数发兵夹剿，虽应时破灭，而边方颇受其害。维新卒，子维祺嗣。天启四年，发兵击莫敬宽，克之，杀其长子，掠其妻妾及少子以归。敬宽与次子逃入山中，复回高平，势益弱。然迄明之世，二姓分据，终不能归一云。
 </p><p>安南都会在交州，即唐都护治所。其疆域东距海，西接老挝，南渡海即占城，北连广西之思明、南宁，云南之临安、元江。土膏腴，气候热，谷岁二稔。人性犷悍。驩、演二州多文学，交、爱二州多倜傥士，较他方为异。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二百零八章-卷二百零八-原文.html'>第二百零八章-卷二百零八</a></p><p class='next'>下一节：<a href='第二百一十章-卷二百一十-原文.html'>第二百一十章-卷二百一十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二百零八章-卷二百零八-原文.html'>第二百零八章-卷二百零八</a></p><p class='next'>下一节：<a href='第二百一十章-卷二百一十-原文.html'>第二百一十章-卷二百一十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

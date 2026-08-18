@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#列传'>：目录</a></p>
@@ -157,5 +184,18 @@
 </p><p>陈昭衮，小字王九，云州人。工译鞮，勇而善射。统和中，补祗候郎君，为奚拽剌详稳，累迁敦睦宫太保，兼掌围场事。开泰五年秋，大猎，帝射虎，以马驰太速，矢不及发。虎怒，奋势将犯跸。左右辟易，昭衮舍马，捉虎两耳骑之。虎骇，且逸。上命卫士追射，昭衮大呼止之。虎虽轶山，昭衮终不堕地。伺便，拔佩刀杀之。辇至上前，慰劳良久。即日设燕，悉以席上金银器赐之，特加节钺，迁围场都太师，赐国姓，命张俭、吕德懋赋以美之。迁归义军节度使，同知上京留守，历西南面招讨都监，卒。
 </p><p>萧合卓，字合鲁隐，突吕不部人。始为本部吏。统和初，以谨恪，补南院侍郎。十八年，北院枢密使韩德让举合卓为中丞，以太后遗物使宋。还，迁北院枢密副使。开泰三年，为左夷离毕。合卓久居近职，明习典故，善占对。以是尤被宠渥，升北院枢密使。时议以为无完行，不可大用；南院枢密使王继忠侍宴，又讥其短。帝颇不悦。六年，遣合卓伐高丽，还，时求进者多附之；然其服食、仆马不加于旧。帝知其廉，以族属女妻其子，诏许亲友馈献，豪贵奔趋于门。太平五年，有疾，帝欲临视，合卓辞曰：“臣无状，猥蒙重任。今形容毁瘁，恐陛下见而动心。”帝从之。会北府宰相萧朴问疾，合卓执其手曰：“吾死，君必为枢密使，慎勿举胜己者。”朴出而鄙之。是日卒。子乌古，终本部节度使。
 </p><p>论曰：统和诸臣，名昭王室者多矣。室鲁拜枢密使，朝野相庆，必有得民心者。继忠既不能死国，虽通南北之和，有知人之鉴，奚足尚哉！孝忠、昭衮，皆有可称者。合卓临终，教萧朴毋举胜己者任枢密，其误国之罪大矣！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p><p class='next'>下一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p><p class='next'>下一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

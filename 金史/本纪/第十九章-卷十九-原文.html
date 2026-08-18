@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-本纪<a href='../金史.html#本纪'>：目录</a></p>
@@ -185,5 +212,18 @@
 </p><p>五月甲午，追谥体弘仁英文睿德光孝皇帝，庙号显宗。丁酉，祔于太庙，陵曰裕陵。
 </p><p>帝天性仁厚，不忍刑杀。梁檀儿盗金银叶，怜其母老，李福兴盗段匹，值坤厚陵礼成，家令本把盗银器，值万春节，皆委曲全活之。亡失物者，责其偿而不加罪。闻四方饥馑，辄先奏，加赈赡。因田猎出巡，所过问民间疾苦。敬礼大臣，友爱兄弟。葬明德皇后于坤厚陵，诸妃皆祔，自磐宁宫发引，赵王惟中以其母挽车先发，令张黄盖者前行，帝呼执盖者不应，少府监张仅言欲奏其事，帝止之。尝作《重光座铭》，及刻座右铭于小玉碑，并刻其碑阴，皆深有理致。最善射而不殚物，尝奉诏拜陵，先猎，射一鹿获之，即命罢猎，曰：“足奉祀事，焉用多杀？”好生盖其天性云。
 </p><p>赞曰：辽王杲取中京，宗翰、宗望皆从，景宣别领合紥猛安。合紥猛安者，太祖之猛安也。宗翰请立熙宗，宗干不敢违，太宗不能拒，其义正，其理直矣。旧史称睿宗宽恕好施惠，熙宗不终，海陵陨毙，自时厥后，得大位者皆其子孙，有以夫。显宗孝友惇睦，在东宫二十五年，不闻有过。承意开导，四方阴受其赐。天下不假之年，惜哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

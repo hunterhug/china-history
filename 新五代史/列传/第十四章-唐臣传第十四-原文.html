@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-列传<a href='../新五代史.html#列传'>：目录</a></p>
@@ -175,5 +202,18 @@
 </p><p>○毛璋
 </p><p>毛璋，沧州人也。梁末，戴思远为横海军节度使，璋事思远为军校。晋已下魏博，思远弃沧州出奔，璋以沧州降晋，以功为贝州刺史。璋为人有胆勇，自晋与梁相拒河上，璋累战有功。庄宗灭梁，拜璋华州节度使。在镇多不法，议者疑其有异志，乃徙璋镇昭义。璋初欲拒命，其判官边蔚切谏谕之，乃听命。璋累历籓镇，又在华州得魏王继岌伐蜀余赀，既富而骄，益为淫侈。尝服赭袍饮酒，使其所得蜀奴为王衍宫中之戏于前。明宗闻而恶之，召为金吾上将军。东川董璋上书言璋遣子廷赟持书往西川，疑其有奸。明宗乃遣人追还廷赟，并璋下御史狱。廷赟款称实璋假子，有叔父在蜀，欲往省之，而无私书。璋无罪名，有司议：“璋前任籓镇，阴畜异图，及处班行，不慎行止。”乃停璋见任官，勒还私第。
 </p><p>初，廷赟之蜀，与其客赵延祚俱，及召下狱，延祚多捃璋阴事欲言之，璋许延祚重赂以灭口。既出而责赂于璋，不与，延祚乃诣台自言，并璋复下狱，鞫之无状。中丞吕梦奇议曰：“璋前经推劾，已蒙昭雪，而延祚以责赂之故，复加织罗。”乃稍宥璋。璋款上，有告者言梦奇受赂而劾狱不尽，乃移军巡狱。狱吏希旨，锻炼其事，璋具伏：许赂延祚而未与，尝以马借梦奇而无受赂。璋坐长流儒州，已而令所在赐自尽。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十三章-唐臣传第十三-原文.html'>第十三章-唐臣传第十三</a></p><p class='next'>下一节：<a href='第十五章-唐臣传第十五-原文.html'>第十五章-唐臣传第十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十三章-唐臣传第十三-原文.html'>第十三章-唐臣传第十三</a></p><p class='next'>下一节：<a href='第十五章-唐臣传第十五-原文.html'>第十五章-唐臣传第十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

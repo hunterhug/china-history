@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>隋书-志<a href='../隋书.html#志'>：目录</a></p>
@@ -1357,5 +1384,18 @@
 </p><p>医方者，所以除疾病，保性命之术者也。天有阴阳风雨晦明之气，人有喜怒哀乐好恶之情。节而行之，则和平调理，专壹其情，则溺而生火。是以圣人原血脉之本，因针石之用，假药物之滋，调中养气，通滞解结，而反之于素。其善者，则原脉以知政，推疾以及国。《周官》：医师之职“掌聚诸药物，凡有疾者治之”，是其事也。鄙者为之，则反本伤性。故曰：“有疾不治，恆得中医。
 </p><p>凡诸子，合八百五十二部，六千四百三十七部。
 </p><p>《易》曰：“天下同归而殊途，一致而百虑。”儒、道、小说，圣人之教也，而有所偏。兵及医方，圣人之政也，所施各异。世之治也，列在众职，下至衰乱，官失其守。或以其业游说诸侯，各崇所习，分镳并骛。若使总而不遗，折之中道，亦可以兴化致治者矣。《汉书》有《诸子》、《兵书》、《数术》、《方伎》之略，今合而叙之，为十四种，谓之子部。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十八章-卷二十八-原文.html'>第二十八章-卷二十八</a></p><p class='next'>下一节：<a href='第三十章-卷三十-原文.html'>第三十章-卷三十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十八章-卷二十八-原文.html'>第二十八章-卷二十八</a></p><p class='next'>下一节：<a href='第三十章-卷三十-原文.html'>第三十章-卷三十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

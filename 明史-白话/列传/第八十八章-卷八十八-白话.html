@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -163,5 +190,18 @@
 </p><p>两湖、贵州之间有座山叫蜡尔山，各部苗民住在那里。这个地区东部属镇溪千户所..子坪长官司管辖，隶属湖广；西部属铜仁、平头两个长官管辖，隶属贵州；北边接近四川酉阳，整个山区宽广几百里。各部苗民几度造反，官兵不能打败它。侍郎万镗讨伐它，四年之久没能成功。朝廷于是只好授给他们的头领龙许保一个官职。湖广的苗民叛乱暂时停止了，可是贵州的苗民一如既往地在造反。万镗班师后，龙许保和他的党徒吴黑苗又叛乱起来。贵州巡抚李义壮报上战警以后，世宗就任命张岳去总督湖广、贵州、四川军务，讨伐苗贼，提升他为右都御史。义壮坚持万镗的主张想招安苗贼，张岳弹劾他阻挠用兵，罢了他的官。过去在义壮之前担任过贵州巡抚，现任佥都御史的王学益和万镗一道依附严嵩，主张收抚苗贼，他们几度从宫廷中间作梗，阻挠张岳。张岳更加坚持自己的意见。许保通过袭击把印江知县徐文伯及石阡推官邓本忠给抓去了，张岳因此被扣发了俸禄。于是他派总兵官沈希仪、参将石邦宪等分路进兵，自己入铜仁坐镇指挥，先后斩杀盗贼首领五十三个人，只有许保、黑苗跳出圈套，没能逮住。张岳向朝廷奏上捷报，说贵州的苗贼逐渐平息了，湖广的苗民接受招安，请分遣士兵回家务农，朝廷的意见同意了他。没多久，酉阳宣慰冉元教唆许保、黑苗突袭思州，劫持了知府李允简。邦宪的部队拦截作战夺回了允简，但他最后还是死了。严嵩父子本来就恨张岳，这时就想把他给逮捕治罪，徐阶坚决不同意。于是就剥夺了右都御史的官衔，让他以兵部侍郎的名义指挥作战。邦宪等将领不久就打败了苗贼。张岳派人在山林中搜捕，残余的盗贼交出了思州的大印和许保。湖广的部队也打败敌人，捉拿了首恶李通海等人。张岳因为没拿到吴黑苗，不敢往上报功。不久冉元的底细暴露了，张岳揭发了他干的坏事。冉元就贿赂严世蕃指责张岳对苗民斩尽杀绝。邦宪最后终于抓到吴黑苗，把他献上来了，苗民的叛乱至此才算告息了。
 </p><p>张岳死在沅州。他的棺木回乡时，沅州百姓一路迎接、哭送的人连续不断。后来，朝廷给他论功，恢复了他右都御史的官衔，追赠他为太子少保，谥襄惠。
 </p><p>张岳博览群书，文章也做得好，对经学造诣精深，不喜欢王守仁的学说，而是把程、朱看作正宗。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十七章-卷八十七-白话.html'>第八十七章-卷八十七</a></p><p class='next'>下一节：<a href='第八十九章-卷八十九-白话.html'>第八十九章-卷八十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八十七章-卷八十七-白话.html'>第八十七章-卷八十七</a></p><p class='next'>下一节：<a href='第八十九章-卷八十九-白话.html'>第八十九章-卷八十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

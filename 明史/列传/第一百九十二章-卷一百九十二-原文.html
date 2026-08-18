@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -212,5 +239,18 @@
 </p><p>张忠，霸州人。正德时御马太监，与司礼张雄、东厂张锐并侍豹房用事，时号三张，性皆凶悖。忠利大盗张茂财，结为弟，引入豹房，侍帝蹴鞠。而雄至怨其父不爱己致自宫，拒不见。同侪劝之，乃垂帘杖其父，然后相抱泣，其无人理如此。锐以捕妖言功，加禄至一百二十石。每缉事，先令逻卒诱人为奸，乃捕之，得贿则释，往往以危法中人。三人并交通宸濠，受臧贤、钱宁等贿，以助成其叛。宁王反，忠劝帝亲征。其遮王守仁捷，欲纵宸濠鄱阳，待帝自战，皆忠之谋也。
 </p><p>是时，又有吴经者，尤亲暱。帝南征，经先至扬州。尝夜半燃炬通衢，遍入寡妇、处女家，掠以出，号哭震远近，许以金赎，贫者多自经。先是，又有刘允者，以正德十年奉敕往迎乌斯藏僧，所赍金宝以百余万计。廷臣交章谏，不听。允至成都，治装几余，费又数十万，公私匮竭。既至，为番人所袭。允走免，将士死者数百人，尽亡其所赍。及归，武宗已崩，世宗用御史王钧等言，张忠、吴经发孝陵卫充军，张雄、张锐下都察院鞫治、允亦得罪。
 </p><p>世宗习见正德时宦侍之祸，即位后御近侍甚严，有罪挞之至死，或陈尸示戒。张佐、鲍忠，麦福、黄锦辈，虽由兴邸旧人掌司礼监，督东厂，然皆谨饬不敢大肆。帝又尽撤天下镇守内臣及典京营仓场者，终四十余年不复设，故内臣之势，惟嘉靖朝少杀云。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百九十一章-卷一百九十一-原文.html'>第一百九十一章-卷一百九十一</a></p><p class='next'>下一节：<a href='第一百九十三章-卷一百九十三-原文.html'>第一百九十三章-卷一百九十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百九十一章-卷一百九十一-原文.html'>第一百九十一章-卷一百九十一</a></p><p class='next'>下一节：<a href='第一百九十三章-卷一百九十三-原文.html'>第一百九十三章-卷一百九十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -235,5 +262,18 @@
 </p><p>初在国学，为祭酒丘濬所知。及濬柄政，未尝一造其门。广东提学缺，部以端仪名上，濬竟沮之。濬卒，始以按察佥事督广东学校。卒官。
 </p><p>端仪慨建文朝忠臣湮没，乃搜辑遗事，为《革除录》。建文忠臣之有录，自端仪始也。
 </p><p>赞曰：明初重监司守牧之任。尚书有出为布政使，而侍郎为参政者，监司之入为卿贰者，比比也。守牧称职，增秩或至二品。天顺而后，巡抚之寄专，而监司守牧不得自展布，重内轻外之势成矣。夫赋政于外，于民最亲。李昌祺、陈本深之属，静以爱民，况钟、张昺能于其职。所谓承宣德化，为天子分忧者，非耶？周新、陈选，冤死为可哀。读张褧书，又以见公正之服人者至，而直道之终不泯也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十八章-卷四十八-原文.html'>第四十八章-卷四十八</a></p><p class='next'>下一节：<a href='第五十章-卷五十-原文.html'>第五十章-卷五十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十八章-卷四十八-原文.html'>第四十八章-卷四十八</a></p><p class='next'>下一节：<a href='第五十章-卷五十-原文.html'>第五十章-卷五十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

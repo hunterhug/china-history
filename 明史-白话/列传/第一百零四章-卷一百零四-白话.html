@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -231,5 +258,18 @@
 </p><p>福王立位，他晋升为本部尚书。当时尊奉福恭王为恭皇帝，准备商议庙祀，顾锡畴奏请另外设立专门的庙宇。不久，请求增补建文帝的庙祀谥号、景皇帝的庙号和建文朝忠臣的赠封与谥号，皇帝都依从了他。东平伯刘泽清称“：宋高宗在南京即位，立刻在靖康二年(1126)五月确立建炎纪元，遵从民众的愿望。我请求从今年五月改为弘光纪元。”顾锡畴明确地说诏令已经颁布，不能追悔更改，才作罢。当时确定大行皇帝的庙号为思宗，忻城伯赵之龙称“思”不是美称，引经据典核证，顾锡畴也认为如此，上奏请求更改。大学士高弘图因为前面的提议是自己提出的，极力坚持，于是事情沉寂。温体仁去世，特别谥号文忠，而文震孟、罗喻义、姚希孟、吕维祺都没有获得谥号。顾锡畴称：“温体仁获得皇帝信任，行使政令最为专横而且长久，他对先帝所负的罪最大而且深重，请求将文忠谥号，或者删削或者更改，而增补文震孟等大臣的谥号，使普天下奖惩有度。”答复可以。于是增补诸臣的谥号，剥夺了温体仁的谥号。
 </p><p>吏部尚书张慎言离职，顶替的人徐石麒没有到任，皇帝命令顾锡畴负责事务。当时马士英掌握国政，顾锡畴一向与他不和。给事中章正宸、熊汝霖弹劾他，于是他请求到南海去祭祀而离去。第二年春天，御史张孙振极力颂扬温体仁的功绩，请求恢复他原来的谥号。便勒令顾锡畴退休。
 </p><p>南都失守，顾锡畴的乡里也被攻占。当时正遭遇父亲的丧期，他由小路赴福建。唐王命令他就任原职，他极力推辞，在温州江心寺寓居。总兵贺君尧鞭挞侮辱诸生，顾锡畴打算对他进行弹劾。贺君尧乘夜色派人杀害了他，将尸体投入江中。温州人寻找了多天，才将他入棺葬殓。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百零三章-卷一百零三-白话.html'>第一百零三章-卷一百零三</a></p><p class='next'>下一节：<a href='第一百零五章-卷一百零五-白话.html'>第一百零五章-卷一百零五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百零三章-卷一百零三-白话.html'>第一百零三章-卷一百零三</a></p><p class='next'>下一节：<a href='第一百零五章-卷一百零五-白话.html'>第一百零五章-卷一百零五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-本纪<a href='../明史.html#明史'>：目录</a></p>
@@ -230,5 +257,18 @@
 </p><p>当年，琉球、占城、佛郎机、土鲁番入朝进贡。
 </p><p>正德十六年(1521)正月十日，改于郊外占卜。二月十六日，巡抚云南副都御史何孟春讨伐并平定弥勒州苗民。三月一日，有日食。八日，改西官厅为威武团营。十三日，武宗病危，告诉司礼监说“：我的病治不好了，把朕的意思传达给皇太后，天下重大事情，与阁臣审查处理。以前的事都是由于朕失误，并不是你们所能预料到的。”十四日，死于豹房，享年三十一岁。遗诏召兴献王长子继位。罢免威武团营，遣还各边军，革除京城内外皇店，释放豹房轮留值班僧人及教坊司乐人。二十一日，颁遗诏于天下，释放在狱囚犯，退还四方进献妇女，停止不急办工役，没收宣府行宫金银财宝回内库。二十三日，捉江彬等下狱。世宗入朝即位。五月八日，上尊谥，庙号武宗，葬于康陵。
 </p><p>评论：明朝从正统以来，国势逐渐衰弱。毅皇帝首除逆臣刘瑾，亲自率军抵御边寇，奋然欲以武功称雄。然而，武宗沉溺于音乐嬉戏游乐之中，亲近一小部分人，自我封加官号，穿衣戴帽都相当放纵随便。值得庆幸的是用人之权始终亲自掌握，加上有各位大臣主持公道辅佐补救，因此，尽管朝廷纲纪混乱还是未招致危亡。假如能承继孝宗之遗业，谨慎节制有度，有中等才德君主之品行，那么，将会国家安泰，而且落得一个好的名声，又怎能招致后人那么多的非议呢？</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷十五-白话.html'>第十五章-卷十五</a></p><p class='next'>下一节：<a href='第十七章-卷十七-白话.html'>第十七章-卷十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷十五-白话.html'>第十五章-卷十五</a></p><p class='next'>下一节：<a href='第十七章-卷十七-白话.html'>第十七章-卷十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

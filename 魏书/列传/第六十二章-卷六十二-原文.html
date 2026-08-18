@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#列传'>：目录</a></p>
@@ -178,5 +205,18 @@
 </p><p>文暢弟文略，袭爵梁郡王。武定末，抚军将军、光禄大夫。
 </p><p>史臣曰：太祖抚运乘时，奄开王业。世祖以武功一海内，高祖以文德革天下。世宗之后，政道颇亏。及明皇幼冲，女主南面。始则于忠专恣，继以元义权重，握赏罚之柄，擅生杀之威；荣悴在亲疏，贵贱由离合；附会者结之以子女，进趋者要之以金帛。且佞谀用事，功勤不赏，居官肆其聚敛，乘势极其陵暴。于是四海嚣然，已有群飞之渐矣。逮于灵后反政，宣淫于朝。郑俨手运天机，口吐王制。李轨、徐纥刺促以求先，元略、元徽喔咿以竞入。私利毕举，公道尽亡，遐迩怨愤，天下鼎沸。倾覆之征，于此至矣。
 </p><p>尔朱荣缘将帅之列，藉部众之用，属肃宗暴崩，民怨神怒，遂有匡颓拯弊之志，援主逐恶之图，盖天启之也。于是上下离心，文武解体，咸企忠义之声，俱听桓文之举。劳不汗马，朝野靡然，扶翼懿亲，宗祏有主，祀魏配天，不殒旧物。及夫擒葛荣，诛元颢，戮邢杲，翦韩娄，丑奴、宝夤咸枭马市。此诸魁者，或据象魏，或僭号令，人谓秉皇符，身各谋帝业，非徒鼠窃狗盗，一城一聚而已。苟非荣之致力，克夷大难，则不知几人称帝，几人称王也。然则荣之功烈，亦已茂乎！而始则希觊非望，睥睨宸极；终乃灵后、少帝，沉流不反；河阴之下，衣冠涂地。此其所以得罪人神，而终于夷戮也。向使荣无奸忍之失，修德义之风，则彭、韦、伊、霍夫何足数？至于末迹见猜，地逼贻毙，斯则蒯通致说于韩王也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十一章-卷六十一-原文.html'>第六十一章-卷六十一</a></p><p class='next'>下一节：<a href='第六十三章-卷六十三-原文.html'>第六十三章-卷六十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十一章-卷六十一-原文.html'>第六十一章-卷六十一</a></p><p class='next'>下一节：<a href='第六十三章-卷六十三-原文.html'>第六十三章-卷六十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

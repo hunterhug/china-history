@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>元史-本纪<a href='../元史.html#元史'>：目录</a></p>
@@ -208,5 +235,18 @@
 </p><p>六月丁巳，汪田哥重新挑选士兵，夜间登上外城马军寨，杀死寨主和守城的人。王坚率领士卒前来迎战。快天亮时，遇到下雨，云梯又断了，蒙古的后军不能够前进，便停止了进攻。当月，皇帝身体不适。
 </p><p>秋，七月初九，留下三千名精锐的士卒守卫，其余的全部前去进攻重庆。二十一日，皇帝在钓鱼山去世，享年五十二岁，在位九年，追加谥号为桓肃皇帝，庙号宪宗。
 </p><p>宪宗皇帝刚强明哲，雄杰勇毅，沉着而有决断，言语不多，不喜欢宴饮作乐，不好奢侈靡费，即使是皇后王妃，享受也不许超过规定的制度。当初，太宗在朝的时候，群臣擅自越权行动，政令出于多门。到宪宗皇帝时，所有的诏令圣旨，皇帝必定亲自起草，修改达四次之多，然后才施行。宪宗皇帝要求群臣十分严格，他曾经下达谕令说“：你们如果听到了我夸奖勉励你们的话，情绪就骄横放纵，一骄横放纵，灾祸还有不接着来到的么？你们要警惕自己呀！”宪宗皇帝生性喜欢狩猎，自己说这是遵照祖宗的规矩，不蹈袭别国的国君行事。但是他极相信巫祝占卜的方法，凡是做什么事一定恭敬他们询问他们，几乎没有一天不这样，自己始终不觉得厌烦。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二-白话.html'>第二章-卷二</a></p><p class='next'>下一节：<a href='第四章-卷四-白话.html'>第四章-卷四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二-白话.html'>第二章-卷二</a></p><p class='next'>下一节：<a href='第四章-卷四-白话.html'>第四章-卷四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

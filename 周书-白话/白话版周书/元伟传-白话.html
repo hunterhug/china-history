@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>周书-白话版周书<a href='../周书.html#周书'>：目录</a></p>
@@ -198,5 +225,18 @@
 </p><p>　　由于典籍散逸，史实大多湮没无闻。<BR>
 </p><p>　　如今记录其姓名官职可以查知的，附在后面。<BR>
 </p><p>　　柱国大将军、太傅、大司徒、广陵王元欣；柱国大将军、特进、尚书令、少师、义阳王元子孝；尚书仆射、冯翊王元季海；七兵尚书、陈郡王元玄；大将军、淮安王元育；大将军、梁王元俭；大将军、尚书令、少保、小司徒、广平郡公元赞；大将军、纳言、小司空、荆州总管、安昌郡公元则；侍中、骠骑大将军、开府仪同三司、少师、韩国公元罗；侍中、骠骑大将军、开府仪同三司、吏部尚书、鲁郡公元正；侍中、骠骑大将军、开府仪同三司、中书监、洵州刺史、宜都郡公元颜子；侍中、骠骑大将军、开府仪同三司、鄯州刺史、安乐县公元寿；侍中、骠骑大将军、开府仪同三司、武卫将军、遂州刺史、房陵县公元审。</p>
-<div class='pn'><p class='pre'>上一节：<a href='李昶传-白话.html'>李昶传</a></p><p class='next'>下一节：<a href='辛庆之传-白话.html'>辛庆之传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='李昶传-白话.html'>李昶传</a></p><p class='next'>下一节：<a href='辛庆之传-白话.html'>辛庆之传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

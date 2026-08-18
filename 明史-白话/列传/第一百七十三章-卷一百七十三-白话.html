@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -197,5 +224,18 @@
 </p><p>太祖，攻取吴中时，到处多用炮石来防守，行私下对好友说：“兵法说以柔能制刚，如果在地上树立许多大竹，系布于竹端，炮石打来落在布上，随竹的弹性忽高忽低，伤不了人，则炮石就起不了作用。”后来，常遇春攻平江就用这种办法。行自负知兵法，因此招来祸殃。
 </p><p>孙蕡，字仲衍，广东顺德人。禀性机敏，无书不读，诗文提笔立就，词藻灿烂然。何真占据岭南，开府扩地，贲艹与王佐、赵介、李德、黄哲都为何真以礼相待，并称“五先生”。明朝廖永忠南征，贲艹为真起草降表。永忠征贲艹主管教育。洪武三年(1370)，开始实行科举，贲艹考中，授工部织染局使，后调任虹县主簿。战乱之后，贲艹安抚流民，勉励他们耕种，民多复业。在虹县仅一年，被召为翰林典籍，参与修撰《洪武正韵》。洪武九年，派往四川监督祭祀，以后调任平原县主簿。因犯过失罪被逮捕，罚修京师望都门城墙。贲艹唱粤语歌，太祖召见他，命他朗诵所唱歌词，句句是忠爱之情，因而赦免释放。洪武十五年，起任苏州经历，又因犯罪而罚到辽东戍边。其后，搜捕蓝玉党羽，贲艹因为曾为玉题画而论处死罪，临刑，做诗长歌而逝。当时，贲艹的门生黎贞也在辽东戍边，贲艹尸为之收殓。黎贞字彦晦，广东新会人。工于诗文，曾为本县训导，被诬陷而在辽东戍边十八年，来向他求教者甚众，刑满释放回家而卒。
 </p><p>孙蕡著有《通鉴前编纲目》、《孝经集善》、《理学训蒙》及《西庵集》，《和陶集》。多遗失不传。番禺赵纯说他深入研究了天人性命之理，为一代儒学宗师。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百七十二章-卷一百七十二-白话.html'>第一百七十二章-卷一百七十二</a></p><p class='next'>下一节：<a href='第一百七十四章-卷一百七十四-白话.html'>第一百七十四章-卷一百七十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百七十二章-卷一百七十二-白话.html'>第一百七十二章-卷一百七十二</a></p><p class='next'>下一节：<a href='第一百七十四章-卷一百七十四-白话.html'>第一百七十四章-卷一百七十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -203,5 +230,18 @@
 <p>　　睿宗即位，累授户部尚书，转太子宾客。先天二年，加金紫光禄大夫，复拜户 部尚书。班与兄弟璹，数年间俱为定州刺史、户部尚书，时人荣之。开元二年卒， 年七十四。班尝以其曾祖察所撰《汉书训纂》，多为后之注《汉书》者隐没名氏， 将为己说；班乃撰《汉书绍训》四十卷，以发明旧义，行于代。 </p>
 <p>　　史臣曰：天子有诤臣七人，虽无道不失其天下。致庐陵复位，唐祚中兴，诤由 狄公，一人以蔽。或曰：许之太甚。答曰：当革命之时，朋邪甚众，非推诚竭力， 致身忘家者，孰能与于此乎！仁杰流死不避，骨鲠有彰，虽逢好杀无辜，能使终畏 大义。竟存天下，岂不然乎！王方庆干城南海，羽冀东宫，台阁枢机，无不功济， 所谓君子不器者也。苟非文学，斯焉取斯。璹成都布政，始卒不侔；相国上章，或 否或中。且焚明堂而避正殿，固诤何多；黜唐颂而立天枢，一言非措。矧乃妄求符 瑞，已失忠贞；精择楚茅，难裨过咎。不常其德，罔畏承羞。班规谏有才，牧守多 善，储幄之任，可谓得人。 </p>
 <p>　　赞曰：犯颜忤旨，返政扶危。是人杂事，狄能有之。终替武氏，克复唐基。功 之莫大，人无以师。方庆之才，周旋特立。璹也无常，班能操执。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十八章-卷三十八-原文.html'>第三十八章-卷三十八</a></p><p class='next'>下一节：<a href='第四十章-卷四十-原文.html'>第四十章-卷四十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十八章-卷三十八-原文.html'>第三十八章-卷三十八</a></p><p class='next'>下一节：<a href='第四十章-卷四十-原文.html'>第四十章-卷四十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

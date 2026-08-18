@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#金史'>：目录</a></p>
@@ -166,5 +193,18 @@
 </p><p>天会十二年(1134)，因韩企先是尚书右丞相，被召到上京，待上朝后，金太宗皇帝很惊异地说“：我以前曾经梦到过此人，今天果然见到了他。”于是，韩企先和皇帝一起讨论礼制，对其进行了删除和增补。韩企先博通经史，知晓以前朝代的旧事，有的因袭它，有的改变它，取舍得很恰当。韩企先做宰相时，常常想，做官要选拔人才，他专以培养扶植奖励后学者为己任。韩企先推举了很多重要人士，也培养了很多人才，一时间台省官府里多君子。修葺宫阙，秘密谋略，上谏，韩企先都同王侯商量。完颜宗翰、完颜宗干很敬重他，当时都称他为贤相。
 </p><p>皇统元年(1141)，韩企先被封为濮王。六年(1146)，韩企先去世，终年六十五岁。正隆二年(1157)，依照旧例降封为齐国公。大定八年(1168)，配给他享受金太宗庙廷的祭祀。
 </p><p>大定十年(1170)，司空李德固的孙子李引庆请继承其祖父的猛安，金世宗说“：李德固没有功绩，让他做猛安尚且是个错误。汉人做宰相只有韩企先最贤能，李敦固不及韩企先。”十一年(1171)，金国准备把功臣的图像画在衍庆宫中，金世宗皇帝说：“丞相韩企先，制定了本朝的绝大部分典章制度，至于关心决断大政，同大臣谋议，外人都不知道，因此没有人能知道他的功绩。前前后后做宰相的汉人都不能同他相比，把他的画像置在功臣画像中，足可以勉励后人。”大定十五年(1175)，韩企先谥号简懿。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷十五-白话.html'>第十五章-卷十五</a></p><p class='next'>下一节：<a href='第十七章-卷十七-白话.html'>第十七章-卷十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷十五-白话.html'>第十五章-卷十五</a></p><p class='next'>下一节：<a href='第十七章-卷十七-白话.html'>第十七章-卷十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

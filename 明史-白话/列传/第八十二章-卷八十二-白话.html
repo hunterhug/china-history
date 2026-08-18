@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -181,5 +208,18 @@
 </p><p>原先，廷相请用六条办法考察奉使还朝的御史。世宗命令他上书陈说他没说完的意见，把它们编成法令。于是他采纳张孚敬、汪钅宏所上奏的意见和他重新制定的法令共十五条进呈，世宗完全批准予以执行。等到祖庙发生灾祸，世宗颁下诏书自我反省，又下诏书对廷相说“：御史出巡外方职责很重要。你掌管法令很有些年岁了，可是自从制定六条法令以来，不曾考核、罢免过一个人，现在应该痛加反省了。”廷相惶然畏惧，赶紧赔罪。
 </p><p>廷相掌管内台时间最长，很有威望。督办团营，与郭勋一起共事，犹豫不决，不能有所整顿。给事中李凤来等批评权贵侵夺百姓利益，奏章下达都察院，廷相传命五城御史加以核实，因此迟办了四十多天。给事中章允贤于是就上书指责廷相徇私情欺骗皇上。世宗正要怪罪，廷相用御史们核对的结果递上了报告，其中只有郭勋侵占最多。世宗命令郭勋自己写报告上来，于是弹劾郭勋的人群起而攻之。郭勋又因为接到世宗的诏令拖延时间惹得世宗恼怒，被打入监牢。廷相被指责为无原则地结朋树党，罢官为民。过三年死去了。
 </p><p>廷相博学，爱好议论，以通经术闻名。对于星历、地图、乐律、河图、洛书及周敦颐、邵雍、程颢、程颐的著作，都有所议论和批驳，但是他的学说很怪僻，不合道理。隆庆初恢复官位，追赠太子少保，谥肃敏。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十一章-卷八十一-白话.html'>第八十一章-卷八十一</a></p><p class='next'>下一节：<a href='第八十三章-卷八十三-白话.html'>第八十三章-卷八十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八十一章-卷八十一-白话.html'>第八十一章-卷八十一</a></p><p class='next'>下一节：<a href='第八十三章-卷八十三-白话.html'>第八十三章-卷八十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

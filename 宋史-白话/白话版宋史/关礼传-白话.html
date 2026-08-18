@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>宋史-白话版宋史<a href='../宋史.html#宋史'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>关礼传<span style='font-size:small'> 白话</span></h1>
 <p>关礼是高宗朝的宦官。淳熙末年，官至亲卫大夫、保信军承宣使。孝宗十分倚重他，后来任命他为提举重华宫。<BR><BR>　　孝宗去世，光宗有病不能主持丧礼，枢密赵汝愚等请求立太子以安定人心，光宗御批又有“想要退位”的话，丞相留正恐惧，辞官，人心更不稳定。赵汝愚派皇亲韩..胄借助内侍张宗尹把让光宗禅位的建议上奏，太皇太后说：“这话怎能轻易就说！”第二天，赵汝愚又派韩..胄和张宗尹一起上奏，没得到什么诏旨，韩..胄就退了回来，同关礼相遇，关礼知道他的意图，就问他，韩..胄不告诉关礼。关礼指天发誓说他不外传，韩..胄就把这事告诉他，关礼立即入宫，哭着把时事令人忧虑的情形禀告了太后，并说：“留丞相已走，所依赖的就是赵知院。现在想立太子而无太皇太后的诏命，他也将离开了。”太后吃惊地说：“知院，是宗室同姓，他和别人不一样。”关礼说：“知院没离开，是因为有太后在。现在他有请求而太后不许，没别的办法，他也只有离开了。知院离开，天下将怎么办？”太后醒悟，就命令关礼传旨给韩..胄让他告诉赵汝愚，约定明天太后垂帘听政，让他上奏这件事。又过了一天，嘉王入宫举行除去丧服的祭礼，赵汝愚向太后进呈光宗的御批，太后就诏命嘉王即皇帝位。不久，关礼被任命为入内内侍省都知，又派他兼任重华、慈福宫承受，提举皇城司，升为中侍大夫。<BR><BR>　　关礼不以功自居，请求辞官，皇上不许；他又请求免去推恩，皇上又不允许。宋南渡后，内侍中可以赞扬的只有邵成章和关礼。</p>
-<div class='pn'><p class='pre'>上一节：<a href='蓝王圭传(附康履传)-白话.html'>蓝王圭传(附康履传)</a></p><p class='next'>下一节：<a href='董宋臣传-白话.html'>董宋臣传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='蓝王圭传(附康履传)-白话.html'>蓝王圭传(附康履传)</a></p><p class='next'>下一节：<a href='董宋臣传-白话.html'>董宋臣传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

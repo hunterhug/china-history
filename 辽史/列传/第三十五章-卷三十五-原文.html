@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#列传'>：目录</a></p>
@@ -165,5 +192,18 @@
 </p><p>王棠，涿州新城人。博古善属文。重熙十五年擢进士。乡贡、礼部、廷试对皆第一。累迁上京盐铁使。或诬以贿，无状，释之。迁东京户部使。大康二年，辽东饥，民多死，请赈恤，从之。三年，入为枢密副使，拜南府宰相。大安末，卒。
 </p><p>棠练达朝政，临事不怠，在政府修明法度，有声。
 </p><p>论曰：孟子谓“民为贵，社稷次之”，司牧者当如何以尽心。公鼎奏罢完堤役以息民，拒公主假贷以守法，单骑行郡，化盗为良，庶几召、杜之美。文知易州，雨暍应祷，蝗不为灾。人望为民不避囚系，判度支，公私兼裕，亦卓乎未易及已。铎鲁斡吏畏民爱，杨遵勖决事如流，真能吏哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十四章-卷三十四-原文.html'>第三十四章-卷三十四</a></p><p class='next'>下一节：<a href='第三十六章-卷三十六-原文.html'>第三十六章-卷三十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十四章-卷三十四-原文.html'>第三十四章-卷三十四</a></p><p class='next'>下一节：<a href='第三十六章-卷三十六-原文.html'>第三十六章-卷三十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

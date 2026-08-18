@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>元史-本纪<a href='../元史.html#元史'>：目录</a></p>
@@ -217,5 +244,18 @@
 </p><p>十一月初二，高丽国都统领崔坦等，因为林衍作乱，带领西京五十多个城邑前来归附。初六，签征王纟享、洪茶丘军的三千名士兵前去平定高丽。高丽的西京都统李延龄请求增兵，朝廷派遣忙哥都率两千名士卒前往增援。二十九日，皇上敕命“：各路的鳏寡及残疾人每月发给粮米二斗。”安南国王陈光日丙派遣使臣前来进贡。济南发生饥荒，朝廷拨给粮米十二万八千九百石赈济饥民。高丽国王王礻直派遣他的尚书礼部侍郎朴休灬跟随黑的入朝，上表章说接到皇帝的诏书已恢复王位，不久就会入朝觐见皇上。在汉江以西修筑新城。
 </p><p>十二月十七日，修筑东安浑河的堤防。十八日，在太庙做佛事七昼夜。高唐、固安二州发生饥荒，拨给粮米二万零六百石以赈济饥民。把彰德、怀孟、卫辉分为三路，把林虑县升格为林州，把桢州重新改为韩城县，合并、减少冯翊等十所州县，把懿州、广宁等府隶属于东京。
 </p><p>这一年，全国共一百六十八万四千一百五十七户。按每年常例赐给诸侯王黄金、白银、钱钞、绢帛。全年判处死刑的罪犯共四十二人。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五-白话.html'>第五章-卷五</a></p><p class='next'>下一节：<a href='第七章-卷七-白话.html'>第七章-卷七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五-白话.html'>第五章-卷五</a></p><p class='next'>下一节：<a href='第七章-卷七-白话.html'>第七章-卷七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>北史-白话版北史<a href='../北史.html#北史'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>周宣皇后杨氏传<span style='font-size:small'> 白话</span></h1>
 <p>宣皇后杨氏，名叫丽华，是隋文帝的大女儿。周宣帝还是东宫太子时，周武帝替他娶杨氏作为皇太子妃。宣政元年(578)闰六月，册立为皇后。宣帝后来自称为“天元皇帝”，便称皇后为“天元皇后”。不久，又立天皇后和左右皇后，和天元皇后共有四位皇后。第二年的二月又下诏取照天象的四星，于是在四个皇后的称号前加封“大”字，册封杨氏为天元大皇后，又册立了一位天中大皇后，这样共有五位皇后。<BR><BR>　　杨氏性格柔顺，没有妒忌之心，其他四位皇后和嫔妃们都很敬爱她。宣帝后来昏庸暴虐，越来越厉害，喜怒无常。有一次，他大骂宣皇后，并准备将她治罪，杨氏举止安详，但言辞却不肯屈服。宣帝大怒，便下令强迫她自杀。杨氏的母亲独孤氏听说后，急忙入宫向皇帝谢罪，叩头直至流血，这才赦免皇后的死罪。宣帝死后，静帝尊封杨皇后为皇太后，住在弘圣宫。<BR><BR>　　起初，宣帝有病，下诏让隋文帝入宫侍候皇帝治病。当病重垂危时，刘日方、郑译等人便假传遗诏由隋文帝辅佐朝政。皇后起初虽然并未参与定计，但她觉得太子年幼，担心大权落在别人家的手中，对自己不利，所以听到刘日方和郑译传下的遗诏以后，心里很高兴。后来，她知道隋文帝另有打算，心里很不高兴。当进行禅让帝位以后，她更加愤愤不平，隋文帝为此也深感内疚。开皇初年，封皇后为乐平公主。后来又打算让她改嫁。皇后对天发誓不肯改变志向，这才算了。大业五年(609)，她跟着隋炀帝出行到达张掖，死在河西。诏令回京，有关方面准备葬礼，把宣皇后附葬于定陵。</p>
-<div class='pn'><p class='pre'>上一节：<a href='冯淑妃传-白话.html'>冯淑妃传</a></p><p class='next'>下一节：<a href='隋文献皇后独孤氏传-白话.html'>隋文献皇后独孤氏传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='冯淑妃传-白话.html'>冯淑妃传</a></p><p class='next'>下一节：<a href='隋文献皇后独孤氏传-白话.html'>隋文献皇后独孤氏传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

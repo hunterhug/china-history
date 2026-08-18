@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>元史-本纪<a href='../元史.html#本纪'>：目录</a></p>
@@ -174,5 +201,18 @@
 </p><p>冬十月辛丑朔，修佛事于大内。妖僧圆明等伏诛。甲辰，太白经天。戊申，荧惑犯太微垣左执法。庚戌，亲享太庙。壬子，拜住献嘉禾，两茎同穗。癸丑，敕翰林、集贤官年七十者毋致仕。以内郡水，罢不急工役。敕蒙古子女鬻为回回、汉人奴者，官收养之。禁中书掾曹毋泄机事，命枢密遣官整视各郡兵马。戊午，置赵王马札罕部钱粮总管府，秩正三品。己未，肇庆路水，赈之。丙寅，河南行省参知政事你咱马丁坐残忍免官。丁卯，增置侍仪司通事舍人六员，侍仪舍人四员。己巳，遣燕铁木儿巡边。
 </p><p>十一月辛未，荧惑犯进贤。己亥，幸大护国仁王寺。丙子，太阴犯虚梁。戊寅，御大明殿，群臣上尊号曰继天体道敬文仁武大昭孝皇帝。是夜，辰星犯房。己卯，以受尊号诏天下，拜住请释囚，不允。庚辰，益寿安山寺役卒三千人。辛巳，命御史大夫铁失领左、右阿速卫。丙戌，太阴犯井。丁亥，以教官待选者借注广海巡检。己丑，太阴犯酒旗，又犯轩辕。庚寅，拜住等言：“受尊号，宜谢太庙，行一献礼。世祖亦尝议行，武宗则躬行谢礼。”诏曰：“朕当亲谢。”命太史卜日，枢密选兵肄卤簿。辛卯，太阴犯明堂。癸巳，以营田提举司征酒税扰民，命有司兼榷之。甲午，以辽阳行省管内山场隶中政院。丙申，敕立故丞相安童碑于保定新城。戊戌，巩昌成州饥，发义仓赈之。己亥，太白犯西咸。
 </p><p>十二月庚子，给蒙古子女冬衣。辛丑，立亦启烈氏为皇后，遣摄太尉、中书右丞相铁木迭儿持节授玉册、玉宝。癸卯，以立后诏天下。庆远路饥，真定路疫，并赈之。甲辰，荧惑犯亢。戊申，躬谢太庙。庚戌，太阴犯昴。作太庙正殿。甲寅，疏玉泉河。车驾幸西僧灌项寺。己未，封唆南藏卜为白兰王，赐金印。真定、保定、大名、顺德等路水，民饥，禁酿酒。以金虎符颁各行省平章政事。辛酉，荧惑入氐。甲子，置田粮提举司，掌蓟、景二州田赋，以给卫士贫乏者，秩从五品。命帝师公哥罗古罗思监藏班藏卜诣西番受具足戒，赐金千三百五十两、银四千五十两、币帛万匹、钞五十万贯。以诸王怯伯使者数入朝，发兵守北口及卢沟桥。河间路饥，赈之。复以马家奴为司徒。乙丑，置中瑞司。冶铜五十万斤作寿安山寺佛像。宁海州蝗，归德、辽阳、通州等处水。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十六章-卷二十六-原文.html'>第二十六章-卷二十六</a></p><p class='next'>下一节：<a href='第二十八章-卷二十八-原文.html'>第二十八章-卷二十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十六章-卷二十六-原文.html'>第二十六章-卷二十六</a></p><p class='next'>下一节：<a href='第二十八章-卷二十八-原文.html'>第二十八章-卷二十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

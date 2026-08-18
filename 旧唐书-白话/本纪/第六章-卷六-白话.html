@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-本纪<a href='../旧唐书.html#旧唐书'>：目录</a></p>
@@ -260,5 +287,18 @@
 </p><p>四年(704)春正月，在寿安县之万安山建造兴泰宫。天官侍郎韦嗣立为凤阁侍郎、同凤阁鸾台平章事。朱敬则请求辞官，皇上同意了。三月，晋封平恩郡王重福为谯王，夏官侍郎宗楚客任同凤阁鸾台平章事。夏四月，韦安石主持纳言事，李峤主持内史事务。二十一日皇上驾到兴泰宫。六月，天官侍郎崔玄日韦任同凤阁鸾台平章事；李峤为国子祭酒，主持政事按原来一样。七月三日，杨再思为内史。十一日，皇上从兴泰宫回来。宗楚客降职为原州都督。八月，姚元崇为司仆卿、知政事；韦安石任检校扬州大都督府长史。冬十月，李峤为地官尚书，张柬之为凤阁鸾台平章事。从九月到这天，日夜天气晦暗，下大雪，京师中有饥饿和冻死的人，皇上命令官府开仓赈济。
 </p><p>神龙元年(705)春正月，大赦，改元。皇上身体不适，诏令从文明元年(684)以后犯罪的人，除了扬、豫、博三州以及所有叛逆罪首外，都加以赦免。二十二日，麟台监张易之与弟司仆卿张昌宗谋反，皇太子率领左右羽林军桓彦范、敬晖等人，用羽林兵入宫禁中杀了他们。二十三日，皇太子代理国政，总统国家，大赦天下。这天，皇上传皇帝位给皇太子李显，迁居到上阳宫。二十七日，皇帝上尊号曰则天大圣皇帝。冬十一月二十六日，武则天病危，遗令死后附到李唐之太庙、归到李氏陵墓，命令取消皇帝号，称作则天大圣皇后；那些王皇后、萧良悌二家以及褚遂良、韩瑗等人的子孙亲属当时由于受到牵连者，都令他们恢复常业。这天，武则天在上阳宫之仙居殿去世，年八十三岁，谥号曰则天大圣皇后。神龙二年(706)五月十八日，合葬于乾陵。睿宗即皇帝位，诏令依照上元年间的旧例，号称武则天为天后，不久，追尊为大圣天后，改号为则天皇太后。太后曾经召文学之士周思茂、范履冰、卫敬业，令他们撰写《玄览》及《古今内范》各一百卷，《青宫纪要》、《少阳政范》各三十卷，《维城典训》、《凤楼新诫》、《孝子列女传》各二十卷，《内范要略》、《乐书要录》各十卷，《百僚新诫》、《兆人本业》各五卷，《臣轨》两卷，《垂拱格》四卷，并且还有文集一百二十卷，藏在秘阁。
 </p><p>史臣道：治和乱是时势也，存和亡是时势造成的。让夏桀和商纣两个残暴的君主高居王位，即使十个圣贤的尧也不能治好国家。让圣贤的尧、舜高居君王之位，即使十个夏桀也不可能混乱国家。让懦弱的男人和妇人女子乘着时机而得势，也足以轻易地控制群生的性命，肆意施展不仁义的淫威。看那武氏称帝的年代，众多英才，无不由于牝鸡司晨而痛心，由于朝廷的危亡而愤怒。终竟不能报答先帝的恩情，保卫君王之子。不久竟无罪而被陷害，伸着颈子等待杀戮，天地形成了牢笼，哪里是安身立命之所？悲痛啊！古代楚怀王时，有郑袖掩鼻的谗言，古代号称为狠毒；汉高祖的吕后残酷的人彘刑法，世上认为是大冤枉。武后杀嫡子夺帝位之阴谋，断送唐帝王婴儿之生命，杀害压碎了椒房皇后、淑妃的骨头，她的不仁道也太过分了，这也是奸诈忌妒的妇人的常态。然而她还广泛援引正直的言论，对正人君子时时给以礼遇，当初虽然是母鸡鸣叫司晨，终于能够使儿子恢复圣明的皇位，很快地辨明御史大夫魏元忠的无罪，好言好语抚慰狄仁杰之心，尊重当时的教令而压抑宠幸之臣，听忠言而诛杀酷吏。武则天有好的一面啊！有好的地方啊！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五-白话.html'>第五章-卷五</a></p><p class='next'>下一节：<a href='第七章-卷七-白话.html'>第七章-卷七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五-白话.html'>第五章-卷五</a></p><p class='next'>下一节：<a href='第七章-卷七-白话.html'>第七章-卷七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -244,5 +271,18 @@
 </p><p>田尔耕，任丘人，兵部尚书乐孙也。用祖荫，积官至左都督。天启四年十月代骆思恭掌锦衣卫事。狡黠阴贼，与魏良卿为莫逆交。魏忠贤斥逐东林，数兴大狱。尔耕广布侦卒，罗织平人，锻练严酷，入狱者率不得出。宵人希进者，多缘以达于忠贤，良卿复左右之，言无不纳，朝士辐辏其门。魏广微亦与缔姻，时有“大儿田尔耕”之谣。又与许显纯、崔应元、杨寰、孙云鹤有“五彪”之号。累加至少师兼太子太师，荫锦衣世职者数人，岁时赏赉不可胜纪。显纯等加官亦如之。忠贤败，言者交劾，下吏论死。崇祯元年六月与显纯并伏诛。
 </p><p>显纯，定兴人，驸马都尉从诚孙也。举武会试，擢锦衣卫都指挥佥事。天启四年，刘侨掌镇抚司，治汪文言狱，失忠贤指，得罪，以显纯代之。显纯略晓文墨，性残酷，大狱频兴，毒刑锻练，杨涟、左光斗、周顺昌、黄尊素、王之寀、夏之令等十余人，皆死其手。诸人供状，皆显纯自为之。每谳鞫，忠贤必遣人坐其后，谓之听记，其人偶不至，即袖手不敢问。
 </p><p>应元，大兴人。市井无赖，充校尉，冒缉捕功，积官至锦衣指挥。云鹤，霸州人，为东厂理刑官。寰，吴县人。隶籍锦衣，为东司理刑。凡显纯杀人事，皆应元等共为之。而寰为田尔耕心腹。及显纯论死，法司止当应元、云鹤、寰戍。后定逆案，三人并论死，寰先死戍所。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百九十三章-卷一百九十三-原文.html'>第一百九十三章-卷一百九十三</a></p><p class='next'>下一节：<a href='第一百九十五章-卷一百九十五-原文.html'>第一百九十五章-卷一百九十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百九十三章-卷一百九十三-原文.html'>第一百九十三章-卷一百九十三</a></p><p class='next'>下一节：<a href='第一百九十五章-卷一百九十五-原文.html'>第一百九十五章-卷一百九十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>南史-白话版南史<a href='../南史.html#南史'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>文学传论<span style='font-size:small'> 白话</span></h1>
 <p>评论：文章，可说是情感的标志，精神的乐律。潜藏的思绪，蕴含的萌想，在内心酝酿激荡，纵情挥发写在纸上，格调意境便自然生成。它们无不带有灵性，各自好尚不同，技巧各异，见解感悟也多种多样，心灵感应没有外象表露，但却变化无穷。弹奏五声的音响，而出言语句相异，描绘万物的情貌，而下笔形状不同。从心灵奔畅而出，宣示在书帛上。或许它不能穷尽所有的要言妙道，然而它使人心解脱束缚的特性，始终养育着勤奋好学之士，因此古代的贤明之人，都爱在这项上下功夫。至于像丘灵鞠等人，有的能够承传文学事业，有的对此矢志追求，虽然在仕途上有得意有不得意，但他们的名字却能流传下来不被磨灭。</p>
-<div class='pn'><p class='pre'>上一节：<a href='刘勰传-白话.html'>刘勰传</a></p><p class='next'>下一节：<a href='郭世通传-白话.html'>郭世通传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='刘勰传-白话.html'>刘勰传</a></p><p class='next'>下一节：<a href='郭世通传-白话.html'>郭世通传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

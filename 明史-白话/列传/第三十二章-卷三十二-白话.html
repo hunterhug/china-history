@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -175,5 +202,18 @@
 </p><p>建文元年(1399)，顾成为左军都督，随耿炳文抵御燕兵，战于真定，被捉。燕王解开捆绑他的绳索，说道：“这是上天把你交给我。”然后将他送回北平，辅助世子留守。南军围城时，城中一切防御、调度都听从于顾成。燕王即位后，论功时，顾成被封为镇远侯，食禄一千五百石，并被授予世袭凭证，仍奉命镇守贵州。
 </p><p>永乐元年(1403)，顾成上书，请求在西北边境严加防备，并及早修建东宫。皇上褒奖了他。六年三月，他应召至京，被赏赐黄金、布帛，又返回贵州。思州宣慰使田琛与思南宣慰使田宗鼎兴兵，皇上诏令顾成率兵五万压境，田琛等被俘。于是在思州、思南分别改设州县，遂设贵州布政司。这年八月，台罗苗普亮等作乱，皇上诏令顾成率二都司三卫兵讨平之。
 </p><p>顾成性情忠诚、谨慎，广泛涉猎文史书籍。他开始住在北平，多为出谋划策，但始终不肯统兵，赏赐兵器也不接受。后来镇守贵州，屡次平定播州、都匀诸叛蛮，威震南中，土人为此设生祠祭祀他。他被召至京，受命辅佐太子监国。顾成叩首说道“：太子仁爱、英明，廷臣都很贤能，辅佐之事非愚臣所及，请求回去防备诸蛮。”当时群臣图谋夺嫡立庶，太子心中不安。顾成到文华殿辞行，趁机安慰道“：殿下只须竭诚孝敬，体恤百姓，万事在天，不必在意那些小人。”十二年(1414)五月，顾成去世，终年八十五岁。被追赠为夏国公，谥号武毅。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十一章-卷三十一-白话.html'>第三十一章-卷三十一</a></p><p class='next'>下一节：<a href='第三十三章-卷三十三-白话.html'>第三十三章-卷三十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十一章-卷三十一-白话.html'>第三十一章-卷三十一</a></p><p class='next'>下一节：<a href='第三十三章-卷三十三-白话.html'>第三十三章-卷三十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

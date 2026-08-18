@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>梁书-白话版梁书<a href='../梁书.html#梁书'>：目录</a></p>
@@ -160,5 +187,18 @@
 </p><p>						祐为侍中、领军将军，召他回到荆州。<BR><BR>　　承圣二年(553)，胡僧祐升任车骑将军、开府仪同三司，其余官职不变。西魏入侵时，梁元帝任命胡僧
 </p><p>						祐为都督城东诸军事。西魏军队从四面发起进攻，各路军队同时袭来，胡僧祐亲临战场，昼夜督战，鼓励将士们英勇杀敌，加之赏罚分明，将士们深为所感，都愿意以死相报，所到之处摧枯拉朽，西魏军队畏缩不敢向前。可是没多久，胡僧
 </p><p>						祐被对方冷箭射中，当场身亡，时年六十三岁。梁元帝闻讯，骑马赶到战场痛哭。于是内外惊惧惶恐，荆州城被西魏攻陷了。</p>
-<div class='pn'><p class='pre'>上一节：<a href='王僧辩传(附王..传)-白话.html'>王僧辩传(附王..传)</a></p><p class='next'>下一节：<a href='徐文盛传-白话.html'>徐文盛传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='王僧辩传(附王..传)-白话.html'>王僧辩传(附王..传)</a></p><p class='next'>下一节：<a href='徐文盛传-白话.html'>徐文盛传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

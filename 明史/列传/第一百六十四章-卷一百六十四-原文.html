@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -220,5 +247,18 @@
 </p><p>沈宸荃，慈谿人。崇祯十三年进士。授行人，奉使旋里。福王立，复命。擢御史，疏陈五事，皆切时病。已，论群臣丑正党邪，请王卧薪尝胆，为雪耻报仇之计。寻荐词臣黄道周、刘同升、葛世俊、徐氵幵、吴伟业等。又言：“经略山东、河南者，王永吉、张缙彦也。永吉失机，先帝拔为总督，拥兵近甸，不救国危。缙彦官部曹，先帝骤擢典中枢，乃率先从贼。即加二人极刑，不为过。陛下屈法用之，而永吉观望逗遛，缙彦狼狈南窜。死何以对先帝，生何以对陛下。昌平巡抚何谦失陷诸陵，罪亦当按。都城既陷，守土臣宜皆厉兵秣马，以报国仇，乃贼尘未扬，辄先去以为民望。如河道总督黄希宪、山东巡抚丘祖德，尚可容偃卧家园乎！”疏入，谦、祖德等皆命逮治，永吉、缙彦不罪。时朝政大乱，宸荃独持正，要人多疾之。明年以年例出为苏松兵备佥事。未赴，南都破，宸荃举兵邑中。鲁王监国，擢右佥都御史。已而事败，宸荃弃家从王海外。王次长垣，连擢至大学士。从王于舟山，又从泛海抵厦门、金门。后舣舟南日山，遭风，没于海。
 </p><p>其邑子沈履祥尝为知县，监国时，以御史督饷台州。城破，避山中，被获死之。
 </p><p>赞曰：自甲申以后，明祚既终，不逾年而南都亦覆，势固无可为矣。朱大典、张国维等抱区区之义，徒假名号于海滨，以支旦夕。而上替下陵，事无统纪，欲以收偏安之效，何可得乎。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百六十三章-卷一百六十三-原文.html'>第一百六十三章-卷一百六十三</a></p><p class='next'>下一节：<a href='第一百六十五章-卷一百六十五-原文.html'>第一百六十五章-卷一百六十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百六十三章-卷一百六十三-原文.html'>第一百六十三章-卷一百六十三</a></p><p class='next'>下一节：<a href='第一百六十五章-卷一百六十五-原文.html'>第一百六十五章-卷一百六十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

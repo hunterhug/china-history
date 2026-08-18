@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -195,5 +222,18 @@
 </p><p>五年夏，赦归。瑾诛，复官，致仕。清军御史王相请复廪隶，录其子孙。中官用事者终嗛之，不许。大夏归，教子孙力田谋食。稍赢，散之故旧宗族。预自为圹志，曰：“无使人饰美，俾怀愧地下也。”十一年五月卒，年八十一。赠太保，谥忠宣。
 </p><p>大夏尝言：“居官以正己为先。不独当戒利，亦当远名。”又言：“人生盖棺论定，一日未死，即一日忧责未已。”其被逮也，方锄菜园中，入室携数百钱，跨小驴就道。赦归，有门下生为巡抚者，枉百里谒之。道遇扶犁者，问孰为尚书家，引之登堂，即大夏也。朝鲜使者在鸿胪寺馆遇大夏邑子张生，因问起居曰：“吾国闻刘东山名久矣。”安南使者入贡曰：“闻刘尚书戍边，今安否？”其为外国所重如此。
 </p><p>赞曰：王恕砥砺风节，马文升练达政体，刘大夏笃棐自将，皆具经国之远猷，蕴畜君之正志。绸缪庶务，数进谠言，迹其居心行己，磊落光明，刚方鲠亮，有古大臣节概。历事累朝，享有眉寿，朝野属望，名重远方。《诗》颂老成，《书》称黄发，三臣者近之矣。恕昧远名之戒，以作传见疏。而文升，大夏被遇孝宗之朝，明良相契，荃宰一心。迨至宦竖乘权，耆旧摈斥，进退之际所系讵不重哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十九章-卷六十九-原文.html'>第六十九章-卷六十九</a></p><p class='next'>下一节：<a href='第七十一章-卷七十一-原文.html'>第七十一章-卷七十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十九章-卷六十九-原文.html'>第六十九章-卷六十九</a></p><p class='next'>下一节：<a href='第七十一章-卷七十一-原文.html'>第七十一章-卷七十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

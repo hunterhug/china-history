@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-本纪<a href='../新五代史.html#新五代史'>：目录</a></p>
@@ -163,5 +190,18 @@
 </p><p>广顺二年(952)正月七日，派侍卫步军都指挥使曹英为兖州行营都部署。十三日，高丽王昭使者广评侍郎徐逢来。二月四日，府州防御使折德..攻克岢岚军。三月一日，寒食节，望祭于郊外。十二日，任内客省使郑仁诲为枢密副使，翟光邺罢职。五月五日，东征，李谷留守东都，郑仁诲为大内都点检。八日，到曹州，赦流放罪以下囚犯。二十日，攻克兖州。二十七日，赦兖州。六月一日，到曲阜，祭孔子。十六日，从兖州回到京城。九月十二日，派太仆少卿王演出使高丽。契丹侵犯边境。
 </p><p>广顺三年(953)正月四日，麟州刺史杨重训叛北汉来归附。闰正月五日，回鹘使者独呈相温来。二月十四日，贬王峻为商州司马。三月五日，封柴荣为晋王。七日，郑仁诲罢职。十日，任棣州团练使王仁镐为右卫大将军、枢密副使。六月，大雨、水灾。七月，契丹卢台军使张藏英来访。九月，吐浑党富达等来。十月十三日，冯道为奉迎神主使。十一月七日，党项使者吴忄占磨五等来。十二月，四庙神主从西京迁到京城，到西郊迎接，安放到太庙。二十六日，杀天雄军节度使王殷。二十九日，祭太庙。
 </p><p>显德元年(954)正月一日，在南郊祭天，大赦，改元，群臣上尊号曰圣明文武仁德皇帝。三日，取消邺都。十一日，使命镇宁军节度使郑仁诲为枢密使。十七日，任端明殿学士、户部侍郎王溥为中书侍郎、同中书门下平章事。王仁镐罢职。当天，皇帝死于滋德殿。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十章-汉本纪第十-白话.html'>第十章-汉本纪第十</a></p><p class='next'>下一节：<a href='第十二章-周本纪第十二-白话.html'>第十二章-周本纪第十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十章-汉本纪第十-白话.html'>第十章-汉本纪第十</a></p><p class='next'>下一节：<a href='第十二章-周本纪第十二-白话.html'>第十二章-周本纪第十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

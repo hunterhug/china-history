@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>宋书-志<a href='../宋书.html#志'>：目录</a></p>
@@ -205,5 +232,18 @@
 </p><p>晋武帝咸宁四年四月，蚩尤旗见。案《星传》，蚩尤旗类彗，而后曲象旗。汉武帝时见，长竟天。献帝时又见，长十余丈，皆长星也。魏高贵时则为白气。案校众记，是岁无长星，宜又是异气。后二年，倾三方伐吴，是其应。至武帝崩，天下兵又起，遂亡诸夏。咸宁四年九月，太白当见不见。占曰：“是谓失舍，不有破军，必有死王之墓。又有亡国。”是时羊祜表求伐吴，上许之。五年十一月，兵出，太白始夕见西方。太康元年三月，大破吴军，孙皓面缚请死，吴国遂亡。
 </p><p>晋武帝太康二年八月，有星孛于张。占曰：“为兵丧。”周分野，灾在洛邑。十一月，星孛轩辕。占曰：“后宫当之。”四年三月戊申，星孛于西南。四年三月癸丑，齐王攸薨。四月戊寅，任城王陵薨。五月己亥，琅邪王伷薨。十一月戊午，新都王该薨。
 </p><p>太康八年三月，荧惑守心。占曰：“王者恶之。”太熙元年四月己酉，武帝崩。太康八年九月，星孛于南斗，长数十丈，十余日灭。占曰：“斗主爵禄，国有大忧。”一曰：“孛于斗，王者疾病，臣诛其父，天下易政，大乱兵起。”太熙元年四月，客星在紫宫。占曰：“为兵丧。”太康末，武帝耽宴游，多疾病。是月乙酉，帝崩。永平元年，贾后诛杨骏及其党与，皆夷三族；杨太后亦见杀。是年，又诛汝南王亮、太保卫瓘、楚王玮，王室兵丧之应。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十二章-卷二十二-原文.html'>第十二章-卷二十二</a></p><p class='next'>下一节：<a href='第十四章-卷二十四-原文.html'>第十四章-卷二十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十二章-卷二十二-原文.html'>第十二章-卷二十二</a></p><p class='next'>下一节：<a href='第十四章-卷二十四-原文.html'>第十四章-卷二十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

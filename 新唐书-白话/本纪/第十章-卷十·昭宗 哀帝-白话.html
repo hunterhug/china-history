@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新唐书-本纪<a href='../新唐书.html#新唐书'>：目录</a></p>
@@ -348,5 +375,18 @@
 </p><p>天祐四年(907)三月，刘守光囚禁他的父亲刘仁恭，自称为幽州卢龙军节度使。
 </p><p>四月十二日，钱升攻破温州。十八日，哀帝让位，迁居曹州，号称济阴王。后梁太祖开平二年(908)二月，李木兄遇害身亡，年纪十七岁，谥号为哀帝。后唐明宗时，追赠李木兄号为昭宣光烈孝皇帝，陵墓称温陵。
 </p><p>评说：自古以来，国家灭亡，不一定都是愚昧无能、暴虐无道的君主。导致亡国的祸乱，由逐渐累积而成，等到它大势已去，适逢他正当位之时，这时他纵然有智有勇，终有无能为力之处了，实在可说是真正的不幸，昭宗就是这样一个君主。昭宗为人明智、才能出众，开初也有志于兴邦复国，然而，朝廷之外祸患已经酿成，朝廷之内没有贤臣辅佐；他也经常慨叹朝中无人，希望得到不同寻常的人才，却又用人不当，只是更加添乱。自从唐朝灭亡，它遗留下的祸患灾难，历经五代五十余年时间，致使天下四分五裂，败坏已尽、动乱至极之后才告终止。推考唐朝灭亡的祸乱，它是逐渐累积而成，而非一朝一夕的事情。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九·懿宗 僖宗-白话.html'>第九章-卷九·懿宗 僖宗</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九·懿宗 僖宗-白话.html'>第九章-卷九·懿宗 僖宗</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

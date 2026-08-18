@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -213,5 +240,18 @@
 </p><p>衮本名蒲甲，亦作蒲家，桀惊强悍。海陵不喜其为人。初为辅国上将军。天德初，加特进，封王，为吏部尚书，判大宗正事。坐语禁中起居状，兵部侍郎萧恭首问，护卫张九具言之。海陵亲问。恭夺官解职，张九对不以实，特处死，衮与翰林学士承旨宗秀、护卫麻吉、小底王之章皆决杖有差。海陵自是愈忌之。未几，授猛安。
 </p><p>及迁中都，道中以蒲家为西京留守。西京兵马完颜谟卢瓦与蒲家有旧，同在西京，遂相往来。蒲家尝以玉带遗之。蒲家称谟卢瓦骁勇不减尉迟敬德。编修官圆福奴之妻与蒲家姻戚，圆福奴尝戒蒲家曰：“大王名太彰著，宜少谦晦。”蒲家心知海陵忌之，尝召日者问休咎。家奴喝里知海陵疑蒲家，乃上变告之，言与谟卢瓦等谋反，尝召日者问天命。御史大夫高桢、刑部侍郎耶律慎须吕就西京鞫之，无状。海陵怒，使使者往械蒲家等至中都，不复究问，斩之于市。谟卢瓦、圆福奴并日者皆凌迟处死。
 </p><p>赞曰：金议礼制度，班爵禄，正刑法，治历明时，行天子之事，成一代之典，杲、宗干经始之功多矣。杲子宗义为海陵所杀，宗干之后又不幸而有海陵，故其子孙之昌炽既鲜，而亦不免于僇辱焉。秦、汉而下，宗臣世家与国匹休者，何其少欤。君子于此，可以观世变矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十三章-卷十三-原文.html'>第十三章-卷十三</a></p><p class='next'>下一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十三章-卷十三-原文.html'>第十三章-卷十三</a></p><p class='next'>下一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-本纪<a href='../旧唐书.html#本纪'>：目录</a></p>
@@ -267,5 +294,18 @@
 </p><p>二十一年春正月辛未朔，御含元殿受朝贺。是日，上不康。丙子，以浙东观察判官凌准为翰林学士，癸巳，会郡臣于宣政殿，宣遗诏：皇太子宜于柩前即位。是日，上崩于会宁殿，享寿六十四。甲午，迁神柩于太极殿。丙申，发丧，群臣缟素。皇太子即位。永贞元年九月丁卯，群臣上谥曰神武孝文，庙号德宗。十月己酉，葬于崇陵，昭德皇后王氏祔焉。
 </p><p>史臣曰：德宗皇帝初总万机，励精治道。思政若渴，视民如伤。凝旒延纳于谠言，侧席思求于多士。其始也，去无名之费，罢不急之官；出永巷之嫔嫱，放文单之驯象；减太官之膳，诫服玩之奢；解鹰犬而放伶伦，止榷酤而绝贡奉。百神咸秩，五典克从，御正殿而策贤良，辍廷臣而治畿甸。此皆前王之能事，有国之大猷，率是而行，夫何敢议。加以天才秀茂，文思雕华。洒翰金銮，无愧淮南之作；属辞铅椠，何惭陇坻之书。文雅中兴，夐高前代，《二南》三祖，岂盛于兹。然而王霸迹殊，淳醨代变，揆时而理，斟酌斯难。苟于交丧之秋，轻取鄙夫之论，历观近世，靡不败亡。德宗在籓齿胄之年，曾为统帅；及出震承乾之日，颇负经纶。故从初罢郭令戎权，非次听杨炎谬计，遂欲混同华裔，束缚奸豪，南行襄汉之诛，北举恆阳之代。出车云扰，命将星繁，罄国用不足以餽军，竭民力未闻于破贼。一旦德音扫地，愁叹连甍，果致五盗僭拟于天王，二硃凭陵于宗社，奉天之窘，可为涕零，罪已之言，补之何益。所赖忠臣戮力，否运再昌。虽知非竟逐于杨炎，而受佞不忘于卢杞。用延赏之私怨，夺李晟之兵符；取延龄之奸谋。罢陆贽之相位，知人则哲，其若是乎！贞元之辰，吾道穷矣。
 </p><p>赞曰：聪明文思，惟睿作圣。保奸伤善，听断不令。御历三九，适逢天幸。赐宴之辰，徒矜篇咏。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p><p class='next'>下一节：<a href='第十四章-卷十四-原文.html'>第十四章-卷十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p><p class='next'>下一节：<a href='第十四章-卷十四-原文.html'>第十四章-卷十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

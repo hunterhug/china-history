@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -205,5 +232,18 @@
 </p><p>四十六年，郑继之去，兼摄吏部事。畿辅、陕西大饥，汝华请振，皆不报。辽东兵事兴，骤增饷三百万。汝华累请发内帑不得，则借支南京部帑，括天下库藏余积，征宿逋，裁工食，开事例。而辽东巡抚周永春请益兵加赋，汝华议：天下田赋，自贵州外，亩增银三厘五毫，得饷二百万。明年，复议益兵增赋如前。又明年四月，兵部以募兵市马，工部以制器，再议增赋。于是亩增二厘，为银百二十万。先后三增赋，凡五百二十万有奇，遂为岁额。当是时，内帑山积，廷臣请发，率不应。计臣无如何，遂为一切苟且之计，苛敛百姓。而枢臣征兵，乃远及蛮方，致奢崇明、安邦彦相继反，用师连年。又割四川、云南、广西、湖广、广东所加之赋以饷之，而辽饷仍不充，天下已不可支矣。
 </p><p>汝华练达勤敏，立朝无党阿。官户部久，于国计赢缩，边储虚实，与盐漕屯牧诸大政，皆殚心裁剂。岁比不登，意常主宽恤，独加赋之议不能力持，驯致万方虚耗，内外交讧。天启元年得疾乞休，加太子太保致仕。卒，谥恭敏。从子梦辰，自有传。
 </p><p>赞曰：古称文昌政本，七卿之任，盖其重矣。万士和诸人奉职勤虑，异夫依阿保位之流；刘应节、王遴、舒化、李世达尤其卓然者哉。李汝华司邦计，值兵兴饷绌，请帑不应，乃不能以去就争，而权宜取济，遂与裒刻聚敛者同讥。时事至此，其可叹也夫！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百零七章-卷一百零七-原文.html'>第一百零七章-卷一百零七</a></p><p class='next'>下一节：<a href='第一百零九章-卷一百零九-原文.html'>第一百零九章-卷一百零九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百零七章-卷一百零七-原文.html'>第一百零七章-卷一百零七</a></p><p class='next'>下一节：<a href='第一百零九章-卷一百零九-原文.html'>第一百零九章-卷一百零九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

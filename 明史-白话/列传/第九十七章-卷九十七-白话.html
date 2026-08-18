@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -227,5 +254,18 @@
 </p><p>居守御史不久，疏章却多次呈上。说提学宪臣应当注意操行道义，府州县职应当根据地方繁简分为三等，皇帝都批复准可。俺答入犯，朝廷讨论紧急兵事。杨允绳请求让五军督都府、府军前卫和锦衣卫堂上官，每遇考选军政之年，各具疏章自己陈述，听科道官补充；腾骧四卫及锦衣卫指挥以下，听兵部考察。皇帝下诏令采纳他的意见，并确定为条例。之后，又上陈御边四事，皇上批复许可。再迁户科左给事中。因病辞官回到家乡。过了许久，被起用为原官职。
 </p><p>三十四年(1555)九月杨允绳上疏说倭寇的祸患，由此推到祸弊的根源说：“近来督抚的命令不被有司执行，不是官不尊、权不重的缘故。督抚到位，按惯例要贿赂权要，这称为‘谢礼’。如果有所奏请，则要佐以贿赂，这名叫‘候礼’。那些任满营迁的、避难请求离去的、犯罪想弥补过失的、失事希望遮蔽掩盖的，更是输贿载道，为数不可估量。督抚取之于诸位有司，有司取之于诸小民。有司以恩德之色以事上，督抚以愧色接下。上下相蒙，风俗不振。不肖的官吏又侵吞其间，上面要一份，他就十倍征收。孑遗待尽的贫民必将铤而走险去做强盗，隐忧不止海岛之间。”
 </p><p>这一年冬天巡视光禄。光禄丞胡膏伪增物价，杨允绳和同事御史张巽言弹劾他。胡膏被下到法司考察核实。胡膏窘迫，说：“祭祀隆重，所用物品，不敢只取来充数。杨允绳憎恶我选择太精，斥言醮斋之用，取具就可以了，何必精选，他欺谤修德之业竟是如此。”皇帝大怒，将杨允绳和胡膏下诏狱。刑部尚书何鳌以杨允绳倚仗内诉事不实律的罪要绞死他，皇帝仍命令将杨允绳和张巽言在朝廷上杖打。张巽言被剥夺三官，胡膏被调出朝廷外任。过了五年，杨允绳竟被处死于西市。在这以前，有个叫马从谦的人，因诽谤醮斋被杖打死。穆宗即位，赠杨允绳光禄少卿，给予他一子官职。天启年初期，谥号忠恪。胡膏不久因贪墨而被弹劾，伏诛。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九十六章-卷九十六-白话.html'>第九十六章-卷九十六</a></p><p class='next'>下一节：<a href='第九十八章-卷九十八-白话.html'>第九十八章-卷九十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九十六章-卷九十六-白话.html'>第九十六章-卷九十六</a></p><p class='next'>下一节：<a href='第九十八章-卷九十八-白话.html'>第九十八章-卷九十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

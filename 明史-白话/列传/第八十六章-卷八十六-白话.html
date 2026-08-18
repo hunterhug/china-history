@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -210,5 +237,18 @@
 </p><p>第二年秋天，大同出了事，督抚郭宗皋、陈耀被逮捕，朝廷诏令万达出来接任宗皋的职务。万达正害着疽疮，结庐在父亲坟边居住，上书请让自己守完三年之丧。奏本没到京，俺答率兵来犯京城了，兵部尚书丁汝夔被问了罪，世宗就让万达接替他。万达家在岭南，距离京城八千里远，他昼夜兼程走了四十天才临近京城。当时敌人正气势嚣张，世宗一天到晚等着万达来，嫌他来迟，就问严嵩是怎么回事。严嵩本来就不喜欢万达，现在就说敌人在眼皮底下，大臣们都坐地观望，不是过去那种君主传唤不等车驾好就立即赶来的道理了。世宗于是让王邦瑞当了兵部尚书。不几天万达到了，上书说明来得迟缓的原因，世宗批评他哄骗主上，考虑他正在守丧，就暂且免职，等候别的任命。仇鸾当时做着大将军，正受世宗的宠信，他记恨万达的旧仇，就向世宗进谗言，万达于是失去了世宗的喜爱，被降为兵部右侍郎兼右佥都御史，派往经略紫荆等处边关。
 </p><p>三十年(1551)二月，京官进行考评，万达自己上奏时请求回家把丧守完。世宗怀疑他避事自保，就免了他当时的职务让他还乡。临近告别，他上书谢恩，又被摘取了奏章中的白字，批评他大不敬，罢官为民。第二年十月，兵部尚书赵锦因为投靠仇鸾被发配充军，世宗又启用万达来接替他。万达还没有接到任命就死了，终年五十五岁。
 </p><p>万达对父母很孝顺，父亲死后，他亲自背土堆成坟。生平喜欢讲求性命理学，与欧阳德、罗洪先、唐顺之、王畿、魏良政很友好。学通古今，下笔立成万言。为人刚正、坦直，勇于承担责任，面对艰难困苦，意气越是豪迈。他在战场上曾经身先士卒，治军尤其擅长驾御部下的将士，能让他们以死相报。嘉靖年间，边臣中办事恰当，主张切合实际的，万达可以称为第一。隆庆中，朝廷才追谥他为“襄毅”。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十五章-卷八十五-白话.html'>第八十五章-卷八十五</a></p><p class='next'>下一节：<a href='第八十七章-卷八十七-白话.html'>第八十七章-卷八十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八十五章-卷八十五-白话.html'>第八十五章-卷八十五</a></p><p class='next'>下一节：<a href='第八十七章-卷八十七-白话.html'>第八十七章-卷八十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

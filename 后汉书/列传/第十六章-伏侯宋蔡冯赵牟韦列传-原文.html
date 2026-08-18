@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#列传'>：目录</a></p>
@@ -224,5 +251,18 @@
 </p><p>义少与二兄齐名，初仕州郡。太傅桓焉辟举理剧，为广都长，甘陵、陈二县令，政甚有绩，官曹无事，牢狱空虚。数上书顺帝，陈宜依古典，考功黜陟，征集名儒，大定其制。又讥切左右，贬刺窦氏。言既无感，而久抑不迁，以兄顺丧去官。比辟公府，不就。广都为生立庙。及卒，三县吏民为义举哀，若丧考妣。
 </p><p>豹子著，字休明。少以经行知名，不应州郡之命。大将军梁冀辟，不就。延熹二年，桓帝公车备礼征，至霸陵，称病归，乃入云阳山，采药不反。有司举奏加罪，帝特原之。复诏京兆尹重以礼敦劝，著遂不就征。灵帝即位，中常侍曹节以陈蕃、窦氏既诛，海内多怨，欲借宠时贤以为名，白帝就家拜著东海相。诏书逼切，不得已，解巾之郡。政任威刑，为受罚者所奏，坐论输左校。又后妻骄姿乱政，以之失名，竟归，为奸人所害，隐者耻之。
 </p><p>赞曰：“湛、霸奋庸，维宁两邦。淮人孺慕，徐寇要降。弘实体远，仁不忘本。憙政多迹，彪明理损。牟公简帝，身终上衮。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十五章-卓鲁魏刘列传-原文.html'>第十五章-卓鲁魏刘列传</a></p><p class='next'>下一节：<a href='第十七章-宣张二王杜郭吴承郑赵-原文.html'>第十七章-宣张二王杜郭吴承郑赵</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十五章-卓鲁魏刘列传-原文.html'>第十五章-卓鲁魏刘列传</a></p><p class='next'>下一节：<a href='第十七章-宣张二王杜郭吴承郑赵-原文.html'>第十七章-宣张二王杜郭吴承郑赵</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

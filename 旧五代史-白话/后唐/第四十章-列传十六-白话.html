@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后唐<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -157,5 +184,18 @@
 </p><p>唐庄宗进入汴州，消灭梁朝，王晏球带骑兵去救援，走到封丘，听说梁末帝已经死了，就放下武器向庄宗投降。第二年，与霍彦威在北边抵抗契丹，授齐州防御使、北面行营马军都指挥使，又赐国姓李，名叫绍虔。邺州内乱时，明宗去救内难，王晏球当时在瓦桥，明宗派人征召他。明宗到汴州，王晏球率骑兵跟着到了京师，以平定内难有功授宋州节度使，王晏球上表章请求恢复原来姓名。
 </p><p>明宗天成二年(927)，授北面行营副招讨，用兵守卫满城。这一年，王都占据定州，契丹派秃馁率一千多骑兵来援助王都，突进到定州，王晏球撤军保曲阳。王都、秃馁进军接战，王晏球督促军士，令短兵杀敌，警告军士说：“回头退却者处死。”符彦卿带龙武左军攻敌人左边，高行周以龙武右军攻敌人右边，奋剑挥木过，手起头落，敌军在嘉山之下大败，唐军追击到城门。不久契丹首领惕隐率五千骑兵到唐河。这时下大雨，王晏球出兵迎战，惕隐又被打败，唐军追杀到易州，河水暴涨，所到地方都被淹没，俘获二千骑兵而回，惕隐带剩下的残兵往北去幽州，赵德钧令牙将武从谏带骑兵截击，赵德钧分别把守各条要道。十来天之间，全部抓获惕隐以下酋长七百多人，契丹于是衰弱下去。王晏球包围定州城已很久，皇帝派使者督促攻城，王晏球说“；敌人壁垒森严，只要收取三州的租税，爱抚百姓，养护士兵，敌人自然会从内部溃烂。”皇帝同意了他的话。
 </p><p>王晏球能和将士同甘共苦，得到的俸禄赏赐等私财，全部分给士兵，每天具办饮食，和将校们宴饮，对待军士有礼，军中没有不尊敬他的。这年冬天，平定敌军。从开始作战到攻下敌城，不杀一士，上下欢欣，舆论认为他有将帅风度。以军功授天平军节度使，没多久，调到青州，加兼中书令。长兴三年(932)，死在任职的地方，终年六十岁。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十九章-列传十五-白话.html'>第三十九章-列传十五</a></p><p class='next'>下一节：<a href='第四十一章-列传十七-白话.html'>第四十一章-列传十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十九章-列传十五-白话.html'>第三十九章-列传十五</a></p><p class='next'>下一节：<a href='第四十一章-列传十七-白话.html'>第四十一章-列传十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

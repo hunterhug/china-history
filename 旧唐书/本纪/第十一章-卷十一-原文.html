@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-本纪<a href='../旧唐书.html#本纪'>：目录</a></p>
@@ -253,5 +280,18 @@
 </p><p>夏四月癸未，成德军节度使张宝臣复请姓李，从之。五月癸卯，上不康，至辛亥，不视朝。北都留守鲍防以北庭归朝。辛酉，诏皇太子监国。是夕，上崩于紫宸之内殿。遗诏皇太子柩前即位。壬戌，迁神柩于太极殿，发丧。八月庚申，群臣上尊谥曰睿文孝武皇帝，庙号代宗。十月己酉，葬于元陵。十二月丁酉，祔于太庙。
 </p><p>史臣曰：呜呼，治道之失也，若河决金堤，火炎昆岗，虽神禹之乘四载，玄冥之洒八瀛，亦不能堙洪涛而扑烈焰者，何也？良以势既坏而不能遽救也。观夫开元之治也，则横制六合，骏奔百蛮；及天宝之乱也，天子不能守两都，诸侯不能安九牧。是知有天下者，治道其可忽乎！明皇之失驭也，则思明再陷于河洛；大历之失驭也，则怀恩乡导于犬戎。自三盗合从，九州羹沸，军士膏于原野，民力殚于转输，室家相吊，人不聊生，而子仪号泣于用兵，元载殷忧于避狄。然而代宗皇帝少属乱离，老于军旅，识人间之情伪，知稼穑之艰难，内有李、郭之效忠，外有昆戎之幸利。遂得凶渠传首，叛党革心，关辅载宁，獯戎渐弭。至如稔辅国之恶，议元振之罪，去朝恩之权，不以酷刑，俾之自咎，亦立法念功之旨也。罪己以伤仆固，彻乐而悼神功，惩缙、载之奸回，重衮、绾之儒雅，修己以禳星变，侧身以谢咎征，古之贤君，未能及此。而犹有李灵耀作梗，田承嗣负恩，命将出军，劳师弊赋者，盖阳九之未泰，岂君道之过欤！
 </p><p>赞曰：群盗方梗，诸戎竞侵。猛士尝胆，忠臣痛心。扫除沴气，敷衍德音。延洪纳祉，帝虑何深。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p><p class='next'>下一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p><p class='next'>下一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

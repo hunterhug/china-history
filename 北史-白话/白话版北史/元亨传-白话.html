@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>北史-白话版北史<a href='../北史.html#北史'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>元亨传<span style='font-size:small'> 白话</span></h1>
 <p>元亨是元季海的儿子，字德良，一名叫孝才。当周和齐分隔成两国时，他只有几岁。他和母亲李氏住在洛阳。北齐神武帝因为元亨的父亲随孝武帝到关中，就把他们关了起来。他的母亲便说饥寒交迫，因而到汤阴就食。母亲托大豪族李长寿，带着亨和几位失去父母的侄子，到达长安。周文帝因为他是功臣的儿子，对他很敬重。大统末年，袭爵为冯翊王，累迁至勋州刺史，改封平凉王。周受禅以后，依例降为公爵。隋文帝受禅时，从洛州刺史召回任太常卿。不久又出任卫州刺史。在职八年时间，风俗大为变化，民众和睦相处。后来他因年老有病请求退休，官吏和民众到朝廷上表挽留，皇帝赞叹不已。这一年，元亨病重，再次请求回京，皇帝派使者送医送药，询问病情。去看望的使者在路上连续不断。他死在家中，谥号为“宣”。</p>
-<div class='pn'><p class='pre'>上一节：<a href='元淑传-白话.html'>元淑传</a></p><p class='next'>下一节：<a href='陈留王拓跋虔传-白话.html'>陈留王拓跋虔传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='元淑传-白话.html'>元淑传</a></p><p class='next'>下一节：<a href='陈留王拓跋虔传-白话.html'>陈留王拓跋虔传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

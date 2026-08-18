@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -201,5 +228,18 @@
 </p><p>刘渊然者，赣县人。幼为祥符宫道士，颇能呼召风雷。洪武二十六年，太社闻其名，召至，赐号高道，馆朝天宫。永乐中，从至北京。仁宗立，赐号长春真人，给二品印诰，与正一真人等。宣德初，进大真人。七年乞归朝天宫，御制山水图歌赐之。卒年八十二，阅七日入殓，端坐如生。渊然有道术，为人清静自守，故为累朝所礼。其徒有邵以正者，云南人，早得法于渊然。渊然请老，荐之，召为道箓司左玄义。正统中，迁左正一，领京师道教事。景泰时，赐号悟玄养素凝神冲默阐微振法通妙真人。天顺三年，将行庆成宴。故事，真人列二品班末，至是，帝曰：“殿上宴文武官，真人安得与。”其送筵席与之，遂为制。
 </p><p>又有沈道宁者，亦有道术。仁宗初，命为混元纯一冲虚湛寂清静无为承宣布泽助国佐民广大至道高士，阶正三品，赐以法服。
 </p><p>时有浮屠智光者，亦赐号圆融妙慧净觉弘济辅国光范衍教灌顶广善大国师，赐以金印。智光，武定人。洪武时，奉命两使乌斯藏诸国。永乐时，又使乌斯藏，迎尚师哈立麻，遂通番国诸经，多所译解。历事六朝，宠锡冠群僧，与渊然辈淡泊自甘，不失戒行。迨成化、正德、嘉靖朝，邪妄杂进，恩宠滥加，所由与先朝异矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百八十六章-卷一百八十六-原文.html'>第一百八十六章-卷一百八十六</a></p><p class='next'>下一节：<a href='第一百八十八章-卷一百八十八-原文.html'>第一百八十八章-卷一百八十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百八十六章-卷一百八十六-原文.html'>第一百八十六章-卷一百八十六</a></p><p class='next'>下一节：<a href='第一百八十八章-卷一百八十八-原文.html'>第一百八十八章-卷一百八十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

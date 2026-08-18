@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -204,5 +231,18 @@
 </p><p>播州容山的副长官土舍韩甸与正长宫土舍张问相互攻击，韩甸多次取得胜利，于是他纠集生苗在湖、贵境内抢劫，将近二十年。张问也纠集党徒自助。石邦宪讨伐张问，斩敌一百多人，张问潜逃，被擒获。官军乘胜攻入韩甸的巢穴。遇上天黑，下大雨，官军迷失路径。守备叶勋、百户魏国相等人陷入埋伏之中，战死。石邦宪突围而出，带军回到镇远。再次征讨韩甸，敌贼沿江防守。石邦宪佯装与他抗争，而另外从上游三十里处缚竹渡江。水陆并进，大破敌贼。斩杀韩甸，容山被平定。石邦宪晋右都督。
 </p><p>不久石邦宪与巡抚吴维岳招降平州叛酋杨珂，剿平龙里卫敌贼阿利等人。在这个时候，水西宣慰安国亨恃众跋扈，谒见上官时，辞色不善，往往煽动兵众喧哗鼓噪而出。石邦宪召见他谴责说“：你想造反吗？我看见你如釜中的游鱼。你的兵与云、贵、川、湖的兵相比谁的多？你有四十八个酋长，我铸四十八个印给与他们。早上下令，傍晚就把你给灭了。”安国亨叩头谢罪，颇为收敛。隆庆元年(1567)石邦宪剿平镇远的苗人。之后，他又攻破诛灭白泥土官杨斌贝和苗人酋长龙力水等人。部内之人对他服服帖帖。
 </p><p>石邦宪生长在黔土，熟悉苗人风土人情。他善于用兵，经过的战斗大小有数十近百次，无不被他摧毁攻破。先后晋俸禄有四次，赏赐银币十三次。他所得的俸赐，全部用来招待士兵，家中没有多余的资财。做总兵官十七年，威镇蛮中。他和四川的何卿、广西的沈希仪并称一时的名将。第二年(1568)死在官任上。赠官左都督。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九十八章-卷九十八-白话.html'>第九十八章-卷九十八</a></p><p class='next'>下一节：<a href='第一百章-卷一百-白话.html'>第一百章-卷一百</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九十八章-卷九十八-白话.html'>第九十八章-卷九十八</a></p><p class='next'>下一节：<a href='第一百章-卷一百-白话.html'>第一百章-卷一百</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

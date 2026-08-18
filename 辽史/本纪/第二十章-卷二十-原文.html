@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-本纪<a href='../辽史.html#本纪'>：目录</a></p>
@@ -160,5 +187,18 @@
 </p><p>二十三年春正月己巳，如混同江。癸酉，猎双子淀。戊子，夏国遣使贡方物。壬辰，如春水。甲午，猎盘直坡。三月丁亥，幸皇太弟重元帐。夏四月癸卯，高丽遣使来贡。癸丑，猎合只忽里。五月己巳，李谅祚乞进马、驼，诏岁贡之。庚寅，驻跸永安山。壬辰，夏国遣使来贡。六月丙申，如庆州。乙亥，谒庆陵。壬寅，高丽王徽请官其子，诏加检校太尉。辛亥，吐蕃遣使来贡。秋七月己巳，夏国李谅祚遣使来求婚。甲戌，如秋山。己卯，诏八房族巾帻。九月庚寅，猎，遇三虎，纵犬获之。冬十月丁酉，驻跸中京。戊戌，幸新建秘书监。辛丑，有事于祖庙。癸丑，以开泰寺铸银佛像，曲赦在京囚。丙辰，李谅祚遣使进誓表。十一月乙丑，阻卜部长来贡。壬申，帝率群臣上皇太后尊号曰仁慈圣善钦孝广德安静贞纯懿和宽厚崇觉仪天皇太后，大赦。内外官进级有差。癸未，录囚。甲申，群臣上皇帝尊号曰钦天奉道佑世兴历武定文成圣神仁孝皇帝，册皇后萧氏曰贞懿慈和文惠孝敬广爱崇圣皇后。十二月丙申，如中会川。
 </p><p>二十四年春正月癸亥，如混同江。戊辰，朝皇太后。辛巳，宋遣使来贺，馈驯象。二月己丑朔，召宋使钓鱼、赋诗。癸巳，如长春河。甲寅，夏国遣使来贺。三月癸亥，皇太弟重元生子，曲赦行在及长春、镇北二州徒以下罪。夏五月，驻跸南崖。秋七月，壬午，如秋山。次南崖之北峪，不豫。八月丁亥，疾大渐，召燕赵国王洪基，谕以治国之要。戊子，大赦，纵五坊鹰鹘，焚钓鱼之具。己丑，帝崩于行宫，年四十。遗诏燕赵国王洪基嗣位。清宁元年十月庚子，上尊谥为神圣孝章皇帝，庙号兴宗。
 </p><p>赞曰：兴宗即位，年十有六矣，不能先尊母后而尊其母，以致临朝专政，贼杀不辜，又不能以礼几谏，使齐天死于弑逆，有亏王者之孝，惜哉！若夫大行在殡，饮酒博鞠，叠见简书。及其谒遗像而哀恸，受宋吊而衰绖，所为若出二人。何为其然欤？至于感富弼之言而申南宋之好，许谅祚之盟而罢西夏之兵，边鄙不耸，政治内修，亲策进士，大修条制，下至士庶，得陈便宜，则求治之志切矣。于时左右大臣，曾不闻一贤之进，一事之谏，欲庶几古帝王之风，其可得乎？虽然，圣宗而下，可谓贤君矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p><p class='next'>下一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p><p class='next'>下一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#金史'>：目录</a></p>
@@ -162,5 +189,18 @@
 </p><p>金睿宗巡视陕西，驻在泾州，斜卯阿里先攻下渭州。金睿宗到熙河，斜卯阿里、斜喝、韩常三猛安作为先头部队。天会十二年(1134)，斜卯阿里与高彪监督保护水运。宋朝用水兵阻止亳州河道，斜卯阿里打败了他们，并追杀六十多里，俘获宋军大将萧通。不久斜卯阿里打破涟水水寨的贼寇，全部缴获了他们的大船，接着又打败了涟水军，并招安了他们。天眷年间，盗寇占据了石州，斜卯阿里前去讨伐。粘割胡撒所属部队首先登城，于是攻下了石州城，石州得以平安。
 </p><p>金人完颜宗弼再次攻打宋朝时，斜卯阿里年纪已大，只能监督打造战船。宋朝向金朝称臣，金皇帝下诏赏赐给斜卯阿里钱千万。斜卯阿里自结发年龄当兵，经历大小几十次战斗，尤其熟悉水上作战，在长江、淮河战斗，金军每次战斗都听从他指挥，当时的人把他视为水星。斜卯阿里后来做了迭里部节度使，历任顺义、泰宁军、归德、济南尹。天德初，斜卯阿里退休，加为特进，封为王。正隆年间依例封为韩国公，召到宫中，命令他制造战船。斜卯阿里因病去世，终年七十八岁，谥号智敏。
 </p><p>斜卯阿里性情忠直，多智慧谋略。他们兄弟之间相互友爱，家里本来很富有，他把自己的猛安和财物全部送给弟弟斜卯爱拔里。斜卯爱拔里不肯接受，逃走躲避了一年多，斜卯阿里最终还是把它们给了弟弟。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十七章-卷十七-白话.html'>第十七章-卷十七</a></p><p class='next'>下一节：<a href='第十九章-卷十九-白话.html'>第十九章-卷十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十七章-卷十七-白话.html'>第十七章-卷十七</a></p><p class='next'>下一节：<a href='第十九章-卷十九-白话.html'>第十九章-卷十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

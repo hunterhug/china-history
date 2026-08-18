@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -183,5 +210,18 @@
 </p><p>至明年二月，胡来朝为文选，出兵科都给事中张国儒、御史马孟祯、徐良彦于外，复不咨都察院、吏科。国儒已陪推京卿，法不当出外；孟祯、良彦则素忤党人，故来朝抑之。继之不能禁。时居相等已去国，独瑾再争，诋继之、来朝甚力。来朝等不能难，其党思以众力胜之，于是诸御史群起攻瑾。瑾争之强，疏三上。来朝等亦三疏诋讦，词颇穷。来朝乃言：“年例协赞之旨，实秉国者调停两袒，非可为制，乞改前令从事。”帝一无所处分。瑾方奉使，自引去。其秋，给事中梅之焕、御史李若星、张五典年例外转，所司复不预闻。吏科韩光裕、御史徐养量稍言之，然势孤，竟不能争也。时缙云李鋕以刑部尚书兼署都察院，亦浙党所推毂。四十五年，大计京官，继之与鋕司其事，考功郎中赵士谔、给事中徐绍吉、御史韩浚佐之。所去留悉出绍吉等意，继之受成而已。一时与党人异趣者，贬黜殆尽，大僚则中以拾遗，善类为空。
 </p><p>继之以笃老累疏乞休，帝辄慰留不允。明年春，稽首阙下，出郊待命。帝闻，命乘传归。又数年卒，年九十二。赠少保。
 </p><p>赞曰：张瀚、王国光、梁梦龙皆以才办称，杨巍、赵焕、郑继之亦负清望，及秉铨政，蒙诟议焉。于时政府参怀，言路胁制，固积重难返，然以公灭私之节，诸人盖不能无愧云。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百一十二章-卷一百一十二-原文.html'>第一百一十二章-卷一百一十二</a></p><p class='next'>下一节：<a href='第一百一十四章-卷一百一十四-原文.html'>第一百一十四章-卷一百一十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百一十二章-卷一百一十二-原文.html'>第一百一十二章-卷一百一十二</a></p><p class='next'>下一节：<a href='第一百一十四章-卷一百一十四-原文.html'>第一百一十四章-卷一百一十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

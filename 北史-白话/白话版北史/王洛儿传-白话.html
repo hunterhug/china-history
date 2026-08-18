@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>北史-白话版北史<a href='../北史.html#北史'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>王洛儿传<span style='font-size:small'> 白话</span></h1>
 <p>王洛儿，京兆人。明元帝当东宫太子时，王洛儿因善于骑马、射箭，得以在明元帝帐下任给事。他谨慎小心，从来没有过失。一次，明元到飈南打猎，座骑掉入冰窟窿，王洛儿跳进冰水中把明元帝救出，自己却几乎被冻死。明元帝把自己的衣服脱下赐给他，从此，王洛儿更是一天比一天受宠。天赐末年，明元帝在外避难，王洛儿日夜侍奉、守卫，出自真诚而不辞辛劳。元绍叛乱时，明元帝身边只有王洛儿和车路头两人，他们白天躲在山里，夜里回到王洛儿家。王洛儿的邻居李道暗中也送来食物。一到早晨，他们又回到山中。百姓们知道一些他们的情况，高兴地彼此相告。元绍知道后，抓了李道，把他斩首。王洛儿冒险往返京都，向大臣们通报消息。于是大臣们出来迎接明元帝，百姓们也都奔走前来。明元帝回到皇宫，国家得到保全，王洛儿立有大功。<BR><BR>　　明元帝即位后，拜王洛儿为散骑常侍，赐爵新息公，并加封直意将军。又追赠他父亲为列侯，赐给僮仆、奴隶五十户。王洛儿死后，追赠为太尉、建平王。皇帝赐给他宫中生产的棺材，用鍂车京车运载，派宫中卫士为灵车开路，皇帝亲临哀哭多次，并毒死了王洛儿的妻子周氏，让她和王洛儿合葬，他的儿子长城继承了他的爵位。</p>
-<div class='pn'><p class='pre'>上一节：<a href='刘洁传-白话.html'>刘洁传</a></p><p class='next'>下一节：<a href='来大干传-白话.html'>来大干传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='刘洁传-白话.html'>刘洁传</a></p><p class='next'>下一节：<a href='来大干传-白话.html'>来大干传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

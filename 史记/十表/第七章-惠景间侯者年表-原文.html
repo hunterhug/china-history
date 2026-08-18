@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>史记-十表<a href='../史记.html#十表'>：目录</a></p>
@@ -151,5 +178,18 @@
 
 <h1>第七章-惠景间侯者年表<span style='font-size:small'> 原文</span><span style='font-size:small;padding-left:5px'> <a href='第七章-惠景间侯者年表-段译.html'>段译</a></span><span style='font-size:small;padding-left:5px'> <a href='第七章-惠景间侯者年表-译文.html'>译文</a></span></h1>
 <p>太史公读列封至便侯曰：有以也夫！长沙王者，着令甲，称其忠焉。昔高祖定天下，功臣非同姓疆土而王者八国。至孝惠时，唯独长沙全，禅五世，以无嗣绝，竟无过，为藩守职，信矣。故其泽流枝庶，毋功而侯者数人。及孝惠讫孝景间五十载，追修高祖时遗功臣，及从代来，吴楚之劳，诸侯子弟若肺腑，外国归义，封者九十有余。咸表始终，当世仁义成功之著者也。</p><p>惠景之际，天下已平。诸吕构祸，吴楚连兵。条侯出讨，壮武奉迎。薄窦恩泽，张赵忠贞。本枝分荫，肺腑归诚。新市死事，建陵勋荣。咸开青社，俱受丹旌。旋窥甲令，吴便有声。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章-高祖功臣侯者年表-原文.html'>第六章-高祖功臣侯者年表</a></p><p class='next'>下一节：<a href='第八章-建元以来侯者年表-原文.html'>第八章-建元以来侯者年表</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六章-高祖功臣侯者年表-原文.html'>第六章-高祖功臣侯者年表</a></p><p class='next'>下一节：<a href='第八章-建元以来侯者年表-原文.html'>第八章-建元以来侯者年表</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

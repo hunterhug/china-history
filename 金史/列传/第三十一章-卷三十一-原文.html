@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -217,5 +244,18 @@
 </p><p>寻具奏闻，钦奉圣训：“昔宣、靖之际，弃信背盟，我师问罪，尝割三镇以乞和。今既无故兴兵，蔑弃信誓，虽尽献江、淮之地，犹不足以自赎。况彼国尝自言，叔父侄子与君臣父子略不相远，如能依应称臣，即许以江、淮之间取中为界。如欲世为子国，即当尽割淮南，直以大江为界。陕西边面并以大军已占为定据。元谋奸臣必使缚送，缘彼恳欲自致其罚，可令函首以献。外岁币虽添五万两疋，止是复皇统旧额而已，安得为增？可令更添五万两疋，以表悔谢之实。向汴阳乞和时尝进赏军之物，金五百万两、银五千万、表段里绢各一百万、牛马骡各一万、驼一千、书五监。今即江表一隅之地。与昔不同，特加矜悯，止令量输银一千万两以充犒军之用。方信孺言语反复不足取信，如李大性、朱致知、李璧、吴琯辈似乎忠实，可遣诣军前禀议。据方信孺诡诈之罪，过于胡昉，然自古兵交，使人容在其间，姑放令回报。”伏遇主上圣德宽裕光大，天覆地容，包荒宥罪，其可不钦承以仰副仁恩之厚！傥犹有所稽违，则和好之事，勿复冀也。夫宋国之安危存亡，将系于此，更期审虑，无贻后悔！
 </p><p>泰和七年九月，薨于汴。其后宋人竟请以叔为伯，增岁币，备犒军银，函奸臣韩侂胄、苏师旦首以献而乞盟焉。讣闻，上震悼，辍朝，命其子宿直将军天下奴奔赴丧所，仍命葬毕持绘像至都，将亲临奠。以南京副留守张岩叟为敕祭兼发引使，莒州刺史女奚列孛葛速为敕葬使，仍摘军前武士及旗鼓笛角各五十人，外随行亲属官员亲军送至葬所，赙赠甚厚。谥曰通敏。
 </p><p>赞曰：金自宗弼渡江而还，既而画淮为界。厥后海陵咈众举兵，国用虚耗，上下离心，内难先作。故世宗之初，章宗之末，有事于南，皆非得已，而详问之使每先发焉。侂胄狂谋误国，动非其时，取败宜也。揆、宗浩虽师出辄捷，而行成之使，不拒其来。仪币书辞，抑扬增损之际，有可藉口，即许其平矣。函首之事，宋人亦欲因是以自除其祸耳。虽然，揆、宗浩常胜之家，史乂搭骁勇之将，三人相继而死，和议亦成，天意盖已休息南北之人欤？</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十章-卷三十-原文.html'>第三十章-卷三十</a></p><p class='next'>下一节：<a href='第三十二章-卷三十二-原文.html'>第三十二章-卷三十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十章-卷三十-原文.html'>第三十章-卷三十</a></p><p class='next'>下一节：<a href='第三十二章-卷三十二-原文.html'>第三十二章-卷三十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

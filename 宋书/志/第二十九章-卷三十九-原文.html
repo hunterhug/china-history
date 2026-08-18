@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>宋书-志<a href='../宋书.html#志'>：目录</a></p>
@@ -224,5 +251,18 @@
 </p><p>上林令，一人。丞一人。汉西京上林中有八丞、十二尉、十池监。丞、尉属水衡都尉。池监隶少府。汉东京曰上林苑令及丞各一人，隶少府。晋江左阙。宋世祖大明三年复置，隶尚书殿中曹及少府。
 </p><p>材官将军，一人。司马一人。主工匠土木之事。汉左右校令，其任也。魏右校又置材官校尉，主天下材木事。晋江左改材官校尉曰材官将军，又罢左校令。今材官隶尚书起部及领军。
 </p><p>侍中，四人。掌奏事，直侍左右，应对献替。法驾出，则正直一人负玺陪乘。殿内门下众事皆掌之。周公戒成王《立政》之篇所云“常伯”，即其任也。侍中本秦丞相史也，使五人往来殿内东厢奏事，故谓之侍中。汉西京无员，多至数十人，入侍禁中，分掌乘舆服物，下至亵器虎子之属。武帝世，孔安国为侍中，以其儒者，特听掌御唾壶，朝廷荣之。久次者为仆射。汉东京又属少府，犹无员。掌侍左右，赞导众事，顾问应答。法驾出，则多识者一人负传国玺，操斩白蛇剑，参乘；余皆骑，在乘舆车后。光武世，改仆射为祭酒焉。汉世，与中官俱止禁中。武帝时，侍中莽何罗挟刃谋逆，由是侍中出禁外，有事乃入，事毕即出。王莽秉政，侍中复入，与中官共止。章帝元和中，侍中郭举与后宫通，拔佩刀惊御，举伏诛，侍中由是复出外。魏、晋以来，置四人，别加官不主数。秩比二千石。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十八章-卷三十八-原文.html'>第二十八章-卷三十八</a></p><p class='next'>下一节：<a href='第三十章-卷四十-原文.html'>第三十章-卷四十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十八章-卷三十八-原文.html'>第二十八章-卷三十八</a></p><p class='next'>下一节：<a href='第三十章-卷四十-原文.html'>第三十章-卷四十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

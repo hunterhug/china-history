@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>宋史-志<a href='../宋史.html#志'>：目录</a></p>
@@ -1421,5 +1448,18 @@
 　　求五星定合定積定星：木、火、土三星，以平合行差除其日盈縮分，為距合差日；以盈縮分減之，為距合差度；以差日、差度盈減縮加其星定合汎用積，為其星定合定積、定星。金、水二星順合者，以平合行差除其日盈縮分，為距合差日；以盈縮分加之，為距合差度；以差日、差度盈加縮減其星定合汎用積，為其星定合定積、定星。金、水二星退合者，以平合行差除其日盈縮分，為距合差日；以減盈縮減之分，為距合差度；以差日盈減縮加，以差度盈加縮減再定合汎用積，為其星再定合定積、定星。各以天正冬至大餘及約分加定積，滿統法去之，命甲子，算外，即得定合日辰；以天正冬至加時黃道日度加定星，依宿次去之，即得定合所在宿次。<BR>
 <BR>
 　　求五星定見伏定積：木、火、土三星以汎用積晨加、夕減一象，如半周天已下自相乘，已上，覆減一周天，餘亦自相乘，七十五而一，所得，以其星伏見度乘之，十五而一為差，如其段行差除之為日，不滿，退除為分，見加伏減汎用積，為其星定見、伏定積。金、水二星以行差除其日盈縮分為日，在夕見、晨伏，盈加縮減汎用積，為常用積；夕伏、晨見，盈減縮加汎用積，為常用積；如常用積在半周天已下為冬至後；已上去之，餘為夏至後。各在一象已下自相乘，已上，覆減一周天，餘亦自相乘，冬至後晨、夏至後夕，以十八而一；冬至後夕、夏至後晨，以七十五而一，所得，以其星伏見度乘之，十五而一為差，如其段行差除之為日，不滿，退除為分，冬至後晨見、夕伏，夏至後夕見、晨伏，以加常用積，為其星定見、伏定積；冬至後夕見、晨伏，夏至後晨見、夕伏，以減常用積，為其星定見、伏定積；加命如前，即得定見、伏日辰。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十章-卷三十-原文.html'>第三十章-卷三十</a></p><p class='next'>下一节：<a href='第三十二章-卷三十二-原文.html'>第三十二章-卷三十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十章-卷三十-原文.html'>第三十章-卷三十</a></p><p class='next'>下一节：<a href='第三十二章-卷三十二-原文.html'>第三十二章-卷三十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

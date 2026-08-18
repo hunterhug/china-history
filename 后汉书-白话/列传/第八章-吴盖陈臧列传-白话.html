@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#后汉书'>：目录</a></p>
@@ -206,5 +233,18 @@
 </p><p>元初四年(117)，与母另居，封国被废。
 </p><p>永宁元年(120)，邓太后继封臧松弟臧由为朗陵侯。
 </p><p>史官评论道：中兴的事业，真是很艰难的。然敌人没有秦皇、项羽那样强大，人们还怀抱着归附汉朝的思想，虽怀玉玺官印，跨越州县，假托各种名义或伪号，千队为群，还不足以为与显贵高官比功劳哩。等到山西平定，威临天下，戎羯丧其精胆，群帅贾其余勇，这真是雄心尚武之良机，乘胜习兵之时哩。臧宫、马武之徒，抚剑抵掌，其志驰于伊吾的北面了。光武审识《黄石公记》，常自危惧而不安，关闭玉门以谢西域的人质，词币礼以答匈奴的使者，他的防御意识已经很宏大深远了，难道他是担心像高祖一样颠沛于平城之围，不忍像高祖一样亲击黥布时在阵上负伤吗？</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-冯岑贾列传-白话.html'>第七章-冯岑贾列传</a></p><p class='next'>下一节：<a href='第九章-耿弇列传-白话.html'>第九章-耿弇列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七章-冯岑贾列传-白话.html'>第七章-冯岑贾列传</a></p><p class='next'>下一节：<a href='第九章-耿弇列传-白话.html'>第九章-耿弇列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

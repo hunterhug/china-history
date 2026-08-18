@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -208,5 +235,18 @@
 </p><p>弘治二年，以王恕荐擢右副都御史，抚治郧阳。蜀盗野王刚流劫竹山、平利。珊合川、陕兵，檄副使朱汉等讨擒其魁，余皆以胁从论，全活甚众。入历刑部左、右侍郎，与尚书何乔新、彭韶共事。晋府宁化王钟鈵淫虐不孝，勘不得实，再遣珊等勘之，遂夺爵禁锢。进南京刑部尚书。久之，召为左都御史。十七年，考察京官，珊廉介不苟合。给事中吴蕣、王盖自疑见黜，连疏诋吏部尚书马文升，并言珊纵妻子纳贿。珊等乞罢，帝慰留之。御史冯允中等言：“文升、珊历事累朝，清德素著，不可因浮词废计典。”乃下蕣、盖诏狱，命文升、珊即举察事。珊等言：“两人逆计当黜，故先劾臣等。今黜之，彼必曰是挟私也。苟避不黜，则负委任，而使诈谖者得志。”帝命上两人事责，皆黜之。已，刘健等因召对，力言盖罪轻，宜调用。帝方向用文升、珊，卒不纳。
 </p><p>帝晚年召对大臣，珊与大夏造膝宴见尤数。一日，与大夏侍坐。帝曰：“时当述职，诸大臣皆杜门。如二卿者，虽日见客何害。”袖出白金赉之，曰：“少佐而廉。”且属勿廷谢，曰：“恐为他人忌也。”珊以老疾数求退，辄优诏勉留，遣医赐食，慰谕有加。珊感激泣下，私语大夏曰：“珊老病子幼，恐一旦先朝露，公同年好友，何惜一言乎？”大夏曰：“唯唯。”后大夏燕对毕，帝问珊病状，言珊实病，乞悯怜听其归。帝曰：“彼属卿言耶？主人留客坚，客则强留。珊独不能为朕留耶？且朕以天下事付卿辈，犹家人父子。今太平未兆，何忍言归！”大夏出以告珊，珊泣曰：“臣死是官矣。”帝既崩，珊以新君嗣位不忍言去，力疾视事。疾作，遂卒。赠太子太保，谥恭简。
 </p><p>赞曰：孝宗之为明贤君，有以哉。恭俭自饬，而明于任人。刘、谢诸贤居政府，而王恕、何乔新、彭韶等为七卿长，相与维持而匡弼之。朝多君子，殆比隆开元、庆历盛时矣。乔新、韶虽未究其用，而望著朝野。史称宋仁宗时，国未尝无嬖幸，而不足以累治世之体；朝未尝无小人，而不足以胜善类之气。孝宗初政，亦略似之。不然，承宪宗之季，而欲使政不旁挠，财无滥费，滋培元气，中外乂安，岂易言哉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十章-卷七十-原文.html'>第七十章-卷七十</a></p><p class='next'>下一节：<a href='第七十二章-卷七十二-原文.html'>第七十二章-卷七十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七十章-卷七十-原文.html'>第七十章-卷七十</a></p><p class='next'>下一节：<a href='第七十二章-卷七十二-原文.html'>第七十二章-卷七十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

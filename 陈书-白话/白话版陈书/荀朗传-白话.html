@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>陈书-白话版陈书<a href='../陈书.html#陈书'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>荀朗传<span style='font-size:small'> 白话</span></h1>
 <p>荀朗字深明，颍川颍阴人。其祖父荀延祖，为梁颍川太守，父亲荀伯道，为卫尉卿。<BR><BR>　　荀朗年少时气度不凡，有雄才大略，初任梁庐陵王行参军。侯景之乱时，荀朗招集众旅，据守在巢湖间，无所隶属。台城陷落，简文帝下密诏授荀朗为云麾将军、豫州刺史，诏命他与地方诸侯征讨侯景。侯景派仪同宋子仙、任约等人多次去征讨他，荀朗据山建寨自守，宋子仙没能攻下。当时京师饥荒，百姓都到江南讨饭，荀朗又招集私兵，问寒问暖以财物救济流民，聚集至数万人。侯景败于巴陵，荀朗从濡须出发拦截侯景，大败其后军。王僧辩东征，荀朗派他的将领范宝胜和弟弟荀晓带兵二千人援助他。侯景之乱平定后，荀朗又在踟蹰山击败北齐军将领郭元建。梁承圣二年(553)，荀朗率私兵万余家渡江，到宣城郡内安居。梁元帝授任荀朗为持节、通直散骑常侍、安南将军、都督南兖州诸军事、南兖州刺史。未赴任而荆州陷落。<BR><BR>　　高祖辅佐朝政，北齐派萧轨、东方老等人前来寇掠，占据石头城。荀朗从宣城前来赴战，与侯安都等人一起大破北齐军。永定元年(557)，赐爵兴宁县侯，食邑二千户，任荀朗兄荀昂为左卫将军、弟荀晷为太子右卫率。不久，派荀朗随世祖于南皖抵御王琳。<BR><BR>　　高祖崩，宣太后与舍人蔡景历秘不发丧，荀朗的弟弟荀晓在京都稍有所闻，便密谋率家兵袭击台城。事情败露，蔡景历诛杀荀晓，又拘囚其兄弟。世祖即位，全都释放。又厚礼抚慰荀朗，命他与侯安都等人共抗王琳。王琳乱平，升任使持节，安北将军，散骑常侍，都督霍州晋州、合州、三州诸军事，合州刺史。天嘉六年(565)，去世，时年四十八岁。追赠为南豫州刺史，谥号壮。其子荀法尚嗣爵。</p>
-<div class='pn'><p class='pre'>上一节：<a href='周敷传-白话.html'>周敷传</a></p><p class='next'>下一节：<a href='周炅传-白话.html'>周炅传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='周敷传-白话.html'>周敷传</a></p><p class='next'>下一节：<a href='周炅传-白话.html'>周炅传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

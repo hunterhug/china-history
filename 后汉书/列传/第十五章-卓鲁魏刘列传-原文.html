@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#列传'>：目录</a></p>
@@ -195,5 +222,18 @@
 </p><p>宽简略嗜酒，不好盥浴，京师以为谚。尝坐客，遣苍头市酒，迂久，大醉而还。客不堪之，骂曰：“畜产。”宽须臾遣人视奴，疑必自杀。顾左右曰：“此人也，骂言畜产，辱熟甚焉！故吾惧其死也。”夫人欲试宽令恚，伺当朝会，装严已讫，使侍婢奉肉羹，翻污朝衣。婢遽收之，宽神色不异，乃徐言曰：“羹烂汝手？”其性度如此。海内称为长者。
 </p><p>后以日食策免。拜卫尉。光和二年，复代段颎为太尉。在职三年，以日变免。又拜永乐少府，迁光禄勋。以先策黄巾逆谋，以事上闻，封逯乡侯六百户。中平二年卒，时年六十六。赠车骑将军印绶，位特进，谥曰昭烈侯。子松嗣，官至宗正。
 </p><p>赞曰：卓、鲁款款，情悫德满。仁感昆虫，爱及胎卵。宽、霸临政，亦称优缓。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十四章-马援列传-原文.html'>第十四章-马援列传</a></p><p class='next'>下一节：<a href='第十六章-伏侯宋蔡冯赵牟韦列传-原文.html'>第十六章-伏侯宋蔡冯赵牟韦列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十四章-马援列传-原文.html'>第十四章-马援列传</a></p><p class='next'>下一节：<a href='第十六章-伏侯宋蔡冯赵牟韦列传-原文.html'>第十六章-伏侯宋蔡冯赵牟韦列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

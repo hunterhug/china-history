@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -195,5 +222,18 @@
 <p>　　其后，中官益盛，而陈玄礼以淳朴自检，宿卫宫禁，志节不衰。天宝中，玄宗 在华清宫，乘马出宫门，欲幸虢国夫人宅，玄礼曰：“未宣敕报臣，天子不可轻去 就。”玄宗为之回辔。他年在华清宫，逼正月半，欲夜游，玄礼奏曰：“宫外即是 旷野，须有备预，若欲夜游，愿归城阙。”玄宗又不能违。及安禄山反，玄礼欲于 城中诛杨国忠，事不果，竟于马嵬斩之。从玄宗入巴蜀回，封蔡国公，实封三百户。 上元元年八月致仕。 </p>
 <p>　　史臣曰：李林甫以谄佞进身，位极台辅，不惧盈满，蔽主聪明，生既唯务陷人， 死亦为人所陷，得非彼苍假手，以示祸淫者乎！杨国忠禀性奸回，才薄行秽，领四 十余使，恣弄威权，天子莫见其非，群臣由之杜口，致禄山叛逆，銮辂播迁，枭首 覆宗，莫救艰步。以玄宗之睿哲，而惑于二人者，盖巧言令色，先意承旨，财利诱 之，迷而不悟也。开元任姚崇、宋璟而治，幸林甫、国忠而乱，与夫齐桓任管仲、 隰朋，幸竖刁、易牙，亦何异哉！《书》曰：“臣有作福作威，害于而家，凶于而 国。”孔子曰：“佞人殆。”诚哉是言也。张暐、王琚、王毛仲，皆邓通、闳孺之 流也。琚有缔构之功，过多僭侈，死于非罪，亦何惜之！ </p>
 <p>　　赞曰：天启乱阶，甫、忠当国。蔽主聪明，秉心谗慝。暐同二王，亦承恩德。 吁哉僭逾，不知纪极。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十五章-卷五十五-原文.html'>第五十五章-卷五十五</a></p><p class='next'>下一节：<a href='第五十七章-卷五十七-原文.html'>第五十七章-卷五十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五十五章-卷五十五-原文.html'>第五十五章-卷五十五</a></p><p class='next'>下一节：<a href='第五十七章-卷五十七-原文.html'>第五十七章-卷五十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

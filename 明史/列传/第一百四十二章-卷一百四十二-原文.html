@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -202,5 +229,18 @@
 </p><p>时帝久罢内遣，然以边警，诸臣类萎腇不任，仍分遣中官卢维宁等总监通、津、临、德等处兵马粮饷，而意颇讳言之。光辰疏请罢遣，帝怒，召对平台。风雨骤至，侍臣立雨中，至以袖障溜。久之，帝召光辰责之。光辰对曰：“皇上以文武诸臣无实心任事，委任内臣。臣愚以任内臣，诸臣益弛卸不任。”帝大怒，声色俱厉，将重谴光辰，而迅雷直震御座，风雨声大作。光辰因言：“臣往在河南，见皇上撤内臣而喜。”语未终，帝沉吟，即云“汝言毋复尔”，然意亦稍解。人谓光辰有天幸云。时张元佐以兵部右侍郎出守昌平，同时内臣提督天寿山者即日往。帝顾阁臣曰：“内臣即日往，侍臣三日未出，朕之用内臣过耶？”翼日有诏，光辰镌三级调外。
 </p><p>久之，由浙江按察司照磨召为大理寺正，进太仆丞。十三年五月，复偕诸大臣召对平台，咨以御边、救荒、安民之策。光辰班最后，时已夜，光辰独对烛影中，娓娓数百言，帝为耸然听。明日谕诸臣各缮疏以进。寻移尚宝丞。陈罢练总、换授、私派、佥报数事，报闻。历光禄少卿、左通政。十五年五月，复偕诸臣召对德政殿，备陈贼形势。帝悦，擢左佥都御史。无何，以救刘宗周，仍镌三级调外，事具《宗周传》。明年丁父忧。福王时，起故官。未赴，国变，家居二十余年卒。
 </p><p>赞曰：明自神宗而后，士大夫峻门户而重意气。其贤者敦厉名检，居官有所执争，即清议翕然归之。虽其材识不远，耳目所熟习，不能不囿于风会，抑亦一时之良也。遭时孔棘，至救过不暇，顾安得责以挽回干济之业哉？</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百四十一章-卷一百四十一-原文.html'>第一百四十一章-卷一百四十一</a></p><p class='next'>下一节：<a href='第一百四十三章-卷一百四十三-原文.html'>第一百四十三章-卷一百四十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百四十一章-卷一百四十一-原文.html'>第一百四十一章-卷一百四十一</a></p><p class='next'>下一节：<a href='第一百四十三章-卷一百四十三-原文.html'>第一百四十三章-卷一百四十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

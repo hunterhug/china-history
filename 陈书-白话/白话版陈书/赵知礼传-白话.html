@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>陈书-白话版陈书<a href='../陈书.html#陈书'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>赵知礼传<span style='font-size:small'> 白话</span></h1>
 <p>赵知礼字齐旦，天水陇西人。其父赵孝穆，为梁候官县令。<BR><BR>　　知礼广泛涉猎典籍，擅长隶书。高祖征讨元景仲时，有人向高祖推荐知礼，便招引任记室参军。知礼写文章才思敏捷，每次口授军书，他下笔成文，全都令人满意。于是知礼常侍奉高祖身边，很受器重，如果筹谋大事，他都参与，且时有诤言讲谏。高祖平定侯景，行军至白茅湾，上表给梁元帝的奏章以及与王僧辩论述军事的文章，全由他撰写。<BR><BR>　　侯景之乱平定，授任为中书侍郎，封为始平县子，食邑三百户。高祖任司空时，让赵知礼担任从事中郎。高祖辅佐朝政后，迁任给事黄门侍郎，兼卫尉卿。高祖即位，迁任通直散骑常侍，辖管殿省。不久升任散骑常侍，管理太府卿，暂且知领军事。天嘉元年(560)，晋子爵为伯爵，食邑增加至七百户。王琳之乱平定，授任为持节、督吴州诸军事、明威将军、吴州刺史。<BR><BR>　　赵知礼生性沉静，足智多谋，每有军政大事，世祖便命送玺封的文书向他请教，服官任满后，任明威将军、太子右卫率。升任右卫将军，兼前军将军。天嘉六年(565)，死时年四十七岁。诏命追赠为侍中，谥号忠。其子赵允恭嗣爵。</p>
-<div class='pn'><p class='pre'>上一节：<a href='陈慧纪传-白话.html'>陈慧纪传</a></p><p class='next'>下一节：<a href='蔡景历传-白话.html'>蔡景历传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='陈慧纪传-白话.html'>陈慧纪传</a></p><p class='next'>下一节：<a href='蔡景历传-白话.html'>蔡景历传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

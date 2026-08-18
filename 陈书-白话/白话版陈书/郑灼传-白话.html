@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>陈书-白话版陈书<a href='../陈书.html#陈书'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>郑灼传<span style='font-size:small'> 白话</span></h1>
 <p>郑灼字茂昭，东阳信安人。祖父郑惠，梁衡阳太守。父郑季徽，通直散骑侍郎、建安令。<BR><BR>　　郑灼幼时聪明敏慧，立志专心于儒学，少时受业于皇侃。梁中大通五年(533)，出仕为奉朝请，累迁员外散骑侍郎、给事中、安东临川王府记室参军，转平西邵陵王府记室。简文帝在东宫时，十分喜爱经术，引荐郑灼为西省义学士。承圣年间(552～555)，授职为通直散骑侍郎，兼国学博士。不久为威戎将军，兼中书通事舍人。高祖、世祖之时历任安东临川、镇北鄱阳王二府谘议参军。累迁中散大夫，以本职兼国学博士。未拜官，于太建十三年(581)去世，时年六十八岁。<BR><BR>　　郑灼生性专心勤勉，尤其明晓陈书于《三礼》。少时曾梦见与皇侃于途中相遇，皇侃对郑灼说：“郑灼开口。”侃于是唾于郑灼口中，此后郑灼于义理之学更加精进。郑灼家贫，抄义疏常常是通宵达旦，笔头用完了，每每削笔杆再用。郑灼日常食素，讲授时常为心热病所苦，如果是瓜熟季节，便仰卧以瓜镇守其心，起来便又诵读，其专心致志乃至于此。</p>
-<div class='pn'><p class='pre'>上一节：<a href='戚衮传-白话.html'>戚衮传</a></p><p class='next'>下一节：<a href='张讥传-白话.html'>张讥传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='戚衮传-白话.html'>戚衮传</a></p><p class='next'>下一节：<a href='张讥传-白话.html'>张讥传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

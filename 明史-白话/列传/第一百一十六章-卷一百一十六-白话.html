@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -171,5 +198,18 @@
 </p><p>李化龙起初听到父亲死去的消息，准备赴丧但因军务需要，被起用，到这时乞求回家居丧。万历三十一年(1603)四月起用为工部右侍郎，总理河道，与淮、扬巡抚李三才奏请开通淤塞的黄河，由直河入氵加口抵达夏镇二百六十里，避开黄河吕梁险峻地带。再次以父母去世离职，没有人代替他。朝廷品评他从前平定播州的功劳，晋升为兵部尚书，加少保官，庇荫一个儿子世袭锦衣指挥使之职。
 </p><p>万历三十五年(1607)夏天，起用为戎政尚书。李化龙认为京营乃根本之所在，上奏陈述有十一滥、十二苦、十九件宜做之事，又奏上屯政十二事，都被朝廷置之不理。兵部从二十七年后，左、右侍郎都是虚设。没有多久，尚书萧大亨也退休了，由李化龙掌管部里之事。三十七年正月，京师讹传盗匪将到，老百姓争着逃避。边塞百姓逃入都城的也有数万人，九个城门全部关闭。辅臣说兵部尚书只有一个人，何以能应付突然的变化，皇上也不声张。辽东战士二万都是老弱贫残之人，而税监高淮残暴，辽东人恨得咬牙切齿。李化龙请求停止收税课、增加兵士数万人，又呈上兵士粮食、和议、战斗之策，皇上皆不批示下来。一品任期满后，加柱国、少傅兼太子太保。死于任上，终年七十岁。谥号襄毅，赠少师，加赠太师。
 </p><p>李化龙具有文武之才。播州战役，因刘纟廷骄纵，故先压制他，再推崇其才，所以刘纟廷尽心尽力。开通黄河之功，对漕运渠道永远有利，详细情况见《河渠志》。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百一十五章-卷一百一十五-白话.html'>第一百一十五章-卷一百一十五</a></p><p class='next'>下一节：<a href='第一百一十七章-卷一百一十七-白话.html'>第一百一十七章-卷一百一十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百一十五章-卷一百一十五-白话.html'>第一百一十五章-卷一百一十五</a></p><p class='next'>下一节：<a href='第一百一十七章-卷一百一十七-白话.html'>第一百一十七章-卷一百一十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

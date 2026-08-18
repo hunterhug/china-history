@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -218,5 +245,18 @@
 </p><p>端明，饶平人。举进士，历官右副都御史，督南京粮储，劾罢，家居十年。自言通晓药石，服之可长生，由陶仲文以进，严嵩亦左右之，遂召为礼部右侍郎。寻拜工部尚书，改礼部，加太子少保，皆与可学并命。二人但食禄不治事，供奉药物而已。端明颇负才名，晚由他途进，士论耻之。端明内不自安，引去，卒于家。赐祭葬，谥荣简。隆庆初，二人皆褫官夺谥。
 </p><p>朱隆禧者，昆山人。由进士历顺天府丞，坐大计黜。二十七年，陶仲文赴太和山，隆禧邀至其家，以所传长生秘术及所制香衲祈代进。仲文还朝，奏之。帝悦，即其家赐白金、飞鱼服。隆禧入朝谢恩，帝以大计罢闲官例不复起，加太常卿致仕。居二年，加礼部右侍郎。会有边警，仲文乘闲荐隆禧知兵。帝曰：“祖宗法不可废。”卒不用。既卒，其妻请恤典，所司执不予，帝特谕予之。隆庆初，褫官。
 </p><p>帝晚年求方术益急，仲文、可学辈皆前死。四十一年冬，命御史姜儆、王大任分行天下，访求方士及符箓秘书。儆，江南、山东、浙江、江西、福建、广东、广西；大任，畿辅、河南、湖广、四川、山西、陕西、云南、贵州。至四十三年十月还朝，上所得法秘数千册，方士唐秩、刘文彬等数人。儆、大任擢侍讲学士，秩等赐第京师。儆不自安，寻引退。大任入翰林，不为同官所齿。隆庆元年正月，言官劾两人所进刘文彬等已正刑章，宜并罪，遂夺职。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百九十四章-卷一百九十四-原文.html'>第一百九十四章-卷一百九十四</a></p><p class='next'>下一节：<a href='第一百九十六章-卷一百九十六-原文.html'>第一百九十六章-卷一百九十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百九十四章-卷一百九十四-原文.html'>第一百九十四章-卷一百九十四</a></p><p class='next'>下一节：<a href='第一百九十六章-卷一百九十六-原文.html'>第一百九十六章-卷一百九十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

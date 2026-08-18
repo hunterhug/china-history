@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#列传'>：目录</a></p>
@@ -190,5 +217,18 @@
 </p><p>诏遣侍中朱瑞诣天光慰喻。天光与岳谋，欲令帝外奔，别更推立。乃频启云：“臣实无异心，惟仰奉天颜，以申宗门之罪。”又其下僚属启云：“天光密有异图，愿思胜算，以防微意。”既而庄帝进天光爵为广宗王，元晔又以为陇西王。及闻尔朱兆已入京师，天光乃轻骑向都见世隆等，寻便还雍。世隆等议废元晔，更举亲贤，遣使告天光。天光与定策立前废帝，加开府仪同三司、兼尚书令、关西大行台。天光出夏州，遣将讨宿勤明达，擒之送洛。时费也头帅纥豆陵伊利、万俟受洛于等据有河西，未有所附。天光以齐献武王起兵信都，内怀忧恐，不复北事伊利等，但微遣备之而已。又除大司马。
 </p><p>于时献武王义军转盛，尔朱兆、仲远等既经败退，世隆累使征天光，天光不从。后令斛斯椿苦要天光云：“非王无以能定，岂可坐看宗家之灭也？”天光不得已而东下，与仲远等败于韩陵。斛斯椿等先还，于河梁拒之。天光既不得渡，西北走，遇雨不可前进，乃执获之，与度律送于献武王。王致于洛，斩于都市，年三十七。尔朱专恣，分裂天下，各据一方。天光有定关西之功，差不酷暴，比之兆与仲远为不同矣。
 </p><p>史臣曰：尔朱兆之在晋阳，天光之据陇右，仲远镇捍东南，世隆专秉朝政，于时立君废主易于弈棋，庆赏威刑咸出于己。若使布德行义，忧公忘私，脣齿相依，同心协力，则磐石之固，未可图也。然是庸才，志识无远，所争唯权势，所好惟财色，譬诸溪壑，有甚豺狼，天下失望，人怀怨愤，遂令勍敌得容觇间，心腹内阻，形影外合。是以广阿之役，叶落冰离；韩陵之战，土崩瓦解。一旦殄灭，岂不哀哉！《传》称“师克在和”，《诗》云“贪人败类”，贪而不和，难以济矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十二章-卷六十二-原文.html'>第六十二章-卷六十二</a></p><p class='next'>下一节：<a href='第六十四章-卷六十四-原文.html'>第六十四章-卷六十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十二章-卷六十二-原文.html'>第六十二章-卷六十二</a></p><p class='next'>下一节：<a href='第六十四章-卷六十四-原文.html'>第六十四章-卷六十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

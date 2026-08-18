@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后唐<a href='../旧五代史.html#后唐'>：目录</a></p>
@@ -176,5 +203,18 @@
 </p><p>琪虽博学多才，拙于遵养时晦，知时不可为，然犹多岐取进，动而见排，由己不能镇靖也。以太子太傅致仕。长兴中，卒于福善里第，时年六十。子贞，官至邑宰。琪以在内署时所为制诏，编为十卷，目曰《金门集》，大行于世。
 </p><p>萧顷，字子澄，京兆万年人。故相仿之孙，京兆尹廪之子。顷聪悟善属文，昭宗朝擢进士第，历度支巡官、太常博士、右补阙。时国步艰难，连帅倔强，率多奏请，欲立家庙于本镇，顷上章论奏，乃止。累迁吏部员外郎。先是，张浚自中书出为右仆射，梁祖判官高劭使梁祖廕求一子出身官，省寺皆称无例，浚曲为行之，指挥甚急，吏徒惶恐。顷判云：“仆射未集郎官，赴省上指挥公事，且非南宫旧仪。”浚闻之，惭悚致谢，顷由是知名，梁祖亦奖之。顷入梁，历给谏、御史中丞、礼部侍郎、知贡举，咸有能名。自吏部侍郎拜中书门下平章事，与李琪同辅梁室，事多矛盾。庄宗入汴，顷坐贬登州司户，量移濮州司马。数年，迁太子宾客。天成初，为礼部尚书、太常卿、太子少保致仕。卒时年六十九。辍朝一日，赠太子少师。
 </p><p>史臣曰：夫相辅之才，从古难得，盖文学政事，履行谋猷，不可缺一故也。如数君子者，皆互有所长，亦近代之良相也。如齐公之明节，李琪之文章，足以圭表搢绅，笙簧典诰，陟之廊庙，宜无愧焉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十三章-列传九-原文.html'>第三十三章-列传九</a></p><p class='next'>下一节：<a href='第三十五章-列传十一-原文.html'>第三十五章-列传十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十三章-列传九-原文.html'>第三十三章-列传九</a></p><p class='next'>下一节：<a href='第三十五章-列传十一-原文.html'>第三十五章-列传十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

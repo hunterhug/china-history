@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -190,5 +217,18 @@
 </p><p>初，睢州刺史张文寿闻大兵将至，迁旁县居民入城，大聚刍粟，然无固守意，日夜谋走以自便。既而，闻承立人援，即以州事付其僚佐，托以应援徐兵，夜启关契家走归德，庆山奴以为行部郎中，死杨驿。俄大兵围睢州，以无主将，故残破之甚也。
 </p><p>兀论，丞相赛不之侄，元光间例以诸帅为总领，兀论以丞相故独不罢。金朝防近族而用疏属，故白撒、承立、兀论辈皆腹心倚之。
 </p><p>赞曰：官奴素行反侧，倏南倏北，若龙断然。哀宗一旦倚为腹心，终为所制，照碧之处，何异幽囚，其事与梁武、侯景大同而小异。徒单兀典、庆山奴为将皆贪，宜数取败。女鲁欢无大失行，而死于官奴，哀宗犹暴其罪，冤哉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十三章-卷五十三-原文.html'>第五十三章-卷五十三</a></p><p class='next'>下一节：<a href='第五十五章-卷五十五-原文.html'>第五十五章-卷五十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五十三章-卷五十三-原文.html'>第五十三章-卷五十三</a></p><p class='next'>下一节：<a href='第五十五章-卷五十五-原文.html'>第五十五章-卷五十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

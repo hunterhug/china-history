@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-志<a href='../明史.html#志'>：目录</a></p>
@@ -186,5 +213,18 @@
 </p><p>嘉靖元年，复增城外把总一员，并旧为五，分辖城内东西二路，城外西南、东南、东北三路，增营兵马五千。又十选一，立尖哨五百骑，厚其月糈。命参将督操，而监以兵部郎。是时京军弊坏积久，捕营亦然。三十四年，军士仅三百余。以给事中丘岳等言，削指挥樊经职，而禁以军马私役骑乘。万历十二年，从兵部议，京城内外盗发，自卯至申责兵马司，自酉至寅责巡捕官，贼众则协力捕剿。是后，军额倍增，驾出及朝审、录囚皆结队驻巷口。籍伍虽具，而士马实凋弊不足用。捕营提督一，参将二，把总十八，巡军万一千，马五千匹。盗贼纵横，至窃内中器物。获其橦索，竟不能得也。庄烈帝时，又以兵部左侍郎专督。然营军半虚廪，马多雇人骑，失盗严限止五日，玩法卒如故。
 </p><p>四卫营者，永乐时，以迤北逃回军卒供养马役，给粮授室，号曰勇士。后多以进马者充，而听御马监官提调，名隶羽林，身不隶也。军卒相冒，支粮不可稽。宣德六年，乃专设羽林三千户所统之，凡三千一百余人。寻改武骧、腾骧左右卫，称四卫军。选本卫官四员为坐营指挥，督以太监，别营开操，称禁兵。器械、衣甲异他军，横于辇下，往往为中官占匿。弘治末，勇士万一千七百八十人，旗军三万一百七十人，岁支廪粟五十万。孝宗纳廷臣言，核之。又令内臣所进勇士，必由兵部验送乃给廪，五年籍其人数，著为令。省度支金钱岁数十万。武宗即位，中官宁瑾乞留所汰人数。言官及尚书刘大夏持不可，不听。后两官厅设，遂选四卫勇士隶西官厅，掌以边将江彬、太监张永等。
 </p><p>世宗入立，诏自弘治十八年存额外，悉裁之，替补必兵部查驳。而御马监马牛羊，令巡视科道核数。既而中旨免核，马多虚增。后数年，御马太监闵洪复矫旨选四卫官。给事中郑自璧劾其欺蔽，不报。久之，兵部尚书李承勋请以选核仍隶本部，中官谓非便。帝从承勋言。十六年，又命收复登极诏书所裁者，凡四千人。后五年，内臣言，勇士仅存五千余，请令子侄充选，以备边警。部臣言：“故额定五千三百三十人。八年清稽，已浮其数，且此营本非为备边设者。”帝从部议。然隐射、占役、冒粮诸弊率如故。万历二年，减坐营官二员。已，复定营官缺由兵部择用。其后复为中官所挠，仍属御马监。廷臣多以为言，不能从。四十二年，给事中姚宗文点阅本营，言：“官勇三千六百四十七，仅及其半。马一千四十三，则无至者。官旗七千二百四十，止四千六百余。马亦如之。乞下法司究治。”帝不能问。天启末，巡视御史高弘图请视三大营例，分弓弩、短兵、火器，加以训练。至庄烈帝时，提督内臣曹化淳奏改为勇卫营，以周遇吉、黄得功为帅，遂成劲旅，出击贼，辄有功。得功军士画虎头于皂布以衣甲，贼望见黑虎头军，多走避，其得力出京营上云。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十四章-卷六十四-原文.html'>第六十四章-卷六十四</a></p><p class='next'>下一节：<a href='第六十六章-卷六十六-原文.html'>第六十六章-卷六十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十四章-卷六十四-原文.html'>第六十四章-卷六十四</a></p><p class='next'>下一节：<a href='第六十六章-卷六十六-原文.html'>第六十六章-卷六十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

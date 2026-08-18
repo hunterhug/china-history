@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -202,5 +229,18 @@
 </p><p>承安二年，拜参知政事。监察御史路铎劾奏伯通引用乡人李浩，以公器结私恩。左司郎中贾益承望风旨，不复检详，言之台端，欲加纠劾，大夫张暐辄尼不行。上命同知大兴府事贾铉诘之，伯通居家待罪。铉奏：“暐言弹绌大臣，须有实迹，所劾不当，徒坏台纲。益言除授皆宰执公议，不言伯通私枉。”诏责铎言事轻率，而慰谕伯通治事。伯通再上表辞，不许。四年，进尚书左丞，致仕，卒。
 </p><p>尼庞古鉴，本名外留，隆州人也。识女直小字及汉字，登大定十三年进士第，调隆安教授。改即墨主簿，召授国子助教，擢近侍局直长。世宗器其材，谓宰臣曰：“新进士中如徒单镒、夹谷衡、尼庞古鉴，皆可用也。”改太子侍丞。逾年，迁应奉翰林文字，兼右三部司正。世宗复谓宰臣曰：“鉴尝近侍，朕知其正直干治。及为东宫侍丞，保护太孙，礼节言动犹有国俗纯厚旧风，朕甚嘉之。”章宗立，累迁尚书户部侍郎，兼翰林直学士。俄转同知大兴府，用大臣荐，改知大兴府事。明昌五年拜参知政事，薨，谥曰文肃。
 </p><p>赞曰：移剌履从容进说，信孚于君，至论经纯传驳，以孝行为治本，其得古人遗学欤！昔臧孙达忠谏于鲁，君子知其有后，信矣。张万公引正守己，质言无华。开壕括地之议，明灼利害，如指诸掌，闭于群说而不式，致仕而归，理势然也。蒲察通之哭海陵，君臣大义死生一之，其志烈矣。程辉、斡特剌之鲠直，刘玮、董师中之通敏，才皆足以发闻，然师中有附胥之讥，刘玮见避事之责，其视前人，多有愧矣。王蔚、马惠迪之徒，何足算也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十二章-卷三十二-原文.html'>第三十二章-卷三十二</a></p><p class='next'>下一节：<a href='第三十四章-卷三十四-原文.html'>第三十四章-卷三十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十二章-卷三十二-原文.html'>第三十二章-卷三十二</a></p><p class='next'>下一节：<a href='第三十四章-卷三十四-原文.html'>第三十四章-卷三十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

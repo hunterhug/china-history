@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -235,5 +262,18 @@
 </p><p>三年秋，土鲁番侵甘肃，诏尚书金献民视师，以雄佩平虏大将军印，充总兵官，提督陕西、延绥、宁夏、甘肃四镇军务。列侯出征，始佩大将军印，无授都督者，至是特以命雄。甫至，寇已破走，而雄亦得荫锦衣千户。既班师，复出镇宁夏。吉囊大入，总督王宪檄雄等破之，进都督同知。寇八千骑乘冰犯宁夏。雄及副总兵赵镇御之，前锋陷伏中，雄等皆败。总督王琼劾之，夺官闲住。明年卒。
 </p><p>雄敢战。尝以数骑行边，敌麕至。乃下马积鞍为垒，跪而射之。敌退，解衣，腋凝血，乃知中飞矢。武宗在大同，见雄毡帷敝甚，曰：“老杭穷乃尔。”寇至，帝将亲击。雄叩马谏曰：“主人畜犬，不使吠盗，奚用犬为？愿听臣等效力。”帝笑而止。少役延绥巡抚行台，既贵，每至台议事，不敢正席坐，曰：“此当年役所也。”正德、嘉靖间，西北名将，马永而下称雄云。
 </p><p>赞曰：时平则将略无由见。或绾符出镇，守疆御侮，著有劳效，以功名终，亦足尚矣。许贵、周贤、鲁鉴、姜汉家世为将，勋阀相承，而贤与汉死事尤烈。彭清、杭雄之清节，斯又其最优者欤。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十一章-卷六十一-原文.html'>第六十一章-卷六十一</a></p><p class='next'>下一节：<a href='第六十三章-卷六十三-原文.html'>第六十三章-卷六十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十一章-卷六十一-原文.html'>第六十一章-卷六十一</a></p><p class='next'>下一节：<a href='第六十三章-卷六十三-原文.html'>第六十三章-卷六十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -183,5 +210,18 @@
 </p><p>长子郭洪，年仅十三岁。太祖下谕道“：郭云出自乡间，倡义旗保卫乡里，生平坎坷，竭尽全力。王师北伐，人人响应，但郭云数战不屈服，势穷援绝，最终仍无异心。我赞赏他的气节，在有关地方试用，百姓都歌颂他的恩德，让他镇守故乡，则军民安居乐业。他虽没有汗马功劳，倒戈之功，但政绩显著，忠义凛然。他儿子郭洪可列入开国功臣行列，授予宣武将军、飞熊卫亲军指挥使司佥事，并予以世袭。”同时对降将予以世袭职位的还有王溥。
 </p><p>王溥，安仁人。在陈友谅部下任平章，镇守建昌。太祖命令将领前往攻打，没有攻下。朱亮祖在饶州安仁港攻打，也失利。陈友谅的将领李明道进攻信州，王溥的弟弟汉二在军中，都被胡大海俘虏，归附行省李文忠，文忠命令他们两人招降王溥。这一年太祖占领了江州，陈友谅逃至武昌，王溥才派使者请降，仍受命镇守建昌。第二年，太祖到龙兴，他率领部下朝见，受到慰劳，并随太祖归建康，赐给官邸于聚宝门外，把他的街命名为“宰相街”，以示特别宠幸。不久，命他攻取抚州和江西未归附的郡县。又随克武昌，晋升为中书右丞。洪武元年(1368)受命兼任詹事府副詹事。跟从大将军北征，多次立功。赏赐文币，提升为河南行省平章，不掌管具体事务。年食禄和李伯升、潘元明相等。
 </p><p>最初，王溥没当官时，侍奉母亲叶氏躲避战乱于贵溪，战乱中与母亲失散，一离就是十八年，他曾梦见母亲仿佛间告诉他身在何处。至此他告诉了太祖，请求回归故乡为母亲填坟。太祖准允，并命令礼官准备了祭物。王溥带领士兵回到贵溪，找不到母亲的坟墓，昼夜哭泣。当地居民吴海说夫人被贼所逼，投井自尽了。王溥找到那口井，有只老鼠从井里出来，投入他的怀中，又立即跳入井里。王溥排干井水寻找，见母亲的尸体在井中，悲痛不已。于是准备棺木殓葬，就地安葬。王溥去世，子孙世袭指挥同知。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十一章-卷二十一-白话.html'>第二十一章-卷二十一</a></p><p class='next'>下一节：<a href='第二十三章-卷二十三-白话.html'>第二十三章-卷二十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十一章-卷二十一-白话.html'>第二十一章-卷二十一</a></p><p class='next'>下一节：<a href='第二十三章-卷二十三-白话.html'>第二十三章-卷二十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

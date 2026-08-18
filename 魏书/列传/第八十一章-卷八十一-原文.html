@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#列传'>：目录</a></p>
@@ -217,5 +244,18 @@
 </p><p>纥机辩有智数。当公断决，终日不以为劳。长直禁中，略无休息。时复与沙门讲论，或分宵达曙，而心力无怠，道俗叹服之。然性浮动，慕权利，外似謇正，内实谄谀。时豪胜己，必相陵驾；书生贫士，矫意礼之。其诡态若此，有识鄙薄焉。
 </p><p>纥既处腹心，参断机密，势倾一时，远近填凑。与郑俨、李神轨宠任相亚，时称徐郑焉。然无经国大体，好行小数，说灵太后以铁券间尔朱荣左右，荣知，深以为憾，启求诛之。荣将入洛，既克河梁，纥矫诏夜开殿门，取骅骝御马十匹，东走兗州。纥弟献伯为北海太守，献伯弟季彦先为青州长史，纥使人告之，亦将家南走。羊侃时为太山太守，纥往投之，说侃令举兵。侃从之，遂聚兵反，共纥围兗州。孝庄初，遣侍中于晖为行台，与齐献武王督诸军讨之。纥虑不免，说侃请乞师于萧衍。侃信之，遂奔衍。文笔驳论数十卷，多人遗落，时或存于世焉。
 </p><p>史臣曰。阙</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十章-卷八十-原文.html'>第八十章-卷八十</a></p><p class='next'>下一节：<a href='第八十二章-卷八十二-原文.html'>第八十二章-卷八十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八十章-卷八十-原文.html'>第八十章-卷八十</a></p><p class='next'>下一节：<a href='第八十二章-卷八十二-原文.html'>第八十二章-卷八十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

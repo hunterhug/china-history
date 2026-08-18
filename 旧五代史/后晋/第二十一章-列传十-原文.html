@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后晋<a href='../旧五代史.html#后晋'>：目录</a></p>
@@ -163,5 +190,18 @@
 </p><p>程福赟，未详何许人也。性沉厚，有勇力，累为军校。天福七年冬，杜重威讨镇州，与安重荣大战于宗城，以功迁洺州团练使、检校太保，未几，入为奉国左厢都指挥使。九年春，少帝将幸澶渊，福赟部下有军士文荣等八人，潜谋作乱，于本营纵火，福赟寻领腹心之士扑灭之，福赟亦有所伤。福赟性本纯厚，又以车驾顺动，秘而不奏。同列李殷，居福赟下无名，欲危福赟以自升，遂密陈其事，云：“福赟若不为乱，何得无言？”少帝至封丘，出福赟为商州刺史，寻下狱鞫之。福赟终不自明，以至见杀，人甚冤之。
 </p><p>郭璘，邢州人也。初事后唐明宗，渐升为军校。天福中，为奉国指挥使，历数郡刺史。开运中，移领易州，契丹攻其郡，璘率厉士众，同其甘苦，敌不能克。复以州兵击贼，数获其利，朝廷嘉之，就加检校太保。契丹主尝谓左右曰：“吾不畏一天下，乃为此人所抑挫！”重威降，契丹使通事耿崇美诱其民众，璘不能制，城既降，为崇美所害。汉高祖即位，诏赠太傅。
 </p><p>史臣曰：观前代人臣之事迹多矣，若乃世道方泰，则席宠恃禄者实繁；世运既屯，则效死输忠者无几。如皇甫遇愤激而殁，王清以血战而亡，近世以来，几人而已。其或临难捐躯，或守方遇害，比夫惑妖艳以丧其命，因醇酎以亡其身者，盖相去之远矣！唯顺密遏滑台之肇乱，救晋室之临危，亦可谓之忠矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十章-列传九-原文.html'>第二十章-列传九</a></p><p class='next'>下一节：<a href='第二十二章-列传十一-原文.html'>第二十二章-列传十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十章-列传九-原文.html'>第二十章-列传九</a></p><p class='next'>下一节：<a href='第二十二章-列传十一-原文.html'>第二十二章-列传十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

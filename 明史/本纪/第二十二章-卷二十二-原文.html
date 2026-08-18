@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-本纪<a href='../明史.html#本纪'>：目录</a></p>
@@ -160,5 +187,18 @@
 </p><p>六年春正月戊午，修《三朝要典》。丁卯，大清兵围宁远，总兵官满桂、宁前道参政袁崇焕固守。己巳，围解。二月乙亥，袁崇焕为佥都御史，专理军务，仍驻宁远。戊戌，以苏杭织造太监李实奏，逮前应天巡抚周起元，吏部主事周顺昌，左都御史高攀龙，谕德缪昌期，御史李应升、周宗建、黄尊素。攀龙赴水死，起元等下镇抚司狱，相继死狱中。己亥。祭日于东郊。三月丁未，设各边镇监军内臣。太监刘应坤镇守山海关，大学士丁绍轼、兵部尚书王永光等屡谏不听。论宁远解围功，封魏忠贤从子良卿肃宁伯。庚戌，安邦彦犯贵州，官军败绩，总理鲁钦死之。壬子，袁崇焕巡抚辽东、山海。夏四月丁丑，命南京守备内臣搜括应天各府贮库银，充殿工、兵饷。戊戌，丁绍轼卒。五月戊申，王恭厂灾，死者甚众。己酉，以旱灾敕群臣修省。癸亥，朝天宫灾。六月丙子，京师地震，灵丘地震经月。壬午，河决广武。辛卯，《三朝要典》成，刊布中外。闰月辛丑，巡抚浙江佥都御史潘汝桢请建魏忠贤生祠，许之。嗣是建祠几遍天下。壬寅，冯铨罢。壬子，朱燮元以忧去，偏沅巡抚都御史闵梦得代之。是夏，京师大水，江北、山东旱蝗。秋七月辛未朔，日当食，阴云不见。辛巳，下前扬州知府刘铎诏狱，杀之。丙戌，礼部侍郎施凤来、张瑞图，詹事李国〈木普〉，俱礼部尚书东阁大学士，预机务。八月，陕西流贼起，由保宁犯广元。九月庚寅，顾秉谦致仕。壬辰，皇极殿成，停刑。己亥，魏良卿进封肃宁侯。是月，参将杨明辉赍敕招谕水西贼，被杀。是秋，江北大水，河南蝗。冬十月戊申，进魏忠贤爵上公，魏良卿宁国公，予诰券，加赐庄田一千顷。己酉，以皇极殿成诏天下，官匠杂流升授者九百六十五人。癸丑，改修《光宗实录》。十一月庚寅，予魏良卿铁券。十二月戊申，南京地震。甲子，浔州贼杀守备蔡人龙。是年，安南、乌斯藏、琉球入贡。
 </p><p>七年春正月辛未，振凤阳饥。乙亥，太监涂文辅总督太仓银库、节慎库，崔文升、李明道提督漕运河道，核京师、通州诸仓。辛卯，免榷潼关、咸阳商税。二月壬戌，修隆德殿。三月癸酉，丰城侯李承祚请开采珠池、铜矿，不许。戊子，澄城民变，杀知县张斗耀。是春，大清兵征朝鲜。夏四月丁酉，下前侍郎王之寀镇抚司狱，死狱中。五月己巳，监生陆万龄请建魏忠贤生祠于太学旁，祀礼如孔子，许之。丙子，大清兵围锦州。癸巳，攻宁远。六月庚子，锦州围解。秋七月乙丑朔，帝不豫。丙寅，罢袁崇焕。己卯，封魏忠贤孙鹏翼为安平伯。壬午，戍孙慎行。丁亥，海贼寇广东。是月，浙江大水。八月丙申，加魏良卿太师，魏鹏翼少师。戊戌，中极、建极二殿成。乙巳，召见阁部、科道诸臣于乾清宫，谕以魏忠贤、王体乾忠贞可计大事。封忠贤侄良栋为东安侯。甲寅，大渐。乙卯，崩于乾清宫，年二十三。遗诏以皇第五弟信王由检嗣皇帝位。冬十月庚子，上尊谥，庙号熹宗，葬德陵。
 </p><p>赞曰：明自世宗而后，纲纪日以陵夷，神宗末年，废坏极矣。虽有刚明英武之君，已难复振。而重以帝之庸懦，妇寺窃柄，滥赏淫刑，忠良惨祸，亿兆离心，虽欲不亡，何可得哉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p><p class='next'>下一节：<a href='第二十三章-卷二十三-原文.html'>第二十三章-卷二十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p><p class='next'>下一节：<a href='第二十三章-卷二十三-原文.html'>第二十三章-卷二十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

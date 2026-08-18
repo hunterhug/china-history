@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -179,5 +206,18 @@
 </p><p>虞谦仪表俊美，风采凝重。工于诗画，对自己的才华很自负。工部侍郎苏瓒，为人精鄙猥亵，却位居虞谦之上，虞谦因此常怏怏不乐，人们因此觉得他气量过于狭小。
 </p><p>汤宗，字正传，浙江平阳人。洪武末年，由太学生升为河南按察佥事，后改到北京任按察佥事。建文时期，他上奏说有变故，他说按察使陈瑛接受燕王邸的金钱，有异谋。诏令逮捕陈瑛，发往广西安置，而升汤宗为山东按察使。因犯有过失，他被降为刑部郎中，又出京任苏州知府。苏州连年水灾，人民流离，拖欠的租税达一百余万石。汤宗通告富民出米代为交纳。富民知道他爱民，不出三个月便交纳完毕。
 </p><p>永乐元年(1403)，有人说他坐视水患不管，将他逮捕下狱，贬到禄州任通判。因黄淮的推荐，他被召为大理寺丞。有人说汤宗曾揭发成祖在潜邸时的事。皇上说“：帝王唯才是用，何必论旧嫌？”当时外国朝贡使者病死，使者的随从人员说是医生杀死了他。结案后，汤宗看过案情记录叹道：“医生与使者有什么仇，有什么理由要杀他？”他于是为医生辩白，使他被放了出来。不久他受命赈济河南饥荒，回来后代理户部事务。解缙入狱时，牵连到汤宗，被判关了十几年。仁宗即位后，汤宗得复官，再升为南京大理寺卿。宣宗初年，他到山东清理军事，正值久不下雨，汤宗极力陈述民间饥馑困敝的情况。皇上为此免除山东的租税徭役，停罢不急的事项。宣德二年(1427)汤宗去世。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十七章-卷三十七-白话.html'>第三十七章-卷三十七</a></p><p class='next'>下一节：<a href='第三十九章-卷三十九-白话.html'>第三十九章-卷三十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十七章-卷三十七-白话.html'>第三十七章-卷三十七</a></p><p class='next'>下一节：<a href='第三十九章-卷三十九-白话.html'>第三十九章-卷三十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

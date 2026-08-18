@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-本纪<a href='../明史.html#明史'>：目录</a></p>
@@ -248,5 +275,18 @@
 </p><p>七月四日，阿鲁台弃军中武器从阔栾海旁向北逃窜。发兵焚烧，没收其牲畜，后回师。对诸将说：“阿鲁台敢叛逆，依靠兀良哈为羽翼。应当回师剪除兀良哈。”选步骑二万，分五路并进。十五日，在屈裂儿河相遇，成祖亲自击败兀良哈，追击六十里，斩杀部落长数十人。三日，巡行河西，捕杀很多。十九日，兀良哈余部到军门来投降。这一月，皇太子免征南、北直隶、山东、河南郡县水灾后粮草共六十一万有余。八月十四日，分道前进的诸路将士全部告捷。九月二日，因班师而诏告天下。十九日，郑亨、薛禄守卫开平。郑和回国。九月二十三日，到北京。九日，左春坊大学士杨士奇被投入监狱。十二日，吏部尚书蹇义、礼部尚书吕震被投入监狱，不久全部释放。十七日，记随帝北征功劳，封左都督朱荣武进伯，都督佥事薛贵安顺伯。
 </p><p>冬十月九日，分遣中官及朝臣八十人核实天下仓库粮食进出数目。十二月八日，朱荣镇守辽东。闰十二月二十五日，乾清宫发生火灾。
 </p><p>这年，暹罗、苏门答剌、阿丹遣使臣进贡地方特产。占城、琉球中山、卜花儿、哈密、瓦剌、土鲁番、爪哇入朝进贡。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五-白话.html'>第五章-卷五</a></p><p class='next'>下一节：<a href='第七章-卷七-白话.html'>第七章-卷七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五-白话.html'>第五章-卷五</a></p><p class='next'>下一节：<a href='第七章-卷七-白话.html'>第七章-卷七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-列传<a href='../新五代史.html#列传'>：目录</a></p>
@@ -169,5 +196,18 @@
 </p><p>○吴峦
 </p><p>吴峦，字宝川，郓州卢县人也。少举明经不中，清泰中为大同沙彦珣节度判官。晋高祖起太原，召契丹为援，契丹过云州，彦珣出城迎谒，为契丹所虏。城中推峦主州事，峦即闭门拒守，契丹以兵围之。高祖入立，以云州入于契丹，而峦犹守城不下，契丹围之凡七月。高祖义峦所为，乃以书告契丹，使解兵去。高祖召峦，以为武宁军节度副使、谏议大夫、复州防御使。
 </p><p>出帝即位，与契丹绝盟，河北诸州皆警，以谓贝州水陆之冲，缓急可以转饷，乃积刍粟数十万，以王令温为永清军节度使。令温牙将邵珂，素骄很难制，令温夺其职。珂闲居无憀，乃阴使人亡入契丹，言贝州积粟多而无兵守，可取。令温以事朝京师，心颇疑珂，乃质其子崇范以自随。晋大臣以峦前守云州七月，契丹不能下，乃遣峦驰驿代令温守贝州。峦善抚士卒，会天大寒，裂其帷幄以衣士卒，士卒皆爱之。珂因求见蛮，愿自效，峦推心信之。开运元年正月，契丹南寇，围贝州，峦命珂守南门。契丹围三日，四面急攻之，峦从城上投薪草焚其梯冲殆尽。已而珂自南门引契丹入，峦守东门方战，而左右报珂反，峦顾城中已乱，即投井死。而令温家属为契丹所虏，出帝悯之，以令温为武胜军节度使，后累历方镇，周显德中卒。令温，瀛州河间人也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十六章-唐臣传第十六-原文.html'>第十六章-唐臣传第十六</a></p><p class='next'>下一节：<a href='第十八章-汉臣传第十八-原文.html'>第十八章-汉臣传第十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十六章-唐臣传第十六-原文.html'>第十六章-唐臣传第十六</a></p><p class='next'>下一节：<a href='第十八章-汉臣传第十八-原文.html'>第十八章-汉臣传第十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

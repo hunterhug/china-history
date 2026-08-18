@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>元史-本纪<a href='../元史.html#本纪'>：目录</a></p>
@@ -175,5 +202,18 @@
 </p><p>冬十月乙未，享于太庙，贞懿顺圣昭天睿文光应皇后祔。丙申，募民淮西屯田。己亥，议封安南王号，易所赐安南国畏吾字虎符，以国字书之；仍降诏谕安南国，立日烜之叔遗爱为安南国王。庚子，溪洞新附官镇安州岑从毅，纵兵杀掠，迫死知州李显祖，召从毅入觐。壬寅，赐征日本将校衣装、币帛、靴帽等物有差。乙巳，命安西王府协济户及南山隘口军，于安西、延安、凤翔、六盘等处屯田。河西置织毛段匠提举司。丁未，安南国置宣慰司，以北京路达鲁花赤孛颜帖木儿参知政事，行安南国宣慰使，都元帅、佩虎符柴椿、忽哥儿副之。给钞万锭，付河西行省以备经费。己酉，张易等言：“参校道书，惟《道德经》系老子亲著，余皆后人伪撰，宜悉焚毁。”从之，仍诏谕天下。给隆兴行省海青符。命失里咱牙信合八剌麻合迭瓦为占城郡王，加荣禄大夫，赐虎符。立行中书省占城。以唆都为右丞，刘深为左丞，兵部侍郎也里迷失参知政事。庚戌，敕以海船百艘，新旧军及水手合万人，期以明年正月征海外诸番，仍谕占城郡王给军食。以安南国王陈遗爱入安南，发新附军千人卫送。诏谕干不昔国来归附。壬子，用和礼霍孙言，于扬州、隆兴、鄂州、泉州四省，置蒙古提举学校官各二员。以翰林学士承旨撒里蛮兼领会同馆、集贤院事，以平章政事、枢密副使张易兼领秘书监、太史院、司天台事，以翰林学士承旨和礼霍孙守司徒。改大都南阳真定等处屯田孛兰奚总管府为农政院。癸丑，皇太子至自北边。丙辰，以兀良合带言，上都南四站人畜困乏，赐钞给之。庚申，籍西川户。辛酉，邵武叛人高日新降。给征日本回侍卫新附军冬衣。赐刘天锡等银币，胜兀剌等羊马钞，诸王阿只吉等马牛羊，各有差。
 </p><p>十一月癸亥朔，诏谕探马礼，令归附。甲子，敕诛陈吊眼首恶者，余并收其兵仗，系送京师。己巳，敕军器监给兵仗付高丽沿海等郡。奉使占城孟庆元、孙胜夫并为广州宣慰使，兼领出征调度。高丽国、金州等处置镇边万户府，以控制日本。高日新及其弟鼎新等至阙，以日新两为叛首，授山北路民职。文庆之属，遣还泉州。赐有功将校二百二十三员银十万两及币帛、弓矢、鞍勒有差。诏安南国王给占城行省军食。高丽国王请完滨海城，防日本，不允。辛未，给诸王阿只吉粮六千石。甲戌，太阴犯五车次南星。乙亥，召法师刘道真，问祠太乙法。丁丑，太阴犯鬼。壬午，诏谕瓜哇国主，使亲来觐。昌州及盖里泊民饥，给钞赈之。丙戌，给钞二万锭付和林贸易。敕征日本回军后至者分戍沿海。丁亥，太阴掩心东星。给扬州行省新附军将校钞，人二锭。己酉，赐安南国出征新附军钞。赐礼部尚书留梦炎及出使马八国俺都剌等钞各有差。
 </p><p>十二月甲午，以瓮吉剌带为中书右丞相。己亥，罢日本行中书省。丙午，太阴犯轩辕大星。丁未，议选侍卫军万人练习，以备扈从。升太常寺为正三品。辛亥，命西川行省给万家奴所部兵仗。癸丑，敕免益都、淄莱、宁海开河夫今年租赋，仍给其佣直。乙卯，以诸王札忽儿所占文安县地给付屯田。丙辰，调新附军屯田。获福州叛贼林天成，戮于市。免福州路今年税二分，十八年以前租税并免征。以汉州德阳县隶成都府。改漳州为府。赐礼部尚书谢昌元钞。赏捏古伯战功银有差。偿阿只吉等助军马价。赐塔剌海籍没户五十。是岁，保定路清苑县水，平阳路松山县旱，高唐、夏津、武城等县蟊害稼，并免今年租，计三万六千八百四十石。断死罪二十二人。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p><p class='next'>下一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p><p class='next'>下一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

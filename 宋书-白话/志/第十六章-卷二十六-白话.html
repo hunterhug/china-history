@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>宋书-志<a href='../宋书.html#宋书'>：目录</a></p>
@@ -185,5 +212,18 @@
 </p><p>后废帝元徽三年七月丙申，金星入角宿，犯木星．占辞说：“角宿代表天门，国家将有战争。”考查占书可知，金星与木星在角宿相会，则有军队在外被打败，将军被杀死。同月丁巳，金星入氐宿。氐宿代表天子的宿宫，金星是掌管战事的行星。八月己巳，金星犯房宿北头第一：：星。占辞说：“这预示君王违德。”九月癸卯，金星犯南：卜第三星。占辞说：“王公大臣当承受这天象预示的灾祸，将更换君王．”十月丙戌，木星入氏宿．占辞说：“这预示诸侯之中有入宫为君者。”十一月庚戌，月入太微垣，掩屏西南星．占辞说：“显贵之人将失去权势．”四年L月，建平王刘景素占据京口反叛。当时后废帝凶恶无度，五年七月死亡，安成王进宫继皇位。三年后，齐高帝接受顺帝的惮让。
 </p><p>元徽四年三月乙巳，月犯房宿北头第一丛，进而犯键闭星。占辞说：“有入图谋在宗庙之中埋伏甲兵，天子不宜出宫下殿堂，将有凶暴之事。”九月甲辰，木星犯太微垣西蕃。占辞说：“这预示将有立王之事。”另一说：“将有王被迁徙。”又说：“王公将有忧患．”当时废帝出入无度，最后因此而死，安成王继立为君。元徽五年正月戊申，月犯南；第五星．、占辞与前面相同。四月丁巳，火星犯舆鬼宿之西北星。占辞说：“最多六百天，最少六十天，王公将有忧患。”又说：“这天象预示君主交恶．”同月丙子，金星犯舆鬼宿之西北星。占辞说：“将有大赦。”五月戊申，金星白天出现在午之上，光亮异常。占辞说：“这预示将改朝换代。”六月壬戌，月犯钩铃星。占辞说：“将有重大诏令。”同月乙丑，月犯南斗第四星。占辞与前面相同。七月，废帝去世，大赦天下。二年后齐高帝接受顺帝的让位。
 </p><p>顺帝升明元年八月庚申，月入南斗犯第三星。占辞与前面相同。九月丁亥，金星在翼宿．经天而白天出现。占辞说：“这预示将改朝换代。”闰十二月癸卯之夜，月掩南斗第四星。占辞与前面相同。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷二十五-白话.html'>第十五章-卷二十五</a></p><p class='next'>下一节：<a href='第十七章-卷二十七-白话.html'>第十七章-卷二十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷二十五-白话.html'>第十五章-卷二十五</a></p><p class='next'>下一节：<a href='第十七章-卷二十七-白话.html'>第十七章-卷二十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

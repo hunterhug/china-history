@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>隋书-帝纪<a href='../隋书.html#帝纪'>：目录</a></p>
@@ -157,5 +184,18 @@
 </p><p>天祸隋国，大行太上皇遇盗江都，酷甚望夷，衅深骊北。悯予小子，奄逮丕愆，哀号承感，心情糜溃，仰惟荼毒，仇复靡申，形影相吊，罔知启处。相国唐王，膺期命世，扶危拯溺，自北徂南，东征西怨，总九合于一匡，决百胜于千里，纠率夷夏，大庇氓黎，保乂朕躬，繄王是赖。德侔造化，功格苍旻，兆庶归心，历数斯在，屈为人臣，载违天命。在昔虞夏，揖让相推，苟非重华，谁堪命禹！当今九服崩离，三灵改卜，大运去矣，请避贤路，兆谋布德，顾己莫能，私僮命驾，须归籓国。予本代王，及予而代，天之所废，岂期如是！庶凭稽古之圣，以诛四凶，幸值惟新之恩，预充三恪。雪冤耻于皇祖，守禋祀为孝孙，朝闻夕殒，及泉无恨，今遵故事，逊于旧邸。庶官群辟，改事唐朝，宜依前典，趣上尊号。若释重负，感泰兼怀，假手真人，俾除丑逆。济济多士，明知朕意。
 </p><p>仍敕有司，凡有表奏，皆不得以闻。是日，上逊位于大唐，以为酅国公。武德二年夏五月崩，时年十五。
 </p><p>史臣曰：恭帝年在幼冲，遭家多难，一人失德，四海土崩。群盗蜂起，豺狼塞路，南巢遂往，流彘不归。既钟百六之期，躬践数终之运，讴歌有属，笙钟变响，虽欲不遵尧舜之迹，其庸可得乎！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

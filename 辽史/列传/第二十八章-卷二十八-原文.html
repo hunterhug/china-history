@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#列传'>：目录</a></p>
@@ -160,5 +187,18 @@
 </p><p>道宗尝谓大臣曰：“今之忠直，耶律玦、刘伸而已！”宰相杨绩贺其得人。拜参知政事。上谕之曰：“卿勿惮宰相。”时北院枢密使乙辛势焰方炽，伸奏曰：“臣于乙辛尚不畏，何宰相之畏！”乙辛衔之，相与排诋，出为保静军节度使。上终欲大用，加守太子太保，迁上京留守。乙辛以事徙镇雄武，复以崇义军节度使致仕。适燕、蓟民饥，伸与致政赵徽、韩造日济以糜粥，所活不胜算。大安二年卒，上震悼，赙赠加等。
 </p><p>耶律胡吕，字苏撒，弘义宫分人。其先欲稳，佐太祖有功，为迭烈部夷离堇。父杨五，左监门卫大将军。胡吕性谦谨，于人无适莫。重熙末，补寝殿小底。以善职，屡更华要，迁千牛卫大将军。大安中，北阻卜酋磨鲁斯叛，为招讨都监，与耶律那也率精骑二千讨平之，以功为汉人行宫副部署，兼知太和宫事。致仕，加同中书门下平章事，卒。
 </p><p>论曰：兀纳当道宗昏惑之会，拥佑皇孙，使乙辛奸计不获复逞，而辽祚以续，比之屋质立穆宗，非溢美也。俨以俊才莅政，所至有能誉，纂述辽史，具一代治乱，亦云勤矣，但其固宠，不能以礼正家，惜哉。刘伸三为大理，民无冤抑，一登户部，上下兼裕，至与耶律玦并称忠直，不亦宜乎！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十七章-卷二十七-原文.html'>第二十七章-卷二十七</a></p><p class='next'>下一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十七章-卷二十七-原文.html'>第二十七章-卷二十七</a></p><p class='next'>下一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

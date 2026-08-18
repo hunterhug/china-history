@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -204,5 +231,18 @@
 </p><p>何攀，字惠兴，蜀郡郫人也。仕州为主薄。属刺史皇甫晏为牙门张弘所害，诬以大逆。时攀适丁母丧，遂诣梁州拜表，证晏不反，故晏冤理得申。王濬为益州，辟为别驾。濬谋伐吴，遣攀奉表诣台，口陈事机，诏再引见，乃令张华与攀筹量进时讨之宜。濬兼遣攀过羊祜，面陈伐吴之策。攀善于将命，帝善之，诏攀参濬军事。及孙皓降于濬，而王浑恚于后机，欲攻濬，攀劝濬送皓与浑，由是事解。以攀为濬辅国司马，封关内侯。转荥阳令，上便宜十事，甚得名称。除廷尉平。时廷尉卿诸葛冲以攀蜀士，轻之，及共断疑狱，冲始叹服。迁宣城太守，不行，转散骑侍郎。杨骏执政，多树亲属，大开封尝，欲以恩泽自卫。攀以为非，乃与石崇共立议奏之。语在崇传。帝不纳。以豫诛骏功，封西城侯，邑万户，赐绢万匹，弟逢平卿侯，兄子逵关中侯。攀固让所封户及绢之半，余所受者分给中外宗亲，略不入己。迁翊军校尉，顷之，出为东羌校尉。征为扬州刺史，在任三年，迁大司农。转兗州刺史，加鹰扬将军，固让不就。太常成粲、左将军卞粹劝攀涖职，中诏又加切厉，攀竟称疾不起。及赵王伦篡位，遣使召攀，更称疾笃。伦怒，将诛之，攀不得已，扶疾赴召。卒于洛阳，时年五十八。攀居心平允，氵位官整肃，爱乐人物，敦儒贵才。为梁、益二州中正，引致遗滞。巴西陈寿、阎乂、犍为费立皆西州名士，并被乡闾所谤，清议十余年。攀申明曲直，咸免冤滥。攀虽居显职，家甚贫素，无妾媵伎乐，惟以周穷济乏为事。子璋嗣，亦有父风。
 </p><p>史臣曰：幽厉不君，上德犹怀进善；共驩在位，大圣之所不堪。况乎志士仁人，宁求苟合！怀其宠秩，所以系其存亡者也。虽复自口销金，投光抚剑，驰书北阙，败车犹践，而谏主不易，讥臣实难。刘毅一遇宽容，任和两遭肤受，详观余烈，亦各其心焉。若夫武陔怀魏臣之志，崔洪爱郤诜之道，长升劝王弥之尊，何攀从赵伦之命，君子之人，观乎临事者也。
 </p><p>赞曰：仲雄初令，忠謇扬庭。身方诸葛，帝拟桓、灵。大业非杨，元褒诮贾。和氏条暢，堪施大厦。崔门不谒，声飞朝野。侯史、武陔，辅佐之才。何攀平允，冤滥多回。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十四章--原文.html'>第十四章-</a></p><p class='next'>下一节：<a href='第十六章--原文.html'>第十六章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十四章--原文.html'>第十四章-</a></p><p class='next'>下一节：<a href='第十六章--原文.html'>第十六章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

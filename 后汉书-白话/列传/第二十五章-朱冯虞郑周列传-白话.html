@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#后汉书'>：目录</a></p>
@@ -179,5 +206,18 @@
 </p><p>延平元年(106)，为光禄勋。
 </p><p>永初元年(107)，代魏霸为太常。这年冬，代尹勤为司空。这时中常侍郑众、蔡伦等都仗势干预朝政，周章数次进直言。起初，和帝死后，邓太后以皇子刘胜有痼疾，不可奉承宗庙，殇帝是幼儿，养为己子，因而立为太子，以刘胜为平原王。殇帝死后，群臣以为刘胜的病不是痼疾，都主张立刘胜，太后以前既未立刘胜，恐立后怨恨她，就立和帝兄清河孝王儿子刘..，是为安帝。周章以众心不附，于是密谋闭宫门，杀掉车骑将军邓骘兄弟及郑众、蔡伦，劫持尚书，废太后于南宫，封安帝为远国王，而立平原王刘胜为帝。密谋被发觉、策免，周章自杀。家无余财，诸子易衣而出，并日而食。
 </p><p>史官评论道：孔子称“可以与立功立事，而不可与争权。”权，是反常的东西。将从反常之事，必乘非常的机遇，使所举不成为空妄，志行通了名也在成全了。周章并没有像霍光那样受到武帝的负图之托，德也没有万夫景仰之望，主无绝天之..，地有既安之势，而密谋创虑于难图，希冀建功于理绝，不是很荒谬吗？如果君器更易由下面来作决议，那么斗筲之徒也必能叨天业，狂夫庸臣也会奋斗不息了。孟轲有言说：“有伊尹之心则可，无伊尹之心则构成篡夺了。”唉，将来的人要警戒啊！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十四章-樊宏阴识列传-白话.html'>第二十四章-樊宏阴识列传</a></p><p class='next'>下一节：<a href='第二十六章-梁统列传-白话.html'>第二十六章-梁统列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十四章-樊宏阴识列传-白话.html'>第二十四章-樊宏阴识列传</a></p><p class='next'>下一节：<a href='第二十六章-梁统列传-白话.html'>第二十六章-梁统列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

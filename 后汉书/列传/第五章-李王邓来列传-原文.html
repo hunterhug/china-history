@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#列传'>：目录</a></p>
@@ -186,5 +213,18 @@
 </p><p>及帝崩，阎太后起历为将作大匠。顺帝即位，朝廷咸称社稷臣，于是迁为卫尉。礻殳讽、刘玮、闾丘弘等先卒，皆拜其子为郎；朱伥、施延、陈光、赵代等并为公卿，任职；征王男、邴吉家属还京师，厚加赏赐；籍建、高梵等，悉蒙显擢。永建元年，拜历车骑将军，弟祉为步兵校尉，超为黄门侍郎。三年，母长公主薨，历称病归第；服阕，复为大鸿胪。阳嘉二年，卒官。
 </p><p>子定嗣。定尚安帝妹平氏长公主，顺帝时，为虎贲中郎将。定卒，子虎嗣，桓帝时，为屯骑校尉。弟艳，字季德，少好学下士，开馆养徒，少历显位，灵帝时，再迁司空。
 </p><p>赞曰：&quot;李、邓豪赡，舍家从谶。少公虽孚，宗卿未验。王常知命，功惟帝念。款款君叔，斯言无玷。方献三捷，永坠一剑。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章-宗室四王三侯列传-原文.html'>第四章-宗室四王三侯列传</a></p><p class='next'>下一节：<a href='第六章-邓寇列传-原文.html'>第六章-邓寇列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四章-宗室四王三侯列传-原文.html'>第四章-宗室四王三侯列传</a></p><p class='next'>下一节：<a href='第六章-邓寇列传-原文.html'>第六章-邓寇列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-志<a href='../明史.html#志'>：目录</a></p>
@@ -182,5 +209,18 @@
 </p><p>洪武六年二月，定救日食礼。其日，皇帝常服，不御正殿。中书省设香案，百官朝服行礼。鼓人伐鼓，复圆乃止。月食，大都督府设香案，百官常服行礼，不伐鼓，雨雪云翳则免。
 </p><p>二十六年三月更定，礼部设香案于露台，向日，设金鼓于仪门内，设乐于露台下，各官拜位于露台上。至期，百官朝服入班，乐作，四拜兴，乐止，跪。执事者捧鼓，班首击鼓三声，众鼓齐鸣，候复圆，复行四拜礼。月食，则百官便服于都督府救护如仪。在外诸司，日食则于布政使司、府州县，月食则于都指挥使司、卫所，如仪。
 </p><p>隆庆六年，大丧。方成服，遇日食。百官先哭临，后赴礼部，青素衣、黑角带，向日四拜，不用鼓乐。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十二章-卷三十二-原文.html'>第三十二章-卷三十二</a></p><p class='next'>下一节：<a href='第三十四章-卷三十四-原文.html'>第三十四章-卷三十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十二章-卷三十二-原文.html'>第三十二章-卷三十二</a></p><p class='next'>下一节：<a href='第三十四章-卷三十四-原文.html'>第三十四章-卷三十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

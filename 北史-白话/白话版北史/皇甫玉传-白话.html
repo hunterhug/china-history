@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>北史-白话版北史<a href='../北史.html#北史'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>皇甫玉传<span style='font-size:small'> 白话</span></h1>
 <p>皇甫玉，不知道什么地方的人，擅长给人看相。齐文襄从颍川回京，文宣跟随在后，皇甫玉在旁边放眼观看。对人说“：大将军不耕种农作物。”指着文宣说“：正是路北流鼻涕的那个人。”文宣帝即位后，试验皇甫玉的相面术，特地用帛巾蒙住眼，让他逐个摸那些人。摸到文宣帝时说“：这是最大的最显要的官。”到任城王时说：“会做到丞相。”到常山王、长广王时，都说：“也显贵。”到石动桶时说“：这是个愚笨的傻子。”到两个供饭的官员说“：正好得吃喝罢了。”皇甫玉曾经为高归彦相面说：“位极人臣，但不要谋反。”高归彦说“：我为什么要谋反？”皇甫玉说“：您长有反骨。”孝昭恩赐赵郡王犯死罪十次而不追究，赵郡王高兴地说：“皇甫玉给我看相，说我不得善终。现在还有什么可以担心的？”皇上以皇甫玉动辄为各王侯看相的原因，心中很不安定，皇甫玉对他妻子说“：皇帝不超过二年。”他妻子把这话告诉给舍人斛斯洪庆的妻子，洪庆又转告皇帝。皇帝恼怒地说：“对妇女小孩评论万岁爷！”下诏召见皇甫玉。皇甫玉每次照镜子，自称要被兵器杀死，等到被召见，对他妻子说“：我现在去朝中，不回来，如果过了太阳正午，我可以活下来。”已经到了正午，于是斩了他。</p>
-<div class='pn'><p class='pre'>上一节：<a href='吴遵世传-白话.html'>吴遵世传</a></p><p class='next'>下一节：<a href='陆法和传-白话.html'>陆法和传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='吴遵世传-白话.html'>吴遵世传</a></p><p class='next'>下一节：<a href='陆法和传-白话.html'>陆法和传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

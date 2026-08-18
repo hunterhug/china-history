@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-本纪<a href='../新五代史.html#本纪'>：目录</a></p>
@@ -157,5 +184,18 @@
 </p><p>二年春二月甲戌，范延光罢。己丑，追尊鲁国太夫人魏氏为皇太后。三月辛丑，忠武军节度使赵延寿为枢密使。夏五月辛卯，宣徽南院使刘延皓为枢密使。契丹寇边。六月癸未，群臣献添都马。秋七月丁酉，回鹘可汗王仁美使其都督陈福海来。刘延皓罢。九月己酉，刑部尚书房暠为枢密使。乙卯，渤海遣使者来。
 </p><p>三年春正月乙未，百济遣使者来。丁未，封子重美为雍王。三月丙午，翰林学士、礼部侍郎马胤孙为中书侍郎，同中书门下平章事。河东节度使石敬瑭反。夏五月乙卯，建雄军节度使张敬达为太原四面都招讨使，义武军节度使杨光远为副。戊申，先锋指挥使安审信叛降于石敬瑭。己酉，振武戍将安重荣叛降于石敬瑭。壬子，天雄军屯驻捧圣都虞候张令昭逐其节度使刘延皓。六月癸亥，以令昭为右千牛卫将军，权知天雄军事。甲戌，宣武军节度使范延光为天雄军四面招讨使。秋七月戊申，克魏州。壬子，张令昭伏诛。癸丑，彰圣指挥使张万迪叛降于石敬瑭。八月戊午，契丹使梅里来。九月甲辰，张敬达及契丹战于太原，败绩，契丹围敬达于晋安。戊申，如河阳。冬十月壬戌，括马，籍民为兵。十一月戊子，卢龙军节度使赵德钧为行营都统。丁酉，契丹立晋。闰月甲子，杨光远杀张敬达，以其军叛降于契丹。甲戌，契丹及晋人至于潞州。丁丑，至自河阳。辛巳，皇帝崩。
 </p><p>呜呼，君臣之际，可谓难哉！盖明者虑于未萌而前知，暗者告以将及而不惧，故先事而言，则虽忠而不信，事至而悔，其可及乎？重诲区区独见潞王之祸，而谋之不臧，至于殒身赤族，其隙自兹。及愍帝之亡也，穴于徽陵，其土一垅，路人见者，皆为之悲。使明宗为有知，其有愧于重诲矣，哀哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章-唐本纪第六-原文.html'>第六章-唐本纪第六</a></p><p class='next'>下一节：<a href='第八章-晋本纪第八-原文.html'>第八章-晋本纪第八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六章-唐本纪第六-原文.html'>第六章-唐本纪第六</a></p><p class='next'>下一节：<a href='第八章-晋本纪第八-原文.html'>第八章-晋本纪第八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后唐<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -170,5 +197,18 @@
 </p><p>十一日，御史台上言：“请使用本朝律令格式，今查访只有定州有本朝法书，望下诏令该州写副本进献上来。”庄宗答应了。十二日，下诏贬安义军节度使李继韬为登州长史，随之在天津桥杀掉，因他再次谋反。十五日，淮南杨溥、奚族首领李绍威一起派使者来朝庆贺。
 </p><p>十八日，泽州刺史董璋奏称：潞州军叛变，李继达领兵出城，自杀而死，节度副使李继珂已安抚全城军民。二十日，有关官员进言“：皇上向上帝祈求五谷丰收，请奉高祖神尧皇帝配享；夏天求雨，请奉太宗文皇帝配享；秋天在明堂上供时，请奉太祖武皇帝配享；冬至祭祀圜丘，请奉献祖文皇帝配享；冬天祭神州地祗，请奉懿祖昭圣皇帝配享。”庄宗允准了。
 </p><p>二十二日，亳州太清宫道士进言，圣祖玄元皇帝殿前枯死的桧树重新长出新枝，画了图献上。下诏说：“圣祖旧殿前枯桧生出新枝，符合皇家再造之期，显示大国中兴之运。和汉朝上林苑的倒仆柳树那样，祥瑞与汉宣帝时相合；可比于南顿县嘉禾的吉兆，吉庆更超过汉光武帝时期。应该在史册上记载，向天下显明。”二十三日，庄宗到伊阙。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章-庄宗纪三-白话.html'>第五章-庄宗纪三</a></p><p class='next'>下一节：<a href='第七章-庄宗纪五-白话.html'>第七章-庄宗纪五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五章-庄宗纪三-白话.html'>第五章-庄宗纪三</a></p><p class='next'>下一节：<a href='第七章-庄宗纪五-白话.html'>第七章-庄宗纪五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#列传'>：目录</a></p>
@@ -161,5 +188,18 @@
 </p><p>耶律沤里思，六院夷离堇蒲古只之后。负勇略，每战被重铠，挥铁槊，所向披靡。会同间，伐晋，上至河而猎，适海东青鹘搏雉，晋人隔水以鸽引去。上顾左右曰：“谁为我得此人？”沤里思请内厩马，济河擒之，并杀救者数人还。上大悦，优加赏赉。既而晋将杜重威逆于望都，据水勒战。沤里思介马突阵，余军继之。被围，众言阵薄处可出，沤里思曰：“恐彼有他备。”竟引兵冲坚而出；回视众所指，皆大堑也。其料敌多此类。是年，总领敌烈皮室军，坐私免部曲，夺官，卒。
 </p><p>张砺，磁州人，初仕唐为掌书记，迁翰林学士。会石敬瑭起兵，唐主以砺为招讨判官，从赵德钧援张敬达于河东。及敬达败，砺入契丹。后太宗见砺刚直有文彩，擢翰林学士。砺临事必尽言，无所避，上益重之。未几，谋亡归，为追骑所获。上责曰：“汝何故亡？”砺对曰：“臣不习北方土俗，饮食居处，意常郁郁，以是亡耳。”上顾通事高彦英曰：“朕尝戒汝善遇此人，何乃使失所而亡？砺去，可再得耶？”遂杖彦英而谢砺。会同初，升翰林承旨，兼吏部尚书，从太宗伐晋。入汴，诸将萧翰、耶律郎五、麻答辈肆杀掠，砺奏曰：“今大辽始得中国，宜以中国人治之，不可专用国人及左右近习。苟政令乖失，则人心不服，虽得之亦将失之。”上不听。改右仆射，兼门下侍郎、平章事。顷之，车驾北还，至栾城崩。时砺在恒州，萧翰与麻答以兵围其第。砺方卧病，出见之。翰数之曰：“汝何故于先帝言国人不可为节度使？我以国舅之亲，有征伐功，先帝留我守汴，以为宣武军节度使，汝独以为不可。又谮我与解里好掠人财物子女。今必杀汝！”趣令锁之。砺抗声曰：“此国家大体，安危所系，吾实言之。欲杀即杀，奚以锁为？”麻答以砺大臣，不可专杀，乃救止之。是夕，砺恚愤卒。
 </p><p>论曰：初，晋因辽之兵而得天下，故兼臣礼而父事之，割地以为寿，输帛以为贡。未久也，而会同之师次滹沱矣。岂群帅贪功黩武而致然欤？抑所谓信不由衷也哉？模翰以功名自终，可谓良将。若延寿之勋虽著，至于觊觎储位，谬矣，利令智昏，固无足议。若乃成末衅以亏俊功，如解里者，何讥焉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p><p class='next'>下一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p><p class='next'>下一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

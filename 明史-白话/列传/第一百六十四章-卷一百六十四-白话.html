@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -186,5 +213,18 @@
 </p><p>不久因为衡阳、永州有很多强盗，让曾樱改任湖广按察使，负责分守湖南，给他颁发了敕命。按惯例，守道官不发敕命，是庄烈帝特意赐给他的。当时贼盗已经破坏了十多个州县，而永州的知府、推官都不能胜任自己的职务。曾樱向朝廷推荐苏州同知晏日曙、归德推官万元吉的才干。当时他们两个正因故被罢官，因为曾樱的推荐都得到了起用。曾樱接着调芝龙来剿贼，贼盗大部分归降了，这一带于是稳定下来。后来，曾樱又升为山东右布政使，负责守护登州、莱州。
 </p><p>十四年春天，曾樱被提拔为右副都御史。接替徐人龙巡抚他的辖区。第二年调任南京工部右侍郎，他请假还乡去了。当初山东战乱时，巡抚王永吉所辖的济南、兖州、东昌三府的州县都失陷了，他隐瞒着不往上报。后来贼兵退出，他作为收复之功报了上去。曾樱所辖的青州、登州、莱州三府没丢失几个州县，他完全如实报上去了。等后来评定功过时，永吉反而升为总督，曾樱被剥夺官职，逮进了刑部的监狱里。此后不到十天功夫，京师失陷了，贼寇释放各种囚犯，曾樱才得以逃回南方去。
 </p><p>后来唐王在福州称帝，芝龙推荐曾樱起任工部尚书兼东阁大学士。不久让他掌管吏部，很快又加封为太子太保、吏部尚书、文渊阁大学士。唐王驻在延平时，让曾樱留守福州。大清部队打下福州后，曾樱带着全家到海外的中左卫避难。过了五年，海岛也受到攻打，曾樱于是上吊自杀了。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百六十三章-卷一百六十三-白话.html'>第一百六十三章-卷一百六十三</a></p><p class='next'>下一节：<a href='第一百六十五章-卷一百六十五-白话.html'>第一百六十五章-卷一百六十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百六十三章-卷一百六十三-白话.html'>第一百六十三章-卷一百六十三</a></p><p class='next'>下一节：<a href='第一百六十五章-卷一百六十五-白话.html'>第一百六十五章-卷一百六十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

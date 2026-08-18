@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#金史'>：目录</a></p>
@@ -180,5 +207,18 @@
 </p><p>执中的同党在街衢上呼喊道“：礣军造反了，杀死礣兵的人有赏。”市民响应，礣兵死了很多人，整个军队都恐惧不安。宣宗派近侍告慰礣军，令有关部门酌量给予丧葬财物，众军兵才稍稍安定下来。第二天，皇上任命特末也为泰宁军节度使，授实际官职与乌古论夺剌为济南府知府，徒单金寿为归德府知府，蒲察六斤为平阳府知府。
 </p><p>十八日，左谏议大夫张行信向皇帝呈上封事，在封事中说：“按《春秋》书中的法则，国君不依靠既定的规律立位，如果曾经与诸侯会盟，就列位为诸侯。东海王在位达六年，他的臣子谁也不敢冒犯他。胡沙虎带兵入城，叛逆杀君，当时只有鄯阳、石古乃率人赶去救援，以至于战死。就他的忠烈而言，朝中领俸禄的大臣都该感到羞愧。陛下开始亲理政事，海内各方仰望归化，褒奖两人，延福于其子孙，多少抚慰一下贞烈魂灵，以激励天下人的忠义风气。宋国徐羡之、傅亮、谢晦杀营阳王而立文帝，文帝杀掉他们。而因为江陵迎驾心诚，赦免了他的妻儿。胡沙虎是国家的大贼，为人所共同憎恶，虽然已死但罪名没有正式判定，应当揭露他的罪状，向朝廷内外宣布，削除名号，革去官爵，连坐他的家眷，这才是大快人心。陛下如果不忍心泯灭他帮助立位的功劳，就仿照元嘉的旧例处置，也足以表示惩戒了。”宣宗于是下昭揭露执中的罪状，削除官爵。赠给鄯阳和石古乃，加恩封赏他们的儿子。庆山奴、惟弼、惟康都加官奖赏，近侍局从此开始行使权力。
 </p><p>著者评论：金国九位君主，被臣下杀死的三人，被谋反的共有十人。熙宗被杀，只有大兴国这一人被世宗明定罪并在思陵旁边分尸而死。徒单贞虽然被诛杀，但没听到揭露他的罪状，后来由于他是外戚，又追封官号。余下的秉德、唐括辩等六人，都因别的罪行被杀。海陵之死，元凶是完颜元宜，却让他自然死亡。卫绍王被胡沙虎所杀，他没死于司败的杀戮，却死于术虎高琪之手。古人所讲杀君之贼子应当诛杀，是指奏请皇上后才得以征讨，就像孔子奏请讨伐陈恒那样。哪有像高琪那样擅自杀人而因之立功的呢？金国的刑律如此混乱，国家要不灭亡，难道可以做到吗？</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十九章-卷六十九-白话.html'>第六十九章-卷六十九</a></p><p class='next'>下一节：<a href='第七十一章-卷七十一-白话.html'>第七十一章-卷七十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十九章-卷六十九-白话.html'>第六十九章-卷六十九</a></p><p class='next'>下一节：<a href='第七十一章-卷七十一-白话.html'>第七十一章-卷七十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

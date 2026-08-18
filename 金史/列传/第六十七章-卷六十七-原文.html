@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -195,5 +222,18 @@
 </p><p>持国为人柔佞有智术。初，李妃起微贱，得幸于上。持国久在太子宫，素知上好色，阴以秘术干之，又多赂遗妃左右用事人。妃亦自嫌门地薄，欲藉外廷为重，乃数称誉持国能，由是大为上所信任，与妃表里，筦擅朝政。诛郑王永蹈、镐王永中，罢黜完颜守贞等事，皆起于李妃、持国。士之好利躁进者皆趋走其门下。四方为之语曰：“经童作相，监婢为妃。”恶其卑贱庸鄙也。
 </p><p>承安三年，御史台劾奏：“右司谏张复亨、右拾遗张嘉贞、同知安丰军节度使事赵枢、同知定海军节度使事张光庭、户部主事高元甫、刑部员外郎张岩叟、尚书省令史傅汝梅、张翰、裴元、郭郛，皆趋走权门，人戏谓‘胥门十哲’。复亨、嘉贞尤卑佞苟进，不称谏职。俱宜黜罢。”奉可。于是持国以通奉大夫致仕，嘉贞等皆补外。
 </p><p>顷之，起知大名府事，未行，改枢密副使，佐枢密使襄治军于北京。一日，上召翰林修撰路铎问以他事，因语及董师中、张万公优劣，铎曰：“师中附胥持国进。持国奸邪小人，不宜典军马，以臣度之，不惟不允人望，亦必不能服军心，若回日再相，必乱天下。”上曰：“人臣进退人难，人君进退人易，朕岂以此人复为相耶。第迁官二阶，使之致仕耳。”寻卒于军，谥曰“通敏”。后上问平章政事张万公曰：“持国今已死，其为人竟如何？”万公对曰：“持国素行不纯谨，如货酒平乐楼一事，可知矣。”上曰：“此亦非好利。如马琪位参政，私鬻省酝，乃为好利也。”子鼎，别有传。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十六章-卷六十六-原文.html'>第六十六章-卷六十六</a></p><p class='next'>下一节：<a href='第六十八章-卷六十八-原文.html'>第六十八章-卷六十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十六章-卷六十六-原文.html'>第六十六章-卷六十六</a></p><p class='next'>下一节：<a href='第六十八章-卷六十八-原文.html'>第六十八章-卷六十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

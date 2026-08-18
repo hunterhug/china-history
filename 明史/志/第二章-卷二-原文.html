@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-志<a href='../明史.html#志'>：目录</a></p>
@@ -268,5 +295,18 @@
 </p><p>嘉靖元年正月戊午，犯罗堰。二年八月壬寅，犯上将。
 </p><p>天启七年三月辛未，退犯房。
 </p><p>按两星经纬同度曰掩，光相接曰犯，亦曰凌。纬星出入黄道之内外，凡恒星之近黄道者，皆其必由之道，凌犯皆由于此。而行迟则凌犯少，行速则多，数可预定，非如彗孛飞流之无常。然则天象之示炯戒者，应在彼而不在此。历代史志凌犯多系以事应，非附会即偶中尔。兹取纬星之掩犯恒星者次列之。比事以观，其有验者，十无一二，后之人可以观矣。至于月道与纬星相似，而行甚速，其出入黄道也，二十七日而周，计其掩犯恒星殆无虚日，岂皆有休咎可占，今见于《实录》者不及百分之一，然已不可胜书，故不书。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-卷一-原文.html'>第一章-卷一</a></p><p class='next'>下一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-卷一-原文.html'>第一章-卷一</a></p><p class='next'>下一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

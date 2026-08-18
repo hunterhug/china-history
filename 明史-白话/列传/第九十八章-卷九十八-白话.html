@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -186,5 +213,18 @@
 </p><p>正逢皇帝采用邹应龙的意见，将严世蕃贬戍雷州，他的同党罗龙文被贬戍浔州。严世蕃留在家里不到雷州去。罗龙文一到戍所，就逃跑回徽州，多次往来江西，与严世蕃计议事情。四十三年(1564)冬天，林润按视江防，查访到这种情况，急驰上疏说：“臣巡视上江，备访江洋群盗，他们都窜入到逃军罗龙文、严世蕃家中。罗龙文卜筑深山，乘轩衣蟒，有负险不臣之心。而严世蕃日夜与罗龙文诽谤时政，摇惑人心。近来假借治第之名，招集勇士达到四千多人。人们纷纷感到忧惧，都说有不测之变。乞求将他们早正刑章，以杜绝本。”皇帝大怒，当即诏令林润将他们逮捕送到京师。严世蕃的儿子严绍庭是锦衣官，听到这个命令后亟刻报告给严世蕃，让他到戍所去。刚刚二日，林润已经飞驰而至。严世蕃猝然不及到戍所，于是被枷械上路，罗龙文也被从梧州捕至。于是尽查二人的不法事，他们二人终被诛杀。
 </p><p>林润不久被提升为南京通政司参议，历太常寺少卿。隆庆元年(1567)林润以右佥都御史的官职巡抚应天诸府。属吏被他的威名所慑惧，都感到震栗。林润到达后，则采用宽平措施，多有惠政，吏民对他都心悦诚服。过了三年，林润死在官任上。年纪刚满四十岁。
 </p><p>林润的乡郡兴化曾被倭寇攻陷，他特上疏请求朝廷再免除三年赋税，发放库金而对他们进行救济抚恤。他的乡人感他的恩德。他死后灵柩运回到家乡，乡亲们遮道四十里，为他立牌位祭哭三天。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九十七章-卷九十七-白话.html'>第九十七章-卷九十七</a></p><p class='next'>下一节：<a href='第九十九章-卷九十九-白话.html'>第九十九章-卷九十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九十七章-卷九十七-白话.html'>第九十七章-卷九十七</a></p><p class='next'>下一节：<a href='第九十九章-卷九十九-白话.html'>第九十九章-卷九十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

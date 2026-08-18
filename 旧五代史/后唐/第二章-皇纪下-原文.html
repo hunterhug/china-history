@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后唐<a href='../旧五代史.html#后唐'>：目录</a></p>
@@ -191,5 +218,18 @@
 </p><p>冬十月，武皇有疾，是时晋阳城无故自坏，占者恶之。
 </p><p>天祐五年正月戊子朔，武皇疾革。辛卯，崩于晋阳，年五十三。遣令薄葬，发丧后二十七日除服。庄宗即位，追谥武皇帝，庙号太祖，陵在雁门。《五代史补》：太祖武皇，本硃耶赤心之后，沙陀部人也。其先生于雕窠中，酋长以其异生，诸族传养之，遂以“诸爷”为氏，言非一父所养也。其后言讹，以“诸”为“硃”，以“爷”为“耶”。至太祖生，眇一目，长而骁勇，善骑射，所向无敌，时谓之“独眼龙”，大为部落所疾。太祖恐祸及，遂举族归唐，授云州刺史，赐姓李，名克用。黄巢犯长安，自北引兵赴难，功成，遂拜太原节度使，封晋王。武皇之有河东也，威声大振。淮南杨行密常恨识其状貌，因使画工诈为商贾，往河东写之。画工到，未几，人有知其谋者，擒之。武皇初甚怒，既而谓所亲曰：“且吾素眇一目，试召之使写，观其所为如何。”及至，武皇按膝厉声曰：“淮南使汝来写吾真，必画工之尤也，写吾不及十分，即价下便是死汝之所矣。”画工再拜下笔。时方盛暑，武皇执八角扇，因写扇角半遮其面。武皇曰：“汝谄吾也。”遽使别写之，又应声下笔，画其臂弓捻箭之状，仍微合一目以观箭之曲直，武皇大喜，因厚赂金帛遣之。《五代史阙文》：世传武皇临薨，以三矢付庄宗曰：“一矢讨刘仁恭，汝不先下幽州，河南未可图也。一矢击契丹，且曰安巴坚与吾把臂而盟，结为兄弟，誓复唐家社稷，今背约附贼，汝必伐之。一矢灭硃温，汝能成吾志，死无憾矣！”庄宗藏三矢于武皇庙庭。及讨刘仁恭，命幕吏以少牢告庙，请一矢，盛以锦囊，使亲将负之以为前驱。凯旋之日，随俘馘纳矢于太庙。伐契丹，灭硃氏亦如之。又，武皇眇一目，谓之“独眼龙。”性喜杀，左右有小过失，必置于死。初讳眇，人无敢犯者，尝令写真，画工即为捻箭之状，微瞑一目，图成而进，武皇大悦，赐予甚厚。
 </p><p>史臣曰：武皇肇迹阴山，赴难唐室，逐豺狼于魏阙，殄氛祲于秦川，赐姓受封，奄有汾、晋，可谓有功矣。然虽茂勤王之绩，而非无震主之威。及硃旗屯渭曲之师，俾翠辇有石门之幸，比夫桓、文之辅周室，无乃有所愧乎！洎失援于蒲、绛，久垂翅于并、汾，若非嗣子之英才，岂有兴王之茂业。矧累功积德，未比于周文，创业开基，尚亏于魏祖。追谥为“武”，斯亦幸焉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-皇纪上-原文.html'>第一章-皇纪上</a></p><p class='next'>下一节：<a href='第三章-庄宗纪一-原文.html'>第三章-庄宗纪一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-皇纪上-原文.html'>第一章-皇纪上</a></p><p class='next'>下一节：<a href='第三章-庄宗纪一-原文.html'>第三章-庄宗纪一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>宋史-白话版宋史<a href='../宋史.html#宋史'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>曾艵传<span style='font-size:small'> 白话</span></h1>
 <p>曾古心字仲常，是中书舍人曾巩的孙子。曾古心补太学内舍生，因父亲任郊社斋郎，累官司农丞、通判温州，停留在越州。<BR><BR>　　建炎三年(1129)，金人攻陷越州，以琶八为主帅，约定早晨城中文武官员一起到州府，有不到及藏匿、不告发的人，都处死。曾古心惟独没有前往，被邻人纠察逮捕，见到琶八，言辞气度不折节。而且说“：国家有什么负你的，而你叛盟欺天，恣肆为大逆不道。我是宋代世臣，恨无尺寸权柄以死报国，怎么能贪生怕死事奉你这个狗奴呢？”当时金人营帐中执掌兵权的人都陡然一惊，瞪着眼互相看着，琶八说：“暂且令他出去。”左右之人把他的家属四十人全部驱赶到越州城南门外，在同一天杀掉，越州百姓挖地窖埋葬了他们的尸体。金人离开越州，曾古心的弟弟朝散郎曾旦心当时知杭州余杭县事，制作大棺殓葬他们的尸骨，埋葬在天柱山。事情被朝廷知道后，赐予三资恩泽，使其弟曾付心、儿子曾宗山、兄长的儿子曾艶为官，都任将仕郎。<BR><BR>　　曾古心刚遇难时，曾宗山才四岁，与乳母张氏都昏死过去。晚上逢下小雨，张氏得以苏醒，回头看见曾宗山也苏醒了，还在吮吸她的乳头，本郡兵士陈海把曾宗山隐藏起来回到故乡。曾宗山后来当官到知南安军。曾古心从弟曾悟。</p>
-<div class='pn'><p class='pre'>上一节：<a href='杨邦艱传-白话.html'>杨邦艱传</a></p><p class='next'>下一节：<a href='李彦仙传-白话.html'>李彦仙传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='杨邦艱传-白话.html'>杨邦艱传</a></p><p class='next'>下一节：<a href='李彦仙传-白话.html'>李彦仙传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

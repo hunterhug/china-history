@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-志<a href='../明史.html#志'>：目录</a></p>
@@ -421,5 +448,18 @@
 </p><p>乐清(府东北。东有北雁荡山。南滨海，有玉环山，在海中。又西北有荆溪。又县治傍有东、西二溪。西南有馆头江。西有象浦河，东北有石马港，下流皆达海。有长林盐场。又西有盘石卫，洪武二十年二月置。东有盘石守御后千户所，成化五年置。东北有蒲岐守御千户所，亦洪武二十年二月置。西有馆头巡检司，迁治县西南岐头寨。后复。东南有北监巡检司，治玉环山下，寻迁县东北蔡岙，又迁县东白沙岭，又迁鹗头，又迁窑岙山下，仍故名。)
 </p><p>平阳(府西南。元平阳州。洪武三年降为县。西南有南雁荡山，有玉苍山。又东南海中有大岩头山，有南麂山。又西有前仓江，亦曰横阳江，东南经江口关注於海。南有天富南盐场。又南有金乡卫，有蒲门守御千户所，东北有壮士守御千户所，皆洪武二十年二月置。东南有舥艚、又有斗门二巡检司。南有江口巡检司，治下埠，后迁渡头。又东有仙口巡检司，迁县南麦城山，仍故名。又东南有龟峰巡检司，废。)
 </p><p>泰顺(府西南。景泰三年以瑞安县罗洋镇置，析平阳县地益之。南有分水山，上有关，为浙、闽分界处。又西有白溪，下流至福建宁德县入海。又东有仙居溪，流入瑞安境入海。北有池村巡检司。南有三冠巡检司，本洋望，后更名。东南有鸦阳巡检司，后废。又罗阳第一关在县东。)</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p><p class='next'>下一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p><p class='next'>下一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

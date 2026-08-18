@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后唐<a href='../旧五代史.html#后唐'>：目录</a></p>
@@ -160,5 +187,18 @@
 </p><p>药彦稠，沙陀三部落人。幼以骑射事明宗，累迁至列校。明宗践阼，领澄州刺史、河阳马步都将。从王晏球讨王都于定州，平之，领寿州节度使、侍卫步军都虞候。属河中指挥使杨彦温作乱，彦稠改侍卫步军都指挥使，充河中副招讨使，将兵讨平之。无几，党项劫回鹘入朝使，诏彦稠屯朔方，就讨党项之叛命者，搜索盗贼，尽获回鹘所贡驼马、宝玉，擒首领而还。寻授邠州节度使。遣会兵制置盐州，蕃戎逃遁，获陷蕃士庶千余人，遣复乡里。受诏与延州节度使，案：原本阙二字。进攻夏州，累月不克，兵罢归镇。闵帝嗣位，与王思同攻凤翔，为副招讨使。禁军之溃，彦稠欲沿流而遁，为军士所擒而献之。时末帝已至华州，令拘于狱，诛之。汉高祖即位，与王思同并制赠侍中。
 </p><p>宋令询，不知何许人也。闵帝在籓时，补为客将，知书乐善，动皆由礼。长兴中，闵帝连典大籓，迁为都押衙，参辅阃政，甚有时誉，闵帝深委之。及闵帝嗣位，硃、冯用事，不欲闵帝之旧臣在于左右，乃出为磁州刺史。闵帝蒙尘于卫，令询日令人奔问。及闻帝遇害，大恸半日，自经而卒。
 </p><p>史臣曰：夫代大匠斫者，犹伤其手，况代天子执赏罚之柄者乎！是以古之贤人，当大任、秉大政者，莫不卑以自牧，推之不有，廓自公之道，绝利己之欲，然后能保其身而脱其祸也。而重诲何人，安所逃死，古语云：“无为权首，反受其咎。”重诲之谓欤！自宏昭而下，力不能卫社稷，谋不能安国家，相踵而亡，又谁咎也。唯令询感故君之旧恩，由大恸而自绝，以兹陨命，足以垂名。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十一章-列传十七-原文.html'>第四十一章-列传十七</a></p><p class='next'>下一节：<a href='第四十三章-列传十九-原文.html'>第四十三章-列传十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十一章-列传十七-原文.html'>第四十一章-列传十七</a></p><p class='next'>下一节：<a href='第四十三章-列传十九-原文.html'>第四十三章-列传十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

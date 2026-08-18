@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -194,5 +221,18 @@
 </p><p>是岁，潼关失守，阿鲁带趋备蓝田、商州，乃陈河北利害，略曰：“今忻、代撤戍，太原帅府众才数千，平阳行省兵亦不多，河东、河北之势，全恃潞州，潞州兵强，则国家基本渐可复立。臣已将兵离境，乞复置潞州帅府。”阿鲁带行次渑池，右副元帅蒲察阿里不孙败绩，逃匿不知所在。阿鲁带亦被创，收集溃卒，卧渑池。诏还潞州。
 </p><p>兴定元年，改签枢密院事。数月，以元帅左监军兼山东路统军使，知益都府事。未几，权参知政事，行尚书省于益都。阿鲁带复立潞州，最有功，识辽州刺史郭文振，举以为将。既而去潞州，张开代领其众，与郭文振不相得，文振渐不能守矣。
 </p><p>赞曰：贞祐之时，仆散安贞定山东，仆散端镇陕西，胥鼎控制河东，侯挚经营赵、魏，其措注施设有可观者。故田琢抚青、齐，完颜弼保东平，必兰阿鲁带守上党，皆向用有功焉。高琪忌功，汝砺固位，西启夏衅，南挑宋兵。宣宗道谋是用，煦煦以为慈，皦皦以为明，孑孑以为强。既而潼关破毁，崤、渑丧败，汴州城门不启连月，高琪方且增陴浚隍为自守计，缮御寨以祈逃死。然后田琢走益都而青、齐裂，蒙古纲去东平而兖、鲁蹙，仆散安贞死而南伐无功。虽曰天道，亦由人事。自是以往，无足言者矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十九章-卷三十九-原文.html'>第三十九章-卷三十九</a></p><p class='next'>下一节：<a href='第四十一章-卷四十一-原文.html'>第四十一章-卷四十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十九章-卷三十九-原文.html'>第三十九章-卷三十九</a></p><p class='next'>下一节：<a href='第四十一章-卷四十一-原文.html'>第四十一章-卷四十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

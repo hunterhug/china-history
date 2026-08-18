@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -163,5 +190,18 @@
 </p><p>杨名，字实卿，遂宁人。在他少年的时候，督学王廷相对他的话语感到惊奇，将他补作弟子生员。嘉靖七年(1528)，乡试第一。第二年以第三名考中进士，授官编修。听说大母死去，请求紧急回家乡。再回朝廷后，任展书官。
 </p><p>十一年(1532)十月，彗星出现。杨名应皇帝诏令上书，说皇帝喜怒失中，用舍不当。语言痛切刚直，皇帝隐恨于心，但答旨称其为纳忠之言，令杨名不用隐讳。杨名于是又说：“吏部是诸曹之首，尚书是百官的表率，而汪钅宏是小人之中的小人。武定侯郭勋奸诈险谲，太常卿陈道瀛、金斌贝仁粗俗鄙陋沉迷于酒色。这几个人，舆论都说不应当任用，而陛下任用他们，是圣心偏爱的缘故。诸臣因建言触忤了皇上，此心实是可以原谅。大学士李时以爱惜人才为请，即被嘉纳，但吏部不为其签署发下。我所说的虚文塞责的事，难道完全没有吗？这些得罪的诸臣，舆论认为应当原宥，但陛下终于不宽恕他们，这是圣心偏于怒的缘故。真人邵元节卑鄙地以末术小技，蒙蔽圣上。皇上曾经下令在内府设斋醮，并且命左右的大臣为供事奔走，于是导致有不肖之徒黑夜乞求出宫门的。将这些载入史册，后世的人将说些什么呢？这些都是圣心少有的偏激，所以我敢抒发自己的愚狂。”
 </p><p>疏章交入，皇帝大为震怒，当即逮住杨名下诏狱进行拷打审讯。汪钅宏上疏分辩说“：杨名是杨廷和的同乡。近来张孚敬离去职位，杨廷和的党徒总是思图报复，所以攻击我。我被皇上选拔任用，只想一振朝廷之纲法，但是议臣总是担心我操之过切。而且内阁大臣率务和同，培植党徒稳固地位，所以杨名敢如此欺君放肆。”皇帝深深听进了他的话，更加恼怒，命令主管部门穷究追问他的主使。杨名数次濒临于死，没有承认什么，说曾经将疏章的草稿给同年生程文德看过，于是皇上将程文德一并下狱。侍郎黄宗明、候补判官黄直救杨名，先后都被下狱。法司再拟杨名的罪，都不能恰当地反映上述情况。皇帝特下诏令谪杨名戍边，编在瞿塘卫。第二年被释放回来。后来多次被推荐终究没有再次召用。居住在家里二十多年，侍奉亲人。双亲死后，他和弟弟杨台在墓旁结草庐居住。守满孝期，他疾病发作，死去。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九十四章-卷九十四-白话.html'>第九十四章-卷九十四</a></p><p class='next'>下一节：<a href='第九十六章-卷九十六-白话.html'>第九十六章-卷九十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九十四章-卷九十四-白话.html'>第九十四章-卷九十四</a></p><p class='next'>下一节：<a href='第九十六章-卷九十六-白话.html'>第九十六章-卷九十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

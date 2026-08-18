@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -181,5 +208,18 @@
 </p><p>谢成，濠州人，从大军克滁州、和州。渡长江，平定集庆，授予总管。攻克宁国、婺州，晋升为管军千户。激战鄱阳，平定武昌，攻下苏州、湖州，晋升为指挥佥事。跟从大军征讨中原，攻克元都，攻占庆阳，直捣定西，任都督佥事、晋王府相。跟从沐英征讨朵甘，降服乞失迦，平定了洮州十八族。洪武十二年(1379)，赐封为永平侯，食禄二千石，世袭指挥使。二十年(1387)，同张温追讨纳哈出余部，召回。二十七年，受株连被杀，没收田宅。
 </p><p>李新，濠州人。从太祖渡江，多次立功。攻战龙湾，授予管军副千户。攻取江陵，晋升为龙骧卫正千户。攻克平江，晋升为神武卫指挥佥事，调守茶陵卫，多次晋升到中军都督府佥事。十五年(1382)，在孝陵驻扎，赐封为崇山侯，年食禄一千五百石。二十二年，受命在鸡鸣山改建帝王庙。李新颇有心计，将作官吏视成画而已。第二年被遣还乡，赏赐金帛田宅。
 </p><p>当时诸勋臣富贵稍有僭肆，太祖十分恼怒，因党事缘故受株连者甚多。李新首先建议，公、侯家人及仪从户应规定一个常数，多余的应交归有关部门。太祖按此办理，全部释放了凤阳隶籍为民，命令礼部修纂《稽制录》，严禁公侯奢侈逾越禁令。于是武宁侯沐英退还佃户，开始纳税，信国公汤和归还仪从户，曹国公景隆归还庄田，都是因为李新的建议。二十六年，以年督有司于溧水开掘胭脂河，西达大江，东通两浙，以利漕运。河修成后，老百姓深感十分便利。二十八年，因株连而被杀。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-白话.html'>第十九章-卷十九</a></p><p class='next'>下一节：<a href='第二十一章-卷二十一-白话.html'>第二十一章-卷二十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-白话.html'>第十九章-卷十九</a></p><p class='next'>下一节：<a href='第二十一章-卷二十一-白话.html'>第二十一章-卷二十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -192,5 +219,18 @@
 </p><p>这年冬天，太祖命胡美为征南将军，率军由江西攻取福建，对他说道：“你以陈氏丞相的身份前来归附，为我效力多年，忠实无过，所以我命你统领军队攻取福建。左丞何文辉为你的副将，参政戴德也听你调遣，这二人虽然都是我的亲信，但不要因为这个缘故而废弃军法。听说你曾攻打过闽中，应当深知其地利险易。现在你统领大军围攻城邑，一定要按是否有利而决定进退，莫失良机。”胡美于是渡杉关，下光泽，邵武守将李宗茂以城投降。胡美驻扎建阳，守将曹复畴也降。进围建宁，守将同佥达里麻、参政陈子琦企图坚守，使我军疲竭。胡美多次挑战，守军不出，于是猛攻，这才投降。整军入城，秋毫无犯。捉拿陈子琦等押送京城，俘获将士九千七百余人，干粮、马匹牲畜甚多。恰逢汤和等也攻取了福州、延平、兴化，胡美于是派遣降将谕降汀、泉诸郡。福建全部平定。胡美留守其地。不久应召返回，随太祖巡幸汴梁。
 </p><p>太祖即位后，以胡美为中书平章、同知詹事院事。洪武三年(1370)，胡美受命前往河南招集扩廓的旧部众。这年冬天，论功时，太祖封胡美为豫章侯，年禄一千五百石，给予世袭凭证，诰词中以窦融归汉一事相比。十三年，胡美被改封为临川侯，在长沙监督建造潭府。太祖榜列勋臣时，谓掌兵两雄之间，可观望而不观望，前来归附者有七人。这七人就是：韩政、曹良臣、杨璟、陆聚、梅思祖、黄彬及胡美，都封为侯。胡美与杨璟有独挡一面之功勋，太祖尤其予以厚待。
 </p><p>十七年，胡美因犯法获罪下狱。二十三年，李善长事发，太祖亲自下诏列举奸党，说胡美因长女为贵妃，偕同其女婿扰乱宫禁，事情败露，其女婿受刑而死，胡美则被赐自尽。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十六章-卷十六-白话.html'>第十六章-卷十六</a></p><p class='next'>下一节：<a href='第十八章-卷十八-白话.html'>第十八章-卷十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十六章-卷十六-白话.html'>第十六章-卷十六</a></p><p class='next'>下一节：<a href='第十八章-卷十八-白话.html'>第十八章-卷十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

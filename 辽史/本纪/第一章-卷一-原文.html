@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-本纪<a href='../辽史.html#本纪'>：目录</a></p>
@@ -164,5 +191,18 @@
 </p><p>神册元年春二月丙戌朔，上在龙化州，迭烈部夷离堇耶律曷鲁等率百僚请上尊号，三表乃允。丙申，群臣及诸属国筑坛州东，上尊号曰大圣大明天皇帝，后曰应天大明地皇后。大赦，建元神册。初，阙地为坛，得金铃，因名其地曰金铃冈，坛侧满林曰册圣林。三月丙辰，以迭烈部夷离堇曷鲁为阿庐朵里于越，百僚进秩、颁赉有差，赐酺三日。立子倍为皇太子。夏四月乙酉朔，晋幽州节度使卢国用来降，以为幽州兵马留后。甲辰，梁遣郎公远来贺。六月庚寅，吴越王遣滕彦休来贡。秋七月壬申，亲征突厥、吐浑、党项、小蕃、沙陀诸部，皆平之。俘其酋长及其户万五千六百，铠甲、兵仗、器服九十馀万，宝货、驼马、年羊不可胜算。八月，拔朔州，擒节度使李嗣本。勒石纪功于青冢南。冬十月癸未朔，乘胜而东。十一月，攻蔚、新、武、妫、儒五州，斩首万四千七百馀级。自代北至河曲逾阴山，尽有其地。遂改武州为归化州，妫州为可汗州，置西南面招讨司，选有功者领之。其围蔚州，敌楼无故自坏，众军大噪乘之，不逾时而破。时梁及吴越二使皆在焉，诏引环城观之，因赐滕彦休名曰述吕。十二月，收山北八军。
 </p><p>二年春二月，晋新州裨将卢文进杀节度使李存矩来降。进攻其城，刺史安金全遁，以文进部将刘殷为刺史。三月辛亥，攻幽州，节度使周德威以幽、并、镇、定、魏五州之兵拒于居庸关之西，合战于新州东，大破之，斩首三万馀级。杀李嗣本之子武八。以后弟阿骨只为统军，实鲁为先锋，东出关略燕、赵，不遇敌而还。己未，于骨里叛，命室鲁以兵讨之。夏四年壬午，围幽州，不克。六月乙巳，望城中有气如烟火状，上曰：“未可攻也。”以大暑霖潦，班师。留曷鲁、卢国用守之。剌葛与其子赛保里叛入幽州。秋八月，李存勖遣李嗣源等救幽州，曷鲁等以兵少而还。
 </p><p>三年春正月丙申，以皇弟安端为大内惕隐，命攻云州及西南诸部。二月，达旦国来聘。癸亥，城皇都，以礼部尚书康默记充版筑使。梁遣使来聘。晋、吴越、渤海、高丽、回鹘、阻卜、党项及幽、镇、定、魏、潞等州各遣使来贡。夏四月乙巳，皇弟迭烈哥谋叛，事觉，知有罪当诛，预为营圹，而诸戚请免。上素恶其弟寅底石妻涅里衮，乃曰：“涅里衮能代其死，则从。”涅里衮自缢圹中，并以奴女古、叛人曷鲁只生瘗其中。遂赦迭烈哥。五月乙亥，诏建孔子庙、佛寺、道观。秋七月乙酉，于越曷鲁薨，上震悼久之，辍朝三日，赠赙有加。冬十二月庚子朔，幸辽阳故城。辛丑，北府宰相萧敌鲁薨。戊午，以于越曷鲁弟污里轸为迭烈部夷离堇，萧阿古只为北府宰相。甲子，皇孙隈欲生。</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p></div></body>
+<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

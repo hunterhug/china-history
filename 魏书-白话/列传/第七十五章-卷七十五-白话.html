@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#魏书'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>第七十五章-卷七十五<span style='font-size:small'> 白话</span></h1>
 <p>朱长生及于提，都是代州人。高祖时，朝廷命朱长生为员外散骑常侍，与于提一起出使高车。到了高车国朝廷上，高车主阿伏至罗要求朱长生等人下拜，长生一口拒绝：“我们是天子使者，怎么会给下土诸侯下拜？”阿伏至罗于是不以使节礼节待他。朱长生拿出带来的金银宝器献上，至罗接受礼物之后，长生说：“你作为内附的臣子，就应尽到臣子礼节，怎么说再拜而实际上却不拜！”喊他出大帐，令他当众叩拜。阿伏至罗丢尽脸面，勃然大怒说：“大帐之中为什么不叫我拜，而让我当众出丑？”夺去朱长生等人所献的财物，把人囚在丛石之中，用刀威胁说：“你若做了我的臣子就能活命，如果不降，杀掉！”朱长生与于提怒目圆睁，厉声谴责说：“哪有天子的使者拜你蛮夷的，我宁为魏鬼，不做你臣！”至罗更加愤怒，断了他们的饮食。跟随前去的三十多人受不了，都投降了，至罗于是给他们送去肉食，只有长生与于提不从，便被各自送到他处去了。过了三年，他们才回来。高祖因朱长生等人守使臣之节远同汉代苏武，十分赞许他们，拜授朱长生河内太守，于提陇西太守，都赐给五等男的爵位。随从都被任命为令长之类官职。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十四章-卷七十四-白话.html'>第七十四章-卷七十四</a></p><p class='next'>下一节：<a href='第七十六章-卷七十六-白话.html'>第七十六章-卷七十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七十四章-卷七十四-白话.html'>第七十四章-卷七十四</a></p><p class='next'>下一节：<a href='第七十六章-卷七十六-白话.html'>第七十六章-卷七十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

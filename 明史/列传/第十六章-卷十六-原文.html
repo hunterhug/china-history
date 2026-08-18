@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -178,5 +205,18 @@
 </p><p>明兵克处州，避入闽。太祖聘之，与刘基、叶琛、宋濂同至应天。太祖劳基等曰：“我为天下屈四先生，今天下纷纷，何时定乎？”溢对曰：“天道无常，惟德是辅，惟不嗜杀人者能一之耳。”太祖伟其言，授佥营田司事。巡行江东、两淮田，分籍定税，民甚便之。以病久在告，太祖知其念母也，厚赐遣归省，而留其子存厚于京师。浙东设提刑按察使，命溢为佥事。胡深出师温州，令溢守处州，馈饷供亿，民不知劳。山贼来寇，败走之。迁湖广按察佥事。时荆、襄初平，多废地，议分兵屯田，且以控制北方。从之。会浙东按察使宋思颜、孔克仁等以职事被逮，词连溢。太祖遣太史令刘基谕之曰：“素知溢守法，毋疑也。”会胡深入闽陷没，处州动摇，命溢为浙东按察副使往镇之。溢以获罪蒙宥，不应迁秩，辞副使，仍为佥事。既至，宣布诏旨，诛首叛者，余党悉定。召旧部义兵分布要害。贼寇庆元、龙泉，溢列木栅为屯，贼不敢犯。浦城戍卒乏食，李文忠欲运处州粮饷之。溢以舟车不通，而军中所掠粮多，请入官均给之，食遂足。温州茗洋贼为患，溢命子存道捕斩之。朱亮祖取温州，军中颇掠子女，溢悉籍还其家。吴平，诏存道守处，而召溢入朝。太祖谕群臣曰：“溢虽儒臣，父子宣力一方，寇盗尽平，功不在诸将后。”复问溢征闽诸将如何。对曰：“汤和由海道，胡美由江西，必胜。然闽中尤服李文忠威信。若令文忠从浦城取建宁，此万全计也。”太祖立诏文忠出师如溢策。处州粮旧额一万三千石，军兴加至十倍。溢言之丞相，奏复其旧。渐东造海舶，征巨材于处。溢曰：“处、婺之交，山岩峻险，纵有木，从何道出？”白行省罢之。
 </p><p>洪武元年与刘基并拜御史中丞兼赞善大夫。时廷臣伺帝意，多严苛，溢独持大体。或以为言。溢曰：“宪台百司仪表，当养人廉耻，岂恃搏击为能哉！”帝亲祀社稷，会大风雨，还坐外朝，怒仪礼不合，致天变。溢委曲明其无罪，乃贳之。文忠之征闽也，存道以所部乡兵万五千人从。闽平，诏存道以所部从海道北征。溢持不可，曰：“乡兵皆农民，许以事平归农，今复调之，是不信也。”帝不怿。既而奏曰：“兵已入闽者，俾还乡里。昔尝叛逆之民，宜籍为军，使北上，一举而恩威著矣。”帝喜曰：“孰谓儒者迂阔哉！然非先生一行，无能办者。”溢行至处州，遭母丧，乞守制。不许。乡兵既集，命存道由永嘉浮海而北，再上章乞终制。诏可。溢悲戚过度，营葬亲负土石，感疾卒，年五十六。帝痛悼，亲撰文，即其家祭之。
 </p><p>存道，溢长子。溢应太祖聘，存道帅义兵归总管孙炎。炎令守上游，屡却陈友定兵。及以功授处州翼元帅副使，戍浦城。总制胡深死，命代领其众，为游击。溢即处城坐镇之。溢谓父子相统，于律不宜，奏罢存道官。不允。旋分兵征闽，而诏存道守处，复部乡兵，从李文忠入闽。及还，浮海至京师。帝褒谕之，命从冯胜北征。积功授处州卫指挥副使。洪武三年从徐达西征，留守兴元，败蜀将吴友仁，再守平阳，转左卫指挥同知。五年从汤和出塞征阳和，遇敌于断头山，力战死焉。赞曰：太祖既下集庆，所至收揽豪隽，征聘名贤，一时韬光韫德之士幡然就道。若四先生者，尤为杰出。基、濂学术醇深，文章古茂，同为一代宗工。而基则运筹帷幄，濂则从容辅导，于开国之初，敷陈王道，忠诚恪慎，卓哉佐命臣也！至溢之宣力封疆，琛之致命遂志，宏才大节，建竖伟然，洵不负弓旌之德意矣。基以儒者有用之学，辅翊治平，而好事者多以谶纬术数妄为傅会。其语近诞，非深知基者，故不录云。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p><p class='next'>下一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p><p class='next'>下一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

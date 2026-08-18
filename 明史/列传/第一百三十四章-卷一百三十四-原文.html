@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -190,5 +217,18 @@
 </p><p>至九月，士龙劾顺天府丞邵辅忠奸贪，希孔、允成亦劾之，辅忠大惧。朝等因诱以超擢，令攻士龙。辅忠遂讦士龙官杭州时盗库纳妓，进忠从中下其疏。尚书周嘉谟等言两人所讦，风闻，请宽贷。进忠不从，削士龙籍，辅忠落职闲住。进忠后易名忠贤，显盗国柄，恨士龙未已。四年冬，令其私人张讷劾之，再命削籍。明年三月入之汪文言狱词，谓纳李三才贿三千，谋起南京吏部，下抚按提讯追赃，遣戍平阳卫。已而辅忠起用，骤迁兵部侍郎。六年十二月，御史刘徽复摭辅忠前奏，劾士龙纳访犯万金，下法司逮治。士龙知忠贤必杀己，夜中逾墙遁，其妾不知也，谓有司杀之，被发号泣于道，有司无如之何。士龙乃潜至家，载妻子浮太湖以免。
 </p><p>庄烈帝嗣位，忠贤伏诛。朝士为士龙称冤，诏尽赦其罪。士龙始诣阙谢恩，且陈被陷之故。帝怜之，命复官致仕，竟不召用。至崇祯十四年，里人周延儒再相，始起漕储副使，督苏、松诸郡粮。明年冬，入为太仆少卿。又明年春，擢左佥都御史。时左都御史李邦华、副都御史惠世扬皆未至，士龙独掌院事。帝尝语辅臣：“往例御史巡方，类微服访民间。近高牙大纛，气凌巡抚，且公署前后皆通窦纳贿，每奉使，富可敌国，宜重惩。”士龙闻，劾逮福建巡按李嗣京。十月谢病归。国变后卒。
 </p><p>赞曰：满朝荐，健令也，出死力以抗凶锋，幽深牢而弗悔。及跻言路，益发愤时事，庶几强立不反者欤。江秉谦、侯震旸之论经抚，李希孔之论“三案”，皆切中事理。王允成直攻刘朝、魏进忠，而不与杨、左、周、黄诸人同难。毛士龙顾以谲免。盖忠贤杀人皆成于附阉邪党，彼其甘心善类，授之刃而假手焉且加功者，罪直浮于忠贤已。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百三十三章-卷一百三十三-原文.html'>第一百三十三章-卷一百三十三</a></p><p class='next'>下一节：<a href='第一百三十五章-卷一百三十五-原文.html'>第一百三十五章-卷一百三十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百三十三章-卷一百三十三-原文.html'>第一百三十三章-卷一百三十三</a></p><p class='next'>下一节：<a href='第一百三十五章-卷一百三十五-原文.html'>第一百三十五章-卷一百三十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

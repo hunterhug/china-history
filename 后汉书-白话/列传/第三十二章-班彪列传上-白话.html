@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#后汉书'>：目录</a></p>
@@ -158,5 +185,18 @@
 </p><p>解释很勉强，供参考。)平易正直，是《春秋》的本义。’”班彪又调升到司徒玉况府。当时太子的东宫刚建立，诸王国同时开辟，而官吏没有配齐，师保齐缺。班彪又上言道：“孔子说：‘人们的天性是差不多的，而习俗的影响就差得很远。’贾谊认为：‘经常与善人打交道，不能不做好事，犹如生长在齐国，不能不说齐国话。经常与恶人接触，不能不做坏事，犹如生长在楚国，不能不说楚国话。’因此圣人严格选择邻居，特别注意环境的影响。从前周成王做孺子时出外就由周公、邵公、太史佚等人辅佐他；在朝内就大颠、闳夭、南宫适、散宜生等人辅佐，他的左右前后，没有违背礼节之义，所在成王一登上王位，天下空前的太平。
 </p><p>因此《春秋》提出‘：爱儿子应该教育他走正路，不走邪门歪道。骄傲奢侈，淫逸懒惰，邪门歪道的根源。’《诗经》上说“：留给孙子的好主意，就是安敬之道。”就是指周武王留给成王的宝贵遗产。“汉朝兴起后，太宗派晁错用法术教育太子，贾谊用《诗经》、《书经》教育梁王，到了中宗，也使刘向、王褒、萧望之、周堪等人用文章儒学教育东宫以下的人员，没有不选择合适的人，促成他们的品德和才具。现在皇太子诸王子，虽然年轻时就在学习，修习了礼乐，但是做太傅的尚未遇到贤才，官属很少熟悉旧典。应该广泛挑选有威望、懂政事的名儒，用他们做太子太傅，东宫和诸王国，官属应该配齐。按旧规定，太子有十县作汤沐邑，设保卫人员，五天一朝见，坐在车厢，检查膳食，不是朝见的日子，使仆、中允每天问安罢了，表明举动不随便，处处讲究恭敬哩。”书奏上后，皇帝采纳了。后来选司徒廉作望都长，得到官吏百姓的爱戴。
 </p><p>建武三十年(55)，班彪年五十二，死在官位上。他所著的赋、论、书、记、奏事共九篇。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十一章-刘赵淳于江刘周赵列传-白话.html'>第三十一章-刘赵淳于江刘周赵列传</a></p><p class='next'>下一节：<a href='第三十三章-班彪列传下-白话.html'>第三十三章-班彪列传下</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十一章-刘赵淳于江刘周赵列传-白话.html'>第三十一章-刘赵淳于江刘周赵列传</a></p><p class='next'>下一节：<a href='第三十三章-班彪列传下-白话.html'>第三十三章-班彪列传下</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

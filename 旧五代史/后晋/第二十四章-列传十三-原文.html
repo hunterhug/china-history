@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后晋<a href='../旧五代史.html#后晋'>：目录</a></p>
@@ -173,5 +200,18 @@
 </p><p>刘晞者，涿州人也。父济雍，累为本郡诸邑令长。晞少以儒学称于乡里，尝为唐将周德威从事，后陷于契丹，契丹以汉职縻之。天福中，契丹命晞为燕京留守，尝于契丹三知贡举，历官至同平章事、兼侍中。随契丹入汴，授洛京留守。会河阳军乱，晞走许州，又奔东京，萧翰遣兵援晞至洛下。契丹主死，晞自洛复至东京，随萧翰北归，遂留镇州。汉初，与满达勒同奔定州，后卒于北蕃。《契丹国志》：刘珂，晞之子也，尚世宗妹燕国公主。
 </p><p>崔廷勋，不知何许人也。《通鉴注》引宋白曰：廷勋本河内人。形貌魁伟，美须髯。幼陷北庭，历仕至云州节度使，官至侍中。契丹入汴，迁少帝于封禅寺，遣廷勋以兵防守，寻授河阳节度使，甚得民情。契丹北行，武行德率军趋河阳，廷勋为行德所逐，乃与奚王伊喇保怀州，寻以兵反攻行德，行德出战，为廷勋所败。及契丹主死，遂归镇州。汉初，与满达勒同奔定州，后没于北蕃。
 </p><p>史臣曰：帝王之尊，必由天命。虽韩信、彭越之勇，吴濞、淮南之势，犹不可以妄冀，而况二安之庸昧，相辅为乱，固宜其自取灭亡也。后之拥强兵莅重镇者，得不以为鉴乎！彦泽狼子野心，盈贯而死，晚矣！德钧诸人，与晋事相终始，故附见于兹焉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十三章-列传十二-原文.html'>第二十三章-列传十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十三章-列传十二-原文.html'>第二十三章-列传十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

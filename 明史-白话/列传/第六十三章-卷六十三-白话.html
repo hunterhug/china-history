@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -193,5 +220,18 @@
 </p><p>捷报上奏，武宗大喜，提拔杨锐为参将，命其分守安徽池州、太州、宁国及九江、饶州、黄州。杨锐举荐郑岳、胡世宁，皇上马上召用他俩。世宗即位后，论功时，杨锐被提升为都督佥事，庇荫其子为世袭千户。杨锐又升为左军都督府金书，改调南京右军都督府。他充任总兵官，镇守辽东。后又改督漕运，镇守淮安。嘉靖十年（1531），杨锐被巡按御史李循义弹劾免职，一年后去世。
 </p><p>崔文，世袭焉安庆卫指挥使，守城的功劳次于杨锐。世宗审查他的功绩，提升三级任都指挥使，荫袭儿子世袭百户。江、淮多盗贼，朝廷商议设立总兵官，管理上江、下江的防务，提升崔文为都督愈事担任。改任到南京前府，专门管理长江防务。很久以后，去世。
 </p><p>赞曰：卫青等人处于太平时期，叛乱暗中暴发，各城受到侵扰，都依赖他们而平定。虽然所面对的敌人并不强大，但是勇敢奋战，，功劳大多可以记入史册。有的还葬身原野，像何洪、刘雄、冯祯这些人，豪壮的气节足以让人感到惋惜。仇铁以心计平定叛乱，杨锐以守城摧毁叛贼，是捍卫国家的依靠，可以称为庙堂的神算。神英、曹雄也右功劳和业绩，但因依附宦官损坏名声，而且获罪，作将领的人应该以不遵守规矩为戒啊。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十二章-卷六十二-白话.html'>第六十二章-卷六十二</a></p><p class='next'>下一节：<a href='第六十四章-卷六十四-白话.html'>第六十四章-卷六十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十二章-卷六十二-白话.html'>第六十二章-卷六十二</a></p><p class='next'>下一节：<a href='第六十四章-卷六十四-白话.html'>第六十四章-卷六十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

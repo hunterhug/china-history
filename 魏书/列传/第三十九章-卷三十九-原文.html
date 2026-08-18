@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#列传'>：目录</a></p>
@@ -195,5 +222,18 @@
 </p><p>显祖初，刘彧徐州刺史薛安都以彭城内附，彧遣将张永、沈攸之等击安都，安都上表请援。显祖进伯恭号镇东将军，副尚书尉元救之。军次于秺，贼将周凯闻伯恭等军至，弃众遁走。张永仍屯下磕。永辎重在武原，伯恭等攻而克之。永计无所出，引师而退。时皇兴元年正月，天大寒雪，泗水冰合，永与攸之弃船而走，伯恭等进击，首虏及冻死甚众。八月，伯恭以书喻下邳、宿豫城内曰：“刘彧肆逆滔天，弗鉴灵命，犹谓绝而复兴，长江可恃，敢遣张永、周凯等率此蚁众，送死彭城。大军未临，逆首奔溃。今乘机电举，当屠此城，遂平吴会，吊民伐罪。幸时归款，自求多福。”时攸之、吴憘公等率众数万来援下邳，屯军焦墟曲，去下邳五十余里。伯恭遣子都将侯汾等率骑五百在水南，奚升等五百余骑在水北，南北邀之。伯恭密造火车攻具，欲水陆俱进。攸之等既闻，将战，引军退保樊阶城。伯恭又令子都将孙天庆等步骑六千向零中峡，斫木断清水路。刘彧宁朔将军陈显达领众二千溯清而上，以迎攸之，屯于睢清合口。伯恭率众渡水，大破显达军，俘斩十九。攸之闻显达军败，顺流退下。伯恭部分诸将，侠清南北，寻攸之军后。伯恭从睢陵城东向零中峡，分军为二道，遣司马范师子等在清南，伯恭从清西，与攸之合战，遂大破之。斩其将姜产之、高遵世及丘幼弼、丘隆先、沈荣宗、陆道景等首，攸之、憘公等轻骑遁走。乘胜追奔八十余里，军资器械，虏获万计。进攻宿豫，刘彧戍将鲁僧遵弃城夜遁。又遣将孔太恆等领募骑一千，南讨淮阳，彧太守崔武仲焚城南走，遂据淮阳。二年，以伯恭为散骑常侍、都督徐南兗州诸军事、镇东将军、彭城镇将、东海公。三年十月卒，赠镇东大将军、东海王，谥曰桓。
 </p><p>伯恭弟伯逊，为中书囗士，袭父爵鲁郡公。拜镇东将军、东莱镇将，转本将军、东徐州刺史。先事免官，卒于家。
 </p><p>史臣曰：韩茂、皮豹子、封敕文、吕罗汉、孔伯恭之为将也，皆以沉勇笃实，仁厚抚众。功成事立，不徒然矣。与夫苟要一战之利，侥幸暂胜之名，岂同年而语也！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十八章-卷三十八-原文.html'>第三十八章-卷三十八</a></p><p class='next'>下一节：<a href='第四十章-卷四十-原文.html'>第四十章-卷四十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十八章-卷三十八-原文.html'>第三十八章-卷三十八</a></p><p class='next'>下一节：<a href='第四十章-卷四十-原文.html'>第四十章-卷四十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>宋书-志<a href='../宋书.html#志'>：目录</a></p>
@@ -195,5 +222,18 @@
 </p><p>晋武帝泰始元年十二月，诏：“昔圣帝明王，修五岳、四渎，名山川泽，各有定制。所以报阴阳之功，而当幽明之道故也。然以道莅天下者，其鬼不神，其神不伤人也。故史荐而无愧词，是以其人敬慎幽冥，而淫祀不作。末代信道不笃，僭礼渎神，纵欲祈请，曾不敬而远之，徒偷以求幸，妖妄相扇，舍正为邪，故魏朝疾之。其按旧礼，具为之制，使功著于人者，必有其报，而妖淫之鬼，不乱其间。”二年正月，有司奏：“春分祠厉殃及禳祠。”诏曰：“不在祀典，除之。”
 </p><p>宋武帝永初二年，普禁淫祀。由是蒋子文祠以下，普皆毁绝。孝武孝建初，更修起蒋山祠，所在山川，渐皆修复。明帝立九州庙于鸡笼山，大聚群神。蒋侯宋代稍加爵，位至相国、大都督、中外诸军事，加殊礼，钟山王。苏侯骠骑大将军。四方诸神，咸加爵秩。
 </p><p>汉安帝元初四年，诏曰：“《月令》，‘仲秋，养衰老，授几杖，行糜鬻’。方今八月按比之时，郡县多不奉行。虽有糜鬻，糠秕泥土相和半，不可饮食。”按此诏，汉时犹依《月令》施政事也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章-卷十六-原文.html'>第六章-卷十六</a></p><p class='next'>下一节：<a href='第八章-卷十八-原文.html'>第八章-卷十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六章-卷十六-原文.html'>第六章-卷十六</a></p><p class='next'>下一节：<a href='第八章-卷十八-原文.html'>第八章-卷十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

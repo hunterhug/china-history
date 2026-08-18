@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -164,5 +191,18 @@
 <p>　　如晦叔父淹。淹，字执礼。祖业，周豫州刺史。父征，河内太守。淹聪辩多才 艺，弱冠有美名，与同郡韦福嗣为莫逆之交，相与谋曰：“上好用嘉遁，苏威以幽 人见征，擢居美职。”遂共入太白山，扬言隐逸，实欲邀求时誉。隋文帝闻而恶之， 谪戍江表。后还乡里，雍州司马高孝基上表荐之，授承奉郎。大业末，官至御史中 丞。王世充僭号，署为吏部，大见亲用。及洛阳平，初不得调，淹将委质于隐太子。 时封德彝典选，以告房玄龄，恐隐太子得之，长其奸计，于是遽启太宗，引为天策 府兵曹参军、文学馆学士。武德八年，庆州总管杨文干作乱，辞连东宫，归罪于淹 及王珪、韦挺等，并流于越巂。太宗知淹非罪，赠以黄金三百两。及即位，征拜御 史大夫，封安吉郡公，赐实封四百户。以淹多识典故，特诏东宫仪式簿领，并取淹 节度。寻判吏部尚书，参议朝政。前后表荐四十余人，后多知名者。淹尝荐刑部员 外郎郅怀道，太宗因问淹：“怀道才行何如？”淹对曰：“怀道在隋日作吏部主事， 甚有清慎之名。又炀帝向江都之日，召百官问去住之计。时行计已决，公卿皆阿旨 请去，怀道官位极卑，独言不可。臣目见此事。”太宗曰：“卿尔可从何计？”对 曰：“臣从行计。”太宗曰：“事君之义，有犯无隐。卿称怀道为是，何因自不正 谏？”对曰：“臣尔日不居重任，又知谏必不从，徒死无益。”太宗曰：“孔子称 从父之命，未为孝子。故父有争子，国有争臣。若以主之无道，何为仍仕其世？既 食其禄，岂得不匡其非？”因谓群臣曰：“公等各言谏事如何？”王珪曰：“昔比 干谏纣而死，孔子称其仁；泄冶谏而被戮，孔子曰：‘民之多辟，无自立辟。’是 则禄重责深，理须极谏；官卑望下，许其从容。”太宗又召淹笑谓曰：“卿在隋日， 可以位下不言；近仕世充，何不极谏？”对曰：“亦有谏，但不见从。”太宗曰： “世充若修德从善，当不灭亡；既无道拒谏，卿何免祸？”淹无以对。太宗又曰： “卿在今日，可为备任，复欲极谏否？”对曰：“臣在今日，必尽死无隐。且百里 奚在虞虞亡，在秦秦霸，臣窃比之。”太宗笑。时淹兼二职，而无清洁之誉，又素 与无忌不协，为时论所讥。及有疾，太宗亲自临问，赐帛三百匹。贞观二年卒，赠 尚书右仆射，谥曰襄。子敬同袭爵，官至鸿胪少卿。敬同子从则，中宗时为蒲州刺 史。 </p>
 <p>　　史臣曰：房、杜二公，皆以命世之才，遭逢明主，谋猷允协，以致升平。议者 以比汉之萧、曹，信矣！然莱成之见用，文昭之所举也。世传太宗尝与文昭图事， 则曰“非如晦莫能筹之”。及如晦至焉，竟从玄龄之策也。盖房知杜之能断大事， 杜知房之善建嘉谋，裨谌草创，东里润色，相须而成，俾无悔事，贤达用心，良有 以也。若以往哲方之，房则管仲、子产，杜则鲍叔、罕虎矣。 </p>
 <p>　　赞曰：肇启圣君，必生贤辅。猗欤二公，实开运祚。文含经纬，谋深夹辅。笙 磬同音，唯房与杜。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p><p class='next'>下一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p><p class='next'>下一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>元史-本纪<a href='../元史.html#本纪'>：目录</a></p>
@@ -164,5 +191,18 @@
 </p><p>九年己未春正月乙巳朔，驻跸重贵山北，置酒大会，因问诸王、驸马、百官曰：“今在宋境，夏暑且至，汝等其谓可居否乎？”札剌亦儿部人脱欢曰：“南土瘴疠，上宜北还，所获人民，委吏治之便。”阿儿剌部人八里赤曰：“脱欢怯，臣愿往居焉。”帝善之。戊申，晋国宝归次峡口，王坚追还杀之。诸王莫哥都复攻渠州礼义山，曳剌秃鲁雄攻巴州平梁山。丁卯，大渊请攻合州，俘男女八万余。
 </p><p>二月丙子，帝悉率诸兵渡鸡爪滩，至石子山。丁丑，督诸军战城下。辛巳，攻一字城。癸未，攻镇西门。三月，攻东新门、奇胜门、镇西门小堡。夏四月丙子，大雷雨凡二十日。乙未，攻护国门。丁酉，夜登外城，杀宋兵甚众。五月，屡攻不克。六月丁巳，汪田哥复选兵夜登外城马军寨，杀寨主及守城者。王坚率兵来战。迟明，遇雨，梯折，后军不克进而止。是月，帝不豫。秋七月辛亥，留精兵三千守之，余悉攻重庆。癸亥，帝崩于钓鱼山，寿五十有二，在位九年。追谥桓肃皇帝，庙号宪宗。
 </p><p>帝刚明雄毅，沉断而寡言，不乐燕饮，不好侈靡，虽后妃不许之过制。初，太宗朝，群臣擅权，政出多门。至是，凡有诏旨，帝必亲起草，更易数四，然后行之。御群臣甚严，尝谕旨曰：“尔辈若得朕奖谕之言，即志气骄逸，志气骄逸，而灾祸有不随至者乎？尔辈其戒之。”性喜畋猎，自谓遵祖宗之法，不蹈袭他国所为。然酷信巫觋卜筮之术，凡行事必谨叩之，殆无虚日，终不自厌也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p><p class='next'>下一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p><p class='next'>下一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

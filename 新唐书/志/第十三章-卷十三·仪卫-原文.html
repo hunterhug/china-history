@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新唐书-志<a href='../新唐书.html#志'>：目录</a></p>
@@ -245,5 +272,18 @@
 </p><p>小横吹部有角、笛、箫、笳、觱篥、桃皮觱篥六种，曲名失传。
 </p><p>伶工谓夜警为严。凡大驾严，夜警十二曲，中警三曲，五更严三遍。天子谒郊庙，夜五鼓过半，奏四严；车驾至桥，复奏一严。元和初，礼仪使高郢建议罢之。
 </p><p>历代献捷必有凯歌，太宗平东都，破宋金刚，执贺鲁，克高丽，皆备军容，凯歌入京都，然其礼仪不传。太和初，有司奏：“命将征讨，有大功，献俘馘，则神策兵卫于门外，如献俘仪。凯乐用铙吹二部，笛、觱篥、箫、笳、铙鼓，皆工二人，歌工二十四人，乘马执乐，阿列如卤簿。鼓吹令、丞前导，分行俘馘之前。将入都门，鼓吹振作，奏《破阵乐》、《应圣期》、《贺朝欢》、《君臣同庆乐》等四曲。至太社、太庙门外，陈而不作。吉献礼毕，乐作。至御楼前，陈兵仗于旌门外二十步，乐工步行，兵部尚书介胃执钺，于旌门中路前导，协律郎二人执麾，门外分导，太常卿跪请奏凯乐。乐阕，太常卿跪奏‘乐毕’。兵部尚书、太常卿退，乐工立于旌门外，引俘馘入献，及称贺，俘囚出，乃退。”</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十二章-卷十二·礼乐十二-原文.html'>第十二章-卷十二·礼乐十二</a></p><p class='next'>下一节：<a href='第十四章-卷十四·车服-原文.html'>第十四章-卷十四·车服</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十二章-卷十二·礼乐十二-原文.html'>第十二章-卷十二·礼乐十二</a></p><p class='next'>下一节：<a href='第十四章-卷十四·车服-原文.html'>第十四章-卷十四·车服</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

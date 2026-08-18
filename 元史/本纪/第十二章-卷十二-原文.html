@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>元史-本纪<a href='../元史.html#本纪'>：目录</a></p>
@@ -174,5 +201,18 @@
 </p><p>冬十月庚寅，给征日本新附军钞三万锭。壬辰，车驾由古北口路至自上都。癸巳，斡端宣慰使刘恩进嘉禾，同颖九穗、七穗、六穗者各一。甲午，以平章政事札散为枢密副使。诏：“五卫军，岁以冬十月听十之五还家备资装，正月番上代其半还，四月毕入役。”时各卫议先遣七人，而以三人自代，从之。乙未，享于太庙。丙申，太阴犯昴。丁酉，诛占城逃回军。忙兀带请增蒙古、汉军戍边，从之。以忽都忽总扬州行省唆都新益军。庚子，许阿速带军以兄弟代役。建宁路管军总管黄华叛，众几十万，号头陀军，伪称宋祥兴五年，犯崇安、浦城等县，围建宁府。诏卜怜吉带、史弼等将兵二万二千人讨平之。耶律铸罢。壬寅，立东阿至御河水陆驿，以便递运。徙济州潭口驿于新河鲁桥镇。给甘州纳硫黄贫乏户钞。癸卯，诸王只必帖木儿请括阅常德府分地民户，不许。中书省臣言：“阿八赤新开河二处，皆有仓，宜造小船分海运。”从之。中书省臣言：“押亦迷失尝请谕江南诸郡，募人种淮南田。今乃往各郡转收民户，行省官阔阔你敦言其非便，宜令其于治所召募，不可强民。”从之。戊申，给水达达鳏寡孤独者绢千匹、钞三百锭。立和林平准库。遣官检核益都淘金欺弊。罢中兴管课提举司及北京盐铁课程提举司。己酉，签河西质子军年及丁者充军。庚戌，各道提刑按察司增设判官二员。
 </p><p>十一月壬子，赏大不花、脱欢等战功银币。癸丑，总管陈义愿自备海船三十艘以备征进，诏授义万户，佩虎符。义初名五虎，起自海盗，内附后，其兄为招讨，义为总管。敕凡盗贼必由管民官鞫问，仍不许私和。丁巳，命各省印《授时历》。诸王只必帖木儿请于分地二十四城自设管课官，不从。又请立拘榷课税所，其长从都省所定，次则王府差设，从之。诏：“大都田土，并令输税；甘州新括田土，亩输租三升。”己未，吏部尚书刘好礼以吉利吉思风俗事宜来上。壬戌，复立南京宣慰司。乙丑，罢开成路屯田总管府入开成路，隶京兆宣慰司。戊辰，立司农司，掌官田邸舍人民。给诸王所部撒合儿、兀鲁等羊马，以赒其乏。河西官府参用汉人。徙甘肃沙州民户复业。大都城门设门尉。丁丑，禁云南管课官于常额外多取余钱。戊寅，禁云南权势多取债息，仍禁没人口为奴及黥其面者。太白岁星相犯。己卯，从诸王术白、蒙古带等请，赏也秃古等银钞，以旌战功。赐皇太子钞千锭。以御史台赃罚钞赐怯怜口。
 </p><p>十二月庚辰，赐诸王浑都帖木儿衣物，忽都儿所部军银钞币帛。甲申，赐别速带所部军衣服币帛七千、马二千。赏西番军官爱纳八斯等战功。辛卯，以茶忽所管军六千人备征日本。壬辰，给诸王阿只吉牛价。以中书参议温迪罕秃鲁花廉贫，不阿附权势，赐钞百锭。罢女直出产金银禁。甲午，给钞四万锭和籴于上都。给司阍卫士贫者，人钞二十锭。辛丑，赐诸王昔烈门等银。以海道运粮招讨使朱清为中万户，赐虎符；张瑄子文虎为千户，赐金符。徙新附官仕内郡。以蠡州还隶真定府路。癸卯，发粟赈水达达四十九站。甲辰，太阴掩荧惑。丙午，罢云南造卖金箔规措所。罢云南都元帅府及重设官吏。定质子令，凡大官子弟，遣赴京师。戊申，云南施州子童兴兵为乱，敕参知政事阿合八失帅兵，合罗罗斯脱儿世合讨之，给布万匹赈女直饥民一千户。是岁，断死罪二百七十八人。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十一章-卷十一-原文.html'>第十一章-卷十一</a></p><p class='next'>下一节：<a href='第十三章-卷十三-原文.html'>第十三章-卷十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十一章-卷十一-原文.html'>第十一章-卷十一</a></p><p class='next'>下一节：<a href='第十三章-卷十三-原文.html'>第十三章-卷十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

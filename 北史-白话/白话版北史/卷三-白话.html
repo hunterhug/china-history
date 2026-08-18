@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>北史-白话版北史<a href='../北史.html#北史'>：目录</a></p>
@@ -321,5 +348,18 @@
 </p><p>平时听政理事，从善如流。哀怜百姓疾苦，时常想方设法加以赈济和办好事。天地、五郊、宗庙和春秋二季的祭礼，经常是事必躬亲，不因寒冬和酷暑而有所懈怠。尚书上奏的奏文，他大多亲自考虑处置办法。百官的大小事情，他无不留心，尽量做到周到和亲近。他常常说凡是当皇帝的，最怕的是不公正，不能以诚心对待别人。如果能够公平又诚恳，胡越两地人也可以亲如兄弟。他经常很安详地对史官们说“：你们要照真实写下当时的事情，不要隐讳国家丑恶的东西。国君作威作福，史书如不记载，还有什么能够让他害怕的呢！”到南方或北方巡行，有关方面奏请修路。皇帝说：“简单修一下桥梁，能够过车马就行了，不用再割草铲平。”凡是修建的东西，都是不得已才办的，不做不急之务，浪费人力。巡视淮南一带，就像在内地视察一样。因军事行动而必须砍伐民众树木的，必定留下绢帛用来赔偿树木的价值。对老百姓的庄稼禾苗一点也不伤害践踏。所有禁忌以及祭祷、厌胜之类的办法，如果不是古代典籍中记载的，一概废除。
 </p><p>他十分喜爱读书，手不释卷。《五经》的经义，他读过以后就能讲解。读书不仅听老师讲授的东西，而且深究其中精华和奥秘，史传和诸子百家之学，无不广泛涉读。善于谈论《庄子》和《老子》，尤其精于佛学。才华文辞富美，喜欢写文章，诗赋铭颂，兴至而作。有关朝廷大政的文字，在马上口授，写完以后，不改一个字。从太和十年之后，诏令册文，都是皇帝自己写的。其余文章，有一百多篇。
 </p><p>他十分喜爱奇才异士，达到如饥似渴的地步。厚待和接纳朝中贤能之士，根据其才能而委以轻重职责。时常流露出崇尚自然朴素的心思，悠然自得而寄兴深远，不因世务的繁忙而束缚身心。他又从小就善射，有膂力。十几岁时，就能用指头弹碎羊的肩胛骨。射杀禽兽时，无不随其所到之处而倒毙。到十五岁时，就不再杀死生物，射猎活动因而完全停止。性情俭朴，经常穿着洗过多次的旧衣服，马鞍、马勒也是用铁木制作的。他的高雅情志，都如同此类。</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷二-白话.html'>卷二</a></p><p class='next'>下一节：<a href='卷四-白话.html'>卷四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='卷二-白话.html'>卷二</a></p><p class='next'>下一节：<a href='卷四-白话.html'>卷四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

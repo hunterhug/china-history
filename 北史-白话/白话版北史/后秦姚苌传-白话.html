@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>北史-白话版北史<a href='../北史.html#北史'>：目录</a></p>
@@ -150,5 +177,18 @@
 
 <h1>后秦姚苌传<span style='font-size:small'> 白话</span></h1>
 <p>姚苌字景茂，生于南安赤亭，是烧当族的后代。祖父姚柯迥，协助魏把姜维牵制在沓中，因功授予绥戎校尉、西羌都督。父亲弋仲，在晋永嘉之乱时，向东迁移到榆眉。刘曜任命弋仲为平西将军、平襄公。后来随石季龙迁到清河滠头。石勒(季龙)让弋仲做了奋武将军，封为襄平公。弋仲死后，儿子姚襄代替父位，驻军在谯城。慕容亻隽任命姚襄为豫州刺史，丹阳公。驻军在淮河南。自称为大将军、大单于，被晋朝将领桓温打败，逃向河东。后来被苻眉杀死。<BR><BR>　　姚弋仲有儿子四十二人，姚苌排行第二十四。随哥哥姚襄征战，姚襄很惊异他的才能。姚襄兵败后，他投降苻坚。跟随苻坚征战，经常立功。苻坚代晋时，任命姚苌为龙骧将军，督领益州、梁州等军事，对姚苌说：“我当初依靠龙骧建立功业，龙骧的称号，先前没有授予他人，现在特地授予你。太行山以南的事情，全部交付给你。”苻坚的左将军窦冲进奏说“：做国君的没有玩笑话，这是一种不好的征兆，希望陛下审视。”苻坚沉默不语。等到慕容泓在华泽起兵，苻坚派遣儿子卫大将军苻睿又讨伐他，战败，被慕容泓杀死。当初姚苌是苻睿又的司马，畏罪逃到马牧。聚集一万多人，自称大将军、大单于、万年秦王。年号白雀。几个月之内，人数达到十多万。与慕容冲联军，驻扎在北地。苻坚出奔五将山，被姚苌捉住杀死。<BR><BR>　　魏道武帝登国元年(386)，僭越称帝，设置百官，国号大秦，年号建初。改长安为常安，让太子姚兴镇守。自己带兵在安定攻击苻坚，大败苻坚。姚苌得病，梦见苻坚率天官使者，数百个鬼兵，冲入军营。姚苌害怕，逃入后宫，宫中侍人对着姚苌刺杀鬼兵，误中姚苌下阴。鬼互相说：“正刺在死命之处。”拔出长矛，流血有一石多。睡醒后非常警恐。因此患下阴痛肿，刺破，流血如梦中所见。姚苌于是胡言乱语，有时称自己：“杀死陛下的是为臣的哥哥姚襄，不是我的罪过，希望不要枉法。”姚苌死后，他的儿子姚兴继承王位，隐瞒没有发丧。</p>
-<div class='pn'><p class='pre'>上一节：<a href='韩凤传-白话.html'>韩凤传</a></p><p class='next'>下一节：<a href='高丽传-白话.html'>高丽传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='韩凤传-白话.html'>韩凤传</a></p><p class='next'>下一节：<a href='高丽传-白话.html'>高丽传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

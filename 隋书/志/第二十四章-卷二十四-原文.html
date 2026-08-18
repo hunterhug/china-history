@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>隋书-志<a href='../隋书.html#志'>：目录</a></p>
@@ -280,5 +307,18 @@
 </p><p>黔安郡后周置黔州，不带郡。统县二，户一千四百六十。
 </p><p>鼓水开皇十三年置。有伏牛山。出盐井。涪川开皇五年置。
 </p><p>梁州于天官上应参之宿。周时梁州，以并雍部。及汉，又析置益州。在《禹贡》，自汉川以下诸郡，皆其封域。汉中之人，质朴无文，不甚趋利。性嗜口腹，多事田渔，虽蓬室柴门，食必兼肉。好祀鬼神，尤多忌讳，家人有死，辄离其故宅。崇重道教，犹有张鲁之风焉。每至五月十五日，必以酒食相馈，宾旅聚会，有甚于三元。傍南山杂有獠户，富室者颇参夏人为婚，衣服居处言语，殆与华不别。西城、房陵、清化、通川、宕渠，地皆连接，风俗颇同。汉阳、临洮、宕昌、武都、同昌、河池，顺政、义城、平武、汶山、皆连杂氐羌。人尤劲悍，性多质直。皆务于农事，工习猎射，于书计非其长矣。蜀郡、临邛、眉山、隆山、资阳、泸川、巴东、遂宁、巴西、新城、金山、普安、犍为、越巂、柯、黔安，得蜀之旧域。其地四塞，山川重阻，水陆所凑，货殖所萃，盖一都之会也。昔刘备资之，以成三分之业。自金行丧乱，四海沸腾，李氏据之于前，谯氏依之于后。当梁氏将亡，武陵凭险而取败，后周之末，王谦负固而速祸。故孟门不祀，古人所以诫焉。其风俗大抵与汉中不别。其人敏慧轻急，貌多蕞陋，颇慕文学，时有斐然，多溺于逸乐，少从宦之士，或至耆年白首，不离乡邑。人多工巧，绫锦雕镂之妙，殆侔于上国。贫家不务储蓄，富室专于趋利。其处家室，则女勤作业，而士多自闲，聚会宴饮，尤足意钱之戏。小人薄于情礼，父子率多异居。其边野富人，多规固山泽，以财物雄役夷、獠，故轻为奸藏，权倾州县。此亦其旧俗乎？又有獽狿蛮賨，其居处风俗，衣服饮食，颇同于獠，而亦与蜀人相类。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十三章-卷二十三-原文.html'>第二十三章-卷二十三</a></p><p class='next'>下一节：<a href='第二十五章-卷二十五-原文.html'>第二十五章-卷二十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十三章-卷二十三-原文.html'>第二十三章-卷二十三</a></p><p class='next'>下一节：<a href='第二十五章-卷二十五-原文.html'>第二十五章-卷二十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

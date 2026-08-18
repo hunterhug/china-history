@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -203,5 +230,18 @@
 <p>　　随有学行大度，为谏官能直言，在内廷匡益。自宝历初为承旨学士，即参大政 矣。后十五年在相位。宗闵、德裕朋党交兴，攘臂于其间；李训、郑注始终奸诈， 接武于其后。而随藏器韬光，隆污一致，可谓得君子中庸而常居之也。 </p>
 <p>　　史臣曰：卫次公、郑絪、韦处厚、崔群、路随等，皆以文学饰身，致位崇极。 兼之忠谠，垂名简书，兹实有足多也。絪有其位，有其时，怀独善之谋，晦众济之 道，左迁非不幸也。次公因献捷之书，辍已成之诏，命也夫。处厚危言切议，振士 友之急，称同列之善，君子哉！ </p>
 <p>　　赞曰：卫、郑、韦、路，兼之博陵。文学政事，为时所称。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百零八章-卷一百零八-原文.html'>第一百零八章-卷一百零八</a></p><p class='next'>下一节：<a href='第一百一十章-卷一百一十-原文.html'>第一百一十章-卷一百一十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百零八章-卷一百零八-原文.html'>第一百零八章-卷一百零八</a></p><p class='next'>下一节：<a href='第一百一十章-卷一百一十-原文.html'>第一百一十章-卷一百一十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

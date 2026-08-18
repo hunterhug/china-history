@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-本纪<a href='../明史.html#本纪'>：目录</a></p>
@@ -182,5 +209,18 @@
 </p><p>三十一年，获妖书，言神宗欲易太子，指斥郑贵妃。神宗怒。捕逮株连者甚众，最后得皦生光者，磔之。狱乃解。四十一年六月，奸人王曰乾上变，告孔学等为巫蛊，将谋不利于东宫，语连郑贵妃、福王，事具《叶向高传》。四十三年夏五月己酉，蓟州男子张差持梃入慈庆宫，事复连贵妃内珰。太子请以属吏。狱具，戮差于市，毙内珰二人于禁中。自是遂有“梃击”之案。
 </p><p>四十八年七月，神宗崩。丁酉，太子遵遗诏发帑金百万犒边。尽罢天下矿税，起建言得罪诸臣。己亥，再发帑金百万充边赏。八月丙午朔，即皇帝位。大赦天下，以明年为泰昌元年。蠲直省被灾租赋。己酉，吏部侍郎史继偕、南京礼部侍郎沈飗为礼部尚书兼东阁大学士，预机务。辽东大旱。庚申，兰州黄河清，凡三日。甲子，礼部侍郎何宗彦、刘一燝、韩爌为礼部尚书兼东阁大学士，预机务。乙丑，南京礼部尚书朱国祚为礼部尚书兼东阁大学士，预机务。召叶向高。遣使恤刑。丙寅，帝不豫。戊辰，召对英国公张惟贤、大学士方从哲等十有三人于乾清宫，命皇长子出见。甲戌，大渐，复召从哲等受顾命。是日，鸿胪寺官李可灼进红丸。九月乙亥朔，崩于乾清宫，在位一月，年三十有九。熹宗即位，从廷臣议，改万历四十八年八月后为泰昌元年。冬十月，上尊谥，庙号光宗，葬庆陵。
 </p><p>赞曰：神宗冲龄践阼，江陵秉政，综核名实，国势几于富强。继乃因循牵制，晏处深宫，纲纪废弛，君臣否隔。于是小人好权趋利者驰骛追逐，与名节之士为仇雠，门户纷然角立。驯至悊、愍，邪党滋蔓。在廷正类无深识远虑以折其机牙，而不胜忿激，交相攻讦。以致人主蓄疑，贤奸杂用，溃败决裂，不可振救。故论者谓明之亡，实亡于神宗，岂不谅欤。光宗潜德久彰，海内属望，而嗣服一月，天不假年，措施未展，三案构争，党祸益炽，可哀也夫！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p><p class='next'>下一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p><p class='next'>下一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

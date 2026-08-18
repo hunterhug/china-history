@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>陈书-白话版陈书<a href='../陈书.html#陈书'>：目录</a></p>
@@ -279,5 +306,18 @@
 </p><p>二月辛卯，定皇上谧号为孝宣皇帝，庙号为高宗。癸巳，葬在显宁陵。
 </p><p>高宗在野之时，便有宏大器度和干练才略，当他即位为帝时，的确允合天意人愿。梁朝丧乱，淮南一带的土地全被北齐占领，高宗在太建初年，志在收复旧有疆土，于是运用神机妙策，授命将帅出兵，至于战胜敌军攻取失地，捷报相继而至，最终收复了被侵占的土地，功绩实在丰厚。等到周灭掉齐，乘胜掠取土地，又进攻到长江边上。
 </p><p>史臣曰：高宗器度弘伟宽厚，也有帝王的器量。世祖明白自己的继承人仁厚柔弱，不可以将帝位传给他，高宗的地位相当于周公姬旦，世祖又存有吴太伯谦让的情怀。当他病危不能痊愈时，将国家大事完全委托给高宗。高宗继位后，国家事务治理允当，选派将帅出兵北伐，攻克淮南一带的失地，开拓疆土，使国内安宁。统治国家十多年，志向远大而意气骄逸，因而招致在吕梁全军覆没，丧失了大量兵员。江束的削弱，大概这是重要原因。呜呼!高宗的功德不及文帝，智谋不及武帝，虽说所得所失都是因为个人但也是因为缺乏防御敌人的策略。</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷四-白话.html'>卷四</a></p><p class='next'>下一节：<a href='卷六-白话.html'>卷六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='卷四-白话.html'>卷四</a></p><p class='next'>下一节：<a href='卷六-白话.html'>卷六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

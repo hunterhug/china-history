@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>周书-白话版周书<a href='../周书.html#周书'>：目录</a></p>
@@ -221,5 +248,18 @@
 </p><p>天下的事情繁重，纷杂的政务不容易处理。王公以下，以及百官，应当辅佐引导太子，以帮助完成我的遣愿。使上不辜负太祖，下不丧失为臣之道。我虽瞑目在九泉之下，也再没有什么遗憾的。我平生居住生活，常常很节俭，并不衹是为了以此来训诫子孙，这也是我心中本来的喜好。丧事用度，一定要节俭而符合礼制，造墓而不起坟，是自古以来通行的典制。遇上吉就马上下葬，下葬完就因公除服。四方的士民，各哭丧三天。嫔妃以下没有子女的，都散放回家。谧号为武皇帝，庙号称高祖。己末日。安葬在孝陵。
 </p><p>武帝深沉刚毅有智谋。当初置公室晋公独揽朝政，他常隐藏自己的心思，别人无法猜测到他的深浅。到诛杀了宇文护之后，他才开始亲自处理政务。约束自己勉励心志，治理朝政从不懈怠。用法严峻，有很多人因犯罪而被诛杀。号令诚恳痛切，衹是将心思用在政治上。大臣们敬畏顺服，没有谁不恭敬的。他明察事理，缺少恩惠。所作所为，都想超越古人。他身穿布袍，盖的是布被，没有金银珠宝的装饰，凡是华丽的宫殿，都拆毁掉，改为几尺高的土阶，不加斗拱。雕刻的纹饰，彩色的锦绣精美的织物，一律禁止。后宫的嫔妃，不超过十余人。勤谨谦虚地对待臣下，自强不息。因为天下没有康宁，所以专心一意地教习。至于检阅军队，行走山谷，辛勤跋涉，都是一般的人所不能忍受的。在平定北齐之战中，武帝见到有赤足行走的军士，他就亲自脱下自己的靴子赏赐给他们。每次召集将士宴饮时，他一定会亲自拿着杯子劝酒，或者亲手赏赐财物。至于出兵征伐时，他也亲自行走在队伍中。他的性情又果断坚决，能决断大事。所以能使士卒为其效命，以弱制强。打败北齐后，他又准备大动干戈，打败突厥，平定江南，在一二年的时间衷，一定要统一天下，造就是他的志向。
 </p><p>史臣曰：自从东西阻隔后，周齐二国争斗，战马长期生长在郊外，兵器每天都要使用，战祸接连不断，双方势均力敌，边境战事，此起彼伏。高祖继承帝业，没有亲理政事时，深谋远虑，蒙昧隐默自养正道。等到他威武的气概像闪电一样发出后，朝廷的政治焕然一新，内忧既已解除，他就开始平定外患。他苦心焦虑，约束自己勉励心志，辛勤劳作在士卒的前面，衣食居行和百姓一样俭朴。实施富民的政治，致力于强兵之术，利用敌人的可乘之机，顺应大道而将其灭亡。在五年的时间里，大功全部完成。抒发祖宗的宿愿，拯救东夏的危亡，他所成就的功业，是多么盛大啊。如果使他后来身体痊愈，经营天下的志向得以伸展，穷兵黩武，虽然受到良史的非议，但他非凡的志向和谋略，是完全可以和先王相比拟的啊。</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷五-白话.html'>卷五</a></p><p class='next'>下一节：<a href='卷七-白话.html'>卷七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='卷五-白话.html'>卷五</a></p><p class='next'>下一节：<a href='卷七-白话.html'>卷七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>南史-白话版南史<a href='../南史.html#南史'>：目录</a></p>
@@ -201,5 +228,18 @@
 </p><p>齐国建立，他是齐公的世子。改任侍中、南豫州刺史，配备油络车、羽葆、乐队，增加班剑为三十人。以石头城做为世子宫，所设置的官属除东西二率府以外，各坊省的服饰，完全和东宫一样。晋升为王太子。高帝即位，封为皇太子。
 </p><p>建元四年(482)三月初八，高帝逝世，在这一天，皇太子登上皇位，实行大赦。出征和镇守的郡县官长、野战和屯守的部队首领，都要居丧三天，不得擅离职守。都市城镇守卫、边防战备队伍，一律不准返回。十一日，称言遵从先帝的遗诏，任命司徒褚彦回为录尚书事，尚书左仆射王俭为尚书令，车骑将军张敬儿开府仪同三司。下诏书说：“丧礼虽然有一定的规制，但先王的旨意常常愿求简约，朝内官员可以三天进宫哭吊一次，朝外官员可以隔一天进宫哭吊一次。以后有了大丧都照此办法。”十三日，任命前将军王奂为尚书左仆射。十六日，任命司空豫章王萧嶷为太尉。十九日，下诏免除以前拖欠的修城费，从今以后，重新明确旧的规章。起初按晋、宋两朝的旧规定，接受官职二十天，就要送修城钱二千。宋朝泰始初年，兵役庞大起来，接受官职的人数以万计，军务紧急，事情来不及办理，从此自令仆以下，都不再缴送。二十年当中，死期多得数不尽，官府文书催逼，经常遭受骚扰，到现在一齐扫除，百姓们都感到高兴。
 </p><p>皇上刚毅善断，政治上能把握大体，以国家富强为首要的目标。他很喜欢游乐宴饮和绮丽雕饰，说起来常常感到遗憾，却不能立即改正。临死的时候，又下诏书说：“凡是各种游乐耗费，应该停止。从今以后，远近的奉献，务必注意节俭，不准到本地区以外去谋求，追比奢侈华丽。钱米丝帛，困扰人们已很厉害，珠玉玩物，损害民众尤其严重，要严加禁绝。”</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷三-白话.html'>卷三</a></p><p class='next'>下一节：<a href='卷五-白话.html'>卷五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='卷三-白话.html'>卷三</a></p><p class='next'>下一节：<a href='卷五-白话.html'>卷五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

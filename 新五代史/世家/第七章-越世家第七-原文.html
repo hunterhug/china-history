@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-世家<a href='../新五代史.html#世家'>：目录</a></p>
@@ -177,5 +204,18 @@
 </p><p>钱氏兼有两浙几百年，其人比诸国号为怯弱，而俗喜淫侈，偷生工巧，自镠世常重敛其民以事奢僭，下至鸡鱼卵鷇，必家至而日取。每笞一人以责其负，则诸案史各持其簿列于廷；凡一簿所负，唱其多少，量为笞数，以次唱而笞之，少者犹积数十，多者至笞百余，人尤不胜其苦。又多掠得岭海商贾宝货。当五代时，常贡奉中国不绝。及世宗平淮南，宋兴，荆、楚诸国相次归命，俶势益孤，始倾其国以事贡献。太祖皇帝时，俶尝来朝，厚礼遣还国，俶喜，益以器服珍奇为献，不可胜数。太祖曰：“此吾帑中物尔，何用献为！”太平兴国三年，诏俶来朝，俶举族归于京师，国除。其后事具国史。
 </p><p>呜呼！天人之际，为难言也。非徒自古术者好奇而幸中，至于英豪草窃亦多自托于妖祥，岂其欺惑愚众，有以用之欤？盖其兴也，非有功德渐积之勤，而黥髡盗贩，倔起于王侯，而人亦乐为之传欤？考钱氏之始终，非有德泽施其一方，百年之际，虐用其人甚矣，其动于气象者，岂非其孽欤？是时四海分裂，不胜其暴，又岂皆然欤？是皆无所得而推欤？术者之言，不中者多，而中者少，而人特喜道其中者欤？
 </p><p>镠世兴灭，诸书皆同，盖自唐乾宁二年为镇海、镇东军节度使，兼有两浙，至皇朝太平兴国三年国除，凡八十四年。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章-楚世家第六-原文.html'>第六章-楚世家第六</a></p><p class='next'>下一节：<a href='第八章-闽世家第八-原文.html'>第八章-闽世家第八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六章-楚世家第六-原文.html'>第六章-楚世家第六</a></p><p class='next'>下一节：<a href='第八章-闽世家第八-原文.html'>第八章-闽世家第八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

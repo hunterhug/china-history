@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-志<a href='../晋书.html#晋书'>：目录</a></p>
@@ -412,5 +439,18 @@
 </p><p>金星：晚上舆太阳会合，伏，顺行，四十一天五万六千九百五十四分运行五十度五万九千九百五十四(应为五万六千九百五十四，转而晚上在西方出现，在太阳之前。顺行，快，每天运行一又九十一分之二十二度，九十一天运行一百一十三度。再顺行，变慢，每天运行一度十五分，九十一天运行一百零六度。慢，每天运行四十六分之三十三度，四十六天运行三十三度。留，八天不动。转向，逆行，每天运行五分之三度，十天退行六度，在太阳之前。晚上伏于西方，逆行，快，五天退行四度，与太阳会合。总计二次会合一终，五百八十四天十一万三千九百零八分，运行敷量亦为五百八十四度十一万三千九百零八分。
 </p><p>水星：早晨与太阳会合，伏，逆行，九天退行七度，早晨在东方出现，在太阳之后。继续逆行，快，一天退行一度。留，二天不动。转向，顺行，慢，每天运行九分之八度，九天运行八度。快，每天运行一又四分之一度，二十天运行二十五度，在太阳之后。早晨伏于东方，顺行，十六天六百四十一万零九百六十七分运行三十二度六百四十一万零九百六十七分，与太阳会合。一合，共五十七天六百四十一万零九百六十七分，运行数量也为五十七度六百四十一万零九百六十七分。
 </p><p>水星：晚上舆太阳会合，伏，顺行，十六天六百四十一万零九百六十七分运行三十二度六百四十一万零九百六十七分，晚上在西方出现。在太阳之前。顺行，快，每天运行一又四分之一度，二十天运行二十五度。慢，每天运行九分之八度，九天运行八度。留，二天不动。转向，逆行，一天退行一度，在太阳之前，晚上伏于西方。逆行，慢，九天退行七度，舆太阳会合。总计二次会合一终，一百一十五天六百零一万二千五百零五分，运行一百一十五度六百零一万二千五百零五分。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章--白话.html'>第六章-</a></p><p class='next'>下一节：<a href='第八章--白话.html'>第八章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六章--白话.html'>第六章-</a></p><p class='next'>下一节：<a href='第八章--白话.html'>第八章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

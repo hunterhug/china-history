@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -179,5 +206,18 @@
 </p><p>十年，司空李德固孙引庆求袭其祖猛安，世宗曰：“德固无功，其猛安且阙之。汉人宰相惟韩企先最贤，他不及也。”十一年，将图功臣像于衍庆宫，上曰：“丞相企先，本朝典章制度多出斯人之手，至于关决大政，与大臣谋议，不使外人知之，由是无人能知其功。前后汉人宰相无能及者，置功臣画像中，亦足以示劝后人。”十五年，谥简懿。
 </p><p>韩铎字振文，企先次子也。皇统末，以大臣子授武义将军。熙宗闻其有儒学，赐进士第，除宣徽判官。再迁刑部员外郎，海陵遣中使谕之曰：“郎官，高选也。汝勋贤之子，行已莅官，能世其家，故以命汝。苟能夙夜在公，当不次擢用，虽公相可到。”铎感奋，狱或有疑，据经议谳。海陵伐宋，改兵部员外郎。大定初，迁本部郎中，累官河州防御使，求养亲，解去。召为左谏议大夫，迁中都路都转运使。顷之，上谓宰臣曰：“韩铎年高，不任繁剧，且其母老矣，可与之便郡。”于是改顺天军节度使。卒。
 </p><p>赞曰：太祖入燕，始用辽南、北面官僚制度。是故刘彦宗、时立爱规为施设，不见于朝廷之上。军旅之暇，治官政，庀民事，务农积谷，内供京师，外给转饷，此其功也。韩企先入相两朝，几二十年，成功著业，世宗称其贤焉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p><p class='next'>下一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p><p class='next'>下一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

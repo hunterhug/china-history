@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>南齐书-志<a href='../南齐书.html#志'>：目录</a></p>
@@ -171,5 +198,18 @@
 </p><p>祠部郎何佟之议曰：“《春秋》之旨，臣子继君亲，虽恩义有殊，而其礼则一，所以敦资敬之情，笃方丧之义。主上虽仰嗣高皇，尝经北面，方今圣历御宇，垂训无穷，在三之恩，理不容替。窃谓世宗祥忌，至尊宜吊服升殿，群臣同致哀感，事毕，百官诣宣德宫拜表，仍致哀陵园，以弘追远之慕。”尚事令王晏等十九人同佟之议。诏“可。”
 </p><p>海陵王薨，百官会哀。时纂严，朝议疑戎服临会。祠部郎何佟之议：“羔裘玄冠不以吊，理不容以兵服临丧。宋泰始二年，孝武大祥之日，于时百寮入临，皆于宫门变戎服，著衣夹，入临毕，出外，还袭戎衣。”从之。
 </p><p>赞曰：姬制孔作，训范百王。三千有数，四维是张。损益彝典，废举宪章。戎祀军国，社庙郊庠。冠婚朝会，服纪凶丧。存为盛德，戒在先亡。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-卷九-原文.html'>第一章-卷九</a></p><p class='next'>下一节：<a href='第三章-卷十一-原文.html'>第三章-卷十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-卷九-原文.html'>第一章-卷九</a></p><p class='next'>下一节：<a href='第三章-卷十一-原文.html'>第三章-卷十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-志<a href='../明史.html#志'>：目录</a></p>
@@ -226,5 +253,18 @@
 </p><p>曰小功五月者：为伯叔祖父母，为同堂伯叔父母，为再从兄弟及再从姊妹在室者，为同堂兄弟之子，为祖姑在室者，为从祖姑在室者，为同堂兄弟之女在室者，为兄弟之妻；为人后者为其姑姊妹适人者；为嫡孙妇，为同堂姊妹之出嫁者，为孙女适人者，为兄弟之孙及兄弟之女孙在室者，为外祖父母，为母之兄弟姊妹，为同母异父之兄弟姊妹，为姊妹之子；妇人为夫之姑及夫之姊妹，为夫之兄弟及夫兄弟之妻，为夫兄弟之孙及夫兄弟之女孙在室者，为夫同堂兄弟之子及同堂兄弟之女在室者。
 </p><p>曰緦麻三月者：为族曾祖父母，为族伯叔祖父母，为族父母，为族兄弟及族姊妹在室者，为族曾祖姑在室者，为族祖姑及族姑在室者，为兄弟之曾孙，女在室同，为曾孙玄孙，为同堂兄弟之孙，女在室同，为再从兄弟之子，女在室同，为祖姑、从祖姑及从祖姊妹之出嫁者，为兄弟之孙女出嫁者，为同堂兄弟之女出嫁者，为乳母，为舅之子，为姑之子，为姨之子，为外孙，为婿，为妻之父母，为兄弟孙之妇，为同堂兄弟子之妇，为同堂兄弟之妻，为外孙妇，为甥妇；妇人为夫之曾祖、高祖父母，为夫之叔伯祖父母，为夫之同堂伯叔父母，为夫兄弟之曾孙，为夫之同堂兄弟，为夫同堂兄弟之孙，孙女同，为夫再从兄弟之子，为夫兄弟之孙妇，为夫同堂兄弟子之妇，为夫同堂兄弟之妻，为夫同堂姊妹，为夫之外祖父母，为夫之舅及姨，为夫之祖姑及从祖姑在室者；女出嫁为本宗叔伯祖父母，为本宗同堂叔伯父母，为本宗同堂兄弟之子女，为本宗祖姑及从祖姑在室者，为本宗同堂姊妹之出嫁者；为人后者为本生外祖父母。
 </p><p>嘉靖十八年正月，谕辅臣：“昨居丧理疾，阅《礼记·檀弓》等篇，其所著礼仪制度俱不归一，又不载天子全仪。虽曰‘三年之丧，通乎上下’，而今昔亦有大不同者。皇祖所定，未有全文，每遇帝后之丧，亦未免因仍为礼。至于冠裳衰绖，所司之制不一，其与礼官考定之。自初丧至除服，冠裳轻重之制具为仪节，俾归至当。”于是礼部议丧服诸制奏之。帝令更加考订，画图注释，并祭葬全仪，编辑成书备览。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十五章-卷三十五-原文.html'>第三十五章-卷三十五</a></p><p class='next'>下一节：<a href='第三十七章-卷三十七-原文.html'>第三十七章-卷三十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十五章-卷三十五-原文.html'>第三十五章-卷三十五</a></p><p class='next'>下一节：<a href='第三十七章-卷三十七-原文.html'>第三十七章-卷三十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

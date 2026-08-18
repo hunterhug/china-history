@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -194,5 +221,18 @@
 </p><p>四子：汪、陋、隐、无忌。汪嗣爵，位至辅国将军、宣城内史，陋冠军将军，隐少府，无忌光禄勋，兄弟咸有于用。
 </p><p>史臣曰：孔愉父子暨丁潭等，咸以筱簜之材，邀缔构之运，策名霸府，骋足高衢，历试清阶，遂登显要，外宣政绩，内尽谋猷，罄心力以佐时，竭股肱以卫主，并能保全名节，善始令终。而愉高谢百万之赀，辞荣数亩之宅，弘止足之分，有廉让之风者矣。陶回陈邪佞之宜远，明鬻卖之非宜，并补阙弼违，良可称也。
 </p><p>赞曰：愉既公才，潭唯公望。领军儒雅，平越忠亮。君平料敌，彭祖弘益。茂以象焚，群由匡厄。陶回规过，言同金石。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十七章--原文.html'>第四十七章-</a></p><p class='next'>下一节：<a href='第四十九章--原文.html'>第四十九章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十七章--原文.html'>第四十七章-</a></p><p class='next'>下一节：<a href='第四十九章--原文.html'>第四十九章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>元史-本纪<a href='../元史.html#本纪'>：目录</a></p>
@@ -186,5 +213,18 @@
 </p><p>冬十月庚寅朔，诏凤翔府种田户隶平阳兵籍，毋令出征，务耕屯以给军饷。辛卯，陕西四川行省上言：“军务急速，若待奏报，恐失事机。”诏与都元帅纽璘会议行之。遣道士訾洞春代祀东海广德王庙。壬辰，敕火儿赤、奴怀率所部略地淮西。丁酉，敕爱亦伯等及陕西宣抚司校核不鲁欢、阿蓝塔儿所贷官银。庚子，以右丞张启元行中书省于平阳、太原等路。括西京两路官民，有壮马皆从军，令宣德州杨庭训统之，有力者自备甲仗，无力者官与供给。两路奥鲁官并在家军人，凡有马者并付新军刘总管统领。昂吉所管西夏军，并丰州、荨麻林、夏水阿剌浑皆备鞍马甲仗，及孛鲁欢所管兵，凡徒行者市马给之，并令从军，违者以失误军期论。修燕京旧城。命平章政事赵璧、左三部尚书怯烈门率蒙古、汉军驻燕京近郊、太行一带，东至平滦，西控关陕，应有险阻，于附近民内选谙武事者，修立堡寨守御。以河南屯田万户史权为江汉大都督，依旧戍守。又选锐卒三千付史枢管领，于燕京近郊屯驻。壬寅，命亳州张柔、归德邸浃、睢州王文干、水军解成、张荣实、东平严忠嗣、济南张宏七万户，以所部兵来会。罢东平会计前任官侵用财赋。甲辰，宋兵攻泸州，刘整击败之。诏赏整银五千两，币帛二千匹。失里答、刘元振守御有功，各赏银五百两，将士银万两、币帛千匹。乙巳，诏指挥副使郑江将千人赴开平，指挥使董文炳率善射者千人由鱼儿泊赴行在所，指挥使李伯祐率余兵屯潮河川。壬子，诏霍木海、乞带等自得胜口至中都预备粮饷刍粟。丙辰，诏平章政事塔察儿率军士万人，由古北口西便道赴行在所。
 </p><p>十一月壬戌，大兵与阿里不哥遇于昔木土脑儿之地，诸王合丹等斩其将合丹火儿赤及其兵三千人，塔察儿与合必赤等复分兵奋击，大破之，追北五十余里。帝亲率诸军以蹑其后，其部将阿脱等降，阿里不哥北遁。庚午，太阴犯昴。壬申，诏免今年赋税。癸酉，驻跸帖买和来之地。以尚书怯烈门、平章赵璧兼大都督，率诸军从塔察儿北上。分蒙古军为二，怯烈门从麦肖出居庸口，驻宣德德兴府；讷怀从阿忽带出古北口，驻兴州。帝亲将诸万户汉军及武卫军，由檀、顺州驻潮河川。敕官给刍粮，毋扰居民。罢十路宣抚司，止存开元路。命诸路市马二万五千余匹，授蒙古军之无马者。丁丑，征诸路宣抚司官赴中都。移跸于速木合打之地。诏汉军屯怀来、缙山。鹰坊阿里沙及阿散兄弟二人以擅离扈从伏诛。
 </p><p>十二月庚寅，诏封皇子真金为燕王，领中书省事。辛卯，荧惑犯房。壬辰，荧惑犯钩钤。癸巳，以昌、抚、盖利泊等处荐罹兵革，免今岁租赋。甲午，师还，诏撤所在戍兵，放民间新签军。命太常少卿王镛教习大乐。壬寅，以隆寒命诸王合必赤所部军士无行帐者，听舍民居。命陕蜀行中书省给绥德州等处屯田牛、种、农具。初立宫殿府，秩正四品，专职营缮。立尚食局、尚药局。初设控鹤五百四人，以刘德为军使领之。立异样局达鲁花赤，掌御用织造，秩正三品，给银印。赐诸王金银币帛如岁例。是岁，天下户一百四十一万八千四百九十有九，断死罪四十六人。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p><p class='next'>下一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p><p class='next'>下一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

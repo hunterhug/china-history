@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -182,5 +209,18 @@
 <p>　　璀廓落有口才，好谈王霸之略，居职责成属吏。龊龊无过而已。 </p>
 <p>　　史臣曰：禄山寇陷两京，儒生士子，被胁从、怀苟且者多矣；去逆效顺，毁家 为国者少焉。如光远勇决任气，会权变以立功；房琯文学致身，全节义以避寇。阽 危之时，颠沛之际，有足称者。然光远居重籓，掌军政，琯登相位，夺将权，聚浮 薄之徒，败军旅之事，不知机而固位，竟无德以自危。孺复凶狂，式之便佞，获令 终者幸焉。镐直躬居位，重德镇时，其为人也鲜矣。适以诗人为戎帅，险难之际， 名节不亏，君子哉！璀擢第居官，守分无过，又何咎焉。 </p>
 <p>　　赞曰：光远、房琯，有始有终。张镐国器，适、璀儒风。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十章-卷六十-原文.html'>第六十章-卷六十</a></p><p class='next'>下一节：<a href='第六十二章-卷六十二-原文.html'>第六十二章-卷六十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十章-卷六十-原文.html'>第六十章-卷六十</a></p><p class='next'>下一节：<a href='第六十二章-卷六十二-原文.html'>第六十二章-卷六十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

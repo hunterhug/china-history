@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#列传'>：目录</a></p>
@@ -165,5 +192,18 @@
 </p><p>厚少学统业，精力思述。初，安帝永初三年，太白入斗，洛阳大水。时统为侍中，厚随在京师。朝廷以问统，统对“年老耳目不明，子厚晓读图书，粗识其意”。邓太后使中常侍承制问之，厚对以为“诸王子多在京师，容有非常，宜亟发遣各还本国。”太后从之，星寻灭不见。又克水退期日，皆如所言。除为中郎。太后特引见，问以图谶，厚对不合，免归。复习业犍为，不应州郡、三公之命，方正、有道、公正特征，皆不就。
 </p><p>永建二年，顺帝特征，诏告郡县督促发遣。厚不得已，行到长安，以病自上，因陈汉三百五十年之厄，宜蠲汉改宪之道，及消伏灾异，凡五事。制书褒述，有诏太医致药，太宫赐羊酒。及至，拜议郎，三迁为侍中，特蒙引见，访以时政。四年，厚上言“今夏必盛寒，当有疾疫蝗虫之害”。是岁，果六州大蝗，疫气流行。后又连上“西北二方有兵气，宜备边寇”。车驾临当西巡，感厚言而止。至阳嘉三年，西羌寇陇右，明年，乌桓围度辽将军耿晔。永和元年，复上“京师应有水患，又当火灾，三公有免者，蛮夷当反畔”。是夏，洛阳暴水，杀千余人；至冬，承福殿灾，太尉庞参免；荆、交二州蛮夷贼杀长吏，寇城郭。又言“阴臣、近戚、妃党当受祸。”明年，宋阿母与宦者褒信侯李元等遘奸废退；后二年，中常侍张逵等复坐诬罔大将军梁商专恣，悉伏诛。每有灾异，厚辄上消救之法，而阉宦专政，言不得信。
 </p><p>时大将军梁冀威权倾朝，遣弟侍中不疑以车马、珍玩致遗于厚，欲与相见。厚不答，固称病救退。帝许之，赐车马钱帛归家。修黄、老，教授门生，上名录者三千余人。太尉李固数荐言之。本初元年，梁太后诏备古礼以聘厚，遂辞疾不就。建和三年，太后复诏征之，经四年不至。年八十二，卒于家。策书吊祭。乡人谥曰文父。门人为立庙，郡文学掾史春秋飨射常祠之。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十章-申屠刚鲍永郅恽列传-原文.html'>第二十章-申屠刚鲍永郅恽列传</a></p><p class='next'>下一节：<a href='第二十二章-郎顗襄楷列传下-原文.html'>第二十二章-郎顗襄楷列传下</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十章-申屠刚鲍永郅恽列传-原文.html'>第二十章-申屠刚鲍永郅恽列传</a></p><p class='next'>下一节：<a href='第二十二章-郎顗襄楷列传下-原文.html'>第二十二章-郎顗襄楷列传下</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

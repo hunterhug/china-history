@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-志<a href='../金史.html#志'>：目录</a></p>
@@ -196,5 +223,18 @@
 </p><p>元光二年八月乙亥，荧惑入舆鬼，掩积尸气；十月壬午，犯灵台；十一月，又犯心大星。
 </p><p>哀宗正大元年正月丙午，月犯昴；三月癸丑，犯荧惑。是月，荧惑逆行犯左执法。四月癸酉，荧惑犯右执法。乙未，太白、辰星相犯。三年十一月丙辰，月掩荧惑。丁巳，荧惑犯岁星；庚申，犯垒壁阵。癸酉，五星并见于西南。十二月，荧惑入月。四年正月壬戌，荧惑犯太白。六月丙辰，太白入井。七月丁亥，荧惑犯斗从西第二星。五年五月乙酉，月掩心大星。七年十月己巳，月晕，至五更复有大连环贯之，络北斗，内有戟气。十二月庚寅，有星出天津下，大如镇星而色不明，初犯辇道，二日见于东北，在织女南；乙未，入天市垣，戊申方出；癸丑，历房北，复东南行，入积薪，凡二十五日而灭。
 </p><p>天兴元年七月乙巳，太白、岁星、荧惑、太阴俱会于轸、翼，司天武亢极言天变，上惟叹息，竟亦不之罪也。八月甲戌，太白、岁星交。闰九月己酉，彗星见东方，色白，长丈余，弯曲如象牙，出角、轸南行，至十二日长二丈，十六日月烛不见，二十七日五更复出东南，约长四丈余，至十月一日始灭，凡四十有八日。司天奏其咎在北，哀宗曰：“我亦北人，今日之事，我当灭也，何乃不先不后，适丁此乎！”</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p></div></body>
+<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

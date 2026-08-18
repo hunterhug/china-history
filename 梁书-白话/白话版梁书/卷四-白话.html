@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>梁书-白话版梁书<a href='../梁书.html#梁书'>：目录</a></p>
@@ -175,5 +202,18 @@
 </p><p>当初，太宗被囚禁时，曾在墙壁上叙述自己的生平道：“有梁正直之士兰陵萧世缵，树立己身，追求道义，自始至终，没有改变，国势动荡不安，战争连绵不断。没有欺侮幽暗无人之处，更何况是日、月和星辰呢！屡次如此，谁知道命运怎么样啊！”又作《连珠》二首，文辞极为伤感。
 </p><p>太宗幼时聪明机智而通达，见识和领悟力超过常人，六岁时便能作文，高祖惊叹他的早熟，不相信这是真的，于是亲自面试，果真文辞、风采均极为优秀。高祖感叹道：“这孩子，将成为我家的东阿。”长大成人后，胸怀宽广、宏大，轻易不会表露出自己的喜怒哀乐。腮颊方而丰满，..髯和鬓发如画一般，顾盼一下即觉目光灼人。读书一目十行。九种流派数百个人物的思想，过目不忘，牢记在心。文章辞赋，一挥而就。博学儒书，长于玄理。从十一岁起，便能熟悉国家的各种政务，多次尝试着处理对外事务，均受到称赞。为穆贵嫔服丧期间，因亲丧悲哀而瘦损异常，如仅以骨支拄身体一般，号泣啼哭，不绝于声，所坐过的席子，因泪水浸湿而全部朽烂。在襄阳上奏北伐，派遣长史柳津、司马董当门、壮武将军杜怀宝、振远将军曹义宗等几支军队前往讨伐，平定南阳、新野等郡，魏南荆州刺史李志盘踞安昌城投降，扩张领土一千多里。等到任监国与抚军，多有宽容宏大的举动，负责处理案卷，丝毫没有差错。吸引、招纳文学之士，赏识、接待没有厌倦，常常讨论篇籍，继之以文章。高祖所定《五经讲疏》，曾在玄圃奉述，听众倾动朝野上下。雅好题诗，他的序文写道：“我七岁嗜诗，成人后一直没有懈怠。”然而伤于轻..，时称“宫体”。所著《昭明太子传》五卷、《诸王传》三十卷、《礼大义》二十卷、《老子义》二十卷、《庄子义》二十卷，《长春义记》一百卷、《法宝连璧》三百卷，一并流传在世上。
 </p><p>史臣曰：太宗幼年聪明睿智，美好的学问早就传扬，才华横溢，超越今古。文章因为受当时轻浮华艳的文风的连累，不被君子所赞赏。等到太宗在东朝修养道德，声名传遍全国，到他继承帝位，实在具有人君的美德了。正当太宗像文、景二帝一样治理国家时，他的命运却如《屯》、《剥》,所示不吉，受贼臣控制，不能施展他所具有的才华，终于遭遇了晋怀帝、晋愍帝那样残酷的结局，多么的悲哀！</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷三-白话.html'>卷三</a></p><p class='next'>下一节：<a href='卷五-白话.html'>卷五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='卷三-白话.html'>卷三</a></p><p class='next'>下一节：<a href='卷五-白话.html'>卷五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -210,5 +237,18 @@
 </p><p>刘之勃，字安侯，凤翔人。崇祯七年进士。授行人，擢御史。上节财六议，言：“先朝马万计，草场止五六所，今马渐少，场反增二倍，可节省者一。水衡工役费，岁几百万，近奉明旨，朝廷不事兴作，而节慎库额数袭为常，可节省者二。诸镇兵马时败溃而饷额不减，虚伍必多，可节省者三。光禄宴享赐赉，大抵从简，而监局厨役多冗滥，可节省者四。三吴织造，泽、潞机杼，以及香蜡、药材、陶器，无岁不贡，积之内为废物，输之下皆金钱，可节省者五。军前监纪、监军、赞画之官，不可胜纪，平时则以一人而縻千百人之饷，临敌又以千百人而卫一人之身，耗食兼耗兵，可节省者六。”又疏陈东厂三弊，言：“东厂司缉访，而内五城，外巡按，以及刑部、大理皆不能举其职，此不便于官守。奸民千里首告，假捏姓名，一纸株连，万金立罄，此不便于民生。子弟讦父兄，奴仆讦家主，部民讦官长，东厂皆乐闻，此不便于国体。”帝皆纳其言。
 </p><p>十五年出按四川。十六年秋，类报灾异，请缓赋省刑，亦弭灾一术，时不能用。明年正月，张献忠大破川中郡邑。四月，闻都城失守，人心益恟惧。举人杨锵、刘道贞等谋拥蜀王至澍监国，之勃不可，跃入池中，议乃寝。八月，贼逼成都，之勃与巡抚龙文光、建昌兵备副使刘士斗等分陴拒守，总兵官刘镇藩出战而败。贼穴城，实以火药；又刳大木长数丈者合之，缠以帛，贮药，向城楼。之勃厉众奋击，贼却二三里，皆喜，以为将去也。初九日黎明，火发，北楼陷，木石飞蔽天，守陴者皆散，贼遂入城。蜀王率妃妾自沉于菊井。镇藩突围出，赴浣花溪死之。之勃等被执，贼以之勃同乡，欲用之，之勃劝以不杀百姓，辅立蜀世子。不从，遂大骂，贼攒箭射杀之。时福王立于南京，擢之勃右佥都御史，巡抚四川，已不及闻矣。
 </p><p>赞曰：潼关既破，李自成乘胜遂有三秦，渡河而东，势若燎原。宣、大继覆，明亡遂决。一时封疆诸臣后先争死，可不谓烈哉！然平阳之旆甫东，船窝之警旋告。死非难，所以处死为难，君子不能无憾于懋德焉已。若夫一鹤之死显陵，士奇之死夔州，刘之勃、龙文光之死成都，不亦得死所者欤！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百五十章-卷一百五十-原文.html'>第一百五十章-卷一百五十</a></p><p class='next'>下一节：<a href='第一百五十二章-卷一百五十二-原文.html'>第一百五十二章-卷一百五十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百五十章-卷一百五十-原文.html'>第一百五十章-卷一百五十</a></p><p class='next'>下一节：<a href='第一百五十二章-卷一百五十二-原文.html'>第一百五十二章-卷一百五十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

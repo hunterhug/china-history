@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-世家<a href='../新五代史.html#世家'>：目录</a></p>
@@ -176,5 +203,18 @@
 </p><p>初，太祖皇帝命引汾水浸其城，水自城门入，而有积草自城中飘出塞之。是时，王师顿兵甘草地中，会岁暑雨，军士多疾，乃班师。王师已去，继元决城下水注之台骀泽，水已落而城多摧圮。契丹使者韩知璠时在太原，叹曰：“王师之引水浸城也，知其一而不知其二，若先浸而后涸，则并人无类矣！”
 </p><p>太平兴国四年，王师复北征，继元穷窘，而并人犹欲坚守。其枢密副使马峰老疾居于家，舁入见继元，流涕以兴亡谕之，继元乃降。太宗皇帝御城北高台受降，以继元为右卫上将军，封彭城公。其后事具国史。
 </p><p>旻年世兴灭，诸书皆同，自周广顺元年建号，至皇朝太平兴国四年灭，凡二十八年，余具年谱注。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章-南平世家第九-原文.html'>第九章-南平世家第九</a></p><p class='next'>下一节：<a href='第十一章-十国世家年谱第十一-原文.html'>第十一章-十国世家年谱第十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九章-南平世家第九-原文.html'>第九章-南平世家第九</a></p><p class='next'>下一节：<a href='第十一章-十国世家年谱第十一-原文.html'>第十一章-十国世家年谱第十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

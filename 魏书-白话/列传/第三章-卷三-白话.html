@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#魏书'>：目录</a></p>
@@ -213,5 +240,18 @@
 </p><p>昭成帝的儿子窟咄。昭成帝逝世后，苻洛因他年长，逼迫他迁到长安，苻坚以礼待他，教给他学问。因祸乱跟随慕容永向东迁徙，慕容永任命他为新兴太守。
 </p><p>刘显失败后，派遣弟弟亢垄等人迎接窟咄，于是逼近南部疆域，这时各部落骚动。太祖的左右工但等人密谋响应直咄，同谋人里旦王将事情幸皓太祖。太祖担心震骇人心，深思不采取行动。三天后，于桓把计划告诉他的舅舅穆崇，穆崇又报告太祖。太祖于是诛杀于桓等五人，其余莫题等七姓，都宽恕而不追究。太祖担心内乱，就向北翻越阴山，前往贺兰部，派遣安同和长孙贺向慕容垂征集军队。长孙贺逃跑投奔窟咄，安同抄小道到达中山。慕容垂派遣儿子贺骈率领步兵骑兵六千人跟随安同。安同和慕容垂的使者兰纥一同返回，到达牛，窟咄哥哥的儿子意烈防堵他。安同于是隐藏在商人的袋子中，到晚上就躲进空井，得以免死。随之投奔贺膦。贺骈的军队既不到，窟咄逐渐向前逼近。贺染干暗中怀有二心，就为窟咄前来侵犯北部疆域。人们都惊讶害怕，没有稳固的志向。这时北部大人叔孙普洛节和各乌丸部落逃跑投奔卫辰。贺骈听说后，马上派遣安同、朱谭等人前来。得知贺骈的军队靠近，众人才稍微安定。
 </p><p>太祖从弩山前往牛川。窟咄进军驻守高柳。太祖又派安同前往贺骈那裹，因而约定会合的日期。安同返回，太祖越过参合陂，出兵代郡北和贺骈在高柳会合。窟咄困窘急迫，望旌旗而奔跑，于是被卫辰杀死，皇帝收集了他全部的部众。贺骈告别皇帝，回到中山。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二-白话.html'>第二章-卷二</a></p><p class='next'>下一节：<a href='第四章-卷四-白话.html'>第四章-卷四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二-白话.html'>第二章-卷二</a></p><p class='next'>下一节：<a href='第四章-卷四-白话.html'>第四章-卷四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

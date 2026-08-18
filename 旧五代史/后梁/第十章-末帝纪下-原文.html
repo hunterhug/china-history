@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后梁<a href='../旧五代史.html#后梁'>：目录</a></p>
@@ -176,5 +203,18 @@
 </p><p>冬十月辛未朔，日有食之。甲戌，唐帝引师袭中都，王彦章兵溃，于是彦章与监军张汉杰及赵廷隐、刘嗣彬、李知节、唐文通、王山兴等皆为唐人所获。翼日，彦章死于任城。帝闻中都之败，唐军长驱将至，遣张汉伦驰驿召段凝于河上；汉伦坠马伤足，复限水潦，不能进。时禁军尚有四千人，硃圭请以拒唐军，帝不从，登建国门召开封尹王瓚，谓之曰：“段凝未至，社稷系卿方略。”瓚即驱军民登城为备。或劝帝西奔洛阳，赵岩曰：“势已如是，一下此楼，谁心可保。”乃止。俄报曰：“晋军过曹州矣！”帝置传国宝于卧内，俄失其所在，已为左右所窃迎唐帝矣。帝召控鹤都将皇甫麟，谓之曰：“吾与晋人世仇，不可俟彼刀锯，卿可尽我命，无令落仇人之手。”麟不忍，帝曰：“卿不忍，将卖我耶！”麟举刀将自刭，帝持之，因相对大恸。戊寅夕，麟进刃于建国楼之廊下，帝崩。《五代会要》：末帝年三十六。麟即时自刭。迟明，唐军攻封丘门，王瓚迎降。唐帝入宫，妃郭氏号泣迎拜。初，许州献绿毛龟，宫中造室以蓄之，命曰“龟堂”。帝尝市珠于市，既而曰：“珠数足矣。”众皆以为不祥之言。帝末年改名“瑱”字，一十一，十月一八日，案：此句疑有脱衍，盖当时傅会者析“王”字为“一十一”，析“真”字为“十月一八”也。《册府元龟》作或解云“瑱”字，“一十一，十月一八”，知此句“日”字因下文有“日”字而衍，今姑仍其旧。果以一十一年至十月九日亡。
 </p><p>唐帝初入东京，闻帝殂，怃然叹曰：“敌惠敌怨，不在后嗣。朕与梁主十年对垒，恨不生见其面。”寻诏河南尹张全义收葬之，其首藏于太社。晋天福二年五月，诏太社先藏唐朝罪人首级，许亲属及旧僚收葬。时右卫上将军娄继英请之，会继英得罪，乃诏左卫上将军安崇阮收葬焉。
 </p><p>史臣曰：末帝仁而无武，明不照奸，上无积德之基可乘，下有弄权之臣为辅，卒使劲敌奄至，大运俄终。虽天命之有归，亦人谋之所误也。惜哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章-末帝纪中-原文.html'>第九章-末帝纪中</a></p><p class='next'>下一节：<a href='第十一章-列传一-原文.html'>第十一章-列传一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九章-末帝纪中-原文.html'>第九章-末帝纪中</a></p><p class='next'>下一节：<a href='第十一章-列传一-原文.html'>第十一章-列传一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

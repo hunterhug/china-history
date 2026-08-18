@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后周<a href='../旧五代史.html#后周'>：目录</a></p>
@@ -169,5 +196,18 @@
 </p><p>冬十月辛酉，葬宣懿皇后于懿陵。癸亥，以右神武统军宋延渥为庐州行营副部署。乙丑，舒州刺史郭令图责授虢州教练使，坐弃郡逃归也。丙寅，诏曰：“诸司职员皆系奏补，当执役之际，悉藉公勤，及听选之时，尤资干敏，苟非慎择，渐致因循。应诸司寺监，今后收补役人，并须人材俊利，身言可采，书札堪中，自前行止，委无讹滥，勒本司关送吏部，引验人材，考校笔札。其中选者，连所试书迹及正身引过中书，余从前后格敕处分，仍每年只得一度奏补。”丁卯，宣懿皇后神主入庙，时有司请为后立别庙，礼也。己巳，诏：“漳河以北郡县，并许盐货通商，逐处有硷卤之地，一任人户煎炼。”壬申，以武平军节度副使、知潭州军府事宇文琼为武清军节度使，知潭州军府事。癸酉，淮南招讨使李重进奏，破淮贼于盛唐，斩二千级。太子宾客致仕薛仁谦卒。丙子，襄州节度使、守太尉、兼中书令、陈王安审琦加守太师。审琦镇汉上十余年，至是来朝，故以命宠之。癸未，右拾遗赵守微杖一百，配沙门岛。守微本村民也，形貌朴野，粗学为文。前年徒步上书，帝以急于取士，授右拾遗，闻者骇其事。至是为妻父所讼，彰其丑行，故逐之。《东都事略·张昭传》云：世宗好拔奇取俊，有自布衣上书、下位言事者，多不次进用。昭谏曰：“昔唐初刘洎、马周起徒步，太宗擢用为相，其后硃朴、柳璨在下僚，昭宗亦以大用，然则太宗用之于前而国兴，昭宗用于后而国亡，士之难知也如此。臣愿陛下存旧法而用人，以刘、马为鉴，硃、柳为戒，则善矣。”甲申，宣授今上同州节度使兼殿前都指挥使，宣授内外马步军都军头袁彦为曹州节度使兼侍卫步军都指挥使。戊子，右神武统军张彦超卒。
 </p><p>十一月己丑朔，诏废天下无名祠庙。庚子，日南至，帝不受朝贺，以宣懿皇后迁祔日近也。乙巳，江南进奉使孙晟下狱死，江南进奉使钟谟责授耀州司马。戊申，放华山隐者陈抟归山。帝素闻抟有道术，征之赴阙，月余放还旧隐。庚戌，殿前都指挥使张永德奏，败濠州送粮军二千人于下蔡，夺米船十余艘。宰臣李穀以风痹请告十旬，三上表求解所任，不允。
 </p><p>十二月己未朔，以给事中张铸为光禄卿，铸诉以官名与祖讳同，寻改秘书监，判光禄寺事。辛酉，以许州节度使韩通兼侍卫马步军都虞候。壬戌，以右领军大将军、权判三司张美领三司使。壬申，以滑州节度使兼殿前都指挥使、驸马都尉张永德为殿前都点校。发陈、蔡、宋、亳、颍、曹、单等州丁夫城下蔡。辛巳，故襄邑令刘居方赠右补阙，男士衡赐学究出身，奖廉吏也。癸亥，诏兵部尚书张昭纂修太祖实录及梁均王、唐清泰帝两朝实录。《五代会要》云：同修撰官委张昭定名奏请，至四年正月，张昭奏请国子祭酒尹拙、太子詹事刘温叟同编修。又诏曰：“史馆所少书籍，宜令本馆诸处求访补填。如有收得书籍之家，并许进书人据部帙多少等第，各与恩泽，如是卷帙少者，量给资帛。如馆内已有之书，不在进纳之限。仍委中书门下，于朝官内选差三十人，据见在书籍，各求真本校勘，署校官姓名，逐月具功课申报中书门下。”戊子，淮南道招讨使李重进奏，破淮贼二千人于塌山北。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章-世宗纪二-原文.html'>第六章-世宗纪二</a></p><p class='next'>下一节：<a href='第八章-世宗纪四-原文.html'>第八章-世宗纪四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六章-世宗纪二-原文.html'>第六章-世宗纪二</a></p><p class='next'>下一节：<a href='第八章-世宗纪四-原文.html'>第八章-世宗纪四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

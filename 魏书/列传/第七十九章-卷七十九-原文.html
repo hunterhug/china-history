@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#列传'>：目录</a></p>
@@ -301,5 +328,18 @@
 </p><p>世宗、肃宗时，豫州人柳俭、殿中将军关文备、郭安兴并机巧。洛中制永宁寺九层佛图，字兴为匠也。
 </p><p>高祖时，有范宁兒者善围棋。曾与李彪使萧赜，赜令江南上品王抗与宁兒。制胜而还。又有浮阳高光宗善樗蒲。赵国李幼序、洛阳丘何奴并工握槊。此盖胡戏，近入中国，云胡王有弟一人遇罪，将杀之，弟从狱中为此戏以上之，意言孤则易死也。世宗以后，大盛于时。
 </p><p>史臣曰：阴阳卜祝之事，圣哲之教存焉。虽不可以专，亦不可得而废也。徇于是者不能无非，厚于利者必有其害。诗书礼乐，所失也鲜，故先王重其德；方术伎巧，所失也深，故往哲轻其艺。夫能通方术而不诡于俗，习伎巧而必蹈于礼者，几于大雅君子。故昔之通贤，所以戒乎妄作。晁崇、张渊、王早、殷绍、耿玄、刘灵助皆术艺之士也。观其占候卜筮，推步盈虚，通幽洞微，近知鬼神之情状。周澹、李脩、徐謇、王显、崔彧方药特妙，各一时之美也。蒋少游以剞劂见知，没其学思，艺成为下，其近是乎？</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十八章-卷七十八-原文.html'>第七十八章-卷七十八</a></p><p class='next'>下一节：<a href='第八十章-卷八十-原文.html'>第八十章-卷八十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七十八章-卷七十八-原文.html'>第七十八章-卷七十八</a></p><p class='next'>下一节：<a href='第八十章-卷八十-原文.html'>第八十章-卷八十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

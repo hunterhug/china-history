@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-列传<a href='../新五代史.html#列传'>：目录</a></p>
@@ -178,5 +205,18 @@
 </p><p>○存贤
 </p><p>存贤，许州人也，本姓王名贤。少为军卒，善角牴，太祖击黄巢于陈州，得之，赐以姓名，养为子。后为义兒军副兵马使，迁沁州刺史。先时，沁州当敌冲，徙其南百馀里，据险立栅而寓居。至存贤为刺史，曰：“徙城避敌，岂勇者所为？”乃复城故州。梁兵屡攻之，存贤力自距守，卒不能近。迁武州刺史、山北团练使，又迁慈州。天祐十八年，梁兵攻硃友谦于河中，庄宗遣存贤援友谦。是时，友谦新叛梁归晋，而河中食少，人心多贰，谍者因谓存贤曰：“河中人欲杀子以归梁，宜亟去。”存贤曰：“死王事，吾志也。复何恨哉！”卒击走梁兵。
 </p><p>庄宗即位，拜右武卫上将军。庄宗亦好角牴，尝与王较而屡胜，颇以自矜，因顾存贤曰：“尔能胜我，与尔一镇。”存贤博而胜之。同光二年春，幽州符存审病，庄宗置酒宫中，叹曰：“吾创业故人，零落殆尽，其所存者惟存审耳。今又病笃，北方之事谁可代之？”因顾存贤曰：“无以易卿。角牴之胜，吾不食言。”即日以为卢龙军节度使。是岁，卒于幽州，年六十五。赠太傅。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十三章-唐六臣传第二十三-原文.html'>第二十三章-唐六臣传第二十三</a></p><p class='next'>下一节：<a href='第二十五章-伶官传第二十五-原文.html'>第二十五章-伶官传第二十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十三章-唐六臣传第二十三-原文.html'>第二十三章-唐六臣传第二十三</a></p><p class='next'>下一节：<a href='第二十五章-伶官传第二十五-原文.html'>第二十五章-伶官传第二十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

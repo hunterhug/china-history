@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>北齐书-白话版北齐书<a href='../北齐书.html#北齐书'>：目录</a></p>
@@ -182,5 +209,18 @@
 </p><p>三月戊子，下韶书给西兖、梁、沧、赵州，司州的束郡、阳平、清河、武都，冀州的长乐、渤海遭受水灾的地方贫困户粟米，各有差异。各家的区别衹是斗升罢了，又有很多没有付给。这一月，彗星出现；有东西落到宫殿的庭院裹，像带着小铃涂上红漆的鼓；宫殿上的石头自己拱起来，两两相对。又有神出现在后园万寿堂前的山洞裹，他的身体健壮硕大，看不见他的面目，两颗牙齿十分洁白，从嘴唇裹伸出，武成帝值宿的嫔妃和宫女以下七百人都看见了。武成帝又梦见了他。
 </p><p>夏四月戊午，大将军、东安王娄散因犯罪被免职。乙亥，陈国人前来访问。太史上奏天象有变化，经占卜是要改换帝王。丙子，就派遣太宰段韶兼太尉，带着符节捧着皇帝的印玺将帝位传给皇太子，大赦天下，改换年号为天统元年，百官进升职级减轻罪罚各有差别。又下韶书封皇太子妃斛律氏为皇后。于是各王公给武成帝奉上尊号为太上皇帝，军队和国家的重大事情全都要呈奏。开始将要传告政事，派遣内参乘子尚乘着驿车把诏书送到邺城。乘子尚出了晋阳城，看见有人骑着马跟在后面，忽然不见了，他还没到邺城而他传告的话已经传遍了。
 </p><p>天统四年十二月辛未，太上皇帝在邺城宫中干画堂崩逝，当时三十二岁，谧号称武成皇帝，庙号世担。丢铲五年二月甲申，下葬在永平陵。</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷六-白话.html'>卷六</a></p><p class='next'>下一节：<a href='卷八-白话.html'>卷八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='卷六-白话.html'>卷六</a></p><p class='next'>下一节：<a href='卷八-白话.html'>卷八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

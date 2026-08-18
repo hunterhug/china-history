@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -189,5 +216,18 @@
 </p><p>子敬举同知宣徽院事移剌神独斡、兵部侍郎移剌按答，太子少詹事乌古论三合自代，上不许。子敬与同签宣徽院事移剌神独斡侍，上曰：“亡辽不忘旧俗，朕以为是。海陵习学汉人风俗，是忘本也。若依国家旧风，四境可以无虞，此长久之计也。”世宗将如凉陉，子敬与右补阙粘割斡特剌、左拾遗杨伯仁奏曰：“车驾至曷里浒，西北招讨司囿于行宫之内地矣。乞迁之于界上，以屏蔽环卫。”上曰：“善。”诏尚书省曰：“招讨斜里虎可徙界上，治蕃部事。都监撒八仍于燕子城治猛安谋克事。”
 </p><p>上与侍臣论古之人君贤否，子敬奏曰：“陛下凡与宰臣谋议，不可不令史官知之。”上曰：“卿言是也。”转签书枢密院事，同修国史，出为河中尹，请老。河中地热，上恐子敬不耐暑，改兴中尹。子敬女自懿州来兴中省谒，遇盗途中，剽掠其行李且尽，既而还之，谢曰：“我辈初不知为府尹家也，尹有德于民，尚忍侵犯邪。”徙咸平、广宁尹。二十一年，致仕，卒于家，年七十一。子敬尝使宋，及受诸部进贡，所受礼物，皆散之亲旧。及卒，家无余财，其子质宅以营葬事。
 </p><p>赞曰：金制，尚书令、左右丞相、平章政事，是谓宰相；左右丞、参知政事，是谓执政。大抵因唐官而稍异焉，因革不同，无足疑者。《书》曰：“元首明哉，股肱良哉，庶事康哉。”又曰：“元首丛脞哉，股肱惰哉，万事隳哉。”宰相、执政，岂异道邪？苏保衡、翟永固、魏子平、孟浩、梁肃皆当时之贤执政也。移剌綎、子敬有其才，适其时，而位不及者，亦命也夫。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十六章-卷二十六-原文.html'>第二十六章-卷二十六</a></p><p class='next'>下一节：<a href='第二十八章-卷二十八-原文.html'>第二十八章-卷二十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十六章-卷二十六-原文.html'>第二十六章-卷二十六</a></p><p class='next'>下一节：<a href='第二十八章-卷二十八-原文.html'>第二十八章-卷二十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

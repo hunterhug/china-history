@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#金史'>：目录</a></p>
@@ -225,5 +252,18 @@
 </p><p>高琪自从当了宰相以后，专力巩固权势和求得皇帝的宠信，擅自作威作福，和高汝砺一唱一和。高琪主管机要事务，高汝砺掌管财利大权，依附自己的就重用，不依附自己的就排斥。凡是进言时和自己想法相反的，或者自负有才干敢于同自己抗衡的，他便表面上向宣宗赞扬他的才能，同时让他到河北去办事，实际上是暗中置之死地。自从他不再兼任枢密元帅以后，便时常想掌握兵权，因而力劝宣宗攻打宋朝。他不再把河北方面事情放在心上，所有的精兵都布置在河南，苟且度日，不肯轻易出动一兵一卒，以援救危急的地方。
 </p><p>平章政事英王守纯要告发高琪的罪状，密召右司员外郎王阿里、知案蒲鲜石鲁剌、令史蒲察胡鲁一起谋划。石鲁剌、胡鲁把这件事告诉了尚书省都事仆散奴失不，仆散奴失不又告诉了高琪。英王因害怕高琪同党为数众多，因而不敢加以揭发。不久，高琪让他的奴仆赛不杀了他的妻子，然后归罪于赛不，要把他送到开封府杀掉灭口。开封府害怕高琪的威势，不敢追究真实情况，便判赛不死刑。事情被觉察之后，宣宗早就听说术虎高琪奸诈无恶不作，便因这件事而杀掉他，这时是兴定三年(1219)十二月间。尚书省都事仆散奴失不将英王的计谋告诉了高琪，论罪判死刑。蒲鲜石鲁剌、蒲察胡鲁各被责打七十杖，勒令停职。
 </p><p>起初，宣宗准备迁都南京，打算把礣军安置在平州，高琪不愿意。当迁都汴京以后，宣宗告诫彖多，让他厚待这支军队，而彖多却很快杀了礣军的几个人，以致失败。宣宗到晚年时曾说“：坏我天下的，是高琪和彖多啊！”他终身引以为恨。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十三章-卷四十三-白话.html'>第四十三章-卷四十三</a></p><p class='next'>下一节：<a href='第四十五章-卷四十五-白话.html'>第四十五章-卷四十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十三章-卷四十三-白话.html'>第四十三章-卷四十三</a></p><p class='next'>下一节：<a href='第四十五章-卷四十五-白话.html'>第四十五章-卷四十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -185,5 +212,18 @@
 <p>　　其后哥舒翰大举兵伐石堡城，拔之，死者大半，竟如忠嗣之言，当代称为名将。 先是，忠嗣之在朔方也，每至互市时，即高估马价以诱之，诸蕃闻之，竞来求市， 来辄买之。故蕃马益少，而汉军益壮。及至河、陇，又奏请徙朔方、河东戎马九千 匹以实之，其军又壮。迄于天宝末，战马蕃息。宝应元年，追赠兵部尚书。 </p>
 <p>　　史臣曰：郭虔瓘、郭知运、王君、张守珪、牛仙客、王忠嗣，立功边域，为 世虎臣，班超、傅介子之流也。然虔瓘以万人征西，请给公乘、熟食，可谓谋之不 臧矣。君以父执登陴，兵竟不出，此则不知门外之事，义断恩也。守珪以至诚感 神，取材成堰，与夫耿恭拜井，有何异焉？仙客爰自方隅，骤登廊庙，显招物议， 独善其身，盖才有不周，昧于陈力就列。忠嗣因青蝇之点，几危其身，谗人之言， 诚可畏也！ </p>
 <p>　　赞曰：陇山之西，幽陵之北，爰有戎夷，世为残贼。二郭、二王，守珪、仙客， 御寇之功，存乎方策。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十二章-卷五十二-原文.html'>第五十二章-卷五十二</a></p><p class='next'>下一节：<a href='第五十四章-卷五十四-原文.html'>第五十四章-卷五十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五十二章-卷五十二-原文.html'>第五十二章-卷五十二</a></p><p class='next'>下一节：<a href='第五十四章-卷五十四-原文.html'>第五十四章-卷五十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

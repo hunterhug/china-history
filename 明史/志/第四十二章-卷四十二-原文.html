@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-志<a href='../明史.html#志'>：目录</a></p>
@@ -179,5 +206,18 @@
 </p><p>郡王长子夫人冠服：珠翠五翟冠，大红纻丝大衫，深青纻丝金绣翟褙子，青罗金绣翟霞帔，金坠头。
 </p><p>镇国将军冠服，与郡王长子同。镇国将军夫人冠服，与郡王长子夫人同。辅国将军冠服，与镇国将军同，惟冠六梁，带用犀。辅国将军夫人冠服，与镇国将军夫人同，惟冠用四翟，抹金银坠头。奉国将军冠服，与辅国将军同，惟冠五梁，带用金鈒花，常服大红织金虎豹。奉国将军淑人冠服，与辅国将军夫人同，惟褙子、霞帔，金绣孔雀文。镇国中尉冠服，与奉国将军同，惟冠四梁，带用素金，佩用药玉。镇国中尉恭人冠服，与奉国将军淑人同。辅国中尉冠服，与镇国中尉同，惟冠三梁，带用银鈒花，绶用盘雕，公服用深青素罗，常服红织金熊罴。辅国中尉宜人冠服，与镇国中尉恭人同，惟冠用三翟，褙子、霞帔，金绣鸳鸯文，银坠头。奉国中尉冠服，与辅国中尉同，惟冠二梁，带用素银，绶用练鹊，幞头黑漆，常服红织金彪。奉国中尉安人冠服，与辅国中尉宜人同，惟大衫用丹矾红，褙子、霞帔金绣练鹊文。
 </p><p>县主冠服：珠翠五翟冠，大红纻丝大衫，深青纻丝金绣孔雀褙子，青罗金绣孔雀霞帔，抹金银坠头。郡君冠服，与县主同，惟冠用四翟，褙子、霞帔金绣鸳鸯文。县君冠服，与郡君同，惟冠用三翟。乡君冠服，与县君同，惟大衫用丹矾红，褙子、霞帔金绣练鹊文。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十一章-卷四十一-原文.html'>第四十一章-卷四十一</a></p><p class='next'>下一节：<a href='第四十三章-卷四十三-原文.html'>第四十三章-卷四十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十一章-卷四十一-原文.html'>第四十一章-卷四十一</a></p><p class='next'>下一节：<a href='第四十三章-卷四十三-原文.html'>第四十三章-卷四十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

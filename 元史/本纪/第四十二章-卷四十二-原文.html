@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>元史-本纪<a href='../元史.html#本纪'>：目录</a></p>
@@ -191,5 +218,18 @@
 </p><p>冬十月丁未，时享太庙。庚戌，知枢密院事老章进阶金紫光禄大夫。命平章定住、右丞哈麻同知经筵事。癸丑，命和籴粟豆五十万石于辽阳。甲寅，拜知行枢密院事阿乞剌为太尉、淮南行省平章政事。戊午，太阴犯鬼宿。甲子，太阴犯岁星。乙丑，太阴犯亢宿。
 </p><p>十一月辛未，命江浙行省平章政事庆童收捕常州贼。乙亥，以星吉为江西行省平章政事，出师湖广。丙子，中书省臣请为脱脱立《徐州平寇碑》及加封王爵。癸未，命江浙行省右丞帖里帖木儿总兵讨方国珍。己丑，以脱脱平徐功，赐金一十锭、银一百锭、钞五万锭、币帛各三千匹，上表辞，从之。庚寅，太阴犯太微垣。
 </p><p>十二月壬寅，答失八都鲁复襄阳。辛亥，诏以杭、常、湖、信、广德诸路皆克复，赦诖误者，蠲其夏税、秋粮，命有司抚恤其民。辛酉，以湖广行省参知政事卜颜不花、右丞阿儿灰讨徭贼，复湖南潭、岳等处有功，卜颜不花升散阶从一品，阿儿灰升正二品。癸未，脱脱言：“京畿近地水利，召募江南人耕种，岁可得粟麦百万余石，不烦海运而京师足食。”帝曰：“此事有利于国家，其议行之。”是岁，海运不通。立都水庸田使司于汴梁，掌种植之事。颍州沈丘人察罕帖木儿与信阳州罗山人李思齐同起义兵，破贼有功，授察罕帖木儿中顺大夫、汝宁府达鲁花赤，李思齐知汝宁府。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十一章-卷四十一-原文.html'>第四十一章-卷四十一</a></p><p class='next'>下一节：<a href='第四十三章-卷四十三-原文.html'>第四十三章-卷四十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十一章-卷四十一-原文.html'>第四十一章-卷四十一</a></p><p class='next'>下一节：<a href='第四十三章-卷四十三-原文.html'>第四十三章-卷四十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

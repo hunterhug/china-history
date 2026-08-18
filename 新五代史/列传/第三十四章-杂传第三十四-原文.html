@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-列传<a href='../新五代史.html#列传'>：目录</a></p>
@@ -190,5 +217,18 @@
 </p><p>郭延鲁，沁州绵上人也。父饶，以骁勇事晋，数立军功，为沁州刺史者九年，为政有惠爱，州人思之。延鲁以善槊为将，累迁神武都知兵马使。硃守殷反，从攻汴州，以先登功为汴州马步军都指挥使，累迁复州刺史。延鲁叹曰：“吾先君为沁州者九年，民到于今思之。吾今幸得为刺史，其敢忘吾先君之志！”由是益以廉平自励，民甚赖之。秩满，州人乞留，不许，皆遮道攀号。天福中，拜单州刺史，卒于官。
 </p><p>当是时，刺史皆以军功拜，言事者多以为言，以谓方天下多事，民力困敝之时，不宜以刺史任武夫，恃功纵下，为害不细。而延鲁父子特以善政著闻焉。
 </p><p>呜呼，五代之民其何以堪之哉！上输兵赋之急，下困剥敛之苛。自庄宗以来，方镇进献之事稍作，至于晋而不可胜纪矣。其“添都”、“助国”之物，动以千数计。至于来朝、奉使、买宴、赎罪，莫不出于进献。而功臣大将，不幸而死，则其子孙率以家赀求刺史，其物多者得大州善地。盖自天子皆以贿赂为事矣，则为其民者其何以堪之哉！于此之时，循廉之吏如延鲁之徒者，诚难得而可贵也哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十三章-杂传第三十三-原文.html'>第三十三章-杂传第三十三</a></p><p class='next'>下一节：<a href='第三十五章-杂传第三十五-原文.html'>第三十五章-杂传第三十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十三章-杂传第三十三-原文.html'>第三十三章-杂传第三十三</a></p><p class='next'>下一节：<a href='第三十五章-杂传第三十五-原文.html'>第三十五章-杂传第三十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -249,5 +276,18 @@
 </p><p>润寻擢南京通政司参议，历太常寺少卿。隆庆元年以右佥都御史巡抚应天诸府。属吏慑其威名，咸震慄。润至，则持宽平，多惠政，吏民皆悦服。居三年，卒官。年甫四十。
 </p><p>润乡郡兴化陷倭，特疏请蠲复三年，发帑金振恤。乡人德之。丧归，遮道四十里，为位祭哭凡三日。
 </p><p>赞曰：世宗非庸懦主也。嵩相二十余年，贪裛盈贯。言者踵至，斥逐罪死，甘之若饴，而不能得君心之一悟。唐德宗言：“人谓卢杞奸邪，朕殊不觉。”各贤其臣，若蹈一辙，可胜叹哉！世蕃之诛，发于邹应龙，成于林润。二人之忠，非过于杨继盛，其言之切直，非过于沈炼、徐学诗等，而大憝由之授首。盖恶积灭身，而邹、林之弹击适会其时欤！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九十七章-卷九十七-原文.html'>第九十七章-卷九十七</a></p><p class='next'>下一节：<a href='第九十九章-卷九十九-原文.html'>第九十九章-卷九十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九十七章-卷九十七-原文.html'>第九十七章-卷九十七</a></p><p class='next'>下一节：<a href='第九十九章-卷九十九-原文.html'>第九十九章-卷九十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

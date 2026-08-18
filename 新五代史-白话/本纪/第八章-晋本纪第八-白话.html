@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-本纪<a href='../新五代史.html#新五代史'>：目录</a></p>
@@ -163,5 +190,18 @@
 </p><p>天福五年(940)正月一日，下诏免去民众公私债务。二十三日，回鹘使者石海金来。四月二十九日，契丹兴化王来。五月二十一日，安远军节度使李金全叛变归附南唐。六月九日，李繮派李承裕率军入安州，金全逃归南唐，安远军节度使马全节战败承裕。二十三日，攻克安州，承裕逃到云梦，被全节捉住杀掉了。八月四日，在西郊视察农民庄稼。二十六日，西京留守杨光远杀太子太师范延光。九月五日，任翰林学士承旨、户部侍郎和凝为中书侍郎、同中书门下平章事。十九日，在沙台视察农民庄稼。十月十五日，契丹使者舍利来。十一月十五日，冬至，开始用二舞。
 </p><p>天福六年(941)正月十八日，封唐叔虞为兴安王，台骀为昌宁公。二月十八日，停止买宴钱。三月，免去农民二年至四年以前的税。四月三十日，契丹使者述括来。五月，吐浑首领白承福来。七月二十四日，突厥使者薛同海来。八月五日，前往邺都，开封尹郑王重贵留守东京，宣徽南院使张从恩为东京内外兵马都监。十五日，大赦。二十七日，派光禄卿张澄出使契丹。九月十八日，派前安国军节度使杨彦询出使契丹。二十日，吐浑使者白可久来。黄河在中都决堤，水流入沓河。十月，黄河在滑、濮、郓、澶州决堤。山南东道节度使安从进反叛。十一月二十一日，派西京留守高行周为南面军前都部署去讨伐。十二月一日，郑王重贵为广晋尹，徙封齐王。先锋都指挥使郭金海在唐州战败安从进。成德军节度使安重荣反。派天平节度使杜重威为镇州行营招讨使。十一日，契丹派使者来。十三日，杜重威在宗城战败安重荣。
 </p><p>天福七年(942)正月二日，攻克镇州，安重荣处死，赦免广晋吏民。十五日，契丹使者达剌来。三月，归德军节度使安彦威在滑州堵塞黄河缺口。闰三月，天兴县蝗虫吃麦苗。五月二十二日，尊皇太妃刘氏为太后。六月四日，吐浑使者念丑汉来。十三日，皇帝死于保昌殿。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-唐本纪第七-白话.html'>第七章-唐本纪第七</a></p><p class='next'>下一节：<a href='第九章-晋本纪第九-白话.html'>第九章-晋本纪第九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七章-唐本纪第七-白话.html'>第七章-唐本纪第七</a></p><p class='next'>下一节：<a href='第九章-晋本纪第九-白话.html'>第九章-晋本纪第九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

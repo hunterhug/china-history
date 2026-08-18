@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -209,5 +236,18 @@
 </p><p>三年（1524）秋，土鲁番侵犯甘肃，皇上诏令尚书金献民督师，命杭雄佩带平虏大将军印，充任总兵官，提督陕西、延绥、宁夏、甘肃四镇军务。以往列侯出征，开始只佩带大将军印，而无人被授为都督，现在却特别任命杭雄为都督。他们刚刚赶到，敌寇已经败退，而杭雄也因此被授为锦衣千户。班师之后，他又出外镇守宁夏。吉囊大军人侵，总督王宪命杭雄等出兵败之，杭雄进升为都督同知。敌寇八千骑兵乘着水面结冰进犯宁夏。杭雄及副总兵赵镇率军抵御，前锋深陷埋伏之中，杭雄等都战败。总督王琼弹劾他，他因而被夺官闲住。第二年去世。
 </p><p>杭雄敢拼敢战。他曾率数名骑兵巡边，敌寇成群而至。杭雄于是下马积鞍为垒，跪下射击。敌寇退走，他解开衣服，发现腋下凝血，才知自己被飞箭射中。武宗在大同时，见杭雄的毡帷十分破旧，说道：“老杭竟穷成这样。”敌寇到来，皇上打算亲自率军攻击。杭雄拉住马劝谏道：“主人养犬，不让犬叫赶盗，那还用犬做什么呢？希望皇上能让臣等效力。”皇上大笑止步。杭雄年少时在延绥巡抚行台供役，他升职之后，每当到行台议事时，都不敢正席而坐，并说：“这是我当年供役的地方。”正德、嘉靖年间，西北的名将，马永之下便是杭雄了。
 </p><p>赞曰：时代太平，那么将才的谋略就没有办法体现。有的人掌握将符带兵镇守，守卫疆土抵御外侮，建有功绩，以功名而终，也足以称赞了。许贵、周贤、鲁鉴、姜汉家族世代为将，功勋相承，而周贤与姜汉之死尤为壮烈。彭清、杭雄清廉的节操，这又是最优秀的吧。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十一章-卷六十一-白话.html'>第六十一章-卷六十一</a></p><p class='next'>下一节：<a href='第六十三章-卷六十三-白话.html'>第六十三章-卷六十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十一章-卷六十一-白话.html'>第六十一章-卷六十一</a></p><p class='next'>下一节：<a href='第六十三章-卷六十三-白话.html'>第六十三章-卷六十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

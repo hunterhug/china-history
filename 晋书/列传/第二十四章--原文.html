@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -194,5 +221,18 @@
 </p><p>吴平，又作《西州清论》传于世，借称诸葛孔明以行其书也。有《较论格品篇》曰：“或问予，薛莹最是国士之第一者乎？答曰：‘以理推之，在乎四五之间，问者愕然请问。答曰：‘夫孙皓无道，肆其暴虐，若龙蛇其身，沈默其体，潜而勿用，趣不可测，此第一人也。避尊居卑，禄代耕养，玄静守约，冲退澹然，此第二人也。侃然体国思治，心不辞贵，以方见惮，执政不惧，此第三人也。斟酌时宜，在乱犹显，意不忘忠，时献微益，此第四人也。温恭修慎，不为谄首，无所云补，从容保宠，此第五人也。过此已往，不足复数。故第二已上，多沦没而远悔吝，第三已下，有声位而近咎累。是以深识君子，晦其明而履柔顺也。’问者曰：‘始闻高论，终年启寤矣。’”
 </p><p>太康中，下诏曰：“伪尚书陆喜等十五人，南士归称，并以贞洁不容皓朝，或忠而获罪，或退身修志，放在草野。主者可皆随本位就下拜除，敕所在以礼发遣，须到随才授用。”乃以喜为散骑常侍，寻卒。子育，为尚书郎、弋阳太守。
 </p><p>赞曰：古人云：“虽楚有才，晋实用之。”观夫陆机、陆云，实荆、衡之杞梓，挺圭璋于秀实，驰英华于早年，风鉴澄爽，神情俊迈。文藻宏丽，独步当时；言论慷慨，冠乎终古。高词迥映，如朗月之悬光；叠意回舒，若重岩之积秀。千条析理，则电坼霜开；一绪连文，则珠流璧合。其词深而雅，其义博而显，故足远超枚、马，高蹑王、刘，百代文宗，一人而已。然其祖考重光，羽楫吴运，文武奕叶，将相连华。而机以廊庙蕴才，瑚琏标器，宜其承俊乂之庆，奉佐时之业，申能展用，保誉流功。属吴祚倾基，金陵毕气，君移国灭，家丧臣迁。矫翮南辞，翻栖火树；飞鳞北逝，卒委汤池。遂使穴碎双龙，巢倾两凤。激浪之心未骋，遽骨修鳞；陵云之意将腾，先灰劲翮。望其翔跃，焉可得哉！夫贤之立身，以功名为本；士之居世，以富贵为先。然则荣利人之所贪，祸辱人之所恶，故居安保名，则君子处焉；冒危履贵，则哲士去焉。是知兰植中涂，必无经时之翠；桂生幽壑，终保弥年之丹。非兰怨而桂亲，岂涂害而壑利？而生灭有殊者，隐显之势异也。故曰，衒美非所，罕有常安；韬奇择居，故能全性。观机、云之行己也，智不逮言矣。睹其文章之诫，何知易而行难？自以智足安时，才堪佐命，庶保名位，无忝前基。不知世属未通，运钟方否，进不能辟昏匡乱，退不能屏迹全身，而奋力危邦，竭心庸主，忠抱实而不谅，谤缘虚而见疑，生在己而难长，死因人而易促。上蔡之犬，不诫于前，华亭之鹤，方悔于后。卒令覆宗绝祀，良可悲夫！然则三世为将，衅钟来叶；诛降不祥，殃及后昆。是知西陵结其凶端，河桥收其祸末，其天意也，岂人事乎！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十三章--原文.html'>第二十三章-</a></p><p class='next'>下一节：<a href='第二十五章--原文.html'>第二十五章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十三章--原文.html'>第二十三章-</a></p><p class='next'>下一节：<a href='第二十五章--原文.html'>第二十五章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

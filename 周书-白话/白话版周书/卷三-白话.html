@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>周书-白话版周书<a href='../周书.html#周书'>：目录</a></p>
@@ -171,5 +198,18 @@
 </p><p>孝闵帝性情刚毅果敢，见晋公宇文护把持朝政，非常忌恨。司会李植、军司马孙恒因在太祖时就辅佐朝政，所以入宫侍奉左右，也痛恨宇文护专权，就与宫伯乙弗凤、贺拔提等密谋，请求孝闵帝诛杀宇文护。孝闵帝认为很对。李植等人又引进宫伯张光洛参与谋划。张光洛将此事偷偷报告给宇文护，宇文护就外放李植为梁州刺史，孙恒为潼州刺史。乙弗凤等也不自安，再次上奏孝闵帝，准备召集各位王公入朝，趁此诛杀宇文护。张光洛又报告给宇文护。当时小司马尉迟纲统领宿卫兵，宇文护就召尉迟纲共同商议废除孝闵帝拥立新帝。派尉迟纲进入宫殿中，假传乙弗凤等人商讨国事。等他们来到后，依次逮捕押送到宇文护的宅第，一起杀掉。尉迟纲就立即解散禁兵，孝闵帝这才醒悟，身边无一人，独自坐在内殿，命宫女宦官手持兵器自卫。宇文护又派大司马贺兰祥逼迫孝闵帝退位。于是将孝闵帝囚禁在略阳公旧宅，一个多月后，因被诛杀去世。当时十六岁。李植、孙恒等也被杀害。
 </p><p>周武帝诛杀宇文护后，就下诏说：“慎始敬终，国有常典。把过去的事情看作现在仍存在的一样，这是明哲的君王通行的法则。义崇尚追效远古，礼以尊敬亲人为贵。原略阳公高尚的道德纯美无瑕，天赋的品质俊秀超群。在魏王朝结束后，天命将要更换，颂扬之声齐集，天道归向略阳公，上应苍灵的庆赏，下显后土的恩赐。但灾祸产生于肘腋，争端兴起于萧墙，白兽吞噬骖腓，苍鹰聚集殿堂，幽禁羞辱君主，残酷弑杀帝王，冤仇系结于人民，毒害流布于天下。现在海内清平，灾气荡除，按追加尊号的礼法，应当为略阳公加上美好的谧号。“派太师、蜀国公显迟回在南郊为坚堕公追加谧号为孝闵皇帝，他的陵墓为趋堕。
 </p><p>史臣曰：孝闵帝继承已经安定的事业，适应被人拥戴的气运，烧柴祭天，登位君临天下，近无不同的言论，远无不同的意愿。即使是曹丕替代漠德、晋武帝承受帝位，也没有超过这样。然而朝政把持在宁氏手中，主上有心怀芒刺的疑惧；祭祀则缺少相助之人，臣下没有还政的奏请。以此加速灾祸，也是必然的啊。</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷二-白话.html'>卷二</a></p><p class='next'>下一节：<a href='卷四-白话.html'>卷四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='卷二-白话.html'>卷二</a></p><p class='next'>下一节：<a href='卷四-白话.html'>卷四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

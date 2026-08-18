@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#列传'>：目录</a></p>
@@ -232,5 +259,18 @@
 </p><p>孟威，字能重，河南洛阳人。颇有气尚，尤晓北土风俗。历东宫斋帅、羽林监。时四镇高车叛投蠕蠕，高祖诏威晓喻祸福，追还逃散，分配为民。后以明解北人之语，敕在著作，以备推访。永平中，自镇远将军、前军将军、左右直长，加龙骧将军，出使高昌。还，迁城门校尉、直阁将军、沃野镇将。正光初，蠕蠕主阿那瑰归国，诏遣前郢州刺史陆希道兼侍中为使主，以威兼散骑常侍为副，远畿迎接。阿那瑰之还国也，复以威为平北将军、光禄大夫，假员外常侍，为使主护送之。前后频使远蕃，粗皆称旨。复加抚军将军。普泰中，除大鸿胪卿，寻加骠骑大将军、左光禄大夫。天平三年卒。赠使持节、侍中、本将军、都督冀瀛沧三州诸军事、司空公、冀州刺史。子恂嗣。
 </p><p>威弟季，稍迁镇远将军、左中郎将、廷尉监。以本将军除广州刺史。预尔朱荣义举，封钜鹿县开国公，食邑一千户。除抚军将军、廷尉卿，转司农卿。出为平西将军、华州刺史。卒，赠车骑大将军、雍州刺史。
 </p><p>史臣曰：罗结枝附叶从，当旧之眷，子孙显禄，俱至公王。伊馛以勇力见擢，而能赞伐姑臧之策，请参中秘之官，世祖嘉之于前，良有以也。乙瑰之骁猛，和奴之贞正，苟颓之刚直，虎子之威强，宇文之气干，咸亦有用之士。费穆出身致力，遂有功名，而末路一言，祸被簪带。校之文和，异世同咎。其死也幸哉！孟威致力荒裔，其勤可录矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十一章-卷三十一-原文.html'>第三十一章-卷三十一</a></p><p class='next'>下一节：<a href='第三十三章-卷三十三-原文.html'>第三十三章-卷三十三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十一章-卷三十一-原文.html'>第三十一章-卷三十一</a></p><p class='next'>下一节：<a href='第三十三章-卷三十三-原文.html'>第三十三章-卷三十三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

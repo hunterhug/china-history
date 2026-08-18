@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -164,5 +191,18 @@
 </p><p>不久，由于灾害，异常现象发生，朝廷广开言路，朝廷大臣所上的密封的奏章，过了一个月还不回答，而且言官因议论救助何鼎违背皇帝旨意等待被治罪已有很长时间，徐溥等都将这些情况向孝宗进言。于是搁置的奏章全部批发下来，并且免言官的罪。徐溥这时七十岁，以年老请求退休，孝宗不批准，下诏让他在风雨寒暑天免去朝见。
 </p><p>十一年(1498)，皇太子离开东宫，加封徐溥太子太师，升为华盖殿大学士。因为眼病请求返乡。孝宗舍不得放他走，很久才同意他的返乡，给徐溥很多赏赐。过了一年徐溥去世，追赠太师，赐谥号文靖。
 </p><p>徐溥生性庄重，举止有法度，在内阁十二年，从容辅助劝导。遇到有人犯有过失，总是为其掩盖，他说“：天生人才很不容易，我不忍心人才因小过错被抛弃。”屡次遇到大狱案，以及逮捕言官，他都要从中委婉调停。孝宗仁慈淳厚，对徐溥等所提的意见大都接受，天下暗暗地受到他的庇护。徐溥曾说“：祖宗法度在恩惠百姓的事方面已经完备，所担心的是不能守住。”因此，他对祖宗成法无所变更。徐溥对父母极为孝顺，曾经两次在父母墓旁小房居住。对自己的生活要求则很低，好施舍别人。购置义田八百亩赡养宗族族人，并请官府为之登记于册以求永久保存，孝宗为此免除徐溥家的徭役。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十七章-卷六十七-白话.html'>第六十七章-卷六十七</a></p><p class='next'>下一节：<a href='第六十九章-卷六十九-白话.html'>第六十九章-卷六十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十七章-卷六十七-白话.html'>第六十七章-卷六十七</a></p><p class='next'>下一节：<a href='第六十九章-卷六十九-白话.html'>第六十九章-卷六十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

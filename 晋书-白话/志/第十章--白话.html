@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-志<a href='../晋书.html#晋书'>：目录</a></p>
@@ -211,5 +238,18 @@
 </p><p>永和十一年，彭城国为李太妃求谧号。博士曹耽之议论说：“夫妇的品行不一定相同，不能以丈夫的谧号谧妻子。《春秋》中妇人有谧号的很多，经文中没有讥刺的文字，可知依礼应加谧号。”胡讷说：“礼法规定，妇人活着用丈夫的爵号，死了用丈夫的谧号。《春秋》中妇人有谧号，这是不再依照礼法了。安平献王李妃、琅邪武王诸葛妃、太傅束海王裴妃都没有谧号，现在应当依照旧典。”王彪之说：“妇人有谧号，这是礼法衰微了的缘故。声子做谧号，服虔等儒者认为不对。杜预也说‘依照礼法，妇人没有谧号’。《春秋》中没有讥刺的文字，是所谓不需要贬斥而自然明白的道理。近代衹有皇后有谧号。”
 </p><p>太尉荀颢呈上谧法说：“如果赐给谧号而路程遥远赶不上葬礼的，都封好文书交付下去，派承办的部门长官奉封策到家中祭祀赐谧号。”
 </p><p>太元十三年，召孔安国任侍中。孔安国上表认为黄门郎王愉名犯家讳，不能联合署名，请求解职。有关官员议道：“名为忌讳，这是人同此心的，听到了名心中惊惧，也是不忘前人告诫的表现。而《礼》又说‘在君之处不避私家之讳，在大夫之处避君王之讳’，没有私家之讳。又说‘《诗》《书》不避讳，写文章不避讳，。难道不是公义夺去私情，王制压抑家礼吗尚书安众男臣先上表说中兵曹郎王佑名犯父讳，请求解职，于是下明诏，同意他换一个部门，这是恩典超出制度之外。而近来相互察看攀比，这个头开了以后，不知什么时候有个完。皇朝的礼法最大，百官供职，列入官署名册，动辄就相互牵涉。如果因为私家之讳，人人都满足自己的心愿，那么移官动职，变动不停，既违反典法，又损害了政体。请一律拒绝。”同意了。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章--白话.html'>第九章-</a></p><p class='next'>下一节：<a href='第十一章--白话.html'>第十一章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九章--白话.html'>第九章-</a></p><p class='next'>下一节：<a href='第十一章--白话.html'>第十一章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

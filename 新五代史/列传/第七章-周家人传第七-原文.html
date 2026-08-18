@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-列传<a href='../新五代史.html#列传'>：目录</a></p>
@@ -159,5 +186,18 @@
 </p><p>德妃董氏，镇州灵寿人也。祖文广，唐深州录事参军。父光嗣，赵州昭庆尉。妃幼颖悟，始能言，闻乐声知其律吕。年七岁，镇州乱，其家失之，为潞州牙将所得，置诸褚中以归。潞将妻尝生女，辄不育，得妃怜之，养以为子，过于所生。居五六年，妃家悲思，其兄瑀求之人间，莫知所在。潞将仕于京师，遇瑀，欣然归之，时年十三。瑀以嫁里人刘进超，进超亦仕晋为内职。契丹犯阙，进超殁于虏中，妃嫠居洛阳。汉高祖由太原入京师，太祖从，过洛阳，闻妃有贤行，聘之。太祖建国，中宫虚位，遂册为德妃。广顺三年卒，年三十九。
 </p><p>妃兄三人：瑀官至太子右赞善大夫，玄之、自明皆至刺史。
 </p><p>初，帝举兵于魏，汉以兵围帝第，时张贵妃与诸子青哥、意哥，侄守筠、奉超、定哥，皆被诛。青哥、意哥，不知其母谁氏。太祖即位，诏故第二子青哥赠太尉，赐名侗；第三子意哥赠司空，赐名信；皇侄守筠赠左领军卫将军，以筠声近荣，为世宗避，更名守愿；奉超赠左监门卫将军；定哥赠左千年卫将军，赐名逊。世宗显德四年夏四月癸未，诏曰：“礼以缘情，恩以悼往，矧在友于之列，尤钟恻怆之情。故皇弟赠太保侗、赠司空信，景边初启，大年不登，俾予终鲜，实勤予怀。侗可赠太傅，追封郯王；信司徒，杞王。”又诏曰：“故皇从弟赠左领军卫将军守愿、赠左监门卫将军奉超、赠左千牛卫将军逊等，顷因季世，不享遐龄，每念非辜，难忘有恸。守愿可赠左卫大将军，奉超右卫大将军，逊右武卫大将军。”</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章-汉家人传第六-原文.html'>第六章-汉家人传第六</a></p><p class='next'>下一节：<a href='第八章-周家人传第八-原文.html'>第八章-周家人传第八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六章-汉家人传第六-原文.html'>第六章-汉家人传第六</a></p><p class='next'>下一节：<a href='第八章-周家人传第八-原文.html'>第八章-周家人传第八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

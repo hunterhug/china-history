@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>北史-原文版北史<a href='../北史.html#原文版北史'>：目录</a></p>
@@ -181,5 +208,18 @@
 </p><p>帝聪敏有识度，深沈能断，不可窥测。身长八尺，腰带十围，仪望风表，迥然独秀。自居台省，留心政术，闲明簿领，吏所不逮。及正位宸居，弥所克励，轻徭薄赋，勤恤人隐。内无私宠，外收人物，虽后父，位亦特进无别。日昃临明，务知人之善恶。每访问左右，冀获直言。曾问舍人裴泽在外议论得失，泽率尔对曰：“陛下聪明至公，自可远侔古昔，而有识之士，咸言伤细，帝王之度，颇为未弘。”帝笑曰：“诚如卿言。朕初临万机，虑不周悉，故致尔耳。此事安可久行，恐后又嫌疏漏。”泽因被宠遇。其乐闻过也如此。赵郡王睿与库狄显安侍坐，帝曰：“须拔我同堂弟，显安我亲姑子，今序家人礼，除君臣之敬，可言我之不逮。”显安曰：“陛下多妄言。”曰：“若何？”对曰：“陛下昔见文宣以马鞭挞人，常以为非，而今行之，非妄言邪？”帝握其手谢之。又使直言，对曰：“陛下太细，天子乃更似吏。”帝曰：“朕甚知之，然无法来久，将整之以至无为耳。”又问王晞，晞，答如显安，皆从容受纳。性至孝。太后不豫，出居南宫，帝行不正履，容色贬悴，衣不解带，殆将四旬。殿去南宫五百余步，鸡鸣而去，辰时方还，来去徒行，不乘舆辇。太后所苦小增，便即寝伏阁外，食饮药物，尽皆躬亲。太后尝心痛，不自堪忍，帝立侍帷前，以爪掐手心，血流出袖。友爱诸弟，无君臣之隔。雄勇有谋。于时国富兵强，将雪神武遗恨，意在顿驾平阳，为进取之策。远图不遂，惜哉。
 </p><p>初，帝与济南约，不相害。及舆驾在晋阳，武成镇鄴。望气者云“鄴城有天子气。”帝恐济南复兴，乃密行鸩毒。济南不从，乃扼而杀之。后颇愧悔。初苦内热，频进渴散。时有尚书令史姓赵，于鄴见文宣从杨愔、燕子献等西行，言相与复仇。帝在晋阳宫，与毛夫人亦见焉。遂渐危笃，备禳厌之事，或煮油四洒，或持炬烧逐。诸厉方出殿梁，山骑栋上，歌呼自若，了无惧容。时有天狗下，乃于其所讲武以厌之，有兔惊马，帝坠而绝肋。太后视疾，问济南所在者三，帝不对。太后怒曰：“杀去邪！不用吾言，死其宜矣。”临终之际，唯扶服床枕，叩头求哀。遣使诏追长广王入纂大统。又手书云：“宜将吾妻子置一好处，勿学前人也。”
 </p><p>论曰：神武平定四方，威权在己。迁鄴之后，虽主祭有人，号令所加，政皆自出。文宣因循鸿业，内外叶从。自朝及野，群心属望。东魏之地，举国乐推，曾未期月，遂登宸极。始则存心政事，风化肃然，数年之间，朝野安乂。其后纵酒肆欲，事极猖狂，昏邪残暴，近代未有。飨国不永，实由斯疾。济南继业，大革其弊，风教粲然，搢绅称幸。股肱辅弼，虽怀厥诚，既不能赞弘道德，和睦亲懿；又不能远虑防身，深谋卫主。应断不断，自取其灾。臣既诛夷，君寻废辱，皆任非其器之所致尔。孝昭早居台阁，故事通明；人吏之间，无所不委。文宣崩后，大革前弊。及临尊极，留心更深，时人服其明而讥其细也。情好稽古，率由礼度；将封先代之胤，且敦学校之风；征召才贤，文武毕集。于时周氏朝政，移于宰臣；主将相猜，不无危殆。乃眷关右，实怀兼并之志。经谋宏旷，谅近代之明主。而降年不永，其故何哉？岂幽显之涂，别有复报；将齐之基宇，止在于斯。帝欲大之，天不许也？</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷六-原文.html'>卷六</a></p><p class='next'>下一节：<a href='卷八-原文.html'>卷八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='卷六-原文.html'>卷六</a></p><p class='next'>下一节：<a href='卷八-原文.html'>卷八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

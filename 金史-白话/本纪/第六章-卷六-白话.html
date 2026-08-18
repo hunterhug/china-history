@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-本纪<a href='../金史.html#金史'>：目录</a></p>
@@ -279,5 +306,18 @@
 </p><p>十月一日，任命左宣徽使敬嗣晖为参知政事。十三日，皇上对宰相大臣说：“朕已下令实行的事，卿等认为是成命不可再更改，只是承顺而已，一概没有拿出意见禀奏。卿等凡是有意见上奏，何尝不听从呢？从今天起朕的旨意虽然发出，应该审视而行，有不利于实行的，就奏明改正它。或者居于下位的有提出尚书省所施行的事情不适当的，也应当听从而改正，不要拒绝而不听取意见。”二十五日，尚书左丞相纥石烈良弼进献《睿宗实录》。二十七日，皇上对宰相大臣说“：衍庆宫为功臣画像，已经命令他们增加到二十人。比如丞相韩企先，自从本朝兴国以来，宪章法度，大多出自他的手笔。至于关系到大政方针的决策，只是和大臣谋划商议，始终不让外人知道觉察。汉族人做宰相，前后没人可比，如果褒奖显示他的画像，也足以宣示规劝后人，要慎重不要遗漏他。”
 </p><p>十一月七日，派西南路招讨使宗宁等当贺宋正旦使。八日，驾临东宫。皇上对皇太子说：“吾儿在皇储的位置上，朕为你筹措天下，应当不再有经营的事。你只有不忘祖宗纯厚之风，以勤修道德为孝，明信赏罚为治而已。往昔唐太宗对他的儿子高宗说‘：我讨伐高丽最终不克，你可要继承这件事。’像这样的人事，朕不把它交给你。比如辽国的海滨王，因为国人热爱他的儿子，他嫉妒而杀了自己的儿子，这是什么道理？自己的儿子被众人爱戴，是件美事，海滨王这样做事，哪有不亡国的道理？唐太宗是有道的君王，然而却对他的儿子高宗说：‘你对李责力没有恩德。今天我因为出了事，死了，应该授予仆射，他们必定拼死效力。’当君王的怎么能用虚假的行为？从父亲那里承受恩德，难道有忘记回报在儿子身上的吗？朕统领臣下，只有‘诚实’二字而已。”群臣都称万岁。十六日，到太庙朝拜祭祀。十七日，在园丘有事，大赦。二十三日，群臣奉献皇上尊号叫应天兴祚钦文广武仁德圣孝皇帝。二十五日，诏告中外。
 </p><p>十二月三日，开始冬季打猎活动。十五日，返回宫廷。十六日，参知政事敬嗣晖逝世。二十一日，越王永中被进封为赵王，随王永功进封为曹王，沈王永成进封为豳王，徐王永升进封为虞王，滕王永蹈进封为徐王，薛王永济进封为滕王。二十五日，赵王永中、曹王永功同时被授猛安之职，仍然命令永功亲自处理事务，来学习为政之道。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五-白话.html'>第五章-卷五</a></p><p class='next'>下一节：<a href='第七章-卷七-白话.html'>第七章-卷七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五-白话.html'>第五章-卷五</a></p><p class='next'>下一节：<a href='第七章-卷七-白话.html'>第七章-卷七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

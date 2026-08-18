@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -198,5 +225,18 @@
 </p><p>万历十七年(1589)，宣抚冉维屏向朝廷献大木二十根，价值超过三千。工部讨论，认为应给冉维屏加赏从三品的衣服，以劝勉土官向朝廷献忠诚，皇帝同意了。四十六年，朝廷调拨酉阳兵四千人，命令宣抚冉跃龙带领着去支援辽阳。四十七年，冉跃龙派遣儿子冉天胤及冉文光等带兵赶赴辽阳，驻扎在虎皮、黄山等地达三年，解除了敌人对奉集的包围。他们又援救沈阳，因在浑河失利，冉见龙战死，同时阵亡的还有一千多人。他们撤回军队守卫辽阳时，又被已投降的敌人放火焚烧，冉文焕等人战死，同时死亡的还有七百多人。兵部尚书张鹤鸣说：“冉跃龙派遣子弟不远万里前来保卫朝廷，冉见龙已以身殉国，冉跃龙又自己捐献二千金黄金，运送军用器械到山海关，帮助军队摆脱困境，招回和振奋了军魂军威，其对朝廷确实忠义可嘉。我在贵州时，冉跃龙也自己捐献粮饷主动征讨叛乱的红苗人，屡次建立奇功。现今他在边关地区又以忠节于朝廷而著称，朝廷应对他优加抚恤，以感化各边关的土著人。”
 </p><p>天启元年(1621)，朝廷授予冉跃龙宣慰使的职务，其妻舒氏也被授予诰命。还抚恤了阵亡将士家庭一千七百多家。二年，奢崇明叛乱，冉跃龙率军前去支援官军，与官军一起包围了重庆。在诛杀奢崇明的战斗中，他手下的土舍冉绍文也参加了并立有功劳。四年，冉跃龙因奉朝廷调遣前往别处效命，便向朝廷请求优抚他的弟弟冉见龙和各阵亡将士的家庭，皇帝命令将该请求交有关机构办理。
 </p><p>崇祯九年(1636)，宣慰使冉天麟上疏朝廷“：作恶的冉天胤，假传圣旨阴谋夺取我的官爵和土地，没有成功，便擅自带兵残杀。”朝廷将该奏章交给抚按官去调查审核。此时四川正为盗贼所困扰，各位大官自顾尚不暇，对土官的事便多束之高阁了。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百九十九章-卷一百九十九-白话.html'>第一百九十九章-卷一百九十九</a></p><p class='next'>下一节：<a href='第二百零一章-卷二百零一-白话.html'>第二百零一章-卷二百零一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百九十九章-卷一百九十九-白话.html'>第一百九十九章-卷一百九十九</a></p><p class='next'>下一节：<a href='第二百零一章-卷二百零一-白话.html'>第二百零一章-卷二百零一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

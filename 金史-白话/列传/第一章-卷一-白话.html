@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#金史'>：目录</a></p>
@@ -159,5 +186,18 @@
 </p><p>熙宗悼平皇后，姓裴满氏。熙宗即位以后，裴满氏被封为贵妃。天眷元年(1138)，她又被立为皇后。她的父亲忽达拜太尉之职，熙宗赠授她曾祖父斜也司空之职，赠授她祖父鹘沙司徒之职。皇统元年(1141)，熙宗接受崇天体道钦明文武圣德皇帝的尊号，正式册封裴满氏为慈明恭孝顺德皇后。二年(1142)，太子济安出生。当年，熙宗二十四岁，济安出生令他高兴极了，乃广赦囚犯，并祭告天地宗庙。一到济安满月，就册封他为皇太子。可是济安不到一岁就夭折了。
 </p><p>熙宗在位的时候，宗翰、宗干、宗弼相继执掌政务，熙宗帝临朝则端坐沉默不语。虽然，登基头几年国家多事，但是庙堂决策足以制胜，顺利地废除了齐国，宋国请求称臣，官吏清廉机构精简，百姓安居乐业。宗弼逝世以后，旧臣也大多亡故，悼平皇后干预政事，肆无忌惮，满朝官宦往往因为她的干预而请宰相裁决。皇太子济安逝世后，多年没有子嗣相继，皇后颇牵掣制约熙宗。熙宗宫内得不到太平安乐，因而感到很无聊，常酗酒纵怒，手刃杀人。左丞相完颜亮过生日，皇上派遣大兴国拿司马光画像、玉吐鹘和厩马赐给完颜亮，悼平皇后也附上礼物赐给完颜亮。熙宗听说了这件事，大怒，杖笞兴国而夺回了所赐的礼物。海陵王完颜亮本来就心怀非分的希望和企图，因为这件事对熙宗怀疑和畏惧就更为严重，皇家萧墙之乱，从此便萌生了。熙宗近侍高寿星按惯例应迁居屯守燕南，高寿星入宫向皇后诉说这件事，皇后激怒了熙宗，杀了左司郎中三合，杖笞了平章政事秉德，而高寿星竟然得以不迁移燕南。秉德、唐括辩心怀奸诈密谋起事，海陵王完颜亮利用他们的不满和挑衅，来施展自己叛逆作乱的计谋。
 </p><p>时间久了，熙宗积怒甚深，终于杀了悼平皇后，而接纳胙王常胜妃撒卯入宫继承了皇后之位。熙宗还派人杀了德妃乌古论氏、妃夹谷氏、张氏，后来又杀了裴满氏。第二天，熙宗被作乱的完颜亮杀害。海陵王杀了熙宗之后，想收买人心，说皇后死而无罪，降熙宗皇帝位为东昏王，追谥皇后为悼皇后，加封皇后的父亲忽达为王。大定年间(1161～1189)，世宗在位时恢复了熙宗的帝号，加谥皇后为“悼平皇后”，与熙宗合葬于思陵。</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-白话.html'>第二章-卷二</a></p></div></body>
+<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-白话.html'>第二章-卷二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

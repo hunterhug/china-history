@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#金史'>：目录</a></p>
@@ -182,5 +209,18 @@
 </p><p>都统完颜彰、副统习尼列阻击宋朝经略使荆皋，从上八节到甘谷城，杀了宋几千人。习尼列擒捕了宋将朱永以及手下将校总共十二人。宋朝张安抚守德顺，也弃城而逃，胡速鲁改阻击他，杀了他一半人，并擒捕了十多个将校军官，于是收复了德顺州。宋朝守卫秦州的人，也自己撤退走。高景山平定了商、虢两地，宗室完颜泥河攻下了环州。于是，临洮、巩、秦、河、陇、兰、会、原、洮、积石、镇戎、德顺、商、虢、环、华等十六个州府都收复了，陕西被平定。皇帝诏书奖励，赏赐给徒单合喜玉带。下诏陕西将士，猛安，官阶在昭毅以下的晋升两级官禄，官阶昭武以上的晋升一级官禄。谋克，官阶在六品以下的晋升两级官禄，五品以上的晋升一级官禄。押军猛安，官阶在昭武以上的晋升一级官禄，昭毅以下、武义以上的晋升两级官禄，昭信以下的，女真人升为宣武，其余的人升为承信，没官职的，女真人授予昭信，其余的人授予忠武。押军谋克，武功以下、忠显以上晋升两级官禄，忠勇以下，女真人升为昭信，其余的人升忠显，没有官职的，女真人授予忠显，其余的人授予忠翊。正军，有官职的人晋升一级官禄，没官职的人给两级官禄。猛安赏五十两银、五端彩绸、十匹绢，暂代官同正式的相同。正军人给三十贯，阿里喜给十贯钱。战死的军官、军士、长行，分不同等级赠官赐钱。
 </p><p>大定五年(1165)，金朝设置陕西路统军使，徒单合喜任统军使兼京兆尹。元帅府移管河中府。统军使完颜璋朝拜辞别，皇帝说：“徒单合喜年纪大了，把陕西军事委托给你，凡是镇守上的事，可以请教徒单合喜。”大定七年(1167)，徒单合喜进朝任枢密副使，改任东京留守，皇帝赏赐给他衣服玉带、佩刀，并告知他说“；你年纪大，用这样的职务来优待你，使你安逸，你应自勉。”大定九年，入朝为平章政事，上奏睿宗收复陕西的战功几件事，皇帝高兴地接受了，并把它藏在秘府。徒单合喜被封为定国公。
 </p><p>大定十一年(1171)，徒单合喜死去。当时皇帝正在打球，听到讣告后就停止了。有司前去祭奠，准备礼品安葬。官府送给他家一千二百五十两白银及彩绸钱帛等帮助他家办丧事。大定二十一年(1181)，皇帝思念他的功劳，提拔他的孙子徒单三合为武功将军，授世袭本猛安曷懒若窟申为谋克。泰和元年(1201)，徒单合喜配享世宗庙廷祭祀。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十四章-卷二十四-白话.html'>第二十四章-卷二十四</a></p><p class='next'>下一节：<a href='第二十六章-卷二十六-白话.html'>第二十六章-卷二十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十四章-卷二十四-白话.html'>第二十四章-卷二十四</a></p><p class='next'>下一节：<a href='第二十六章-卷二十六-白话.html'>第二十六章-卷二十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

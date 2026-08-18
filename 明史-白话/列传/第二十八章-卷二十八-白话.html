@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -161,5 +188,18 @@
 </p><p>道同，河间人。其祖先为蒙古族。道同对母亲十分孝顺。洪武年初，被推荐授为太常司赞礼郎，出任番禺知县。番禺从前以骚扰严重著称，而军卫尤其横暴，多次鞭打、侮辱县里的佐吏，以前的县令全都不堪忍受。道同执法严格，对一切不合理的东西一律拒不听从，百姓因此而稍觉安定。
 </p><p>不久，永嘉侯朱亮祖至番禺，多次施以威福想使道同屈从于他，而道同不为所动。数十名土豪压价购买市场中的珍贵物品，稍有不快，便总是巧妙地捏造卖主罪名。道同将其头目套上械锁，在大路上示众，诸土豪家人纷纷贿赂朱亮祖，以求放人。朱亮祖将道同召来，摆酒招待，从容说出此事。道同厉声说道：“你是大臣，为什么要受小人的役使呢？”朱亮祖不能使他屈服。有一天，朱亮祖破械放人，并借他事鞭打道同。有一富民罗氏，将其女儿献给朱亮祖，其兄弟因此凭借权势，朋比为奸。道同将他们逮捕治罪，朱亮祖又强夺放人。道同心积不平，便列举这些事情，予以上奏，其奏书还未到达朝廷，朱亮祖已经抢先弹劾道同诋毁上司，倨傲无礼。皇上不知其由，于是派遣使臣前去处死道同。正好道同的奏书也到了，皇上这才明白事情来由，并认为道同虽然职位十分卑微，却敢于指责大臣违法之事，此人耿直可用，便又派使臣前去释免道同。两名使臣同日抵达番禺，后面这位使臣刚到，道同却已经被处死了。县民为此悲悼、惋惜，有的还为他刻了木神牌，在家祭祀，占卜事情总是应验，于是便有人传说道同是神。
 </p><p>当道同还没死时，布政使徐本很看重他。道同有一次正在鞭打一位医生，刑还未完，而徐本急于想请这位医生，便派士兵前去让道同将他释放。道同严肃地说“：徐公也要仿效永嘉侯吗？”鞭打完后才派这位医生前去。从此以后，他的上司更加害怕他，可是道同竟因此而罹祸。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十七章-卷二十七-白话.html'>第二十七章-卷二十七</a></p><p class='next'>下一节：<a href='第二十九章-卷二十九-白话.html'>第二十九章-卷二十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十七章-卷二十七-白话.html'>第二十七章-卷二十七</a></p><p class='next'>下一节：<a href='第二十九章-卷二十九-白话.html'>第二十九章-卷二十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

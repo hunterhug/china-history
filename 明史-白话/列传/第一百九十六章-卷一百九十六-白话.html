@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -213,5 +240,18 @@
 </p><p>“他还招募死士埋伏在皇城，诡名为禁军，动辄便说废立由我决定。陛下即位之初，恭敬俭朴，明察仁断，士英千方百计进行迷惑，进献优童艳女，伤损圣德。还引用阮大铖，以睚眦之怨杀人，像雷演祚、周镳等人，被严刑拷打，株连蔓引。尤其过分的，是他代理三案为题，凡是他生平所不快意的人，一网打尽。天下士民，因此而重足而立，丧魂落魄。如今皇太子到，授受分明。阮大铖一手握定，抹杀认识太子的方拱乾，而相信朋比为谋的刘正宗，忍心将十七岁的嗣君，关进监狱，凡有血气之人，都想寸磔士英、大铖等人，以谢先帝。乞请将他们处死，陈尸于市场，传首各地，以抒民愤。”奏疏上呈后，他便引兵东下。
 </p><p>士英害怕了，便派阮大铖、朱大典、黄得功、刘孔昭等人抵御左良玉，而撤回江北刘良佐的军队，随他西上。当时大清兵南下推进，大理寺少卿姚思孝，御史乔可聘、成友谦请不要撤江北兵，从速守卫淮安、扬州。士英厉声叱道：“你们这帮东林党，还借口防江，你们想放左逆入京犯上吗？北兵到了，还可以和谈。左逆一到，则你们这帮人得高官，而我君臣却要死了。”他力排姚思孝等人的意见，淮、扬的防御更弱了。正值左良玉死，他的儿子左梦庚接连攻陷郡县，率兵到达采石。黄得功等人与他相持不下，阮大铖、刘孔昭却虚张捷报，以邀封赏，而大清兵已经攻破扬州，逼近京城。五月三日，福王出走太平，奔向黄得功军。刘孔昭斩关逃走。第二天，士英带上王母妃，以四百名黔兵护卫，逃向浙江。经过广德州时，知州赵景和怀疑有诈，闭门拒守。士英攻破州城，抓住赵景和并杀了他，大肆抢掠而去。跑到杭州后，守臣以总兵府做母妃的行宫。没过几天，阮大铖、朱大典、方国安也都仓皇到来，得知黄得功已兵败而死，福王被擒。第二天，请潞王监国，潞王不接受。不久，大兵到来，潞王率众投降，不久同母妃北去。潞王就是吕大器等人所议要建立为帝的人。
 </p><p>杭州投降后，士英想拜谒监国的鲁王，鲁王诸臣极力反对他。阮大铖到金华投靠朱大典，也被士民所逐，朱大典于是把他送入严州总兵方国安军中。士英与方国安是同乡，先已在他军中。阮大铖到后掀髯指掌，每天谈兵，方国安很高兴。而士英认为南渡之坏，一半由于阮大铖，自己却背上恶名，所以颇为恨他。后来，我军击败士英、方国安。不久，士英、方国安率众渡过钱塘江，窥视杭州，大兵将其击败，溺江而死者无数。士英拥残兵想进入福建，唐王因他罪大不准许。第二年，大兵清剿湖贼，士英与长兴伯吴日生都被擒获，诏令将他们斩首。事见国史。阮大铖偕同谢三宾、宋之晋、苏壮等人赴江岸乞请投降，随从大兵攻打仙霞关，阮大铖僵仆石上而死。而野史记载士英逃到台州山寺为僧，被我兵搜获；阮大铖、方国安先后投降。不久唐王逃到顺昌。我大兵追到，搜查龙扛，获得士英、阮大铖、方国安父子请王爷出关做内应的奏疏，遂将他斩杀于延平城下。当时阮大铖正在游山，自触石头而死，于是将他戮尸。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百九十五章-卷一百九十五-白话.html'>第一百九十五章-卷一百九十五</a></p><p class='next'>下一节：<a href='第一百九十七章-卷一百九十七-白话.html'>第一百九十七章-卷一百九十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百九十五章-卷一百九十五-白话.html'>第一百九十五章-卷一百九十五</a></p><p class='next'>下一节：<a href='第一百九十七章-卷一百九十七-白话.html'>第一百九十七章-卷一百九十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

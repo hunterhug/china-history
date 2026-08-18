@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#魏书'>：目录</a></p>
@@ -199,5 +226,18 @@
 </p><p>仆射..朱世隆当朝权盛，因在宫廷内看见他衣冠失仪，高道穆便立即纠劾。皇帝姐姐寿阳公主行犯官路，手拿赤棒的士卒呵斥不止，高道穆命令士卒用棒砸破她的车子。公主深深记恨在心，哭泣着到皇帝面前告状。皇帝对公主说：“高中尉是清正刚直之人，他所行的是公事，朕怎么能以私恨责怪他？”道穆后来见庄帝，庄帝说：“一日家中姐姐行路相犯，朕极以为愧。”高道穆免冠谢罪说：“臣蒙受陛下恩，遵守陛下刑法，不敢独独在公主身上亏损朝廷典章，因此辜负陛下。”皇帝说：“朕对不起卿，卿却反而说对不起我。”不久帝命记下此事。又下诏说：“秘书省是国家图籍所在的地方，掌管群籍，又加缮写，尺牍委积，已有多年。出纳繁芜，多致零落。可令御史中尉、兼给事黄门侍郎高道穆总集账目，并集儒学之士，编排次序。”
 </p><p>高道穆又上疏说：“为臣闻舜命皋陶，奸宄受惩；禹泣罪人，尧心为念。所以举直置枉，事关先贤；明德慎刑，议存旧典。高祖太和初年，设置廷尉司直，论证刑罚是非，虽然事非古来就有，然切时要。所谓礼乐互兴，不相沿袭就是这个道理。臣以无用，忝居今任，所思报效，日思夜务。但是见识不足知今，学业惭愧古人，未能进一言以利国，说一策以兴邦，食俸长安，岂不知愧。至于为臣职责所忧，犹望陛下体察。窃见御史出使，都是由于某事某人已经传开，虽然惩罚了罪人，但也不免枉滥好人。什么原因呢？得尧之罚，不能不怨。守令为政，容有爱憎。奸猾之徒，总是以恶报恩，多有莫须有的无名罪状，共相诬谤。御史一经检考，耻于罪名不成，于是杖木之下，以虚为实，无罪而不能雪冤的，哪里可以尽数？为臣虽然愚陋短见，才不称职，绣衣所指，都希求肃清，如仍蹈前失，或许伤害好人，则对不起俸禄，无可逃避罪责。所以昼思夜忧，思有变革。依臣鄙见，请依太和旧例，仍然设置司直十人，属官廷尉，给五品官秩，选拔那些政绩很好、心平性直的人充任其职。御史如出纠劾，即移交廷尉，令知人数。廷尉派司直与御史一起出发，所到州郡，分开居住。御史检核完了，移交司直复检，事情完后与御史一起还朝。中尉弹劾报送朝廷，廷尉按察虚实，一如旧式。如使狱成罪定，不再宽假；作恶取败，不得称枉。如司直、御史纠劾失实，都按所断三狱的罪行定论。听其以所检查的，迭相纠发。如果二使阿曲，有不尽理，听任罪家到门下省上诉，另加按查检校。如此，则肺石之傍，怨讼可息；丛荆之下，受罪者不再吱声了。”帝下诏从之，又设置司直一官。
 </p><p>等到..朱荣死后，皇帝召请高道穆草拟赦书，宣告天下。因对他说：“从今以后，应当精选御史了。”这以前，..朱荣常常想让他的亲信党羽任御史，所以令他作此诏书。等到..朱世隆等人率其部下战于大夏门北，高道穆受诏督战，又参与谋划太府卿李苗的断桥计策，..朱世隆等人于是北逃。朝廷加授其为卫将军、假车骑大将军、大都督、兼尚书右仆射、南道大行台。又除授他为车骑将军，余官仍旧。当时虽然对外说征讨蛮人，而皇帝担心北军不利，实则谋划南逃计策。车驾未出发，逢..朱兆攻入洛阳，高道穆担心祸及自己，托病辞官。..朱世隆以高道穆忠于前朝，于是加害于他，时年四十二岁。太昌年间(532)，朝廷赠他为使持节，都督雍、秦二州诸军事，车骑大将军，仪同三司，雍州刺史。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十四章-卷六十四-白话.html'>第六十四章-卷六十四</a></p><p class='next'>下一节：<a href='第六十六章-卷六十六-白话.html'>第六十六章-卷六十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十四章-卷六十四-白话.html'>第六十四章-卷六十四</a></p><p class='next'>下一节：<a href='第六十六章-卷六十六-白话.html'>第六十六章-卷六十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

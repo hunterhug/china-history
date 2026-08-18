@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#列传'>：目录</a></p>
@@ -199,5 +226,18 @@
 </p><p>又黜弗、素古延等诸部，富而不恭，天兴五年，材官将军和突率六千骑袭而获之。
 </p><p>又越勒倍泥部，永兴五年，转牧跋那山西。七月，遣奚斤讨破之，徙其人而还。
 </p><p>史臣曰：周之猃狁，汉之匈奴，其作害中国固亦久矣。魏晋之世，种族瓜分，去来沙漠之陲。窥扰鄣塞之际，犹皆东胡之余绪，冒顿之枝叶。至如蠕蠕者，匈奴之裔，根本莫寻，逃形集丑；自小为大，风驰乌赴，倏来忽往，代京由之屡骇，戎车所以不宁。是故魏氏祖宗扬威曜武，驱其畜产，收其部落，剪之穷发之野，逐之无人之乡，岂好肆兵极锐，凶器不戢，盖亦急病除恶，事不得已而然也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九十章-卷九十-原文.html'>第九十章-卷九十</a></p><p class='next'>下一节：<a href='第九十二章-卷九十二-原文.html'>第九十二章-卷九十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九十章-卷九十-原文.html'>第九十章-卷九十</a></p><p class='next'>下一节：<a href='第九十二章-卷九十二-原文.html'>第九十二章-卷九十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

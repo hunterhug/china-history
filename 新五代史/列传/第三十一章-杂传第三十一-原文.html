@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-列传<a href='../新五代史.html#列传'>：目录</a></p>
@@ -178,5 +205,18 @@
 </p><p>王敬荛，颍州汝阴人也。事州为牙将。唐末，王仙芝等攻劫汝、颍间，刺史不能拒，敬荛遂代之，即拜刺史。敬荛为人状貌魁杰，而沈勇有力，善用铁枪，重三十斤。颍州与淮西为邻境，数为秦宗权所攻，力战拒之，宗权悉陷河南诸州，独敬荛不可下，由是颍旁诸州民，皆依敬荛避贼。是时，所在残破，独颍州户二万。梁太祖攻淮南，道过颍州，敬荛供馈梁兵甚厚，太祖大喜，表敬荛沿淮指挥使。其后梁兵攻吴，庞师古死清口，败兵亡归，过颍，大雪，士卒饥冻，敬荛乃沿淮积薪为作糜粥餔之，亡卒多赖以全活，太祖表敬荛武宁军留后，遂拜节度使。天祐三年，为左卫上将军。太祖即位，敬荛以疾致仕，后卒于家。
 </p><p>○蒋殷
 </p><p>蒋殷，幼为王重盈养子，冒姓王氏。梁太祖取河中，以王氏旧恩录其子孙，表殷牙将，太祖尤爱之。唐迁洛阳，殷为宣徽北院使。太祖已下襄阳，转攻淮南，还屯正阳，哀帝遣殷劳军。是时，哀帝方卜郊，殷与枢密使蒋玄晖等有隙，因谮之太祖，言玄晖等教天子卜郊祈天，且待诸侯助祭者以谋兴复，太祖大怒，哀帝为改卜郊。是时，太祖将有篡弑之谋，何太后尝泣涕叩头为玄晖等言：“梁王禅位后，愿全唐家子母。”殷乃诬玄晖尝私侍太后，太祖斩玄晖及张廷范、柳璨等，遣殷弑太后于积善宫。哀帝下诏惭愧，自言以母后故无以奉天，乃卒不郊。庶人友珪与殷善，友珪弑太祖自立，拜殷武宁军节度使。末帝即位，以福王友璋代殷，殷不受代。王瓚亦王氏子，惧为殷所累，乃言殷非王氏子，本姓蒋。末帝诏削官爵，还其姓，遣牛存节讨之，殷举族自燔死。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十章-杂传第三十-原文.html'>第三十章-杂传第三十</a></p><p class='next'>下一节：<a href='第三十二章-杂传第三十二-原文.html'>第三十二章-杂传第三十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十章-杂传第三十-原文.html'>第三十章-杂传第三十</a></p><p class='next'>下一节：<a href='第三十二章-杂传第三十二-原文.html'>第三十二章-杂传第三十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

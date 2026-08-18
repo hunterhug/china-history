@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>南齐书-本纪<a href='../南齐书.html#本纪'>：目录</a></p>
@@ -161,5 +188,18 @@
 </p><p>二月，壬戌，湘东王宝晊伏诛。戊辰，诏进梁公爵为梁王，增封十郡。三月，乙未，皇太后令给梁国钱五百万，布五千匹，绢千匹。辛丑，鄱阳王宝寅奔虏，邵陵王宝攸、晋熙王宝嵩、桂阳王宝贞伏诛。甲午，命梁王冕十有二旒，建天子旌旗，出警入跸，乘金根，驾六马，备五时副车，置旄头云罕，乐舞八佾，设钟歔宫悬。王子王女爵命一如旧仪。庚戌，以冠军长史萧秀为南徐州刺史，新除中领军蔡道恭为司州刺史。车驾东归至姑熟。丙辰，禅位梁王。丁巳，庐陵王宝源薨。夏，四月，辛酉，禅诏至，皇太后逊外宫。丁卯，梁王奉帝为巴陵王，宫于姑熟，行齐正朔，一如故事。戊辰，薨，年十五。追尊为齐和帝，葬恭安陵。
 </p><p>史臣曰：夏以桀亡，殷随纣灭，郊天改朔，理无延世。而皇符所集，重兴西楚，神器暂来，虽有冥数，徽名大号，斯为幸矣。
 </p><p>赞曰：和帝晚隆，扫难清宫。达机睹运，高颂永终。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

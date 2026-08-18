@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#列传'>：目录</a></p>
@@ -200,5 +227,18 @@
 </p><p>孝明皇后胡氏，灵太后从兄冀州刺史盛之女。灵太后欲荣重门族，故立为皇后。肃宗颇有酒德，专嬖充华潘氏，后及嫔御并无过宠。太后为肃宗选纳，抑屈人流。时博陵崔孝芬、范阳卢道约、陇西李瓚等女，但为世妇。诸人诉讼，咸见忿责。武泰初，后既入道遂居于瑶光寺。
 </p><p>孝静皇后高氏，齐献武王之第二女也。天平四年，娉以为皇后。王前后固辞，帝不许。兴和初，诏侍中、司徒公孙腾，司空公、襄城王旭，兼尚书令、司州牧、西河王忭，兼太常卿及宗正卿元孝友等奉诏致礼，并备宫官侍卫，以后驾迎于晋阳之丞相第。五月，立为皇后，大赦天下。齐受禅，降为中山王妃。后降于尚书左仆射杨遵彦。
 </p><p>史臣曰：始祖生自天女，克昌后叶。灵后淫恣，卒亡天下。倾城之戒，其在兹乎？钩弋年稚子幼，汉武所以行权，魏世遂为常制。子贵母死，矫枉之义不亦过哉！高祖终革其失，良有以也。</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p></div></body>
+<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

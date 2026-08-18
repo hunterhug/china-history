@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -188,5 +215,18 @@
 </p><p>初，秀吉广征诸镇兵，诸三岁粮，欲自将以犯中国。会其子死，旁无兄弟。前夺丰后岛主妻为妾，虑其为后患。而诸镇怨秀吉暴虐，咸曰：“此举非袭大唐，乃袭我耳。”各怀异志。由是，秀吉不敢亲行。二十年四月遣其将清正、行长、义智，僧玄苏、宗逸等，将舟师数百艘，由对马岛渡海陷朝鲜之釜山，乘胜长驱，以五月渡临津，掠开城，分陷丰德诸郡。朝鲜望风溃，清正等遂偪王京。朝鲜王李昖弃城奔平壤，又奔义州，遣使络绎告急。倭遂入王京，执其王妃、王子，追奔至平壤，放兵淫掠。七月命副总兵祖承训赴援，与倭战于平壤城外，大败，承训仅以身免。八月，中朝乃以兵部侍郎宋应昌为经略，都督李如松为提督，统兵讨之。
 </p><p>当是时，宁夏未平，朝鲜事起，兵部尚书石星计无所出，募能说倭者侦之，于是嘉兴人沈惟敬应募。星即假游击将军衔，送之如松麾下。明年，如松师大捷于平壤，朝鲜所失四道并复。如松乘胜趋碧蹄馆，败而退师。于是封贡之议起，中朝弥缝惟敬以成款局，事详《朝鲜传》。久之，秀吉死，诸倭扬帆尽归，朝鲜患亦平。然自关白侵东国，前后七载，丧师数十万糜饷数百万，中朝与朝鲜迄无胜算。至关白死，兵祸始休，诸倭亦皆退守岛巢，东南稍有安枕之日矣。秀吉凡再传而亡。
 </p><p>终明之世，通倭之禁甚严，闾巷小民，至指倭相詈骂，甚以噤其小儿女云。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二百零九章-卷二百零九-原文.html'>第二百零九章-卷二百零九</a></p><p class='next'>下一节：<a href='第二百一十一章-卷二百一十一-原文.html'>第二百一十一章-卷二百一十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二百零九章-卷二百零九-原文.html'>第二百零九章-卷二百零九</a></p><p class='next'>下一节：<a href='第二百一十一章-卷二百一十一-原文.html'>第二百一十一章-卷二百一十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

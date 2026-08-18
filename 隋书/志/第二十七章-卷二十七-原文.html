@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>隋书-志<a href='../隋书.html#志'>：目录</a></p>
@@ -826,5 +853,18 @@
 </p><p>孔子曰：“必也正名乎！”名谓书字。“名不正则言不顺，言不顺则事不成。”说者以为书之所起，起自黄帝苍颉。比类象形谓之文，形声相益谓之字，著于竹帛谓之书。故有象形、谐声、会意、转注、假借、处事六义之别。古者童子示而不诳，六年教之数与方名。十岁入小学，学书计。二十而冠，始习先王之道，故能成其德而任事。然自苍颉讫于汉初，书经五变：一曰古文，即苍颉所作。二曰大篆，周宣王时史籀所作。三曰小篆，秦时李斯所作。四曰隶书，程邈所作。五曰草书，汉初作。秦世既废古文，始用八体，有大篆、小篆、刻符、摹印、虫书、署书、殳书、隶书。汉时以六体教学童，有古文、奇字、篆书、隶书、缪篆、虫鸟，并藁书、楷书、悬针、垂露、飞白等二十余种之势，皆出于上六书，因事生变也。魏世又有八分书，其字义训读，有《史籀篇》、《苍颉篇》、《三苍》、《埤苍》、《广苍》等诸篇章，训诂、《说文》《字林》、音义、声韵、体势等诸书。自后汉佛法行于中国，又得西域胡书，能以十四字贯一切音，文省而义广，谓之婆罗门书，与八体六文之义殊别，今取以附体势之下。又后魏初定中原，军容号令，皆经夷语，后染华俗，多不能通，故录其本言，相传教习，谓之“国语”，今取以附音韵之末。又后汉镌刻七经，著于石碑，皆蔡邕所书。魏正始中，又立三字石经，相承以为七经正字。后魏之末，齐神武执政，自洛阳徙于鄴都，行至河阳，值岸崩，遂没于水。其得至鄴者，不盈太半。至隋开皇六年，又自鄴京载入长安，置于秘书内省，议欲补缉，立于国学。寻属隋乱，事遂寝废，营造之司，因用为柱础。贞观初，秘书监臣魏徵，始收聚之，十不存一。其相承传拓之本，犹在秘府，并秦帝刻石，附于此篇，以备小学。
 </p><p>凡六艺经纬六百二十七部，五千三百七十一卷。通计亡书，合九百五十部，七千二百九十卷。
 </p><p>《传》曰：“玉不琢，不成器；人不学，不知道。”古之君子，多识而不穷，畜疑以待问：学不逾等，教不陵节；言约而易晓，师逸而功倍；且耕且养，三年而成一艺。自孔子没而微言绝，七十子丧而大义乖，学者离群索居，各为异说。至于战国，典文遗弃，六经之儒，不能究其宗旨，多立小数，一经至数百万言。致令学者难晓，虚诵问答，脣腐齿落而不知益。且先王设教，以防人欲，必本于人事，折之中道。上天之命，略而罕言，方外之理，固所未说。至后汉好图谶，晋世重玄言，穿凿妄作，日以滋生。先王正典，杂之以妖妄，大雅之论，汨之以放诞。陵夷至于近代，去正转疏，无复师资之法。学不心解，专以浮华相尚，豫造杂难，拟为仇对，遂有芟角、反对、互从等诸翻竞之说。驰骋烦言，以紊彝叙，哓哓成俗，而不知变，此学者之蔽也。班固列六艺为九种，或以纬书解经，合为十种。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十六章-卷二十六-原文.html'>第二十六章-卷二十六</a></p><p class='next'>下一节：<a href='第二十八章-卷二十八-原文.html'>第二十八章-卷二十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十六章-卷二十六-原文.html'>第二十六章-卷二十六</a></p><p class='next'>下一节：<a href='第二十八章-卷二十八-原文.html'>第二十八章-卷二十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

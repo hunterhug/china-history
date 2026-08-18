@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#列传'>：目录</a></p>
@@ -156,5 +183,18 @@
 </p><p>耶律官奴，字奚隐，林牙斡鲁之孙。沉厚多学，详于本朝世系。嗜酒好佚。初，征为宿直将军。重熙九年，以疾去官。上以官奴属尊，欲成其志，乃许自择一路节度使。官奴辞曰：“臣愚钝，不任官使。”加归义军节度使，辄请致政。官奴与欧里部人萧哇友善，哇谓官奴曰：“仕不能致主泽民，成大功烈，何屑屑为也！吾与若居林下，以枕簟自随，觞咏自乐，虽不官，无慊焉。”官奴然之。时称“二逸”。乾统间，官奴卒。
 </p><p>萧蒲离不，字桵懒，魏国王惠之四世孙。父母蚤丧，鞠于祖父兀古匿。性孝悌。年十三，兀古匿卒，自以早失怙恃，复遭祖丧，哀毁逾礼，族里嘉叹。尝谓人曰：“我于亲不得终养，今谁为训者？苟不自勉，何以报鞠育恩！”自是力学，于文艺无不精。乾统间，以兀古匿之故召之，不应。常与亲识游猎山水，奉养无长物仆隶，欣欣如也。或曰：“公胡不念以嗣先世功名？”答曰：“自度不足以继先业，年逾强仕，安能益主庇民！”累征，皆以疾辞。晚年，谢绝人事，卜居抹古山，屏远荤茹，潜心佛书，延有道者谈论弥日。人问所得何如，但曰：“有深乐！惟觉六凿不相攘，余无知者。”一日，易服，无疾而逝。
 </p><p>论曰：隐固未易为也，而亦未可轻以与人。若札剌谢职不谈时务，官奴两辞节镇，蒲离不召而不赴，虽未足谓之隐，然在当时能知内外之分，甘于肥遯，不犹愈于求富贵利达而为妻妾羞者哉？故称卓行可也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十五章-卷三十五-原文.html'>第三十五章-卷三十五</a></p><p class='next'>下一节：<a href='第三十七章-卷三十七-原文.html'>第三十七章-卷三十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十五章-卷三十五-原文.html'>第三十五章-卷三十五</a></p><p class='next'>下一节：<a href='第三十七章-卷三十七-原文.html'>第三十七章-卷三十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

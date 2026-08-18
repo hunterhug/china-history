@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#金史'>：目录</a></p>
@@ -184,5 +211,18 @@
 </p><p>完颜弼上书说“：山东、河北、河东几个镇仅能自守，恐怕长河之险峻不足以依仗。河南曾征招战士，大都是闲散市民，不习惯训练。如果选拔几千驱丁监户，另成一军，立功的全户成为良民，兵士必将争先效力去赢取胜利。武卫军家属曾经因战乱受苦，人人心怀怨愤，如果挑出上千骁悍兵士，给予封赏，也可使得他们拼死效力。”他又说“：老迈病弱的官吏，按条例准许辞官，居住河北的人近似于避难，居住河南的人苟且受禄却不尽职，公务荒废。乞请陛下核实情况，对精力可以使用者仍然照旧，对年纪高而昏聩不做事者罢除职务。”完颜弼还说“：赋税劳役频繁琐细，河南百姓刚刚强健却长期困乏，各路豪强乡绅贩卖交易总侵犯当地人利益，没有固定征籍，如同没有庸调制度，乞请陛下权衡决定。如果有知道法令却避开、事情过后又重来的人，允许众人捕捉报告，按军法惩治他们。”宣宗下诏令尚书省商议，只有对老迈病弱官吏的处理听从完颜弼的建议，其余都不应允。
 </p><p>大元的军队围攻东平，完颜弼千方百计应付作战，过了很久才解围退敌。宣宗赐下诏书，传令奖励将士，赏赐各有不同。这年五月，完颜弼头部发了痈疽病。皇上诏令太医去诊治，又赐给御用药物。不久，完颜弼去世。
 </p><p>完颜弼平生无所嗜好，只喜爱读书，闲暇时间邀请儒士，常常歌咏诗文、投壶游戏。由他征召的人，比如承裔、陀满胡土门、纥石烈牙吾塔，都立有军功。他治理东平时，爱护百姓，节省费用，城邑之中军民没有相互告状的，很有古代良将的风范。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十九章-卷三十九-白话.html'>第三十九章-卷三十九</a></p><p class='next'>下一节：<a href='第四十一章-卷四十一-白话.html'>第四十一章-卷四十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十九章-卷三十九-白话.html'>第三十九章-卷三十九</a></p><p class='next'>下一节：<a href='第四十一章-卷四十一-白话.html'>第四十一章-卷四十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

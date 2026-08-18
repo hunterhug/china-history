@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#辽史'>：目录</a></p>
@@ -179,5 +206,18 @@
 </p><p>瑶质笃好读书，清廉耿介，有整顿乾坤之志向。统和十年(992)，累迁至积庆宫使。圣宗曾经晓谕瑶质说“：我听说你为人正直，所以选拔和任用你。什么事于国家有利或有害，你尽管直言，不要有所隐讳。”因此所陈奏之事大多受到嘉许和采纳。
 </p><p>皇上征讨高丽，攻破康肇军于铜州时，得力于瑶质之功甚多。王询请降，群臣商议都认为应该受降。瑶质说“：王询刚刚交战一次失败，便赶紧请求降服，此乃是诈降；纳降，恐怕正堕入其奸计之中。待等他势穷力屈，再纳降也不为晚。”不久王询果然逃走，临走时坚壁清野，我军无所获。其众依仗险阻修筑工事，攻之不下，瑶质用计让他们投降。提升拜为四蕃部详稳。
 </p><p>当时招讨使耶律颇的任总管，瑶质耻于官位居其下，上表说：“臣乃先朝旧臣，现在既已年老，请求让我归还新被任命之职，所望只是能够常时陪侍于皇上左右。”皇上说“：朕必定不会让你长期呆在这个位子上。”并且下令瑶质不再隶属于招讨，得以自行上奏折到部省。瑶质制止残暴，心怀仁善，政绩显著，卒于任上。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十七章-卷十七-白话.html'>第十七章-卷十七</a></p><p class='next'>下一节：<a href='第十九章-卷十九-白话.html'>第十九章-卷十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十七章-卷十七-白话.html'>第十七章-卷十七</a></p><p class='next'>下一节：<a href='第十九章-卷十九-白话.html'>第十九章-卷十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

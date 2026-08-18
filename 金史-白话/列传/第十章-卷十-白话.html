@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#金史'>：目录</a></p>
@@ -180,5 +207,18 @@
 </p><p>过了很长一段时间，改任彀英为平阳府尹，他辞官不做。又起用为西京留守，彀英因为母亲服丧而辞去了官位。后来又被找到起用，官复原职。不久又被派往东京，又历任上京尹，皇帝下诏书说“：上京王室基业兴起，风俗日趋虚伪、诡诈，皇家宗室聚居，号令不听，难以治理。卿是元老大臣，众人都听从服你，应当匡正风俗，检查制约宗室，坚持义理，顾全国家大局。”大定十五年(1175)，彀英辞去了在上京的职务。
 </p><p>又过了许久，史臣向皇上进献了《太宗、睿宗实录》，皇上(世宗)说：“太宗、睿宗当政时亲眼看见这些事的，只有彀英一人还在。”于是下令让修订、编撰这部实录的温迪罕缔达前往北京彀英家里访问他，许多不实或有误之处得到了更正。
 </p><p>十九年(1179)，彀英逝世，享年七十四岁。彀英前后总计以功劳被赏赐十一次，他曾受赏黄金二百五十两，白银六千五百两，绢八百匹，绵二千匹，马三百十四匹，牛羊六千五百头，奴婢一百三十人。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九-白话.html'>第九章-卷九</a></p><p class='next'>下一节：<a href='第十一章-卷十一-白话.html'>第十一章-卷十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九-白话.html'>第九章-卷九</a></p><p class='next'>下一节：<a href='第十一章-卷十一-白话.html'>第十一章-卷十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

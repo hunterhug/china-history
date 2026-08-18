@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#列传'>：目录</a></p>
@@ -157,5 +184,18 @@
 </p><p>时穆宗湎酒嗜杀，思温以密戚预政，无所匡辅，士论不与。十九年，春蒐，上射熊而中，思温与夷离毕牙里斯等进酒上寿，帝醉还宫。是夜，为庖人斯奴古等所弑。思温与南院枢密使高勋、飞龙使女里等立景宗。保宁初，为北院枢密使，兼北府宰相，仍命世预其选。上册思温女为后，加尚书令，封魏王。从帝猎闾山，为贼所害。
 </p><p>萧继先，字杨隐，小字留只哥。幼颖悟，叔思温命为子，睿智皇后尤爱之。乾亨初，尚齐国公主，拜驸马都尉。统和四年，宋人来侵，继先率逻骑逆境上，多所俘获，上嘉之，拜北府宰相。自是出师，继先必将本府兵先从。拔狼山石垒，从破宋军应州。上南征，取通利军，战称捷力。及亲征高丽，以继先年老，留守上京。卒，年五十八。继先虽处富贵，尚俭素，所至以善治称，故将兵攻战，未尝失利，名重戚里。
 </p><p>论曰：呜呼！人君之过，莫大于杀无辜。汤之伐桀也，数其罪曰“并告无辜于上下神祇”；武王之伐纣也，数其罪曰“无辜吁天”；尧之伐苗民也，吕侯追数其罪曰“杀戮无辜”。迹是言之，夷腊葛之谏，凛凛庶几古君子之风矣。虽然，善谏者不谏于已然，盖必先得于心术之微，如察脉者，先其病而治之，则易为功。穆宗沈湎失德，盖其资富强之势以自肆久矣。使群臣于造次动作之际，引谏彼诤，提而警之，以防其甚，则亦讵至是哉！于以知护思、思温处位优重，耽禄取容，真鄙夫矣！若海璃之折狱，继先之善治，可谓任职臣欤！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

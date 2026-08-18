@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -183,5 +210,18 @@
 </p><p>贞祐二年，迁元帅右都监，以保全平州功进官五阶，赐金吐鹘、重币十端。顷之，宣宗迁汴，改右副点检兼侍卫亲军副都指挥使。阅月，知大兴府事。未行，改左副点检兼亲军副都指挥。数月，知彰德府事。三年，中都危急，改元帅左都监，将大名兵万八千、西南路步骑万一千、河北兵一万救中都。次霸州北，兵溃。顷之，中都不守，改大名府权宣抚使。未几，知河中府，权河东南路宣抚副使。四年，迁元帅左监军兼陕西统军使。驻兵延安，败夏人于安塞堡。战于鄜州之仓曲谷，有功。
 </p><p>兴定元年，与签枢密院事完颜赛不经略伐宋，败宋兵于泥河湾石壕村，斩首三千级，获马四百匹、牛三百头，器械称是。复破宋兵七千于樊城县。既而，以军士多被伤，奏不以实，诏有司鞫问，已而释之。历镇南集庆军节度使，卒。
 </p><p>赞曰：承晖守中都期年，相为存亡，临终就义，古人所难也。大抵宣宗既迁，则中都必不能守，中都不守，则土崩之势决矣。仆散端、耿端义似忠而实愚，抹捻尽忠委中都，庸何议焉。高琪忌承晖成功，孛术鲁德裕缓师期，奸人之党，于是何诛。李英被酒败军，虽死不能赎也。乌古论庆寿无罚，贞祐之刑政，从可知矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十八章-卷三十八-原文.html'>第三十八章-卷三十八</a></p><p class='next'>下一节：<a href='第四十章-卷四十-原文.html'>第四十章-卷四十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十八章-卷三十八-原文.html'>第三十八章-卷三十八</a></p><p class='next'>下一节：<a href='第四十章-卷四十-原文.html'>第四十章-卷四十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

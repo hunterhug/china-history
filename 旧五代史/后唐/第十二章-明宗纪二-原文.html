@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后唐<a href='../旧五代史.html#后唐'>：目录</a></p>
@@ -161,5 +188,18 @@
 </p><p>乙亥，庄宗皇帝梓宫发引，帝缞服临送于楼前。是日，葬庄宗于雍陵。镇州留后王建立奏，涿州刺史刘殷肇不受代，谋叛，昨发兵收掩，擒刘殷肇及其党一十三人，见折足勘诘。己卯，以比部郎中、知制诰杨凝式为给事中，充史馆修撰、判馆事；以伪蜀吏部尚书杨玢为给事中，充集贤殿学士、判院事。升应州为彰德军节度，仍以兴唐军为寰州，隶彰德军。宰相豆卢革贬辰州刺史，韦说贬溆州刺史，仍令所在驰驿发遣，为谏议大夫萧希甫疏奏故也。制略曰：“革则纵田客以杀人，说则侵邻家而夺井，选元亨之上第，改王参之本名。或主掌三司，委元随之务局；或陶熔百里，爱长吏之桑田。咸屈塞于平人，互阿私于爱子。任官匪当，黩货无厌，谋人之国若斯，致主之方安在！既迷理乱，又昧卷舒。而府司案牍爰来，谏署奏章叠至，备彰丑迹，深污明庭。是宜约以三章，投之四裔。其河南府文案及萧希甫论疏，并宜宣示百僚。”庚辰，赐萧希甫衣段二十匹、银器五十两，赏疏革、说之罪也。宰相郑珏、任圜再见安重诲，求解革、说，请不复追行后命，又三上表救解，俱留中不报。
 </p><p>辛巳，以捧圣严卫左厢马步军都指挥使李从璋领饶州刺史，充大内皇城使。中书门下奏：“条制，检校官各纳尚书省礼钱，旧例太师、太尉纳四十千，后减落至二十千；太傅、太保元纳三十千，减至十五千；司徒、司空元纳二十千，减至一十千；仆射、尚书元纳一十五千，减至七千；员外、郎中元纳一十千，今纳三千四百者。”诏曰：“会府华资，皇朝宠秩，凡沾新命，各纳礼钱。爰自近年，多隳旧制，遂致纪纲之地，遽成废坠之司。况累条流，就从减省，方当提举，宜振规绳。但缘其间，翊卫勋庸，籓宣将佐，自军功而迁陟，示恩泽以奖酬，须议从权，不在其例。其余自不带平章事节度使及防御、团练、刺史、使府副使、行军已下，三司职掌监务官，州县官，凡关此例，并可征纳。其检校官自员外郎至仆射，只初转一任纳钱，若不改呼，不在征纳。仍委尚书省部司专切检举，置历逐月具数申中书门下。”
 </p><p>癸未，诏辰州刺史豆卢革可责授费州司户参军，溆州刺史韦说可责授夷州司户参军，皆员外置同正员，仍令驰驿发遣。甲申，又诏曰：“责授费州司户参军豆卢革、夷州司户参军韦说等，自居台辅，累换岁华，负先皇倚注之恩，失大国燮调之理。朕自登宸极，常委钧衡，略无谦逊之辞，但纵贪饕之意。除官受赂，树党徇私，每亏敬于朕前，徒自尊于人上。道路之喧腾不已，谏臣之条疏颇多，罪状显彰，典刑斯举，合从极法，以塞群情。尚缘临御之初，含弘是务，特轸坠泉之虑，爰施解网之仁，曲示优恩，俯宽后命。革可陵州长流百姓，说可合州长流百姓，仍委逐处长知所在。同州长春宫判官、朝请大夫、检校尚书、礼部郎中、赐紫金鱼袋豆卢升，将仕郎、守尚书屯田员外郎、崇文馆学士、赐绯鱼袋韦涛等，各因权势，骤列班行，无才业以可称，窃宠荣而斯久。比行贬谪，以塞尤违。朕以纂袭之初，含容是务，父既宽于后命，子宜示于特恩，并停见任。”升、涛即革、说之子也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十一章-明宗纪一-原文.html'>第十一章-明宗纪一</a></p><p class='next'>下一节：<a href='第十三章-明宗纪三-原文.html'>第十三章-明宗纪三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十一章-明宗纪一-原文.html'>第十一章-明宗纪一</a></p><p class='next'>下一节：<a href='第十三章-明宗纪三-原文.html'>第十三章-明宗纪三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

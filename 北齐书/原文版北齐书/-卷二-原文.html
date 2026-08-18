@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>北齐书-原文版北齐书<a href='../北齐书.html#原文版北齐书'>：目录</a></p>
@@ -173,5 +200,18 @@
 </p><p>侯景素轻世子，尝谓司马子如曰：“王在，吾不敢有异，王无，吾不能与鲜卑小儿共事。”子如掩其口。至是，世子为神武书召景。景先与神武约：得书，书背微点，乃来。书至，无点，景不至。又闻神武疾，遂拥兵自固。神武谓世子曰：“我虽疾，尔面更有余忧色，何也？”世子未对。又问曰：“岂非忧侯景叛耶？”曰：“然。神武曰：“景专制河南十四年矣，常有飞扬跋扈志，顾我能养，岂为汝驾御也！今四方未定，勿遽发哀。厍狄干鲜卑老公，斛律金敕勒老公，并性遒直，终不负汝。可朱浑道元、刘丰生远来投我，必无异心。贺拔焉过儿朴实无罪过。潘乐本作道人，心和厚，汝兄弟当得其力。韩轨少戆，宜宽借之。彭乐心腹难得，宜防护之。少堪敌侯景者唯有慕容绍宗，我故不贵之，留以与汝，宜深加殊礼，委以经略。”
 </p><p>五年正月朔，日蚀，神武曰：“日蚀其为我耶，死亦何恨。”丙午，陈启于魏帝。是日，崩于晋阳，时年五十二，秘不发丧。六月壬午，魏帝于东堂举哀，三日，制缌衰。诏凶礼依汉大将军霍光、东平王苍故事；赠假黄钺、使持节、相国、都督中外诸军事、齐王玺绂，辒辌车、黄屋、左纛、前后羽葆、鼓吹、轻车、介士，兼备九锡殊礼，谥献武王。八月甲申，葬于邺西北漳水之西，魏帝临送于紫陌。天保初，追崇为献武帝，庙号太祖，陵曰义平。天统元年，改谥神武皇帝，庙号高祖。
 </p><p>神武性深密高岸，终日俨然，人不能测。机权之际，变化若神。至于军国大略，独运怀抱，文武将吏，罕有预之。统驭军众，法令严肃，临敌制胜，策出无方。听断昭察，不可欺犯。知人好士，全护勋旧。性周给，每有文教，常殷勤款悉，指事论心，不尚绮靡。擢人授任，在于得才，苟其所堪，乃至拔于厮养，有虚声无实者，稀见任用。诸将出讨，奉行方略，罔不克捷，违失指画，多致奔亡。雅尚俭素，刀剑鞍勒无金玉之饰。少能剧饮，自当大任，不过三爵。居家如官。仁恕爱士。始，范阳卢景裕以明经称，鲁郡韩毅以工书显，咸以谋逆见擒，并蒙恩置之第馆，教授诸子。其文武之士尽节所事，见执获而不罪者甚多。故遐迩归心，皆思效力。至南威梁国，北怀蠕蠕，吐谷浑、阿至罗咸所招纳，获其力用，规略远矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='-卷一-原文.html'>-卷一</a></p><p class='next'>下一节：<a href='-卷三-原文.html'>-卷三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='-卷一-原文.html'>-卷一</a></p><p class='next'>下一节：<a href='-卷三-原文.html'>-卷三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

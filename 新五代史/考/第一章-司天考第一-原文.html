@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-考<a href='../新五代史.html#考'>：目录</a></p>
@@ -490,5 +517,18 @@
 </p><p>◎灭日
 </p><p>常朔分朔虚已下者，为灭分。以朔率乘之，朔虚而一，盈统法为日；用加其朔而命之，即所求灭日也。
 </p><p>右朴所撰《钦天历经》四篇。《旧史》亡其《步发敛》一篇，而在者三篇，简略不完，不足为法。朴历世既罕传，予尝问于著作佐郎刘羲候叟，羲叟为予求得其本经，然后朴之历大备。羲叟好学知书史，尤通于星历，尝谓予曰：“前世造历者，其法不同而多差。至唐一行始以天地之中数作《大衍历》，最为精密。后世善治历者，皆用其法，惟写分拟数而已。至朴亦能自为一家。朴之历法，总日躔差为盈缩二历，分月离为迟疾二百四十八限，以考衰杀之渐，以审朓朒，而朔望正矣。校赤道九限，更其率数，以步黄道，使日躔有常度；分黄道八节，辨其内外，以揆九道，使月行如循环，而二曜协矣。观天势之升降，察轨道之斜正，以制食差，而交会密矣。测岳台之中晷，以辨二至之日夜，而轨漏实矣。推星行之逆顺、伏留，使舒亟有渐，而五纬齐矣。然不能宏深简易，而径急是取。至其所长，虽圣人出不能废也。”羲叟之言盖如此，览者得以考焉。</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-司天考第二-原文.html'>第二章-司天考第二</a></p></div></body>
+<div class='pn'><p class='next'>下一节：<a href='第二章-司天考第二-原文.html'>第二章-司天考第二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新唐书-志<a href='../新唐书.html#志'>：目录</a></p>
@@ -278,5 +305,18 @@
 </p><p>夫日月所以著尊卑不易之象，五星所以示政教从时之义。故日月之失行也，微而少；五星之失行也，著而多。今略考常数，以课疏密。
 </p><p>《略例》曰：“其入气加减，亦自张子信始，后人莫不遵用之。原始要终，多有不叶。今较《麟德历》，荧惑、太白见伏行度过与不及，荧惑凡四十八事，太白二十一事。余星所差，盖细不足考。且盈缩之行，宜与四象潜合，而二十四气加减不均。更推易数而正之，又各立岁差，以究五精运周二十八舍之变。较史官所记，岁星二十七事，荧惑二十八事，镇星二十一事，太白二十二事，辰星二十四事，《开元历》课皆第一云。
 </p><p>至肃宗时，山人韩颖上言《大衍历》或误。帝疑之，以颖为太子宫门郎，直司天台。又损益其术，每节增二日，更名《至德历》，起乾元元年用之，讫上元三年。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p><p class='next'>下一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p><p class='next'>下一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

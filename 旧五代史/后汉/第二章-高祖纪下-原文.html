@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后汉<a href='../旧五代史.html#后汉'>：目录</a></p>
@@ -161,5 +188,18 @@
 </p><p>乾祐元年正月辛亥朔，帝不受朝贺。乙卯，制：“大赦天下，改天福十三年为乾祐元年。自正月五日昧爽已前，犯罪人除十恶五逆外，罪无轻重，咸赦除之。”己未，改御名为暠。辛酉，诏：“诸道行军副使、两使判官并不得奏荐。带使相节度使许奏掌书记、支使、节度推官；不带使相节度使，许奏掌书记、节度推官。其防御团练判官、军事判官等听奏。所荐州县官，带使相节度使许荐三人；不带使相二人；防御、团练、刺史一人”云。以前邓州节度使、燕国公冯道为守太师，进封齐国公。甲子，帝不豫。庚午，以前宗正卿石光赞为太子宾客，以太仆卿赵上交为秘书监。丁丑，故尚书左丞韩祚赠司徒。二十七日丁丑，帝崩于万岁殿，时年五十四。秘不发丧。庚辰，太傅杜重威伏诛。《契丹国志》云：汉祖召苏逢吉、杨邠、史宏肇入受顾命，曰：“承祐幼弱，后事托在卿辈。”又曰：“善防杜重威。”是日殂。逢吉等秘不发丧，下诏称：“重威父子，因朕小疾，谤议摇众，皆斩之。”磔死于市，市人争啖其肉。
 </p><p>二月辛巳朔，内降遗制，皇子周王承祐可于柩前即皇帝位。是日发哀。其年二月，太常卿张昭上谥曰睿文圣武昭肃孝皇帝，庙号高祖。十一月壬申，葬于睿陵，宰臣苏禹珪撰谥册、哀册文云。《五代史补》：高祖尝在晋祖麾下，晋祖既起太原，因高祖遂有天下。先是，豫章有僧号上蓝者，精于术数，自唐末著谶云：“石榴花发石榴开。”议者以“石榴”则晋、汉之谓也，再言“石榴”者，明享祚俱不过二世矣。
 </p><p>史臣曰：在昔皇天降祸，诸夏无君。汉高祖肇起并、汾，遄临汴、洛，乘虚而取神器，因乱而有帝图，虽曰人谋，谅由天启。然帝昔莅戎籓，素亏物望，洎登宸极，未厌人心，徒矜拯溺之功，莫契来苏之望。良以急于止杀，不暇崇仁。燕蓟降师，既连营而受戮；鄴台叛帅，因闭垒以偷生。盖抚御以乖方，俾征伐之不息。及回銮辂，寻堕乌号，故虽有应运之名，而未睹为君之德也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-高祖纪上-原文.html'>第一章-高祖纪上</a></p><p class='next'>下一节：<a href='第三章-隐帝纪上-原文.html'>第三章-隐帝纪上</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-高祖纪上-原文.html'>第一章-高祖纪上</a></p><p class='next'>下一节：<a href='第三章-隐帝纪上-原文.html'>第三章-隐帝纪上</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

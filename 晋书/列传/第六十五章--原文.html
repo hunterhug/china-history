@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-列传<a href='../晋书.html#列传'>：目录</a></p>
@@ -235,5 +262,18 @@
 </p><p>台产，字国俊，上洛人，汉侍中崇之后也。少专京氏《易》，善图谶、秘纬、天文、洛书、风角、星算、六日七分之学，尤善望气、占候、推步之术。隐居商洛南山，兼善经学，泛情教授，不交当世。刘曜时，灾异特甚，命公卿各举博识直言之士一人。其大司空刘均举产。曜亲临东堂，遣中黄门策问之，产极言其故。曜览而嘉之，引见，访以政事。产流涕歔欷，具陈灾变之祸，政化之阙，辞甚恳至。曜改容礼之，署为博士祭酒、谏议大夫，领太史令。至明年而其言皆验，曜弥重之，转太中大夫，岁中三迁。历位尚书、光禄大夫、太子少师，位特进，金章紫绶，爵关中侯。
 </p><p>史臣曰：陈戴等诸子并该洽坟典，研精数术，究推步之幽微，穷阴阳之秘奥，虽前代京管，何以加之！郭黁知有晋之亡姚，去姚以归晋，追兵奄及，致毙中途，斯则远见秋毫，不能近知目睫。澄什爰自遐裔，来游诸夏。什既兆见星象，澄乃驱役鬼神，并通幽洞冥，垂文阐教，谅见珍于道艺，非取贵于他山，姚石奉之若神，良有以也。鲍、吴、王、幸等或假灵道诀，或受教神方，遂能厌胜禳灾，隐文彰义，虽获讥于妖妄，颇有益于世用者焉。然而硕学通人，未宜枉辔。
 </p><p>赞曰：《传》叙灾祥，《书》称龟筮。应如影响，叶若符契。怪力乱神，诡时惑世。崇尚弗已，必致流弊。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十四章--原文.html'>第六十四章-</a></p><p class='next'>下一节：<a href='第六十六章--原文.html'>第六十六章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十四章--原文.html'>第六十四章-</a></p><p class='next'>下一节：<a href='第六十六章--原文.html'>第六十六章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

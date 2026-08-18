@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#金史'>：目录</a></p>
@@ -172,5 +199,18 @@
 </p><p>大定十七年(1177)，蒲察通任尚书右丞，后转为左丞。皇帝下诏议论排列猛安谋克，大臣都认为只检验现有产业，定贫富，依照旧律区分最为便利。蒲察通说：“必须通盘检验谋克人户物力多少，那样贫富自然就分开了。贫富分，那么版图就会定下来。”皇帝肯定了蒲察通的上奏，对宰臣说：“议论事情应当像蒲察通一样尽心。”三年后，蒲察通进升平章政事，封为任国公。
 </p><p>世宗准备到上京，因为蒲察通是朝廷旧人，任命他为上京留守，先去安定上京。大定二十五年(1185)，蒲察通任真定府事，世宗说：“朕想用你为相但怜惜你年纪大了，所以授你任此职。”仍旧赐他一千贯钱。尔后，蒲察通改任知平阳府事，迁到凤翔，不久退休。明昌四年(1193)，皇帝章宗告诉宰臣说：“蒲察通是先朝的重臣，年纪虽大却没衰老。”因此任命他知广宁府事。他多次上书请求养老，又任他为开府仪同三司，一段时间后退休。
 </p><p>承安三年(1198)，蒲察通死去，皇帝下旨给他弟弟说：“依照旧例，退休的宰相，没有祭葬礼，蒲察通是旧臣和亲戚，所以特地命令祭祀和安葬。”当初，蒲察通在政府部门中，推举太子率府完颜守贞、监察御使完颜裔都可重用，后来他们都成为名臣，世人大多都知道他们。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十二章-卷三十二-白话.html'>第三十二章-卷三十二</a></p><p class='next'>下一节：<a href='第三十四章-卷三十四-白话.html'>第三十四章-卷三十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十二章-卷三十二-白话.html'>第三十二章-卷三十二</a></p><p class='next'>下一节：<a href='第三十四章-卷三十四-白话.html'>第三十四章-卷三十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

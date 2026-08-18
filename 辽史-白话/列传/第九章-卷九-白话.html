@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#辽史'>：目录</a></p>
@@ -167,5 +194,18 @@
 </p><p>保宁年间，任南院宣徽使。统和初，皇太后执政，阿没里与耶律斜轸参预国家大计，担任都统。因为征讨高丽有功，迁任北院宣徽使，加政事令。四年(986)春，宋将曹彬、米信等人侵犯燕地，皇上亲征，阿没里担任都监，多次击败敌军。十二年(994)，皇上行宫多贼盗，阿没里设立禁捕法，盗贼这才止息。
 </p><p>在此之前，叛逆者之家，兄弟不知情者也遭连坐。阿没里上谏说“：兄弟尽管称为同胞，然而秉性各不相同，其中一人行叛逆之事，别人即使不知情，也仍要以法治罪，这是刑罚及于无罪之人了。希望从今以后，即使是同居之兄弟，不知情者也能免予连坐。”太后嘉许其建议并加以采纳，将它写成法律条文。阿没里此后不久即辞官，去世。
 </p><p>阿没里生性喜好聚敛财富，每当随从征讨之时所俘掳的人口，都将他们集中起来建为城池，请求立为丰州，就便以家奴阎贵担任刺史，时论鄙薄之。子贤哥，左夷离毕。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八-白话.html'>第八章-卷八</a></p><p class='next'>下一节：<a href='第十章-卷十-白话.html'>第十章-卷十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八-白话.html'>第八章-卷八</a></p><p class='next'>下一节：<a href='第十章-卷十-白话.html'>第十章-卷十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

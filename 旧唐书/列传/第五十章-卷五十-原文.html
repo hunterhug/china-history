@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -222,5 +249,18 @@
 <p>　　丘虽历要职，固守清俭，未尝受人馈遗，第宅舆马，称为敝陋。致仕之后，药 饵殆将不给。上闻而嘉叹，下制曰：“王丘夙负良材，累升茂秩，比缘疾疹，假以 优闲。闻其家道屡空，医药靡给，久此从宦，遂无余资。持操若斯，古人何远！且 优贤之义，方册所先，周急之宜，沮劝攸在。其俸禄一事已上，并宜全给，式表殊 常之泽，用旌贞白之吏。”天宝二年卒，赠荆州大都督。 </p>
 <p>　　史臣曰：有唐之兴，绵历年所，骨鲠清廉之士，怀忠抱义之臣，台省之间，驾 肩接武。但时有夷险，道有污隆，用与不用而已。睿、玄之世，若李杰、毕构、苏 珦、郑惟忠、王志愔、卢从愿、裴漼、王丘并位历亚台，名德兼著。如尹思贞、李 朝隐折李承嘉、窦怀贞，辱闾兴贵、赵常奴，诗人所谓不畏强御者也。解琬总兵朔 野，料敌如神，功遂身退，深知止足，兹亦有足多也。 </p>
 <p>　　赞曰：尚书亚台，京尹方伯。我朝重官，云谁称职？杰、构、珦、忠，能竭其 力。愔、愿、漼、丘，聿修厥德。贞蔑大僚，隐绳贵戚。琬驰令名，燕、蜀之北。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十九章-卷四十九-原文.html'>第四十九章-卷四十九</a></p><p class='next'>下一节：<a href='第五十一章-卷五十一-原文.html'>第五十一章-卷五十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十九章-卷四十九-原文.html'>第四十九章-卷四十九</a></p><p class='next'>下一节：<a href='第五十一章-卷五十一-原文.html'>第五十一章-卷五十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -212,5 +239,18 @@
 </p><p>元化，字初阳，嘉定人。天启间举于乡。所善西洋炮法，盖得之徐光启云。广宁覆没，条备京、防边二策。孙承宗请于朝，得赞画经略军前。主建炮台教练法，因请据宁远、前屯，以策干王在晋，在晋不能用。承宗行边，还奏，授兵部司务。承宗代在晋，遂破重关之非，筑台制炮，一如元化言。还授元化职方主事，已，元化赞画袁崇焕宁远。还朝，寻罢。
 </p><p>崇祯初，起武选员外郎，进职方郎中。崇焕已为经略，乞元化自辅，遂改元化山东右参议，整饬宁前兵备。三年，皮岛副将刘兴治为乱，廷议复设登莱巡抚，遂擢元化右佥都御史任之，驻登州。明年，岛众杀兴治，元化奏副将黄龙代，汰其兵六千人。及有德反，朝野由是怨元化之不能讨也。贼纵元化还，诏逮之。首辅周延儒谋脱其死，不得也；则援其师光启入阁图之，卒不得，同张焘弃市。光兰、征充军。
 </p><p>赞曰：疆圉多故，则思任事之臣。梅之焕诸人，风采机略尚大异于巽懦恇怯之徒，而牵于文法，或废或死，悲夫！叛将衡行，缚而斩之，一偏裨力耳。中挠抚议，委坚城畀之，援师观望不进，徒扰扰焉。设官命将，何益之有？抚议之误国也，可胜言哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百三十五章-卷一百三十五-原文.html'>第一百三十五章-卷一百三十五</a></p><p class='next'>下一节：<a href='第一百三十七章-卷一百三十七-原文.html'>第一百三十七章-卷一百三十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百三十五章-卷一百三十五-原文.html'>第一百三十五章-卷一百三十五</a></p><p class='next'>下一节：<a href='第一百三十七章-卷一百三十七-原文.html'>第一百三十七章-卷一百三十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

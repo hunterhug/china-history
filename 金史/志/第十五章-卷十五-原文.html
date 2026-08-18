@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-志<a href='../金史.html#志'>：目录</a></p>
@@ -161,5 +188,18 @@
 </p><p>大定四年，礼官言：“岳镇海渎，当以五郊迎气日祭之。”诏依典礼以四立、土王日就本庙致祭，其在他界者遥祀。立春，祭东岳于泰安州、东镇于益都府、东海于莱州、东渎大淮于唐州。立夏，望祭南岳衡山、南镇会稽山于河南府，南海、南渎大江于莱州。季夏土王日，祭中岳于河南府、中镇霍山于平阳府。立秋，祭西岳华山于华州、西镇吴山于陇州，望祭西海、西渎于河中府。立冬，祭北岳恒山于定州、北镇医巫闾山于广宁府，望祭北海、北渎大济于孟州。其封爵并仍唐、宋之旧。明昌间，从沂山道士杨道全请，封沂山为东安王，吴山为成德王，霍山为应灵王，会稽山为永兴王，医巫闾山为广宁王，淮为长源王，江为会源王，河为显圣灵源王，济为清源王。
 </p><p>每岁遣使奉御署祝版奁芗，乘驿诣所在，率郡邑长贰官行事。礼用三献。读祝官一、捧祝官二。盥洗官二、爵洗官二、奉爵官一、司尊彝一、礼直官四，以州府司吏充。前三日，应行事执事官散斋二日，治事如故，宿于正寝，如常仪，前二日，有司设行事执事官次于庙门外。掌庙者扫除庙之内外。前一日，有司牵牲诣祠所，享官以下常服阅馔物，视牲充腯。享日丑前五刻，执事者设祝版于神位之右，置于玷，及以血豆设于馔所。次设祭器，皆藉以席，掌馔者实之。左十笾为三行，以右为上，实以乾裛、乾枣、形盐、鱼鱐、鹿脯、榛实、乾桃、菱、芡、栗。右十豆为三行，以左为上，实以芹菹、笋菹、韭菹、葵菹、菁菹、鱼醢、兔醢、豚拍。鹿臡、醓醢。左簠二，实以粱、稻。右簋二，实以稷、黍。俎二，实以牲体。次设牺樽二、象樽二，在堂上东南隅，北向西上。牺樽在前，实以法酒。牺樽，初献官酌。象樽，亚、终献酌。又设太樽一、山樽一，在神位前，设而不酌。有司设烛于神位前。洗二，在东阶之下，直东霤北向，罍在洗东，加勺。篚在洗西，南肆，实以巾。执罍篚者位于其后。又设揖位于庙门外，初献在西，东向，亚、终及祝在东，南向，北上。开瘗坎于庙内廷之壬地。享日丑前五刻，执事官各就次。掌馔者帅其属，实馔具毕。凡祭官各服其服，与执事官行止皆赞者引，点视陈设讫，退就次。引初献以下诣庙南门外揖位，立定，赞礼者赞：“揖。”次引祝升堂就位立。次引初献诣盥洗位北向立，搢笏、盥手、帨手、执笏，诣爵洗位北向立，搢笏，洗爵，以爵授执事者，执笏，升堂，诣酌樽所西向立。执事者以爵授初献。初献搢笏执爵，执樽者举幂，执事者酌酒。初献以爵授执事者，执笏，诣神位前北向立，搢笏，跪，执事者以爵授初献。初献执爵三祭酒，奠爵讫，执笏，俯伏，兴，少立。次引祝诣神位前东向立。搢笏，跪，读祝，讫，执笏、兴、退复位。初献再拜，赞礼者引初献复位。次引亚献酌献，并如初献之仪，次引终献，并如亚献之仪。
 </p><p>赞者引初献官诣神位前北向立，执事者以爵酌清酒，进初献之右，初献跪，祭酒，啐酒，奠爵。执事者以俎进，减神座前胙肉前脚第二节，共置一俎上，以授初献，初献以授执事者。初献取爵，遂饮，卒爵，执事者进受爵，复于坫。初献兴，再拜，赞者引初献复位。赞者曰：“再拜。”(已饮福、受胙者不拜。)亚献官以下皆再拜，拜讫，次引初献已下就望瘗位，以馔物置于坎，东西厢各二人，赞者曰：“可瘗。”置土关坎，又曰：“礼毕。”遂引初献官已下出。祝与执樽罍篚幂者俱复位立定，赞者曰：“再拜。”再拜讫，遂出。祝版燔于斋所。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十四章-卷十四-原文.html'>第十四章-卷十四</a></p><p class='next'>下一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十四章-卷十四-原文.html'>第十四章-卷十四</a></p><p class='next'>下一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

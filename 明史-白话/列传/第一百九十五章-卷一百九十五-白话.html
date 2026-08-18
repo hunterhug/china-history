@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -218,5 +245,18 @@
 </p><p>仲文得宠二十年，位极人臣，但他小心谨慎，不敢肆意妄为。三十九年(1560)仲文去世，享年八十余岁。皇上得知后非常悲痛，仿邵元节之例赐给葬祭，特谥为荣康惠肃。世恩后来任太常寺卿。隆庆元年(1567)判他和王金伪造药物之罪，下狱判了死罪。仲文的官阶谥号也被追削。
 </p><p>顾可学，无锡人。考中进士，历任浙江参议。言官弹劾他在部里任职时盗用官银，被斥归，在家呆了二十余年。他窥探到皇上好长生，而与他同年中进士的严嵩正掌国政，于是他厚贿严嵩，自称能将童男女的尿液炼成秋石，吃了它可以延年。严嵩为他转告皇上，皇上遣使者到他家赐给金币。可学上朝谢恩，遂被任命为右通政。嘉靖二十四年(1545)将他超升为工部尚书，不久改到礼部，再加封为太子太保。当时盛端明也以方术受到皇上宠爱，可学却独自得意扬扬，请托公事，人们都害怕而厌恶他。
 </p><p>皇上被乩仙之言所迷惑，颁手诏问礼部说“：古代用灵芝入药，如今它产于何地？”尚书吴山博引《本草》、《黄帝内经》、《汉旧仪》，王充的《论衡》、《瑞命记》，说“：历代都以灵芝为祥瑞之兆，但服食之法却未见传下来，其产地臣也不敢乱说。”皇上于是诏令有关官员到五岳和太和山、龙虎山、三茅山、齐云山、鹤鸣山等地去采。不久，宛平百姓献上五支灵芝。皇上很高兴，赐给银币。此后，来献者不绝。当时又开采银矿、龙涎香，为此派宦官使者四出，议论者多归咎于可学。可学不久以年老请退休。他去世后，赐给祭葬，谥号荣僖。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百九十四章-卷一百九十四-白话.html'>第一百九十四章-卷一百九十四</a></p><p class='next'>下一节：<a href='第一百九十六章-卷一百九十六-白话.html'>第一百九十六章-卷一百九十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百九十四章-卷一百九十四-白话.html'>第一百九十四章-卷一百九十四</a></p><p class='next'>下一节：<a href='第一百九十六章-卷一百九十六-白话.html'>第一百九十六章-卷一百九十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

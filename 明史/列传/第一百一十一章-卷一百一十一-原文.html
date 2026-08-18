@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -203,5 +230,18 @@
 </p><p>贞明识敏才练，慨然有经世志。京东水田实百世利，事初兴而即为浮议所挠，论者惜之。初议时，吴人伍袁萃谓贞明曰：“民可使由，不可使知。君所言，得无太尽耶？”贞明问故。袁萃曰：“北人惧东南漕储派于西北，烦言必起矣。”贞明默然。已而之栋竟劾奏如袁萃言。
 </p><p>袁萃，字圣起，吴县人。举万历五年会试。又三年释褐，授贵溪知县。擢兵部主事，进员外郎，署职方事。李成梁子如桢求为锦衣大帅，袁萃力争，寝之。出为浙江提学佥事。巡抚牒数十人寄学，立却还之。历广东海北道副使。中官李敬辖珠池，其参随擅杀人，袁萃捕论如法。请告归。所撰《林居漫录》、《弹园杂志》多贬斥当世公卿大夫，而于李三才、于玉立尤甚云。
 </p><p>赞曰：事功之难立也，始则群疑朋兴，继而忌口交铄，此劳臣任事者所为腐心也。盛应期诸人治漕营田，所规画为军国久远大计，其奏效或在数十年后。而当其时浮议滋起，或以辍役，或以罢官，久之乃食其利而思其功。故曰：“可与乐成，难与虑始。”信夫！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百一十章-卷一百一十-原文.html'>第一百一十章-卷一百一十</a></p><p class='next'>下一节：<a href='第一百一十二章-卷一百一十二-原文.html'>第一百一十二章-卷一百一十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百一十章-卷一百一十-原文.html'>第一百一十章-卷一百一十</a></p><p class='next'>下一节：<a href='第一百一十二章-卷一百一十二-原文.html'>第一百一十二章-卷一百一十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

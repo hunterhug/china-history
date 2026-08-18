@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-志<a href='../明史.html#志'>：目录</a></p>
@@ -221,5 +248,18 @@
 </p><p>十五年，流贼围开封久，守臣谋引黄河灌之。贼侦知，预为备。乘水涨，令其党决河灌城，民尽溺死。总河侍郎张国维方奉诏赴京，奏其状。山东巡抚王永吉上言：“黄河决汴城，直走睢阳，东南注鄢陵、鹿邑，必害亳、泗，侵祖陵，而邳、宿运河必涸。”帝令总河侍郎黄希宪急往捍御，希宪以身居济宁不能摄汴，请特设重臣督理。命工部侍郎周堪赓督修汴河。
 </p><p>十六年二月，堪赓上言：“河之决口有二：一为朱家寨，宽二里许，居河下流，水面宽而水势缓；一为马家口，宽一里馀，居河上流，水势猛，深不可测。两口相距三十里，至汴堤之外，合为一流，决一大口，直冲汴城以去，而河之故道则涸为平地。怒涛千顷，工力难施，必广浚旧渠，远数十里，分杀水势，然后畚锸可措。顾筑浚并举，需夫三万。河北荒旱，兖西兵火，竭力以供，不满万人，河南万死一生之馀，未审能应募否，是不得不借助於抚镇之兵也。”乃敕兵部速议，而令堪赓刻期兴工。至四月，塞朱家寨决口，修堤四百馀丈。马家口工未就，忽冲东岸，诸埽尽漂没。堪赓请停东岸而专事西岸。帝令急竣工。
 </p><p>六月，堪赓言：“马家决口百二十丈，两岸皆筑四之一，中间七十馀丈，水深流急，难以措手，请俟霜降后兴工。”已而言：“五月伏水大涨，故道沙滩壅涸者刷深数丈，河之大势尽归於东，运道已通，陵园无恙。”疏甫上，决口再溃。帝趣鸠工，未奏绩而明亡。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十九章-卷五十九-原文.html'>第五十九章-卷五十九</a></p><p class='next'>下一节：<a href='第六十一章-卷六十一-原文.html'>第六十一章-卷六十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五十九章-卷五十九-原文.html'>第五十九章-卷五十九</a></p><p class='next'>下一节：<a href='第六十一章-卷六十一-原文.html'>第六十一章-卷六十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -198,5 +225,18 @@
 </p><p>直到崇祯十四年(1641)，这时溥已去世，而“复社”一案尚未了结。刑部侍郎蔡奕琛与薛国观结为朋党，被捕下狱。他不知道张溥已经故世，还攻击溥，说他遥控朝政，自己被捕下狱就是溥干的。又说张采结党乱政。朝廷下诏，责令溥、采报告事情原尾。采上书说“：复社与臣无关，然臣平生与溥相互鼓励上进，同生死，共荣辱，我们的友谊就是如此。溥每天日夜注解经书，评论文章，决心报答朝廷的恩德。他不曾一日为官，怀着一颗忠心而死。至今未有诏令为他洗雪冤屈，实是令人哀悼。”当时，温体仁已经罢官，继任者张至发、薛国观皆不喜欢东林党人，故有关衙门也不敢陈奏张溥与“复社”的事。至发、国观也相继罢官，周延儒执政。延儒是溥的进士主考官，形势对溥有利，故张采的奏疏呈上后，溥与复社的事才得以解决。
 </p><p>第二年，御史刘熙祚、给事中姜..都上书说溥的道德修养好，学识渊博，其纂述的经史对孔孟之学颇有贡献，值得一看。崇祯皇帝在听讲经史时，问及张溥、张采二人，延儒回答说：“读书的好秀才。”皇帝说“：溥已死了，采不过一小臣，谏官为何举荐？”延儒说：“二人好读书，能写文章，那些谏官为举人时就读了他俩的文章，因见朝廷始终未任用他们，为之惋惜。”皇帝说“：这话也未免偏颇。”延儒说“：诚如圣上所谕，对溥与黄道周评价是有些偏颇，但因他们会读书，所以很多人为之惋惜。”帝点头称是，下诏征求溥的遗著，道周也复了官。地方官府先后进呈溥的遗著三千余卷，皇帝全都阅读了。
 </p><p>溥写诗撰文都很敏捷，四方之人来求他的诗文，从不起草，当即挥毫成篇，故当时名气很高。终年仅四十岁。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百七十五章-卷一百七十五-白话.html'>第一百七十五章-卷一百七十五</a></p><p class='next'>下一节：<a href='第一百七十七章-卷一百七十七-白话.html'>第一百七十七章-卷一百七十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百七十五章-卷一百七十五-白话.html'>第一百七十五章-卷一百七十五</a></p><p class='next'>下一节：<a href='第一百七十七章-卷一百七十七-白话.html'>第一百七十七章-卷一百七十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

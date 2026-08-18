@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-本纪<a href='../旧唐书.html#旧唐书'>：目录</a></p>
@@ -202,5 +229,18 @@
 </p><p>十一月，皇上驾临通化门，观看制作毗沙门神，继而赐绢五百匹。停止浙东贡奉甜菜、海蚶。
 </p><p>十二月，浙西观察使李德裕奏称废除辖区内不在祀典内的祠庙一千零一十五所。
 </p><p>长庆四年(824)正月初一，皇上临幸正殿接受朝贺，和通常的礼仪一样。皇上服用金石一类药物，隐居不仕的人张皋上疏恳切地劝谏，皇上很高兴，征召他，寻找张皋没有找到。泽潞判官贾直言新授职为谏议大夫，刘悟奉上表章请求留任他，皇上允从。原礼部尚书退休离任的孔癸戈去世。正月二十一日，皇上病势沉重，下诏由皇太子监国。正月二十二日，皇上在寝殿驾崩，时年三十岁。群臣敬献谥号为睿圣文惠孝皇帝，庙号穆宗。十一月十五日安葬在光陵。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷十五-白话.html'>第十五章-卷十五</a></p><p class='next'>下一节：<a href='第十七章-卷十七-白话.html'>第十七章-卷十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷十五-白话.html'>第十五章-卷十五</a></p><p class='next'>下一节：<a href='第十七章-卷十七-白话.html'>第十七章-卷十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-帝纪<a href='../魏书.html#帝纪'>：目录</a></p>
@@ -173,5 +200,18 @@
 </p><p>十有二月壬寅朔，尔朱兆寇丹谷，都督崔伯凤战殁，都督羊文义、史五龙降兆，大都督源子恭奔退。甲辰，尔朱兆、尔朱度律自富平津上，率骑涉渡，以袭京城。事出仓卒，禁卫不守。帝出云龙门。兆逼帝幸永宁佛寺，杀皇子，并杀司徒公、临淮王彧，左仆射、范阳王诲。戊申，元晔大赦天下。尔朱度律自镇京师。甲寅，尔朱兆迁帝于晋阳；甲子，崩于城内三级佛寺，时年二十四。并害陈留王宽。
 </p><p>是月，河西人纥豆陵步蕃、破落韩常大败尔朱兆于秀容。齐州城人赵洛周据西城反，应尔朱兆。刺史、丹阳王萧赞弃城走。南阳太守赵脩延执荆州刺史李琰之，自行州事。中兴二年谥为武怀皇帝，太昌元年又谥孝庄皇帝，庙号敬宗。十一月，葬于静陵。
 </p><p>史臣曰：魏自孝昌之末，天下淆然，外侮内乱，神器固将无主。庄帝潜思变化，招纳勤王，虽时事孔棘，而卒有四海。猾逆既翦，权强擅命，抑是兆谋运智之秋，劳谦夕惕之日也。未闻长辔之策，遽深负刺之恐，谋谟罕术，授任乖方，猜嫌行戮，祸不旋踵。鸣呼！胡丑之为衅也，岂周衰晋末而已哉！至于高祖不祀，武宣享庙，三后降鉴，福禄固不永矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p><p class='next'>下一节：<a href='第十一章-卷十一-原文.html'>第十一章-卷十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p><p class='next'>下一节：<a href='第十一章-卷十一-原文.html'>第十一章-卷十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

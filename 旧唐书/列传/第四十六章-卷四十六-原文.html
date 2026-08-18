@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -188,5 +215,18 @@
 <p>　　子昇，天宝初太仆少卿。次尚，汉东太守。次浑，与右相李林甫善，引为谏议 大夫、平原太守、御史中丞、东京采访使。次恕，都官郎中、剑南采访判官，依倚 权势，颇为贪暴。浑在平原，重征一年庸调。作东畿采访使，又使河南尉杨朝宗影 娶妻郑氏。郑氏即薛稷外孙，姊为宗妇，孀居有色，浑有妻，使朝宗聘而浑纳之， 奏朝宗为赤尉。恕在剑南，有雒县令崔珪，恕之表兄，妻美，恕诱而私之，而贬珪 官。又养刺客李晏。至九载，并为人所发，赃私各数万贯。林甫奏称璟子浑就东京 台推，恕就本使剑南推，皆有实状，浑流领南高要郡，恕流海康郡。尚，其载又为 人讼其赃，贬临海长史。其子华、衡，居官皆坐赃，相次流贬。其后浑会赦，量移 至东阳郡下，请托过求，及役使人吏，求其资课，人不堪其弊，讼之，配流浔江郡。 然兄弟尽善饮谑，俳优杂戏，衡最粗险，广平之风教，无复存矣。广德后，浑除太 子谕德，为物议薄之，乃留寓于江岭卒。 </p>
 <p>　　史臣曰：履艰危则易见良臣，处平定则难彰贤相。故房、杜预创业之功，不可 俦匹。而姚、宋经武、韦二后，政乱刑淫，颇涉履于中，克全声迹，抑无愧焉。 </p>
 <p>　　赞曰：姚、宋入用，刑政多端。为政匪易，防刑益难。谏诤以猛，施张用宽。 不有其道，将何以安？ </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十五章-卷四十五-原文.html'>第四十五章-卷四十五</a></p><p class='next'>下一节：<a href='第四十七章-卷四十七-原文.html'>第四十七章-卷四十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十五章-卷四十五-原文.html'>第四十五章-卷四十五</a></p><p class='next'>下一节：<a href='第四十七章-卷四十七-原文.html'>第四十七章-卷四十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

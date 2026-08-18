@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -191,5 +218,18 @@
 </p><p>后改任督畿辅学政。大兴知县高世儒奉诏核查逃役，都督朱希孝以勾军的罪名弹劾他，下到部里讨论。颜鲸弹劾朱希孝乱法，说：“高世儒等人按籍召行户，不是勾结禁军。这乃是禁军子弟家人倚靠城社，假冒禁卫之名，致使官吏不敢过问。富人得以抗旨，而穷人为沟中瘠。高世儒无罪，罪在锦衣。”皇帝恼怒，责斥颜鲸诋毁诬蔑勋臣，贬为安仁典史。
 </p><p>隆庆元年(1567)历湖广提学副使。因试恩贡生之失受张居正指责，降为山东参议。后来改为太仆少卿。都御史海瑞推荐颜鲸是异才，但没有回音。
 </p><p>颜鲸出按河南的时候，罢黜新郑知县，此人为高拱所庇护。在湖广，王篆想祀他的父亲为乡贤，颜鲸坚持不允许。到这时候，高拱掌管吏部，王篆为考功郎，于是以不谨的名义夺去颜鲸的官职。万历年间，给事中邹元标、御史饶位交章推荐颜鲸，报告上去而无结果。御史顾云程说“：陛下大量起用遗佚的人，唯独颜鲸和管志道因考察被格除。如果辅相与吏部尚书为贤臣，那么罢黜奸邪为公典，否则就是驱除异己而已。近来又考察登用吴中行、艾穆、魏时亮、赵世卿，唯独奚落颜鲸、管志道，这是为什么呢？”给事中姜应麟、李弘道也说这件事，颜鲸仅以湖广副使退休。朝廷中外有十多封疏章褒论推荐颜鲸，但终究没有任用他。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九十五章-卷九十五-白话.html'>第九十五章-卷九十五</a></p><p class='next'>下一节：<a href='第九十七章-卷九十七-白话.html'>第九十七章-卷九十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九十五章-卷九十五-白话.html'>第九十五章-卷九十五</a></p><p class='next'>下一节：<a href='第九十七章-卷九十七-白话.html'>第九十七章-卷九十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

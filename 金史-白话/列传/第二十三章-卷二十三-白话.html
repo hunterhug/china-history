@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#金史'>：目录</a></p>
@@ -171,5 +198,18 @@
 </p><p>豫王完颜永成本名完颜鹤野，又叫完颜娄室。母亲是昭仪梁氏。完颜永成风流伟岸，学识渊博，善于写文章。金世宗很看重他。大定七年(1167)，他开始被封为渖王，用太学博士王彦潜做府文学，完颜永成拜他为师。大定十一年(1171)，完颜永成被封幽地。大定十五年(1175)，完颜永成在外地。大定十六年(1176)，完颜永成为判秘书监。第二年(1177)，被授予世袭山东东路把鲁古猛安，判大睦亲府事。不久，改任中都路胡土霭哥蛮猛安。大定二十年(1180)，改授翰林学士承旨。大定二十三年(1183)，任判定武军节度使，不久改为判广宁府。大定二十五(1185)，金世宗到达上京，命令完颜永成留守中都，任判吏部尚书，进封开府仪同三司，任御史大夫。
 </p><p>金章宗即皇帝位后，重用完颜永成，进封吴地，任判真定府事。明昌元年(1190)，改为山东西路盆买必剌猛安。第二年，他被进封兖地。完颜永成因为率领军民围猎，被解职，奉表谢罪。不久，任沁南军节度使。三年，改任判咸平府事，未赴任，又改任判太原府事。皇上在他过生日那天，亲自做诗相赐，诗中有“美玉自应辉玉牒，忠诚不待启金鄊”之语，举世引以为荣。
 </p><p>明昌七年(1196)，完颜永成改任判平阳府事。承安元年(1196)，因荫恩被封豫地。承安五年(1200)完颜永成因病不能入朝。金章宗皇帝亲自到他府上探望。泰和四年(1204)，完颜永成死去。讣闻到朝，金章宗皇帝很震惊，给他很厚的钱财丧葬，谥号忠献。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十二章-卷二十二-白话.html'>第二十二章-卷二十二</a></p><p class='next'>下一节：<a href='第二十四章-卷二十四-白话.html'>第二十四章-卷二十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十二章-卷二十二-白话.html'>第二十二章-卷二十二</a></p><p class='next'>下一节：<a href='第二十四章-卷二十四-白话.html'>第二十四章-卷二十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

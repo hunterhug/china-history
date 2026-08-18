@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#后汉书'>：目录</a></p>
@@ -195,5 +222,18 @@
 </p><p>第二年，就派钩盾令宋典修缮南宫玉堂。又派掖廷令毕岚铸造四个铜人排列在苍龙、玄武宫前。又铸了四座钟，可容二千斛粮食，悬挂于玉堂及云台殿前。又铸天禄虾蟆，吐水于平门外桥东，转水流入宫内。又造翻车渴乌，安放桥西，用来喷洒南北郊道路，以节省百姓洒道路的费用。又铸四出文钱，钱上都有四道和边轮相连的花纹。懂得的人私下议论说，奢侈暴虐已经到了极点。形象征兆出现，这种钱铸成，一定要四方流散。等到京师大乱，这种钱果然流散四海。又任用赵忠为车骑将军，百多天免职。
 </p><p>中平六年(189)，汉灵帝崩，中军校尉袁绍劝大将军何进下令杀宦官使天下人高兴。谋划泄露，张让、赵忠等人乘何进入宫之际，共同杀了何进。袁绍率兵杀了赵忠，搜捕宦官，无论老小，统统杀掉。张让等几十人劫持天子作为人质逃到黄河边上，追赶得急迫，张让等人悲痛地哭着向天子告辞说：“我等灭绝，天下大乱啊！希望陛下自己爱惜自己！”说完，都投河自杀。
 </p><p>史官评论说：“自古丧国灭宗的，不是一朝一夕之故，是慢慢地造成的。夏商周三代因好色取祸，秦始皇因奢侈暴虐招害，西汉由于外戚而亡，东汉以宦官失国。成败之来，以前史籍议论得很多啊。至于罪起宦官，大略还有可以讨论之处。为什么呢？宦官这种人，他们与普通人不同，名声不好，不是出身于贵族大家。肌肤血气不能传于后代，表面上看不出他的坏处，做事容易取得信任，加以在朝廷里见多识广，熟悉典章制度，所以年幼的君主，依靠他谨慎练达的长处，女君利用他出入听命方便。察访他没有猜疑忌惮的心思，接近他有可喜的颜色。也有忠厚正直，怀术纠正邪恶的；有敏于应对，弄巧乱实的；还有借誉于忠良，先期引誉的。不都是放肆为凶，只是一味横暴而已。然真假并行，貌似忠诚，情实奸恶，所以能迷惑昏庸幼弱之主，搅乱视听，大抵也有一定的道理在其中。诈利既多，党羽日广，忠直的臣子直言抗议，一定会先期泄漏出来，因忧戚发愤，想有所制裁，就正好给了他们专夺的机会。这就是忠直贤良的人失去办法，国家遭到灭亡的原因。《易经》说：“履霜坚冰至。”就是说由来很久了，难道是一朝一夕的吗？</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十二章-酷吏列传-白话.html'>第七十二章-酷吏列传</a></p><p class='next'>下一节：<a href='第七十四章-儒林列传上-白话.html'>第七十四章-儒林列传上</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第七十二章-酷吏列传-白话.html'>第七十二章-酷吏列传</a></p><p class='next'>下一节：<a href='第七十四章-儒林列传上-白话.html'>第七十四章-儒林列传上</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#列传'>：目录</a></p>
@@ -208,5 +235,18 @@
 </p><p>初，衍未有子，以正表兄正德为子，既而封为西丰侯。正德私怀忿憾。正光三年，背衍奔洛，朝廷以其人才庸劣，不加礼待。寻逃归，衍不之罪。后封正德临贺王。衍末，复为散骑常侍、光禄大夫，知丹阳尹事。侯景之将济江也，知正德有恨于衍，密与交通，许推为主。正德以船数十舫迎之。景渡江，衍召正表入援。正表率众次广陵，闻正德为侯景所推，仍托舫粮未集，盘桓不进。景寻以正表为南兗州刺史，封南郡王。正表既受景署，遂于欧阳立栅，断衍援军。又欲遣其妾兄龚子明进攻广陵。衍南兗州刺史、南康王萧会理遣前广陵令刘瑗袭击，破之。正表狼狈失据，乃率轻骑，走还钟离。
 </p><p>武定七年正月，仍送子为质，据州内属。徐州刺史高归彦遣长史刘士荣驰赴之。事定，正表入朝，以勋封兰陵郡开国公、吴郡王，食邑五千户。寻除侍中、车骑将军、特进、太子太保、开府仪同三司，赏赉丰厚。其年冬薨，年四十二。赠侍中、都督徐扬兗豫济五州诸军事、骠骑大将军、司空公、徐州刺史，开国公、王并如故。谥曰昭烈。子广寿。
 </p><p>史臣曰：刘昶猜疑惧祸，萧夤亡破之余，并潜骸窜影，委命上国。俱称晓了，咸当任遇，虽有枕戈之志，终无鞭墓之诚。昶诸子尪疏，丧其家业。宝夤背恩忘义，枭獍其心。此亦戎夷彯狡轻薄之常事也。天重其罪，鬼覆其门，至于母子兄弟还相歼灭，抑是积恶之义云。萧赞临边脱身，晚去仇贼，宠禄顿臻，颠沛旋至，信吉凶之相倚也。正表归命，大享名族，亦以优哉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十六章-卷四十六-原文.html'>第四十六章-卷四十六</a></p><p class='next'>下一节：<a href='第四十八章-卷四十八-原文.html'>第四十八章-卷四十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十六章-卷四十六-原文.html'>第四十六章-卷四十六</a></p><p class='next'>下一节：<a href='第四十八章-卷四十八-原文.html'>第四十八章-卷四十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>辽史-列传<a href='../辽史.html#列传'>：目录</a></p>
@@ -159,5 +186,18 @@
 </p><p>耶律塔不也，仲父房之后。以善击鞠幸于上，凡驰骋，鞠不离杖。咸雍初，补祗候郎君。与耶律乙辛善，故内外畏之。及太子被谮，按无迹，塔不也附乙辛，欲实其诬，与讹都斡等密奏：“太子谋乱事本实，臣不首，恐事觉连坐。”帝信之，废太子。改延庆宫副使。寿隆元年，为行宫都部署。天祚嗣位，以塔不也党乙辛，出为特免部节度使。及枢密使耶律阿思大索乙辛旧党，塔不也以赂获免。徙敌烈部节度使，复为敦睦宫使。天庆元年，出为西北路招讨使。以疾卒。
 </p><p>萧图古辞，字何宁，楮特部人。仕重熙中，以能称，累迁左中丞。清宁初，历北面林牙，改北院枢密副使。辨敏，善伺颜色，应对合上意。皇太后尝曰：“有大事，非耶律化哥、萧图古辞不能决。”眷遇日隆。知北院枢密使事。六年，出知黄龙府。八年，拜南府宰相。顷之，为北院枢密使，诏许便宜从事。为人奸佞有余，好聚敛，专愎，变更法度。为枢密数月，所荐引多为重元党与，由是免为庶人。后没入兴圣宫，卒。
 </p><p>论曰：舜流共工，孔子诛少正卯，治奸之法严矣。后世不是之察，反以为忠而信任之，不至于流毒宗社而未已。道宗之于乙辛是也。当其留仁先，讨重元，若真为国计者；不知包藏祸心，待时而发耳。一旦专权，又得孝杰、燕哥、十三为之腹心，故肆恶而无忌惮。始诬皇后，又杀太子及其妃，其祸之酷，良可悲哉。呜呼！君子所亲，莫皇后、太子若也。奸臣杀之而不知，群臣言之而不悟。一时忠谠，废戮几尽。虽黑山亲见官属之盛，仅削一字王号，至私藏甲兵然后诛之。吁！乙辛之罪，固非一死可谢天下，抑亦道宗不明无断有以养成之也。如萧余里也辈，忘君党恶，以饕富贵，虽幸而死诸牖下，其得免于遗臭之辱哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十章-卷四十-原文.html'>第四十章-卷四十</a></p><p class='next'>下一节：<a href='第四十二章-卷四十二-原文.html'>第四十二章-卷四十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十章-卷四十-原文.html'>第四十章-卷四十</a></p><p class='next'>下一节：<a href='第四十二章-卷四十二-原文.html'>第四十二章-卷四十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

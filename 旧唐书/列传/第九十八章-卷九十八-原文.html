@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -193,5 +220,18 @@
 <p>　　德舆自贞元至元和三十年间，羽仪朝行，性直亮宽恕，动作语言，一无外饰， 蕴藉风流，为时称向。于述作特盛，《六经》百氏，游泳渐渍，其文雅正而弘博， 王侯将相洎当时名人薨殁，以铭纪为请者什八九，时人以为宗匠焉。尤嗜读书，无 寸景暂倦，有文集五十卷，行于代。子璩，中书舍人。 </p>
 <p>　　史臣曰：裴垍精鉴默识，举贤任能，启沃帝心，弼谐王道。如崔群、裴度、韦 贯之辈，咸登将相，皆垍之荐达。立言立事，知无不为。吉甫该洽典经，详练故实， 仗裴垍之抽擢，致朝伦之式序。吉甫知垍之能别髦彦，垍知吉甫之善任贤良，相须 而成，不忌不克。叔翰修身慎行，力学承家，批制敕有夕郎之风，涂御书见宰执之 器；而乃轻财散施，天爵是期，伟哉，自待之意也！德舆孝悌力学，髫龀有闻，疏 延龄恣行巧佞，论皋谟不书明刑，三十年羽仪朝行，实皋之余庆所钟。此四子者， 所谓经纬之臣，又何惭于王佐矣！ </p>
 <p>　　赞曰：二李秉钧，信为名臣。甫柔而党，籓俊而纯。裴公鉴裁，朝无屈人。权 之藻思，文质彬彬。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第九十七章-卷九十七-原文.html'>第九十七章-卷九十七</a></p><p class='next'>下一节：<a href='第九十九章-卷九十九-原文.html'>第九十九章-卷九十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第九十七章-卷九十七-原文.html'>第九十七章-卷九十七</a></p><p class='next'>下一节：<a href='第九十九章-卷九十九-原文.html'>第九十九章-卷九十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

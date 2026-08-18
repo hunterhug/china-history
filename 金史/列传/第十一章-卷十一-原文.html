@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -219,5 +246,18 @@
 </p><p>守能本名胡刺，累官商州刺史。正隆末，宋人陷商州，守能被执。大定五年，宋人请和，誓书曰：“俘虏之人，尽数发还。”完颜仲为报问国信使，求守能及新息县令完颜按辰于宋，遂与俱归。守能等至京师，入见，诏给旧官之俸。
 </p><p>大定十九年，为西北路招讨使。是时，诏徙窝斡余党于临潢、泰州。押刺民列尝从窝斡，其弟闸敌也当徙，伪称身亡，以马赂守能，固匿不遣。及受赇补赛也蕃部通事，事觉。是时，乌古里石垒部族节度副使奚沙阿补杖杀无罪镇边猛安，尚书省俱奏其事。上曰：“守能由刺史超擢至此，敢恣贪墨。向者招讨司官多进良马、橐驼、鹰鹘等物，盖假此以率敛尔，自今并罢之。”因责其兄守道曰：“守能自刺史躐迁招讨，外官之尊，无以逾此。前招讨哲典以贪墨伏诛，守能岂不知，乃敢如此，其意安在。尔之亲弟，何不先训戒之也。”上谓宰臣曰：“监察专任纠弹。宗州节度使阿思懑初之官，途中侵扰百姓，到官举动皆违法度。完颜守能为招讨使，贪冒狼籍。凡达官贵人，皆未尝举劾。斡睹只群牧副使仆散那也取部人球杖两枝，即便弹奏。自今，监察御史职事修举，然后迁除。不举职者，大则降罚，小则决责，仍不得去职。”尚书省奏，守能两赃俱不至五十贯，抵罪。奚沙阿补解见居官，并解世袭谋克。上曰：“此旧制之误。居官犯除名者，与世袭并罢之，非犯除名者勿罢。”遂著于令。特诏守能杖二百，除名。
 </p><p>赞曰：阿离合懑之善颂，宗雄之强识，希尹之敏学，益之以征伐之功，岂不伟哉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p><p class='next'>下一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p><p class='next'>下一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

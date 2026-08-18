@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -169,5 +196,18 @@
 </p><p>皇后蒋氏，世宗母也。父斅，大兴人，追封玉田伯。弘治五年册为兴王妃。世宗入承大统，即位三日，遣使诣安陆奉迎，而令廷臣议推尊礼。咸谓宜考孝宗，而称兴王为皇叔父，妃为皇叔母。议三上，未决。会妃将至，礼臣上入宫仪，由崇文门入东安门，皇帝迎于东华门。不许。再议由正阳门入大明、承天、端门，从王门入宫。又不许。王门，诸王所出入门也。敕曰：“圣母至，御太后车服，从御道入，朝太庙。”故事：后妃无谒庙礼。礼臣难之。时妃至通州，闻考孝宗，恚曰：“安得以吾子为他人子！”留不进。帝涕泣愿避位。群臣以慈寿太后命，改称兴献后，乃入。以太后仪谒奉先、奉慈二殿，不庙见。元年改称兴国太后。三年乃上尊号曰本生章圣皇太后。是年秋，用张璁等言，尊为圣母章圣皇太后。五年，献帝世庙成，奉太后入谒。七年，上尊号曰慈仁。九年，颁太后所制《女训》于天下。十五年，奉太后谒天寿山陵，命诸臣进贺行殿。是年加上尊号曰康静贞寿。
 </p><p>十七年十二月崩，谕礼、工二部将改葬献皇帝于大峪山，以驸马都尉京山侯崔元为奉迎行礼使，兵部尚书张瓒为礼仪护行使，指挥赵俊为吉凶仪仗官，翊国公郭勋知圣母山陵事。已，帝亲幸大峪相视，令议奉太后南诣合葬。而礼部尚书严嵩等言：“灵驾北来，慈宫南诣，共一举耳。大峪可朝发夕至，显陵远在承天，恐陛下春秋念之。臣谓如初议便。”帝曰：“成祖岂不思皇祖耶，何以南孝陵？”因止崔元等毋行，而令赵俊往，且启视幽宫。是年上尊谥曰慈孝贞顺仁敬诚一安天诞圣献皇后。明年，俊归，谓显陵不吉，遂议南巡。九卿大臣许赞等谏。不听。左都御史王廷相又谏。帝曰：“朕岂空行哉，为吾母耳！”已而侍御吕柟、给事中曾烶、御史刘贤、郎中岳伦等复相继疏谏。不听。三月，帝至承天，谒显陵，作新宫焉，曰：“待合葬也。”归过庆都，御史谢少南言：“庆都有尧母墓，佚于祀典，请祀之。”帝曰：“帝尧父母异陵，可知合葬非古。”即拜少南左春坊左司直兼翰林院检讨，定议葬大峪山。四月，帝谒长陵，谕严嵩曰：“大峪不如纯德。”仍命崔元护梓宫南祔。闰七月，合葬显陵，主祔睿宗庙。
 </p><p>赞曰：兴宗、睿宗虽未尝身为天子，而尊号徽称典礼具备，其实有不容泯者。史者所以记事也，记事必核其名与实。曰宗曰帝者，当时已定之名，名定而实著焉矣。爰据《元史》裕宗、睿宗列传之例，别为一卷如右，而各以后附焉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p><p class='next'>下一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p><p class='next'>下一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

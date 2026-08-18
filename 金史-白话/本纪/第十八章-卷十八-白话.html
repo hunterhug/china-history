@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-本纪<a href='../金史.html#金史'>：目录</a></p>
@@ -161,5 +188,18 @@
 </p><p>十一月初一，宋朝派大将江海、孟珙率兵万人，献粮三十万石助元朝兵攻打蔡州。
 </p><p>十二月初四，把所有的民丁都召来防守，召集强壮的妇人假扮男人，运大石头。哀宗皇帝亲自出去抚慰军队。初七，元朝兵决开练江，宋朝兵决开柴潭，水都进到汝水。初九，元朝军攻破外城，宿州副总帅高剌哥战死。十九日，元朝兵摧毁西城，哀宗皇帝对侍臣说：“我做金紫光禄大夫十年，做太子十年，做皇帝十年，自知没有大过错，死而无怨。所怨的是祖宗江山传了百年，到我却断绝了，与自古荒淫暴乱之君一样同为亡国，独此介意。”又说：“自古没有不亡的国家，亡国之君往往被人囚系，或被俘虏，或在阶庭被辱，或被闭在空谷中。朕不至于此。你们看着，朕志已决。”都尉王爱实战死。炮兵总帅王锐杀死元帅夹谷当哥，率三十人投降元朝。二十日，拿御用器皿赏给战士。二十四日，哀宗皇帝穿便衣率兵夜里出东城逃走，到栅旁没能突围出去，且战且回。二十五日，杀马厩中五十匹马、官马一百匹犒赏将士。
 </p><p>天兴三年(1234)正月初三，册封柴潭神为护国灵应王。初五，用近侍分别守四城。初九夜，哀宗皇帝召集百官，传位给东面元帅承麟，承麟坚辞不受。哀宗诏说：“朕传位给你是不得已而为之。因为朕身体肥胖，不便骑马奔跑。你平日敏捷有将略，万一幸免一死，皇帝后代不绝，这是朕的志向。”初十，承麟即皇帝位。百官祝贺，礼毕匆忙出击御敌，而南面已插上了宋朝旗帜。一会儿，四面呼声震天地。南面守军弃门，宋大军涌入城中，与城中守军展开巷战，城中守军不能抵抗。哀宗在幽兰轩自缢而死。末帝承麟退保子城，听说哀宗死了，率群臣进去大哭，谥号“哀宗”。哭奠未完，城池崩溃，放火烧城，奉御绛山在汝水上收哀宗尸体及随葬物。末帝承麟被乱兵所害，金朝灭亡。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十七章-卷十七-白话.html'>第十七章-卷十七</a></p><p class='next'>下一节：<a href='第十九章-卷十九-白话.html'>第十九章-卷十九</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十七章-卷十七-白话.html'>第十七章-卷十七</a></p><p class='next'>下一节：<a href='第十九章-卷十九-白话.html'>第十九章-卷十九</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

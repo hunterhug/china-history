@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -176,5 +203,18 @@
 <p>　　液弟涤，多辩智，善谐谑，素与玄宗款密。兄湜坐太平党诛，玄宗常思之，故 待涤逾厚，用为秘书监。出入禁中，与诸王侍宴不让席，而坐或在宁王之上。后赐 名澄。从东封还，加金紫光禄大夫，封安喜县子。开元十四年卒，赠兗州刺史。 </p>
 <p>　　史臣曰：刘洎始以章疏切直，以至位望隆显。至于提纲整带，咨圣嘉猷，籍国 士之谈，体廊庙之器。噫，枢机之发，荣辱之主，一言不慎，竟陷诬奏。虽君亲甚 悔，而驷不及舌，良足悲矣！马周道承际会，天性深沉，悟主谈微，作忠本孝，冲 识广度，宛涉穹崇。《诗》曰：“嘉乐君子，显显令德。”惜其中寿，不慭遗乎！ 崔仁师以史材获进，其刊正褒贬，雅得详明。至于本仁恕，申枉滥，其事可观。沮 穿凿之注，止从重之刑，其言甚直。《书》曰“疑谋勿成”，而以魏王为请，不亦 惑乎！及参机务，竟致忌嫉，罔上之名，抑有由也。崔湜之德，去祖逾远，谓势可 恃，谓进无伤，及位极人臣，而心无止足。览《海鸥赋》，知而不诫，及荆州之梦， 人知不免。《易》曰：“不节之嗟，又谁咎也！” </p>
 <p>　　赞曰：骥逢造父，一日千里。英主取贤，不拘阶陛。宾王徒步，洎为贼吏。一 见文皇，皆登相位。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十三章-卷二十三-原文.html'>第二十三章-卷二十三</a></p><p class='next'>下一节：<a href='第二十五章-卷二十五-原文.html'>第二十五章-卷二十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十三章-卷二十三-原文.html'>第二十三章-卷二十三</a></p><p class='next'>下一节：<a href='第二十五章-卷二十五-原文.html'>第二十五章-卷二十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

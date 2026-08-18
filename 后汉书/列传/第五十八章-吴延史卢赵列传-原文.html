@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#列传'>：目录</a></p>
@@ -195,5 +222,18 @@
 </p><p>兴平元年，诏书征岐，会帝当还洛阳，先遣卫将军董承修理宫室。岐谓承曰：&quot;今海内分崩，唯有荆州境广地胜，西通巴蜀，南当交址，年谷独登，兵人差全。岐虽迫大命，犹志报国家，欲自乘牛车，南说刘表，可使其身自将兵来卫朝廷，与将军并心同力，共奖王室。此安上救人之策也。&quot;承即表遣岐使荆州，督租粮。岐至，刘表即遣兵诣洛阳助修宫室，军资委输，前后不绝。时，孙嵩亦寓于表，表不为礼，岐乃称嵩素行笃烈，因共上为青州刺史。岐以老病，遂留荆州。
 </p><p>曹操时为司空，举以自代。光禄勋桓典、少府孔融上书荐之，于是就拜岐为太常。年九十余，建安六年卒。先自为寿藏，图季札、子产、晏婴、叔向四像居宾位，又自画其像居主位，皆为赞颂。敕其子曰：&quot;我死之日，墓中聚沙为床，布簟白衣，散发其上，覆以单被，即日便下，下讫便掩。&quot;岐多所述作，著《孟子章句》、《三辅决录》传于时。
 </p><p>赞曰：吴翁温爱，义干刚烈。延、史字人，风和恩结。梁使显刑，诬党潜绝。子幹兼姿，逢掖临师。邠卿出疆，专命朝威。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十七章-李杜列传-原文.html'>第五十七章-李杜列传</a></p><p class='next'>下一节：<a href='第五十九章-皇甫张段列传-原文.html'>第五十九章-皇甫张段列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第五十七章-李杜列传-原文.html'>第五十七章-李杜列传</a></p><p class='next'>下一节：<a href='第五十九章-皇甫张段列传-原文.html'>第五十九章-皇甫张段列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

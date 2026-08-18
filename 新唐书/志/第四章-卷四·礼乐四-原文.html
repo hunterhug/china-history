@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新唐书-志<a href='../新唐书.html#志'>：目录</a></p>
@@ -168,5 +195,18 @@
 </p><p>大历十四年，礼仪使颜真卿奏：“今元陵请朔、望、节祭，日荐，如故事；泰陵惟朔、望、岁冬至、寒食、伏、腊、社一祭，而罢日食。”制曰：“可。”贞元四年，国子祭酒包佶言：“岁二月、八月，公卿朝拜诸陵，陵台所由导至陵下，礼略，无以尽恭。”于是太常约旧礼草定曰：“所司先撰吉日，公卿辂车、卤薄就太常寺发，抵陵南道东设次，西向北上。公卿既至次，奉礼郎设位北门外之左，陵官位其东南，执事官又于其南。谒者导公卿，典引导众官就位，皆拜。公卿、众官以次奉行，拜而还。”
 </p><p>故事，朝陵公卿发，天子视事不废。十六年，拜陵官发，会董晋卒，废朝。是后公卿发，乃因之不视事。
 </p><p>元和元年，礼仪使杜黄裳请如故事，丰陵日祭，崇陵唯祭朔、望、节日、伏、腊。二年，宰臣建言：“礼有著定，后世徇一时之慕，过于烦，并故陵庙有荐新，而节有遣使，请岁太庙以时享，朔、望上食，诸陵以朔、望奠，亲陵以朝晡奠，其余享及忌日告陵皆停。”</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三·礼乐三-原文.html'>第三章-卷三·礼乐三</a></p><p class='next'>下一节：<a href='第五章-卷五·礼乐五-原文.html'>第五章-卷五·礼乐五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三·礼乐三-原文.html'>第三章-卷三·礼乐三</a></p><p class='next'>下一节：<a href='第五章-卷五·礼乐五-原文.html'>第五章-卷五·礼乐五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

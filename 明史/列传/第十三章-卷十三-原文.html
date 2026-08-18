@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -182,5 +209,18 @@
 </p><p>茂以遇春功，封郑国公，食禄二千石，予世券，骄稚不习事。洪武二十年命从大将军冯胜征纳哈出于金山。胜，茂妇翁也。茂多不奉胜约束，胜数诮责之。茂应之慢，胜益怒，未有以发也。会纳哈出请降，诣右副将军蓝玉营，酒次，与玉相失，纳哈出取酒浇地，顾其下咄咄语。茂方在坐，麾下赵指挥者，解蒙古语，密告茂：“纳哈出将遁矣。”茂因出不意，直前搏之。纳哈出大惊，起欲就马。茂拔刀，砍其臂伤。纳哈出所部闻之，有惊溃者。胜故怒茂，增饰其状，奏茂激变，遂械系至京。茂亦言胜诸不法事。帝收胜总兵印，而安置茂于龙州，二十四年卒。初，龙州土官赵贴坚死，从子宗寿当袭。贴坚妻黄以爱女予茂为小妻，擅州事。茂既死，黄与宗寿争州印，相告讦。或构蜚语，谓茂实不死，宗寿知状。帝怒，责令献茂自赎，命杨文、韩观出师讨龙州。已而知茂果死，宗寿亦输款，乃罢兵。
 </p><p>茂无子，弟升，改封开国公，数出练军，加太子太保。升之没，《实录》不载。其他书纪传谓，建文末，升及魏国公辉祖力战浦子口，死于永乐初。或谓升洪武中坐蓝玉党，有告其聚兵三山者，诛死。常氏为兴宗外戚，建文时恩礼宜厚，事遭革除，无可考，其死亦遂传闻异词。升子继祖，永乐元年迁云南之临安卫，时甫七岁。继祖子宁，宁子复。弘治五年诏曰：“太庙配享诸功臣，其赠王者，皆佐皇祖平定天下，有大功。而子孙或不沾寸禄，沦于氓隶。朕不忍，所司可求其世嫡，量授一官，奉先祀。”乃自云南召复，授南京锦衣卫世指挥使。嘉靖十一年绍封四王后，封复孙玄振为怀远侯，传至曾孙延龄，有贤行。崇祯十六年，全楚沦陷，延龄请统京兵赴九江协守。又言江都有地名常家沙，族丁数千皆其始祖远裔，请鼓以忠义，练为亲兵。帝嘉之，不果行。南都诸勋戚多恣睢自肆，独延龄以守职称。国亡，身自灌园，萧然布衣终老。
 </p><p>赞曰：明太祖奋自滁阳，戡定四方，虽曰天授，盖二王之力多焉。中山持重有谋，功高不伐，自古名世之佐无以过之。开平摧锋陷阵，所向必克，智勇不在中山下；而公忠谦逊，善持其功名，允为元勋之冠。身依日月，剖符锡土，若二王者，可谓极盛矣。顾中山赏延后裔，世叨荣宠；而开平天不假年，子孙亦复衰替。贵匹勋齐，而食报或爽，其故何也？太祖尝语诸将曰：“为将不妄杀人，岂惟国家之利，尔子孙实受其福。”信哉，可为为将帅者鉴矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p><p class='next'>下一节：<a href='第十四章-卷十四-原文.html'>第十四章-卷十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p><p class='next'>下一节：<a href='第十四章-卷十四-原文.html'>第十四章-卷十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

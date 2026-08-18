@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#魏书'>：目录</a></p>
@@ -173,5 +200,18 @@
 </p><p>卢昶是一个儒生，本来就缺少将才，又有羊祉的儿子燮任卢昶的司马，专管军事，遮蔽卢昶的耳目，将士都怨恨他。朐山戍主傅文骥因粮草断绝，以朐山城投降了萧衍。卢昶看到戍城已降，于是自己首先逃退。诸军相继奔走逃遁，遇到大雪严寒，军人冻死和冻掉手足的有三分之二。自从国家经略江东以来，只有中山王元英在钟离打过败仗，卢昶在朐山失利，情况最为严重。世宗派黄门甄琛从驿道驰往扣押了卢昶，拟表追究他的罪责。皇帝下诏说：“朐山的失败，伤亡损失实为惨重，推究其始末，罪责在于元帅。虽然实行大赦，处分轻重应有所区别，卢昶一人免官论罪，其余将领以下全都听凭其按照赦令恢复官任。”
 </p><p>没过多久，朝廷任卢昶为太常卿，仍旧任安西将军、雍州刺史，又进号为镇西将军，加授散骑常侍。熙平元年(516)，卢昶在官任上去世。朝廷追赠他为征北将军、冀州刺史，定谥号为穆。
 </p><p>卢昶为人宽和矜恕，善于绥靖安抚，他在任徐州刺史时，戍兵有病，曾亲自前去探视抚恤，以至戍守边地的兵卒服役期满仍不愿回家，要求继续服役，直至卢昶任期届满，然后才回家乡。人们都称扬此事。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十四章-卷三十四-白话.html'>第三十四章-卷三十四</a></p><p class='next'>下一节：<a href='第三十六章-卷三十六-白话.html'>第三十六章-卷三十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十四章-卷三十四-白话.html'>第三十四章-卷三十四</a></p><p class='next'>下一节：<a href='第三十六章-卷三十六-白话.html'>第三十六章-卷三十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -202,5 +229,18 @@
 </p><p>有子名阿里合，世目曰“小鼓椎”，尝为元帅，从哀宗至归德，与蒲察官奴作乱，伏诛。
 </p><p>康锡，字伯禄，赵州人。至宁元年进士。正大初，由省掾拜御史，劾侯挚、师安石非相材，近侍局宗室撒合辇声势熏灼，请托公行，不可使在禁近，时论韪之。转右司都事、京南路司农丞，为河中路治中。河中破，从时帅率兵南奔，济河，船败死。为人气质重厚，公家之事知无不为，与雷渊、翼禹锡齐名。
 </p><p>赞曰：金自胡沙虎、高琪用事，风俗一变，朝廷矫宽厚之政，好为苛察，然为之不果，反成姑息。将帅鄙儒雅之风，好为粗豪，然用非其宜，终至跋扈。牙吾塔战胜攻取，威行江、淮，而矜暴不法，肆侮王人，此岂可制者乎？弃陕而归，死于道途，殆其幸欤！其子效尤，竟陷大僇，君子乃知康锡之言不为过也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十八章-卷四十八-原文.html'>第四十八章-卷四十八</a></p><p class='next'>下一节：<a href='第五十章-卷五十-原文.html'>第五十章-卷五十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十八章-卷四十八-原文.html'>第四十八章-卷四十八</a></p><p class='next'>下一节：<a href='第五十章-卷五十-原文.html'>第五十章-卷五十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

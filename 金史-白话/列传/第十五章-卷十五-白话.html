@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#金史'>：目录</a></p>
@@ -177,5 +204,18 @@
 </p><p>当初，宋朝人杀了张邦昌后，金太宗皇帝诏令诸将寻求像张邦昌那样的人立为皇帝，有人举荐折可求，完颜挞懒则极力举荐刘豫。刘豫被立为皇帝，国号大齐。刘豫当皇帝几年，没有一点功绩，于是废刘豫为蜀王。完颜挞懒与右副元帅完颜宗弼都在河南，宋朝派王伦向完颜挞懒乞求还河南、陕西两地。第二年，完颜挞懒朝拜到京城，倡议用废齐国旧地给宋朝，金熙宗皇帝命令群臣议论此事，刚好东京留守完颜宗隽来朝拜，他与完颜挞懒合力坚持那样做，完颜宗干等没能争过他们。完颜宗隽说“：我们拿地送给宋朝，宋朝一定会感恩戴德我们。”完颜宗宪驳斥他说“：我们俘虏了宋朝人的父老兄弟，并非一日之怨恨。如果再资助他们土地，这是帮助敌人，哪里会有恩德。不要给他们好处。”完颜挞懒的弟弟完颜勖也认为不可。退朝后，完颜挞懒责备完颜勖说：“别人还有顺从我的，你却有异议。”完颜勖回答说“：如果对国家有利，岂敢有私心。”此时，金太宗的长子完颜宗磐任宰相，位在完颜宗干之上，完颜挞懒、完颜宗隽依附于他，竟然执行了将河南、陕西的地给宋朝的决议。张通古做诏谕江南使。
 </p><p>时间一长，完颜宗磐非常跋扈，完颜宗隽也担任了丞相，完颜挞懒兵权在握，他们有谋反迹象。完颜宗磐、完颜宗隽被杀，而金熙宗皇帝下诏，上写挞懒地位高，有大功，释放不问罪，放出后任行台尚书左丞相，遣出京城。完颜挞懒到燕京后，越发骄恣不法，又与翼土完颜鹘懒谋反，而朝中慢慢知道他当初与宋朝达有协议才极力倡议割让河南、陕西之地。完颜宗弼请求再夺取河南、陕西。适逢有人向皇帝告发了完颜挞懒，金熙宗皇帝于是下诏杀完颜挞懒。完颜挞懒从燕京南逃，在祁州被追上杀死，一同被杀死的还有冀王及宗族人完颜活离胡土、完颜挞懒的两个儿子完颜斡带、完颜乌达补，赦免了他们的亲族。
 </p><p>完颜宗弼任都元帅，再次安定河南、陕西。后金军攻打宋朝渡过了淮河，宋朝康王乞求和解，向金朝称臣，划淮河作为疆界，于是撤兵停战。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十四章-卷十四-白话.html'>第十四章-卷十四</a></p><p class='next'>下一节：<a href='第十六章-卷十六-白话.html'>第十六章-卷十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十四章-卷十四-白话.html'>第十四章-卷十四</a></p><p class='next'>下一节：<a href='第十六章-卷十六-白话.html'>第十六章-卷十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

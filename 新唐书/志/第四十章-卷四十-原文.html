@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新唐书-志<a href='../新唐书.html#志'>：目录</a></p>
@@ -189,5 +216,18 @@
 </p><p>自万岁失职，马政颇废，永隆中，夏州牧马之死失者十八万四千九百九十。景云二年，诏群牧岁出高品，御史按察之。开元初，国马益耗，太常少卿姜晦乃请以空名告身市马于六胡州，率三十匹仇一游击将军。命王毛仲领内外闲厩。九年又诏：“天下之有马者，州县皆先以邮递军旅之役，定户复缘以升之。百姓畏苦，乃多不畜马，故骑射之士减曩时。自今诸州民勿限有无廕，能家畜十马以上，免帖驿邮递征行，定户无以马为赀。”毛仲既领闲厩，马稍稍复，始二十四万，至十三年乃四十三万。其后突厥款塞，玄宗厚抚之，岁许朔方军西受降城为互市，以金帛市马，于河东、朔方、陇右牧之。既杂胡种，马乃益壮。
 </p><p>天宝后，诸军战马动以万计。王侯、将相、外戚牛驼羊马之牧布诸道，百倍于县官，皆以封邑号名为印自别；将校亦备私马。议谓秦、汉以来，唐马最盛，天子又锐志武事，遂弱西北蕃。十一载，诏二京旁五百里勿置私牧。十三载，陇右群牧都使奏：马牛驼羊总六十万五千六百，而马三十二万五千七百。
 </p><p>安禄山以内外闲厩都使兼知楼烦监，阴选胜甲马归范阳，故其兵力倾天下而卒反。肃宗收兵至彭原，率官吏马抵平凉，搜监牧及私群，得马数万，军遂振。至凤翔，又诏公卿百寮以后乘助军。其后边无重兵，吐蕃乘隙陷陇右，苑牧畜马皆没矣。乾元后，回纥恃功，岁入马取缯，马皆病弱不可用。永泰元年，代宗欲亲击虏，鱼朝恩乃请大搜城中百官、士庶马输官，曰“团练马”。下制禁马出城者，已而复罢。德宗建中元年，市关辅马三万实内厩。贞元三年，吐蕃、羌、浑犯塞，诏禁大马出潼、蒲、武关者。元和十一年伐蔡，命中使以绢二万市马河曲。其始置四十八监也，据陇西、金城、平凉、天水，员广千里，繇京度陇，置八坊为会计都领，其间善水草、腴田皆隶之。后监牧使与坊皆废，故地存者一归闲厩，旋以给贫民及军吏，间又赐佛寺、道馆几千顷。十二年，闲厩使张茂宗举故事，尽收岐阳坊地，民失业者甚众。十三年，以蔡州牧地为龙陂监。十四年，置临汉监于襄州，牧马三千二百，费田四百顷。穆宗即位，岐人叩阙讼茂宗所夺田，事下御史按治，悉予民。大和七年，度支盐铁使言：“银州水甘草丰，请诏刺史刘源市马三千，河西置银川监，以源为使。”襄阳节度使裴度奏停临汉监。开成二年，刘源奏：“银川马已七千，若水草乏，则徙牧绥州境。今绥南二百里，四隅险绝，寇路不能通，以数十人守要，畜牧无它患。”乃以隶银川监。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十九章-卷三十九-原文.html'>第三十九章-卷三十九</a></p><p class='next'>下一节：<a href='第四十一章-卷四十一-原文.html'>第四十一章-卷四十一</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十九章-卷三十九-原文.html'>第三十九章-卷三十九</a></p><p class='next'>下一节：<a href='第四十一章-卷四十一-原文.html'>第四十一章-卷四十一</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

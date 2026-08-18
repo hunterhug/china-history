@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -251,5 +278,18 @@
 </p><p>第二年秋天，虎墩兔又带人到延绥的红水滩，在要求增加赏银的目的没有达到后，就在边塞外大肆抢掠。总兵吴自勉起兵把他们击退。不久他们向东依附于大清军队攻打龙门。不多久，他们被大清军队所袭击。崇祯六年(1633)夏天，插汉儿听到大清的军队到了，全部把他的部众渡过黄河远远地逃走了。此时，鞑靼各部落先后归顺依附大清。第二年，大清军队在兀苏河南冈大会各部落，颁发军队律令。这时虎墩兔已死，于是大清军队追到上都城，全部俘获插汉儿的妻子儿女和部众。
 </p><p>后来，河套部落每年都入侵宁夏、甘州、凉州，巡抚陈奇瑜、总兵马世龙、督师洪承畴等总是把他们打败。河套部落的干儿骂，也被总兵尤世禄斩杀。到明朝一代，边疆没有安宁，致使中原地区盗贼蜂起。掌权者贪图与俺答互通贡市的便利，看见插汉儿在东部边境恣意横行，就认为每年捐金钱数十万给他们，便可望得到旦夕苟安，并且还妄想把他们收为己用，最终也没有达到目的。等到后来，明朝未灭亡，而插汉儿先死，各部落全被收进了大清军队。国家的生计越是困难，边疆地区的事务便越是棘手，朝廷里的议论也就越多。明朝从这一点上看，已经不能有所作为了。
 </p><p>鞑靼人的地盘，东至兀良哈，西到瓦剌。在洪武、永乐、宣德年间，国家全盛，接受了许多外族人，就是这样他们或背叛或降服也没有准则。自正统皇帝以后，边疆的防备废弛，声威不显。外族各部落酋长大多以英雄豪杰的姿态出现，倚仗他们的暴力强劲，频频出来与中原汉族抗衡。边境的祸患，便与明朝相始终了。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二百一十四章-卷二百一十四-白话.html'>第二百一十四章-卷二百一十四</a></p><p class='next'>下一节：<a href='第二百一十六章-卷二百一十六-白话.html'>第二百一十六章-卷二百一十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二百一十四章-卷二百一十四-白话.html'>第二百一十四章-卷二百一十四</a></p><p class='next'>下一节：<a href='第二百一十六章-卷二百一十六-白话.html'>第二百一十六章-卷二百一十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

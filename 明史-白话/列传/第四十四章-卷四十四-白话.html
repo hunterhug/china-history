@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#明史'>：目录</a></p>
@@ -186,5 +213,18 @@
 </p><p>和勇个性廉洁恭谨。在两广时，将领们多营私渔利，唯有和勇一无所取。当时舆论多称赞他。
 </p><p>罗秉忠，初名克罗俄领占，沙洲卫都督佥事困即来之子。哥哥喃哥承袭父职后，英宗又命秉忠为指挥使，协助处理卫事。后来喃哥率一千二百人内迁，诏令把他们安置在东昌、平山二卫，发给田舍什器，对他们的抚恤很丰厚。喃哥死后，秉忠为都指挥使，代领喃哥的部众。
 </p><p>英宗被俘时，边塞多有警报。朝廷意见恐怕归降的人趁机为变，想将他们迁到南方。正好贵州苗人作乱，都督毛福寿南征，便升秉忠为都督佥事，率领所部增援剿贼。秉忠积战功升为左都督。天顺初年，始赐给他姓名。曹钦反叛时，番官多追随他。秉忠也被判入狱，抄了家。后来，他上书为自己辩解，这才获释。成化初年，尚书程信讨伐山都掌蛮，秉忠以游击将军身份随行。抵达永宁后，分兵六路。秉忠由金鹅江进兵，大破敌人。论功，封他为顺义伯。十六年(1480)，他去世。谥荣壮，子孙世袭指挥使。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十三章-卷四十三-白话.html'>第四十三章-卷四十三</a></p><p class='next'>下一节：<a href='第四十五章-卷四十五-白话.html'>第四十五章-卷四十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十三章-卷四十三-白话.html'>第四十三章-卷四十三</a></p><p class='next'>下一节：<a href='第四十五章-卷四十五-白话.html'>第四十五章-卷四十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

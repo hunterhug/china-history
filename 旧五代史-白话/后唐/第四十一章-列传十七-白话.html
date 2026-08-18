@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后唐<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -160,5 +187,18 @@
 </p><p>这时潞王李从厚镇守凤翔，和他相邻，潞王不接受朝廷旨令，写信给秦、泾、雍、梁、..各地主帅，说：“贼臣搞乱朝政，趁先帝病重时，谋害秦王，迎立嗣君，自己掌握权力，以致残害骨肉，动摇国家。我担心先人创立的基业，忽然坍塌，所以发誓入朝廷以便清除君王旁边奸贼，事情完成后，病退回藩。然而藩邸一直贫困，兵力又少，希望国士们共同救济国难。”令小伶安十十带五弦妓见王思同，让他取乐并劝说他。又令军校宋审温出使到雍州，如不听从命令，便独自行事。又令推官郝昭、府吏朱延繧发檄文起兵。碰上副部署药彦稠来到，宴会没停，而妓女、使者正好前来，便关在狱中。药彦稠请求杀宋审温，押送郝昭去朝廷。这时王思同已派儿子到朝廷说事，朝廷嘉奖他，便任王思同为凤翔行营都部署，在扶风起军营。
 </p><p>三月十四日，与张虔钊在岐下会兵进攻凤翔，攻城战梯和冲车大量聚集。十五日，收取东西关城，城中战备不充分，但死力抵抗，外兵死伤的占十分之二到十分之三。十六日，又进攻凤翔府城，潞王登上城墙哭着对城外人说话，听的人很可怜他。张虔钊生性狭隘，天亮在西南用兵，和都监一起砍杀人以督促军士，军士都骂他们，反过来攻打张虔钊，张虔钊跃马避开。这时羽林指挥使杨思权带军队从西门先入城，王思同不知道，还在督促士兵登城。一会儿严卫指挥使尹晖喊道：“西城军已进城受赏了，军士可以脱去甲衣！”丢弃甲仗的声音振动天地。中午，乱军全都会合，泾州张从宾、..州康福、河中安彦威都逃走。十七日，王思同和药彦稠、苌从简都到长安，刘遂雍闭关不接纳，于是奔往潼关。
 </p><p>二十二日，潞王到昭应，前锋绑着王思同献上。潞王对左右的人说“：王思同计谋与时事不合，然而对所尊奉的主人很尽心，也很可嘉的。”对赵守钧说：“思同是你的故人，可以到路上迎接他，表达我的安慰之意。”王思同到，潞王责备他说“：贼臣倾覆我们国家，残害骨肉，不是我弟弟的过错。我从岐山起兵，只为杀一二个贼臣，你怎么在两者之间动摇不定，多次误我的事，今日之罪可以逃脱吗？”王思同说：“我出身行伍，受先朝爵位任命，秉持旄钺，历任重要藩镇官职，最终没有显著的功劳报答特殊的待遇。我不是不知道攀龙附凤就会多福，扶衰救弱就会添祸，只怕死了以后没脸见先帝。用鲜血祭鼓用骨肉肥地，是被俘者的常分。”潞王听了变了脸色，慢慢对他说“：暂且休息吧。”潞王想起用他，但杨思权之类羞见王思同，多次告诉刘延朗，说“：王思同不可留，否则将会失去军心。”又潞王进入长安时，尹晖得到了王思同家全部财产和妓女，所以特别害怕王思同，对刘延朗多次提到此事。趁潞王醉了时，不向上报告，就杀了王思同及其儿子王德胜。潞王醒了后，召见王思同，左右的人报告说已杀掉。潞王对刘延朗发怒，多日叹惜。汉高祖即位后，下诏赠侍中。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十章-列传十六-白话.html'>第四十章-列传十六</a></p><p class='next'>下一节：<a href='第四十二章-列传十八-白话.html'>第四十二章-列传十八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十章-列传十六-白话.html'>第四十章-列传十六</a></p><p class='next'>下一节：<a href='第四十二章-列传十八-白话.html'>第四十二章-列传十八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

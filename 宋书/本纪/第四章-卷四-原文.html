@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>宋书-本纪<a href='../宋书.html#本纪'>：目录</a></p>
@@ -155,5 +182,18 @@
 </p><p>二年春正月癸巳朔，日有蚀之。废南豫州刺史庐陵王义真为庶人，徙新安郡。乙未，以皇弟义恭为冠军将军，南豫州刺史。乙巳，大风，天有五色云，占者以为有兵。高丽国遣使贡献。执政使使者诛义真于新安。夏五月，江州刺史檀道济、扬州刺史王弘入朝。帝居处所为多过失。乙酉，皇太后令曰：
 </p><p>王室不造，天祸未悔，先帝创业弗永，弃世登遐。义符长嗣，属当天位，不谓穷凶极悖，一至于此。大行在殡，宇内哀惶，幸灾肆于悖词，喜容表于在戚。至乃征召乐府，鸠集伶官，优倡管弘，靡不备奏，珍羞甘膳，有加平日。采择媵御，产子就宫，鋋然无怍，丑声四达。及懿后崩背，重加天罚，亲与左右执绋歌呼，推排梓宫，抃掌笑谑，殿省备闻。加复日夜媟狎，群小慢戏，兴造千计，费用万端，帑藏空虚，人力殚尽。刑罚苛虐，幽囚日增。居帝王之位，好阜隶之役；处万乘之尊，悦厮养之事。亲执鞭扑，殴击无辜，以为笑乐。穿池筑观，朝成暮毁；征发工匠，疲极兆民。远近叹嗟，人神怨怒。社稷将坠，岂可复嗣守洪业，君临万邦。今废为营阳王，一依汉昌邑、晋海西故事。奉迎镇西将军宜都王义隆入纂皇统。
 </p><p>始徐羡之、傅亮将废帝，讽王弘、檀道济求赴国讣。弘等来朝，使中书舍人邢安泰、潘盛为内应。是旦，道济、谢晦领兵居前，羡之等随后，因东掖门开，入自云龙门。盛等先戒宿卫，莫有御者。时帝于华林园为列肆，亲自酤卖。又开渎聚土，以象破冈埭，与左右引船唱呼，以为欢乐。夕游天泉池，即龙舟而寝。其朝未兴，兵士进，杀二侍者于帝侧，伤帝指。扶出东皞，就收玺绂，群臣拜辞，送于东宫，遂幽于吴郡。是日，赦死罪以下。太后令奉还玺绂，檀道济入守朝堂。六月癸丑，徐羡之等使中书舍人邢安泰弑帝于金昌亭。帝有勇力，不即受制，突走出昌门，追以门关踣之，致殒。时年十九。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p><p class='next'>下一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p><p class='next'>下一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

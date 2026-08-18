@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#列传'>：目录</a></p>
@@ -204,5 +231,18 @@
 </p><p>湟中月氏胡，其先大月氏之别也，旧在张掖、酒泉地。月氏王为匈奴冒顿所杀，余种分散，西逾葱领。其羸弱者南入山阻，依诸羌居止，遂与共婚姻。及骠骑将军霍去病破匈奴，取西河地，开湟中，于是月氏来降，与汉人错居。虽依附县官，而首施两端。其从汉兵战斗，随势强弱。被服饮食言语略与羌同，亦以父名母姓为种。其大种有七，胜兵合九千余人，分在湟中及令居。又数百户在张掖，号曰义从胡。中平元年，与北宫伯玉等反，杀护羌校尉泠征、金城太守陈懿，遂寇乱陇右焉。
 </p><p>论曰：羌戎之患，自三代尚矣。汉世方之匈奴，颇为衰寡，而中兴以后，边难渐大。朝规失绥御之和，戎师骞然诺之信。其内属者，或倥偬之豪右之手，或屈折于奴仆之勤。塞候时清，则愤怒而思祸；桴革暂动，则属鞬以鸟惊。故永初之间，群种蜂起。遂解仇嫌，结盟诅，招引山豪，转相啸聚，揭木为兵，负柴为械。毂马扬埃，陆梁于三辅；建号称制，恣睢于北地。东犯赵、魏之郊，南入汉、蜀之鄙，塞湟中，断陇道，烧陵园，剽城市，伤败踵系，羽书日闻。并、凉之士，特冲残毙，壮悍则委身于兵场，女妇则徽纆而为虏，发冢露胔，死生涂炭。自西戎作逆，未有陵斥上国若斯其炽也。和熹以女君亲政，威不外接。朝议惮兵力之损，情存苟安。或以边州难援，宜见捐弃；或惧疽食浸淫，莫知所限。谋夫回遑，猛士疑虑，遂徙西河四郡之人，杂寓关右之县。发屋伐树，塞其恋土之心；燔破赀积，以防顾还之思。于是诸将邓骘、任尚、马贤、皇甫规、张奂之徒，争设雄规，更奉征讨之命，征兵会众，以图其隙。驰骋东西，奔救首尾，摇动数州之境，日耗千金之资。至于假人增赋，借奉侯王，引金钱缣彩之珍，征粮粟盐铁之积。所以赂遗购赏，转输劳来之费，前后数十巨万。或枭克酋健，摧破附落，降俘载路，牛羊满山。军书未奏其利害，而离叛之状已言矣。故得不酬失，功不半劳。暴露师徒，连年而无所胜。官人屈竭，烈士愤丧。段DA5E受事，专掌军任，资山西之猛性，练戎俗之态情，穷武思尽飙锐以事之。被羽前登，身当百死之阵；蒙没冰雪，经履千折之道。始殄西种，卒定东寇。若乃陷击之所歼伤，追走之所崩籍，头颅断落于万丈之山，支革判解于重崖之上，不可校计。其能穿窜草石，自脱于锋镞者，百不一二。而张奂盛称“戎狄一气所生，不宜诛尽，流血污野，伤和致妖”。是何言之迂乎！羌虽外患，实深内疾，若攻之不根，是养疾疴于心腹也。惜哉寇敌略定矣，而汉祚亦衰焉。呜呼！昔先王疆理九土，判别畿荒，知夷貊殊性，难以道御，故斥远诉华，薄其贡职，唯与辞要而已。若二汉御戎之方，失其本矣。何则？先零侵境，赵充国迁之内地；煎当作寇，马文渊徙之三辅。贪其暂安之势，信其驯服之情，计日用之权宜，忘经世之远略，岂夫识微者之为乎？故微子垂泣于象箸，辛有浩叹于伊川也。
 </p><p>赞曰：金行气刚，播生西羌。氐豪分种，遂用殷强。虔刘陇北，假D9D4泾阳。朝劳内谋，兵惫外攘。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十四章-南蛮西南夷列传-原文.html'>第八十四章-南蛮西南夷列传</a></p><p class='next'>下一节：<a href='第八十六章-西域传-原文.html'>第八十六章-西域传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八十四章-南蛮西南夷列传-原文.html'>第八十四章-南蛮西南夷列传</a></p><p class='next'>下一节：<a href='第八十六章-西域传-原文.html'>第八十六章-西域传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

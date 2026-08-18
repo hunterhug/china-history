@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -203,5 +230,18 @@
 <p>　　雅王逸，代宗第二十子。大历十年封，贞元十五年薨。 </p>
 <p>　　史臣曰：艳妻破国，孽子败宗。前代英杰之君，率不免于斯累者，何也？良以 爱恶不由于义断，毁誉遽逐于情移。虽申生孝己之仁，卒不能回君父之爱，悲哉！ 孝宣皇帝当屯剥之运，收忠义之心，忍行爱子之刑，终宥奸阉之罪，大雅君子，为 之痛心。张后卒以凶终，固其宜矣。 </p>
 <p>　　赞曰：床箦之爱，人情易惑。以义制情，哲王令德。李侯悟主，韵谐金石。褒 谥建宁，良堪太息。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十五章-卷六十五-原文.html'>第六十五章-卷六十五</a></p><p class='next'>下一节：<a href='第六十七章-卷六十七-原文.html'>第六十七章-卷六十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十五章-卷六十五-原文.html'>第六十五章-卷六十五</a></p><p class='next'>下一节：<a href='第六十七章-卷六十七-原文.html'>第六十七章-卷六十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧五代史-后晋<a href='../旧五代史.html#旧五代史'>：目录</a></p>
@@ -162,5 +189,18 @@
 </p><p>冬十月九日，因太常卿程逊在海上被淹死，停止上朝一天，追赠为右仆射。十三日，闽王王昶、威武军节度使王继恭派僚佐林思、郑元弼等入朝进贡，写信给宰执，没有人臣的礼节。高祖发怒，下令不接受朝贡礼物。凡闽地各州进贡的大宗货物，一起让林思、郑元弼等押送退回本地。不久兵部员外郎李知损上疏奏请拘押闽王使臣，没收朝贡礼物，高祖准允了，把林思等收押进监牢。十九日，溪州刺史彭士愁率领锦、奖的士兵和南蛮部族一万多人在辰、澧二州抢掠财物，湖南节度使马希范派军队去阻止他们才退去。金州山林土匪度从谠等侵扰洵阳，朝廷派兵去讨伐平定山匪。
 </p><p>十一月八日，下令在洛阳建立唐高祖、太宗和庄宗、明宗、闵帝五座祠庙。二十二日，诏令在乐川建立钱炉。二十九日，以谏议大夫辞官退隐的逍遥先生郑云叟去世。
 </p><p>十二月一日，文武百官不入阁朝拜，是因为下大雪的缘故。三日，已故的皇子石重英的妻子张氏剃发做了尼姑，赐僧名悟慎，赐与僧龄二十年。四月，礼官上奏“：明年元旦，王公上朝祝寿，皇帝举杯赐酒，演奏《玄同之乐》，第二次饮酒，演奏《文同之乐》，第三次饮酒，仍奏前乐。”高祖准允了礼官的请求。十日，下令城镇乡村以后都不能建造僧尼寺院房舍。二十一日，高祖对宰臣说：“大雪损害了人民，五十天不停，京城祠庙都令进行祈祷了，全无一点效应，难道不是我寡德不配帝位，神明不予保佑吗？”于是下令拿出柴火薪炭粮食供给士兵和贫民等人。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章-高祖纪三-白话.html'>第三章-高祖纪三</a></p><p class='next'>下一节：<a href='第五章-高祖纪五-白话.html'>第五章-高祖纪五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三章-高祖纪三-白话.html'>第三章-高祖纪三</a></p><p class='next'>下一节：<a href='第五章-高祖纪五-白话.html'>第五章-高祖纪五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

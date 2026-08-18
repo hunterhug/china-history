@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#魏书'>：目录</a></p>
@@ -162,5 +189,18 @@
 </p><p>世宗在位之初，授任裴宣为太中大夫，兼本郡中正，仍任别驾之职。又任司州都督，迁太尉长史。裴宣向朝廷进言说：“自从迁都以来，凡是布阵作战之处，以及收军回兵的道路上，所有尸体骸骨没有被人掩埋的，请求下令各州郡戍派人巡检，妥为掩埋。并且明令各个送出兵丁的乡里：谁家有人死于戎役的，都让其招魂复魄，祭祀其亡灵，免除其一年的租调；家人受伤残废的，免去其兵役。”朝廷同意了他的建议。
 </p><p>裴宣后出任为征虏将军、益州刺史。他善于绥靖安抚，甚得羌戎百姓之心。朝廷克复晋寿之后，改置为益州，把裴宣所任之州改为南秦州。起先，有阴平的氐族首领杨孟孙，据有民户数万，自立为王，勾结萧衍，屡次侵犯边地。裴宣就派使者前去招抚晓谕，晓之以逆顺祸福之理，杨孟孙感恩，就派他的儿子来到朝廷以示归附。武兴的氐人姜谟等一千多人联名上书请求朝廷延长裴宣的任职期限。世宗对他十分赞赏。
 </p><p>裴宣之家世代以儒学为业，他常常羡慕清廉退让之士。经常感叹说：“以贾谊的才能，出仕汉文之世，却不曾历公卿之任，难道不是他的时运吗？”于是对他所亲近的宾客说：“我本来是一个民间士人，向来就没有入世之志，仅只是因为朝廷文书下达催促，才使我走到这一步。接受俸禄用以养亲，懂得学问又不能用来为国争光，瞻顾往昔哲人的言论，我也可以辞官归民了。”因而上表请求免官。世宗不予准许，裴宣就写作《怀田赋》以表述自己的心志。永平四年(511)，裴宣患了重病，世宗派太医令从驿道骑马前往探视，并赐给御药。裴宣一向喜读阴阳之书，自从开始得病，就知道自己不会痊愈，因而自己算定了死亡的日期，结果证实了他的预言。时年五十八岁。世宗对他之死感到悲伤和惋惜。追赠他为左将军、豫州刺史，定谥号为定。不久又将谥号改为穆。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十二章-卷三十二-白话.html'>第三十二章-卷三十二</a></p><p class='next'>下一节：<a href='第三十四章-卷三十四-白话.html'>第三十四章-卷三十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十二章-卷三十二-白话.html'>第三十二章-卷三十二</a></p><p class='next'>下一节：<a href='第三十四章-卷三十四-白话.html'>第三十四章-卷三十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

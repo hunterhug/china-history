@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>宋书-志<a href='../宋书.html#宋书'>：目录</a></p>
@@ -283,5 +310,18 @@
 </p><p>魏齐王正始未年，河南尹李胜修治厅堂，有根小木料从屋顶上飞速坠落下来，正击中受符吏石卢的颈项，把颈打断了。这是木诊金的灾异。胜在这事之后不过十天就遭受败亡之祸。
 </p><p>晋惠帝元康八年三月，郊梅坛石从中间裂分为二。这是木诊金的灾异。郊梅坛，是求子的神坛，无缘无故自己毁坏，这是太子将受危害的妖异。第二年，愍怀太子被废黜后又被害死。
 </p><p>晋孝武帝太元十年四月，谢安出镇广陵，刚从石头出发，铜饪和鼓无缘无故自己破了。这是木诊金的灾异。天儆戒说，谢安空有谋划国家大事的名声，最终也没有见到实效，铜钮和鼓不能使用就是这种情况的象征。这年八月，谢安因病回京，当月就去世。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十章-卷三十-白话.html'>第二十章-卷三十</a></p><p class='next'>下一节：<a href='第二十二章-卷三十二-白话.html'>第二十二章-卷三十二</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二十章-卷三十-白话.html'>第二十章-卷三十</a></p><p class='next'>下一节：<a href='第二十二章-卷三十二-白话.html'>第二十二章-卷三十二</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

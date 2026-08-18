@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -224,5 +251,18 @@
 </p><p>其年，巡抚南居益初至，谋讨之。上言：“臣入境以来，闻番船五艘续至，与风柜仔船合，凡十有一艘，其势愈炽。有小校陈士瑛者，先遣往咬〈口留〉吧宣谕其王，至三角屿遇红毛船，言咬〈口留〉吧王已往阿南国，因与士瑛偕至大泥，谒其王。王言咬〈口留〉吧国主已大集战舰，议往彭湖求互市，若不见许，必至构兵。盖阿南即红毛番国，而咬〈口留〉吧、大泥与之合谋，必不可以理谕。为今日计，非用兵不可。”因列上调兵足饷方略，部议从之。四年正月遣将先夺镇海港而城之，且筑且战，番人乃退守风柜城。居益增兵往助，攻击数月，寇犹不退，乃大发兵，诸军齐进。寇势窘，两遣使求缓兵，容运米入舟即退去。诸将以穷寇莫追，许之，遂扬帆去。独渠帅高文律等十二人据高楼自守，诸将破擒之，献俘于朝。彭湖之警以息，而其据台湾者犹自若也。
 </p><p>崇祯中，为郑芝龙所破，不敢窥内地者数年，乃与香山佛郎机通好，私贸外洋。十年驾四舶，由虎跳门薄广州，声言求市。其酋招摇市上，奸民视之若金穴，盖大姓有为之主者。当道鉴壕镜事，议驱斥，或从中挠之。会总督张镜心初至，力持不可，乃遁去。已，为奸民李叶荣所诱，交通总兵陈谦为居停出入。事露，叶荣下吏。谦自请调用以避祸，为兵科凌义渠等所劾，坐逮讯。自是，奸民知事终不成，不复敢勾引，而番人犹据台湾自若。
 </p><p>其本国在西洋者，去中华绝远，华人未尝至。其所恃惟巨舟大礮。舟长三十丈，广六丈，厚二尺余，树五桅，后为三层楼。旁设小囱置铜礮。桅下置二丈巨铁礮，发之可洞裂石城，震数十里，世所称红夷礮，即其制也。然以舟大难转，或遇浅沙，即不能动。而其人又不善战，故往往挫衄。其所役使名乌鬼。入水不沉，走海面若平地。其柁后置照海镜，大径数尺，能照数百里。其人悉奉天主教。所产有金、银、琥珀、玛瑙、玻璃、天鹅绒、琐服、哆啰嗹。国土既富，遇中国货物当意者，不惜厚资，故华人乐与为市。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二百一十二章-卷二百一十二-原文.html'>第二百一十二章-卷二百一十二</a></p><p class='next'>下一节：<a href='第二百一十四章-卷二百一十四-原文.html'>第二百一十四章-卷二百一十四</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第二百一十二章-卷二百一十二-原文.html'>第二百一十二章-卷二百一十二</a></p><p class='next'>下一节：<a href='第二百一十四章-卷二百一十四-原文.html'>第二百一十四章-卷二百一十四</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

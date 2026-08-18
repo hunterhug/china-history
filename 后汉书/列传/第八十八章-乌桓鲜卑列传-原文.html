@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>后汉书-列传<a href='../后汉书.html#列传'>：目录</a></p>
@@ -186,5 +213,18 @@
 </p><p>光和中，檀石槐死，时年四十五，子和连代立。和连才力不及父，亦数为寇抄，性贪淫，断法不平，众畔者半。后出攻北地，廉人善弩射者射中和连，即死。其子骞曼年小，兄子魁头立。后骞曼长大，与魁头争国，众遂离散。魁头死，弟步度根立。自檀石槐后，诸大人遂世相传袭。
 </p><p>论曰：四夷之暴，其势互强矣。匈奴炽于隆汉，西羌猛于中兴。而灵、献之间，二虏迭盛。石槐骁猛，尽有单于之地；蹋顿凶桀，公据辽西之土。其陵跨中国，结患生人者，靡世而宁焉。然制御上略，历世无闻；周、汉之策，仅得中下。将天之冥数，以至于是乎？
 </p><p>赞曰：二虏首施，鲠我北垂。道暢则驯，时薄先离。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十七章-南匈奴列传-原文.html'>第八十七章-南匈奴列传</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八十七章-南匈奴列传-原文.html'>第八十七章-南匈奴列传</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -236,5 +263,18 @@
 <p>　　帝王之为治也，内有宰辅卿士，外有籓翰大臣，岂可令刑余之人，参预大政？ 况此辈皆朕之家臣也，比于人臣之家，则奴隶之流。恣横如此，罪恶贯盈，天命诛 之，罪岂能舍？横尸伏法，固不足矜，含容久之，亦所多愧。其第五可范已下，并 宜赐死。其在畿甸同华、河中，并尽底处置讫。诸道监军使已下，及管内经过并居 停内使，敕到并仰随处诛夷讫闻奏。已令准国朝故事，量留三十人，各赐黄绢衫一 领，以备宫内指使，仍不得辄有养男。其左右神策军，并令停废。 </p>
 <p>　　是日，诸司宦官百余人，及随驾凤翔群小又二百余人，一时斩首于内侍省，血 流涂地。及宫人宋柔等十一人，两街僧道与内官相善者二十余人，并笞死于京兆府。 内诸司一切罢之，皆归省寺。自是京城并无宦宫，天子每宣传诏命，即令宫人出入。 崔胤虽复仇快志，国祚旋亦覆亡，悲夫！ </p>
 <p>　　赞曰：崇墉大厦，壮其楹磶。殿邦御侮，亦俟明德。宵人意褊，动不量力。投 鼠败器，良堪太息。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百三十三章-卷一百三十三-原文.html'>第一百三十三章-卷一百三十三</a></p><p class='next'>下一节：<a href='第一百三十五章-卷一百三十五-原文.html'>第一百三十五章-卷一百三十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百三十三章-卷一百三十三-原文.html'>第一百三十三章-卷一百三十三</a></p><p class='next'>下一节：<a href='第一百三十五章-卷一百三十五-原文.html'>第一百三十五章-卷一百三十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

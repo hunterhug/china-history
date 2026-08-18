@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>魏书-列传<a href='../魏书.html#列传'>：目录</a></p>
@@ -242,5 +269,18 @@
 </p><p>太和十八年，表据郡归诚，除辅国将军、南兗州刺史，领马头太守，赐爵谯县侯，镇涡阳。后萧鸾遣其豫州刺史裴叔业攻围六十余日，城中食尽，唯以朽革及草木皮叶为粮。表抚循将士，戮力固守。会镇南将军王肃解义阳之围，还以救之，叔业乃退。初，有一南人，自云姓边，字叔珍，携妻息从寿春投表，云慕化归国。未及送阙，便值叔业围城。表后察叔珍言色，颇疑有异，即加推核，乃云是叔业姑兒，为叔业所遣，规为内应，所携妻子并亦假妄。表出叔珍于北门外斩之，于是人情乃安。高祖嘉其诚绩，封汶阳县开国伯，邑五百户。迁征虏将军、济州刺史，为散骑常侍、光禄大夫，进号平西将军。世宗末，降平东将军、齐州刺史。延昌四年卒，年八十一。赠安东将军、兗州刺史，谥曰恭。
 </p><p>子崇，袭。官至昌黎、济北二郡太守。
 </p><p>史臣曰：薛安都一武夫耳，虽轻于去就，实启东南。事窘图变，而竟保宠秩，优矣！真度一谋，见赏明主。众敬举地纳诚，荣曜朝国，人位并列，无乏于时。文秀不回，有死节之气，非但身蒙嘉礼，乃至子免刑戮。在我欲其骂人，忠义可不勉也。张谠观机委质，笃恤流离，亦仁智矣。田益宗蛮夷荒帅，翻然效款，终怀金曳紫，不其美欤！孟表之致名位，非徒然也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十八章-卷四十八-原文.html'>第四十八章-卷四十八</a></p><p class='next'>下一节：<a href='第五十章-卷五十-原文.html'>第五十章-卷五十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第四十八章-卷四十八-原文.html'>第四十八章-卷四十八</a></p><p class='next'>下一节：<a href='第五十章-卷五十-原文.html'>第五十章-卷五十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

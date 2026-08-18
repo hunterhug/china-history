@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -179,5 +206,18 @@
 </p><p>化龙具文武才。播州之役，以刘綎骄蹇，先摧挫之而荐其才，故綎为尽力。开河之功，为漕渠永利，详见《河渠志》。
 </p><p>江铎，字士振，仁和人。高祖玭，景泰时为礼科给事中。劾石亨怙宠罔上，有直声。官至山东参政。曾祖澜，正德时南京礼部尚书。卒谥文昭。祖晓，嘉靖中工部侍郎。父圻，万历初广西提学佥事。父母疾，尝药舐粪。居丧寝苫三年，经寝室必俯其首，妻经夫庐亦然。卒，门人私谥为孝端先生。自玭至铎五世皆进士。而晓弟晖，正德中为庶吉士，与舒芬等谏南巡受杖。世宗时，由编修出为河南佥事。铎登第在万历二年。授刑部主事。累官山西按察使，擢抚偏、沅。夹攻杨应龙有功，与郭子章皆荫一子世锦衣指挥。丁母艰去。夺情，命留讨皮林诸洞蛮，平之。详具《陈璘传》。以劳疾归。卒，赠兵部右侍郎。
 </p><p>赞曰：哱拜一降人耳，虽假以爵秩，而凭藉未厚。仓猝发难，据镇城，联外寇，边鄙为之骚然，武备之弛，有由来矣。杨应龙恶稔贯盈，自速殄灭。然盘踞积久，地形险恶，非师武臣力，奏绩岂易言哉！李化龙之功可与韩雍、项忠相埒，较宁夏之役，难易悬殊矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百一十五章-卷一百一十五-原文.html'>第一百一十五章-卷一百一十五</a></p><p class='next'>下一节：<a href='第一百一十七章-卷一百一十七-原文.html'>第一百一十七章-卷一百一十七</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百一十五章-卷一百一十五-原文.html'>第一百一十五章-卷一百一十五</a></p><p class='next'>下一节：<a href='第一百一十七章-卷一百一十七-原文.html'>第一百一十七章-卷一百一十七</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

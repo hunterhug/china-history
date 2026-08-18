@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>晋书-志<a href='../晋书.html#晋书'>：目录</a></p>
@@ -357,5 +384,18 @@
 </p><p>俞元修云泠丘滇池
 </p><p>永昌郡莲设置。统管八县，三万八千户。不韦永寿比苏雍乡南涪巂唐哀牢博南
 </p><p>太康三年，武帝又取消宁州并入益业，设立南夷校尉护守。太安二年，惠帝重新设置宁州，又把建宁以西的七个县另设为益州郡。永嘉二年，改称益州郡为晋宁郡，分划烊柯郡另立平夷、夜郎二郡。但当时这裹的土地再次为李特所有。此后李寿把宁州的兴古、永昌、云南、朱提、越锚、河阳六郡分划出来设汉州。咸康四年，分划出烊柯、夜郎、朱提、越隽四郡设置安蛆。八年，又取消塞丛并入窒丛，把垄崖归属益州，取消了永昌郡。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章--白话.html'>第三章-</a></p><p class='next'>下一节：<a href='第五章--白话.html'>第五章-</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三章--白话.html'>第三章-</a></p><p class='next'>下一节：<a href='第五章--白话.html'>第五章-</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

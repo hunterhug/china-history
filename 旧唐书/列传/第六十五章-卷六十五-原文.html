@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -168,5 +195,18 @@
 <p>　　初，希烈虽归蔡州，留将校等于襄州守当时所掠得财帛什物等，后使襄、汉， 往来不绝。承亦使腹心臧叔雅往来许、蔡，厚结希烈腹心周曾、王玢、姚憺等。及 曾等谋杀希烈，以众归朝，多承首建谋也。累赐密诏褒美之。承寻改检校工部尚书， 兼潭州刺史、湖南都团练观察使。建中四年七月，卒于位，年六十二，赠吏部尚书。 承少有雅望，至其从官，颇以贞廉才术见称于时。 </p>
 <p>　　史臣曰：自古酷吏滥刑，幸免者多矣，苟无强魂为祟，沮议者惑焉。器深文乐 祸，居官令终，非达奚诉冤，无以显其阴责矣。国珍守黔溪，瓘修礼法，括推诚驭 下，元甫为政宽简，少游规检集事，皆可称者。伯玉破敌立功，足为猛士，丁忧冒 宠，终是武夫。承忠悫谋议，勤劳尽瘁，方之者鲜矣。 </p>
 <p>　　赞曰：崔器深文，达奚作祟。七子伊何？李承为最。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十四章-卷六十四-原文.html'>第六十四章-卷六十四</a></p><p class='next'>下一节：<a href='第六十六章-卷六十六-原文.html'>第六十六章-卷六十六</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第六十四章-卷六十四-原文.html'>第六十四章-卷六十四</a></p><p class='next'>下一节：<a href='第六十六章-卷六十六-原文.html'>第六十六章-卷六十六</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

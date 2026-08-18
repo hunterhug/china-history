@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -217,5 +244,18 @@
 </p><p>有樊吉人者，元城人。由进士知滋阳，累擢山东兵备佥事。未行遇变，自刎死。淑泰自有传。
 </p><p>张焜芳，会稽人。崇祯元年进士。历南京户科给事中。十一年春，疏荐黄道周、惠世扬、陈子壮、金光辰，而为旧抚文震孟请恤。帝以沽名市恩，切责之。又纠太仆少卿史涘，为涘所讦，遂罢职，事具《薛国观传》。十六年正月，焜芳北上，抵临清，遇大清兵，与诸生马之騆，之駉俱被执死之。其妻妾闻之，赴井死。
 </p><p>时又有天津参将贺秉钺者，泰宁左卫人。崇祯四年第武科一甲第三，亦以扶父柩至临清，巷战终日，矢尽，被执死。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百七十八章-卷一百七十八-原文.html'>第一百七十八章-卷一百七十八</a></p><p class='next'>下一节：<a href='第一百八十章-卷一百八十-原文.html'>第一百八十章-卷一百八十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一百七十八章-卷一百七十八-原文.html'>第一百七十八章-卷一百七十八</a></p><p class='next'>下一节：<a href='第一百八十章-卷一百八十-原文.html'>第一百八十章-卷一百八十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

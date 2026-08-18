@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>新五代史-本纪<a href='../新五代史.html#本纪'>：目录</a></p>
@@ -157,5 +184,18 @@
 </p><p>二年春正月，契丹陷泰州。壬子，马全节及契丹战于榆林，两军皆溃。戊午，幸南庄，张从恩留守东都。辛酉，高行周为御营使。乙丑，北征，契丹去。二月己巳，幸黎阳。横海军节度使田武为东北面行营都部署，以备契丹。丙子，大阅于戚城。丙戌，阅马于铁丘。丙申，端明殿学士、尚书户部侍郎冯玉为户部尚书、枢密使。三月戊戌，契丹陷祁州，刺史沈斌死之。丁未，畋于戚城。庚戌，马全节克泰州。辛亥，易州戍将孙方谏及契丹谐里战于狼山，败之。甲寅，杜威克满城。乙卯，克遂城。庚申，杜威及契丹战于阳城，败之，追奔至于卫村，又败之。夏四月戊寅，劳旋于戚城。己卯，劳旋于王莽河。甲申，至自澶州，赦左右军囚。庚寅，大赏军功。五月丙申朔，大赦。丙午，幸南庄。六月丁卯，射于繁台，幸杜威第。旱。秋八月甲子朔，废二舞。丙寅，和凝罢。冯玉为中书侍郎、同中书门下平章事。辛未，阅马于茂泽陂。丁丑，括马。九月己亥，阅马于万龙冈，幸李守贞第。冬十月丁丑，高丽使其广评侍郎韩玄珪、礼宾卿金廉等来。戊寅，射兔于砚台。戊子，高丽使其兵部侍郎刘崇珪、内军卿朴艺言来。十一月戊戌，封王武为高丽国王。己巳，射兔于皋门，幸沙台。十二月丁丑，腊，畋于郊。丁亥，桑维翰罢。开封尹赵莹为中书令，李崧守侍中、枢密使。
 </p><p>三年春二月丙子，回鹘使突厥陆来。壬午，射鸭于板桥，幸南庄。夏六月，孙方谏以狼山叛附于契丹。丙寅，契丹寇边。己丑，李守贞为行营都部署，义成军节度使皇甫遇为副。河决渔池。大饥，群盗起。秋七月，大雨，水，河决杨刘、朝城、武德。八月辛酉，河溢历亭。九月，河决澶、滑、怀州。辛丑，行营马军排阵使张彦泽及契丹战于新兴，败之。癸卯，刘知远及契丹战于朔州，败之。大雨霖，河决临黄。冬十月，河决卫州，丙寅，河决原武。辛未，杜威为北面行营都招讨使，李守贞为兵马都监。十一月，永静军节度使梁汉璋及契丹战于瀛州，败绩。契丹寇镇、定。十二月己未，杜威军于中渡。壬戌，奉国都指挥使王清及契丹战于滹沱，败绩，死之。杜威、李守贞、张彦泽以其军叛降于契丹。庚午，射兔于沙台。壬申，张彦泽犯京师，杀开封尹桑维翰。契丹灭晋。
 </p><p>呜呼，余书“封子重贵为郑王”，又书“追封皇伯敬儒为宋王”者，岂无意哉！《礼》：“兄弟之子，犹子也。”重贵书子可也，敬儒出帝父也，书曰皇伯者何哉？出帝立不以正，而绝其所生也。盖出帝于高祖，得为子而不得为后者，高祖自有子也。方高祖疾病，抱其子重睿置于冯道怀中而托之，出帝岂得立邪？晋之大臣，既违礼废命而立之，以谓出帝为高祖子则得立，为敬儒子则不得立，于是深讳其所生而绝之，以欺天下为真高祖子也。《礼》曰：“为人后者，为其父母服。”使高祖无子，出帝得为后而立以正，则不待绝其所生以为欺也。故余书曰“追封皇伯敬儒为宋王”者，以见其立不以正，而灭绝天性，臣其父而爵之，以欺天下也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八章-晋本纪第八-原文.html'>第八章-晋本纪第八</a></p><p class='next'>下一节：<a href='第十章-汉本纪第十-原文.html'>第十章-汉本纪第十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第八章-晋本纪第八-原文.html'>第八章-晋本纪第八</a></p><p class='next'>下一节：<a href='第十章-汉本纪第十-原文.html'>第十章-汉本纪第十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

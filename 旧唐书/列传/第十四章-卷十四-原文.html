@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -142,6 +168,7 @@
 </head>
 
 <body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>旧唐书-列传<a href='../旧唐书.html#列传'>：目录</a></p>
@@ -184,5 +211,18 @@
 <p>　　滕王元婴，高祖第二十二子也。贞观十三年受封。十五年，赐实封八百户，授 金州刺史。二十三年，加实封满千户。永徽中，元婴颇骄纵逸游，动作失度，高宗 与书诫之曰：“王地在宗枝，寄深磐石，幼闻《诗》、《礼》，夙承义训。实冀孜 孜无怠，渐以成德，岂谓不遵轨辙，逾越典章。且城池作固，以备不虞，关钥闭开， 须有常准。鸠合散乐，并集府僚，严关夜开，非复一度。遏密之悲，尚缠比屋，王 以此情事，何遽纷纭？又巡省百姓，本观风问俗，遂乃驱率老幼，借狗求置，志从 禽之娱，忽黎元之重。时方农要，屡出畋游，以弹弹人，将为笑乐。取适之方，亦 应多绪，何必此事，方得为娱？晋灵虐主，未可取则。赵孝文趋走小人，张四又倡 优贱隶，王亲与博戏，极为轻脱，一府官僚，何所瞻望？凝寒方甚，以雪埋人，虐 物既深，何以为乐？家人奴仆，侮弄官人，至于此事，弥不可长。朕以王骨肉至亲， 不能致王于法，令与王下上考，以愧王心。人之有过，贵在能改，国有宪章，私恩 难再。兴言及此，惭叹盈怀。”三年，迁苏州刺史，寻转洪州都督。又数犯宪章， 削邑户及亲事帐内之半，于滁州安置。后起授寿州刺史，转隆州刺史。弘道元年， 加开府仪同三司，兼梁州都督。文明元年薨，赠司徒、冀州都督，陪葬献陵。子长 乐王循琦嗣。兄弟六人，垂拱中并陷诏狱。神龙初，以循琦弟循琣子涉嗣滕王，本 名茂宗，状貌类胡而丰硕。开元十二年，加银青光禄大夫，左骁卫将军。天宝初， 淮安郡别驾，卒。子湛然嗣。十一载，封滕王。十五载，从幸蜀，除左金吾将军。 </p>
 <p>　　史臣曰：一人元良，万国以贞。若明异重离，道非出震，虽居嫡长，宁固钅其 鎡！况当开创之初，未见太平之兆。建成残忍，岂主鬯之才；元吉凶狂，有覆巢之 迹。若非太宗逆取顺守，积德累功，何以致三百年之延洪、二十帝之纂嗣？或坚持 小节，必亏大猷，欲比秦二世、隋炀帝，亦不及矣。元嘉修身，元轨无短，元裕名 理，元名高洁，灵夔严整，皆有封册之名，而无磐石之固。武氏之乱，或连颈被刑； 奸臣擅权，则束手为制。其望本枝百世也，不亦难乎？ </p>
 <p>　　赞曰：有功曰祖，有德曰宗。建成、元吉，实为二凶。中外交构，人神不容。 用晦而明，殷忧启圣。运属文皇，功成守正。善恶既分，社稷乃定。盘维封建，本 枝茂盛。元嘉、元轨，修身慎行。元裕、元名，行简居正。犬牙不固，武氏易姓。 既无兵民，若拘陷井。敢告后人，无或失政。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第十三章-卷十三-原文.html'>第十三章-卷十三</a></p><p class='next'>下一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第十三章-卷十三-原文.html'>第十三章-卷十三</a></p><p class='next'>下一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

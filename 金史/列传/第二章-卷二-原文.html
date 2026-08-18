@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>金史-列传<a href='../金史.html#列传'>：目录</a></p>
@@ -208,5 +235,18 @@
 </p><p>正大八年九月丙申，后崩，遗命园陵制度，务从俭约。十二月己未，葬汴城迎朔门外五里庄献太子墓之西。谥明惠皇后。
 </p><p>哀宗皇后，徒单氏。宣宗及后有疾，后尝刲肤以进，宣宗闻而嘉之。兴定四年，后父镇南军节度使顽僧有罪，宣宗以后纯孝，因曲赦之，听其致仕。正大元年，诏立为皇后。哀宗迁归德，遣后弟四喜等诣汴奉迎，夜至陈留，不敢进，复归于汴。未几，城破北迁，不知所终。
 </p><p>赞曰：《周礼》“九嫔，掌妇学之法，妇德、妇言、妇容、妇功。”班昭氏论之曰：“妇德，不必才明绝异也。妇言，不必便口利辞也。妇容，不必颜色美丽也。妇功，不必功巧过人也。清闲贞静，守节整齐，行己有耻，动静有法，是谓妇德。择辞而说，不道恶语，时然后言，不厌于人，是谓妇言。盥浣尘秽，服饰鲜洁，沐浴以时，身不垢辱，是谓妇容。专心纺绩，不好戏笑，洁齐酒食，以奉宾客，是谓妇功。”后世妇学不修，丽色以相高，巧言以相倾，衔能以市恩，逢迎以固宠。是故悼平掣顿皇统，以陨其身，海陵蛊惑群嬖，几亡其国。道陵李氏擅宠蠹政，卒愤其宗。呜呼，可不戒哉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-卷一-原文.html'>第一章-卷一</a></p><p class='next'>下一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第一章-卷一-原文.html'>第一章-卷一</a></p><p class='next'>下一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>明史-列传<a href='../明史.html#列传'>：目录</a></p>
@@ -193,5 +220,18 @@
 </p><p>仁宗嗣位，兼太子宾客，旋加太子少保，给二俸。时大理少卿弋谦数言事，帝厌其繁琐。尚书吕震、大理卿虞谦希旨劾奏，观复令十四道御史论其诬妄，以是为舆论所鄙。
 </p><p>时未有官妓之禁。宣德初，臣僚宴乐，以奢相尚，歌妓满前。观私纳贿赂，而诸御史亦贪纵无忌。三年六月朝罢，帝召大学士杨士奇、杨荣至文华门，谕曰：“祖宗时，朝臣谨饬。年来贪浊成风，何也？”士奇对曰：“永乐末已有之，今为甚耳。”荣曰：“永乐时，无逾方宾。”帝问：“今日谁最甚者？”荣对曰：“刘观。”又问：“谁可代者？”士奇、荣荐通政使顾佐。帝乃出观视河道，以佐为右都御史。于是御史张循理等交章劾观，并其子辐诸赃污不法事。帝怒，逮观父子，以弹章示之。观疏辨。帝益怒，出廷臣先后密奏，中有枉法受赇至千金者。观引伏，遂下锦衣卫狱。明年将置重典。士奇、荣乞贷其死。乃谪辐戍辽东，而命观随往，观竟客死。七年，士奇请命风宪官考察奏罢有司之贪污者，帝曰：“然。向使不罢刘观，风宪安得肃。”
 </p><p>赞曰：成祖封茹瑺，以事太祖有功。然考之，未有所表见，意史轶之欤？严震直之于广西，张紞之于云南，治效卓然。王钝、郑赐为方伯、监司，声绩颇著。至其晚节，皆不克自振，惜夫。郭资、吕震之徒，有干济才，而操行无取。李至刚之险，吴中、刘观之墨，又不足道矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十八章-卷三十八-原文.html'>第三十八章-卷三十八</a></p><p class='next'>下一节：<a href='第四十章-卷四十-原文.html'>第四十章-卷四十</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='第三十八章-卷三十八-原文.html'>第三十八章-卷三十八</a></p><p class='next'>下一节：<a href='第四十章-卷四十-原文.html'>第四十章-卷四十</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>

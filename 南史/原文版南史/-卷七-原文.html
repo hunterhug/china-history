@@ -39,16 +39,6 @@
         font-size: 26px;
     }
 
-    h1::after {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 3px;
-        margin: 12px auto 0;
-        background: #9a2b2b;
-        border-radius: 2px;
-    }
-
     #title {
         font-size: 30px;
     }
@@ -57,7 +47,8 @@
         max-width: 720px;
         margin: 14px auto;
         color: #2b2b2b;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-ideograph;
         letter-spacing: 0.5px;
         line-height: 1.9;
     }
@@ -80,6 +71,24 @@
         text-align: center;
     }
 
+    /* 顶部返回主站链接 */
+    .top {
+        max-width: 720px;
+        margin: 0 auto 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .top a {
+        color: #8a8177;
+    }
+
+    .top a:hover {
+        color: #9a2b2b;
+        background: transparent;
+    }
+
+    /* 上一节 / 下一节 导航 */
     .pn {
         display: flex;
         justify-content: center;
@@ -95,6 +104,7 @@
         background: rgba(154, 43, 43, 0.08);
         border-radius: 999px;
         font-size: 15px;
+        text-align: center;
     }
 
     table {
@@ -113,6 +123,22 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* 页脚版权 */
+    footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 16px;
+        border-top: 1px solid rgba(154, 43, 43, 0.18);
+    }
+
+    footer p {
+        max-width: 720px;
+        margin: 0;
+        color: #8a8177;
+        font-size: 14px;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -141,6 +167,7 @@
 </style>
 </head>
 </p><p><body>
+<nav class="top"><a href="https://hunterhug.github.io/">← 阿星星的首页</a></nav>
 <div>
 <div>
 <p><a id='home' href="../../index.html">首页</a></p><p id='list'>南史-原文版南史<a href='../南史.html#原文版南史'>：目录</a></p>
@@ -350,5 +377,18 @@
 </p><p>始天监中，沙门释宝志爲诗曰：“昔年三十八，今年八十三，四中复有四，城北火酣酣。”帝使周舍封记之。及中大同元年，同泰寺灾，帝啓封见舍手迹，爲之流涕。帝生于甲辰，三十八，克建邺之年也。遇灾岁实丙寅，八十三矣。四月十四日而火，火起之始，自浮屠第三层。三者，帝之昆季次也。帝恶之，召太史令虞履筮之，遇？。履曰：“无害。其繇云：‘西南得朋，东北丧朋，安贞吉。’文言云：‘东北丧朋，乃终有庆。’”帝曰：“斯魔鬼也。酉应见卯，金来克木，卯爲阴贼。鬼而带贼，非魔何也。孰爲致之？酉爲口舌，当乎说位。说言乎兑，故知善言之口，宜前爲法事。”于是人人赞善，莫不从风。或刺血洒地，或刺血书经，穿心然灯，坐禅不食。及太清元年，帝舍身光严、重云殿，游仙化生皆震动，三日乃止。当时谓之祥瑞。识者以非动而动，在鸿范爲祅。以比石季龙之败，殿壁画人颈皆缩入头之类。
 </p><p>时海中浮鹄山，去余姚岸可千馀里，上有女人年三百岁，有女官道士四五百人，年并出百，但在山学道。遣使献红席。帝方舍身时，其使适至，云此草常有红鸟居下，故以爲名。观其图状，则鸾鸟也。时有男子不知何许人，于大衆中自割身以饴饥鸟，血流遍体，而顔色不变。又沙门智泉铁鈎挂体，以然千灯，一日一夜，端坐不动。开讲日，有三足鸟集殿之东户，自户适于西南县楣，三飞三集。白雀一，见于重云阁前连理树。又有五色云浮于华林园昆明池上。帝既流遁益甚，境内化之，遂至丧亡云。
 </p><p>论曰：梁武帝时逢昏虐，家遭冤祸，既地居势胜，乘机而作，以斯文德，有此武功。始用汤、武之师，终济唐、虞之业，岂曰人谋，亦惟天命。及据图籙，多历岁年，制造礼乐，敦崇儒雅，自江左以来，年踰二百，文物之盛，独美于兹。然先王文武递用，德刑备举，方之水火，取法阴阳，爲国之道，不可独任；而帝留心俎豆，忘情干戚，溺于释教，弛于刑典。既而帝纪不立，悖逆萌生，反噬弯弧，皆自子弟，履霜弗戒，卒至乱亡。自古拨乱之君，固已多矣，其或树置失所，而以后嗣失之，未有自己而得，自己而丧。追踪徐偃之仁，以致穷门之酷，可爲深痛，可爲至戒者乎！</p>
-<div class='pn'><p class='pre'>上一节：<a href='-卷六-原文.html'>-卷六</a></p><p class='next'>下一节：<a href='-卷八-原文.html'>-卷八</a></p></div></body>
+<div class='pn'><p class='pre'>上一节：<a href='-卷六-原文.html'>-卷六</a></p><p class='next'>下一节：<a href='-卷八-原文.html'>-卷八</a></p></div><footer>
+    <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
+</footer>
+<script>
+    (function () {
+        var start = 2016;
+        var now = new Date().getFullYear();
+        var span = document.getElementById('year');
+        if (span) {
+            span.textContent = now > start ? '-' + now : '';
+        }
+    })();
+</script>
+</body>
 </html>
