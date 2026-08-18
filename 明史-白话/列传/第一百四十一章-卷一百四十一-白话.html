@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -230,9 +255,8 @@
 </p><p>薛国观离开北京城，车队浩荡，侦探向皇帝报告了。东厂派到薛国观府邸的侦察员正好碰上王陛彦到来，抓住他，获得他招摇过市、串通贿赂的情况，供词牵连到傅永淳、蔡奕琛以及通政使李梦辰、刑说主事朱永佑等十一人。命令将王陛彦交司法部门追问。不久，袁恺再次上疏，一举揭发薛国观受贿的种种恶行，傅永淳、蔡奕琛参与其间。薛国观接连上疏辩解，诋毁袁恺受吴昌时指使，皇帝不采纳。
 </p><p>到了十月，王陛彦的案子没有了结，皇帝以为他行贿有真凭实据，立即命令将他弃市，并派使者逮捕薛国观。薛国观拖延时间，第二年七月进入都城。命令他在外邸待命，不把他交给官吏，薛国观自认为一定不会死。八月初八夜晚，监刑的人来到他门口，薛国观还在酣睡中，等到听说来人都穿着红衣服，急急忙忙地说：“我要死了。”匆忙之间找不到自己的小帽，随便拿了顶佣人的帽子扣在头上。宣读诏书完毕，叩头不能出声，只是说：“吴昌时杀我。”于是被吊死。第二天，使者回报。又过了一天，同意收尸装殓，吊在屋梁上已经有两天了。辅臣被羞辱而死的，从世宗夏言之后，这是第二人。司法部门判他赃款九千两，没收田地六百亩，住宅一区。
 </p><p>薛国观阴险嫉妒，然而还不至于定他死罪。皇帝仅仅因为私愤就杀了他，因为贪赃之事也不能落实，有人觉得挺冤。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百四十章-卷一百四十-白话.html'>第一百四十章-卷一百四十</a></p><p class='next'>下一节：<a href='第一百四十二章-卷一百四十二-白话.html'>第一百四十二章-卷一百四十二</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第一百四十章-卷一百四十-白话.html'>第一百四十章-卷一百四十</a></p><p class='next'>下一节：<a href='第一百四十二章-卷一百四十二-白话.html'>第一百四十二章-卷一百四十二</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -244,5 +268,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -235,9 +260,8 @@
 </p><p>司空杨彪辟，举方正、敦朴，征，皆不就。或劝劭仕，对曰：“方今小人道长，王室将乱，吾欲避地淮海，以全老幼。”乃南到广陵。徐州刺史陶谦礼之甚厚。劭不自安，告其徒曰：“陶恭祖外慕声名，内非真正。待吾虽厚，其势必薄。不如去之。”遂复投扬州刺史刘繇于曲阿。其后陶谦果捕诸寓士。乃孙策平吴，劭与繇南奔豫章而卒。时年四十六。
 </p><p>兄虔亦知名，汝南人称平舆渊有二龙焉。
 </p><p>赞曰：林宗怀宝，识深甄藻。明发周流，永言时道。符融鉴真，子将人伦。守节好耻，并不逡巡。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十一章-党锢列传-原文.html'>第六十一章-党锢列传</a></p><p class='next'>下一节：<a href='第六十三章-窦何列传-原文.html'>第六十三章-窦何列传</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第六十一章-党锢列传-原文.html'>第六十一章-党锢列传</a></p><p class='next'>下一节：<a href='第六十三章-窦何列传-原文.html'>第六十三章-窦何列传</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -249,5 +273,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

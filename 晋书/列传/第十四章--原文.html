@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -257,9 +282,8 @@
 </p><p>祗字敬齐，太傅西曹掾。允字敬咸，太子舍人。裕字敬嗣，尚武安长公主，官至左光禄大夫。
 </p><p>史臣曰：晋氏中朝，承累世之资，建兼并之业，衣冠斯盛，英彦如林。此数公者，或以雅望处台槐，或以高名居保傅，自非一时之秀，亦曷能至于斯。惜其参缄于论道之辰，独善于兼济之日，良图鲠议，无足多谈。然退已进贤，林叔弘推让之美；自家刑国，宣伯协恭孝之规。子若之儒素为基，伟容之苦节流誉，庆垂来叶，不亦宜哉！石鉴以公亮升，温羡以明寤显，属于危乱，不陨其名。岁寒见松柏之后凋，斯人之谓矣。
 </p><p>赞曰：让矣密陵，孝哉广陆。钦既博雅，表亦贞肃。鉴绩克宣，温声载穆。同锵玉振，争芬兰郁。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十三章--原文.html'>第十三章-</a></p><p class='next'>下一节：<a href='第十五章--原文.html'>第十五章-</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第十三章--原文.html'>第十三章-</a></p><p class='next'>下一节：<a href='第十五章--原文.html'>第十五章-</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -271,5 +295,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

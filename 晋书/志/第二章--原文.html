@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -413,9 +438,8 @@
 </p><p>安帝隆安元年二月，岁星、荧惑皆入羽林。占曰：“中军兵起。”四月，王恭等举兵，内外戒严。
 </p><p>元兴元年八月庚子，太白犯岁星，在上将东南。占曰：“楚兵饥。”一曰：“灾在上将。”二年，桓玄篡位。三年，刘裕尽诛桓氏。二年十月丁丑，太白犯填星，在娄。占同上。三年二月壬辰，太白、荧惑合于羽林。二年十二月，桓玄篡位，放迁帝、后。三年二月，刘裕起义兵，桓玄逼帝东下。
 </p><p>义熙二年十二月丁未，荧惑、太白皆入羽林，又合于壁。三年正月，慕容超寇淮北、徐州，至下邳。八月，遣刘敬宣伐蜀。三年二月癸亥，荧惑、填星、太白、辰星聚于奎、娄、从填星也，徐州分。是时，慕容超僭号于齐，兵连徐兗，连岁寇抄，至于淮泗，姚兴、谯纵僭号秦蜀，卢循及魏南北交侵。其五年，刘裕北殄慕容超。其六月辛卯，荧惑犯辰星，在翼。占曰：“天下兵起。”八月己卯，太白奄荧惑。占曰：“有大兵。”其四年，姚略遣众征赫连勃勃，大为所破。五年四月甲戌，荧惑犯辰星，在东井。占曰：“皆为兵。”十二月辛丑，太白犯岁星，在奎。占曰：“大兵起，鲁有兵。”是年四月，刘裕讨慕容超。六年二月，灭慕容超于鲁地。七年七月丁卯，岁星犯填星，在参。占曰：“岁填合，为内乱。”一曰：“益州战，不胜，亡地。”是时硃龄石伐蜀，后竟灭之。明年，诛谢混、刘毅。八年七月甲申，太白犯填星，在东井。占曰：“秦有大兵。”九年二月丙午，荧惑、填星皆犯东井。占曰、：“秦有兵。”三月壬辰，岁星、荧惑、填星、太白聚于东井，从岁星也。东井，秦分。十三年，刘裕定关中，其后遂移晋祚。十四年十月癸巳，荧惑入太微，犯西蕃上将，仍顺行至左掖门内，留二十日乃逆行。至恭帝元熙元年三月五日，出西蕃上将西三尺许，又顺还入太微。时填星在太微，荧惑绕填星成钩己，其年四月丙戌，从端门出。占曰：“荧惑填星钩己天庭，天下更纪。”十二月，安帝母弟琅邪王践阼，是曰恭帝。来年，禅于宋。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章--原文.html'>第一章-</a></p><p class='next'>下一节：<a href='第三章--原文.html'>第三章-</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第一章--原文.html'>第一章-</a></p><p class='next'>下一节：<a href='第三章--原文.html'>第三章-</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -427,5 +451,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

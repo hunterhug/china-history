@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -278,9 +303,8 @@
 </p><p>孙铄字巨邺，河内怀地人。年轻时乐于为县吏，太守吴奋把他转为主簿。孙铄从低贱的地位走上仕途，当时的官僚大姓还不愿和他坐在一起。吴奋大怒，便推荐他任司隶都官从事。司隶校尉刘讷很赏识他。当时吴奋又推荐孙铄给大司马石苞，石苞征召他为属官。孙铄将去接受任命，行至许昌，正赶上朝廷已秘密派遣轻装部队去袭击石苞。当时汝阴王镇守许昌，孙铄前去拜见他。汝阴王以前认识孙铄，以乡亲情面私下告诉孙铄说：“不要卷入灾祸。”孙铄离开后，就急奔寿春，为石苞谋划，石苞幸赖他而得以免祸。升为尚书郎，在职时辩驳他人奏议十多件，被当时所称道。
 </p><p>史臣曰：如果论及为皇帝的老师，那郑冲是当之无愧；孝是道德的根本，王祥所以算得上仁；何曾对亲人和善而且推及到亲人的族人。夏禹俭朴，殷商有所增加减少。祭祀服用，各有等级章法，诸侯不总是用牛，士不总是用猪。制止奢侈，关系到治国。利用时机制定制度，没有不遵循的。石崇博学多闻，性情乖戾很少改悔，超过各个豪门显示财富，比拟公侯而争胜。春天菜地豆叶，可以在冰冻的早晨得到；锦制的屏障蜿蜒，连接到山川之外。撞钟舞女，流连忘返，至于在金谷遇难，宴饮之处将要坠毁，正所谓处在高树下的蝉，不知道螳螂在后袭击啊。
 </p><p>赞曰：郑冲禀性质朴，王祥晚年为官。各种品行融合，一同走上天指引的路。何曾、石苞操行不同，生活奇特。皇帝作风奢华，石崇一心追赶。骄矜奢侈没有尽头，资产造成祸害。邦国分裂自身毁灭，欢乐与悲哀相伴随。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二章--白话.html'>第二章-</a></p><p class='next'>下一节：<a href='第四章--白话.html'>第四章-</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第二章--白话.html'>第二章-</a></p><p class='next'>下一节：<a href='第四章--白话.html'>第四章-</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -292,5 +316,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

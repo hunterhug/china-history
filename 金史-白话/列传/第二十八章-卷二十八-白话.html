@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -215,9 +240,8 @@
 </p><p>二年后，高衎为大理司直，升户部员外郎、同知中都都转运使、太常少卿、吏部郎中。大定初年，转为左司郎中。金世宗皇帝孜孜求谏，群臣顺承旨意，没有什么改正，金世宗皇帝说：“朕刚即位，政事大多不熟悉，实在依赖将相大臣们同心辅助。老百姓况且上奏章指出政事不足，于政事有所补正。仅仅审理案件，处理日常公文，何人不能胜任？就如唐尧、虞舜之圣明，犹言‘征集考察众人的意见，不固执己见，择善而从’。海陵王独断专行，遇事不与大臣们商议，因此自取灭亡。希望卿等体察朕的心意。”皇帝让高衎传诏台省百司说：“凡上书说政事，假如被有司阻止，允许他上奏让我知道所说政事。
 </p><p>高衎升为吏部尚书。每季都选拔人才到吏部，吏部借故检阅旧名册，这叫检契约，有的人被滞留到下一季还不能到任。高衎了解吏部的这种弊病，年终选拔官吏治理。
 </p><p>大定五年(1165)，高衎为贺宋朝生日使，中途得病罢职。大定七年(1167)，高衎死去。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十七章-卷二十七-白话.html'>第二十七章-卷二十七</a></p><p class='next'>下一节：<a href='第二十九章-卷二十九-白话.html'>第二十九章-卷二十九</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第二十七章-卷二十七-白话.html'>第二十七章-卷二十七</a></p><p class='next'>下一节：<a href='第二十九章-卷二十九-白话.html'>第二十九章-卷二十九</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -229,5 +253,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

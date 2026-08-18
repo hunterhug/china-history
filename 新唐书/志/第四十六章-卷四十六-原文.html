@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -245,9 +270,8 @@
 </p><p>大和六年，兴平县民上官兴以醉杀人而逃，闻械其父，乃自归。京兆尹杜悰、御史中丞宇文鼎以其就刑免父，请减死。诏两省议，以为杀人者死，百王所守；若许以生，是诱之杀人也。谏官亦以为言。文宗以兴免父囚，近于义，杖流灵州，君子以为失刑。文宗好治，躬自谨畏，然阉宦肆孽不能制。至诛杀大臣，夷灭其族，滥及者不可胜数，心知其冤，为之饮恨流涕，而莫能救止。盖仁者制乱，而弱者纵之，然则刚强非不仁，而柔弱者仁之贼也。
 </p><p>武宗用李德裕诛刘稹等，大刑举矣，而性严刻。故时，窃盗无死，所以原民情迫于饥寒也，至是赃满千钱者死，至宣宗乃罢之。而宣宗亦自喜刑名，常曰：“犯我法，虽子弟不宥也。”然少仁恩，唐德自是衰矣。
 </p><p>盖自高祖、太宗除隋虐乱，治以宽平，民乐其安，重于犯法，致治之美，几乎三代之盛时。考其推心恻物，其可谓仁矣！自高宗、武后以来，毒流邦家，唐祚绝而复续。玄宗初励精为政，二十年间，刑狱减省，岁断死罪才五十八人。以此见致治虽难，勉之则易，未有为而不至者。自此以后，兵革遂兴，国家多故，而人主规规，无复太宗之志。其虽有心于治者，亦不能讲考大法，而性有宽猛，凡所更革，一切临时苟且，或重或轻，徒为繁文，不足以示后世。而高祖、太宗之法，仅守而存。故自肃宗以来，所可书者几希矣；懿宗以后，无所称焉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十五章-卷四十五-原文.html'>第四十五章-卷四十五</a></p><p class='next'>下一节：<a href='第四十七章-卷四十七-原文.html'>第四十七章-卷四十七</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第四十五章-卷四十五-原文.html'>第四十五章-卷四十五</a></p><p class='next'>下一节：<a href='第四十七章-卷四十七-原文.html'>第四十七章-卷四十七</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -259,5 +283,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

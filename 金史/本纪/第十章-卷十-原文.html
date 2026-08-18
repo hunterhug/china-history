@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -254,9 +279,8 @@
 </p><p>九月辛丑朔，天寿节，宋、高丽、夏遣使来贺。壬寅，遣官分诣上京、东京、北京、咸平、临潢、西京等路招募汉军，不足则签补之。乙巳，以夏使朝辞，诏答许复保安、兰州榷场。丁未，以知归德府事完颜愈为贺宋生日使。癸丑，以上京留守粘割斡特剌为平章政事。辛酉，以枢密使兼平章政事襄，知大兴府事胥持国为枢密副使、权参知政事，行省于北京。乙丑，始置军器监，掌治戎器，班少府监下，设甲坊、利器二署隶焉。丁卯，分遣官于东、西、北京，河北等路，中都二节镇，买牛五万头。冬十月庚午朔，初设讲议所官十员，共议钱谷，以中都路转运使孙铎、户部侍郎高汝砺等为之。庚辰，尚书省奏，高丽国牒报，其王以老疾，令母弟权国事。壬午，尚书省行推排。丁亥，皇子寿王薨。壬辰，诏奖谕西南路招讨使仆散揆等有功将士。甲午，大雪，以米千石赐普济院，令为粥以食贫民。丙申，以礼部员外郎蒙括仁本为夏国生日使。
 </p><p>十一月甲辰，冬至，有事于南郊。乙巳，以薪贵，敕围场地内无禁樵采。壬子，谕尚书省：“猛安谋克既不隶提刑司，宜令监察御史察其臧否。”庚申，北京留守裔以行省失职，杖一百，除名。右谏议大夫纳兰昉杖九十，削官二阶，罢之。甲子，谕宰臣曰：“朕居九重，民间难以遍知，宰相不见宾客，何以得知民间利害。”
 </p><p>十二月己巳朔，敕御史台纠察谄佞趋走有实迹者。己卯，始铸“承安宝货”。癸未，遣户部侍郎上官瑜体究西京逃亡，劝率沿边军民耕种，户部郎中李敬义规措临潢等路农务。乙酉，谕宰臣：“今后水潦旱蝗、盗贼窃发，命提刑司预为规画。”戊子，谕西南路将士。庚寅，豫王永成进马八十匹，赐诏奖谕，称皇叔豫王而不名。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p><p class='next'>下一节：<a href='第十一章-卷十一-原文.html'>第十一章-卷十一</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p><p class='next'>下一节：<a href='第十一章-卷十一-原文.html'>第十一章-卷十一</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -268,5 +292,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -217,9 +242,8 @@
 </p><p>冬十月甲辰，制琼华长公主孟氏可册为福庆长公主。丙午，以沧州节度使李从敏兼北面招讨使。戊申，帝临轩，命礼部尚书韩彦恽、工部侍郎任赞往应州奉册四庙。诏邠州节度使李敬周攻庆州，以刺史窦廷琬拒命故也。戊午，契丹平州刺史张希崇已下八十余人见于元德殿，颁赐有差。突厥首领张慕进等来朝贡。甲子，安州节度使高行珪奏，屯驻左神捷、左怀顺军士作乱，已逐杀出城。诏升寿州为忠正军。戊辰，以云州节度使索自通领寿州节度使，以前云州节度使张温复为云州节度使。庚午夜，西南有彗星长丈余，在牛星五度。
 </p><p>十一月癸酉，日南至，帝御崇元殿受朝贺。甲戌，捧圣指挥使何福进招收到安州作乱兵士五百人，自指挥使已下至节级四十余人并斩，余众释之。壬午，房知温奏，荆南高季兴卒。中书舍人刘赞奏：“请节度使及文班二品已上谢见通唤。”从之。是日，以契丹所署平州刺史、光禄大夫、检校太保张希崇为汝州刺史，加检校太傅。己丑，中书奏：“今后或有封册，请御正衙。”从之。青州奏，节度使霍彦威卒，辍朝三日。诏宰臣王建立权知青州军州事。庚寅，礼部员外郎和凝奏：“应补斋郎并须引验正身，以防伪滥。旧例，使廕一任官补一人，今后改官须转品即可，如无子，许以亲侄继限，念书十卷，试可则补。”从之。甲午，以尚书左仆射、同平章事、集贤殿大学士、判三司王建立为青州节度使、检校太尉、同平章事。丙申，帝谓侍臣曰：“古铁券如何？”赵凤对曰：“帝王誓文，许其子子孙长享爵禄。”帝曰：“先朝所赐，惟朕与郭崇韬、李继麟三人尔，崇韬、继麟寻已族灭，朕之危疑，虑在旦夕。”于是嗟叹久之。赵凤曰：“帝王执信，故不必铭金镂石矣。”吏部郎中何泽奏：“流外官请不试书判之类。”从之。吐蕃遣使朝贡。戊戌，前安州节度副使范延荣并男皆斩于军巡狱，为高行珪诬奏故也。
 </p><p>十二月壬寅朔，诏真定府属县宜准河中、凤翔例升为次畿，真定县升为次赤。甲辰，邠州节度使李敬周奏，收下庆州，刺史窦廷琬族诛。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十四章-明宗纪四-原文.html'>第十四章-明宗纪四</a></p><p class='next'>下一节：<a href='第十六章-明宗纪六-原文.html'>第十六章-明宗纪六</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第十四章-明宗纪四-原文.html'>第十四章-明宗纪四</a></p><p class='next'>下一节：<a href='第十六章-明宗纪六-原文.html'>第十六章-明宗纪六</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -231,5 +255,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

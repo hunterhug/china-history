@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -489,9 +514,8 @@
 </p><p>南康(府东北。西北有禽山，禽水出焉，东流至南野口入於章江。北有羊岭山。南有芙蓉江，即章江。东北有潭口镇、北有相安镇二巡检司。)
 </p><p>上犹(府东北。元永清县，洪武初更名。西有书山，一名太傅山。东有大犹山，犹水出焉，下流至南康县，入於章江。西有浮龙巡检司，后迁太傅村，仍故名。)
 </p><p>崇义(府北。正德十四年三月以上犹县之崇义里置，析大庾、南康二县地益之。西南有聂都山。西有桶冈。又有章江，自湖广宜章县流入，又有横水，经县南，又西南有左溪，下流俱合章江。西北有上保巡检司，本过步，后迁治，更名。西南有铅厂巡检司，本在铅山，后迁聂都，东南有长龙巡检司，本治降平里，后迁县东北尚德里江头，俱仍故名。)</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p><p class='next'>下一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第十八章-卷十八-原文.html'>第十八章-卷十八</a></p><p class='next'>下一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -503,5 +527,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

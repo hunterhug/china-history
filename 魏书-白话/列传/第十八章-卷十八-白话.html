@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -274,9 +299,8 @@
 </p><p>吕洛拔，是代郡人。曾祖渴侯，昭成帝时率领五千产人归顺本朝。祖父吕肥，是濮阳太守。父亲匹知，世祖时任西部长、封荣阳公。洛拔以刚勇闻名，高宗末年任平原镇都将。刘或的徐州刺史薛安都归顺，请求援助。有韶令派遣尉元率领军队救援他，洛拔跟随尉元进入彭城。刘或的将领张永派遣部将王茂之率领五千士卒前往武原，救助他的运输车辆。尉元派遣洛拔率领骑兵前往武原攻打他。搏斗两天，亲手杀敌九人，夺取贼军运输车辆二百余辆，牛二百五十头。于是共同攻打张永，大败他。赐爵成武侯，加授建义将军。五十六岁时去世。
 </p><p>长子文祖，显祖因他是功臣的儿子，选补为龙牧曹奏事中散。因饲养的牲畜没有增长，被判刑流放到武川镇。后来文祖用旧语翻译注解《皇诰》，辞义流畅，被越级任命为阳平太守。还未就任，改任外都曹奏事中散。后来因事获罪伏法。
 </p><p>史臣曰：仁者之言，必然利于众人。参金堕之战，大量杀戮俘虏，是鱼叁的罪过吗?塞回是外族人，因有智力见识而得到重用，官职等同于当时本族的俊杰，必定是有理由的。安颉俘获赫连昌，挫败义隆的军队，成为名将，是不容易的。楼伏连、丘堆、娥清，都因为壮健勇猛，征战讨伐处处获胜。刘尼忠于国家、辅佐君主，岂衹是勇猛?奚眷凭用兵的谋略获得官位，可惜不能善终。车伊洛从远方诚心归顺朝廷，与普通的西方少数民族不同啊。宿石等人都忠诚、勇敢有谋略，有将帅的才能，凭个人努力获得显要的地位，哪裹是无缘无故的呢。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十七章-卷十七-白话.html'>第十七章-卷十七</a></p><p class='next'>下一节：<a href='第十九章-卷十九-白话.html'>第十九章-卷十九</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第十七章-卷十七-白话.html'>第十七章-卷十七</a></p><p class='next'>下一节：<a href='第十九章-卷十九-白话.html'>第十九章-卷十九</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -288,5 +312,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

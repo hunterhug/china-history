@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -243,9 +268,8 @@
 </p><p>子龚，与诱俱死。元帝为晋王，下令赠新昌太守。龚弟胤，字伯舒。王敦使周访击杜曾，胤请从行。访惮曾之强，欲先以胤饵曾，使其众疲而后击之。胤多枭首级。王导引为从事中郎。南顿王宗反，胤杀宗。于是王导、庾亮并倚仗之。转冠军将军，迁西豫州刺史，卒于官。
 </p><p>史臣曰：忠为令德，贞曰事君，徇国家而竭身，历夷险而一节。罗宪、滕修，濯缨入仕，指巴东而受脤，出岭峤而扬麾。属鼎命沦胥，本朝失守，郕巴丘而流涕，集都亭而大临。古之忠烈，罕辈子兹！孝兴之智勇，玄威之武艺，灭丑虏于河西，制凶酋于硜北，审杨欣之必败，讥杨骏之速祸。陶璜、吾彦，逸足齐驱，毛炅屈其深谋，陆抗奇其茂略。薪楢之任，清规自远；鼙鼓之臣，厥声弥劭。景武，南楚秀士；元孙，累叶将门，赴死喻于登仙。效诚陈于上策，竟而俱毙，贞则斯存。
 </p><p>赞曰：宪居玉叠，才博流誉。修赴石门，惠政攸著。孝兴、玄威，操履无违。愚坟毕礼，杨门致讥。璜谋超绝，彦材雄杰。潜师袭董，观兵叹薛。惟赵与张，神略多方。作尉北地，立功西湘。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十六章--原文.html'>第二十六章-</a></p><p class='next'>下一节：<a href='第二十八章--原文.html'>第二十八章-</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第二十六章--原文.html'>第二十六章-</a></p><p class='next'>下一节：<a href='第二十八章--原文.html'>第二十八章-</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -257,5 +281,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

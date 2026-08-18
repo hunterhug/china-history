@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -248,9 +273,8 @@
 </p><p>仲文善属文，为世所重，谢灵运尝云：“若殷仲文读书半袁豹，则文才不减班固。”言其文多而见书少也。
 </p><p>史臣曰：桓玄纂凶，父之余基。挟奸回之本性，含怒于失职；苞藏其豕心，抗表以称冤。登高以发愤，观衅而动，窃图非望。始则假宠于仲堪，俄而戮殷以逞欲，遂得据全楚之地，驱劲勇之兵，因晋政之陵迟，乘会稽之酗ＪＴ，纵其狙诈之计，扇其陵暴之心，敢率犬羊，称兵内侮。天长丧乱，凶力实繁，逾年之间，奄倾晋祚，自谓法尧禅舜，改物君临，鼎业方隆，卜年惟永。俄而义旗电发，忠勇雷奔，半辰而都邑廓清，逾月而凶渠即戮，更延坠历，复振颓纲。是知神器不可以暗干，天禄不可以妄处者也。夫帝王者，功高宇内，道济含灵，龙宫凤历表其祥，彤云玄石呈其瑞，然后光临大宝，克享鸿名，允彳奚后之心，副乐推之望。若桓玄之么麽，岂足数哉！适所以干纪乱常，倾宗绝嗣，肇金行之祸难，成宋氏之驱除者乎！
 </p><p>赞曰：灵宝隐贼，世载凶德。信顺未孚，奸回是则。肆逆迁鼎，凭威纵慝。违天虐人，覆宗殄国。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十八章--原文.html'>第六十八章-</a></p><p class='next'>下一节：<a href='第七十章--原文.html'>第七十章-</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第六十八章--原文.html'>第六十八章-</a></p><p class='next'>下一节：<a href='第七十章--原文.html'>第七十章-</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -262,5 +286,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

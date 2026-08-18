@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -660,9 +685,8 @@
 </p><p>神宗时，郑世子朱载堉着僻吕精义》、《律学新说》、《乐舞全谱》共若干卷，具备章表进献。
 </p><p>崇祯六年，礼部尚书黄汝良进献《昭代乐律志》。
 </p><p>宣示交付史馆，以备考察，没有来得及施行。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十六章-卷三十六-白话.html'>第三十六章-卷三十六</a></p><p class='next'>下一节：<a href='第三十八章-卷三十八-白话.html'>第三十八章-卷三十八</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第三十六章-卷三十六-白话.html'>第三十六章-卷三十六</a></p><p class='next'>下一节：<a href='第三十八章-卷三十八-白话.html'>第三十八章-卷三十八</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -674,5 +698,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

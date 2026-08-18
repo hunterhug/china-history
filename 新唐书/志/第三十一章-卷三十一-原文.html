@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -273,9 +298,8 @@
 </p><p>溪州灵溪郡，下。天授二年析辰州置。土贡：丹沙、犀角、茶牙。户二千一百八十四，口万五千二百八十二。县二：大乡，上。三亭。中下。贞观九年析大乡置。有大酉山。
 </p><p>溱州溱溪郡，下。贞观十六年开山洞置。土贡：文龟、斑布、丹沙。户八百七十九，口五千四十五。县五：荣懿，中下。贞观十六年置，并置扶欢、乐来二县。咸亨元年省乐来。扶欢，中下。夜郎，中下。贞观十六年开山洞置珍州，并置夜郎、丽皋、乐源三县，后为夜郎郡。元和三年州废，县皆来属。丽皋，中下。乐源。中下。
 </p><p>右黔中采访使，治黔州。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十章-卷三十-原文.html'>第三十章-卷三十</a></p><p class='next'>下一节：<a href='第三十二章-卷三十二-原文.html'>第三十二章-卷三十二</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第三十章-卷三十-原文.html'>第三十章-卷三十</a></p><p class='next'>下一节：<a href='第三十二章-卷三十二-原文.html'>第三十二章-卷三十二</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -287,5 +311,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -280,9 +305,8 @@
 </p><p>弘治八年，长沙枫生李实，黄莲生黄瓜。九年三月，长宁楠生莲花，李生豆荚。嘉靖三十七年十月戊辰，泗水沙中涌出大杉木，围丈五尺，长六丈余。隆庆五年四月，杭州栗生桃。万历十八年五月丁卯，祖陵大松树孔中吐火，竟日方灭。二十三年十二月癸亥，皇陵树颠火出，延烧草木。天启六年四月癸巳，白露著树如垂绵，日中不散。十月辛酉，南京西华门内有烟无火。礼臣往视，乃旧宫材木，瘗土中久，烟自生，土石皆焦。以水沃之，三日始灭。崇祯六年五月癸巳，霍山县有木甑飞堕，不知所自来。七年二月丁巳，太康门牡自开者三，知县集邑绅议其事，梁堕而死。
 </p><p>▲青眚青祥
 </p><p>宣德元年八月辛巳，东南天有青气，状如人叉手揖拜。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -294,5 +318,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -261,9 +286,8 @@
 </p><p>永乐二年置丹行、丹平二长官。宣德元年，新添土舍宋志道纠洞蛮肆掠，萧授讨擒之。九年，丹行土舍罗朝煽诱寨长卜长、逃民罗阿记等侵占卧龙番长官龙保地，又攻猱平寨焚劫。时苗民素惮指挥李政，尚书王骥因奏遣政往抚谕。景泰二年，苗贼有在新添行劫，聚于西庐者，官军破之以闻。成化九年，以旱灾免新添卫粮。
 </p><p>万历三十四年，贵州巡抚郭子章讨平贵州苗，斩获苗长吴老乔、阿伦、阿皆等十二人，招降男妇甚众。先是，东西二路苗名曰仲家者，盘踞贵龙、平新之间，为诸苗渠帅。其在水硍山介于铜仁、思、石者，曰山苗，红苗之羽翼也，窥黔自平播后财力殚竭，有轻汉心，经年剽掠无虚日。子章奏讨之，命相机进兵。子章乃命总兵陈璘、参政洪澄源率官军五千，益以土兵五千，攻水硍山。监军布政赵健率宣慰土兵万人，使游击刘岳等督之。及两路会师，皆九十余日而克。二寇既平，专命总兵陈璘率汉、土兵五千移营新添，进攻东路苗，不一月复克其六箐，诸苗尽平。
 </p><p>金筑安抚司，洪武四年，故元安抚密定来朝贡马，诏赐文绮三匹，置金筑长官司，秩正六品，隶四川行省，以密定为长官，世袭。十四年敕劳密定曰：“西南诸部虽归附，然暂入贡而已。尔密定首献马五百匹，以助征讨，其诚可嘉，故遣特使往谕，俟班师之日，重劳尔功。”升金筑长官司为安抚司，仍以密定为安抚使，予世袭。十六年，密定遣使贡方物。十八年，密定遣弟保珠来贡。二十九年以金筑安抚司隶贵州军民指挥使司。永乐初年，金筑安抚得垛来朝，赐绒锦文绮。洪熙、宣德改元，皆贡马。十年，直隶贵州布政司。正统五年，安抚金镛贡马。成化、弘治、隆庆时历朝贡。万历四十年，吏部覆巡抚胡桂芳奏：“金筑安抚土舍金大章乞改土为流，设官建治，钦定州名，铸给印信，改州判为流官。授大章土知州，予四品服色，不许管事。子孙承袭，隶州于贵阳府。”遂改金筑安抚司为广顺州。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二百零三章-卷二百零三-原文.html'>第二百零三章-卷二百零三</a></p><p class='next'>下一节：<a href='第二百零五章-卷二百零五-原文.html'>第二百零五章-卷二百零五</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第二百零三章-卷二百零三-原文.html'>第二百零三章-卷二百零三</a></p><p class='next'>下一节：<a href='第二百零五章-卷二百零五-原文.html'>第二百零五章-卷二百零五</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -275,5 +299,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

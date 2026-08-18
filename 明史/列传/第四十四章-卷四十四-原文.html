@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -258,9 +283,8 @@
 </p><p>罗秉忠，初名克罗俄领占，沙州卫都督佥事困即来子也。兄喃哥既袭父职，英宗复命秉忠为指挥使，协理卫事。既而喃哥率千二百人内徙，诏居之东昌、平山二卫，给田庐什器，所以抚恤甚厚。喃哥卒，秉忠为都指挥使，代领其众。
 </p><p>英宗北狩，塞上多警。朝议恐降人乘机为变，欲徙之南方。会贵州苗乱，都督毛福寿南征，即擢秉忠都督佥事，率所部援剿。积战功至左都督。天顺初，始赐姓名。曹钦之反，番官多从之者。秉忠亦坐下狱，籍其家。久之，上章自辩，乃得释。成化初，尚书程信讨山都掌蛮，秉忠以游击将军从。既抵永宁，分兵六道。秉忠由金鹅江进，大破之。论功，封顺义伯。十六年卒。谥荣壮，子孙世指挥使。
 </p><p>赞曰：明兴，诸番部怀太祖功德，多乐内附，赐姓名授官职者不可胜纪。继以成祖锐意远图，震耀威武，于是吴允诚、金忠之徒，率众来属，遂得列爵授任，比肩勋旧。或以战功自奋，锡券受封，传世不绝。视夫陆梁倔强者，顺逆殊异，不其昭欤！土木以还，势以不竞，边政日弛，火筛、俺答诸部骚动无宁岁。盛衰之故概可考焉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十三章-卷四十三-原文.html'>第四十三章-卷四十三</a></p><p class='next'>下一节：<a href='第四十五章-卷四十五-原文.html'>第四十五章-卷四十五</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第四十三章-卷四十三-原文.html'>第四十三章-卷四十三</a></p><p class='next'>下一节：<a href='第四十五章-卷四十五-原文.html'>第四十五章-卷四十五</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -272,5 +296,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

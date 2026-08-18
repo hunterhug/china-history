@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -313,9 +338,8 @@
 </p><p>七月六日，俺答又侵犯万全右卫。
 </p><p>十月十日，侵犯固原，总兵官郭江战败而死。十六日，侵犯偏头关。闰十月十七日，侵犯大同，参将崔世荣奋力相战，竭力而死。十一月三日，世宗身体不舒服。十二月十四日，病危，从西苑回到乾清宫。当天死于宫内，终年六十岁，遗诏由裕王即位。隆庆元年(1567)正月，上尊谥，庙号世宗，葬于永陵。
 </p><p>评论：世宗登位之初，竭力根除一切弊政，天下曾一度得到治理。然而反复议论大礼，众人舆论沸腾，使奸臣趁机得势，不久大兴刑狱。世宗天性讲感情，做君主后亲自施行仁义政策，追尊谥号，建立祖庙，礼节也较为合适；然而升神牌于太庙，且高于武宗之上，这不是太过分了吗！因当时政治风云变幻，将士疲惫于边境御敌，奸贼趁机内讧，加上他崇尚道教，祭享也没有什么原则，营建经常兴起，使府库库藏告缺，百多年的富庶治平之大业，因此逐渐衰落。虽然曾经铲除奸臣，自己紧握大权，但概括起来也算一个功过各半的君主。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十七章-卷十七-白话.html'>第十七章-卷十七</a></p><p class='next'>下一节：<a href='第十九章-卷十九-白话.html'>第十九章-卷十九</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第十七章-卷十七-白话.html'>第十七章-卷十七</a></p><p class='next'>下一节：<a href='第十九章-卷十九-白话.html'>第十九章-卷十九</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -327,5 +351,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

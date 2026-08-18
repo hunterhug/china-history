@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -247,9 +272,8 @@
 </p><p>乔故掾陈留杨匡闻之，号泣星行到洛阳，乃著故赤帻，托为夏门亭吏，守卫尸丧，驱护蝇虫，积十二日，都官从事执之以闻。梁太后义而不罪。匡于是带鈇锧诣阙上书，并乞李、杜二公骸骨。太后许之。成礼殡殓，送乔丧还家，葬送行服，隐匿不仕。匡初好学，常在外黄大泽教授门徒。补蕲长，政有异绩，迁平原令。时国相徐曾，中常侍璜之兄也，匡耻与接事，托疾牧豕云。
 </p><p>论曰：夫称仁人者，其道弘矣！立言践行，岂徒徇名安己而已哉，将以定去就之概，正天下之风，使生以理全，死与义合也。夫专为义则伤生，专为生则骞义，专为物则害智，专为己则损仁。若义重于生，舍生可也。生重于义，全生可也。上以残暗失君道，下以笃固尽臣节。臣节尽而死之，则为杀身以成仁，去之不为求生以害仁也。顺、桓之间，国统三绝，太后称制，贼臣虎视。李固据位持重，以争大义，确乎而不可夺。岂不知守节之触祸，耻夫覆折之伤任也。观其发正辞，及所遗梁冀书，虽机失谋乖，犹恋恋而不能已。至矣哉，社稷之心乎！其顾视胡广、赵戒，犹粪土也。
 </p><p>赞曰：李、杜司职，朋心合力。致主文、宣，抗情伊、稷。道亡时晦，终离罔极。燮同赵孤，世载弦直。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十六章-荀韩钟陈列传-原文.html'>第五十六章-荀韩钟陈列传</a></p><p class='next'>下一节：<a href='第五十八章-吴延史卢赵列传-原文.html'>第五十八章-吴延史卢赵列传</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第五十六章-荀韩钟陈列传-原文.html'>第五十六章-荀韩钟陈列传</a></p><p class='next'>下一节：<a href='第五十八章-吴延史卢赵列传-原文.html'>第五十八章-吴延史卢赵列传</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -261,5 +285,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

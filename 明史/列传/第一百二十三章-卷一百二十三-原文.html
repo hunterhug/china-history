@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -264,9 +289,8 @@
 </p><p>崇祯初，起南京通政参议，就迁太仆少卿，疏陈卜相、久任、纳言、议谥、筹兵五事。五年二月，擢右佥都御史，代熊文灿巡抚福建。海寇刘香乱，遣游击郑芝龙击破之。海外红夷据彭湖，挟互市，后徙台湾，渐泊厦门。维琏屡檄芝龙防遏之，不听。明年夏，芝龙剿贼福宁，红夷乘间袭陷厦门城，大掠。维琏急发兵水陆进，芝龙亦驰援，焚其三舟，官军伤亦众。寇乃泛舟大洋，转掠青港、荆屿、石湾。诸将御之铜山，连战数日，始败去。维琏在事二年，劳绩甚著。会当国者温体仁辈雅忌维琏，而闽人宦京师者腾谤于朝，竟坐是罢官。八年春，叙却贼功，诏许起用。旋召拜兵部右侍郎，遘疾不赴，卒于家。
 </p><p>吴羽文既谢病归，至崇祯六年始复出。历考功文选郎中。帝以积疑吏部有私，选郎十一人谴黜大半，迁者三人而已。羽文痛绝诸弊，数与温体仁牴牾。贼毁皇陵，有诏肆赦。体仁令刑部尚书冯英以逆案入诏内。羽文执止之，而议起钱龙锡、李邦华等。侦事者诬羽文纳二人赇，下狱。羽文用高凤翔为大名知府。凤翔故尝坐小罚，言者复谓其徇私，坐谪戍。侍郎吴甡等交荐，复官，未赴卒。羽文，字长卿，南昌人。万历四十一年进士。
 </p><p>赞曰：王汝训诸人建言，挺謇谔之节，洊历卿贰，不陨厥问。余懋学之言十蠹，有以哉！邹维琏抗魏奄，拒逆党，仅坐谪戍，幸矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百二十二章-卷一百二十二-原文.html'>第一百二十二章-卷一百二十二</a></p><p class='next'>下一节：<a href='第一百二十四章-卷一百二十四-原文.html'>第一百二十四章-卷一百二十四</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第一百二十二章-卷一百二十二-原文.html'>第一百二十二章-卷一百二十二</a></p><p class='next'>下一节：<a href='第一百二十四章-卷一百二十四-原文.html'>第一百二十四章-卷一百二十四</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -278,5 +302,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -239,9 +264,8 @@
 </p><p>世或谓魏氏不用钱久，积累巨万，故欲行之，利公富国，斯殆不然。晋文后舅犯之谋，而先成季之信，以为虽有一时之勋，不如万世之益。于时名贤在列，君子盈朝，大谋天下之利害，将定经国之要术。若谷实便钱，义不昧当时之近利，而废永用之通业，断可知矣。斯实由困而思革，改而更张耳。近孝武之末，天下无事，时和年丰，百姓乐业，谷帛殷阜，几乎家给人足，验之实事，钱又不妨人也。
 </p><p>顷兵革屡兴，荒馑荐及，饥寒未振，实此之由。公既援而拯之，大革视听，弘敦本之教，明广农之科，敬授人时，各从其业，游荡知反，务末自休，同以南亩竞力，野无遗壤矣。于此以往，将升平必至，何衣食之足恤！愚谓救弊之术，无取于废钱。
 </p><p>朝议多同琳之，故玄议不行。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十五章--原文.html'>第十五章-</a></p><p class='next'>下一节：<a href='第十七章--原文.html'>第十七章-</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第十五章--原文.html'>第十五章-</a></p><p class='next'>下一节：<a href='第十七章--原文.html'>第十七章-</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -253,5 +277,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

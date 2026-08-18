@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -270,9 +295,8 @@
 </p><p>三十二年，擢佥都御史，巡抚山西。时春慷慨负奇气，善骑射。慨寇纵横，将帅不任职，数谓人：“使吾领选卒五千，俺答、邱福不足平也。”作《御寇论》，论战守甚悉。既秉节钺，益思以武功自奋。其年九月，寇入神池、利民诸堡，时春率马步兵往御之。至广武，诸将毕会。谋报寇骑二千余，去两舍。时春擐甲欲驰，大将李涞固止之。时春大言曰：“贼知吾来必遁，缓追即不及。”遂策马前。及于大虫岭，伏兵四起，败绩。仓皇投一墩，守卒缒之上乃得免，涞军竟覆。被论，解官听调。时春喜谈兵，至是一战而败。然当是时将帅率避寇不击。为督抚者安居坚城，遥领军事，无躬搏寇者。时春功虽不就，天下皆壮其气。
 </p><p>时春读书善强记，文章豪肆，与唐顺之、王慎中齐名。诗，伉浪自喜类其为人。
 </p><p>赞曰：姚镆等封疆宣其擘画，军务畅其机谋，勋绩咸有可纪。伍文定从王守仁平宸濠之难，厥功最懋。赵时春将略自命，一出辄踬。夫危事而易言之，固知兵者所弗取乎。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十七章-卷八十七-原文.html'>第八十七章-卷八十七</a></p><p class='next'>下一节：<a href='第八十九章-卷八十九-原文.html'>第八十九章-卷八十九</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第八十七章-卷八十七-原文.html'>第八十七章-卷八十七</a></p><p class='next'>下一节：<a href='第八十九章-卷八十九-原文.html'>第八十九章-卷八十九</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -284,5 +308,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

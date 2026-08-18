@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -234,9 +259,8 @@
 </p><p>伏以俯逼郊天，式修雅乐，必将集事，须务相时。今者帑藏未充，贡奉多阙，凡阙货力，不易方圆，制度之间，亦宜撙节。臣伏惟《仪礼》宫悬之制，陈镈钟二十架，当十二辰之位。甲、丙、庚、壬，各设编钟一架；乙、丁、辛、癸，各设编磬一架，合为二十架。树建鼓于四隅。当乾、坤、艮、巽之位，以象二十四气。宗庙、殿庭、郊丘、社稷，皆用此制，无闻异同。周、汉、魏、晋、宋、齐六朝，并只用二十架。隋氏平陈，检梁故事，乃设三十六架。国初因之不改。高宗皇帝初成蓬莱宫，充庭七十二架，寻乃省之。则簨架数太多，本近于侈。止于二十架，正协礼经。兼今太庙之中，地位甚狭，百官在列，万舞充庭，虽三十六架具存，亦施为不得。庙庭难容，未易开广，乐架不可重沓铺陈。今请依周、汉、魏、晋、宋、齐六代故事，用二十架。
 </p><p>从之。
 </p><p>古制，雅乐宫县之下，编钟四架，十六口。近代用二十四口，正声十二，倍声十二，各有律吕，凡二十四声。登歌一架，亦二十四钟。雅乐沦灭，至是复全。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p><p class='next'>下一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p><p class='next'>下一节：<a href='第十章-卷十-原文.html'>第十章-卷十</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -248,5 +272,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

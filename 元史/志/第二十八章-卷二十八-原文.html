@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -234,9 +259,8 @@
 </p><p>泰定二年，亦作显宗影堂于大天源延圣寺，天历元年废。旧有崇福、殊祥二院，奉影堂祀事，乃改为泰禧院。二年，又改为太禧宗禋院，秩二品。既而复以祖宗所御殿尚称影堂，更号神御殿。殿皆制名以冠之：世祖曰元寿，昭睿顺圣皇后曰睿寿，南必皇后曰懿寿，裕宗曰明寿，成宗曰广寿，顺宗曰衍寿，武宗曰仁寿，文献昭圣皇后曰昭寿，仁宗曰文寿，英宗曰宣寿，明宗曰景寿。且命学士拟其祭祀仪注，今阙。
 </p><p>又有玉华宫孝思殿在真定，世祖所立。以忌日享祀太上皇、皇太后御容。本路官吏祭奠，太常博士按《宋会要》定其仪。所司前期置办茶饭、香果。质明，礼直官、引献官与陪位官以下，并公服入庙庭，西向立。俱再拜讫，引献官诣殿正阶下再拜，升阶至案前褥位，三上香，三奠酒讫，就拜兴。又再拜讫，引献官复位，与陪位官以下俱再拜，退。仁宗皇庆二年秋八月庚辰，命大司徒田忠良诣真定致祭，依岁例给御香酒并牺牲祭物钱中统钞一百锭。延祐四年，始用登歌乐，行三献礼。七年，太常博士言影堂用太常礼乐非是，制罢之，岁时本处依旧礼致祭。
 </p><p>其太祖、太宗、睿宗御容在翰林者，至元十五年十一月，命承旨和礼霍孙写太祖御容。十六年二月，复命写太上皇御容，与太宗旧御容，俱置翰林院，院官春秋致祭。二十四年二月，翰林院言旧院屋敝，新院屋才六间，三朝御容宜于太常寺安奉，后仍迁新院。至大四年，翰林院移署旧尚书省，有旨月祭。中书平章完泽等言：“祭祀非小事，太庙岁一祭，执事诸臣受戒誓三日乃行事，今此轻易非宜。旧置翰林院御容，春秋二祭，不必增益。”制若曰“可”。至治三年迁置普庆寺，祀礼废。泰定二年八月，中书省臣言当祭如故，乃命承旨斡赤赍香酒至大都，同省臣祭于寺。四年，造影堂于石佛寺，未及迁。至顺元年七月，即普庆寺祭如故事。二年，复祀于翰林国史院。重改至元之六年，翰林院言三朝御容祭所甚隘，兼岁久屋漏，于石佛寺新影堂奉安为宜。中书省臣奏，此世祖定制，当仍其旧，制可。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十七章-卷二十七-原文.html'>第二十七章-卷二十七</a></p><p class='next'>下一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第二十七章-卷二十七-原文.html'>第二十七章-卷二十七</a></p><p class='next'>下一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -248,5 +272,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -245,9 +270,8 @@
 </p><p>丁亥，上不豫，免朝。戊子，皇太子率百官及王妃、公主入问起居。己丑，复入问起居。庚寅，上崩于宁德殿，寿六十有一。上疾大渐，暮夜，近臣皆出，惟前朝资明夫人郑氏年老侍侧，上知其可托，诏之曰：“速召皇太子主后事。”言绝而崩。夫人秘之。是夜，皇后及遣妃庞氏问安寝阁。庞氏阴狡机慧，常以其子守纯年长不得立，心鞅鞅。夫人恐其为变，即绐之曰：“上方更衣，后妃可少休他室。”伺其入，遽钥之，急召大臣，传遗诏立皇太子，始启户出后妃，发丧。皇太子方入宫，英王守纯已先入，皇太子知之，分遣枢密院官及东宫亲卫军官移剌蒲阿集军三万余于东华门街。部署即定，命护卫四人监守纯于近侍局，乃即皇帝位于柩前。壬辰，宣遗诏。是日，诏赦中外。明年
 </p><p>正月戊戌朔，改元正大，谥大行曰继天兴统述道勤仁英武圣孝皇帝，庙号宣宗。三月庚申，葬德陵。
 </p><p>赞曰：宣宗当金源末运，虽乏拨乱反正之材，而有励精图治之志。迹其勤政忧民，中兴之业盖可期也，然而卒无成功者何哉？良由性本猜忌，崇信翙御，奖用吏胥，苛刻成风，举措失当故也。执中元恶，此岂可相者乎，顾乃怀其援立之私，自除廉陛之分，悖礼甚矣。高琪之诛执中，虽云除恶，律以《春秋》之法，岂逃赵鞅晋阳之责？既不能罪而遂相之，失之又失者也。迁汴之后，北顾大元之朝日益隆盛，智识之士孰不先知？方且狃于余威，牵制群议，南开宋衅，西启夏侮，兵力既分，功不补患。曾未数年，昔也日辟国百里，今也日蹙国里，其能济乎？再迁遂至失国，岂不重可叹哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p><p class='next'>下一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p><p class='next'>下一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -259,5 +283,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

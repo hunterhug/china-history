@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -249,9 +274,8 @@
 </p><p>亚献武舞，《肃宁之曲》，无射宫一成。始听三鼓，一鼓稍前，开手立；二鼓合手，退后，按腰立；三鼓相顾蹲。三鼓毕，间声作，一鼓稍前，左右扬干戚；二鼓退后，相顾蹲；三鼓高呈手；四鼓左右扬干戚；五鼓呈干戚；六鼓复位，按腰立；七鼓刺干戚；八鼓两两相向，开手，正蹲；九鼓复位，举左手，收；十鼓举右手，收；十一鼓稍前，开手立；十二鼓退后，按腰立；十三鼓左右扬干戚，相向立；十四鼓复位，按腰，相顾蹲；十五鼓躬身，受。终听三鼓。（止。）
 </p><p>终献武舞，《肃宁之曲》，无射宫一成。始听三鼓，一鼓稍前，开手立；二鼓合手，退后，按腰立；三鼓相顾蹲。三鼓毕，间声作，一鼓稍前，左右扬干戚；二鼓退后，高呈手；三鼓举左手，收；四鼓举右手，收；五鼓面向西，开手，正蹲；六鼓复位，左右扬干戚；七鼓躬身，受；八鼓呈干戚；九鼓复位，按腰立；十鼓刺干戚；十一鼓两两相向立；十二鼓复位，按腰立；十三鼓退后，相顾蹲；十四鼓三叩头，拜舞；十五鼓躬身，受。终听三鼓。（止。）
 </p><p>天历三年新制乐舞。明宗酌献武舞，《永成之曲》，无射宫一成。始听三鼓，一鼓合手稍前，开手立；二鼓退后立；三鼓相顾蹲。三鼓毕，间声作，一鼓向前，舞蹈，相向立；二鼓复位，三叩头，拜舞；三鼓两两开手，正蹲；四鼓复位，俯伏；五鼓交籥，正蹲；六鼓伏，兴，仰视；七鼓躬身；八鼓稍前，开手立；九鼓复位，正揖，高呈手；十鼓举左手，收，左揖；十一鼓举右手，收，右揖；十二鼓正揖；十三鼓两两交籥，相揖；十四鼓复位；十五鼓躬身，受。终听三鼓。（止。）</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p><p class='next'>下一节：<a href='第二十四章-卷二十四-原文.html'>第二十四章-卷二十四</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p><p class='next'>下一节：<a href='第二十四章-卷二十四-原文.html'>第二十四章-卷二十四</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -263,5 +287,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

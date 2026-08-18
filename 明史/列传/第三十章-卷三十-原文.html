@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -252,9 +277,8 @@
 </p><p>张彦方，龙泉人。初为给事中，以便养乞改乐平知县。应诏勤王，帅所部抵湖口。被执，械至乐平斩之。枭其首谯楼。当署月，一蝇不集，经旬面如生。邑人窃葬之清白堂后。
 </p><p>同时以勤王死者，有松江同知，死尤烈云。同知姓名不可考，或曰周继瑜也。勤王诏下，榜募义勇入援。极言大义，感动人心。并斥“靖难”兵乖恩悖道。械至京，磔于市。
 </p><p>赞曰：燕师之南向也，连败二大将，其锋盖不可当。铁铉以书生竭力抗御于齐、鲁之间，屡挫燕众。设与耿、李易地而处，天下事固未可知矣。张昺、谢贵、葛诚图燕于肘腋，而事不就。宋忠、马宣东西继败，瞿能诸将垂胜战亡，燕兵卒得长驱南下。而姚善、陈彦回之属，欲以郡邑之甲奋拒于大势已去之后，此黄钺所谓“兵至江南，御之无及”者也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p><p class='next'>下一节：<a href='第三十一章-卷三十一-原文.html'>第三十一章-卷三十一</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p><p class='next'>下一节：<a href='第三十一章-卷三十一-原文.html'>第三十一章-卷三十一</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -266,5 +290,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

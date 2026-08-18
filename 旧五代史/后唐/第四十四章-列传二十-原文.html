@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -220,9 +245,8 @@
 </p><p>刘赞，魏州人也。幼有文性。父玭，为令录，诲以诗书，夏月令服青襦单衫。玭每肉食，别置蔬食以饭赞，谓之曰：“肉食，君之禄也。尔欲食肉，当苦心文艺，自可致之，吾禄不可分也。”由是赞及冠有文辞，年三十余登进士第。魏州节度使罗绍威署巡官，罢归京师，依开封尹刘鄩。久之，租庸使赵岩表为巡官，累迁至户部员外郎，职如故。庄宗入汴，租庸副使孔谦以赞里人，表为盐铁判官。天成中，历知制诰、中书舍人。与学士窦梦徵同年登第，邻居友善，梦徵卒，赞与同年杨凝式缌麻为位而哭，其家无嫡长，与视丧事，恤其孀稚，人士称之。改御史中丞、刑部侍郎。
 </p><p>赞性雍和，与物无忤，居官畏慎，人若以私干之，虽权豪不能移其操。未几，改秘书监，兼秦王傅。《册府元龟》：秦王为元帅，秦王府判官、太子詹事王居敏与赞乡曲之旧，以秦王盛年自恣，须朝中选端士纳诲，冀其禀畏，乃奏荐赞焉。赞节概贞素，忽闻其命，掩泣固辞，竟不能止。案《通鉴》：瓚自以左迁，泣诉，不得免。胡三省注云：唐制，六部侍郎除吏部之外，余皆从四品下；王傅从三品。然六部侍郎为向用，王傅为左迁，以职事有闲剧之不同也。当是时，从荣地居储副，则秦王傅不可以闲官。言盖以从荣轻佻峻急，恐豫其祸，故求脱耳。时秦王参佐，皆新进小生，动多轻脱，每称颂秦王功德，阿意顺旨，只奉谈笑，惟赞从容讽议，必献嘉言。秦王常接见宾僚及游客，于酒筵之中，悉令秉笔赋诗。《册府元龟》：时从荣溺于篇章，凡门客及通谒游士，必坐于客次，自出题目，令赋一章，然后接见。赞为师傅，亦与诸客混，然容状不悦。秦王知其意，自是戒典客，赞至勿通，令每月一度至衙。《言行龟鉴》载：刘赞谏秦王曰：“殿下宜以孝敬为职，浮华非所尚也。”秦王不悦，戒阍者后弗引进。赞既官系王府，不敢朝参，不通庆吊，但闭关喑呜而已，及秦王得罪，或言赞止于朝降，而赞已服麻衣备驴乘在门矣。闻其言曰：“岂有国君之嗣，一旦举室涂地，而宾佐朝降，得免死，幸也。”俄而台史示敕，长流岚州，即时赴贬所。在岚州逾年，清泰二年春，诏归田里。妻纥干氏涂中卒，赞比羸瘠，恸哭殆绝，因之亦病，行及石会关而卒，时年六十余。
 </p><p>史臣曰：自唐祚横流，衣冠扫地，苟无端士，孰恢素风。如廷珪之文学，崔沂之刚正，刘岳之典礼，舜卿之掌诰，洎梦徵而下，皆蔚有贞规，无亏懿范，固可以为搢绅之圭表，耸朝廷之羽仪，以之垂名，夫何不韪。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十三章-列传十九-原文.html'>第四十三章-列传十九</a></p><p class='next'>下一节：<a href='第四十五章-列传二十一-原文.html'>第四十五章-列传二十一</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第四十三章-列传十九-原文.html'>第四十三章-列传十九</a></p><p class='next'>下一节：<a href='第四十五章-列传二十一-原文.html'>第四十五章-列传二十一</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -234,5 +258,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

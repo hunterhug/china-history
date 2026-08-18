@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -220,9 +245,8 @@
 </p><p>十一月壬寅，帝以征讨未罢，调补为先，遂命尽赦逃亡背役髡黥之人，各许归乡里。广州进龙形通犀腰带、金托里含稜玳瑁器百余副，香药珍巧甚多。广南管内获白鹿，并图形来献，耳有两缺。按《符瑞图》，鹿寿千岁变白，耳一缺。今验此鹿耳有二缺，其兽与色皆应金行，实表嘉瑞。
 </p><p>十二月辛亥，诏曰：“潞寇未平，王师在野。攻战之势，难缓于寇围；飞免之勤，实劳于人力。永言辍耒，深用轸怀。宜令长吏，丁宁布告，期以兵罢之日，给复赋租。”于是人户闻之，皆忘其倦。诏故荆南节度使、守中书令、上谷王周汭赠太师，故武昌军节度使、兼中书令、西平王杜洪赠太傅。先是，鄂渚再为淮夷所侵，攻围甚急，杜洪以兵食将尽，继来乞师。帝料其隔越大江，难以赴援，兼以荆州据上游，多战舰，去江夏甚迩，因命周汭举舟师沿流以救之。汭于是引兵东下，才及鄂界，遇朗州背盟作乱，乘江陵之虚，纵兵袭破之，俘掠且尽。既而汭士卒知之，皆顾其家，咸无斗志，遂为淮寇所败，将卒溃散，汭忿恚自投于江。汭之本姓犯文穆皇帝庙讳，至是因追赠，以其系出周文，故赐姓周氏。及汭兵败之后，武昌以重围经年，粮尽力困，救援不至，讫为淮寇所陷，载洪以送淮师，遂杀之。此二镇，皆以忠贞殁于王事。帝每言诸籓屏翰经纶之业，必首痛汭、洪之薨，至是追赠之，深加轸悼，各以其子孙宗属录用焉。棣州蒲台县百姓王知严妹，以乱离并失怙恃，因举哀追感，自截两指以祭父母。帝以遗体之重，不合毁伤，言念村闾，何知礼教。自今后所在郡县，如有截指割股，不用奏闻。
 </p><p>是年，诸道多奏军人百姓割股，青、齐、河朔尤多。帝曰：“此若因心，亦足为孝。但苟免徭役，自残肌肤，欲以庇身，何能疗疾？并宜止绝。”《五代会要》：十二月，于辉州砀山县置崇德军。太祖榆社在砀山，置使以领之，始命硃彦让为军使。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二章-太祖纪二-原文.html'>第二章-太祖纪二</a></p><p class='next'>下一节：<a href='第四章-太祖纪四-原文.html'>第四章-太祖纪四</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第二章-太祖纪二-原文.html'>第二章-太祖纪二</a></p><p class='next'>下一节：<a href='第四章-太祖纪四-原文.html'>第四章-太祖纪四</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -234,5 +258,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

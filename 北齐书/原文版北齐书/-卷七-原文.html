@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -212,9 +237,8 @@
 </p><p>十二月乙卯，豫州刺史王士良以城降周将权景宣。丁巳，帝自晋阳南讨。己未，太宰、平阳王淹薨。壬戌，太师段韶大破尉迟迥等，解洛阳围。丁卯，帝至洛阳，免洛州经周军处一年租赋，赦州城内死罪已下囚。己巳，以太师段韶为太宰，以司徒斛律光为太尉，并州刺史兰陵王长恭为尚书令。壬申，帝至武牢，经滑台，次于黎阳，所经减降罪人。丙子，车驾至自洛阳。是岁，高丽、靺羯、新罗并遣使朝贡。山东大水，饥死者不可胜计，诏发赈给，事竟不行。
 </p><p>四年春正月癸卯，以大将军、任城王湝为大司马。辛未，幸晋阳。二月甲寅，诏以新罗国王金真兴为使持节、东夷校尉、乐浪郡公、新罗王。壬申，以年谷不登，禁酤酒。己卯，诏减百官食禀各有差。三月戊子，诏给西兖、梁、沧、赵州，司州之东郡、阳平、清河、武都，冀州之长乐、渤海遭水潦之处贫下户粟，各有差。家别斗升而已，又多不付。是月，彗星见；有物陨于殿庭，如赤漆鼓带小铃；殿上石自起，两两相对。又有神见于后园万寿堂前山穴中，其体壮大，不辩其面，两齿绝白，长出于唇，帝直宿嫔御已下七百人咸见焉。帝又梦之。夏四月戊午，大将军、东安王娄睿坐事免。乙亥，陈人来聘。太史奏天文有变，其占当有易王。丙子，乃使太宰段韶兼太尉，持节奉皇帝玺绶传位于皇太子，大赦，改元为天统元年，百官进级降罪各有差。又诏皇太子妃斛律氏为皇后。于是群公上尊号为太上皇帝，军国大事咸以奏闻。始将传政，使内参乘子尚乘驿送诏书于邺。子尚出晋阳城，见人骑随后，忽失之，尚未至邺而其言已布矣。
 </p><p>天统四年十二月辛未，太上皇帝崩于邺宫乾寿堂，时年三十二，谥曰武成皇帝，庙号世祖。五年二月甲申，葬于永平陵。</p>
-<div class='pn'><p class='pre'>上一节：<a href='-卷六-原文.html'>-卷六</a></p><p class='next'>下一节：<a href='-卷八-原文.html'>-卷八</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='-卷六-原文.html'>-卷六</a></p><p class='next'>下一节：<a href='-卷八-原文.html'>-卷八</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -226,5 +250,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

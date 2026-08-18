@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -211,9 +236,8 @@
 </p><p>明宗即位后，史圭入朝任文昌正郎，安重诲又举荐他为河南少尹，主管府中事务，不久，任枢密院直学士。当时史圭深受安重诲的知遇，安重诲上奏让史圭与同僚阎至一并上殿侍立，以备顾问咨询，明宗准允了。不久又从左谏议大夫提拔为尚书右丞，有入阁为相的名望。史圭深谙为官之道，安重诲本来不懂诗书，做事刚愎自用，凡当安重诲在明宗前谈论重要事务时，史圭则消闲终日，不去明辩驳正安重诲所做的事。长兴年间，安重诲被杀之后，史圭出任贝州刺史，不久罢免，退居常山。从此闭门不出与世隔绝，即使是亲戚故旧来拜访，也不相见，每当游历别墅，则乘妇女坐的毡车来遮掩自己，没有谁能了解他的心事。
 </p><p>晋高祖登上皇位，征召为刑部侍郎，任盐铁副使。都是宰相冯道奏请的结果。当初史圭在明宗朝担任右丞，临时主持衡铨事，冯道在中书，曾经因当堂判理铨司所附官员，史圭愤怒，竭力争辩，冯道也稍有生气的神色；到现在，史圭首先被冯道举荐，他才惭愧自己的度量远不及冯道。旋即改任吏部侍郎，分管铨事，而史圭一向廉洁守节，大有公正廉直的声誉。
 </p><p>史圭原担任河南少尹的时候，有个嵩山的方术之士送给史圭石药，并对史圭说“：服用它可以延年益寿，然而不可中途停废，停废则疾病发作。”史圭后来服用了那药，神情爽朗，精力充沛，很是珍惜那药。清泰末年，史圭住在常山，碰上秘琼作乱，当时，那药藏在衣箱里，被贼人抢去，以后就再不能得到。天福年间，胸部产生疾病，经常像火一样烧灼。史圭知道不能挽救，便请求回归故里，朝廷下诏准允了他。到渡过黄河后，竟被药气蒸熬，在路上去世，被送回葬在石邑，时年六十八岁。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十七章-列传六-白话.html'>第十七章-列传六</a></p><p class='next'>下一节：<a href='第十九章-列传八-白话.html'>第十九章-列传八</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第十七章-列传六-白话.html'>第十七章-列传六</a></p><p class='next'>下一节：<a href='第十九章-列传八-白话.html'>第十九章-列传八</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -225,5 +249,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

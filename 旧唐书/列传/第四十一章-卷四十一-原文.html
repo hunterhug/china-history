@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -245,9 +270,8 @@
 <p>　　袁恕己，沧州东光人也。长安中，历迁司刑少卿，兼知相王府司马事。敬晖等 将诛张易之兄弟，恕己预其谋议，又从相王统率南衙兵仗，以备非常。及事定，加 银青光禄大夫，行中书侍郎、同中书门下三品，封南阳郡公，食实封五百户。将作 少匠杨务廉素以工巧见用，中兴初，恕己恐其更启游娱侈靡之端，言于中宗曰： “务廉致位九卿，积有岁年，苦言嘉谋，无足可纪。每宫室营构，必务其侈，若不 斥之，何以广昭圣德？”由是左授务廉陵州刺史。恕己俄擢拜中书令，仍加特进， 封南阳郡王，罢知政事。则天崩，遗制加实封满七百户。后与敬晖等累遭贬黜，流 于环州。寻为周利贞所逼，饮野葛汁数升，恕己常服黄金，饵毒发，愤闷，以手掘 地，取土而食，爪甲殆尽，竟不死，乃击杀之。建中初，赠太子太傅。曾孙德文， 举进士，开成三年，授秘书省校书郎。 </p>
 <p>　　史臣曰：昔夫差入越，勾践保于会稽，不听子胥之言，而有甬东之叹。此五王 除凶返正，得计成功。当是时，彦范、敬晖握兵全势，三思、攸暨其党半歼，若从 季昶之言，宁有利贞之祸？盖以心怀不忍，遽失后图，黜削流移，理固然也。且芟 蔓而不能拔本，建谋而尚欠防微，死即无辜，祸由自掇。失断召乱也，不亦宜哉！ </p>
 <p>　　赞曰：嗟彼五王，忠于有唐。知火在木，谓其无伤。祸发既克，势摧靡当。何 事不敏，周身之防。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十章-卷四十-原文.html'>第四十章-卷四十</a></p><p class='next'>下一节：<a href='第四十二章-卷四十二-原文.html'>第四十二章-卷四十二</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第四十章-卷四十-原文.html'>第四十章-卷四十</a></p><p class='next'>下一节：<a href='第四十二章-卷四十二-原文.html'>第四十二章-卷四十二</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -259,5 +283,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

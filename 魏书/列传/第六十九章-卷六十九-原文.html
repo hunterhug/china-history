@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -219,9 +244,8 @@
 </p><p>忠之猎涉文史，颇有笔札，释褐太学博士。天平初，除中书侍郎。裴伯茂与之同省，常侮忽之，以忠之色黑，呼为“黑宇”。后敕修国史。元象初，兼通直散骑常侍，副郑伯猷使萧衍。武定初，为安南将军、尚书右丞，仍修史。未几，以事除名。忠之好荣利，自为中书郎，六七年矣，遇尚书省选右丞，预选者皆射策，忠之入试焉。既获丞职，大为忻满，志气嚣然，有骄物之色，识者笑之。既失官爵，怏怏发病卒。
 </p><p>子君山。
 </p><p>史臣曰：綦俊遭逢受职。山伟位行颇爽。仁之虽内怀矫诈，而交情自笃。忠之虽文史足用，而雅道蔑闻。谓全德者，其难矣哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十八章-卷六十八-原文.html'>第六十八章-卷六十八</a></p><p class='next'>下一节：<a href='第七十章-卷七十-原文.html'>第七十章-卷七十</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第六十八章-卷六十八-原文.html'>第六十八章-卷六十八</a></p><p class='next'>下一节：<a href='第七十章-卷七十-原文.html'>第七十章-卷七十</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -233,5 +257,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -204,9 +229,8 @@
 
 <h1>辛庆之传<span style='font-size:small'> 白话</span></h1>
 <p>辛庆之字余庆，陇西狄道人。辛姓世代为陇西大姓。父辛显宗，官至冯翊郡守，赠雍州刺史。<BR><BR>　　辛庆之少年时就因文采出众被征召到洛阳，对策取得第一，授官秘书郎。时逢..朱氏叛乱，魏孝庄帝令司空杨津为北道行台，指挥太行山以东的军队讨伐。杨津起用辛庆之为行台左丞，参与军机大事。到了邺城，得知孝庄帝驾崩的消息，辛庆之往来兖州和冀州之间，计划聚集义兵，救国家之危难。不久，节闵帝即位，辛庆之就回到了洛阳。后来，贺拔岳为行台，重新起用辛庆之为行台吏部郎。大统初年，跟随周文帝东向讨伐，任行台左丞。大统六年(540)，代掌河东郡诸事。九年，入京为丞相府右长史，兼任给事黄门侍郎，授度支尚书之职，复任河东郡守。改任南荆州刺史，加官仪同三司。<BR><BR>　　辛庆之虽然职高位隆，却任性自然，勤俭朴素，车马衣服，亦不要求华丽奢侈。志量宏大，有读书人的风度，特别为时议所推重。又因他精通经籍，操行高尚，受命与卢诞等人教授诸王。废帝二年(553)，升任秘书监。死于官任。子加授陵主寝上士。同族兄弟之子辛昂。</p>
-<div class='pn'><p class='pre'>上一节：<a href='李彦传-白话.html'>李彦传</a></p><p class='next'>下一节：<a href='辛昂传-白话.html'>辛昂传</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='李彦传-白话.html'>李彦传</a></p><p class='next'>下一节：<a href='辛昂传-白话.html'>辛昂传</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -218,5 +242,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

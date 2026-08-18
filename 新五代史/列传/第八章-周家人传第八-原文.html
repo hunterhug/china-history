@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -216,9 +241,8 @@
 </p><p>显德三年，群臣请封宗室，世宗以谓为国日浅，恩信未及于人，而须功德大成，庆流于世，而后议之可也。明年夏四月癸未，先封太祖诸子。又诏曰：“父子之道，圣贤不忘，再思天阏之端，愈动悲伤之抱。故皇子左骁卫大将军谊、左武卫大将军諴、左屯卫大将军诚等，载惟往事，有足伤怀，宜增一字之封，仍赠三台之秩。谊可赠太尉，追封越王；诚太傅，吴王；諴太保，韩王。”而皇子在者皆不封。
 </p><p>六年，北复三关，遇疾，还京师。六月癸未，皇子宗训，特进左卫上将军，封梁王；而宗让亦拜左骁卫上将军，封燕国公。后十日而世宗崩，梁王即位，是为恭皇帝。其年八月，宗让更名熙让，封曹王。熙谨、熙诲皆前未封爵，遂拜熙谨右武卫大将军，封纪王；熙诲左领军卫大将军，蕲王。皇朝乾德二年十月，熙谨卒。熙让、熙诲，不知其所终。
 </p><p>呜呼！至公，天下之所共也。其是非曲直之际，虽父爱其子，亦或有所不得私焉。当周太祖举兵于魏，汉遣刘铢诛其家族于京师，酷毒备至；后太祖入立，遣人责铢，铢辞不屈，太祖虽深恨之，然以铢辞直，终不及其家也。及追封妻子之被杀者，其言深自隐痛之而已，不敢有非汉之辞焉，盖知其曲在己也。故略存其辞，以见周之有愧于其心者矣！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-周家人传第七-原文.html'>第七章-周家人传第七</a></p><p class='next'>下一节：<a href='第九章-梁臣传第九-原文.html'>第九章-梁臣传第九</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第七章-周家人传第七-原文.html'>第七章-周家人传第七</a></p><p class='next'>下一节：<a href='第九章-梁臣传第九-原文.html'>第九章-梁臣传第九</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -230,5 +254,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

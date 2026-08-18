@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -224,9 +249,8 @@
 </p><p>开济以综核为己任，奏请天下诸司设置文簿，每天都记载做过的事情，考核得失，又令各部勘合文移，设立程限，评定功罪。又说，军民以细故犯罪的，应立即谪贬。数月之间，堆集的文牍一扫而清。太祖十分赞赏他的能力。都御史赵仁建议，从前以“贤良方正”、“孝弟力田”诸科所取之士列置郡县，大多不能胜任，应考核他们，决定去留。开济分别予以商议，以“经明行修”为一科，“工习文词”为一科“，通晓书义”为一科“，人品俊秀”为一科“，练达治理”为一科“，言有条理”为一科，六科完备的为上，三科以上的为中，不及三科的为下。得到许可。
 </p><p>开济敏慧有才辩，凡国家经制、田赋、狱讼、工役、河渠等事务，众人没有能裁定的，开济一算画，就形成了条理品式，并且可为世代遵守。因此太祖十分信任他，多次召他为顾问，并兼理其他部的一些事务。人们因此顾忌，诽谤之声四起。然而开济深沉尖刻，善于以律法伤人。曾奉命制定诈伪律。皇上说“：制定严密的法律约束百姓，可以吗？”又设籍，称为“寅戌之书”，以衡量僚属出入。太祖斥责说：“古人以卯西为常，今使趋事者朝寅暮戌，奉父母，会妻子，几何时耶？”又张榜告诫其僚属，请求张贴在文华殿。太祖说：“告诫僚属的言论，欲张贴在殿廷，难道是人臣之礼吗？”开济谢罪。
 </p><p>不久令郎中仇衍妄图开脱死囚，被狱官发觉。开济和侍郎王希哲、主事王叔征把狱官捉拿击毙了。当年十二月，御史陶篨仲等揭发了此事。就说“：开济奏时事，把奏章藏在怀中，有时隐藏着而不做声，察看皇上意思，模棱两可，奸狡莫测。把他的外甥女奴役为婢。他妹妹早已守寡，赶走了姑姑并吞并了她的家财。”太祖大怒，把开济投入了狱中，并把王希哲、仇衍等人斩首。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十五章-卷二十五-白话.html'>第二十五章-卷二十五</a></p><p class='next'>下一节：<a href='第二十七章-卷二十七-白话.html'>第二十七章-卷二十七</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第二十五章-卷二十五-白话.html'>第二十五章-卷二十五</a></p><p class='next'>下一节：<a href='第二十七章-卷二十七-白话.html'>第二十七章-卷二十七</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -238,5 +262,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

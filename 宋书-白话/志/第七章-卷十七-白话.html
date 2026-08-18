@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -262,9 +287,8 @@
 </p><p>晋武帝泰始元年十二月，诏说：“从前圣帝明王，祭祀五岳、四渎，名山川泽，分别有一定的礼仪制度。为的是报答天地阴阳变化赐福人间的功德，而顺应四时节令阴晴水旱的规律。然而以正道统治天下的人，他那个时代鬼不神奇不灵验，神不伤人害人。所以祝史献祭而没有羞愧言词，因此这个时代的人对幽冥神灵之事很慎重，不正规的祭祀便不会进行。末世之人不笃信正道，僭越礼制，渎慢神灵，所求所请为所欲为，一点也不敬而远之，一味苟且以求侥幸，妖法鬼道互相煽惑，舍正为邪，因此魏朝对此非常痛恨。现诏令按照旧有礼仪，制订制度，使建立了功勋的人，必定进行祭祀报答他的功德，而妖魔鬼怪之类，不要混杂其问受祭。”二年正月。有关官员上奏说：“春分祭祀厉鬼使消除灾祸的禳祭遭殃受损。”下诏说：“春分祭祀厉鬼不在正常的祭祀规定之内，废除它。”
 </p><p>宋武帝永初二年，普遍禁止不正规的祭祀。因此蒋子文祠堂以下，普遍都拆毁了祠堂庙宇，禁止祭祀。耋武童叁建初年，重新修建蒋山庙，山川大神庙宇，也都逐渐修复。明帝在鸡笼山修建九州庙，把众神都聚集在庙中祭祀。蒋侯宋代爵位逐渐加高，位至相国、大都督、中外诸军事，加殊礼，钟山王。苏侯位至骠骑大将军。四方各路神祇，都加封了爵位秩级。
 </p><p>汉安帝元初四年，下诏说：“据《礼记．月令》，秋八月，要注意赡养衰老的人，授给他们几和杖，赐粥给他们’。方今八月清查户口的时候，郡县大多没有遵照执行。即使有粥，也是用秕谷糠皮和泥土相拌和，不能吃。”据此韶令，汉代仍然依照《月令》施政行事。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章-卷十六-白话.html'>第六章-卷十六</a></p><p class='next'>下一节：<a href='第八章-卷十八-白话.html'>第八章-卷十八</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第六章-卷十六-白话.html'>第六章-卷十六</a></p><p class='next'>下一节：<a href='第八章-卷十八-白话.html'>第八章-卷十八</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -276,5 +300,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

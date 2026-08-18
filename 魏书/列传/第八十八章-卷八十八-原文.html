@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -227,9 +252,8 @@
 </p><p>契丹国，在库莫奚东，异种同类，俱窜于松漠之间。登国中，国军大破之，遂逃迸，与库莫奚分背。经数十年，稍滋蔓，有部落，于和龙之北数百里，多为寇盗。真君以来，求朝献，岁贡名马。显祖时，使莫弗纥何辰奉献，得班飨于诸国之末。归而相谓，言国家之美，心皆忻慕，于是东北群狄闻之，莫不思服。悉万丹部、何大何部、伏弗郁部、羽陵部、日连部、匹洁部、黎部、吐六于部等，各以其名马文皮入献天府，遂求为常。皆得交市于和龙、密云之间，贡献不绝。太和三年，高句丽窃与蠕蠕谋，欲取地豆于分之。契丹惧其侵轶，其莫弗贺勿于率其部落车三千乘、众万余口，驱徙杂畜，求入内附，止于白狼水东。自此岁常朝贡。后告饥，高祖矜之，听其入关市籴。及世宗、肃宗时，恆遣使贡方物。熙平中，契丹使人祖真等三十人还，灵太后以其俗嫁娶之际，以青氈为上服，人给青氈两匹，赏其诚款之心，余依旧式。朝贡至齐受禅常不绝。
 </p><p>乌洛候国，在地豆于之北，去代都四千五百余里。其土下湿，多雾气而寒，民冬则穿地为室，夏则随原阜畜牧。多豕，有谷麦。无大君长，部落莫弗皆世为之。其俗绳发，皮服，以珠为饰。民尚勇，不为奸窃，故慢藏野积而无寇盗。好猎射。乐有箜篌，木槽革面而施九弦。其国西北有完水，东北流合于难水，其地小水皆注于难，东入于海。又西北二十日行有于已尼大水，所谓北海也。世祖真君四年来朝，称其国西北有国家先帝旧墟，石室南北九十步，东西四十步，高七十尺，室有神灵，民多祈请。世祖遣中书侍郎李敞告祭焉，刊祝文于室之壁而还。
 </p><p>史臣曰：夷狄之于中国，羁縻而已。高丽岁修贡职，东籓之冠，荣哀之礼，致自天朝，亦为优矣。其他碌碌，咸知款贡，岂牛马内向，东风入律者也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十七章-卷八十七-原文.html'>第八十七章-卷八十七</a></p><p class='next'>下一节：<a href='第八十九章-卷八十九-原文.html'>第八十九章-卷八十九</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第八十七章-卷八十七-原文.html'>第八十七章-卷八十七</a></p><p class='next'>下一节：<a href='第八十九章-卷八十九-原文.html'>第八十九章-卷八十九</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -241,5 +265,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

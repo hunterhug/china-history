@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -213,9 +238,8 @@
 </p><p>若帝不亲征，重臣统兵不下十五万众，三路往还，北京会兵，进以九月，退以十二月，行事次第皆如之。若春以正月，秋以九月，不命都统，止遣骑兵六万，不许深入，不攻城池，不伐林木，但于界外三百里内，耗荡生聚，不令种养而已。
 </p><p>军入南界，步骑军帐不循阡陌。三道将领各一人，率栏子马各万骑，支散游弈百十里外，更迭觇逻。及暮，以吹角为号，众即顿舍，环绕御帐，自近及远，折木稍屈，为弓子铺，不设枪营堑栅之备。
 </p><p>每军行，鼓三伐，不问昼夜，大众齐发。未遇大敌，不乘战马，俟近敌师，乘新羁马，蹄有余力。成列不战，退则乘之。多伏兵断粮道，冒夜举火，上风曳柴。馈饷自赍，散而复聚。善战，能寒。此兵之所以强也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p><p class='next'>下一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p><p class='next'>下一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -227,5 +251,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

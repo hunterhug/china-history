@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -275,9 +300,8 @@
 </p><p>初，由榔之走缅甸也，昆明诸生薛大观叹息曰：“不能背城战，君臣同死社稷，顾欲走蛮邦以苟活，不重可羞耶！”顾子之翰曰：“吾不惜七尺躯，为天下明大义，汝其勉之！”之翰曰：“大人死忠，儿当死孝。”大观曰：“汝有母在。”时其母适在旁，顾之翰妻曰：“彼父子能死忠孝，吾两人独不能死节义耶？”其侍女方抱幼子，问曰：“主人皆死，何以处我？”大观曰：“尔能死，甚善。”于是五人偕赴城北黑龙潭死。次日，诸尸相牵浮水上，幼子在侍女怀中，两手坚抱如故。大观次女已适人，避兵山中，相去数十里，亦同日赴火死。
 </p><p>有那嵩者，沅江土官也。世为知府。嵩嗣职，循法无过。王走缅甸，过沅江，嵩与子焘迎谒，供奉甚谨，设宴皆金银器。宴毕，悉以献，曰：“此行上供者少，聊以佐缺乏耳。”后李定国号召诸土司兵，嵩即起兵应之。已而城破，登楼自焚，阖家皆死，其士民亦多巷战死。
 </p><p>赞曰：明自神宗而后，浸微浸灭，不可复振。揆厥所由，国是纷呶，朝端水火，宁坐视社稷之沦胥，而不能破除门户之角立。故至桂林播越，旦夕不支，而吴、楚之树党相倾，犹仍南都翻案之故态也。颠覆之端，有自来矣，于当时任事诸臣何责哉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百六十六章-卷一百六十六-原文.html'>第一百六十六章-卷一百六十六</a></p><p class='next'>下一节：<a href='第一百六十八章-卷一百六十八-原文.html'>第一百六十八章-卷一百六十八</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第一百六十六章-卷一百六十六-原文.html'>第一百六十六章-卷一百六十六</a></p><p class='next'>下一节：<a href='第一百六十八章-卷一百六十八-原文.html'>第一百六十八章-卷一百六十八</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -289,5 +313,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

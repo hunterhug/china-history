@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -348,9 +373,8 @@
 </p><p>光化元年九月丙子，有大星坠于北方。三年三月丙午，有星如二十斛船，色黄，前锐后大，西南行。十一月，中天有大星自东缓流，如带屈曲，光凝著天，食顷乃灭。是谓枉矢。
 </p><p>天复三年二月，帝至自凤翔，其明日，有大星如月，自东浊际西流，有声如雷，尾迹横贯中天，三夕乃灭。
 </p><p>天祐元年五月戊寅乙夜，雨、晦暝，有星长二十丈，出东方，西南向，首黑、尾赤、中白，枉矢也，一曰长星。二年三月乙丑，夜中有大星出中天，如五斗器，流至西北，去地十丈许而止，上有星芒，炎如火，赤而黄，长丈五许，而蛇行，小星皆动而东南，其陨如雨，少顷没，后有苍白气如竹丛，上冲天中，色瞢瞢。占曰：“亦枉矢也。”三年十二月昏，东方有星如太白，自地徐上，行极缓，至中天，如上弦月，乃曲行，顷之，分为二。占曰；“有大孽。”</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p><p class='next'>下一节：<a href='第二十三章-卷二十三-原文.html'>第二十三章-卷二十三</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p><p class='next'>下一节：<a href='第二十三章-卷二十三-原文.html'>第二十三章-卷二十三</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -362,5 +386,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -467,9 +492,8 @@
 </p><p>礼行清庙，华黍荐年丰，圣孝与天通。六龙回驭千官卫，玉振珮环风。黄麾金辂严天仗，非雾郁葱葱。工歌叠奏升平曲，福禄自来崇。
 </p><p>大定二十七年三月，皇太孙受册，谢庙，导引曲：
 </p><p>璇源浚发，衍庆自灵长，圣运日隆昌。震闱显册遵彝典，基绪焕重光。练时庙见严昭报，礼乐粲成章。精诚潜格神明助，福禄永无疆。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p><p class='next'>下一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第二十章-卷二十-原文.html'>第二十章-卷二十</a></p><p class='next'>下一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -481,5 +505,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

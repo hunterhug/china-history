@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -277,9 +302,8 @@
 </p><p>黄淳耀，字蕴生，嘉定人。当学生时，就深恶科举文章华而不实。他的文章，以六经为范本，讲求典雅。名士追求名利，他对名利表示淡漠。崇祯十六年(1643)进士及第后，回家潜心钻研经书。布衣粝食，家徒四壁。
 </p><p>京师陷落，福王在南京即位，诸进士都授官职，唯独淳耀不去应选。南京沦陷，嘉定城破，淳耀愤慨不已。与渊耀入庙宇，准备自尽。僧人对他说：“你没有做官，不必死。”淳耀说：“我与嘉定共存亡，岂可有贰心。”向僧人索求纸笔，写道“：弘光六年七月二十四日，进士黄淳耀自杀于城西僧舍。呜呼！进不能为朝廷效力，退不能洁身自隐，读书受益不多，学道无成，内心不安，夜不能寐。”与渊耀相对，悬梁自尽，时年四十一岁。
 </p><p>淳耀二十岁就著有《自监录》、《知过录》，立志于圣贤之学。每天将白天所做之事，在夜间记录下来，凡语言之得失，思念之纯杂，无不记载，以备自己反省改过。其诗文均仿效前代贤臣。著有《陶庵集》十五卷。其弟子奉谥号曰贞文。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百六十九章-卷一百六十九-白话.html'>第一百六十九章-卷一百六十九</a></p><p class='next'>下一节：<a href='第一百七十一章-卷一百七十一-白话.html'>第一百七十一章-卷一百七十一</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第一百六十九章-卷一百六十九-白话.html'>第一百六十九章-卷一百六十九</a></p><p class='next'>下一节：<a href='第一百七十一章-卷一百七十一-白话.html'>第一百七十一章-卷一百七十一</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -291,5 +315,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

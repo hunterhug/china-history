@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -223,9 +248,8 @@
 </p><p>孝昌年间，绛、蜀二地反叛朝廷，朝廷以费穆为都督，率军前往征讨，平定了叛乱。费穆被授任为前将军、散骑常侍，迁任平南将军、光禄大夫。妖贼李洪在阳城起兵叛乱，勾结蛮民，朝廷令费穆兼武卫将军，率领部众讨击，大败敌军于关口南面。费穆迁任金紫光禄大夫，正武卫将军。
 </p><p>尔朱荣入朝，灵太后征召费穆，令其屯军于小平。及至尔朱荣推奉庄帝即位，河梁不能自守，费穆就抛弃部众先降于尔朱荣。费穆一向为尔朱荣所知遇，尔朱荣见了他非常高兴。费穆暗中游说尔朱荣说：“你的兵马不过万人，如今长驱直向洛阳，前面没有军队敢于阻挡，正是因为你推奉主上，顺应民心的缘故。既没有战胜者之威严，群情一向都不佩服。现在京师凭着将士之众，百官之盛，听说你的兵力情况，必然对你有轻视侮慢之心。如果不大行诛罚，建树亲党，你回到北边的时候，恐怕不等到越过太行，内难就会兴起。”尔朱荣内心里同意他的说法。于是就有后来河阴大诛戮的事发生。天下之人听说如此，莫不切齿痛恨。尔朱荣进入洛阳，费穆迁任中军将军、吏部尚书，被封为鲁县开国侯，食邑八百户，又兼夏州大中正。
 </p><p>萧衍派其将军曹义宗进逼荆州，皇帝令费穆为使持节、征南将军、都督南征诸军事、大都督，率军前往援助。费穆秘密行军径直进取，出其不意，一到荆州就大败萧衍军，生擒曹义宗送到京师。费穆因功迁任卫将军，进封为赵平郡开国公，增加食邑一千户。费穆又迁任使持节，加授侍中、车骑将军、假仪同三司、前锋大都督。与大将军元天穆东讨邢杲，剿灭敌军。当时元颢威逼朝廷，庄帝逃往北方，元颢进入京师。费穆与元天穆平定齐地以后，回师准备攻击元颢。费穆为先驱围攻虎牢，率精锐部队进行攻击。将要攻克虎牢的时候，正逢元天穆率军北渡，既没有后续部队，军情又悖离沮丧，费穆于是就投降于元颢。由于河阴残酷滥杀之事起于费穆，元颢把他带进京都诘问斥责，把他杀掉，费穆时年五十三岁。庄帝还宫以后，追赠费穆为侍中、司徒公，定谥号为武宣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十一章-卷三十一-白话.html'>第三十一章-卷三十一</a></p><p class='next'>下一节：<a href='第三十三章-卷三十三-白话.html'>第三十三章-卷三十三</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第三十一章-卷三十一-白话.html'>第三十一章-卷三十一</a></p><p class='next'>下一节：<a href='第三十三章-卷三十三-白话.html'>第三十三章-卷三十三</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -237,5 +261,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

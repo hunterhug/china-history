@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -240,9 +265,8 @@
 </p><p>四年，诏积钱以七千缗为率，十万缗者期以一年出之，二十万以二年。凡交易百缗以上者，匹帛米粟居半。河南府、扬州、江陵府以都会之剧，约束如京师。未几皆罢。
 </p><p>八年，河东锡钱复起，盐铁使王涯置飞狐铸钱院于蔚州，天下岁铸钱不及十万缗。文宗病币轻钱重，诏方镇纵钱谷交易。时虽禁铜为器，而江淮、岭南列肆鬻之，铸千钱为器，售利数倍。宰相李珏请加炉铸钱，于是禁铜器，官一切为市之。天下铜坑五十，岁采铜二十六万六千斤。及武宗废浮屠法，永平监官李郁彦请以铜像、钟、磬、钅卢、鐸皆归巡院，州县铜益多矣。盐铁使以工有常力，不足以加铸，许诸道观察使皆得置钱坊。淮南节度使李绅请天下以州名铸钱，京师为京钱，大小径寸，如开元通宝，交易禁用旧钱。会宣宗即位，尽黜会昌之政，新钱以字可辨，复铸为像。
 </p><p>昭宗末，京师用钱八百五十为贯，每百才八十五，河南府以八十为百云。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十三章-卷四十三-原文.html'>第四十三章-卷四十三</a></p><p class='next'>下一节：<a href='第四十五章-卷四十五-原文.html'>第四十五章-卷四十五</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第四十三章-卷四十三-原文.html'>第四十三章-卷四十三</a></p><p class='next'>下一节：<a href='第四十五章-卷四十五-原文.html'>第四十五章-卷四十五</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -254,5 +278,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

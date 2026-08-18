@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -224,9 +249,8 @@
 <p>　　元和十三年，入为宗正卿。道古在鄂州日，以贪暴闻，惧终得罪，乃荐山人柳 泌以媚于上。后又为左金吾卫将军。宪宗季年颇信方士，锐于服食，诏天下搜访奇 士。宰相皇甫镈方谀媚固宠，道古言柳泌有道术，镈得进之，待诏翰林。宪宗服饵 过当，暴成狂躁之疾，以至弃代。穆宗在东宫，扼腕于其事，及居丧，皆窜逐诛之。 镈既贬责，授道古循州司马，终以服丹药，欧血而卒。 </p>
 <p>　　史臣曰：李勉、李皋，禀性端庄，处身廉洁，临民莅事，动有美声，可谓宗臣 之英也。若夫治军旅，御寇戎，谋必臧，战必胜，则又勉不及皋远矣。道古便佞， 奸以事君，何父子之不相类也。 </p>
 <p>　　赞曰：我宗之英，曰皋与勉，才虽不同，道岂相远。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十章-卷八十-原文.html'>第八十章-卷八十</a></p><p class='next'>下一节：<a href='第八十二章-卷八十二-原文.html'>第八十二章-卷八十二</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第八十章-卷八十-原文.html'>第八十章-卷八十</a></p><p class='next'>下一节：<a href='第八十二章-卷八十二-原文.html'>第八十二章-卷八十二</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -238,5 +262,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

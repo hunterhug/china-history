@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -254,9 +279,8 @@
 </p><p>九月甲子，遣吏部尚书贾守谦等一十三人与各路按察司官推排民户物力。乙丑，至自秋山。冬十月辛未，以吏部郎中郭郛为高丽生日使。辛巳，宋、高丽、夏遣使来贺。夏国有兵，遣使来告。癸未，更定安泊强窃盗罪格。辛卯，以军民共誉为廉能官条附善最法。
 </p><p>十一月丁酉朔，诏诸路按察使并兼转运使。初设三司使，掌判盐铁、度支、劝农事。以枢密使纥石烈子仁兼三司使。癸卯，诏戒谕尚书省曰：“国家之治，在于纪纲。纪纲所先，赏罚必信。今乃上自省部之重，下逮司县之间，律度弗循，私怀自便。迁延旷岁，苟且成风，习此为恒，从何致理？朝廷者百官之本，京师者诸夏之仪。其勖自今，各惩已往，遵绳奉法，竭力赴功。无枉挠以循情，无依违而避势，壹归于正，用范乃民。”是日，御临武殿试护卫。丁未，敕谕临潢泰州路兵马都总管承裔等修边备。乙卯，上不豫。丙辰，崩于福安殿，年四十一。大安元年春正月，谥曰宪天光运仁文义武神圣英孝皇帝，庙号章宗。二月甲申，葬道陵。
 </p><p>赞曰：章宗在位二十年，承世宗治平日久，宇内小康，乃正礼乐，修刑法，定官制，典章文物粲然成一代治规。又数问群臣汉宣综核名实、唐代考课之法，盖欲跨辽、宋而比迹于汉、唐，亦可谓有志于治者矣！然婢宠擅朝，冢嗣未立，疏忌宗室而传授非人。向之所谓维持巩固于久远者，徒为文具，而不得为后世子孙一日之用，金源氏从此衰矣！昔扬雄氏有云：“秦之有司负秦之法度，秦之法度负圣人之法度。”盖有以夫。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十一章-卷十一-原文.html'>第十一章-卷十一</a></p><p class='next'>下一节：<a href='第十三章-卷十三-原文.html'>第十三章-卷十三</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第十一章-卷十一-原文.html'>第十一章-卷十一</a></p><p class='next'>下一节：<a href='第十三章-卷十三-原文.html'>第十三章-卷十三</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -268,5 +292,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

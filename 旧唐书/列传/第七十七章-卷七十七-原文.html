@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -228,9 +253,8 @@
 <p>　　偃以才地当掌文诰，以躁求为时论所抑，郁郁不得志。泾师之乱，从驾不及， 匿于田家，为贼所得。硃泚素知之，得偃甚喜，伪署中书舍人，僭号辞令，皆偃为 之。贼败，与伪中丞崔宣、贼将杜如江、吴希光等十三人，李晟收之，俱斩于安国 寺前。 </p>
 <p>　　史臣曰：肇分阴阳，爰有生死，修短二事，贤愚一途。故君子遇夷险之机，不 易其节；小人昧逆顺之道，而陷于刑。鸿毛泰山，斯为至论。令言远总师徒，首为 叛逆；光晟初当委任，危输款诚；源休虽曰士流，甚于元恶；乔琳巧辞真主，俯就 伪官；蒋镇贪禄隳节，皆曰小人。经纶之徒，不足言尔。 </p>
 <p>　　赞曰：时争逆顺，命击死生。君子守节，小人正刑。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十六章-卷七十六-原文.html'>第七十六章-卷七十六</a></p><p class='next'>下一节：<a href='第七十八章-卷七十八-原文.html'>第七十八章-卷七十八</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第七十六章-卷七十六-原文.html'>第七十六章-卷七十六</a></p><p class='next'>下一节：<a href='第七十八章-卷七十八-原文.html'>第七十八章-卷七十八</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -242,5 +266,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

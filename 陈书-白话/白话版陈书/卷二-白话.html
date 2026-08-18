@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -228,9 +253,8 @@
 </p><p>秋季八月甲午，群臣奉上谧号为武皇帝，庙号为高祖。丙申，葬在万安陵。
 </p><p>产担用智慧安抚万物，用武功平定叛乱，独自运用英明的谋略，人们都赶不上他，所以能够征伐战胜四方，平定叛乱削除凶逆。到了登上皇位之日，担当国家朝政的重任，常推崇宽大之政，以仁爱抚恤为本。如果需要征发调用军需物资，都是出于事情不能平息。加上以节俭朴素自作表率，平常饮食不过几个品种，宫中的私宴，都用粗陋的食器，各种食品和美味，削减至充足而已，不能白白浪费。起初平定侯景，到拥立梁敬帝，美女玉帛，都分发给将士。他充用于后宫的，衣服没有华美的色彩，饰物不用黄金翠玉，编钟女乐，他也不列于面前。等到他登基，更加严格恭俭。所以他建立了伟大的功勋美好的恩德，广阔地拥有天下。
 </p><p>陈朝吏部尚书姚察曰：高祖英明而有谋略度量宽宏，随机应变不拘一格，大概舆漠高祖、魏武帝相当。等到西都动荡颠覆，确实能会通天和人。王僧辩缺少伊尹之才，白白结下桐宫的怨恨，贞阳假藉秦军队的送行，却不考虑穆赢的哭泣。高祖于是遵循天意抚平末世运数，乘着形势机会拯救动乱的局面，帝王功业的基础，从此开始，为什么要到戡定黎登上陌的胜利才可以呢。所以在恭敬宣美政务之世，改朝换代之时，百姓诅歌他来归附，前朝离去如释重负，和前代相比，这是多么美好啊!</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷一-白话.html'>卷一</a></p><p class='next'>下一节：<a href='卷三-白话.html'>卷三</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='卷一-白话.html'>卷一</a></p><p class='next'>下一节：<a href='卷三-白话.html'>卷三</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -242,5 +266,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

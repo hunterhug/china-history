@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -214,9 +239,8 @@
 </p><p>萧塔剌葛，字陶哂，六院部人。素刚直。太祖时，坐叔祖台哂谋杀于越释鲁，没入弘义宫。世宗即位，以舅氏故，出其籍，补国舅别部敞史。或言泰宁王察割有无君心。塔剌葛曰：“彼纵忍行不义，人孰肯从！”他日侍宴，酒酣，塔剌葛捉察割耳，强饮之曰：“上固知汝傲狠，然以国属，曲加矜悯，使汝在左右，且度汝才何能为。若长恶不悛，徒自取赤族之祸！”察割不能答，强笑曰：“何戏之虐也！”天禄末，塔剌葛为北府宰相，及察割作乱，塔剌葛醉詈曰：“吾悔不杀此逆贼！”寻为察割所害。
 </p><p>耶律敌禄，字阳隐，孟父楚国王之后。性质直，多膂力。察割作乱，敌禄闻之，入见寿安王，慷慨言曰：“愿得精兵数百，破贼党。”王嘉其忠。穆宗即位，为北院宣徽使。上以飞狐道狭，诏敌禄广之。明年，将兵援河东，至太原，与汉王会于高平，击周军，败之，仍降其众。忻、代二州叛，将兵讨之。会耶律挞烈至，败周师于忻口。师还，卒。
 </p><p>论曰：忠臣惟知有国，而不知有身，故恶恶不避其患。阿剌以谄谀不法折萧革，陶隗以用必基祸言阿思，塔剌葛以忍行不义徒自取赤族之罪责察割，其心可谓忠矣。言一出而祸辄随之。吁，邪正既不辨，国焉得无乱哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p><p class='next'>下一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p><p class='next'>下一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -228,5 +252,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

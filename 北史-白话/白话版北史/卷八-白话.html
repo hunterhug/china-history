@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -275,9 +300,8 @@
 </p><p>他又在华林园设置了穷村舍，皇帝自己穿着破衣扮成乞丐。又设立穷人集市，他亲自到市中交易。模仿西部边境少数民族，建筑城镇，让人穿黑衣装作羌兵，大声吆喝追逐，他亲自带领宫内侍卫前去对阵，有时弯弓用箭射人。从晋阳出外东巡，单身匹马疾驰，披发散衣归来。又喜欢搞不急用的东西，有一天夜里，他想要蝎子，便到处捕捉，天亮时，共抓到了三升。他又特别喜欢要其他季节才有的东西，想要的时候又格外急迫，都要求早上要晚上就送到，那些当权者变本加厉，他想要一个他们就向下要十个。
 </p><p>赋税日益加重，徭役更加烦杂，人力耗尽，库藏空竭，于是便赐各佞臣卖官，有的分给两三郡，有的分给六七县，各分配到州郡里，甚至卖到乡官一级，也往往是皇帝下旨。因而出现下诏任命州主簿，下诏任命郡功曹的现象。于是州县的各种职务，大多由富商大贾来担任，他们竞相贪污枉法，胡作非为，搞得民不聊生。从邺城直至各州郡，到处征税，名目繁多。这些情况，都起源于武成帝时，到后主便越来越厉害了。不过，后主不大有后宫男女间的淫秽传闻，只有这件事比武成帝好些。
 </p><p>起初，在河清末年，武成皇帝梦见大刺猬攻破了邺城。醒来以后便索要境内的猬膏，以此把刺猬都杀尽。有见识的人认为，后主的名字发音和猬字相谐，所以是齐灭亡的征兆。又当时的妇女都喜欢把头发剪短戴上假发髻，高高耸起偏向一边，样子就像一只要飞的鸟，偏南面时，髻心正指向西边。起初在宫内盛行，后来渐渐传到四面八方，好像是天意说，元首被翦落，摇摇欲坠，危向西侧，预示着将往西去。又当时制造一种刀子，刀刃又狭又细，名叫尽势，也就是大势已尽了。许多孩子玩耍，喜欢用两手拿绳子，拂地以后人往上跳，边跳边唱“高末、高末”。高末的意思，就是说高氏已经到了末运了。可见败乱灭亡的运数，都是有前兆的。</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷七-白话.html'>卷七</a></p><p class='next'>下一节：<a href='卷九-白话.html'>卷九</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='卷七-白话.html'>卷七</a></p><p class='next'>下一节：<a href='卷九-白话.html'>卷九</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -289,5 +313,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

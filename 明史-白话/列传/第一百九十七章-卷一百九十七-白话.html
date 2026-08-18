@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -275,9 +300,8 @@
 </p><p>献忠身长面黄，下巴像虎，人称黄虎。性狡谲，喜好杀人，一天不杀人便郁郁不乐，他诡称要开科取士，将士人集中到青羊宫，全部杀害，笔墨堆成丘冢。将成都百姓坑杀在中园。他还杀掉各卫在籍士兵共九十八万。他又遣四位将军分别屠戮各个府县，名为草杀。伪官们朝会时拜伏在地，他唤出数十条凶猛的狗入殿，狗嗅了哪一个，便将他拉出斩首，名叫天杀。他又创生剥人皮法，如皮没有剥下而人已气绝的，动刑的人要抵死。将士以杀人多少定功劳大小，前后杀死的男女达六万万以上。有的贼将因不忍而上吊，伪都督张君用、王明等数十人，都因杀人少被剥皮而死，家属也被杀戮。他威胁川中士大夫接受伪职，叙州布政使尹伸、广元给事中吴宇英不屈而死。那些接受伪职的人，随后不久也都被杀了。其惨酷无人道的行为不可胜纪。他又筑坝先将锦江改道，放干河道，挖一个深数丈的大坑，将亿万计的金银财宝埋在其中，然后决堤放水，名为水藏，说：“不能让后人拥有。”当时，曾英、李占春、于大海、王祥、杨展、曹勋等义兵并起，所以献忠杀戮更加惨毒，川中百姓已尽，献忠便图谋窥视西安。
 </p><p>顺治三年(1646)，献忠将成都的宫殿房舍全部烧毁，铲平成都城，然后率众出川北。又想将四川兵全部杀掉，伪将刘进忠原统领川兵，听说后，率领一军逃了。正好我大清兵到了汉中，刘进忠来投奔，请求做向导，到了盐亭县境内，起了大雾，献忠白天行军，突然与我军在凤凰坡遭遇，被箭射中，跌落马下，他爬到柴堆下面躲起来。于是清军将献忠抓出，斩首。
 </p><p>川中自从遭受献忠的祸乱，各城之内杂树成拱，狗吃人肉就像虎豹等猛兽，将人咬死后往往就弃之而去，并不吃光。人民逃到深山之中，以草为衣，以树木为食，时间长了，遍体长满了毛发。献忠被诛杀后，贼党孙可望、艾能奇、刘文秀、李定国等溃逃入川南，杀死曾英、李乾德等人，后来都向永明王投降。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百九十六章-卷一百九十六-白话.html'>第一百九十六章-卷一百九十六</a></p><p class='next'>下一节：<a href='第一百九十八章-卷一百九十八-白话.html'>第一百九十八章-卷一百九十八</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第一百九十六章-卷一百九十六-白话.html'>第一百九十六章-卷一百九十六</a></p><p class='next'>下一节：<a href='第一百九十八章-卷一百九十八-白话.html'>第一百九十八章-卷一百九十八</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -289,5 +313,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

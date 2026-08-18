@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -242,9 +267,8 @@
 </p><p>韩遂与马腾自从回到凉州，战争不断，攻下陇地占据关中。曹操当时正对付河北，怕他们乘机作乱，建安七年，就让朝廷封马腾征南将军，封韩遂征西将军，均开府。后来征召段煨为大鸿胪，段煨病死。又征召马腾为卫尉，封槐里侯。马腾应召而去，留下儿子马超带领他的部队。建安十六年，马超与韩遂以关中地区反叛曹操，曹操击败了他们，韩遂、马超败逃，马腾因此被减三族。马超又攻杀凉州刺史韦康，再次占据陇右。建安十九年，天水人杨阜击败马超，马超逃到汉中，投降了刘备。韩遂跑到金城羌地，被其部下杀死。当初，陇西人宗建在抱罕，自称“河首平汉王”，分封百官三十多年。曹操就派夏侯渊攻打宗建，斩了他，凉州全部平定。
 </p><p>论曰：董卓当初本性凶暴强悍，因为赶上天下动乱的形势，所以得以践踏常理，祸害天下，以他那种剖腹取肝断人脚历的残忍性情，则杀尽天下苍生也不能满足他的快意，然而尚能谦抑对待官绅士人，也并未决心对皇室欺凌篡夺，还算存有盗贼之道。到后来贼寇又乘势作乱，翻山倒海，烈火毒焰，从此而燃，天下动荡，至此达到顶点。呜呼，人活着真难啊！天地真是太不仁德丫啊！
 </p><p>赞曰：逢百六阴极注定厄运，国家失度小人得志成灾祸。董卓罪恶滔天，天怒地愤人怨。天下崩溃沸腾，京城烽烟滚滚。多行无礼虽殃及自身，遣下祸患却随之蔓延。流矢飞到天子车旁，刀兵环绕皇家宫阙。天下动荡，入神不宁。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十五章-皇甫嵩朱俊列传-白话.html'>第六十五章-皇甫嵩朱俊列传</a></p><p class='next'>下一节：<a href='第六十七章-刘虞公孙瓚陶谦列传-白话.html'>第六十七章-刘虞公孙瓚陶谦列传</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第六十五章-皇甫嵩朱俊列传-白话.html'>第六十五章-皇甫嵩朱俊列传</a></p><p class='next'>下一节：<a href='第六十七章-刘虞公孙瓚陶谦列传-白话.html'>第六十七章-刘虞公孙瓚陶谦列传</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -256,5 +280,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

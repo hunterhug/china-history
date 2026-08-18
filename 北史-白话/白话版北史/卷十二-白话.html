@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -358,9 +383,8 @@
 </p><p>当时，郡国多事，应接不暇。炀帝正是骄惰的时候，不喜欢听说政事，因而冤屈不得审理，奏请的事情很少作出决断。他又猜疑大臣和下属，没有真心委任的人。朝臣中有不合自己心意的，必定想法加罪并族灭他们。高赹、贺若弼原是隋文帝的心腹，参谋于帷帐之中；张衡、李金才本是炀帝在藩邸的旧臣，处理国家大事很有功绩。可是炀帝讨厌他们禀性耿直，不愿听他们发表正直的言论，便搜求没有根据的罪名，将他们处斩。其他尽心侍奉皇帝，忠诚正直，毫无过错，莫名其妙便被杀掉的人，难以计数。政令松弛，刑律混乱，贪污受贿，公开进行，没有人敢于进言，路人只敢用目光表示不满。六军不得休息，百役沉重频繁，外出者难以归家，居家者失去所业，民众饥荒，人相食，城邑村落，变为废墟，而炀帝毫无怜悯之心并不加赈济。
 </p><p>他东游西巡，没有定居处所，经常因供给的费用不足而预收几年的赋税，所到之处，也只是和后宫嫔妃们流连光景，寻欢作乐而已，就这样也得不到满足。他又找来一些老妇人，从早到晚说下流话。又招引一些少年，让他们进宫和宫女们乱来。这样没有规矩和没有廉耻的事情，他却当成一种娱乐。
 </p><p>于是，四海之内，盗贼蜂起，劫掠官员，攻占城邑。近臣们相互隐瞒，不敢实奏盗贼人数。如果有人进言盗贼众多的，就要大受斥责。各人只求苟安，上下相互欺骗。每当出兵，失败相继。战士尽力作战，他却不加赏赐，百姓毫无罪责，却被大加屠杀。民众积怨迸发，天下土崩瓦解，直至他被人抓住，还一点儿也没有醒悟。</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷十一-白话.html'>卷十一</a></p><p class='next'>下一节：<a href='魏先世纪-白话.html'>魏先世纪</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='卷十一-白话.html'>卷十一</a></p><p class='next'>下一节：<a href='魏先世纪-白话.html'>魏先世纪</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -372,5 +396,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

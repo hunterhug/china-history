@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -382,9 +407,8 @@
 </p><p>月道出入日道，两相交值，当朔则日为月所掩，当望则月为日所冲，故皆有食。然涉交有远近，食分有深浅，皆可以数推之。所谓交周者，月道出入日道一周之日也。日道距赤道之远，为度二十有四。月道出入日道，不逾六度；其距赤道也，远不过三十度，近不下十八度。出黄道外为阳，入黄道内为阴，阴阳一周，分为四象。月当黄道为正交，出黄道外六度为半交，复当黄道为中交，入黄道内六度为半交，是为四象。象别七日，各行九十一度，四象周历，是谓一交之终，以日计之，得二十七日二十一刻二十二分二十四秒。每一交，退天一度二百分度之九十三，凡二百四十九交，退天一周有奇，终而复始。正交在春正，半交出黄道外六度，在赤道内十八度。正交在秋正，半交出黄道外六度，在赤道外三十度。中交在春正，半交入黄道内六度，在赤道内三十度。中交在秋正，半交入黄道内六度，在赤道外十八度。月道与赤道正交，距春秋二正黄赤道正交宿度，东西不及十四度三分度之二。夏至在阴历内，冬至在阳历外，月道与赤道所差者多；夏至在阳历外，冬至在阴历内，月道与赤道所差者少。盖白道二交，有斜有直，阴阳二历，有内有外，直者密而狭，斜者疏而阔，其差亦从而异。今立象置法求之，差数多者不过三度五十分，少者不下一度三十分，是为月道与赤道多少之差。
 </p><p>昼夜刻
 </p><p>日出为昼，日入为夜，昼夜一周，共为百刻。以十二辰分之，每辰得八刻三分刻之一。无间南北，所在皆同。昼短则夜长，夜短则昼长，此自然之理也。春秋二分，日当赤道出入，昼夜正等，各五十刻。自春分以及夏至，日入赤道内，去极浸近，夜短而昼长。自秋分以及冬至，日出赤道外，去极浸远，昼短而夜长。以地中揆之，长不过六十刻，短不过四十刻。地中以南，夏至去日出入之所为远，其长有不及六十刻者；冬至去日出入之所为近，其短有不止四十刻者。地中以北，夏至去日出入之所为近，其长有不止六十刻者；冬至去日出入之所为远，其短有不及四十刻者。今京师冬至日出辰初二刻，日入申正二刻，故昼刻三十八，夜刻六十二；夏至日出寅正二刻，日入戌初二刻，故昼刻六十二，夜刻三十八。盖地有南北，极有高下，日出入有早晏，所以不同耳。今《授时历》昼夜刻，一以京师为正，其各所实测北极高下，具见《天文志》。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -396,5 +420,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

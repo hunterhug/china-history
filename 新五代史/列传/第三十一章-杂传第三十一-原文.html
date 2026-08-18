@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -232,9 +257,8 @@
 </p><p>王敬荛，颍州汝阴人也。事州为牙将。唐末，王仙芝等攻劫汝、颍间，刺史不能拒，敬荛遂代之，即拜刺史。敬荛为人状貌魁杰，而沈勇有力，善用铁枪，重三十斤。颍州与淮西为邻境，数为秦宗权所攻，力战拒之，宗权悉陷河南诸州，独敬荛不可下，由是颍旁诸州民，皆依敬荛避贼。是时，所在残破，独颍州户二万。梁太祖攻淮南，道过颍州，敬荛供馈梁兵甚厚，太祖大喜，表敬荛沿淮指挥使。其后梁兵攻吴，庞师古死清口，败兵亡归，过颍，大雪，士卒饥冻，敬荛乃沿淮积薪为作糜粥餔之，亡卒多赖以全活，太祖表敬荛武宁军留后，遂拜节度使。天祐三年，为左卫上将军。太祖即位，敬荛以疾致仕，后卒于家。
 </p><p>○蒋殷
 </p><p>蒋殷，幼为王重盈养子，冒姓王氏。梁太祖取河中，以王氏旧恩录其子孙，表殷牙将，太祖尤爱之。唐迁洛阳，殷为宣徽北院使。太祖已下襄阳，转攻淮南，还屯正阳，哀帝遣殷劳军。是时，哀帝方卜郊，殷与枢密使蒋玄晖等有隙，因谮之太祖，言玄晖等教天子卜郊祈天，且待诸侯助祭者以谋兴复，太祖大怒，哀帝为改卜郊。是时，太祖将有篡弑之谋，何太后尝泣涕叩头为玄晖等言：“梁王禅位后，愿全唐家子母。”殷乃诬玄晖尝私侍太后，太祖斩玄晖及张廷范、柳璨等，遣殷弑太后于积善宫。哀帝下诏惭愧，自言以母后故无以奉天，乃卒不郊。庶人友珪与殷善，友珪弑太祖自立，拜殷武宁军节度使。末帝即位，以福王友璋代殷，殷不受代。王瓚亦王氏子，惧为殷所累，乃言殷非王氏子，本姓蒋。末帝诏削官爵，还其姓，遣牛存节讨之，殷举族自燔死。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十章-杂传第三十-原文.html'>第三十章-杂传第三十</a></p><p class='next'>下一节：<a href='第三十二章-杂传第三十二-原文.html'>第三十二章-杂传第三十二</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第三十章-杂传第三十-原文.html'>第三十章-杂传第三十</a></p><p class='next'>下一节：<a href='第三十二章-杂传第三十二-原文.html'>第三十二章-杂传第三十二</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -246,5 +270,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

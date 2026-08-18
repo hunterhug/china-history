@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -217,9 +242,8 @@
 <p>　　赵道兴者，甘州酒泉人。隋右武候大将军才之子也。道兴，贞观初历迁左武候 中郎将，明闲宿卫，号为称职。太宗尝谓之曰：“卿父为隋武候将军，甚有当官之 誉。卿今克传弓冶，可谓不坠家声。”因授右武候将军，赐爵天水县子。其父时廨 宇，仍旧不改，时人以为荣。道兴尝自指其事曰：“此是赵才将军，还使赵才 将军兒坐。”为朝野所笑，传为口实。仪凤中，累迁左金吾卫大将军。文明年，以 老病致仕于家。子晈，亦为金吾将军，凡三代执金吾，为时所称。 </p>
 <p>　　史臣曰：孝恪机钤果毅，协草昧之际；树勋建策，有杰世之风。然而务奢为恆， 既未尽善，举众失律，不其惑与！张公经略，有天然才度，务穑劝分，董和成绩， 惜哉中寿，其才未尽。刑国公神略翕张，雄谋戡定，辅平屯难，始终成业。疏封陟 位，未暢茂典，盖阙如也。仁贵骁悍壮勇，为一时之杰，至忠大略，勃然有立。噫， 待封不协，以败全略。孔子曰：“可与立，未可与权。”上加明命，竟致立功，知 臣者君，信哉！务挺勇力骁果，固有父风，英概辅时，克继洪烈。然而苟预废立， 竟陷谗构。古之言曰：“恶之来也，如火之燎于原，不可向迩。”其是之谓乎！士 贵、道兴，逢时立效，得尽义勇，以观厥成；而继父风概，三代执金，不亦美乎！ </p>
 <p>　　赞曰：五将雄雄，俱立边功。张、苏二族，功名始终。郭、薛、务挺，徼功奋 命。垂则穷边，兵无常胜。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十二章-卷三十二-原文.html'>第三十二章-卷三十二</a></p><p class='next'>下一节：<a href='第三十四章-卷三十四-原文.html'>第三十四章-卷三十四</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第三十二章-卷三十二-原文.html'>第三十二章-卷三十二</a></p><p class='next'>下一节：<a href='第三十四章-卷三十四-原文.html'>第三十四章-卷三十四</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -231,5 +255,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

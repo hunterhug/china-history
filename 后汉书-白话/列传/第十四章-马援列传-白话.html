@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -230,9 +255,8 @@
 </p><p>到永平十七年，马援夫人去世，就更为其聚土为坟，植树为标记，建筑祠堂。
 </p><p>建初二年(78)，肃宗派五官中郎将持节追加策封，谥封马援为忠成侯。四子：马廖、马防、马光、马客卿。马客卿幼年聪慧，年六岁，能应接诸公长者，独立酬宾客。曾有犯了死罪的亡命徒来看他，客卿躲避起来不让人知道。外表看来不善于言辞而内质沉着机敏。马援很赞赏他，以为是将相的材料，所以取名为客卿。马援去世后，客卿也夭折早死。
 </p><p>史官评论道：马援腾声名于三辅，周旋于二帝，至定计立谋，以辅佐天子，怀着为国效劳的愿望累立战功，这是千载一时的机遇啊。然马援戒人之祸，是很明智的。但他却不能自免于谗隙。难道功名之际，就是这么一条规律吗？由于利不关己，为人谋事就明智；考虑事情不私于己，断义必定严厉。如真正能回观事物的智慧而为自己反躬自问的省察，这样对人就能宽恕对己就有自知之明了。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十三章-窦融列传-白话.html'>第十三章-窦融列传</a></p><p class='next'>下一节：<a href='第十五章-卓鲁魏刘列传-白话.html'>第十五章-卓鲁魏刘列传</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第十三章-窦融列传-白话.html'>第十三章-窦融列传</a></p><p class='next'>下一节：<a href='第十五章-卓鲁魏刘列传-白话.html'>第十五章-卓鲁魏刘列传</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -244,5 +268,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -242,9 +267,8 @@
 </p><p>大和七年十二月，刑部奏：“先奉敕详定前大理丞谢登《新编格后敕》六十卷者。臣等据谢登所进，详诸理例，参以格式，或事非久要，恩出一时，或前后差殊，或书写错误，并已落下及改正讫。去繁举要，列司分门，都为五十卷。伏请宣下施行。”可之。八年四月，诏应犯轻罪人，除情状巨蠹，法所难原者，其他过误罪愆，及寻常公事违犯，不得鞭背。遵太宗之故事也。俄而京兆尹韦长奏：“京师浩穰，奸豪所聚。终日惩罚，抵犯犹多，小有宽容，即难禁戢。若恭守敕旨，则无以肃清；若临事用刑，则有违诏使。伏望许依前据轻重处置。”从之。
 </p><p>开成四年，两省详定《刑法格》一十卷，敕令施行。
 </p><p>会昌元年九月，库部郎中、知制诰纥干泉等奏：“准刑部奏，犯赃官五品已上，合抵死刑，请准狱官令死于家者，伏请永为定格。”从之。大中五年四月，刑部侍郎刘彖等奉敕修《大中刑法总要格后敕》六十卷，起贞观二年六月二十日，至大中五年四月十三日，凡二百二十四年杂敕，都计六百四十六门，二千一百六十五条。七年五月，左卫率仓曹参军张戣进《大中刑法统类》一十二卷，敕刑部详定奏行之。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -256,5 +280,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

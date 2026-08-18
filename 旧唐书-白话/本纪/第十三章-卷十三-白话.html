@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -370,9 +395,8 @@
 </p><p>十一月二十六日，以监察御史李程、秘书正字张聿、蓝田县尉王涯都为翰林学士。
 </p><p>十二月，吐蕃、南诏、日本国都派遣使者朝贡。二十九日，以桂管防御使颜证为桂州刺史、桂管观察使。
 </p><p>贞元二十一年(805)春正月一日朔，皇上驾到含元殿接受朝贺。这天，皇上身体不适。六日，以浙东观察判官凌准为翰林学士。二十三日，在宣政殿会见群臣，宣读遗诏：皇太子应在灵柩前即皇帝位。这天，皇上在会宁殿去世，享年六十四岁。二十四日，把皇帝的灵柩迁到太极殿。二十六日，发布丧事，群臣全部穿素衣戴孝。皇太子即皇帝位。永贞元年(805)九月一日，群臣上谥号曰神武孝文，庙号德宗。十月十四日，安葬在崇陵，昭德皇后王氏在崇陵附祭。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十二章-卷十二-白话.html'>第十二章-卷十二</a></p><p class='next'>下一节：<a href='第十四章-卷十四-白话.html'>第十四章-卷十四</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第十二章-卷十二-白话.html'>第十二章-卷十二</a></p><p class='next'>下一节：<a href='第十四章-卷十四-白话.html'>第十四章-卷十四</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -384,5 +408,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

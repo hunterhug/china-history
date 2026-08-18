@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -215,9 +240,8 @@
 </p><p>壬申，东魏主与王猎于邺东，驰逐如飞。监卫都督乌那罗受工伐从后呼曰：“天子莫走马，大将军怒。”王尝侍饮，举大觞曰：“臣澄劝陛下酒。”东魏主不悦曰：“自古无不亡之国，朕亦何用如此生！”王怒曰：“朕！朕！狗脚朕！”使崔季舒殴之三拳，奋衣而出。寻遣季舒入谢。东魏主赐季舒彩，季舒未敢即受，启之于王，王使取一段。东魏主以四百匹与之，曰：“亦一段耳。”东魏主不堪忧辱，咏谢灵运诗曰：“韩亡子房奋，秦帝鲁连耻。本自江海人，忠义感君子。”因流涕。
 </p><p>三月辛亥，王南临黎阳，济于虎牢，自洛阳从太行而反晋阳。于路遗书百僚，以相戒励。朝野承风，莫不震肃。又令朝臣牧宰各举贤良及骁武胆略堪守边城，务得其才，不拘职业。六月，王巡北边城戍，赈赐有差。
 </p><p>七月，王还晋阳。辛卯，王遇盗而殂，时年二十九。葬于峻成陵。齐受禅，追谥为文襄皇帝，庙号世宗。时有童谣曰：“百尺高竿摧折，水底燃灯灯灭。”识者以为王将殂之兆也。数日前，崔季舒无故于北宫门外诸贵之前诵鲍明远诗曰：“将军既下世，部曲亦罕存。”声甚凄断，泪不能已，见者莫不怪之。初，梁将兰钦子京为东魏所虏，王命以配厨。钦请赎之，王不许。京再诉，王使监厨苍头薛丰洛杖之，曰：“更诉当杀尔。”京与其党六人谋作乱。时王居北城东柏堂莅政，以宠琅邪公主，欲其来往无所避忌，所有侍卫，皆出于外。太史启言宰辅星甚微，变不出一月。王曰：“小人新杖之，故吓我耳。”将欲受禅，与陈元康、崔季舒等屏斥左右，署拟百官。京将进食，王却，谓诸人曰：“昨夜梦此奴斫我，宜杀却。”京闻之，置刀于盘，冒言进食。王怒曰：“我未索食，尔何据来！”京挥刀曰：“来将杀汝！”王自投伤足，入于床下。贼党去床，因而见杀。先是讹言曰：“软脱帽，床底喘”，其言应矣。时太原公洋在城东双堂，入而讨贼，脔割京等，皆漆其头。秘不发丧，徐出言曰：“奴反，大将军被伤，无大苦也。”</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷二-原文.html'>卷二</a></p><p class='next'>下一节：<a href='卷四-原文.html'>卷四</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='卷二-原文.html'>卷二</a></p><p class='next'>下一节：<a href='卷四-原文.html'>卷四</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -229,5 +253,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

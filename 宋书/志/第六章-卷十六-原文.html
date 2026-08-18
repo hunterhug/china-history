@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -267,9 +292,8 @@
 </p><p>宋殷祭皆即吉乃行。大明七年二月辛亥，有司奏：“四月应殷祠，若事中未得为，得用孟秋与不？”领军长史周景远议：“案《礼记》云：‘天子祫禘祫尝祫烝。’依如礼文，则夏秋冬三时皆殷，不唯用冬夏也。晋义熙初，仆射孔安国启议，自泰和四年相承殷祭，皆用冬夏。安国又启，永和十年至今五十余年，用三十月辄殷祠。博士徐乾据《礼》难安国。乾又引晋咸康六年七月殷祠，是不专用冬夏。于时晋朝虽不从乾议，然乾据礼及咸康故事，安国无以夺之。今若以来四月未得殷祠，迁用孟秋，于礼无违。参议据礼有证，谓用孟秋为允。”诏可。
 </p><p>晋武帝咸宁五年十一月己酉，弘训羊太后崩，宗庙废一时之祀，天地明堂去乐，且不上胙。升平五年十月己卯，殷祠，以穆帝崩后，不作乐。初，永嘉中，散骑常侍江统议曰：“《阳秋》之义，去乐卒事。”是为吉祭有废乐也，故升平末行之。其后太常江逌表：“穆帝山陵之后十月殷祭，从太常丘夷等议，撤乐。逌寻详今行汉制，无特祀之别。既入庙吉禘，何疑于乐。”
 </p><p>史臣曰：闻乐不怡，故申情于遏密。至于谅闇夺服，虑政事之荒废，是以乘权通以设变，量轻重而降屈。若夫奏音之与寝声，非有损益于机务，纵复回疑于两端，固宜缘恩而从戚矣。宋世国有故，庙祠皆悬而不乐。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章-卷十五-原文.html'>第五章-卷十五</a></p><p class='next'>下一节：<a href='第七章-卷十七-原文.html'>第七章-卷十七</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第五章-卷十五-原文.html'>第五章-卷十五</a></p><p class='next'>下一节：<a href='第七章-卷十七-原文.html'>第七章-卷十七</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -281,5 +305,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

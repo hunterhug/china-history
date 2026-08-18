@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -305,9 +330,8 @@
 </p><p>惟天之命，符运有归。赫赫大晋，三后重晖。继明绍世，光抚九围。我皇绍期，遂在璇玑。群生属命，奄有庶邦。慎徽五典，玄教遐通。万方同轨，率土咸雍。爰制《大豫》，宣德舞功。醇化既穆，王道协隆。仁及草木，惠加昆虫。亿兆夷人，悦仰皇风。丕显大业，永世弥崇。
 </p><p>荀勖又作新律笛十二枚，以调律吕，正雅乐，正会殿庭作之，自谓宫商克谐，然论者犹谓勖暗解。时阮咸妙达八音，论者谓之神解。咸常心讥勖新律声高，以为高近哀思，不合中和。每公会乐作，勖意咸谓之不调，以为异己，乃出咸为始平相。后有田父耕于野，得周时玉尺，勖以校己所治钟鼓金石丝竹，皆短校一米，于此伏咸之妙，复徵咸归。勖既以新律造二舞，次更修正钟声。会勖薨，未竟其业。元康三年，诏其子籓修定金石，以施郊庙。寻值丧乱，莫有记之者。
 </p><p>汉高祖自蜀汉将定三秦，阆中范因率賨人以从帝，为前锋。及定秦中，封因为阆中侯，复賨人七姓。其俗喜舞，高祖乐其猛锐，数观其舞，后使乐人习之。阆中有渝水，因其所居，故名曰《巴渝舞》。舞曲有《矛渝本歌曲》、《安弩渝本歌曲》、《安台本歌曲》、《行辞本歌曲》，总四篇。其辞既古，莫能晓其句度。魏初，乃使军谋祭酒王粲改创其词。粲问巴渝帅李管、种玉歌曲意，试使歌，听之，以考校歌曲，而为之改为《矛渝新福歌曲》、《弩渝新福歌曲》、《安台新福歌曲》、《行辞新福歌曲》，《行辞》以述魏德。黄初三年，又改《巴渝舞》曰《昭武舞》。至景初元年，尚书奏，考览三代礼乐遗曲，据功象德，奏作《武始》、《咸熙》、《章斌》三舞，皆执羽龠。及晋又改《昭武舞》曰《宣武舞》，《羽龠舞》曰《宣文舞》。咸宁元年，诏定祖宗之号，而庙乐乃停《宣武》、《宣文》二舞，而同用荀勖所使郭夏、宋识等所造《正德》、《大豫》二舞云。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十一章--原文.html'>第十一章-</a></p><p class='next'>下一节：<a href='第十三章--原文.html'>第十三章-</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第十一章--原文.html'>第十一章-</a></p><p class='next'>下一节：<a href='第十三章--原文.html'>第十三章-</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -319,5 +343,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

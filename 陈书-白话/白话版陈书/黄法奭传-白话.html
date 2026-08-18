@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -214,9 +239,8 @@
 </p><p>						奭为都督，出到历阳。北齐派历阳王率领五万步兵骑兵前来援救，在小岘筑城，黄法奭派左卫将军樊毅分率军在大岘御敌，大败北齐军，俘获了全部人马器械。于是造拍车和步舰，竖起拍车逼向历阳。历阳人窘迫，请求投降，黄法
 </p><p>						奭于是减缓了攻势，历阳人却又坚守，黄法奭生气，亲自率领士兵攻城，放拍石击打城楼和矮墙。当时又下起大雨，城崩塌，攻克，把守城士兵全部杀掉。进军合肥，敌人看见他的旗帜就投降，黄法
 </p><p>						奭下令将士不能掠夺，亲自抚慰，并且和他们结盟，把他们全部放回北方。按照功劳升任侍中，改封为义阳郡公，食邑二千户。同年，迁任都督合州、霍州诸军事，征西大将军，合州刺史，增加食邑五百户。七年(575)，调任都督豫州、建州、光州、朔州、合州、北徐州诸军事，豫州刺史，镇守寿阳，侍中、散骑常侍、持节、将军、仪同、鼓吹、给扶等职衔和待遇都不变。八年十月去世，时年五十九岁，追任为侍中、中权大将军、司空，谥号威。其子黄玩袭封。</p>
-<div class='pn'><p class='pre'>上一节：<a href='程文季传-白话.html'>程文季传</a></p><p class='next'>下一节：<a href='淳于量传-白话.html'>淳于量传</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='程文季传-白话.html'>程文季传</a></p><p class='next'>下一节：<a href='淳于量传-白话.html'>淳于量传</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -228,5 +252,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

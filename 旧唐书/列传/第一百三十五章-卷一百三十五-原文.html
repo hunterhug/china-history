@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -391,9 +416,8 @@
 <p>　　苹历三镇，凡十余年，家无声乐，俸禄悉以散诸亲族故人子弟。除左散骑常侍 致仕。时有年过悬车而不知止者，唯苹年至而无疾请告，角巾东洛，时甚高之。卒， 年七十四，赠工部尚书。 </p>
 <p>　　阎济美，登进士第。累历台省，有长者之誉。自婺州刺史为福建观察使，复为 润州刺史、浙西观察使。所至以简淡为理，两地之人，常赋之外，不知其他。入拜 右散骑常侍。华州刺史、潼关防御、镇国军使，入为秘书监。以年及悬车，上表乞 骸骨，以工部尚书致仕。后以恩例，累有进改。及殁于家，年九十余。 </p>
 <p>　　赞曰：圣人造世，才杰济时。在理致治，无为而为。坑鹔非议，简易从规。乐 只君子，邦家之基。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百三十四章-卷一百三十四-原文.html'>第一百三十四章-卷一百三十四</a></p><p class='next'>下一节：<a href='第一百三十六章-卷一百三十六-原文.html'>第一百三十六章-卷一百三十六</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第一百三十四章-卷一百三十四-原文.html'>第一百三十四章-卷一百三十四</a></p><p class='next'>下一节：<a href='第一百三十六章-卷一百三十六-原文.html'>第一百三十六章-卷一百三十六</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -405,5 +429,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -264,9 +289,8 @@
 </p><p>子库汗，为羽林中郎将。从北巡，有兔起乘舆前，命库汗射之，应弦而毙。世祖悦，赐一金兔以旌其能。高宗起恭宗庙，赐爵阳丰侯。显祖即位，复造高宗庙，拜殿中给事，进爵为公。库汗明于断决，每奉使察行州镇，折狱以情，所历皆称之。秦州父老诣阙乞库汗为刺史者前后千余人，朝廷许之。未及遣，遇病卒。子古辰袭。
 </p><p>昭成子窟咄。昭成崩后，苻洛以其年长，逼徙长安，苻坚礼之，教以书学。因乱随慕容永东迁，永以为新兴太守。
 </p><p>刘显之败，遣弟亢泥等迎窟咄，遂逼南界。于是诸部骚动。太祖左右于桓等谋应之，同谋人单乌干以告。太祖虑骇人心，沉吟未发。后三日，桓以谋白其舅穆崇，崇又告之。太祖乃诛桓等五人，余莫题等七姓，悉原不问。太祖虑内难，乃北逾阴山，幸贺兰部，遣安同及长孙贺徵兵于慕容垂。贺亡奔窟咄，安同间行遂达中山。慕容垂遣子贺驎步骑六千以随之。安同与垂使人兰纥俱还，达牛川，窟咄兄子意烈捍之。安同乃隐藏于商贾囊中，至暮乃入空井，得免，仍奔贺驎。军既不至，而稍前逼。贺染干阴怀异端，乃为窟咄来侵北部。人皆惊骇，莫有固志。于是北部大人叔孙普洛节及诸乌丸亡奔卫辰。贺驎闻之，遽遣安同、朱谭等来。既知贺驎军近，众乃小定。太祖自弩山幸牛川。窟咄进屯高柳。太祖复使安同诣贺驎，因克会期。安同还，太祖逾参合，出代北与贺驎会于高柳。窟咄困迫，望旗奔走，遂为卫辰杀之，帝悉收其众。贺驎别帝，归于中山。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p><p class='next'>下一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p><p class='next'>下一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -278,5 +302,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

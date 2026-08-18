@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -232,9 +257,8 @@
 <p>　　徐圆朗者，兗州人也。隋末，亡命为群盗，据本郡，纵兵略地，自琅邪巳西， 北至东平，尽有之，胜兵二万余人。初附于李密，密败，归王世充。及洛阳平，归 国，拜兗州总管，封鲁郡公。高祖令葛国公盛彦师安辑河南，行至任城。会刘黑闼 作乱，潜结于圆朗，因执彦师举兵应黑闼，自称鲁王。黑闼以圆朗为大行台元帅， 兗、郓、陈、杞、伊、洛、曹、戴等八州豪猾，皆杀其长吏以应之。太宗平黑闼， 进师曹州，遣淮安王神通及李世勣攻之。圆朗数出战，不利，城内百姓争逾城降。 圆朗穷蹙，与数骑弃城夜遁，为野人所杀，其地悉平。 </p>
 <p>　　史臣曰：薛举父子勇悍绝伦，性皆好杀，仁杲尤甚，无恩众叛，虽猛何为？李 轨窃据鹰扬，僭号河西，安隋朝官属，不夺其财；破李赟甲兵，放还其众，是其兴 也。及杀害谋主，崇信妖巫，众叛亲离，其亡也，宜哉！武周始为鼠窃，偶恣鸱张， 不用君璋之谋，竟为突厥所杀。苑君璋及总余众，别生异图，见颉利归朝，亦是见 机者也。黑闼、开道，勇而无谋，顾其行师，祗是狂贼，皆为麾下所杀，驭众之道 谬哉。 </p>
 <p>　　赞曰：国无纪纲，盗兴草泽。不有隋乱，焉知唐德？ </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -246,5 +270,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

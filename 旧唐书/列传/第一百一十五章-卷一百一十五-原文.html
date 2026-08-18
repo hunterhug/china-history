@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -302,9 +327,8 @@
 <p>　　徐晦，进士擢第，登直言极谏制科，授栎阳尉，皆自杨凭所荐。及凭得罪，贬 临贺尉，交亲无敢祖送者；独晦送至蓝田，与凭言别。时故相权德舆与凭交分最深， 知晦之行，因谓晦曰：“今日送临贺，诚为厚矣，无乃为累乎！”晦曰：“晦自布 衣受杨公之眷，方兹流播，争忍无言而别？如他日相公为奸邪所谮，失意于外，晦 安得与相公轻别？”德舆嘉其真恳，大称之于朝。不数日，御史中丞李夷简请为监 察，晦白夷简曰：“生平不践公门，公何取信而见奖拔？”夷简曰：“闻君送杨临 贺，不顾犯难，肯负国乎？”由是知名。历殿中侍御史、尚书郎，出为晋州刺史。 入拜中书舍人。宝历元年，出为福建观察使。二年，入为工部侍郎，出为同州刺史、 兼御史中丞。太和四年，征拜兵部侍郎。五年，为太子宾客，分司东都。晦性强直， 不随世态，当官守正。唯嗜酒太过，晚年丧明，乃至沉废。以礼部尚书致仕。开成 三年三月卒，赠兵部尚书。 </p>
 <p>　　史臣曰：温、柳二公，以文行饰躬，砥砺名节，当官守法，侃侃有大臣之节， 而竟不登三事，位止正卿。所以知公辅之量，以和为贵。汉武帝畏汲黯而相孙弘， 太宗重魏徵而委玄龄，其旨远也。韦、崔名士，荐贤致主，绰有古风。殷司空治民， 斯为循吏，而忠规壮节，至晚不衰。徐、郭谠言，郁为佳士。如数君者，实为令人。 </p>
 <p>　　赞曰：柳氏礼法，公忠节概。搏击为优，弥纶则隘。夏卿奖拔，晦叔匡将。徐、 郭之议，金玉锵锵。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百一十四章-卷一百一十四-原文.html'>第一百一十四章-卷一百一十四</a></p><p class='next'>下一节：<a href='第一百一十六章-卷一百一十六-原文.html'>第一百一十六章-卷一百一十六</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第一百一十四章-卷一百一十四-原文.html'>第一百一十四章-卷一百一十四</a></p><p class='next'>下一节：<a href='第一百一十六章-卷一百一十六-原文.html'>第一百一十六章-卷一百一十六</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -316,5 +340,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

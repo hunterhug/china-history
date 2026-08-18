@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -280,9 +305,8 @@
 </p><p>洪熙元年遣内官洪仔生赍敕谕刀招散。宣德七年遣人来贡，因奏波勒土酋常纠土雅之兵入境杀掠，乞发兵讨之。帝以八百大甸去云南五千余里，波勒、土雅皆未尝归化，劳中国为远蛮役，非计，止降敕抚谕而已。
 </p><p>正统五年，八百贡使奏：“递年进贡方物，土民不识礼法，不通汉语。乞依永乐间例，仍令通事赍捧金牌、信符，催督进贡，驿路令军卒护送，庶无疏失。”从之。十年，给八百大甸宣慰司金牌、信符各一，以前所给牌符为暹罗国寇兵焚毁也。
 </p><p>成化十七年，安南黎灏已破老挝，颂伪敕于车里，期会兵攻八百。其兵暴死者数千，传言为雷所震。八百因遣兵扼其归路，袭杀万余，交败还。土官刀揽那以报。黔国公沐琮奏：“揽那能保障生民，击败交贼，救护老挝。交人尝以伪敕胁诱八百，八百毁敕，以象蹴之，请颁赏以旌忠义。”帝命云南布政司给银百两、彩币四表里以奖之。二十年，刀揽那遣人入贡。云南守臣言：“交兵虽退，宜令八百诸部饬兵为备。”弘治二年，刀揽那孙刀整赖贡方物，求袭祖职。兵部言：“八百远离云南，瘴毒之地，宜免勘予袭。”从之，仍给冠带。其地东至车里，南至波勒，西至大古喇，与缅邻，北至孟艮，自姚关东南行五十程始至。平川数千里，有南格剌山，下有河，南属八百，北属车里。好佛恶杀，寺塔以万计。有见侵，乃举兵，得仇即已，俗名慈悲国。嘉靖间，为缅所并，其酋避居景线，名小八百。自是朝贡遂不至。缅酋应里以弟应龙居景迈城，倚为右臂焉。万历十五年，八百大甸上书请恢复，不报。初，四译馆通事惟译外国，而缅甸、八百如之，盖二司于六慰中加重焉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二百零二章-卷二百零二-原文.html'>第二百零二章-卷二百零二</a></p><p class='next'>下一节：<a href='第二百零四章-卷二百零四-原文.html'>第二百零四章-卷二百零四</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第二百零二章-卷二百零二-原文.html'>第二百零二章-卷二百零二</a></p><p class='next'>下一节：<a href='第二百零四章-卷二百零四-原文.html'>第二百零四章-卷二百零四</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -294,5 +318,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

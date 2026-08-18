@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -257,9 +282,8 @@
 </p><p>马汝骥，字仲房，绥德人。正德十二年进士。改庶吉士。偕芬等谏南巡，罚跪受杖。教习期满，当授编修，特调泽州知州。惩王府人虐小民。比王有所属，辄投其书椟中不视。陵川知县贪，汝骥欲黜之。巡按御史为曲解，汝骥不听，竟褫其官。世宗立，召复编修，寻录直谏功，增秩一等。预修《武宗实录》，进修撰。历两京国子司业，擢南京右通政，就改国子祭酒，召拜礼部右侍郎。尚书严嵩爱重汝骥，入阁称之，帝特加侍读学士。汝骥行己峭厉，然性故和易，人望归焉。卒赠尚书，谥文简。
 </p><p>应轸等自有传。
 </p><p>赞曰：词臣以文学侍从为职，非有言责也。激于名义，侃侃廷诤，抵罪谪而不悔，岂非皎然志节之士欤？夺情之典不始李贤，然自罗伦疏传诵天下，而朝臣不敢以起复为故事，于伦理所裨，岂浅鲜哉。章懋等引宣宗箴，明国家设官意，不为彰君之过。邹智指列贤奸，矫拂媮末。舒芬危言耸切，有爰盎揽辔之风。况夫清修峻节，行无瑕尤，若诸子者，洵足以矫文士浮夸之习矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十六章-卷六十六-原文.html'>第六十六章-卷六十六</a></p><p class='next'>下一节：<a href='第六十八章-卷六十八-原文.html'>第六十八章-卷六十八</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第六十六章-卷六十六-原文.html'>第六十六章-卷六十六</a></p><p class='next'>下一节：<a href='第六十八章-卷六十八-原文.html'>第六十八章-卷六十八</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -271,5 +295,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -295,9 +320,8 @@
 </p><p>四年秋，拜刑部右侍郎。明年二月，魏忠贤势大张，其党杨维垣首翻“梃击”之案，力诋之寀，坐除名。俄入之汪文言狱中，下抚按提问。岳骏声复讦之，且言其逼取郑国泰二万金，有诏追治。及修《三朝要典》，其“梃击”事以之寀为罪首。府尹刘志选复重劾之，遂逮下诏狱，坐赃八千，之寀竟瘐死。崇祯初，复官，赐恤。
 </p><p>自“梃击”之议起，而“红丸”、“移宫”二事继之。两党是非争胜，祸患相寻，迄明亡而后已。
 </p><p>赞曰：国之将亡也，先自戕其善类，而水旱盗贼乘之。故祸乱之端，士君子恒先被其毒。异哉，明之所称“三案”者！举朝士大夫喋喋不去口，而元恶大憝因用以剪除善类，卒致杨、左诸人身填牢户，与东汉季年若蹈一辙。国安得不亡乎！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百三十一章-卷一百三十一-原文.html'>第一百三十一章-卷一百三十一</a></p><p class='next'>下一节：<a href='第一百三十三章-卷一百三十三-原文.html'>第一百三十三章-卷一百三十三</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第一百三十一章-卷一百三十一-原文.html'>第一百三十一章-卷一百三十一</a></p><p class='next'>下一节：<a href='第一百三十三章-卷一百三十三-原文.html'>第一百三十三章-卷一百三十三</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -309,5 +333,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

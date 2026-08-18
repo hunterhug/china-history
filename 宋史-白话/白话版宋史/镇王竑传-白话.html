@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -219,9 +244,8 @@
 </p><p>						竑的王爵，降封为巴陵县公。于是朝廷大臣真德秀、魏了翁、洪咨夔、胡梦昱等人常常为竑事奏言，弥远都恶恨而斥逐他们。<BR><BR>　　端平元年(1234)，诏令追复
 </p><p>						竑的官爵。其妻吴氏做了比丘尼，赐号为惠净法空太师，每月供给钵钱百贯。景定五年(1264)，度宗下诏，追复原来赠的节度使。德..元年(1275)，提领户部财用兼修国史常杼木请求立
 </p><p>						竑的后代，试礼部侍郎兼中书舍人王应麟请改封大国，立墓表赐谥号，命大宗正司商议选择立后，为国家迎接善气，消除恶运，以此为先。下礼部计议，赠太师、尚书令，依旧赠节度使，升封为镇王，谥号为昭肃。赐给他家良田万亩，派遣应麟前去祭祀。</p>
-<div class='pn'><p class='pre'>上一节：<a href='庄文太子砱传-白话.html'>庄文太子砱传</a></p><p class='next'>下一节：<a href='子崧传-白话.html'>子崧传</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='庄文太子砱传-白话.html'>庄文太子砱传</a></p><p class='next'>下一节：<a href='子崧传-白话.html'>子崧传</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -233,5 +257,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

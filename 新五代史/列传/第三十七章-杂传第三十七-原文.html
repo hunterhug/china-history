@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -223,9 +248,8 @@
 </p><p>常思，字克恭，太原人也。初从唐庄宗为卒，后为长剑指挥使。历唐、晋为六军都虞候。汉高祖为河东节度使，以思为牢城指挥使。高祖入立，领武胜军节度使，徙镇昭义。思起军卒，未尝有战功，徒以幸会汉兴，遂秉旄节。在潞州五年，以聚敛为事，而性鄙俭。初，思微时，周太祖方少孤无依，衣食于思家，以思为叔，后思与周太祖俱遭汉以取富贵。周太祖已即位，每呼思为常叔，拜其妻，如家人礼。广顺三年，徙镇归德，居三年来朝，又徙平卢，思因启曰：“臣居宋，宋民负臣丝息十万两，愿以券上进。”太祖颔之，即焚其券，诏宋州悉蠲除之。思居青州，逾年得疾，归于洛阳，卒，赠中书令。
 </p><p>○孙方谏
 </p><p>孙方谏，郑州清苑人也。初，定州西北有狼山堡，定人常保以避契丹，有尼深意居其中，以佛法诱民，民多归之。后尼死，堡人言其尸不朽，因奉而事之。尼姓孙氏，方谏自以为尼族人，即继行其法，堡人推以为主。晋出帝时，义武军节度使恶方谏聚徒山中，恐为边患，因表以为游奕使。方谏因有所求不得，乃北通契丹。契丹后灭晋，以方谏为义武军节度使。已而徙方谏于云中，方谏不受命，率其徒复入狼山。汉高祖起，契丹纵火烧定州，虏其人民北去。方谏闻之，自狼山入，据之以归汉，高祖嘉之，即拜方谏义武军节度使。周太祖时，徙镇镇国，以其弟行友为定州留后。世宗攻太原，方谏朝于行在，从还京，至洛得疾，徙镇匡国，卒于洛阳，年六十二，赠太师。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十六章-杂传第三十六-原文.html'>第三十六章-杂传第三十六</a></p><p class='next'>下一节：<a href='第三十八章-杂传第三十八-原文.html'>第三十八章-杂传第三十八</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第三十六章-杂传第三十六-原文.html'>第三十六章-杂传第三十六</a></p><p class='next'>下一节：<a href='第三十八章-杂传第三十八-原文.html'>第三十八章-杂传第三十八</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -237,5 +261,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

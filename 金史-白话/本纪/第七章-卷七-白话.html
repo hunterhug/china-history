@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -287,9 +312,8 @@
 </p><p>十月一日，更定铨注县令丞簿格。原来西北路招讨司每次进献马驼鹰鹘等，都要率人到部内收敛，皇上诏令从今以后一并免除。三日，皇上对宰相大臣说“：察问细微，不是为人君的得体的处事办法，朕也知道这一点。然而因为卿等人特不用心，所以时常查问。比如山后的土地，都是亲王、公主、权势的人家所分占，转手租给人民，这都是由于卿等人不查问而造成的。卿等应当尽心勤恳办事，不要让朕烦心操劳。”诏令遥落河、移马河两猛安迁徙到大名、东平等路安置。十九日，皇上对宰相大臣说：“凡是人处在下位的时候，希望升迁上进，勉励自己为公清廉，贤还是不贤怎么能够知道呢？等到仕途通达显赫，观察他的作为，才看见他的本心。例如招讨哲典，起初任定州同知，接着担任都司，不曾稍有徇私行为，所到之处都有清廉的名声。等他做招讨，不坚持原来的清廉。人心险恶犹如山川一样难测，实在是难以了解。”二十三日，皇上对宰相大臣说：“最近阅览《资治通鉴》，按顺序编写各朝代兴废的事，很值得借鉴，司马光用心如此，古代的良史没有超过他的。校书郎毛麾，朕屡次拿一些事情问他，他很善于应对，真是博学的老儒，可以授予太常职事，来让他准备讨论。”二十五日，任命殿前都点检襄为御史大夫。
 </p><p>十一月九日，尚书右丞移剌道罢官。十七日，派真定府尹徒单守素等人为贺宋正旦使。二十五日，任命御史大夫襄为尚书右丞。二十八日，皇上告诉宰相大臣说“：郡守选拔人才，考察资历虽不够格，是廉洁贤能的人则提升任用他，以此来勉励其余的人。”
 </p><p>十二月三日，皇上对宰相大臣说：“岐国用人，只是一句话合意便提升任用这个人，一句话说错便斥责惩罚这个人。凡是人们的言辞，一得一失，贤者也不可避免。自古以来选用人才都用考试的办法，如果只拿禀报回答事情的表现来考察，怎么能知道此人是否贤能？朕选取人的标准，众人所同意授予的任用他，不把个人独见当成标准。”二十一日，黄河在卫州决口。二十三日，皇上在近郊打猎。二十五日，特授袭封衍圣公孔总为兖州曲阜令，封爵如故。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章-卷六-白话.html'>第六章-卷六</a></p><p class='next'>下一节：<a href='第八章-卷八-白话.html'>第八章-卷八</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第六章-卷六-白话.html'>第六章-卷六</a></p><p class='next'>下一节：<a href='第八章-卷八-白话.html'>第八章-卷八</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -301,5 +325,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

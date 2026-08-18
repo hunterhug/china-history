@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -269,9 +294,8 @@
 <p>　　史臣曰：二武朗拔精裁，为时羽仪，嫉恶太甚，遭罹不幸， </p>
 <p>　　倳刃喋血，诚可哀哉！令狐中伤，为恶滋甚，君子之行，其若是乎？郑贞公博 雅好古，一代儒宗。文忠致君，无忝乃祖，衣冠之盛，近代罕俦。韦氏三宗，世多 才俊。纯、纁忠懿，为时元龟，作辅论兵，言皆体国。澳之贞亮，不替祖风。三代 谥贞，考行无愧。 </p>
 <p>　　赞曰：后族峥嵘，平一辞荣。高风袭庆，钟在二衡。猗与贞公，继以文忠。纯、 纁文雅，绰有父风。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百零七章-卷一百零七-原文.html'>第一百零七章-卷一百零七</a></p><p class='next'>下一节：<a href='第一百零九章-卷一百零九-原文.html'>第一百零九章-卷一百零九</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第一百零七章-卷一百零七-原文.html'>第一百零七章-卷一百零七</a></p><p class='next'>下一节：<a href='第一百零九章-卷一百零九-原文.html'>第一百零九章-卷一百零九</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -283,5 +307,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

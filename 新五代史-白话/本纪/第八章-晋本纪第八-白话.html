@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -217,9 +242,8 @@
 </p><p>天福五年(940)正月一日，下诏免去民众公私债务。二十三日，回鹘使者石海金来。四月二十九日，契丹兴化王来。五月二十一日，安远军节度使李金全叛变归附南唐。六月九日，李繮派李承裕率军入安州，金全逃归南唐，安远军节度使马全节战败承裕。二十三日，攻克安州，承裕逃到云梦，被全节捉住杀掉了。八月四日，在西郊视察农民庄稼。二十六日，西京留守杨光远杀太子太师范延光。九月五日，任翰林学士承旨、户部侍郎和凝为中书侍郎、同中书门下平章事。十九日，在沙台视察农民庄稼。十月十五日，契丹使者舍利来。十一月十五日，冬至，开始用二舞。
 </p><p>天福六年(941)正月十八日，封唐叔虞为兴安王，台骀为昌宁公。二月十八日，停止买宴钱。三月，免去农民二年至四年以前的税。四月三十日，契丹使者述括来。五月，吐浑首领白承福来。七月二十四日，突厥使者薛同海来。八月五日，前往邺都，开封尹郑王重贵留守东京，宣徽南院使张从恩为东京内外兵马都监。十五日，大赦。二十七日，派光禄卿张澄出使契丹。九月十八日，派前安国军节度使杨彦询出使契丹。二十日，吐浑使者白可久来。黄河在中都决堤，水流入沓河。十月，黄河在滑、濮、郓、澶州决堤。山南东道节度使安从进反叛。十一月二十一日，派西京留守高行周为南面军前都部署去讨伐。十二月一日，郑王重贵为广晋尹，徙封齐王。先锋都指挥使郭金海在唐州战败安从进。成德军节度使安重荣反。派天平节度使杜重威为镇州行营招讨使。十一日，契丹派使者来。十三日，杜重威在宗城战败安重荣。
 </p><p>天福七年(942)正月二日，攻克镇州，安重荣处死，赦免广晋吏民。十五日，契丹使者达剌来。三月，归德军节度使安彦威在滑州堵塞黄河缺口。闰三月，天兴县蝗虫吃麦苗。五月二十二日，尊皇太妃刘氏为太后。六月四日，吐浑使者念丑汉来。十三日，皇帝死于保昌殿。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-唐本纪第七-白话.html'>第七章-唐本纪第七</a></p><p class='next'>下一节：<a href='第九章-晋本纪第九-白话.html'>第九章-晋本纪第九</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第七章-唐本纪第七-白话.html'>第七章-唐本纪第七</a></p><p class='next'>下一节：<a href='第九章-晋本纪第九-白话.html'>第九章-晋本纪第九</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -231,5 +255,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

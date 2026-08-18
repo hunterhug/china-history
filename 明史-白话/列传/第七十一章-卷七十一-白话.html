@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -235,9 +260,8 @@
 </p><p>“到问起御敌之策，则又议论纷纭。有说要恢复受降城的险要，防守东胜的旧城，使其在交战时互相声援，呈犄角之势共同制敌。要收复黄河以北的城镇，就必须在塞外集聚军队。派出长途跋涉的军队，进入荒漠之地，辎重拖累，粮饷困难。敌人可从前面包抄，或者从背后袭击。旷日持久，军粮断绝。进又得不到城镇，退又无归路，一旦造成失败就会声威大损。又有人说统率十万军队，带半月的粮食，高扬士气，扫荡敌人窟穴，将其赶出河套。这种说法并非不好。然而帝王之兵，要获全胜；孙吴兵法说要以逸待劳。现在要鼓足勇气前行，穷搜远击，一路冒险深入，以求万一的侥幸。担着粮食随军远征则辎重难行，率军长驱直入则孤立难以得到援救。况且这地方千里，无城镇可居，无储备之积。敌人或者往来迁徙，使我军疲于驰逐。我军则受客观形势所限，为敌人所困。既坐失获胜之机，必蹈覆没的老路。其中最失策的是又要放弃延绥不守，名义上使兵民卸去负担，不知百姓每寸土地都受之祖宗，不可不看重，以前东胜失守，而今日的敌害聚集于延绥，而关东陕西震动。现在放弃延绥，那么往后的祸患集中于关东陕西，使京师受到震动。贼离得愈近祸害就愈大。”
 </p><p>倪岳接着陈述要重视将权，增建城堡、增加哨兵、招募壮丁、调走客籍军士、赏罚分明、严查间谍、充实屯田、恢复边漕几件事。当时由于兵部正在主张用兵，不能全部采纳倪岳的建议。
 </p><p>十四年(1510)十月，倪岳去世，享年五十八岁。追赠少保，赐谥号文毅。明朝时期父子官于翰林院，谥号中都有“文”字，是自倪岳开始的。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十章-卷七十-白话.html'>第七十章-卷七十</a></p><p class='next'>下一节：<a href='第七十二章-卷七十二-白话.html'>第七十二章-卷七十二</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第七十章-卷七十-白话.html'>第七十章-卷七十</a></p><p class='next'>下一节：<a href='第七十二章-卷七十二-白话.html'>第七十二章-卷七十二</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -249,5 +273,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

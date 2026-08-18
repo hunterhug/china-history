@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -239,9 +264,8 @@
 <p>　　国忠既居宰执，兼领剑南节度，势渐恣横。十载正月望夜，杨家五宅夜游，与 广平公主骑从争西市门。杨氏奴挥鞭及公主衣，公主堕马，驸马程昌裔扶主，因及 数挝。公主泣奏之，上令杀杨氏奴，昌裔亦停官。国忠二男昢、暄，妃弟鉴，皆尚 公主，杨氏一门尚二公主、二郡主。贵妃父祖立私庙，玄宗御制家庙碑文并书。玄 珪累迁至兵部尚书。天宝中，范阳节度使安禄山大立边功，上深宠之。禄山来朝， 帝令贵妃姊妹与禄山结为兄弟。禄山母事贵妃，每宴赐，锡赉稠沓。及禄山叛，露 檄数国忠之罪。河北盗起，玄宗以皇太子为天下兵马元帅，监抚军国事。国忠大惧， 诸杨聚哭，贵妃衔土陈请，帝遂不行内禅。及潼关失守，从幸至马嵬，禁军大将陈 玄礼密启太子，诛国忠父子。既而四军不散，玄宗遣力士宣问，对曰“贼本尚在”， 盖指贵妃也。力士复奏，帝不获已，与妃诏，遂缢死于佛室。时年三十八，瘗于驿 西道侧。 </p>
 <p>　　上皇自蜀还，令中使祭奠，诏令改葬。礼部侍郎李揆曰：“龙武将士诛国忠， 以其负国兆乱。今改葬故妃，恐将士疑惧，葬礼未可行。”乃止。上皇密令中使改 葬于他所。初瘗时以紫褥裹之，肌肤已坏，而香囊仍在。内官以献，上皇视之凄惋， 乃令图其形于别殿，朝夕视之。 </p>
 <p>　　马嵬之诛国忠也，虢国夫人闻难作，奔马至陈仓。县令薛景仙率人吏追之，走 入竹林。先杀其男裴徽及一女。国忠妻裴柔曰：“娘子为我尽命。”即刺杀之。已 而自刎，不死，县吏载之，闭于狱中。犹谓吏曰：“国家乎？贼乎？”吏曰：“互 有之。”血凝至喉而卒，遂瘗于郭外。韩国夫人婿秘书少监崔峋，女为代宗妃。虢 国男裴徽尚代宗女延安公主，女嫁让帝男。秦国夫人婿柳澄先死，男钧尚长清县主， 澄弟潭尚肃宗女和政公主。 </p></p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p></div><footer data-v="2">
+<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -253,5 +277,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

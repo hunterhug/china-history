@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -216,9 +241,8 @@
 </p><p>刘昞后来隐居酒泉，不接受州郡邀请他为官的旨命，开门授业，聚集在他门下受业的弟子有五百余人。李詗另立政权，征拜他为儒林祭酒、从事中郎。李詗喜爱文书典籍，书史当中有脱落文字的，他必定亲自补上，刘昞当时侍奉左右，上前请求代替李詗做这事。李詗说：“我亲自来做这种事情，是想让别人重视此类典籍。我与卿相逢，和孔明与刘备相逢又有什么区别？”又迁任抚夷护军，刘昞虽然每天都有政务在身，但仍是手不释卷。李詗说：“爱卿你注释篇籍，常常夜以继日，以烛继昼。我说你白天这样做还可以，晚上就应该休息了。”刘昞说：“朝闻道，夕死可矣，不知人将老矣，所以孔子才成为圣人，为人称道。而我刘昞是什么人，怎敢停止下来。”刘昞考虑三史文字太繁多，便撰写《略记》一百三十篇、共八十四卷，又著《凉书》十卷、《敦煌实录》二十卷、《方言》三卷、《靖恭堂铭》一卷、又注释《周易》、《韩子》、《人物志》、《黄石公三略》，这些书都流传于世。
 </p><p>蒙逊平定酒泉，拜授他为秘书郎，专门负责注记之类的事情。刘昞在西苑建起陆沉观，亲自前往礼敬诸圣，自号“玄处先生”，学徒达数百人，每个月都送给他一些羊酒。牧犍尊他为国师，亲自拜之以礼，命令所有官员都北面受业于他。当时，同郡的索敞、阴兴为他的助教，两人都以文学见长，每次都以民间学者的身份出入。
 </p><p>魏世祖平定凉州，百姓东迁，朝廷久闻刘昞大名，拜授他为乐平王从事中郎。魏世祖下诏让年纪七十岁以上的乡老留在本乡，身边留下一个儿子奉养。刘昞当时已经太老了，身在姑臧，一年多后，思乡返归，到了凉州西面四百里的韭谷窟，染上疾病，死了。刘昞有六个儿子。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十九章-卷三十九-白话.html'>第三十九章-卷三十九</a></p><p class='next'>下一节：<a href='第四十一章-卷四十一-白话.html'>第四十一章-卷四十一</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第三十九章-卷三十九-白话.html'>第三十九章-卷三十九</a></p><p class='next'>下一节：<a href='第四十一章-卷四十一-白话.html'>第四十一章-卷四十一</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -230,5 +254,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

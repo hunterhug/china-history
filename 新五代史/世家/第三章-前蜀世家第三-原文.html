@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -241,9 +266,8 @@
 </p><p>龙之为物也，以不见为神，以升云行天为得志。今偃然暴露其形，是不神也；不上于天而下见于水中，是失职也。然其一何多欤，可以为妖矣！凤凰，鸟之远人者也。昔舜治天下，政成而民悦，命夔作乐，乐声和，鸟兽闻之皆鼓舞。当是之时，凤凰适至，舜之史因并记以为美，后世因以凤来为有道之应。其后凤凰数至，或出于庸君缪政之时，或出于危亡大乱之际，是果为瑞哉？麟，兽之远人者也。昔鲁哀公出猎，得之而不识，盖索而获之，非其自出也。故孔子书于《春秋》曰“西狩获麟”者，讥之也。“西狩”，非其远也；“获麟”，恶其尽取也。狩必书地，而哀公驰骋所涉地多，不可遍以名举，故书“西”以包众地，谓其举国之西皆至也。麟，人罕识之兽也，以见公之穷山竭泽而尽取，至于不识之兽，皆搜索而获之，故曰“讥之也”。圣人已没，而异端之说兴，乃以麟为王者之瑞，而附以符命、谶纬诡怪之言。凤尝出于舜，以为瑞，犹有说也，及其后出于乱世，则可以知其非瑞矣。若麟者，前有治世如尧、舜、禹、汤、文、武、周公之世，未尝一出，其一出而当乱世，然则孰知其为瑞哉？龟，玄物也，污泥川泽，不可胜数，其死而贵于卜官者，用适有宜尔。而《戴氏礼》以其在宫沼为王者难致之瑞，《戴礼》杂出于诸家，其失亦以多矣。驺虞，吾不知其何物也。《诗》曰：“吁嗟乎驺虞！”贾谊以谓驺者，文王之囿；虞，虞官也。当谊之时，其说如此，然则以之为兽者，其出于近世之说乎？
 </p><p>夫破人之惑者，难与争于笃信之时，待其有所疑焉，然后从而攻之可也。麟、凤、龟、龙，王者之瑞，而出于五代之际，又皆萃于蜀，此虽好为祥瑞之说者亦可疑也。因其可疑者而攻之，庶几惑者有以思焉。
 </p><p>据《前蜀书》、《运历图》、《九国志》，皆云建以唐大顺二年入成都为西川节度使，天复七年九月建号，明年正月改元武成，今以为定。惟《旧五代史》云“龙纪元年入成都，天祐五年建号改元”者缪也。至后唐同光三年蜀灭，则诸书皆同。自大顺二年至同光三年，凡三十五年。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二章-南唐世家第二-原文.html'>第二章-南唐世家第二</a></p><p class='next'>下一节：<a href='第四章-后蜀世家第四-原文.html'>第四章-后蜀世家第四</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第二章-南唐世家第二-原文.html'>第二章-南唐世家第二</a></p><p class='next'>下一节：<a href='第四章-后蜀世家第四-原文.html'>第四章-后蜀世家第四</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -255,5 +279,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

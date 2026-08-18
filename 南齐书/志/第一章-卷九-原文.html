@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -267,9 +292,8 @@
 </p><p>史臣曰：案禊与曲水，其义参差。旧言阳气布畅，万物讫出，姑洗洁之也。巳者祉也，言祈介祉也。一说，三月三日，清明之节，将修事于水侧，祷祀以祈丰年。应劭云：“禊者，洁也，言自洁濯也。或云汉世有郭虞者，以三月上辰生二女，上巳又生一女，二日中频生皆死，时俗以为大忌，民人每至其日，皆适东流水祈祓自洁濯，浮酌清流，后遂为曲水。”案高后祓霸上，马融《梁冀西第赋》云“西北戌亥，玄石承输。虾蟆吐写，庚辛之域”。即曲水之象也。今据禊为曲水事，应在永寿之前已有，祓除则不容在高后之后。祈农之说，于事为当。
 </p><p>九月九日马射。或说云，秋金之节，讲武习射，像汉立秋之礼。
 </p><p>史臣曰：案晋中朝元会，设卧骑、倒骑、颠骑，自东华门驰往神虎门，此亦角抵杂戏之流也。宋武为宋公，在彭城，九日出项羽戏马台，至今相承，以为旧准。</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-卷十-原文.html'>第二章-卷十</a></p></div><footer data-v="2">
+<div class='pn'><p class='next'>下一节：<a href='第二章-卷十-原文.html'>第二章-卷十</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -281,5 +305,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

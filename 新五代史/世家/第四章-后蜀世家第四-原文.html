@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -235,9 +260,8 @@
 </p><p>刘光乂攻夔州，守将高彦俦战败，闭牙城拒守，判官罗济劝其走，彦俦曰：“吾昔不能守秦川，今又奔北，虽人主不杀我，我何面目见蜀人乎！”又劝其降，彦俦不许，乃自焚死。而蜀兵所在奔溃，将帅多被擒获。昶问计于左右，老将石頵以谓东兵远来，势不能久，宜聚兵坚守以敝之。昶叹曰：“吾与先君以温衣美食养士四十年，一旦临敌，不能为吾东向放一箭，虽欲坚壁，谁与吾守者邪！”乃命李昊草表以降，时乾德三年正月也。自兴师至昶降，凡六十六日。初，昊事王衍为翰林学士，衍之亡也，昊为草降表，至是又草焉，蜀人夜表其门曰“世修降表李家”，当时传以为笑。
 </p><p>昶至京师，拜检校太师兼中书令，封秦国公，七日而卒，追封楚王。其母李氏，为人明辩，甚见优礼，诏书呼为“国母”，尝召见劳之曰：“母善自爱，无戚戚思蜀，他日当送母归。”李氏曰：“妾家本太原，倘得归老故乡，不胜大愿。”是时刘钧尚在。太祖大喜曰：“俟平刘钧，当如母愿。”昶之卒也，李氏不哭，以酒酹地祝曰：“汝不能死社稷，苟生以取羞。吾所以忍死者，以汝在也。吾今何用生为！”因不食而卒。其余事具国史。
 </p><p>知祥兴灭年数甚明，诸书皆同，盖自同光三年乙酉入蜀，至皇朝乾德三年乙丑国灭，凡四十一年。惟《旧五代史》，云同光三年丙戌至乾德三年乙丑，四十年者，缪也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章-前蜀世家第三-原文.html'>第三章-前蜀世家第三</a></p><p class='next'>下一节：<a href='第五章-南汉世家第五-原文.html'>第五章-南汉世家第五</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第三章-前蜀世家第三-原文.html'>第三章-前蜀世家第三</a></p><p class='next'>下一节：<a href='第五章-南汉世家第五-原文.html'>第五章-南汉世家第五</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -249,5 +273,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

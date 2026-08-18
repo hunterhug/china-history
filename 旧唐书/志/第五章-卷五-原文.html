@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -272,9 +297,8 @@
 </p><p>后汉世祖光武皇帝葬于原陵，其子孝明帝追思不已。永平元年，乃率诸侯王、公卿，正月朝于原陵，亲奉先后阴氏妆奁箧笥悲恸，左右侍臣，莫不呜咽。梁武帝父丹阳尹顺之，追尊为太祖文帝，先葬丹徒，亦尊为建陵。武帝即大位后，大同十五年，亦朝于建陵，有紫云廕覆陵上，食顷方灭。梁主著单衣介帻，设次而拜，望陵流哭，泪之所沾，草皆变色。陵傍有枯泉，至时而水流香洁。因谓侍臣曰，陵阴石虎，与陵俱创二百余年，恨小，可更造碑石柱麟，并二陵中道门为三闼。园陵职司，并赐一级。奉辞诸陵，哭踊而拜。周太祖文帝葬于成陵，其子明帝初立，元年十二月，谒于成陵。
 </p><p>高祖神尧葬于献陵，贞观十三年正月乙巳，太宗朝于献陵。先是日，宿卫设黄麾仗周卫陵寝，至是质明，七庙子孙及诸侯百僚、蕃夷君长皆陪列于司马门内。皇帝至小次，降舆纳履，哭于阙门，西面再拜，恸绝不能兴。礼毕，改服入于寝宫，亲执馔，阅视高祖及先后服御之物，匍匐床前悲恸。左右侍御者莫不歔欷。初，甲辰之夜，大雨雪。及皇帝入陵院，悲号哽咽，百辟哀恸，是时雪益甚，寒风暴起，有苍云出于山陵之上，俄而流布，天地晦冥。至礼毕，皇帝出自寝宫，步过司马门北，泥行二百余步，于是风静雪止，云气歇灭，天色开霁。观者窃议，以为孝感之所致焉。是日曲赦三原县及从官卫士等，大辟已下，已发觉，未发觉，皆释其罪。免民一年租赋。有八十已上，及孝子顺孙、义夫节妇、鳏寡孤独、有笃疾者，赐物各有差。宿卫陵邑中郎将、卫士斋员及三原令以下，各赐爵一级。丁未，至自献陵。己酉，朝于太极殿。庚子，会群臣，奏《功成庆善》及《破阵》之乐。
 </p><p>玄宗开元十七年十一月丙申，亲谒桥陵。皇帝望陵涕泣，左右并哀感。进奉先县同赤县，以所管万三百户供陵寝，三府兵马供卫，曲赦县内大辟罪已下。戊戌，谒定陵。己亥，谒献陵。壬寅，谒昭陵。己巳，谒乾陵。戊申，车驾还宫。大赦天下，流移人并放还，左降官移近处，百姓无出今年地税之半。每陵取侧近六乡以供陵寝。皇帝初至桥陵，质明，柏树甘露降，曙后祥烟遍空。皇帝谒昭陵，陪葬功臣尽来受飨，凤吹釭釭，若神祇之所集。陪位文武百僚皆闻先圣叹息、功臣蹈舞之声，皆以为至孝所感。天宝二年八月，制：“自今已后，每至九月一日，荐衣于陵寝。”十三载，改献、昭、乾、定、桥五陵署为台，其署令改为台令，加旧一级。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第四章-卷四-原文.html'>第四章-卷四</a></p><p class='next'>下一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -286,5 +310,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

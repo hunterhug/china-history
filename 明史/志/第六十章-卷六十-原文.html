@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -275,9 +300,8 @@
 </p><p>十五年，流贼围开封久，守臣谋引黄河灌之。贼侦知，预为备。乘水涨，令其党决河灌城，民尽溺死。总河侍郎张国维方奉诏赴京，奏其状。山东巡抚王永吉上言：“黄河决汴城，直走睢阳，东南注鄢陵、鹿邑，必害亳、泗，侵祖陵，而邳、宿运河必涸。”帝令总河侍郎黄希宪急往捍御，希宪以身居济宁不能摄汴，请特设重臣督理。命工部侍郎周堪赓督修汴河。
 </p><p>十六年二月，堪赓上言：“河之决口有二：一为朱家寨，宽二里许，居河下流，水面宽而水势缓；一为马家口，宽一里馀，居河上流，水势猛，深不可测。两口相距三十里，至汴堤之外，合为一流，决一大口，直冲汴城以去，而河之故道则涸为平地。怒涛千顷，工力难施，必广浚旧渠，远数十里，分杀水势，然后畚锸可措。顾筑浚并举，需夫三万。河北荒旱，兖西兵火，竭力以供，不满万人，河南万死一生之馀，未审能应募否，是不得不借助於抚镇之兵也。”乃敕兵部速议，而令堪赓刻期兴工。至四月，塞朱家寨决口，修堤四百馀丈。马家口工未就，忽冲东岸，诸埽尽漂没。堪赓请停东岸而专事西岸。帝令急竣工。
 </p><p>六月，堪赓言：“马家决口百二十丈，两岸皆筑四之一，中间七十馀丈，水深流急，难以措手，请俟霜降后兴工。”已而言：“五月伏水大涨，故道沙滩壅涸者刷深数丈，河之大势尽归於东，运道已通，陵园无恙。”疏甫上，决口再溃。帝趣鸠工，未奏绩而明亡。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十九章-卷五十九-原文.html'>第五十九章-卷五十九</a></p><p class='next'>下一节：<a href='第六十一章-卷六十一-原文.html'>第六十一章-卷六十一</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第五十九章-卷五十九-原文.html'>第五十九章-卷五十九</a></p><p class='next'>下一节：<a href='第六十一章-卷六十一-原文.html'>第六十一章-卷六十一</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -289,5 +313,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

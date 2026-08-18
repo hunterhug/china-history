@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -275,9 +300,8 @@
 </p><p>序以老病，累表解职，不许。诏断表，遂辄去任。数旬，归罪廷尉，诏原不问。太元十八年卒，赠左将军、散骑常侍。
 </p><p>史臣曰：晋氏沦丧，播迁江表，内难荐臻，外虞不息，经略之道，是所未弘，将帅之功，无闻焉尔。逊、豹、宣、胤服勤于太兴之间，毛、邓、刘、硃驰骛乎咸和之后。虽人不逮古，亦足列于当世焉。
 </p><p>赞曰：气分淮海，灾流瀍涧。覆类玄蚖，兴微《鸿雁》。鼓鞞在听，《兔罝》有作。赳赳群英，勤兹王略。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十章--原文.html'>第五十章-</a></p><p class='next'>下一节：<a href='第五十二章--原文.html'>第五十二章-</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第五十章--原文.html'>第五十章-</a></p><p class='next'>下一节：<a href='第五十二章--原文.html'>第五十二章-</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -289,5 +313,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

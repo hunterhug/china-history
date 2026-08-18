@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -245,9 +270,8 @@
 </p><p>明年，晋遣周德威将三万人，会镇、定之兵以攻燕，自祈沟关入，其澶、涿、武、顺诸州皆迎降。守光被围经年，累战常败，乃遣客将王遵化致书于德威曰：“予得罪于晋，迷而不复，今其病矣，公善为我辞焉。”德威谓遵化曰：“大燕皇帝尚未郊天，何至此邪？予受命以讨僭乱，不知其佗也。”守光益窘，乃献绢千匹、银千两、锦百段，遣其将周遵业谓德威曰：“吾王以情告公，富贵成败，人之常理；录功宥过，霸者之事也。守光去岁妄自尊崇，本不能为硃温下耳，岂意大国暴师经年，幸少宽之。”德威不许。守光登城呼德威曰：“公三晋贤士，独不急人之危乎？”遣人以所乘马易德威马而去，因告曰：“俟晋王至则降。”晋王乃自临军，守光登城见晋王，晋王问将如何？守光曰：“今日俎上肉耳，惟王所为也！”守光有嬖者李小喜，劝其毋降，守光因请俟佗日。是夕，小喜叛降于晋军。明旦，晋军攻破其城，执仁恭及其家族三百口。
 </p><p>守光与其妻李氏、祝氏，子继珣、继方、继祚等，南走沧州，迷失道，至燕乐界中，数日不得食，遣其妻祝氏乞食于田家，田家怪而诘之，祝氏以实告，乃被擒送幽州。晋王方大飨军，客将引守光见，晋王戏之曰：“主人何避客之遽也？”守光叩头请死，命械守光并其父仁恭以从军。军还过赵，赵王王镕会晋王，置酒，酒酣请曰：“愿见仁恭父子。”晋王命破械出之，引置下坐。饮食自若，皆无惭色。
 </p><p>晋王至太原，仁恭父子曳以组练，献于太庙。守光将死，泣曰：“臣死无恨，然教臣不降者，李小喜也，罪人不死，臣将诉于地下。”晋王使召小喜，小喜真目曰：“囚父弑兄，蒸其骨肉，亦小喜教尔邪？”晋王怒，命先斩小喜。守光知不免，呼曰：“王将复唐室以成霸业，何不赦臣使自效？”其二妇从旁骂曰：“事已至此，生复何为？愿先死！”乃俱死。晋王命李存霸执仁恭至雁门，刺其心血以祭先王墓，然后斩之。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十六章-宦者传第二十六-原文.html'>第二十六章-宦者传第二十六</a></p><p class='next'>下一节：<a href='第二十八章-杂传第二十八-原文.html'>第二十八章-杂传第二十八</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第二十六章-宦者传第二十六-原文.html'>第二十六章-宦者传第二十六</a></p><p class='next'>下一节：<a href='第二十八章-杂传第二十八-原文.html'>第二十八章-杂传第二十八</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -259,5 +283,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

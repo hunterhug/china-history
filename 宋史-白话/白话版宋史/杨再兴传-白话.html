@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -204,9 +229,8 @@
 
 <h1>杨再兴传<span style='font-size:small'> 白话</span></h1>
 <p>杨再兴，原是贼盗曹成的部将。绍兴二年(1132)，岳飞击败曹成，进入莫邪关。第五将韩顺夫解除鞍马脱掉盔甲，用所掳掠的妇女在旁助兴喝酒。杨再兴率领部众直冲韩顺夫营中，官军退却，杨再兴杀死韩顺夫，又杀死岳飞弟弟岳番飞。曹成失败后，杨再兴跳入深涧，张宪准备杀死他，杨再兴说：“希望你捆绑我去见岳飞。”于是受绑。岳飞见到杨再兴，惊奇他的像貌，松绑说：“我不杀你，你应该以忠义报效国家。”杨再兴叩拜感谢。<BR><BR>　　岳飞屯驻襄阳以图谋恢复中原，派遣杨再兴到西京长水县的业阳，杀死敌将孙都统和统制满在，斩杀敌兵五百多人，俘虏官兵一百人，其余的党羽逃散。次日，又同敌人在孙洪涧展开战斗，击败敌人二千人，收复长水县，缴获粮食二万石供给军民，全部收复西京险要地区。又得到伪齐留下的马匹一千匹，粮草数十万。中原地区群起响应。又到蔡州，焚毁敌人粮草。<BR><BR>　　岳飞在郾城打败金军，兀..大怒，会合龙虎大王、盖天大王及韩常的兵力进逼郾城。岳飞派儿子岳云抵挡敌人，激战数十个回合，敌人支撑不住。杨再兴单骑独马冲入敌军之中，准备活捉兀..但没有抓到，杀死敌人数百人后返回。兀..十分愤怒，集中兵力再次前来，在临颍驻扎了十二万大军。杨再兴率领三百名骑兵在小商桥同敌军遭遇，突然向敌人发起冲击，杀死敌兵二千多人以及敌将万户撒八孛堇、千户一百人。杨再兴战死，后来得到他的尸体，焚烧之后，共得到箭镞装满两升。</p>
-<div class='pn'><p class='pre'>上一节：<a href='张宪传-白话.html'>张宪传</a></p><p class='next'>下一节：<a href='牛皋传-白话.html'>牛皋传</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='张宪传-白话.html'>张宪传</a></p><p class='next'>下一节：<a href='牛皋传-白话.html'>牛皋传</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -218,5 +242,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

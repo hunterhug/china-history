@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -265,9 +290,8 @@
 </p><p>北庭大都护府，本庭州，贞观十四年平高昌，以西突厥泥伏沙钵罗叶护阿史那贺鲁部落置，并置蒲昌县，寻废，显庆三年复置，长安二年为北庭都护府。土贡：阴牙角、速霍角、阿魏截根。户二千二百二十六，口九千九百六十四。县四：有瀚海军，本烛龙军，长安二年置，三年更名，开元中盖嘉运增筑；西七百里有清海军，本清海镇，天宝中为军；南有神山镇。自庭州西延城西六十里有沙钵城守捉，又有冯洛守捉；又八十里有耶勒城守捉，又八十里有俱六城守捉，又百里至轮台县，又百五十里有张堡城守捉，又渡里移得建河，七十里有乌宰守捉，又渡白杨河，七十里有清镇军城，又渡叶叶河，七十里有叶河守捉，又渡黑水，七十里有黑水守捉，又七十里有东林守捉，又七十里有西林守捉；又经黄草泊、大漠、小碛，渡石漆河，逾车岭，至弓月城；过思浑川、蛰失蜜城，渡伊丽河，一名帝帝河，至碎叶界；又西行千里至碎叶城，水皆北流入碛及入夷播海。金满，下。轮台，下。有静塞军，大历六年置。后庭，下。本蒲类，隶西州，后来属，宝应元年更名。有蒲类、郝遮、咸泉三镇，特罗堡。西海。下。宝应元年置。
 </p><p>安西大都护府，初治西州。显庆二年平贺鲁，析其地置濛池、昆陵二都护府，分种落列置州县，西尽波斯国，皆隶安西，又徙治高昌故地。三年徙治龟兹都督府，而故府复为西州。咸亨元年，吐蕃陷都护府。长寿二年收复安西四镇。至德元载更名镇西。后复为安西。土贡：罔砂、绯氈、偏桃人。吐蕃既侵河、陇，惟李元忠守北庭，郭昕守安西，与沙陀、回纥相依，吐蕃攻之久不下。建中二年，元忠、昕遣使间道入奏，诏各以为大都护，并为节度。贞元三年，吐蕃攻沙陀、回纥，北庭、安西无援，遂陷。有保大军，屯碎叶城；于阗东界有兰城、坎城二守捉城，西有葱岭守捉城，有胡弩、固城、吉良三镇，东有且末镇，西南有皮山镇；焉耆西有于术、榆林、龙泉、东夷僻、西夷僻、赤岸六守捉城。
 </p><p>右陇右采访使，治善阝州。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p><p class='next'>下一节：<a href='第三十一章-卷三十一-原文.html'>第三十一章-卷三十一</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第二十九章-卷二十九-原文.html'>第二十九章-卷二十九</a></p><p class='next'>下一节：<a href='第三十一章-卷三十一-原文.html'>第三十一章-卷三十一</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -279,5 +303,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

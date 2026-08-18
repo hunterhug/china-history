@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -228,9 +253,8 @@
 </p><p>扶南乐，舞者二人，以朝霞为衣，赤皮鞋。天竺伎能自断手足，刺肠胃，高宗恶其惊俗，诏不令入中国。睿宗时，婆罗门国献人倒行以足舞，仰植铦刀，俯身就锋，历脸下，复植于背，觱篥者立腹上，终曲而不伤。又伏伸其手，二人蹑之，周旋百转。开元初，其乐犹与四夷乐同列。
 </p><p>贞元中，南诏异牟寻遗使诣剑南西川节度使韦皋，言欲献夷中歌曲，且令骠国进乐。皋乃作《南诏奉圣乐》，用黄钟之均，舞六成，工六十四人，赞引二人，序曲二十八叠，执羽而舞“南诏奉圣乐”字，曲将终，雷鼓作于四隅，舞者皆拜，金声作而起，执羽稽首，以象朝觐。每拜跪，节以钲鼓。又为五均：一曰黄钟，宫之宫；二曰太蔟，商之宫；三曰姑洗，角之宫；四曰林钟，徵之宫；五曰南吕，羽之宫。其文义繁杂，不足复纪。德宗阅于麟德殿，以授太常工人，自是殿庭宴则立奏，宫中则坐奏。
 </p><p>十七年，骠国王雍羌遣弟悉利移、城主舒难陀献其国乐，至成都，韦皋复谱次其声，又图其舞容、乐器以献。凡工器二十有二，其音八：金、贝、丝、竹、匏、革、牙、角，大抵皆夷狄之器，其声曲不隶于有司，故无足采云。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十一章-卷十一·礼乐十一-原文.html'>第十一章-卷十一·礼乐十一</a></p><p class='next'>下一节：<a href='第十三章-卷十三·仪卫-原文.html'>第十三章-卷十三·仪卫</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第十一章-卷十一·礼乐十一-原文.html'>第十一章-卷十一·礼乐十一</a></p><p class='next'>下一节：<a href='第十三章-卷十三·仪卫-原文.html'>第十三章-卷十三·仪卫</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -242,5 +266,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

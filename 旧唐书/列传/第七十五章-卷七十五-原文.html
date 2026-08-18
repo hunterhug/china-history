@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -229,9 +254,8 @@
 <p>　　浑母兄识，，笃意文章，有重名于开元、天宝间，与萧颖士、元德秀、刘迅相 亚。其练理创端往往诣极，当时作者，咸伏其简拔，而趣尚辨博。浑亦善为文，然 趋时向功，非沉思之所及。浑警辩，好谐谑放达，与人交，豁然无隐。性节俭，不 治产业，官至丞相，假宅而居。罢相数日，则命亲族寻胜，宴醉方归，陶陶然忘其 黜免。时李勉、卢翰皆退罢居第，相谓曰：“吾辈方柳宜城，悉为拘俗之人也。” </p>
 <p>　　史臣曰：张镒、萧复、柳浑，节行才能訏谟亮直，皆足相明主，平泰阶，而卢 杞忌之于前，延赏排之于后，管仲有言：“任君子，使小人间之，害霸也。”德宗 黜贤相，位奸臣，致硃泚、怀光之乱，是失其人也，岂尤其时哉！河清殁于王事， 乃显忠贞；从一举自奸人，固宜循默。 </p>
 <p>　　赞曰：得人则兴，失人则亡。镒、复、浑去，宗社其殃。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十四章-卷七十四-原文.html'>第七十四章-卷七十四</a></p><p class='next'>下一节：<a href='第七十六章-卷七十六-原文.html'>第七十六章-卷七十六</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第七十四章-卷七十四-原文.html'>第七十四章-卷七十四</a></p><p class='next'>下一节：<a href='第七十六章-卷七十六-原文.html'>第七十六章-卷七十六</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -243,5 +267,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

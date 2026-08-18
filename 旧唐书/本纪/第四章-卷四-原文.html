@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -254,9 +279,8 @@
 </p><p>二年春正月壬午，幸东都。丁酉，幸合璧宫。戊子，虑雍、洛二州及诸司囚。甲子，以发向泰山，停选。三月甲寅，兼司戎太常伯、永安郡公姜恪同东西台三品。辛未，东都造乾元殿成。闰月癸酉，日有蚀之。四月丙午，曲赦桂、广、黔三都督府管内大辟罪已上。丙寅，讲武邙山之阳，御城北楼观之。戊辰，左侍极、仍检校大司成、嘉兴县子陆敦信为检校右相，其大司成宜停。西台侍郎孙处约、乐彦玮并停知政事。
 </p><p>五月辛卯，以秘阁郎中李淳风造历成，名《麟德历》，颁之。以司空、英国公李勣，少师、高阳郡公许敬宗，右相、嘉兴县子陆敦信，左相、钜鹿男窦德玄为检校封禅使。六月，鄜州大水，坏城邑。秋七月，邓王元裕薨。
 </p><p>冬十月戊午，皇后请封禅，司礼太常伯刘祥道上疏请封禅。癸亥，高丽王高藏遣其子福男来朝。丁卯，将封泰山，发自东都。是岁大稔，米斗五钱，麦不列市。十一月丙子，次于原武，以少牢祭汉将纪信墓，赠骠骑大将军。庚寅，华州刺史、燕国公于志宁卒。十二月丙午，御齐州大。乙卯，命有司祭泰山。丙辰，发灵岩顿。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p><p class='next'>下一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p><p class='next'>下一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -268,5 +292,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

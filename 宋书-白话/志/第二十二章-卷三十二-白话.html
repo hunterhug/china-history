@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -269,9 +294,8 @@
 </p><p>晋惠帝元康五年三月，吕县出现血在东西百余步范围内流动。这是赤祥。元康末年，司马伦穷凶极恶，扰乱朝廷，造就是僵尸流血的应验。干宝认为是遣以后八年，封云在徐州叛乱，杀死数万人，就是僵尸流血的应验。
 </p><p>晋惠帝永康元年三月，尉氏出现天降下血雨的现象。政令刑法宽缓，就会出现恒燠赤祥之类的妖异。这年正月，愍怀太子被送到许宫幽禁。上天儆戒说，不应当宽容奸人，让他们恣意妄为，奸人将使愍怀太子冤屈而死。惠帝愚昧昏聩，不能省悟，当月愍怀太子终被害死。于是王室的祸乱形成，灾祸遍布天下。淖齿杀害齐闵王那天，天降血雨，沾染人们的衣服。上天把情况告诉天下人，指的就是这种情况吧。京房《易传》说：“把罪过推诿给无罪的平民，造就叫做因循错误，它的灾祸是天上降下血雨，造就叫做不亲睦百姓，百姓有怨恨之心，不过三年，便没有同族之人。”又说：“佞人食俸禄，功臣被杀戮，天上降雨血。”
 </p><p>晋愍帝建兴四年十二月丙寅日，丞相府处斩督运令史淳于伯，他的血由下往上倒着流，流到屋柱上二丈三尺高的地方。这是赤样。当时后将军!拯镇守卢堕，丞相扬言说要北伐，淳于伯因为督运粮草延误以及收受役夫赃物之罪，依照出征军法杀了他。淳于伯的儿子上诉说：“淳于侦督运事已完成，没有出现延误，接受役夫的贿赂，不至于犯死罪。兵家用兵的规律，总是先传播风声造成声势然后再实施具体行动，这次运粮，实际上是为了屯戍，并不是真的出征。从建璺四年以来，运送粮草的人延误停留，都没有按出征的军法判罪。”但丞相属官没有人受理他的诉状。到发生这妖变之后，司直上疏弹劾处理淳王迫案件的众官，五童又不加追究。于是连续三年都发生旱灾。王宣认为旱灾是冤气的应验。郭星缍说：“血是水一类，和水同属于《周易》八卦之一的《坎》，《坎》是法家。水势平稳而往下流以滋润万物，不应当由下往上流。而血逆流是政令有失误的征兆。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十一章-卷三十一-白话.html'>第二十一章-卷三十一</a></p><p class='next'>下一节：<a href='第二十三章-卷三十三-白话.html'>第二十三章-卷三十三</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第二十一章-卷三十一-白话.html'>第二十一章-卷三十一</a></p><p class='next'>下一节：<a href='第二十三章-卷三十三-白话.html'>第二十三章-卷三十三</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -283,5 +307,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

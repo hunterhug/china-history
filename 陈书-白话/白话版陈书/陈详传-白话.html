@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -204,9 +229,8 @@
 
 <h1>陈详传<span style='font-size:small'> 白话</span></h1>
 <p>陈详字文几，年少时出家为僧。爱好写记事之文，谈论清雅。高祖讨伐侯景，征召陈详，吩咐他还俗，配给他兵马，跟随高祖前去平定京都。高祖东征杜龛，陈详另外攻克安吉、原乡、故鄣三县。杜龛被平定，按功授陈详为散骑侍郎、假节、雄信将军、青州刺史，割故鄣、广德置广梁郡，以陈详为太守。高祖称帝，改广梁郡为陈留郡，又以陈详为陈留太守。永定二年(558)，受封为遂兴县侯，封邑五百户。同年任明威将军，通直散骑常侍。三年，随侯安都在宫亭湖打败王琳的部将常众爱。世祖继位，任宣城太守，将军如故。王琳占据栅口，陈详跟随吴明彻袭击湓城，去取王琳的家口，没有攻克，于是去到南湖，从鄱阳步行回来。王琳被平定，陈详和吴明彻都没有功劳。天嘉元年(560)，按例增加封邑至一千五百户。又任通直散骑常侍，兼右卫将军。三年，出任假节、都督吴州诸军事、仁威将军、吴州刺史。<BR><BR>　　周迪占据临川举兵反叛，陈详从吴州经别道在濡城周迪的别营袭击周迪，虏获了他的妻儿。周迪败走，陈详返回又镇守吴州。五年(564)，周迪在临川复出，于是以陈详为都督，率领水军、步军讨伐周迪。大军抵达南城，与敌军相遇，战败，死于疆场，时年四十二岁。因为他所统率的兵马行军无纪律，没有赠谥，其子陈正理袭封。</p>
-<div class='pn'><p class='pre'>上一节：<a href='陈拟传-白话.html'>陈拟传</a></p><p class='next'>下一节：<a href='陈慧纪传-白话.html'>陈慧纪传</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='陈拟传-白话.html'>陈拟传</a></p><p class='next'>下一节：<a href='陈慧纪传-白话.html'>陈慧纪传</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -218,5 +242,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

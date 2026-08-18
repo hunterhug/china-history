@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -204,9 +229,8 @@
 
 <h1>董宋臣传<span style='font-size:small'> 白话</span></h1>
 <p>董宋臣，是理宗朝宦官。淳..中，他由睿思殿祗候特转为横行官。宝..三年(1255)，兼任干办佑圣观。侍御史洪天锡弹劾他，皇上没做答复，洪天锡获罪，降为大理少卿。开庆初年，大元兵驻屯江上，京城恐慌。董宋臣赞成皇上迁到宁海军，签判文天祥上疏请求杀董宋臣，皇上又没答复。<BR><BR>　　景定四年(1263)，董宋臣由保康军承宣使升为入内内侍省押班，不久又兼任主管太庙、往来国信所，同提点内军器库、翰林院、编修敕令所、都大提举诸司，提点显应观，主管景献太子府事。恰好文天祥以著作佐郎的身份兼景献府教授，讲求大义不与董宋臣共事，上书请求离开，文天祥就出京任瑞州知州。<BR><BR>　　言者论奏不该用董宋臣，皇上曲意替他解脱，庇护他。秘书少监汤汉上疏，也说“：董宋臣十余年来气焰嚣张，他的权势能去除台谏，排挤大臣，甚至勾结敌人招致大祸。中外人士惶恐且怨恨，而陛下还替他申辩，大臣还替他排解，这是不对的。希望陛下收回对他押班等的任命，这才是社稷的大幸事。”这封上疏献上，皇上也不去考察董宋臣的作为。六月，任命董宋臣主管御前马院及酒库。董宋臣去世后，皇上还下令特转他为节度使，足见皇上对他的宠爱。</p>
-<div class='pn'><p class='pre'>上一节：<a href='关礼传-白话.html'>关礼传</a></p><p class='next'>下一节：<a href='王黼传-白话.html'>王黼传</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='关礼传-白话.html'>关礼传</a></p><p class='next'>下一节：<a href='王黼传-白话.html'>王黼传</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -218,5 +242,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -246,9 +271,8 @@
 </p><p>暢字世道。年五岁，父友见而戏之，解暢衣，取其金环与侍者，暢不之惜，以此赏之。年未弱冠，甚有重名。以选入侍讲东宫，为秘书丞。寻没于石勒，勒以为大将军右司马。谙识朝仪，恆居机密，勒甚重之。作《晋诸公叙赞》二十二卷，又为《公卿故事》九卷。咸和五年卒。子咏，过江为交州刺史、太子右率。
 </p><p>史臣曰：武帝览观四方，平章百姓，永言启沃，任切争臣。傅玄体强直之姿，怀匪躬之操，抗辞正色，补阙弼违，谔谔当朝，不忝其职者矣。及乎位居三独，弹击是司，遂能使台阁生风，贵戚敛手。虽前代鲍、葛，何以加之！然而惟此褊心，乏弘雅之度，骤闻竞爽，为物议所讥，惜哉！古人取戒于韦弦，良有以也。长虞风格凝峻，弗坠家声。及其纳谏汝南，献书临晋，居谅直之地，有先见之明矣。傅祗名父之子，早树风猷，崎岖危乱之朝，匡救君臣之际，卒能保全禄位，可谓有道存焉。
 </p><p>赞曰：鹑觚贞谅，实惟朝望。志厉强直，性乖夷旷。长虞刚简，无亏风尚。子庄才识，爰膺衮职。忠绩未申，泉途遽逼。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十六章--原文.html'>第十六章-</a></p><p class='next'>下一节：<a href='第十八章--原文.html'>第十八章-</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第十六章--原文.html'>第十六章-</a></p><p class='next'>下一节：<a href='第十八章--原文.html'>第十八章-</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -260,5 +284,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

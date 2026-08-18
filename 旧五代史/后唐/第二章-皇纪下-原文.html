@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -245,9 +270,8 @@
 </p><p>冬十月，武皇有疾，是时晋阳城无故自坏，占者恶之。
 </p><p>天祐五年正月戊子朔，武皇疾革。辛卯，崩于晋阳，年五十三。遣令薄葬，发丧后二十七日除服。庄宗即位，追谥武皇帝，庙号太祖，陵在雁门。《五代史补》：太祖武皇，本硃耶赤心之后，沙陀部人也。其先生于雕窠中，酋长以其异生，诸族传养之，遂以“诸爷”为氏，言非一父所养也。其后言讹，以“诸”为“硃”，以“爷”为“耶”。至太祖生，眇一目，长而骁勇，善骑射，所向无敌，时谓之“独眼龙”，大为部落所疾。太祖恐祸及，遂举族归唐，授云州刺史，赐姓李，名克用。黄巢犯长安，自北引兵赴难，功成，遂拜太原节度使，封晋王。武皇之有河东也，威声大振。淮南杨行密常恨识其状貌，因使画工诈为商贾，往河东写之。画工到，未几，人有知其谋者，擒之。武皇初甚怒，既而谓所亲曰：“且吾素眇一目，试召之使写，观其所为如何。”及至，武皇按膝厉声曰：“淮南使汝来写吾真，必画工之尤也，写吾不及十分，即价下便是死汝之所矣。”画工再拜下笔。时方盛暑，武皇执八角扇，因写扇角半遮其面。武皇曰：“汝谄吾也。”遽使别写之，又应声下笔，画其臂弓捻箭之状，仍微合一目以观箭之曲直，武皇大喜，因厚赂金帛遣之。《五代史阙文》：世传武皇临薨，以三矢付庄宗曰：“一矢讨刘仁恭，汝不先下幽州，河南未可图也。一矢击契丹，且曰安巴坚与吾把臂而盟，结为兄弟，誓复唐家社稷，今背约附贼，汝必伐之。一矢灭硃温，汝能成吾志，死无憾矣！”庄宗藏三矢于武皇庙庭。及讨刘仁恭，命幕吏以少牢告庙，请一矢，盛以锦囊，使亲将负之以为前驱。凯旋之日，随俘馘纳矢于太庙。伐契丹，灭硃氏亦如之。又，武皇眇一目，谓之“独眼龙。”性喜杀，左右有小过失，必置于死。初讳眇，人无敢犯者，尝令写真，画工即为捻箭之状，微瞑一目，图成而进，武皇大悦，赐予甚厚。
 </p><p>史臣曰：武皇肇迹阴山，赴难唐室，逐豺狼于魏阙，殄氛祲于秦川，赐姓受封，奄有汾、晋，可谓有功矣。然虽茂勤王之绩，而非无震主之威。及硃旗屯渭曲之师，俾翠辇有石门之幸，比夫桓、文之辅周室，无乃有所愧乎！洎失援于蒲、绛，久垂翅于并、汾，若非嗣子之英才，岂有兴王之茂业。矧累功积德，未比于周文，创业开基，尚亏于魏祖。追谥为“武”，斯亦幸焉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-皇纪上-原文.html'>第一章-皇纪上</a></p><p class='next'>下一节：<a href='第三章-庄宗纪一-原文.html'>第三章-庄宗纪一</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第一章-皇纪上-原文.html'>第一章-皇纪上</a></p><p class='next'>下一节：<a href='第三章-庄宗纪一-原文.html'>第三章-庄宗纪一</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -259,5 +283,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

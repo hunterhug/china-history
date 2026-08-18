@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -219,9 +244,8 @@
 </p><p>第二年，世宗下令编修《献皇帝实录》，建世庙于太庙左侧。六年，以观德殿狭窄为由，改建崇先殿，七年，世宗命张璁等集《明伦大典》成，为兴王加上尊谥号为恭睿渊仁宽穆纯圣献皇帝。亲自题写《显陵碑》，封松林山为纯德山，祭于方泽，仅次于五镇。改安陆州为承天府。
 </p><p>十七年，通州同知丰坊请求加尊皇考庙号，以与先帝相称。九月，为兴王加上尊谥号为知天守道洪德渊仁宽穆纯圣恭俭敬文献皇帝，庙号睿宗，附祭于太庙，位居武宗之上。明堂大享奉主配天，停止世庙之祭。四十四年，有灵芝草长在世庙柱子之上，世宗于是又将它称作玉芝宫，并在此祭祀。穆宗即位，乃停止明堂配享。
 </p><p>当初，杨廷和等建议封益王次子崇仁王厚火玄为兴王，以奉侍献帝。皇上不许。兴国之封被取消。献帝的长子厚熙，出生五天便夭折了。嘉靖四年，厚熙被追赠为岳王，谥号怀献。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二-白话.html'>第二章-卷二</a></p><p class='next'>下一节：<a href='第四章-卷四-白话.html'>第四章-卷四</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二-白话.html'>第二章-卷二</a></p><p class='next'>下一节：<a href='第四章-卷四-白话.html'>第四章-卷四</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -233,5 +257,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

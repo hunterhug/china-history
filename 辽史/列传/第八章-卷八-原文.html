@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -211,9 +236,8 @@
 </p><p>时穆宗湎酒嗜杀，思温以密戚预政，无所匡辅，士论不与。十九年，春蒐，上射熊而中，思温与夷离毕牙里斯等进酒上寿，帝醉还宫。是夜，为庖人斯奴古等所弑。思温与南院枢密使高勋、飞龙使女里等立景宗。保宁初，为北院枢密使，兼北府宰相，仍命世预其选。上册思温女为后，加尚书令，封魏王。从帝猎闾山，为贼所害。
 </p><p>萧继先，字杨隐，小字留只哥。幼颖悟，叔思温命为子，睿智皇后尤爱之。乾亨初，尚齐国公主，拜驸马都尉。统和四年，宋人来侵，继先率逻骑逆境上，多所俘获，上嘉之，拜北府宰相。自是出师，继先必将本府兵先从。拔狼山石垒，从破宋军应州。上南征，取通利军，战称捷力。及亲征高丽，以继先年老，留守上京。卒，年五十八。继先虽处富贵，尚俭素，所至以善治称，故将兵攻战，未尝失利，名重戚里。
 </p><p>论曰：呜呼！人君之过，莫大于杀无辜。汤之伐桀也，数其罪曰“并告无辜于上下神祇”；武王之伐纣也，数其罪曰“无辜吁天”；尧之伐苗民也，吕侯追数其罪曰“杀戮无辜”。迹是言之，夷腊葛之谏，凛凛庶几古君子之风矣。虽然，善谏者不谏于已然，盖必先得于心术之微，如察脉者，先其病而治之，则易为功。穆宗沈湎失德，盖其资富强之势以自肆久矣。使群臣于造次动作之际，引谏彼诤，提而警之，以防其甚，则亦讵至是哉！于以知护思、思温处位优重，耽禄取容，真鄙夫矣！若海璃之折狱，继先之善治，可谓任职臣欤！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -225,5 +249,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

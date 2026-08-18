@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -227,9 +252,8 @@
 </p><p>从温始以明宗本枝，历居籓翰，无文武才略资济代之用，凡临民以货利为急。在常山日，睹牙署池潭凡十余顷，皆立木为岸，而以修篁环之，从温曰：“此何用为？”悉命伐竹取木，鬻于列肆，获其直以实用帑焉。高祖即位，从温时在兗州，多创乘舆器服，为宗族切戒，从温弗听。其妻关氏，素耿介，一日厉声于牙门云：“李从温欲为乱，擅造天子法物。”从温敬谢，悉命焚之，家无败累，关氏之力也。后以多畜驼马，纵牧近郊，民有诉其害稼者，从温曰：“若从尔之意，则我产畜何归乎？”其昏愚多此类也。高祖性至察，知而不问。少帝嗣位，太后教曰：“吾只有此兄，慎勿绳之。”故愈加姑息，以致年逾耳顺，终于牖下，乃天幸也。
 </p><p>张万进，突厥南鄙人也。祖拽斤，父腊。万进白皙美髯，少而无赖。事唐武皇，以骑射著名，攻城野战，奋不顾命。尝与梁军对阵，持锐首短刀，跃马独进，及兵刃既剚，则易以大锤，左右奋击，出没进退，无敢当者。唐庄宗、明宗素怜其雄勇，复奖其战功，故累典大郡。天成、长兴中，历威胜、保大两镇节制。高祖有天下，命为彰义军节度使，所至不治，政由群下。洎至泾原，凶恣弥甚。每日于公庭列大鼎，烹肥羜，割胾方寸以啖宾佐，皆流泪不能大嚼，俟其他顾，则致袂中。又命巨觯行酒，诉则辱之，乃有持杯伪饮，褰领裱而纳之者。既沉湎无节，唯妇言是用，其妻与幕使张光载干预公政，纳钱数万，补一豪民为捕贼将，领兵数百人入新平郡境。邠帅以其事上奏，有诏诘之，光载坐流罪，配于登州。天福四年三月，万进疾笃，月余，州兵将乱，乃诏副使万庭圭委其符印。记室李升素憾凌虐，知其将亡，谓庭圭曰：“气息将奄，不保晨暮，促移就第，岂不宜乎！”庭圭从之。万进寻卒，遂以篮轝秘尸而出，即驰骑而奏之，诏命既至，而后发丧。其妻素很戾，谓长子彦球曰：“万庭圭逼迫危病，惊扰而死，不手戮之，奚为生也！”庭圭闻之，不敢往吊。万进假殡于精舍之下，至轊东辕，凡数月之间，郡民数万，无一馈奠者。为不善者，众必弃之，信矣夫！
 </p><p>史臣曰：延广功扶二帝，任掌六师，亦可谓晋之勋臣矣。然而昧经国之远图，肆狂言于强敌，卒使邦家荡覆，宇县丘墟，《书》所谓“惟口起羞”者，其斯人之谓欤！彦韬既负且乘，任重才微，盗斯夺之，固其宜矣。希崇蔚有雄干，老于塞垣，未尽其才，良亦可惜。杨、尹二将，因倒戈而仗钺，岂义士之所为！其余盖以勋以亲，咸分屏翰，唯万进之丑德，又何暇于讥焉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十三章-列传二-原文.html'>第十三章-列传二</a></p><p class='next'>下一节：<a href='第十五章-列传四-原文.html'>第十五章-列传四</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第十三章-列传二-原文.html'>第十三章-列传二</a></p><p class='next'>下一节：<a href='第十五章-列传四-原文.html'>第十五章-列传四</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -241,5 +265,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

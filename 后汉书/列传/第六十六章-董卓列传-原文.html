@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -245,9 +270,8 @@
 </p><p>韩遂与马腾自还凉州，更相战争，乃下陇据关中。操方事河北，虑其乘间为乱，七年，乃拜腾征南将军，遂征西将军，并开府。后征段煨为大鸿胪，病卒。复征马腾为卫尉，封槐里侯。腾乃应召，而留子超领其部典。十六年，超与韩遂举关中背曹操，操击破之，遂、超败走，腾坐夷三族。超攻杀凉州刺史韦康，复据陇右。十九年，天水人杨阜破超，超奔汉中，降刘备。韩遂走金城羌中，为其帐下所杀。初，陇西人宗建在枹罕，自称“河首平汉王，署置百官三十许年。曹操因遣夏侯渊击建，斩之，凉州番平。
 </p><p>论曰：董卓初以虓虎阚为情，因遭崩剥之势，故得蹈藉彝伦，毁裂畿服。夫以刳肝斫趾之性，则群生不足以厌其快，然犹折意缙绅，迟疑陵夺，尚有盗窃之道焉。及残寇乘之，倒山倾海，昆冈之火，自兹而焚，《版》、《荡》之篇，于焉而极。呜呼，人之生也难矣！天地之不仁甚矣！
 </p><p>赞曰：百六有会，《过》、《剥》成灾。董卓滔天，干逆三才。方夏崩沸，皇京烟埃。无礼虽及，余CB4A遂广。矢延王辂，后缠魏象。区服倾回，人神波荡。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十五章-皇甫嵩朱俊列传-原文.html'>第六十五章-皇甫嵩朱俊列传</a></p><p class='next'>下一节：<a href='第六十七章-刘虞公孙瓚陶谦列传-原文.html'>第六十七章-刘虞公孙瓚陶谦列传</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第六十五章-皇甫嵩朱俊列传-原文.html'>第六十五章-皇甫嵩朱俊列传</a></p><p class='next'>下一节：<a href='第六十七章-刘虞公孙瓚陶谦列传-原文.html'>第六十七章-刘虞公孙瓚陶谦列传</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -259,5 +283,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

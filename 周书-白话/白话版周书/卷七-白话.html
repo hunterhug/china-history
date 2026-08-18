@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -417,9 +442,8 @@
 </p><p>皇后、妃子等人，虽受宠爱，也大多曾被杖击背部。
 </p><p>于是内外恐惧，人人不安，都希望暂且免祸，没有坚定的志向，叠足而立，屏息而望，直到皇帝驾崩。
 </p><p>史臣曰：直担知道自己的长子没有什么才德，但考虑到宗室的大法，对宣童的溺爱就像置!造对待他的儿子一样，但他又没有宋宣公那样明哲。高祖想通过鞭挞的手段来震慑宣帝，希望对他有所惩戒，但是教他做人的正确方法，难道会足像这样的吗。最后终于使得昏庸残暴的君主统治天下，使奸佞邪恶的人恣行毒祸，好的东西不论多小都一定要抛弃，坏的事情不管多大没有不去做的。那怕就是穷尽了南山的竹简，也不足以写完他的过错；即使是用尽丁东观的笔墨，也不能记录完他的罪行。然而仍能保全自己的性命，直到他的儿子在位时国家才灭亡，真是幸运啊。</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷六-白话.html'>卷六</a></p><p class='next'>下一节：<a href='卷八-白话.html'>卷八</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='卷六-白话.html'>卷六</a></p><p class='next'>下一节：<a href='卷八-白话.html'>卷八</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -431,5 +455,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

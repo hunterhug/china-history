@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -247,9 +272,8 @@
 </p><p>姚兴回到长安。当时有数万只鸟雀，在姚兴的殿堂之上互相厮斗，羽毛折断纷纷飘落，有不少被啄死，这种情形持续一个多月才停止。有识之人说：“现在鸟雀厮斗于庙堂之上，姚氏子孙是不是也会发生争斗动乱呢？”又姚兴的殿堂里常常发出一种声音，如同牛吼。有两只狐狸跑进长安城，一只登上姚兴的殿堂，径直走进内宫，一只走到街市之上，人们四处搜寻都没有找到。
 </p><p>当初，谯纵抢占了益宁这一带地方，僭称皇帝尊号，派使者向姚兴自称蕃国，姚兴封谯纵为蜀王，加赐给他九锡。永兴三年(411)，姚兴派遣周宝前来朝贡。五年(413)，姚兴又派使者前来朝贡，并请求进献他的女儿，太宗准许了他的请求。
 </p><p>姚兴的儿子广平公姚弼受到宠幸，姚兴把朝廷政事委托给他。姚兴得了重病，他的长子姚泓在宫中侍奉姚兴，姚弼就暗中纠集党羽数千人，一心等待姚兴死去，想要杀掉姚泓自立为帝。姚兴在外镇任职的其他儿子和侄儿听说此事，都起兵讨伐姚弼。姚兴的病痊愈之后，不忍心诛杀姚弼，只是罢免了他的官爵而已。神瑞元年(414)，姚兴派遣兼散骑常侍、尚书吏部郎严康来大魏朝贡。神瑞二年(415)，姚兴又派散骑常侍东武侯姚敞、尚书姚泰进奉他的西平公主给太宗，太宗以皇后之礼接纳了她。姚兴再次起用姚弼为中军大将军，分配给他三万军队，屯驻在渭水之北。及至姚兴再次得了重病的时候，姚弼派遣他的死党姚武伯等人率兵攻击端门。姚泓当时正在侍奉重病的父亲，就派兵进行抵抗，姚兴拖着病体来到前殿，杀死了姚弼，姚弼的党羽才被驱散。泰常元年(416)，姚兴病死，姚泓便僭立为帝。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十二章-卷八十二-白话.html'>第八十二章-卷八十二</a></p><p class='next'>下一节：<a href='第八十四章-卷八十四-白话.html'>第八十四章-卷八十四</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第八十二章-卷八十二-白话.html'>第八十二章-卷八十二</a></p><p class='next'>下一节：<a href='第八十四章-卷八十四-白话.html'>第八十四章-卷八十四</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -261,5 +285,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -204,9 +229,8 @@
 
 <h1>文学传论<span style='font-size:small'> 白话</span></h1>
 <p>评论：文章，可说是情感的标志，精神的乐律。潜藏的思绪，蕴含的萌想，在内心酝酿激荡，纵情挥发写在纸上，格调意境便自然生成。它们无不带有灵性，各自好尚不同，技巧各异，见解感悟也多种多样，心灵感应没有外象表露，但却变化无穷。弹奏五声的音响，而出言语句相异，描绘万物的情貌，而下笔形状不同。从心灵奔畅而出，宣示在书帛上。或许它不能穷尽所有的要言妙道，然而它使人心解脱束缚的特性，始终养育着勤奋好学之士，因此古代的贤明之人，都爱在这项上下功夫。至于像丘灵鞠等人，有的能够承传文学事业，有的对此矢志追求，虽然在仕途上有得意有不得意，但他们的名字却能流传下来不被磨灭。</p>
-<div class='pn'><p class='pre'>上一节：<a href='刘勰传-白话.html'>刘勰传</a></p><p class='next'>下一节：<a href='郭世通传-白话.html'>郭世通传</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='刘勰传-白话.html'>刘勰传</a></p><p class='next'>下一节：<a href='郭世通传-白话.html'>郭世通传</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -218,5 +242,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

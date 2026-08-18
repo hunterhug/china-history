@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -239,9 +264,8 @@
 </p><p>浩母卢氏，谌孙女也。浩著《食经叙》曰：“余自少及长，耳目闻见，诸母诸姑所修妇功，无不温习酒食。朝夕养舅姑，四时祭祀，虽有功力，不任僮使，常手自亲焉。昔遭丧乱，饥馑仍臻，饘蔬糊口，不能具其物用，十余年间不复备设。先妣虑久废忘，后生无知见，而少不习业书，乃占授为九篇，文辞约举，婉而成章，聪辩强记，皆此类也。亲没之后，值国龙兴之会，平暴除乱，拓定四方。余备位台铉，与参大谋，赏获丰厚，牛羊盖泽，赀累巨万。衣则重锦，食则梁肉。远惟平生，思季路负米之时，不可复得，故序遗文，垂示来世。”
 </p><p>始浩与冀州刺史颐、荣阳太守模等年皆相次，浩为长，次模，次颐。三人别祖，而模、颐为亲。浩恃其家世魏晋公卿，常侮模、颐。模谓人曰：“桃简正可欺我，何合轻我家周兒也？”浩小名桃简，颐小名周兒。世祖颇闻之，故诛浩时，二家获免。浩既不信佛、道，模深所归向，每虽粪土之中，礼拜形象。浩大笑之，云：“持此头颅不净处跪是胡神也。”
 </p><p>史臣曰：崔浩才艺通博，究览天人，政事筹策，时莫之二，此其所以自比于子房也。属太宗为政之秋，值世祖经营之日，言听计从，宁廓区夏。遇既隆也，勤亦茂哉。谋虽盖世，威未震主，末途邂逅，遂不自全。岂鸟尽弓藏，民恶其上？将器盈必概，阴害贻祸？何斯人而遭斯酷，悲夫！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p><p class='next'>下一节：<a href='第二十四章-卷二十四-原文.html'>第二十四章-卷二十四</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p><p class='next'>下一节：<a href='第二十四章-卷二十四-原文.html'>第二十四章-卷二十四</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -253,5 +277,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

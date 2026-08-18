@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -251,9 +276,8 @@
 </p><p>孜敬为人剽锐，果于行事。昔与佺期劝殷仲堪杀殷顗，仲堪不从，孜敬拔刃而起，欲自己出取之，仲堪苦禁乃止。及为梁州刺史，常怏怏不满其志。经襄阳，见鲁宗之侍卫皆佺期之旧也，孜敬愈愤，见于辞色。宗之参军刘千期于座面折之，因大发怒，抽剑刺千期立死。宗之表而斩之。思平、尚保后亦以罪诛，杨氏遂灭。
 </p><p>史臣曰：生灵道断，忠贞路绝，弃彼弊冠，崇兹新履。牢之事非其主，抑亦不臣，功多见疑，势陵难信，而投兵散地，二三之甚。若夫司牧居愆，方隅作戾，口顺勤王，心乖抗节。王恭鲠言时政，有昔贤之风。国宝就诛，而晋阳犹起。是以仲堪侥幸，佺期无状，雅志多隙，佳兵不和，足以亡身，不足以静乱也。
 </p><p>赞曰：孝伯怀功，牢之总戎。王因起衅，刘亦惭忠。殷杨乃武，抽旆争雄。庾君含怨，交斗其中。猗欤群采，道睽心异。是曰乱阶，非关臣事。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十三章--原文.html'>第五十三章-</a></p><p class='next'>下一节：<a href='第五十五章--原文.html'>第五十五章-</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第五十三章--原文.html'>第五十三章-</a></p><p class='next'>下一节：<a href='第五十五章--原文.html'>第五十五章-</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -265,5 +289,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

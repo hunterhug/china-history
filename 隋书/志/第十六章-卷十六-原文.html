@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -342,9 +367,8 @@
 </p><p>十一年六月，有星孛于文昌东南，长五六寸，色黑而锐，夜动摇，西北行，数日至文昌，去宫四五寸，不入，却行而灭。占曰：“为急兵。”其八月，突厥围帝于雁门，从兵悉冯城御寇，矢及帝前。七月，荧惑守羽林。占曰：“卫兵反。”十二月戊寅，大流星如斛，坠贼卢明月营，破其冲輣，压杀十余人。占曰：“奔星所坠，破军杀将。”其年，王充击卢明月城，破之。
 </p><p>十二年五月丙戌朔，日有食之，既。占曰：“日食既，人主亡，阴侵阳，下伐上。”其后宇文化及等行杀逆。癸巳，大流星陨于吴郡，为石。占曰：“有亡国，有死王，有大战，破军杀将。”其后大军破逆贼刘元进于吴郡，斩之。八月壬子，有大流星如斗，出王良阁道，声如陨墙；癸丑，大流星如甕，出羽林。九月戊午，有枉矢二，出北斗魁，委曲蛇形，注于南斗。占曰：“主以兵去，天之所伐。”亦曰：“以乱伐乱，执矢者不正。”后二年，化及杀帝僭号，王充亦于东都杀恭帝，篡号郑。皆杀逆无道，以乱代乱之应也。
 </p><p>十三年五月辛亥，大流星如甕，坠于江都。占曰：“其下有大兵战，流血破军杀将。”六月，有星孛于太微五帝座，色黄赤，长三四尺所，数日而灭。占曰：“有亡国，有杀君。”明年三月，宇文化及等杀帝也。十一月辛酉，荧惑犯太微，日光四散如流血。占曰：“贼入宫，主以急兵见伐。”又曰：“臣逆君。”明年三月，化及等杀帝，诸王及幸臣并被戮。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p><p class='next'>下一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p><p class='next'>下一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -356,5 +380,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

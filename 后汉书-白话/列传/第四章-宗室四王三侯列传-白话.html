@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -252,9 +277,8 @@
 </p><p>建武二年(26)，延岑复反，进攻汉中，围攻南郑，刘嘉败走。延岑于是平定汉中，进兵武都，被更始柱功侯李宝所破。延岑败走天水，公孙述遣将侯丹攻取南郑。刘嘉收拾散卒，得数万人，以李宝为相，从武都南击侯丹，不利，还军河池、下辨。再与延岑连战，延岑引军北入散关，到陈仓，刘嘉追击攻破延岑。更始邓王廖湛率领赤眉军十八万攻刘嘉，刘嘉与廖湛战于谷口，大破廖湛军。刘嘉亲手杀了廖湛，于是到云阳就地取得粮食。李宝等听说邓禹西征，就拥兵自守，劝刘嘉暂时坐观成败。光武听到后，告邓禹说“：孝孙素来谨慎善良，而且与我从小就相亲相爱，当是长安的轻薄儿误了他哩。”邓禹就宣告光武的旨意，刘嘉就依来歙在云阳会见邓禹。
 </p><p>建武三年(27)，到洛阳，跟从征伐，拜为千乘太守。
 </p><p>建武六年(30)，患病，上书请求退职，被征召到京师。建武十三年(37)，封为顺阳侯。秋，又封刘嘉儿子刘参为黄李侯。建武十五年(39)，刘嘉去世。子刘参继承爵位，刘参犯罪，被削为南乡侯。永平中，刘参为城门校尉。刘参死，子刘循继位。刘循死，子刘章继位。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章-隗嚣公孙述列传-白话.html'>第三章-隗嚣公孙述列传</a></p><p class='next'>下一节：<a href='第五章-李王邓来列传-白话.html'>第五章-李王邓来列传</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第三章-隗嚣公孙述列传-白话.html'>第三章-隗嚣公孙述列传</a></p><p class='next'>下一节：<a href='第五章-李王邓来列传-白话.html'>第五章-李王邓来列传</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -266,5 +290,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

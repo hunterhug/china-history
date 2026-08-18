@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -217,9 +242,8 @@
 </p><p>二月，诏令东都说：“自从升汴州为开封府、修建城邑作为首都以来，未扩大都城范围，有损国体。应将滑州的酸枣县、长垣县，郑州的中牟县、阳武县，宋州的襄邑县，曹州的戴邑县，许州的扶沟县、鄢陵县，陈州的太康县等九县，都割让隶属开封府，升为京城辖县。”
 </p><p>六月十六日，同州节度使刘知俊凭据同州反叛，太祖下诏削夺刘知俊现任官职爵位，又征调各路军队，令急速进讨。如果有敌军将士，心怀忠烈而识时务，贼内党徒，不愿胁从而知反正，能斩杀叛贼，擒获元凶，建立大功，就当给予厚赏。活捉得刘知俊者，赏钱一万贯文，授予忠武军节度使，并赐给庄园住宅各一所。如活捉得刘知浣者，赏钱一千贯文，授任刺史，有官位的超升三级，无官位者特授予兵部尚书。如活捉得刘知俊的骨肉亲人以及亲信大将或斩首级送京城朝廷的，按等级赏赐。十七日，太祖到达蒲州、陕州，文武百官到新安县奉迎。刘知俊的弟弟、直右保胜指挥使刘知浣从洛阳逃到潼关，右龙虎军十将张温以上二十二人在潼关活捉了刘知浣，送到太祖所在地。这月，刘知俊逃往凤翔，同州平定。
 </p><p>七月二日，诏令行营将士阵亡的，由所在地供给棺材，运回乡里。战士们听到后都感激流泪。三日，命宰臣杨涉赴西都洛阳，在孟秋时节祭享太庙。二十六日晚上，寝殿的栋梁突然折断，到天亮时，太祖召来近臣和各位王看栋梁折断的现场，太祖伤感地说：“差点与你们见不着面了。”君臣相对哭泣了很久。于是诏令有关部门释放囚禁的犯人，从八月一日起减少膳食，吃素，禁止屠宰牲畜，开正殿，诵念佛经，以禳除灾祸。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章-太祖纪三-白话.html'>第三章-太祖纪三</a></p><p class='next'>下一节：<a href='第五章-太祖纪五-白话.html'>第五章-太祖纪五</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第三章-太祖纪三-白话.html'>第三章-太祖纪三</a></p><p class='next'>下一节：<a href='第五章-太祖纪五-白话.html'>第五章-太祖纪五</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -231,5 +255,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

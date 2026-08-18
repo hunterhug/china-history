@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -216,9 +241,8 @@
 </p><p>二十五年春正月，建中京。二月，如鸳鸯泺。夏四月，清暑炭山。六月，赐皇太妃胡辇死于幽所。秋七月壬申，西平王李德昭母薨，遣使吊祭。甲戌，遣使起复。九月，西北路招讨使萧图玉讨阻卜，破之。冬十月丙申，驻跸中京。十二月乙酉，振饶州饥民。
 </p><p>二十六年春二月，如长泺。夏四月辛卯朔，祠木叶山。五月庚申朔，还上京。丙寅，高丽进龙须草席。己巳，遣使贺中京成。庚午，致祭祖、怀二陵。辛未，驻跸怀州。秋七月，增太祖、太宗、让国皇帝、世宗谥，仍谥皇太弟李胡曰钦顺皇帝。冬十月戊子朔，幸中京。十二月，萧图玉奏讨甘州回鹘，降其王耶剌里，抚慰而还。是年，放进士史克忠等一十三人。
 </p><p>二十七年春正月，钓鱼土河。猎于瑞鹿原。夏四月丙戌朔，驻跸中京，营建宫室。庚戌，废霸州处置司。秋七月甲寅朔，霖雨，潢、土、斡剌、阴凉四河皆溢，漂没民舍。八月甲申，北幸。冬十一月壬子朔，行柴册礼。十二月乙酉，南幸。皇太后不豫。戊子，肆赦。辛卯，皇太后崩于行宫。壬辰，遣使报哀于宋、夏、高丽。戊申，如中京。己酉，诏免贺千龄节。是岁，御前引试刘二宜等三人。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十三章-卷十三-原文.html'>第十三章-卷十三</a></p><p class='next'>下一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第十三章-卷十三-原文.html'>第十三章-卷十三</a></p><p class='next'>下一节：<a href='第十五章-卷十五-原文.html'>第十五章-卷十五</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -230,5 +254,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

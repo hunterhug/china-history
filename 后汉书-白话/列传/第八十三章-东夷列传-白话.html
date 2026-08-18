@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -238,9 +263,8 @@
 </p><p>论曰：从前箕子远离衰败的殷商的命运，到朝鲜避难。朝鲜最初的习俗没有听说过，到箕子实行八条禁令以后，使人们知道法禁，因而城邑没有奸淫和偷盗，夜不闭户，改变了愚昧浅薄的习俗，接近宽大简略的法律，实行了几百几千年，所以束夷普遍形成温和谨慎的风气，和另外三方的夷人不同。衹要政治通达，那么就会存有道义。仲尼心怀感愤，认为九夷可以居住。有人怀疑九夷鄙陋。孔子说：“有才德的人在那裹居住，有什么鄙陋的呢厂也仅有这种想法罢了。白这以后朝鲜商贾往来做生意，逐渐和中原来往。然而燕国人卫满扰乱了朝鲜的风尚，自此风气变得浅薄不同了。
 </p><p>《老子》说：“法令愈益昭明，盗贼就有很多。”像箕子这样省简法律条文而用信义治理的，这是得到圣贤制订法律的根本了！
 </p><p>赞曰：居住在蜗夷，被称作旸谷的地方。入山裹栖息，藏海上生活，由此和中原的宗族相区别。秦朝末年发生祸乱，燕国人逃离灾难。糅杂进华夏人的习俗，原有的风尚浇薄，于是同汉国往来。地处遥远通过翻译，有时归顺有时背叛。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十二章-列女传-白话.html'>第八十二章-列女传</a></p><p class='next'>下一节：<a href='第八十四章-南蛮西南夷列传-白话.html'>第八十四章-南蛮西南夷列传</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第八十二章-列女传-白话.html'>第八十二章-列女传</a></p><p class='next'>下一节：<a href='第八十四章-南蛮西南夷列传-白话.html'>第八十四章-南蛮西南夷列传</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -252,5 +276,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

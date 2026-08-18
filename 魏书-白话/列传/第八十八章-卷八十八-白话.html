@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -215,9 +240,8 @@
 </p><p>延兴年间，勿吉国派遣使者乙力支前来朝廷进贡。太和初年(477)，又来进贡马五百匹。乙力支自称：当初从勿吉国出发，乘船从难河溯水西上，到了太氵尔河，就把船沉入河底，改从陆路往南行走，渡过洛孤水，然后从契丹国西部边境到达和龙城。乙力支说他们勿吉国早先打败高句丽国的十个部落，又秘密地同百济国谋划，打算从水路合力攻取高句丽，特地派遣乙力支奉使大魏国，向朝廷请示这样做是否妥当。皇帝诏敕认为勿吉、百济和高句丽三国同样都是大魏的藩属，应当和顺共处，不要互相侵犯骚扰。于是乙力支就回国去了。他们还是从原路走到太氵尔河，从水里打捞起原来的船只，乘船从水路到达国中。太和九年(485)，勿吉国又派使者侯尼支来大魏朝贡进献。第二年再次前来朝贡。
 </p><p>勿吉国的四周有大莫卢国、覆钟国、莫多回国、库娄国、素和国、具伏弗国、匹黎尔国、拔大何国、郁羽陵国、库伏真国、鲁娄国、羽真侯国，这些部族先后都曾派遣使者向大魏国朝贡进献。
 </p><p>太和十二年(488)，勿吉又派使者来京师进贡用木苦木做杆的箭以及各种土特产。十七年(493)，又派使者婆非等五百多人前来朝拜纳贡。景明四年(503)，再次派使者俟力归等人来朝贡。从这时一直到正光年间为止，进贡的使者相继而来。尔后，由于中国动乱纷扰，很有一段时间没有派使者前来。兴和二年(540)六月，勿吉又派遣使者石久云等人来进贡当地土产，一直到武定年间都没有断绝。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十七章-卷八十七-白话.html'>第八十七章-卷八十七</a></p><p class='next'>下一节：<a href='第八十九章-卷八十九-白话.html'>第八十九章-卷八十九</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第八十七章-卷八十七-白话.html'>第八十七章-卷八十七</a></p><p class='next'>下一节：<a href='第八十九章-卷八十九-白话.html'>第八十九章-卷八十九</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -229,5 +253,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

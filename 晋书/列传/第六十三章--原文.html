@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -241,9 +266,8 @@
 </p><p>褚爽，字弘茂，小字斯生，恭思皇后父也。祖裒，父歆。爽少有令称，谢安甚重之，尝曰：“若期生不佳，我不复论士矣。”为义兴太守，早卒，以后父，追赠金紫光禄大夫。爽子秀之、炎之、喻之，义熙中，并历大官。
 </p><p>史臣曰：羊琇托肺腑之亲，处多闻之益，遭逢潜跃之际，预参经始之谋，故得缱绻恩私，便蕃任遇。凭宠灵而逞欲，恃势位而骄陵，屡犯宪章，频干国纪，幸逢宽政，得免刑书。王恺地即渭阳，家承世禄，曾弗闻于恭俭，但崇纵于奢淫，竞爽于季伦，争先于武子，既尘清论，有斁王猷，虽复议行易名，未足惩恶劝善。弘理仪形外朗，季野神鉴内融，仲祖温润风流，幼道清虚寡欲，皆擅名江表，见重当时，岂惟后族之英华，抑亦搢绅之令望者也。
 </p><p>赞曰：托属丹掖，承辉紫宸。地既权宠，任惟执钧。约乃寡失，骄则陵人。覆车遗戒，谅足书绅。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十二章--原文.html'>第六十二章-</a></p><p class='next'>下一节：<a href='第六十四章--原文.html'>第六十四章-</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第六十二章--原文.html'>第六十二章-</a></p><p class='next'>下一节：<a href='第六十四章--原文.html'>第六十四章-</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -255,5 +279,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -248,9 +273,8 @@
 </p><p>无讳遂谋渡流沙，遣安周西击鄯善。鄯善王恐惧欲降，会魏使者劝令拒守。安周遂与连战，不能克，退保东城。三年春，鄯善王比龙西奔且末，其世子乃从安周，鄯善大乱。无讳遂渡流沙，士卒渴死者大半，仍据鄯善。
 </p><p>先是，高昌太守阚爽为李宝舅唐契所攻，闻无讳至鄯善，遣使诈降，欲令无讳与唐契相击。无讳留安周住鄯善，从焉耆东北趣高昌。会蠕蠕杀唐契，爽拒无讳，无讳将卫兴奴诈诱爽，遂屠其城，爽奔蠕蠕。无讳因留高昌。五年夏，无讳病死，安周代立。后为蠕蠕国所并。
 </p><p>史臣曰：周德之衰，七雄竞歭，咸分割神州，睥睨尊极。至是，张实等介在人外，地实戎墟，大争鵄张，潜怀不逊，其不知量固为甚矣。蛇虺相噬，终为擒灭，宜哉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十六章-卷八十六-原文.html'>第八十六章-卷八十六</a></p><p class='next'>下一节：<a href='第八十八章-卷八十八-原文.html'>第八十八章-卷八十八</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第八十六章-卷八十六-原文.html'>第八十六章-卷八十六</a></p><p class='next'>下一节：<a href='第八十八章-卷八十八-原文.html'>第八十八章-卷八十八</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -262,5 +286,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -220,9 +245,8 @@
 </p><p>重吉，末帝长子，为控鹤都指挥使。闵帝嗣位，出为亳州团练使。末帝兵起，为闵帝所害。《通鉴》云：诏遣殿直楚匡祚执亳州李重吉，幽于宋州。又云：遣楚匡祚杀李重吉于宋州。匡祚榜捶重吉，责其家财。清泰元年，诏赠太尉，仍令宋州选隙地置庙。《明宗纪》：闵帝有子重哲，授银青光禄大夫、检校工部尚书。《欧阳史·家人传》不载。
 </p><p>雍王理美，末帝第二子，清泰三年封。晋兵入，与末帝俱自焚死。《通鉴》云：洛阳自闻兵败，众心大震，居人四出，逃窜山谷。门者请禁之，雍王重美曰：“国家多难，未能为百姓主，徒增恶名耳。不若听其自便，事宁自还。”乃出令任从所适，众心差安。又云：皇后积薪欲烧宫室，重美谏曰；“新天子至，必不露居，他日重劳民力，死而遗怨，将安用之。”乃止。
 </p><p>史臣曰：继岌以童騃之岁，当统帅之任，虽功成于剑外，寻求死于渭滨，盖运尽天亡，非孺子之咎也。从审感厚遇之恩，无苟免之意，死于君侧，得不谓之忠乎！从荣以狂躁之谋，贾覆亡之祸，谓为大逆，则近厚诬。从璨为权臣所忌，从益为强敌所胁，俱不得其死，亦良可伤哉！重美听洛民之奔亡，止母后之燔爇，身虽烬于戏焰，言则耀乎青编。童年若斯，可谓贤矣！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十六章-列传二-原文.html'>第二十六章-列传二</a></p><p class='next'>下一节：<a href='第二十八章-列传四-原文.html'>第二十八章-列传四</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第二十六章-列传二-原文.html'>第二十六章-列传二</a></p><p class='next'>下一节：<a href='第二十八章-列传四-原文.html'>第二十八章-列传四</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -234,5 +258,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -234,9 +259,8 @@
 </p><p>王正志，祥符人。万历二十六年进士。除富平知县。二十八年，税使梁永、赵钦肆虐，正志捕其党李英，杖杀之，因极论二人不法罪。钦亦以李英事讦奏，帝怒，命逮之。给事中陈惟春言正志劾钦罪多，宜提讯；钦所劾正志事宜下抚按核实，免其逮系。御史李时华亦言近日所逮吴应鸿、劳养魁、蔡如川、甘学书及正志等，俱宜敕下抚按勘虚实，不得以一人单词枉害良善。皆不报。未几，梁永亦讦正志。帝命诸抗违欺隐者悉指名劾奏，重治之。宦官盆张，长吏皆丧气。正志系诏狱四年，三十一年夏，瘐死。天启时，赠祭，荫子，皆视钰。
 </p><p>自矿税兴，中使四出，跆藉有司。谤书一闻，驾帖立下。二十四年，则辽东参将梁心；二十五年，则山东福山知县韦国贤；二十六年，则山东益都知县吴宗尧；二十七年，则江西南康知府吴宝秀、星子知县吴一元、山东临清守备王炀；二十八年，则广东新会在籍通判吴应鸿，举人劳养魁、钟声朝、梁斗辉，云南寻甸知府蔡如川，赵州知州甘学书及正志；二十九年，则湖广按察佥事冯应京、襄阳通判邸宅、推官何栋如、枣阳知县王之翰、武昌同知卞孔时、江西饶州通判陈奇可；三十年，则凤阳临淮知县林錝；三十四年，则陕西咸阳知县宋时际；三十五年，则陕西咸宁知县满朝荐；三十六年，则辽东海防同知王邦才、参将李获阳；皆幽系诏狱，久者至十余年。炀、应鸿、获阳毙狱中，其他削籍、贬官有差。至士民幽系死亡者，尤不可胜纪也。
 </p><p>赞曰：神宗二十四年，军府千户仲春请开矿助大工，遂命户部锦衣官各一人同仲春开采。给事中程绍言嘉靖中采矿，费帑金三万余，得矿银二万八千五百，得不偿失，因罢其役。给事中杨应文继言之。皆不纳。由是卑秩冗僚，下至市井黠桀，奋起言利。而珰使四出，毒流海内，民不聊生，至三十三年乃罢。嗣是军兴征发，加派再三。府库未充，膏脂已竭，明室之亡，于是决矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百二十四章-卷一百二十四-原文.html'>第一百二十四章-卷一百二十四</a></p><p class='next'>下一节：<a href='第一百二十六章-卷一百二十六-原文.html'>第一百二十六章-卷一百二十六</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第一百二十四章-卷一百二十四-原文.html'>第一百二十四章-卷一百二十四</a></p><p class='next'>下一节：<a href='第一百二十六章-卷一百二十六-原文.html'>第一百二十六章-卷一百二十六</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -248,5 +272,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

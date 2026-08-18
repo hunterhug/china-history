@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -271,9 +296,8 @@
 </p><p>有樊吉人者，元城人。由进士知滋阳，累擢山东兵备佥事。未行遇变，自刎死。淑泰自有传。
 </p><p>张焜芳，会稽人。崇祯元年进士。历南京户科给事中。十一年春，疏荐黄道周、惠世扬、陈子壮、金光辰，而为旧抚文震孟请恤。帝以沽名市恩，切责之。又纠太仆少卿史涘，为涘所讦，遂罢职，事具《薛国观传》。十六年正月，焜芳北上，抵临清，遇大清兵，与诸生马之騆，之駉俱被执死之。其妻妾闻之，赴井死。
 </p><p>时又有天津参将贺秉钺者，泰宁左卫人。崇祯四年第武科一甲第三，亦以扶父柩至临清，巷战终日，矢尽，被执死。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百七十八章-卷一百七十八-原文.html'>第一百七十八章-卷一百七十八</a></p><p class='next'>下一节：<a href='第一百八十章-卷一百八十-原文.html'>第一百八十章-卷一百八十</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第一百七十八章-卷一百七十八-原文.html'>第一百七十八章-卷一百七十八</a></p><p class='next'>下一节：<a href='第一百八十章-卷一百八十-原文.html'>第一百八十章-卷一百八十</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -285,5 +309,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

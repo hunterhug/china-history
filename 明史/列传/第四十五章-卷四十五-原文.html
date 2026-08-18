@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -281,9 +306,8 @@
 </p><p>天顺初，擢大理寺丞。久之，以便养，迁南京大理少卿。成化五年迁本寺卿。明年春命巡视江西灾伤。除无名税十余万石，汰诸司冗役数万，奏罢不职吏二百余人，增筑南昌滨江堤及丰城诸县陂岸，民赖其利。尝上奏，不具赍奏人姓名，吏科论其简恣。帝宥其罪，录弹章示之。遂乞休归。僦居民舍，布政使张瓒为筑西湖书院居之。家食三十年，年近九十而卒。
 </p><p>时正雅好学。闲居久，多所著述，于稽古礼文事尤详。
 </p><p>赞曰：金纯等黾勉奉公，当官称职。加之禔躬清白，操行无亏，固列卿之良也。郑辰之廉事，周瑄之治狱，皆有仁人之用心，君子哉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十四章-卷四十四-原文.html'>第四十四章-卷四十四</a></p><p class='next'>下一节：<a href='第四十六章-卷四十六-原文.html'>第四十六章-卷四十六</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第四十四章-卷四十四-原文.html'>第四十四章-卷四十四</a></p><p class='next'>下一节：<a href='第四十六章-卷四十六-原文.html'>第四十六章-卷四十六</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -295,5 +319,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

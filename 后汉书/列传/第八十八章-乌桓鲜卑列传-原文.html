@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -240,9 +265,8 @@
 </p><p>光和中，檀石槐死，时年四十五，子和连代立。和连才力不及父，亦数为寇抄，性贪淫，断法不平，众畔者半。后出攻北地，廉人善弩射者射中和连，即死。其子骞曼年小，兄子魁头立。后骞曼长大，与魁头争国，众遂离散。魁头死，弟步度根立。自檀石槐后，诸大人遂世相传袭。
 </p><p>论曰：四夷之暴，其势互强矣。匈奴炽于隆汉，西羌猛于中兴。而灵、献之间，二虏迭盛。石槐骁猛，尽有单于之地；蹋顿凶桀，公据辽西之土。其陵跨中国，结患生人者，靡世而宁焉。然制御上略，历世无闻；周、汉之策，仅得中下。将天之冥数，以至于是乎？
 </p><p>赞曰：二虏首施，鲠我北垂。道暢则驯，时薄先离。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十七章-南匈奴列传-原文.html'>第八十七章-南匈奴列传</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第八十七章-南匈奴列传-原文.html'>第八十七章-南匈奴列传</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -254,5 +278,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

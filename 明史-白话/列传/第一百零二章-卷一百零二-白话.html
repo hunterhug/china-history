@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -244,9 +269,8 @@
 </p><p>“我最近奏疏请求积聚谷物，业已获行许可。但担心有司办事不力，不能体现贤明的诏令。冒昧以我的观点做点声明。其一是官仓，发放官银做平籴。其二是社仓，征收百姓的谷物来填充。官仓不是很丰盈的年份不能有举办，社仓虽然是中等年成也能行事。唐代开设义仓，每年从王公以下都有征入。宋代则额定民间的正税数，提取二十分之一作为社仓之数。诚然仿效推广此法，顺应土俗，合乎人情，占卜年成气候，以便知晓其变化，核算每年两仓的收入来检验他们的功效，立为法令，并且每年做些修正，以丰歉之时做集散处理。官仓的粮食，百姓有大饥荒则做赈济。民仓的粮食，虽然官府有大规模的劳役也不听凭借贷。借助此法藏富于民，也就是藏富于国。现在谈论财资费用，不是担忧谷物不充足，而是担忧银两不充足。银两实际上会产生祸乱，而谷物实能消除祸乱。银两不充足，用钱币替代。五谷不充足，则用什么替代呢？所以说贤明的君主不宝贵金玉，而珍重五谷，希望圣上留意此事。”奏疏呈送宫中，下交给主管部门讨论最终没有能够全部施行。
 </p><p>不久他被征召为工部右侍郎，改任吏部职。升任左侍郎。靳学颜品行端正廉洁，目睹高拱以首辅身份掌管选拔官吏，非常专横跋扈，于是称病回家，直至去世。
 </p><p>评议：明朝中叶，边防松弛，经费匮乏。当时负责事务的大臣，能够留意到这个问题的很少。如杨博、马森、刘体乾、葛守礼、靳学颜之类，差不多都有经邦济世的谋略。就他们的设想和作为，推究后施行，也只能修补一时罢了，何况所建议的也没有全部施行，施行的也不能持久。从当时至后世，张居正才做一番整治。张居正死了，一切以空言行事，直至灭亡。所以明朝的腐坏不是朝夕间积聚的。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百零一章-卷一百零一-白话.html'>第一百零一章-卷一百零一</a></p><p class='next'>下一节：<a href='第一百零三章-卷一百零三-白话.html'>第一百零三章-卷一百零三</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第一百零一章-卷一百零一-白话.html'>第一百零一章-卷一百零一</a></p><p class='next'>下一节：<a href='第一百零三章-卷一百零三-白话.html'>第一百零三章-卷一百零三</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -258,5 +282,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -255,9 +280,8 @@
 </p><p>齐国建立，他是齐公的世子。改任侍中、南豫州刺史，配备油络车、羽葆、乐队，增加班剑为三十人。以石头城做为世子宫，所设置的官属除东西二率府以外，各坊省的服饰，完全和东宫一样。晋升为王太子。高帝即位，封为皇太子。
 </p><p>建元四年(482)三月初八，高帝逝世，在这一天，皇太子登上皇位，实行大赦。出征和镇守的郡县官长、野战和屯守的部队首领，都要居丧三天，不得擅离职守。都市城镇守卫、边防战备队伍，一律不准返回。十一日，称言遵从先帝的遗诏，任命司徒褚彦回为录尚书事，尚书左仆射王俭为尚书令，车骑将军张敬儿开府仪同三司。下诏书说：“丧礼虽然有一定的规制，但先王的旨意常常愿求简约，朝内官员可以三天进宫哭吊一次，朝外官员可以隔一天进宫哭吊一次。以后有了大丧都照此办法。”十三日，任命前将军王奂为尚书左仆射。十六日，任命司空豫章王萧嶷为太尉。十九日，下诏免除以前拖欠的修城费，从今以后，重新明确旧的规章。起初按晋、宋两朝的旧规定，接受官职二十天，就要送修城钱二千。宋朝泰始初年，兵役庞大起来，接受官职的人数以万计，军务紧急，事情来不及办理，从此自令仆以下，都不再缴送。二十年当中，死期多得数不尽，官府文书催逼，经常遭受骚扰，到现在一齐扫除，百姓们都感到高兴。
 </p><p>皇上刚毅善断，政治上能把握大体，以国家富强为首要的目标。他很喜欢游乐宴饮和绮丽雕饰，说起来常常感到遗憾，却不能立即改正。临死的时候，又下诏书说：“凡是各种游乐耗费，应该停止。从今以后，远近的奉献，务必注意节俭，不准到本地区以外去谋求，追比奢侈华丽。钱米丝帛，困扰人们已很厉害，珠玉玩物，损害民众尤其严重，要严加禁绝。”</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷三-白话.html'>卷三</a></p><p class='next'>下一节：<a href='卷五-白话.html'>卷五</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='卷三-白话.html'>卷三</a></p><p class='next'>下一节：<a href='卷五-白话.html'>卷五</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -269,5 +293,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

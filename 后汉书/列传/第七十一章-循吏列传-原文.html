@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -274,9 +299,8 @@
 </p><p>复辟公府，除不其令。吏人有犯违禁法，辄随方晓示。若吏称其职，人行善事者，皆赐以酒肴之礼，以劝励之。耕织种收，皆有条章。一境清静，牢狱连年无囚。比县流人归化，徙居二万余户。民尝为虎所害，乃设槛捕之，生获二虎。恢闻而出，咒虎曰：“天生万物，唯人为贵。虎狼当食六畜，而残暴于人。王法杀人者伤，伤人则论法。汝若是杀人者，当垂头服罪；自知非者，当号呼称冤。”一虎低头闭目，状如震惧，即时杀之。其一视恢鸣吼，踊跃自奋，遂令放释。吏人为之歌颂。青州举尤异，迁丹阳太守，暴疾而卒。
 </p><p>弟翊字汉文，名高于恢，宰府先辟之。翊阳喑不肯仕，及恢被命，乃就孝廉，除须昌长。化有异政，吏人生为立碑。闻举将丧，弃官归。后举茂才，不就。卒于家。
 </p><p>赞曰：“政界张急，理善亨鲜。推忠以及，众瘼自蠲。一夫得情，千室鸣统。怀我风爱，永载遗贤。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七十章-刘焉袁术吕布列传-原文.html'>第七十章-刘焉袁术吕布列传</a></p><p class='next'>下一节：<a href='第七十二章-酷吏列传-原文.html'>第七十二章-酷吏列传</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第七十章-刘焉袁术吕布列传-原文.html'>第七十章-刘焉袁术吕布列传</a></p><p class='next'>下一节：<a href='第七十二章-酷吏列传-原文.html'>第七十二章-酷吏列传</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -288,5 +312,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -257,9 +282,8 @@
 </p><p>文宗天历元年十一月，都水庸田司言：“八月十日至十九日，正当大汛，潮势不高，风平水稳。十四日，祈请天妃入庙，自本州岳庙东海北护岸鳞鳞相接。十五日至十九日，海岸沙涨，东西长七里余，南北广或三十步，或数十百步，渐见南北相接。西至石囤，已及五都，修筑捍海塘与盐塘相连，直抵岩门，障御石囤。东至十一都六十里塘，东至东大尖山嘉兴、平湖三路所修处海口。自八月一日至二日，探海二丈五尺；至十九日、二十日探之，先二丈者今一丈五尺，先一丈五尺者今一丈。西自六都仁和县界赭山、雷山为首，添涨沙涂，已过五都四都，盐官州廊东西二都，沙土流行，水势俱浅。二十日，复巡视自东至西岸脚涨沙，比之八月十七日渐增高阔。二十七日至九月四日大汛，本州岳庙东西，水势俱浅，涨沙东过钱家桥海岸，元下石囤木植，并无颓圮，水息民安。”于是改盐官州曰海宁州。
 </p><p>龙山河道
 </p><p>龙山河在杭州城外，岁久淤塞。武宗至大元年，江浙省令史裴坚言：“杭州钱塘江，近年以来为沙涂壅涨，潮水远去，离北岸十五里，舟楫不能到岸。商旅往来，募夫搬运十七八里，使诸物翔涌，生民失所，递运官物，甚为烦扰。访问宋时并江岸有南北古河一道，名龙山河，今浙江亭南至龙山闸约一十五里，粪坏填塞，两岸居民间有侵占。迹其形势，宜改修运河，开掘沙土，封闸搬载，直抵浙江，转入两处市河，免担负之劳，生民获惠。”省下杭州路相视，钱塘县城南上隅龙山河至横河桥，委系旧河，居民侵占，起建房屋，若疏通以接运河，公私大便。计工十五万七千五百六十六，日役夫五千二百五十二，度可三十日毕。所役夫于本路录事司、仁和、钱塘县富实之家差倩，就持筐檐锹应役。人日支官粮二升，该米三千一百五十一石三斗二升。河长九里三百六十二步，造石桥八，立上下二闸，计用钞一百六十三锭二十三两四钱七分七厘。省准咨请丞相脱脱总治其事，于仁宗延祐三年三月七日兴工，至四月十八日工毕。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p><p class='next'>下一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p><p class='next'>下一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -271,5 +295,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -249,9 +274,8 @@
 </p><p>何选，字靖卿，宛平人。万历十一年进士。除南昌知县，征授御史。廷臣争国本多获谴，选语郑贵妃弟国泰，令以朝野公论、郑氏祸福恳言于贵妃，俾妃自请。国泰犹豫，选厉色责之曰：“若不及今为身家计，吾侪群击之，悔无及矣。”国泰惧，乃入告于妃，且疏请早定，以释危疑。帝意不怿。已，知出选指，深衔之。未几，吏部拟调验封员外郎邹元标于文选，疏六日不下，选以为言。帝忆前事，谪湖广布政司照磨。稍迁南京通政司经历。刑部缺员外郎，吏部拟用选。帝憾未释，谓特降官不当推举，切让尚书孙丕扬等，谪文选郎中冯生虞、员外郎冯养志等极边，而斥选为民。以阁臣言，稍宽生虞、养志等罚。南京给事中任彦蘖抗章论救，语侵阁臣。帝复怒，谪彦蘖于外，生虞仍以杂职调边方。旋以言官论救，并斥彦蘖为民。于是御史许闻造上言：“陛下顷岁以来，谓公忠为比周，谓论谏为激扰；诎铨衡之所贤，挠刑官之所执。光禄太仆之帑，括取几空；中外大小之官，县缺不补。敲扑遍于宫闱，桁杨接于道路。论救忠良，则愈甚其罪；谏止贡献，则愈增其额。奏牍沉阁而莫稽，奄寺纵横而无忌。今欲摘陈一事，则虑陛下益甚其事；欲摘救一人，则虑陛下益罪其人。陛下执此以拒建言之臣，诸臣因此而塞进言之路。迩年以来，诸臣謇谔之风，视昔大沮矣。”不报。
 </p><p>生虞，大足人。彦蘖，任城人。天启中，赠选光禄少卿，生虞太常少卿。
 </p><p>赞曰：野史载神宗金合之誓。都人子之说，虽未知信否，然恭妃之位久居郑氏下，固有以滋天下之疑矣。姜应麟等交章力争，不可谓无羽翼功。究之郑氏非褒、骊之煽处，国泰亦无驷、钧之恶戾，积疑召谤，被以恶声。《诗》曰：“时靡有争，王心载宁。”诸臣何其好争也！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百二十章-卷一百二十-原文.html'>第一百二十章-卷一百二十</a></p><p class='next'>下一节：<a href='第一百二十二章-卷一百二十二-原文.html'>第一百二十二章-卷一百二十二</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第一百二十章-卷一百二十-原文.html'>第一百二十章-卷一百二十</a></p><p class='next'>下一节：<a href='第一百二十二章-卷一百二十二-原文.html'>第一百二十二章-卷一百二十二</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -263,5 +287,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

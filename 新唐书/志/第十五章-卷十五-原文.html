@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -265,9 +290,8 @@
 </p><p>望去交分，冬先后交，皆去二时；春先交，秋后交，去半时；春后交，秋先交，去二时；夏则依定。不足去者，既。乃以三万六千一百八十三为法而一，以减十五，余为月蚀分。
 </p><p>朔去交，在内道，五月朔，加时在南方，先交十三时外；六月朔，后交十三时外者，不蚀。启蛰毕清明，先交十三时外，值缩，加时在未西；处暑毕寒露，后交十三时外，值盈，加时在巳东，皆不蚀。交在外道，先后去交一时内者，皆蚀。若二时内，及先交值盈、后交值缩二时外者，亦蚀。夏去交二时内，加时在南方者，亦蚀。若去分、至十二时内，去交六时内者，亦蚀。若去春分三日内，后交二时；秋分三日内，先交二时内者，亦蚀。诸去交三时内有星伏，土、木去见十日外，火去见四十日外，金晨伏去见二十二日外，有一星者，不蚀。各置去交分。秋分后，毕立春，均减二十二万八百分。启蛰初日，毕芒种，日损所减千八百一十分。夏至后，毕白露，日增所减二千四百分。以减去交分，余为不蚀分。不足减，反相减为不蚀分。亦以减望差为定法。后交值缩者，直以望差为定法。其不蚀分，大寒毕立春，后交五时外，皆去一时。时差值减者，先交减之，后交加之。时差值加者，先交加之，后交减之。不足减者，皆既。十五乘之，定法而一，以减十五，余为日蚀分。
 </p><p>置日月蚀分，四已下，因增二；五已下，因增三；六已上，因增五；各为刻率，副之。以乘所入历损益率，四千五十七为法而一。值盈，反其损益；值缩，依其损益。皆损益其副，为定用刻。乃六乘之，十而一，以减蚀甚辰刻，为亏初。又四乘之，十而一。以加食甚辰刻，为复满。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十四章-卷十四·车服-原文.html'>第十四章-卷十四·车服</a></p><p class='next'>下一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第十四章-卷十四·车服-原文.html'>第十四章-卷十四·车服</a></p><p class='next'>下一节：<a href='第十六章-卷十六-原文.html'>第十六章-卷十六</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -279,5 +303,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

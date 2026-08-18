@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -234,9 +259,8 @@
 </p><p>斡勒合打，盖州本得山猛安人。以荫补官，充亲军，调山阴尉。县当兵冲，合打率土豪官兵身先行阵。贞祐初，以功迁本县令。县升为忠州，合打充刺史。州被兵久，耕桑俱废，诏徙其民于太和岭南。合打遥授同知太原府事，仍领其众。俄以本官遥授彰国军节度使，权河东北路宣抚副使，督粮饷往代州。合打不欲行，因与宣抚使完颜伯嘉争辨。合打恐伯嘉奏闻，乃先奏伯嘉辱己。御史台廉得其事，未及奏，伯嘉、合打皆改迁。合打改武宁军节度使。数月，召为劝农使。久之，为金安军节度使。兴定元年，复为劝农使，历知河间府，权元帅右都监，行元帅府事，驻兵蔡、息间。权同签枢密院事，守河清，改知归德府事。合打屡守边要，无他将略，虽未尝败北，亦无大功。元光元年，卒。
 </p><p>蒲察移剌都，东京猛安人。父吾迭，太子太傅致仕。移剌都勇健多力，充护卫十人长，调同知秦州防御使事、武卫军钤辖，以忧去官。起复武器署令。从军，兵溃被执。贞祐二年，与降兵万余人俱脱归。迁隆安府治中，赐银百两，重币六端，遥授信州刺史。有功，迁蒲与路节度使兼同知上京留守事，进三阶，改知隆安府事。逾年，充辽东、上京等路宣抚使兼左副元帅。再阅月，就拜尚书右丞。移剌都与上京行省蒲察五斤争权，及卖隆安战马，擅造银牌，睚眦杀人，已而矫称宣召，弃隆安赴南京，宣宗皆释不问。除知河南府事，俄改元帅左监军，权左副元帅，充陕西行省参议官。无何，兼陕西路统军使。兴定二年四月，改签枢密院事，权右副元帅，行枢密院于邓州。御史台奏移剌都在军中，买沙覆道，盗用官银，矫制收禁书，指斥銮舆，使亲军守门，护卫押宿，拟前后卫仗，婢妾效内人妆饰等数事。诏吏部尚书阿不罕斜不失鞫之，坐是诛。
 </p><p>赞曰：读《金史》，至张行信论奥屯忠孝事，曰：嗟乎，宣宗之不足与有为也如此！夫进退宰执，岂无其道也哉！语其亲知，讽之求去，岂礼邪？是故奥屯忠孝、蒲察思忠之党比，纥石烈胡失门之疲众，完颜宇之轻信误国，斡勒合打之诋讼上官，于是曾不之罪，失政刑矣，岂小惩大诫之道哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十一章-卷四十一-原文.html'>第四十一章-卷四十一</a></p><p class='next'>下一节：<a href='第四十三章-卷四十三-原文.html'>第四十三章-卷四十三</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第四十一章-卷四十一-原文.html'>第四十一章-卷四十一</a></p><p class='next'>下一节：<a href='第四十三章-卷四十三-原文.html'>第四十三章-卷四十三</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -248,5 +272,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

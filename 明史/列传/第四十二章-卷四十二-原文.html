@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -278,9 +303,8 @@
 </p><p>陈汀，古雷县千夫长，数从方政击贼有功，政信倚之。王通弃地，汀北行，为贼所得，授以官，令守交州东关。汀挈其家九十余人从间道走。贼追之，家属尽陷，汀独身入钦州。帝嘉其义，以为指挥，厚赉之。
 </p><p>他若土官阮世宁、阮公庭，皆不愿从利，率所部来归，乞居龙州、陈州之地。帝命加意抚恤，资粮器用官给之。
 </p><p>赞曰：成祖因季犛纂立，兴师问罪以彰天讨，求陈氏后不得，从而郡县其地，得取乱侮亡之道矣。蛮疆险远，易动难驯，数年之间叛者数起，柳升以轻敌丧师，王通以畏怯弃地。虽黄福惠爱在交，叛人心折，而大势已去，再至无功。宣宗用老成谋国之言，廓然置之度外，良以其得不为益，失不为损，事势所不必争，非独惮于劳民而绌于筹饷也。尝考黄福与张辅书言：“恶本未尽除，守兵不足用。驭之有道，可以渐安。守之无法，不免再变。”权交事之始终，盖惜张辅之不得为滇南之沐氏也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十一章-卷四十一-原文.html'>第四十一章-卷四十一</a></p><p class='next'>下一节：<a href='第四十三章-卷四十三-原文.html'>第四十三章-卷四十三</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第四十一章-卷四十一-原文.html'>第四十一章-卷四十一</a></p><p class='next'>下一节：<a href='第四十三章-卷四十三-原文.html'>第四十三章-卷四十三</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -292,5 +316,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

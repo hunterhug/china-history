@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -220,9 +245,8 @@
 </p><p>十三能言善辩，灵巧聪明，善于揣摩他人之心意。清宁年间，根据任职的年数和劳绩迁任为护卫太保。大康初，耶律乙辛再度进入枢密府，更加骄横无忌。当时萧十三出入于耶律乙辛家中，觉得哪个朝臣不阿附于他们便将他贬至京外任职，十三由宿卫迁任殿前副点检。
 </p><p>三年(1077)夏，护卫萧忽古等人图谋杀乙辛，事情败露被关入监牢。十三对乙辛说：“如今太子还活着，臣民归心于他。大王您在国中一向没有稳固的根基，又有诬害皇后的怨仇。如果太子即位，大王您何处容身呢？应该仔细地加以考虑。”乙辛说“：我担心这一点已经好久了！”当天夜里，召来萧得里特商议如何陷害太子之事。十三之策略既已得到采行，不久便迁任殿前都点检，兼同知枢密院事。十三又命令萧讹都斡等人诬告说，耶律查剌上次告发耶律撒剌等人之事都是实情，皇上下令查究其事，太子不服。另派夷离毕耶律燕哥审问太子，太子详细地陈说了如何遭到诬陷的情形。十三听说后，对燕哥说：“像这样陈奏于皇上，则大事去矣！应当将他所说的话改为招认罪状。”燕哥入宫，依十三所言禀奏。皇上大怒，废去太子。太子将要出京，说：“我有何罪该受如此处罚！”十三呵叱让他上车，派卫兵关上车门。同年，十三迁任北院枢密副使，又陈说暗中谋害太子的计策，乙辛从之。
 </p><p>及至乙辛被出贬为知南院大王事，也出贬十三为保州统军使，去世。乾统年间，被剖棺斩戮尸体。有二子：的里得、念经，均被诛杀。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十九章-卷三十九-白话.html'>第三十九章-卷三十九</a></p><p class='next'>下一节：<a href='第四十一章-卷四十一-白话.html'>第四十一章-卷四十一</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第三十九章-卷三十九-白话.html'>第三十九章-卷三十九</a></p><p class='next'>下一节：<a href='第四十一章-卷四十一-白话.html'>第四十一章-卷四十一</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -234,5 +258,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

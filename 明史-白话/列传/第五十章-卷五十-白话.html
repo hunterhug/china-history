@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -256,9 +281,8 @@
 </p><p>不久，石亨西征回来，正好彗星出现。十三道掌道御史张鹏、盛..、周斌、费广、张宽、王鉴、赵文博、彭烈、张奎、李人仪、邵铜、郑冕、陶复以及御史刘泰、魏翰、康骥将要弹劾石亨、曹吉祥各种违法之事。在他们要上奏的前一天，给事中王铉泄露给了石亨。石亨和曹吉祥便向皇上哭诉，诬陷张鹏等人是被自己诛杀的宦官张永的侄子，他们结党排斥异己，陷害他人，想为张永报仇。第二天奏疏呈入后，皇上大怒，收捕张鹏和杨瑄。皇上御临文华殿，把那些御史全部召来，掷下奏章，让他们自己读。周斌一边读一边对答，神色自若。读到冒功滥职时，皇上质问他道：“他们率将士迎驾，朝廷论功行赏，怎能说是冒滥？”周斌说：“当时迎驾的不过数百人，光禄寺赐给酒肴，姓名人数俱在。现在获得超升的达数千人，不是冒滥是什么？”皇上默然，但还是把杨瑄、张鹏以及各位御史投进监狱。将他们严刑拷打，质问谁是主使者，杨瑄等人没有供认，便判都御史耿九畴、罗绮是主谋，把他们也投进监狱。判杨瑄、张鹏死罪，其他的遣去戍边。
 </p><p>石亨等人又陷害各个言官。皇上于是传谕吏部，给事中、御史年过三十的留下，其他人全部调为外任。尚书王翱列上给事中何王己等十三人、御史吴祯等二十三人。诏令以何王己等人为州判官、吴祯等人为知县。正值有大风雷震，吹倒大树，掀掉屋顶，过了一会儿下起了大冰雹。石亨、曹吉祥家中的大树都被刮断，两人也害怕了。掌钦天监的礼部侍郎汤序本是石亨的党羽，也上书说上天示警，应抚恤刑狱。于是皇上感悟了，把杨瑄、张鹏遣戍铁岭卫，其他人贬为知县，刘泰、魏翰、康骥三人复职，而何王己、吴祯等人也得以不外调。杨瑄、张鹏走到半路，正好承天门失火，皇上大赦，他们被放回。有人说应当到石亨、曹吉祥处致谢，但两人终不去，又被贬戍南丹。
 </p><p>宪宗即位后，将他们恢复原官。杨瑄不久升为浙江副使。他巡行海路，禁止将校私自放回戍卒。修筑捍海塘，以及海盐堤岸二千三百丈，使百姓得以安居。他任副使十几年，政绩卓然，进升为按察使。西湖水原来可灌溉各县田四十六万顷，当时已淤塞过半，杨瑄请疏浚它。他又设置闸门，以利灌溉，功末成而死。海盐人民立祠祭祀他。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十九章-卷四十九-白话.html'>第四十九章-卷四十九</a></p><p class='next'>下一节：<a href='第五十一章-卷五十一-白话.html'>第五十一章-卷五十一</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第四十九章-卷四十九-白话.html'>第四十九章-卷四十九</a></p><p class='next'>下一节：<a href='第五十一章-卷五十一-白话.html'>第五十一章-卷五十一</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -270,5 +294,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

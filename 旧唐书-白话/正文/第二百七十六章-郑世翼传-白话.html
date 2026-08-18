@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -204,9 +229,8 @@
 
 <h1>第二百七十六章-郑世翼传<span style='font-size:small'> 白话</span></h1>
 <p>郑世翼，郑州荥阳县人，世代为望族。祖父郑敬德，为北周仪同大将军。父亲郑机，曾任司武中士。世翼二十岁即有盛名，武德年间，历任万年县丞、扬州录事参军。多次因言辞忤逆与人不和，被人称为轻薄。当时崔信明自以为文章独步天下，多轻视侮辱他人。一次世翼在船行长江之中时遇到信明，对他说：“曾闻君‘枫落吴江冷’的诗句。”信明欣然把自己百余篇诗稿给世翼看。世翼还未将诗稿翻阅完就说：“所见不如所闻。”随后把诗稿投入江中。信明无言以对，握楫划船离去。世翼于贞观年间因怨恨指斥而获罪，被流放..州而死。世翼文集大多遗失，撰有《交游传》，颇流传于当时。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二百七十五章-贺德仁传-白话.html'>第二百七十五章-贺德仁传</a></p><p class='next'>下一节：<a href='第二百七十七章-崔信明传-白话.html'>第二百七十七章-崔信明传</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第二百七十五章-贺德仁传-白话.html'>第二百七十五章-贺德仁传</a></p><p class='next'>下一节：<a href='第二百七十七章-崔信明传-白话.html'>第二百七十七章-崔信明传</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -218,5 +242,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

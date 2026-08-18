@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -265,9 +290,8 @@
 </p><p>弘治十一年更定，三师三少并宫僚于丹陛四拜毕，从殿左右门入，东西立。候讲读毕，叩头退。隆庆六年，改设皇太子座于文华殿之东厢，正中西向。每日讲读各官，先诣文华门外东西向，序立。候帝御日讲经筵毕，皇太子出阁升座。凡东宫初讲时，阁臣连侍五日，后每月三、八日一至，先拜出，然后各官入。崇祯十一年，署礼部事学士顾锡畴言：“东宫嘉礼告成，累朝锡赉有据。《实录》载成化十五年，皇太子出阁讲学，六卿皆加保、傅。弘治十年，皇太子出阁讲学，内阁徐溥等四人、尚书马文升等七人，俱加宫保。”帝命酌议行之。
 </p><p>诸王读书仪
 </p><p>书堂在皇极门右厢。讲官选部曹或进士改授翰林官充之。天顺二年定，初入书堂，其日早，王至右顺门之北书堂，面东，中坐。提督讲读并讲读官行四拜礼。内官捧书展于案上，就案左坐。讲读官进立于案右。伴读十遍，叩头退。每日讲读，清晨，王至书堂，讲读官行叩头礼，伴读十遍，出。饭后，复诣堂伴看写字。讲书毕，仍叩头退。万历六年定，书堂设中座，书案在左，写字案在右。辅臣率讲读侍书官候于门外。王入书堂，传令旨“先生进”。辅臣率各官入，四拜，分班侍立。讲读官以次授书各十遍讫，令旨“先生吃酒饭”，各官出，王暂入堂南间少憩。辅臣各率官入。令旨“先生进”，遂入分班侍立。侍书官看写字，讲读以次进讲毕，各官一拜出。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十章-卷三十-原文.html'>第三十章-卷三十</a></p><p class='next'>下一节：<a href='第三十二章-卷三十二-原文.html'>第三十二章-卷三十二</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第三十章-卷三十-原文.html'>第三十章-卷三十</a></p><p class='next'>下一节：<a href='第三十二章-卷三十二-原文.html'>第三十二章-卷三十二</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -279,5 +303,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -294,9 +319,8 @@
 </p><p>外命，谓诸侯及其臣。诸公九命，诸侯八命，诸伯七命，诸子六命，诸男五命，诸公之孤卿四命，侯之孤卿、公之大夫三命，子男之孤卿、侯伯之大夫、公之上士再命，子男之大夫、公之中士、侯伯之上士一命，公之下士、侯伯之中士下士、子男之士不命。
 </p><p>其制禄秩，下士一百二十五石，中士已上，至于上大夫，各倍之。上大夫是为四千石。卿二分，孤三分，公四分，各益其一。公因盈数为一万石。其九秩一百二十石，八秩至于七秩，每二秩六分而下各去其一，二秩一秩俱为四十石。凡颁禄，视年之上下。亩至四釜为上年，上年颁其正。三釜为中年，中年颁其半。二釜为下年，下年颁其一。无年为凶荒，不颁禄。六官所制如此。
 </p><p>制度既毕，太祖以魏恭帝三年始命行之。所设官名，讫于周末，多有改更。并具《卢传》，不复重序云。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p><p class='next'>下一节：<a href='第二十三章-卷二十三-原文.html'>第二十三章-卷二十三</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第二十一章-卷二十一-原文.html'>第二十一章-卷二十一</a></p><p class='next'>下一节：<a href='第二十三章-卷二十三-原文.html'>第二十三章-卷二十三</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -308,5 +332,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

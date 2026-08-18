@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -274,9 +299,8 @@
 </p><p>单于呼厨泉，兴平二年立。以兄被逐，不得归国，数为鲜卑所抄。建安元年，献帝自长安东归，右贤王去卑与白波贼帅韩暹等待卫天子，拒击李C765、郭汜。及车驾还洛阳，又徙迁许，然后归国。二十一年，单于来朝，曹操因留于鄴，而遣去卑归监其国焉。
 </p><p>论曰：“汉初遭冒顿凶黠，种众强炽。高祖威加四海，而窘平城之围。太宗政邻刑措，不雪愤辱之耻。逮孝武亟兴边略，有志匈奴，赫然命将，戎旗星属，候列郊甸，火通甘泉，而犹鸣镝扬尘，出入畿内，至于穷竭武力，单用天财，历纪岁以攘之。寇虽颇折，而汉之疲耗略相当矣。宣帝值虏庭分争，呼韩邪来臣，乃权纳怀柔，因为边卫，罢关徼之儆，息兵民之劳。龙驾帝服，鸣钟传鼓于清渭之上，南面而朝单于，朔、易无复匹马之踪，六十余年矣。后王莽陵篡，犹动戎夷，续以更始之乱，方夏幅裂。自是匈奴得志，狼心复生，乘间侵佚，害流傍境。及中兴之初，更通旧好，报命连属，金币载道，而单于骄踞益横，内暴滋深。世祖以用事诸华，未遑沙塞之外，忍愧思难，徒报谢而已。因徒幽、并之民，增边屯之卒。及关东稍定，陇、蜀已清，其猛夫扞将，莫不顿足攘手，争言卫、霍之事。帝方厌兵，闲修文政，未之许也。其后匈奴争立，日逐来奔，愿修呼韩之好，以御北狄之中，奉籓称臣，永为外扞。天子总揽群策，和而纳焉。乃诏有司，开北鄙，择肥美之地，量水草以处之。驰中郎之使，尽法度以临之。制衣裳，备文物，加玺绂之绶，正单于之名。于是匈奴分破，始有南北二庭焉。仇衅既深，互同便隙，控弦抗戈，觇望风尘，云屯鸟散，更相驰突，至于陷溃创伤者，靡岁或宁，而汉之塞地晏然矣。后亦颇为出师，并兵穷讨，命窦宪、耿夔之徒，前后并进，皆用果谲，设奇数，异道同会，究掩其窟穴，蹑北追奔三千余里，遂破龙祠，焚罽幕，坑十角，梏阏氏，铭功封石，倡呼而还。单于震慑，屏气蒙氈，遁走于乌孙之地，而漠北空矣。若因其时势，及其虚旷，还南虏于阴山，归西河干内地，上申光武权宜之略，下防戎羯乱华之变，使耿国之算不谬于当世，袁安之议见从于后王，平易正直，若此其弘也。而窦宪矜三捷之效，忽经世之规，狼戾不端，专行威惠。遂复更立北虏，反其故庭，并恩两护，以私己福，弃蔑天公，坐树大鲠。永言前载，何恨愤之深乎！自后经纶失方，畔服不一，其为B05A毒，胡可单言！降及后世，玩为常俗，终于吞噬神乡，丘墟帝宅。呜呼！千里之差，兴自毫端，失得之源，百世不磨矣。
 </p><p>赞曰：匈奴既分，羽书稀闻。野心难悔，终亦纷纭。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八十六章-西域传-原文.html'>第八十六章-西域传</a></p><p class='next'>下一节：<a href='第八十八章-乌桓鲜卑列传-原文.html'>第八十八章-乌桓鲜卑列传</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第八十六章-西域传-原文.html'>第八十六章-西域传</a></p><p class='next'>下一节：<a href='第八十八章-乌桓鲜卑列传-原文.html'>第八十八章-乌桓鲜卑列传</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -288,5 +312,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

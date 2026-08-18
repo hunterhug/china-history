@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -215,9 +240,8 @@
 </p><p>九年二月，孙可望将朱由榔迎入安隆所，改为安龙府。随着时间的推移，朱由榔感到日益困窘紧迫，他获悉李定国与孙可望之间有隔阂，便派使者密召李定国，率军来迎。马吉翔是孙可望的党羽，侦探得知此事，大学士吴贞毓以下十余人均被处死。此事详见《吴贞毓传》。二年后，李定国在新会战败，将要由安陆进入滇。孙可望十分担心，催促朱由榔移往贵阳靠近自己。朱由榔却故意延迟动身。李定国到后，于是尊奉朱由榔由安南卫奔往云南，住在孙可望的官署中，朱由榔封李定国为晋王。孙可望因为妻儿还留在滇，未敢有所行动。第二年，朱由榔将其妻儿送回黔，孙可望于是与李定国战于三岔。孙可望的部将白文选独自骑马投奔李定国军。孙可望战败，携妻带儿奔赴长沙投降了大军。
 </p><p>十五年三月，大军兵分三路进入云南。李定国扼守鸡公背，截断贵州通道，其他将领防守七星关，在生界立营扎寨，牵制蜀军。大军兵出遵义，由水西攻取乌撒，守将弃关而逃，李定国连败于安陆，朱由榔逃往永昌。第二年正月三日，大军进入云南，朱由榔逃往腾越。李定国败于潞江，又逃至南甸。二十六日，抵达囊木河，此地属于缅甸境内。缅甸人勒令随从官员舍弃所有兵器，才开关放人，朱由榔一行到达蛮莫。二月，缅甸人派出四船前来迎接，随从官员自己找船，随行者六百四十余人，由陆路行走的有已故岷王之子以下九百余人，约定在缅甸会合。十八日到达井亘。黔国公沐天波等企图尊奉朱由榔逃往户、猎二河，没能成功。五月四日，缅甸人又派船前来迎接。第二天，从井亘出发，行走三日，到达阿瓦。阿瓦是缅甸酋长所居之城。又过了五日，到达赭..。而走陆路的人全被缅甸人掠去为奴，这些人大多自杀。唯有岷王之子等八十余人流入暹罗。缅甸人在赭..建造一草屋让朱由榔居住，并派兵予以防范。
 </p><p>十七年，李定国、白文选与缅甸人交战，索要其主，连败缅兵，缅甸始终不肯交出朱由榔。十八年五月，缅甸酋长之弟莽猛白代立为酋，哄骗朱由榔的随从官员渡河来订立盟约。他们到达之后，缅人却出兵围攻，杀死沐天波、马吉翔、王维恭、魏豹等四十二人，详情见《任国玺传》。仅朱由榔与其官属二十五人幸存。十二月，大军兵临缅境，白文选自木邦投降，李定国逃往景线，缅人将朱由榔父子送至军前。第二年四月，朱由榔死于云南。六月，李定国死，其子李嗣兴等投降。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-白话.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-白话.html'>第九章-卷九</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-白话.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-白话.html'>第九章-卷九</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -229,5 +253,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

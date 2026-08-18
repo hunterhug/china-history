@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -215,9 +240,8 @@
 </p><p>冬十月丙申朔，并吏部三铨为一铨，宜令本司官员同商量注拟，连署申奏，仍不得于私第注官。戊戌，以襄州兵马都监、守磁州刺史康福为朔方、河西等节度使，灵、威、雄、警、凉等州观察使。时朔方将吏请帅于朝廷，故命福往镇之。庚子，以右金吾上将军史敬熔为左金吾上将军，以左骁卫上将军符彦超为右金吾上将军，以前黔州节度使李承约为右骁卫上将军，以云州节度使张敬询为左骁卫上将军，以前华州节度使王景戡为右骁卫上将军。癸卯，太常少卿萧愿责授太子洗马，夺绯。愿南郊行事，与祠官同饮，诘旦犹醉不能行礼，为御史所劾也。诏新授朔方节度使康福将兵万人赴镇。己酉，制复故荆南节度使高季兴官爵。辛亥，升阆州为保宁军。壬子，以内客省使、左卫大将军李仁矩为阆州节度使。幸七星亭。丙辰，夏州进白鹰，重诲奏曰：“夏州违诏进贡，臣已止约。”帝曰：“善。”朝退，帝密令左右进焉。是日，幸龙门。
 </p><p>十一月丁卯，洛州水暴涨，坏居人垣舍。戊辰，以刑部侍郎张文宝为右散骑常侍。己巳，以尚书右丞李光序为刑部侍郎。癸酉，升曹州济阴县为次赤，以昭宣光烈孝皇帝温陵所在故也。甲戌，奉国军节度使王延禀加兼侍中，从福建节度使王延钧请也。车驾出近郊，试夏州所进白鹰，戒左右勿令重诲知。己卯，日南至，帝御文明殿受朝贺。癸未，秘书少监于峤配振武长流百姓，永不齿任，为宰臣赵凤诬奏也。史官张昭远等以新修献祖、懿祖、太祖《纪年录》共二十卷、《庄宗实录》三十卷上之，赐器帛有差。《五代会要》：监修赵凤、修撰张昭远、吕咸休各赐缯彩、银器等。
 </p><p>十二月丁酉，灵武康福奏：“破野利、大虫两族三百余帐于方渠，获牛羊三万。”戊戌，诏：“应授官及封赠官诰、举人冬集等所费用物，一切官破。”壬戌，中书奏：“今后宰臣致斋内，不押班，不知印，不赴内殿起居。或遇国忌，行事官已受誓戒，宜不赴行香，并不奏刑杀公事。大祠致斋内，请不开宴。每遇大忌前一日，请不坐朝。”从之。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十五章-明宗纪五-原文.html'>第十五章-明宗纪五</a></p><p class='next'>下一节：<a href='第十七章-明宗纪七-原文.html'>第十七章-明宗纪七</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第十五章-明宗纪五-原文.html'>第十五章-明宗纪五</a></p><p class='next'>下一节：<a href='第十七章-明宗纪七-原文.html'>第十七章-明宗纪七</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -229,5 +253,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

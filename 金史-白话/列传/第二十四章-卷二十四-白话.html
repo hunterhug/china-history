@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -217,9 +242,8 @@
 </p><p>完颜福寿，是曷速馆人。其父完颜合住，建国之初前来归顺，被授予猛安。天眷二年(1139)，完颜福寿继承父亲完颜合住的职位，被授予定远大将军，直至升到金吾卫上将军。海陵王减少合并猛安谋克，于是停止了他的加封。
 </p><p>正隆末年，海陵王攻打宋朝，完颜福寿率领娄室、台答蔼二猛安由山东道进军到泰安。接受了命令，完颜福寿于是劝将校们北撤，而高忠建、卢万家奴等也各自率领军队一万多人来归顺东京，想共同拥立世宗做皇帝。完颜福寿到达辽口，金世宗派徒单思忠、府吏张谋鲁瓦等前来迎候，以了解他的去向。徒单思忠等几个人骑马到完颜福寿军中，拜见他们并问道“：将军您为什么到这里？”完颜福寿等向南指向皇帝海陵王说“：这个人失去道义，不能保持天下。国公是太祖皇帝的亲孙子，我们想推立他做皇帝，所以来到这里。”诸军都向东朝拜，高呼万岁。完颜福寿写信交给徒单思忠。完颜福寿敦促各军渡辽水，直到东京城下，然后告谕军士武装进入卫宫城，杀了高存福等人。第二天，完颜福寿同诸将及东京官民随婆速路兵马都统总管完颜谋衍劝说皇帝登基。金世宗即皇帝位，任完颜福寿为元帅右监军，赏赐给他银子、钱币及御马。
 </p><p>始初，完颜谋衍到，诸军会合，把完颜福寿的军队排列在左边，高忠建的军队排在右边。高忠建说“：为什么把我的军队排在右边？”完颜谋衍说“：我让这样排的，你怎敢说这话！”完颜福寿说：“刚开始建立大事业，左右军的高低不值得争。”于是让高忠建的军队当作左军。金世宗听说此事，认为完颜福寿很贤德。不久，完颜福寿随从完颜谋衍在北京讨伐白彦敬、纥石烈志宁。这年冬天，皇帝听说临潢尹兼元帅左都监完颜吾扎忽等同移剌窝斡作战不利，命令完颜福寿率兵进行讨伐。打败了敌军，俘虏一万多人。金世宗用纥石烈志宁代替完颜福寿的职务，把他召回京城，授予兴平军节度使，恢复他的世袭猛安，不久做领济州路诸军事。大定三年(1163)，完颜福寿死去。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十三章-卷二十三-白话.html'>第二十三章-卷二十三</a></p><p class='next'>下一节：<a href='第二十五章-卷二十五-白话.html'>第二十五章-卷二十五</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第二十三章-卷二十三-白话.html'>第二十三章-卷二十三</a></p><p class='next'>下一节：<a href='第二十五章-卷二十五-白话.html'>第二十五章-卷二十五</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -231,5 +255,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

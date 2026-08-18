@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -226,9 +251,8 @@
 </p><p>他即位时，年龄已高，不近声色，不乐游猎。在位七年，是五代君主中最长寿的人，战争基本上停止了，年年丰收，百姓因此得到休养生息。
 </p><p>但是他有少数民族的习惯，虽仁慈而不明，往往不分是非地杀大臣。甚至对从荣父子之间的事都不能防患于未然，祸起仓卒，使他犯了反叛大罪，皇帝也因此饮恨而死。
 </p><p>当时，大理少卿康澄上疏谈时事，说“：掌握国家权力的人有不足惧者五，深可畏者六：日、月、星发生变异不足惧，天象变异不足惧，小人流言蜚语不足惧，山崩川竭不足惧，水旱虫蝗不足惧；贤士躲藏深可畏，人民流亡深可畏，上下相徇深可畏，廉耻丧失深可畏，毁誉乱真深可畏，直言不闻深可畏啊！”有见识的人都说这些话切中时弊。从荣之变，任圜、安重诲等人之死，可谓上下相徇，毁誉乱真之弊了。然而康澄的话，也不是指一时的弊病，凡是掌握国家政权的人，都要经常警戒自己才好。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章-唐本纪第五-白话.html'>第五章-唐本纪第五</a></p><p class='next'>下一节：<a href='第七章-唐本纪第七-白话.html'>第七章-唐本纪第七</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第五章-唐本纪第五-白话.html'>第五章-唐本纪第五</a></p><p class='next'>下一节：<a href='第七章-唐本纪第七-白话.html'>第七章-唐本纪第七</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -240,5 +264,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

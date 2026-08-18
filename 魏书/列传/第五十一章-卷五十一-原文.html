@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -245,9 +270,8 @@
 </p><p>颖族弟燮，字崇和。广平王怀郎中令、员外常侍。为征北李平司马，北殄元愉，颇有赞谋之功。
 </p><p>燮族弟鸿贵，为定州平北府参军，送兵于荆州。坐取兵绢四百匹，兵欲告之，乃斩十人。又疏凡不达律令，见律有枭首之罪，乃生断兵手，以水浇之，然后斩决。寻坐伏法。时人哀兵之苦，笑鸿贵之愚。
 </p><p>史臣曰：古人有云，才未半古，功以过之，非徒语也。王肃流寓之人，见知一面，虽器业自致，抑亦逢时，荣仕赫然，寄同旧列，美矣。诵、翊继轨，不殒光风。宋弁以才度见知，迹参顾命，拔萃出类，其有以哉。无子之叹，岂徒羊舌？宗祀之不亡，幸矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十章-卷五十-原文.html'>第五十章-卷五十</a></p><p class='next'>下一节：<a href='第五十二章-卷五十二-原文.html'>第五十二章-卷五十二</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第五十章-卷五十-原文.html'>第五十章-卷五十</a></p><p class='next'>下一节：<a href='第五十二章-卷五十二-原文.html'>第五十二章-卷五十二</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -259,5 +283,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -225,9 +250,8 @@
 </p><p>祠部郎何佟之议曰：“《春秋》之旨，臣子继君亲，虽恩义有殊，而其礼则一，所以敦资敬之情，笃方丧之义。主上虽仰嗣高皇，尝经北面，方今圣历御宇，垂训无穷，在三之恩，理不容替。窃谓世宗祥忌，至尊宜吊服升殿，群臣同致哀感，事毕，百官诣宣德宫拜表，仍致哀陵园，以弘追远之慕。”尚事令王晏等十九人同佟之议。诏“可。”
 </p><p>海陵王薨，百官会哀。时纂严，朝议疑戎服临会。祠部郎何佟之议：“羔裘玄冠不以吊，理不容以兵服临丧。宋泰始二年，孝武大祥之日，于时百寮入临，皆于宫门变戎服，著衣夹，入临毕，出外，还袭戎衣。”从之。
 </p><p>赞曰：姬制孔作，训范百王。三千有数，四维是张。损益彝典，废举宪章。戎祀军国，社庙郊庠。冠婚朝会，服纪凶丧。存为盛德，戒在先亡。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章-卷九-原文.html'>第一章-卷九</a></p><p class='next'>下一节：<a href='第三章-卷十一-原文.html'>第三章-卷十一</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第一章-卷九-原文.html'>第一章-卷九</a></p><p class='next'>下一节：<a href='第三章-卷十一-原文.html'>第三章-卷十一</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -239,5 +263,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

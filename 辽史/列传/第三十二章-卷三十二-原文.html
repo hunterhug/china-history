@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -212,9 +237,8 @@
 </p><p>耶律余睹，一名余都姑，国族之近者也。慷慨尚气义。保大初，历官副都统。其妻天祚文妃之妹，文妃生晋王，最贤，国人皆属望。时萧奉先之妹亦为天祚元妃，生秦王。奉先恐秦王不得立，深忌余睹，将潜图之。适耶律挞葛里之妻会余睹之妻于军中，奉先讽人诬余睹结驸马萧昱、挞葛里，谋立晋王，尊天祚为太上皇。事觉，杀昱及挞葛里妻，赐文妃死。余睹在军中闻之，惧不能自明被诛，即引兵千余，并骨肉军帐叛归女直。会大霖雨，道途留阻。天祚遣知奚王府萧遐买、北宰相萧德恭、大常衮耶律谛里姑、归州观察使萧和尚奴、四军太师萧干追捕甚急。至闾山，及之。诸将议曰：“萧奉先恃宠，蔑害官兵。余睹乃宗室雄才，素不肯为其下。若擒之，则他日吾辈皆余睹矣。不如纵之。”还，绐云追袭不及。
 </p><p>余睹既入女直，为其国前锋，引娄室孛堇兵攻陷州郡，不测而至。天祚闻之大惊，知不能敌，率卫兵入夹山。余睹在女直为监军，久不调，意不自安，乃假游猎，遁西夏。夏人问：“汝来有兵几何？”余睹以二三百对，夏人不纳，卒。
 </p><p>论曰：辽之亡也，虽孽降自天，亦柄国之臣有以误之也。当天庆而后，政归后族。奉先沮天祚防微之计，陷晋王非罪之诛，夹山之祸已见于此矣。处温副魏王以僣号，结宋将以卖国，迹其奸佞，如出一轨。呜呼！天祚之所倚毗者若此，国欲不亡，得乎？张琳娖娖守位，余睹反覆自困，则又何足议哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十一章-卷三十一-原文.html'>第三十一章-卷三十一</a></p><p class='next'>下一节：<a href='第三十三章-卷三十三-原文.html'>第三十三章-卷三十三</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第三十一章-卷三十一-原文.html'>第三十一章-卷三十一</a></p><p class='next'>下一节：<a href='第三十三章-卷三十三-原文.html'>第三十三章-卷三十三</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -226,5 +250,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

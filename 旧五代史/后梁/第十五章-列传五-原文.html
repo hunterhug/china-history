@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -223,9 +248,8 @@
 </p><p>赵克裕，河阳人也。祖、父皆为军吏。克裕少为牙将，好读书，谨仪范，牧伯皆奇待之。累居右职，擢为虎牢关使。光启中，蔡寇陷河阳，克裕率所部归于太祖，隶于宣义军。太祖东征徐、郓，克裕屡受指顾，无不如意。数年之内，继领亳、郑二州刺史。时关东籓镇方为蔡寇所毒，黎元流散，不能相保，克裕妙有农战之备，复善于绥怀，民赖而获安者众。太祖表为河阳节度使、检校右仆射，寻移理许田，入为金吾卫大将军、检校司空。及太祖为元帅，以克裕为元帅府左都押衙，复统六军，兗州平，命权知泰宁军留后。数月，暴疾而卒。开平初，追赠太保。
 </p><p>张慎思，清河人。自黄巢军来归，累授军职，历诸军都指挥使。从平巢、蔡、兗、郓，皆著功，表授检校工部尚书，兼宋州长史。光化中，加检校右仆射，权知亳州。天复三年，昭宗还长安，以从太祖迎驾功，赐号迎銮毅勇功臣，寻除汝州防御使。天祐元年，授左龙武统军。其冬，除许州匡国军节度使。明年十一月，权知徐州武宁军两使留后。太祖受禅，入为左金吾大将军。开平二年，除宋州刺史，未几，复拜左金吾大将军。三年冬，除蔡州刺史，以贪货大失民情，诏追赴阙。未几，扈从北征还，以疾卧洛阳之私第。驭家不肃，为其子所弑。
 </p><p>史臣曰：韩建遇唐朝之衰运，据潼关之要地，不能籓屏王室，翻务斫丧宗枝，虽有阜俗之能，何补不臣之咎。罕之负骁雄之气，蓄向背之谋，武皇比之吕布，斯知人矣。行袭励纳忠之节，德昭立反正之功，俱善其终，固其宜矣。克裕而下，无讥可也。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十四章-列传四-原文.html'>第十四章-列传四</a></p><p class='next'>下一节：<a href='第十六章-列传六-原文.html'>第十六章-列传六</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第十四章-列传四-原文.html'>第十四章-列传四</a></p><p class='next'>下一节：<a href='第十六章-列传六-原文.html'>第十六章-列传六</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -237,5 +261,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

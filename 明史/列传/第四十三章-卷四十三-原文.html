@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -282,9 +307,8 @@
 </p><p>其冬，孛罗忽、满都鲁、癿加思兰连兵深入，至秦州、安定、会宁诸州县，纵横数千里。贼退，适王越自红盐池还，妄以大捷闻，玺书嘉劳。顷之，纪功兵部员外郎张谨劾聚及总兵官范瑾等六将杀被掠者，冒功。部科及御史交章劾。诏遣给事中韩文往勘，还奏如谨言：所报首功百五十，仅十九级。帝以寇既遁，置不问。聚寻卒。赠侯，谥威勇。
 </p><p>传子禄及福，福，弘治中掌三千营，加太子太保。卒，子岳嗣。卒，从子文请嗣。吏部言聚无大功，子孙不宜再袭。世宗不允，命文嗣。亦传至明亡乃绝。
 </p><p>赞曰：宋晟在太祖时，即与开国诸元勋参迹戎行，其后四镇凉州，威著西鄙。两子尚主，世列彻侯，功名盛矣。薛禄以下诸人，皆与“靖难”。禄东昌、滹沱之战，刘荣守永平，谭广守保定，宣力最著。虽策勋之日，未即剖符，而各以积阀受封。其善抚士卒，慎固封守，恪谨奉职，有足尚者。赵辅、刘聚猷绩远逊前人，而带砺之盟，与国终始，诚厚幸哉。诸人并以勋爵镇御边陲，故类著于篇。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十二章-卷四十二-原文.html'>第四十二章-卷四十二</a></p><p class='next'>下一节：<a href='第四十四章-卷四十四-原文.html'>第四十四章-卷四十四</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第四十二章-卷四十二-原文.html'>第四十二章-卷四十二</a></p><p class='next'>下一节：<a href='第四十四章-卷四十四-原文.html'>第四十四章-卷四十四</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -296,5 +320,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

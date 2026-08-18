@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -219,9 +244,8 @@
 </p><p>太祖从南郊祭祀之后，他的病情忽好忽坏，晋王在旁照看服侍，不离左右。太祖多次教导晋王说：“我如果一病不起，你就赶快修筑陵墓，不要久留在殿内。陵墓尽量俭省朴素，应顺着山势安排人力工匠修治，并需协商雇用，不计远近，不准强行派遣征用百姓，墓穴里不必使用石柱，只要用砖替代，用瓦棺纸衣。到下葬陵墓时，召附近三十家交纳国税的人家作为守陵的民户，下葬前揭开瓦棺盖，先检查墓穴内，千万不要伤了别人性命。不要修下宫，不要守陵宫人，也不要立石人石兽，只立一石头标记，上面刻上‘大周天子临崩之前，与即位皇帝约定，因平生喜好节俭朴素，只让使用瓦棺纸衣下葬’等字。如违背我的话，我在九泉之下不保佑你。”又说：“朕攻取河府时，看见李唐十八位皇帝陵园，大量使用钱物人力，都被人盗掘。你没听说汉文帝节俭朴素，葬在霸陵原，到现在还完好存在？如每年寒食节没有事情时，就酌情派人洒扫，如没有人去，就只在家里遥祭。又切望在河府、魏府各葬一副刀剑铠甲，澶州葬通天冠、绛色纱袍，东京洛阳葬一副平天冠、衮龙袍。千万千万切记，不要忘记我的话。”
 </p><p>二月十九日，太常卿田敏奉上谥号叫圣神恭肃文武孝皇帝，庙号叫太祖。
 </p><p>四月二日，葬在嵩陵。宰臣李谷撰写谥册文告，王溥撰写哀册文告。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章-太祖纪三-白话.html'>第三章-太祖纪三</a></p><p class='next'>下一节：<a href='第五章-世宗纪一-白话.html'>第五章-世宗纪一</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第三章-太祖纪三-白话.html'>第三章-太祖纪三</a></p><p class='next'>下一节：<a href='第五章-世宗纪一-白话.html'>第五章-世宗纪一</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -233,5 +257,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

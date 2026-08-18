@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -361,9 +386,8 @@
 </p><p>冬十月二十日，皇后请求在泰山祭祀天地，司礼太常伯刘祥道上奏章请求在泰山祭祀天地。二十五日，高丽王高藏派遣他的儿子福男前来朝拜。二十九日，将祭祀泰山，从东都出发。这年是大丰年，一斗米五个钱。大麦小麦不陈列在市场出卖。
 </p><p>十一月八日，皇上临时驻扎在原武，用猪、羊祭祀汉大将纪信之墓，赠骠骑大将军。二十二日，华州刺史、燕国公于志宁去世。
 </p><p>十二月九日，皇上驾到齐州大厅。十八日，命令有关部门祭祀泰山。十九日，皇上从灵岩顿出发。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三-白话.html'>第三章-卷三</a></p><p class='next'>下一节：<a href='第五章-卷五-白话.html'>第五章-卷五</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三-白话.html'>第三章-卷三</a></p><p class='next'>下一节：<a href='第五章-卷五-白话.html'>第五章-卷五</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -375,5 +399,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

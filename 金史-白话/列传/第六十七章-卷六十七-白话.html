@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -208,9 +233,8 @@
 </p><p>兴定年间，驸马仆散阿海被押入大狱，京师宣布勘正的事有七十多件，王阿里等人乘机作乱恣意为患，朝中士人都惴惴不安，无法保全自身，唯独吉文之在开封府做幕僚，申明他不反叛的意愿，终究没有签名。阿海被诛杀后，独吉文之没受牵连。
 </p><p>蒲察咬住，正大初年(1224)做了官，住在睢阳。败军发起兵变的时候，他和家人都被杀死。
 </p><p>起初，宣宗好用刑罚，朝中士人常常遭受杖打，甚至用刀杀死或用杖打死敢于直言的人。高琪执掌权柄，任意使用酷刑。南下以后，施酷刑成风，即便是士大夫也受影响，例如徒单的右丞思忠，好用麻椎击人，别号“麻椎相公”。运使李特立，别号“半截剑”，是说他短小而锋利。内翰冯璧，人称“冯刽”。雷渊担任御史，在蔡州抓到奸诈豪强，杖杀了五百人，称“雷半千”。还有完颜麻斤出，都是以残酷闻名，而蒲察合住、王阿里、李涣之徒，是官吏中尤其奸狡刻毒的。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六十六章-卷六十六-白话.html'>第六十六章-卷六十六</a></p><p class='next'>下一节：<a href='第六十八章-卷六十八-白话.html'>第六十八章-卷六十八</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第六十六章-卷六十六-白话.html'>第六十六章-卷六十六</a></p><p class='next'>下一节：<a href='第六十八章-卷六十八-白话.html'>第六十八章-卷六十八</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -222,5 +246,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

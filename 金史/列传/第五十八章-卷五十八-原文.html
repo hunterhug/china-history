@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -246,9 +271,8 @@
 </p><p>明日，崔立变。四喜、术甲塔失不及塔失不之父咬住、四喜妻完颜氏，以忠孝卒九十七骑夺曹门而出，将往归德，不得出，转陈州门，亦为门卒所止。门帅裕州防御使阿不罕斜合已遁去，经历官完颜合住权帅职，麾门卒放塔失不等去，且曰：“罪在我，非汝等之过。”明日，立以数十骑召合住，合住自分必死，易衣冠而往。立左右扼腕欲加刃。立遥见，问：“汝是放忠孝军出门者耶？”合住曰：“然。天子使命，某实放之，罪在某。”立忽若有所省，顾群卒言：“此官人我识之，前筑里城时与我同事。我所部十余卒盗官木罪当死，此官人不之问，但笞数十而已。此家能杀人，能救人。”因好谓合住曰：“业已放出，吾不汝罪也。”
 </p><p>四喜等至归德，上惊问两宫何如，二人奏京城军变不及入宫。上曰：“汝父汝妻独得出耶。”下之狱，皆斩于市。
 </p><p>赞曰：四喜奉迎两宫，而值崔立之变，智者居此，与两宫周旋兵间，以俟事变之定而徐图之。万一不然，以一死徇之耳，他无策也。四喜奉其私亲以归，而望人主贷其死，岂非愚乎！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十七章-卷五十七-原文.html'>第五十七章-卷五十七</a></p><p class='next'>下一节：<a href='第五十九章-卷五十九-原文.html'>第五十九章-卷五十九</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第五十七章-卷五十七-原文.html'>第五十七章-卷五十七</a></p><p class='next'>下一节：<a href='第五十九章-卷五十九-原文.html'>第五十九章-卷五十九</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -260,5 +284,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -245,9 +270,8 @@
 </p><p>二年(108)春，回到敦煌。碰上众羌反叛，朝廷大发兵向西出击，逆诏梁慬留作各军后援。梁慬到了张掖日勒。各种羌族万余人攻亭候，杀掠官吏百姓。梁慬进兵出击，大破羌兵，乘胜追到昭武，虏便四散逃走，那些能逃脱的十分之二三。到了姑藏，羌的大豪三百余人到梁慬那里投降，梁慬慰劳他们同时遣还他们的故地，河西四郡又安定了。梁慬受诏书驻扎金城，听到羌人又入侵三辅，迫近园陵，立即带兵出击，转战于武功美阳关。梁慬作战时受了伤，奋不顾身，连日追赶，全部放走所掠俘虏，获得马畜财物很多，羌人于是逃散，朝廷嘉奖他，数次用玺书慰勉，并委之以西方事，令他作诸军节度。
 </p><p>三年(109)冬，南单于与乌桓大人都反叛。朝廷以大司农何熙行车骑将军事，中郎将庞雄作副将，率领羽林五校营士，同时调动缘边十郡兵二万余人，又派辽东太守耿夔率领鲜卑族众共同出击，诏梁慬执行度辽将军的任务。庞雄与耿夔共击匈奴奥革建日逐王，破了他们。单于便亲自率领军队包围中郎将耿种于美稷，连战数月，攻之更急，耿种移檄文求救。明年正月，梁慬率领八千余人快速救援，到了属国故城，与匈奴左将军、乌桓大人作战，破斩他们的头目，杀三千多人，虏了他们的妻子，获财物很多。单于又自己率领七八千骑兵迎攻，包围了梁慬。梁慬披甲奔击，所向都被击破，虏就引兵回到虎泽。三月，何熙军队到了五原曼柏，得了暴疾，不能前进，派庞雄与梁慬及耿种步兵骑兵一万六千人进攻虎泽。连营稍微前进，单于害怕，派左奥革建日逐王到梁慬那里投降，梁慬便大陈兵接受投降。单于光头赤足，自绑磕头，缴纳人质。正碰上何熙死于军中，朝廷就拜梁慬为度辽将军。庞雄便做了大鸿胪。庞雄是巴郡人，有勇有略，称为名将。
 </p><p>第二年，安定、北地、上郡都被羌人入侵，谷价很贵，百姓流散，不能自立。朝廷诏訲发边兵迎接三郡太守，使将吏人迁徙到扶风的边界。梁慬立即派南单于之兄子优孤..奴带兵迎之。回来之后，梁慬认为..奴接其家属有功劳，便授以羌侯印绶，因犯了专擅之罪，召下狱，抵罪。第二年，校书郎马融上书控诉梁慬与护羌校尉庞参，有诏原刑。语在《庞参传》。碰上叛羌进犯三辅，关中盗贼兴起，朝廷又拜梁慬为谒者，带兵去打。到了湖县，病死了。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十九章-郭陈列传-白话.html'>第三十九章-郭陈列传</a></p><p class='next'>下一节：<a href='第四十一章-杨李翟应霍爰徐列传-白话.html'>第四十一章-杨李翟应霍爰徐列传</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第三十九章-郭陈列传-白话.html'>第三十九章-郭陈列传</a></p><p class='next'>下一节：<a href='第四十一章-杨李翟应霍爰徐列传-白话.html'>第四十一章-杨李翟应霍爰徐列传</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -259,5 +283,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

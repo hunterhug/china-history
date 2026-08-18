@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -221,9 +246,8 @@
 </p><p>耶律和尚，字特末，世系出于季父房。生性滑稽。
 </p><p>重熙初，补为祗候郎君。当时兴宗皇上正沉迷于笃爱亲属之中，凡是三父房之后，都列于父兄之列，对耶律和尚尤其宠爱。然而每次侍奉皇上宴饮，尽管诙谐之语不断，不曾有一句话的过失，因此皇上更加看重他。历任积庆、永兴宫使，累迁至同知南院宣徽使事、南面林牙。十六年(1047)，出京任怀化军节度使，不久征召为御史大夫。二十三年(1054)，因逢大册礼，升为天平军节度使、检校太师，改任中京路按问使，不久去世。
 </p><p>和尚又颇有高尚之德行，多次用财物来存恤亲友。然而嗜酒不治事，因此未能因信任而掌权。有人提到此事，他回答说“：我并非不知道，只是人生犹如风中之灯、石迸之火，不饮酒取乐又将去干些什么呢？”晚年尤其沉溺于酒中，人称“酒仙”。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十八章-卷十八-白话.html'>第十八章-卷十八</a></p><p class='next'>下一节：<a href='第二十章-卷二十-白话.html'>第二十章-卷二十</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第十八章-卷十八-白话.html'>第十八章-卷十八</a></p><p class='next'>下一节：<a href='第二十章-卷二十-白话.html'>第二十章-卷二十</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -235,5 +259,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

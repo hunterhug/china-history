@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -254,9 +279,8 @@
 </p><p>元康初，拜使持节、前将军、领西戎校尉、雍州刺史。下教曰：“此州名都，士人林薮。处士皇甫申叔、严舒龙、姜茂时、梁子远等，并志节清妙，履行高洁。践境望风，虚心饥渴，思加延致，待以不臣之典。幅巾相见，论道而已，岂以吏职，屈染高规。郡国备礼发遣，以副于邑之望。”于是四人皆到，彬敬而待之。元康四年卒官，时年六十，谥曰襄，赐绢二百匹，钱二十万。长子嗣，官至广陵太守。少子岐，征虏司马。
 </p><p>史臣曰：孙氏负江山之阻隔，恃牛斗之妖氛，奄有水乡，抗衡上国。二王属当戎旅，受律遄征，浑既献捷横江，濬亦克清建鄴。于时讨吴之役，将帅虽多，定吴之功，此焉为最。向使弘范父之不伐，慕阳夏之推功，上禀庙堂，下凭将士。岂非茂勋茂德，善始善终者欤！此而不存，彼焉是务。或矜功负气，或恃势骄陵，竞构南箕，成兹贝锦。遂乃喧黩宸扆，斁乱彝伦，既为戒于功臣，亦致讥于清论，岂不惜哉！王济遂骄父之褊心，乖争子之明义，俊材虽多，亦奚以为也。唐彬畏避交争，属疾迟留，退让之风，贤于浑濬远矣。传云“不拘行检”，安得长者之行哉！
 </p><p>赞曰：二王总戎，淮海攸同。浑既害善，濬亦矜功。武子豪桀，夙参朝列。逞欲牛心，纡情马埒。儒宗知退，避名全节。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十一章--原文.html'>第十一章-</a></p><p class='next'>下一节：<a href='第十三章--原文.html'>第十三章-</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第十一章--原文.html'>第十一章-</a></p><p class='next'>下一节：<a href='第十三章--原文.html'>第十三章-</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -268,5 +292,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

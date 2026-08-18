@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -223,9 +248,8 @@
 </p><p>帝性刚果，见晋公护执政，深忌之。司会李植、军司马孙恒以先朝佐命，入侍左右，亦疾护之专，乃与宫伯乙弗凤、贺拔提等潜谋，请帝诛护。帝然之。又引宫伯张光洛同谋。光洛密白护，护乃出植为梁州刺史，恒为潼州刺史。凤等遂不自安，更奏帝，将召群公入，因此诛护。光洛又白之。时小司马尉迟纲总统宿卫兵，护乃召纲共谋废立。令纲入殿中，诈呼凤等论事。既至，以次执送护第，并诛之。纲仍罢散禁兵，帝方悟，无左右，独在内殿，令宫人持兵自守。护又遣大司马贺兰祥逼帝逊位。遂幽于旧邸，月余日，以弒崩，时年十六。植、恒等亦遇害。
 </p><p>及武帝诛护后，乃诏曰：“慎始敬终，有国彝典；事亡如存，哲王通制。义崇追远，礼贵尊亲。故略阳公至德纯粹，天姿秀杰。属魏祚告终，宝命将改，讴歌允集，历数攸归，上协苍灵之庆，下昭后祇之锡。而祸生肘腋，衅起萧墙，白兽噬骖，苍鹰集殿，幽辱神器，弒酷乘舆，冤结生民，毒流宇县。今河海澄清，氛沴消荡，追尊之礼，宜崇徽号。”遣太师、蜀国公（过）〔迥〕于南郊上谥曰孝闵皇帝，陵曰静陵。
 </p><p>史臣曰：孝闵承既安之业，应乐推之运，柴天竺物，正位君临，迩无异言，远无异望。虽黄初代德，太始受终，不之尚也。然政由宁氏，主怀芒刺之疑；祭则寡人，臣无复子之请。以之速祸，宜哉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷二-原文.html'>卷二</a></p><p class='next'>下一节：<a href='卷四-原文.html'>卷四</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='卷二-原文.html'>卷二</a></p><p class='next'>下一节：<a href='卷四-原文.html'>卷四</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -237,5 +261,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

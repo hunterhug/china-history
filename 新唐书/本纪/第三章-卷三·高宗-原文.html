@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -241,9 +266,8 @@
 </p><p>永淳元年二月癸未，以孙重照生满月，大赦，改元，赐酺三日。是月，突厥车薄、咽面寇边。三月戊午，立重照为皇太孙。四月甲子朔，日有食之。丙寅，如东都，皇太子监国。辛未，裴行俭为金牙道行军大总管，率三总管兵以伐突厥。安西副都护王方翼及车薄、咽面战于执海，败之。丁亥，黄门侍郎郭待举、兵部侍郎岑长倩、秘书员外少监郭正一、吏部侍郎魏玄同与中书门下同承受进止平章事。五月乙卯，洛水溢。六月甲子，突厥骨咄禄寇边，岚州刺史王德茂死之。是月，大蝗，人相食。七月，作万泉宫。己亥，作奉天宫。庚申，零陵郡王明自杀。九月，吐蕃寇柘州，骁卫郎将李孝逸伐之。十月甲子，京师地震。丙寅，黄门侍郎刘齐贤同中书门下平章事。
 </p><p>弘道元年正月甲午，幸奉天宫。二月庚午，突厥寇定州，刺史霍王元轨败之。三月庚寅，突厥寇单于都护府，司马张行师死之。庚子，李义琰罢。丙午，有彗星出于五车。癸丑，崔知温薨。四月己未，如东都。壬申，郭待举、郭正一同中书门下平章事。甲申，绥州部落稽白铁余寇边，右武卫将军程务挺败之。五月乙巳，突厥寇蔚州，刺史李思俭死之。七月甲辰，徙封轮为豫王，改名旦。薛元超罢。八月乙丑，皇太子朝于东都，皇太孙留守京师。丁卯，滹沱溢。己巳，河溢，坏河阳城。九月己丑，以太平公主子生，赦东都。十月癸亥，幸奉天宫。十一月戊戌，右武卫将军程务挺为单于道安抚大使，以伐突厥。辛丑，皇太子监国。丁未，如东都。戊申，裴炎、刘齐贤、郭正一兼于东宫平章事。十二月丁巳，改元，大赦。是夕，皇帝崩于贞观殿，年五十六。谥曰天皇大帝。天宝八载，改谥天皇大圣皇帝；十三载，增谥天皇大圣大弘孝皇帝。
 </p><p>赞曰：《小雅》曰：“赫赫宗周，褒姒灭之。”此周幽王之诗也。是时，幽王虽亡，而太子宜臼立，是为平王。而诗人乃言灭之者，以为文、武之业于是荡尽，东周虽在，不能复兴矣。其曰灭者，甚疾之之辞也。武氏之乱，唐之宗室戕杀殆尽，其贤士大夫不免者十八九。以太宗之治，其遗德余烈在人者未远，而几于遂绝，其为恶岂一褒姒之比邪？以太宗之明，昧于知子，废立之际，不能自决，卒用昏童。高宗溺爱衤任席，不戒履霜之渐，而毒流天下，贻祸邦家。呜呼，父子夫妇之间，可谓难哉！可不慎哉？</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二·太宗-原文.html'>第二章-卷二·太宗</a></p><p class='next'>下一节：<a href='第四章-卷四·则天皇后 中宗-原文.html'>第四章-卷四·则天皇后 中宗</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第二章-卷二·太宗-原文.html'>第二章-卷二·太宗</a></p><p class='next'>下一节：<a href='第四章-卷四·则天皇后 中宗-原文.html'>第四章-卷四·则天皇后 中宗</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -255,5 +279,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

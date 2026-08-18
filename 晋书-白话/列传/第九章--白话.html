@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -267,9 +292,8 @@
 </p><p>太康七年，冯鱿患病，下诏任命他为散骑常侍，赐钱二十万、床帐一套。不久死去。有两个儿子：冯播、冯熊。冯播，任大长秋。冯熊字文熊，任中书郎。冯鱿的兄长冯恢，本书另有传。
 </p><p>史臣曰：所谓立身之道，是仁和义。一个人的行为已成，悔恨也就跟随其后。有莘的媵妾，不同于《北门》中表现出的情操；渭水之滨的老叟，没有伯夷、叔齐在西山表现出的节气。汤、武能够完成他们的功业，夏、殷不能讥讽他们的志向。王沈有文武之才，早有爵位，在魏享有宴席上的珍馐，在晋作朝廷中的谋臣，高贵乡公将攻文帝的谋划被突然泄露，武闱之祸跟着就到。由此知道田光的嘴，难道是燕丹能堵得住的吗?豫让的行动，不是智伯可以改变的。动静之间，有如抓住蒺藜，仁义之道，追求而相距更远。彭祖生母地位低下，孕育他的是位良家贫妇，因为王家缺乏继承人，彭祖于是登上显赫的官位。拥有北州的士卒兵马，适逢东京之乱，本来可以感召诸侯，效力于王室。然而他乘着仇杀之际。暗中图谋作乱，放纵夷狄，四处征战。使得漳、滏萧条，百姓遭难。以府库放纵贪婪的人，在北疆杀戮有识之士，阻止了刘琨的发难，却把石勒引到外府。蓄毒而成病，导致灾祸，假仇敌之手，施展凶蛮，庆封被杀，馒骂又有何用!公曾，是慈明的孙子；景倩，是文若的儿子，登上高堂而目光高远，沿着先哲的法度而驰骋。孝敬足以奉承亲人，谨慎足以事奉君主，修订姬公的旧典，采用萧相的遣法。然而引用朱均以造成两极，褒姒得势而幽王可危。虽然兴废客观存在，帝王替代没有规律，但从人事上考察，却是二位姓荀的功劳。至于兄弟不和兴起谣言，超越其位引起讽咏，荀勖招致的祸害，实在太重了。冯鱿刻意奉承，用尽狡诈，导致齐王司马攸死去，定了贾妃之位，结交荀勖仇视张华，心计胜过楚费，超出晋伍。爰丝献寿，徒然以仁心取得安慰，冯鱿的说辞，侥幸使皇帝在迷茫忧虑中止住悲哀，把谄媚之人投喂豺虎的刑罚已经消失，《青蝇》那类诗也没人作了。
 </p><p>赞曰：王沈有文才，为何对主人有二心?王浚凶暴，自招祸患。临淮侯荀频恭敬，孝心显世。安阳侯荀勖有英才，对职守不懈怠。倾齐依鲁，是为乱臣贼子。冯鱿不善，内乱无穷。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第八章--白话.html'>第八章-</a></p><p class='next'>下一节：<a href='第十章--白话.html'>第十章-</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第八章--白话.html'>第八章-</a></p><p class='next'>下一节：<a href='第十章--白话.html'>第十章-</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -281,5 +305,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

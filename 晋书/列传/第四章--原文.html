@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -256,9 +281,8 @@
 </p><p>锡字世嘏。少有盛名，起家长沙王乂文学，累迁太子中舍人。性亮直忠烈，屡谏愍怀太子，言辞恳切，太子患之。后置针著锡常所坐处氈中，刺之流血。他日，太子问锡：“向著何事？”锡对：“醉不知。”太子诘之曰：“君喜责人，何自作过也。”后转卫将军长史。赵王伦篡位，以为治书御史。孙秀求交于锡，而锡拒之，秀虽衔之，惮其名高，不敢害也。惠帝反政，迁吏部郎、城阳太守，不拜，仍迁尚书左丞。年四十八卒，赠散骑常侍。子乂嗣，在《外戚传》。
 </p><p>史臣曰：泰始之际，人祇呈贶，羊公起平吴之策，其见天地之心焉。昔齐有黔夫，燕人祭北门之鬼；赵有李牧，秦王罢东并之势。桑枝不竞，瓜润空惭。垂大信于南服，倾吴人于汉渚，江衢如砥，襁袂同归。而在乎成功弗居，幅巾穷巷，落落焉其有风飚者也。杜预不有生知，用之则习，振长策而攻取，兼儒风而转战。孔门称四，则仰止其三；《春秋》有五，而独擅其一，不其优欤！夫三年之丧，云无贵贱。轻纤夺于在位，可以兴嗟；既葬释于储君，何其斯酷。徇以苟合，不求其正，以当代之元良，为诸侯之庶子，檀弓习于变礼者也，杜预其有焉。
 </p><p>赞曰：汉池西险，吴江左回。羊公恩信，百万归来。昔之誓旅，怀经罕素。元凯文场，称为武库。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章--原文.html'>第三章-</a></p><p class='next'>下一节：<a href='第五章--原文.html'>第五章-</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第三章--原文.html'>第三章-</a></p><p class='next'>下一节：<a href='第五章--原文.html'>第五章-</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -270,5 +294,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

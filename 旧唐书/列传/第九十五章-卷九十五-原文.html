@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -258,9 +283,8 @@
 <p>　　元济至京，宪宗御兴安门受浮，百僚楼前称贺，乃献庙社，徇于两京，斩之于 独柳，时年三十五。其夜失其首。妻沈氏，没入掖庭；弟二人、子三人，流于江陵 诛之；判官刘协庶七人皆斩。光、蔡等州平，始复为王土矣。 </p>
 <p>　　史臣曰：治乱，势也，势乱不能卒治。长源以法绳骄军，祸不旋踵；则董公之 宽柔不无谓。古之名将，以阴谋怨望，鲜全其族者。董秦始奋忠义，多长者言，宜 其显赫，及失意挟邪，俄被淮阴之戮，惜哉！吴少诚为希烈之乱胎，虽谋夺其军， 及嗣而灭。而元济效希烈之狂悖，谓无天地，人之凶险，一至于斯！是知王者御治 之道，其可忽诸！ </p>
 <p>　　赞曰：圣哲之君，慎名与器。不轨之臣，得宠则戾。董怨而族，吴悖而菹。好 乱乐祸，可监前车。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第九十四章-卷九十四-原文.html'>第九十四章-卷九十四</a></p><p class='next'>下一节：<a href='第九十六章-卷九十六-原文.html'>第九十六章-卷九十六</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第九十四章-卷九十四-原文.html'>第九十四章-卷九十四</a></p><p class='next'>下一节：<a href='第九十六章-卷九十六-原文.html'>第九十六章-卷九十六</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -272,5 +296,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

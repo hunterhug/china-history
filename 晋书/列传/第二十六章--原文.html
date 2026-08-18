@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -251,9 +276,8 @@
 </p><p>子嗣，有绰风，文章相亚，位至中军参军，早亡。
 </p><p>史臣曰：江统风检操行，良有可称，陈留多士，斯为其冠。《徙戎》之论，实乃经国远图。然运距中衰，陵替有渐，假其言见用，恐速祸招怨，无救于将颠也。逮愍怀废徙，冒禁拜辞，所谓命轻鸿毛，义贵熊掌。[A170]位隆端石，竭诚献替。惇遗忽荣利，聿修天爵。虽出处异途，俱难兄弟矣。孙楚体英绚之姿，超然出类，见知武子，诚无愧色。览其贻皓之书，谅曩代之佳笔也。而负才诞傲，蔑苞忿奕，违逊让之道，肆陵愤之气，丁年沈废，谅自取矣。统、绰棣华秀发，名显中兴，可谓无忝尔祖。统竟沦迹下邑，穷观胜地，会其心焉。绰献直论辞，都不慑元子，有匪躬之节，岂徒文雅而已哉！
 </p><p>赞曰：应元蹈义，子荆越俗。江寡悔尤，孙贻摈辱。[A170]、统昆弟，江左驰声。彬彬藻思，绰冠群英。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十五章--原文.html'>第二十五章-</a></p><p class='next'>下一节：<a href='第二十七章--原文.html'>第二十七章-</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第二十五章--原文.html'>第二十五章-</a></p><p class='next'>下一节：<a href='第二十七章--原文.html'>第二十七章-</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -265,5 +289,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

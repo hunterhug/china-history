@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -227,9 +252,8 @@
 <p>　　鸿渐晚年乐于退静，私第在长兴里，馆宇华靡，宾僚宴集。鸿渐悠然赋诗曰： “常愿追禅理，安能挹化源。”朝士多属和之。及休致后病，令僧剃顶发，及卒， 遗命其子依胡法塔葬，不为封树，冀类缁流，物议哂之。 </p>
 <p>　　史臣曰：禄山狂悖已显，玄宗宠任无疑，见素知国危，陈庙算，直言极谏，而 君不从，独正犯难，而人不咎，出生入死，善始令终者鲜矣。时论以见素取容于国 忠，无言匡大政。且国忠恃内戚，弄重权，沮林甫奸豪，取其大位，若见素之孤直， 岂许取容？盖祸胎已成，政柄久紊，见素入相余年，言不从而难作，虽有周、孔之 才，其能匡救者乎？谔才辩，顗俭约，雅符积善之庆矣。圆守文之士，非御侮之才。 涣才兼行闻，命与时会。发言上沃主意，遽致显荣；当官屡为吏欺，终及窜逐。所 谓可与适道，未可与权。纵忠于国，能于官，孝于家，三者备矣，孰能继之？鸿渐 有卫社之功，非干城之责，时以任崔旰为非，则不然矣。且旰南拒贞节，北败献诚， 宜以怀来，未可力制，终致归国，岂非臧谋？向讨之，即为剧贼矣。然事佛徼福， 朋势取容，非君子之道焉。 </p>
 <p>　　赞曰：玄宗失德，禄山肆逆。见素竭节，诸公协力。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第五十七章-卷五十七-原文.html'>第五十七章-卷五十七</a></p><p class='next'>下一节：<a href='第五十九章-卷五十九-原文.html'>第五十九章-卷五十九</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第五十七章-卷五十七-原文.html'>第五十七章-卷五十七</a></p><p class='next'>下一节：<a href='第五十九章-卷五十九-原文.html'>第五十九章-卷五十九</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -241,5 +265,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

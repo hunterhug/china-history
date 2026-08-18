@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -250,9 +275,8 @@
 </p><p>元光二年八月乙亥，荧惑入舆鬼，掩积尸气；十月壬午，犯灵台；十一月，又犯心大星。
 </p><p>哀宗正大元年正月丙午，月犯昴；三月癸丑，犯荧惑。是月，荧惑逆行犯左执法。四月癸酉，荧惑犯右执法。乙未，太白、辰星相犯。三年十一月丙辰，月掩荧惑。丁巳，荧惑犯岁星；庚申，犯垒壁阵。癸酉，五星并见于西南。十二月，荧惑入月。四年正月壬戌，荧惑犯太白。六月丙辰，太白入井。七月丁亥，荧惑犯斗从西第二星。五年五月乙酉，月掩心大星。七年十月己巳，月晕，至五更复有大连环贯之，络北斗，内有戟气。十二月庚寅，有星出天津下，大如镇星而色不明，初犯辇道，二日见于东北，在织女南；乙未，入天市垣，戊申方出；癸丑，历房北，复东南行，入积薪，凡二十五日而灭。
 </p><p>天兴元年七月乙巳，太白、岁星、荧惑、太阴俱会于轸、翼，司天武亢极言天变，上惟叹息，竟亦不之罪也。八月甲戌，太白、岁星交。闰九月己酉，彗星见东方，色白，长丈余，弯曲如象牙，出角、轸南行，至十二日长二丈，十六日月烛不见，二十七日五更复出东南，约长四丈余，至十月一日始灭，凡四十有八日。司天奏其咎在北，哀宗曰：“我亦北人，今日之事，我当灭也，何乃不先不后，适丁此乎！”</p>
-<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p></div><footer data-v="2">
+<div class='pn'><p class='next'>下一节：<a href='第二章-卷二-原文.html'>第二章-卷二</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -264,5 +288,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

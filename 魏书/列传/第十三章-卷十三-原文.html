@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -228,9 +253,8 @@
 </p><p>稚妻张氏，生二子，子彦、子裕。后与罗氏私通，遂杀其夫，弃张纳罗。罗年大稚十余岁，妒忌防限。稚雅相爱敬，旁无姻妾，僮侍之中，嫌疑致死者，乃有数四。罗生三子，绍远、士亮、季亮，兄弟皆廉武。稚少轻侠，斗鸡走马，力争杀人，因亡抵龙门将陈兴德家，会赦乃免。因以后妻罗前夫女吕氏，妻兴德兄兴恩以报之。
 </p><p>子彦，本名俊，有膂力。以累从父征讨功，封槐里县子。出帝与齐献武王构隙，加子彦中军大都督、行台仆射，镇弘农，以为心膂。后从帝入关。子彦少尝坠马折臂，肘上骨起寸余，乃命开内锯骨，流血数升，言戏自若。时以为逾于关羽。
 </p><p>子裕，位卫尉少卿。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p><p class='next'>下一节：<a href='第十四章-卷十四-原文.html'>第十四章-卷十四</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第十二章-卷十二-原文.html'>第十二章-卷十二</a></p><p class='next'>下一节：<a href='第十四章-卷十四-原文.html'>第十四章-卷十四</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -242,5 +266,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

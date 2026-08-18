@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -253,9 +278,8 @@
 <p>　　祎苦心为文，老而益壮。为刑部时，刘鄴子覃，当巢寇时避祸于金吾将军张直 方之第，被害。僖宗还京，而恶覃者以托附逆党，死不以义，下三司详罪。祎上章 申理，言覃父子并命于贼廷，岂附逆耶？其家竟获洗雪，覃亦赠官。其行义始终， 皆如此类。 </p>
 <p>　　史臣曰：孟阳、王遂儒雅之曹，才有可称，竟以财媚时君，陷为俗吏。蹈道之 论，可不惧耶！全义官由妄进，霞寓位以卒升，勇毅不足以启行，谋虑不足以应变， 败亡之辱，不亦宜乎？朝无责帅之刑，盖自耻也。权、瑀长者，末涂丧真，虽牵于 食贫，纯则伪矣。 </p>
 <p>　　赞曰：蕴仁则哲，蕴利则狂。搢绅之胤，勿效潘、王。全义逃责，贞元失策。 霞寓薄刑，元和复兴。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百一十一章-卷一百一十一-原文.html'>第一百一十一章-卷一百一十一</a></p><p class='next'>下一节：<a href='第一百一十三章-卷一百一十三-原文.html'>第一百一十三章-卷一百一十三</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第一百一十一章-卷一百一十一-原文.html'>第一百一十一章-卷一百一十一</a></p><p class='next'>下一节：<a href='第一百一十三章-卷一百一十三-原文.html'>第一百一十三章-卷一百一十三</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -267,5 +291,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -221,9 +246,8 @@
 </p><p>十二月甲戌，尽籍民丁防守，括妇人壮捷者假男子衣冠，运大石。上亲出抚军。丁丑，大元兵决练江，宋兵决柴潭入汝水。己卯，大元兵破外城，宿州副总帅高剌哥战殁。辛巳，以总帅孛术鲁娄室、殿前都点检兀林答胡土皆权参政，都尉完颜承麟为东面元帅，权总帅。己丑，大元兵堕西城，上谓侍臣曰：“我为金紫十年，太子十年，人主十年，自知无大过恶，死无恨矣。所恨者祖宗传祚百年，至我而绝，与自古荒淫暴乱之君等为亡国，独此为介介耳。”又曰：“古无不亡之国，亡国之君往往为人囚絷，或为俘献，或辱于阶庭，闭之空谷。朕必不至于此。卿等观之，朕志决矣。”都尉王爱实战殁。炮军总帅王锐杀元帅谷当哥，率三十人降大元。庚寅，以御用器皿赏战士。甲午，上微服率兵夜出东城谋遁，及栅不果，战而还。乙未，杀尚厩马五十疋、官马一百五十疋犒将士。
 </p><p>三年正月壬寅，册柴潭神为护国灵应王。甲辰，以近侍分守四城。戊申，夜，上集百官，传位于东面元帅承麟，承麟固让。诏曰：“朕所以付卿者，岂得已哉？以肌体肥重，不便鞍马驰突。卿平日捷有将略，万一得免，祚胤不绝，此朕志也。”己酉，承麟即皇帝位。百官称贺。礼毕，亟出捍敌，而南面已立帜。俄顷，四面呼声震天地。南面守者弃门，大军入，与城中军巷战，城中军不能御。帝自缢于幽兰轩。末帝退保子城，闻帝崩，率群臣入哭，谥曰哀宗。哭奠未毕，城溃，诸禁近举火焚之。奉御绛山收哀宗骨瘗之汝水上。末帝为乱兵所害，金亡。
 </p><p>赞曰：金之初兴，天下莫强焉。太祖、太宗威制中国，大概欲效辽初故事，立楚立齐，委而去之，宋人不竞，遂失故物。熙宗、海陵济以虐政，中原觖望，金事几去。天厌南北之兵，挺生世宗，以仁易暴，休息斯民。是故金祚百有余年，由大定之政有以固结人心，乃克尔也。章宗志存润色，而秕政日多，诛求无艺，民力浸竭，明昌、承安盛极衰始。至于卫绍，纪纲大坏，亡征已见。宣宗南度，弃厥本根，外狃余威，连兵宋、夏，内致困惫，自速土崩。哀宗之世无足为者。皇元功德日盛，天人属心，日出爝息，理势必然。区区生聚，图存于亡，力尽乃毙，可哀也矣。虽然，在《礼》“国君死社稷”，哀宗无愧焉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p><p class='next'>下一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第十七章-卷十七-原文.html'>第十七章-卷十七</a></p><p class='next'>下一节：<a href='第十九章-卷十九-原文.html'>第十九章-卷十九</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -235,5 +259,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

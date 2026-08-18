@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -238,9 +263,8 @@
 </p><p>周知裕，字好问，幽州人也。为刘仁恭骑将，仁恭为其子守光所囚，知裕去事守光兄守文。守光又攻杀守文，乃与张万进立守文子延祚而事之。守光又杀廷祚，以其子继威代之。万进杀继威，与知裕俱奔于梁。梁太祖得知裕喜甚，为置归化军，以知裕为指挥使，凡与晋战所得，及兵背晋而归梁者，皆以隶知裕。梁、晋相拒河上十馀年，其摧坚陷阵，归化一军为最，然知裕位不过刺史。庄宗入汴，知裕与段凝军河上，闻梁已亡，欲自杀，为宾客故人止之，乃降唐。庄宗尤宠待之，诸将嫉其宠，因猎射之，知裕走以免。庄宗为杀射者，以知裕为房州刺史。明宗时，历绛、淄二州刺史，迁宿州团练使、安州留后。所居皆有善政。安州近淮，俗恶病者，父母有疾，置之佗室，以竹竿系饮食委之，至死不近。知裕深患之，加以教道，由是稍革。罢为右神武统军。应顺中卒，赠太傅。
 </p><p>○陆思鐸
 </p><p>陆思鐸，澶州临黄人也。少事梁为宣武军卒，以善射知名。累迁拱辰左厢都指挥使，领恩州刺史。梁、晋相拒河上，思鐸镂其姓名于箭筈以射晋军，而矢中庄宗马鞍，庄宗拔矢，见思鐸姓名，奇之。其后灭梁，思鐸谒见，庄宗出其矢以示之，思鐸伏地请死，庄宗慰而起之，拜龙武右厢都指挥使。晋高祖时，为陈、蔡二州刺史。卒年五十四。思鐸在陈州，有善政，临终戒其子曰：“陈人爱我，我死则葬焉。”遂葬于陈州。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十二章-杂传第三十二-原文.html'>第三十二章-杂传第三十二</a></p><p class='next'>下一节：<a href='第三十四章-杂传第三十四-原文.html'>第三十四章-杂传第三十四</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第三十二章-杂传第三十二-原文.html'>第三十二章-杂传第三十二</a></p><p class='next'>下一节：<a href='第三十四章-杂传第三十四-原文.html'>第三十四章-杂传第三十四</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -252,5 +276,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

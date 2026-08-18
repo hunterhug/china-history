@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -243,9 +268,8 @@
 </p><p>二年(1427)二月黎利攻城。王通以劲兵五千名出其不意直捣贼营，将其击破，斩杀其司空丁礼以下一万余人。黎利惶惧想走。将领们请乘胜急击。王通犹豫三日不出，贼势重新又振作起来。他们树栏栅掘壕堑，四出攻掠，分兵攻陷昌江、谅江，而包围交州城更急。王通敛兵不出。黎利求和，王通报告了朝廷。正值柳升战死，沐晟的部队进到水尾县时无法前进。王通更害怕了，便利诱黎利求和，为黎利驰传上呈谢罪表。
 </p><p>这一年十月，王通大集官吏军民出城，立坛与黎利结盟，相约退兵，并宴请黎利，赠给黎利锦绮，黎利也回赠重宝为谢。十二日，王通令太监山寿与陈智等人由水路回钦州，而他自率步骑兵回广西，到达南宁后，他才将经过报告皇上。正好廷臣的意见也厌兵，遂放弃交趾。交趾内属二十余年，前后用兵数十万，粮饷达一百余万，还不包括转输的费用，至此终于放弃了。官吏军民归国有八万六千余人，陷入贼人和被贼人杀戮的不可胜数。而向义归附的土官，像陶季容、陈汀等人，往往自拔未归。
 </p><p>第二年，王通回到京师。群臣纷纷弹劾他，他被判了死罪，关进狱中，夺去诰券，并被抄了家。正统四年(1439)，他被特释为民。景帝即位后，起用他为都督佥事，守卫京城。他抵御也先有功，进升为同知，守天寿山，归还他的家产。景泰三年(1452)王通去世。天顺元年(1457)，诏令他的儿子王琮承袭成山伯。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十一章-卷四十一-白话.html'>第四十一章-卷四十一</a></p><p class='next'>下一节：<a href='第四十三章-卷四十三-白话.html'>第四十三章-卷四十三</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第四十一章-卷四十一-白话.html'>第四十一章-卷四十一</a></p><p class='next'>下一节：<a href='第四十三章-卷四十三-白话.html'>第四十三章-卷四十三</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -257,5 +281,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

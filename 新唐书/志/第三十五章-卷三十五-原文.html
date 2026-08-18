@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -231,9 +256,8 @@
 </p><p>初，吏部岁常集人，其后三数岁一集，选人猥至，文簿纷杂，吏因得以为奸利，士至蹉跌，或十年不得官，而阙员亦累岁不补。陆贽为相，乃惩其弊，命吏部据内外员三分之，计阙集人，岁以为常。是时，河西、陇右没于虏，河南、河北不上计，吏员大率减天宝三之一，而入流者加一，故士人二年居官，十年待选，而考限迁除之法浸坏。宪宗时，宰相李吉甫定考迁之格，诸州刺史、次赤府少尹、次赤令、诸陵令、五府司马、上州以上上佐、东宫官詹事谕德以下、王府官四品以上皆五考。侍御史十三月，殿中侍御史十八月，监察御史二十五月。三省官、诸道敕补、检校五品以上及台省官皆三考，余官四考，文武官四品以下五考。凡迁，尚书省四品以上、文武官三品以上皆先奏。
 </p><p>唐取人之路盖多矣，方其盛时，著于令者，纳课品子万人，诸馆及州县学六万三千七十人，太史历生三十六人，天文生百五十人，太医药童、针咒诸生二百一十一人，太卜卜筮三十人，千牛备身八十人，备身左右二百五十六人，进马十六人，斋郎八百六十二人，诸卫三卫监门直长三万九千四百六十二人，诸屯主、副千九百八人，诸折冲府录事、府、史一千七百八十二人，校尉三千五百六十四人，执仗、执乘每府三十二人，亲事、帐内万人，集贤院御书手百人，史馆典书、楷书四十一人，尚药童三十人，诸台、省、寺、监、军、卫、坊、府之胥史六千余人。凡此者，皆入官之门户，而诸司主录已成官及州县佐史未叙者，不在焉。
 </p><p>至于铨选，其制不一，凡流外，兵部、礼部举人，郎官得自主之，谓之“小选”。太宗时，以岁旱谷贵，东人选者集于洛州，谓之“东选”。高宗上元二年，以岭南五管、黔中都督府得即任土人，而官或非其才，乃遣郎官、御史为选补使，谓之“南选”。其后江南、淮南、福建大抵因岁水旱，皆遣选补使即选其人。而废置不常，选法又不著，故不复详焉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十四章-卷三十四-原文.html'>第三十四章-卷三十四</a></p><p class='next'>下一节：<a href='第三十六章-卷三十六-原文.html'>第三十六章-卷三十六</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第三十四章-卷三十四-原文.html'>第三十四章-卷三十四</a></p><p class='next'>下一节：<a href='第三十六章-卷三十六-原文.html'>第三十六章-卷三十六</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -245,5 +269,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

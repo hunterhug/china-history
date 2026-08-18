@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -219,9 +244,8 @@
 </p><p>武官爵止六品，其职死者袭，老疾者替，世久而绝，以旁支继。年六十者子替。明初定例，嫡子袭替，长幼次及之。绝者，嫡子庶子孙次及之；又绝者，以弟继。永乐后，取官舍旗军馀丁曾历战功者，令原带俸及管事袭替，悉因之。其降级子孙仍替见降职事。弘治时，令旁支减级承袭。正德中，令旁支入总旗。嘉靖间，旁支无功者，不得保送。凡升职官舍，如父职。其阵亡保袭者，流官一等。凡袭替官舍，以骑射试之。大抵世职难核，故例特详，而长弊丛奸，亦复不少。
 </p><p>官之大者，必会推。五军都督府掌印缺，于见任公、侯、伯取一人。佥书缺，于带俸公、侯、伯及在京都指挥，在外正副总兵官，推二人。锦衣卫堂上官及前卫掌印缺，视五府例推二人。都指挥、留守以下，上一人。正德十六年，令五府及锦衣卫必由都指挥屡著勋猷者升授。诸卫官不世，独锦衣以世。
 </p><p>武之军政，犹文之考察也。成化二年，令五年一行，以见任掌印、带俸、差操及初袭官一体考核。十三年令两京通考以为常。五府大臣及锦衣卫堂上官自陈候旨，直省总兵官如之。在内五府所属并直省卫所官，悉由巡视官及部官注送；在外都司、卫所官，由抚、按造册缴部。副参以下，千户以上，由都、布、按三司察注送抚，咨部考举题奏。锦衣卫管戎务者倍加严考，南、北镇抚次之。各卫所及地方守御并各都司隶巡抚者，例同。惟管漕运者不与考。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十六章-卷四十六-原文.html'>第四十六章-卷四十六</a></p><p class='next'>下一节：<a href='第四十八章-卷四十八-原文.html'>第四十八章-卷四十八</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第四十六章-卷四十六-原文.html'>第四十六章-卷四十六</a></p><p class='next'>下一节：<a href='第四十八章-卷四十八-原文.html'>第四十八章-卷四十八</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -233,5 +257,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

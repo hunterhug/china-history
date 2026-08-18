@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -260,9 +285,8 @@
 </p><p>后主被宽免以后，隋文帝赐给的东西十分丰厚，多次得到引见，等级和三品官相同。常常参加宴会，恐怕会引起他的伤心，所以不奏吴地音乐。后来监管者上奏道：“陈叔宝说：‘现在没有官职级别，又常常参加朝廷的集会，所以希望得到一个官号。’”隋文帝说：“陈叔宝全无心肝。”监管者又说：“陈叔宝经常沉醉，很少有醒的时候。”隋文帝让人节制他的酒量，稍后又说：“随他的性子吧，不然，怎么过日子呢？”不久，文帝又问监管者陈叔宝嗜好什么东西。回答说：“爱吃驴肉。”问他饮酒多少，回答说：“和他的子弟每天饮一石。”隋文帝大惊。后来随从东巡，登芒山，陪同饮酒，并且赋诗说：“日月光天德，山川壮帝居，太平无以报，愿上东封书。”并且上表请求封禅，隋文帝宽厚地下诏谦让而不答应。后来跟随到了仁寿宫，常常陪从宴会，等他出去，隋文帝看着他说：“这样的失败还不是因为酒么，用那些作诗的功夫，何如考虑安定天下大事！当贺若弼渡过京口的时候，那边的人秘密写信告急，陈叔宝为了饮酒，便没有看它，高赹到的时候，还看见信放在床下边，没有打开信封。这也是可笑的，看来是天意要它灭亡的。从前苻氏征伐取得各个国家，都是让它的国主荣华富贵。如果想要求名，就不知道违背天命，给他官做，就是违背天命的。”
 </p><p>隋文帝因为陈氏的子弟太多，恐怕京城难以安排，都分别给安置在各个州县，每年赐给衣服以安抚和保全他们。
 </p><p>后主于隋朝的仁寿四年(604)十一月二十日，在洛阳去世，当时年龄五十二岁。追赠为大将军，封为长城县公，谥号叫作炀。葬在河南洛阳的芒山。</p>
-<div class='pn'><p class='pre'>上一节：<a href='卷九-白话.html'>卷九</a></p><p class='next'>下一节：<a href='《南史》简介-白话.html'>《南史》简介</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='卷九-白话.html'>卷九</a></p><p class='next'>下一节：<a href='《南史》简介-白话.html'>《南史》简介</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -274,5 +298,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -241,9 +266,8 @@
 </p><p>十一月七日，宗望到达黄河边上，降伏魏县。各路军队渡河，留下诸将分别从大名地区出发。收降临河县后，行至大名县，德清军、开德府都被攻克。阿里刮带领三千骑兵先赶奔汴州，在路上打败宋军六千人。夺下胙城，抵达汴州城下，消灭上千宋兵，活捉了数员宋将。宗望赶到汴州，分派诸将阻挡宋朝的援兵，奔睹、那野、赛剌、台实接连战败宋国援兵。闰十一月一日，宋兵一万人从汴城中出来作战。宗望选出强劲勇士五千人，派当海、忽鲁、雏鹘失击败了宋兵。二日，宗翰从太原到汴州会集军队。二十五日，攻占汴州。三十日，宋少帝来到军前。十二月二日，少帝上表奏请投降。皇上派勖到军中犒赏宗翰、宗望，让勖握他们的手以表示慰劳。天会五年(1127)四月，宗望等人带着宋朝的两个君主及其宗族四百七十多人，以及皀璋、宝印、衮冕、车辆、祭器、大乐、灵台、图书，与大军北还。
 </p><p>宗望分派诸将镇守河北。董才收降了广信军以及附近的县镇。宗望于是往西到凉陉去。皇上诏令宗望道“：自黄河以北，现在已经划开，深念有的百姓因为见城池被摧残才抗拒命令进行坚守，传下指令要招集他们给予安抚保全。倘若坚持不改，自然就要进行征讨。如果各军中有人敢于俘虏掠夺获取私利，肆意毁坏，应当受到惩罚。”
 </p><p>当月，宗望逝世。天会十三年(1135)，他被封为魏王。皇统三年(1143)，他被进封为许国王，又改封为晋国王。天德二年(1150)，受赠为太师，加封为辽燕国王，纎祭于太宗庙廷。正隆二年(1157)，被依例降低封号。大定三年(1163)，改封为宋王，谥号“桓肃”。宗望的儿子是齐、京、文。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十一章-卷十一-白话.html'>第十一章-卷十一</a></p><p class='next'>下一节：<a href='第十三章-卷十三-白话.html'>第十三章-卷十三</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第十一章-卷十一-白话.html'>第十一章-卷十一</a></p><p class='next'>下一节：<a href='第十三章-卷十三-白话.html'>第十三章-卷十三</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -255,5 +279,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

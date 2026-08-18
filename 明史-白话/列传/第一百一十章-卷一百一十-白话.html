@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -243,9 +268,8 @@
 </p><p>万历七年(1579)出任原职，辖治陕西。没上任就改任到宣府。当时青把都已经臣服，他的弟弟满五大仍在猖獗，部属八赖掳掠了塞外的史、车两个部族，总兵官麻锦擒获了他。张佳胤命令麻锦绑缚八赖准备问斩，却亲自飞骑赶到赦免了他，八赖叩头发誓不侵犯边塞。后来他与总督郑洛设计制服了满五大。入京担任兵部右侍郎。
 </p><p>万历十年(1582)春天，浙江巡抚吴善言奉诏减少月饷。东、西两营的兵丁马文英、刘廷用等人结党大肆叫嚷，将吴善言绑缚着殴打。张居正认为张佳胤有才干，命令他兼任右佥都御史代替吴善言。刚入境界，杭州的百姓因为推行保甲制的原因，也发生骚乱。张佳胤询问报告的人说：“乱兵与乱民汇合了吗？”回答：“没有。”张佳胤高兴地说：“快速前进，还可以使两者隔离。”他到达后，民众抢劫更严重。张佳胤随同几名士卒假装询问百姓的困苦，下令除去保甲制。民众更加嚣张，夜晚劫掠大户人家，火光映红了天空。张佳胤召见游击徐景星告知两营的士兵，命令他们讨伐乱民为自己赎罪。擒获一百五十人，斩杀三分之一。这才佯装召见马文英、刘廷用，授予他们官职。却秘密嘱咐徐景星逮捕了七个人，连同马文英、刘廷用一起斩杀。两股叛乱势力全部平定。皇帝下优诏褒扬他。不久回到兵部任左侍郎，记录功勋，加封右都御史。
 </p><p>不久，就任兵部尚书，不久又兼任右副都御史，统辖蓟、辽、保定的军务。因为李成梁打击并斩杀逞加努的功绩，被加封为太子少保。李成梁在沈阳打败土蛮，他又被加封为太子太保。被召回京都负责兵部事务。陈述功劳，授予一品的御令。御史许守恩弹劾张佳胤经营亲兵，御史徐元又弹劾此事，于是他多次上奏称病回乡。过了两年去世，封赠为少保。天启初年，谥号襄宪。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百零九章-卷一百零九-白话.html'>第一百零九章-卷一百零九</a></p><p class='next'>下一节：<a href='第一百一十一章-卷一百一十一-白话.html'>第一百一十一章-卷一百一十一</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第一百零九章-卷一百零九-白话.html'>第一百零九章-卷一百零九</a></p><p class='next'>下一节：<a href='第一百一十一章-卷一百一十一-白话.html'>第一百一十一章-卷一百一十一</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -257,5 +281,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

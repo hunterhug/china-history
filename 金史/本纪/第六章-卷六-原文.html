@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -331,9 +356,8 @@
 </p><p>十月壬寅朔，以左宣徽使敬嗣晖为参知政事。甲寅，上谓宰臣曰：“朕已行之事，卿等以为成命不可复更，但承顺而已，一无执奏。且卿等凡有奏，何尝不从。自今朕旨虽出，宜审而行，有未便者，即奏改之。或在下位有言尚书省所行未便，亦当从而改之，毋拒而不从。”丙寅，尚书左丞相纥石烈良弼进《睿宗实录》。戊辰，上谓宰臣曰：“衍庆宫图画功臣，已命增为二十人。如丞相韩企先，自本朝兴国以来，宪章法度，多出其手。至于关决大政，但与大臣谋议，终不使外人知觉。汉人宰相，前后无比，若褒显之，亦足示劝，慎无遗之。”
 </p><p>十一月丁丑，以西南路招讨使宗宁等为贺宋正旦使。戊寅，幸东宫。上谓皇太子曰：“吾儿在储贰之位，朕为汝措天下，当无复有经营之事。汝惟无忘祖宗纯厚之风，以勤修道德为孝，明信赏罚为治而已。昔唐太宗谓其子高宗曰：‘吾伐高丽不克终，汝可继之。’如此之事，朕不以遗汝。如辽之海滨王，以国人爱其子，嫉而杀之，此何理也。子为众爱，愈为美事，所为若此，安有不亡。唐太宗有道之君，而谓其子高宗曰：‘尔于李绩无恩。今以事出之，我死，宜即授以仆射，彼必致死力矣。’君人者，焉用伪为。受恩于父，安有忘报于子者乎？朕御臣下，惟以诚实耳。”群臣皆称万岁。丙戌，朝享于太庙。丁亥，有事于圆丘，大赦。癸巳，群臣奉上尊号曰应天兴祚钦文广武仁德圣孝皇帝。乙未，诏中外。
 </p><p>十二月癸卯，冬猎。乙卯，还宫。丙辰，参知政事敬嗣晖薨。辛酉，进封越王永中赵王，随王永功曹王，沈王永成豳王，徐王永升虞王，滕王永蹈徐王，薛王永济滕王。乙丑，赵王永中、曹王永功俱授猛安，仍命永功亲治事，以习为政。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p><p class='next'>下一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p><p class='next'>下一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -345,5 +369,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

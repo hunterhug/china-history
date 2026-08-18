@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -313,9 +338,8 @@
 </p><p>诸移里堇司。移里堇一员，从八品。分掌部族村寨事。(司吏，女直一人、汉人一人。习尼昆，掌本飐差役等事，挞马。右土鲁浑部族南北移里堇司依此置。部罗火部族左右移里堇司置女直司吏一人。)
 </p><p>诸秃里。秃里一员，从七品。掌部落词讼、防察违背等事。(女直司吏一人，通事一人。)
 </p><p>诸群牧所，又国言谓乌鲁古。提控诸乌鲁古一员，正四品。明昌四年置。(是年以安远大将军尚厩局使石抹贞兼庆州刺史为之，设女直司吏三人，译一人，通事一人。)使一员，从四品。(国言作乌鲁古使。)副使一员，从六品。掌检校群牧畜养蕃息之事。判官一员，正八品。掌签判本所事。知法一员，从八品。(女直司吏四人，译人一人，挞马十六人，使八人，副五人，判三人。又设埽稳脱朵，分掌诸畜，所谓牛马群子也。)惟板底因、乌解、忒恩、蒲鲜群牧依此置。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十七章-卷三十七-原文.html'>第三十七章-卷三十七</a></p><p class='next'>下一节：<a href='第三十九章-卷三十九-原文.html'>第三十九章-卷三十九</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第三十七章-卷三十七-原文.html'>第三十七章-卷三十七</a></p><p class='next'>下一节：<a href='第三十九章-卷三十九-原文.html'>第三十九章-卷三十九</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -327,5 +351,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -372,9 +397,8 @@
 <p>　　浙西观察使杜审权遣大将翟行约率军三千赴援，屯莲塘驿。慆欲遣人劳之，将 吏皆惮其行。谠曰：“杜相公以大夫宗盟，急难相赴，安得令使者无言而还！”即 赍慆书币，犒其使。淮南大将李湘率师五千来援，贼诈降，败于淮口，湘与郭厚本 皆为贼所执，自是无援。贼并兵急攻，以铁锁断淮流，梯冲云合，凡周七月，昼夜 不息。乘城之士，不遑寝寐，面目生疮，军储渐少，分食稀粥。赖谠犯难仗义，求 救于淮北诸军。既而马举以大军至，贼解围而去。 </p>
 <p>　　谠无子，犹子山僧、元老等寄在广陵。每出城，则书二姓名，谓慆曰：“志之， 得嗣为幸。”慆益感之。贼平，授谠泗州团练判官、侍御史。慆迁郑滑节度，谠亦 从之，为宾佐。慆卒，乃退归江东，以隐居为事。 </p>
 <p>　　赞曰：兽解触邪，草能指佞。烈士徇义，见危致命。国有忠臣，亡而复存。何 以丧邦？奸邪受恩。 </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百三十六章-卷一百三十六-原文.html'>第一百三十六章-卷一百三十六</a></p><p class='next'>下一节：<a href='第一百三十八章-卷一百三十八-原文.html'>第一百三十八章-卷一百三十八</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第一百三十六章-卷一百三十六-原文.html'>第一百三十六章-卷一百三十六</a></p><p class='next'>下一节：<a href='第一百三十八章-卷一百三十八-原文.html'>第一百三十八章-卷一百三十八</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -386,5 +410,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

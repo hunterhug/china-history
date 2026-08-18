@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -364,9 +389,8 @@
 </p><p>宁浦郡吴置。统管五县，一千二百二十户。
 </p><p>宁浦连道吴安平山
 </p><p>武帝以后取消高兴郡。怀帝永嘉元年，又把临贺、始兴、始安三郡共二十县设为湘州。元帝划分郁林设晋兴郡。成帝划分南海设束官郡，把始兴、临贺二郡归荆州。穆帝划分苍梧设晋康、新宁、永乎三郡。哀帝太和年间置新安郡，安帝划分东官设义安郡，恭帝划分南海设新会郡。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四章--白话.html'>第四章-</a></p><p class='next'>下一节：<a href='第六章--白话.html'>第六章-</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第四章--白话.html'>第四章-</a></p><p class='next'>下一节：<a href='第六章--白话.html'>第六章-</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -378,5 +402,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

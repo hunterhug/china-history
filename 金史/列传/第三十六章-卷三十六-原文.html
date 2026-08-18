@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -249,9 +274,8 @@
 </p><p>贞祐四年，纲子权复州刺史安和上书讼父冤，略曰：“先臣纲在章宗时，招怀西羌青宜可等十八部族，取宋五州，吴曦以全蜀归朝。胡沙虎无故见杀，夺其官爵。”诏下尚书省议：“谨按元年诏书云，胡沙虎屡害良将，正谓纲辈也。”乃追复尚书左丞。弟定奴。
 </p><p>定奴与兄纲俱知名，充护卫，除平凉府判官，累官同知真定府。从平章政事仆散揆伐宋，加平南虎威将军。兵罢，迁河南东路副统军，三迁武胜军节度使，入为右副点检。大安二年，迁元帅右都监，救西京，改震武军节度使。元帅奥屯襄败绩，定奴坐失期及不以军败实奏，降河州防御使。迁镇西军节度使、河东北路按察转运使。宣宗即位，改知归德府。贞祐二年，改知河南府，兼河南副统军。寻迁河南统军使，兼昌武军节度使。请内外五品以上举能干之士充河北州县官。改签枢密院事、殿前都点检、兼侍卫亲军都指挥使。复为签枢密院事、行院事兼知归德府事，改兼武宁军节度使，行院于徐州。召为刑部尚书、参知政事。兴定三年，薨。
 </p><p>赞曰：章宗伐宋之役，三易主帅，兵家所忌也。宋不知乘此以为功，犹曰有人焉？韩侂胄心强智疏，苏师旦谋浅任大，函首燕、蓟，南北皆曰贼臣，何哉？完颜匡、完颜纲皆泰和终功之臣，然匡隳忠于大安，纲罔难于至宁，富贵之惑人，乃如此邪？</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十五章-卷三十五-原文.html'>第三十五章-卷三十五</a></p><p class='next'>下一节：<a href='第三十七章-卷三十七-原文.html'>第三十七章-卷三十七</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第三十五章-卷三十五-原文.html'>第三十五章-卷三十五</a></p><p class='next'>下一节：<a href='第三十七章-卷三十七-原文.html'>第三十七章-卷三十七</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -263,5 +287,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

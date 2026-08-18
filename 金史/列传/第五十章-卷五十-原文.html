@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -235,9 +260,8 @@
 </p><p>北军自北渡者毕集，前后以大树塞其军路，沃衍军夺路，得之。合达又议陈和尚先拥山上大势，比再整顿，金军已接竹林，去钧州止十余里矣。金军遂进，北军果却三峰之东北、西南。武、高前锋拥其西南，杨、樊拥其东北，北兵俱却，止有三峰之东。张惠、按得林立山上望北兵二三十万，约厚二十里。按得木与张惠谋曰：“此地不战，欲何为耶？”乃率骑兵万余乘上而下拥之，北兵却。须臾雪大作，白雾蔽空，人不相觌。时雪已三日，战地多麻田，往往耕四五过，人马所践泥淖没胫。军士被甲骨僵立雪中，枪槊结冻如椽，军士有不食至三日者。北兵与河北军合，四外围之，炽薪燔牛羊肉，更递休息。乘金困惫，乃开钧州路纵之走，而以生军夹击之。金军遂溃，声如崩山，忽天气开霁，日光皎然，金军无一人得逃者。
 </p><p>武仙率三十骑入竹林中，杨、樊、张三军争路，北兵围之数重，及高英残兵共战于柿林村南，沃衍、泽、英皆死，惟张惠步持大枪奋战而殁。蒲阿走京师，未至，追及，擒之。七月，械至官山，召问降否，往复数百言，但曰：“我金国大臣，惟当金国境内死耳。”遂见杀。
 </p><p>赞曰：金自南渡，用兵克捷之功，史不绝书，然而地不加辟，杀伤相当，君子疑之。异时伐宋，唐州之役，丧师七百，主将讹论匿之，而以捷闻。御史纳兰纠之，宣宗奖御史，而不罪讹论，是君臣相率而为虚声也。禹山之捷，两省为欺，遂致误国，岂非宣宗前事有以启之耶？至于三峰山之败，不可收拾，上下〈目咢〉眙，而金事已去十九。天朝取道襄、汉，悬军深入，机权若神，又获天助，用能犯兵家之所忌，以建万世之俊功，合达虽良将，何足以当之。蒲阿无谋，独以一死无愧，犹足取焉尔。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十九章-卷四十九-原文.html'>第四十九章-卷四十九</a></p><p class='next'>下一节：<a href='第五十一章-卷五十一-原文.html'>第五十一章-卷五十一</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第四十九章-卷四十九-原文.html'>第四十九章-卷四十九</a></p><p class='next'>下一节：<a href='第五十一章-卷五十一-原文.html'>第五十一章-卷五十一</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -249,5 +273,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

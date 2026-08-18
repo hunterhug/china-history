@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -228,9 +253,8 @@
 </p><p>三年正月壬戌，淮南将王茂章以宣、歙二州叛附于钱升。二月，杨渥陷岳州。癸巳，王建陷归州。四月癸未朔，日有食之。镇南军节度使钟传卒，其子匡时自称留后。六月，钱升陷衢、睦二州，刺史陈璋、陈询奔于淮南。七月，杨渥陷饶州。八月癸未，硃全忠陷相州。九月，杨渥陷洪州，执钟匡时。乙亥，匡国军节度使刘知俊陷坊州，执刺史刘彦晖。十月辛巳，杨崇本会凤翔、泾原、鄜延、秦陇兵以讨硃全忠，战于美原、败绩。十一月，忠国军节度使高彦卒，其子澧自称留后。闰十二月戊辰，李克用陷潞州，昭义军节度使丁会叛附于克用。乙亥，震电，雨雪。
 </p><p>四年三月，刘守光囚其父仁恭，自称幽州卢龙军节度使。四月戊午，钱升陷温州。甲子，皇帝逊于位，徙于曹州，号济阴王。梁开平二年二月遇杀，年十七，谥曰哀帝。后唐明宗追谥昭宣光烈孝皇帝，陵曰温陵。
 </p><p>赞曰：自古亡国，未必皆愚庸暴虐之君也。其祸乱之来有渐积，及其大势巳去，适丁斯时，故虽有智勇，有不能为者矣，可谓真不幸也，昭宗是已。昭宗为人明隽，初亦有志于兴复，而外患已成，内无贤佐，颇亦慨然思得非常之材，而用匪其人，徒以益乱。自唐之亡也，其遗毒余酷，更五代五十余年，至于天下分裂，大坏极乱而后止。迹其祸乱，其渐积岂一朝一夕哉！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九·懿宗 僖宗-原文.html'>第九章-卷九·懿宗 僖宗</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九·懿宗 僖宗-原文.html'>第九章-卷九·懿宗 僖宗</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -242,5 +266,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

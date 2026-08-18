@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -242,9 +267,8 @@
 <p>　　子昇，天宝初太仆少卿。次尚，汉东太守。次浑，与右相李林甫善，引为谏议 大夫、平原太守、御史中丞、东京采访使。次恕，都官郎中、剑南采访判官，依倚 权势，颇为贪暴。浑在平原，重征一年庸调。作东畿采访使，又使河南尉杨朝宗影 娶妻郑氏。郑氏即薛稷外孙，姊为宗妇，孀居有色，浑有妻，使朝宗聘而浑纳之， 奏朝宗为赤尉。恕在剑南，有雒县令崔珪，恕之表兄，妻美，恕诱而私之，而贬珪 官。又养刺客李晏。至九载，并为人所发，赃私各数万贯。林甫奏称璟子浑就东京 台推，恕就本使剑南推，皆有实状，浑流领南高要郡，恕流海康郡。尚，其载又为 人讼其赃，贬临海长史。其子华、衡，居官皆坐赃，相次流贬。其后浑会赦，量移 至东阳郡下，请托过求，及役使人吏，求其资课，人不堪其弊，讼之，配流浔江郡。 然兄弟尽善饮谑，俳优杂戏，衡最粗险，广平之风教，无复存矣。广德后，浑除太 子谕德，为物议薄之，乃留寓于江岭卒。 </p>
 <p>　　史臣曰：履艰危则易见良臣，处平定则难彰贤相。故房、杜预创业之功，不可 俦匹。而姚、宋经武、韦二后，政乱刑淫，颇涉履于中，克全声迹，抑无愧焉。 </p>
 <p>　　赞曰：姚、宋入用，刑政多端。为政匪易，防刑益难。谏诤以猛，施张用宽。 不有其道，将何以安？ </p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十五章-卷四十五-原文.html'>第四十五章-卷四十五</a></p><p class='next'>下一节：<a href='第四十七章-卷四十七-原文.html'>第四十七章-卷四十七</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第四十五章-卷四十五-原文.html'>第四十五章-卷四十五</a></p><p class='next'>下一节：<a href='第四十七章-卷四十七-原文.html'>第四十七章-卷四十七</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -256,5 +280,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

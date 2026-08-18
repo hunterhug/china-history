@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -221,9 +246,8 @@
 </p><p>德源，性愚而贪，早侍景宗邸。及即位，列近侍。保宁间，官崇义、兴国二军节度使，加检校太师。以贿名，德让贻书谏之，终不悛。以故论者少之。后加同政事门下平章事，遥摄保宁军节度使。乾亨初卒。
 </p><p>德凝，廉逊谦谨。保宁中，迁护军司徒。开泰中，累迁护卫太保、都宫使、崇义军节度使。移镇广德，秩满，部民请留，从之。改西南面招讨使，党项隆益答叛，平之。迁大同军节度使，卒于官。
 </p><p>子郭三，终天德军节度使。孙高家奴，终南院宣徽使；高十，终辽兴军节度使。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p><p class='next'>下一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第三章-卷三-原文.html'>第三章-卷三</a></p><p class='next'>下一节：<a href='第五章-卷五-原文.html'>第五章-卷五</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -235,5 +259,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

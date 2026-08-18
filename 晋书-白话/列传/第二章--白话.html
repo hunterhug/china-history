@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -238,9 +263,8 @@
 </p><p>恭思褚皇后名灵媛，河南阳翟人，义兴太守褚爽的女儿。皇后起初是琅邪王妃。元熙元年，被立为皇后，生下海盐、富阳公主。等到皇帝把皇位禅让给塞，降为零陵王妃。宋元嘉十三年去世，时年五十三岁。拊葬在冲平陵。
 </p><p>史臣曰：皇后体安，匹配帝王而合德；月亮遵循日影，匹配太阳而齐放光明。因而可知阳炽热阴凝寒，万物依赖阴阳造就；火炎热水湿润，六气靠水火调理。用来比喻贤妻淑女，匹配帝王的德行，这对皇室根基坚固，实在是有帮助的。宣穆皇后知礼，德配直趄，协助帝王艰难创业，继承了涂山流传下来的德音，把好运留给了后代，这都是靠有母亲风范的人相助啊。武元杨氏干预朝政，目光短浅，爱溺长子以徇私情，完全杜绝卫璀的言论，不知张泓的奸诈，不祥的阴气，遮掩了皇上的圣明，晋国势中道衰微，就是从此开始的。惠皇帝禀性老实愚钝，昏庸到问蛙鸣是为官还是为私的地步。南风放肆狡诈，煽起了漫天的祸水。刚踏入后妃的宫室，就开始施展做太后的雄心；才看到得势，就被赐毒药自杀。褒后毁灭周朝，用来比方恐怕还嫌不够；妹妃倾覆夏朝，也不足用来比喻。中原陷于战乱，征兆就是从此明显的。过去高宗居丧，把朝政交给元老；成王年幼无知，把国事托付给上公。太后临朝听政，确实不是古代的制度。而明穆、康献皇后累代临朝，当时属于皇帝幼小，于是亲自摄政。各自兔掉了华阳的血祭，竞相追随和熹的足迹，保持衰微的国运不在自己手中断送，可庆幸的实在不少。
 </p><p>赞曰：两个妃子光大了舜业，三位母亲辅翼了周朝。末喜受宠使夏桀覆灭，褒姒得意毁灭了西周。国家的兴亡主要是因为这个啊。穆后沉毅果断，杀人灭口后能不露声色地执炊做饭。旧妻失宠，池塘蒲柳为她感叹。崇化宫皇太后多福，是后世祸乱的起点。两位杨皇后先后受宠，福极而祸生。南风皇后残酷暴虐，国破身亡。献容皇后被乱臣宠幸，身受屈辱反而认为是荣耀。提起笔就废置君主，拿着韶书欺凌皇帝。离散终遭不幸，深忧以致毙命。芬身材窈窕，芳温柔顺从。吕氏之妾生子，造就了秦始皇蠃氏，黄帝之姬生子，正是楚国的祖先芈氏。记载留传久远，晋五行属金，金德悄然离去。妇人的德行让人倾倒，影响超出公侯。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一章--白话.html'>第一章-</a></p><p class='next'>下一节：<a href='第三章--白话.html'>第三章-</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第一章--白话.html'>第一章-</a></p><p class='next'>下一节：<a href='第三章--白话.html'>第三章-</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -252,5 +276,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

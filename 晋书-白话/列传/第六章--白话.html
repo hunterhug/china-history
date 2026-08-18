@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -260,9 +285,8 @@
 </p><p>后来任吏部令史，改任齐王司马攸司空主簿，转任太常丞、司徒左西曹掾、尚书郎，在所任的位置上都称职。逐渐升任散骑侍郎，做并州刺史。入朝任左卫率，知道贾后废太子的阴谋，很忧虑。为张华出计谋而不被采用，更觉不平。买后的亲信党羽暗中监视外界，对刘卞的言论有所耳闻，于是改任刘卞为轻车将军、雍州刺史。刘卞知道言辞泄露，怕被贾后杀害，便喝药而死。当初，刘卞去并州，过去同时在须昌做小官的十多人为他饯行，其中一人轻视刘卞，刘卞派人把他扶出屋外，人们因此轻视刘卞。
 </p><p>史臣曰：忠诚为美德，才学是国之精华，譬如众星有礼义，人伦有冠冕。卫瓘抚摸武帝的床，张华抗拒赵王司马伦的命令，进谏则伯玉较多，临危不惧则茂先做得好。在危险的路途上，有这样的道理：昏乱形成，则要看事情的发展趋向；固执不改，则死比活着强，坚持去赴汤蹈火，是不避颠覆者。都落入淫纲，同遭杀害，国家困危，不也令人伤感吗!
 </p><p>赞曰：贤人献身，陵墓的寒气映到道上。空受俸禄者观望失败，我心中不安。街因为夏被灭绝，强因为赵被残杀。忠于乱世，自古以来就难。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第五章--白话.html'>第五章-</a></p><p class='next'>下一节：<a href='第七章--白话.html'>第七章-</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第五章--白话.html'>第五章-</a></p><p class='next'>下一节：<a href='第七章--白话.html'>第七章-</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -274,5 +298,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

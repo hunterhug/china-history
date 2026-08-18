@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -257,9 +282,8 @@
 <p>　　睿宗即位，累授户部尚书，转太子宾客。先天二年，加金紫光禄大夫，复拜户 部尚书。班与兄弟璹，数年间俱为定州刺史、户部尚书，时人荣之。开元二年卒， 年七十四。班尝以其曾祖察所撰《汉书训纂》，多为后之注《汉书》者隐没名氏， 将为己说；班乃撰《汉书绍训》四十卷，以发明旧义，行于代。 </p>
 <p>　　史臣曰：天子有诤臣七人，虽无道不失其天下。致庐陵复位，唐祚中兴，诤由 狄公，一人以蔽。或曰：许之太甚。答曰：当革命之时，朋邪甚众，非推诚竭力， 致身忘家者，孰能与于此乎！仁杰流死不避，骨鲠有彰，虽逢好杀无辜，能使终畏 大义。竟存天下，岂不然乎！王方庆干城南海，羽冀东宫，台阁枢机，无不功济， 所谓君子不器者也。苟非文学，斯焉取斯。璹成都布政，始卒不侔；相国上章，或 否或中。且焚明堂而避正殿，固诤何多；黜唐颂而立天枢，一言非措。矧乃妄求符 瑞，已失忠贞；精择楚茅，难裨过咎。不常其德，罔畏承羞。班规谏有才，牧守多 善，储幄之任，可谓得人。 </p>
 <p>　　赞曰：犯颜忤旨，返政扶危。是人杂事，狄能有之。终替武氏，克复唐基。功 之莫大，人无以师。方庆之才，周旋特立。璹也无常，班能操执。</p></p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十八章-卷三十八-原文.html'>第三十八章-卷三十八</a></p><p class='next'>下一节：<a href='第四十章-卷四十-原文.html'>第四十章-卷四十</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第三十八章-卷三十八-原文.html'>第三十八章-卷三十八</a></p><p class='next'>下一节：<a href='第四十章-卷四十-原文.html'>第四十章-卷四十</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -271,5 +295,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

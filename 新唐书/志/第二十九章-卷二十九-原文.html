@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -260,9 +285,8 @@
 </p><p>营州柳城郡，上都督府。本辽西郡，万岁通天元年为契丹所陷，圣历二年侨治渔阳，开元五年又还治柳城，天宝元年更名。土贡：人、麝香、豹尾、皮骨。户九百九十七，口三千七百八十九。县一：有平卢军，开元初置；东有镇安军，本燕郡守捉城，贞元二年为军城；西四百八十里有渝关守捉城；又有汝罗、怀远、巫闾、襄平四守捉城。柳城。中。西北接奚，北接契丹。有东北镇医巫闾山祠，又东有碣石山。
 </p><p>安东，上都护府。总章元年，李勣平高丽国，得城百七十六，分其地为都督府九，州四十二，县一百，置安东都护府于平壤城以统之，用其酋渠为都督、刺史、县令。上元三年徙辽东郡故城，仪凤二年又徙新城。圣历元年更名安东都督府，神龙元年复故名。开元二年徙于平州，天宝二年又徙于辽西故郡城。至德后废。土贡：人。有安东守捉。有怀远军，天宝二载置；又有保定军。
 </p><p>右河北采访使，治魏州。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十八章-卷二十八-原文.html'>第二十八章-卷二十八</a></p><p class='next'>下一节：<a href='第三十章-卷三十-原文.html'>第三十章-卷三十</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第二十八章-卷二十八-原文.html'>第二十八章-卷二十八</a></p><p class='next'>下一节：<a href='第三十章-卷三十-原文.html'>第三十章-卷三十</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -274,5 +298,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

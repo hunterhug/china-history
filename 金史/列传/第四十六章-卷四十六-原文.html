@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -253,9 +278,8 @@
 </p><p>师安石，字子安，清州人，本姓尹氏，避国讳更焉。承安五年词赋进士。为人轻财尚义。初补尚书省令史，适宣宗南迁，留平章完颜承晖守燕都。承晖将就死，以遗表托安石使赴行在，安石间道走汴以闻。上嘉之，擢为枢密院经历官。时哀宗在春宫，领密院事，遂见知遇。元光二年，累迁御史中丞。其七月，上章言备御二事，其一曰：“自古所以安国家、息祸乱，不过战、守、避、和四者而已。为今之计，守、和为上。所谓守者，必求智谋之士，使内足以得戍卒之心，外足以挫敌人之锐，不惟彼不能攻，又可以伺其隙而败之。其所谓和，则汉、唐之君固尝用此策矣，岂独今日不可用乎。乞令有司详议而行。”其二曰：“今敌中来归者颇多，宜丰其粮饷，厚其接遇，度彼果肯为我用，则择有心力者数十人，潜往以诱致其余。来者既众，彼必转相猜贰，然后徐起而图之，则中兴之功不远矣。”上嘉纳之。
 </p><p>九月，坐劾英王守纯附奏不实，决杖追官。及哀宗即位，正大元年，擢为同签枢密院事。二年，复御史中丞。三年，工部尚书、权左参政。四年，进尚书右丞。五年，台谏劾近侍张文寿、张仁寿、李麟之，安石亦论列三人不已，上怒甚，有旨谓安石曰：“汝便承取贤相，朕为昏主，止矣。”如是数百言。安石骤蒙任用，遽遭摧折，疽发脑而死，上甚悼惜之。
 </p><p>赞曰：宣宗南迁，天命去矣，当是时虽有忠良之佐、谋勇之将，亦难为也。然而汝砺、行信拯救于内，胥鼎、侯挚守御于外，讫使宣宗得免亡国，而哀宗复有十年之久，人才有益于人国也若是哉。胡鲁养兵惜谷之论，善矣。安石不负承晖之托，遂见知遇，以论列近侍触怒而死，悲夫！</p>
-<div class='pn'><p class='pre'>上一节：<a href='第四十五章-卷四十五-原文.html'>第四十五章-卷四十五</a></p><p class='next'>下一节：<a href='第四十七章-卷四十七-原文.html'>第四十七章-卷四十七</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第四十五章-卷四十五-原文.html'>第四十五章-卷四十五</a></p><p class='next'>下一节：<a href='第四十七章-卷四十七-原文.html'>第四十七章-卷四十七</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -267,5 +291,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

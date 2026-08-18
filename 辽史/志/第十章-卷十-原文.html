@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -245,9 +270,8 @@
 </p><p>望都县。本汉海阳县，久废。太祖以定州望都县俘户置。有海阳山。县在州南三十里，户三千。
 </p><p>滦州，永安军，中，刺史。本古黄洛城。滦河环绕，在卢龙山南。齐桓公伐山戎，见山神俞皃，即此。秦为右北平。汉为石城县，后名海阳县。汉末为公孙度所有。晋以后属辽西。石晋割地，在平州之境。太祖以俘户置。滦州负山带河，为朔汉形胜之地。有扶苏泉，甚甘美，秦太子扶苏北筑长城尝驻此；临榆山，峰峦崛起，高千余仞，下临渝河。统县三：义丰县。本黄洛故城。黄洛水北出卢龙山，南流入于濡水。汉属辽西郡，久废。唐季入契丹，世宗置县。户四千。马城县。本卢龙县地。唐开元二十八年析置县，以通水运。东北有千金冶，东有茂乡镇。辽割隶滦州。在州西南四十里。户三千。石城县。汉置，属右北平郡，久废。唐贞观中于此置临渝县，万岁通天元年改石城县，在滦州南三十里，唐仪凤石刻在焉。今县又在其南五十里，辽徙置以就盐官。户三千。
 </p><p>营州，邻海军，下，刺史。本商孤竹国。秦属辽西郡。汉为昌黎郡。前燕慕容皝徙都于此。元魏立营州，领昌黎、建德、辽东、乐浪、冀阳、营丘六郡。后周为高宝宁所据。隋开皇置州，大业改辽西郡。唐武德元年改营州，万岁通天元年始入契丹。圣历二年侨治渔阳。开元五年还治柳城。天宝元年改曰柳城郡。后唐复为营州。太祖以居定州俘户。统县一：广宁县。汉柳城县，属辽西郡。东北与奚、契丹接境。万岁通天元年，入契丹李万荣。神龙元年移幽州界。开元四年复旧地。辽改今名。户三千。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p><p class='next'>下一节：<a href='第十一章-卷十一-原文.html'>第十一章-卷十一</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p><p class='next'>下一节：<a href='第十一章-卷十一-原文.html'>第十一章-卷十一</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -259,5 +283,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

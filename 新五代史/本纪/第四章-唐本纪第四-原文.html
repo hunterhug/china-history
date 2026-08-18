@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -225,9 +250,8 @@
 </p><p>七年，梁兵十万攻潞州，围以夹城。遣周德威救潞州，军于乱柳。冬，克用疾，是岁，梁灭唐，克用复称天祐四年。
 </p><p>五年正月辛卯，克用卒，年五十三。子存勖立，葬克用于雁门。
 </p><p>呜呼，世久而失其传者多矣，岂独史官之缪哉！李氏之先，盖出于西突厥，本号硃邪，至其后世，别自号曰沙陀，而以硃邪为姓，拔野古为始祖。其自序云：沙陀者，北庭之碛也，当唐太宗时，破西突厥诸部，分同罗、仆骨之人于此碛，置沙陀府，而以其始祖拔野古为都督；其传子孙，数世皆为沙陀都督，故其后世因自号沙陀。然予考于传记，其说皆非也。夷狄无姓氏，硃邪，部族之号耳，拔野古与硃邪同时人，非其始祖，而唐太宗时，未尝有沙陀府也。唐太宗破西突厥，分其诸部，置十三州，以同罗为龟林都督府，仆骨为金微都督府，拔野古为幽陵都督府，未尝有沙陀府也。当是时，西突厥有铁勒，延陀、阿史那之类为最大；其别部有同罗、仆骨、拔野古等以十数，盖其小者也；又有处月、处密诸部，又其小者也。硃邪者，处月别部之号耳。太宗二十二年，已降拔野古，其明年，阿史那贺鲁叛。至高宗永徽二年，处月硃邪孤注从贺鲁战于牢山，为契苾何力所败，遂没不见。后百五六十年，宪宗时，有硃邪尽忠及子执宜见于中国，而自号沙陀，以硃邪为姓矣。盖沙陀者，大碛也，在金莎山之阳，蒲类海之东，自处月以来居此碛，号沙陀突厥，而夷狄无文字传记，硃邪又微不足录，故其后世自失其传。至尽忠孙始赐姓李氏，李氏后大，而夷狄之人遂以沙陀为贵种云。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三章-梁本纪第三-原文.html'>第三章-梁本纪第三</a></p><p class='next'>下一节：<a href='第五章-唐本纪第五-原文.html'>第五章-唐本纪第五</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第三章-梁本纪第三-原文.html'>第三章-梁本纪第三</a></p><p class='next'>下一节：<a href='第五章-唐本纪第五-原文.html'>第五章-唐本纪第五</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -239,5 +263,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

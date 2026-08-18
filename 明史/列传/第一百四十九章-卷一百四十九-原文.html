@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -243,9 +268,8 @@
 </p><p>新抚琏已至，禾嘉犹在锦州，会廷议山海别设巡抚。诏罢琏，令方一藻抚宁远，禾嘉仍以佥都御史巡抚山海、永平。寻论筑城召衅罪，贬二秩，巡抚如故。禾嘉请为监视中官设标兵。御史宋贤诋其谄附中人，帝怒，贬贤三秩。禾嘉持论每与承宗异，不为所喜，时有诋諆。既遭丧败，廷论益不容，遂坚以疾请。五年四月，诏许还京，以杨嗣昌代。令其妻代陈病状。乃命归田，未出都卒。
 </p><p>明世举于乡而仕至巡抚者，隆庆朝止海瑞，万历朝张守中、艾穆。庄烈帝破格求才，得十人：邱民仰、宋一鹤、何腾蛟、张亮以忠义著，刘可训以武功闻，刘应遇、孙元化、徐起元皆以勤劳致位，而陈新甲官最显。
 </p><p>赞曰：危乱之世，未尝乏才，顾往往不尽其用。用矣，或掣其肘而驱之必死。若是者，人实为之，要之亦天意也。卢象升在庄烈帝时，岂非不世之才，乃困抑之以至死，何耶！至忠义激发，危不顾身，若刘之纶、邱民仰之徒，又相与俱尽，则天意可知矣。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第一百四十八章-卷一百四十八-原文.html'>第一百四十八章-卷一百四十八</a></p><p class='next'>下一节：<a href='第一百五十章-卷一百五十-原文.html'>第一百五十章-卷一百五十</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第一百四十八章-卷一百四十八-原文.html'>第一百四十八章-卷一百四十八</a></p><p class='next'>下一节：<a href='第一百五十章-卷一百五十-原文.html'>第一百五十章-卷一百五十</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -257,5 +281,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

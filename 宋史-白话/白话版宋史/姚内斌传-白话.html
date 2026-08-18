@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -204,9 +229,8 @@
 
 <h1>姚内斌传<span style='font-size:small'> 白话</span></h1>
 <p>姚内斌，平州卢龙人。初在契丹为官，任关西巡检、瓦桥关使。后周显德六年(959)，宋太祖跟从周世宗北征，军驻瓦桥关，姚内斌率五百人以城投降。周世宗任他为汝州刺史，吏民到朝廷推举姚内斌留任，后周恭帝下诏表扬姚内斌。他本名触犯宣祖名讳下一字，遂改用现名。他跟从平定李筠，改任虢州刺史。西夏数次侵犯西边疆域，朝廷以姚内斌任庆州刺史兼青、白两池榷盐制置使。他在郡十多年，西夏畏伏，不敢侵犯边塞，称他为“姚大虫”，是说他威武猛烈。<BR><BR>　　起初，姚内斌投降，他的妻子儿女都在契丹。乾德四年(966)，他的儿子姚承赞秘密从幽州来归附。乾德五年，幽州百姓田光嗣等人又带姚内斌儿女六人从小路来归附，宋太祖一同召见他们，赏赐衣服、缗钱、鞍马，命令宦官护送还姚内斌。开宝四年(971)，太祖召他赴朝廷，太祖皇帝待他很优厚，又派他归治所。开宝七年春，姚内斌突然得病去世，终年六十四岁。太祖遣宦官护丧，归葬洛阳，常规所送治丧财物以外，赐其子田地三十顷。姚承赞任供奉官、..门祗候，他死于战场；姚承鉴官至殿中丞。</p>
-<div class='pn'><p class='pre'>上一节：<a href='郭进传-白话.html'>郭进传</a></p><p class='next'>下一节：<a href='王继勋传-白话.html'>王继勋传</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='郭进传-白话.html'>郭进传</a></p><p class='next'>下一节：<a href='王继勋传-白话.html'>王继勋传</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -218,5 +242,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

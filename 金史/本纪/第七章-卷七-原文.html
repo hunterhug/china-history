@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -294,9 +319,8 @@
 </p><p>十月庚辰朔，更定铨注县令丞簿格。诏西北路招讨司每进马驼鹰鹘等，辄率敛部内，自今并罢之。壬午，上谓宰臣曰：“察问细微，非人君之体，朕亦知之。然以卿等殊不用心，故时或察问。如山后之地，皆为亲王、公主、权势之家所占，转和于民，皆由卿等之不察。卿等当尽心勤事，毋令朕之烦劳也。”诏徙遥落河、移马河两猛安于大名、东平等路安置。戊戌，上谓宰臣曰：“凡人在下位，欲冀升进，勉为公廉贤肖何以知之。及其通显，观其施为，方见本心。如招讨哲典，初任定州同知，继为都司，未尝少有私徇，所至皆有清名，及为招讨，不固守。人心险于山川，诚难知也。”壬寅，上谓宰臣曰：“近览《资治通鉴》，编次累代废兴，甚有鉴戒，司马光用心如此，古之良史无以加也。校书郎毛麾，朕屡问以事，善于应对，真该博老儒，可除太常职事，以备讨论。”甲辰，以殿前都点检襄为御史大夫。
 </p><p>十一月丁巳，尚书右丞移剌道罢。乙丑，以真定尹单守素等为贺宋正旦使。癸酉，以御史大夫襄为尚书右丞。乙亥，上谕宰臣曰：“郡守选人，资考虽未及，廉能者则升用之，以励其余。”以太常少卿任倜为高丽生日使。
 </p><p>十二月辛巳，上谓宰臣曰：“岐国用人，但一言合意便升用之，一言之失便责罚之。凡人言辞，一得一失，贤者不免。自古用人咸试以事，若止以奏对之间，安能知人贤否？朕之取人，众所与者用之，不以独见为是也。”己亥，河决卫州。辛丑，猎于近郊。癸卯，特授袭封衍圣公孔总兖州曲阜令，封爵如故。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p><p class='next'>下一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第六章-卷六-原文.html'>第六章-卷六</a></p><p class='next'>下一节：<a href='第八章-卷八-原文.html'>第八章-卷八</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -308,5 +332,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

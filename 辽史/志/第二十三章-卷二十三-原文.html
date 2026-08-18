@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -246,9 +271,8 @@
 </p><p>腊辰日：天子率北南臣僚并戎服，戊夜坐朝，作乐饮酒，等第赐甲仗、羊马。国语谓是日为“炒伍侕叵”。“炒伍侕”，战也。
 </p><p>再生仪：凡十有二岁，皇帝本命前一年季冬之月，择吉日。前期，禁门北除地置再生室、母后室、先帝神主舆。在再生室东南，倒植三岐木。其日，以童子及产医妪置室中，一妇人执酒，一叟持矢箙，立于室外。有司请神主降舆，致奠。奠讫，皇帝出寝殿，诣再生室。群臣奉迎，再拜。皇帝入室。释服、洗。以童子从，三过岐木之下。每过，产医妪致词，拂拭帝躬。童子过岐木七，皇帝卧木侧，叟击箙曰：“生男矣。”太巫幪皇帝首，兴，群臣称贺，再拜。产医妪受酒于执酒妇以进，太巫奉襁褓、彩结等物赞祝之。预选七叟，各立御名系于彩，皆跪进。皇帝选嘉名受之，赐物。再拜，退。群臣皆进襁褓、彩结等物。皇帝拜先帝诸御容，遂宴群臣。
 </p><p>善哉，阻午可汗之垂训后嗣也。孺子无不慕其亲者，嗜欲深而爱浅，妻子具而孝衰。人人皆然，而况天子乎！再生之仪，岁一周星，使天子一行是礼，以起其孝心。夫体之也真，则其思之也切，孺子之慕，将有油然发于中心者，感发之妙，非言语文字之所能及。善哉，阻午可汗之训后嗣也。始之以三过岐木，母氏劬劳能无念乎！终之以拜先帝御容，敬承宗庙宜何如哉！《诗》曰：“无念尔祖，聿修厥德。”</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p><p class='next'>下一节：<a href='第二十四章-卷二十四-原文.html'>第二十四章-卷二十四</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第二十二章-卷二十二-原文.html'>第二十二章-卷二十二</a></p><p class='next'>下一节：<a href='第二十四章-卷二十四-原文.html'>第二十四章-卷二十四</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -260,5 +284,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

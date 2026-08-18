@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -232,9 +257,8 @@
 </p><p>冬十月初一，在皇宫内修作佛事。妖僧圆通等被逮处决。初四，金星经天。初八，火星凌犯太微垣左执法。初十，亲临祭享太庙。十二日，拜住进献嘉禾，两茎同一穗。十三日，敕令翰林与集贤院官员年满七十者不得退休。因内地水灾，罢免不急迫的工役。敕令被卖给回回及汉人为奴仆的蒙古族子女，由官府收养。禁止中书掾曹官员泄漏机密事情。下令枢密院派遣官员整顿巡视各路兵马。十八日，设置赵王马札罕部钱粮总管府，秩禄为正三品。十九日，肇庆路水灾，予以赈济。二十六日，河南行省参知政事你咱马丁因残暴罪罢官。二十七日，增设侍仪司通事舍人六名、侍仪舍人四名。二十九日，派遣燕铁木儿巡视边地。
 </p><p>十一月初二，火星凌犯进贤。初六，临幸大护国仁王寺。初七，太阴星凌犯虚梁。初九，临御大明殿，群臣为英宗加上尊号为继天体道敬文仁武大昭孝皇帝。这天夜里，水星凌犯房宿。初十，以接受尊号下诏天下，拜住奏请释放囚徒，未得到批准。十一日，增添寿安山寺服役士卒三千人。十二日，任命御史大夫铁失统领左、右阿速卫。十七日，太阴星凌犯井宿。十八日，以教官等待候选的人员借广海巡检阙诠注。二十日，太阴星凌犯酒旗，又犯轩辕。二十一日，拜住等人上言“：接受尊号，应答谢太庙，恭行一献礼。世祖也曾提议实行，武宗则亲行谢礼。”下诏说“：我当亲去答谢太庙。”下令太史卜筮吉日，枢密院拣选仪仗队兵卒。二十二日，太阴星凌犯明堂。二十四日，因营田提举司征收酒税扰民，命有关部门兼管该税。
 </p><p>十二月初一，给予蒙古族子女冬季服装。初二，册立亦启烈氏为皇后，派遣代理太尉、中书右丞相铁木迭儿授予玉册、玉宝。初四，因立皇后下诏天下。庆远路饥荒，真定路瘟疫，皆加赈济。初五，火星凌犯亢宿。初九，亲行拜谢太庙。十一日，太阴星凌犯昴宿。建造太庙正殿。十五日，疏浚玉泉河。车驾临幸西僧灌顶寺。二十日，封唆南藏卜为白兰王，赐以金印。真定、保定、大名、顺德等路水灾，民人挨饿，禁止酿酒。把金虎符分发各行省平章政事。二十二日，火星进入氐宿。二十五日，设置田粮提举司，掌管蓟州、景州田赋。以供给卫士贫乏者，秩禄为从五品。下令帝师公哥罗古罗思监藏班藏卜前往西番接受具足戒，赐予黄金一千三百五十两、白银四千零五十两、币帛万匹、钱钞五十万贯。因诸王怯伯使者多次入朝，发兵防宁北口及卢沟桥。赈济河间路饥荒。再次任命马家奴为司徒。二十六日，设置寿安山寺佛象。守海州蝗灾。归德路、辽阳路、通州等地水灾。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第二十六章-卷二十六-白话.html'>第二十六章-卷二十六</a></p><p class='next'>下一节：<a href='第二十八章-卷二十八-白话.html'>第二十八章-卷二十八</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第二十六章-卷二十六-白话.html'>第二十六章-卷二十六</a></p><p class='next'>下一节：<a href='第二十八章-卷二十八-白话.html'>第二十八章-卷二十八</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -246,5 +270,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

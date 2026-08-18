@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -380,9 +405,8 @@
 </p><p>永康元年三月，尉氏县天降血。政治刑罚松缓，就会有持久炎热赤祥的妖异。这年正月，愍檀立王被幽禁在盖宫。天戒这样说，不应宽宥放纵邪恶的人，将会使太子含冤而死。惠帝愚昧不明，这月愍怀太子终于毙命。于是王室出现仇怨，祸难遍及天下。淖齿杀齐湣王那天，天上降血雨沾湿衣服。这是上天的警告，说的就是这种情况吗?京房《易传》说：“归罪不开释，这叫作追非，其责罚是天降血。这叫作不亲，下有邪恶之心，不出三年，将会绝减宗族。”又说：“谗佞的人受到封赏，有功之臣受杀戮，上天会降血雨。”
 </p><p>愍帝建兴元年十二月，河东地震，天降肉雨。四年十二月丙寅，丞相府斩杀督运令史淳于值，血倒流上柱子二丈三尺高，这是赤祥。这时，后将军荡塞镇守卢壁，丞相扬言要北伐，蓬王伯因督办运输拖延和受劳役贿赂的罪，依照军法处死他。他的儿子上诉说：“督办运输的事完成，没有拖延和供给不上，接受役使的人的贿赂，罪不当死。军队的行动，先造声势后是实际行动，实际是屯边守卫，不是征伐进军。自四年以来，漕运拖延停止，都不以军队出动的法律论处。”属吏们没有人理会他。等到有了变故，负责查实的官员弹劾众官，元帝不问，于是连续三年干旱。王室认为是冤气的应验。郭景纯说：“血是水类，同属于《坎》。《坎》是法象，水是平润而下，不应倒流。这是朝政有谬失的征兆。”
 </p><p>刘聪伪建元元年正月，垩盐地震，塞旦旦塑陷没成为池塘，池水红色像血一样，红色的气冲上天，有赤龙腾飞而去。流星从牵牛星出现，进入紫微宿，像龙形一样蜿蜒，光亮照地，落在平阳北十里处。细看是肉，臭味传遍平阳，有三十步长，二十七步宽。肉旁常有哭声，日夜不停。几天后，刘聪的皇后刘氏生下一条蛇一只兽，各伤害人后逃走。寻找没有找到，不久在天上陨落的肉旁见到蛇兽。这时刘聪娶了刘殷的三个女儿，都立为皇后。天戒像是说，刘聪既然自称刘姓，三位皇后又都是刘氏，背逆了骨肉的纲常，扰乱了人伦的规矩。天降肉等众妖异，其灾异也很大。不久刘氏死，哭声便自行消失。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第十七章--白话.html'>第十七章-</a></p><p class='next'>下一节：<a href='第十九章--白话.html'>第十九章-</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第十七章--白话.html'>第十七章-</a></p><p class='next'>下一节：<a href='第十九章--白话.html'>第十九章-</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -394,5 +418,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

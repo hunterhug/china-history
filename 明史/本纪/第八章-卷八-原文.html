@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -190,6 +210,11 @@
             max-width: 100%;
             white-space: nowrap;
         }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -216,9 +241,8 @@
 </p><p>夏四月壬寅，帝闻山东及淮、徐民乏食，有司徵夏税方急，乃御西角门诏大学士杨士奇草诏，免今年夏税及科粮之半。士奇言：“上恩至矣，但须户、工二部预闻。”帝曰：“救民之穷当如救焚拯溺，不可迟疑。有司虑国用不足，必持不决之意。”趣命中官具楮笔，令士奇就门楼书诏。帝览毕，即用玺付外行之。顾士奇曰：“今可语部臣矣。”设北京行都察院。壬子，命皇太子谒孝陵，遂居守南京。戊午，如天寿山，谒长陵。己未，还宫。是月，振河南及大名饥。南京地屡震。五月己卯，侍读李时勉、侍讲罗汝敬以言事改御史，寻下狱。庚辰，帝不豫，遣使召皇太子于南京。辛巳，大渐，遗诏传位皇太子。是日，崩于饮安殿，年四十有八。
 </p><p>秋七月己巳，上尊谥，庙号仁宗，葬献陵。
 </p><p>赞曰：“当靖难师起，仁宗以世子居守，全城济师。其后成祖乘舆，岁出北征，东宫监国，朝无废事。然中遘媒孽，濒于危疑者屡矣，而终以诚敬获全。善乎其告人曰“吾知尽子职而已，不知有谗人也”，是可为万世子臣之法矣。在位一载。用人行政，善不胜书。使天假之年，涵濡休养，德化之盛，岂不与文、景比隆哉。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第七章-卷七-原文.html'>第七章-卷七</a></p><p class='next'>下一节：<a href='第九章-卷九-原文.html'>第九章-卷九</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -230,5 +254,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>

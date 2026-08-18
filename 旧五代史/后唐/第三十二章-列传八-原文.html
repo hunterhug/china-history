@@ -11,6 +11,7 @@
 
     html {
         background: linear-gradient(180deg, #f7f1e3 0%, #f2e9d8 100%);
+        scroll-behavior: smooth;
     }
 
     body {
@@ -151,11 +152,30 @@
     }
 
     .backtop {
-        margin-top: 6px;
+        position: fixed;
+        right: 18px;
+        bottom: 24px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9a2b2b;
+        color: #f7f1e3;
+        border-radius: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        opacity: 0.85;
+        transition: opacity 0.15s, transform 0.15s;
     }
 
-    .backtop a {
-        color: #6e675c;
+    .backtop:hover {
+        opacity: 1;
+        background: #b84343;
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +209,11 @@
             width: max-content;
             max-width: 100%;
             white-space: nowrap;
+        }
+
+        .backtop {
+            right: 12px;
+            bottom: 20px;
         }
     }
 </style>
@@ -228,9 +253,8 @@
 </p><p>彦超，存审之长子也。少事武皇，累历牙职。存审卒，庄宗以彦超为汾州刺史。同光末，魏州军乱，诏彦超赴北京巡检。先是，朝廷令内官吕、郑二人在太原，一监兵，一监仓库。及明宗入洛，皇弟存霸单骑奔河东，与吕、郑谋杀彦超与留守张宪。彦超觉之，密与宪谋，未决，部下大噪，州兵毕集，张宪出奔。是夕，军士杀吕、郑、存霸于衙城。诘旦，闻洛城祸变，彦超告谕三军。《宋史·张昭传》云：昭为张宪推官，庄宗及难，闻鄴中兵士推戴明宗，宪部将符彦超合戍将应之。宪死，有害昭者，执之以送彦超。彦超曰：“推官正人，无得害之。”又逼昭为榜，安抚军民。明宗又令其弟龙武都虞候彦卿驰骑安抚。六月，彦超入觐，明宗召见抚谕，寻授晋州留后。未行，会其弟前曹州刺史彦饶平宣武乱军，明宗喜，召彦超谓之曰：“吾得尔兄弟力，余更何忧，尔为我往河东抚育耆旧。”即授北京留守、太原尹。明年冬，移授昭义节度使。四年，授骁卫上将军，改金吾上将军。长兴元年，授泰宁军节度使，寻移镇安州。
 </p><p>彦超厮养中有王希全者，小字佛留，粗知书计，委主货财，岁久耗失甚多，彦超止于诃谴而已。应顺元年正月，佛留闻朝廷多事，因与任货兒等谋乱。一夕，扣门言朝廷有急递至，彦超出至事，佛留挟刃害之。诘旦，本州节度副使李端召州兵攻佛留等，杀之，余众奔淮南，擒彦超部将赵温等二十六人诛之。彦超赠太尉。
 </p><p>存审次子彦饶，《晋史》有传。次彦卿，皇朝前凤翔节度使、守太师、中书令，封魏王，今居于洛阳。次彦能，终于楚州防御使。次彦琳，仕皇朝为金吾上将军，卒于任。</p>
-<div class='pn'><p class='pre'>上一节：<a href='第三十一章-列传七-原文.html'>第三十一章-列传七</a></p><p class='next'>下一节：<a href='第三十三章-列传九-原文.html'>第三十三章-列传九</a></p></div><footer data-v="2">
+<div class='pn'><p class='pre'>上一节：<a href='第三十一章-列传七-原文.html'>第三十一章-列传七</a></p><p class='next'>下一节：<a href='第三十三章-列传九-原文.html'>第三十三章-列传九</a></p></div><footer data-v="3">
     <p class="copyright">© 2016-<span id="year"></span> 阿星星 · 版权所有</p>
-    <p class="backtop"><a href="#">回到顶部 ↑</a></p>
 </footer>
 <script>
     (function () {
@@ -242,5 +266,6 @@
         }
     })();
 </script>
+<a class="backtop" href="#" aria-label="回到顶部">↑</a>
 </body>
 </html>
